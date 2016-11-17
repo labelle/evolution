@@ -1,0 +1,111 @@
+// Variables
+
+$evo:                 ".evo";   // replace with custom prefix
+$text_color:            #333333;
+$text_font:             arial; //inherit
+$text_font_weight:          normal;
+$text_padding_bottom:       .25rem;
+$text_line_height:          1.1rem;
+
+// Utilities
+
+@mixin text($class) {
+  
+  @if $class == bold {
+    font-weight:bold;
+  }
+ 
+  @else if $class == italic {
+    font-style: italic;
+  }
+ 
+  @else if $class == caps {
+    text-transform: uppercase;
+  }
+ 
+  @else {
+    @warn "Text mixin supports: bold, italic, caps";
+  }
+}
+
+#{$evo}-text-bold {
+    font-weight: bold;
+}
+#{$evo}-text-caps {
+    text-transform: uppercase;
+}
+#{$evo}-text-italic {
+    font-style: italic;
+}
+
+#{$evo}-text-loose {
+    letter-spacing: .035em;
+}
+
+#{$evo}-text-looser {
+    letter-spacing: .065em;
+}
+
+#{$evo}-text-loosest {
+    letter-spacing: .1em;
+}
+
+#{$evo}-text-tight {
+    letter-spacing: -.035em;
+}
+
+#{$evo}-text-tighter {
+    letter-spacing: -.065em;
+}
+
+#{$evo}-text-tightest {
+    letter-spacing: -.1em;
+}
+
+// Text Classes
+
+@for $i from 0 through 40 {
+  #{$evo}-text-#{$i} {
+  color: $text_color;
+  font-size: #{$i}rem;
+  font-weight: $text_font_weight;
+  font-family: $text_font;
+  line-height: $text_line_height;
+  padding-bottom:$text_padding_bottom;
+  
+  // Extensions
+  &-bold {
+    @extend #{$evo}-text-#{$i};
+    @include text(bold);
+      @if ($i <= 19) {
+      letter-spacing:calc(-.0#{$i}rem*#{$i});
+      }
+      @if ($i >= 20) {
+      letter-spacing:calc(-.0#{$i}rem*.0#{$i});
+      }
+}
+  & #{$evo}-text-caps {
+    @include text(caps);
+}
+  & #{$evo}-text-italic {
+    @include text(italic);
+}
+  & #{$evo}-text-bold #{$evo}-text-caps {
+    @include text(bold);
+    @include text(caps);
+}
+  & #{$evo}-text-bold #{$evo}-text-italic {
+    @include text(bold);
+    @include text(italic);
+}
+  & #{$evo}-text-caps #{$evo}-text-italic {
+    @include text(caps);
+    @include text(italic);
+}
+  & #{$evo}-text-caps #{$evo}-text-italic .evo-text-bold {
+    @include text(caps);
+    @include text(italic);
+    @include text(bold);
+}
+}
+}

@@ -1,0 +1,19 @@
+ul#{$evo}-text-#{$i} {
+@extend #{$evo}-text-#{$i};
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+margin-left: 0;
+padding-left: 0;
+}
+& li {
+margin-left: 0;
+padding-left: 0;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*0rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*0rem/$text_padding_left_divide_amount)/2;
+// padding-left: (($text_font_size+$text_font_size_increment*0rem/5)+$text_padding_left_add_amount)/2;
+margin-left: 0;
+padding-left: 0;
+}

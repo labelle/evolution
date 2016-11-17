@@ -1,0 +1,13 @@
+
+$evo: 								".evo";		// replace with custom prefix
+$text_color:						#333333;
+$text_font:							inherit;
+$text_font_weight:					normal;
+$text_padding_bottom:				.25rem;
+$text_line_height:					1.1rem;
+
+@for $i from 0 through 40 {
+    #{$evo}-text-#{$i}-bold {
+      background-image: url('../img/perimeters/PerimeterFountains#{$i}.png');
+    }
+  }

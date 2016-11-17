@@ -1,0 +1,49 @@
+///*      B A S E     */
+
+// Base structures and styles
+// Adjust in _settings.scss
+// Default values live in _variables.scss
+
+
+/*      GLOBAL     */
+
+
+// Resets
+html {
+	margin:0px;
+	padding:0px;
+}
+
+// Relative base size of elements
+// By default, resets to initial and sets size of 1rem
+body { 
+	font-size: #{$default_type_size}; // 1rem
+	font-family: #{$default_type_font}; // Initial
+	font-color: #{$default_type_color}; // Initial
+	}
+
+
+/*      TYPE     */
+
+// Fonts
+// Font stacks referenced from http://www.cssfontstack.com/
+#{$evo}-font-arial                  { font-family: $font_arial; }
+#{$evo}-font-georgia                { font-family: $font_georgia; }
+#{$evo}-font-times-new-roman        { font-family: $font_times_new_roman; }
+#{$evo}-font-courier-new            { font-family: $font_courier_new; }
+// Helvetica
+#{$evo}-font-helvetica-neue         { font-family: $font_helvetica_neue; }
+#{$evo}-font-helvetica-neue-thin    { font-family: $font_helvetica_neue_thin; }
+
+
+// Text
+#{$evo}-text {
+	font-size: $text_font_size;
+  	color: $text_color;
+  	font-family: $text_font_family;
+  	font-weight: $text_font_weight;
+	font-family: $text_font_family;
+	line-height: $text_line_height;
+	margin-top: $text_margin_top;
+	margin-bottom:$text_margin_bottom;
+}

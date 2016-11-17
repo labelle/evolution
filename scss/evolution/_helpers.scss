@@ -1,0 +1,187 @@
+// /* Text Utilities */
+
+// // Style
+// #{$evo}-style-bold       { font-weight: bold; }
+// #{$evo}-style-caps       { font-style: italic; }
+// #{$evo}-style-italic     { text-transform: uppercase; }
+// #{$evo}-style-capital     { @include style(capital); }
+// #{$evo}-style-strike      { @include style(strike); }
+// #{$evo}-style-underline   { @include style(underline); }
+
+// // Tracking
+// #{$evo}-tracking-tightest  { letter-spacing: -.1em; }
+// #{$evo}-tracking-tighter   { letter-spacing: -.065em; }
+// #{$evo}-tracking-tight     { letter-spacing: -.035em; }
+// #{$evo}-tracking-loose     { letter-spacing: .035em; }
+// #{$evo}-tracking-looser    { letter-spacing: .065em; }
+// #{$evo}-tracking-loosest   { letter-spacing: .1em; }
+
+// // Leading
+// #{$evo}-leading-tightest  { line-height: .75; }
+// #{$evo}-leading-tighter   { line-height: .85; }
+// #{$evo}-leading-tight     { line-height: .95; }
+// #{$evo}-leading-loose     { line-height: 1; }
+// #{$evo}-leading-looser    { line-height: 1.15; }
+// #{$evo}-leading-loosest   { line-height: 1.25; }
+
+
+// Mixins
+
+// Fonts
+// Font stacks referenced from http://www.cssfontstack.com/
+// @mixin font($font) {
+//   @if $font == null  { font-family: initial; }
+//   @else if $font == arial    { font-family: 'Helvetica Neue', Helvetica, sans-serif; }
+//   @else if $font == arial-black     { font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; }
+//   @else if $font == georgia       { font-family: Georgia, Times, 'Times New Roman', serif; }
+//   @else if $font == times-new-roman       { font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif; }
+//   @else if $font == courier-new      { font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; }
+//   @else if $font == monaco     { font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; }
+//   @else if $font == helvetica-neue     { font-family: 'helvetica neue',helvetica, arial, sans-serif; }
+//   @else if $font == helvetica-neue-thin     { font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; }
+//   @else if {
+//     // Throw Warnings
+//   }
+//   @else { @warn "Font mixin supports: null, arial, arial-black, georgia, times-new-roman, courier-new, monaco, helvetica-neue, helvetica-neue-thin;" }
+// }
+
+// Leading
+@mixin leading($leading)               {
+  @if $leading == null        { line-height: initial; }
+  @else if $leading == 0      { line-height: 0em; }
+  @else if $leading == 1      { line-height: .125em; }
+  @else if $leading == 2      { line-height: .25em; }
+  @else if $leading == 3      { line-height: .375em; }
+  @else if $leading == 4      { line-height: .5em; }
+  @else if $leading == 5      { line-height: .625em; }
+  @else if $leading == 6      { line-height: .75em; }
+  @else if $leading == 7      { line-height: .875em; }
+  @else if $leading == 8      { line-height: 1em; }
+  @else if $leading == 9      { line-height: 1.125em; }
+  @else if $leading == 10     { line-height: 1.25em; }
+  @else if $leading == 11     { line-height: 1.375em; }
+  @else if $leading == 12     { line-height: 1.5em; }  // default
+  @else if $leading == 13     { line-height: 1.625em; }
+  @else if $leading == 14     { line-height: 1.75em; }
+  @else if $leading == 15     { line-height: 1.875em; }
+  @else if $leading == 16     { line-height: 2em; }
+  @else if $leading == 17     { line-height: 2.125em; }
+  @else if $leading == 18     { line-height: 2.25em; }
+  @else if $leading == 19     { line-height: 2.325em; }
+  @else if $leading == 20     { line-height: 2.5em; }
+  @else if $leading == 21     { line-height: 2.625em; }
+  @else if $leading == 22     { line-height: 2.75em; }
+  @else if $leading == 23     { line-height: 2.875em; }
+  @else if $leading == 24     { line-height: 3em; }
+  // Throw Warnings
+  @else { @warn "Leading mixin supports: null, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24;" }
+}
+
+// style
+@mixin style($style) {
+  @if $style == null  { 
+  line-height: initial;
+  font-weight: initial;
+  font-style: initial;
+  text-transform: initial;
+  }
+  @else if $style == bold   { font-weight: bold; }
+  @else if $style == italic      { font-style: italic; }
+  @else if $style == caps        { text-transform: uppercase; }
+  @else if $style == capital     { text-transform: capitalize; }
+  @else if $style == strike      { text-transform: line-through; }
+  @else if $style == underline   { text-transform: underline; }
+  // Throw Warnings
+  @else { @warn "Style mixin supports: null, bold, italic, caps, capital, strike, underline;" }
+}
+
+// Tracking
+@mixin tracking($tracking) {
+  @if $tracking == null  { letter-spacing: initial; }
+  @else if $tracking == tightest    { letter-spacing: -.1em; }
+  @else if $tracking == tighter     { letter-spacing: -.065em; }
+  @else if $tracking == tight       { letter-spacing: -.035em; }
+  @else if $tracking == loose       { letter-spacing: .035em; }
+  @else if $tracking == looser      { letter-spacing: .065em; }
+  @else if $tracking == loosest     { letter-spacing: .1em; }
+    // Throw Warnings
+  @else { @warn "Tracking mixin supports: null, tightest, tighter, tight, loose, looser, loosest;" }
+}
+
+// Measure
+@mixin measure($measure) {
+  @if $measure == null  { max-width: auto; }
+  @else if $measure == widest   { max-width: 50em; }
+  @else if $measure == wider    { max-width: 40em; }
+  @else if $measure == wide     { max-width: 30em; }
+  @else if $measure == tight    { max-width: 25em; }
+  @else if $measure == tighter  { max-width: 20em; }
+  @else if $measure == tightest { max-width: 15em; }
+  // Throw Warnings
+  @else { @warn "Measure mixin supports: null, widest, wider, wide, tight, tighter, tightest;"; }
+}
+
+
+/* Text Utilities */
+
+// Style
+#{$evo}-style-bold        { @include style(bold); }
+#{$evo}-style-caps        { @include style(caps); }
+#{$evo}-style-italic      { @include style(italic); }
+#{$evo}-style-capital     { @include style(capital); }
+#{$evo}-style-strike      { @include style(strike); }
+#{$evo}-style-underline   { @include style(underline); }
+
+// Tracking
+#{$evo}-tracking-tightest { @include tracking(tightest); }
+#{$evo}-tracking-tighter  { @include tracking(tighter); }
+#{$evo}-tracking-tight    { @include tracking(tight); }
+#{$evo}-tracking-loose    { @include tracking(loose); }
+#{$evo}-tracking-looser   { @include tracking(looser); }
+#{$evo}-tracking-loosest  { @include tracking(loosest); }
+
+// Leading
+#{$evo}-leading-tightest  { @include leading(1) }
+#{$evo}-leading-tighter   { @include leading(5) }
+#{$evo}-leading-tight     { @include leading(10) }
+#{$evo}-leading-loose     { @include leading(15) }
+#{$evo}-leading-looser    { @include leading(20) }
+#{$evo}-leading-loosest   { @include leading(24) }
+
+
+// Leading
+#{$evo}-leading-0         { @include leading(0) }
+#{$evo}-leading-1         { @include leading(1) }
+#{$evo}-leading-2         { @include leading(2) }
+#{$evo}-leading-3         { @include leading(3) }
+#{$evo}-leading-4         { @include leading(4) }
+#{$evo}-leading-5         { @include leading(5) }
+#{$evo}-leading-6         { @include leading(6) }
+#{$evo}-leading-7         { @include leading(7) }
+#{$evo}-leading-8         { @include leading(8) }
+#{$evo}-leading-9         { @include leading(9) }
+#{$evo}-leading-10        { @include leading(10) }
+#{$evo}-leading-11        { @include leading(11) }
+#{$evo}-leading-12        { @include leading(12) }
+#{$evo}-leading-13        { @include leading(13) }
+#{$evo}-leading-14        { @include leading(14) }
+#{$evo}-leading-15        { @include leading(15) }
+#{$evo}-leading-16        { @include leading(16) }
+#{$evo}-leading-17        { @include leading(17) }
+#{$evo}-leading-18        { @include leading(18) }
+#{$evo}-leading-19        { @include leading(19) }
+#{$evo}-leading-20        { @include leading(20) }
+#{$evo}-leading-21        { @include leading(21) }
+#{$evo}-leading-22        { @include leading(22) }
+#{$evo}-leading-23        { @include leading(23) }
+#{$evo}-leading-24        { @include leading(24) }
+
+
+// Measure
+#{$evo}-measure-widest   { @include measure(widest); }
+#{$evo}-measure-wider    { @include measure(wider); }
+#{$evo}-measure-wide     { @include measure(wide); }
+#{$evo}-measure-tight    { @include measure(tight); }
+#{$evo}-measure-tighter  { @include measure(tighter); }
+#{$evo}-measure-tightest { @include measure(tightest); }
+

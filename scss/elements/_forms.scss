@@ -1,0 +1,4007 @@
+///* ================================================================================ */
+
+///*                         FORMS EVOLUTION ELEMENTS v2.0.1                          */
+
+///* ================================================================================ */
+
+
+
+/* ================================================================================ */
+/* ----------------------------------- FORMS -------------------------------------- */
+/* ================================================================================ */
+
+
+/* FORM 1 */
+
+// #{$evo}-form-1-base {
+//      padding: $form_padding+$form_padding_increment*0.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*3rem;
+// }
+
+
+#{$evo}-form-1 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-1-base;
+    padding: $form_padding+$form_padding_increment*0.5rem;
+    font-size: $form_font_size+$form_font_size_increment*3rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 2 */
+
+// #{$evo}-form-2-base {
+//      padding: $form_padding+$form_padding_increment*1rem;
+//      font-size: $form_font_size+$form_font_size_increment*4rem;
+// }
+
+#{$evo}-form-2 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  // input[type="radio"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-2-base;
+    padding: $form_padding+$form_padding_increment*1rem;
+    font-size: $form_font_size+$form_font_size_increment*4rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 3 */
+
+// #{$evo}-form-3-base {
+//      padding: $form_padding+$form_padding_increment*1.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*5rem;
+// }
+
+#{$evo}-form-3 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-3-base;
+    padding: $form_padding+$form_padding_increment*1.5rem;
+    font-size: $form_font_size+$form_font_size_increment*5rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 4 */
+
+// #{$evo}-form-4-base {
+//      padding: $form_padding+$form_padding_increment*2rem;
+//      font-size: $form_font_size+$form_font_size_increment*6rem;
+// }
+
+#{$evo}-form-4 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-4-base;
+    padding: $form_padding+$form_padding_increment*2rem;
+    font-size: $form_font_size+$form_font_size_increment*6rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 5 */
+
+// #{$evo}-form-5-base {
+//      padding: $form_padding+$form_padding_increment*2.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*7rem;
+// }
+
+#{$evo}-form-5 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-5-base;
+    padding: $form_padding+$form_padding_increment*2.5rem;
+    font-size: $form_font_size+$form_font_size_increment*7rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 6 */
+
+// #{$evo}-form-6-base {
+//      padding: $form_padding+$form_padding_increment*3rem;
+//      font-size: $form_font_size+$form_font_size_increment*8rem;
+// }
+
+#{$evo}-form-6 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-6-base;
+    padding: $form_padding+$form_padding_increment*3rem;
+    font-size: $form_font_size+$form_font_size_increment*8rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 7 */
+
+// #{$evo}-form-7-base {
+//      padding: $form_padding+$form_padding_increment*3.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*9rem;
+// }
+
+#{$evo}-form-7 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-7-base;
+    padding: $form_padding+$form_padding_increment*3.5rem;
+    font-size: $form_font_size+$form_font_size_increment*9rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 8 */
+
+// #{$evo}-form-8-base {
+//      padding: $form_padding+$form_padding_increment*4rem;
+//      font-size: $form_font_size+$form_font_size_increment*10rem;
+// }
+
+#{$evo}-form-8 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-8-base;
+    padding: $form_padding+$form_padding_increment*4rem;
+    font-size: $form_font_size+$form_font_size_increment*10rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 9 */
+
+// #{$evo}-form-9-base {
+//      padding: $form_padding+$form_padding_increment*4.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*11rem;
+// }
+
+#{$evo}-form-9 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-9-base;
+    padding: $form_padding+$form_padding_increment*4.5rem;
+    font-size: $form_font_size+$form_font_size_increment*11rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 10 */
+
+// #{$evo}-form-10-base {
+//      padding: $form_padding+$form_padding_increment*5rem;
+//      font-size: $form_font_size+$form_font_size_increment*12rem;
+// }
+
+#{$evo}-form-10 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-10-base;
+    padding: $form_padding+$form_padding_increment*5rem;
+    font-size: $form_font_size+$form_font_size_increment*12rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 11 */
+
+// #{$evo}-form-11-base {
+//      padding: $form_padding+$form_padding_increment*5.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*13rem;
+// }
+
+#{$evo}-form-11 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-11-base;
+    padding: $form_padding+$form_padding_increment*5.5rem;
+    font-size: $form_font_size+$form_font_size_increment*13rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 12 */
+
+// #{$evo}-form-12-base {
+//      padding: $form_padding+$form_padding_increment*6rem;
+//      font-size: $form_font_size+$form_font_size_increment*14rem;
+// }
+
+#{$evo}-form-12 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-12-base;
+    padding: $form_padding+$form_padding_increment*6rem;
+    font-size: $form_font_size+$form_font_size_increment*14rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 13 */
+
+// #{$evo}-form-13-base {
+//      padding: $form_padding+$form_padding_increment*6.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*15rem;
+// }
+
+#{$evo}-form-13 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-13-base;
+    padding: $form_padding+$form_padding_increment*6.5rem;
+    font-size: $form_font_size+$form_font_size_increment*15rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 14 */
+
+// #{$evo}-form-14-base {
+//      padding: $form_padding+$form_padding_increment*7rem;
+//      font-size: $form_font_size+$form_font_size_increment*16rem;
+// }
+
+#{$evo}-form-14 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-14-base;
+    padding: $form_padding+$form_padding_increment*7rem;
+    font-size: $form_font_size+$form_font_size_increment*16rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 15 */
+
+// #{$evo}-form-15-base {
+//      padding: $form_padding+$form_padding_increment*7.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*17rem;
+// }
+
+#{$evo}-form-15 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-15-base;
+    padding: $form_padding+$form_padding_increment*7.5rem;
+    font-size: $form_font_size+$form_font_size_increment*17rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 16 */
+
+// #{$evo}-form-16-base {
+//      padding: $form_padding+$form_padding_increment*8rem;
+//      font-size: $form_font_size+$form_font_size_increment*18rem;
+// }
+
+#{$evo}-form-16 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-16-base;
+    padding: $form_padding+$form_padding_increment*8rem;
+    font-size: $form_font_size+$form_font_size_increment*18rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 17 */
+
+// #{$evo}-form-17-base {
+//      padding: $form_padding+$form_padding_increment*8.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*19rem;
+// }
+
+#{$evo}-form-17 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-17-base;
+    padding: $form_padding+$form_padding_increment*8.5rem;
+    font-size: $form_font_size+$form_font_size_increment*19rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 18 */
+
+// #{$evo}-form-18-base {
+//      padding: $form_padding+$form_padding_increment*9rem;
+//      font-size: $form_font_size+$form_font_size_increment*20rem;
+// }
+
+#{$evo}-form-18 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-18-base;
+    padding: $form_padding+$form_padding_increment*9rem;
+    font-size: $form_font_size+$form_font_size_increment*20rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 19 */
+
+#{$evo}-form-19-base {
+     padding: $form_padding+$form_padding_increment*9.5rem;
+     font-size: $form_font_size+$form_font_size_increment*21rem;
+}
+
+#{$evo}-form-19 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-19-base;
+    padding: $form_padding+$form_padding_increment*9.5rem;
+    font-size: $form_font_size+$form_font_size_increment*21rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 20 */
+
+// #{$evo}-form-20-base {
+//      padding: $form_padding+$form_padding_increment*10rem;
+//      font-size: $form_font_size+$form_font_size_increment*22rem;
+// }
+
+#{$evo}-form-20 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-20-base;
+    padding: $form_padding+$form_padding_increment*10rem;
+    font-size: $form_font_size+$form_font_size_increment*22rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 21 */
+
+// #{$evo}-form-21-base {
+//      padding: $form_padding+$form_padding_increment*10.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*23rem;
+// }
+
+#{$evo}-form-21 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-21-base;
+    padding: $form_padding+$form_padding_increment*10.5rem;
+    font-size: $form_font_size+$form_font_size_increment*23rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 22 */
+
+// #{$evo}-form-22-base {
+//      padding: $form_padding+$form_padding_increment*11rem;
+//      font-size: $form_font_size+$form_font_size_increment*24rem;
+// }
+
+#{$evo}-form-22 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-22-base;
+    padding: $form_padding+$form_padding_increment*11rem;
+    font-size: $form_font_size+$form_font_size_increment*24rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 23 */
+
+// #{$evo}-form-23-base {
+//      padding: $form_padding+$form_padding_increment*11.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*25rem;
+// }
+
+#{$evo}-form-23 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-23-base;
+    padding: $form_padding+$form_padding_increment*11.5rem;
+    font-size: $form_font_size+$form_font_size_increment*25rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 24 */
+
+// #{$evo}-form-24-base {
+//      padding: $form_padding+$form_padding_increment*12rem;
+//      font-size: $form_font_size+$form_font_size_increment*26rem;
+// }
+
+#{$evo}-form-24 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-24-base;
+    padding: $form_padding+$form_padding_increment*12rem;
+    font-size: $form_font_size+$form_font_size_increment*26rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 25 */
+
+// #{$evo}-form-25-base {
+//      padding: $form_padding+$form_padding_increment*12.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*27rem;
+// }
+
+#{$evo}-form-25 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-25-base;
+    padding: $form_padding+$form_padding_increment*12.5rem;
+    font-size: $form_font_size+$form_font_size_increment*27rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 26 */
+
+// #{$evo}-form-26-base {
+//      padding: $form_padding+$form_padding_increment*13rem;
+//      font-size: $form_font_size+$form_font_size_increment*28rem;
+// }
+
+#{$evo}-form-26 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-26-base;
+    padding: $form_padding+$form_padding_increment*13rem;
+    font-size: $form_font_size+$form_font_size_increment*28rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 27 */
+
+// #{$evo}-form-27-base {
+//      padding: $form_padding+$form_padding_increment*13.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*29rem;
+// }
+
+#{$evo}-form-27 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    padding: $form_padding+$form_padding_increment*13.5rem;
+    font-size: $form_font_size+$form_font_size_increment*29rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 28 */
+
+// #{$evo}-form-28-base {
+//      padding: $form_padding+$form_padding_increment*14rem;
+//      font-size: $form_font_size+$form_font_size_increment*30rem;
+// }
+
+#{$evo}-form-28 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-28-base;
+    padding: $form_padding+$form_padding_increment*14rem;
+    font-size: $form_font_size+$form_font_size_increment*30rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 29 */
+
+// #{$evo}-form-29-base {
+//      padding: $form_padding+$form_padding_increment*14.5rem;
+//      font-size: $form_font_size+$form_font_size_increment*31rem;
+// }
+
+#{$evo}-form-29 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-29-base;
+    padding: $form_padding+$form_padding_increment*14.5rem;
+    font-size: $form_font_size+$form_font_size_increment*31rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+/* FORM 30 */
+
+// #{$evo}-form-30-base {
+//      padding: $form_padding+$form_padding_increment*15rem;
+//      font-size: $form_font_size+$form_font_size_increment*32rem;
+// }
+
+#{$evo}-form-30 {
+
+  fieldset {
+    border: 1px solid $gray_50_evo;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  // [placeholder]:focus::-webkit-input-placeholder {
+  //   color: transparent;
+  // }
+
+  // input[type='date']:before,
+  // input[type='time']:before {
+  //   content: attr(placeholder)
+  // }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+
+  input[type="file"] {
+    line-height: 5px;
+    height: 100px;
+    padding-top: 100px;
+  }
+
+
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    // @extend #{$evo}-form-30-base;
+    padding: $form_padding+$form_padding_increment*15rem;
+    font-size: $form_font_size+$form_font_size_increment*32rem;
+    border-radius: $form_corners_evo;
+    border: 2px solid $gray_20_evo;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $form_background_color;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+}
+
+
+
+
+
+
+
+
+
+/*********************
+    INPUT BUTTONS
+*********************/
+
+
+  #{$evo}-form-input-base {
+
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inputfile + label {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: $white_evo;
+      background-color: black;
+      display: inline-block;
+    }
+
+    .inputfile:focus + label,
+    .inputfile + label:hover {
+        background-color: grey;
+    }
+
+    .inputfile:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label {
+      cursor: pointer; /* "hand" cursor */
+    }
+
+  }
+
+
+    /* INPUT 1 */
+
+  #{$evo}-form-20-input {
+ 
+     @extend #{$evo}-form-input-base;  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*********************
+    RADIO BUTTONS
+*********************/
+
+
+  #{$evo}-form-radio-base {
+
+    input[type=radio] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin-right: 15px;
+      font-weight: 100;
+    }
+
+    label:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      border-radius: 100%;
+      border: 1px solid $gray_40_evo;
+    }
+
+    input[type=radio]:checked + label:before {
+      content: "\2022";
+      color: $gray_40_evo;
+    }
+
+  }
+
+
+    /* RADIO 1 */
+
+  #{$evo}-form-1-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 12px;
+    font-size: 6px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    }
+
+    label:before {
+      width: 8px;
+      height: 8px;
+      margin-right: 10px;
+      bottom: 1px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 11px;
+        text-align: center;
+        line-height: 7px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 2 */
+
+  #{$evo}-form-2-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 16px;
+    font-size: 8px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    }
+
+    label:before {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      bottom: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 14px;
+        text-align: center;
+        line-height: 9px;
+        padding-right: .8px;
+    }
+
+  
+  }
+
+
+  /* RADIO 3 */
+
+  #{$evo}-form-3-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 16px;
+    font-size: 9px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    }
+
+    label:before {
+      width: 11px;
+      height: 11px;
+      margin-right: 10px;
+      bottom: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 15px;
+        text-align: center;
+        line-height: 10px;
+    }
+
+  
+  }
+
+
+  /* RADIO 4 */
+
+  #{$evo}-form-4-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 18px;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    }
+
+    label:before {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      bottom: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 16px;
+        text-align: center;
+        line-height: 13px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 5 */
+
+  #{$evo}-form-5-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 18px;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    }
+
+    label:before {
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+      bottom: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 18px;
+        text-align: center;
+        line-height: 11.9px;
+        padding-right: .8px;
+    }
+
+  
+  }
+
+
+  /* RADIO 6 */
+
+  #{$evo}-form-6-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 20px;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    }
+
+    label:before {
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      bottom: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 20px;
+        text-align: center;
+        line-height: 13px;
+    }
+
+  
+  }
+
+
+  /* RADIO 7 */
+
+  #{$evo}-form-7-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 20px;
+    font-size: 15px;
+    margin-top: 2px;
+    }
+
+    label:before {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      bottom: 4px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 21px;
+        text-align: center;
+        line-height: 15px;
+        padding-left: .4px;
+    }
+
+  
+  }
+
+
+  /* RADIO 8 */
+
+  #{$evo}-form-8-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 20px;
+    font-size: 16px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      bottom: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 24px;
+        text-align: center;
+        line-height: 16px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+  /* RADIO 9 */
+
+  #{$evo}-form-9-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 23px;
+    font-size: 18px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      bottom: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 26px;
+        text-align: center;
+        line-height: 16px;
+    }
+
+  
+  }
+
+  /* RADIO 10 */
+
+  #{$evo}-form-10-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 25px;
+    font-size: 19px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      bottom: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 27px;
+        text-align: center;
+        line-height: 17px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+   /* RADIO 11 */
+
+  #{$evo}-form-11-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 25px;
+    font-size: 21px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 19px;
+      height: 19px;
+      margin-right: 10px;
+      bottom: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 26px;
+        text-align: center;
+        line-height: 18px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+  /* RADIO 12 */
+
+  #{$evo}-form-12-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 27px;
+    font-size: 22px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      bottom: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 26px;
+        text-align: center;
+        line-height: 19px;
+    }
+
+  
+  }
+
+  /* RADIO 13 */
+
+  #{$evo}-form-13-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 28px;
+    font-size: 24px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 21px;
+      height: 21px;
+      margin-right: 10px;
+      bottom: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 29px;
+        text-align: center;
+        line-height: 21px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+  /* RADIO 14 */
+
+  #{$evo}-form-14-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 28px;
+    font-size: 25px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      bottom: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 30px;
+        text-align: center;
+        line-height: 22px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 30 */
+
+  #{$evo}-form-30-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 50px;
+    font-size: 48px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      bottom: 17px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 54px;
+        text-align: center;
+        line-height: 38px;
+    }
+
+  
+  }
+
+
+  /* RADIO 29 */
+
+  #{$evo}-form-29-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 49px;
+    font-size: 47px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 37px;
+      height: 37px;
+      margin-right: 10px;
+      bottom: 17px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 52px;
+        text-align: center;
+        line-height: 36px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 28 */
+
+  #{$evo}-form-28-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 49px;
+    font-size: 45px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      bottom: 17px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 52px;
+        text-align: center;
+        line-height: 36px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 27 */
+
+  #{$evo}-form-27-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 47px;
+    font-size: 44px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+      bottom: 16px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 50px;
+        text-align: center;
+        line-height: 34px;
+    }
+
+  
+  }
+
+
+  /* RADIO 26 */
+
+  #{$evo}-form-26-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 45px;
+    font-size: 42px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 34px;
+      height: 34px;
+      margin-right: 10px;
+      bottom: 15px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 49px;
+        text-align: center;
+        line-height: 34px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 25 */
+
+  #{$evo}-form-25-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 45px;
+    font-size: 41px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 33px;
+      height: 33px;
+      margin-right: 10px;
+      bottom: 14px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 48px;
+        text-align: center;
+        line-height: 34px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 24 */
+
+  #{$evo}-form-24-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 44px;
+    font-size: 39px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      bottom: 13px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 45px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+  
+  }
+
+
+  /* RADIO 23 */
+
+  #{$evo}-form-23-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 40px;
+    font-size: 38px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 31px;
+      height: 31px;
+      margin-right: 10px;
+      bottom: 14px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 43px;
+        text-align: center;
+        line-height: 32px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 22 */
+
+  #{$evo}-form-22-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 40px;
+    font-size: 36px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      bottom: 13px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 42px;
+        text-align: center;
+        line-height: 30px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 21 */
+
+  #{$evo}-form-21-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 39px;
+    font-size: 35px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 29px;
+      height: 29px;
+      margin-right: 10px;
+      bottom: 12px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 42px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+  
+  }
+
+
+  /* RADIO 20 */
+
+  #{$evo}-form-20-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 35px;
+    font-size: 34px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 27px;
+      height: 27px;
+      margin-right: 10px;
+      bottom: 12px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 40px;
+        text-align: center;
+        line-height: 26px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 19 */
+
+  #{$evo}-form-19-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 35px;
+    font-size: 32px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+      bottom: 11px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 38px;
+        text-align: center;
+        line-height: 26px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* RADIO 18 */
+
+  #{$evo}-form-18-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 33px;
+    font-size: 29px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      bottom: 9px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 36px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+  
+  }
+
+
+   /* RADIO 17 */
+
+  #{$evo}-form-17-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 32px;
+    font-size: 29px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      bottom: 10px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 33px;
+        text-align: center;
+        line-height: 25px;
+        padding-right: .5px;
+    }
+
+  
+  }
+
+
+   /* RADIO 16 */
+
+  #{$evo}-form-16-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 32px;
+    font-size: 28px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      bottom: 9px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 33px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+  
+  }
+
+
+  /* RADIO 15 */
+
+  #{$evo}-form-15-radio {
+ 
+    @extend #{$evo}-form-radio-base;  
+
+    label {
+    padding-left: 30px;
+    font-size: 26px;
+    margin-top: 4px;
+    }
+
+    label:before {
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+      bottom: 8px;
+      background-color: $form_background_color;
+    }
+
+    input[type=radio]:checked + label:before {
+        font-size: 33px;
+        text-align: center;
+        line-height: 23px;
+    }
+
+  
+  }
+
+
+
+
+
+/*********************
+      CHECKBOX 
+*********************/
+
+
+  #{$evo}-form-checkbox-base {
+
+
+    input[type=checkbox] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin-right: 15px;
+      font-weight: 100;
+    }
+
+    label:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      border: 1px solid $gray_40_evo;
+    }
+
+    input[type=checkbox]:checked + label:before {
+      content: "\2713";
+      color: $gray_40_evo;
+      text-align: center;
+    }
+
+  }
+
+
+    /* CHECKBOX 1 */
+
+  #{$evo}-form-1-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 11px;
+    font-size: 6px;
+    }
+
+    label:before {
+      width: 7px;
+      height: 7px;
+      margin-right: 10px;
+      bottom: 1px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 6px;
+        text-align: center;
+        line-height: 5px;
+        padding-left: .8px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 2 */
+
+  #{$evo}-form-2-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 12px;
+    font-size: 8px;
+    }
+
+    label:before {
+      width: 9px;
+      height: 9px;
+      margin-right: 10px;
+      bottom: 3px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 7px;
+        text-align: center;
+        line-height: 8px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 3 */
+
+  #{$evo}-form-3-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 12px;
+    font-size: 9px;
+    }
+
+    label:before {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      bottom: 2px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 9px;
+        text-align: center;
+        line-height: 9px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 4 */
+
+  #{$evo}-form-4-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 16px;
+    font-size: 11px;
+    }
+
+    label:before {
+      width: 11px;
+      height: 11px;
+      margin-right: 10px;
+      bottom: 3px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 10px;
+        text-align: center;
+        line-height: 9px;
+        padding-left: .9px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 5 */
+
+  #{$evo}-form-5-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 16px;
+    font-size: 12px;
+    }
+
+    label:before {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      bottom: 3px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 11px;
+        text-align: center;
+        line-height: 11px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 6 */
+
+  #{$evo}-form-6-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 17px;
+    font-size: 13px;
+    }
+
+    label:before {
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+      bottom: 3px;
+      border-radius: 2px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 13px;
+        text-align: center;
+        line-height: 11px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 7 */
+
+  #{$evo}-form-7-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 20px;
+    font-size: 15px;
+    }
+
+    label:before {
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      bottom: 4px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 14px;
+        text-align: center;
+        line-height: 12px;
+        padding-left: .9px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 8 */
+
+  #{$evo}-form-8-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 20px;
+    font-size: 16px;
+    }
+
+    label:before {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      bottom: 5px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 15px;
+        text-align: center;
+        line-height: 14px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 9 */
+
+  #{$evo}-form-9-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 22px;
+    font-size: 18px;
+    }
+
+    label:before {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      bottom: 5px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 17px;
+        text-align: center;
+        line-height: 15px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 10 */
+
+  #{$evo}-form-10-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 24px;
+    font-size: 19px;
+    }
+
+    label:before {
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      bottom: 5px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 18px;
+        text-align: center;
+        line-height: 15px;
+        padding-left: 1.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 11 */
+
+  #{$evo}-form-11-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 22px;
+    font-size: 21px;
+    }
+
+    label:before {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      bottom: 7px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 19px;
+        text-align: center;
+        line-height: 16px;
+        padding-left: .5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 12 */
+
+  #{$evo}-form-12-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 25px;
+    font-size: 22px;
+    }
+
+    label:before {
+      width: 19px;
+      height: 19px;
+      margin-right: 10px;
+      bottom: 7px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 20px;
+        text-align: center;
+        line-height: 19px;
+        padding-left: 1px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 13 */
+
+  #{$evo}-form-13-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 28px;
+    font-size: 24px;
+    }
+
+    label:before {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      bottom: 8px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 21px;
+        text-align: center;
+        line-height: 20px;
+        padding-left: 1.5px;
+        border-radius: 3px !important;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 14 */
+
+  #{$evo}-form-14-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 28px;
+    font-size: 25px;
+    }
+
+    label:before {
+      width: 21px;
+      height: 21px;
+      margin-right: 10px;
+      bottom: 8px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 23px;
+        text-align: center;
+        line-height: 21px;
+        padding-left: 1px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 15 */
+
+  #{$evo}-form-15-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 30px;
+    font-size: 26px;
+    }
+
+    label:before {
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      bottom: 9px;
+      border-radius: 3px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 24px;
+        text-align: center;
+        line-height: 22px;
+        padding-left: 1.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 16 */
+
+  #{$evo}-form-16-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 32px;
+    font-size: 28px;
+    }
+
+    label:before {
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+      bottom: 9px;
+      border-radius: 4px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 24px;
+        text-align: center;
+        line-height: 22px;
+        padding-left: 2px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 17 */
+
+  #{$evo}-form-17-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 32px;
+    font-size: 29px;
+    }
+
+    label:before {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      bottom: 10px;
+      border-radius: 4px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 26px;
+        text-align: center;
+        line-height: 24px;
+        padding-left: 1.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 18 */
+
+  #{$evo}-form-18-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 33px;
+    font-size: 31px;
+    }
+
+    label:before {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      bottom: 11px;
+      border-radius: 4px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 27px;
+        text-align: center;
+        line-height: 23px;
+        padding-left: 1.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 19 */
+
+  #{$evo}-form-19-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 33px;
+    font-size: 32px;
+    }
+
+    label:before {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      bottom: 12px;
+      border-radius: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 28px;
+        text-align: center;
+        line-height: 25px;
+        padding-left: 2px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 20 */
+
+  #{$evo}-form-20-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 35px;
+    font-size: 34px;
+    }
+
+    label:before {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+      bottom: 13px;
+      border-radius: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 29px;
+        text-align: center;
+        line-height: 27px;
+        padding-left: 1.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 21 */
+
+  #{$evo}-form-21-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 37px;
+    font-size: 35px;
+    }
+
+    label:before {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      bottom: 12px;
+      border-radius: 5px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 31px;
+        text-align: center;
+        line-height: 26px;
+        padding-left: 2px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 22 */
+
+  #{$evo}-form-22-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 40px;
+    font-size: 36px;
+    }
+
+    label:before {
+      width: 29px;
+      height: 29px;
+      margin-right: 10px;
+      bottom: 13px;
+      border-radius: 6px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 32px;
+        text-align: center;
+        line-height: 27px;
+        padding-left: 3px;
+    }
+
+  
+  }
+
+
+   /* CHECKBOX 23 */
+
+  #{$evo}-form-23-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 40px;
+    font-size: 38px;
+    }
+
+    label:before {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      bottom: 14px;
+      border-radius: 6px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 33px;
+        text-align: center;
+        line-height: 30px;
+        padding-left: 2px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 24 */
+
+  #{$evo}-form-24-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 42px;
+    font-size: 39px;
+    }
+
+    label:before {
+      width: 31px;
+      height: 31px;
+      margin-right: 10px;
+      bottom: 15px;
+      border-radius: 6px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 35px;
+        text-align: center;
+        line-height: 31px;
+        padding-left: 2px;
+    }
+
+  
+  }
+
+
+   /* CHECKBOX 25 */
+
+  #{$evo}-form-25-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 44px;
+    font-size: 41px;
+    }
+
+    label:before {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      bottom: 15px;
+      border-radius: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 36px;
+        text-align: center;
+        line-height: 31px;
+        padding-left: 2.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 26 */
+
+  #{$evo}-form-26-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 42px;
+    font-size: 42px;
+    }
+
+    label:before {
+      width: 33px;
+      height: 33px;
+      margin-right: 10px;
+      bottom: 16px;
+      border-radius: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 37px;
+        text-align: center;
+        line-height: 33px;
+        padding-left: 2.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 27 */
+
+  #{$evo}-form-27-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 42px;
+    font-size: 44px;
+    }
+
+    label:before {
+      width: 34px;
+      height: 34px;
+      margin-right: 10px;
+      bottom: 16px;
+      border-radius: 7px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 38px;
+        text-align: center;
+        line-height: 34px;
+        padding-left: 2.5px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 28 */
+
+  #{$evo}-form-28-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 47px;
+    font-size: 45px;
+    }
+
+    label:before {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+      bottom: 17px;
+      border-radius: 8px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 39px;
+        text-align: center;
+        line-height: 35px;
+        padding-left: 3px;
+    }
+
+  
+  }
+
+
+   /* CHECKBOX 29 */
+
+  #{$evo}-form-29-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 47px;
+    font-size: 47px;
+    }
+
+    label:before {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      bottom: 17px;
+      border-radius: 8px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 40px;
+        text-align: center;
+        line-height: 36px;
+        padding-left: 3px;
+    }
+
+  
+  }
+
+
+  /* CHECKBOX 30 */
+
+  #{$evo}-form-30-checkbox {
+ 
+    @extend #{$evo}-form-checkbox-base;  
+
+    label {
+    padding-left: 48px;
+    font-size: 48px;
+    }
+
+    label:before {
+      width: 37px;
+      height: 37px;
+      margin-right: 10px;
+      bottom: 19px;
+      border-radius: 8px;
+      background-color: $form_background_color;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        font-size: 42px;
+        text-align: center;
+        line-height: 38px;
+        padding-left: 3px;
+    }
+
+  
+  }
+
+
+// This class names below are targeting specific form type that we want to use.
+// For example if we didn't have #{$evo}-form-1-text as shown below, we wouldn't be 
+// able to use it in HTML as we are using it now. So #{$evo}-form-1-text wouldn' be valid.
+
+#{$evo}-form-1-text,
+#{$evo}-form-1-dropdown,
+#{$evo}-form-1-date,
+#{$evo}-form-1-input,
+#{$evo}-form-1-number,
+#{$evo}-form-1-time       { @extend #{$evo}-form-1; }
+
+#{$evo}-form-2-text,
+#{$evo}-form-2-dropdown,
+#{$evo}-form-2-date,
+#{$evo}-form-2-input,
+#{$evo}-form-2-number,
+#{$evo}-form-2-time       { @extend #{$evo}-form-2; }
+
+#{$evo}-form-3-text,
+#{$evo}-form-3-dropdown,
+#{$evo}-form-3-date,
+#{$evo}-form-3-input,
+#{$evo}-form-3-number,
+#{$evo}-form-3-time       { @extend #{$evo}-form-3; }
+
+#{$evo}-form-4-text,
+#{$evo}-form-4-dropdown,
+#{$evo}-form-4-date,
+#{$evo}-form-4-input,
+#{$evo}-form-4-number,
+#{$evo}-form-4-time       { @extend #{$evo}-form-4; }
+
+#{$evo}-form-5-text,
+#{$evo}-form-5-dropdown,
+#{$evo}-form-5-date,
+#{$evo}-form-5-input,
+#{$evo}-form-5-number,
+#{$evo}-form-5-time       { @extend #{$evo}-form-5; }
+
+#{$evo}-form-6-text,
+#{$evo}-form-6-dropdown,
+#{$evo}-form-6-date,
+#{$evo}-form-6-input,
+#{$evo}-form-6-number,
+#{$evo}-form-6-time       { @extend #{$evo}-form-6; }
+
+#{$evo}-form-7-text,
+#{$evo}-form-7-dropdown,
+#{$evo}-form-7-date,
+#{$evo}-form-7-input,
+#{$evo}-form-7-number,
+#{$evo}-form-7-time       { @extend #{$evo}-form-7; }
+
+#{$evo}-form-8-text,
+#{$evo}-form-8-dropdown,
+#{$evo}-form-8-date,
+#{$evo}-form-8-input,
+#{$evo}-form-8-number,
+#{$evo}-form-8-time       { @extend #{$evo}-form-8; }
+
+#{$evo}-form-9-text,
+#{$evo}-form-9-dropdown,
+#{$evo}-form-9-date,
+#{$evo}-form-9-input,
+#{$evo}-form-9-number,
+#{$evo}-form-9-time       { @extend #{$evo}-form-9; }
+
+#{$evo}-form-10-text,
+#{$evo}-form-10-dropdown,
+#{$evo}-form-10-date,
+#{$evo}-form-10-input,
+#{$evo}-form-10-number,
+#{$evo}-form-10-time       { @extend #{$evo}-form-10; }
+
+
+#{$evo}-form-11-text,
+#{$evo}-form-11-dropdown,
+#{$evo}-form-11-date,
+#{$evo}-form-11-input,
+#{$evo}-form-11-number,
+#{$evo}-form-11-time       { @extend #{$evo}-form-11; }
+
+#{$evo}-form-12-text,
+#{$evo}-form-12-dropdown,
+#{$evo}-form-12-date,
+#{$evo}-form-12-input,
+#{$evo}-form-12-number,
+#{$evo}-form-12-time       { @extend #{$evo}-form-12; }
+
+#{$evo}-form-13-text,
+#{$evo}-form-13-dropdown,
+#{$evo}-form-13-date,
+#{$evo}-form-13-input,
+#{$evo}-form-13-number,
+#{$evo}-form-13-time       { @extend #{$evo}-form-13; }
+
+#{$evo}-form-14-text,
+#{$evo}-form-14-dropdown,
+#{$evo}-form-14-date,
+#{$evo}-form-14-input,
+#{$evo}-form-14-number,
+#{$evo}-form-14-time       { @extend #{$evo}-form-14; }
+
+#{$evo}-form-15-text,
+#{$evo}-form-15-dropdown,
+#{$evo}-form-15-date,
+#{$evo}-form-15-input,
+#{$evo}-form-15-number,
+#{$evo}-form-15-time       { @extend #{$evo}-form-15; }
+
+#{$evo}-form-16-text,
+#{$evo}-form-16-dropdown,
+#{$evo}-form-16-date,
+#{$evo}-form-16-input,
+#{$evo}-form-16-number,
+#{$evo}-form-16-time       { @extend #{$evo}-form-16; }
+
+#{$evo}-form-17-text,
+#{$evo}-form-17-dropdown,
+#{$evo}-form-17-date,
+#{$evo}-form-17-input,
+#{$evo}-form-17-number,
+#{$evo}-form-17-time       { @extend #{$evo}-form-17; }
+
+#{$evo}-form-18-text,
+#{$evo}-form-18-dropdown,
+#{$evo}-form-18-date,
+#{$evo}-form-18-input,
+#{$evo}-form-18-number,
+#{$evo}-form-18-time       { @extend #{$evo}-form-18; }
+
+#{$evo}-form-19-text,
+#{$evo}-form-19-dropdown,
+#{$evo}-form-19-date,
+#{$evo}-form-19-input,
+#{$evo}-form-19-number,
+#{$evo}-form-19-time       { @extend #{$evo}-form-19; }
+
+#{$evo}-form-20-text,
+#{$evo}-form-20-dropdown,
+#{$evo}-form-20-date,
+#{$evo}-form-20-input,
+#{$evo}-form-20-number,
+#{$evo}-form-20-time       { @extend #{$evo}-form-20; }
+
+#{$evo}-form-21-text,
+#{$evo}-form-21-dropdown,
+#{$evo}-form-21-date,
+#{$evo}-form-21-input,
+#{$evo}-form-21-number,
+#{$evo}-form-21-time       { @extend #{$evo}-form-21; }
+
+#{$evo}-form-22-text,
+#{$evo}-form-22-dropdown,
+#{$evo}-form-22-date,
+#{$evo}-form-22-input,
+#{$evo}-form-22-number,
+#{$evo}-form-22-time       { @extend #{$evo}-form-22; }
+
+#{$evo}-form-23-text,
+#{$evo}-form-23-dropdown,
+#{$evo}-form-23-date,
+#{$evo}-form-23-input,
+#{$evo}-form-23-number,
+#{$evo}-form-23-time       { @extend #{$evo}-form-23; }
+
+#{$evo}-form-24-text,
+#{$evo}-form-24-dropdown,
+#{$evo}-form-24-date,
+#{$evo}-form-24-input,
+#{$evo}-form-24-number,
+#{$evo}-form-24-time       { @extend #{$evo}-form-24; }
+
+#{$evo}-form-25-text,
+#{$evo}-form-25-dropdown,
+#{$evo}-form-25-date,
+#{$evo}-form-25-input,
+#{$evo}-form-25-number,
+#{$evo}-form-25-time       { @extend #{$evo}-form-25; }
+
+#{$evo}-form-26-text,
+#{$evo}-form-26-dropdown,
+#{$evo}-form-26-date,
+#{$evo}-form-26-input,
+#{$evo}-form-26-number,
+#{$evo}-form-26-time       { @extend #{$evo}-form-26; }
+
+#{$evo}-form-27-text,
+#{$evo}-form-27-dropdown,
+#{$evo}-form-27-date,
+#{$evo}-form-27-input,
+#{$evo}-form-27-number,
+#{$evo}-form-27-time       { @extend #{$evo}-form-27; }
+
+#{$evo}-form-28-text,
+#{$evo}-form-28-dropdown,
+#{$evo}-form-28-date,
+#{$evo}-form-28-input,
+#{$evo}-form-28-number,
+#{$evo}-form-28-time       { @extend #{$evo}-form-28; }
+
+#{$evo}-form-29-text,
+#{$evo}-form-29-dropdown,
+#{$evo}-form-29-date,
+#{$evo}-form-29-input,
+#{$evo}-form-29-number,
+#{$evo}-form-29-time       { @extend #{$evo}-form-29; }
+
+#{$evo}-form-30-text,
+#{$evo}-form-30-dropdown,
+#{$evo}-form-30-date,
+#{$evo}-form-30-input,
+#{$evo}-form-30-number,
+#{$evo}-form-30-time       { @extend #{$evo}-form-30; }

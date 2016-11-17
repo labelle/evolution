@@ -1,0 +1,40 @@
+/* EVO normalize */
+/* Place after normalize and bootstrap but before evolution and styleguide */
+
+html,
+body {
+  font-family: initial;     /* change to sans-serif if you don't want the default serif */
+ /*font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;*/
+ font-weight: initial;
+ color: initial;
+ font-style: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+margin: 0;
+padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+  /*font-weight: initial;*/
+  /*font-family: initial;*/
+  /*color: initial;*/
+}
+
+address {
+  font-style: normal;
+}

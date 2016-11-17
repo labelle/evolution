@@ -1,0 +1,156 @@
+body { font-size:16px;
+}
+
+// Text Settings
+$evo: 								  null; //".evo"
+$text_color:						null; //inherit
+$text_font:							null; //inherit
+$text_font_size:        null; //inherit
+$text_font_weight:			null; //normal
+$text_margin_top:       null; //0rem
+$text_margin_bottom:		null; //.5rem
+$text_line_height:			null; //auto
+$text_base_unit:        null; //.375rem
+$text_generate_max:     100; //30
+
+// Default Text Settings
+$evo: 								".evo" !default;
+$text_color:						inherit !default;
+$text_font:							inherit !default;
+$text_font_size:        inherit !default;
+$text_font_weight:			normal !default;
+$text_margin_top:       0rem !default;
+$text_margin_bottom:		.5rem !default;
+$text_line_height:			auto !default;
+$text_base_unit:        .375rem !default;
+$text_generate_max:     30 !default; // Up to 100
+
+
+/* Text Utilities */
+
+  // Style
+#{$evo}-text-bold       { font-weight: bold; }
+#{$evo}-text-caps       { font-style: italic; }
+#{$evo}-text-italic     { text-transform: uppercase; }
+  // Tracking
+#{$evo}-text-tightest  { letter-spacing: -.1em; }
+#{$evo}-text-tighter   { letter-spacing: -.065em; }
+#{$evo}-text-tight     { letter-spacing: -.035em; }
+#{$evo}-text-loose     { letter-spacing: .035em; }
+#{$evo}-text-looser    { letter-spacing: .065em; }
+#{$evo}-text-loosest   { letter-spacing: .1em; }
+  // Leading
+#{$evo}-line-tightest  { line-height: .75; }
+#{$evo}-line-tighter   { line-height: .85; }
+#{$evo}-line-tight     { line-height: .95; }
+#{$evo}-line-loose     { line-height: 1; }
+#{$evo}-line-looser    { line-height: 1.15; }
+#{$evo}-line-loosest   { line-height: 1.25; }
+/* Text Sizes */
+
+// Base Style
+#{$evo}-text {
+  color: $text_color;
+  font-size: $text_font_size;
+  font-weight: $text_font_weight;
+	font-family: $text_font;
+	line-height: $text_line_height;
+	margin-top:$text_margin_top;
+// 	margin-bottom:$text_margin_bottom;
+}
+
+// Size Generator
+
+// https://en.wikipedia.org/wiki/Music_and_mathematics
+// http://type-scale.com/
+// font-size: .375rem + $i * (16/15);// Minor semitone 1.067
+// font-size: .375rem + $i * (9/8);// Major Second * 1.125
+// font-size: .375rem + $i * (6/5);// Minor Third * 1.2
+// font-size: .375rem + $i * (5/4);// Minor Third * 1.25
+// font-size: .375rem + $i * (4/3);// Perfect Fourth * 1.33
+
+$texta: 30;
+$texta-font-size: -3rem;
+
+@while $texta > 0 {
+  .textC-#{$texta} {
+    font-size: $texta-font-size + $texta;
+}
+  $texta: $texta - 1;
+}
+
+$sizes: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30;
+
+@mixin integer($integer){
+$integer: #{length($sizes)}n+#{$i};
+}
+
+@for $i from 1 through length($sizes)  {
+        font-size: 3rem;
+    }
+
+
+// $font-size-increments: ('1.1' '1.2' '1.3' '1.4' '1.5');
+// // $line-height-increments: (1.1 1.2 1.3 1.4 1.5);
+// // $margin-bottom-increments: (1.1 1.2 1.3 1.4 1.5);
+// $selector: ();
+
+//     @for $i from 0 through $text_generate_max {
+//         #{$evo}-text-#{$i} {
+//     font-size: 1rem * $i * (1/10) * #{$font-size-increments};
+//     line-height: 1rem * $i * (1/10) * #{$font-size-increments};
+//     margin-bottom: 1rem * $i * (1/10) * #{$font-size-increments};
+//     }
+// 	 // @if ($i >= 30){
+// 	 // font-size: .375rem + $i * .50;
+// 	 // line-height: .375rem + $i * .15;
+// 	 // margin-bottom: .375rem + $i * .15;
+	    
+// 	 // }
+
+//     }
+
+// // Size Generator
+
+// @for $i from 0 through 60 {
+//   #{$evo}-text-#{$i} {
+//     @extend #{$evo}-text;
+//     font-size: .375rem + $i * .25;
+// 	  line-height: .375rem + $i * .25;
+// 	  margin-bottom: .375rem + $i * .25;
+// 	  @if ($i >= 30){
+// 	  font-size: .375rem + $i * .50;
+// 	  line-height: .375rem + $i * .15;
+// 	  margin-bottom: .375rem + $i * .15;
+	    
+// 	  }
+
+//     }
+// }
+
+
+
+
+
+// // Size Generator
+
+// @for $i from 0 through 40 {
+//   #{$evo}-text-#{$i} {
+//   @extend #{$evo}-text;
+//   @extend #{$evo}-text-tighter;
+//     @if ($i >= 20) { font-size: #{$i}; :1rem + 1; }
+//     @else {
+// 	  font-size: calc(#{$i}rem);
+// 	  line-height:calc(#{$i}/9);
+// 	  margin-bottom:calc(#{$i}rem/2);
+//     }
+	
+// // Extensions
+//   &-style {
+//     @extend #{$evo}-text-#{$i};
+//     @extend #{$evo}-text-tighter;
+//     @extend #{$evo}-line-tight;
+// }
+// }
+// }
+

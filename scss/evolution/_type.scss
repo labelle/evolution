@@ -1,0 +1,198 @@
+///*      T Y P E     */
+
+
+/*      FONTS     */
+// Font stacks referenced from http://www.cssfontstack.com/
+$font_arial: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font_arial_black: 'Arial Black', 'Arial Bold', Gadget, sans-serif !default;
+$font_georgia: Georgia, Times, 'Times New Roman', serif !default;
+$font_times_new_roman: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif !default;
+$font_courier_new: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace !default;
+$font_monaco: Monaco, Menlo, Consolas, 'Courier New', monospace !default;
+$font_helvetica_neue: 'helvetica neue',helvetica, arial, sans-serif !default;
+$font_helvetica_neue_thin: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+// #{$evo}-font-open-sans                 { font-family: $font_stack_open_sans !important; }
+
+
+/*      UNSTYLED TEXT     */
+// Silent classes are available
+// Resets any styles
+.text,
+%text {
+  font-size: initial;
+  color: initial;
+  font-family: initial;
+  font-weight: initial;
+  line-height: initial;
+  margin-top: 0px;
+  margin-bottom:0px;
+}
+
+// Text sizes text-0 through text-24
+// Silient classes are available e.g. %text-15
+@for $i from 0 through 24 {
+    .text-#{$i},
+    %text-#{$i} {
+    @extend %text;
+    @if ($i == 0) { font-size: .5rem; }                 // 8px
+    @else if ($i == 1) { font-size: .625rem; }          // 10px
+    @else if ($i == 2) { font-size: .75rem; }           // 12px
+    @else if ($i == 3) { font-size: .875rem; }          // 14px
+    @else if ($i == 4) { font-size: floor(1.02rem); }   // 16px 
+    @else if ($i == 5) { font-size: 1.125rem; }         // 18px
+    @else if ($i == 6) { font-size: 1.3125rem; }        // 21px
+    @else if ($i == 7) { font-size: 1.4375rem; }        // 23px
+    @else if ($i == 8) { font-size: 1.875rem; }         // 30px
+    @else if ($i == 9) { font-size: 2.3125rem; }        // 37px
+    @else if ($i == 10) { font-size: 2.6875rem; }       // 43px
+    @else if ($i == 11) { font-size: floor(3.05rem); }  // 48px
+    @else if ($i == 12) { font-size: 3.75rem; }         // 60px
+    @else if ($i == 13) { font-size: ceil(4.935rem); }  // 80px 
+    @else if ($i == 14) { font-size: floor(6.1rem); }   // 96px
+    @else if ($i == 15) { font-size: ceil(7.985rem); }  // 128px
+    @else if ($i == 16) { font-size: ceil(9.87rem); }   // 160px
+    @else if ($i == 17) { font-size: ceil(12.92rem); }  // 208px
+    @else if ($i == 18) { font-size: ceil(15.97rem); }  // 256px
+    @else if ($i == 19) { font-size: ceil(20.905rem); } // 336px
+    @else if ($i == 20) { font-size: ceil(25.84rem); }  // 416px
+    @else if ($i == 21) { font-size: ceil(25.84rem); }  // 544px
+    @else if ($i == 22) { font-size: ceil(25.84rem); }  // 672px
+    @else if ($i == 23) { font-size: ceil(25.84rem); }  // 880px
+    @else if ($i == 24) { font-size: ceil(25.84rem); }  // 1088px
+    }
+  }
+
+
+/*      TEXT     */
+
+// Default evo-text
+// Adjust from _settings.scss
+.evo-text,
+#{$evo}-text {
+  color: $text_color;
+  font-size: $text_font_size;
+  font-weight: $text_font_weight;
+  font-family: $text_font_family;
+  line-height: $text_line_height;
+  margin-top: $text_margin_top;
+  margin-bottom:$text_margin_bottom;
+}
+
+// Generates text sizes text-0 through text-24
+// Silent classes are available e.g. %text-15
+// Based on a half-measure of the golden raito
+// 1. @for $i from 0 through 4
+// 2. Creates e.g. evo-text- 15 and auto increments by 1
+// 3. Extends the default evo-text
+// 4. Modifies the tracking and leading via mixins from _helpers.scss
+// 5. If / else allows for fine tuning the sizes
+// 6. $-caps etc. is optional fine tuning of typographic styles 
+
+// Mousetype sizes
+@for $i from 0 through 4 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text ;
+    @include tracking(loose);
+    @include leading(11);
+    @if ($i == 0) { font-size: .5rem; }
+    @else if ($i == 1) { font-size: .625rem; }
+    @else if ($i == 2) { font-size: .75rem; } // smallest
+    @else if ($i == 3) { font-size: .875rem; }
+    @else if ($i == 4) { font-size: floor(1.02rem); } // smaller
+  }
+}
+
+// Copy sizes
+@for $i from 5 through 8 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text;
+    @include leading(12);
+    @if ($i == 5) { font-size: 1.125rem; }
+    @else if ($i == 6) { font-size: 1.3125rem; } // small
+    @else if ($i == 7) { font-size: 1.4375rem; }
+    @else if ($i == 8) { font-size: 1.875rem; } // normal
+    &-caps {
+      @extend #{$evo}-text-#{$i};
+      @include style(caps)
+      @include tracking(null);
+      @include leading(12);
+    }
+  }
+}
+
+// Subheader sizes
+@for $i from 9 through 12 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text;
+    @include tracking(tight);
+    @include leading(10);
+    @if ($i == 9) { font-size: 2.3125rem; }
+    @else if ($i == 10) { font-size: 2.6875rem; } // big
+    @else if ($i == 11) { font-size: floor(3.05rem); }
+    @else if ($i == 12) { font-size: 3.75rem; } // bigger
+    &-caps {
+      @extend #{$evo}-text-#{$i};
+      @include style(caps)
+      @include tracking(tight);
+      @include leading(10);
+    }
+  }
+}
+
+// Header sizes
+@for $i from 13 through 16 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text;
+    @include tracking(tight);
+    @include leading(10);
+    @if ($i == 13) { font-size: ceil(4.935rem); }
+    @else if ($i == 14) { font-size: floor(6.1rem); } // biggest
+    @else if ($i == 15) { font-size: ceil(7.985rem); }
+    @else if ($i == 16) { font-size: ceil(9.87rem); } // jumbo
+    &-caps {
+      @extend #{$evo}-text-#{$i};
+      @include style(caps)
+      @include tracking(tight);
+      @include leading(5);
+    }
+  }
+}
+
+// Giant sizes
+@for $i from 17 through 20 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text;
+    @include tracking(tight);
+    @include leading(10);
+    @if ($i == 17) { font-size: ceil(12.92rem); }
+    @else if ($i == 18) { font-size: ceil(15.97rem); } // giant
+    @else if ($i == 19) { font-size: ceil(20.905rem); }
+    @else if ($i == 20) { font-size: ceil(25.84rem); }
+    &-caps {
+      @extend #{$evo}-text-#{$i};
+      @include style(caps)
+      @include tracking(tight);
+      @include leading(5);
+    }
+  }
+}
+
+// Poster sizes
+@for $i from 20 through 24 {
+  #{$evo}-text-#{$i} {
+  @extend #{$evo}-text;
+  @include tracking(tightest);
+  @include leading(8);
+    @if ($i == 20) { font-size: ceil(25.84rem); }
+    @else if ($i == 21) { font-size: ceil(33.825rem); }
+    @else if ($i == 22) { font-size: ceil(41.81rem); }
+    @else if ($i == 23) { font-size: ceil(54.73rem); }
+    @else if ($i == 24) { font-size: ceil(67.65rem); }
+    &-caps {
+      @extend #{$evo}-text-#{$i};
+      @include style(caps)
+      @include tracking(tightest);
+      @include leading(4);
+    }
+  }
+}

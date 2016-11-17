@@ -1,0 +1,346 @@
+///* ============================================================================== */
+//
+///*                         FORGIVE ERRORS EVOLUTION ELEMENTS v2.0.1               */
+//
+///* ============================================================================== */
+
+// A selection of aliases that forgive common mistypes
+// TO DO fix all underscore variations
+// TO DO This could turn into a linting file of sorts, perhaps applying an XRAY color to the mistake
+
+
+/* ================================================================================ */
+/* ----------------------------------- ERRORS ------------------------------------- */
+/* ================================================================================ */
+
+
+#{$evo}-error-base							{
+	color: #ff0000 !important;
+  font-color: #ff0000 !important;
+  background-color: #ff0000 !important;
+}
+
+
+///* --------------------------- FORGIVE ERRORS FOR HEADERS.SCSS --------------------------- */
+
+// Added s
+
+#{$evo}no-lines							{ @extend #{$evo}-no-line; }
+
+// Added extra zero
+
+#{$evo}-header-01            { @extend #{$evo}-header-1; @extend #{$evo}-error-base; }
+#{$evo}-header-02            { @extend #{$evo}-header-2; @extend #{$evo}-error-base; }
+#{$evo}-header-03            { @extend #{$evo}-header-3; @extend #{$evo}-error-base; }
+#{$evo}-header-04            { @extend #{$evo}-header-4; @extend #{$evo}-error-base; }
+#{$evo}-header-05            { @extend #{$evo}-header-5; @extend #{$evo}-error-base; }
+#{$evo}-header-06            { @extend #{$evo}-header-6; @extend #{$evo}-error-base; }
+#{$evo}-header-07            { @extend #{$evo}-header-7; @extend #{$evo}-error-base; }
+#{$evo}-header-08            { @extend #{$evo}-header-8; @extend #{$evo}-error-base; }
+#{$evo}-header-09            { @extend #{$evo}-header-9; @extend #{$evo}-error-base; }
+
+#{$evo}-header-01-bold         { @extend #{$evo}-header-1-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-02-bold         { @extend #{$evo}-header-2-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-03-bold         { @extend #{$evo}-header-3-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-04-bold         { @extend #{$evo}-header-4-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-05-bold         { @extend #{$evo}-header-5-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-06-bold         { @extend #{$evo}-header-6-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-07-bold         { @extend #{$evo}-header-7-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-08-bold         { @extend #{$evo}-header-8-bold; @extend #{$evo}-error-base; }
+#{$evo}-header-09-bold         { @extend #{$evo}-header-9-bold; @extend #{$evo}-error-base; }
+
+#{$evo}-header-01-caps         { @extend #{$evo}-header-1-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-02-caps         { @extend #{$evo}-header-2-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-03-caps         { @extend #{$evo}-header-3-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-04-caps         { @extend #{$evo}-header-4-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-05-caps         { @extend #{$evo}-header-5-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-06-caps         { @extend #{$evo}-header-6-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-07-caps         { @extend #{$evo}-header-7-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-08-caps         { @extend #{$evo}-header-8-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-09-caps         { @extend #{$evo}-header-9-caps; @extend #{$evo}-error-base; }
+
+#{$evo}-header-01-bold-caps      { @extend #{$evo}-header-1-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-02-bold-caps      { @extend #{$evo}-header-2-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-03-bold-caps      { @extend #{$evo}-header-3-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-04-bold-caps      { @extend #{$evo}-header-4-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-05-bold-caps      { @extend #{$evo}-header-5-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-06-bold-caps      { @extend #{$evo}-header-6-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-07-bold-caps      { @extend #{$evo}-header-7-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-08-bold-caps      { @extend #{$evo}-header-8-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-09-bold-caps      { @extend #{$evo}-header-9-bold-caps; @extend #{$evo}-error-base; }
+
+// Mistyped bold-caps
+
+#{$evo}-header-01-caps-bold      { @extend #{$evo}-header-1-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-02-caps-bold      { @extend #{$evo}-header-2-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-03-caps-bold      { @extend #{$evo}-header-3-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-04-caps-bold      { @extend #{$evo}-header-4-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-05-caps-bold      { @extend #{$evo}-header-5-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-06-caps-bold      { @extend #{$evo}-header-6-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-07-caps-bold      { @extend #{$evo}-header-7-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-08-caps-bold      { @extend #{$evo}-header-8-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-09-caps-bold      { @extend #{$evo}-header-9-bold-caps; @extend #{$evo}-error-base; }
+
+#{$evo}-header-1-caps-bold       { @extend #{$evo}-header-1-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-2-caps-bold       { @extend #{$evo}-header-2-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-3-caps-bold       { @extend #{$evo}-header-3-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-4-caps-bold       { @extend #{$evo}-header-4-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-5-caps-bold       { @extend #{$evo}-header-5-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-6-caps-bold       { @extend #{$evo}-header-6-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-7-caps-bold       { @extend #{$evo}-header-7-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-8-caps-bold       { @extend #{$evo}-header-8-bold-caps; @extend #{$evo}-error-base; }
+#{$evo}-header-9-caps-bold       { @extend #{$evo}-header-9-bold-caps; @extend #{$evo}-error-base; }
+
+
+
+///* --------------------------- FORGIVE ERRORS FOR LINES.SCSS --------------------------- */
+
+#{$evo}-no-lines                 		{ @extend #{$evo}-no-line; }
+#{$evo}-hide-line                		{ @extend #{$evo}-no-line; }
+#{$evo}-hide-lines               		{ @extend #{$evo}-no-line; }
+
+// Added extra zero
+
+#{$evo}-line-09 						{ @extend #{$evo}-line-9; }
+#{$evo}-line-08 						{ @extend #{$evo}-line-8; }
+#{$evo}-line-07 						{ @extend #{$evo}-line-7; }
+#{$evo}-line-06 						{ @extend #{$evo}-line-6; }
+#{$evo}-line-05 						{ @extend #{$evo}-line-5; }
+#{$evo}-line-04 						{ @extend #{$evo}-line-4; }
+#{$evo}-line-03 						{ @extend #{$evo}-line-3; }
+#{$evo}-line-02 						{ @extend #{$evo}-line-2; }
+#{$evo}-line-01 						{ @extend #{$evo}-line-1; }
+#{$evo}-line-01-dots 			{ @extend #{$evo}-line-1-dots; }
+#{$evo}-line-01-dash 			{ @extend #{$evo}-line-1-dash; }
+
+
+
+///* --------------------------- FORGIVE ERRORS FOR TEXT.SCSS --------------------------- */
+
+// Added extra zero
+
+#{$evo}-text-00 { @extend #{$evo}-text-0; }
+#{$evo}-text-01 { @extend #{$evo}-text-1; }
+#{$evo}-text-02 { @extend #{$evo}-text-2; }
+#{$evo}-text-03 { @extend #{$evo}-text-3; }
+#{$evo}-text-04 { @extend #{$evo}-text-4; }
+#{$evo}-text-05 { @extend #{$evo}-text-5; }
+#{$evo}-text-06 { @extend #{$evo}-text-6; }
+#{$evo}-text-07 { @extend #{$evo}-text-7; }
+#{$evo}-text-08 { @extend #{$evo}-text-8; }
+#{$evo}-text-09 { @extend #{$evo}-text-9; }
+
+#{$evo}-text-00-bold { @extend #{$evo}-text-0-bold; }
+#{$evo}-text-01-bold { @extend #{$evo}-text-1-bold; }
+#{$evo}-text-02-bold { @extend #{$evo}-text-2-bold; }
+#{$evo}-text-03-bold { @extend #{$evo}-text-3-bold; }
+#{$evo}-text-04-bold { @extend #{$evo}-text-4-bold; }
+#{$evo}-text-05-bold { @extend #{$evo}-text-5-bold; }
+#{$evo}-text-06-bold { @extend #{$evo}-text-6-bold; }
+#{$evo}-text-07-bold { @extend #{$evo}-text-7-bold; }
+#{$evo}-text-08-bold { @extend #{$evo}-text-8-bold; }
+#{$evo}-text-09-bold { @extend #{$evo}-text-9-bold; }
+
+#{$evo}-text-00-caps { @extend #{$evo}-text-0-caps; }
+#{$evo}-text-01-caps { @extend #{$evo}-text-1-caps; }
+#{$evo}-text-02-caps { @extend #{$evo}-text-2-caps; }
+#{$evo}-text-03-caps { @extend #{$evo}-text-3-caps; }
+#{$evo}-text-04-caps { @extend #{$evo}-text-4-caps; }
+#{$evo}-text-05-caps { @extend #{$evo}-text-5-caps; }
+#{$evo}-text-06-caps { @extend #{$evo}-text-6-caps; }
+#{$evo}-text-07-caps { @extend #{$evo}-text-7-caps; }
+#{$evo}-text-08-caps { @extend #{$evo}-text-8-caps; }
+#{$evo}-text-09-caps { @extend #{$evo}-text-9-caps; }
+
+#{$evo}-text-00-bold-caps { @extend #{$evo}-text-0-bold-caps; }
+#{$evo}-text-01-bold-caps { @extend #{$evo}-text-1-bold-caps; }
+#{$evo}-text-02-bold-caps { @extend #{$evo}-text-2-bold-caps; }
+#{$evo}-text-03-bold-caps { @extend #{$evo}-text-3-bold-caps; }
+#{$evo}-text-04-bold-caps { @extend #{$evo}-text-4-bold-caps; }
+#{$evo}-text-05-bold-caps { @extend #{$evo}-text-5-bold-caps; }
+#{$evo}-text-06-bold-caps { @extend #{$evo}-text-6-bold-caps; }
+#{$evo}-text-07-bold-caps { @extend #{$evo}-text-7-bold-caps; }
+#{$evo}-text-08-bold-caps { @extend #{$evo}-text-8-bold-caps; }
+#{$evo}-text-09-bold-caps { @extend #{$evo}-text-9-bold-caps; }
+
+// Mistyped bold-caps
+
+#{$evo}-text-00-caps-bold { @extend #{$evo}-text-0-bold-caps; }
+#{$evo}-text-01-caps-bold { @extend #{$evo}-text-1-bold-caps; }
+#{$evo}-text-02-caps-bold { @extend #{$evo}-text-2-bold-caps; }
+#{$evo}-text-03-caps-bold { @extend #{$evo}-text-3-bold-caps; }
+#{$evo}-text-04-caps-bold { @extend #{$evo}-text-4-bold-caps; }
+#{$evo}-text-05-caps-bold { @extend #{$evo}-text-5-bold-caps; }
+#{$evo}-text-06-caps-bold { @extend #{$evo}-text-6-bold-caps; }
+#{$evo}-text-07-caps-bold { @extend #{$evo}-text-7-bold-caps; }
+#{$evo}-text-08-caps-bold { @extend #{$evo}-text-8-bold-caps; }
+#{$evo}-text-09-caps-bold { @extend #{$evo}-text-9-bold-caps; }
+
+#{$evo}-text-0-caps-bold { @extend #{$evo}-text-0-bold-caps; }
+#{$evo}-text-1-caps-bold { @extend #{$evo}-text-1-bold-caps; }
+#{$evo}-text-2-caps-bold { @extend #{$evo}-text-2-bold-caps; }
+#{$evo}-text-3-caps-bold { @extend #{$evo}-text-3-bold-caps; }
+#{$evo}-text-4-caps-bold { @extend #{$evo}-text-4-bold-caps; }
+#{$evo}-text-5-caps-bold { @extend #{$evo}-text-5-bold-caps; }
+#{$evo}-text-6-caps-bold { @extend #{$evo}-text-6-bold-caps; }
+#{$evo}-text-7-caps-bold { @extend #{$evo}-text-7-bold-caps; }
+#{$evo}-text-8-caps-bold { @extend #{$evo}-text-8-bold-caps; }
+#{$evo}-text-9-caps-bold { @extend #{$evo}-text-9-bold-caps; }
+
+
+///* --------------------------- FORGIVE ERRORS FOR SPACE.SCSS --------------------------- */
+
+// Added extra zero
+
+#{$evo}-space-09  { @extend #{$evo}-space-9;}
+#{$evo}-space-08  { @extend #{$evo}-space-8;}
+#{$evo}-space-07  { @extend #{$evo}-space-7;}
+#{$evo}-space-06  { @extend #{$evo}-space-6;}
+#{$evo}-space-05  { @extend #{$evo}-space-5;}
+#{$evo}-space-04  { @extend #{$evo}-space-4;}
+#{$evo}-space-03  { @extend #{$evo}-space-3;}
+#{$evo}-space-02  { @extend #{$evo}-space-2;}
+#{$evo}-space-01  { @extend #{$evo}-space-1;}
+
+
+///* --------------------------- FORGIVE ERRORS FOR IMAGES.SCSS --------------------------- */
+
+// Added extra zero
+
+#{$evo}-image-tall-05 { @extend #{$evo}-image-tall-5; }
+#{$evo}-image-tall-00 { @extend #{$evo}-image-tall-0; }
+
+#{$evo}-image-wide-07 { @extend #{$evo}-image-wide-7; }
+#{$evo}-image-wide-05 { @extend #{$evo}-image-wide-5; }
+#{$evo}-image-wide-03 { @extend #{$evo}-image-wide-3; }
+#{$evo}-image-wide-01 { @extend #{$evo}-image-wide-1; }
+
+
+
+///* --------------------------- FORGIVE ERRORS FOR COLORS.SCSS --------------------------- */
+
+
+// Added extra zero
+
+// $hex_gray_05_evo: 					$hex_gray_5_evo;
+// $hex_gray_04_evo: 					$hex_gray_4_evo;
+// $hex_gray_03_evo: 					$hex_gray_3_evo;
+// $hex_gray_02_evo: 					$hex_gray_2_evo;
+// $hex_gray_01_evo: 					$hex_gray_1_evo;
+// $hex_gray_00_evo: 					$white_evo;
+
+
+// $dark_translucent_05_evo:			$dark_translucent_5_evo;
+// $dark_translucent_04_evo:			$dark_translucent_4_evo;
+// $dark_translucent_03_evo:			$dark_translucent_3_evo;
+// $dark_translucent_02_evo:			$dark_translucent_2_evo;
+// $dark_translucent_01_evo:			$dark_translucent_1_evo;
+// $dark_translucent_00_evo:			$dark_translucent_0_evo;
+
+
+// $light_translucent_05_evo: 			$light_translucent_5_evo;
+// $light_translucent_04_evo: 			$light_translucent_4_evo;
+// $light_translucent_03_evo: 			$light_translucent_3_evo;
+// $light_translucent_02_evo: 			$light_translucent_2_evo;
+// $light_translucent_01_evo: 			$light_translucent_1_evo;
+// $light_translucent_00_evo: 			$light_translucent_0_evo;
+
+
+// $warm_gray_05_evo: 					$warm_gray_5_evo;
+// $warm_gray_04_evo: 					$warm_gray_4_evo;
+// $warm_gray_03_evo: 					$warm_gray_3_evo;
+// $warm_gray_02_evo: 					$warm_gray_2_evo;
+// $warm_gray_01_evo: 					$warm_gray_1_evo;
+// $warm_gray_00_evo: 					$warm_gray_0_evo;
+
+// TO DO replace the items in brackets with css classes
+
+// Added extra zero for RBG colors
+
+#{$evo}-rgb-gray-05,			{ color: $rgb_gray_5_evo; }
+#{$evo}-rgb-gray-05-bg        { background-color: $rgb_gray_5_evo; }
+
+#{$evo}-rgb-gray-02,           { color: $rgb_gray_2_evo; }
+#{$evo}-rgb-gray-02-bg        { background-color: $rgb_gray_2_evo; }
+
+#{$evo}-rgb-gray-01,           { color: $rgb_gray_1_evo; }
+#{$evo}-rgb-gray-01-bg        { background-color: $rgb_gray_1_evo; }
+
+#{$evo}-rgb-gray-00,           { color: $rgb_gray_0_evo; }
+#{$evo}-rgb-gray-00-bg        { background-color: $rgb_gray_0_evo; }
+
+
+// For those who guessed typing a CMY letter will work
+
+#{$evo}-cmy-r				{ color: $cmy_red_evo; }
+#{$evo}-cmy-r-bg			{ background-color: $cmy_red_evo; }	
+
+#{$evo}-cmy-g				{ color: $cmy_green_evo; }
+#{$evo}-cmy-g-bg			{ background-color: $cmy_green_evo; }
+
+#{$evo}-cmy-b				{ color: $cmy_blue_evo; }
+#{$evo}-cmy-b-bg			{ background-color: $cmy_blue_evo; }
+
+#{$evo}-cmy-c				{ color: $cmy_cyan_evo; }
+#{$evo}-cmy-c-bg			{ background-color: $cmy_cyan_evo; }
+
+#{$evo}-cmy-m				{ color: $cmy_magenta_evo; }
+#{$evo}-cmy-m-bg			{ background-color: $cmy_magenta_evo; }
+
+#{$evo}-cmy-y				{ color: $cmy_yellow_evo; }
+#{$evo}-cmy-y-bg			{ background-color: $cmy_yellow_evo; }
+
+
+
+// For those who guessed that typing an RBG letter will work
+
+#{$evo}-rgb-r				{ color: $rgb_red_evo; }
+#{$evo}-rgb-r-bg			{ background-color: $rgb_red_evo; }
+
+#{$evo}-rgb-g				{ color: $rgb_green_evo; }
+#{$evo}-rgb-g-bg			{ background-color: $rgb_green_evo; }
+
+#{$evo}-rgb-b				{ color: $rgb_blue_evo; }
+#{$evo}-rgb-b-bg			{ background-color: $rgb_blue_evo; }
+
+#{$evo}-rgb-c				{ color: $rgb_cyan_evo; }
+#{$evo}-rgb-c-bg			{ background-color: $rgb_cyan_evo; }
+
+#{$evo}-rgb-m				{ color: $rgb_magenta_evo; }
+#{$evo}-rgb-m-bg			{ background-color: $rgb_magenta_evo; }
+
+#{$evo}-rgb-y				{ color: $rgb_yellow_evo; }
+#{$evo}-rgb-y-bg			{ background-color: $rgb_yellow_evo; }
+
+
+
+// Aliases for misstyped social brands
+
+#{$evo}-dribble			{ color: $dribbble_evo; }
+#{$evo}-dribble-bg			{ background-color: $dribbble_evo; }
+
+#{$evo}-flicker			{ color: $flickr_evo; }
+#{$evo}-flicker-bg			{ background-color: $flickr_evo; }
+
+#{$evo}-google				{ color: $googleplus_evo; }
+#{$evo}-google-bg			{ background-color: $googleplus_evo; }
+
+#{$evo}-google-plus		{ color: $googleplus_evo; }
+#{$evo}-google-plus-bg		{ background-color: $googleplus_evo; }
+
+#{$evo}-tumbler			{ color: $tumblr_evo; }
+#{$evo}-tumbler-bg			{ background-color: $tumblr_evo; }
+
+
+// Delete these?
+
+// See colors.scss for other color options
+
+$gray_darkest_evo:                  $gray_95_evo;
+$gray_darker_evo:                   $gray_80_evo;
+$gray_dark_evo:                     $gray_65_evo;
+$gray_light_evo:                    $gray_35_evo;
+$gray_lighter_evo:                  $gray_20_evo;
+$gray_lightest_evo:                 $gray_5_evo;
+
+
