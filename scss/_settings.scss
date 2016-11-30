@@ -37,7 +37,7 @@ $evo: 								".evo"; // ".evo"
 // See Fonts in _settings.scss for full list of options such as $font_arial, $font_georgia, $font_monaco
 $default_type_size:					null; // initial 1 rem or 100% or 16px
 $default_type_color:				null; // initial
-$default_type_font:					null; // initial
+$default_type_font:					null; // sans-serif
 
 
 // Text
@@ -56,5 +56,9 @@ $default_link_color_visited:		null; // #000000
 $default_link_color_hover:			null; // darker(rgb( 0, 174, 239 ),50%) // cyan
 $default_link_color_active:			null; // rgb( 0, 174, 239 ); // cyan
 $default_link_underline:            null; // none
+
+// Spacers
+$spacer_height:						null; // 1rem
+$spacer_width:						null; // 100%
 
 // @import "evolution/variables";

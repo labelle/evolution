@@ -3,24 +3,52 @@
 // Base structures and styles
 // Adjust in _settings.scss
 // Default values live in _variables.scss
+// Reset and normalize values live in _reset.scss
+
+
+// Import default variables from _variables.scss
+@import "../settings";
 
 
 /*      GLOBAL     */
 
-
-// Resets
 html {
-	margin:0px;
-	padding:0px;
+	font-size: #{$default_type_size}; // 1rem
+	font-color: #{$default_type_color}; // initial
+	font-family: #{$default_type_font}; // sans-serif
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-// Relative base size of elements
-// By default, resets to initial and sets size of 1rem
 body { 
-	font-size: #{$default_type_size}; // 1rem
-	font-family: #{$default_type_font}; // Initial
-	font-color: #{$default_type_color}; // Initial
+	margin:0px;
+	// padding:0px;
 	}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+dfn {
+  font-style: italic;
+}
+
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+
 
 
 /*      TYPE     */
@@ -36,14 +64,118 @@ body {
 #{$evo}-font-helvetica-neue-thin    { font-family: $font_helvetica_neue_thin; }
 
 
+
 // Text
+%evo-text,
 #{$evo}-text {
 	font-size: $text_font_size;
-  	color: $text_color;
-  	font-family: $text_font_family;
-  	font-weight: $text_font_weight;
-	font-family: $text_font_family;
+  color: $text_color;
+  font-family: $text_font_family;
+  font-weight: $text_font_weight;
 	line-height: $text_line_height;
 	margin-top: $text_margin_top;
-	margin-bottom:$text_margin_bottom;
+	margin-bottom: $text_margin_bottom;
+}
+
+
+// Links
+
+
+// Opinionated resets
+
+a {
+  color: initial; // color: #428bca;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:focus {
+  color: initial; // color: #2a6496;
+  text-decoration: initial; // text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+/*      BUTTONS     */
+
+
+// Opinionated resets
+
+button[disabled] {
+  cursor: default;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+button {
+  font-family: sans-serif; // inherit
+  // font-size: 100%;
+  // line-height: 1.15;
+  // margin: 0;
+}
+
+
+/*      FORMS     */
+
+// Opinionated resets
+
+html input[disabled] {
+  cursor: default;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; // inherit
+  // font-size: 100%;
+  // line-height: 1.15;
+  // margin: 0;
+}
+
+
+
+
+/*      LINES     */
+
+// Opinionated resets
+
+
+hr {
+  margin-top: initial; // margin-top: 20px;
+  margin-bottom: initial; // margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid; // border-top: 1px solid #eeeeee;
+}
+
+
+
+/*      SPACERS    */
+
+
+// Space
+.evo-space,
+#{$evo}-space {
+     width: 100%;
+     height: 1px;
+     clear: both;
 }

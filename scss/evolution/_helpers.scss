@@ -74,7 +74,7 @@
   @else if $leading == 23     { line-height: 2.875em; }
   @else if $leading == 24     { line-height: 3em; }
   // Throw Warnings
-  @else { @warn "Leading mixin supports: null, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24;" }
+  @else { @warn "Leading mixin supports: null, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24"; }
 }
 
 // style
@@ -92,7 +92,7 @@
   @else if $style == strike      { text-transform: line-through; }
   @else if $style == underline   { text-transform: underline; }
   // Throw Warnings
-  @else { @warn "Style mixin supports: null, bold, italic, caps, capital, strike, underline;" }
+  @else { @warn "Style mixin supports: null, bold, italic, caps, capital, strike, underline"; }
 }
 
 // Tracking
@@ -105,7 +105,7 @@
   @else if $tracking == looser      { letter-spacing: .065em; }
   @else if $tracking == loosest     { letter-spacing: .1em; }
     // Throw Warnings
-  @else { @warn "Tracking mixin supports: null, tightest, tighter, tight, loose, looser, loosest;" }
+  @else { @warn "Tracking mixin supports: null, tightest, tighter, tight, loose, looser, loosest"; }
 }
 
 // Measure
@@ -118,7 +118,7 @@
   @else if $measure == tighter  { max-width: 20em; }
   @else if $measure == tightest { max-width: 15em; }
   // Throw Warnings
-  @else { @warn "Measure mixin supports: null, widest, wider, wide, tight, tighter, tightest;"; }
+  @else { @warn "Measure mixin supports: null, widest, wider, wide, tight, tighter, tightest"; }
 }
 
 
@@ -141,40 +141,40 @@
 #{$evo}-tracking-loosest  { @include tracking(loosest); }
 
 // Leading
-#{$evo}-leading-tightest  { @include leading(1) }
-#{$evo}-leading-tighter   { @include leading(5) }
-#{$evo}-leading-tight     { @include leading(10) }
-#{$evo}-leading-loose     { @include leading(15) }
-#{$evo}-leading-looser    { @include leading(20) }
-#{$evo}-leading-loosest   { @include leading(24) }
+#{$evo}-leading-tightest  { @include leading(1); }
+#{$evo}-leading-tighter   { @include leading(5); }
+#{$evo}-leading-tight     { @include leading(10); }
+#{$evo}-leading-loose     { @include leading(15); }
+#{$evo}-leading-looser    { @include leading(20); }
+#{$evo}-leading-loosest   { @include leading(24); }
 
 
 // Leading
-#{$evo}-leading-0         { @include leading(0) }
-#{$evo}-leading-1         { @include leading(1) }
-#{$evo}-leading-2         { @include leading(2) }
-#{$evo}-leading-3         { @include leading(3) }
-#{$evo}-leading-4         { @include leading(4) }
-#{$evo}-leading-5         { @include leading(5) }
-#{$evo}-leading-6         { @include leading(6) }
-#{$evo}-leading-7         { @include leading(7) }
-#{$evo}-leading-8         { @include leading(8) }
-#{$evo}-leading-9         { @include leading(9) }
-#{$evo}-leading-10        { @include leading(10) }
-#{$evo}-leading-11        { @include leading(11) }
-#{$evo}-leading-12        { @include leading(12) }
-#{$evo}-leading-13        { @include leading(13) }
-#{$evo}-leading-14        { @include leading(14) }
-#{$evo}-leading-15        { @include leading(15) }
-#{$evo}-leading-16        { @include leading(16) }
-#{$evo}-leading-17        { @include leading(17) }
-#{$evo}-leading-18        { @include leading(18) }
-#{$evo}-leading-19        { @include leading(19) }
-#{$evo}-leading-20        { @include leading(20) }
-#{$evo}-leading-21        { @include leading(21) }
-#{$evo}-leading-22        { @include leading(22) }
-#{$evo}-leading-23        { @include leading(23) }
-#{$evo}-leading-24        { @include leading(24) }
+#{$evo}-leading-0         { @include leading(0); }
+#{$evo}-leading-1         { @include leading(1); }
+#{$evo}-leading-2         { @include leading(2); }
+#{$evo}-leading-3         { @include leading(3); }
+#{$evo}-leading-4         { @include leading(4); }
+#{$evo}-leading-5         { @include leading(5); }
+#{$evo}-leading-6         { @include leading(6); }
+#{$evo}-leading-7         { @include leading(7); }
+#{$evo}-leading-8         { @include leading(8); }
+#{$evo}-leading-9         { @include leading(9); }
+#{$evo}-leading-10        { @include leading(10); }
+#{$evo}-leading-11        { @include leading(11); }
+#{$evo}-leading-12        { @include leading(12); }
+#{$evo}-leading-13        { @include leading(13); }
+#{$evo}-leading-14        { @include leading(14); }
+#{$evo}-leading-15        { @include leading(15); }
+#{$evo}-leading-16        { @include leading(16); }
+#{$evo}-leading-17        { @include leading(17); }
+#{$evo}-leading-18        { @include leading(18); }
+#{$evo}-leading-19        { @include leading(19); }
+#{$evo}-leading-20        { @include leading(20); }
+#{$evo}-leading-21        { @include leading(21); }
+#{$evo}-leading-22        { @include leading(22); }
+#{$evo}-leading-23        { @include leading(23); }
+#{$evo}-leading-24        { @include leading(24); }
 
 
 // Measure
