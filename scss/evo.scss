@@ -41,9 +41,17 @@
 *
 *******************************************************************************/
 
+// Reset bootstrap opinionated styles
+@import "reset/bootstrap";
+
+// General area for resetting miscellaneous styles
+@import "reset/general";
+
+// The popular 'normalize', slightly modified
+@import "reset/normalize";
+
 @import "variables";
 @import "settings";
-@import "evolution/reset";
 @import "evolution/base";
 @import "evolution/helpers";
 // @import "evolution/fonts";

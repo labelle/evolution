@@ -1,0 +1,26 @@
+///* =========================== */
+
+///*      R E S E T      */
+
+///* =========================== */
+
+/*******************************************************************************
+*
+* The goal of this CSS file is to reset or normalize HTML and CSS styles.
+* Place the link to this CSS file after your Bootstrap CSS link, if applicable.
+* Link any other CSS files after this CSS file so you can override this CSS.
+* If you are not using Bootstrap, you can delete any Bootstrap specific code.
+* The order of CSS placement – or links to CSS files – has an impact on styles.
+*
+*******************************************************************************/
+
+// Reset bootstrap opinionated styles
+@import "reset/bootstrap";
+
+// General area for resetting miscellaneous styles
+@import "reset/general";
+
+// The popular 'normalize', slightly modified
+@import "reset/normalize";
+
+

@@ -1,0 +1,249 @@
+/*******************************************************************************
+*
+* elements.css
+*
+* The goal of this file is to capture all Evolution styles, used throughout the 
+* Elements site; some page specific styles are captured in seperate css files 
+* which are animation.css, style.css and stylguide.css. These three files can be 
+* found in same directory (css/)
+*
+*
+* Outline: (update as needed)
+*   _VARIABLES - Variables for controlling certain element structures and styles
+*              - All the variables are in this file
+*   _COLORS - 5 different color palettes are included in this file
+*   _FONTS - 4 different font families are included in this file
+*   _HEADERS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
+*              4 different styles: regular, bold, caps, bold-caps
+*              By default comes with line above headers (just use .evo-no-line class to toggle line)
+*   _TEXT - 2 different styles: regular and bold (size 1 - 30)
+*         - _TEXT is also used within orderd/unorderd list
+*         - 4 different list styes: regular/no-style, bullets, numbers and lines
+*         - bullets list are using custom SVGs
+*   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
+*            - http://elements.humanig.com/#/buttons
+*   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
+*            dropdown menu, text input, number input
+*   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
+*          - borders: top border (solid, dots, dash), (size 1 - 10)
+*                     bottom border (solid, dots, dash), (size 1 - 10)
+*          - boxes: (solid, dots, dash), (size 1 - 10)        
+*          - double: (solid), (size 1 - 10)
+*   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
+*   _SPACERS - Create space between elements (size 1 - 30)
+*   _ERRORS - A selection of aliases that forgive common mistypes
+*
+*******************************************************************************/
+/*      FONTS     */
+/*      SPACE     */
+.space,
+.space-0,
+.space-1,
+.space-2,
+.space-3,
+.space-4,
+.space-5,
+.space-6,
+.space-7,
+.space-8,
+.space-9,
+.space-10,
+.space-11,
+.space-12,
+.space-13,
+.space-14,
+.space-15,
+.space-16,
+.space-17,
+.space-18,
+.space-19,
+.space-20,
+.space-21,
+.space-22,
+.space-23,
+.space-24 {
+  width: auto;
+  height: 1rem;
+  clear: both; }
+
+.space-0 {
+  height: 1px; }
+
+.space-1 {
+  height: 2px; }
+
+.space-2 {
+  height: 4px; }
+
+.space-3 {
+  height: 6px; }
+
+.space-4 {
+  height: .5rem; }
+
+.space-5 {
+  height: .625rem; }
+
+.space-6 {
+  height: .75rem; }
+
+.space-7 {
+  height: .875rem; }
+
+.space-8 {
+  height: 1rem; }
+
+.space-9 {
+  height: 1.125rem; }
+
+.space-10 {
+  height: 1.3125rem; }
+
+.space-11 {
+  height: 1.4375rem; }
+
+.space-12 {
+  height: 1.875rem; }
+
+.space-13 {
+  height: 2.3125rem; }
+
+.space-14 {
+  height: 2.6875rem; }
+
+.space-15 {
+  height: 3rem; }
+
+.space-16 {
+  height: 3.75rem; }
+
+.space-17 {
+  height: 5rem; }
+
+.space-18 {
+  height: 6rem; }
+
+.space-19 {
+  height: 8rem; }
+
+.space-20 {
+  height: 10rem; }
+
+.space-21 {
+  height: 13rem; }
+
+.space-22 {
+  height: 16rem; }
+
+.space-23 {
+  height: 21rem; }
+
+.space-24 {
+  height: 26rem; }
+
+/*      EVO SPACE     */
+
+.evo-space,
+.evo-space-0,
+.evo-space-1,
+.evo-space-2,
+.evo-space-3,
+.evo-space-4,
+.evo-space-5,
+.evo-space-6,
+.evo-space-7,
+.evo-space-8,
+.evo-space-9,
+.evo-space-10,
+.evo-space-11,
+.evo-space-12,
+.evo-space-13,
+.evo-space-14,
+.evo-space-15,
+.evo-space-16,
+.evo-space-17,
+.evo-space-18,
+.evo-space-19,
+.evo-space-20,
+.evo-space-21,
+.evo-space-22,
+.evo-space-23,
+.evo-space-24 {
+  height: 1rem;
+  width: auto;
+  clear: both; }
+
+.evo-space-0 {
+  height: 1px; }
+
+.evo-space-1 {
+  height: 2px; }
+
+.evo-space-2 {
+  height: 4px; }
+
+.evo-space-3 {
+  height: 6px; }
+
+.evo-space-4 {
+  height: .5rem; }
+
+.evo-space-5 {
+  height: .625rem; }
+
+.evo-space-6 {
+  height: .75rem; }
+
+.evo-space-7 {
+  height: .875rem; }
+
+.evo-space-8 {
+  height: 1rem; }
+
+.evo-space-9 {
+  height: 1.125rem; }
+
+.evo-space-10 {
+  height: 1.3125rem; }
+
+.evo-space-11 {
+  height: 1.4375rem; }
+
+.evo-space-12 {
+  height: 1.875rem; }
+
+.evo-space-13 {
+  height: 2.3125rem; }
+
+.evo-space-14 {
+  height: 2.6875rem; }
+
+.evo-space-15 {
+  height: 3rem; }
+
+.evo-space-16 {
+  height: 3.75rem; }
+
+.evo-space-17 {
+  height: 5rem; }
+
+.evo-space-18 {
+  height: 6rem; }
+
+.evo-space-19 {
+  height: 8rem; }
+
+.evo-space-20 {
+  height: 10rem; }
+
+.evo-space-21 {
+  height: 13rem; }
+
+.evo-space-22 {
+  height: 16rem; }
+
+.evo-space-23 {
+  height: 21rem; }
+
+.evo-space-24 {
+  height: 26rem; }
