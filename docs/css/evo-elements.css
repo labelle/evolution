@@ -1,40 +1,159 @@
+@charset "UTF-8";
 /*******************************************************************************
 *
-* elements.css
-*
-* The goal of this file is to capture all Evolution styles, used throughout the 
-* Elements site; some page specific styles are captured in seperate css files 
-* which are animation.css, style.css and stylguide.css. These three files can be 
-* found in same directory (css/)
-*
+* The goal of this CSS file is to capture all Evo-Elements HTML and CSS styles.
+* This CSS resets classes and then offers unstyled structure for you to modify.
+* The order of CSS placement – or links to CSS files – has an impact on styles.
 *
 * Outline: (update as needed)
-*   _VARIABLES - Variables for controlling certain element structures and styles
-*              - All the variables are in this file
-*   _COLORS - 5 different color palettes are included in this file
-*   _FONTS - 4 different font families are included in this file
-*   _HEADERS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*              4 different styles: regular, bold, caps, bold-caps
-*              By default comes with line above headers (just use .evo-no-line class to toggle line)
-*   _TEXT - 2 different styles: regular and bold (size 1 - 30)
-*         - _TEXT is also used within orderd/unorderd list
-*         - 4 different list styes: regular/no-style, bullets, numbers and lines
-*         - bullets list are using custom SVGs
-*   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*            - http://elements.humanig.com/#/buttons
-*   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
-*            dropdown menu, text input, number input
-*   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
-*          - borders: top border (solid, dots, dash), (size 1 - 10)
-*                     bottom border (solid, dots, dash), (size 1 - 10)
-*          - boxes: (solid, dots, dash), (size 1 - 10)        
-*          - double: (solid), (size 1 - 10)
-*   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
-*   _SPACERS - Create space between elements (size 1 - 30)
-*   _ERRORS - A selection of aliases that forgive common mistypes
+*   _GLOBAL - General HTML, BODY, BUTTON, LINK settings (optional)
+*   _FONTS - Several different font families for quick styling
+*   _TYPE - 2 different text styles: regular and caps (size 1 - 24)
+// *         - _TEXT is also used within ordered/unordered list
+// *         - 4 different list styes: regular/no-style, bullets, numbers and lines
+// *         - bullets list are using custom SVGs
+// *   _COLORS - 5 different color palettes are included in this file
+// *   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
+// *            - http://elements.humanig.com/#/buttons
+// *   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
+// *            dropdown menu, text input, number input
+// *   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
+// *          - borders: top border (solid, dots, dash), (size 1 - 10)
+// *                     bottom border (solid, dots, dash), (size 1 - 10)
+// *          - boxes: (solid, dots, dash), (size 1 - 10)        
+// *          - double: (solid), (size 1 - 10)
+// *   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
+*   _SPACERS - Create space between elements (size 1 - 24)
+// *   _ERRORS - A selection of aliases that forgive common mistypes
 *
 *******************************************************************************/
-/*      FONTS     */
+.font-arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.font-georgia {
+  font-family: Georgia, Times, "Times New Roman", serif; }
+
+.font-times-new-roman {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+
+.font-courier-new {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
+
+.font-helvetica-neue {
+  font-family: "helvetica neue", helvetica, arial, sans-serif; }
+
+.font-helvetica-neue-thin {
+  font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+/*      TEXT     */
+.text,
+.text-0,
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6,
+.text-7,
+.text-8,
+.text-9,
+.text-10,
+.text-11,
+.text-12,
+.text-13,
+.text-14,
+.text-15,
+.text-16,
+.text-17,
+.text-18,
+.text-19,
+.text-20,
+.text-21,
+.text-22,
+.text-23,
+.text-24 {
+  color: initial;
+  font-family: initial;
+  font-weight: initial;
+  line-height: initial;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.text-0 {
+  font-size: .5rem; }
+
+.text-1 {
+  font-size: .625rem; }
+
+.text-2 {
+  font-size: .75rem; }
+
+.text-3 {
+  font-size: .875rem; }
+
+.text-4 {
+  font-size: 1rem; }
+
+.text-5 {
+  font-size: 1.125rem; }
+
+.text-6 {
+  font-size: 1.3125rem; }
+
+.text-7 {
+  font-size: 1.4375rem; }
+
+.text-8 {
+  font-size: 1.875rem; }
+
+.text-9 {
+  font-size: 2.3125rem; }
+
+.text-10 {
+  font-size: 2.6875rem; }
+
+.text-11 {
+  font-size: 3rem; }
+
+.text-12 {
+  font-size: 3.75rem; }
+
+.text-13 {
+  font-size: 5rem; }
+
+.text-14 {
+  font-size: 6rem; }
+
+.text-15 {
+  font-size: 8rem; }
+
+.text-16 {
+  font-size: 10rem; }
+
+.text-17 {
+  font-size: 13rem; }
+
+.text-18 {
+  font-size: 16rem; }
+
+.text-19 {
+  font-size: 21rem; }
+
+.text-20 {
+  font-size: 26rem; }
+
+.text-21 {
+  font-size: 34rem; }
+
+.text-22 {
+  font-size: 42rem; }
+
+.text-23 {
+  font-size: 55rem; }
+
+.text-24 {
+  font-size: 68rem; }
+
 /*      SPACE     */
 .space,
 .space-0,
@@ -63,7 +182,6 @@
 .space-23,
 .space-24 {
   width: auto;
-  height: 1rem;
   clear: both; }
 
 .space-0 {
@@ -139,111 +257,4 @@
   height: 21rem; }
 
 .space-24 {
-  height: 26rem; }
-
-/*      EVO SPACE     */
-
-.evo-space,
-.evo-space-0,
-.evo-space-1,
-.evo-space-2,
-.evo-space-3,
-.evo-space-4,
-.evo-space-5,
-.evo-space-6,
-.evo-space-7,
-.evo-space-8,
-.evo-space-9,
-.evo-space-10,
-.evo-space-11,
-.evo-space-12,
-.evo-space-13,
-.evo-space-14,
-.evo-space-15,
-.evo-space-16,
-.evo-space-17,
-.evo-space-18,
-.evo-space-19,
-.evo-space-20,
-.evo-space-21,
-.evo-space-22,
-.evo-space-23,
-.evo-space-24 {
-  height: 1rem;
-  width: auto;
-  clear: both; }
-
-.evo-space-0 {
-  height: 1px; }
-
-.evo-space-1 {
-  height: 2px; }
-
-.evo-space-2 {
-  height: 4px; }
-
-.evo-space-3 {
-  height: 6px; }
-
-.evo-space-4 {
-  height: .5rem; }
-
-.evo-space-5 {
-  height: .625rem; }
-
-.evo-space-6 {
-  height: .75rem; }
-
-.evo-space-7 {
-  height: .875rem; }
-
-.evo-space-8 {
-  height: 1rem; }
-
-.evo-space-9 {
-  height: 1.125rem; }
-
-.evo-space-10 {
-  height: 1.3125rem; }
-
-.evo-space-11 {
-  height: 1.4375rem; }
-
-.evo-space-12 {
-  height: 1.875rem; }
-
-.evo-space-13 {
-  height: 2.3125rem; }
-
-.evo-space-14 {
-  height: 2.6875rem; }
-
-.evo-space-15 {
-  height: 3rem; }
-
-.evo-space-16 {
-  height: 3.75rem; }
-
-.evo-space-17 {
-  height: 5rem; }
-
-.evo-space-18 {
-  height: 6rem; }
-
-.evo-space-19 {
-  height: 8rem; }
-
-.evo-space-20 {
-  height: 10rem; }
-
-.evo-space-21 {
-  height: 13rem; }
-
-.evo-space-22 {
-  height: 16rem; }
-
-.evo-space-23 {
-  height: 21rem; }
-
-.evo-space-24 {
   height: 26rem; }

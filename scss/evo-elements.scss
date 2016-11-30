@@ -6,56 +6,35 @@
 
 /*******************************************************************************
 *
-* elements.css
-*
-* The goal of this file is to capture all Evolution styles, used throughout the 
-* Elements site; some page specific styles are captured in seperate css files 
-* which are animation.css, style.css and stylguide.css. These three files can be 
-* found in same directory (css/)
-*
+* The goal of this CSS file is to capture all Evo-Elements HTML and CSS styles.
+* This CSS resets classes and then offers unstyled structure for you to modify.
+* The order of CSS placement – or links to CSS files – has an impact on styles.
 *
 * Outline: (update as needed)
-*   _VARIABLES - Variables for controlling certain element structures and styles
-*              - All the variables are in this file
-*   _COLORS - 5 different color palettes are included in this file
-*   _FONTS - 4 different font families are included in this file
-*   _HEADERS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*              4 different styles: regular, bold, caps, bold-caps
-*              By default comes with line above headers (just use .evo-no-line class to toggle line)
-*   _TEXT - 2 different styles: regular and bold (size 1 - 30)
-*         - _TEXT is also used within orderd/unorderd list
-*         - 4 different list styes: regular/no-style, bullets, numbers and lines
-*         - bullets list are using custom SVGs
-*   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*            - http://elements.humanig.com/#/buttons
-*   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
-*            dropdown menu, text input, number input
-*   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
-*          - borders: top border (solid, dots, dash), (size 1 - 10)
-*                     bottom border (solid, dots, dash), (size 1 - 10)
-*          - boxes: (solid, dots, dash), (size 1 - 10)        
-*          - double: (solid), (size 1 - 10)
-*   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
-*   _SPACERS - Create space between elements (size 1 - 30)
-*   _ERRORS - A selection of aliases that forgive common mistypes
+*   _GLOBAL - General HTML, BODY, BUTTON, LINK settings (optional)
+*   _FONTS - Several different font families for quick styling
+*   _TYPE - 2 different text styles: regular and caps (size 1 - 24)
+// *         - _TEXT is also used within ordered/unordered list
+// *         - 4 different list styes: regular/no-style, bullets, numbers and lines
+// *         - bullets list are using custom SVGs
+// *   _COLORS - 5 different color palettes are included in this file
+// *   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
+// *            - http://elements.humanig.com/#/buttons
+// *   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
+// *            dropdown menu, text input, number input
+// *   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
+// *          - borders: top border (solid, dots, dash), (size 1 - 10)
+// *                     bottom border (solid, dots, dash), (size 1 - 10)
+// *          - boxes: (solid, dots, dash), (size 1 - 10)        
+// *          - double: (solid), (size 1 - 10)
+// *   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
+*   _SPACERS - Create space between elements (size 1 - 24)
+// *   _ERRORS - A selection of aliases that forgive common mistypes
 *
 *******************************************************************************/
 
-// @import "variables";
-// @import "settings";
-// @import "elements/reset";
-// @import "elements/base";
-// @import "elements/helpers";
-// @import "elements/fonts";
-// @import "elements/type";
-// @import "elements/transitions";
-// @import "elements/colors";
-// @import "elements/colors_extended";
-
-// @import "elements/buttons";
-// @import "elements/forms";
-// @import "elements/lines";
-// @import "elements/images";
+@import "elements/global";
+@import "elements/fonts";
+@import "elements/type";
 @import "elements/spacers";
-// @import "elements/errors";
 
