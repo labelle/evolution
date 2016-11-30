@@ -16,7 +16,7 @@
 }
 
 // Space sizes space-0 through space-24
-// Silient classes are available e.g. %space-15
+// Silent classes are available e.g. %space-15
 @for $i from 0 through 24 {
     .space-#{$i},
     %space-#{$i} {

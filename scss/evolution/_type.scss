@@ -32,7 +32,7 @@ $font_helvetica_neue_thin: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvet
 }
 
 // Text sizes text-0 through text-24
-// Silient classes are available e.g. %text-15
+// Silent classes are available e.g. %text-15
 @for $i from 0 through 24 {
     .text-#{$i},
     %text-#{$i} {
