@@ -1,13 +1,18 @@
 ///* =========================== */
 
-///*      E L E M E N T S      */
+///*      M O L E C U L E S      */
 
 ///* =========================== */
 
-// Elements
-// (multiple sizes) do have evo prefex since they are styled
-// and class driven, with modular scale, tints, opacity, and richer variety
+// Molecules:
+// (Water) HTML plus CSS such as interactive buttons, form elements, and links
+// are basic combinations of elements (styling)
 
+// Compounds:
+// Get more complex, such as alternate form styling, links, and buttons styles.
+// Could include special classes and components such as page titles, text/image blocks,
+// and hero image areas, etc.
+// May include templating
 
 /*******************************************************************************
 *
@@ -38,8 +43,8 @@
 *
 *******************************************************************************/
 
-@import "elements/global";
-@import "elements/fonts";
-@import "elements/text";
-@import "elements/spacers";
+// @import "elements/global";
+// @import "elements/fonts";
+// @import "elements/type";
+// @import "elements/spacers";
 

@@ -1,0 +1,114 @@
+///*      T E X T     */
+
+@import "../variables";
+
+// Text
+@mixin text($text) {
+  @if $text == null  { 
+  font-size: initial;
+  color: initial;
+  line-height: initial;
+  font-weight: initial;
+  font-style: initial;
+  font-size: initial;
+  text-transform: initial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+  @else if $text == bold         { font-weight: bold; }
+  @else if $text == italic       { font-style: italic; }
+  @else if $text == caps         { text-transform: uppercase; }
+  @else if $text == capital      { text-transform: capitalize; }
+  @else if $text == strike       { text-transform: line-through; }
+  @else if $text == underline    { text-transform: underline; }
+  // Text sizes
+  @else if $text == 0            { font-size: #{$rem0}; }  // 6px ?
+  @else if $text == 1            { font-size: #{$rem1}; }  // 8px
+  @else if $text == 2            { font-size: #{$rem2}; }  // 10px
+  @else if $text == 3            { font-size: #{$rem3}; }  // 12px
+  @else if $text == 4            { font-size: #{$rem4}; }  // 14px
+  @else if $text == 5            { font-size: #{$rem5}; }  // 16px 
+  @else if $text == 6            { font-size: #{$rem6}; }  // 18px
+  @else if $text == 7            { font-size: #{$rem7}; }  // 21px
+  @else if $text == 8            { font-size: #{$rem8}; }  // 23px
+  @else if $text == 9            { font-size: #{$rem9}; }  // 30px
+  @else if $text == 10           { font-size: #{$rem10}; } // 37px
+  @else if $text == 11           { font-size: #{$rem11}; } // 43px
+  @else if $text == 12           { font-size: #{$rem12}; } // 48px
+  @else if $text == 13           { font-size: #{$rem13}; } // 60px
+  @else if $text == 14           { font-size: #{$rem13}; } // 80px 
+  @else if $text == 15           { font-size: #{$rem15}; } // 96px
+  @else if $text == 16           { font-size: #{$rem16}; } // 128px
+  @else if $text == 17           { font-size: #{$rem17}; } // 160px
+  @else if $text == 18           { font-size: #{$rem18}; } // 208px
+  @else if $text == 19           { font-size: #{$rem19}; } // 256px
+  @else if $text == 20           { font-size: #{$rem20}; } // 336px
+  @else if $text == 21           { font-size: #{$rem21}; } // 416px
+  @else if $text == 22           { font-size: #{$rem22}; } // 544px
+  @else if $text == 23           { font-size: #{$rem23}; } // 672px
+  @else if $text == 24           { font-size: #{$rem24}; } // 880px
+  @else if $text == 25           { font-size: #{$rem25}; } // 1088px
+  // Throw Warnings
+  @else { @warn "Text mixin supports: null, numbers 0-24, bold, italic, caps, capital, strike, underline"; }
+}
+
+// Leading
+@mixin leading($leading)               {
+  @if $leading == null        { line-height: initial; }
+  @else if $leading == 0      { line-height: #{$em0}; } // 0em
+      font-size: #{$rem(@1)}
+  @else if $leading == 0      { line-height: #{$em0}; } // 0em
+  @else if $leading == 1      { line-height: #{$em1}; }
+  @else if $leading == 2      { line-height: #{$em2}; }
+  @else if $leading == 3      { line-height: #{$em3}; }
+  @else if $leading == 4      { line-height: #{$em4}; }
+  @else if $leading == 5      { line-height: #{$em5}; }
+  @else if $leading == 6      { line-height: #{$em6}; }
+  @else if $leading == 7      { line-height: #{$em7}; }
+  @else if $leading == 8      { line-height: #{$em8}; } // 1em
+  @else if $leading == 9      { line-height: #{$em9}; }
+  @else if $leading == 10     { line-height: #{$em10}; }
+  @else if $leading == 11     { line-height: #{$em11}; }
+  @else if $leading == 12     { line-height: #{$em12}; }  // 1.5em default
+  @else if $leading == 13     { line-height: #{$em13}; }
+  @else if $leading == 14     { line-height: #{$em14}; }
+  @else if $leading == 15     { line-height: #{$em15}; }
+  @else if $leading == 16     { line-height: #{$em16}; } // 2em
+  @else if $leading == 17     { line-height: #{$em17}; }
+  @else if $leading == 18     { line-height: #{$em18}; }
+  @else if $leading == 19     { line-height: #{$em19}; }
+  @else if $leading == 20     { line-height: #{$em20}; }
+  @else if $leading == 21     { line-height: #{$em21}; }
+  @else if $leading == 22     { line-height: #{$em22}; }
+  @else if $leading == 23     { line-height: #{$em23}; }
+  @else if $leading == 24     { line-height: #{$em24}; } // 3em
+  // Throw Warnings
+  @else { @warn "Leading mixin supports: null, numbers 0-24"; }
+}
+
+
+// Tracking
+@mixin tracking($tracking) {
+  @if $tracking == null  { letter-spacing: initial; }
+  @else if $tracking == tightest    { letter-spacing: -.1em; }
+  @else if $tracking == tighter     { letter-spacing: -.065em; }
+  @else if $tracking == tight       { letter-spacing: -.035em; }
+  @else if $tracking == loose       { letter-spacing: .035em; }
+  @else if $tracking == looser      { letter-spacing: .065em; }
+  @else if $tracking == loosest     { letter-spacing: .1em; }
+    // Throw Warnings
+  @else { @warn "Tracking mixin supports: null, tightest, tighter, tight, loose, looser, loosest"; }
+}
+
+// Measure
+@mixin measure($measure) {
+  @if $measure == null  { max-width: auto; }
+  @else if $measure == widest   { max-width: 50em; }
+  @else if $measure == wider    { max-width: 40em; }
+  @else if $measure == wide     { max-width: 30em; }
+  @else if $measure == tight    { max-width: 25em; }
+  @else if $measure == tighter  { max-width: 20em; }
+  @else if $measure == tightest { max-width: 15em; }
+  // Throw Warnings
+  @else { @warn "Measure mixin supports: null, widest, wider, wide, tight, tighter, tightest"; }
+}

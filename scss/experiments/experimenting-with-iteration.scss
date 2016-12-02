@@ -1,0 +1,40 @@
+// https://css-tricks.com/loops-css-preprocessors/
+// test out on sassmeister.com
+
+// Trying to get the increments to work correctly, but it creates way more classes than needed. We only need 12 classes.
+
+$evo:                 ".evo" !default;
+
+// colors
+$rems:
+1rem
+2rem
+3rem
+4rem 
+5rem
+6rem
+;
+
+// loop!
+$text-sizes:12;
+$i: 1;
+@for $i from 0 through $text-sizes {
+@each $rem in $rems {
+  #{$evo}-text-#{$i} {
+    line-height: $rem;
+  }
+}
+}
+
+    
+//     // Spacers
+// @for $i from 0 through 24 {
+//   div {
+//   content: "$i == #{$i}";
+//   #{$evo}-space-#{$i} {
+//   @extend #{$evo}-space !optional;
+//     @if ($i == 0) { height: 1px; }  // smallest
+    
+//   }
+//   }
+//   }

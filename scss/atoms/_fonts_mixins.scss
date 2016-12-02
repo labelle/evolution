@@ -1,0 +1,57 @@
+///*      F O N T S  M I X I N S   */
+
+@import "../variables";
+
+
+// Simple font stack mixins
+
+    // Mixins
+@mixin font($font) {
+  @if $font == null  { 
+  font-family: initial;
+  font-weight: initial;
+  font-style: initial;
+  @extend %sans-serif; 
+}
+    // Unstyled
+  @else if $font == sans-serif       { font-family: sans-serif; }
+  @else if $font == serif            { font-family: serif; }
+  @else if $font == monospace        { font-family: monospace; }
+  @else if $font == cursive          { font-family: cursive; }
+    // Borrowed in part from Tachyons
+    // Some reference from http://www.cssfontstack.com/
+  @else if $font == arial            { font-family: arial, 'Helvetica Neue', helvetica, sans-serif; } // Font stack
+  @else if $font == arial-black      { font-family: 'Arial Black', 'Arial Bold', gadget, sans-serif; } // Font stack
+  @else if $font == athelas          { font-family: athelas, georgia, serif; }
+  @else if $font == avenir           { font-family: 'avenir next', avenir, sans-serif; }
+  @else if $font == baskerville      { font-family: baskerville, serif; }
+  @else if $font == bodoni           { font-family: "Bodoni MT", serif; }
+  @else if $font == calisto          { font-family: "Calisto MT", serif; }
+  @else if $font == consolas         { font-family: Consolas, monaco, monospace; }
+  @else if $font == courier          { font-family: 'Courier Next', courier, monospace; }
+  @else if $font == courier-new      { font-family: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; } // Font stack
+  @else if $font == didot            { font-family: didot, serif; }
+  @else if $font == garamond         { font-family: garamond, serif; }
+  @else if $font == georgia          { font-family: georgia, times, 'Times New Roman', serif;  } // Font stack
+  @else if $font == gotham           { font-family: gotham, serif; }
+  @else if $font == helvetica        { font-family: 'helvetica neue', helvetica, arial, sans-serif; } // Font stack
+  @else if $font == helvetica-thin   { font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; } // Font stack
+  @else if $font == menlo            { font-family: menlo, consolas, monaco, 'Courier New', monospace; } // Font stack
+  @else if $font == monaco           { font-family: monaco, consolas, menlo, 'Courier New', monospace; } // Font stack
+  @else if $font == times            { font-family: times, serif; }
+  @else if $font == times-new        { font-family: TimesNewRoman, 'Times New Roman', times, baskerville, georgia, serif; } // Font stack
+      // Borrowed from SmashingMagazine
+    // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-a
+  @else if $font == native           { font-family: -apple-system, BlinkMacSystemFont, 
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !optional; }
+    // Borrowed from Bootstrap
+    // https://github.com/twbs/bootstrap/pull/19098
+  @else if $font == native-bootstrap { font-family: -apple-system, BlinkMacSystemFont, 
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !optional; }
+    // Borrowed from Tachyons
+    // http://tachyons.io/#style
+  @else if $font == native-tachyons  {font-family: -apple-system, BlinkMacSystemFont,
+	 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !optional; }
+    // Throw Warnings
+  @else { @warn "Spacers mixin supports: null, sans-serif, serif, monospace, cursive, arial, arial-black, athelas, avenir, baskerville, bodoni, calisto, consolas, courier, courier-new, didot, garamond, georgia, gotham, helvetica, helvetica-thin, menlo, monaco, times, times-new, native, native-bootstrap, native-tachyons"; }
+}
