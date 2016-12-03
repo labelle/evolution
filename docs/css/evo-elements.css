@@ -146,238 +146,238 @@
 .evo-text-center {
   text-align: center; }
 
-.evo-text-size-reset {
+.evo-text-reset {
   line-height: initial; }
 
-.evo-text-size-0 {
+.evo-text-0 {
   font-size: 0.375rem; }
 
-.evo-text-size-1 {
+.evo-text-1 {
   font-size: 0.5rem; }
 
-.evo-text-size-2 {
+.evo-text-2 {
   font-size: 0.625rem; }
 
-.evo-text-size-3 {
+.evo-text-3 {
   font-size: 0.75rem; }
 
-.evo-text-size-4 {
+.evo-text-4 {
   font-size: 0.875rem; }
 
-.evo-text-size-5 {
+.evo-text-5 {
   font-size: 1rem; }
 
-.evo-text-size-6 {
+.evo-text-6 {
   font-size: 1.125rem; }
 
-.evo-text-size-7 {
+.evo-text-7 {
   font-size: 1.3125rem; }
 
-.evo-text-size-8 {
+.evo-text-8 {
   font-size: 1.4375rem; }
 
-.evo-text-size-9 {
+.evo-text-9 {
   font-size: 1.875rem; }
 
-.evo-text-size-10 {
+.evo-text-10 {
   font-size: 2.3125rem; }
 
-.evo-text-size-11 {
+.evo-text-11 {
   font-size: 2.6875rem; }
 
-.evo-text-size-12 {
+.evo-text-12 {
   font-size: 3rem; }
 
-.evo-text-size-13 {
+.evo-text-13 {
   font-size: 3.75rem; }
 
-.evo-text-size-14 {
+.evo-text-14 {
   font-size: 5rem; }
 
-.evo-text-size-15 {
+.evo-text-15 {
   font-size: 6rem; }
 
-.evo-text-size-16 {
+.evo-text-16 {
   font-size: 8rem; }
 
-.evo-text-size-17 {
+.evo-text-17 {
   font-size: 10rem; }
 
-.evo-text-size-18 {
+.evo-text-18 {
   font-size: 13rem; }
 
-.evo-text-size-19 {
+.evo-text-19 {
   font-size: 16rem; }
 
-.evo-text-size-20 {
+.evo-text-20 {
   font-size: 21rem; }
 
-.evo-text-size-21 {
+.evo-text-21 {
   font-size: 26rem; }
 
-.evo-text-size-22 {
+.evo-text-22 {
   font-size: 34rem; }
 
-.evo-text-size-23 {
+.evo-text-23 {
   font-size: 42rem; }
 
-.evo-text-size-24 {
+.evo-text-24 {
   font-size: 55rem; }
 
-.evo-text-leading-reset {
+.evo-leading-reset {
   line-height: initial; }
 
-.evo-text-leading-0 {
-  line-height: 0em; }
+.evo-leading-0 {
+  line-height: 0.0625em; }
 
-.evo-text-leading-1 {
+.evo-leading-1 {
   line-height: 0.125em; }
 
-.evo-text-leading-2 {
+.evo-leading-2 {
   line-height: 0.25em; }
 
-.evo-text-leading-3 {
+.evo-leading-3 {
   line-height: 0.375em; }
 
-.evo-text-leading-4 {
+.evo-leading-4 {
   line-height: 0.5em; }
 
-.evo-text-leading-5 {
+.evo-leading-5 {
   line-height: 0.625em; }
 
-.evo-text-leading-6 {
+.evo-leading-6 {
   line-height: 0.75em; }
 
-.evo-text-leading-7 {
+.evo-leading-7 {
   line-height: 0.875em; }
 
-.evo-text-leading-8 {
+.evo-leading-8 {
   line-height: 1em; }
 
-.evo-text-leading-9 {
+.evo-leading-9 {
   line-height: 1.125em; }
 
-.evo-text-leading-10 {
+.evo-leading-10 {
   line-height: 1.25em; }
 
-.evo-text-leading-11 {
+.evo-leading-11 {
   line-height: 1.375em; }
 
-.evo-text-leading-12 {
+.evo-leading-12 {
   line-height: 1.5em; }
 
-.evo-text-leading-13 {
+.evo-leading-13 {
   line-height: 1.625em; }
 
-.evo-text-leading-14 {
+.evo-leading-14 {
   line-height: 1.75em; }
 
-.evo-text-leading-15 {
+.evo-leading-15 {
   line-height: 1.875em; }
 
-.evo-text-leading-16 {
+.evo-leading-16 {
   line-height: 2em; }
 
-.evo-text-leading-17 {
+.evo-leading-17 {
   line-height: 2.125em; }
 
-.evo-text-leading-18 {
+.evo-leading-18 {
   line-height: 2.25em; }
 
-.evo-text-leading-19 {
+.evo-leading-19 {
   line-height: 2.325em; }
 
-.evo-text-leading-20 {
+.evo-leading-20 {
   line-height: 2.5em; }
 
-.evo-text-leading-21 {
+.evo-leading-21 {
   line-height: 2.625em; }
 
-.evo-text-leading-22 {
+.evo-leading-22 {
   line-height: 2.75em; }
 
-.evo-text-leading-23 {
+.evo-leading-23 {
   line-height: 2.875em; }
 
-.evo-text-leading-24 {
+.evo-leading-24 {
   line-height: 3em; }
 
-.evo-text-size-smallest {
+.evo-text-smallest {
   font-size: 0.625rem; }
 
-.evo-text-size-smaller {
+.evo-text-smaller {
   font-size: 0.875rem; }
 
-.evo-text-size-small {
+.evo-text-small {
   font-size: 1.125rem; }
 
-.evo-text-size-big {
+.evo-text-big {
   font-size: 2.3125rem; }
 
-.evo-text-size-bigger {
+.evo-text-bigger {
   font-size: 3rem; }
 
-.evo-text-size-biggest {
+.evo-text-biggest {
   font-size: 5rem; }
 
-.evo-text-size-jumbo {
+.evo-text-jumbo {
   font-size: 8rem; }
 
-.evo-text-size-giant {
+.evo-text-giant {
   font-size: 13rem; }
 
-.evo-text-leading-tightest {
+.evo-leading-tightest {
   line-height: 0.125em; }
 
-.evo-text-leading-tighter {
+.evo-leading-tighter {
   line-height: 0.625em; }
 
-.evo-text-leading-tight {
+.evo-leading-tight {
   line-height: 1.25em; }
 
-.evo-text-leading-loose {
+.evo-leading-loose {
   line-height: 1.875em; }
 
-.evo-text-leading-looser {
+.evo-leading-looser {
   line-height: 2.5em; }
 
-.evo-text-leading-loosest {
+.evo-leading-loosest {
   line-height: 3em; }
 
-.evo-text-tracking-tightest {
-  letter-spacing: -.1em; }
+.evo-tracking-tightest {
+  letter-spacing: -1em; }
 
-.evo-text-tracking-tighter {
-  letter-spacing: -.065em; }
+.evo-tracking-tighter {
+  letter-spacing: -0.625em; }
 
-.evo-text-tracking-tight {
-  letter-spacing: -.035em; }
+.evo-tracking-tight {
+  letter-spacing: -0.375em; }
 
-.evo-text-tracking-loose {
-  letter-spacing: .035em; }
+.evo-tracking-loose {
+  letter-spacing: 0.375em; }
 
-.evo-text-tracking-looser {
-  letter-spacing: .065em; }
+.evo-tracking-looser {
+  letter-spacing: 0.625em; }
 
-.evo-text-tracking-loosest {
-  letter-spacing: .1em; }
+.evo-tracking-loosest {
+  letter-spacing: 1em; }
 
-.evo-text-measure-widest {
+.evo-measure-widest {
   max-width: 50em; }
 
-.evo-text-measure-wider {
+.evo-measure-wider {
   max-width: 40em; }
 
-.evo-text-measure-wide {
+.evo-measure-wide {
   max-width: 30em; }
 
-.evo-text-measure-tight {
+.evo-measure-tight {
   max-width: 25em; }
 
-.evo-text-measure-tighter {
+.evo-measure-tighter {
   max-width: 20em; }
 
-.evo-text-measure-tightest {
+.evo-measure-tightest {
   max-width: 15em; }
 
 /* COLORS */

@@ -9,91 +9,111 @@
 
 
 // em scale
-$em0: 0em !default;
-$em1: .125em !default;
-$em2: .25em !default;
-$em3: .375em !default;
-$em4: .5em !default;
-$em5: .625em !default;
-$em6: .75em !default;
-$em7: .875em !default;
-$em8: 1em !default;
-$em9: 1.125em !default;
-$em10: 1.25em !default;
-$em11: 1.375em !default;
-$em12: 1.5em !default; // default text leading
-$em13: 1.625em !default;
-$em14: 1.75em !default;
-$em15: 1.875em !default;
-$em16: 2em !default;
-$em17: 2.125em !default;
-$em18: 2.25em !default;
-$em19: 2.325em !default;
-$em20: 2.5em !default;
-$em21: 2.625em !default;
-$em22: 2.75em !default;
-$em23: 2.875em !default;
-$em24: 3em !default;
+$em-08: -1em !default;
+$em-07: -.875em !default;
+$em-06: -.75em !default;
+$em-05: -.625em !default;
+$em-04: -.5em !default;
+$em-03: -.375em !default;
+$em-02: -.25em !default;
+$em-01: -.125em !default;
+$em-00: -.0625em !default; // negative
+$em-reset: 0em !default; // none
+$em-0: .0625em !default;
+$em-1: .125em !default;
+$em-2: .25em !default;
+$em-3: .375em !default;
+$em-4: .5em !default;
+$em-5: .625em !default;
+$em-6: .75em !default;
+$em-7: .875em !default;
+$em-8: 1em !default;
+$em-9: 1.125em !default;
+$em-10: 1.25em !default;
+$em-11: 1.375em !default;
+$em-12: 1.5em !default; // default text leading
+$em-13: 1.625em !default;
+$em-14: 1.75em !default;
+$em-15: 1.875em !default;
+$em-16: 2em !default;
+$em-17: 2.125em !default;
+$em-18: 2.25em !default;
+$em-19: 2.325em !default;
+$em-20: 2.5em !default;
+$em-21: 2.625em !default;
+$em-22: 2.75em !default;
+$em-23: 2.875em !default;
+$em-24: 3em !default;
+$em-25: 5em !default;
+$em-26: 10em !default;
+$em-27: 15em !default;
+$em-28: 20em !default;
+$em-29: 30em !default;
+$em-30: 40em !default;
+$em-31: 50em !default;
+
+
+
  
 
 // rem scale
 // floor() rounds down
 // ceil() rounds up
-$rem0: .375rem !default;          // 6px? double check this
-$rem1: .5rem !default;             // 8px
-$rem2: .625rem !default;          // 10px
-$rem3: .75rem !default;           // 12px
-$rem4: .875rem !default;          // 14px
-$rem5: floor(1.02rem) !default;   // 16px 
-$rem6: 1.125rem !default;         // 18px
-$rem7: 1.3125rem !default;        // 21px
-$rem8: 1.4375rem !default;        // 23px
-$rem9: 1.875rem !default;         // 30px
-$rem10: 2.3125rem !default;       // 37px
-$rem11: 2.6875rem !default;       // 43px
-$rem12: floor(3.05rem) !default;  // 48px
-$rem13: 3.75rem !default;         // 60px
-$rem14: ceil(4.935rem) !default;  // 80px 
-$rem15: floor(6.1rem) !default;   // 96px
-$rem16: ceil(7.985rem) !default;  // 128px
-$rem17: ceil(9.87rem) !default;   // 160px
-$rem18: ceil(12.92rem) !default;  // 208px
-$rem19: ceil(15.97rem) !default;  // 256px
-$rem20: ceil(20.905rem) !default; // 336px
-$rem21: ceil(25.84rem) !default;  // 416px
-$rem22: ceil(33.825rem) !default; // 544px
-$rem23: ceil(41.81rem) !default;  // 672px
-$rem24: ceil(54.73rem) !default;  // 880px
-$rem25: ceil(67.65rem) !default;  // 1088px
+$rem-0: .375rem !default;          // 6px
+$rem-1: .5rem !default;            // 8px
+$rem-2: .625rem !default;          // 10px
+$rem-3: .75rem !default;           // 12px
+$rem-4: .875rem !default;          // 14px
+$rem-5: floor(1.02rem) !default;   // 16px default text size
+$rem-6: 1.125rem !default;         // 18px
+$rem-7: 1.3125rem !default;        // 21px
+$rem-8: 1.4375rem !default;        // 23px
+$rem-9: 1.875rem !default;         // 30px
+$rem-10: 2.3125rem !default;       // 37px
+$rem-11: 2.6875rem !default;       // 43px
+$rem-12: floor(3.05rem) !default;  // 48px
+$rem-13: 3.75rem !default;         // 60px
+$rem-14: ceil(4.935rem) !default;  // 80px 
+$rem-15: floor(6.1rem) !default;   // 96px
+$rem-16: ceil(7.985rem) !default;  // 128px
+$rem-17: ceil(9.87rem) !default;   // 160px
+$rem-18: ceil(12.92rem) !default;  // 208px
+$rem-19: ceil(15.97rem) !default;  // 256px
+$rem-20: ceil(20.905rem) !default; // 336px
+$rem-21: ceil(25.84rem) !default;  // 416px
+$rem-22: ceil(33.825rem) !default; // 544px
+$rem-23: ceil(41.81rem) !default;  // 672px
+$rem-24: ceil(54.73rem) !default;  // 880px
+$rem-25: ceil(67.65rem) !default;  // 1088px
 
 
 // pixel scale
-$px0: 6px !default; // double check this against rems ???
-$px1: 8px !default;
-$px2: 10px !default;
-$px3: 12px !default;
-$px4: 14px !default;
-$px5: 16px !default;
-$px6: 18px !default;
-$px7: 21px !default;
-$px8: 23px !default;
-$px9: 30px !default;
-$px10: 37px !default;
-$px11: 43px !default;
-$px12: 48px !default;
-$px13: 60px !default;
-$px14: 80px !default;
-$px15: 96px !default;
-$px16: 128px !default;
-$px17: 160px !default;
-$px18: 208px !default;
-$px19: 256px !default;
-$px20: 336px !default;
-$px21: 416px !default;
-$px22: 544px !default;
-$px23: 672px !default;
-$px24: 880px !default;
-$px25: 1088px !default;
+$px-0: 6px !default;
+$px-1: 8px !default;
+$px-2: 10px !default;
+$px-3: 12px !default;
+$px-4: 14px !default;
+$px-5: 16px !default; // default text size
+$px-6: 18px !default;
+$px-7: 21px !default;
+$px-8: 23px !default;
+$px-9: 30px !default;
+$px-10: 37px !default;
+$px-11: 43px !default;
+$px-12: 48px !default;
+$px-13: 60px !default;
+$px-14: 80px !default;
+$px-15: 96px !default;
+$px-16: 128px !default;
+$px-17: 160px !default;
+$px-18: 208px !default;
+$px-19: 256px !default;
+$px-20: 336px !default;
+$px-21: 416px !default;
+$px-22: 544px !default;
+$px-23: 672px !default;
+$px-24: 880px !default;
+$px-25: 1088px !default;
 
 // @import "settings";
 

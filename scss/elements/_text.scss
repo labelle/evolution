@@ -53,96 +53,96 @@
 
 
 // Text Size
-#{$evo}-text-size-reset     { line-height: initial; }
-#{$evo}-text-size-0         { font-size: #{$rem0}; }
-#{$evo}-text-size-1         { font-size: #{$rem1}; } 
-#{$evo}-text-size-2         { font-size: #{$rem2}; } 
-#{$evo}-text-size-3         { font-size: #{$rem3}; } 
-#{$evo}-text-size-4         { font-size: #{$rem4}; } 
-#{$evo}-text-size-5         { font-size: #{$rem5}; } 
-#{$evo}-text-size-6         { font-size: #{$rem6}; } 
-#{$evo}-text-size-7         { font-size: #{$rem7}; } 
-#{$evo}-text-size-8         { font-size: #{$rem8}; } 
-#{$evo}-text-size-9         { font-size: #{$rem9}; } 
-#{$evo}-text-size-10        { font-size: #{$rem10}; } 
-#{$evo}-text-size-11        { font-size: #{$rem11}; } 
-#{$evo}-text-size-12        { font-size: #{$rem12}; } 
-#{$evo}-text-size-13        { font-size: #{$rem13}; } 
-#{$evo}-text-size-14        { font-size: #{$rem14}; } 
-#{$evo}-text-size-15        { font-size: #{$rem15}; } 
-#{$evo}-text-size-16        { font-size: #{$rem16}; } 
-#{$evo}-text-size-17        { font-size: #{$rem17}; } 
-#{$evo}-text-size-18        { font-size: #{$rem18}; } 
-#{$evo}-text-size-19        { font-size: #{$rem19}; } 
-#{$evo}-text-size-20        { font-size: #{$rem20}; } 
-#{$evo}-text-size-21        { font-size: #{$rem21}; } 
-#{$evo}-text-size-22        { font-size: #{$rem22}; } 
-#{$evo}-text-size-23        { font-size: #{$rem23}; } 
-#{$evo}-text-size-24        { font-size: #{$rem24}; } 
+#{$evo}-text-reset     { line-height: initial; }
+#{$evo}-text-0         { font-size: #{$rem-0}; }
+#{$evo}-text-1         { font-size: #{$rem-1}; } 
+#{$evo}-text-2         { font-size: #{$rem-2}; } 
+#{$evo}-text-3         { font-size: #{$rem-3}; } 
+#{$evo}-text-4         { font-size: #{$rem-4}; } 
+#{$evo}-text-5         { font-size: #{$rem-5}; } 
+#{$evo}-text-6         { font-size: #{$rem-6}; } 
+#{$evo}-text-7         { font-size: #{$rem-7}; } 
+#{$evo}-text-8         { font-size: #{$rem-8}; } 
+#{$evo}-text-9         { font-size: #{$rem-9}; } 
+#{$evo}-text-10        { font-size: #{$rem-10}; } 
+#{$evo}-text-11        { font-size: #{$rem-11}; } 
+#{$evo}-text-12        { font-size: #{$rem-12}; } 
+#{$evo}-text-13        { font-size: #{$rem-13}; } 
+#{$evo}-text-14        { font-size: #{$rem-14}; } 
+#{$evo}-text-15        { font-size: #{$rem-15}; } 
+#{$evo}-text-16        { font-size: #{$rem-16}; } 
+#{$evo}-text-17        { font-size: #{$rem-17}; } 
+#{$evo}-text-18        { font-size: #{$rem-18}; } 
+#{$evo}-text-19        { font-size: #{$rem-19}; } 
+#{$evo}-text-20        { font-size: #{$rem-20}; } 
+#{$evo}-text-21        { font-size: #{$rem-21}; } 
+#{$evo}-text-22        { font-size: #{$rem-22}; } 
+#{$evo}-text-23        { font-size: #{$rem-23}; } 
+#{$evo}-text-24        { font-size: #{$rem-24}; } 
 
 
 // Text Leading
-#{$evo}-text-leading-reset  { line-height: initial; }
-#{$evo}-text-leading-0      { line-height: #{$em0}; }
-#{$evo}-text-leading-1      { line-height: #{$em1}; }
-#{$evo}-text-leading-2      { line-height: #{$em2}; }
-#{$evo}-text-leading-3      { line-height: #{$em3}; }
-#{$evo}-text-leading-4      { line-height: #{$em4}; }
-#{$evo}-text-leading-5      { line-height: #{$em5}; }
-#{$evo}-text-leading-6      { line-height: #{$em6}; }
-#{$evo}-text-leading-7      { line-height: #{$em7}; }
-#{$evo}-text-leading-8      { line-height: #{$em8}; }
-#{$evo}-text-leading-9      { line-height: #{$em9}; }
-#{$evo}-text-leading-10     { line-height: #{$em10}; }
-#{$evo}-text-leading-11     { line-height: #{$em11}; }
-#{$evo}-text-leading-12     { line-height: #{$em12}; }
-#{$evo}-text-leading-13     { line-height: #{$em13}; }
-#{$evo}-text-leading-14     { line-height: #{$em14}; }
-#{$evo}-text-leading-15     { line-height: #{$em15}; }
-#{$evo}-text-leading-16     { line-height: #{$em16}; }
-#{$evo}-text-leading-17     { line-height: #{$em17}; }
-#{$evo}-text-leading-18     { line-height: #{$em18}; }
-#{$evo}-text-leading-19     { line-height: #{$em19}; }
-#{$evo}-text-leading-20     { line-height: #{$em20}; }
-#{$evo}-text-leading-21     { line-height: #{$em21}; }
-#{$evo}-text-leading-22     { line-height: #{$em22}; }
-#{$evo}-text-leading-23     { line-height: #{$em23}; }
-#{$evo}-text-leading-24     { line-height: #{$em24}; }
+#{$evo}-leading-reset  { line-height: initial; }
+#{$evo}-leading-0      { line-height: #{$em-0}; }
+#{$evo}-leading-1      { line-height: #{$em-1}; }
+#{$evo}-leading-2      { line-height: #{$em-2}; }
+#{$evo}-leading-3      { line-height: #{$em-3}; }
+#{$evo}-leading-4      { line-height: #{$em-4}; }
+#{$evo}-leading-5      { line-height: #{$em-5}; }
+#{$evo}-leading-6      { line-height: #{$em-6}; }
+#{$evo}-leading-7      { line-height: #{$em-7}; }
+#{$evo}-leading-8      { line-height: #{$em-8}; }
+#{$evo}-leading-9      { line-height: #{$em-9}; }
+#{$evo}-leading-10     { line-height: #{$em-10}; }
+#{$evo}-leading-11     { line-height: #{$em-11}; }
+#{$evo}-leading-12     { line-height: #{$em-12}; }
+#{$evo}-leading-13     { line-height: #{$em-13}; }
+#{$evo}-leading-14     { line-height: #{$em-14}; }
+#{$evo}-leading-15     { line-height: #{$em-15}; }
+#{$evo}-leading-16     { line-height: #{$em-16}; }
+#{$evo}-leading-17     { line-height: #{$em-17}; }
+#{$evo}-leading-18     { line-height: #{$em-18}; }
+#{$evo}-leading-19     { line-height: #{$em-19}; }
+#{$evo}-leading-20     { line-height: #{$em-20}; }
+#{$evo}-leading-21     { line-height: #{$em-21}; }
+#{$evo}-leading-22     { line-height: #{$em-22}; }
+#{$evo}-leading-23     { line-height: #{$em-23}; }
+#{$evo}-leading-24     { line-height: #{$em-24}; }
 
 
 // Relative Text Size
-#{$evo}-text-size-smallest  { @include size(smallest); }
-#{$evo}-text-size-smaller   { @include size(smaller); }
-#{$evo}-text-size-small     { @include size(small); }
-#{$evo}-text-size-big       { @include size(big); }
-#{$evo}-text-size-bigger    { @include size(bigger); }
-#{$evo}-text-size-biggest   { @include size(biggest); }
-#{$evo}-text-size-jumbo     { @include size(jumbo); }
-#{$evo}-text-size-giant     { @include size(giant); }
+#{$evo}-text-smallest  { @include size(smallest); }
+#{$evo}-text-smaller   { @include size(smaller); }
+#{$evo}-text-small     { @include size(small); }
+#{$evo}-text-big       { @include size(big); }
+#{$evo}-text-bigger    { @include size(bigger); }
+#{$evo}-text-biggest   { @include size(biggest); }
+#{$evo}-text-jumbo     { @include size(jumbo); }
+#{$evo}-text-giant     { @include size(giant); }
 
 // Relative Text Leading
-#{$evo}-text-leading-tightest  { @include leading(tightest); }
-#{$evo}-text-leading-tighter   { @include leading(tighter); }
-#{$evo}-text-leading-tight     { @include leading(tight); }
-#{$evo}-text-leading-loose     { @include leading(loose); }
-#{$evo}-text-leading-looser    { @include leading(looser); }
-#{$evo}-text-leading-loosest   { @include leading(loosest); }
+#{$evo}-leading-tightest  { @include leading(tightest); }
+#{$evo}-leading-tighter   { @include leading(tighter); }
+#{$evo}-leading-tight     { @include leading(tight); }
+#{$evo}-leading-loose     { @include leading(loose); }
+#{$evo}-leading-looser    { @include leading(looser); }
+#{$evo}-leading-loosest   { @include leading(loosest); }
 
 
 // Relative Text Tracking
-#{$evo}-text-tracking-tightest { @include tracking(tightest); }
-#{$evo}-text-tracking-tighter  { @include tracking(tighter); }
-#{$evo}-text-tracking-tight    { @include tracking(tight); }
-#{$evo}-text-tracking-loose    { @include tracking(loose); }
-#{$evo}-text-tracking-looser   { @include tracking(looser); }
-#{$evo}-text-tracking-loosest  { @include tracking(loosest); }
+#{$evo}-tracking-tightest { @include tracking(tightest); }
+#{$evo}-tracking-tighter  { @include tracking(tighter); }
+#{$evo}-tracking-tight    { @include tracking(tight); }
+#{$evo}-tracking-loose    { @include tracking(loose); }
+#{$evo}-tracking-looser   { @include tracking(looser); }
+#{$evo}-tracking-loosest  { @include tracking(loosest); }
 
 
 // Relative Text Measure
-#{$evo}-text-measure-widest   { @include measure(widest); }
-#{$evo}-text-measure-wider    { @include measure(wider); }
-#{$evo}-text-measure-wide     { @include measure(wide); }
-#{$evo}-text-measure-tight    { @include measure(tight); }
-#{$evo}-text-measure-tighter  { @include measure(tighter); }
-#{$evo}-text-measure-tightest { @include measure(tightest); }
+#{$evo}-measure-widest   { @include measure(widest); }
+#{$evo}-measure-wider    { @include measure(wider); }
+#{$evo}-measure-wide     { @include measure(wide); }
+#{$evo}-measure-tight    { @include measure(tight); }
+#{$evo}-measure-tighter  { @include measure(tighter); }
+#{$evo}-measure-tightest { @include measure(tightest); }
 
