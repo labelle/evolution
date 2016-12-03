@@ -41,6 +41,9 @@
 *
 *******************************************************************************/
 
+@import "variables";
+@import "settings";
+
 // Reset bootstrap opinionated styles
 @import "reset/bootstrap";
 
@@ -50,8 +53,6 @@
 // The popular 'normalize', slightly modified
 @import "reset/normalize";
 
-@import "variables";
-@import "settings";
 // @import "evolution/base";
 // @import "evolution/helpers";
 // @import "evolution/fonts";

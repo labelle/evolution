@@ -2,13 +2,15 @@
 /*******************************************************************************
 *
 * The goal of this CSS file is to reset or normalize HTML and CSS styles.
-* Place the link to this CSS file after your Bootstrap CSS link, if applicable.
-* Link any other CSS files after this CSS file so you can override this CSS.
-* If you are not using Bootstrap, you can delete any Bootstrap specific code.
+* Link to this CSS file before any other CSS files, so you can override this CSS.
+* If you are using Bootstrap, place this link after your Bootstrap CSS link.
 * The order of CSS placement – or links to CSS files – has an impact on styles.
 *
 *******************************************************************************/
-/* Reset Bootstrap 3 Opinions */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* ! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/* Bootstrap 3 */
+/* Bootstrap 4 */
 html,
 body {
   font-weight: initial;
@@ -62,7 +64,6 @@ hr {
   border: 0;
   border-top: 1px solid; }
 
-/* Useful Bootstrap 3 settings */
 html {
   -webkit-tap-highlight-color: transparent; }
 
@@ -101,7 +102,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -289,3 +289,106 @@ template {
 
 [hidden] {
   display: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.hidden {
+  display: none !important; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }

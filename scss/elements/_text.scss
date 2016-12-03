@@ -4,37 +4,48 @@
 // @import "../variables/scale";
 @import "text_mixins";
 
-// Utilities and helper mixins and classes
+// Text and utility classes
 
 
-// /* Text Utilities */
-
-// // Style
-// #{$evo}-style-bold       { font-weight: bold; }
-// #{$evo}-style-caps       { font-style: italic; }
-// #{$evo}-style-italic     { text-transform: uppercase; }
-// #{$evo}-style-capital     { @include style(capital); }
-// #{$evo}-style-strike      { @include style(strike); }
-// #{$evo}-style-underline   { @include style(underline); }
-
-// // Tracking
-// #{$evo}-tracking-tightest  { letter-spacing: -.1em; }
-// #{$evo}-tracking-tighter   { letter-spacing: -.065em; }
-// #{$evo}-tracking-tight     { letter-spacing: -.035em; }
-// #{$evo}-tracking-loose     { letter-spacing: .035em; }
-// #{$evo}-tracking-looser    { letter-spacing: .065em; }
-// #{$evo}-tracking-loosest   { letter-spacing: .1em; }
-
-// // Leading
-// #{$evo}-leading-tightest  { line-height: .75; }
-// #{$evo}-leading-tighter   { line-height: .85; }
-// #{$evo}-leading-tight     { line-height: .95; }
-// #{$evo}-leading-loose     { line-height: 1; }
-// #{$evo}-leading-looser    { line-height: 1.15; }
-// #{$evo}-leading-loosest   { line-height: 1.25; }
 
 
 /* Text */
+
+// Text
+#{$evo}-text {
+  font-size:       #{$text_font_size};
+  color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
+}
+
+
+// Text Reset
+#{$evo}-text-reset {
+  font-size:       initial;
+  color:           initial;
+  font-family:     initial;
+  font-weight:     initial;
+  font-weight:     initial;
+  font-style:      initial;
+  line-height:     initial;
+  text-transform:  initial;
+  text-align:      initial;
+  margin-top:      initial;
+  margin-bottom:   initial;
+}
+
+// Element Mixins
+@mixin base($base) { 
+    @if $base == text            { @extend #{$evo}-text; }
+    @else if $base == font       { @extend #{$evo}-font; }
+    // Throw Warnings
+  @else { @warn "Base mixin supports: text, font"; }
+}
+
 
 
 // Text Style
@@ -51,98 +62,11 @@
 #{$evo}-text-right        { text-align: right; }
 #{$evo}-text-center       { text-align: center; }
 
-
-// Text Size
-#{$evo}-text-reset     { line-height: initial; }
-#{$evo}-text-0         { font-size: #{$rem-0}; }
-#{$evo}-text-1         { font-size: #{$rem-1}; } 
-#{$evo}-text-2         { font-size: #{$rem-2}; } 
-#{$evo}-text-3         { font-size: #{$rem-3}; } 
-#{$evo}-text-4         { font-size: #{$rem-4}; } 
-#{$evo}-text-5         { font-size: #{$rem-5}; } 
-#{$evo}-text-6         { font-size: #{$rem-6}; } 
-#{$evo}-text-7         { font-size: #{$rem-7}; } 
-#{$evo}-text-8         { font-size: #{$rem-8}; } 
-#{$evo}-text-9         { font-size: #{$rem-9}; } 
-#{$evo}-text-10        { font-size: #{$rem-10}; } 
-#{$evo}-text-11        { font-size: #{$rem-11}; } 
-#{$evo}-text-12        { font-size: #{$rem-12}; } 
-#{$evo}-text-13        { font-size: #{$rem-13}; } 
-#{$evo}-text-14        { font-size: #{$rem-14}; } 
-#{$evo}-text-15        { font-size: #{$rem-15}; } 
-#{$evo}-text-16        { font-size: #{$rem-16}; } 
-#{$evo}-text-17        { font-size: #{$rem-17}; } 
-#{$evo}-text-18        { font-size: #{$rem-18}; } 
-#{$evo}-text-19        { font-size: #{$rem-19}; } 
-#{$evo}-text-20        { font-size: #{$rem-20}; } 
-#{$evo}-text-21        { font-size: #{$rem-21}; } 
-#{$evo}-text-22        { font-size: #{$rem-22}; } 
-#{$evo}-text-23        { font-size: #{$rem-23}; } 
-#{$evo}-text-24        { font-size: #{$rem-24}; } 
-
-
-// Text Leading
-#{$evo}-leading-reset  { line-height: initial; }
-#{$evo}-leading-0      { line-height: #{$em-0}; }
-#{$evo}-leading-1      { line-height: #{$em-1}; }
-#{$evo}-leading-2      { line-height: #{$em-2}; }
-#{$evo}-leading-3      { line-height: #{$em-3}; }
-#{$evo}-leading-4      { line-height: #{$em-4}; }
-#{$evo}-leading-5      { line-height: #{$em-5}; }
-#{$evo}-leading-6      { line-height: #{$em-6}; }
-#{$evo}-leading-7      { line-height: #{$em-7}; }
-#{$evo}-leading-8      { line-height: #{$em-8}; }
-#{$evo}-leading-9      { line-height: #{$em-9}; }
-#{$evo}-leading-10     { line-height: #{$em-10}; }
-#{$evo}-leading-11     { line-height: #{$em-11}; }
-#{$evo}-leading-12     { line-height: #{$em-12}; }
-#{$evo}-leading-13     { line-height: #{$em-13}; }
-#{$evo}-leading-14     { line-height: #{$em-14}; }
-#{$evo}-leading-15     { line-height: #{$em-15}; }
-#{$evo}-leading-16     { line-height: #{$em-16}; }
-#{$evo}-leading-17     { line-height: #{$em-17}; }
-#{$evo}-leading-18     { line-height: #{$em-18}; }
-#{$evo}-leading-19     { line-height: #{$em-19}; }
-#{$evo}-leading-20     { line-height: #{$em-20}; }
-#{$evo}-leading-21     { line-height: #{$em-21}; }
-#{$evo}-leading-22     { line-height: #{$em-22}; }
-#{$evo}-leading-23     { line-height: #{$em-23}; }
-#{$evo}-leading-24     { line-height: #{$em-24}; }
-
-
-// Relative Text Size
-#{$evo}-text-smallest  { @include size(smallest); }
-#{$evo}-text-smaller   { @include size(smaller); }
-#{$evo}-text-small     { @include size(small); }
-#{$evo}-text-big       { @include size(big); }
-#{$evo}-text-bigger    { @include size(bigger); }
-#{$evo}-text-biggest   { @include size(biggest); }
-#{$evo}-text-jumbo     { @include size(jumbo); }
-#{$evo}-text-giant     { @include size(giant); }
-
-// Relative Text Leading
-#{$evo}-leading-tightest  { @include leading(tightest); }
-#{$evo}-leading-tighter   { @include leading(tighter); }
-#{$evo}-leading-tight     { @include leading(tight); }
-#{$evo}-leading-loose     { @include leading(loose); }
-#{$evo}-leading-looser    { @include leading(looser); }
-#{$evo}-leading-loosest   { @include leading(loosest); }
-
-
-// Relative Text Tracking
-#{$evo}-tracking-tightest { @include tracking(tightest); }
-#{$evo}-tracking-tighter  { @include tracking(tighter); }
-#{$evo}-tracking-tight    { @include tracking(tight); }
-#{$evo}-tracking-loose    { @include tracking(loose); }
-#{$evo}-tracking-looser   { @include tracking(looser); }
-#{$evo}-tracking-loosest  { @include tracking(loosest); }
-
-
-// Relative Text Measure
-#{$evo}-measure-widest   { @include measure(widest); }
-#{$evo}-measure-wider    { @include measure(wider); }
-#{$evo}-measure-wide     { @include measure(wide); }
-#{$evo}-measure-tight    { @include measure(tight); }
-#{$evo}-measure-tighter  { @include measure(tighter); }
-#{$evo}-measure-tightest { @include measure(tightest); }
+// // Style
+// #{$evo}-style-bold       { font-weight: bold; }
+// #{$evo}-style-caps       { font-style: italic; }
+// #{$evo}-style-italic     { text-transform: uppercase; }
+// #{$evo}-style-capital     { @include style(capital); }
+// #{$evo}-style-strike      { @include style(strike); }
+// #{$evo}-style-underline   { @include style(underline); }
 

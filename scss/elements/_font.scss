@@ -5,6 +5,30 @@
 /*      FONTS     */
 // Simple CSS font stacks
 
+
+// Global
+html {
+	font-size: #{$default_type_size}; // 1rem
+	font-color: #{$default_type_color}; // initial
+	font-family: #{$default_type_font}; // sans-serif
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// General
+#{$evo}-font { 
+  font-family: #{$default_type_font}; // or #{sans-serif} or #{native}
+}
+
+
+// System fonts
+#{$evo}-font-1 { 
+  font-family: #{$default_type_font};
+}
+
+// #{$evo}-font-2 { 
+//   font-family: #{$default_type_font};
+// }
+
 // No particular font family defined
 #{$evo}-font-sans-serif        { font-family: #{$sans-serif}; }
 #{$evo}-font-serif             { font-family: #{$serif}; }
@@ -41,7 +65,9 @@
 
 
 // GOOGLE
-// #{$evo}-font-open-sans                 { font-family: $font_open_sans !important; }
+// #{$evo}-font-open-sans      { font-family: $font_open_sans !important; }
+// #{$evo}-font-karma          { font-family: #{$karma}; }
+
 
 // ADOBE
 // Place adobe fonts here

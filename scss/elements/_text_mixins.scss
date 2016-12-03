@@ -182,12 +182,12 @@
 // Tracking
 // Need tracking reset
 @mixin tracking($tracking) {
-  @if $tracking == tightest         { letter-spacing: #{$em-08}; }
-  @else if $tracking == tighter     { letter-spacing: #{$em-05}; }
-  @else if $tracking == tight       { letter-spacing: #{$em-03}; }
-  @else if $tracking == loose       { letter-spacing: #{$em-3}; }
-  @else if $tracking == looser      { letter-spacing: #{$em-5}; }
-  @else if $tracking == loosest     { letter-spacing: #{$em-8}; }
+  @if $tracking == tightest         { letter-spacing: #{$em-02}; }
+  @else if $tracking == tighter     { letter-spacing: #{$em-01}; }
+  @else if $tracking == tight       { letter-spacing: #{$em-00}; }
+  @else if $tracking == loose       { letter-spacing: #{$em-0}; }
+  @else if $tracking == looser      { letter-spacing: #{$em-1}; }
+  @else if $tracking == loosest     { letter-spacing: #{$em-2}; }
     // Throw Warnings
   @else { @warn "Tracking mixin supports: tightest, tighter, tight, loose, looser, loosest"; }
 }

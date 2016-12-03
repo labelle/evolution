@@ -27,7 +27,37 @@
 // *   _ERRORS - A selection of aliases that forgive common mistypes
 *
 *******************************************************************************/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
 /*      FONTS     */
+html {
+  font-size: initial;
+  font-color: initial;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent; }
+
+.evo-font {
+  font-family: sans-serif; }
+
+.evo-font-1 {
+  font-family: sans-serif; }
+
 .evo-font-sans-serif {
   font-family: sans-serif; }
 
@@ -108,6 +138,65 @@
 
 .evo-font-native-tachyons {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
+
+/* Text */
+.evo-text {
+  font-size: initial;
+  color: initial;
+  font-family: initial;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin-top: 0em;
+  margin-bottom: 1.5em; }
+
+.evo-text-reset {
+  font-size: initial;
+  color: initial;
+  font-family: initial;
+  font-weight: initial;
+  font-weight: initial;
+  font-style: initial;
+  line-height: initial;
+  text-transform: initial;
+  text-align: initial;
+  margin-top: initial;
+  margin-bottom: initial; }
+
+.evo-text-bold {
+  font-weight: bold; }
+
+.evo-text-italic {
+  font-style: italic; }
+
+.evo-text-capitalize {
+  text-transform: capitalize; }
+
+.evo-text-uppercase {
+  text-transform: uppercase; }
+
+.evo-text-lowercase {
+  text-transform: lowercase; }
+
+.evo-text-strike {
+  text-decoration: line-through; }
+
+.evo-text-underline {
+  text-decoration: underline; }
+
+.evo-text-no-underline {
+  text-decoration: none; }
+
+.evo-text-no-transform {
+  text-transform: none; }
+
+.evo-text-left {
+  text-align: left; }
+
+.evo-text-right {
+  text-align: right; }
+
+.evo-text-center {
+  text-align: center; }
 
 /* Text */
 .evo-text-bold {
@@ -243,64 +332,148 @@
   line-height: 0.5em; }
 
 .evo-leading-5 {
-  line-height: 0.625em; }
+  line-height: 0.55em; }
 
 .evo-leading-6 {
-  line-height: 0.75em; }
+  line-height: 0.625em; }
 
 .evo-leading-7 {
-  line-height: 0.875em; }
+  line-height: 0.75em; }
 
 .evo-leading-8 {
-  line-height: 1em; }
+  line-height: 0.875em; }
 
 .evo-leading-9 {
-  line-height: 1.125em; }
+  line-height: 1em; }
 
 .evo-leading-10 {
-  line-height: 1.25em; }
+  line-height: 1.0625em; }
 
 .evo-leading-11 {
-  line-height: 1.375em; }
+  line-height: 1.125em; }
 
 .evo-leading-12 {
-  line-height: 1.5em; }
+  line-height: 1.25em; }
 
 .evo-leading-13 {
-  line-height: 1.625em; }
+  line-height: 1.3125em; }
 
 .evo-leading-14 {
-  line-height: 1.75em; }
+  line-height: 1.375em; }
 
 .evo-leading-15 {
-  line-height: 1.875em; }
+  line-height: 1.5em; }
 
 .evo-leading-16 {
-  line-height: 2em; }
+  line-height: 1.625em; }
 
 .evo-leading-17 {
-  line-height: 2.125em; }
+  line-height: 1.75em; }
 
 .evo-leading-18 {
-  line-height: 2.25em; }
+  line-height: 1.875em; }
 
 .evo-leading-19 {
-  line-height: 2.325em; }
+  line-height: 2em; }
 
 .evo-leading-20 {
-  line-height: 2.5em; }
+  line-height: 2.125em; }
 
 .evo-leading-21 {
-  line-height: 2.625em; }
+  line-height: 2.25em; }
 
 .evo-leading-22 {
-  line-height: 2.75em; }
+  line-height: 2.325em; }
 
 .evo-leading-23 {
-  line-height: 2.875em; }
+  line-height: 2.5em; }
 
 .evo-leading-24 {
-  line-height: 3em; }
+  line-height: 2.625em; }
+
+.evo-leading-25 {
+  line-height: 2.75em; }
+
+.evo-tracking-reset {
+  letter-spacing: initial; }
+
+.evo-tracking-0 {
+  letter-spacing: -0.2em; }
+
+.evo-tracking-1 {
+  letter-spacing: -0.175em; }
+
+.evo-tracking-2 {
+  letter-spacing: -0.15em; }
+
+.evo-tracking-3 {
+  letter-spacing: -0.125em; }
+
+.evo-tracking-4 {
+  letter-spacing: -0.1em; }
+
+.evo-tracking-5 {
+  letter-spacing: -0.075em; }
+
+.evo-tracking-6 {
+  letter-spacing: -0.0625em; }
+
+.evo-tracking-7 {
+  letter-spacing: -0.0575em; }
+
+.evo-tracking-8 {
+  letter-spacing: -0.05em; }
+
+.evo-tracking-9 {
+  letter-spacing: -0.025em; }
+
+.evo-tracking-10 {
+  letter-spacing: 0.0625em; }
+
+.evo-tracking-11 {
+  letter-spacing: 0.125em; }
+
+.evo-tracking-12 {
+  letter-spacing: 0.25em; }
+
+.evo-tracking-13 {
+  letter-spacing: 0.375em; }
+
+.evo-tracking-14 {
+  letter-spacing: 0.5em; }
+
+.evo-tracking-15 {
+  letter-spacing: 0.55em; }
+
+.evo-tracking-16 {
+  letter-spacing: 0.625em; }
+
+.evo-tracking-17 {
+  letter-spacing: 0.75em; }
+
+.evo-tracking-18 {
+  letter-spacing: 0.875em; }
+
+.evo-tracking-19 {
+  letter-spacing: 1em; }
+
+.evo-tracking-20 {
+  letter-spacing: 1.0625em; }
+
+.evo-tracking-21 {
+  letter-spacing: 1.125em; }
+
+.evo-tracking-22 {
+  letter-spacing: 1.25em; }
+
+.evo-tracking-23 {
+  letter-spacing: 1.3125em; }
+
+.evo-tracking-24 {
+  letter-spacing: 1.375em; }
+
+.evo-tracking-25 {
+  letter-spacing: 1.5em; }
 
 .evo-text-smallest {
   font-size: 0.625rem; }
@@ -330,37 +503,37 @@
   line-height: 0.125em; }
 
 .evo-leading-tighter {
-  line-height: 0.625em; }
+  line-height: 0.55em; }
 
 .evo-leading-tight {
-  line-height: 1.25em; }
+  line-height: 1.0625em; }
 
 .evo-leading-loose {
-  line-height: 1.875em; }
+  line-height: 1.5em; }
 
 .evo-leading-looser {
-  line-height: 2.5em; }
+  line-height: 2.125em; }
 
 .evo-leading-loosest {
-  line-height: 3em; }
+  line-height: 2.625em; }
 
 .evo-tracking-tightest {
-  letter-spacing: -1em; }
+  letter-spacing: -0.0575em; }
 
 .evo-tracking-tighter {
-  letter-spacing: -0.625em; }
+  letter-spacing: -0.05em; }
 
 .evo-tracking-tight {
-  letter-spacing: -0.375em; }
+  letter-spacing: -0.025em; }
 
 .evo-tracking-loose {
-  letter-spacing: 0.375em; }
+  letter-spacing: 0.0625em; }
 
 .evo-tracking-looser {
-  letter-spacing: 0.625em; }
+  letter-spacing: 0.125em; }
 
 .evo-tracking-loosest {
-  letter-spacing: 1em; }
+  letter-spacing: 0.25em; }
 
 .evo-measure-widest {
   max-width: 50em; }

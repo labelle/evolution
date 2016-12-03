@@ -7,12 +7,18 @@
 /*******************************************************************************
 *
 * The goal of this CSS file is to reset or normalize HTML and CSS styles.
-* Place the link to this CSS file after your Bootstrap CSS link, if applicable.
-* Link any other CSS files after this CSS file so you can override this CSS.
-* If you are not using Bootstrap, you can delete any Bootstrap specific code.
+* Link to this CSS file before any other CSS files, so you can override this CSS.
+* If you are using Bootstrap, place this link after your Bootstrap CSS link.
 * The order of CSS placement – or links to CSS files – has an impact on styles.
 *
 *******************************************************************************/
+
+// Some content has been modified from the following sources:
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* ! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/* Bootstrap 3 */
+/* Bootstrap 4 */
+
 
 // Reset bootstrap opinionated styles
 @import "reset/bootstrap";
@@ -23,4 +29,9 @@
 // The popular 'normalize', slightly modified
 @import "reset/normalize";
 
+// HTML5 Boilerplate, slightly modified
+@import "reset/html5boilerplate";
+
+// Useful Angular settings
+@import "reset/angular";
 

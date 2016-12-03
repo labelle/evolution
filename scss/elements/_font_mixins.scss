@@ -42,3 +42,12 @@
     // Throw Warnings
   @else { @warn "Font mixin supports: reset, sans-serif, serif, monospace, cursive, arial, arial-black, athelas, avenir, baskerville, bodoni, calisto, consolas, courier, courier-new, didot, garamond, georgia, gotham, helvetica, helvetica-thin, menlo, monaco, times, times-new, native, native-bootstrap, native-tachyons"; }
 }
+
+//     // Mixins
+// @mixin font-google($font) {
+//     // Google
+//   @if $font == karma            { font-family: #{$karma}; }
+//     // Throw Warnings
+//   @else { @warn "Font mixin supports: karma"; }
+// }
+

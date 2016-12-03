@@ -9,50 +9,167 @@
 
 
 // em scale
-$em-08: -1em !default;
-$em-07: -.875em !default;
-$em-06: -.75em !default;
-$em-05: -.625em !default;
-$em-04: -.5em !default;
-$em-03: -.375em !default;
-$em-02: -.25em !default;
-$em-01: -.125em !default;
-$em-00: -.0625em !default; // negative
+$em-025: -1em !default;
+$em-024: -.9em !default;
+$em-023: -.8em !default;
+$em-022: -.7em !default;
+$em-021: -.6em !default;
+$em-020: -.5em !default;
+$em-019: -.475em !default
+$em-018: -.45em !default
+$em-017: -.425em !default
+$em-016: -.4em !default
+$em-015: -.375em !default;
+$em-014: -.35em !default
+$em-013: -.325em !default
+$em-012: -.3em !default
+$em-011: -.275em !default
+$em-010: -.25em !default;
+$em-09: -.2em !default;
+$em-08: -.175em !default;
+$em-07: -.15em !default;
+$em-06: -.125em !default; // smallest useful tracking
+$em-05: -.1em !default;
+$em-04: -.075em !default;
+$em-03: -.0625em !default;
+$em-02: -.0575em !default;
+$em-01: -.05em !default;
+$em-00: -.025em !default; // negative
 $em-reset: 0em !default; // none
 $em-0: .0625em !default;
 $em-1: .125em !default;
 $em-2: .25em !default;
 $em-3: .375em !default;
-$em-4: .5em !default;
-$em-5: .625em !default;
-$em-6: .75em !default;
-$em-7: .875em !default;
-$em-8: 1em !default;
-$em-9: 1.125em !default;
-$em-10: 1.25em !default;
-$em-11: 1.375em !default;
-$em-12: 1.5em !default; // default text leading
-$em-13: 1.625em !default;
-$em-14: 1.75em !default;
-$em-15: 1.875em !default;
-$em-16: 2em !default;
-$em-17: 2.125em !default;
-$em-18: 2.25em !default;
-$em-19: 2.325em !default;
-$em-20: 2.5em !default;
-$em-21: 2.625em !default;
-$em-22: 2.75em !default;
-$em-23: 2.875em !default;
-$em-24: 3em !default;
-$em-25: 5em !default;
-$em-26: 10em !default;
-$em-27: 15em !default;
-$em-28: 20em !default;
-$em-29: 30em !default;
-$em-30: 40em !default;
-$em-31: 50em !default;
+$em-4: .5em !default; // smallest useful lowercase leading // avenir // georgia
+$em-5: .55em !default; // optimized for lowercase touching // arial // gotham
+$em-6: .625em !default; 
+$em-7: .75em !default; // smallest useful uppercase leading
+$em-8: .875em !default;
+$em-9: 1em !default;
+$em-10: 1.0625em !default;
+$em-11: 1.125em !default;
+$em-12: 1.25em !default;
+$em-13: 1.3125em !default;
+$em-14: 1.375em !default;
+$em-15: 1.5em !default; // default text leading
+$em-16: 1.625em !default;
+$em-17: 1.75em !default;
+$em-18: 1.875em !default;
+$em-19: 2em !default;
+$em-20: 2.125em !default;
+$em-21: 2.25em !default;
+$em-22: 2.325em !default;
+$em-23: 2.5em !default;
+$em-24: 2.625em !default;
+$em-25: 2.75em !default;
+$em-26: 2.875em !default;
+$em-27: 3em !default;
+$em-28: 5em !default;
+$em-29: 10em !default;
+$em-30: 15em !default;
+$em-31: 20em !default;
+$em-32: 30em !default;
+$em-33: 40em !default;
+$em-34: 50em !default;
+
+// // em scale
+// $em-05: -.175em !default;
+// $em-04: -.15em !default;
+// $em-03: -.125em !default;
+// $em-02: -.075em !default;
+// $em-01: -.05em !default;
+// $em-00: -.025em !default; // negative
+// $em-reset: 0em !default; // none
+// $em-0: .0625em !default;
+// $em-1: .125em !default;
+// $em-2: .25em !default;
+// $em-3: .375em !default;
+// $em-4: .5em !default;
+// $em-5: .625em !default;
+// $em-6: .75em !default;
+// $em-7: .875em !default;
+// $em-8: 1em !default;
+// $em-9: 1.125em !default;
+// $em-10: 1.25em !default;
+// $em-11: 1.375em !default;
+// $em-12: 1.5em !default; // default text leading
+// $em-13: 1.625em !default;
+// $em-14: 1.75em !default;
+// $em-15: 1.875em !default;
+// $em-16: 2em !default;
+// $em-17: 2.125em !default;
+// $em-18: 2.25em !default;
+// $em-19: 2.325em !default;
+// $em-20: 2.5em !default;
+// $em-21: 2.625em !default;
+// $em-22: 2.75em !default;
+// $em-23: 2.875em !default;
+// $em-24: 3em !default;
+// $em-25: 5em !default;
+// $em-26: 10em !default;
+// $em-27: 15em !default;
+// $em-28: 20em !default;
+// $em-29: 30em !default;
+// $em-30: 40em !default;
+// $em-31: 50em !default;
 
 
+// em scale
+// $em-05: -.15em !default;
+// $em-04: -.125em !default;
+// $em-03: -.1em !default;
+// $em-02: -.075em !default;
+// $em-01: -.05em !default;
+// $em-00: -.025em !default; // negative
+// $em-reset: 0em !default; // none
+// $em-0: .0175em !default;
+// $em-1: .025em !default;
+// $em-2: .0375em !default;
+// $em-3: .05em !default;
+// $em-4: .0625em !default;
+// $em-5: .075em !default;
+// $em-6: .0825em !default;
+// $em-7: .1em !default;
+// // $em-7: .1175em !default;
+// $em-8: .1175em !default;
+// $em-9: .125em !default;
+// $em-10: .1325em !default;
+// $em-11: .15em !default;
+// $em-12: .175em !default;
+// $em-13: .2em !default;
+// $em-14: .225em !default;
+// $em-15: .25em !default;
+// $em-16: .275em !default;
+// $em-17: .3em !default;
+// $em-12: .325em !default;
+// $em-13: .35em !default;
+// $em-14: .375em !default;
+// $em-15: .4em !default;
+// $em-16: .425em !default;
+// $em-17: .45em !default;
+// $em-18: .5em !default;
+// $em-19: .525em !default; // default text leading
+// $em-20: .55em !default;
+// $em-21: .575em !default;
+// $em-22: .6em !default;
+// $em-23: 2.25em !default;
+// $em-24: 2.5em !default;
+// $em-25: 2.75em !default;
+// $em-26: 3em !default;
+
+// big em scale
+
+// $big-em-20: 4em !default;
+// $big-em-21: 5em !default;
+// $big-em-22: 6em !default;
+// $big-em-23: 7em !default;
+// $big-em-24: 8em !default;
+// $big-em-25: 9em !default;
+// $big-em-26: 10em !default;
+// $big-em-27: 20em !default;
+// $big-em-28: 30em !default;
+// $big-em-29: 40em !default;
+// $big-em-30: 50em !default;
 
  
 
