@@ -1,7 +1,7 @@
 ///*      C O L O R   M I X I N S    */
 
 @import "../variables";
-@import "color";
+// @import "color";
 
 // // Color
 // @mixin color($color) {
@@ -40,12 +40,12 @@
   @if $color == reset  { 
   color: initial;
   }
-  @else if $color == red         { @extend #{$evo}-red; }
-  @else if $color == green       { @extend #{$evo}-green; }
-  @else if $color == blue        { @extend #{$evo}-blue; }
-  @else if $color == cyan        { @extend #{$evo}-cyan; }
-  @else if $color == magenta     { @extend #{$evo}-magenta; }
-  @else if $color == yellow      { @extend #{$evo}-yellow; }
+  @else if $color == red         { color: #{$red}; }
+  @else if $color == green       { color: #{$green}; }
+  @else if $color == blue        { color: #{$blue}; }
+  @else if $color == cyan        { color: #{$cyan}; }
+  @else if $color == magenta     { color: #{$magenta}; }
+  @else if $color == yellow      { color: #{$yellow}; }
     // Throw Warnings
   @else { @warn "Color mixin supports: reset, red, blue, cyan, magenta, yellow"; }
 }
@@ -55,12 +55,12 @@
   @if $color-bg == reset  { 
   background-color: initial;
   }
-  @else if $color-bg == red         { @extend #{$evo}-red-bg; }
-  @else if $color-bg == green       { @extend #{$evo}-green-bg; }
-  @else if $color-bg == blue        { @extend #{$evo}-blue-bg; }
-  @else if $color-bg == cyan        { @extend #{$evo}-cyan-bg; }
-  @else if $color-bg == magenta     { @extend #{$evo}-magenta-bg; }
-  @else if $color-bg == yellow      { @extend #{$evo}-yellow-bg; }
+  @else if $color-bg == red        { background-color: #{$red}; }
+  @else if $color-bg == green      { background-color: #{$green}; }
+  @else if $color-bg == blue       { background-color: #{$blue}; }
+  @else if $color-bg == cyan       { background-color: #{$cyan}; ; }
+  @else if $color-bg == magenta    { background-color: #{$magenta}; }
+  @else if $color-bg == yellow     { background-color: #{$yellow}; }
     // Throw Warnings
   @else { @warn "Color mixin supports: reset, red, blue, cyan, magenta, yellow"; }
 }

@@ -63,7 +63,7 @@
 #{$evo}-text-size-6         { font-size: #{$rem6}; } 
 #{$evo}-text-size-7         { font-size: #{$rem7}; } 
 #{$evo}-text-size-8         { font-size: #{$rem8}; } 
-#{$evo}-text-text-9         { font-size: #{$rem9}; } 
+#{$evo}-text-size-9         { font-size: #{$rem9}; } 
 #{$evo}-text-size-10        { font-size: #{$rem10}; } 
 #{$evo}-text-size-11        { font-size: #{$rem11}; } 
 #{$evo}-text-size-12        { font-size: #{$rem12}; } 
@@ -85,14 +85,14 @@
 #{$evo}-text-leading-reset  { line-height: initial; }
 #{$evo}-text-leading-0      { line-height: #{$em0}; }
 #{$evo}-text-leading-1      { line-height: #{$em1}; }
-#{$evo}-text-leading-2      { line-height: #{$em02}; }
+#{$evo}-text-leading-2      { line-height: #{$em2}; }
 #{$evo}-text-leading-3      { line-height: #{$em3}; }
 #{$evo}-text-leading-4      { line-height: #{$em4}; }
 #{$evo}-text-leading-5      { line-height: #{$em5}; }
 #{$evo}-text-leading-6      { line-height: #{$em6}; }
 #{$evo}-text-leading-7      { line-height: #{$em7}; }
 #{$evo}-text-leading-8      { line-height: #{$em8}; }
-#{$evo}-text-leading-9      { line-height: #{$em09}; }
+#{$evo}-text-leading-9      { line-height: #{$em9}; }
 #{$evo}-text-leading-10     { line-height: #{$em10}; }
 #{$evo}-text-leading-11     { line-height: #{$em11}; }
 #{$evo}-text-leading-12     { line-height: #{$em12}; }
@@ -111,13 +111,14 @@
 
 
 // Relative Text Size
-#{$evo}-text-size-smallest  { line-height: #{$em1}; }
-#{$evo}-text-size-smaller   { line-height: #{$em5}; }
-#{$evo}-text-size-small     { line-height: #{$em10}; }
-#{$evo}-text-size-big       { line-height: #{$em15}; }
-#{$evo}-text-size-bigger    { line-height: #{$em20}; }
-#{$evo}-text-size-biggest   { line-height: #{$em24}; }
-
+#{$evo}-text-size-smallest  { @include size(smallest); }
+#{$evo}-text-size-smaller   { @include size(smaller); }
+#{$evo}-text-size-small     { @include size(small); }
+#{$evo}-text-size-big       { @include size(big); }
+#{$evo}-text-size-bigger    { @include size(bigger); }
+#{$evo}-text-size-biggest   { @include size(biggest); }
+#{$evo}-text-size-jumbo     { @include size(jumbo); }
+#{$evo}-text-size-giant     { @include size(giant); }
 
 // Relative Text Leading
 #{$evo}-text-leading-tightest  { @include leading(tightest); }

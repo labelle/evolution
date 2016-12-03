@@ -1,7 +1,7 @@
 ///*      T E X T   M I X I N S   */
 
 @import "../variables";
-@import "text";
+// @import "text";
 
 // // Text
 // @mixin text($text) {
@@ -76,7 +76,7 @@
   @else if $size == 11           { font-size: #{$rem11}; } // 43px
   @else if $size == 12           { font-size: #{$rem12}; } // 48px
   @else if $size == 13           { font-size: #{$rem13}; } // 60px
-  @else if $size == 14           { font-size: #{$rem13}; } // 80px 
+  @else if $size == 14           { font-size: #{$rem14}; } // 80px 
   @else if $size == 15           { font-size: #{$rem15}; } // 96px
   @else if $size == 16           { font-size: #{$rem16}; } // 128px
   @else if $size == 17           { font-size: #{$rem17}; } // 160px
@@ -126,23 +126,45 @@
 
 // Size
 @mixin size($size) {
-  @if $size == smallest         { @extend #{$evo}-text-size-smallest; }
-  @else if $size == smaller     { @extend #{$evo}-text-size-smaller; }
-  @else if $size == small       { @extend #{$evo}-text-size-small; }
-  @else if $size == big         { @extend #{$evo}-text-size-big; }
-  @else if $size == bigger      { @extend #{$evo}-text-size-bigger; }
-  @else if $size == biggest     { @extend #{$evo}-text-size-biggest; }
+  @if $size == smallest         { font-size: #{$rem2}; }
+  @else if $size == smaller     { font-size: #{$rem4}; }
+  @else if $size == small       { font-size: #{$rem6}; }
+  @else if $size == big         { font-size: #{$rem10}; }
+  @else if $size == bigger      { font-size: #{$rem12}; }
+  @else if $size == biggest     { font-size: #{$rem14}; }
+  @else if $size == jumbo       { font-size: #{$rem16}; }
+  @else if $size == giant       { font-size: #{$rem18}; }
     // Throw Warnings
-  @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest"; }
+  @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest, jumbo, giant"; }
 }
 
-// Relative Text Leading
-#{$evo}-text-leading-tightest  { @include leading(tightest); }
-#{$evo}-text-leading-tighter   { @include leading(tighter); }
-#{$evo}-text-leading-tight     { @include leading(tight); }
-#{$evo}-text-leading-loose     { @include leading(loose); }
-#{$evo}-text-leading-looser    { @include leading(looser); }
-#{$evo}-text-leading-loosest   { @include leading(loosest); }
+// // Size
+// @mixin size($size) {
+//   @if $size == smallest         { @extend #{$evo}-text-size-smallest; }
+//   @else if $size == smaller     { @extend #{$evo}-text-size-smaller; }
+//   @else if $size == small       { @extend #{$evo}-text-size-small; }
+//   @else if $size == big         { @extend #{$evo}-text-size-big; }
+//   @else if $size == bigger      { @extend #{$evo}-text-size-bigger; }
+//   @else if $size == biggest     { @extend #{$evo}-text-size-biggest; }
+//     // Throw Warnings
+//   @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest"; }
+// }
+
+// // Relative Text Leading
+// #{$evo}-text-leading-tightest  { line-height: #{$em1}; }
+// #{$evo}-text-leading-tighter   { line-height: #{$em5}; }
+// #{$evo}-text-leading-tight     { line-height: #{$em10}; }
+// #{$evo}-text-leading-loose     { line-height: #{$em15}; }
+// #{$evo}-text-leading-looser    { line-height: #{$em20}; }
+// #{$evo}-text-leading-loosest   { line-height: #{$em24}; }
+
+// // Relative Text Leading
+// #{$evo}-text-leading-tightest  { @include leading(tightest); }
+// #{$evo}-text-leading-tighter   { @include leading(tighter); }
+// #{$evo}-text-leading-tight     { @include leading(tight); }
+// #{$evo}-text-leading-loose     { @include leading(loose); }
+// #{$evo}-text-leading-looser    { @include leading(looser); }
+// #{$evo}-text-leading-loosest   { @include leading(loosest); }
 
 
 // Leading
@@ -172,7 +194,7 @@
 
 // Measure
 // Need measure reset
-@mixin measure($measure) {}
+@mixin measure($measure) {
   @if $measure == widest        { max-width: 50em; }
   @else if $measure == wider    { max-width: 40em; }
   @else if $measure == wide     { max-width: 30em; }

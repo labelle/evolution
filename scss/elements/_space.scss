@@ -7,10 +7,9 @@
 /*      SPACE     */
 // Silent classes are available
 // Resets any styles
-.space,
-%space {
-    // height: 1rem;
-     width: auto;
+#{$evo}-space {
+    // height: #{$space_height}; // 1rem
+     width: #{$space_width}; // auto
      clear: both;
 }
 
@@ -29,13 +28,13 @@
 
     // Spacers
 @mixin space($space) {
-  @if $space == null  { @extend %space-2; }
-  @else if $space == smallest    { @extend %space-5; }
-  @else if $space == smaller     { @extend %space-10; }
-  @else if $space == small       { @extend %space-13; }
-  @else if $space == big         { @extend %space-18; }
-  @else if $space == bigger      { @extend %space-20; }
-  @else if $space == loosest     { @extend %space-24; }
+  @if $space == null  { @extend #{$evo}-space-2; }
+  @else if $space == smallest    { @extend #{$evo}-space-5; }
+  @else if $space == smaller     { @extend #{$evo}-space-10; }
+  @else if $space == small       { @extend #{$evo}-space-13; }
+  @else if $space == big         { @extend #{$evo}-space-18; }
+  @else if $space == bigger      { @extend #{$evo}-space-20; }
+  @else if $space == loosest     { @extend #{$evo}-space-24; }
     // Throw Warnings
   @else { @warn "Spacers mixin supports: null, smallest, smaller, small, big, bigger, biggest"; }
 }
@@ -43,9 +42,8 @@
 // Space sizes space-0 through space-24
 // Silent classes are available e.g. %space-15
 @for $i from 0 through 24 {
-    .space-#{$i},
-    %space-#{$i} {
-    @extend %space;
+    #{$evo}-space-#{$i} {
+    @extend #{$evo}-space;
     @if ($i == 0) { height: 1px; }
     @else if ($i == 1) { height: 2px; }
     @else if ($i == 2) { height: 4px; }

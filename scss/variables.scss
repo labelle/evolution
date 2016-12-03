@@ -53,7 +53,7 @@ $default_link_underline:            none !default;
 
 
 // Font stacks
-@import "variables/fonts";
+@import "variables/font";
 
 // Scale units such as rems, ems, px
 @import "variables/scale";
@@ -62,7 +62,7 @@ $default_link_underline:            none !default;
 @import "variables/text";
 
 // Colors and color palettes
-@import "variables/colors";
+@import "variables/color";
 
 // Spacers including margins and padding
-@import "variables/spacers";
+@import "variables/space";
