@@ -1,0 +1,233 @@
+///*      B A S E     */
+
+// Base structures and styles
+// Adjust in settings.scss
+// Default values live in variables.scss
+// Reset and normalize values live in _reset.scss
+
+
+// Import default variables from variables.scss
+@import "../variables";
+// @import "type";
+
+
+/*      GLOBAL     */
+
+html {
+	font-size: #{$default_type_size}; // 1rem
+	font-color: #{$default_type_color}; // initial
+	font-family: #{$default_type_font}; // sans-serif
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body { 
+	margin:0px;
+	// padding:0px;
+	}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+dfn {
+  font-style: italic;
+}
+
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+
+
+
+/*      TYPE     */
+
+// Fonts
+#{$evo}-font-sans-serif             { font-family: #{$sans-serif}; }
+#{$evo}-font-serif                  { font-family: #{$serif}; }
+#{$evo}-font-monospace              { font-family: #{$monospace}; }
+#{$evo}-font-cursive                { font-family: #{$cursive}; }
+
+
+
+// Text
+#{$evo}-text {
+	font-size: $text_font_size;
+  color: $text_color;
+  font-family: $text_font_family;
+  font-weight: $text_font_weight;
+	line-height: $text_line_height;
+	margin-top: $text_margin_top;
+	margin-bottom: $text_margin_bottom;
+}
+
+// Text
+@mixin evo($text) {
+
+  @if $text == text  { @extend #{$evo}-text; }
+    }
+  @else { 
+  font-size: initial;
+  color: initial;
+  font-family: initial;
+  font-weight: initial;
+  line-height: initial;
+  margin-top: initial;
+  margin-bottom: initial;
+
+}
+    // Throw Warnings
+  @else { @warn "Text mixin supports: reset, and a default state of empty ()"; }
+}
+
+
+
+// Relative Text Size
+#{$evo}-text-size-smallest  { @include size(smallest); }
+#{$evo}-text-size-smaller   { @include size(smaller); }
+#{$evo}-text-size-small     { @include size(small); }
+#{$evo}-text-size-big       { @include size(big); }
+#{$evo}-text-size-bigger    { @include size(bigger); }
+#{$evo}-text-size-biggest   { @include size(biggest); }
+
+
+// Relative Text Leading
+#{$evo}-text-leading-tightest  { @include leading(tightest); }
+#{$evo}-text-leading-tighter   { @include leading(tighter); }
+#{$evo}-text-leading-tight     { @include leading(tight); }
+#{$evo}-text-leading-loose     { @include leading(loose); }
+#{$evo}-text-leading-looser    { @include leading(looser); }
+#{$evo}-text-leading-loosest   { @include leading(loosest); }
+
+
+// Relative Text Tracking
+#{$evo}-text-tracking-tightest { @include tracking(tightest); }
+#{$evo}-text-tracking-tighter  { @include tracking(tighter); }
+#{$evo}-text-tracking-tight    { @include tracking(tight); }
+#{$evo}-text-tracking-loose    { @include tracking(loose); }
+#{$evo}-text-tracking-looser   { @include tracking(looser); }
+#{$evo}-text-tracking-loosest  { @include tracking(loosest); }
+
+
+// Relative Text Measure
+#{$evo}-text-measure-widest   { @include measure(widest); }
+#{$evo}-text-measure-wider    { @include measure(wider); }
+#{$evo}-text-measure-wide     { @include measure(wide); }
+#{$evo}-text-measure-tight    { @include measure(tight); }
+#{$evo}-text-measure-tighter  { @include measure(tighter); }
+#{$evo}-text-measure-tightest { @include measure(tightest); }
+
+
+// Links
+
+
+// Opinionated resets
+
+a {
+  color: initial; // color: #428bca;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:focus {
+  color: initial; // color: #2a6496;
+  text-decoration: initial; // text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+/*      BUTTONS     */
+
+
+// Opinionated resets
+
+button[disabled] {
+  cursor: default;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+button {
+  font-family: sans-serif; // inherit
+  // font-size: 100%;
+  // line-height: 1.15;
+  // margin: 0;
+}
+
+
+/*      FORMS     */
+
+// Opinionated resets
+
+html input[disabled] {
+  cursor: default;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; // inherit
+  // font-size: 100%;
+  // line-height: 1.15;
+  // margin: 0;
+}
+
+
+
+
+/*      LINES     */
+
+// Opinionated resets
+
+
+hr {
+  margin-top: initial; // margin-top: 20px;
+  margin-bottom: initial; // margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid; // border-top: 1px solid #eeeeee;
+}
+
+
+
+/*      SPACERS    */
+
+
+// Space
+.evo-space,
+#{$evo}-space {
+    height: $spacer_height; // 1rem
+    width: $spacer_width; // auto
+    clear: both;
+}

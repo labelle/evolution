@@ -1,0 +1,37 @@
+///*      F O N T     */
+
+@import "../variables";
+
+/*      FONTS     */
+
+
+// Global
+html {
+	font-size: #{$default_type_size}; // 1rem
+	font-color: #{$default_type_color}; // initial
+	font-family: #{$default_type_font}; // sans-serif
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+// General
+#{$evo}-font { 
+  font-family: #{$default_type_font}; // or #{sans-serif} or #{native}
+}
+
+
+// System fonts
+#{$evo}-font-1 { 
+  font-family: #{$default_type_font};
+}
+
+#{$evo}-font-2 { 
+  font-family: #{$default_type_font};
+}
+
+
+// GOOGLE
+// #{$evo}-font-open-sans                 { font-family: $font_open_sans !important; }
+
+// ADOBE
+// Place adobe fonts here

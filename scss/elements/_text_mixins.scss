@@ -1,0 +1,184 @@
+///*      T E X T   M I X I N S   */
+
+@import "../variables";
+@import "text";
+
+// // Text
+// @mixin text($text) {
+//   @if $text == reset  { 
+//   font-size: initial;
+//   color: initial;
+//   font-family: initial;
+//   font-weight: initial;
+//   line-height: initial;
+//   margin-top: initial;
+//   margin-bottom: initial;
+// }
+//   @else  {
+//   font-size: #{$text_font_size};
+//   color: #{$text_color};
+//   font-family: #{$text_font_family};
+//   font-weight: #{$text_font_weight};
+//   line-height: #{$text_line_height};
+//   margin-top: #{$text_margin_top};
+//   margin-bottom: #{$text_margin_bottom};
+// }
+//     // Throw Warnings
+//   @else { @warn "Text mixin supports: reset, and a default state of empty ()"; }
+// }
+
+
+// Text Style
+@mixin style($style) {
+  @if $style == reset  { 
+  font-weight: initial;
+  font-style: initial;
+  text-transform: initial;
+  text-align: initial;
+  }
+  @else if $style == bold         { font-weight: bold; }
+  @else if $style == italic       { font-style: italic; }
+  @else if $style == capitalize   { text-transform: capitalize; }
+  @else if $style == uppercase    { text-transform: uppercase; }
+  @else if $style == lowercase    { text-transform: lowercase; }
+  @else if $style == strike       { text-decoration: line-through; }
+  @else if $style == underline    { text-decoration: underline; }
+  @else if $style == no-underline { text-decoration: none; }
+  @else if $style == no-transform { text-transform: none; }
+  @else if $style == left         { text-align: left; }
+  @else if $style == right        { text-align: right; }
+  @else if $style == center       { text-align: center; }
+    // Throw Warnings
+  @else { @warn "Style mixin supports: reset, bold, italic, capitalize, uppercase, lowercase, strike, underline, no-underline, no-transform, left, right, center"; }
+}
+
+
+// Text Sizes
+@mixin size($size) {
+  @if $size == reset  { 
+  font-size: initial;
+  // color: initial;
+  // line-height: initial;
+  // margin-top: 0px;
+  // margin-bottom: 0px;
+  }
+  @else if $size == 0            { font-size: #{$rem0}; }  // 6px ?
+  @else if $size == 1            { font-size: #{$rem1}; }  // 8px
+  @else if $size == 2            { font-size: #{$rem2}; }  // 10px
+  @else if $size == 3            { font-size: #{$rem3}; }  // 12px
+  @else if $size == 4            { font-size: #{$rem4}; }  // 14px
+  @else if $size == 5            { font-size: #{$rem5}; }  // 16px 
+  @else if $size == 6            { font-size: #{$rem6}; }  // 18px
+  @else if $size == 7            { font-size: #{$rem7}; }  // 21px
+  @else if $size == 8            { font-size: #{$rem8}; }  // 23px
+  @else if $size == 9            { font-size: #{$rem9}; }  // 30px
+  @else if $size == 10           { font-size: #{$rem10}; } // 37px
+  @else if $size == 11           { font-size: #{$rem11}; } // 43px
+  @else if $size == 12           { font-size: #{$rem12}; } // 48px
+  @else if $size == 13           { font-size: #{$rem13}; } // 60px
+  @else if $size == 14           { font-size: #{$rem13}; } // 80px 
+  @else if $size == 15           { font-size: #{$rem15}; } // 96px
+  @else if $size == 16           { font-size: #{$rem16}; } // 128px
+  @else if $size == 17           { font-size: #{$rem17}; } // 160px
+  @else if $size == 18           { font-size: #{$rem18}; } // 208px
+  @else if $size == 19           { font-size: #{$rem19}; } // 256px
+  @else if $size == 20           { font-size: #{$rem20}; } // 336px
+  @else if $size == 21           { font-size: #{$rem21}; } // 416px
+  @else if $size == 22           { font-size: #{$rem22}; } // 544px
+  @else if $size == 23           { font-size: #{$rem23}; } // 672px
+  @else if $size == 24           { font-size: #{$rem24}; } // 880px
+  @else if $size == 25           { font-size: #{$rem25}; } // 1088px
+  // Throw Warnings
+  @else { @warn "Text mixin supports: reset, numbers 0-25"; }
+}
+
+// Leading
+@mixin leading($leading)  {
+  @if $leading == reset       { line-height: initial; }
+  @else if $leading == 0      { line-height: #{$em0}; } // 0em
+  @else if $leading == 1      { line-height: #{$em1}; }
+  @else if $leading == 2      { line-height: #{$em2}; }
+  @else if $leading == 3      { line-height: #{$em3}; }
+  @else if $leading == 4      { line-height: #{$em4}; }
+  @else if $leading == 5      { line-height: #{$em5}; }
+  @else if $leading == 6      { line-height: #{$em6}; }
+  @else if $leading == 7      { line-height: #{$em7}; }
+  @else if $leading == 8      { line-height: #{$em8}; } // 1em
+  @else if $leading == 9      { line-height: #{$em9}; }
+  @else if $leading == 10     { line-height: #{$em10}; }
+  @else if $leading == 11     { line-height: #{$em11}; }
+  @else if $leading == 12     { line-height: #{$em12}; }  // 1.5em default
+  @else if $leading == 13     { line-height: #{$em13}; }
+  @else if $leading == 14     { line-height: #{$em14}; }
+  @else if $leading == 15     { line-height: #{$em15}; }
+  @else if $leading == 16     { line-height: #{$em16}; } // 2em
+  @else if $leading == 17     { line-height: #{$em17}; }
+  @else if $leading == 18     { line-height: #{$em18}; }
+  @else if $leading == 19     { line-height: #{$em19}; }
+  @else if $leading == 20     { line-height: #{$em20}; }
+  @else if $leading == 21     { line-height: #{$em21}; }
+  @else if $leading == 22     { line-height: #{$em22}; }
+  @else if $leading == 23     { line-height: #{$em23}; }
+  @else if $leading == 24     { line-height: #{$em24}; } // 3em
+  // Throw Warnings
+  @else { @warn "Leading mixin supports: reset, numbers 0-24"; }
+}
+
+// Size
+@mixin size($size) {
+  @if $size == smallest         { @extend #{$evo}-text-size-smallest; }
+  @else if $size == smaller     { @extend #{$evo}-text-size-smaller; }
+  @else if $size == small       { @extend #{$evo}-text-size-small; }
+  @else if $size == big         { @extend #{$evo}-text-size-big; }
+  @else if $size == bigger      { @extend #{$evo}-text-size-bigger; }
+  @else if $size == biggest     { @extend #{$evo}-text-size-biggest; }
+    // Throw Warnings
+  @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest"; }
+}
+
+// Relative Text Leading
+#{$evo}-text-leading-tightest  { @include leading(tightest); }
+#{$evo}-text-leading-tighter   { @include leading(tighter); }
+#{$evo}-text-leading-tight     { @include leading(tight); }
+#{$evo}-text-leading-loose     { @include leading(loose); }
+#{$evo}-text-leading-looser    { @include leading(looser); }
+#{$evo}-text-leading-loosest   { @include leading(loosest); }
+
+
+// Leading
+@mixin leading($leading) {
+  @if $leading == tightest         { line-height: #{$em1}; }
+  @else if $leading == tighter     { line-height: #{$em5}; }
+  @else if $leading == tight       { line-height: #{$em10}; }
+  @else if $leading == loose       { line-height: #{$em15}; }
+  @else if $leading == looser      { line-height: #{$em20}; }
+  @else if $leading == loosest     { line-height: #{$em24}; }
+    // Throw Warnings
+  @else { @warn "Leading mixin supports: tightest, tighter, tight, loose, looser, loosest"; }
+}
+
+// Tracking
+// Need tracking reset
+@mixin tracking($tracking) {
+  @if $tracking == tightest         { letter-spacing: -.1em; }
+  @else if $tracking == tighter     { letter-spacing: -.065em; }
+  @else if $tracking == tight       { letter-spacing: -.035em; }
+  @else if $tracking == loose       { letter-spacing: .035em; }
+  @else if $tracking == looser      { letter-spacing: .065em; }
+  @else if $tracking == loosest     { letter-spacing: .1em; }
+    // Throw Warnings
+  @else { @warn "Tracking mixin supports: tightest, tighter, tight, loose, looser, loosest"; }
+}
+
+// Measure
+// Need measure reset
+@mixin measure($measure) {}
+  @if $measure == widest        { max-width: 50em; }
+  @else if $measure == wider    { max-width: 40em; }
+  @else if $measure == wide     { max-width: 30em; }
+  @else if $measure == tight    { max-width: 25em; }
+  @else if $measure == tighter  { max-width: 20em; }
+  @else if $measure == tightest { max-width: 15em; }
+  // Throw Warnings
+  @else { @warn "Measure mixin supports: widest, wider, wide, tight, tighter, tightest"; }
+}

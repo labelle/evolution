@@ -1,0 +1,47 @@
+///*      F O N T     */
+
+@import "../variables";
+
+/*      FONTS     */
+// Simple CSS font stacks
+
+// No particular font family defined
+#{$evo}-font-sans-serif        { font-family: #{$sans-serif}; }
+#{$evo}-font-serif             { font-family: #{$serif}; }
+#{$evo}-font-monospace         { font-family: #{$monospace}; }
+#{$evo}-font-cursive           { font-family: #{$cursive}; }
+
+// System fonts
+// Font stacks are safer to use
+#{$evo}-font-arial             { font-family: #{$arial}; } // Font stack
+#{$evo}-font-arial-black       { font-family: #{$arial-black}; } // Font stack
+#{$evo}-font-athelas           { font-family: #{$athelas}; }
+#{$evo}-font-avenir            { font-family: #{$avenir}; }
+#{$evo}-font-baskerville       { font-family: #{$baskerville}; }
+#{$evo}-font-bodoni            { font-family: #{$bodoni}; }
+#{$evo}-font-calisto           { font-family: #{$calisto}; }
+#{$evo}-font-consolas          { font-family: #{$consolas}; }
+#{$evo}-font-courier           { font-family: #{$courier}; }
+#{$evo}-font-courier-new       { font-family: #{$courier-new}; } // Font stack
+#{$evo}-font-didot             { font-family: #{$didot}; }
+#{$evo}-font-garamond          { font-family: #{$garamond}; }
+#{$evo}-font-georgia           { font-family: #{$georgia};  } // Font stack
+#{$evo}-font-gotham            { font-family: #{$gotham}; }
+#{$evo}-font-helvetica         { font-family: #{$helvetica}; } // Font stack
+#{$evo}-font-helvetica-thin    { font-family: #{$helvetica-thin}; } // Font stack
+#{$evo}-font-menlo             { font-family: #{$menlo}; } // Font stack
+#{$evo}-font-monaco            { font-family: #{$monaco}; } // Font stack
+#{$evo}-font-times             { font-family: #{$times-new}; } // Font stack
+#{$evo}-font-times-new         { font-family: #{$times}; } // Font stack
+
+// Variable system fonts
+#{$evo}-font-native            { font-family: #{$native}; } // Font stack
+#{$evo}-font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
+#{$evo}-font-native-tachyons   {font-family: #{$native-tachyons}; } // Font stack
+
+
+// GOOGLE
+// #{$evo}-font-open-sans                 { font-family: $font_open_sans !important; }
+
+// ADOBE
+// Place adobe fonts here

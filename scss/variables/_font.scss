@@ -1,0 +1,51 @@
+///*      F O N T   V A R I A B L E S     */
+
+
+// Default Variables
+// Override these in settings.scss
+
+
+// @import "settings";
+
+
+// Fonts
+// sans-serif, serif, monospace, and cursive are defined in _general.scss
+// $sans-serif:       sans-serif;
+// $serif:            serif;
+// $monospace:        monospace;
+// $cursive:          cursive;
+  // Borrowed in part from Tachyons
+  // Some reference from http://www.cssfontstack.com/
+$arial:            arial, 'Helvetica Neue', helvetica, sans-serif !default;
+$arial-black:      'Arial Black', 'Arial Bold', gadget, sans-serif !default;
+$athelas:          athelas, georgia, serif !default;
+$avenir:           'avenir next', avenir, sans-serif !default;
+$baskerville:      baskerville, serif !default;
+$bodoni:           "Bodoni MT", serif !default;
+$calisto:          "Calisto MT", serif !default;
+$consolas:         Consolas, monaco, monospace !default;
+$courier:          'Courier Next', courier, monospace !default;
+$courier-new:      'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace !default;
+$didot:            didot, serif !default;
+$garamond:         garamond, serif !default;
+$georgia:          georgia, times, 'Times New Roman', serif !default;
+$gotham:           gotham, serif !default;
+$helvetica:        'helvetica neue', helvetica, arial, sans-serif !default;
+$helvetica-thin:   'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$menlo:            menlo, consolas, monaco, 'Courier New', monospace !default;
+$monaco:           monaco, consolas, menlo, 'Courier New', monospace !default;
+$times:            times, serif !default;
+$times-new:        TimesNewRoman, 'Times New Roman', times, baskerville, georgia, serif !default;
+  // Borrowed from SmashingMagazine
+  // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-a
+$native:           apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
+  // Borrowed from Bootstrap
+  // https://github.com/twbs/bootstrap/pull/19098
+$native-bootstrap: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
+  // Borrowed from Tachyons
+  // http://tachyons.io/#style
+$native-tachyons:  -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
+
+
+// @import "settings";
+
