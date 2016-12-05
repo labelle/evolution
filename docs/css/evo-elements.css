@@ -27,6 +27,21 @@
 // *   _ERRORS - A selection of aliases that forgive common mistypes
 *
 *******************************************************************************/
+html {
+  color: initial;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-size: 100%;
+  line-height: 1.4375; }
+
+p {
+  font-size: 1rem;
+  color: #333333;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -46,12 +61,6 @@
   clip: auto; }
 
 /*      FONTS     */
-html {
-  font-size: initial;
-  font-color: initial;
-  font-family: sans-serif;
-  -webkit-tap-highlight-color: transparent; }
-
 .evo-font {
   font-family: sans-serif; }
 
@@ -141,13 +150,13 @@ html {
 
 /* Text */
 .evo-text {
-  font-size: initial;
-  color: initial;
-  font-family: initial;
+  font-size: 1rem;
+  color: #333333;
+  font-family: sans-serif;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1.4375;
   margin-top: 0em;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.4375rem 0; }
 
 .evo-text-reset {
   font-size: initial;
@@ -313,86 +322,59 @@ html {
 .evo-text-24 {
   font-size: 55rem; }
 
+.evo-text-25 {
+  font-size: 68rem; }
+
 .evo-leading-reset {
   line-height: initial; }
 
 .evo-leading-0 {
-  line-height: 0.0625em; }
+  line-height: 0.2; }
 
 .evo-leading-1 {
-  line-height: 0.125em; }
+  line-height: 0.275; }
 
 .evo-leading-2 {
-  line-height: 0.25em; }
+  line-height: 0.375; }
 
 .evo-leading-3 {
-  line-height: 0.375em; }
+  line-height: 0.5; }
 
 .evo-leading-4 {
-  line-height: 0.5em; }
+  line-height: 0.625; }
 
 .evo-leading-5 {
-  line-height: 0.55em; }
+  line-height: 0.75; }
 
 .evo-leading-6 {
-  line-height: 0.625em; }
+  line-height: 0.875; }
 
 .evo-leading-7 {
-  line-height: 0.75em; }
+  line-height: 1; }
 
 .evo-leading-8 {
-  line-height: 0.875em; }
+  line-height: 1.125; }
 
 .evo-leading-9 {
-  line-height: 1em; }
+  line-height: 1.3125; }
 
 .evo-leading-10 {
-  line-height: 1.0625em; }
+  line-height: 1.4375; }
 
 .evo-leading-11 {
-  line-height: 1.125em; }
+  line-height: 1.875; }
 
 .evo-leading-12 {
-  line-height: 1.25em; }
+  line-height: 2.3125; }
 
 .evo-leading-13 {
-  line-height: 1.3125em; }
+  line-height: 2.6875; }
 
 .evo-leading-14 {
-  line-height: 1.375em; }
+  line-height: 3; }
 
 .evo-leading-15 {
-  line-height: 1.5em; }
-
-.evo-leading-16 {
-  line-height: 1.625em; }
-
-.evo-leading-17 {
-  line-height: 1.75em; }
-
-.evo-leading-18 {
-  line-height: 1.875em; }
-
-.evo-leading-19 {
-  line-height: 2em; }
-
-.evo-leading-20 {
-  line-height: 2.125em; }
-
-.evo-leading-21 {
-  line-height: 2.25em; }
-
-.evo-leading-22 {
-  line-height: 2.325em; }
-
-.evo-leading-23 {
-  line-height: 2.5em; }
-
-.evo-leading-24 {
-  line-height: 2.625em; }
-
-.evo-leading-25 {
-  line-height: 2.75em; }
+  line-height: 3.75; }
 
 .evo-tracking-reset {
   letter-spacing: initial; }
@@ -401,124 +383,124 @@ html {
   letter-spacing: -0.2em; }
 
 .evo-tracking-1 {
-  letter-spacing: -0.175em; }
+  letter-spacing: -0.1875em; }
 
 .evo-tracking-2 {
-  letter-spacing: -0.15em; }
+  letter-spacing: -0.175em; }
 
 .evo-tracking-3 {
-  letter-spacing: -0.125em; }
+  letter-spacing: -0.1625em; }
 
 .evo-tracking-4 {
-  letter-spacing: -0.1em; }
+  letter-spacing: -0.15em; }
 
 .evo-tracking-5 {
-  letter-spacing: -0.075em; }
+  letter-spacing: -0.1375em; }
 
 .evo-tracking-6 {
-  letter-spacing: -0.0625em; }
+  letter-spacing: -0.125em; }
 
 .evo-tracking-7 {
-  letter-spacing: -0.0575em; }
+  letter-spacing: -0.1em; }
 
 .evo-tracking-8 {
-  letter-spacing: -0.05em; }
+  letter-spacing: -0.075em; }
 
 .evo-tracking-9 {
-  letter-spacing: -0.025em; }
+  letter-spacing: -0.05em; }
 
 .evo-tracking-10 {
-  letter-spacing: 0.0625em; }
+  letter-spacing: -0.025em; }
 
 .evo-tracking-11 {
-  letter-spacing: 0.125em; }
+  letter-spacing: 0em; }
 
 .evo-tracking-12 {
-  letter-spacing: 0.25em; }
+  letter-spacing: 0.025em; }
 
 .evo-tracking-13 {
-  letter-spacing: 0.375em; }
+  letter-spacing: 0.05em; }
 
 .evo-tracking-14 {
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.1em; }
 
 .evo-tracking-15 {
-  letter-spacing: 0.55em; }
+  letter-spacing: 0.15em; }
 
 .evo-tracking-16 {
-  letter-spacing: 0.625em; }
+  letter-spacing: 0.2em; }
 
 .evo-tracking-17 {
-  letter-spacing: 0.75em; }
+  letter-spacing: 0.275em; }
 
 .evo-tracking-18 {
-  letter-spacing: 0.875em; }
+  letter-spacing: 0.375em; }
 
 .evo-tracking-19 {
-  letter-spacing: 1em; }
+  letter-spacing: 0.5em; }
 
 .evo-tracking-20 {
-  letter-spacing: 1.0625em; }
+  letter-spacing: 0.625em; }
 
 .evo-tracking-21 {
-  letter-spacing: 1.125em; }
+  letter-spacing: 0.75em; }
 
 .evo-tracking-22 {
-  letter-spacing: 1.25em; }
+  letter-spacing: 0.875em; }
 
 .evo-tracking-23 {
-  letter-spacing: 1.3125em; }
+  letter-spacing: 1em; }
 
 .evo-tracking-24 {
-  letter-spacing: 1.375em; }
+  letter-spacing: 1.125em; }
 
 .evo-tracking-25 {
-  letter-spacing: 1.5em; }
+  letter-spacing: 1.3125em; }
 
 .evo-text-smallest {
-  font-size: 0.625rem; }
+  font-size: 0.5rem; }
 
 .evo-text-smaller {
-  font-size: 0.875rem; }
+  font-size: 0.75rem; }
 
 .evo-text-small {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 .evo-text-big {
-  font-size: 2.3125rem; }
+  font-size: 1.875rem; }
 
 .evo-text-bigger {
-  font-size: 3rem; }
+  font-size: 2.6875rem; }
 
 .evo-text-biggest {
-  font-size: 5rem; }
+  font-size: 3.75rem; }
 
 .evo-text-jumbo {
-  font-size: 8rem; }
+  font-size: 6rem; }
 
 .evo-text-giant {
-  font-size: 13rem; }
+  font-size: 10rem; }
 
 .evo-leading-tightest {
-  line-height: 0.125em; }
+  line-height: 0.5; }
 
 .evo-leading-tighter {
-  line-height: 0.55em; }
+  line-height: 0.75; }
 
 .evo-leading-tight {
-  line-height: 1.0625em; }
+  line-height: 1; }
 
 .evo-leading-loose {
-  line-height: 1.5em; }
+  line-height: 1.3125; }
 
 .evo-leading-looser {
-  line-height: 2.125em; }
+  line-height: 1.875; }
 
 .evo-leading-loosest {
-  line-height: 2.625em; }
+  line-height: 2.6875; }
 
 .evo-tracking-tightest {
-  letter-spacing: -0.0575em; }
+  letter-spacing: -0.075em; }
 
 .evo-tracking-tighter {
   letter-spacing: -0.05em; }
@@ -527,31 +509,31 @@ html {
   letter-spacing: -0.025em; }
 
 .evo-tracking-loose {
-  letter-spacing: 0.0625em; }
+  letter-spacing: 0.025em; }
 
 .evo-tracking-looser {
-  letter-spacing: 0.125em; }
+  letter-spacing: 0.05em; }
 
 .evo-tracking-loosest {
-  letter-spacing: 0.25em; }
+  letter-spacing: 0.1em; }
 
 .evo-measure-widest {
-  max-width: 50em; }
+  max-width: 70em; }
 
 .evo-measure-wider {
-  max-width: 40em; }
+  max-width: 60em; }
 
 .evo-measure-wide {
-  max-width: 30em; }
+  max-width: 50em; }
 
 .evo-measure-tight {
-  max-width: 25em; }
+  max-width: 40em; }
 
 .evo-measure-tighter {
-  max-width: 20em; }
+  max-width: 30em; }
 
 .evo-measure-tightest {
-  max-width: 15em; }
+  max-width: 20em; }
 
 /* COLORS */
 .evo-red {

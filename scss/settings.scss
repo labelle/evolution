@@ -37,9 +37,10 @@ $evo:                               ".evo"; // ".evo"
 // Color: Most browsers default to black
 // Font: Safari defaults to a Sans-Serif font-family, while most browsers use sans-serif such as Arial
 // See Fonts in settings.scss for full list of options such as $font_arial, $font_georgia, $font_monaco
-$default_type_size:                 null; // initial 1 rem or 100% or 16px
-$default_type_color:                null; // initial
-$default_type_font:                 null; // sans-serif
+$global_text_size:                  null; // 100%, or 1rem or 16px
+$global_text_color:                 null; // initial
+$global_text_font_family:           null; // sans-serif
+$global_text_line_height:           null; // 1.4375, no em, rem, px, %
 
 
 // Fonts
@@ -51,13 +52,13 @@ $cursive:                           null; //cursive
 
 
 // Text
-$text_font_size:                    null; // inherit
-$text_color:                        null; // inherit
-$text_font_family:                  null; // inherit
+$text_size:                         null; // 1rem
+$text_color:                        null; // #333333
+$text_font_family:                  null; // sans-serif
 $text_font_weight:                  null; // normal
-$text_line_height:                  null; // 1.5em
+$text_line_height:                  null; // 1.4375
 $text_margin_top:                   null; // 0rem
-$text_margin_bottom:                null; // 1.5em
+$text_margin_bottom:                null; // 1.4375rem 0
 
 
 // Links

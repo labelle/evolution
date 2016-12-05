@@ -22,9 +22,12 @@ $evo:                               ".evo" !default;
 
 
 // Typography
-$default_type_size:                 initial !default; // e.g. 1rem or 16px or 100%
-$default_type_color:                initial !default; // e.g. Black or #000000
-$default_type_font:                 sans-serif !default; // e.g. #{$font_arial}
+// alt font-size is calc(1em + 1vw)
+// pg 32 inclusive design patterns 
+$global_text_size:                  100% !default; // e.g. 1rem or 16px or 100%
+$global_text_color:                 initial !default; // e.g. Black or #000000
+$global_text_font_family:           sans-serif !default; // e.g. #{$font_arial}
+$global_text_line_height:           1.4375 !default; // no em, rem, px, %
 
 
 // Fonts
@@ -35,13 +38,13 @@ $cursive:                           cursive !default;
 
 
 // Text
-$text_font_size:                    initial !default;
-$text_color:                        initial !default;
-$text_font_family:                  initial !default;
+$text_size:                         1rem !default;
+$text_color:                        #333333 !default;
+$text_font_family:                  sans-serif !default;
 $text_font_weight:                  normal !default;
-$text_line_height:                  1.5em !default;
+$text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem, px, %
 $text_margin_top:                   0em !default;
-$text_margin_bottom:                1.5em !default;
+$text_margin_bottom:                1.4375rem 0 !default; // 1.5 multiple
 
 
 // Links
