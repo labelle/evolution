@@ -8,16 +8,17 @@
 // html
 html {
   // font-size: #{$global_text_size}; // 1rem
-  color: #{$global_text_color}; // initial
-  font-family: #{$global_text_font_family}; // sans-serif
+  // color: #{$global_text_color}; // initial
+  // font-family: #{$global_text_font_family}; // sans-serif
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // body                     	{}
 
 body {
-  font-size: #{$global_text_size}; // 1rem
-  line-height: #{$global_text_line_height}; // sans-serif
+  font-size: #{$global_text_size}; // 100%
+  line-height: #{$global_text_line_height}; // 1.4375
+  font-weight: #{$global_font-weight}; // initial
 }
 
 // a 							{}
@@ -28,9 +29,9 @@ body {
 // this will be overriden by specific text classes
 
 p {
-  font-size: #{$text_size}; // 1rem
-  color: #{$text_color}; // initial
-  font-family: #{$text_font_family}; // sans-serif
+  // font-size: #{$text_size}; // 1rem
+  color: #{$text_color}; // #333333
+  // font-family: #{$text_font_family}; // sans-serif
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

@@ -27,6 +27,7 @@ $evo:                               ".evo" !default;
 $global_text_size:                  100% !default; // e.g. 1rem or 16px or 100%
 $global_text_color:                 initial !default; // e.g. Black or #000000
 $global_text_font_family:           sans-serif !default; // e.g. #{$font_arial}
+$global_font-weight:                initial !default;
 $global_text_line_height:           1.4375 !default; // no em, rem, px, %
 
 
