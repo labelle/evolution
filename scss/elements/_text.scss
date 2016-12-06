@@ -46,8 +46,6 @@
   @else { @warn "Base mixin supports: text, font"; }
 }
 
-
-
 // Text Style
 #{$evo}-text-bold         { font-weight: bold; }
 #{$evo}-text-italic       { font-style: italic; }
@@ -61,6 +59,7 @@
 #{$evo}-text-left         { text-align: left; }
 #{$evo}-text-right        { text-align: right; }
 #{$evo}-text-center       { text-align: center; }
+#{$evo}-text-truncate     { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 // // Style
 // #{$evo}-style-bold       { font-weight: bold; }

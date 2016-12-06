@@ -48,8 +48,9 @@
   @else if $style == left         { text-align: left; }
   @else if $style == right        { text-align: right; }
   @else if $style == center       { text-align: center; }
+  @else if $style == truncate     { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     // Throw Warnings
-  @else { @warn "Style mixin supports: reset, bold, italic, capitalize, uppercase, lowercase, strike, underline, no-underline, no-transform, left, right, center"; }
+  @else { @warn "Style mixin supports: reset, bold, italic, capitalize, uppercase, lowercase, strike, underline, no-underline, no-transform, left, right, center, truncate"; }
 }
 
 
@@ -125,6 +126,39 @@
   @else { @warn "Leading mixin supports: reset, numbers 0-15"; }
 }
 
+// Leading
+@mixin tracking($tracking)  {
+  @if $leading == reset       { letter-spacing: initial; }
+  @else if $tracking == 0      { letter-spacing: #{$em-0}; }
+  @else if $tracking == 1      { letter-spacing: #{$em-1}; }
+  @else if $tracking == 2      { letter-spacing: #{$em-2}; }
+  @else if $tracking == 3      { letter-spacing: #{$em-3}; }
+  @else if $tracking == 4      { letter-spacing: #{$em-4}; }
+  @else if $tracking == 5      { letter-spacing: #{$em-5}; }
+  @else if $tracking == 6      { letter-spacing: #{$em-6}; }
+  @else if $tracking == 7      { letter-spacing: #{$em-7}; }
+  @else if $tracking == 8      { letter-spacing: #{$em-8}; }
+  @else if $tracking == 9      { letter-spacing: #{$em-9}; }
+  @else if $tracking == 10     { letter-spacing: #{$em-10}; } // negative
+  @else if $tracking == 11     { letter-spacing: #{$em-11}; } // zero
+  @else if $tracking == 12     { letter-spacing: #{$em-12}; } // positive
+  @else if $tracking == 13     { letter-spacing: #{$em-13}; }
+  @else if $tracking == 14     { letter-spacing: #{$em-14}; }
+  @else if $tracking == 15     { letter-spacing: #{$em-15}; }
+  @else if $tracking == 16     { letter-spacing: #{$em-16}; }
+  @else if $tracking == 17     { letter-spacing: #{$em-17}; }
+  @else if $tracking == 18     { letter-spacing: #{$em-18}; }
+  @else if $tracking == 19     { letter-spacing: #{$em-19}; }
+  @else if $tracking == 20     { letter-spacing: #{$em-20}; }
+  @else if $tracking == 21     { letter-spacing: #{$em-21}; }
+  @else if $tracking == 22     { letter-spacing: #{$em-22}; }
+  @else if $tracking == 23     { letter-spacing: #{$em-23}; }
+  @else if $tracking == 24     { letter-spacing: #{$em-24}; }
+  @else if $tracking == 25     { letter-spacing: #{$em-25}; }
+  // Throw Warnings
+  @else { @warn "Leading mixin supports: reset, numbers 0-25"; }
+}
+
 // Size
 @mixin size($size) {
   @if $size == smallest         { font-size: #{$rem-19}; }
@@ -139,47 +173,6 @@
   @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest, jumbo, giant"; }
 }
 
-// // Size
-// @mixin size($size) {
-//   @if $size == smallest         { @extend #{$evo}-text-size-smallest; }
-//   @else if $size == smaller     { @extend #{$evo}-text-size-smaller; }
-//   @else if $size == small       { @extend #{$evo}-text-size-small; }
-//   @else if $size == big         { @extend #{$evo}-text-size-big; }
-//   @else if $size == bigger      { @extend #{$evo}-text-size-bigger; }
-//   @else if $size == biggest     { @extend #{$evo}-text-size-biggest; }
-//     // Throw Warnings
-//   @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest"; }
-// }
-
-// // Relative Text Leading
-// #{$evo}-text-leading-tightest  { line-height: #{$em-1}; }
-// #{$evo}-text-leading-tighter   { line-height: #{$em-5}; }
-// #{$evo}-text-leading-tight     { line-height: #{$em-10}; }
-// #{$evo}-text-leading-loose     { line-height: #{$em-15}; }
-// #{$evo}-text-leading-looser    { line-height: #{$em-20}; }
-// #{$evo}-text-leading-loosest   { line-height: #{$em-24}; }
-
-// // Relative Text Leading
-// #{$evo}-text-leading-tightest  { @include leading(tightest); }
-// #{$evo}-text-leading-tighter   { @include leading(tighter); }
-// #{$evo}-text-leading-tight     { @include leading(tight); }
-// #{$evo}-text-leading-loose     { @include leading(loose); }
-// #{$evo}-text-leading-looser    { @include leading(looser); }
-// #{$evo}-text-leading-loosest   { @include leading(loosest); }
-
-
-// // Leading ems
-// // #{$em-25} is default leading size
-// @mixin leading($leading) {
-//   @if $leading == tightest         { line-height: #{$em-19}; }
-//   @else if $leading == tighter     { line-height: #{$em-21}; }
-//   @else if $leading == tight       { line-height: #{$em-23}; }
-//   @else if $leading == loose       { line-height: #{$em-25}; }
-//   @else if $leading == looser      { line-height: #{$em-27}; }
-//   @else if $leading == loosest     { line-height: #{$em-29}; }
-//     // Throw Warnings
-//   @else { @warn "Leading mixin supports: tightest, tighter, tight, loose, looser, loosest"; }
-// }
 
 // Leading relative number scale
 // #{$unit-25} is default leading size

@@ -10,14 +10,6 @@
 
 // /* Text Utilities */
 
-// // Style
-// #{$evo}-style-bold       { font-weight: bold; }
-// #{$evo}-style-caps       { font-style: italic; }
-// #{$evo}-style-italic     { text-transform: uppercase; }
-// #{$evo}-style-capital     { @include style(capital); }
-// #{$evo}-style-strike      { @include style(strike); }
-// #{$evo}-style-underline   { @include style(underline); }
-
 // // Tracking
 // #{$evo}-tracking-tightest  { letter-spacing: -.1em; }
 // #{$evo}-tracking-tighter   { letter-spacing: -.065em; }
@@ -33,25 +25,6 @@
 // #{$evo}-leading-loose     { line-height: 1; }
 // #{$evo}-leading-looser    { line-height: 1.15; }
 // #{$evo}-leading-loosest   { line-height: 1.25; }
-
-
-/* Text */
-
-
-// Text Style
-#{$evo}-text-bold         { font-weight: bold; }
-#{$evo}-text-italic       { font-style: italic; }
-#{$evo}-text-capitalize   { text-transform: capitalize; }
-#{$evo}-text-uppercase    { text-transform: uppercase; }
-#{$evo}-text-lowercase    { text-transform: lowercase; }
-#{$evo}-text-strike       { text-decoration: line-through; }
-#{$evo}-text-underline    { text-decoration: underline; }
-#{$evo}-text-no-underline { text-decoration: none; }
-#{$evo}-text-no-transform { text-transform: none; }
-#{$evo}-text-left         { text-align: left; }
-#{$evo}-text-right        { text-align: right; }
-#{$evo}-text-center       { text-align: center; }
-
 
 // Text Size
 // rems

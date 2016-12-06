@@ -204,42 +204,10 @@ p {
 .evo-text-center {
   text-align: center; }
 
-/* Text */
-.evo-text-bold {
-  font-weight: bold; }
-
-.evo-text-italic {
-  font-style: italic; }
-
-.evo-text-capitalize {
-  text-transform: capitalize; }
-
-.evo-text-uppercase {
-  text-transform: uppercase; }
-
-.evo-text-lowercase {
-  text-transform: lowercase; }
-
-.evo-text-strike {
-  text-decoration: line-through; }
-
-.evo-text-underline {
-  text-decoration: underline; }
-
-.evo-text-no-underline {
-  text-decoration: none; }
-
-.evo-text-no-transform {
-  text-transform: none; }
-
-.evo-text-left {
-  text-align: left; }
-
-.evo-text-right {
-  text-align: right; }
-
-.evo-text-center {
-  text-align: center; }
+.evo-text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .evo-text-reset {
   line-height: initial; }
