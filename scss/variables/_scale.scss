@@ -4,7 +4,7 @@
 // Default Variables
 // Override these in settings.scss
 
-
+// TO DO: Use just the u-10 units, and put a + rem or + em after in the other pages
 // @import "settings";
 
 
@@ -13,6 +13,13 @@
 // no px, ems, rems, or percent
 // floor() rounds down
 // ceil() rounds up
+
+// rem
+// used for text size and measure
+
+// em
+// used for tracking
+
 $u-0: -.2 !default;
 $u-1: -.1875 !default;
 $u-2: -.175 !default;
@@ -31,132 +38,33 @@ $u-14: .1 !default;
 $u-15: .15 !default;
 $u-16: .2 !default;
 $u-17: .275 !default;
-$u-18: .375 !default;
-$u-19: .5 !default;      // smallest useful lowercase leading // avenir // georgia
+$u-18: .375 !default;  	     // 6px // text size might render as 8px
+$u-19: .5 !default;          // 8px // smallest useful text size // smallest useful lowercase leading // avenir // georgia
 // $u-19b: .5625 !default; // optimized for lowercase touching // arial // gotham
-$u-20: .625 !default;
-$u-21: .75 !default;     // smallest useful uppercase leading
-$u-22: .875 !default;
-$u-23: floor(1.02) !default;
-$u-24: 1.125 !default;
-$u-25: 1.3125 !default;
-$u-26: 1.4375 !default;  // default text base leading
-$u-27: 1.875 !default;
-$u-28: 2.3125 !default;
-$u-29: 2.6875 !default;
-$u-30: floor(3.05) !default;
-$u-31: 3.75 !default;
-$u-32: ceil(4.935) !default;
-$u-33: floor(6.1) !default;
-$u-34: ceil(7.985) !default;
-$u-35: ceil(9.87) !default;
-$u-36: ceil(12.92) !default;
-$u-37: ceil(15.97) !default;
-$u-38: ceil(20.905) !default;
-$u-39: ceil(25.84) !default;
-$u-40: ceil(33.825) !default;
-$u-41: ceil(41.81) !default;
-$u-42: ceil(54.73) !default;
-$u-43: ceil(67.65) !default;
-
-
-// rem scale
-// used for text size and measure
-// floor() rounds down
-// ceil() rounds up
-$rem-0: -.2rem !default;
-$rem-1: -.1875rem !default;
-$rem-2: -.175rem !default;
-$rem-3: -.1625rem !default;
-$rem-4: -.15rem !default;
-$rem-5: -.1375rem !default;
-$rem-6: -.125rem !default;
-$rem-7: -.1rem !default;
-$rem-8: -.075rem !default;
-$rem-9: -.05rem !default;
-$rem-10: -.025rem !default; // negative
-$rem-11: 0rem !default;
-$rem-12: .025rem !default; // positive
-$rem-13: .05rem !default;
-$rem-14: .1rem !default;
-$rem-15: .15rem !default;
-$rem-16: .2rem !default;
-$rem-17: .275rem !default;
-$rem-18: .375rem !default;          // 6px // text size might render as 8px
-$rem-19: .5rem !default;            // 8px // smallest useful text size
-$rem-20: .625rem !default;          // 10px
-$rem-21: .75rem !default;           // 12px
-$rem-22: .875rem !default;          // 14px
-$rem-23: floor(1.02rem) !default;   // 16px // default text size
-$rem-24: 1.125rem !default;         // 18px
-$rem-25: 1.3125rem !default;        // 21px
-$rem-26: 1.4375rem !default;        // 23px
-$rem-27: 1.875rem !default;         // 30px
-$rem-28: 2.3125rem !default;       // 37px
-$rem-29: 2.6875rem !default;       // 43px
-$rem-30: floor(3.05rem) !default;  // 48px
-$rem-31: 3.75rem !default;         // 60px
-$rem-32: ceil(4.935rem) !default;  // 80px 
-$rem-33: floor(6.1rem) !default;   // 96px
-$rem-34: ceil(7.985rem) !default;  // 128px
-$rem-35: ceil(9.87rem) !default;   // 160px
-$rem-36: ceil(12.92rem) !default;  // 208px
-$rem-37: ceil(15.97rem) !default;  // 256px
-$rem-38: ceil(20.905rem) !default; // 336px
-$rem-39: ceil(25.84rem) !default;  // 416px
-$rem-40: ceil(33.825rem) !default; // 544px
-$rem-41: ceil(41.81rem) !default;  // 672px
-$rem-42: ceil(54.73rem) !default;  // 880px
-$rem-43: ceil(67.65rem) !default;  // 1088px
-
-
-// em scale
-// floor() rounds down
-// ceil() rounds up
-$em-0: -.2em !default;
-$em-1: -.1875em !default;
-$em-2: -.175em !default;
-$em-3: -.1625em !default;
-$em-4: -.15em !default;
-$em-5: -.1375em !default;
-$em-6: -.125em !default;
-$em-7: -.1em !default;
-$em-8: -.075em !default;
-$em-9: -.05em !default;
-$em-10: -.025em !default; // negative
-$em-11: 0em !default;
-$em-12: .025em !default; // positive
-$em-13: .05em !default;
-$em-14: .1em !default;
-$em-15: .15em !default;
-$em-16: .2em !default;
-$em-17: .275em !default;
-$em-18: .375em !default;          // 6px
-$em-19: .5em !default;            // 8px
-$em-20: .625em !default;          // 10px
-$em-21: .75em !default;           // 12px
-$em-22: .875em !default;          // 14px
-$em-23: floor(1.02em) !default;   // 16px
-$em-24: 1.125em !default;         // 18px
-$em-25: 1.3125em !default;        // 21px
-$em-26: 1.4375em !default;        // 23px
-$em-27: 1.875em !default;         // 30px
-$em-28: 2.3125em !default;       // 37px
-$em-29: 2.6875em !default;       // 43px
-$em-30: floor(3.05em) !default;  // 48px
-$em-31: 3.75em !default;         // 60px
-$em-32: ceil(4.935em) !default;  // 80px 
-$em-33: floor(6.1em) !default;   // 96px
-$em-34: ceil(7.985em) !default;  // 128px
-$em-35: ceil(9.87em) !default;   // 160px
-$em-36: ceil(12.92em) !default;  // 208px
-$em-37: ceil(15.97em) !default;  // 256px
-$em-38: ceil(20.905em) !default; // 336px
-$em-39: ceil(25.84em) !default;  // 416px
-$em-40: ceil(33.825em) !default; // 544px
-$em-41: ceil(41.81em) !default;  // 672px
-$em-42: ceil(54.73em) !default;  // 880px
-$em-43: ceil(67.65em) !default;  // 1088px
+$u-20: .625 !default;        // 10px
+$u-21: .75 !default;         // 12px // smallest useful uppercase leading
+$u-22: .875 !default;        // 14px
+$u-23: floor(1.02) !default; // 16px // default text size
+$u-24: 1.125 !default;       // 18px
+$u-25: 1.3125 !default;      // 21px
+$u-26: 1.4375 !default;      // 23px // default text base unitless leading
+$u-27: 1.875 !default;       // 30px
+$u-28: 2.3125 !default;      // 37px
+$u-29: 2.6875 !default;      // 43px
+$u-30: floor(3.05) !default; // 48px
+$u-31: 3.75 !default;        // 60px
+$u-32: ceil(4.935) !default; // 80px
+$u-33: floor(6.1) !default;  // 96px
+$u-34: ceil(7.985) !default; // 128px
+$u-35: ceil(9.87) !default;  // 160px
+$u-36: ceil(12.92) !default; // 208px
+$u-37: ceil(15.97) !default; // 256px
+$u-38: ceil(20.905) !default; // 336px
+$u-39: ceil(25.84) !default; // 416px
+$u-40: ceil(33.825) !default; // 544px
+$u-41: ceil(41.81) !default; // 672px
+$u-42: ceil(54.73) !default; // 880px
+$u-43: ceil(67.65) !default; // 1088px
 
 
 // pixel scale

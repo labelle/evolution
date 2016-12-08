@@ -29,32 +29,33 @@
 // Text Size
 // rems
 #{$evo}-text-reset     { line-height: initial; }
-#{$evo}-text-0         { font-size: #{$rem-18}; }
-#{$evo}-text-1         { font-size: #{$rem-19}; } 
-#{$evo}-text-2         { font-size: #{$rem-20}; } 
-#{$evo}-text-3         { font-size: #{$rem-21}; } 
-#{$evo}-text-4         { font-size: #{$rem-22}; } 
-#{$evo}-text-5         { font-size: #{$rem-23}; } 
-#{$evo}-text-6         { font-size: #{$rem-24}; } 
-#{$evo}-text-7         { font-size: #{$rem-25}; } 
-#{$evo}-text-8         { font-size: #{$rem-26}; } 
-#{$evo}-text-9         { font-size: #{$rem-27}; } 
-#{$evo}-text-10        { font-size: #{$rem-28}; } 
-#{$evo}-text-11        { font-size: #{$rem-29}; } 
-#{$evo}-text-12        { font-size: #{$rem-30}; } 
-#{$evo}-text-13        { font-size: #{$rem-31}; } 
-#{$evo}-text-14        { font-size: #{$rem-32}; } 
-#{$evo}-text-15        { font-size: #{$rem-33}; } 
-#{$evo}-text-16        { font-size: #{$rem-34}; } 
-#{$evo}-text-17        { font-size: #{$rem-35}; } 
-#{$evo}-text-18        { font-size: #{$rem-36}; } 
-#{$evo}-text-19        { font-size: #{$rem-37}; } 
-#{$evo}-text-20        { font-size: #{$rem-38}; } 
-#{$evo}-text-21        { font-size: #{$rem-39}; } 
-#{$evo}-text-22        { font-size: #{$rem-40}; } 
-#{$evo}-text-23        { font-size: #{$rem-41}; } 
-#{$evo}-text-24        { font-size: #{$rem-42}; }
-#{$evo}-text-25        { font-size: #{$rem-43}; }
+#{$evo}-text-0         { font-size: #{$u-18}rem; }
+#{$evo}-text-1         { font-size: #{$u-19}rem; } 
+#{$evo}-text-2         { font-size: #{$u-20}rem; } 
+#{$evo}-text-3         { font-size: #{$u-21}rem; } 
+#{$evo}-text-4         { font-size: #{$u-22}rem; } 
+#{$evo}-text-5         { font-size: #{$u-23}rem; } 
+#{$evo}-text-6         { font-size: #{$u-24}rem; } 
+#{$evo}-text-7         { font-size: #{$u-25}rem; } 
+#{$evo}-text-8         { font-size: #{$u-26}rem; } 
+#{$evo}-text-9         { font-size: #{$u-27}rem; } 
+#{$evo}-text-10        { font-size: #{$u-28}rem; } 
+#{$evo}-text-11        { font-size: #{$u-29}rem; } 
+#{$evo}-text-12        { font-size: #{$u-30}rem; } 
+#{$evo}-text-13        { font-size: #{$u-31}rem; } 
+#{$evo}-text-14        { font-size: #{$u-32}rem; } 
+#{$evo}-text-15        { font-size: #{$u-33}rem; } 
+// #{$evo}-text-15        { font-size: #{$rem-33}; } 
+#{$evo}-text-16        { font-size: #{$u-34}rem; } 
+#{$evo}-text-17        { font-size: #{$u-35}rem; } 
+#{$evo}-text-18        { font-size: #{$u-36}rem; } 
+#{$evo}-text-19        { font-size: #{$u-37}rem; } 
+#{$evo}-text-20        { font-size: #{$u-38}rem; } 
+#{$evo}-text-21        { font-size: #{$u-39}rem; } 
+#{$evo}-text-22        { font-size: #{$u-40}rem; } 
+#{$evo}-text-23        { font-size: #{$u-41}rem; } 
+#{$evo}-text-24        { font-size: #{$u-42}rem; }
+#{$evo}-text-25        { font-size: #{$u-43}rem; }
 
 // Text Leading
 // unitless: no em, rem, px, %
@@ -89,36 +90,36 @@
 
 // TO DO: Pixel to rem mixin?
 // https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
-// #{$evo}-tracking-10      { letter-spacing: remCalc(#{$u-10}) + rem; }
+// #{$evo}-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
 
 // Text Leading rems
 #{$evo}-tracking-reset  { letter-spacing: initial; }
-#{$evo}-tracking-0      { letter-spacing: #{$em-0}; }
-#{$evo}-tracking-1      { letter-spacing: #{$em-1}; }
-#{$evo}-tracking-2      { letter-spacing: #{$em-2}; }
-#{$evo}-tracking-3      { letter-spacing: #{$em-3}; }
-#{$evo}-tracking-4      { letter-spacing: #{$em-4}; }
-#{$evo}-tracking-5      { letter-spacing: #{$em-5}; }
-#{$evo}-tracking-6      { letter-spacing: #{$em-6}; }
-#{$evo}-tracking-7      { letter-spacing: #{$em-7}; }
-#{$evo}-tracking-8      { letter-spacing: #{$em-8}; }
-#{$evo}-tracking-9      { letter-spacing: #{$em-9}; } 
-#{$evo}-tracking-10     { letter-spacing: #{$em-10}; } // negative
-#{$evo}-tracking-11     { letter-spacing: #{$em-11}; } // zero
-#{$evo}-tracking-12     { letter-spacing: #{$em-12}; } // positive
-#{$evo}-tracking-13     { letter-spacing: #{$em-13}; }
-#{$evo}-tracking-14     { letter-spacing: #{$em-14}; }
-#{$evo}-tracking-15     { letter-spacing: #{$em-15}; }
-#{$evo}-tracking-16     { letter-spacing: #{$em-16}; }
-#{$evo}-tracking-17     { letter-spacing: #{$em-17}; }
-#{$evo}-tracking-18     { letter-spacing: #{$em-18}; }
-#{$evo}-tracking-19     { letter-spacing: #{$em-19}; }
-#{$evo}-tracking-20     { letter-spacing: #{$em-20}; }
-#{$evo}-tracking-21     { letter-spacing: #{$em-21}; }
-#{$evo}-tracking-22     { letter-spacing: #{$em-22}; } 
-#{$evo}-tracking-23     { letter-spacing: #{$em-23}; }
-#{$evo}-tracking-24     { letter-spacing: #{$em-24}; }
-#{$evo}-tracking-25     { letter-spacing: #{$em-25}; }
+#{$evo}-tracking-0      { letter-spacing: #{$u-0}em; }
+#{$evo}-tracking-1      { letter-spacing: #{$u-1}em; }
+#{$evo}-tracking-2      { letter-spacing: #{$u-2}em; }
+#{$evo}-tracking-3      { letter-spacing: #{$u-3}em; }
+#{$evo}-tracking-4      { letter-spacing: #{$u-4}em; }
+#{$evo}-tracking-5      { letter-spacing: #{$u-5}em; }
+#{$evo}-tracking-6      { letter-spacing: #{$u-6}em; }
+#{$evo}-tracking-7      { letter-spacing: #{$u-7}em; }
+#{$evo}-tracking-8      { letter-spacing: #{$u-8}em; }
+#{$evo}-tracking-9      { letter-spacing: #{$u-9}em; } 
+#{$evo}-tracking-10     { letter-spacing: #{$u-10}em; } // negative
+#{$evo}-tracking-11     { letter-spacing: #{$u-11}em; } // zero
+#{$evo}-tracking-12     { letter-spacing: #{$u-12}em; } // positive
+#{$evo}-tracking-13     { letter-spacing: #{$u-13}em; }
+#{$evo}-tracking-14     { letter-spacing: #{$u-14}em; }
+#{$evo}-tracking-15     { letter-spacing: #{$u-15}em; }
+#{$evo}-tracking-16     { letter-spacing: #{$u-16}em; }
+#{$evo}-tracking-17     { letter-spacing: #{$u-17}em; }
+#{$evo}-tracking-18     { letter-spacing: #{$u-18}em; }
+#{$evo}-tracking-19     { letter-spacing: #{$u-19}em; }
+#{$evo}-tracking-20     { letter-spacing: #{$u-20}em; }
+#{$evo}-tracking-21     { letter-spacing: #{$u-21}em; }
+#{$evo}-tracking-22     { letter-spacing: #{$u-22}em; } 
+#{$evo}-tracking-23     { letter-spacing: #{$u-23}em; }
+#{$evo}-tracking-24     { letter-spacing: #{$u-24}em; }
+#{$evo}-tracking-25     { letter-spacing: #{$u-25}em; }
 
 
 // Relative Text Size
