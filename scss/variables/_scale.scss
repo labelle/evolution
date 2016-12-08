@@ -1,24 +1,8 @@
 ///*      S C A L E   V A R I A B L E S     */
 
-
-// Default Variables
-// Override these in settings.scss
-
-// TO DO: Use just the u-10 units, and put a + rem or + em after in the other pages
-// @import "settings";
-
-
 // relative number scale
-// used for leading
-// no px, ems, rems, or percent
 // floor() rounds down
 // ceil() rounds up
-
-// rem
-// used for text size and measure
-
-// em
-// used for tracking
 
 $u-0: -.2 !default;
 $u-1: -.1875 !default;
@@ -67,6 +51,8 @@ $u-42: ceil(54.73) !default; // 880px
 $u-43: ceil(67.65) !default; // 1088px
 
 
+// TO DO need smaller sizes down to 1px for borders, etc.
+// TO DO need negative pixels?
 // pixel scale
 $px-0: 6px !default;
 $px-1: 8px !default;

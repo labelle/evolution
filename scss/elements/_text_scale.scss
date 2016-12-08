@@ -152,6 +152,7 @@
 
 
 // Relative Text Measure
+// Rem
 #{$evo}-measure-widest   { @include measure(widest); }
 #{$evo}-measure-wider    { @include measure(wider); }
 #{$evo}-measure-wide     { @include measure(wide); }

@@ -126,9 +126,9 @@
   @else { @warn "Leading mixin supports: reset, numbers 0-15"; }
 }
 
-// Leading
+// Tracking
 @mixin tracking($tracking)  {
-  @if $leading == reset       { letter-spacing: initial; }
+  @if $tracking == reset       { letter-spacing: initial; }
   @else if $tracking == 0      { letter-spacing: #{$u-0}em; }
   @else if $tracking == 1      { letter-spacing: #{$u-1}em; }
   @else if $tracking == 2      { letter-spacing: #{$u-2}em; }
@@ -156,7 +156,7 @@
   @else if $tracking == 24     { letter-spacing: #{$u-24}em; }
   @else if $tracking == 25     { letter-spacing: #{$u-25}em; }
   // Throw Warnings
-  @else { @warn "Leading mixin supports: reset, numbers 0-25"; }
+  @else { @warn "Tracking mixin supports: reset, numbers 0-25"; }
 }
 
 // Size
@@ -203,6 +203,7 @@
 
 // Measure
 // Need measure reset
+// TO DO HERE use rem instead of em?
 @mixin measure($measure) {
   @if $measure == widest        { max-width: 70em; }
   @else if $measure == wider    { max-width: 60em; }
