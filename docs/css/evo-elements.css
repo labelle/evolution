@@ -145,6 +145,30 @@ p {
 .evo-font-native-tachyons {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
 
+.evo-font-google-open-sans {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400; }
+
+.evo-font-google-open-sans-light {
+  font-family: Open Sans, sans-serif;
+  font-weight: 300; }
+
+.evo-font-google-open-sans-extra-bold {
+  font-family: Open Sans, sans-serif;
+  font-weight: 800; }
+
+.evo-font-adobe-open-sans {
+  font-family: open sans, open-sans, sans-serif;
+  font-weight: 400; }
+
+.evo-font-adobe-open-sans-light {
+  font-family: open sans, open-sans, sans-serif;
+  font-weight: 300; }
+
+.evo-font-adobe-open-sans-extra-bold {
+  font-family: open sans, open-sans, sans-serif;
+  font-weight: 800; }
+
 /* Text */
 .evo-text {
   font-size: 1rem;
@@ -163,6 +187,7 @@ p {
   font-weight: initial;
   font-style: initial;
   line-height: initial;
+  text-decoration: initial;
   text-transform: initial;
   text-align: initial;
   margin-top: initial;
@@ -189,6 +214,7 @@ p {
 .evo-text-underline {
   text-decoration: underline; }
 
+.evo-text-no-underline a,
 .evo-text-no-underline {
   text-decoration: none; }
 
@@ -208,6 +234,11 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.evo-text-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip; }
 
 .evo-text-reset {
   line-height: initial; }
@@ -482,23 +513,71 @@ p {
 .evo-tracking-loosest {
   letter-spacing: 0.1em; }
 
+.evo-measure-1 {
+  max-width: 10rem; }
+
 .evo-measure-widest {
-  max-width: 70em; }
+  max-width: 70rem; }
 
 .evo-measure-wider {
-  max-width: 60em; }
+  max-width: 60rem; }
 
 .evo-measure-wide {
-  max-width: 50em; }
+  max-width: 50rem; }
 
 .evo-measure-tight {
-  max-width: 40em; }
+  max-width: 40rem; }
 
 .evo-measure-tighter {
-  max-width: 30em; }
+  max-width: 30rem; }
 
 .evo-measure-tightest {
-  max-width: 20em; }
+  max-width: 20rem; }
+
+.evo-measure-1 {
+  max-width: 10rem; }
+
+.evo-measure-2 {
+  max-width: 13rem; }
+
+.evo-measure-3 {
+  max-width: 16rem; }
+
+.evo-measure-4 {
+  max-width: 21rem; }
+
+.evo-measure-5 {
+  max-width: 26rem; }
+
+.evo-measure-6 {
+  max-width: 34rem; }
+
+.evo-measure-7 {
+  max-width: 42rem; }
+
+.evo-measure-8 {
+  max-width: 55rem; }
+
+.evo-measure-9 {
+  max-width: 68rem; }
+
+.evo-measure-10 {
+  max-width: 80rem; }
+
+.evo-measure-11 {
+  max-width: 100rem; }
+
+.evo-measure-12 {
+  max-width: 120rem; }
+
+.evo-measure-13 {
+  max-width: 130rem; }
+
+.evo-measure-14 {
+  max-width: 140rem; }
+
+.evo-measure-15 {
+  max-width: 150rem; }
 
 /* COLORS */
 .evo-red {

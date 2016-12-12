@@ -49,8 +49,9 @@
   @else if $style == right        { text-align: right; }
   @else if $style == center       { text-align: center; }
   @else if $style == truncate     { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  @else if $style == clip         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     // Throw Warnings
-  @else { @warn "Style mixin supports: reset, bold, italic, capitalize, uppercase, lowercase, strike, underline, no-underline, no-transform, left, right, center, truncate"; }
+  @else { @warn "Style mixin supports: reset, bold, italic, capitalize, uppercase, lowercase, strike, underline, no-underline, no-transform, left, right, center, truncate, clip"; }
 }
 
 
@@ -205,12 +206,12 @@
 // Need measure reset
 // TO DO HERE use rem instead of em?
 @mixin measure($measure) {
-  @if $measure == widest        { max-width: 70em; }
-  @else if $measure == wider    { max-width: 60em; }
-  @else if $measure == wide     { max-width: 50em; }
-  @else if $measure == tight    { max-width: 40em; }
-  @else if $measure == tighter  { max-width: 30em; }
-  @else if $measure == tightest { max-width: 20em; }
+  @if $measure == widest        { max-width: 70rem; }
+  @else if $measure == wider    { max-width: 60rem; }
+  @else if $measure == wide     { max-width: 50rem; }
+  @else if $measure == tight    { max-width: 40rem; }
+  @else if $measure == tighter  { max-width: 30rem; }
+  @else if $measure == tightest { max-width: 20rem; }
   // Throw Warnings
   @else { @warn "Measure mixin supports: widest, wider, wide, tight, tighter, tightest"; }
 }

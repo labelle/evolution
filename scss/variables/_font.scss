@@ -48,7 +48,16 @@ $native-tachyons:  -apple-system, BlinkMacSystemFont, 'avenir next', avenir, hel
 
 
 // Google Fonts
-// $karma:            'Karma', sans-serif !default;
+$google-open-sans: 'Open Sans', sans-serif !default;
+
+
+// Adobe Edge Fonts
+// Note the suggested open-sans variable does not seem to work
+$adobe-open-sans:   'open sans', open-sans, sans-serif !default;
+
+// Font Squirrel
+// Font Squirrel @font-face Webfont Kit
+// https://www.fontsquirrel.com/fonts/open-sans
 
 
 // @import "settings";

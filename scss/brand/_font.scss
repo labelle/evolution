@@ -1,0 +1,20 @@
+///*      F O N T     */
+
+@import "../variables";
+// @import "../settings";
+
+/*      BRAND FONTS     */
+
+
+// Brand Fonts
+#{$brand}-font-1 { 
+  font-family: #{$brand_text_font_family_1};
+}
+
+#{$brand}-font-2 { 
+  font-family: #{$brand_text_font_family_2};
+}
+
+#{$brand}-font-3 { 
+  font-family: #{$brand_text_font_family_3};
+}

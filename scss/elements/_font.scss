@@ -11,6 +11,10 @@
   font-family: #{$text_font_family}; // or #{sans-serif} or #{native}
 }
 
+// #{$evo}-font-open-sans { 
+//   font-family: #{$google-open-sans}; // #{$adobe-open-sans}
+// }
+
 
 // System fonts
 #{$evo}-font-1 { 
@@ -56,10 +60,40 @@
 #{$evo}-font-native-tachyons   {font-family: #{$native-tachyons}; } // Font stack
 
 
-// GOOGLE
-// #{$evo}-font-open-sans      { font-family: $font_open_sans !important; }
-// #{$evo}-font-karma          { font-family: #{$karma}; }
+// GOOGLE FONTS
+// <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+#{$evo}-font-google-open-sans  {
+font-family: #{$google-open-sans};
+font-weight:400;
+}
+
+#{$evo}-font-google-open-sans-light  {
+font-family: #{$google-open-sans};
+font-weight:300;
+}
+
+#{$evo}-font-google-open-sans-extra-bold  {
+font-family: #{$google-open-sans};
+font-weight:800;
+}
 
 
-// ADOBE
-// Place adobe fonts here
+// ADOBE EDGE FONTS
+// <script src="//use.edgefonts.net/open-sans.js"></script>
+
+#{$evo}-font-adobe-open-sans  {
+font-family: #{$adobe-open-sans};
+font-weight:400;
+}
+
+#{$evo}-font-adobe-open-sans-light  {
+font-family: #{$adobe-open-sans};
+font-weight:300;
+}
+
+#{$evo}-font-adobe-open-sans-extra-bold  {
+font-family: #{$adobe-open-sans};
+font-weight:800;
+}
+

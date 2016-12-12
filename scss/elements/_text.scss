@@ -32,6 +32,7 @@
   font-weight:     initial;
   font-style:      initial;
   line-height:     initial;
+  text-decoration: initial;
   text-transform:  initial;
   text-align:      initial;
   margin-top:      initial;
@@ -47,25 +48,19 @@
 }
 
 // Text Style
-#{$evo}-text-bold         { font-weight: bold; }
-#{$evo}-text-italic       { font-style: italic; }
-#{$evo}-text-capitalize   { text-transform: capitalize; }
-#{$evo}-text-uppercase    { text-transform: uppercase; }
-#{$evo}-text-lowercase    { text-transform: lowercase; }
-#{$evo}-text-strike       { text-decoration: line-through; }
-#{$evo}-text-underline    { text-decoration: underline; }
-#{$evo}-text-no-underline { text-decoration: none; }
-#{$evo}-text-no-transform { text-transform: none; }
-#{$evo}-text-left         { text-align: left; }
-#{$evo}-text-right        { text-align: right; }
-#{$evo}-text-center       { text-align: center; }
-#{$evo}-text-truncate     { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-// // Style
-// #{$evo}-style-bold       { font-weight: bold; }
-// #{$evo}-style-caps       { font-style: italic; }
-// #{$evo}-style-italic     { text-transform: uppercase; }
-// #{$evo}-style-capital     { @include style(capital); }
-// #{$evo}-style-strike      { @include style(strike); }
-// #{$evo}-style-underline   { @include style(underline); }
+#{$evo}-text-bold             { font-weight: bold; }
+#{$evo}-text-italic           { font-style: italic; }
+#{$evo}-text-capitalize       { text-transform: capitalize; }
+#{$evo}-text-uppercase        { text-transform: uppercase; }
+#{$evo}-text-lowercase        { text-transform: lowercase; }
+#{$evo}-text-strike           { text-decoration: line-through; }
+#{$evo}-text-underline        { text-decoration: underline; }
+#{$evo}-text-no-underline a,
+#{$evo}-text-no-underline     { text-decoration: none; }
+#{$evo}-text-no-transform     { text-transform: none; }
+#{$evo}-text-left             { text-align: left; }
+#{$evo}-text-right            { text-align: right; }
+#{$evo}-text-center           { text-align: center; }
+#{$evo}-text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
 

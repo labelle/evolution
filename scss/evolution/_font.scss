@@ -7,31 +7,24 @@
 
 // Global
 html {
-	font-size: #{$default_type_size}; // 1rem
-	font-color: #{$default_type_color}; // initial
-	font-family: #{$default_type_font}; // sans-serif
+	font-size: #{$global_text_size}; // 1rem
+	font-color: #{$global_text_color}; // initial
+	font-family: #{$global_text_font_family}; // sans-serif
 	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
 // General
 #{$evo}-font { 
-  font-family: #{$default_type_font}; // or #{sans-serif} or #{native}
+  font-family: #{$global_text_font_family}; // or #{sans-serif} or #{native}
 }
 
 
 // System fonts
 #{$evo}-font-1 { 
-  font-family: #{$default_type_font};
+  font-family: #{$global_text_font_family};
 }
 
-#{$evo}-font-2 { 
-  font-family: #{$default_type_font};
-}
-
-
-// GOOGLE
-// #{$evo}-font-open-sans                 { font-family: $font_open_sans !important; }
-
-// ADOBE
-// Place adobe fonts here
+// #{$evo}-font-2 { 
+//   font-family: #{$global_text_font_family};
+// }

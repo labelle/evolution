@@ -30,6 +30,16 @@ $brand:                             ".brand"; // ".brand"
 $evo:                               ".evo"; // ".evo"
 
 
+// Branding
+
+// Brand Fonts
+// These are brand specific fonts
+// Place font-family value here e.g. 'open sans', sans-serif
+$brand_text_font_family_1:          null; // sans-serif
+$brand_text_font_family_2:          null; // sans-serif
+$brand_text_font_family_3:          null; // sans-serif
+
+
 // Typography
 // These are applied to the body tag via the _base.scss file
 // By default, Evolution does not define a font-family or font-color, so it's easyto customize and override
@@ -42,7 +52,6 @@ $global_text_color:                 null; // initial
 $global_text_font_family:           null; // sans-serif
 $global_font-weight:                null; // initial
 $global_text_line_height:           null; // 1.4375, no em, rem, px, %
-
 
 // Fonts
 // These generic font stacks can be customized as you see fit

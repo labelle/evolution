@@ -21,6 +21,16 @@ $brand:                             ".brand" !default;
 $evo:                               ".evo" !default;
 
 
+// Branding
+
+// Brand Fonts
+// These are brand specific fonts
+// Place font-family value here e.g. 'open sans', sans-serif
+$brand_text_font_family_1:          sans-serif !default;
+$brand_text_font_family_2:          sans-serif !default;
+$brand_text_font_family_3:          sans-serif !default;
+
+
 // Typography
 // alt font-size is calc(1em + 1vw)
 // pg 32 inclusive design patterns 

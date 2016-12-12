@@ -152,7 +152,8 @@
 
 
 // Relative Text Measure
-// Rem
+#{$evo}-measure-1   { max-width: 10rem; }
+
 #{$evo}-measure-widest   { @include measure(widest); }
 #{$evo}-measure-wider    { @include measure(wider); }
 #{$evo}-measure-wide     { @include measure(wide); }
@@ -160,3 +161,36 @@
 #{$evo}-measure-tighter  { @include measure(tighter); }
 #{$evo}-measure-tightest { @include measure(tightest); }
 
+// // Text Measure
+// #{$evo}-measure-1   { max-width: 10rem; }
+// #{$evo}-measure-2   { max-width: 20rem; }
+// #{$evo}-measure-3   { max-width: 30rem; }
+// #{$evo}-measure-4   { max-width: 40rem; }
+// #{$evo}-measure-5   { max-width: 50rem; }
+// #{$evo}-measure-6   { max-width: 60rem; }
+// #{$evo}-measure-7   { max-width: 70rem; }
+// #{$evo}-measure-8   { max-width: 80rem; }
+// #{$evo}-measure-9   { max-width: 90rem; }
+// #{$evo}-measure-10  { max-width: 100rem; }
+// #{$evo}-measure-11  { max-width: 110rem; }
+// #{$evo}-measure-12  { max-width: 120rem; }
+// #{$evo}-measure-13  { max-width: 130rem; }
+// #{$evo}-measure-14  { max-width: 140rem; }
+// #{$evo}-measure-15  { max-width: 150rem; }
+
+// Text Measure alt TEST
+#{$evo}-measure-1   { max-width: #{$u-35}rem; }
+#{$evo}-measure-2   { max-width: #{$u-36}rem; }
+#{$evo}-measure-3   { max-width: #{$u-37}rem; }
+#{$evo}-measure-4   { max-width: #{$u-38}rem; }
+#{$evo}-measure-5   { max-width: #{$u-39}rem; }
+#{$evo}-measure-6   { max-width: #{$u-40}rem; }
+#{$evo}-measure-7   { max-width: #{$u-41}rem; }
+#{$evo}-measure-8   { max-width: #{$u-42}rem; }
+#{$evo}-measure-9   { max-width: #{$u-43}rem; }
+#{$evo}-measure-10  { max-width: 80rem; }
+#{$evo}-measure-11  { max-width: 100rem; }
+#{$evo}-measure-12  { max-width: 120rem; }
+#{$evo}-measure-13  { max-width: 130rem; }
+#{$evo}-measure-14  { max-width: 140rem; }
+#{$evo}-measure-15  { max-width: 150rem; }

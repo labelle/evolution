@@ -43,11 +43,19 @@
   @else { @warn "Font mixin supports: reset, sans-serif, serif, monospace, cursive, arial, arial-black, athelas, avenir, baskerville, bodoni, calisto, consolas, courier, courier-new, didot, garamond, georgia, gotham, helvetica, helvetica-thin, menlo, monaco, times, times-new, native, native-bootstrap, native-tachyons"; }
 }
 
-//     // Mixins
-// @mixin font-google($font) {
-//     // Google
-//   @if $font == karma            { font-family: #{$karma}; }
-//     // Throw Warnings
-//   @else { @warn "Font mixin supports: karma"; }
-// }
+    // Google Font Mixins
+@mixin font-google($font) {
+    // Google
+  @if $font == open-sans            { font-family: #{$google-open-sans}; }
+    // Throw Warnings
+  @else { @warn "Google Font mixin supports: open-sans"; }
+}
+
+    // Adobe Edge Font Mixins
+@mixin font-adobe($font) {
+    // Google
+  @if $font == open-sans            { font-family: #{$adobe-open-sans}; }
+    // Throw Warnings
+  @else { @warn "Adobe Edge Font mixin supports: open-sans"; }
+}
 

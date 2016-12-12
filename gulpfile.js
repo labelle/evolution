@@ -40,6 +40,21 @@ gulp.task('scripts', function() {
 });
 
 /* Sass task */
+gulp.task('brand', function () {  
+    return gulp.src('scss/evo-brand.scss')
+    .pipe(plumber())
+    .pipe(sass({
+        includePaths: ['scss'].concat(neat)
+    }))
+    .pipe(gulp.dest('docs/css'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('docs/css'))
+    /* Reload the browser CSS after every change */
+    .pipe(reload({stream:true}));
+});
+
+/* Sass task */
 gulp.task('evolution', function () {  
     return gulp.src('scss/evo.scss')
     .pipe(plumber())
@@ -55,8 +70,8 @@ gulp.task('evolution', function () {
 });
 
 /* Sass task */
-gulp.task('reset', function () {  
-    return gulp.src('scss/evo-reset.scss')
+gulp.task('elements', function () {  
+    return gulp.src('scss/evo-elements.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
@@ -69,10 +84,9 @@ gulp.task('reset', function () {
     .pipe(reload({stream:true}));
 });
 
-
 /* Sass task */
-gulp.task('elements', function () {  
-    return gulp.src('scss/evo-elements.scss')
+gulp.task('reset', function () {  
+    return gulp.src('scss/evo-reset.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
@@ -107,7 +121,7 @@ gulp.task('browser-sync', function() {
 });
 
 /* Watch scss, js and html files, doing different things with each. */
-gulp.task('default', ['evolution', 'elements', 'reset', 'scripts', 'browser-sync'], function () {
+gulp.task('default', ['brand', 'evolution', 'elements', 'reset', 'scripts', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['default'])
     /* Watch app.js file, run the scripts task on change. */
