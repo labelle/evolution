@@ -170,15 +170,6 @@ p {
   font-weight: 800; }
 
 /* Text */
-.evo-text {
-  font-size: 1rem;
-  color: #333333;
-  font-family: sans-serif;
-  font-weight: normal;
-  line-height: 1.4375;
-  margin-top: 0em;
-  margin-bottom: 1.4375rem 0; }
-
 .evo-text-reset {
   font-size: initial;
   color: initial;
@@ -193,6 +184,35 @@ p {
   margin-top: initial;
   margin-bottom: initial; }
 
+.evo-text {
+  font-size: 1rem;
+  color: #333333;
+  font-family: sans-serif;
+  font-weight: normal;
+  line-height: 0.3;
+  margin-top: 0em;
+  margin-bottom: 1.4375rem 0; }
+  .evo-text ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+    list-style-type: none; }
+    .evo-text ul > li {
+      margin-left: 0;
+      padding-left: 0;
+      background-position: 0px 0.41667rem;
+      background-size: 0 0.4125rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.5; }
+
+/*
+  margin-left: 0;
+  padding-left: 0;
+  background-position: 0px 0.41667rem;
+  background-size: 0.4125rem;
+  margin-top: 0.75rem;
+  line-height: 1.2rem; }
+*/
 .evo-text-bold {
   font-weight: bold; }
 

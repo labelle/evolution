@@ -4,23 +4,58 @@
 // @import "../variables/scale";
 @import "text_mixins";
 
+///* --------------------------- TEXT --------------------------- */
+
+
+
+// Variables for text.scss typography
+
+$text_line_height_increment:        .13;
+$text_line_height:                  .3;
+$text_font_size_increment:          .09;
+$text_font_size:                    .3;
+
+$text_letter_spacing:                .05rem;
+$text_letter_spacing_increment:      .005rem;
+
+
+
+// Variables for text.scss bullets
+
+$text_padding_left_highest:          2.5;
+$text_padding_left_middle:           1;
+$text_padding_left_lowest:           .7;
+
+$text_padding_left_bullets:          1rem; 
+$text_padding_left_middle_to_highest_increment_bullets:  ($text_padding_left_highest - $text_padding_left_middle)/23;
+$text_padding_left_middle_to_lowest_increment_bullets:   $text_padding_left_middle - $text_padding_left_lowest;
+
+$text_padding_left_divide_amount:    8;
+$text_padding_left_add_amount:       .5;
+$text_padding_top_add_amount:        .2;
+$text_padding_bottom_add_amount:     .4;
+$text_line_height_increment_divide_amount: 4;
+
 // Text and utility classes
 
 
+// variables to move to _variables.scss file
+// optimized for older text-10 sizes
+// reference evolution-elements css file
+// SHOULD SOME OF THESE INHERIT?
+// SHOULD SOME BE PERCENTAGES OR EMS?
+$text_list_margin_top:                .75rem;
+$text_list_line_height:               1.5;
+$text_list_icon_background:           url('../../solid/circle-solid.svg') no-repeat left center; // make more specific than "background?" maybe background-image
+$text_list_icon_background_size:      .0.4125rem;
+$text_list_icon_background_position:  0px 0.41667rem;
+$text_list_padding_left:              0;
+$text_list_margin_left:               0;
+$text_list_margin_bottom:             .75rem; // was margin-top
+$text_list_style_type:                none;
 
 
 /* Text */
-
-// Text
-#{$evo}-text {
-  font-size:       #{$text_size};
-  color:           #{$text_color};
-  font-family:     #{$text_font_family};
-  font-weight:     #{$text_font_weight};
-  line-height:     #{$text_line_height};
-  margin-top:      #{$text_margin_top};
-  margin-bottom:   #{$text_margin_bottom};
-}
 
 
 // Text Reset
@@ -38,6 +73,431 @@
   margin-top:      initial;
   margin-bottom:   initial;
 }
+
+
+// Text
+#{$evo}-text {
+  font-size:       #{$text_size};
+  color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
+& ul {
+margin-left: 0;
+padding-left: 0;
+margin-bottom: #{$text_list_margin_bottom};
+list-style-type: #{$text_list_style_type}; 
+& > li {
+margin-left: #{$text_list_margin_left};
+padding-left: #{$text_list_padding_left};
+// background: #{$text_list_icon_background};
+background-position: #{$text_list_icon_background_position};
+background-size: #{$text_list_icon_background_size};
+// padding-left: #{$text_list_padding_left};
+margin-bottom: #{$text_list_margin_bottom};
+line-height: #{$text_list_line_height};
+}
+}
+}
+/*
+  margin-left: 0;
+  padding-left: 0;
+  background-position: 0px 0.41667rem;
+  background-size: 0.4125rem;
+  margin-top: 0.75rem;
+  line-height: 1.2rem; }
+*/
+
+
+/* text lists */
+
+/* TEXT 10 */
+
+.evo-text-10 {
+line-height: $text_line_height+$text_line_height_increment*10rem;
+// font-family: $text_fonts;
+font-size: $text_font_size+$text_font_size_increment*10rem;
+letter-spacing: $text_letter_spacing+-calc($text_letter_spacing_increment*10rem);
+}
+ul.evo-text-10 {
+@extend .evo-text-10;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10 li {
+margin-left: 0;
+padding-left: 0;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+}
+
+.evo-text-10-bold {
+@extend .evo-text-10;
+font-weight: bold;
+}
+ul.evo-text-10-bold {
+@extend .evo-text-10-bold;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bold li {
+margin-left: 0;
+padding-left: 0;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+}
+
+.evo-text-10-caps {
+@extend .evo-text-10;
+text-transform: uppercase;
+}
+ul.evo-text-10-caps {
+@extend .evo-text-10-caps;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-caps li {
+margin-left: 0;
+padding-left: 0;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+text-transform: uppercase;
+}
+
+.evo-text-10-bold-caps {
+@extend .evo-text-10;
+font-weight: bold;
+text-transform: uppercase;
+}
+ul.evo-text-10-bold-caps {
+@extend .evo-text-10-bold-caps;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bold-caps li {
+margin-left: 0;
+padding-left: 0;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* bullets */
+
+.evo-text-10 {
+line-height: $text_line_height+$text_line_height_increment*10rem;
+// font-family: $text_fonts;
+font-size: $text_font_size+$text_font_size_increment*10rem;
+letter-spacing: $text_letter_spacing+-calc($text_letter_spacing_increment*10rem);
+}
+ul.evo-text-10-bullets {
+@extend .evo-text-10;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bullets li {
+margin-left: 0;
+padding-left: 0;
+background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+}
+
+.evo-text-10-bold-bullets {
+@extend .evo-text-10;
+font-weight: bold;
+}
+ul.evo-text-10-bold-bullets {
+@extend .evo-text-10-bold;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bold-bullets li {
+margin-left: 0;
+padding-left: 0;
+background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+}
+
+.evo-text-10-caps-bullets {
+@extend .evo-text-10;
+text-transform: uppercase;
+}
+ul.evo-text-10-caps-bullets {
+@extend .evo-text-10-caps;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-caps-bullets li {
+margin-left: 0;
+padding-left: 0;
+background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+text-transform: uppercase;
+}
+
+.evo-text-10-bold-caps-bullets {
+@extend .evo-text-10;
+font-weight: bold;
+text-transform: uppercase;
+}
+ul.evo-text-10-bold-caps-bullets {
+@extend .evo-text-10-bold-caps;
+list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bold-caps-bullets li {
+margin-left: 0;
+padding-left: 0;
+background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* lines */
+
+
+
+ul.evo-text-10-lines {
+@extend .evo-text-10;
+// list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+
+ul.evo-text-10-lines li {
+margin-left: 0;
+padding-left: 0;
+   &:last-child {
+  @extend .evo-bottom-line-1;
+  padding-bottom: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_bottom_add_amount);
+}
+@extend .evo-top-line-1;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+padding-top: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_top_add_amount);
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+}
+
+
+ul.evo-text-10-bold-lines {
+@extend .evo-text-10-bold;
+// list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+
+ul.evo-text-10-bold-lines li {
+margin-left: 0;
+padding-left: 0;
+  &:last-child {
+  @extend .evo-bottom-line-1;
+  padding-bottom: (($text_font_size+$text_font_size_increment*11rem/5)+$text_padding_bottom_add_amount);
+  }
+@extend .evo-top-line-1;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/5);
+padding-top: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_top_add_amount);
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+}
+
+
+ul.evo-text-10-caps-lines {
+@extend .evo-text-10-caps;
+// list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-caps-lines li {
+margin-left: 0;
+padding-left: 0;
+  &:last-child {
+  @extend .evo-bottom-line-1;
+  padding-bottom: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_bottom_add_amount);
+  }
+@extend .evo-top-line-1;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/5);
+padding-top: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_top_add_amount);
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+text-transform: uppercase;
+}
+
+
+ul.evo-text-10-bold-caps-lines {
+@extend .evo-text-10-bold-caps;
+// list-style-type: none; 
+margin-top: .5em;
+margin-left: 0;
+padding-left: 0;
+}
+ul.evo-text-10-bold-caps-lines li {
+margin-left: 0;
+padding-left: 0;
+  &:last-child {
+  @extend .evo-bottom-line-1;
+  padding-bottom: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_bottom_add_amount);
+  }
+@extend .evo-top-line-1;
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/5);
+padding-top: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_top_add_amount);
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Ordered Lists */
+
+
+.evo-text-10 {
+line-height: $text_line_height+$text_line_height_increment*10rem;
+// font-family: $text_fonts;
+font-size: $text_font_size+$text_font_size_increment*10rem;
+letter-spacing: $text_letter_spacing+-calc($text_letter_spacing_increment*10rem);
+list-style-position: inside;
+padding-left: 0;
+}
+ol.evo-text-10 {
+@extend .evo-text-10;
+// list-style-type: none; 
+margin-top: .5em;
+}
+ol.evo-text-10 li {
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+}
+
+.evo-text-10-bold {
+@extend .evo-text-10;
+font-weight: bold;
+}
+ol.evo-text-10-bold {
+@extend .evo-text-10-bold;
+// list-style-type: none; 
+margin-top: .5em;
+}
+ol.evo-text-10-bold li {
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+}
+
+.evo-text-10-caps {
+@extend .evo-text-10;
+text-transform: uppercase;
+}
+ol.evo-text-10-caps {
+@extend .evo-text-10-caps;
+// list-style-type: none; 
+margin-top: .5em;
+}
+ol.evo-text-10-caps li {
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+text-transform: uppercase;
+}
+
+.evo-text-10-bold-caps {
+@extend .evo-text-10;
+font-weight: bold;
+text-transform: uppercase;
+}
+ol.evo-text-10-bold-caps {
+@extend .evo-text-10-bold-caps;
+// list-style-type: none; 
+margin-top: .5em;
+}
+ol.evo-text-10-bold-caps li {
+// background: url('../img/icons/book/circle-solid-book.svg') no-repeat left center;
+background-position: 0px ($text_line_height+$text_line_height_increment*10rem/$text_line_height_increment_divide_amount)/1.5;
+background-size: ($text_font_size+$text_font_size_increment*10rem/$text_padding_left_divide_amount);
+// padding-left: (($text_font_size+$text_font_size_increment*10rem/5)+$text_padding_left_add_amount)/1.2;
+margin-top: $text_font_size+$text_font_size_increment*10rem*.5;
+line-height: $text_font_size+$text_font_size_increment*10rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+
+
 
 // Element Mixins
 @mixin base($base) { 

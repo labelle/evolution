@@ -1,0 +1,70 @@
+///*      T E X T    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixins";
+
+// Text and utility classes
+
+
+
+
+/* Text */
+
+
+// Text Reset
+#{$evo}-text-reset {
+  font-size:       initial;
+  color:           initial;
+  font-family:     initial;
+  font-weight:     initial;
+  font-weight:     initial;
+  font-style:      initial;
+  line-height:     initial;
+  text-decoration: initial;
+  text-transform:  initial;
+  text-align:      initial;
+  margin-top:      initial;
+  margin-bottom:   initial;
+}
+
+
+// Text
+#{$evo}-text {
+  font-size:       #{$text_size};
+  color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
+}
+
+
+
+
+// Element Mixins
+@mixin base($base) { 
+    @if $base == text            { @extend #{$evo}-text; }
+    @else if $base == font       { @extend #{$evo}-font; }
+    // Throw Warnings
+  @else { @warn "Base mixin supports: text, font"; }
+}
+
+// Text Style
+#{$evo}-text-bold             { font-weight: bold; }
+#{$evo}-text-italic           { font-style: italic; }
+#{$evo}-text-capitalize       { text-transform: capitalize; }
+#{$evo}-text-uppercase        { text-transform: uppercase; }
+#{$evo}-text-lowercase        { text-transform: lowercase; }
+#{$evo}-text-strike           { text-decoration: line-through; }
+#{$evo}-text-underline        { text-decoration: underline; }
+#{$evo}-text-no-underline a,
+#{$evo}-text-no-underline     { text-decoration: none; }
+#{$evo}-text-no-transform     { text-transform: none; }
+#{$evo}-text-left             { text-align: left; }
+#{$evo}-text-right            { text-align: right; }
+#{$evo}-text-center           { text-align: center; }
+#{$evo}-text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
