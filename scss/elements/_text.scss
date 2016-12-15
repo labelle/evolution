@@ -10,31 +10,31 @@
 
 // Variables for text.scss typography
 
-$text_line_height_increment:        .13;
-$text_line_height:                  .3;
-$text_font_size_increment:          .09;
-$text_font_size:                    .3;
+// $text_line_height_increment:        .13;
+// $text_line_height:                  .3;
+// $text_font_size_increment:          .09;
+// $text_font_size:                    .3;
 
-$text_letter_spacing:                .05rem;
-$text_letter_spacing_increment:      .005rem;
+// $text_letter_spacing:                .05rem;
+// $text_letter_spacing_increment:      .005rem;
 
 
 
-// Variables for text.scss bullets
+// // Variables for text.scss bullets
 
-$text_padding_left_highest:          2.5;
-$text_padding_left_middle:           1;
-$text_padding_left_lowest:           .7;
+// $text_padding_left_highest:          2.5;
+// $text_padding_left_middle:           1;
+// $text_padding_left_lowest:           .7;
 
-$text_padding_left_bullets:          1rem; 
-$text_padding_left_middle_to_highest_increment_bullets:  ($text_padding_left_highest - $text_padding_left_middle)/23;
-$text_padding_left_middle_to_lowest_increment_bullets:   $text_padding_left_middle - $text_padding_left_lowest;
+// $text_padding_left_bullets:          1rem; 
+// $text_padding_left_middle_to_highest_increment_bullets:  ($text_padding_left_highest - $text_padding_left_middle)/23;
+// $text_padding_left_middle_to_lowest_increment_bullets:   $text_padding_left_middle - $text_padding_left_lowest;
 
-$text_padding_left_divide_amount:    8;
-$text_padding_left_add_amount:       .5;
-$text_padding_top_add_amount:        .2;
-$text_padding_bottom_add_amount:     .4;
-$text_line_height_increment_divide_amount: 4;
+// $text_padding_left_divide_amount:    8;
+// $text_padding_left_add_amount:       .5;
+// $text_padding_top_add_amount:        .2;
+// $text_padding_bottom_add_amount:     .4;
+// $text_line_height_increment_divide_amount: 4;
 
 // Text and utility classes
 
@@ -44,19 +44,29 @@ $text_line_height_increment_divide_amount: 4;
 // reference evolution-elements css file
 // SHOULD SOME OF THESE INHERIT?
 // SHOULD SOME BE PERCENTAGES OR EMS?
-$text_list_margin_top:                .75rem;
-$text_list_line_height:               1.5;
-$text_list_icon_background:           url('../../icons/circle-solid.svg') no-repeat left center; // make more specific than "background?" maybe background-image
-$text_list_icon_background_size:      .0.4125rem;
-$text_list_icon_background_position:  0px 0.41667rem;
-$text_list_padding_left:              0;
-$text_list_margin_left:               0;
-$text_list_margin_bottom:             .75rem; // was margin-top
-$text_list_style_type:                none; // type of bullet style
 
-$text_list_top_line:                  3px solid;
-$text_list_middle_line:               1px dotted #ccc;
-$text_list_bottom_line:               1px solid;
+// For all lists
+$text_list_margin_top:                       .75rem;
+$text_list_margin_left:                      -1.25em; // or 0
+$text_list_margin_bottom:                    .75rem;
+$text_list_padding_left:                     0;
+$text_list_padding_bottom:                   .75rem; // tweak space between list items
+
+// For bullets Lists
+// make background more specific than "background?" maybe background-image
+$text_bullet_list_icon_background:           url('../../icons/circle-solid.svg') no-repeat left center;
+$text_bullet_list_icon_background_size:      .0.4125rem;
+$text_bullet_list_icon_background_position:  0px 0.41667rem;
+$text_bullet_list_padding_left:              0;
+
+// For lines Lists
+// SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
+$text_line_list_style_type:                  none; // style of bullets
+$text_line_list_padding_top:                 .75rem; // space between list item and line
+$text_line_list_padding_bottom:              .75rem; // space between list item and line
+$text_line_list_top_line:                    3px solid;
+$text_line_list_middle_line:                 1px dotted #ccc;
+$text_line_list_bottom_line:                 1px solid;
 
 
 #{$evo}-top-line-1      { border-top: 1px solid; }
@@ -96,8 +106,9 @@ $text_list_bottom_line:               1px solid;
 & > li {
 margin-left: #{$text_list_margin_left};
 padding-left: #{$text_list_padding_left};
-margin-bottom: #{$text_list_margin_bottom};
-line-height: #{$text_list_line_height};
+padding-bottom: #{$text_list_padding_bottom};// 1.4375rem
+// margin-bottom: #{$text_list_margin_bottom};
+// line-height: #{$text_list_line_height};
 // background: #{$text_list_icon_background};
 // background-position: #{$text_list_icon_background_position};
 // background-size: #{$text_list_icon_background_size};
@@ -113,22 +124,23 @@ line-height: #{$text_list_line_height};
 // margin-bottom: #{$text_list_margin_bottom};
 // line-height: #{$text_list_line_height};
 // list-style-type: #{$text_list_style_type};
-background: #{$text_list_icon_background};
-background-position: #{$text_list_icon_background_position};
-background-size: #{$text_list_icon_background_size};
+padding-bottom: #{$text_list_padding_bottom};// 1.4375rem
+background: #{$text_bullet_list_icon_background};
+background-position: #{$text_bullet_list_icon_background_position};
+background-size: #{$text_bullet_list_icon_background_size};
 }
 }
 
 #{$evo}-text-lines {
 @extend #{$evo}-text;
+  margin-left: #{$text_list_margin_left};
+  margin-bottom: #{$text_list_margin_bottom};
+  list-style-type: #{$text_line_list_style_type};
 // width: 90%;
-& ul {
-  // display:inline-block;
-  margin-left: 0;
-  padding-left: 0;
-}
 & > li{
-    // @extend #{$evo}-top-line-1:not(:first-child);
+  padding-top: #{$text_line_list_padding_top};// 1.4375rem
+  padding-bottom: #{$text_line_list_padding_bottom};// 1.4375rem
+  // @extend #{$evo}-top-line-1:not(:first-child);
 // margin-left: #{$text_list_margin_left};
 // padding-left: #{$text_list_padding_left};
 // margin-bottom: #{$text_list_margin_bottom};
@@ -136,16 +148,16 @@ background-size: #{$text_list_icon_background_size};
 // https://css-tricks.com/almanac/properties/w/width/
 // float: left; // This sizes the lines precisely to the text
 // width: auto;
-white-space: normal; //normal or nowrap
-list-style-type: #{$text_list_style_type}; 
+// white-space: normal; //normal or nowrap
+
    &:first-child {
-  border-top: #{$text_list_top_line};
+  border-top: #{$text_line_list_top_line};
 }
    &:not(:first-child) {
-  border-top: #{$text_list_middle_line};
+  border-top: #{$text_line_list_middle_line};
 }
    &:last-child {
-  border-bottom: #{$text_list_bottom_line};
+  border-bottom: #{$text_line_list_bottom_line};
 }
 }
 }

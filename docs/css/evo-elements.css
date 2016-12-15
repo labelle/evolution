@@ -198,33 +198,33 @@ p {
   color: #333333;
   font-family: sans-serif;
   font-weight: normal;
-  line-height: 0.3;
+  line-height: 1.4375;
   margin-top: 0em;
   margin-bottom: 1.4375rem 0; }
   .evo-text > li, .evo-text-bullets > li, .evo-text-lines > li {
-    margin-left: 0;
+    margin-left: -1.25em;
     padding-left: 0;
-    margin-bottom: 0.75rem;
-    line-height: 1.5; }
+    padding-bottom: 0.75rem; }
 
 .evo-text-bullets > li {
+  padding-bottom: 0.75rem;
   background: url("../../icons/circle-solid.svg") no-repeat left center;
   background-position: 0px 0.41667rem;
   background-size: 0 0.4125rem; }
 
-.evo-text-lines ul {
-  margin-left: 0;
-  padding-left: 0; }
-
-.evo-text-lines > li {
-  white-space: normal;
+.evo-text-lines {
+  margin-left: -1.25em;
+  margin-bottom: 0.75rem;
   list-style-type: none; }
-  .evo-text-lines > li:first-child {
-    border-top: 3px solid; }
-  .evo-text-lines > li:not(:first-child) {
-    border-top: 1px dotted #ccc; }
-  .evo-text-lines > li:last-child {
-    border-bottom: 1px solid; }
+  .evo-text-lines > li {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
+    .evo-text-lines > li:first-child {
+      border-top: 3px solid; }
+    .evo-text-lines > li:not(:first-child) {
+      border-top: 1px dotted #ccc; }
+    .evo-text-lines > li:last-child {
+      border-bottom: 1px solid; }
 
 /*
   margin-left: 0;
