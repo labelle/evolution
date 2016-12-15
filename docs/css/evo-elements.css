@@ -169,6 +169,15 @@ p {
   font-family: open sans, open-sans, sans-serif;
   font-weight: 800; }
 
+.evo-top-line-1 {
+  border-top: 1px solid; }
+
+.evo-top-line-3 {
+  border-top: 3px solid; }
+
+.evo-bottom-line-1 {
+  border-bottom: 1px dotted; }
+
 /* Text */
 .evo-text-reset {
   font-size: initial;
@@ -184,7 +193,7 @@ p {
   margin-top: initial;
   margin-bottom: initial; }
 
-.evo-text {
+.evo-text, .evo-text-bullets, .evo-text-lines {
   font-size: 1rem;
   color: #333333;
   font-family: sans-serif;
@@ -192,18 +201,30 @@ p {
   line-height: 0.3;
   margin-top: 0em;
   margin-bottom: 1.4375rem 0; }
-  .evo-text ul {
+  .evo-text > li, .evo-text-bullets > li, .evo-text-lines > li {
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 0.75rem;
-    list-style-type: none; }
-    .evo-text ul > li {
-      margin-left: 0;
-      padding-left: 0;
-      background-position: 0px 0.41667rem;
-      background-size: 0 0.4125rem;
-      margin-bottom: 0.75rem;
-      line-height: 1.5; }
+    line-height: 1.5; }
+
+.evo-text-bullets > li {
+  background: url("../../icons/circle-solid.svg") no-repeat left center;
+  background-position: 0px 0.41667rem;
+  background-size: 0 0.4125rem; }
+
+.evo-text-lines ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+.evo-text-lines > li {
+  white-space: normal;
+  list-style-type: none; }
+  .evo-text-lines > li:first-child {
+    border-top: 3px solid; }
+  .evo-text-lines > li:not(:first-child) {
+    border-top: 1px dotted #ccc; }
+  .evo-text-lines > li:last-child {
+    border-bottom: 1px solid; }
 
 /*
   margin-left: 0;

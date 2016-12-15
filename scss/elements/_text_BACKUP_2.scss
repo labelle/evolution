@@ -52,17 +52,11 @@ $text_list_icon_background_position:  0px 0.41667rem;
 $text_list_padding_left:              0;
 $text_list_margin_left:               0;
 $text_list_margin_bottom:             .75rem; // was margin-top
-$text_list_style_type:                none; // type of bullet style
-
-$text_list_top_line:                  3px solid;
-$text_list_middle_line:               1px dotted #ccc;
-$text_list_bottom_line:               1px solid;
+$text_list_style_type:                none;
 
 
 #{$evo}-top-line-1      { border-top: 1px solid; }
-#{$evo}-top-line-3      { border-top: 3px solid; }
-
-#{$evo}-bottom-line-1      { border-bottom: 1px dotted; }
+#{$evo}-bottom-line-1      { border-bottom: 1px solid; }
 
 /* Text */
 
@@ -98,20 +92,12 @@ margin-left: #{$text_list_margin_left};
 padding-left: #{$text_list_padding_left};
 margin-bottom: #{$text_list_margin_bottom};
 line-height: #{$text_list_line_height};
-// background: #{$text_list_icon_background};
-// background-position: #{$text_list_icon_background_position};
-// background-size: #{$text_list_icon_background_size};
 }
 }
-
 
 #{$evo}-text-bullets {
 @extend #{$evo}-text;
 & > li{
-// margin-left: #{$text_list_margin_left};
-// padding-left: #{$text_list_padding_left};
-// margin-bottom: #{$text_list_margin_bottom};
-// line-height: #{$text_list_line_height};
 // list-style-type: #{$text_list_style_type};
 background: #{$text_list_icon_background};
 background-position: #{$text_list_icon_background_position};
@@ -121,31 +107,17 @@ background-size: #{$text_list_icon_background_size};
 
 #{$evo}-text-lines {
 @extend #{$evo}-text;
-// width: 90%;
-& ul {
-  // display:inline-block;
-  margin-left: 0;
-  padding-left: 0;
-}
 & > li{
-    // @extend #{$evo}-top-line-1:not(:first-child);
 // margin-left: #{$text_list_margin_left};
 // padding-left: #{$text_list_padding_left};
 // margin-bottom: #{$text_list_margin_bottom};
 // line-height: #{$text_list_line_height};
-// https://css-tricks.com/almanac/properties/w/width/
-// float: left; // This sizes the lines precisely to the text
-// width: auto;
-white-space: normal; //normal or nowrap
 list-style-type: #{$text_list_style_type}; 
    &:first-child {
-  border-top: #{$text_list_top_line};
-}
-   &:not(:first-child) {
-  border-top: #{$text_list_middle_line};
+  @extend #{$evo}-top-line-1;
 }
    &:last-child {
-  border-bottom: #{$text_list_bottom_line};
+  @extend #{$evo}-bottom-line-1;
 }
 }
 }
