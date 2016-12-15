@@ -51,6 +51,7 @@ $text_list_margin_left:                      -1.25em; // or 0
 $text_list_margin_bottom:                    .75rem;
 $text_list_padding_left:                     0;
 $text_list_padding_bottom:                   .75rem; // tweak space between list items
+$text_list_style_type:                       none; // remove bullets
 
 // For bullets Lists
 // make background more specific than "background?" maybe background-image
@@ -75,7 +76,8 @@ $text_line_list_bottom_line:                 1px solid;
 #{$evo}-bottom-line-1      { border-bottom: 1px dotted; }
 
 /* Text */
-
+// http://alistapart.com/article/taminglists/
+// How to customize lists
 
 // Text Reset
 #{$evo}-text-reset {
@@ -107,6 +109,7 @@ $text_line_list_bottom_line:                 1px solid;
 margin-left: #{$text_list_margin_left};
 padding-left: #{$text_list_padding_left};
 padding-bottom: #{$text_list_padding_bottom};// 1.4375rem
+list-style-type: #{$text_list_style_type};
 // margin-bottom: #{$text_list_margin_bottom};
 // line-height: #{$text_list_line_height};
 // background: #{$text_list_icon_background};
@@ -171,7 +174,17 @@ background-size: #{$text_bullet_list_icon_background_size};
   line-height: 1.2rem; }
 */
 
-
+.list-inline {
+  list-style:none;
+  padding-left:0;
+  display: inline;
+  & ul {
+    display: inline;
+  }
+    & li {
+    display: inline;
+  }
+}
 
 
 

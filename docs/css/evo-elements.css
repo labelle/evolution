@@ -204,7 +204,8 @@ p {
   .evo-text > li, .evo-text-bullets > li, .evo-text-lines > li {
     margin-left: -1.25em;
     padding-left: 0;
-    padding-bottom: 0.75rem; }
+    padding-bottom: 0.75rem;
+    list-style-type: none; }
 
 .evo-text-bullets > li {
   padding-bottom: 0.75rem;
@@ -234,6 +235,15 @@ p {
   margin-top: 0.75rem;
   line-height: 1.2rem; }
 */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  display: inline; }
+  .list-inline ul {
+    display: inline; }
+  .list-inline li {
+    display: inline; }
+
 .evo-text-bold {
   font-weight: bold; }
 
