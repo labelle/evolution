@@ -26,6 +26,7 @@ $evo:                               ".evo" !default;
 // Brand Fonts
 // These are brand specific fonts
 // Place font-family value here e.g. 'open sans', sans-serif
+// MOVE TO SPECIAL BRAND FOLDER AND BUILD?
 $brand_text_font_family_1:          sans-serif !default;
 $brand_text_font_family_2:          sans-serif !default;
 $brand_text_font_family_3:          sans-serif !default;
@@ -49,14 +50,15 @@ $cursive:                           cursive !default;
 
 
 // Text
+// MATCH TO SETTINGS
+// MOVE TO TEXT VARIABLE PAGE?
 $text_size:                         1rem !default;
 $text_color:                        #333333 !default;
 $text_font_family:                  sans-serif !default;
 $text_font_weight:                  normal !default;
 $text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem, px, %
-$text_margin_top:                   0em !default;
-// WHAT IS THIS ZERO HERE
-$text_margin_bottom:                1.4375rem 0 !default; // 1.5 multiple
+$text_margin_top:                   0 !default;
+$text_margin_bottom:                1.4375em !default; // OR REM?
 
 
 // Links

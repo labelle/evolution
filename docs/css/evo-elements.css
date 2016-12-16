@@ -169,15 +169,6 @@ p {
   font-family: open sans, open-sans, sans-serif;
   font-weight: 800; }
 
-.evo-top-line-1 {
-  border-top: 1px solid; }
-
-.evo-top-line-3 {
-  border-top: 3px solid; }
-
-.evo-bottom-line-1 {
-  border-bottom: 1px dotted; }
-
 /* Text */
 .evo-text-reset {
   font-size: initial;
@@ -190,59 +181,20 @@ p {
   text-decoration: initial;
   text-transform: initial;
   text-align: initial;
+  margin: initial;
   margin-top: initial;
-  margin-bottom: initial; }
+  margin-bottom: initial;
+  margin-left: initial;
+  margin-right: initial; }
 
-.evo-text, .evo-text-bullets, .evo-text-lines {
+.evo-text, .evo-list-lines {
   font-size: 1rem;
   color: #333333;
   font-family: sans-serif;
   font-weight: normal;
   line-height: 1.4375;
-  margin-top: 0em;
-  margin-bottom: 1.4375rem 0; }
-  .evo-text > li, .evo-text-bullets > li, .evo-text-lines > li {
-    margin-left: -1.25em;
-    padding-left: 0;
-    padding-bottom: 0.75rem;
-    list-style-type: none; }
-
-.evo-text-bullets > li {
-  padding-bottom: 0.75rem;
-  background: url("../../icons/circle-solid.svg") no-repeat left center;
-  background-position: 0px 0.41667rem;
-  background-size: 0 0.4125rem; }
-
-.evo-text-lines {
-  margin-left: -1.25em;
-  margin-bottom: 0.75rem;
-  list-style-type: none; }
-  .evo-text-lines > li {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
-    .evo-text-lines > li:first-child {
-      border-top: 3px solid; }
-    .evo-text-lines > li:not(:first-child) {
-      border-top: 1px dotted #ccc; }
-    .evo-text-lines > li:last-child {
-      border-bottom: 1px solid; }
-
-/*
-  margin-left: 0;
-  padding-left: 0;
-  background-position: 0px 0.41667rem;
-  background-size: 0.4125rem;
-  margin-top: 0.75rem;
-  line-height: 1.2rem; }
-*/
-.list-inline {
-  list-style: none;
-  padding-left: 0;
-  display: inline; }
-  .list-inline ul {
-    display: inline; }
-  .list-inline li {
-    display: inline; }
+  margin-top: 0;
+  margin-bottom: 1.4375em; }
 
 .evo-text-bold {
   font-weight: bold; }
@@ -629,6 +581,127 @@ p {
 
 .evo-measure-15 {
   max-width: 150rem; }
+
+.evo-top-line-1 {
+  border-top: 1px solid; }
+
+.evo-top-line-3 {
+  border-top: 3px solid; }
+
+.evo-bottom-line-1 {
+  border-bottom: 1px dotted; }
+
+/* Lists */
+.evo-list-reset {
+  list-style: initial;
+  list-style-type: initial;
+  list-style-position: initial;
+  list-style-image: initial;
+  padding: initial;
+  padding-top: initial;
+  padding-left: initial;
+  padding-bottom: initial;
+  padding-right: initial; }
+
+.evo-list-none {
+  list-style: disc outside none;
+  list-style-type: disc;
+  list-style-position: outside;
+  list-style-image: none;
+  padding-bottom: 0.75rem; }
+
+.evo-list-inherit {
+  list-style: inherit;
+  list-style-type: inherit;
+  list-style-position: inherit;
+  list-style-image: inherit;
+  padding-bottom: inherit; }
+
+.evo-list, ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc, ol.evo-list, ol.evo-list-hanging, ol.evo-list-decimal, ol.evo-list-decimal-zero, ol.evo-list-lower-alpha, ol.evo-list-upper-alpha, ol.evo-list-lower-latin, ol.evo-list-upper-latin, ol.evo-list-lower-roman, ol.evo-list-upper-roman, .evo-list-bullets {
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.75rem; }
+
+ul {
+  list-style-type: none;
+  list-style-position: outside; }
+  ul.evo-list-circle {
+    list-style-type: circle; }
+  ul.evo-list-square {
+    list-style-type: square; }
+  ul.evo-list-disc {
+    list-style-type: disc; }
+
+ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside; }
+  ol.evo-list-hanging {
+    list-style-position: outside; }
+  ol.evo-list-decimal {
+    list-style-type: decimal; }
+  ol.evo-list-decimal-zero {
+    list-style-type: decimal-leading-zero; }
+  ol.evo-list-lower-alpha {
+    list-style-type: lower-alpha; }
+  ol.evo-list-upper-alpha {
+    list-style-type: upper-alpha; }
+  ol.evo-list-lower-latin {
+    list-style-type: lower-latin; }
+  ol.evo-list-upper-latin {
+    list-style-type: upper-latin; }
+  ol.evo-list-lower-roman {
+    list-style-type: lower-roman; }
+  ol.evo-list-upper-roman {
+    list-style-type: upper-roman; }
+
+.evo-list-lines {
+  margin-bottom: 0.75rem;
+  list-style-type: none; }
+  .evo-list-lines li {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
+    .evo-list-lines li:first-child {
+      border-top: 3px solid; }
+    .evo-list-lines li:not(:first-child) {
+      border-top: 1px dotted #ccc; }
+    .evo-list-lines li:last-child {
+      border-bottom: 1px solid; }
+
+.evo-list-bullets {
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.75rem; }
+  .evo-list-bullets ul {
+    list-style-position: outside;
+    list-style-type: disk; }
+
+.evo-list-bullets li {
+  padding-bottom: 0.75rem;
+  background-image: url("../../icons/circle-solid.svg") no-repeat left center;
+  background-position: 0px 0.41667rem;
+  background-size: 0 0.4125rem; }
+
+/*
+  margin-left: 0;
+  padding-left: 0;
+  background-position: 0px 0.41667rem;
+  background-size: 0.4125rem;
+  margin-top: 0.75rem;
+  line-height: 1.2rem; }
+*/
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  display: inline; }
+  .list-inline li {
+    display: inline; }
+
+.list-bullets-color li:before {
+  content: "•";
+  /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #ccc;
+  /* Or a color you prefer */ }
 
 /* COLORS */
 .evo-red {

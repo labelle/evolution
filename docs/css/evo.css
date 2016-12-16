@@ -131,6 +131,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+ul, li {
+  margin-left: 0;
+  padding-left: 0; }
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
