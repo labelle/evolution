@@ -187,7 +187,7 @@ p {
   margin-left: initial;
   margin-right: initial; }
 
-.evo-text, .evo-list-lines {
+.evo-text {
   font-size: 1rem;
   color: #333333;
   font-family: sans-serif;
@@ -592,23 +592,12 @@ p {
   border-bottom: 1px dotted; }
 
 /* Lists */
-.evo-list-reset {
-  list-style: initial;
-  list-style-type: initial;
-  list-style-position: initial;
-  list-style-image: initial;
-  padding: initial;
-  padding-top: initial;
-  padding-left: initial;
-  padding-bottom: initial;
-  padding-right: initial; }
-
 .evo-list-none {
   list-style: disc outside none;
   list-style-type: disc;
   list-style-position: outside;
   list-style-image: none;
-  padding-bottom: 0.75rem; }
+  padding-bottom: 0.25em; }
 
 .evo-list-inherit {
   list-style: inherit;
@@ -617,23 +606,34 @@ p {
   list-style-image: inherit;
   padding-bottom: inherit; }
 
-.evo-list, ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc, ol.evo-list, ol.evo-list-hanging, ol.evo-list-decimal, ol.evo-list-decimal-zero, ol.evo-list-lower-alpha, ol.evo-list-upper-alpha, ol.evo-list-lower-latin, ol.evo-list-upper-latin, ol.evo-list-lower-roman, ol.evo-list-upper-roman, .evo-list-bullets {
+.evo-list, ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc, ol.evo-list, ol.evo-list-hanging, ol.evo-list-decimal, ol.evo-list-decimal-zero, ol.evo-list-lower-alpha, ol.evo-list-upper-alpha, ol.evo-list-lower-latin, ol.evo-list-upper-latin, ol.evo-list-lower-roman, ol.evo-list-upper-roman {
   margin-left: 0;
   padding-left: 0;
-  padding-bottom: 0.75rem; }
+  padding-bottom: 0.25em; }
 
 ul {
-  list-style-type: none;
   list-style-position: outside; }
+  ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc {
+    list-style-type: none; }
   ul.evo-list-circle {
     list-style-type: circle; }
   ul.evo-list-square {
     list-style-type: square; }
   ul.evo-list-disc {
     list-style-type: disc; }
+  ul.evo-list-reset {
+    list-style: unset;
+    list-style-type: initial;
+    list-style-position: initial;
+    list-style-image: initial;
+    padding: initial;
+    padding-top: initial;
+    padding-left: initial;
+    padding-bottom: initial;
+    padding-right: initial; }
 
 ol {
-  list-style-type: decimal-leading-zero;
+  list-style-type: decimal;
   list-style-position: inside; }
   ol.evo-list-hanging {
     list-style-position: outside; }
@@ -653,13 +653,23 @@ ol {
     list-style-type: lower-roman; }
   ol.evo-list-upper-roman {
     list-style-type: upper-roman; }
+  ol.evo-list-reset {
+    list-style: decimal;
+    list-style-type: decimal;
+    list-style-position: initial;
+    padding: initial;
+    padding-top: initial;
+    padding-left: initial;
+    padding-bottom: initial;
+    padding-right: initial; }
 
 .evo-list-lines {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25em;
   list-style-type: none; }
   .evo-list-lines li {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
+    padding-top: 0.25em;
+    padding-left: 0;
+    padding-bottom: 0.25em; }
     .evo-list-lines li:first-child {
       border-top: 3px solid; }
     .evo-list-lines li:not(:first-child) {
@@ -670,38 +680,69 @@ ol {
 .evo-list-bullets {
   margin-left: 0;
   padding-left: 0;
-  padding-bottom: 0.75rem; }
-  .evo-list-bullets ul {
-    list-style-position: outside;
-    list-style-type: disk; }
-
-.evo-list-bullets li {
-  padding-bottom: 0.75rem;
-  background-image: url("../../icons/circle-solid.svg") no-repeat left center;
+  list-style-image: url("circle-solid.svg");
+  list-style-position: inside;
   background-position: 0px 0.41667rem;
-  background-size: 0 0.4125rem; }
+  background-size: 0px; }
 
-/*
-  margin-left: 0;
-  padding-left: 0;
-  background-position: 0px 0.41667rem;
-  background-size: 0.4125rem;
-  margin-top: 0.75rem;
-  line-height: 1.2rem; }
-*/
-.list-inline {
+.evo-list-inline {
   list-style: none;
   padding-left: 0;
   display: inline; }
-  .list-inline li {
+  .evo-list-inline li {
     display: inline; }
 
-.list-bullets-color li:before {
+.evo-list-bullets-color-dot li:before {
   content: "•";
   /* Insert content that looks like bullets */
   padding-right: 8px;
   color: #ccc;
   /* Or a color you prefer */ }
+
+.evo-list-bullets-color-dash li:before {
+  content: "–";
+  /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #ccc;
+  /* Or a color you prefer */ }
+
+ul.evo-list-bullets-color {
+  list-style-type: none; }
+
+.list-counter ol {
+  list-style: none;
+  counter-reset: my-awesome-counter; }
+
+.list-counter li {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  margin: 1rem;
+  padding-left: 2.25rem; }
+
+.list-counter li::before {
+  position: absolute;
+  top: .75rem;
+  left: 0;
+  transform: translateY(-50%);
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem; }
+
+.list-counter ol ol li::before {
+  background: #DE51FF; }
+
+.list-counter ol ol ol li::before {
+  background: #EE9EFF; }
+
+body {
+  font-family: 'PT Serif', serif; }
 
 /* COLORS */
 .evo-red {

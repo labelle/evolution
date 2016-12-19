@@ -13,10 +13,10 @@
 
 // For default Ul and OL lists
 $text_list_margin_top:                       0;
-$text_list_margin_left:                      0; // or 0
-$text_list_margin_bottom:                    .75rem;
+$text_list_margin_left:                      0;
+$text_list_margin_bottom:                    .25em;
 $text_list_padding_left:                     0;
-$text_list_padding_bottom:                   .75rem; // tweak space between list items
+$text_list_padding_bottom:                   .25em; // tweak space between list items
 
 
 // For default Ul lists
@@ -25,15 +25,16 @@ $ul_list_style_position:                     outside; // or inside, which indent
 
 
 // For default OL lists
-$ol_list_style_type:                         decimal-leading-zero; // remove bullets
+$ol_list_style_type:                         decimal; // remove bullets
 $ol_list_style_position:                     inside; // or outisde, which aligns flush left with text.
 
 
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
 // $text_line_list_margin_left:                 0; // or -2.5
-$text_line_list_padding_top:                 .75rem; // space between list item and line
-$text_line_list_padding_bottom:              .75rem; // space between list item and line
+$text_line_list_padding_top:                 .25em; // space between list item and line
+$text_line_list_padding_left:                0;
+$text_line_list_padding_bottom:              .25em; // space between list item and line
 $text_line_list_top_line:                    3px solid;
 $text_line_list_middle_line:                 1px dotted #ccc;
 $text_line_list_bottom_line:                 1px solid;
@@ -45,8 +46,8 @@ $text_line_list_style_type:                  none; // style of bullets
 // make background more specific than "background?" maybe background-image
 // $text_bullet_list_margin_left:               0; // or -1.25em
 // $text_bullet_list_padding_left:              0;
-$text_bullet_list_icon_background:           url('../../icons/circle-solid.svg') no-repeat left center;
-$text_bullet_list_icon_background_size:      .0.4125rem;
+$text_bullet_list_icon_background:           url('circle-solid.svg');
+$text_bullet_list_icon_background_size:      0px;
 $text_bullet_list_icon_background_position:  0px 0.41667rem;
 
 
@@ -63,18 +64,18 @@ $text_bullet_list_icon_background_position:  0px 0.41667rem;
 
 // List Resets (two options)
 
-#{$evo}-list-reset {
-  // Should this be list reset?
-  list-style:      initial;
-  list-style-type: initial;
-  list-style-position: initial;
-  list-style-image: initial;
-  padding:         initial;
-  padding-top:     initial;
-  padding-left:    initial;
-  padding-bottom:  initial;
-  padding-right:   initial;
-}
+// #{$evo}-list-reset {
+//   // Should this be list reset?
+//   list-style:      initial;
+//   list-style-type: initial;
+//   list-style-position: initial;
+//   list-style-image: initial;
+//   padding:         initial;
+//   padding-top:     initial;
+//   padding-left:    initial;
+//   padding-bottom:  initial;
+//   padding-right:   initial;
+// }
 
 
 #{$evo}-list-none            {
@@ -111,13 +112,13 @@ $text_bullet_list_icon_background_position:  0px 0.41667rem;
 // ul lists
 
 ul {
-list-style-type: #{$ul_list_style_type}; // none
 list-style-position: #{$ul_list_style_position}; // outside
 
 // ul base list class
 
   &#{$evo}-list {
   @extend #{$evo}-list;
+  list-style-type: #{$ul_list_style_type}; // none
 }
 
 // ul utility classes
@@ -134,13 +135,24 @@ list-style-position: #{$ul_list_style_position}; // outside
   @extend #{$evo}-list;
   list-style-type: disc;
 }
+  &#{$evo}-list-reset {
+  list-style:      unset;
+  list-style-type: initial;
+  list-style-position: initial;
+  list-style-image: initial;
+  padding:         initial;
+  padding-top:     initial;
+  padding-left:    initial;
+  padding-bottom:  initial;
+  padding-right:   initial;
+}
 }
 
 
 // ol lists
 
 ol {
-list-style-type: #{$ol_list_style_type}; // decimal-leading-zero
+list-style-type: #{$ol_list_style_type}; // decimal-leading
 list-style-position: #{$ol_list_style_position}; // inside
 
 // ol base list class
@@ -188,6 +200,16 @@ list-style-position: #{$ol_list_style_position}; // inside
   @extend #{$evo}-list;
   list-style-type: upper-roman;
 }
+  &#{$evo}-list-reset {
+  list-style:      decimal;
+  list-style-type: decimal;
+  list-style-position: initial;
+  padding:         initial;
+  padding-top:     initial;
+  padding-left:    initial;
+  padding-bottom:  initial;
+  padding-right:   initial;
+}
 }
 
 
@@ -207,14 +229,15 @@ list-style-position: #{$ol_list_style_position}; // inside
 // Lists with lines
 
 #{$evo}-list-lines {
-@extend #{$evo}-text;
+// @extend #{$evo}-text;
   // margin-left: #{$text_list_margin_left};
   margin-bottom: #{$text_list_margin_bottom};
   list-style-type: #{$text_line_list_style_type};
 // width: 90%;
 & li{
-  padding-top: #{$text_line_list_padding_top}; // 1.4375rem
-  padding-bottom: #{$text_line_list_padding_bottom}; // 1.4375rem
+  padding-top: #{$text_line_list_padding_top}; // .25em
+  padding-left: #{$text_line_list_padding_left}; // 0
+  padding-bottom: #{$text_line_list_padding_bottom}; // .25em
    &:first-child {
   border-top: #{$text_line_list_top_line};
 }
@@ -230,46 +253,39 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 // Custom bullet images
 
+// https://css-tricks.com/style-list-markers-css/
+// http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
 #{$evo}-list-bullets {
   margin-left:     #{$text_list_margin_left}; // 0
   padding-left:    #{$text_list_padding_left}; // 0
-  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
-  & ul {
-  list-style-position: outside; // browser default
-  list-style-type: disk; // default is disk
-}
-}
-
-
-#{$evo}-list-bullets {
-@extend #{$evo}-list;
-& li{
-// margin-left: #{$text_list_margin_left};
-// padding-left: #{$text_list_padding_left};
-// margin-bottom: #{$text_list_margin_bottom};
-// line-height: #{$text_list_line_height};
-// list-style-type: #{$text_list_style_type};
-padding-bottom: #{$text_list_padding_bottom};// 1.4375rem
-background-image: #{$text_bullet_list_icon_background};
-background-position: #{$text_bullet_list_icon_background_position};
-background-size: #{$text_bullet_list_icon_background_size};
-}
+    list-style-image: #{$text_bullet_list_icon_background};
+  list-style-position: inside;
+    background-position: #{$text_bullet_list_icon_background_position};
+  background-size: #{$text_bullet_list_icon_background_size};
+  // padding-bottom:  #{$text_list_padding_bottom}; // .25em
 }
 
 
 
-/*
-  margin-left: 0;
-  padding-left: 0;
-  background-position: 0px 0.41667rem;
-  background-size: 0.4125rem;
-  margin-top: 0.75rem;
-  line-height: 1.2rem; }
-*/
+
+// #{$evo}-list-bullets {
+// @extend #{$evo}-list-circle;
+// & li{
+// // margin-left: #{$text_list_margin_left};
+// // padding-left: #{$text_list_padding_left};
+// // margin-bottom: #{$text_list_margin_bottom};
+// // line-height: #{$text_list_line_height};
+// // list-style-type: #{$text_list_style_type};
+// background-image: #{$text_bullet_list_icon_background};
+// background-position: #{$text_bullet_list_icon_background_position};
+// background-size: #{$text_bullet_list_icon_background_size};
+// }
+// }
+
 
 // Text and utility classes
 
-.list-inline {
+#{$evo}-list-inline {
   list-style:none;
   padding-left:0;
   display: inline;
@@ -279,10 +295,62 @@ background-size: #{$text_bullet_list_icon_background_size};
 }
 
 
-.list-bullets-color li:before {
+
+#{$evo}-list-bullets-color-dot li:before {
     content: "•"; /* Insert content that looks like bullets */
     padding-right: 8px;
     color: #ccc; /* Or a color you prefer */
 }
 
+#{$evo}-list-bullets-color-dash li:before {
+    content: "–"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #ccc; /* Or a color you prefer */
+}
+
+
+ul.evo-list-bullets-color {
+    list-style-type: none; // none
+}
+
+
+// http://codepen.io/_lukewh/pen/WopzzO
+// https://css-tricks.com/style-list-markers-css/
+
+.list-counter ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.list-counter li {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  margin: 1rem;
+  padding-left: 2.25rem;
+}
+.list-counter li::before {
+  position: absolute;
+  top: .75rem;
+  left: 0;
+  transform: translateY(-50%);
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+.list-counter ol ol li::before {
+  background: #DE51FF;
+}
+.list-counter ol ol ol li::before {
+  background: #EE9EFF;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+}
 
