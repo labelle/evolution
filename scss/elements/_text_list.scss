@@ -14,9 +14,9 @@
 // For default Ul and OL lists
 $text_list_margin_top:                       0;
 $text_list_margin_left:                      0;
-$text_list_margin_bottom:                    .25em;
+$text_list_margin_bottom:                    #{$u-17}em; // .275em bottom of each list
 $text_list_padding_left:                     0;
-$text_list_padding_bottom:                   .25em; // tweak space between list items
+$text_list_padding_bottom:                   #{$u-17}em; // .275em space between list items
 
 
 // For default Ul lists
@@ -31,10 +31,11 @@ $ol_list_style_position:                     inside; // or outisde, which aligns
 
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
-// $text_line_list_margin_left:                 0; // or -2.5
-$text_line_list_padding_top:                 .25em; // space between list item and line
-$text_line_list_padding_left:                0;
-$text_line_list_padding_bottom:              .25em; // space between list item and line
+// $text_line_list_margin_left:                 1.5em; // or -2.5
+$text_line_list_margin_bottom:               #{$u-17}em; // .275em bottom of each list
+$text_line_list_padding_top:                 #{$u-17}em; // .275em space between list item and line
+// $text_line_list_padding_left:                -1.5em;
+$text_line_list_padding_bottom:              #{$u-17}em; // .275em space between list item and line
 $text_line_list_top_line:                    3px solid;
 $text_line_list_middle_line:                 1px dotted #ccc;
 $text_line_list_bottom_line:                 1px solid;
@@ -122,7 +123,15 @@ list-style-position: #{$ul_list_style_position}; // outside
 }
 
 // ul utility classes
-
+  &#{$evo}-list-hang {
+  // @extend #{$evo}-list;
+  margin-left: -1em;
+  }
+  &#{$evo}-list-align {
+  // @extend #{$evo}-list;
+  margin-left: 1em;
+  // list-style-position: inside; // none
+  }
   &#{$evo}-list-circle {
   @extend #{$evo}-list;
   list-style-type: circle;
@@ -164,9 +173,13 @@ list-style-position: #{$ol_list_style_position}; // inside
 // ol utility classes
 
 // Hang the numbers and left align text to the other text blocks
-  &#{$evo}-list-hanging {
-  @extend #{$evo}-list;
+  &#{$evo}-list-hang {
+  // @extend #{$evo}-list;
   list-style-position: outside;
+  }
+  &#{$evo}-list-align {
+  // @extend #{$evo}-list;
+  list-style-position: inside;
   }
   &#{$evo}-list-decimal {
   @extend #{$evo}-list;
@@ -230,13 +243,13 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 #{$evo}-list-lines {
 // @extend #{$evo}-text;
-  // margin-left: #{$text_list_margin_left};
-  margin-bottom: #{$text_list_margin_bottom};
+  // margin-left: #{$text_line_list_margin_left};
+  margin-bottom: #{$text_line_list_margin_bottom};
   list-style-type: #{$text_line_list_style_type};
 // width: 90%;
 & li{
   padding-top: #{$text_line_list_padding_top}; // .25em
-  padding-left: #{$text_line_list_padding_left}; // 0
+  // padding-left: #{$text_line_list_padding_left}; // 0
   padding-bottom: #{$text_line_list_padding_bottom}; // .25em
    &:first-child {
   border-top: #{$text_line_list_top_line};
@@ -255,16 +268,44 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 // https://css-tricks.com/style-list-markers-css/
 // http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
-#{$evo}-list-bullets {
-  margin-left:     #{$text_list_margin_left}; // 0
-  padding-left:    #{$text_list_padding_left}; // 0
-    list-style-image: #{$text_bullet_list_icon_background};
-  list-style-position: inside;
-    background-position: #{$text_bullet_list_icon_background_position};
-  background-size: #{$text_bullet_list_icon_background_size};
-  // padding-bottom:  #{$text_list_padding_bottom}; // .25em
-}
 
+// // List 'list-style-image' approach
+// // Doesn't work so well because the PNG image needs to be the exact size in px
+// // There isn't a way to control the size of the list-style-image
+// #{$evo}-list-bullets {
+//   margin-left:     #{$text_list_margin_left}; // 0
+//   padding-left:    #{$text_list_padding_left}; // 0
+//   list-style-image: url('circle-solid-1x.png');
+//   list-style-position: inside;
+//   background-position: #{$text_bullet_list_icon_background_position};
+//   background-size: #{$text_bullet_list_icon_background_size};
+//   // padding-bottom:  #{$text_list_padding_bottom}; // .25em
+// }
+
+
+
+
+
+
+// List Background Image Approach
+#{$evo}-list-bullets li:before {
+content:''; 
+// display:inline-block; 
+position: absolute;
+height:.5em; 
+width:.5em; 
+background-image: #{$text_bullet_list_icon_background}; 
+background-size: contain; 
+background-repeat:no-repeat; 
+left: -1em;
+top: .275em;
+}
+#{$evo}-list-bullets li {
+    margin-left: 1em;
+    position: relative;
+    list-style-type: none;
+    // padding-left: -3em;
+}
 
 
 
@@ -281,6 +322,23 @@ list-style-position: #{$ol_list_style_position}; // inside
 // background-size: #{$text_bullet_list_icon_background_size};
 // }
 // }
+
+
+// // List Background Image Approach
+// #{$evo}-list-bullets li:before {
+// content:''; 
+// display:inline-block; 
+// height:.5em; 
+// width:.5em; 
+// background-image: #{$text_bullet_list_icon_background}; 
+// background-size:contain; 
+// background-repeat:no-repeat; 
+// padding-left: 1em; 
+// }
+// #{$evo}-list-bullets {
+// list-style-type: none;
+// }
+
 
 
 // Text and utility classes
@@ -314,43 +372,47 @@ ul.evo-list-bullets-color {
 }
 
 
+// List 'Counter' approach
 // http://codepen.io/_lukewh/pen/WopzzO
 // https://css-tricks.com/style-list-markers-css/
 
-.list-counter ol {
-  list-style: none;
+.list-counter {
   counter-reset: my-awesome-counter;
+  margin-top: 1.5em;
+}
+.list-counter,
+.list-counter ol,
+.list-counter ol ol
+ {
+    list-style: none;
+    // margin-bottom: 1.5em;
 }
 .list-counter li {
   position: relative;
   counter-increment: my-awesome-counter;
-  margin: 1rem;
-  padding-left: 2.25rem;
+  // margin-left: -1em;
+  padding-left: 2em;
 }
 .list-counter li::before {
   position: absolute;
-  top: .75rem;
+  top: .5em;
   left: 0;
   transform: translateY(-50%);
   content: counter(my-awesome-counter);
   background: #662974;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   display: inline-block;
-  line-height: 2rem;
+  line-height: 1.5em;
   color: white;
   text-align: center;
-  margin-right: 0.5rem;
+  // margin-right: 0.5em;
 }
 .list-counter ol ol li::before {
   background: #DE51FF;
 }
 .list-counter ol ol ol li::before {
   background: #EE9EFF;
-}
-
-body {
-  font-family: 'PT Serif', serif;
 }
 
