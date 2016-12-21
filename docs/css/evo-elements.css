@@ -1171,7 +1171,7 @@ ul.evo-list-bullets-color {
   border-left-style: initial;
   border-left-color: initial; }
 
-.evo-line, .evo-line-0, .evo-line-1, .evo-line-2, .evo-line-3, .evo-line-4, .evo-line-5, .evo-line-6, .evo-line-7, .evo-line-8, .evo-line-9, .evo-line-10, .evo-line-11, .evo-line-12, .evo-line-13, .evo-line-14, .evo-line-15, .evo-line-thin, .evo-line-medium, .evo-line-thick, .evo-line-solid, .evo-line-dotted, .evo-line-dashed, .evo-line-double, .evo-line-groove, .evo-line-ridge, .evo-line-inset, .evo-line-outset, .evo-line-gray, .evo-line-white, .evo-line-black {
+.evo-line, .evo-line-0, .evo-line-1, .evo-line-2, .evo-line-3, .evo-line-4, .evo-line-5, .evo-line-6, .evo-line-7, .evo-line-8, .evo-line-9, .evo-line-10, .evo-line-11, .evo-line-12, .evo-line-13, .evo-line-14, .evo-line-15, .evo-line-top, .evo-line-thin, .evo-line-medium, .evo-line-thick, .evo-line-solid, .evo-line-dotted, .evo-line-dashed, .evo-line-double, .evo-line-groove, .evo-line-ridge, .evo-line-inset, .evo-line-outset, .evo-line-gray, .evo-line-white, .evo-line-black {
   border: 0;
   margin: 0;
   border-top-width: initial;
@@ -1209,6 +1209,18 @@ ul.evo-list-bullets-color {
     border-top-width: 23px; }
   .evo-line-15 {
     border-top-width: 30px; }
+  .evo-line-bottom {
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc; }
+  .evo-line-right {
+    border-right-width: initial;
+    border-right-style: solid;
+    border-right-color: #ccc; }
+  .evo-line-left {
+    border-left-width: initial;
+    border-left-style: solid;
+    border-left-color: #ccc; }
   .evo-line-thin {
     border-top-width: thin; }
   .evo-line-medium {
@@ -1598,6 +1610,184 @@ ul.evo-list-bullets-color {
 .evo-line-left-white {
   border-left-color: #fff; }
 
+.evo-box-corner-round {
+  border-radius: 50%; }
+
+.evo-box-corner-rounded {
+  border-radius: 5%; }
+
+.evo-box-corner-pill {
+  border-radius: 9999px; }
+
+.evo-box-corner-square {
+  border-radius: 0; }
+
+.evo-box-corner-top {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.evo-box-corner-bottom {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.evo-box-corner-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.evo-box-corner-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.evo-box-corner-0 {
+  border-radius: 0; }
+
+.evo-box-corner-1 {
+  border-radius: 0.025rem; }
+
+.evo-box-corner-2 {
+  border-radius: 0.05rem; }
+
+.evo-box-corner-3 {
+  border-radius: 0.1rem; }
+
+.evo-box-corner-4 {
+  border-radius: 0.15rem; }
+
+.evo-box-corner-5 {
+  border-radius: 0.2rem; }
+
+.evo-box-corner-6 {
+  border-radius: 0.275rem; }
+
+.evo-box-corner-7 {
+  border-radius: 0.375rem; }
+
+.evo-box-corner-8 {
+  border-radius: 0.5rem; }
+
+.evo-box-corner-9 {
+  border-radius: 0.625rem; }
+
+.evo-box-corner-10 {
+  border-radius: 0.75rem; }
+
+.evo-box-corner-11 {
+  border-radius: 0.875rem; }
+
+.evo-box-corner-12 {
+  border-radius: 1rem; }
+
+.evo-box-corner-13 {
+  border-radius: 1.125rem; }
+
+.evo-box-corner-14 {
+  border-radius: 1.3125rem; }
+
+.evo-box-corner-15 {
+  border-radius: 1.4375rem; }
+
+.evo-box-corner-16 {
+  border-radius: 1.875rem; }
+
+.evo-box-corner-17 {
+  border-radius: 2.3125rem; }
+
+.evo-box-corner-18 {
+  border-radius: 2.6875rem; }
+
+.evo-box-corner-19 {
+  border-radius: 3rem; }
+
+.evo-box-corner-20 {
+  border-radius: 3.75rem; }
+
+.evo-box-corner-21 {
+  border-radius: 5rem; }
+
+.evo-box-corner-22 {
+  border-radius: 6rem; }
+
+.evo-box-corner-23 {
+  border-radius: 8rem; }
+
+.evo-box-corner-24 {
+  border-radius: 10rem; }
+
+.evo-box-corner-25 {
+  border-radius: 13rem; }
+
+/* Look into incorporating these types of styles
+
+
+.br0 {
+    border-radius: 0
+}
+
+.br1 {
+    border-radius: .125rem
+}
+
+.br2 {
+    border-radius: .25rem
+}
+
+.br3 {
+    border-radius: .5rem
+}
+
+.br4 {
+    border-radius: 1rem
+}
+
+.br-100 {
+    border-radius: 100%
+}
+
+.br-pill {
+    border-radius: 9999px
+}
+
+.br--bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.br--top {
+    border-bottom-right-radius: 0
+}
+
+.br--right,
+.br--top {
+    border-bottom-left-radius: 0
+}
+
+.br--right {
+    border-top-left-radius: 0
+}
+
+.br--left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.b--dotted {
+    border-style: dotted
+}
+
+.b--dashed {
+    border-style: dashed
+}
+
+.b--solid {
+    border-style: solid
+}
+
+.b--none {
+    border-style: none
+}
+
+
+*/
 /*      SPACE     */
 .evo-space, .evo-space-0, .evo-space-1, .evo-space-2, .evo-space-3, .evo-space-4, .evo-space-5, .evo-space-6, .evo-space-7, .evo-space-8, .evo-space-9, .evo-space-10, .evo-space-11, .evo-space-12, .evo-space-13, .evo-space-14, .evo-space-15, .evo-space-16, .evo-space-17, .evo-space-18, .evo-space-19, .evo-space-20, .evo-space-21, .evo-space-22, .evo-space-23, .evo-space-24 {
   width: auto;

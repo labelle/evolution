@@ -1,0 +1,230 @@
+///*      L I N E    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "corner_mixins";
+
+
+.evo-box-corner-round {
+	border-radius: 50%;
+}
+
+.evo-box-corner-rounded {
+	border-radius: 5%;
+}
+
+.evo-box-corner-pill {
+	border-radius: 9999px;
+}
+
+.evo-box-corner-square {
+	border-radius: 0;
+}
+
+// scale
+
+.evo-box-corner-top {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.evo-box-corner-bottom {
+	border-bottom-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.evo-box-corner-right {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.evo-box-corner-left {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+
+.evo-box-corner-0 {
+	border-radius: 0;
+}
+
+.evo-box-corner-1 {
+	border-radius: #{$u-12}rem;
+}
+
+.evo-box-corner-2 {
+	border-radius: #{$u-13}rem;
+}
+
+.evo-box-corner-3 {
+	border-radius: #{$u-14}rem;
+}
+
+.evo-box-corner-4 {
+	border-radius: #{$u-15}rem;
+}
+
+.evo-box-corner-5 {
+	border-radius: #{$u-16}rem;
+}
+
+.evo-box-corner-6 {
+	border-radius: #{$u-17}rem;
+}
+
+.evo-box-corner-7 {
+	border-radius: #{$u-18}rem;
+}
+
+.evo-box-corner-8 {
+	border-radius: #{$u-19}rem;
+}
+
+.evo-box-corner-9 {
+	border-radius: #{$u-20}rem;
+}
+
+.evo-box-corner-10 {
+	border-radius: #{$u-21}rem;
+}
+
+.evo-box-corner-11 {
+	border-radius: #{$u-22}rem;
+}
+
+.evo-box-corner-12 {
+	border-radius: #{$u-23}rem;
+}
+
+.evo-box-corner-13 {
+	border-radius: #{$u-24}rem;
+}
+
+.evo-box-corner-14 {
+	border-radius: #{$u-25}rem;
+}
+
+.evo-box-corner-15 {
+	border-radius: #{$u-26}rem;
+}
+
+
+// .evo-box-corner-15 {
+// 	border-top-right-radius: #{$u-26}rem;
+// 	border-top-left-radius: #{$u-26}rem;
+// 	border-bottom-right-radius: #{$u-26}rem;
+// 	border-bottom-left-radius: #{$u-26}rem;
+// }
+
+.evo-box-corner-16 {
+	border-radius: #{$u-27}rem;
+}
+
+.evo-box-corner-17 {
+	border-radius: #{$u-28}rem;
+}
+
+.evo-box-corner-18 {
+	border-radius: #{$u-29}rem;
+}
+
+.evo-box-corner-19 {
+	border-radius: #{$u-30}rem;
+}
+
+.evo-box-corner-20 {
+	border-radius: #{$u-31}rem;
+}
+
+.evo-box-corner-21 {
+	border-radius: #{$u-32}rem;
+}
+
+.evo-box-corner-22 {
+	border-radius: #{$u-33}rem;
+}
+
+.evo-box-corner-23 {
+	border-radius: #{$u-34}rem;
+}
+
+.evo-box-corner-24 {
+	border-radius: #{$u-35}rem;
+}
+
+.evo-box-corner-25 {
+	border-radius: #{$u-36}rem;
+}
+
+/* Look into incorporating these types of styles
+
+
+.br0 {
+    border-radius: 0
+}
+
+.br1 {
+    border-radius: .125rem
+}
+
+.br2 {
+    border-radius: .25rem
+}
+
+.br3 {
+    border-radius: .5rem
+}
+
+.br4 {
+    border-radius: 1rem
+}
+
+.br-100 {
+    border-radius: 100%
+}
+
+.br-pill {
+    border-radius: 9999px
+}
+
+.br--bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.br--top {
+    border-bottom-right-radius: 0
+}
+
+.br--right,
+.br--top {
+    border-bottom-left-radius: 0
+}
+
+.br--right {
+    border-top-left-radius: 0
+}
+
+.br--left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.b--dotted {
+    border-style: dotted
+}
+
+.b--dashed {
+    border-style: dashed
+}
+
+.b--solid {
+    border-style: solid
+}
+
+.b--none {
+    border-style: none
+}
+
+
+*/
