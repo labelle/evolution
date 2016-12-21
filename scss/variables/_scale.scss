@@ -51,9 +51,9 @@ $u-42: ceil(54.73) !default; // 880px
 $u-43: ceil(67.65) !default; // 1088px
 
 
-// TO DO need smaller sizes down to 1px for borders, etc.
-// TO DO need negative pixels?
 // pixel scale
+// sizes 1px - 5px should just be entered directly as needed
+
 $px-0: 6px !default;
 $px-1: 8px !default;
 $px-2: 10px !default;

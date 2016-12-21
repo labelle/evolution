@@ -31,14 +31,15 @@ $ol_list_style_position:                     inside; // or outisde, which aligns
 
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
+// https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
 // $text_line_list_margin_left:                 1.5em; // or -2.5
 $text_line_list_margin_bottom:               #{$u-17}em; // .275em bottom of each list
 $text_line_list_padding_top:                 #{$u-17}em; // .275em space between list item and line
 // $text_line_list_padding_left:                -1.5em;
 $text_line_list_padding_bottom:              #{$u-17}em; // .275em space between list item and line
-$text_line_list_top_line:                    3px solid;
-$text_line_list_middle_line:                 1px dotted #ccc;
-$text_line_list_bottom_line:                 1px solid;
+$text_line_list_top_line:                    thick; //initial
+$text_line_list_middle_line:                 thin;
+$text_line_list_bottom_line:                 medium;
 $text_line_list_style_type:                  none; // style of bullets
 
 
@@ -51,12 +52,6 @@ $text_bullet_list_icon_background:           url('circle-solid.svg');
 $text_bullet_list_icon_background_size:      0px;
 $text_bullet_list_icon_background_position:  0px 0.41667rem;
 
-
-
-#{$evo}-top-line-1      { border-top: 1px solid; }
-#{$evo}-top-line-3      { border-top: 3px solid; }
-
-#{$evo}-bottom-line-1      { border-bottom: 1px dotted; }
 
 /* Lists */
 // http://alistapart.com/article/taminglists/
@@ -240,6 +235,7 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 
 // Lists with lines
+// https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
 
 #{$evo}-list-lines {
 // @extend #{$evo}-text;
@@ -252,7 +248,8 @@ list-style-position: #{$ol_list_style_position}; // inside
   // padding-left: #{$text_line_list_padding_left}; // 0
   padding-bottom: #{$text_line_list_padding_bottom}; // .25em
    &:first-child {
-  border-top: #{$text_line_list_top_line};
+  // border-top: #{$text_line_list_top_line};
+  border-top-style: #{$text_line_list_top_line};
 }
    &:not(:first-child) {
   border-top: #{$text_line_list_middle_line};
