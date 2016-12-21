@@ -16,10 +16,33 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
+
+/* Experimental XRAY inspired by Harry Roberts */
+
+/* If it's a class containing the string evo-,
+put a green border around it. */
+
+div[class*="evo-line"],
+div[class*="evo-box"],
+hr[class*="evo-line"],
+hr[class*="evo-box"]  {
+padding-bottom: 5%;
+background-color: #eee;
+margin-bottom: 3em;
+}
+
+/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
+*/
+
+/*[class]:not([class*="evo-"]) {
+outline: 5px solid red;
+}*/
+
 </style>
 
 </head>
 <body>
+
 <main>
 
 
@@ -29,278 +52,219 @@
 
       <div class="evo-space-15"></div>
 
-<!-- Evo Base Classes Only -->
+Some line will default to a line-width of 'initial', which is equal to 'medium' (e.g. evo-line-gray, evo-line-dashed).
 
-<div class="evo-box-line-1 evo-box-line-black evo-box-solid">
-evo-box-line-1</div>
+<!-- Evo Line and Box Classes -->
 
-<div class="evo-space-10"></div>
+<div class="evo-space-15"></div>
 
 
-<ul class="evo-list-reset">
-<li>ul evo-list-reset</li>
-</ul>
+<!-- hr Lines -->
+evo-line-1 (hr)
+<hr class="evo-line-1">
 
-<div class="evo-space-10"></div>
+evo-line-2
+<hr class="evo-line-2">
 
+evo-line-3
+<hr class="evo-line-3">
 
-<ol class="evo-list-reset">
-<li>ol evo-list-reset</li>
-</ol>
+evo-line-4
+<hr class="evo-line-4">
 
-<div class="evo-space-10"></div>
+evo-line-5
+<hr class="evo-line-5">
 
+evo-line-6
+<hr class="evo-line-6">
 
-<ul class="evo-list-none">
-<li>ul evo-list-none</li>
-</ul>
+evo-line-7
+<hr class="evo-line-7">
 
-<div class="evo-space-10"></div>
+evo-line-8
+<hr class="evo-line-8">
 
+evo-line-9
+<hr class="evo-line-9">
 
+evo-line-10
+<hr class="evo-line-10">
 
-<ul class="evo-list-inherit">
-<li>ul evo-list-inherit</li>
-</ul>
+evo-line-11
+<hr class="evo-line-11">
 
-<div class="evo-space-10"></div>
+evo-line-12
+<hr class="evo-line-12">
 
+evo-line-13
+<hr class="evo-line-13">
 
+evo-line-14
+<hr class="evo-line-14">
 
+evo-line-15
+<hr class="evo-line-15">
 
-<ul class="evo-list">
-By default, bullets removed and text aligned
-<li>ul evo-list</li>
-</ul>
+<div class="evo-space-15"></div>
 
-<div class="evo-space-10"></div>
+<!-- Width Shorthand -->
 
+evo-line-thin
+<hr class="evo-line-thin">
 
-<ol class="evo-list">
-<li>ol evo-list</li>
-</ol>
+evo-line-medium
+<hr class="evo-line-medium">
 
-<div class="evo-space-10"></div>
+evo-line-thick
+<hr class="evo-line-thick">
 
+evo-line-thick (evo-line-reset) DOES THIS WORK?
+<hr class="evo-line-reset evo-line-thick">
 
+<div class="evo-space-15"></div>
 
+<!-- Style -->
 
-<ul class="evo-list-circle">
-<li>ul evo-list-circle</li>
-</ul>
 
-<div class="evo-space-10"></div>
+evo-line-solid
+<hr class="evo-line-solid">
 
+evo-line-dotted
+<hr class="evo-line-dotted">
 
+evo-line-dashed
+<hr class="evo-line-dashed">
 
-<ul class="evo-list-square">
-<li>ul evo-list-square</li>
-</ul>
+evo-line-double
+<hr class="evo-line-double">
 
-<div class="evo-space-10"></div>
+evo-line-groove
+<hr class="evo-line-groove">
 
+evo-line-ridge
+<hr class="evo-line-ridge">
 
+evo-line-inset
+<hr class="evo-line-inset">
 
+evo-line-outset
+<hr class="evo-line-outset">
 
-<ul class="evo-list-disc">
-<li>ul evo-list-disc</li>
-<li>ul evo-list-disc</li>
-<li>ul evo-list-disc</li>
-</ul>
+<div class="evo-space-15"></div>
 
-<div class="evo-space-10"></div>
+<!-- Color -->
 
+evo-line-black
+<hr class="evo-line-black">
 
-<ol class="evo-list">
-combine with a list class
-<li>ol evo-list</li>
-<li>ol evo-list</li>
-<li>ol evo-list</li>
-</ol>
+evo-line-gray
+<hr class="evo-line-gray">
 
-<div class="evo-space-10"></div>
+evo-line-white
+<hr class="evo-line-white">
 
+<div class="evo-space-15"></div>
 
+<!-- Mixed -->
 
-<ol class="evo-list evo-list-hang">
-To hang a list, combine the list class with evo-list-align
-<li>ol evo-list evo-list-hang</li>
-<li>ol evo-list evo-list-hang</li>
-<li>ol evo-list evo-list-hang</li>
-</ol>
+evo-line-gray evo-line-1 evo-line-dotted
+<hr class="evo-line-gray evo-line-10 evo-line-double">
 
-<ul class="evo-list evo-list-hang">
-<li>ul evo-list evo-list-hang</li>
-<li>ul evo-list evo-list-hang</li>
-<li>ul evo-list evo-list-hang</li>
-</ul>
 
-<div class="evo-space-10"></div>
+<!-- works on div Lines -->
 
+evo-line-1 (div)
+<div class="evo-line-1"></div>
 
+<div class="evo-space-15"></div>
 
-<ol class="evo-list evo-list-align">
-To align a list, combine the list class with evo-list-align
-<li>ol evo-list evo-list-align</li>
-<li>ol evo-list evo-list-align</li>
-<li>ol evo-list evo-list-align</li>
-</ol>
 
-<ul class="evo-list-disc evo-list-align">
-<li>ul evo-list-disc evo-list-align</li>
-<li>ul evo-list-disc evo-list-align</li>
-<li>ul evo-list-disc evo-list-align</li>
-</ul>
+<!-- more -->
+<!-- evo-line-top -->
 
-<div class="evo-space-10"></div>
+evo-line-top-solid
+<div class="evo-line-top-solid"></div>
 
+evo-line-top-dotted
+<div class="evo-line-top-dotted"></div>
 
+evo-line-top-dashed
+<div class="evo-line-top-dashed"></div>
 
+evo-line-top-double
+<div class="evo-line-top-double"></div>
 
-<ol class="evo-list-decimal">
-<li>ol evo-list-decimal</li>
-</ol>
+evo-line-top-groove
+<div class="evo-line-top-groove"></div>
 
-<div class="evo-space-10"></div>
+evo-line-top-ridge
+<div class="evo-line-top-ridge"></div>
 
+evo-line-top-inset
+<div class="evo-line-top-inset"></div>
 
+evo-line-top-outset
+<div class="evo-line-top-outset"></div>
 
-<ol class="evo-list-decimal-zero">
-<li>ol evo-list-decimal-zero</li>
-</ol>
+<div class="evo-space-15"></div>
 
-<div class="evo-space-10"></div>
 
 
 
 
+<!-- evo-line-black -->
 
-<ol class="evo-list-lower-alpha">
-<li>ol evo-list-lower-alpha</li>
-<li>ol evo-list-lower-alpha</li>
-<li>ol evo-list-lower-alpha</li>
-</ol>
+evo-line-top-black (paired with evo-line-top-solid)
+<div class="evo-line-top-solid evo-line-top-black"></div>
 
-<div class="evo-space-10"></div>
+evo-line-bottom-black
+<div class="evo-line-bottom-solid evo-line-bottom-black"></div>
 
+evo-line-right-black
+<div class="evo-line-right-solid evo-line-right-black"></div>
 
+evo-line-left-black
+<div class="evo-line-left-solid evo-line-left-black"></div>
 
+<div class="evo-space-15"></div>
 
 
 
-<ol class="evo-list-upper-alpha">
-<li>ol evo-list-upper-alpha</li>
-</ol>
+<!-- evo-line-gray -->
 
-<div class="evo-space-10"></div>
+evo-line-top-gray
+<div class="evo-line-top-solid evo-line-top-gray"></div>
 
+evo-line-bottom-gray
+<div class="evo-line-bottom-solid evo-line-bottom-gray"></div>
 
+evo-line-right-gray
+<div class="evo-line-right-solid evo-line-right-gray"></div>
 
+evo-line-left-gray
+<div class="evo-line-left-solid evo-line-left-gray"></div>
 
+<div class="evo-space-15"></div>
 
-<ol class="evo-list-lower-latin">
-<li>ol evo-list-lower-latin</li>
-</ol>
 
-<div class="evo-space-10"></div>
 
+<!-- evo-line-white -->
 
+<div class="evo-space-15"></div>
 
+evo-line-top-white
+<div class="evo-line-top-solid evo-line-top-white"></div>
 
+evo-line-bottom-white
+<div class="evo-line-bottom-solid evo-line-bottom-white"></div>
 
-<ol class="evo-list-upper-latin">
-<li>ol evo-list-upper-latin</li>
-</ol>
+evo-line-right-white
+<div class="evo-line-right-solid evo-line-right-white"></div>
 
-<div class="evo-space-10"></div>
+evo-line-left-white
+<div class="evo-line-left-solid evo-line-left-white"></div>
 
-
-
-
-<ol class="evo-list-lower-roman">
-<li>ol evo-list-lower-roman</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ol class="evo-list-upper-roman">
-<li>ol evo-list-upper-roman</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ul class="evo-text evo-list-bullets">
-<li>ul evo-list-bullets here</li>
-<li>ul evo-list-bullets</li>
-<li>ul evo-list-bullets</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ul class="evo-list-bullets-color evo-list-bullets-color-dot">
-<li>ul evo-list-bullets-color</li>
-<li>ul evo-list-bullets-color</li>
-<li>ul evo-list-bullets-color</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-<ul class="evo-list-bullets-color evo-list-bullets-color-dash">
-<li>ul evo-list-bullets-color</li>
-<li>ul evo-list-bullets-color</li>
-<li>ul evo-list-bullets-color</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-
-
-<ul class="evo-list-inline">
-<li>ul evo-list-inline</li>
-<li>ul evo-list-inline</li>
-<li>ul evo-list-inline</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-
-<ul class="evo-list-lines">
-<li>ul evo-list-lines</li>
-<li>ul evo-list-lines</li>
-<li>ul evo-list-lines</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-<!-- <div class="list-counter"> -->
-<ol class="evo-text evo-list list-counter">
-  <li>List item</li>
-  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis, rem, porro. Commodi itaque, recusandae eaque.</li>
-  <ol>
-    <li>List item</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.</li>
-  </ol>
-  <ol>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe error magnam, enim non neque aliquam, harum laborum veritatis a facilis repellat expedita consectetur est fugiat explicabo minima, excepturi quam veniam.</li>
-    <li>List item</li>
-      <li>List item</li>
-      <li>List item</li>
-
-    <li>List item</li>
-    <li>List item</li>
-  </ol>
-</ol>
-<!-- </div> -->
-
+<div class="evo-space-15"></div>
 
 
     </div>
