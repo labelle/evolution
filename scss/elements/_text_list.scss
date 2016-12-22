@@ -33,24 +33,34 @@ $ol_list_style_position:                     inside; // or outisde, which aligns
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
 // https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
 // $text_line_list_margin_left:                 1.5em; // or -2.5
-$text_line_list_margin_bottom:               #{$u-17}em; // .275em bottom of each list
-$text_line_list_padding_top:                 #{$u-17}em; // .275em space between list item and line
-// $text_line_list_padding_left:                -1.5em;
-$text_line_list_padding_bottom:              #{$u-17}em; // .275em space between list item and line
-$text_line_list_top_line:                    thick; //initial
-$text_line_list_middle_line:                 thin;
-$text_line_list_bottom_line:                 medium;
-$text_line_list_style_type:                  none; // style of bullets
+$line_list_padding_left:                0; // .5em
+$line_list_bullet_type:                 none; // list-style-type of bullets
 
+$line_list_margin_bottom:               #{$u-17}em; // .275em bottom of each list
+
+$line_list_padding_top:                 #{$u-17}em; // .275em space between list item and line
+$line_list_padding_bottom:              #{$u-17}em; // .275em space between list item and line
+
+$line_list_top_line_width:              thick;
+$line_list_top_line_style:              solid;
+$line_list_top_line_color:              #000;
+
+$line_list_middle_line_width:           thin;
+$line_list_middle_line_style:           solid;
+$line_list_middle_line_color:           #000;
+
+$line_list_bottom_line_width:           medium;
+$line_list_bottom_line_style:           solid;
+$line_list_bottom_line_color:           #000;
 
 
 // For custom image bullets Lists
 // make background more specific than "background?" maybe background-image
-// $text_bullet_list_margin_left:               0; // or -1.25em
-// $text_bullet_list_padding_left:              0;
-$text_bullet_list_icon_background:           url('circle-solid.svg');
-$text_bullet_list_icon_background_size:      0px;
-$text_bullet_list_icon_background_position:  0px 0.41667rem;
+// $bullet_list_margin_left:               0; // or -1.25em
+// $bullet_list_padding_left:              0;
+$bullet_list_icon_background:           url('circle-solid.svg');
+$bullet_list_icon_background_size:      0px;
+$bullet_list_icon_background_position:  0px 0.41667rem;
 
 
 /* Lists */
@@ -240,22 +250,28 @@ list-style-position: #{$ol_list_style_position}; // inside
 #{$evo}-list-lines {
 // @extend #{$evo}-text;
   // margin-left: #{$text_line_list_margin_left};
-  margin-bottom: #{$text_line_list_margin_bottom};
-  list-style-type: #{$text_line_list_style_type};
+  margin-bottom: #{$line_list_margin_bottom};
+  list-style-type: #{$line_list_bullet_type};
 // width: 90%;
 & li{
-  padding-top: #{$text_line_list_padding_top}; // .25em
-  // padding-left: #{$text_line_list_padding_left}; // 0
-  padding-bottom: #{$text_line_list_padding_bottom}; // .25em
+  padding-top: #{$line_list_padding_top}; // .25em
+  padding-left: #{$line_list_padding_left}; // 0
+  padding-bottom: #{$line_list_padding_bottom}; // .25em
    &:first-child {
-  // border-top: #{$text_line_list_top_line};
-  border-top-style: #{$text_line_list_top_line};
+  // border-top: #{$line_list_top_line};
+  border-top-style: #{$line_list_top_line_style};
+  border-top-width: #{$line_list_top_line_width};
+  border-top-color: #{$line_list_top_line_color};
 }
    &:not(:first-child) {
-  border-top: #{$text_line_list_middle_line};
+  border-top-style: #{$line_list_middle_line_style};
+  border-top-width: #{$line_list_middle_line_width};
+  border-top-color: #{$line_list_middle_line_color};
 }
    &:last-child {
-  border-bottom: #{$text_line_list_bottom_line};
+  border-bottom-style: #{$line_list_bottom_line_style};
+  border-bottom-width: #{$line_list_bottom_line_width};
+  border-bottom-color: #{$line_list_bottom_line_color};
 }
 }
 }
@@ -291,7 +307,7 @@ content:'';
 position: absolute;
 height:.5em; 
 width:.5em; 
-background-image: #{$text_bullet_list_icon_background}; 
+background-image: #{$bullet_list_icon_background}; 
 background-size: contain; 
 background-repeat:no-repeat; 
 left: -1em;
@@ -354,13 +370,13 @@ top: .275em;
 #{$evo}-list-bullets-color-dot li:before {
     content: "•"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: #ccc; /* Or a color you prefer */
+    color: #{$gray-lighter}; /* Or a color you prefer */
 }
 
 #{$evo}-list-bullets-color-dash li:before {
     content: "–"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: #ccc; /* Or a color you prefer */
+    color: #{$gray-lighter}; /* Or a color you prefer */
 }
 
 
@@ -412,4 +428,196 @@ ul.evo-list-bullets-color {
 .list-counter ol ol ol li::before {
   background: #EE9EFF;
 }
+
+// list striping
+// IE 8 and earlier may require a jquery solution
+
+
+#{$evo}-list-stripe,
+#{$evo}-list-stripe-even {
+ li:nth-child(even) {
+  background-color: #{$gray-lighter};   
+}
+}
+
+#{$evo}-list-stripe-odd {
+ li:nth-child(odd) {
+  background-color: #{$gray-lighter};   
+}
+}
+
+
+// list indent
+// useful with striping
+
+#{$evo}-list-lines-indent li {
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+
+
+// Space between lines
+
+#{$evo}-list-tightest li {
+    padding-bottom: #{$u-14}em; // .2em
+    padding-top: #{$u-14}em; // .2em
+}
+
+#{$evo}-list-tighter li {
+    padding-bottom: #{$u-15}em; // .2em
+    padding-top: #{$u-15}em; // .2em
+}
+
+#{$evo}-list-tight li {
+    padding-bottom: #{$u-16}em; // .2em
+    padding-top: #{$u-16}em; // .2em
+}
+
+#{$evo}-list-loose li {
+    padding-bottom: #{$u-19}em; // .375em
+    padding-top: #{$u-19}em; // .375em
+}
+
+#{$evo}-list-looser li {
+    padding-bottom: #{$u-21}em; // .375em
+    padding-top: #{$u-21}em; // .375em
+}
+
+#{$evo}-list-loosest li {
+    padding-bottom: #{$u-24}em; // .375em
+    padding-top: #{$u-24}em; // .375em
+}
+
+
+
+// line colors
+
+#{$evo}-list-lines-black li {
+  border-top-color: #{$black} !important;
+  &:last-child {
+  border-bottom-color: #{$black} !important;
+}
+}
+
+#{$evo}-list-lines-gray li {
+  border-top-color: #{$gray-lighter} !important;
+  &:last-child {
+  border-bottom-color: #{$gray-lighter} !important;
+}
+}
+
+#{$evo}-list-lines-white li {
+  border-top-color: #{$white} !important;
+  &:last-child {
+  border-bottom-color: #{$white} !important;
+}
+}
+
+
+// line styles
+
+#{$evo}-list-lines-solid li {
+  border-top-style: solid !important;
+  &:last-child {
+  border-bottom-style: solid !important;
+}
+}
+
+#{$evo}-list-lines-dotted li {
+  border-top-style: dotted !important;
+  &:last-child {
+  border-bottom-style: dotted !important;
+}
+}
+
+#{$evo}-list-lines-dashed li {
+  border-top-style: dashed !important;
+  &:last-child {
+  border-bottom-style: dashed !important;
+}
+}
+
+#{$evo}-list-lines-double li {
+  border-top-style: double !important;
+  &:last-child {
+  border-bottom-style: double !important;
+}
+}
+
+
+
+// line widths
+
+#{$evo}-list-lines-thin li { border-top-width: thin !important;
+&:last-child {
+  border-bottom-width: thin !important;
+}
+}
+
+#{$evo}-list-lines-medium li { border-top-width: medium !important;
+&:last-child {
+  border-bottom-width: medium !important;
+}
+}
+
+#{$evo}-list-lines-thick li { border-top-width: thick !important;
+&:last-child {
+  border-bottom-width: thick !important;
+}
+}
+
+
+
+// Top line width
+#{$evo}-list-line-top-thin li:first-child    { border-top-width: thin !important; }
+#{$evo}-list-line-top-medium li:first-child  { border-top-width: medium !important; }
+#{$evo}-list-line-top-thick li:first-child   { border-top-width: thick !important; }
+
+// Middle lines width
+#{$evo}-list-line-middle-thin li:not(:first-child)   { border-top-width: thin !important; }
+#{$evo}-list-line-middle-medium li:not(:first-child) { border-top-width: medium !important; }
+#{$evo}-list-line-middle-thick li:not(:first-child)  { border-top-width: thick !important; }
+
+// Bottom line width
+#{$evo}-list-line-bottom-thin li:last-child   { border-bottom-width: thin !important; }
+#{$evo}-list-line-bottom-medium li:last-child { border-bottom-width: medium !important; }
+#{$evo}-list-line-bottom-thick li:last-child  { border-bottom-width: thick !important; }
+
+
+// Top line colors
+#{$evo}-list-line-top-black li:first-child    { border-top-color: #{$black} !important; }
+#{$evo}-list-line-top-gray li:first-child  { border-top-color: #{$gray-light} !important; }
+#{$evo}-list-line-top-white li:first-child   { border-top-color: #{$white} !important; }
+
+// Middle lines colors
+#{$evo}-list-line-middle-black li:not(:first-child)   { border-top-color: #{$black} !important; }
+#{$evo}-list-line-middle-gray li:not(:first-child) { border-top-color: #{$gray-light} !important; }
+#{$evo}-list-line-middle-white li:not(:first-child)  { border-top-color: #{$white} !important; }
+
+// Bottom line colors
+#{$evo}-list-line-bottom-black li:last-child   { border-bottom-color: #{$black} !important; }
+#{$evo}-list-line-bottom-gray li:last-child { border-bottom-color: #{$gray-light} !important; }
+#{$evo}-list-line-bottom-white li:last-child  { border-bottom-color: #{$white} !important; }
+
+
+
+// Top line style
+#{$evo}-list-line-top-solid li:first-child    { border-top-style: solid !important; }
+#{$evo}-list-line-top-dotted li:first-child  { border-top-style: dotted !important; }
+#{$evo}-list-line-top-dashed li:first-child   { border-top-style: dashed !important; }
+#{$evo}-list-line-top-double li:first-child   { border-top-style: double !important; }
+
+// Middle lines style
+#{$evo}-list-line-middle-solid li:not(:first-child)   { border-top-style: solid !important; }
+#{$evo}-list-line-middle-dotted li:not(:first-child) { border-top-style: dotted !important; }
+#{$evo}-list-line-middle-dashed li:not(:first-child)  { border-top-style: dashed !important; }
+#{$evo}-list-line-middle-double li:not(:first-child)  { border-top-style: double !important; }
+
+// Bottom line style
+#{$evo}-list-line-bottom-solid li:last-child   { border-bottom-style: solid !important; }
+#{$evo}-list-line-bottom-dotted li:last-child { border-bottom-style: dotted !important; }
+#{$evo}-list-line-bottom-dashed li:last-child  { border-bottom-style: dashed !important; }
+#{$evo}-list-line-bottom-double li:last-child  { border-bottom-style: double !important; }
+
 

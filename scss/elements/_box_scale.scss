@@ -1,0 +1,57 @@
+///*      B O X   S C A L E    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "box_mixins";
+
+
+// SHOULD SOME OF THESE INHERIT?
+// SHOULD SOME BE PERCENTAGES OR EMS?
+$box_width:      initial; // border-top-width, initial = medium
+$box_style:      solid;   // border-top-style
+$box_color:      #{$gray-light}; // border-top-color
+
+#{$evo}-box-line-0              { border-top-width: 0; border-bottom-width: 0; border-right-width: 0; border-left-width: 0; }
+#{$evo}-box-line-1              { border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
+#{$evo}-box-line-2              { border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
+#{$evo}-box-line-3              { border-top-width: 3px; border-bottom-width: 3px; border-right-width: 3px; border-left-width: 3px; }
+#{$evo}-box-line-4              { border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
+#{$evo}-box-line-5              { border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
+#{$evo}-box-line-6              { border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; } // 6px
+#{$evo}-box-line-7              { border-top-width: #{$px-1}; border-bottom-width: #{$px-1}; border-right-width: #{$px-1}; border-left-width: #{$px-1}; } // 8px
+#{$evo}-box-line-8              { border-top-width: #{$px-2}; border-bottom-width: #{$px-2}; border-right-width: #{$px-2}; border-left-width: #{$px-2}; } // 10px
+#{$evo}-box-line-9              { border-top-width: #{$px-3}; border-bottom-width: #{$px-3}; border-right-width: #{$px-3}; border-left-width: #{$px-3}; } // 12px
+#{$evo}-box-line-10             { border-top-width: #{$px-4}; border-bottom-width: #{$px-4}; border-right-width: #{$px-4}; border-left-width: #{$px-4}; } // 14px
+#{$evo}-box-line-11             { border-top-width: #{$px-5}; border-bottom-width: #{$px-5}; border-right-width: #{$px-5}; border-left-width: #{$px-5}; } // 16px
+#{$evo}-box-line-12             { border-top-width: #{$px-6}; border-bottom-width: #{$px-6}; border-right-width: #{$px-6}; border-left-width: #{$px-6}; } // 18px
+#{$evo}-box-line-13             { border-top-width: #{$px-7}; border-bottom-width: #{$px-7}; border-right-width: #{$px-7}; border-left-width: #{$px-7}; } // 21px
+#{$evo}-box-line-14             { border-top-width: #{$px-8}; border-bottom-width: #{$px-8}; border-right-width: #{$px-8}; border-left-width: #{$px-8}; } // 23px
+#{$evo}-box-line-15             { border-top-width: #{$px-9}; border-bottom-width: #{$px-9}; border-right-width: #{$px-9}; border-left-width: #{$px-9}; } // 30px
+
+// #{$evo}-box-lightest       { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; }
+// #{$evo}-box-lighter        { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
+// #{$evo}-box-light          { @extend #{$evo}-box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
+// #{$evo}-box-heavy          { @extend #{$evo}-box; border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
+// #{$evo}-box-heavier        { @extend #{$evo}-box; border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
+// #{$evo}-box-heaviest       { @extend #{$evo}-box; border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; }
+
+#{$evo}-box-line-thin           { border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: thin; }
+#{$evo}-box-line-medium         { border-top-width: medium; border-bottom-width: medium; border-right-width: medium; border-left-width: medium; }
+#{$evo}-box-line-thick          { border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: thick; }
+
+#{$evo}-box-line-solid          { border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid; }
+#{$evo}-box-line-dotted         { border-top-style: dotted; border-bottom-style: dotted; border-right-style: dotted; border-left-style: dotted; }
+#{$evo}-box-line-dashed         { border-top-style: dashed; border-bottom-style: dashed; border-right-style: dashed; border-left-style: dashed; }
+#{$evo}-box-line-double         { border-top-style: double; border-bottom-style: double; border-right-style: double; border-left-style: double; }
+// #{$evo}-box-line-groove         { border-top-style: groove; border-bottom-style: groove; border-right-style: groove; border-left-style: groove; }
+// #{$evo}-box-line-ridge          { border-top-style: ridge; border-bottom-style: ridge; border-right-style: ridge; border-left-style: ridge; }
+// #{$evo}-box-line-inset          { border-top-style: inset; border-bottom-style: inset; border-right-style: inset; border-left-style: inset; }
+// #{$evo}-box-line-outset         { border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
+
+
+// Use RGBA colors instead?
+
+#{$evo}-box-line-gray       { border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
+#{$evo}-box-line-white      { border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
+#{$evo}-box-line-black      { border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
+

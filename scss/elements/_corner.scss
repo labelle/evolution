@@ -4,13 +4,25 @@
 // @import "../variables/scale";
 @import "corner_mixins";
 
+$box_corner_top_right:     #{$u-23}rem;
+$box_corner_top_left:      #{$u-23}rem;
+$box_corner_bottom_right:  #{$u-23}rem;
+$box_corner_bottom_left:   #{$u-23}rem;
+
+#{$evo}-box-corner-rounded {
+	// border-radius:  #{$box_corner-top-left};
+	border-top-right-radius:    #{$box_corner_top_right};
+	border-top-left-radius:     #{$box_corner_top_left};
+	border-bottom-right-radius: #{$box_corner_bottom_right};
+	border-bottom-left-radius:  #{$box_corner_bottom_left};
+}
+
+// .evo-box-corner-rounded {
+// 	border-radius: 5%;
+// }
 
 .evo-box-corner-round {
 	border-radius: 50%;
-}
-
-.evo-box-corner-rounded {
-	border-radius: 5%;
 }
 
 .evo-box-corner-pill {
@@ -22,6 +34,7 @@
 }
 
 // scale
+// or we could say .evo-box-round-left and make the right corners square
 
 .evo-box-corner-top {
 	border-top-right-radius: 0;
@@ -155,76 +168,3 @@
 .evo-box-corner-25 {
 	border-radius: #{$u-36}rem;
 }
-
-/* Look into incorporating these types of styles
-
-
-.br0 {
-    border-radius: 0
-}
-
-.br1 {
-    border-radius: .125rem
-}
-
-.br2 {
-    border-radius: .25rem
-}
-
-.br3 {
-    border-radius: .5rem
-}
-
-.br4 {
-    border-radius: 1rem
-}
-
-.br-100 {
-    border-radius: 100%
-}
-
-.br-pill {
-    border-radius: 9999px
-}
-
-.br--bottom {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0
-}
-
-.br--top {
-    border-bottom-right-radius: 0
-}
-
-.br--right,
-.br--top {
-    border-bottom-left-radius: 0
-}
-
-.br--right {
-    border-top-left-radius: 0
-}
-
-.br--left {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0
-}
-
-.b--dotted {
-    border-style: dotted
-}
-
-.b--dashed {
-    border-style: dashed
-}
-
-.b--solid {
-    border-style: solid
-}
-
-.b--none {
-    border-style: none
-}
-
-
-*/

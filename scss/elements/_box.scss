@@ -1,0 +1,72 @@
+///*      B O X    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "box_mixins";
+
+
+// SHOULD SOME OF THESE INHERIT?
+// SHOULD SOME BE PERCENTAGES OR EMS?
+$box_width:      initial; // border-top-width, initial = medium
+$box_style:      solid;   // border-top-style
+$box_color:      #{$gray-light}; // border-top-color
+
+
+#{$evo}-box-reset,
+#{$evo}-box-line-reset           { 
+	border: initial;
+	border-top-width: initial;
+	border-bottom-width: initial;
+	border-right-width: initial;
+	border-left-width: initial;
+	border-top-style: initial;
+	border-bottom-style: initial;
+	border-right-style: initial;
+	border-left-style: initial;
+	border-top-color: initial;
+	border-bottom-color: initial;
+	border-right-color: initial;
+	border-left-color: initial;
+}
+
+#{$evo}-box {
+border-top-width:      #{$box_width}; // initial
+border-bottom-width:   #{$box_width}; // initial 
+border-right-width:    #{$box_width}; // initial 
+border-left-width:     #{$box_width}; // initial
+border-top-style:      #{$box_style}; // solid
+border-bottom-style:   #{$box_style}; // solid
+border-right-style:    #{$box_style}; // solid
+border-left-style:     #{$box_style}; // solid
+border-top-color:      #{$box_color}; // initial
+border-bottom-color:   #{$box_color}; // initial 
+border-right-color:    #{$box_color}; // initial 
+border-left-color:     #{$box_color}; // initial
+border-left-style:     #{$box_style}; // solid
+}
+
+// // https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style
+// #{$evo}-box-unset          { border-width: unset; }
+// #{$evo}-box-hidden         { border-width: hidden; }
+// #{$evo}-box-none           { border-width: none; }
+// ADD Inherit
+
+#{$evo}-box-line-thin           { border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: thin; }
+#{$evo}-box-line-medium         { border-top-width: medium; border-bottom-width: medium; border-right-width: medium; border-left-width: medium; }
+#{$evo}-box-line-thick          { border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: thick; }
+
+#{$evo}-box-line-solid          { border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid; }
+#{$evo}-box-line-dotted         { border-top-style: dotted; border-bottom-style: dotted; border-right-style: dotted; border-left-style: dotted; }
+#{$evo}-box-line-dashed         { border-top-style: dashed; border-bottom-style: dashed; border-right-style: dashed; border-left-style: dashed; }
+#{$evo}-box-line-double         { border-top-style: double; border-bottom-style: double; border-right-style: double; border-left-style: double; }
+// #{$evo}-box-line-groove         { border-top-style: groove; border-bottom-style: groove; border-right-style: groove; border-left-style: groove; }
+// #{$evo}-box-line-ridge          { border-top-style: ridge; border-bottom-style: ridge; border-right-style: ridge; border-left-style: ridge; }
+// #{$evo}-box-line-inset          { border-top-style: inset; border-bottom-style: inset; border-right-style: inset; border-left-style: inset; }
+// #{$evo}-box-line-outset         { border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
+
+
+// Use RGBA colors instead?
+#{$evo}-box-line-gray       { border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
+#{$evo}-box-line-white      { border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
+#{$evo}-box-line-black      { border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
+
