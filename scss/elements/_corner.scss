@@ -2,7 +2,7 @@
 
 @import "../variables";
 // @import "../variables/scale";
-@import "corner_mixins";
+// @import "corner_mixins";
 
 $box_corner_top_right:     #{$u-23}rem;
 $box_corner_top_left:      #{$u-23}rem;
@@ -33,7 +33,7 @@ $box_corner_bottom_left:   #{$u-23}rem;
 	border-radius: 0;
 }
 
-// scale
+// box corners - sides
 // or we could say .evo-box-round-left and make the right corners square
 
 .evo-box-corner-top {
@@ -56,6 +56,27 @@ $box_corner_bottom_left:   #{$u-23}rem;
 	border-bottom-left-radius: 0;
 }
 
+// invividual box corners
+
+.evo-box-corner-top-left {
+	border-top-left-radius: 0;
+}
+
+.evo-box-corner-top-right {
+	border-bottom-right-radius: 0;
+}
+
+.evo-box-corner-bottom-right {
+	border-bottom-right-radius: 0 !important;
+}
+
+.evo-box-corner-bottom-left {
+	border-bottom-left-radius: 0;
+}
+
+
+
+// all box corners - scale
 
 .evo-box-corner-0 {
 	border-radius: 0;

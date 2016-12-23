@@ -3,3 +3,62 @@
 @import "../variables";
 // @import "../variables/scale";
 // @import "lines_mixins";
+
+
+
+// works for tags: div, hr, ol, ul, li, p, h1, h2, h3, h4, h5, h6
+#{$evo}-line {
+	border: 0;
+	margin: 0;
+	// margin-top: #{$hr_margin_top}; // 1em
+	// margin-bottom: #{$hr_margin_bottom}; // 1em
+	border-top-width: #{$line_width}; // initial, equal to medium
+	border-top-style: #{$line_style}; // solid
+	border-top-color: #{$line_color}; // initial
+
+&-0              { @extend #{$evo}-line; border-top-width: 0; }
+&-1              { @extend #{$evo}-line; border-top-width: 1px; }
+&-2              { @extend #{$evo}-line; border-top-width: 2px; }
+&-3              { @extend #{$evo}-line; border-top-width: 3px; }
+&-4              { @extend #{$evo}-line; border-top-width: 4px; }
+&-5              { @extend #{$evo}-line; border-top-width: 5px; }
+&-6              { @extend #{$evo}-line; border-top-width: #{$px-0}; } // 6px
+&-7              { @extend #{$evo}-line; border-top-width: #{$px-1}; } // 8px
+&-8              { @extend #{$evo}-line; border-top-width: #{$px-2}; } // 10px
+&-9              { @extend #{$evo}-line; border-top-width: #{$px-3}; } // 12px
+&-10             { @extend #{$evo}-line; border-top-width: #{$px-4}; } // 14px
+&-11             { @extend #{$evo}-line; border-top-width: #{$px-5}; } // 16px
+&-12             { @extend #{$evo}-line; border-top-width: #{$px-6}; } // 18px
+&-13             { @extend #{$evo}-line; border-top-width: #{$px-7}; } // 21px
+&-14             { @extend #{$evo}-line; border-top-width: #{$px-8}; } // 23px
+&-15             { @extend #{$evo}-line; border-top-width: #{$px-9}; } // 30px
+
+&-top            { @extend #{$evo}-line; } // medium width
+&-bottom         { border-bottom-width: #{$line_width}; border-bottom-style: #{$line_style}; border-bottom-color: #{$line_color}; } // medium width
+&-right          { border-right-width: #{$line_width}; border-right-style: #{$line_style}; border-right-color: #{$line_color}; } // medium width
+&-left           { border-left-width: #{$line_width}; border-left-style: #{$line_style}; border-left-color: #{$line_color}; } // medium width
+
+&-lightest       { @extend #{$evo}-line; border-top-width: 1px; border-top-style: dotted; }
+&-lighter        { @extend #{$evo}-line; border-top-width: 1px; }
+&-light          { @extend #{$evo}-line; border-top-width: 2px; }
+&-heavy          { @extend #{$evo}-line; border-top-width: 4px; }
+&-heavier        { @extend #{$evo}-line; border-top-width: 5px; }
+&-heaviest       { @extend #{$evo}-line; border-top-width: #{$px-0}; }
+
+&-thin           { @extend #{$evo}-line; border-top-width: thin; }
+&-medium         { @extend #{$evo}-line; border-top-width: medium; }
+&-thick          { @extend #{$evo}-line; border-top-width: thick; }
+
+&-solid          { @extend #{$evo}-line; border-top-style: solid; }
+&-dotted         { @extend #{$evo}-line; border-top-style: dotted; }
+&-dashed         { @extend #{$evo}-line; border-top-style: dashed; }
+&-double         { @extend #{$evo}-line; border-top-style: double; }
+// &-groove         { @extend #{$evo}-line; border-top-style: groove; }
+// &-ridge          { @extend #{$evo}-line; border-top-style: ridge; }
+// &-inset          { @extend #{$evo}-line; border-top-style: inset; }
+// &-outset         { @extend #{$evo}-line; border-top-style: outset; }
+
+&-gray           { @extend #{$evo}-line; border-top-color: #{$gray-light}; }
+&-white          { @extend #{$evo}-line; border-top-color: #{$white}; }
+&-black          { @extend #{$evo}-line; border-top-color: #{$black}; }
+}

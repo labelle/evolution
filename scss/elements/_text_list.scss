@@ -450,11 +450,45 @@ ul.evo-list-bullets-color {
 // list indent
 // useful with striping
 
+// #{$evo}-list-lines-indent li {
+//   padding-left: .5em;
+//   padding-right: .5em;
+// }
+
 #{$evo}-list-lines-indent li {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 1ch;
+  padding-right: 1ch;
 }
 
+
+#{$evo}-list-lines-top li {
+  padding-top: 1.25ex !important;
+  min-height: 8ex !important;
+  padding-bottom: 1.25ex !important;
+}
+
+
+// list indent
+// useful with striping
+
+// #{$evo}-list-lines-phone li {
+//    padding-bottom: 1.5em !important;
+// }
+
+#{$evo}-list-lines-phone-1 li { min-height: 1em !important; }
+#{$evo}-list-lines-phone-2 li { min-height: 2em !important; }
+#{$evo}-list-lines-phone-3 li { min-height: 3em !important; }
+#{$evo}-list-lines-phone-4 li { min-height: 4em !important; }
+#{$evo}-list-lines-phone-5 li { min-height: 5em !important; }
+#{$evo}-list-lines-phone-6 li { min-height: 6em !important; }
+
+// experiment with ch values? e.g. #{$u-30}ch
+#{$evo}-list-lines-phone-a li { padding-bottom: #{$u-25}em !important; }
+#{$evo}-list-lines-phone-b li { padding-bottom: #{$u-26}em  !important; }
+#{$evo}-list-lines-phone-c li { padding-bottom: #{$u-27}em  !important; }
+#{$evo}-list-lines-phone-d li { padding-bottom: #{$u-28}em  !important; }
+#{$evo}-list-lines-phone-e li { padding-bottom: #{$u-29}em  !important; }
+#{$evo}-list-lines-phone-f li { padding-bottom: #{$u-30}em  !important; }
 
 
 // Space between lines
