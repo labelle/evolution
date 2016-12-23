@@ -1,191 +1,78 @@
-///*      L I N E    */
+///*      C O R N E R    */
 
 @import "../variables";
 // @import "../variables/scale";
 // @import "corner_mixins";
 
+
+// Define individual corners of boxes
+// Based on _scale.scss in variables
 $box_corner_top_right:     #{$u-23}rem;
 $box_corner_top_left:      #{$u-23}rem;
 $box_corner_bottom_right:  #{$u-23}rem;
 $box_corner_bottom_left:   #{$u-23}rem;
 
-#{$evo}-box-corner-rounded {
-	// border-radius:  #{$box_corner-top-left};
+
+// box corners are all round 
+#{$evo}-box-round {
 	border-top-right-radius:    #{$box_corner_top_right};
 	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: #{$box_corner_bottom_right};
 	border-bottom-left-radius:  #{$box_corner_bottom_left};
 }
 
-// .evo-box-corner-rounded {
-// 	border-radius: 5%;
-// }
-
-.evo-box-corner-round {
-	border-radius: 50%;
-}
-
-.evo-box-corner-pill {
-	border-radius: 9999px;
-}
-
-.evo-box-corner-square {
-	border-radius: 0;
-}
-
-// box corners - sides
-// or we could say .evo-box-round-left and make the right corners square
-
-.evo-box-corner-top {
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-}
-
-.evo-box-corner-bottom {
-	border-bottom-right-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
-}
-
-.evo-box-corner-right {
-	border-top-right-radius: 0;
+// box top is round
+#{$evo}-box-round-top {
+	border-top-right-radius:    #{$box_corner_top_right};
+	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: 0;
+	border-bottom-left-radius:  0;
 }
 
-.evo-box-corner-left {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+// box bottom is round
+#{$evo}-box-round-bottom {
+	border-top-right-radius:    0;
+	border-top-left-radius:     0;
+	border-bottom-right-radius: #{$box_corner_bottom_right};
+	border-bottom-left-radius:  #{$box_corner_bottom_left};
 }
 
-// invividual box corners
-
-.evo-box-corner-top-left {
-	border-top-left-radius: 0;
+// box right side is round
+#{$evo}-box-round-right {
+	border-top-right-radius:    #{$box_corner_top_right};
+	border-top-left-radius:     0;
+	border-bottom-right-radius: #{$box_corner_bottom_right};
+	border-bottom-left-radius:  0;
 }
 
-.evo-box-corner-top-right {
+// box left side is round
+#{$evo}-box-round-left {
+	border-top-right-radius:    0;
+	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: 0;
+	border-bottom-left-radius:  #{$box_corner_bottom_left};
 }
 
-.evo-box-corner-bottom-right {
-	border-bottom-right-radius: 0 !important;
-}
-
-.evo-box-corner-bottom-left {
-	border-bottom-left-radius: 0;
-}
+// basic shapes
+#{$evo}-box-circle  { border-radius: 50%; }
+#{$evo}-box-pill    { border-radius: 9999px; }
+#{$evo}-box-square  { border-radius: 0; }
 
 
+// /* Corner Utilities */
+// Force specific rounded corners to be squared
+// This is potentially an anti-pattern due to 
+// 1) forced local reset of an already locally set classs
+// 2) use of !important to force an override
 
-// all box corners - scale
+// force zero radius to invividual box corners
+#{$evo}-box-corner-top-left      { border-top-left-radius: 0 !important; }
+#{$evo}-box-corner-top-right     { border-bottom-right-radius: 0 !important; }
+#{$evo}-box-corner-bottom-left   { border-bottom-left-radius: 0 !important; }
+#{$evo}-box-corner-bottom-right  { border-bottom-right-radius: 0 !important; }
 
-.evo-box-corner-0 {
-	border-radius: 0;
-}
-
-.evo-box-corner-1 {
-	border-radius: #{$u-12}rem;
-}
-
-.evo-box-corner-2 {
-	border-radius: #{$u-13}rem;
-}
-
-.evo-box-corner-3 {
-	border-radius: #{$u-14}rem;
-}
-
-.evo-box-corner-4 {
-	border-radius: #{$u-15}rem;
-}
-
-.evo-box-corner-5 {
-	border-radius: #{$u-16}rem;
-}
-
-.evo-box-corner-6 {
-	border-radius: #{$u-17}rem;
-}
-
-.evo-box-corner-7 {
-	border-radius: #{$u-18}rem;
-}
-
-.evo-box-corner-8 {
-	border-radius: #{$u-19}rem;
-}
-
-.evo-box-corner-9 {
-	border-radius: #{$u-20}rem;
-}
-
-.evo-box-corner-10 {
-	border-radius: #{$u-21}rem;
-}
-
-.evo-box-corner-11 {
-	border-radius: #{$u-22}rem;
-}
-
-.evo-box-corner-12 {
-	border-radius: #{$u-23}rem;
-}
-
-.evo-box-corner-13 {
-	border-radius: #{$u-24}rem;
-}
-
-.evo-box-corner-14 {
-	border-radius: #{$u-25}rem;
-}
-
-.evo-box-corner-15 {
-	border-radius: #{$u-26}rem;
-}
-
-
-// .evo-box-corner-15 {
-// 	border-top-right-radius: #{$u-26}rem;
-// 	border-top-left-radius: #{$u-26}rem;
-// 	border-bottom-right-radius: #{$u-26}rem;
-// 	border-bottom-left-radius: #{$u-26}rem;
-// }
-
-.evo-box-corner-16 {
-	border-radius: #{$u-27}rem;
-}
-
-.evo-box-corner-17 {
-	border-radius: #{$u-28}rem;
-}
-
-.evo-box-corner-18 {
-	border-radius: #{$u-29}rem;
-}
-
-.evo-box-corner-19 {
-	border-radius: #{$u-30}rem;
-}
-
-.evo-box-corner-20 {
-	border-radius: #{$u-31}rem;
-}
-
-.evo-box-corner-21 {
-	border-radius: #{$u-32}rem;
-}
-
-.evo-box-corner-22 {
-	border-radius: #{$u-33}rem;
-}
-
-.evo-box-corner-23 {
-	border-radius: #{$u-34}rem;
-}
-
-.evo-box-corner-24 {
-	border-radius: #{$u-35}rem;
-}
-
-.evo-box-corner-25 {
-	border-radius: #{$u-36}rem;
-}
+// force zero radius to pairs of box corners on a single side
+#{$evo}-box-corner-top    { border-top-right-radius: 0 !important; border-top-left-radius: 0 !important; }
+#{$evo}-box-corner-bottom { border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+#{$evo}-box-corner-left   { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+#{$evo}-box-corner-right  { border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; }

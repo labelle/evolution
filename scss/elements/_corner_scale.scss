@@ -1,0 +1,35 @@
+///*      C O R N E R   S C A L E    */
+
+@import "../variables";
+// @import "../variables/scale";
+// @import "corner_mixins";
+
+
+// all box corners - scale
+// Based on _scale.scss in variables
+#{$evo}-box-round-0 { border-radius: 0 !important; }
+#{$evo}-box-round-1 { border-radius: #{$u-14}rem; }
+#{$evo}-box-round-2 { border-radius: #{$u-15}rem; }
+#{$evo}-box-round-3 { border-radius: #{$u-16}rem; }
+#{$evo}-box-round-4 { border-radius: #{$u-17}rem; }
+#{$evo}-box-round-5 { border-radius: #{$u-18}rem; }
+#{$evo}-box-round-6 { border-radius: #{$u-19}rem; }
+#{$evo}-box-round-7 { border-radius: #{$u-20}rem; }
+#{$evo}-box-round-8 { border-radius: #{$u-21}rem; }
+#{$evo}-box-round-9 { border-radius: #{$u-22}rem; }
+#{$evo}-box-round-10 { border-radius: #{$u-23}rem; }
+#{$evo}-box-round-11 { border-radius: #{$u-24}rem; }
+#{$evo}-box-round-12 { border-radius: #{$u-25}rem; }
+#{$evo}-box-round-13 { border-radius: #{$u-26}rem; }
+#{$evo}-box-round-14 { border-radius: #{$u-27}rem; }
+#{$evo}-box-round-15 { border-radius: #{$u-28}rem; }
+// #{$evo}-box-round-16 { border-radius: #{$u-29}rem; }
+// #{$evo}-box-round-17 { border-radius: #{$u-30}rem; }
+// #{$evo}-box-round-18 { border-radius: #{$u-31}rem; }
+// #{$evo}-box-round-19 { border-radius: #{$u-32}rem; }
+// #{$evo}-box-round-20 { border-radius: #{$u-33}rem; }
+// #{$evo}-box-round-21 { border-radius: #{$u-34}rem; }
+// #{$evo}-box-round-22 { border-radius: #{$u-35}rem; }
+// #{$evo}-box-round-23 { border-radius: #{$u-36}rem; }
+// #{$evo}-box-round-24 { border-radius: #{$u-37}rem; }
+// #{$evo}-box-round-25 { border-radius: #{$u-38}rem; }

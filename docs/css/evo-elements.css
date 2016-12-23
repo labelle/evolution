@@ -1642,126 +1642,120 @@ ul.evo-list-bullets-color {
   border-right-width: thick;
   border-left-width: thick; }
 
-.evo-box-corner-rounded {
+.evo-box-round {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem; }
 
-.evo-box-corner-round {
+.evo-box-round-top {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.evo-box-round-bottom {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem; }
+
+.evo-box-round-right {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0; }
+
+.evo-box-round-left {
+  border-top-right-radius: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 1rem; }
+
+.evo-box-circle {
   border-radius: 50%; }
 
-.evo-box-corner-pill {
+.evo-box-pill {
   border-radius: 9999px; }
 
-.evo-box-corner-square {
+.evo-box-square {
   border-radius: 0; }
 
+.evo-box-corner-top-left {
+  border-top-left-radius: 0 !important; }
+
+.evo-box-corner-top-right {
+  border-bottom-right-radius: 0 !important; }
+
+.evo-box-corner-bottom-left {
+  border-bottom-left-radius: 0 !important; }
+
+.evo-box-corner-bottom-right {
+  border-bottom-right-radius: 0 !important; }
+
 .evo-box-corner-top {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0; }
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important; }
 
 .evo-box-corner-bottom {
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important; }
 
-.evo-box-corner-right {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
-
 .evo-box-corner-left {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
 
-.evo-box-corner-top-left {
-  border-top-left-radius: 0; }
-
-.evo-box-corner-top-right {
-  border-bottom-right-radius: 0; }
-
-.evo-box-corner-bottom-right {
+.evo-box-corner-right {
+  border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important; }
 
-.evo-box-corner-bottom-left {
-  border-bottom-left-radius: 0; }
+.evo-box-round-0 {
+  border-radius: 0 !important; }
 
-.evo-box-corner-0 {
-  border-radius: 0; }
-
-.evo-box-corner-1 {
-  border-radius: 0.025rem; }
-
-.evo-box-corner-2 {
-  border-radius: 0.05rem; }
-
-.evo-box-corner-3 {
+.evo-box-round-1 {
   border-radius: 0.1rem; }
 
-.evo-box-corner-4 {
+.evo-box-round-2 {
   border-radius: 0.15rem; }
 
-.evo-box-corner-5 {
+.evo-box-round-3 {
   border-radius: 0.2rem; }
 
-.evo-box-corner-6 {
+.evo-box-round-4 {
   border-radius: 0.275rem; }
 
-.evo-box-corner-7 {
+.evo-box-round-5 {
   border-radius: 0.375rem; }
 
-.evo-box-corner-8 {
+.evo-box-round-6 {
   border-radius: 0.5rem; }
 
-.evo-box-corner-9 {
+.evo-box-round-7 {
   border-radius: 0.625rem; }
 
-.evo-box-corner-10 {
+.evo-box-round-8 {
   border-radius: 0.75rem; }
 
-.evo-box-corner-11 {
+.evo-box-round-9 {
   border-radius: 0.875rem; }
 
-.evo-box-corner-12 {
+.evo-box-round-10 {
   border-radius: 1rem; }
 
-.evo-box-corner-13 {
+.evo-box-round-11 {
   border-radius: 1.125rem; }
 
-.evo-box-corner-14 {
+.evo-box-round-12 {
   border-radius: 1.3125rem; }
 
-.evo-box-corner-15 {
+.evo-box-round-13 {
   border-radius: 1.4375rem; }
 
-.evo-box-corner-16 {
+.evo-box-round-14 {
   border-radius: 1.875rem; }
 
-.evo-box-corner-17 {
+.evo-box-round-15 {
   border-radius: 2.3125rem; }
-
-.evo-box-corner-18 {
-  border-radius: 2.6875rem; }
-
-.evo-box-corner-19 {
-  border-radius: 3rem; }
-
-.evo-box-corner-20 {
-  border-radius: 3.75rem; }
-
-.evo-box-corner-21 {
-  border-radius: 5rem; }
-
-.evo-box-corner-22 {
-  border-radius: 6rem; }
-
-.evo-box-corner-23 {
-  border-radius: 8rem; }
-
-.evo-box-corner-24 {
-  border-radius: 10rem; }
-
-.evo-box-corner-25 {
-  border-radius: 13rem; }
 
 /*      SPACE     */
 .evo-space, .evo-space-0, .evo-space-1, .evo-space-2, .evo-space-3, .evo-space-4, .evo-space-5, .evo-space-6, .evo-space-7, .evo-space-8, .evo-space-9, .evo-space-10, .evo-space-11, .evo-space-12, .evo-space-13, .evo-space-14, .evo-space-15, .evo-space-16, .evo-space-17, .evo-space-18, .evo-space-19, .evo-space-20, .evo-space-21, .evo-space-22, .evo-space-23, .evo-space-24 {
