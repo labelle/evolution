@@ -14,23 +14,15 @@ $line_color:      #{$gray-light}; // border-top-color
 // $hr_margin_bottom: 1em;
 
 
-#{$evo}-line-reset           { 
+hr#{$evo}-line-reset           { 
 	border: initial;
 	border-top-width: initial;
 	border-top-style: initial;
 	border-top-color: initial;
 }
 
-
-#{$evo}-line-top-reset       { border-top-width: initial; border-top-style: initial; border-top-color: initial; }
-#{$evo}-line-bottom-reset    { border-bottom-width: initial;border-bottom-style: initial;  border-bottom-color: initial; }
-#{$evo}-line-right-reset     { border-right-width: initial; border-right-style: initial; border-right-color: initial; }
-#{$evo}-line-left-reset      { border-left-width: initial; border-left-style: initial; border-left-color: initial; }
-
-
-
 // works for tags: div, hr, ol, ul, li, p, h1, h2, h3, h4, h5, h6
-#{$evo}-line {
+hr#{$evo}-line {
 	border: 0;
 	margin: 0;
 	// margin-top: #{$hr_margin_top}; // 1em
@@ -40,57 +32,20 @@ $line_color:      #{$gray-light}; // border-top-color
 	border-top-color: #{$line_color}; // initial
 }
 
-#{$evo}-line-top-solid           { border-top-style: solid; }
-#{$evo}-line-top-dotted          { border-top-style: dotted; }
-#{$evo}-line-top-dashed          { border-top-style: dashed; }
-#{$evo}-line-top-double          { border-top-style: double; }
-// #{$evo}-line-top-groove          { border-top-style: groove; }
-// #{$evo}-line-top-ridge           { border-top-style: ridge; }
-// #{$evo}-line-top-inset           { border-top-style: inset; }
-// #{$evo}-line-top-outset          { border-top-style: outset; }
+// hr lines
 
-#{$evo}-line-bottom-solid        { border-bottom-style: solid; }
-#{$evo}-line-bottom-dotted       { border-bottom-style: dotted; }
-#{$evo}-line-bottom-dashed       { border-bottom-style: dashed; }
-#{$evo}-line-bottom-double       { border-bottom-style: double; }
-// #{$evo}-line-bottom-groove       { border-bottom-style: groove; }
-// #{$evo}-line-bottom-ridge        { border-bottom-style: ridge; }
-// #{$evo}-line-bottom-inset        { border-bottom-style: inset; }
-// #{$evo}-line-bottom-outset       { border-bottom-style: outset; }
+hr#{$evo}-line-solid           { border-top-style: solid; }
+hr#{$evo}-line-dotted          { border-top-style: dotted; }
+hr#{$evo}-line-dashed          { border-top-style: dashed; }
+hr#{$evo}-line-double          { border-top-style: double; }
+// hr#{$evo}-line-groove          { border-top-style: groove; }
+// hr#{$evo}-line-ridge           { border-top-style: ridge; }
+// hr#{$evo}-line-inset           { border-top-style: inset; }
+// hr#{$evo}-line-outset          { border-top-style: outset; }
 
-#{$evo}-line-right-solid         { border-right-style: solid; }
-#{$evo}-line-right-dotted        { border-right-style: dotted; }
-#{$evo}-line-right-dashed        { border-right-style: dashed; }
-#{$evo}-line-right-double        { border-right-style: double; }
-// #{$evo}-line-right-groove        { border-right-style: groove; }
-// #{$evo}-line-right-ridge         { border-right-style: ridge; }
-// #{$evo}-line-right-inset         { border-right-style: inset; }
-// #{$evo}-line-right-outset        { border-right-style: outset; }
-
-#{$evo}-line-left-solid          { border-left-style: solid; }
-#{$evo}-line-left-dotted         { border-left-style: dotted; }
-#{$evo}-line-left-dashed         { border-left-style: dashed; }
-#{$evo}-line-left-double         { border-left-style: double; }
-// #{$evo}-line-left-groove         { border-left-style: groove; }
-// #{$evo}-line-left-ridge          { border-left-style: ridge; }
-// #{$evo}-line-left-inset          { border-left-style: inset; }
-// #{$evo}-line-left-outset         { border-left-style: outset; }
-
-#{$evo}-line-top-black      { border-top-color: #{$black}; }
-#{$evo}-line-top-gray       { border-top-color: #{$gray-light}; }
-#{$evo}-line-top-white      { border-top-color: #{$white}; }
-
-#{$evo}-line-bottom-black   { border-bottom-color: #{$black}; }
-#{$evo}-line-bottom-gray    { border-bottom-color: #{$gray-light}; }
-#{$evo}-line-bottom-white   { border-bottom-color: #{$white}; }
-
-#{$evo}-line-right-black    { border-right-color: #{$black}; }
-#{$evo}-line-right-gray     { border-right-color: #{$gray-light}; }
-#{$evo}-line-right-white    { border-right-color: #{$white}; }
-
-#{$evo}-line-left-black     { border-left-color: #{$black}; }
-#{$evo}-line-left-gray      { border-left-color: #{$gray-light}; }
-#{$evo}-line-left-white     { border-left-color: #{$white}; }
+hr#{$evo}-line-black      { border-top-color: #{$black}; }
+hr#{$evo}-line-gray       { border-top-color: #{$gray-light}; }
+hr#{$evo}-line-white      { border-top-color: #{$white}; }
 
 
 // Move these to evolution?
@@ -99,33 +54,33 @@ $line_color:      #{$gray-light}; // border-top-color
 // http://www.cssportal.com/blog/style-hr-tag-with-css/
 
 // can the image be limited to a top line?
-#{$evo}-line-gradient-1 { 
+hr#{$evo}-line-gradient-1 { 
   border: 0;
   height: 1px; 
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 }
 
-#{$evo}-line-shadow-1 {
+hr#{$evo}-line-shadow-1 {
   height: 10px;
   border: 0;
   box-shadow: 0 10px 10px -10px #8c8c8c inset;
 }
 
 // Needs to be modified to fit into actual line
-#{$evo}-line-shadow-2 {
+hr#{$evo}-line-shadow-2 {
   border: 0;
   height: 0;
   box-shadow: 0 0 10px 1px black;
 }
 
-#{$evo}-line-symbol-1 { 
+hr#{$evo}-line-symbol-1 { 
   padding: 0;
   border: none; 
   border-top: medium double #8c8c8c; 
   color: #8c8c8c; 
   text-align: center; 
 } 
-#{$evo}-line-symbol-1:after { 
+hr#{$evo}-line-symbol-1:after { 
   content: "§"; 
   display: inline-block; 
   position: relative; 
@@ -135,12 +90,12 @@ $line_color:      #{$gray-light}; // border-top-color
   background: #{$white}; 
 }
 
-#{$evo}-line-symbol-2 { 
+hr#{$evo}-line-symbol-2 { 
   border: 0;
   border-top: 1px dashed #8c8c8c; 
   text-align:center;
 } 
-#{$evo}-line-symbol-2:after { 
+hr#{$evo}-line-symbol-2:after { 
   content: '\002702'; 
   display: inline-block; 
   position: relative; 

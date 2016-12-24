@@ -23,9 +23,11 @@
 put a green border around it. */
 
 div[class*="evo-box"]  {
-padding-bottom: 5%;
-background-color: #eee;
+padding-bottom: 5rem;
+/*background-color: #eee;*/
+margin-top: .5em;
 margin-bottom: 3em;
+/*border-width: 1px;*/
 }
 
 /* If it's a class, but isn't a class containing the string evo-, put a red border around it.
@@ -38,7 +40,7 @@ outline: 5px solid red;
 </style>
 
 </head>
-<body>
+<body style="background-color:#f7f7f7;">
 
 <main>
 
@@ -52,7 +54,7 @@ outline: 5px solid red;
 
 <div class="evo-space-15"></div>
 
-Some boxes will default to a line-width of 'initial', which is equal to 'medium' (e.g. evo-box-gray, evo-box-dashed).
+<p class="evo-measure-wide">Some boxes will default to a line-width of 'initial', which is equal to border-top-width: 'medium' (e.g. evo-box-gray, evo-box-dashed).</p>
 
 <!-- Evo Box Classes -->
 
@@ -61,16 +63,15 @@ Some boxes will default to a line-width of 'initial', which is equal to 'medium'
 
 <!-- Box -->
 
-evo-box-reset (div)
+evo-box-reset
 <div class="evo-box-reset"></div>
 
 <div class="evo-space-15"></div>
 
-evo-box (div)
+evo-box
 <div class="evo-box"></div>
 
 <div class="evo-space-15"></div>
-
 
 <!-- Style -->
 
@@ -104,13 +105,13 @@ evo-box-outset
 <!-- Color -->
 
 evo-box-black
-<div class="evo-box-black"></div>
+<div class="evo-box evo-box-black"></div>
 
 evo-box-gray
-<div class="evo-box-gray"></div>
+<div class="evo-box evo-box-gray"></div>
 
 evo-box-white
-<div class="evo-box-white"></div>
+<div class="evo-box evo-box-white"></div>
 
 <div class="evo-space-15"></div>
 
@@ -131,8 +132,149 @@ evo-box-white-bg
 
 <!-- Mixed -->
 
-evo-box evo-box-gray evo-box-double evo-box-black-bg
-<div class="evo-box evo-box-gray evo-box-double evo-box-black-bg"></div>
+evo-box evo-box-gray evo-box-top-dashed evo-box-black-bg
+<div class="evo-box evo-box-gray evo-box-top-dashed evo-box-black-bg"></div>
+
+<div class="evo-space-15"></div>
+
+
+
+
+<!-- Div Style -->
+
+
+evo-box-top-solid
+<div class="evo-box evo-box-top-solid"></div>
+
+evo-box-top-dotted
+<div class="evo-box evo-box-top-dotted"></div>
+
+evo-box-top-dashed
+<div class="evo-box evo-box-top-dashed"></div>
+
+evo-box-top-double
+<div class="evo-box evo-box-top-double"></div>
+
+<!-- div evo-box-top-groove
+<div class="evo-box-white-bg evo-box-top-groove"></div>
+
+div evo-box-top-ridge
+<div class="evo-box-white-bg evo-box-top-ridge"></div>
+
+div evo-box-top-inset
+<div class="evo-box-white-bg evo-box-top-inset"></div>
+
+div evo-box-top-outset
+<div class="evo-box-white-bg evo-box-top-outset"></div> -->
+
+<div class="evo-space-15"></div>
+
+
+
+<!-- Div Color -->
+
+evo-box-top-black
+<div class="evo-box-top-solid evo-box-top-black"></div>
+
+evo-box-top-gray
+<div class="evo-box-top-solid evo-box-top-gray"></div>
+
+evo-box-top-white
+<div class="evo-box-top-solid evo-box-top-white"></div>
+
+<div class="evo-space-15"></div>
+
+<!-- Mixed -->
+
+div evo-box-gray evo-box-double
+<div class="evo-box-gray evo-box-double"></div>
+
+
+
+<!-- more -->
+<!-- evo-box-top -->
+
+evo-box-top-solid
+<div class="evo-box-top-solid"></div>
+
+evo-box-top-dotted
+<div class="evo-box-top-dotted"></div>
+
+evo-box-top-dashed
+<div class="evo-box-top-dashed"></div>
+
+evo-box-top-double
+<div class="evo-box-top-double"></div>
+
+<!-- evo-box-top-groove
+<div class="evo-box-top-groove"></div>
+
+evo-box-top-ridge
+<div class="evo-box-top-ridge"></div>
+
+evo-box-top-inset
+<div class="evo-box-top-inset"></div>
+
+evo-box-top-outset
+<div class="evo-box-top-outset"></div> -->
+
+<div class="evo-space-15"></div>
+
+
+
+
+
+<!-- evo-box-black -->
+
+evo-box-top-black (paired with evo-box-top-solid)
+<div class="evo-box-top-solid evo-box-top-black"></div>
+
+evo-box-bottom-black
+<div class="evo-box-bottom-solid evo-box-bottom-black"></div>
+
+evo-box-right-black
+<div class="evo-box-right-solid evo-box-right-black"></div>
+
+evo-box-left-black
+<div class="evo-box-left-solid evo-box-left-black"></div>
+
+<div class="evo-space-15"></div>
+
+
+
+<!-- evo-box-gray -->
+
+evo-box-top-gray
+<div class="evo-box-top-solid evo-box-top-gray"></div>
+
+evo-box-bottom-gray
+<div class="evo-box-bottom-solid evo-box-bottom-gray"></div>
+
+evo-box-right-gray
+<div class="evo-box-right-solid evo-box-right-gray"></div>
+
+evo-box-left-gray
+<div class="evo-box-left-solid evo-box-left-gray"></div>
+
+<div class="evo-space-15"></div>
+
+
+
+<!-- evo-box-white -->
+
+<div class="evo-space-15"></div>
+
+evo-box-top-white
+<div class="evo-box-top-solid evo-box-top-white"></div>
+
+evo-box-bottom-white
+<div class="evo-box-bottom-solid evo-box-bottom-white"></div>
+
+evo-box-right-white
+<div class="evo-box-right-solid evo-box-right-white"></div>
+
+evo-box-left-white
+<div class="evo-box-left-solid evo-box-left-white"></div>
 
 <div class="evo-space-15"></div>
 

@@ -22,12 +22,10 @@
 /* If it's a class containing the string evo-,
 put a green border around it. */
 
-div[class*="evo-line"],
-div[class*="evo-box"],
-hr[class*="evo-line"],
-hr[class*="evo-box"]  {
-padding-bottom: 5%;
-background-color: #eee;
+hr[class*="evo-line"] {
+/*padding-bottom: 5rem;*/
+margin-top: .5em;
+/*background-color: #eee;*/
 margin-bottom: 3em;
 }
 
@@ -41,7 +39,7 @@ outline: 5px solid red;
 </style>
 
 </head>
-<body>
+<body style="background-color:#f7f7f7;">
 
 <main>
 
@@ -52,226 +50,166 @@ outline: 5px solid red;
 
       <div class="evo-space-15"></div>
 
-Some line will default to a line-width of 'initial', which is equal to 'medium' (e.g. evo-line-gray, evo-line-dashed).
+
+<h1 class="evo-measure-wide">Line</h1>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure-wide">Apply .evo-line to hr tags. Some lines will default to a line-width of 'initial', which is equal to border-top-width: 'medium' (e.g. evo-line, evo-line-dashed). The .evo-line classes are optimized for hr tags. Hr tags can also accept .evo-space classes. To apply border lines to divs, use .evo-box elements.</p>
 
 <!-- Evo Line and Box Classes -->
 
+<div class="evo-space-20"></div>
+
+
+<!-- Mixed -->
+
+<h3 class="evo-measure-wide">Usage</h3>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure-wide">Combine classes for desired effect.</p>
+
 <div class="evo-space-15"></div>
 
-<!-- hr style defined in evo-reset -->
+evo-line evo-line-gray evo-line-double
+<hr class="evo-line evo-line-gray evo-line-double">
+
+<div class="evo-space-20"></div>
+
+<!-- basic styles -->
+
+<h3 class="evo-measure-wide">Basic</h3>
+
+<div class="evo-space-5"></div>
+
+<div class="evo-space-15"></div>
+
 hr
 <hr>
+
 <div class="evo-space-15"></div>
 
-hr evo-line-reset
-<hr class="evo-line-reset">
-
-hr evo-line
+evo-line
 <hr class="evo-line">
 
-<div class="evo-space-15"></div>
-
-
-
-<!-- div -->
-
-div evo-line-reset
-<div class="evo-line-reset"></div>
-
-div evo-line
-<div class="evo-line"></div>
-
-<div class="evo-space-15"></div>
+<div class="evo-space-20"></div>
 
 
 <!-- HR Style -->
 
 
-hr evo-line-solid
+<h3 class="evo-measure-wide">Style</h3>
+
+<div class="evo-space-5"></div>
+
+
+<div class="evo-space-10"></div>
+
+evo-line-solid
 <hr class="evo-line-solid">
 
-hr evo-line-dotted
+evo-line-dotted
 <hr class="evo-line-dotted">
 
-hr evo-line-dashed
+evo-line-dashed
 <hr class="evo-line-dashed">
 
-hr evo-line-double
+evo-line-double
 <hr class="evo-line-double">
 
-<!-- hr evo-line-groove
+<!-- evo-line-groove
 <hr class="evo-line-groove">
 
-hr evo-line-ridge
+evo-line-ridge
 <hr class="evo-line-ridge">
 
-hr evo-line-inset
+evo-line-inset
 <hr class="evo-line-inset">
 
-hr evo-line-outset
+evo-line-outset
 <hr class="evo-line-outset"> -->
 
-<div class="evo-space-15"></div>
-
-
-
-<!-- Div Style -->
-
-
-div evo-line-solid
-<div class="evo-line-solid"></div>
-
-div evo-line-dotted
-<div class="evo-line-dotted"></div>
-
-div evo-line-dashed
-<div class="evo-line-dashed"></div>
-
-div evo-line-double
-<div class="evo-line-double"></div>
-
-<!-- div evo-line-groove
-<div class="evo-line-groove"></div>
-
-div evo-line-ridge
-<div class="evo-line-ridge"></div>
-
-div evo-line-inset
-<div class="evo-line-inset"></div>
-
-div evo-line-outset
-<div class="evo-line-outset"></div> -->
-
-<div class="evo-space-15"></div>
+<div class="evo-space-20"></div>
 
 
 <!-- hr Color -->
 
-hr evo-line-black
+<h3 class="evo-measure-wide">Color</h3>
+
+
+<div class="evo-space-5"></div>
+
+
+<div class="evo-space-10"></div>
+
+evo-line-black
 <hr class="evo-line-black">
 
-hr evo-line-gray
+evo-line-gray
 <hr class="evo-line-gray">
 
-hr evo-line-white
+evo-line-white
 <hr class="evo-line-white">
 
-<div class="evo-space-15"></div>
-
-
-<!-- Div Color -->
-
-div evo-line-black
-<div class="evo-line-black"></div>
-
-div evo-line-gray
-<div class="evo-line-gray"></div>
-
-div evo-line-white
-<div class="evo-line-white"></div>
-
-<div class="evo-space-15"></div>
-
-<!-- Mixed -->
-
-hr evo-line-gray evo-line-double
-<hr class="evo-line-gray evo-line-double">
-
-div evo-line-gray evo-line-double
-<div class="evo-line-gray evo-line-double"></div>
+<div class="evo-space-20"></div>
 
 
 
-<!-- more -->
-<!-- evo-line-top -->
+<!-- Artistic -->
 
-evo-line-top-solid
-<div class="evo-line-top-solid"></div>
+<h3 class="evo-measure-wide">Artistic</h3>
 
-evo-line-top-dotted
-<div class="evo-line-top-dotted"></div>
 
-evo-line-top-dashed
-<div class="evo-line-top-dashed"></div>
+<div class="evo-space-5"></div>
 
-evo-line-top-double
-<div class="evo-line-top-double"></div>
 
-<!-- evo-line-top-groove
-<div class="evo-line-top-groove"></div>
+<div class="evo-space-10"></div>
 
-evo-line-top-ridge
-<div class="evo-line-top-ridge"></div>
-
-evo-line-top-inset
-<div class="evo-line-top-inset"></div>
-
-evo-line-top-outset
-<div class="evo-line-top-outset"></div> -->
+evo-line-gradient-1
+<hr class="evo-line-gradient-1">
 
 <div class="evo-space-15"></div>
 
+<p class="evo-measure-wide">Create a version 2 of this that tapers slightlty on the right and left (negative margin?) and also a scale that has the shadow extending down. This is a good one to affix to the bottom of any element.</p>
 
-
-
-
-<!-- evo-line-black -->
-
-evo-line-top-black (paired with evo-line-top-solid)
-<div class="evo-line-top-solid evo-line-top-black"></div>
-
-evo-line-bottom-black
-<div class="evo-line-bottom-solid evo-line-bottom-black"></div>
-
-evo-line-right-black
-<div class="evo-line-right-solid evo-line-right-black"></div>
-
-evo-line-left-black
-<div class="evo-line-left-solid evo-line-left-black"></div>
+evo-line-shadow-1
+<hr class="evo-line-shadow-1">
 
 <div class="evo-space-15"></div>
 
+<p class="evo-measure-wide">Adjust this so the right and left side taper off more, and center is darker.</p>
 
-
-<!-- evo-line-gray -->
-
-evo-line-top-gray
-<div class="evo-line-top-solid evo-line-top-gray"></div>
-
-evo-line-bottom-gray
-<div class="evo-line-bottom-solid evo-line-bottom-gray"></div>
-
-evo-line-right-gray
-<div class="evo-line-right-solid evo-line-right-gray"></div>
-
-evo-line-left-gray
-<div class="evo-line-left-solid evo-line-left-gray"></div>
+evo-line-shadow-2
+<hr class="evo-line-shadow-2">
 
 <div class="evo-space-15"></div>
 
+<p class="evo-measure-wide">Move these to patterns.</p>
+
+evo-line-symbol-1
+<hr class="evo-line-symbol-1">
+
+evo-line-symbol-2
+<hr class="evo-line-symbol-2">
+
+<div class="evo-space-20"></div>
+
+<!-- Reset -->
 
 
-<!-- evo-line-white -->
+<h3 class="evo-measure-wide">Reset</h3>
 
-<div class="evo-space-15"></div>
+<div class="evo-space-5"></div>
 
-evo-line-top-white
-<div class="evo-line-top-solid evo-line-top-white"></div>
+<p class="evo-measure-wide">A reset class is available.</p>
 
-evo-line-bottom-white
-<div class="evo-line-bottom-solid evo-line-bottom-white"></div>
+<div class="evo-space-10"></div>
 
-evo-line-right-white
-<div class="evo-line-right-solid evo-line-right-white"></div>
+evo-line-reset
+<hr class="evo-line-reset">
 
-evo-line-left-white
-<div class="evo-line-left-solid evo-line-left-white"></div>
-
-<div class="evo-space-15"></div>
-
-
-
-
+<div class="evo-space-20"></div>
 
 
 

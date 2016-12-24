@@ -13,108 +13,34 @@ $line_color:      #{$gray-light}; // border-top-color
 // $hr_margin_top: 1em;
 // $hr_margin_bottom: 1em;
 
-#{$evo}-line-0          { border-top-width: 0; }
-#{$evo}-line-1          { border-top-width: 1px; }
-#{$evo}-line-2          { border-top-width: 2px; }
-#{$evo}-line-3          { border-top-width: 3px; }
-#{$evo}-line-4          { border-top-width: 4px; }
-#{$evo}-line-5          { border-top-width: 5px; }
-#{$evo}-line-6          { border-top-width: #{$px-0}; } // 6px
-#{$evo}-line-7          { border-top-width: #{$px-1}; } // 8px
-#{$evo}-line-8          { border-top-width: #{$px-2}; } // 10px
-#{$evo}-line-9          { border-top-width: #{$px-3}; } // 12px
-#{$evo}-line-10         { border-top-width: #{$px-4}; } // 14px
-#{$evo}-line-11         { border-top-width: #{$px-5}; } // 16px
-#{$evo}-line-12         { border-top-width: #{$px-6}; } // 18px
-#{$evo}-line-13         { border-top-width: #{$px-7}; } // 21px
-#{$evo}-line-14         { border-top-width: #{$px-8}; } // 23px
-#{$evo}-line-15         { border-top-width: #{$px-9}; } // 30px
+// hr line scale
 
+hr#{$evo}-line-0          { border-top-width: 0; }
+hr#{$evo}-line-1          { border-top-width: 1px; }
+hr#{$evo}-line-2          { border-top-width: 2px; }
+hr#{$evo}-line-3          { border-top-width: 3px; }
+hr#{$evo}-line-4          { border-top-width: 4px; }
+hr#{$evo}-line-5          { border-top-width: 5px; }
+hr#{$evo}-line-6          { border-top-width: #{$px-0}; } // 6px
+hr#{$evo}-line-7          { border-top-width: #{$px-1}; } // 8px
+hr#{$evo}-line-8          { border-top-width: #{$px-2}; } // 10px
+hr#{$evo}-line-9          { border-top-width: #{$px-3}; } // 12px
+hr#{$evo}-line-10         { border-top-width: #{$px-4}; } // 14px
+hr#{$evo}-line-11         { border-top-width: #{$px-5}; } // 16px
+hr#{$evo}-line-12         { border-top-width: #{$px-6}; } // 18px
+hr#{$evo}-line-13         { border-top-width: #{$px-7}; } // 21px
+hr#{$evo}-line-14         { border-top-width: #{$px-8}; } // 23px
+hr#{$evo}-line-15         { border-top-width: #{$px-9}; } // 30px
 
-// Specific scale
+hr#{$evo}-line-thin       { border-top-width: thin; }
+hr#{$evo}-line-medium     { border-top-width: medium; }
+hr#{$evo}-line-thick      { border-top-width: thick; }
 
-#{$evo}-line-top-0          { border-top-width: 0; }
-#{$evo}-line-top-1          { border-top-width: 1px; }
-#{$evo}-line-top-2          { border-top-width: 2px; }
-#{$evo}-line-top-3          { border-top-width: 3px; }
-#{$evo}-line-top-4          { border-top-width: 4px; }
-#{$evo}-line-top-5          { border-top-width: 5px; }
-#{$evo}-line-top-6          { border-top-width: #{$px-0}; } // 6px
-#{$evo}-line-top-7          { border-top-width: #{$px-1}; } // 8px
-#{$evo}-line-top-8          { border-top-width: #{$px-2}; } // 10px
-#{$evo}-line-top-9          { border-top-width: #{$px-3}; } // 12px
-#{$evo}-line-top-10         { border-top-width: #{$px-4}; } // 14px
-#{$evo}-line-top-11         { border-top-width: #{$px-5}; } // 16px
-#{$evo}-line-top-12         { border-top-width: #{$px-6}; } // 18px
-#{$evo}-line-top-13         { border-top-width: #{$px-7}; } // 21px
-#{$evo}-line-top-14         { border-top-width: #{$px-8}; } // 23px
-#{$evo}-line-top-15         { border-top-width: #{$px-9}; } // 30px
+// css quick scale
 
-#{$evo}-line-bottom-0       { border-bottom-width: 0; }
-#{$evo}-line-bottom-1       { border-bottom-width: 1px; }
-#{$evo}-line-bottom-2       { border-bottom-width: 2px; }
-#{$evo}-line-bottom-3       { border-bottom-width: 3px; }
-#{$evo}-line-bottom-4       { border-bottom-width: 4px; }
-#{$evo}-line-bottom-5       { border-bottom-width: 5px; }
-#{$evo}-line-bottom-6       { border-bottom-width: #{$px-0}; } // 6px
-#{$evo}-line-bottom-7       { border-bottom-width: #{$px-1}; } // 8px
-#{$evo}-line-bottom-8       { border-bottom-width: #{$px-2}; } // 10px
-#{$evo}-line-bottom-9       { border-bottom-width: #{$px-3}; } // 12px
-#{$evo}-line-bottom-10      { border-bottom-width: #{$px-4}; } // 14px
-#{$evo}-line-bottom-11      { border-bottom-width: #{$px-5}; } // 16px
-#{$evo}-line-bottom-12      { border-bottom-width: #{$px-6}; } // 18px
-#{$evo}-line-bottom-13      { border-bottom-width: #{$px-7}; } // 21px
-#{$evo}-line-bottom-14      { border-bottom-width: #{$px-8}; } // 23px
-#{$evo}-line-bottom-15      { border-bottom-width: #{$px-9}; } // 30px
-
-#{$evo}-line-right-0        { border-right-width: 0; }
-#{$evo}-line-right-1        { border-right-width: 1px; }
-#{$evo}-line-right-2        { border-right-width: 2px; }
-#{$evo}-line-right-3        { border-right-width: 3px; }
-#{$evo}-line-right-4        { border-right-width: 4px; }
-#{$evo}-line-right-5        { border-right-width: 5px; }
-#{$evo}-line-right-6        { border-right-width: #{$px-0}; } // 6px
-#{$evo}-line-right-7        { border-right-width: #{$px-1}; } // 8px
-#{$evo}-line-right-8        { border-right-width: #{$px-2}; } // 10px
-#{$evo}-line-right-9        { border-right-width: #{$px-3}; } // 12px
-#{$evo}-line-right-10       { border-right-width: #{$px-4}; } // 14px
-#{$evo}-line-right-11       { border-right-width: #{$px-5}; } // 16px
-#{$evo}-line-right-12       { border-right-width: #{$px-6}; } // 18px
-#{$evo}-line-right-13       { border-right-width: #{$px-7}; } // 21px
-#{$evo}-line-right-14       { border-right-width: #{$px-8}; } // 23px
-#{$evo}-line-right-15       { border-right-width: #{$px-9}; } // 30px
-
-#{$evo}-line-left-0         { border-left-width: 0; }
-#{$evo}-line-left-1         { border-left-width: 1px; }
-#{$evo}-line-left-2         { border-left-width: 2px; }
-#{$evo}-line-left-3         { border-left-width: 3px; }
-#{$evo}-line-left-4         { border-left-width: 4px; }
-#{$evo}-line-left-5         { border-left-width: 5px; }
-#{$evo}-line-left-6         { border-left-width: #{$px-0}; } // 6px
-#{$evo}-line-left-7         { border-left-width: #{$px-1}; } // 8px
-#{$evo}-line-left-8         { border-left-width: #{$px-2}; } // 10px
-#{$evo}-line-left-9         { border-left-width: #{$px-3}; } // 12px
-#{$evo}-line-left-10        { border-left-width: #{$px-4}; } // 14px
-#{$evo}-line-left-11        { border-left-width: #{$px-5}; } // 16px
-#{$evo}-line-left-12        { border-left-width: #{$px-6}; } // 18px
-#{$evo}-line-left-13        { border-left-width: #{$px-7}; } // 21px
-#{$evo}-line-left-14        { border-left-width: #{$px-8}; } // 23px
-#{$evo}-line-left-15        { border-left-width: #{$px-9}; } // 30px
-
-
-#{$evo}-line-top-thin       { border-top-width: thin; }
-#{$evo}-line-top-medium     { border-top-width: medium; }
-#{$evo}-line-top-thick      { border-top-width: thick; }
-
-#{$evo}-line-bottom-thin    { border-bottom-width: thin; }
-#{$evo}-line-bottom-medium  { border-bottom-width: medium; }
-#{$evo}-line-bottom-thick   { border-bottom-width: thick; }
-
-#{$evo}-line-right-thin     { border-right-width: thin; }
-#{$evo}-line-right-medium   { border-right-width: medium; }
-#{$evo}-line-right-thick    { border-right-width: thick; }
-
-#{$evo}-line-left-thin      { border-left-width: thin; }
-#{$evo}-line-left-medium    { border-left-width: medium; }
-#{$evo}-line-left-thick     { border-left-width: thick; }
-
+hr#{$evo}-line-lightest       { @extend #{$evo}-line; border-top-width: 1px; border-top-style: dotted; }
+hr#{$evo}-line-lighter        { @extend #{$evo}-line; border-top-width: 1px; }
+hr#{$evo}-line-light          { @extend #{$evo}-line; border-top-width: 2px; }
+hr#{$evo}-line-heavy          { @extend #{$evo}-line; border-top-width: 4px; }
+hr#{$evo}-line-heavier        { @extend #{$evo}-line; border-top-width: 5px; }
+hr#{$evo}-line-heaviest       { @extend #{$evo}-line; border-top-width: #{$px-0}; }

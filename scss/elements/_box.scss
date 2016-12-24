@@ -12,6 +12,7 @@ $box_style:      solid;   // border-top-style
 $box_color:      #{$gray-light}; // border-top-color
 
 
+// box reset
 #{$evo}-box-reset           { 
 	border: initial;
 	border-top-width: initial;
@@ -28,6 +29,13 @@ $box_color:      #{$gray-light}; // border-top-color
 	border-left-color: initial;
 }
 
+#{$evo}-box-top-reset       { border-top-width: initial; border-top-style: initial; border-top-color: initial; }
+#{$evo}-box-bottom-reset    { border-bottom-width: initial;border-bottom-style: initial;  border-bottom-color: initial; }
+#{$evo}-box-right-reset     { border-right-width: initial; border-right-style: initial; border-right-color: initial; }
+#{$evo}-box-left-reset      { border-left-width: initial; border-left-style: initial; border-left-color: initial; }
+
+
+// box base styles
 #{$evo}-box {
 border-top-width:      #{$box_width}; // initial
 border-bottom-width:   #{$box_width}; // initial 
@@ -50,6 +58,8 @@ border-left-style:     #{$box_style}; // solid
 // #{$evo}-box-none           { border-width: none; }
 // ADD Inherit
 
+
+// box border styles
 #{$evo}-box-solid          { border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid; }
 #{$evo}-box-dotted         { border-top-style: dotted; border-bottom-style: dotted; border-right-style: dotted; border-left-style: dotted; }
 #{$evo}-box-dashed         { border-top-style: dashed; border-bottom-style: dashed; border-right-style: dashed; border-left-style: dashed; }
@@ -60,12 +70,75 @@ border-left-style:     #{$box_style}; // solid
 // #{$evo}-box-outset         { border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
 
 
+// box border side styles
+
+#{$evo}-box-top-solid           { border-top-style: solid; }
+#{$evo}-box-top-dotted          { border-top-style: dotted; }
+#{$evo}-box-top-dashed          { border-top-style: dashed; }
+#{$evo}-box-top-double          { border-top-style: double; }
+// #{$evo}-box-top-groove          { border-top-style: groove; }
+// #{$evo}-box-top-ridge           { border-top-style: ridge; }
+// #{$evo}-box-top-inset           { border-top-style: inset; }
+// #{$evo}-box-top-outset          { border-top-style: outset; }
+
+#{$evo}-box-bottom-solid        { border-bottom-style: solid; }
+#{$evo}-box-bottom-dotted       { border-bottom-style: dotted; }
+#{$evo}-box-bottom-dashed       { border-bottom-style: dashed; }
+#{$evo}-box-bottom-double       { border-bottom-style: double; }
+// #{$evo}-box-bottom-groove       { border-bottom-style: groove; }
+// #{$evo}-box-bottom-ridge        { border-bottom-style: ridge; }
+// #{$evo}-box-bottom-inset        { border-bottom-style: inset; }
+// #{$evo}-box-bottom-outset       { border-bottom-style: outset; }
+
+#{$evo}-box-right-solid         { border-right-style: solid; }
+#{$evo}-box-right-dotted        { border-right-style: dotted; }
+#{$evo}-box-right-dashed        { border-right-style: dashed; }
+#{$evo}-box-right-double        { border-right-style: double; }
+// #{$evo}-box-right-groove        { border-right-style: groove; }
+// #{$evo}-box-right-ridge         { border-right-style: ridge; }
+// #{$evo}-box-right-inset         { border-right-style: inset; }
+// #{$evo}-box-right-outset        { border-right-style: outset; }
+
+#{$evo}-box-left-solid          { border-left-style: solid; }
+#{$evo}-box-left-dotted         { border-left-style: dotted; }
+#{$evo}-box-left-dashed         { border-left-style: dashed; }
+#{$evo}-box-left-double         { border-left-style: double; }
+// #{$evo}-box-left-groove         { border-left-style: groove; }
+// #{$evo}-box-left-ridge          { border-left-style: ridge; }
+// #{$evo}-box-left-inset          { border-left-style: inset; }
+// #{$evo}-box-left-outset         { border-left-style: outset; }
+
+
+// box colors
+
 // Use RGBA colors instead?
 #{$evo}-box-gray       { border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
 #{$evo}-box-white      { border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
 #{$evo}-box-black      { border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
 
+#{$evo}-box-top-black      { border-top-color: #{$black}; }
+#{$evo}-box-top-gray       { border-top-color: #{$gray-light}; }
+#{$evo}-box-top-white      { border-top-color: #{$white}; }
+
+#{$evo}-box-bottom-black   { border-bottom-color: #{$black}; }
+#{$evo}-box-bottom-gray    { border-bottom-color: #{$gray-light}; }
+#{$evo}-box-bottom-white   { border-bottom-color: #{$white}; }
+
+#{$evo}-box-right-black    { border-right-color: #{$black}; }
+#{$evo}-box-right-gray     { border-right-color: #{$gray-light}; }
+#{$evo}-box-right-white    { border-right-color: #{$white}; }
+
+#{$evo}-box-left-black     { border-left-color: #{$black}; }
+#{$evo}-box-left-gray      { border-left-color: #{$gray-light}; }
+#{$evo}-box-left-white     { border-left-color: #{$white}; }
+
+
+// box background colors
+// potential ant-pattern? Delete?
+
 #{$evo}-box-gray-bg       { background-color: #{$gray-light} !important; }
 #{$evo}-box-white-bg      { background-color: #{$white} !important; }
 #{$evo}-box-black-bg      { background-color: #{$black} !important; }
+
+
 

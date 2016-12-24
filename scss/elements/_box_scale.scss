@@ -28,14 +28,108 @@ $box_color:      #{$gray-light}; // border-top-color
 #{$evo}-box-14             { border-top-width: #{$px-8}; border-bottom-width: #{$px-8}; border-right-width: #{$px-8}; border-left-width: #{$px-8}; } // 23px
 #{$evo}-box-15             { border-top-width: #{$px-9}; border-bottom-width: #{$px-9}; border-right-width: #{$px-9}; border-left-width: #{$px-9}; } // 30px
 
-// #{$evo}-box-lightest       { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; }
-// #{$evo}-box-lighter        { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
-// #{$evo}-box-light          { @extend #{$evo}-box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
-// #{$evo}-box-heavy          { @extend #{$evo}-box; border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
-// #{$evo}-box-heavier        { @extend #{$evo}-box; border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
-// #{$evo}-box-heaviest       { @extend #{$evo}-box; border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; }
+
+// div box scale
+
+#{$evo}-box-top-0          { border-top-width: 0; }
+#{$evo}-box-top-1          { border-top-width: 1px; }
+#{$evo}-box-top-2          { border-top-width: 2px; }
+#{$evo}-box-top-3          { border-top-width: 3px; }
+#{$evo}-box-top-4          { border-top-width: 4px; }
+#{$evo}-box-top-5          { border-top-width: 5px; }
+#{$evo}-box-top-6          { border-top-width: #{$px-0}; } // 6px
+#{$evo}-box-top-7          { border-top-width: #{$px-1}; } // 8px
+#{$evo}-box-top-8          { border-top-width: #{$px-2}; } // 10px
+#{$evo}-box-top-9          { border-top-width: #{$px-3}; } // 12px
+#{$evo}-box-top-10         { border-top-width: #{$px-4}; } // 14px
+#{$evo}-box-top-11         { border-top-width: #{$px-5}; } // 16px
+#{$evo}-box-top-12         { border-top-width: #{$px-6}; } // 18px
+#{$evo}-box-top-13         { border-top-width: #{$px-7}; } // 21px
+#{$evo}-box-top-14         { border-top-width: #{$px-8}; } // 23px
+#{$evo}-box-top-15         { border-top-width: #{$px-9}; } // 30px
+
+#{$evo}-box-bottom-0       { border-bottom-width: 0; }
+#{$evo}-box-bottom-1       { border-bottom-width: 1px; }
+#{$evo}-box-bottom-2       { border-bottom-width: 2px; }
+#{$evo}-box-bottom-3       { border-bottom-width: 3px; }
+#{$evo}-box-bottom-4       { border-bottom-width: 4px; }
+#{$evo}-box-bottom-5       { border-bottom-width: 5px; }
+#{$evo}-box-bottom-6       { border-bottom-width: #{$px-0}; } // 6px
+#{$evo}-box-bottom-7       { border-bottom-width: #{$px-1}; } // 8px
+#{$evo}-box-bottom-8       { border-bottom-width: #{$px-2}; } // 10px
+#{$evo}-box-bottom-9       { border-bottom-width: #{$px-3}; } // 12px
+#{$evo}-box-bottom-10      { border-bottom-width: #{$px-4}; } // 14px
+#{$evo}-box-bottom-11      { border-bottom-width: #{$px-5}; } // 16px
+#{$evo}-box-bottom-12      { border-bottom-width: #{$px-6}; } // 18px
+#{$evo}-box-bottom-13      { border-bottom-width: #{$px-7}; } // 21px
+#{$evo}-box-bottom-14      { border-bottom-width: #{$px-8}; } // 23px
+#{$evo}-box-bottom-15      { border-bottom-width: #{$px-9}; } // 30px
+
+#{$evo}-box-right-0        { border-right-width: 0; }
+#{$evo}-box-right-1        { border-right-width: 1px; }
+#{$evo}-box-right-2        { border-right-width: 2px; }
+#{$evo}-box-right-3        { border-right-width: 3px; }
+#{$evo}-box-right-4        { border-right-width: 4px; }
+#{$evo}-box-right-5        { border-right-width: 5px; }
+#{$evo}-box-right-6        { border-right-width: #{$px-0}; } // 6px
+#{$evo}-box-right-7        { border-right-width: #{$px-1}; } // 8px
+#{$evo}-box-right-8        { border-right-width: #{$px-2}; } // 10px
+#{$evo}-box-right-9        { border-right-width: #{$px-3}; } // 12px
+#{$evo}-box-right-10       { border-right-width: #{$px-4}; } // 14px
+#{$evo}-box-right-11       { border-right-width: #{$px-5}; } // 16px
+#{$evo}-box-right-12       { border-right-width: #{$px-6}; } // 18px
+#{$evo}-box-right-13       { border-right-width: #{$px-7}; } // 21px
+#{$evo}-box-right-14       { border-right-width: #{$px-8}; } // 23px
+#{$evo}-box-right-15       { border-right-width: #{$px-9}; } // 30px
+
+#{$evo}-box-left-0         { border-left-width: 0; }
+#{$evo}-box-left-1         { border-left-width: 1px; }
+#{$evo}-box-left-2         { border-left-width: 2px; }
+#{$evo}-box-left-3         { border-left-width: 3px; }
+#{$evo}-box-left-4         { border-left-width: 4px; }
+#{$evo}-box-left-5         { border-left-width: 5px; }
+#{$evo}-box-left-6         { border-left-width: #{$px-0}; } // 6px
+#{$evo}-box-left-7         { border-left-width: #{$px-1}; } // 8px
+#{$evo}-box-left-8         { border-left-width: #{$px-2}; } // 10px
+#{$evo}-box-left-9         { border-left-width: #{$px-3}; } // 12px
+#{$evo}-box-left-10        { border-left-width: #{$px-4}; } // 14px
+#{$evo}-box-left-11        { border-left-width: #{$px-5}; } // 16px
+#{$evo}-box-left-12        { border-left-width: #{$px-6}; } // 18px
+#{$evo}-box-left-13        { border-left-width: #{$px-7}; } // 21px
+#{$evo}-box-left-14        { border-left-width: #{$px-8}; } // 23px
+#{$evo}-box-left-15        { border-left-width: #{$px-9}; } // 30px
+
+
+// css border values
 
 #{$evo}-box-thin           { border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: thin; }
 #{$evo}-box-medium         { border-top-width: medium; border-bottom-width: medium; border-right-width: medium; border-left-width: medium; }
 #{$evo}-box-thick          { border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: thick; }
 
+#{$evo}-box-top-thin       { border-top-width: thin; }
+#{$evo}-box-top-medium     { border-top-width: medium; }
+#{$evo}-box-top-thick      { border-top-width: thick; }
+
+#{$evo}-box-bottom-thin    { border-bottom-width: thin; }
+#{$evo}-box-bottom-medium  { border-bottom-width: medium; }
+#{$evo}-box-bottom-thick   { border-bottom-width: thick; }
+
+#{$evo}-box-right-thin     { border-right-width: thin; }
+#{$evo}-box-right-medium   { border-right-width: medium; }
+#{$evo}-box-right-thick    { border-right-width: thick; }
+
+#{$evo}-box-left-thin      { border-left-width: thin; }
+#{$evo}-box-left-medium    { border-left-width: medium; }
+#{$evo}-box-left-thick     { border-left-width: thick; }
+
+
+// css quick scale
+
+#{$evo}-box-lightest       { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; }
+#{$evo}-box-lighter        { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
+#{$evo}-box-light          { @extend #{$evo}-box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
+#{$evo}-box-heavy          { @extend #{$evo}-box; border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
+#{$evo}-box-heavier        { @extend #{$evo}-box; border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
+#{$evo}-box-heaviest       { @extend #{$evo}-box; border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; }
+
+// TO DO need values for each side of the box?

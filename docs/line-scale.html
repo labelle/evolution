@@ -22,12 +22,10 @@
 /* If it's a class containing the string evo-,
 put a green border around it. */
 
-div[class*="evo-line"],
-div[class*="evo-box"],
-hr[class*="evo-line"],
-hr[class*="evo-box"]  {
-padding-bottom: 5%;
-background-color: #eee;
+hr[class*="evo-line"]  {
+/*padding-bottom: 5rem;*/
+margin-top: .5em;
+/*background-color: #eee;*/
 margin-bottom: 3em;
 }
 
@@ -41,7 +39,7 @@ outline: 5px solid red;
 </style>
 
 </head>
-<body>
+<body style="background-color:#f7f7f7;">
 
 <main>
 
@@ -52,7 +50,7 @@ outline: 5px solid red;
 
       <div class="evo-space-15"></div>
 
-Some line will default to a line-width of 'initial', which is equal to 'medium' (e.g. evo-line-gray, evo-line-dashed).
+<p class="evo-measure-wide">Some lines will default to a line-width of 'initial', which is equal to border-top-width: 'medium' (e.g. evo-line, evo-line-dashed). The .evo-line classes work with both divs and hr tags.</p>
 
 <!-- Evo Line and Box Classes -->
 
@@ -60,7 +58,7 @@ Some line will default to a line-width of 'initial', which is equal to 'medium' 
 
 
 <!-- hr Lines -->
-evo-line-1 (hr)
+evo-line-1
 <hr class="evo-line-1">
 
 evo-line-2
@@ -153,11 +151,8 @@ evo-line-heaviest
 
 <!-- Mixed -->
 
-hr evo-line-gray evo-line-10 evo-line-double
+evo-line-gray evo-line-10 evo-line-double
 <hr class="evo-line-gray evo-line-10 evo-line-double">
-
-div evo-line-gray evo-line-10 evo-line-double
-<div class="evo-line-gray evo-line-10 evo-line-double"></div>
 
 
     </div>
