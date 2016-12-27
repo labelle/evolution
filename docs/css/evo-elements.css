@@ -1009,10 +1009,11 @@ ul.evo-list-bullets-color {
   background-color: #fff200; }
 
 hr.evo-line-reset {
-  border: initial;
-  border-top-width: initial;
-  border-top-style: initial;
-  border-top-color: initial; }
+  margin: 0;
+  border: 0;
+  border-top-width: 0;
+  border-top-style: 0;
+  border-top-color: 0; }
 
 hr.evo-line, hr.evo-line-lightest, hr.evo-line-lighter, hr.evo-line-light, hr.evo-line-heavy, hr.evo-line-heavier, hr.evo-line-heaviest {
   border: 0;
