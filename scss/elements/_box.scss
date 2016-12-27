@@ -52,6 +52,30 @@ border-left-color:     #{$box_color}; // initial
 border-left-style:     #{$box_style}; // solid
 }
 
+#{$evo}-box-top {
+border-top-width:      #{$box_width}; // initial
+border-top-style:      #{$box_style}; // solid
+border-top-color:      #{$box_color}; // initial
+}
+
+#{$evo}-box-bottom {
+border-bottom-width:      #{$box_width}; // initial
+border-bottom-style:      #{$box_style}; // solid
+border-bottom-color:      #{$box_color}; // initial
+}
+
+#{$evo}-box-right {
+border-right-width:      #{$box_width}; // initial
+border-right-style:      #{$box_style}; // solid
+border-right-color:      #{$box_color}; // initial
+}
+
+#{$evo}-box-left {
+border-left-width:      #{$box_width}; // initial
+border-left-style:      #{$box_style}; // solid
+border-left-color:      #{$box_color}; // initial
+}
+
 // // https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style
 // #{$evo}-box-unset          { border-width: unset; }
 // #{$evo}-box-hidden         { border-width: hidden; }

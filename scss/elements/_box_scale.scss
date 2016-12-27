@@ -124,12 +124,45 @@ $box_color:      #{$gray-light}; // border-top-color
 
 
 // css quick scale
-
-#{$evo}-box-lightest       { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; }
+#{$evo}-box-lightest       { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-left-style: dotted; border-bottom-style: dotted;}
 #{$evo}-box-lighter        { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
 #{$evo}-box-light          { @extend #{$evo}-box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
 #{$evo}-box-heavy          { @extend #{$evo}-box; border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
 #{$evo}-box-heavier        { @extend #{$evo}-box; border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
 #{$evo}-box-heaviest       { @extend #{$evo}-box; border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; }
 
-// TO DO need values for each side of the box?
+
+// css quick scale top side
+#{$evo}-box-top-lightest       { @extend #{$evo}-box-top; border-top-width: 1px; border-top-style: dotted; }
+#{$evo}-box-top-lighter        { @extend #{$evo}-box-top; border-top-width: 1px; }
+#{$evo}-box-top-light          { @extend #{$evo}-box-top; border-top-width: 2px; }
+#{$evo}-box-top-heavy          { @extend #{$evo}-box-top; border-top-width: 4px; }
+#{$evo}-box-top-heavier        { @extend #{$evo}-box-top; border-top-width: 5px; }
+#{$evo}-box-top-heaviest       { @extend #{$evo}-box-top; border-top-width: #{$px-0}; }
+
+
+// css quick scale bottom side
+#{$evo}-box-bottom-lightest       { @extend #{$evo}-box-bottom; border-bottom-width: 1px; border-bottom-style: dotted; }
+#{$evo}-box-bottom-lighter        { @extend #{$evo}-box-bottom; border-bottom-width: 1px; }
+#{$evo}-box-bottom-light          { @extend #{$evo}-box-bottom; border-bottom-width: 2px; }
+#{$evo}-box-bottom-heavy          { @extend #{$evo}-box-bottom; border-bottom-width: 4px; }
+#{$evo}-box-bottom-heavier        { @extend #{$evo}-box-bottom; border-bottom-width: 5px; }
+#{$evo}-box-bottom-heaviest       { @extend #{$evo}-box-bottom; border-bottom-width: #{$px-0}; }
+
+// css quick scale right side
+#{$evo}-box-right-lightest       { @extend #{$evo}-box-right; border-right-width: 1px; border-right-style: dotted; }
+#{$evo}-box-right-lighter        { @extend #{$evo}-box-right; border-right-width: 1px; }
+#{$evo}-box-right-light          { @extend #{$evo}-box-right; border-right-width: 2px; }
+#{$evo}-box-right-heavy          { @extend #{$evo}-box-right; border-right-width: 4px; }
+#{$evo}-box-right-heavier        { @extend #{$evo}-box-right; border-right-width: 5px; }
+#{$evo}-box-right-heaviest       { @extend #{$evo}-box-right; border-right-width: #{$px-0}; }
+
+// css quick scale left side
+#{$evo}-box-left-lightest       { @extend #{$evo}-box-left; border-left-width: 1px; border-left-style: dotted; }
+#{$evo}-box-left-lighter        { @extend #{$evo}-box-left; border-left-width: 1px; }
+#{$evo}-box-left-light          { @extend #{$evo}-box-left; border-left-width: 2px; }
+#{$evo}-box-left-heavy          { @extend #{$evo}-box-left; border-left-width: 4px; }
+#{$evo}-box-left-heavier        { @extend #{$evo}-box-left; border-left-width: 5px; }
+#{$evo}-box-left-heaviest       { @extend #{$evo}-box-left; border-left-width: #{$px-0}; }
+
+
