@@ -31,15 +31,17 @@
 
 
 // Text
-
+// Should we eliminate margin top and margin bottom? Or make them inherit?
 #{$evo}-text {
   font-size:       #{$text_size};
   color:           #{$text_color};
   font-family:     #{$text_font_family};
   font-weight:     #{$text_font_weight};
   line-height:     #{$text_line_height};
-  margin-top:      #{$text_margin_top};
-  margin-bottom:   #{$text_margin_bottom};
+
+  // margin-top:      inherit; // #{$text_margin_top}
+  // margin-bottom:   inherit; // #{$text_margin_bottom}
+  
   // margin-left:     #{$text_margin_left};
   // padding-left:    #{$text_padding_left};
   // list-style-position: #{$text_list_style_position};
@@ -65,6 +67,7 @@
 #{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
 
 
+#{$evo}-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
 
 // Element Mixins
 @mixin base($base) { 

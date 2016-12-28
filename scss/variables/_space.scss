@@ -5,11 +5,8 @@
 // Override these in settings.scss
 
 
-// @import "settings";
-
-
 // Spacers
-$space_height:						1rem !default;
+$space_height:						floor(3.05rem) !default;  // 48px
 $space_width:						auto !default;
 
 // @import "settings";

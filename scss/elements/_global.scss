@@ -7,18 +7,31 @@
 
 // html
 html {
-  // font-size: #{$global_text_size}; // 1rem
-  // color: #{$global_text_color}; // initial
-  // font-family: #{$global_text_font_family}; // sans-serif
+  // font-size:       #{$text_size};
+  // color:           #{$text_color};
+  // font-family:     #{$text_font_family};
+  // font-weight:     #{$text_font_weight};
+  // line-height:     #{$text_line_height};
+  // margin-top:      #{$text_margin_top};
+  // margin-bottom:   #{$text_margin_bottom};
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // body                     	{}
 
 body {
-  font-size: #{$global_text_size}; // 100%
-  line-height: #{$global_text_line_height}; // 1.4375
-  font-weight: #{$global_font-weight}; // initial
+  font-size:       #{$text_size};
+  // color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  // font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  // margin-top:      #{$text_margin_top};
+  // margin-bottom:   #{$text_margin_bottom};
+}
+
+body.site-container {
+    margin: 2.5% 5%;
+    background-color:#f7f7f7;
 }
 
 // a 							{}
@@ -28,13 +41,32 @@ body {
 // idealy a softer gray with decent contrast
 // this will be overriden by specific text classes
 
-p {
-  // font-size: #{$text_size}; // 1rem
-  color: #{$text_color}; // #333333
-  // font-family: #{$text_font_family}; // sans-serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+div,
+p,
+ul,
+ol,
+li {
+  // font-size:       #{$text_size};
+  color:           #{$text_color};
+  // font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  // line-height:     #{$text_line_height};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+p {
+  color:          #555;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 // hr {
 // margin-top: 20px;

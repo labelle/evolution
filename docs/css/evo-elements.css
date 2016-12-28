@@ -31,12 +31,34 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-size: 100%;
-  line-height: 1.4375;
-  font-weight: initial; }
+  font-size: 1rem;
+  font-family: monospace;
+  line-height: 1.4375; }
+
+body.site-container {
+  margin: 2.5% 5%;
+  background-color: #f7f7f7; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+div,
+p,
+ul,
+ol,
+li {
+  color: initial;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1.4375em;
+  -webkit-tap-highlight-color: transparent; }
 
 p {
-  color: #333333;
+  color: #555;
   -webkit-tap-highlight-color: transparent; }
 
 .sr-only {
@@ -59,10 +81,10 @@ p {
 
 /*      FONTS     */
 .evo-font {
-  font-family: sans-serif; }
+  font-family: monospace; }
 
 .evo-font-1 {
-  font-family: sans-serif; }
+  font-family: monospace; }
 
 .evo-font-sans-serif {
   font-family: sans-serif; }
@@ -189,12 +211,10 @@ p {
 
 .evo-text {
   font-size: 1rem;
-  color: #333333;
-  font-family: sans-serif;
+  color: initial;
+  font-family: monospace;
   font-weight: normal;
-  line-height: 1.4375;
-  margin-top: 0;
-  margin-bottom: 1.4375em; }
+  line-height: 1.4375; }
 
 .evo-text-bold {
   font-weight: bold; }
@@ -242,6 +262,9 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip; }
+
+.evo-measure {
+  max-width: 55rem; }
 
 .evo-text-reset {
   line-height: initial; }
@@ -435,40 +458,40 @@ p {
 .evo-text-giant {
   font-size: 10rem; }
 
-.evo-leading-tightest {
+.evo-leading-smallest {
   line-height: 0.5; }
 
-.evo-leading-tighter {
+.evo-leading-smaller {
   line-height: 0.75; }
 
-.evo-leading-tight {
+.evo-leading-small {
   line-height: 1; }
 
-.evo-leading-loose {
+.evo-leading-big {
   line-height: 1.3125; }
 
-.evo-leading-looser {
+.evo-leading-bigger {
   line-height: 1.875; }
 
-.evo-leading-loosest {
+.evo-leading-biggest {
   line-height: 2.6875; }
 
-.evo-tracking-tightest {
+.evo-tracking-smallest {
   letter-spacing: -0.075em; }
 
-.evo-tracking-tighter {
+.evo-tracking-smaller {
   letter-spacing: -0.05em; }
 
-.evo-tracking-tight {
+.evo-tracking-small {
   letter-spacing: -0.025em; }
 
-.evo-tracking-loose {
+.evo-tracking-big {
   letter-spacing: 0.025em; }
 
-.evo-tracking-looser {
+.evo-tracking-bigger {
   letter-spacing: 0.05em; }
 
-.evo-tracking-loosest {
+.evo-tracking-biggest {
   letter-spacing: 0.1em; }
 
 .evo-measure-1 {
@@ -1863,7 +1886,13 @@ hr.evo-line-heaviest {
   border-radius: 3rem; }
 
 /*      SPACE     */
-.evo-space, .evo-space-0, .evo-space-1, .evo-space-2, .evo-space-3, .evo-space-4, .evo-space-5, .evo-space-6, .evo-space-7, .evo-space-8, .evo-space-9, .evo-space-10, .evo-space-11, .evo-space-12, .evo-space-13, .evo-space-14, .evo-space-15, .evo-space-16, .evo-space-17, .evo-space-18, .evo-space-19, .evo-space-20, .evo-space-21, .evo-space-22, .evo-space-23, .evo-space-24, .evo-space-25, .evo-space-26, .evo-space-27, .evo-space-28, .evo-space-29, .evo-space-30 {
+.evo-space-reset {
+  height: 0px;
+  width: auto;
+  clear: both; }
+
+.evo-space {
+  height: 3rem;
   width: auto;
   clear: both; }
 
@@ -1877,19 +1906,19 @@ hr.evo-line-heaviest {
   height: 4px; }
 
 .evo-space-3 {
-  height: 6px; }
+  height: 0.375rem; }
 
 .evo-space-4 {
-  height: .5rem; }
+  height: 0.5rem; }
 
 .evo-space-5 {
-  height: .625rem; }
+  height: 0.625rem; }
 
 .evo-space-6 {
-  height: .75rem; }
+  height: 0.75rem; }
 
 .evo-space-7 {
-  height: .875rem; }
+  height: 0.875rem; }
 
 .evo-space-8 {
   height: 1rem; }
@@ -1959,6 +1988,24 @@ hr.evo-line-heaviest {
 
 .evo-space-30 {
   height: 125rem; }
+
+.evo-space-smallest {
+  height: 0.5rem; }
+
+.evo-space-smaller {
+  height: 1.125rem; }
+
+.evo-space-small {
+  height: 1.875rem; }
+
+.evo-space-big {
+  height: 3.75rem; }
+
+.evo-space-bigger {
+  height: 6rem; }
+
+.evo-space-biggest {
+  height: 10rem; }
 
 /* SHADOWS */
 .text-shadow-0 {

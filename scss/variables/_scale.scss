@@ -49,6 +49,9 @@ $u-40: ceil(33.825) !default; // 544px
 $u-41: ceil(41.81) !default; // 672px
 $u-42: ceil(54.73) !default; // 880px
 $u-43: ceil(67.65) !default; // 1088px
+// Are these below the correct value?
+$u-44: ceil(101.64285714) !default;  // 1423px
+$u-45: floor(125.71428571) !default;  // 1760px
 
 
 // pixel scale
@@ -80,8 +83,9 @@ $px-22: 544px !default;
 $px-23: 672px !default;
 $px-24: 880px !default;
 $px-25: 1088px !default;
-// 1423 101.64285714rem
-// 1760 125.71428571REM
+// Are these below the correct value?
+$px-26: 1423px !default;
+$px-27: 1760px !default;
 
 // @import "settings";
 

@@ -184,21 +184,21 @@
 
 
 // Relative Text Leading
-#{$evo}-leading-tightest  { @include leading(tightest); }
-#{$evo}-leading-tighter   { @include leading(tighter); }
-#{$evo}-leading-tight     { @include leading(tight); }
-#{$evo}-leading-loose     { @include leading(loose); }
-#{$evo}-leading-looser    { @include leading(looser); }
-#{$evo}-leading-loosest   { @include leading(loosest); }
+#{$evo}-leading-smallest  { @include leading(tightest); }
+#{$evo}-leading-smaller   { @include leading(tighter); }
+#{$evo}-leading-small     { @include leading(tight); }
+#{$evo}-leading-big       { @include leading(loose); }
+#{$evo}-leading-bigger    { @include leading(looser); }
+#{$evo}-leading-biggest   { @include leading(loosest); }
 
 
 // Relative Text Tracking
-#{$evo}-tracking-tightest { @include tracking(tightest); }
-#{$evo}-tracking-tighter  { @include tracking(tighter); }
-#{$evo}-tracking-tight    { @include tracking(tight); }
-#{$evo}-tracking-loose    { @include tracking(loose); }
-#{$evo}-tracking-looser   { @include tracking(looser); }
-#{$evo}-tracking-loosest  { @include tracking(loosest); }
+#{$evo}-tracking-smallest { @include tracking(tightest); }
+#{$evo}-tracking-smaller  { @include tracking(tighter); }
+#{$evo}-tracking-small    { @include tracking(tight); }
+#{$evo}-tracking-big      { @include tracking(loose); }
+#{$evo}-tracking-bigger   { @include tracking(looser); }
+#{$evo}-tracking-biggest  { @include tracking(loosest); }
 
 
 // Relative Text Measure

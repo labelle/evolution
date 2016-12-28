@@ -32,17 +32,18 @@ $brand_text_font_family_2:          sans-serif !default;
 $brand_text_font_family_3:          sans-serif !default;
 
 
-// Typography
-// alt font-size is calc(1em + 1vw)
-// pg 32 inclusive design patterns 
-$global_text_size:                  100% !default; // e.g. 1rem or 16px or 100%
-$global_text_color:                 initial !default; // e.g. Black or #000000
-$global_text_font_family:           sans-serif !default; // e.g. #{$font_arial}
-$global_font-weight:                initial !default;
-$global_text_line_height:           1.4375 !default; // no em, rem, px, %
+// // Typography
+// // alt font-size is calc(1em + 1vw)
+// // pg 32 inclusive design patterns 
+// $global_text_size:                  1rem !default; // e.g. 1rem or 16px or 100%
+// $global_text_color:                 initial !default; // e.g. Black or #000000
+// $global_text_font_family:           sans-serif !default; // e.g. #{$arial}
+// $global_font_weight:                initial !default;
+// $global_text_line_height:           1.4375 !default; // no em, rem, px, %
 
 
 // Fonts
+// Generic font-stacks
 $sans-serif:                        sans-serif !default;
 $serif:                             serif !default;
 $monospace:                         monospace !default;
@@ -52,9 +53,9 @@ $cursive:                           cursive !default;
 // Text
 // MATCH TO SETTINGS
 // MOVE TO TEXT VARIABLE PAGE?
-$text_size:                         1rem !default;
-$text_color:                        #333333 !default;
-$text_font_family:                  sans-serif !default;
+$text_size:                         1rem !default; // e.g. 1rem or 16px or 100%
+$text_color:                        initial !default; // e.g. Black or #000000
+$text_font_family:                  #{$monospace} !default; // e.g. #{$arial} or #{$sans-serif}
 $text_font_weight:                  normal !default;
 $text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem, px, %
 $text_margin_top:                   0 !default;
@@ -62,11 +63,11 @@ $text_margin_bottom:                1.4375em !default; // OR REM?
 
 
 // Links
-$default_link_color:                #cccccc !default;
-$default_link_color_visited:        #000000 !default;
-$default_link_color_hover:          darker(rgb( 0, 174, 239 ),50%) !default; // cyan
-$default_link_color_active:         rgb( 0, 174, 239 ) !default; // cyan
-$default_link_underline:            none !default;
+$link_color:                        #cccccc !default;
+$link_color_visited:                #000000 !default;
+$link_color_hover:                  darker(rgb( 0, 174, 239 ),50%) !default; // cyan
+$link_color_active:                 rgb( 0, 174, 239 ) !default; // cyan
+$link_underline:                    none !default;
 
 
 // Font stacks

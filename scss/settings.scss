@@ -40,18 +40,18 @@ $brand_text_font_family_2:          null; // sans-serif
 $brand_text_font_family_3:          null; // sans-serif
 
 
-// Typography
-// These are applied to the body tag via the _base.scss file
-// By default, Evolution does not define a font-family or font-color, so it's easyto customize and override
-// Size: Most browsers are 100% or 16px, along with Bootstrap 4, while Bootstrap 3 is 87.5% or 14px 
-// Color: Most browsers default to black
-// Font: Safari defaults to a Sans-Serif font-family, while most browsers use sans-serif such as Arial
-// See Fonts in settings.scss for full list of options such as $font_arial, $font_georgia, $font_monaco
-$global_text_size:                  null; // 100%, or 1rem or 16px
-$global_text_color:                 null; // initial
-$global_text_font_family:           null; // sans-serif
-$global_font-weight:                null; // initial
-$global_text_line_height:           null; // 1.4375, no em, rem, px, %
+// // Typography
+// // These are applied to the body tag via the _base.scss file
+// // By default, Evolution does not define a font-family or font-color, so it's easyto customize and override
+// // Size: Most browsers are 100% or 16px, along with Bootstrap 4, while Bootstrap 3 is 87.5% or 14px 
+// // Color: Most browsers default to black
+// // Font: Safari defaults to a Sans-Serif font-family, while most browsers use sans-serif such as Arial
+// // See _font.scss in /variables for full list of options such as $arial, $georgia, $monaco
+// $global_text_size:                  null; // 100%, or 1rem or 16px
+// $global_text_color:                 null; // initial
+// $global_text_font_family:           null; // sans-serif
+// $global_font-weight:                null; // initial
+// $global_text_line_height:           null; // 1.4375, no em, rem, px, %
 
 // Fonts
 // These generic font stacks can be customized as you see fit
@@ -62,20 +62,26 @@ $cursive:                           null; //cursive
 
 
 // Text
-$text_size:                         null; // 1rem
-$text_color:                        null; // #333333
+// These are applied to the body tag via the _base.scss file
+// By default, Evolution does not define a font-family or font-color, so it's easyto customize and override
+// Size: Most browsers are 100% or 16px, along with Bootstrap 4, while Bootstrap 3 is 87.5% or 14px 
+// Color: Most browsers default to black
+// Font: Safari defaults to a Sans-Serif font-family, while most browsers use sans-serif such as Arial
+// See _font.scss in /variables for full list of options such as $arial, $georgia, $monaco
+$text_size:                         null; // 1rem, or 100% or 16px
+$text_color:                        null; // initial
 $text_font_family:                  null; // sans-serif
 $text_font_weight:                  null; // normal
-$text_line_height:                  null; // 1.4375
+$text_line_height:                  null; // 1.4375, no em, rem, px, %
 $text_margin_top:                   null; // 0rem
-$text_margin_bottom:                null; // 1.4375rem 0
+$text_margin_bottom:                null; // 1.4375em
 
 
 // Links
-$default_link_color:                null; // #cccccc
-$default_link_color_visited:        null; // #000000
-$default_link_color_hover:          null; // darker(rgb( 0, 174, 239 ),50%) // cyan
-$default_link_color_active:         null; // rgb( 0, 174, 239 ); // cyan
-$default_link_underline:            null; // none
+$link_color:                        null; // #cccccc
+$link_color_visited:                null; // #000000
+$link_color_hover:                  null; // darker(rgb( 0, 174, 239 ),50%) // cyan
+$link_color_active:                 null; // rgb( 0, 174, 239 ); // cyan
+$link_underline:                    null; // none
 
 // @import "variables";
