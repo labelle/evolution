@@ -41,7 +41,7 @@
 
 // Space sizes space-0 through space-24
 // Silent classes are available e.g. %space-15
-@for $i from 0 through 24 {
+@for $i from 0 through 30 {
     #{$evo}-space-#{$i} {
     @extend #{$evo}-space;
     @if ($i == 0) { height: 1px; }
@@ -69,9 +69,12 @@
     @else if ($i == 22) { height: ceil(15.97rem); }  // 256px
     @else if ($i == 23) { height: ceil(20.905rem); } // 336px
     @else if ($i == 24) { height: ceil(25.84rem); }  // 416px
-    // @else if ($i == 25) { height: ceil(33.825rem); } // 544px
-    // @else if ($i == 26) { height: ceil(41.81rem); }  // 672px
-    // @else if ($i == 27) { height: ceil(54.73rem); }  // 880px
-    // @else if ($i == 28) { height: ceil(67.65rem); }  // 1088px
+    @else if ($i == 25) { height: ceil(33.825rem); } // 544px
+    @else if ($i == 26) { height: ceil(41.81rem); }  // 672px
+    @else if ($i == 27) { height: ceil(54.73rem); }  // 880px
+    @else if ($i == 28) { height: ceil(67.65rem); }  // 1088px
+    // Are these two below the correct size?
+    @else if ($i == 29) { height: ceil(101.64285714rem); }  // 1423px
+    @else if ($i == 30) { height: floor(125.71428571rem); }  // 1760px
     }
   }
