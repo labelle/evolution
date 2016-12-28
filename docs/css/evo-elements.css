@@ -309,152 +309,107 @@ p {
 .evo-text-20 {
   font-size: 21rem; }
 
-.evo-text-21 {
-  font-size: 26rem; }
-
-.evo-text-22 {
-  font-size: 34rem; }
-
-.evo-text-23 {
-  font-size: 42rem; }
-
-.evo-text-24 {
-  font-size: 55rem; }
-
-.evo-text-25 {
-  font-size: 68rem; }
-
 .evo-leading-reset {
   line-height: initial; }
 
 .evo-leading-0 {
-  line-height: 0.2; }
-
-.evo-leading-1 {
-  line-height: 0.275; }
-
-.evo-leading-2 {
   line-height: 0.375; }
 
-.evo-leading-3 {
+.evo-leading-1 {
   line-height: 0.5; }
 
-.evo-leading-4 {
+.evo-leading-2 {
   line-height: 0.625; }
 
-.evo-leading-5 {
+.evo-leading-3 {
   line-height: 0.75; }
 
-.evo-leading-6 {
+.evo-leading-4 {
   line-height: 0.875; }
 
-.evo-leading-7 {
+.evo-leading-5 {
   line-height: 1; }
 
-.evo-leading-8 {
+.evo-leading-6 {
   line-height: 1.125; }
 
-.evo-leading-9 {
+.evo-leading-7 {
   line-height: 1.3125; }
 
-.evo-leading-10 {
+.evo-leading-8 {
   line-height: 1.4375; }
 
-.evo-leading-11 {
+.evo-leading-9 {
   line-height: 1.875; }
 
-.evo-leading-12 {
+.evo-leading-10 {
   line-height: 2.3125; }
 
-.evo-leading-13 {
+.evo-leading-11 {
   line-height: 2.6875; }
 
-.evo-leading-14 {
+.evo-leading-12 {
   line-height: 3; }
 
-.evo-leading-15 {
+.evo-leading-13 {
   line-height: 3.75; }
+
+.evo-leading-14 {
+  line-height: 5; }
+
+.evo-leading-15 {
+  line-height: 6; }
 
 .evo-tracking-reset {
   letter-spacing: initial; }
 
 .evo-tracking-0 {
-  letter-spacing: -0.2em; }
-
-.evo-tracking-1 {
-  letter-spacing: -0.1875em; }
-
-.evo-tracking-2 {
-  letter-spacing: -0.175em; }
-
-.evo-tracking-3 {
-  letter-spacing: -0.1625em; }
-
-.evo-tracking-4 {
-  letter-spacing: -0.15em; }
-
-.evo-tracking-5 {
   letter-spacing: -0.1375em; }
 
-.evo-tracking-6 {
+.evo-tracking-1 {
   letter-spacing: -0.125em; }
 
-.evo-tracking-7 {
+.evo-tracking-2 {
   letter-spacing: -0.1em; }
 
-.evo-tracking-8 {
+.evo-tracking-3 {
   letter-spacing: -0.075em; }
 
-.evo-tracking-9 {
+.evo-tracking-4 {
   letter-spacing: -0.05em; }
 
-.evo-tracking-10 {
+.evo-tracking-5 {
   letter-spacing: -0.025em; }
 
-.evo-tracking-11 {
+.evo-tracking-6 {
   letter-spacing: 0em; }
 
-.evo-tracking-12 {
+.evo-tracking-7 {
   letter-spacing: 0.025em; }
 
-.evo-tracking-13 {
+.evo-tracking-8 {
   letter-spacing: 0.05em; }
 
-.evo-tracking-14 {
+.evo-tracking-9 {
   letter-spacing: 0.1em; }
 
-.evo-tracking-15 {
+.evo-tracking-10 {
   letter-spacing: 0.15em; }
 
-.evo-tracking-16 {
+.evo-tracking-11 {
   letter-spacing: 0.2em; }
 
-.evo-tracking-17 {
+.evo-tracking-12 {
   letter-spacing: 0.275em; }
 
-.evo-tracking-18 {
+.evo-tracking-13 {
   letter-spacing: 0.375em; }
 
-.evo-tracking-19 {
+.evo-tracking-14 {
   letter-spacing: 0.5em; }
 
-.evo-tracking-20 {
+.evo-tracking-15 {
   letter-spacing: 0.625em; }
-
-.evo-tracking-21 {
-  letter-spacing: 0.75em; }
-
-.evo-tracking-22 {
-  letter-spacing: 0.875em; }
-
-.evo-tracking-23 {
-  letter-spacing: 1em; }
-
-.evo-tracking-24 {
-  letter-spacing: 1.125em; }
-
-.evo-tracking-25 {
-  letter-spacing: 1.3125em; }
 
 .evo-text-smallest {
   font-size: 0.5rem; }
@@ -519,27 +474,6 @@ p {
 .evo-measure-1 {
   max-width: 10rem; }
 
-.evo-measure-widest {
-  max-width: 70rem; }
-
-.evo-measure-wider {
-  max-width: 60rem; }
-
-.evo-measure-wide {
-  max-width: 50rem; }
-
-.evo-measure-tight {
-  max-width: 40rem; }
-
-.evo-measure-tighter {
-  max-width: 30rem; }
-
-.evo-measure-tightest {
-  max-width: 20rem; }
-
-.evo-measure-1 {
-  max-width: 10rem; }
-
 .evo-measure-2 {
   max-width: 13rem; }
 
@@ -566,21 +500,6 @@ p {
 
 .evo-measure-10 {
   max-width: 80rem; }
-
-.evo-measure-11 {
-  max-width: 100rem; }
-
-.evo-measure-12 {
-  max-width: 120rem; }
-
-.evo-measure-13 {
-  max-width: 130rem; }
-
-.evo-measure-14 {
-  max-width: 140rem; }
-
-.evo-measure-15 {
-  max-width: 150rem; }
 
 /* Lists */
 .evo-list-none {

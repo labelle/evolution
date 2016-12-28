@@ -160,6 +160,30 @@
   @else { @warn "Tracking mixin supports: reset, numbers 0-25"; }
 }
 
+// Measure
+@mixin measure($measure)  {
+  @if $measure == reset       { letter-spacing: initial; }
+  @else if $measure == 0      { max-width: #{$u-34}rem; } // ceil(7.985)
+  @else if $measure == 1      { max-width: #{$u-35}rem; } // ceil(9.87)
+  @else if $measure == 2      { max-width: #{$u-36}rem; } // ceil(12.92)
+  @else if $measure == 3      { max-width: #{$u-37}rem; } // ceil(15.97) narrow
+  @else if $measure == 4      { max-width: #{$u-38}rem; } // ceil(20.905)
+  @else if $measure == 5      { max-width: #{$u-39}rem; } // ceil(25.84) medium
+  @else if $measure == 6      { max-width: #{$u-40}rem; } // ceil(33.825)
+  @else if $measure == 7      { max-width: #{$u-41}rem; } // ceil(41.81) wide
+  @else if $measure == 8      { max-width: #{$u-42}rem; } // ceil(54.73)
+  @else if $measure == 9      { max-width: #{$u-43}rem; } // ceil(67.65)
+  // @else if $measure == 10     { max-width: 80rem; } // max usefulness
+  // @else if $measure == 11     { max-width: 100rem; }
+  // @else if $measure == 12     { max-width: 120rem; }
+  // @else if $measure == 13     { max-width: 130rem; }
+  // @else if $measure == 14     { max-width: 140rem; }
+  // @else if $measure == 15     { max-width: 150rem; }
+  // Throw Warnings
+  @else { @warn "measure mixin supports: reset, numbers 0-9"; }
+}
+
+
 // Size
 @mixin size($size) {
   @if $size == smallest         { font-size: #{$u-19}rem; }
@@ -202,16 +226,15 @@
   @else { @warn "Tracking mixin supports: tightest, tighter, tight, loose, looser, loosest"; }
 }
 
-// Measure
-// Need measure reset
-// TO DO HERE use rem instead of em?
-@mixin measure($measure) {
-  @if $measure == widest        { max-width: 70rem; }
-  @else if $measure == wider    { max-width: 60rem; }
-  @else if $measure == wide     { max-width: 50rem; }
-  @else if $measure == tight    { max-width: 40rem; }
-  @else if $measure == tighter  { max-width: 30rem; }
-  @else if $measure == tightest { max-width: 20rem; }
-  // Throw Warnings
-  @else { @warn "Measure mixin supports: widest, wider, wide, tight, tighter, tightest"; }
-}
+// // Measure
+// // Need measure reset
+// // TO DO HERE use rem instead of em?
+// @mixin measure($measure) {
+//   @if $measure == widest        { max-width: 70rem; }
+//   @else if $measure == wider    { max-width: 60rem; }
+//   @else if $measure == wide     { max-width: 50rem; }
+//   @else if $measure == tight    { max-width: 40rem; }
+//   @else if $measure == tighter  { max-width: 30rem; }
+//   @else if $measure == tightest { max-width: 20rem; }
+//   // Throw Warnings
+//   @else { @warn "Measure mixin supports: widest, wider, wide, tight, tighter, tightest"; }
