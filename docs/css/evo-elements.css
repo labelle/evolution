@@ -1815,52 +1815,52 @@ hr.evo-line-heaviest {
   border-bottom-right-radius: 0 !important; }
 
 .evo-box-round-0 {
-  border-radius: 0 !important; }
-
-.evo-box-round-1 {
-  border-radius: 0.1rem; }
-
-.evo-box-round-2 {
   border-radius: 0.15rem; }
 
-.evo-box-round-3 {
+.evo-box-round-1 {
   border-radius: 0.2rem; }
 
-.evo-box-round-4 {
+.evo-box-round-2 {
   border-radius: 0.275rem; }
 
-.evo-box-round-5 {
+.evo-box-round-3 {
   border-radius: 0.375rem; }
 
-.evo-box-round-6 {
+.evo-box-round-4 {
   border-radius: 0.5rem; }
 
-.evo-box-round-7 {
+.evo-box-round-5 {
   border-radius: 0.625rem; }
 
-.evo-box-round-8 {
+.evo-box-round-6 {
   border-radius: 0.75rem; }
 
-.evo-box-round-9 {
+.evo-box-round-7 {
   border-radius: 0.875rem; }
 
-.evo-box-round-10 {
+.evo-box-round-8 {
   border-radius: 1rem; }
 
-.evo-box-round-11 {
+.evo-box-round-9 {
   border-radius: 1.125rem; }
 
-.evo-box-round-12 {
+.evo-box-round-10 {
   border-radius: 1.3125rem; }
 
-.evo-box-round-13 {
+.evo-box-round-11 {
   border-radius: 1.4375rem; }
 
-.evo-box-round-14 {
+.evo-box-round-12 {
   border-radius: 1.875rem; }
 
-.evo-box-round-15 {
+.evo-box-round-13 {
   border-radius: 2.3125rem; }
+
+.evo-box-round-14 {
+  border-radius: 2.6875rem; }
+
+.evo-box-round-15 {
+  border-radius: 3rem; }
 
 /*      SPACE     */
 .evo-space, .evo-space-0, .evo-space-1, .evo-space-2, .evo-space-3, .evo-space-4, .evo-space-5, .evo-space-6, .evo-space-7, .evo-space-8, .evo-space-9, .evo-space-10, .evo-space-11, .evo-space-12, .evo-space-13, .evo-space-14, .evo-space-15, .evo-space-16, .evo-space-17, .evo-space-18, .evo-space-19, .evo-space-20, .evo-space-21, .evo-space-22, .evo-space-23, .evo-space-24 {
