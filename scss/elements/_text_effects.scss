@@ -1,0 +1,81 @@
+///*      T E X T   S H A D O W     */
+
+@import "../variables";
+
+// Simple shadows from tachyons
+
+// .shadow-hover:after {
+//     box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+//     opacity: 0;
+//     -webkit-transition: opacity .25s ease-in-out;
+//     transition: opacity .25s ease-in-out
+// }
+
+// .shadow-hover:focus:after,
+// .shadow-hover:hover:after {
+//     opacity: 1
+// }
+
+// .bg-animate,
+// .bg-animate:focus,
+// .bg-animate:hover {
+//     -webkit-transition: background-color .15s ease-in-out;
+//     transition: background-color .15s ease-in-out
+// }
+
+// .bg-color {
+//   background-color: blue;
+//   background-display: none;
+// }
+
+/* SHADOWS */
+
+// Initial Value: none
+// /* offset-x | offset-y | blur-radius | color */
+// text-shadow: 1px 1px 2px black;…
+
+// TO DO: TRY REMS http://jsfiddle.net/4dgaurav/5Sptc/1/
+
+.text-shadow-0 {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-3 {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-4 {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-5 {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
+}
+
+.text-shadow-6 {
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, .5)
+}
+
+// effects
+
+.neon {
+  text-shadow: 
+  // white
+  0 0 0.1em #fff, 
+  0 0 0.2em #fff, 
+  0 0 0.3em #fff, 
+  0 0 0.4em #f7f, 
+  0 0 0.6em #f0f, 
+  0 0 0.8em #f0f, 
+  0 0 1em #f0f, 
+  0 0 1.2em #f0f
+}
+

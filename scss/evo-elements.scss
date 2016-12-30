@@ -65,8 +65,13 @@
 // Text
 @import "elements/text";
 @import "elements/text_size";
-@import "elements/text_shadow";
-@import "elements/text_list";
+@import "elements/text_effects";
+
+// List
+@import "elements/list";
+// @import "elements/list_bullets";
+// @import "elements/list_lines";
+// @import "elements/list_numbers";
 
 // Color
 @import "elements/color";
@@ -79,7 +84,7 @@
 @import "elements/line";
 @import "elements/line_size";
 @import "elements/line_color";
-@import "elements/line_shadow";
+@import "elements/line_effects";
 
 // Box
 @import "elements/box";
@@ -87,7 +92,7 @@
 @import "elements/box_corner";
 @import "elements/box_corner_scale";
 @import "elements/box_color";
-@import "elements/box_shadow";
+@import "elements/box_effects";
 
 // Image
 

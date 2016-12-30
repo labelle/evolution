@@ -1,4 +1,4 @@
-///*      S H A D O W     */
+///*      B O X   S H A D O W     */
 
 @import "../variables";
 
@@ -28,41 +28,6 @@
 //   background-display: none;
 // }
 
-/* SHADOWS */
-
-// Initial Value: none
-// /* offset-x | offset-y | blur-radius | color */
-// text-shadow: 1px 1px 2px black;…
-
-// TO DO: TRY REMS http://jsfiddle.net/4dgaurav/5Sptc/1/
-
-.text-shadow-0 {
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-1 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-3 {
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-4 {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-5 {
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
-}
-
-.text-shadow-6 {
-    text-shadow: 6px 6px 12px rgba(0, 0, 0, .5)
-}
 
 // Initial Value: none
 // Syntax:
