@@ -40,25 +40,57 @@
 
 // @import "settings";
 @import "variables";
+
+// Global styles
 @import "elements/global";
+
+// Mixins
 @import "elements/font_mixins";
-@import "elements/font";
 @import "elements/text_mixins";
-@import "elements/text";
-@import "elements/text_scale";
-@import "elements/text_list";
-@import "elements/color_mixins";
-@import "elements/color";
 // @import "elements/line_mixins";
-@import "elements/line";
-@import "elements/line_scale";
-// need box_mixins
-@import "elements/box";
-@import "elements/box_scale";
+@import "elements/color_mixins";
+// @import "elements/box_mixins";
 // @import "elements/corner_mixins";
-@import "elements/corner";
-@import "elements/corner_scale";
 // @import "elements/space_mixins";
+
+// Font
+@import "elements/font";
+@import "elements/font_style";
+@import "elements/font_stack";
+@import "elements/font_play";
+@import "elements/font_native";
+@import "elements/font_adobe";
+@import "elements/font_google";
+
+// Text
+@import "elements/text";
+@import "elements/text_size";
+@import "elements/text_shadow";
+@import "elements/text_list";
+
+// Color
+@import "elements/color";
+
+// Space
 @import "elements/space";
-@import "elements/shadow";
+@import "elements/space_size";
+
+// Line
+@import "elements/line";
+@import "elements/line_size";
+@import "elements/line_color";
+@import "elements/line_shadow";
+
+// Box
+@import "elements/box";
+@import "elements/box_size";
+@import "elements/box_corner";
+@import "elements/box_corner_scale";
+@import "elements/box_color";
+@import "elements/box_shadow";
+
+// Image
+
+
+
 

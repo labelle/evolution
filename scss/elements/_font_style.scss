@@ -1,0 +1,9 @@
+///*      F O N T   S T Y L E    */
+
+@import "../variables";
+
+// No particular font family defined
+#{$evo}-font-sans-serif        { font-family: #{$sans-serif}; }
+#{$evo}-font-serif             { font-family: #{$serif}; }
+#{$evo}-font-monospace         { font-family: #{$monospace}; }
+#{$evo}-font-cursive           { font-family: #{$cursive}; }

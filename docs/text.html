@@ -16,24 +16,6 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-section,
-div,
-p,
-ul,
-ol,
-li {
-/*padding-bottom: 5rem;*/
-/*background-color: #eee;*/
-margin-top: .5em;
-margin-bottom: 3em;
-/*border-width: 1px;*/
-}
 </style>
 
 </head>
@@ -48,73 +30,164 @@ margin-bottom: 3em;
 <main>
 
 
+<section id="evoTextIntro">
+
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Text</h1>
+
+<p class="evo-text evo-measure-wide">Change the style of text.</p>
+<!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- text -->
+
 <section id="evoText">
 
-<h1 class="evo-text-10">Text</h1>
+<h2 class="evo-text-6">Base Text</h2>
 
-<!-- Evo Base Classes Only -->
-evo-text-reset
- <p class="evo-text-reset">Experience Design Made Simple for living design systems</p>
-
- <div class="evo-space-10"></div>
+<div class="evo-space-8"></div>
 
 evo-text
 <p class="evo-text">Experience Design Made Simple for living design systems</p>
 
-<div class="evo-space-10"></div>
-This sentence has no tag and no class
+<div class="evo-space-3"></div>
 
- <div class="evo-space-10"></div>
+<p class="evo-measure-wide">Create an <code>&lt;p /&gt;</code> tag, and apply the css class <code>evo-text</code>, followed by an <code>evo-line-[style]</code> class. Default line size is 'medium'. The default gray color can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
 
- <!-- Examples -->
-<hr>
-<h2 class="evo-text-5">Examples</h2>
- <p class="evo-text-reset">The live examples below are a useful reference for debugging styles, particularly if you are using any global reset such as 'Normalize', or a framework such as 'Bootstrap'.</p>
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-<div class="evo-space-10"></div>
+   &lt;p class="evo-text" /&gt;&lt;/p&gt;
 
-h1 (no class)
-<h1>Experience Design Made Simple for living design systems</h1>
+</pre>
 
-h2 (no class)
-<h2>Experience Design Made Simple for living design systems</h2>
-
-h3 (no class)
-<h3>Experience Design Made Simple for living design systems</h3>
-
-h4 (no class)
-<h4>Experience Design Made Simple for living design systems</h4>
-
-h5 (no class)
-<h5>Experience Design Made Simple for living design systems</h5>
-
-h6 (no class)
-<h6>Experience Design Made Simple for living design systems</h6>
-
-p (no class)
-<p>Experience Design Made Simple for living design systems</p>
-
-ul (no class)
-<ul>Experience Design Made Simple for living design systems
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ul>
-
-ol (no class)
-<ol>Experience Design Made Simple for living design systems
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ol>
-
-div (no class)
-<div>Experience Design Made Simple for living design systems</div>
-
-section (no class)
-<section>Experience Design Made Simple for living design systems</section>
+<div class="evo-space-19"></div>
 
 </section>
+
+
+
+
+<!-- text reset -->
+
+<section id="evoTextStyle">
+
+<h2 class="evo-text-6">evo-text-[style]</h2>
+
+<div class="evo-space-8"></div>
+
+evo-text-bold
+<p class="evo-text evo-text-bold"><a href="#">Bold</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-italic
+<p class="evo-text evo-text-italic"><a href="#">Italic</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-capitalize
+<p class="evo-text evo-text-capitalize"><a href="#">Capitalize</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-uppercase
+<p class="evo-text evo-text-uppercase"><a href="#">Uppercase</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-lowercase
+<p class="evo-text evo-text-lowercase"><a href="#">Lowercase</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-strike
+<p class="evo-text evo-text-strike"><a href="#">Strike</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-underline
+<p class="evo-text evo-text-underline"><a href="#">Underline</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-no-underline
+<p class="evo-text evo-text-no-underline"><a href="#">No-Underline</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-no-transform
+<p class="evo-text evo-text-no-transform"><a href="#">No-Transform</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-truncate evo-measure-4
+<p class="evo-text evo-text-truncate evo-measure-4"><a href="#">Truncate</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-clip evo-measure-4 
+<p class="evo-text evo-text-clip evo-measure-4"><a href="#">Clip</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-left
+<p class="evo-text evo-text-left"><a href="#">Left</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-center
+<p class="evo-text evo-text-center"><a href="#">Center</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+evo-text-right
+<p class="evo-text evo-text-right"><a href="#">Right</a> Experience Design Made Simple for Living Design Systems</p>
+<div class="evo-space-8"></div>
+
+<p class="evo-measure-wide">Create an html tag to hold the text, such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>, and apply the css class <code>evo-text</code>, followed by an <code>evo-text-[style]</code> class. Styles will apply even without the <code>evo-text</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="evo-text evo-text-bold"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-italic"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-capitalize"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-uppercase"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-lowercase"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-strike"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-underline"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-no-underline"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-no-transform"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-truncate"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-clip"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-left"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-center"&gt;&lt;/p&gt;
+   &lt;p class="evo-text evo-text-right"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- text reset -->
+
+<section id="evoTextReset">
+
+<h2 class="evo-text-6">evo-text-reset</h2>
+
+<div class="evo-space-8"></div>
+
+<!-- evo-text-reset -->
+<p class="evo-text-reset">This sentence demonstrates the reset of styles.</p>
+
+<div class="evo-space-8"></div>
+
+<p class="evo-measure-wide">Use the <code>evo-text-reset</code> class to remove text styles.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="evo-text-reset"&gt;&lt;/p&gt;
+
+</pre>
+
+</section>
+
 
 </main>
 

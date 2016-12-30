@@ -1,0 +1,22 @@
+///*      F O N T   G O O G L E    */
+
+@import "../variables";
+
+// GOOGLE FONTS
+// <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+// https://developers.google.com/fonts/docs/getting_started
+
+#{$evo}-font-google-open-sans  {
+font-family: #{$google-open-sans};
+font-weight:400;
+}
+
+#{$evo}-font-google-open-sans-light  {
+font-family: #{$google-open-sans};
+font-weight:300;
+}
+
+#{$evo}-font-google-open-sans-extra-bold  {
+font-family: #{$google-open-sans};
+font-weight:800;
+}

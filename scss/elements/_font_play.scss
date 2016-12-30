@@ -1,0 +1,18 @@
+///*      F O N T   P L A Y    */
+
+@import "../variables";
+
+// Individual System Fonts
+// May not be available in all devices
+// Use for experimentation and quick styling
+// Not recommended for production
+#{$evo}-font-athelas           { font-family: #{$athelas}; }
+#{$evo}-font-avenir            { font-family: #{$avenir}; }
+#{$evo}-font-baskerville       { font-family: #{$baskerville}; }
+#{$evo}-font-bodoni            { font-family: #{$bodoni}; }
+#{$evo}-font-calisto           { font-family: #{$calisto}; }
+#{$evo}-font-consolas          { font-family: #{$consolas}; }
+#{$evo}-font-courier           { font-family: #{$courier}; }
+#{$evo}-font-didot             { font-family: #{$didot}; }
+#{$evo}-font-garamond          { font-family: #{$garamond}; }
+#{$evo}-font-gotham            { font-family: #{$gotham}; }

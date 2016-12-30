@@ -1,0 +1,12 @@
+///*      L I N E    */
+
+@import "../variables";
+// @import "../variables/scale";
+// @import "line_mixins";
+
+
+// Line color
+
+hr#{$evo}-line-black      { border-top-color: #{$black}; }
+hr#{$evo}-line-gray       { border-top-color: #{$gray-light}; }
+hr#{$evo}-line-white      { border-top-color: #{$white}; }

@@ -1,0 +1,8 @@
+///*      F O N T   N A T I V E      */
+
+@import "../variables";
+
+// Variable native system fonts
+#{$evo}-font-native            { font-family: #{$native}; } // Font stack
+#{$evo}-font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
+#{$evo}-font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack

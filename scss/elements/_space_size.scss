@@ -1,0 +1,48 @@
+///*      S P A C E   S I Z E     */
+
+// Create space between elements
+
+@import "../variables";
+
+// Space number scale
+#{$evo}-space-0   { height: 1px; }
+#{$evo}-space-1   { height: 2px; }
+#{$evo}-space-2   { height: 4px; }
+#{$evo}-space-3   { height: #{$u-18}rem; }   // 6px
+#{$evo}-space-4   { height: #{$u-19}rem; }   // 8px
+#{$evo}-space-5   { height: #{$u-20}rem; }   // 10px
+#{$evo}-space-6   { height: #{$u-21}rem; }   // 12px
+#{$evo}-space-7   { height: #{$u-22}rem; }   // 14px
+#{$evo}-space-8   { height: #{$u-23}rem; }   // 16px
+#{$evo}-space-9  { height: #{$u-24}rem; }   // 18px
+#{$evo}-space-10  { height: #{$u-25}rem; }  // 21px
+#{$evo}-space-11  { height: #{$u-26}rem; }  // 23px
+#{$evo}-space-12  { height: #{$u-27}rem; }  // 30px
+#{$evo}-space-13  { height: #{$u-28}rem; }  // 37px
+#{$evo}-space-14  { height: #{$u-29}rem; }  // 43px
+#{$evo}-space-15  { height: #{$u-30}rem; }  // 48px // 3rem
+#{$evo}-space-16  { height: #{$u-31}rem; }  // 60px
+#{$evo}-space-17  { height: #{$u-32}rem; }  // 80px 
+#{$evo}-space-18  { height: #{$u-33}rem; }  // 96px
+#{$evo}-space-19  { height: #{$u-34}rem; }  // 128px
+#{$evo}-space-20  { height: #{$u-35}rem; }  // 160px
+#{$evo}-space-21  { height: #{$u-36}rem; }  // 208px
+#{$evo}-space-22  { height: #{$u-37}rem; }  // 256px
+#{$evo}-space-23  { height: #{$u-38}rem; }  // 336px
+#{$evo}-space-24  { height: #{$u-39}rem; }  // 416px
+#{$evo}-space-25  { height: #{$u-40}rem; }  // 544px
+#{$evo}-space-26  { height: #{$u-41}rem; }  // 672px
+#{$evo}-space-27  { height: #{$u-42}rem; }  // 880px
+#{$evo}-space-28  { height: #{$u-43}rem; }  // 1088px
+    // Are these two below the correct size?
+#{$evo}-space-29  { height: #{$u-44}rem; }  // 1423px
+#{$evo}-space-30  { height: #{$u-45}rem; }  // 1760px
+
+
+// Space size scale
+#{$evo}-space-smallest    { height: #{$u-19}rem; }  // 8px
+#{$evo}-space-smaller     { height: #{$u-24}rem; }  // 18px
+#{$evo}-space-small       { height: #{$u-27}rem; }  // 30px
+#{$evo}-space-big         { height: #{$u-31}rem; }  // 60px
+#{$evo}-space-bigger      { height: #{$u-33}rem; }  // 96px
+#{$evo}-space-biggest     { height: #{$u-35}rem; }  // 160px

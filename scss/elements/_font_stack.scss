@@ -1,0 +1,16 @@
+///*      F O N T   S T A C K    */
+
+@import "../variables";
+
+// System Font Stacks
+// Font stacks are safer to use
+#{$evo}-font-arial             { font-family: #{$arial}; }
+#{$evo}-font-arial-black       { font-family: #{$arial-black}; }
+#{$evo}-font-courier-new       { font-family: #{$courier-new}; }
+#{$evo}-font-georgia           { font-family: #{$georgia}; }
+#{$evo}-font-helvetica         { font-family: #{$helvetica}; }
+#{$evo}-font-helvetica-thin    { font-family: #{$helvetica-thin}; }
+#{$evo}-font-menlo             { font-family: #{$menlo}; }
+#{$evo}-font-monaco            { font-family: #{$monaco}; }
+#{$evo}-font-times             { font-family: #{$times-new}; }
+#{$evo}-font-times-new         { font-family: #{$times}; }

@@ -1,0 +1,22 @@
+///*      F O N T   A D O B E    */
+
+@import "../variables";
+
+// ADOBE EDGE FONTS
+// <script src="//use.edgefonts.net/open-sans.js"></script>
+
+#{$evo}-font-adobe-open-sans  {
+font-family: #{$adobe-open-sans};
+font-weight:400;
+}
+
+#{$evo}-font-adobe-open-sans-light  {
+font-family: #{$adobe-open-sans};
+font-weight:300;
+}
+
+#{$evo}-font-adobe-open-sans-extra-bold  {
+font-family: #{$adobe-open-sans};
+font-weight:800;
+}
+

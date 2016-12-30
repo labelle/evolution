@@ -30,8 +30,23 @@ body {
 }
 
 body.site-container {
-    margin: 2.5% 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color:#f7f7f7;
+}
+
+// referenced from bootstrap 4
+// http://v4-alpha.getbootstrap.com/content/code/
+code {
+  padding: .2rem .4rem;
+  font-size: 70%;
+  color: darkslateblue; // bootstrap is #bd4147
+  // background-color: #f7f7f9;
+  background-color: #eee;
+  border-radius: .25rem;
+  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 // a 							{}

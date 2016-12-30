@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
-        <link rel="stylesheet" href="css/evo-reset.css">
+<!--         <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
+<!--         <link rel="stylesheet" href="css/evo-reset.css"> -->
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
@@ -40,16 +40,20 @@ outline: 5px solid red;
 </style>
 
 </head>
-<body>
+<body class="site-container">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
+<!-- Main navigation -->
+<!-- <header role="banner">
+</header> -->
 <main>
 
 
-<section id="evoLine" class="container">
-  <div class="row">
-    <div class="col-xs-12">
+<section id="evoCorner">
 
-      <div class="evo-space-15"></div>
+<h1 class="evo-text-10">Corner</h1>
 
 Examples below are div elements. A base .evo-box class sets a visible border.
 
@@ -58,7 +62,7 @@ Examples below are div elements. A base .evo-box class sets a visible border.
 <div class="evo-space-15"></div>
 
 evo-box-circle
-<div class="evo-box evo-box-circle" style="height:5rem; width:5rem;"></div>
+<div class="evo-box evo-box-circle" style="height:5rem; width:5rem; padding-bottom:0;"></div>
 
 evo-box-pill
 <div class="evo-box evo-box-pill"></div>
@@ -122,9 +126,6 @@ evo-box-corner-bottom-right
 
 <div class="evo-space-15"></div>
 
-
-    </div>
-  </div>
 </section>
 
 </main>

@@ -133,36 +133,4 @@ border-left-color:      #{$box_color}; // initial
 // #{$evo}-box-left-outset         { border-left-style: outset; }
 
 
-// box colors
-
-// Use RGBA colors instead?
-#{$evo}-box-gray       { border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
-#{$evo}-box-white      { border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
-#{$evo}-box-black      { border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
-
-#{$evo}-box-top-black      { border-top-color: #{$black}; }
-#{$evo}-box-top-gray       { border-top-color: #{$gray-light}; }
-#{$evo}-box-top-white      { border-top-color: #{$white}; }
-
-#{$evo}-box-bottom-black   { border-bottom-color: #{$black}; }
-#{$evo}-box-bottom-gray    { border-bottom-color: #{$gray-light}; }
-#{$evo}-box-bottom-white   { border-bottom-color: #{$white}; }
-
-#{$evo}-box-right-black    { border-right-color: #{$black}; }
-#{$evo}-box-right-gray     { border-right-color: #{$gray-light}; }
-#{$evo}-box-right-white    { border-right-color: #{$white}; }
-
-#{$evo}-box-left-black     { border-left-color: #{$black}; }
-#{$evo}-box-left-gray      { border-left-color: #{$gray-light}; }
-#{$evo}-box-left-white     { border-left-color: #{$white}; }
-
-
-// box background colors
-// potential ant-pattern? Delete?
-
-#{$evo}-box-gray-bg       { background-color: #{$gray-light} !important; }
-#{$evo}-box-white-bg      { background-color: #{$white} !important; }
-#{$evo}-box-black-bg      { background-color: #{$black} !important; }
-
-
 
