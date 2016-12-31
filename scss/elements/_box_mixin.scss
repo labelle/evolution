@@ -26,6 +26,12 @@ border-left-style:     #{$box_style}; // solid
 // ADD Inherit
 
 
+// &-top            { @extend #{$evo}-line; } // medium width
+// &-bottom         { border-bottom-width: #{$line_width}; border-bottom-style: #{$line_style}; border-bottom-color: #{$line_color}; } // medium width
+// &-right          { border-right-width: #{$line_width}; border-right-style: #{$line_style}; border-right-color: #{$line_color}; } // medium width
+// &-left           { border-left-width: #{$line_width}; border-left-style: #{$line_style}; border-left-color: #{$line_color}; } // medium width
+
+
 &-0              { @extend #{$evo}-box; border-top-width: 0; border-bottom-width: 0; border-right-width: 0; border-left-width: 0; }
 &-1              { @extend #{$evo}-box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
 &-2              { @extend #{$evo}-box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
@@ -66,4 +72,10 @@ border-left-style:     #{$box_style}; // solid
 &-gray           { @extend #{$evo}-box; border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
 &-white          { @extend #{$evo}-box; border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
 &-black          { @extend #{$evo}-box; border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
+  // Throw Warnings
+  @else { @warn "Box mixin supports: need to make this"; }
 }
+
+}
+
+

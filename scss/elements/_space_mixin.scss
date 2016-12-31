@@ -7,9 +7,9 @@
 
 // Space scale
 @mixin space($space) {
-  @if $space == reset  { height: 0px; width: auto; clear: both; }
+  @if $space == reset    { height: 0px; width: auto; clear: both; }
   // @else if $space == null  { height: #{$space_height}; width: #{$space_width}; } // default space variables
-  @else if $space == 0  { height: 1px; }
+  @else if $space == 0   { height: 1px; }
   @else if $space == 1   { height: 2px; }
   @else if $space == 2   { height: 4px; }
   @else if $space == 3   { height: #{$u-18}rem; }   // 6px
@@ -18,7 +18,7 @@
   @else if $space == 6   { height: #{$u-21}rem; }   // 12px
   @else if $space == 7   { height: #{$u-22}rem; }   // 14px
   @else if $space == 8   { height: #{$u-23}rem; }   // 16px
-  @else if $space == 9  { height: #{$u-24}rem; }   // 18px
+  @else if $space == 9   { height: #{$u-24}rem; }   // 18px
   @else if $space == 10  { height: #{$u-25}rem; }  // 21px
   @else if $space == 11  { height: #{$u-26}rem; }  // 23px
   @else if $space == 12  { height: #{$u-27}rem; }  // 30px

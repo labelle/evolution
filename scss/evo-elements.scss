@@ -45,13 +45,13 @@
 @import "elements/global";
 
 // Mixins
-@import "elements/font_mixins";
-@import "elements/text_mixins";
-// @import "elements/line_mixins";
-@import "elements/color_mixins";
-// @import "elements/box_mixins";
-// @import "elements/corner_mixins";
-// @import "elements/space_mixins";
+@import "elements/font_mixin";
+@import "elements/text_mixin";
+// @import "elements/line_mixin";
+@import "elements/color_mixin";
+// @import "elements/box_mixin";
+// @import "elements/corner_mixin";
+// @import "elements/space_mixin";
 
 // Font
 @import "elements/font";
@@ -65,13 +65,13 @@
 // Text
 @import "elements/text";
 @import "elements/text_size";
-@import "elements/text_effects";
+@import "elements/text_effect";
 
 // List
 @import "elements/list";
-// @import "elements/list_bullets";
-// @import "elements/list_lines";
-// @import "elements/list_numbers";
+// @import "elements/list_bullet";
+// @import "elements/list_line";
+// @import "elements/list_number";
 
 // Color
 @import "elements/color";
@@ -84,7 +84,7 @@
 @import "elements/line";
 @import "elements/line_size";
 @import "elements/line_color";
-@import "elements/line_effects";
+@import "elements/line_effect";
 
 // Box
 @import "elements/box";
@@ -92,7 +92,7 @@
 @import "elements/box_corner";
 @import "elements/box_corner_scale";
 @import "elements/box_color";
-@import "elements/box_effects";
+@import "elements/box_effect";
 
 // Image
 

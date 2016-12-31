@@ -2,7 +2,7 @@
 
 @import "../variables";
 // @import "../variables/scale";
-// @import "line_mixins";
+// @import "line_mixin";
 
 
 // SHOULD SOME OF THESE INHERIT?
@@ -34,8 +34,7 @@ hr#{$evo}-line {
 	border-top-color: #{$line_color}; // initial
 }
 
-// hr lines
-
+// hr line style
 hr#{$evo}-line-solid           { border-top-style: solid; }
 hr#{$evo}-line-dotted          { border-top-style: dotted; }
 hr#{$evo}-line-dashed          { border-top-style: dashed; }

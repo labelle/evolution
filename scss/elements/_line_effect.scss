@@ -2,7 +2,7 @@
 
 @import "../variables";
 // @import "../variables/scale";
-// @import "line_mixins";
+// @import "line_mixin";
 
 // Artistic lines
 // http://www.cssportal.com/blog/style-hr-tag-with-css/
@@ -28,6 +28,12 @@ hr#{$evo}-line-fade-thick {
 }
 
 // Vertical shadow gradients
+
+hr#{$evo}-line-shadow-0 {
+  height: 5px;
+  border: 0;
+  box-shadow: 0 6px 2px -6px rgba(0, 0, 0, 0.5) inset;
+}
 
 hr#{$evo}-line-shadow-1 {
   height: 10px;

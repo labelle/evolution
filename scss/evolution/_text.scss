@@ -1,7 +1,8 @@
 ///*      T E X T     */
 
 @import "../variables";
-@import "../elements/text_mixins";
+@import "../elements/text_mixin";
+@import "../elements/line_mixin";
 
 
 /*      TEXT     */
@@ -9,7 +10,7 @@
 // Default evo-text
 // Adjust from settings.scss
 #{$evo}-text {
-  font-size: #{$text_font_size};
+  font-size: #{$text_size};
   color: #{$text_color};
   font-family: #{$text_font_family};
   font-weight: #{$text_font_weight};
@@ -45,7 +46,7 @@
     @else if ($i == 4) { @include size(4); } // smaller
     &-caps { // 6
       @extend #{$evo}-text-#{$i} !optional;
-      @include style(caps)
+      @include style(capitalize)
       @include tracking(null);
       @include leading(12);
     }
