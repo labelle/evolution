@@ -59,6 +59,7 @@ $sans-serif:                        nulll; //sans-serif
 $serif:                             null; //serif
 $monospace:                         null; //monospace
 $cursive:                           null; //cursive
+$fantasy:                           null; //fantasy
 
 
 // Text
@@ -70,7 +71,7 @@ $cursive:                           null; //cursive
 // See _font.scss in /variables for full list of options such as $arial, $georgia, $monaco
 $text_size:                         null; // 1rem, or 100% or 16px
 $text_color:                        null; // initial
-$text_font_family:                  null; // sans-serif
+$text_font_family:                  null; // initial
 $text_font_weight:                  null; // normal
 $text_line_height:                  null; // 1.4375, no em, rem, px, %
 $text_margin_top:                   null; // 0rem

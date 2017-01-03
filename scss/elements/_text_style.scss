@@ -1,0 +1,66 @@
+///*      T E X T    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+// Text Styles
+
+// Font Weight
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+#{$evo}-font-bold             { font-weight: bold; }
+
+#{$evo}-font-lighter          { font-weight: lighter; }
+#{$evo}-font-bolder           { font-weight: bolder; }
+
+#{$evo}-font-100              { font-weight: 100; }
+#{$evo}-font-200              { font-weight: 200; }
+#{$evo}-font-300              { font-weight: 300; }
+#{$evo}-font-400              { font-weight: 400; }
+#{$evo}-font-500              { font-weight: 500; }
+#{$evo}-font-600              { font-weight: 600; }
+#{$evo}-font-700              { font-weight: 700; }
+#{$evo}-font-800              { font-weight: 800; }
+#{$evo}-font-900              { font-weight: 900; }
+
+#{$evo}-font-no-weight        { font-weight: normal; }
+
+// Font Style
+#{$evo}-font-italic           { font-style: italic; }
+#{$evo}-font-oblique          { font-style: oblique; }
+
+#{$evo}-font-no-style         { font-style: normal; }
+
+
+// Text Transform
+#{$evo}-text-capitalize       { text-transform: capitalize; }
+#{$evo}-text-uppercase        { text-transform: uppercase; }
+#{$evo}-text-lowercase        { text-transform: lowercase; }
+
+#{$evo}-text-no-case          { text-transform: none; }
+
+
+// Text Decoration
+#{$evo}-text-overline         { text-decoration: overline; }
+#{$evo}-text-strikeline       { text-decoration: line-through; }
+#{$evo}-text-underline        { text-decoration: underline; }
+
+#{$evo}-text-no-line a,
+#{$evo}-text-no-line          { text-decoration: none; }
+
+
+// Text Align
+#{$evo}-text-left             { text-align: left; }
+#{$evo}-text-right            { text-align: right; }
+#{$evo}-text-center           { text-align: center; }
+
+
+// Text Overflow
+#{$evo}-text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
+
+// Text Block Width
+#{$evo}-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
+
+

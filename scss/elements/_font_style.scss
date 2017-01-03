@@ -2,8 +2,10 @@
 
 @import "../variables";
 
-// No particular font family defined
+// Generic names
+// From https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
 #{$evo}-font-sans-serif        { font-family: #{$sans-serif}; }
 #{$evo}-font-serif             { font-family: #{$serif}; }
 #{$evo}-font-monospace         { font-family: #{$monospace}; }
 #{$evo}-font-cursive           { font-family: #{$cursive}; }
+#{$evo}-font-fantasy           { font-family: #{$fantasy}; }

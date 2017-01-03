@@ -4,31 +4,6 @@
 
 // General site-wide settings (optional)
 
-
-// html
-html {
-  // font-size:       #{$text_size};
-  // color:           #{$text_color};
-  // font-family:     #{$text_font_family};
-  // font-weight:     #{$text_font_weight};
-  // line-height:     #{$text_line_height};
-  // margin-top:      #{$text_margin_top};
-  // margin-bottom:   #{$text_margin_bottom};
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-// body                     	{}
-
-body {
-  font-size:       #{$text_size};
-  // color:           #{$text_color};
-  font-family:     #{$text_font_family};
-  // font-weight:     #{$text_font_weight};
-  line-height:     #{$text_line_height};
-  // margin-top:      #{$text_margin_top};
-  // margin-bottom:   #{$text_margin_bottom};
-}
-
 body.site-container {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -41,7 +16,7 @@ body.site-container {
 // http://v4-alpha.getbootstrap.com/content/code/
 code {
   padding: .2rem .4rem;
-  font-size: 70%;
+  font-size: 80%;
   color: darkslateblue; // bootstrap is #bd4147
   // background-color: #f7f7f9;
   background-color: #eee;
@@ -49,7 +24,43 @@ code {
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
-// a 							{}
+// pre {
+// font-size: 80%;
+// }
+
+// code pre {
+// font-size: 80%;
+// }
+
+// html
+html {
+  font-size:       #{$html_font_size};
+  font-family:     #{$html_font_family};
+  font-weight:     #{$html_font_weight};
+  line-height:     #{$html_line_height};
+  // margin-top:      #{$html_margin_top};
+  // margin-bottom:   #{$html_margin_bottom};
+    // color:           #{$html_color};
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// body                       {}
+
+body {
+  // font-size:       #{$text_size};
+  // color:           #{$text_color};
+  // font-family:     #{$text_font_family}; /**/
+  // font-weight:     #{$text_font_weight};
+  // line-height:     #{$text_line_height};
+  // letter-spacing:  #{$text_letter_spacing};
+  // margin-top:      #{$text_margin_top};
+  // margin-bottom:   #{$text_margin_bottom};
+}
+
+
+
+
+// a              {}
 
 // p
 // define a minimum text color
@@ -61,7 +72,24 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color:           #{$heading_color};
+  font-family:     #{$heading_font_family};
+  font-weight:     #{$heading_font_weight};
+  line-height:     #{$heading_line_height};
+  letter-spacing:  #{$heading_letter_spacing};
+  margin-top:      #{$heading_margin_top};
+  margin-bottom:   #{$heading_margin_bottom};
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1 { font-size: #{$heading_size_h1}; }
+h2 { font-size: #{$heading_size_h2}; }
+h3 { font-size: #{$heading_size_h3}; }
+h4 { font-size: #{$heading_size_h4}; }
+h5 { font-size: #{$heading_size_h5}; }
+h6 { font-size: #{$heading_size_h6}; }
+
 section,
 div,
 p,
@@ -69,10 +97,11 @@ ul,
 ol,
 li {
   // font-size:       #{$text_size};
-  color:           #{$text_color};
+  // color:           #{$text_color};
   // font-family:     #{$text_font_family};
-  font-weight:     #{$text_font_weight};
+  // font-weight:     #{$text_font_weight};
   // line-height:     #{$text_line_height};
+  // letter-spacing:  #{$text_letter_spacing};
   margin-top:      #{$text_margin_top};
   margin-bottom:   #{$text_margin_bottom};
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -83,16 +112,19 @@ p {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-// hr {
-// margin-top: 20px;
-// margin-bottom: 20px;
-// border: 0;
-// border-top: 1px solid #eeeeee;
-// }
+hr {
+border: #{$hr_border};
+border-top-width: #{$hr_width};
+border-top-style: #{$hr_style};
+border-top-color: #{$hr_color};
+margin-top: #{$hr_margin_top};
+margin-bottom: #{$hr_margin_bottom};
 
-// button						{}
+}
 
-// input						{}
+// button           {}
+
+// input            {}
 
 // links states
 
@@ -103,6 +135,34 @@ p {
 //     color: #ffffff;
 
 
+// /* Helper */
+// adjustable and connected
+// such as mixins
+
+// /* Utility */
+// static and isolated
+// single CSS declaration and variables
+
+// Reset Utilities
+// Apply to specific elements
+// https://css-tricks.com/almanac/properties/a/all/
+// https://github.com/jareware/css-architecture/blob/master/README.md
+// http://cssreset.com/what-is-a-css-reset/
+
+.evo-all-unset {
+all: unset;
+}
+
+.evo-all-initial {
+all: initial;
+}
+
+.evo-all-inherit {
+all: inherit;
+}
+
+
+// Screen readers
 
 .sr-only {
   position: absolute;
@@ -129,4 +189,14 @@ p {
     overflow: visible;
     clip: auto;
   }
+}
+
+// Already included with the bootstrap grid.
+// Remove this if bootstrap grid is used.
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

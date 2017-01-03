@@ -38,6 +38,7 @@
   font-family:     #{$text_font_family};
   font-weight:     #{$text_font_weight};
   line-height:     #{$text_line_height};
+  letter-spacing:  #{$text_letter_spacing};
 
   // margin-top:      inherit; // #{$text_margin_top}
   // margin-bottom:   inherit; // #{$text_margin_bottom}
@@ -47,27 +48,6 @@
   // list-style-position: #{$text_list_style_position};
 }
 
-
-// Text Styles
-
-#{$evo}-text-bold             { font-weight: bold; }
-#{$evo}-text-italic           { font-style: italic; }
-#{$evo}-text-capitalize       { text-transform: capitalize; }
-#{$evo}-text-uppercase        { text-transform: uppercase; }
-#{$evo}-text-lowercase        { text-transform: lowercase; }
-#{$evo}-text-strike           { text-decoration: line-through; }
-#{$evo}-text-underline        { text-decoration: underline; }
-#{$evo}-text-no-underline a,
-#{$evo}-text-no-underline     { text-decoration: none; }
-#{$evo}-text-no-transform     { text-transform: none; }
-#{$evo}-text-left             { text-align: left; }
-#{$evo}-text-right            { text-align: right; }
-#{$evo}-text-center           { text-align: center; }
-#{$evo}-text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-#{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
-
-
-#{$evo}-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
 
 // Element Mixins
 @mixin base($base) { 

@@ -8,7 +8,20 @@
 
 // General
 #{$evo}-font { 
-  font-family: #{$text_font_family}; // or #{sans-serif} or #{native}
+  font-size:       #{$html_font_size};
+  font-family:     #{$html_font_family};
+  font-weight:     #{$html_font_weight};
+  line-height:     #{$html_line_height};
+}
+
+// Reset
+// DOES THIS WORK?
+
+#{$evo}-font-reset { 
+  font-size:       initial;
+  font-family:     initial;
+  font-weight:     initial;
+  line-height:     initial;
 }
 
 // #{$evo}-font-open-sans { 
@@ -17,10 +30,11 @@
 
 
 // System fonts
-#{$evo}-font-1 { 
-  font-family: #{$text_font_family};
-}
+// #{$evo}-font-1 { 
+//   font-family: #{$html_font_family_1};
+// }
 
 // #{$evo}-font-2 { 
 //   font-family: #{$default_type_font};
 // }
+

@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Box Scale</title>
+        <title>Evolution Box Size</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,6 +30,40 @@ margin-bottom: 3em;
 /*border-width: 1px;*/
 }
 
+
+@media screen and (min-width: 1101px) {
+    .four-up  {
+        width: 22.5%;
+        margin-right: 2.5%;
+        position: inline-block;
+        float: left;
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .four-up  {
+        width: 47.5%;
+        margin-right: 2.5%;
+        position: inline-block;
+        float: left;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .four-up  {
+        width: 100%;
+        position: inline-block;
+    float: left;
+
+    }
+}
+
+.after-box {
+    clear: left;
+}
+
 /* If it's a class, but isn't a class containing the string evo-, put a red border around it.
 */
 
@@ -38,7 +72,6 @@ outline: 5px solid red;
 }*/
 
 </style>
-
 </head>
 <body class="site-container">
         <!--[if lt IE 8]>
@@ -51,98 +84,664 @@ outline: 5px solid red;
 <main>
 
 
-<section id="evoBoxScale">
+<section id="evoBoxIntro">
 
-<h1 class="evo-text-10">Box Scale</h1>
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Box Size</h1>
 
-<p class="evo-measure-wide">Some boxes will default to a line-width of 'initial', which is equal to border-top-width: 'medium' (e.g. evo-box-gray, evo-box-dashed).</p>
+<p class="evo-text evo-measure">Change the size of <code>&lt;div /&gt;</code> box border lines.</p>
 
-<!-- Evo Box Classes -->
+<div class="evo-space-19"></div>
 
-<div class="evo-space-15"></div>
+</section>
 
 
-<!-- div Lines -->
-evo-box-1 (div)
-<div class="evo-box evo-box-1"></div>
+<!-- Box Thickness -->
 
-evo-box-2
-<div class="evo-box evo-box-2"></div>
+<section id="evoBoxThickness">
 
-evo-box-3
-<div class="evo-box evo-box-3"></div>
+<h2 class="evo-text-6">evo-box-[thickness]</h2>
 
-evo-box-4
-<div class="evo-box evo-box-4"></div>
-
-evo-box-5
-<div class="evo-box evo-box-5"></div>
-
-evo-box-6
-<div class="evo-box evo-box-6"></div>
-
-evo-box-7
-<div class="evo-box evo-box-7"></div>
-
-evo-box-8
-<div class="evo-box evo-box-8"></div>
-
-evo-box-9
-<div class="evo-box evo-box-9"></div>
-
-evo-box-10
-<div class="evo-box evo-box-10"></div>
-
-evo-box-11
-<div class="evo-box evo-box-11"></div>
-
-evo-box-12
-<div class="evo-box evo-box-12"></div>
-
-evo-box-13
-<div class="evo-box evo-box-13"></div>
-
-evo-box-14
-<div class="evo-box evo-box-14"></div>
-
-evo-box-15
-<div class="evo-box evo-box-15"></div>
-
-<div class="evo-space-15"></div>
-
-<!-- Width Shorthand -->
+<div class="evo-space-8"></div>
 
 evo-box-thin
 <div class="evo-box evo-box-thin"></div>
 
+<div class="four-up">
+evo-box-top-thin
+<div class="evo-box-top evo-box-top-thin"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-thin
+<div class="evo-box-bottom evo-box-bottom-thin"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-thin
+<div class="evo-box-left evo-box-left-thin"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-thin
+<div class="evo-box-right evo-box-right-thin"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
 evo-box-medium
 <div class="evo-box evo-box-medium"></div>
+
+<div class="four-up">
+evo-box-top-medium
+<div class="evo-box-top evo-box-top-medium"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-medium
+<div class="evo-box-bottom evo-box-bottom-medium"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-medium
+<div class="evo-box-left evo-box-left-medium"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-medium
+<div class="evo-box-right evo-box-right-medium"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
 
 evo-box-thick
 <div class="evo-box evo-box-thick"></div>
 
-<div class="evo-space-15"></div>
+<div class="four-up">
+evo-box-top-thick
+<div class="evo-box-top evo-box-top-thick"></div>
+</div>
 
-<!-- Style -->
+<div class="four-up">
+evo-box-bottom-thick
+<div class="evo-box-bottom evo-box-bottom-thick"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-thick
+<div class="evo-box-left evo-box-left-thick"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-thick
+<div class="evo-box-right evo-box-right-thick"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+</section>
 
 
-evo-box-lightest
-<div class="evo-box evo-box-lightest"></div>
 
-evo-box-lighter
-<div class="evo-box evo-box-lighter"></div>
 
-evo-box-light
-<div class="evo-box evo-box-light"></div>
+<!-- box border size -->
 
-evo-box-heavy
-<div class="evo-box evo-box-heavy"></div>
+<section id="evoBoxSize">
 
-evo-box-heavier
-<div class="evo-box evo-box-heavier"></div>
+<h2 class="evo-text-6">evo-box-[size]</h2>
 
-evo-box-heaviest
-<div class="evo-box evo-box-heaviest"></div>
+<div class="evo-space-8"></div>
+
+evo-box-smallest
+<div class="evo-box evo-box-smallest"></div>
+
+<div class="four-up">
+evo-box-top-smallest
+<div class="evo-box-top evo-box-top-smallest"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-smallest
+<div class="evo-box-bottom evo-box-bottom-smallest"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-smallest
+<div class="evo-box-left evo-box-left-smallest"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-smallest
+<div class="evo-box-right evo-box-right-smallest"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-smaller
+<div class="evo-box evo-box-smaller"></div>
+
+<div class="four-up">
+evo-box-top-smaller
+<div class="evo-box-top evo-box-top-smaller"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-smaller
+<div class="evo-box-bottom evo-box-bottom-smaller"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-smaller
+<div class="evo-box-left evo-box-left-smaller"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-smaller
+<div class="evo-box-right evo-box-right-smaller"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-small
+<div class="evo-box evo-box-small"></div>
+
+<div class="four-up">
+evo-box-top-small
+<div class="evo-box-top evo-box-top-small"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-small
+<div class="evo-box-bottom evo-box-bottom-small"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-small
+<div class="evo-box-left evo-box-left-small"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-small
+<div class="evo-box-right evo-box-right-small"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-big
+<div class="evo-box evo-box-big"></div>
+
+<div class="four-up">
+evo-box-top-big
+<div class="evo-box-top evo-box-top-big"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-big
+<div class="evo-box-bottom evo-box-bottom-big"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-big
+<div class="evo-box-left evo-box-left-big"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-big
+<div class="evo-box-right evo-box-right-big"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-bigger
+<div class="evo-box evo-box-bigger"></div>
+
+<div class="four-up">
+evo-box-top-bigger
+<div class="evo-box-top evo-box-top-bigger"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-bigger
+<div class="evo-box-bottom evo-box-bottom-bigger"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-bigger
+<div class="evo-box-left evo-box-left-bigger"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-bigger
+<div class="evo-box-right evo-box-right-bigger"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-biggest
+<div class="evo-box evo-box-biggest"></div>
+
+<div class="four-up">
+evo-box-top-biggest
+<div class="evo-box-top evo-box-top-biggest"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-biggest
+<div class="evo-box-bottom evo-box-bottom-biggest"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-biggest
+<div class="evo-box-left evo-box-left-biggest"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-biggest
+<div class="evo-box-right evo-box-right-biggest"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+</section>
+
+
+
+<!-- box border number -->
+
+<section id="evoBoxNumber">
+
+<h2 class="evo-text-6">evo-box-[number]</h2>
+
+<div class="evo-space-8"></div>
+
+evo-box-1
+<div class="evo-box evo-box-1"></div>
+
+<div class="four-up">
+evo-box-top-1
+<div class="evo-box-top evo-box-top-1"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-1
+<div class="evo-box-bottom evo-box-bottom-1"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-1
+<div class="evo-box-left evo-box-left-1"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-1
+<div class="evo-box-right evo-box-right-1"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-2
+<div class="evo-box evo-box-2"></div>
+
+<div class="four-up">
+evo-box-top-2
+<div class="evo-box-top evo-box-top-2"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-2
+<div class="evo-box-bottom evo-box-bottom-2"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-2
+<div class="evo-box-left evo-box-left-2"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-2
+<div class="evo-box-right evo-box-right-2"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-3
+<div class="evo-box evo-box-3"></div>
+
+<div class="four-up">
+evo-box-top-3
+<div class="evo-box-top evo-box-top-3"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-3
+<div class="evo-box-bottom evo-box-bottom-3"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-3
+<div class="evo-box-left evo-box-left-3"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-3
+<div class="evo-box-right evo-box-right-3"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-4
+<div class="evo-box evo-box-4"></div>
+
+<div class="four-up">
+evo-box-top-4
+<div class="evo-box-top evo-box-top-4"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-4
+<div class="evo-box-bottom evo-box-bottom-4"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-4
+<div class="evo-box-left evo-box-left-4"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-4
+<div class="evo-box-right evo-box-right-4"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-5
+<div class="evo-box evo-box-5"></div>
+
+<div class="four-up">
+evo-box-top-5
+<div class="evo-box-top evo-box-top-5"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-5
+<div class="evo-box-bottom evo-box-bottom-5"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-5
+<div class="evo-box-left evo-box-left-5"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-5
+<div class="evo-box-right evo-box-right-5"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-6
+<div class="evo-box evo-box-6"></div>
+
+<div class="four-up">
+evo-box-top-6
+<div class="evo-box-top evo-box-top-6"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-6
+<div class="evo-box-bottom evo-box-bottom-6"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-6
+<div class="evo-box-left evo-box-left-6"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-6
+<div class="evo-box-right evo-box-right-6"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-7
+<div class="evo-box evo-box-7"></div>
+
+<div class="four-up">
+evo-box-top-7
+<div class="evo-box-top evo-box-top-7"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-7
+<div class="evo-box-bottom evo-box-bottom-7"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-7
+<div class="evo-box-left evo-box-left-7"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-7
+<div class="evo-box-right evo-box-right-7"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-8
+<div class="evo-box evo-box-8"></div>
+
+<div class="four-up">
+evo-box-top-8
+<div class="evo-box-top evo-box-top-8"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-8
+<div class="evo-box-bottom evo-box-bottom-8"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-8
+<div class="evo-box-left evo-box-left-8"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-8
+<div class="evo-box-right evo-box-right-8"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-1
+<div class="evo-box evo-box-9"></div>
+
+<div class="four-up">
+evo-box-top-9
+<div class="evo-box-top evo-box-top-9"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-9
+<div class="evo-box-bottom evo-box-bottom-9"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-9
+<div class="evo-box-left evo-box-left-9"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-9
+<div class="evo-box-right evo-box-right-9"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-10
+<div class="evo-box evo-box-10"></div>
+
+<div class="four-up">
+evo-box-top-10
+<div class="evo-box-top evo-box-top-10"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-10
+<div class="evo-box-bottom evo-box-bottom-10"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-10
+<div class="evo-box-left evo-box-left-10"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-10
+<div class="evo-box-right evo-box-right-10"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+
+evo-box-11
+<div class="evo-box evo-box-11"></div>
+
+<div class="four-up">
+evo-box-top-11
+<div class="evo-box-top evo-box-top-11"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-11
+<div class="evo-box-bottom evo-box-bottom-11"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-11
+<div class="evo-box-left evo-box-left-11"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-11
+<div class="evo-box-right evo-box-right-11"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-12
+<div class="evo-box evo-box-12"></div>
+
+<div class="four-up">
+evo-box-top-12
+<div class="evo-box-top evo-box-top-12"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-12
+<div class="evo-box-bottom evo-box-bottom-12"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-12
+<div class="evo-box-left evo-box-left-12"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-12
+<div class="evo-box-right evo-box-right-12"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-13
+<div class="evo-box evo-box-13"></div>
+
+<div class="four-up">
+evo-box-top-13
+<div class="evo-box-top evo-box-top-13"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-13
+<div class="evo-box-bottom evo-box-bottom-13"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-13
+<div class="evo-box-left evo-box-left-13"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-13
+<div class="evo-box-right evo-box-right-13"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+
+evo-box-14
+<div class="evo-box evo-box-14"></div>
+
+<div class="four-up">
+evo-box-top-14
+<div class="evo-box-top evo-box-top-14"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-14
+<div class="evo-box-bottom evo-box-bottom-14"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-14
+<div class="evo-box-left evo-box-left-14"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-14
+<div class="evo-box-right evo-box-right-14"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
+
+evo-box-15
+<div class="evo-box evo-box-15"></div>
+
+<div class="four-up">
+evo-box-top-15
+<div class="evo-box-top evo-box-top-15"></div>
+</div>
+
+<div class="four-up">
+evo-box-bottom-15
+<div class="evo-box-bottom evo-box-bottom-15"></div>
+</div>
+
+<div class="four-up">
+evo-box-left-15
+<div class="evo-box-left evo-box-left-15"></div>
+</div>
+
+<div class="four-up">
+evo-box-right-15
+<div class="evo-box-right evo-box-right-15"></div>
+</div>
+
+<div class="evo-space-10 after-box"></div>
 
 <div class="evo-space-15"></div>
 

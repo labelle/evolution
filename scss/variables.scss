@@ -5,7 +5,20 @@
 // Override these in settings.scss
 
 
-// @import "settings";
+// Font stacks
+@import "variables/font";
+
+// Scale units such as rems, ems, px
+@import "variables/scale";
+
+// Text and typography
+@import "variables/text";
+
+// Colors and color palettes
+@import "variables/color";
+
+// Spacers including margins and padding
+@import "variables/space";
 
 
 // Version
@@ -21,46 +34,66 @@ $brand:                             ".brand" !default;
 $evo:                               ".evo" !default;
 
 
-// Branding
-
-// Brand Fonts
-// These are brand specific fonts
-// Place font-family value here e.g. 'open sans', sans-serif
-// MOVE TO SPECIAL BRAND FOLDER AND BUILD?
-$brand_text_font_family_1:          sans-serif !default;
-$brand_text_font_family_2:          sans-serif !default;
-$brand_text_font_family_3:          sans-serif !default;
-
-
-// // Typography
-// // alt font-size is calc(1em + 1vw)
-// // pg 32 inclusive design patterns 
-// $global_text_size:                  1rem !default; // e.g. 1rem or 16px or 100%
-// $global_text_color:                 initial !default; // e.g. Black or #000000
-// $global_text_font_family:           sans-serif !default; // e.g. #{$arial}
-// $global_font_weight:                initial !default;
-// $global_text_line_height:           1.4375 !default; // no em, rem, px, %
-
-
 // Fonts
 // Generic font-stacks
 $sans-serif:                        sans-serif !default;
 $serif:                             serif !default;
 $monospace:                         monospace !default;
 $cursive:                           cursive !default;
+$fantasy:                           fantasy !default;
+
+// Branding
+
+// Brand Fonts
+// These are brand specific fonts
+// Place font-family value here e.g. 'open sans', sans-serif
+// MOVE TO SPECIAL BRAND FOLDER AND BUILD?
+$brand_font_family_1:               #{$sans-serif} !default;
+$brand_font_family_2:               #{$sans-serif} !default;
+$brand_font_family_3:               #{$sans-serif} !default;
 
 
-// Text
+// Typography
+
+// Global fonts assigned to html tag in _global.scss
+// alt font-size is calc(1em + 1vw)
+// pg 32 inclusive design patterns 
+$html_font_size:                    1rem !default; // e.g. 1rem or 16px or 100%
+$html_font_family:                  #{$adobe-open-sans}; // e.g. Initial or #{$arial} or #{$sans-serif}
+$html_font_weight:                  100 !default;
+$html_line_height:                  1.4375 !default; // no em, rem, px, %
+
+
+// HTML Headings
+// Base variables
+$heading_color:                     inherit !default; // e.g. Inherit or Initial or Black or #000000
+$heading_font_family:               inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
+$heading_font_weight:               900 !default; // e.g. Inherit or Initial or Bold or 500
+$heading_line_height:               inherit !default; // no em, rem, px, %
+$heading_margin_top:                0 !default;
+$heading_margin_bottom:             1.4375em !default; // OR REM?
+$heading_letter_spacing:            normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
+
+// H1-H6 tag sizes
+$heading_size_h1:                   normal !default; // e.g. 200% or normal
+$heading_size_h2:                   normal !default; // e.g. 180% or normal
+$heading_size_h3:                   normal !default; // e.g. 160% or normal
+$heading_size_h4:                   normal !default; // e.g. 140% or normal
+$heading_size_h5:                   normal !default; // e.g. 120% or normal
+$heading_size_h6:                   normal !default; // e.g. 100% or normal
+
+
+// Text such as paragraphs
 // MATCH TO SETTINGS
 // MOVE TO TEXT VARIABLE PAGE?
 $text_size:                         1rem !default; // e.g. 1rem or 16px or 100%
-$text_color:                        initial !default; // e.g. Black or #000000
-$text_font_family:                  #{$monospace} !default; // e.g. #{$arial} or #{$sans-serif}
+$text_color:                        inherit !default; // e.g. Inherit or Initial or Black or #000000
+$text_font_family:                  inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
 $text_font_weight:                  normal !default;
 $text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem, px, %
 $text_margin_top:                   0 !default;
 $text_margin_bottom:                1.4375em !default; // OR REM?
-
+$text_letter_spacing:               normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
 
 // Links
 $link_color:                        #cccccc !default;
@@ -69,18 +102,10 @@ $link_color_hover:                  darker(rgb( 0, 174, 239 ),50%) !default; // 
 $link_color_active:                 rgb( 0, 174, 239 ) !default; // cyan
 $link_underline:                    none !default;
 
-
-// Font stacks
-@import "variables/font";
-
-// Scale units such as rems, ems, px
-@import "variables/scale";
-
-// Text and typography
-@import "variables/text";
-
-// Colors and color palettes
-@import "variables/color";
-
-// Spacers including margins and padding
-@import "variables/space";
+// HR
+$hr_border:                         0 !default; // do not change
+$hr_width:                          thin !default;
+$hr_style:                          solid !default;
+$hr_color:                          #cccccc !default;
+$hr_margin_top:                     20px !default;
+$hr_margin_bottom:                  20px !default;

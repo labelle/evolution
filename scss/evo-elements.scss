@@ -50,7 +50,6 @@
 // @import "elements/line_mixin";
 @import "elements/color_mixin";
 // @import "elements/box_mixin";
-// @import "elements/corner_mixin";
 // @import "elements/space_mixin";
 
 // Font
@@ -64,6 +63,7 @@
 
 // Text
 @import "elements/text";
+@import "elements/text_style";
 @import "elements/text_size";
 @import "elements/text_effect";
 
@@ -88,9 +88,9 @@
 
 // Box
 @import "elements/box";
+@import "elements/box_style";
+@import "elements/box_shape";
 @import "elements/box_size";
-@import "elements/box_corner";
-@import "elements/box_corner_scale";
 @import "elements/box_color";
 @import "elements/box_effect";
 
