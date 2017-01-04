@@ -43,7 +43,6 @@ code {
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
 html {
-  font-size: 1rem;
   font-family: open sans, open-sans, sans-serif;
   font-weight: 100;
   line-height: 1.4375;
@@ -55,9 +54,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
-  font-family: inherit;
-  font-weight: 900;
   line-height: inherit;
   letter-spacing: normal;
   margin-top: 0;
@@ -140,7 +136,6 @@ hr {
 
 /*      FONTS     */
 .evo-font {
-  font-size: 1rem;
   font-family: open sans, open-sans, sans-serif;
   font-weight: 100;
   line-height: 1.4375; }

@@ -34,7 +34,7 @@ code {
 
 // html
 html {
-  font-size:       #{$html_font_size};
+  // font-size:       #{$html_font_size};
   font-family:     #{$html_font_family};
   font-weight:     #{$html_font_weight};
   line-height:     #{$html_line_height};
@@ -73,9 +73,9 @@ h3,
 h4,
 h5,
 h6 {
-  color:           #{$heading_color};
-  font-family:     #{$heading_font_family};
-  font-weight:     #{$heading_font_weight};
+  // color:           #{$heading_color};
+  // font-family:     #{$heading_font_family};
+  // font-weight:     #{$heading_font_weight};
   line-height:     #{$heading_line_height};
   letter-spacing:  #{$heading_letter_spacing};
   margin-top:      #{$heading_margin_top};
