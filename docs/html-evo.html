@@ -121,69 +121,118 @@ Experience Design Made Simple for living design systems
 
 <div class="evo-space-10"></div>
 
-<form>
 
-<code>&lt;input type="text" placeholder="text" /&gt;</code>
+
+<form>
+<fieldset>
+<legend>Sample form elements</legend>
+
+<code>&lt;input type="text" id="text" placeholder="placeholder text" /&gt;</code>
 <br />
-<input type="text" placeholder="text" />
+<label for="text">enter text</label>
+<input type="text" id="text" placeholder="placeholder text" />
+<input type="text" id="text" placeholder="text" value="text content example" />
+<input type="text" id="text" placeholder="disabled" disabled />
 
 <div class="evo-space-10"></div>
 
-<code>&lt;input type="radio" id="radio1" /&gt;</code>
+<code>&lt;input type="password" name="password" placeholder="password" /&gt;</code>
+<br />
+<label for="text">enter password</label>
+<input type="password" name="password" placeholder="password" />
+<input type="password" name="password" placeholder="password" value="password example" />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;type="radio" id="radio1" name="radio" value="value" checked /&gt;</code>
 <code>&lt;label for="radio1"&gt;</code>
 <br />
-<input type="radio" id="radio1" />
-<label for="radio1">radio</label>
-
+<input type="radio" id="radio1" name="radio" value="value" checked /><label for="radio1">radio 1</label>
+<input type="radio" id="radio1" name="radio" value="value"  /><label for="radio2">radio 2</label>
+<input type="radio" id="radio3" name="radio" value="value" disabled /><label for="radio3">disabled</label>
 <div class="evo-space-10"></div>
 
-<code>&lt;input type="checkbox" id="checkbox1" /&gt;</code>
+<code>&lt;input type="checkbox" id="checkbox1" checked /&gt;</code>
 <code>&lt;label for="checkbox1"&gt;</code>
 <br />
-<input type="checkbox" id="checkbox1" />
-<label for="checkbox1">checkbox</label>
+<input type="checkbox" id="checkbox1" checked /><label for="checkbox1">checkbox 1</label>
+<input type="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+<input type="checkbox" id="checkbox3" disabled /><label for="checkbox3">disabled</label>
 
 <div class="evo-space-10"></div>
 
-<code>&lt;select&gt;</code>
+<code>&lt;select id="select"&gt;</code>
 <br />
-<select>
-    <option value="option1 "> option 1 </option>
-    <option value="option2 "> option 2 </option>
-    <option value="option3 "> option 3 </option>
+<select id="select">
+    <option value="option1">option 1</option>
+    <option value="option2">option 2</option>
+    <option value="option3">option 3</option>
+</select>
+<select id="select" disabled >
+<option value="option1">disabled</option>
 </select>
 
 <div class="evo-space-10"></div>
 
 <code>&lt;input type="number" placeholder="number" /&gt;</code>
 <br />
-<input type="number" placeholder="number" />
+<label for="number">select a number</label>
+<input type="number" id="number" placeholder="number" />
+<input type="number" id="number" placeholder="disabled" disabled />
 
 <div class="evo-space-10"></div>
 
-<code>&lt;date&gt;</code>
+<code>&lt;input type="file" id="file" /&gt;</code>
 <br />
-<input type="date" placeholder="date">
+<label for="file">select a date</label>
+<input type="file" id="file" />
+<input type="file" id="file" disabled />
 
 <div class="evo-space-10"></div>
 
-<code>&lt;file /&gt;</code>
+<code>&lt;textarea name="message" placeholder="enter a message" rows="3" cols="auto" /&gt;</code>
 <br />
-<input type="file" />
+<label for="time">enter a message</label>
+<textarea name="message" placeholder="enter a message" rows="3" cols="auto" ></textarea>
+<textarea name="message" placeholder="enter a message" rows="3" cols="auto">Message content example.</textarea>
+<textarea name="message" placeholder="disabled" rows="3" cols="auto" disabled></textarea>
 
 <div class="evo-space-10"></div>
 
-<code>&lt;time /&gt;</code>
+<code>&lt;input type="date" id="date" placeholder="date"&gt;</code>
 <br />
-<input type="time" />
+<label for="date">select a date</label>
+<input type="date" id="date" placeholder="date" />
+<input type="date" id="date" placeholder="disabled" disabled />
+
 
 <div class="evo-space-10"></div>
 
-<code>&lt;input type="submit" /&gt;</code>
+<code>&lt;input type="range" name="points" min="0" max="10" /&gt;</code>
 <br />
-<input type="submit" />
+<label for="time">select a number</label>
+<input type="range" name="points" min="0" max="10" />
+<input type="range" name="points" min="0" max="10" disabled />
 
 <div class="evo-space-10"></div>
+
+
+<code>&lt;input type="color" name="yourcolor" /&gt;</code>
+<br />
+<label for="time">select a color</label>
+<input type="color" name="yourcolor" />
+<input type="color" name="yourcolor" disabled />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="button" onclick="alert('Hello World!')" value="submit" /&gt;</code>
+<br />
+<input type="button" onclick="alert('Hello World!')" value="submit" />
+<input type="button" onclick="alert('Hello World!')" value="disabled" disabled />
+
+<div class="evo-space-10"></div>
+
+</fieldset>
 
 </form>
 
