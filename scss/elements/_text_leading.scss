@@ -1,0 +1,65 @@
+///*      T E X T   L E A D I N G    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+// Utilities and helper mixins and classes
+// see variables/scale for actual units
+// https://css-tricks.com/confused-rem-em/
+
+
+// /* Text Utilities */
+
+
+// Relative Text Leading
+#{$evo}-leading-smallest  { @include leading(tightest); }
+#{$evo}-leading-smaller   { @include leading(tighter); }
+#{$evo}-leading-small     { @include leading(tight); }
+#{$evo}-leading-big       { @include leading(loose); }
+#{$evo}-leading-bigger    { @include leading(looser); }
+#{$evo}-leading-biggest   { @include leading(loosest); }
+
+
+// Text Leading
+// unitless: no em, rem, px, %
+#{$evo}-leading-reset  { line-height: initial; }
+#{$evo}-leading-0      { line-height: #{$u-18}; } // tight lowercase
+#{$evo}-leading-1      { line-height: #{$u-19}; } // useful for some tight lowercase
+#{$evo}-leading-2      { line-height: #{$u-20}; }
+#{$evo}-leading-3      { line-height: #{$u-21}; } // tight uppercase
+#{$evo}-leading-4      { line-height: #{$u-22}; }
+#{$evo}-leading-5      { line-height: #{$u-23}; }
+#{$evo}-leading-6      { line-height: #{$u-24}; } 
+#{$evo}-leading-7      { line-height: #{$u-25}; }
+#{$evo}-leading-8      { line-height: #{$u-26}; }
+#{$evo}-leading-9      { line-height: #{$u-27}; }
+#{$evo}-leading-10     { line-height: #{$u-28}; }
+#{$evo}-leading-11     { line-height: #{$u-29}; }
+#{$evo}-leading-12     { line-height: #{$u-30}; }
+#{$evo}-leading-13     { line-height: #{$u-31}; }
+#{$evo}-leading-14     { line-height: #{$u-32}; }
+#{$evo}-leading-15     { line-height: #{$u-33}; }
+// #{$evo}-leading-16     { line-height: #{$u-34}; }
+// #{$evo}-leading-17     { line-height: #{$u-35}; }
+// #{$evo}-leading-18     { line-height: #{$u-36}; }
+// #{$evo}-leading-19     { line-height: #{$u-37}; }
+// #{$evo}-leading-20     { line-height: #{$u-38}; }
+// #{$evo}-leading-21     { line-height: #{$u-39}; }
+// #{$evo}-leading-22     { line-height: #{$u-40}; }
+// #{$evo}-leading-23     { line-height: #{$u-41}; }
+// #{$evo}-leading-24     { line-height: #{$u-42}; }
+// #{$evo}-leading-25     { line-height: #{$u-43}; }
+
+
+
+// // Leading
+// #{$evo}-leading-tightest  { line-height: .75; }
+// #{$evo}-leading-tighter   { line-height: .85; }
+// #{$evo}-leading-tight     { line-height: .95; }
+// #{$evo}-leading-loose     { line-height: 1; }
+// #{$evo}-leading-looser    { line-height: 1.15; }
+// #{$evo}-leading-loosest   { line-height: 1.25; }
+
+
+

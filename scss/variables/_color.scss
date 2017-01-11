@@ -8,6 +8,135 @@
 // @import "settings";
 
 
+// colors
+$color_0:  rgb( 255, 240, 42 );  // #fff02a yellow
+$color_1:  rgb( 255, 229, 44 );  // #ffe52c
+$color_2:  rgb( 255, 214, 46 );  // #ffd62e
+$color_3:  rgb( 253, 193, 49 );  // #fdc131
+$color_4:  rgb( 245, 147, 49 );  // #f59331
+$color_5:  rgb( 239, 102, 47 );  // #ef662f orange
+$color_6:  rgb( 235, 33, 46 );  // #eb212e red
+$color_7:  rgb( 235, 31, 69 );  // #eb1f45
+$color_8:  rgb( 235, 29, 93 );  // #eb1d5d
+$color_9:  rgb( 234, 24, 115 );  // #ea1873
+$color_10:  rgb( 234, 20, 140 );  // #ea148c magenta
+$color_11:  rgb( 187, 35, 140 );  // #bb238c
+$color_12:  rgb( 144, 44, 142 );  // #902c8e
+$color_13:  rgb( 101, 49, 143 );  // #65318f purple
+$color_14:  rgb( 47, 52, 144 );  // #2f3490 dark blue
+$color_15:  rgb( 0, 86, 164 );  // #0056a4
+$color_16:  rgb( 0, 115, 185 );  // #0073b9
+$color_17:  rgb( 0, 144, 210 );  // #0090d2 blue
+$color_18:  rgb( 0, 175, 236 );  // #00afec cyan
+$color_19:  rgb( 0, 171, 195 );  // #00abc3
+$color_20:  rgb( 0, 168, 156 );  // #00a89c teal
+$color_21:  rgb( 0, 166, 118 );  // #00a676
+$color_22:  rgb( 0, 164, 83 );  // #00a453 green
+$color_23:  rgb( 63, 179, 79 );  // #3fb34f
+$color_24:  rgb( 142, 197, 73 );  // #8ec549
+$color_25:  rgb( 203, 217, 62 );  // #cbd93e
+// $color_26:  rgb( 237, 230, 52 );  // #ede634 green yellow
+// spectrum could cycle back to yellow $color_0
+
+// browns
+$color_26:  rgb( 128, 92, 61 );  // #805c3d
+$color_27:  rgb( 98, 70, 47 );  // #62462f
+$color_28:  rgb( 83, 60, 40 );  // #533c28
+$color_29:  rgb( 69, 49, 33 );  // #453121
+
+// $color_30:  rgb( 123, 105, 63 );  // #7b693f
+// $color_31:  rgb( 101, 87, 62 );  // #65573e green brown
+// $color_32:  rgb( 90, 67, 47 );  // #5a432f
+// $color_33:  rgb( 71, 55, 42 );  // #47372a
+// $color_34:  rgb( 53, 43, 37 );  // #352b25  // warm gray 65 65 65 65
+
+// bridge color between green brown and red brown
+$color_35:  rgb( 76, 51, 36 );  // #4c3324
+// $color_45:  rgb( 84, 57, 39 );  // #543927 neutral warm gray
+
+// red browns
+$color_46:  rgb( 116, 71, 42 );  // #74472a red brown
+$color_47:  rgb( 148, 92, 58 );  // #945c3a
+$color_48:  rgb( 151, 94, 76 );  // #975e4c
+$color_49:  rgb( 194, 137, 91 );  // #c2895b
+$color_50:  rgb( 210, 160, 95 );  // #d2a05f
+$color_51:  rgb( 223, 185, 100 );  // #dfb964
+
+// bridge color between red browns and yellow $color_0
+$color_52:  rgb( 239, 207, 72 );  // #efcf48
+$color_52:  rgb( 243, 203, 45 );  // #f3cb2d
+
+
+// // colors
+// $color_0:  rgb( 255, 240, 42 );  // #fff02a yellow
+// $color_1:  rgb( 255, 229, 44 );  // #ffe52c
+// $color_2:  rgb( 255, 214, 46 );  // #ffd62e
+// $color_3:  rgb( 253, 193, 49 );  // #fdc131
+// $color_4:  rgb( 245, 147, 49 );  // #f59331
+// $color_5:  rgb( 239, 102, 47 );  // #ef662f orange
+// $color_6:  rgb( 237, 72, 46 );  // #ed482e
+// $color_7:  rgb( 236, 52, 46 );  // #ec342e
+// $color_8:  rgb( 235, 33, 46 );  // #eb212e red
+// $color_9:  rgb( 235, 31, 69 );  // #eb1f45
+// $color_10:  rgb( 235, 29, 93 );  // #eb1d5d
+// $color_11:  rgb( 234, 24, 115 );  // #ea1873
+// $color_12:  rgb( 234, 20, 140 );  // #ea148c magenta
+// $color_13:  rgb( 208, 29, 139 );  // #d01d8b
+// $color_14:  rgb( 187, 35, 140 );  // #bb238c
+// $color_15:  rgb( 144, 44, 142 );  // #902c8e
+// $color_16:  rgb( 101, 49, 143 );  // #65318f purple
+// $color_17:  rgb( 86, 50, 143 );  // #56328f
+// $color_18:  rgb( 67, 51, 143 );  // #43338f
+// $color_19:  rgb( 47, 52, 144 );  // #2f3490 dark blue
+// $color_20:  rgb( 36, 36, 116 );  // #242474
+// $color_21:  rgb( 32, 69, 153 );  // #204599
+// $color_22:  rgb( 0, 86, 164 );  // #0056a4
+// $color_23:  rgb( 0, 115, 185 );  // #0073b9
+// $color_24:  rgb( 0, 144, 210 );  // #0090d2 blue
+// $color_25:  rgb( 0, 158, 222 );  // #009ede
+// $color_26:  rgb( 0, 173, 213 );  // #00add5
+// $color_27:  rgb( 0, 175, 236 );  // #00afec cyan
+// $color_28:  rgb( 0, 171, 195 );  // #00abc3
+// $color_29:  rgb( 0, 168, 156 );  // #00a89c teal
+// $color_30:  rgb( 0, 166, 118 );  // #00a676
+// $color_31:  rgb( 0, 164, 83 );  // #00a453 green
+// $color_32:  rgb( 63, 179, 79 );  // #3fb34f
+// $color_33:  rgb( 142, 197, 73 );  // #8ec549
+// $color_34:  rgb( 203, 217, 62 );  // #cbd93e
+// $color_35:  rgb( 237, 230, 52 );  // #ede634 green yellow
+// // spectrum could cycle back to yellow $color_0
+
+// // green browns
+// $color_36:  rgb( 227, 204, 55 );  // #e3cc37
+// $color_37:  rgb( 199, 176, 60 );  // #c7b03c
+// $color_38:  rgb( 171, 148, 63 );  // #ab943f
+// $color_39:  rgb( 147, 126, 63 );  // #937e3f
+// $color_40:  rgb( 123, 105, 63 );  // #7b693f
+// $color_41:  rgb( 101, 87, 62 );  // #65573e green brown
+// $color_42:  rgb( 90, 67, 47 );  // #5a432f
+// $color_43:  rgb( 71, 55, 42 );  // #47372a
+// $color_44:  rgb( 53, 43, 37 );  // #352b25  // warm gray 65 65 65 65
+
+// // bridge color between green brown and red brown
+// $color_45:  rgb( 76, 51, 36 );  // #4c3324
+// // $color_45:  rgb( 84, 57, 39 );  // #543927 neutral warm gray
+
+// // red browns
+// $color_46:  rgb( 116, 71, 42 );  // #74472a red brown
+// $color_47:  rgb( 148, 92, 58 );  // #945c3a
+// $color_48:  rgb( 151, 94, 76 );  // #975e4c
+// $color_49:  rgb( 194, 137, 91 );  // #c2895b
+// $color_50:  rgb( 210, 160, 95 );  // #d2a05f
+// $color_51:  rgb( 223, 185, 100 );  // #dfb964
+
+// // bridge color between red browns and yellow $color_0
+// $color_52:  rgb( 239, 207, 72 );  // #efcf48
+// $color_52:  rgb( 243, 203, 45 );  // #f3cb2d
+
+
+
+
+
 // Colors
 $red:      rgb( 237, 28, 36 );  // #ed1c24 cmy red
 $green:    rgb( 0, 166, 81 );   // #00a651 cmy green
@@ -15,12 +144,80 @@ $blue:     rgb( 46, 49, 146 );  // #2e3192 cmy blue
 $cyan:     rgb( 0, 174, 239 );  // #00aeef cmy cyan
 $magenta:  rgb( 236, 0, 140 );  // #ec008c cmy magenta
 $yellow:   rgb( 255, 242, 0 );  // #fff200 cmy yellow
+// need purple
+// need orange
+// spin around the color wheel?
+// add cmy to these and move the simple class to settings?
 
+// http://www.w3schools.com/colors/colors_ncol.asp
+// Let's lead with these?d
+
+// http://www.w3schools.com/colors/colors_shades.asp
+$gray:      rgb( 127, 127, 127 );		// #EDEDED
 $gray-light: #ccc;   
 $gray-lighter: #eee;
+// need other grays
+// move these to settings?
 
-$black: #000;   
-$white: #fff;
+
+
+// Black and white
+$black:     rgb( 0, 0, 0 );             // #000000	Black
+$white:     rgb( 255, 255, 255 );       // #FFFFFF	White
+
+
+
+// Gray number scale
+
+// 100% solid black
+$gray_30:	rgb( 0, 0, 0 );				// #000000	Black
+
+// 95%-99%
+$gray_29:	rgb( 3, 3, 3 );				// #030303
+$gray_28:	rgb( 5, 5, 5 );				// #050505
+$gray_27:	rgb( 8, 8, 8 );				// #080808
+$gray_26:	rgb( 10, 10, 10 );			// #0A0A0A
+$gray_25:	rgb( 13, 13, 13 );			// #0D0D0D 	Darkest Gray
+
+// 93%
+$gray_24:	rgb( 18, 18, 18 );			// #121212
+
+// 55%-90% in 5% increments
+$gray_23:	rgb( 25, 25, 25 );			// #191919
+$gray_22:	rgb( 38, 38, 38 );			// #262626
+$gray_21:	rgb( 51, 51, 51 );			// #333333 	Darker Gray
+$gray_20:	rgb( 64, 64, 64 );			// #404040
+$gray_19:	rgb( 76, 76, 76 );			// #4C4C4C
+$gray_18:	rgb( 89, 89, 89 );			// #595959 	Dark Gray
+$gray_17:	rgb( 102, 102, 102 );		// #666666
+$gray_16:	rgb( 115, 115, 115 );		// #737373
+
+// 50% Middle gray
+$gray_15:	rgb( 127, 127, 127 );		// #7F7F7F 	Gray
+
+// 10%-45% in 5% increments
+$gray_14:	rgb( 140, 140, 140 );		// #8C8C8C
+$gray_13:	rgb( 153, 153, 153 );		// #999999
+$gray_12:	rgb( 166, 166, 166 );		// #A6A6A6	Light Gray
+$gray_11:	rgb( 178, 178, 178 );		// #B2B2B2
+$gray_10:	rgb( 191, 191, 191 );		// #BFBFBF
+$gray_9:	rgb( 204, 204, 204 );		// #CCCCCC 	Lighter Gray
+$gray_8:	rgb( 217, 217, 217 );		// #D9D9D9
+$gray_7:	rgb( 229, 229, 229 );		// #E5E5E5
+
+// 7%
+$gray_6:	rgb( 237, 237, 237 );		// #EDEDED
+
+// 1%-5%
+$gray_5:	rgb( 242, 242, 242 );		// #F2F2F2 	Lightest Gray 
+$gray_4:	rgb( 245, 245, 245 );		// #F5F5F5
+$gray_3:	rgb( 247, 247, 247 );		// #F7F7F7
+$gray_2:	rgb( 250, 250, 250 );		// #FAFAFA
+$gray_1:	rgb( 252, 252, 252 );		// #FCFCFC
+
+// 0% solid white
+$gray_0:	rgb( 255, 255, 255 );		// #FFFFFF	White
+
 
 // @import "settings";
 

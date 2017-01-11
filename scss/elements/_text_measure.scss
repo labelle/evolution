@@ -1,0 +1,44 @@
+///*      T E X T   M E A S U R E    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+// Utilities and helper mixins and classes
+// see variables/scale for actual units
+// https://css-tricks.com/confused-rem-em/
+
+
+// /* Text Utilities */
+
+
+// Relative Text Measure
+// #{$evo}-measure-1   { max-width: 10rem; }
+
+// #{$evo}-measure-widest   { @include measure(widest); }
+// #{$evo}-measure-wider    { @include measure(wider); }
+// #{$evo}-measure-wide     { @include measure(wide); }
+// #{$evo}-measure-tight    { @include measure(tight); }
+// #{$evo}-measure-tighter  { @include measure(tighter); }
+// #{$evo}-measure-tightest { @include measure(tightest); }
+
+// #{$evo}-measure-wide     { @include measure(wide); }
+// #{$evo}-measure-medium   { @include measure(wide); }
+// #{$evo}-measure-tight    { @include measure(tight); }
+
+// Text Measure alt TEST
+#{$evo}-measure-1   { max-width: #{$u-35}rem; } // ceil(9.87)
+#{$evo}-measure-2   { max-width: #{$u-36}rem; } // ceil(12.92)
+#{$evo}-measure-3   { max-width: #{$u-37}rem; } // ceil(15.97)
+#{$evo}-measure-4   { max-width: #{$u-38}rem; } // ceil(20.905)
+#{$evo}-measure-5   { max-width: #{$u-39}rem; } // ceil(25.84)
+#{$evo}-measure-6   { max-width: #{$u-40}rem; } // ceil(33.825)
+#{$evo}-measure-7   { max-width: #{$u-41}rem; } // ceil(41.81)
+#{$evo}-measure-8   { max-width: #{$u-42}rem; } // ceil(54.73)
+#{$evo}-measure-9   { max-width: #{$u-43}rem; } // ceil(67.65)
+#{$evo}-measure-10  { max-width: 80rem; } // max usefulness
+// #{$evo}-measure-11  { max-width: 100rem; }
+// #{$evo}-measure-12  { max-width: 120rem; }
+// #{$evo}-measure-13  { max-width: 130rem; }
+// #{$evo}-measure-14  { max-width: 140rem; }
+// #{$evo}-measure-15  { max-width: 150rem; }

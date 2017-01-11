@@ -32,7 +32,7 @@ body.site-container {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: #f7f7f7; }
+  background-color: #fcfbf5; }
 
 code {
   padding: .2rem .4rem;
@@ -133,6 +133,685 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+/* COLORS */
+.evo-red {
+  color: #ed1c24; }
+
+.evo-red-bg {
+  background-color: #ed1c24; }
+
+.evo-green {
+  color: #00a651; }
+
+.evo-green-bg {
+  background-color: #00a651; }
+
+.evo-blue {
+  color: #2e3192; }
+
+.evo-blue-bg {
+  background-color: #2e3192; }
+
+.evo-cyan {
+  color: #00aeef; }
+
+.evo-cyan-bg {
+  background-color: #00aeef; }
+
+.evo-magenta {
+  color: #ec008c; }
+
+.evo-magenta-bg {
+  background-color: #ec008c; }
+
+.evo-yellow {
+  color: #fff200; }
+
+.evo-yellow-bg {
+  background-color: #fff200; }
+
+.evo-gray-30 {
+  color: black; }
+
+.evo-gray-30-bg {
+  background-color: black; }
+
+.evo-gray-29 {
+  color: #030303; }
+
+.evo-gray-29-bg {
+  background-color: #030303; }
+
+.evo-gray-28 {
+  color: #050505; }
+
+.evo-gray-28-bg {
+  background-color: #050505; }
+
+.evo-gray-27 {
+  color: #080808; }
+
+.evo-gray-27-bg {
+  background-color: #080808; }
+
+.evo-gray-26 {
+  color: #0a0a0a; }
+
+.evo-gray-26-bg {
+  background-color: #0a0a0a; }
+
+.evo-gray-25 {
+  color: #0d0d0d; }
+
+.evo-gray-25-bg {
+  background-color: #0d0d0d; }
+
+.evo-gray-24 {
+  color: #121212; }
+
+.evo-gray-24-bg {
+  background-color: #121212; }
+
+.evo-gray-23 {
+  color: #191919; }
+
+.evo-gray-23-bg {
+  background-color: #191919; }
+
+.evo-gray-22 {
+  color: #262626; }
+
+.evo-gray-22-bg {
+  background-color: #262626; }
+
+.evo-gray-21 {
+  color: #333333; }
+
+.evo-gray-21-bg {
+  background-color: #333333; }
+
+.evo-gray-20 {
+  color: #404040; }
+
+.evo-gray-20-bg {
+  background-color: #404040; }
+
+.evo-gray-19 {
+  color: #4c4c4c; }
+
+.evo-gray-19-bg {
+  background-color: #4c4c4c; }
+
+.evo-gray-18 {
+  color: #595959; }
+
+.evo-gray-18-bg {
+  background-color: #595959; }
+
+.evo-gray-17 {
+  color: #666666; }
+
+.evo-gray-17-bg {
+  background-color: #666666; }
+
+.evo-gray-16 {
+  color: #737373; }
+
+.evo-gray-16-bg {
+  background-color: #737373; }
+
+.evo-gray-15 {
+  color: #7f7f7f; }
+
+.evo-gray-15-bg {
+  background-color: #7f7f7f; }
+
+.evo-gray-14 {
+  color: #8c8c8c; }
+
+.evo-gray-14-bg {
+  background-color: #8c8c8c; }
+
+.evo-gray-13 {
+  color: #999999; }
+
+.evo-gray-13-bg {
+  background-color: #999999; }
+
+.evo-gray-12 {
+  color: #a6a6a6; }
+
+.evo-gray-12-bg {
+  background-color: #a6a6a6; }
+
+.evo-gray-11 {
+  color: #b2b2b2; }
+
+.evo-gray-11-bg {
+  background-color: #b2b2b2; }
+
+.evo-gray-10 {
+  color: #bfbfbf; }
+
+.evo-gray-10-bg {
+  background-color: #bfbfbf; }
+
+.evo-gray-9 {
+  color: #cccccc; }
+
+.evo-gray-9-bg {
+  background-color: #cccccc; }
+
+.evo-gray-8 {
+  color: #d9d9d9; }
+
+.evo-gray-8-bg {
+  background-color: #d9d9d9; }
+
+.evo-gray-7 {
+  color: #e5e5e5; }
+
+.evo-gray-7-bg {
+  background-color: #e5e5e5; }
+
+.evo-gray-6 {
+  color: #ededed; }
+
+.evo-gray-6-bg {
+  background-color: #ededed; }
+
+.evo-gray-5 {
+  color: #f2f2f2; }
+
+.evo-gray-5-bg {
+  background-color: #f2f2f2; }
+
+.evo-gray-4 {
+  color: whitesmoke; }
+
+.evo-gray-4-bg {
+  background-color: whitesmoke; }
+
+.evo-gray-3 {
+  color: #f7f7f7; }
+
+.evo-gray-3-bg {
+  background-color: #f7f7f7; }
+
+.evo-gray-2 {
+  color: #fafafa; }
+
+.evo-gray-2-bg {
+  background-color: #fafafa; }
+
+.evo-gray-1 {
+  color: #fcfcfc; }
+
+.evo-gray-1-bg {
+  background-color: #fcfcfc; }
+
+.evo-gray-0 {
+  color: white; }
+
+.evo-gray-0-bg {
+  background-color: white; }
+
+/* 
+
+--------------------------- DARK TRANSLUCENT COLORS --------------------------- 
+
+*/
+.evo-dark-30 {
+  color: black; }
+
+.evo-dark-30-bg {
+  background-color: black; }
+
+.evo-dark-29 {
+  color: rgba(0, 0, 0, 0.99); }
+
+.evo-dark-29-bg {
+  background-color: rgba(0, 0, 0, 0.99); }
+
+.evo-dark-28 {
+  color: rgba(0, 0, 0, 0.98); }
+
+.evo-dark-28-bg {
+  background-color: rgba(0, 0, 0, 0.98); }
+
+.evo-dark-27 {
+  color: rgba(0, 0, 0, 0.97); }
+
+.evo-dark-27-bg {
+  background-color: rgba(0, 0, 0, 0.97); }
+
+.evo-dark-26 {
+  color: rgba(0, 0, 0, 0.96); }
+
+.evo-dark-26-bg {
+  background-color: rgba(0, 0, 0, 0.96); }
+
+.evo-dark-25 {
+  color: rgba(0, 0, 0, 0.95); }
+
+.evo-dark-25-bg {
+  background-color: rgba(0, 0, 0, 0.95); }
+
+.evo-dark-24 {
+  color: rgba(0, 0, 0, 0.93); }
+
+.evo-dark-24-bg {
+  background-color: rgba(0, 0, 0, 0.93); }
+
+.evo-dark-23 {
+  color: rgba(0, 0, 0, 0.9); }
+
+.evo-dark-23-bg {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.evo-dark-22 {
+  color: rgba(0, 0, 0, 0.85); }
+
+.evo-dark-22-bg {
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.evo-dark-21 {
+  color: rgba(0, 0, 0, 0.8); }
+
+.evo-dark-21-bg {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.evo-dark-20 {
+  color: rgba(0, 0, 0, 0.75); }
+
+.evo-dark-20-bg {
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.evo-dark-19 {
+  color: rgba(0, 0, 0, 0.7); }
+
+.evo-dark-19-bg {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.evo-dark-18 {
+  color: rgba(0, 0, 0, 0.65); }
+
+.evo-dark-18-bg {
+  background-color: rgba(0, 0, 0, 0.65); }
+
+.evo-dark-17 {
+  color: rgba(0, 0, 0, 0.6); }
+
+.evo-dark-17-bg {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.evo-dark-16 {
+  color: rgba(0, 0, 0, 0.55); }
+
+.evo-dark-16-bg {
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.evo-dark-15 {
+  color: rgba(0, 0, 0, 0.5); }
+
+.evo-dark-15-bg {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.evo-dark-14 {
+  color: rgba(0, 0, 0, 0.45); }
+
+.evo-dark-14-bg {
+  background-color: rgba(0, 0, 0, 0.45); }
+
+.evo-dark-13 {
+  color: rgba(0, 0, 0, 0.4); }
+
+.evo-dark-13-bg {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.evo-dark-12 {
+  color: rgba(0, 0, 0, 0.35); }
+
+.evo-dark-12-bg {
+  background-color: rgba(0, 0, 0, 0.35); }
+
+.evo-dark-11 {
+  color: rgba(0, 0, 0, 0.3); }
+
+.evo-dark-11-bg {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.evo-dark-10 {
+  color: rgba(0, 0, 0, 0.25); }
+
+.evo-dark-10-bg {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.evo-dark-9 {
+  color: rgba(0, 0, 0, 0.2); }
+
+.evo-dark-9-bg {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.evo-dark-8 {
+  color: rgba(0, 0, 0, 0.15); }
+
+.evo-dark-8-bg {
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.evo-dark-7 {
+  color: rgba(0, 0, 0, 0.1); }
+
+.evo-dark-7-bg {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.evo-dark-6 {
+  color: rgba(0, 0, 0, 0.07); }
+
+.evo-dark-6-bg {
+  background-color: rgba(0, 0, 0, 0.07); }
+
+.evo-dark-5 {
+  color: rgba(0, 0, 0, 0.05); }
+
+.evo-dark-5-bg {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.evo-dark-4 {
+  color: rgba(0, 0, 0, 0.04); }
+
+.evo-dark-4-bg {
+  background-color: rgba(0, 0, 0, 0.04); }
+
+.evo-dark-3 {
+  color: rgba(0, 0, 0, 0.03); }
+
+.evo-dark-3-bg {
+  background-color: rgba(0, 0, 0, 0.03); }
+
+.evo-dark-2 {
+  color: rgba(0, 0, 0, 0.02); }
+
+.evo-dark-2-bg {
+  background-color: rgba(0, 0, 0, 0.02); }
+
+.evo-dark-1 {
+  color: rgba(0, 0, 0, 0.01); }
+
+.evo-dark-1-bg {
+  background-color: rgba(0, 0, 0, 0.01); }
+
+.evo-dark-0 {
+  color: transparent; }
+
+.evo-dark-0-bg {
+  background-color: transparent; }
+
+/* 
+
+--------------------------- LIGHT TRANSLUCENT COLORS --------------------------- 
+
+*/
+.evo-light-30-inverse {
+  color: white; }
+
+.evo-light-30-bg {
+  background-color: white; }
+
+.evo-light-29 {
+  color: rgba(255, 255, 255, 0.99); }
+
+.evo-light-29-bg {
+  background-color: rgba(255, 255, 255, 0.99); }
+
+.evo-light-28 {
+  color: rgba(255, 255, 255, 0.98); }
+
+.evo-light-28-bg {
+  background-color: rgba(255, 255, 255, 0.98); }
+
+.evo-light-27 {
+  color: rgba(255, 255, 255, 0.97); }
+
+.evo-light-27-bg {
+  background-color: rgba(255, 255, 255, 0.97); }
+
+.evo-light-26 {
+  color: rgba(255, 255, 255, 0.96); }
+
+.evo-light-26-bg {
+  background-color: rgba(255, 255, 255, 0.96); }
+
+.evo-light-25 {
+  color: rgba(255, 255, 255, 0.95); }
+
+.evo-light-25-bg {
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.evo-light-24 {
+  color: rgba(255, 255, 255, 0.93); }
+
+.evo-light-24-bg {
+  background-color: rgba(255, 255, 255, 0.93); }
+
+.evo-light-23 {
+  color: rgba(255, 255, 255, 0.9); }
+
+.evo-light-23-bg {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.evo-light-22 {
+  color: rgba(255, 255, 255, 0.85); }
+
+.evo-light-22-bg {
+  background-color: rgba(255, 255, 255, 0.85); }
+
+.evo-light-21 {
+  color: rgba(255, 255, 255, 0.8); }
+
+.evo-light-21-bg {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.evo-light-20 {
+  color: rgba(255, 255, 255, 0.75); }
+
+.evo-light-20-bg {
+  background-color: rgba(255, 255, 255, 0.75); }
+
+.evo-light-19 {
+  color: rgba(255, 255, 255, 0.7); }
+
+.evo-light-19-bg {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.evo-light-18 {
+  color: rgba(255, 255, 255, 0.65); }
+
+.evo-light-18-bg {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+.evo-light-17 {
+  color: rgba(255, 255, 255, 0.6); }
+
+.evo-light-17-bg {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.evo-light-16 {
+  color: rgba(255, 255, 255, 0.55); }
+
+.evo-light-16-bg {
+  background-color: rgba(255, 255, 255, 0.55); }
+
+.evo-light-15 {
+  color: rgba(255, 255, 255, 0.5); }
+
+.evo-light-15-bg {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.evo-light-14 {
+  color: rgba(255, 255, 255, 0.45); }
+
+.evo-light-14-bg {
+  background-color: rgba(255, 255, 255, 0.45); }
+
+.evo-light-13 {
+  color: rgba(255, 255, 255, 0.4); }
+
+.evo-light-13-bg {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.evo-light-12 {
+  color: rgba(255, 255, 255, 0.35); }
+
+.evo-light-12-bg {
+  background-color: rgba(255, 255, 255, 0.35); }
+
+.evo-light-11 {
+  color: rgba(255, 255, 255, 0.3); }
+
+.evo-light-11-bg {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.evo-light-10 {
+  color: rgba(255, 255, 255, 0.25); }
+
+.evo-light-10-bg {
+  background-color: rgba(255, 255, 255, 0.25); }
+
+.evo-light-9 {
+  color: rgba(255, 255, 255, 0.2); }
+
+.evo-light-9-bg {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.evo-light-8 {
+  color: rgba(255, 255, 255, 0.15); }
+
+.evo-light-8-bg {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.evo-light-7 {
+  color: rgba(255, 255, 255, 0.1); }
+
+.evo-light-7-bg {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.evo-light-6 {
+  color: rgba(255, 255, 255, 0.07); }
+
+.evo-light-6-bg {
+  background-color: rgba(255, 255, 255, 0.07); }
+
+.evo-light-5 {
+  color: rgba(255, 255, 255, 0.05); }
+
+.evo-light-5-bg {
+  background-color: rgba(255, 255, 255, 0.05); }
+
+.evo-light-4 {
+  color: rgba(255, 255, 255, 0.04); }
+
+.evo-light-4-bg {
+  background-color: rgba(255, 255, 255, 0.04); }
+
+.evo-light-3 {
+  color: rgba(255, 255, 255, 0.03); }
+
+.evo-light-3-bg {
+  background-color: rgba(255, 255, 255, 0.03); }
+
+.evo-light-2 {
+  color: rgba(255, 255, 255, 0.02); }
+
+.evo-light-2-bg {
+  background-color: rgba(255, 255, 255, 0.02); }
+
+.evo-light-1 {
+  color: rgba(255, 255, 255, 0.01); }
+
+.evo-light-1-bg {
+  background-color: rgba(255, 255, 255, 0.01); }
+
+.evo-light-0 {
+  color: rgba(255, 255, 255, 0); }
+
+.evo-light-0-bg {
+  background-color: rgba(255, 255, 255, 0); }
+
+/* COLORS */
+.evo-red {
+  color: #ed1c24; }
+
+.evo-red-bg {
+  background-color: #ed1c24; }
+
+.evo-green {
+  color: #00a651; }
+
+.evo-green-bg {
+  background-color: #00a651; }
+
+.evo-blue {
+  color: #2e3192; }
+
+.evo-blue-bg {
+  background-color: #2e3192; }
+
+.evo-cyan {
+  color: #00aeef; }
+
+.evo-cyan-bg {
+  background-color: #00aeef; }
+
+.evo-magenta {
+  color: #ec008c; }
+
+.evo-magenta-bg {
+  background-color: #ec008c; }
+
+.evo-yellow {
+  color: #fff200; }
+
+.evo-yellow-bg {
+  background-color: #fff200; }
+
+/* COLORS */
+.evo-red {
+  color: #ed1c24; }
+
+.evo-red-bg {
+  background-color: #ed1c24; }
+
+.evo-green {
+  color: #00a651; }
+
+.evo-green-bg {
+  background-color: #00a651; }
+
+.evo-blue {
+  color: #2e3192; }
+
+.evo-blue-bg {
+  background-color: #2e3192; }
+
+.evo-cyan {
+  color: #00aeef; }
+
+.evo-cyan-bg {
+  background-color: #00aeef; }
+
+.evo-magenta {
+  color: #ec008c; }
+
+.evo-magenta-bg {
+  background-color: #ec008c; }
+
+.evo-yellow {
+  color: #fff200; }
+
+.evo-yellow-bg {
+  background-color: #fff200; }
 
 /*      FONTS     */
 .evo-font {
@@ -375,6 +1054,30 @@ hr {
 .evo-measure {
   max-width: 55rem; }
 
+.evo-text-smallest {
+  font-size: 0.5rem; }
+
+.evo-text-smaller {
+  font-size: 0.75rem; }
+
+.evo-text-small {
+  font-size: 1rem; }
+
+.evo-text-big {
+  font-size: 1.875rem; }
+
+.evo-text-bigger {
+  font-size: 2.6875rem; }
+
+.evo-text-biggest {
+  font-size: 3.75rem; }
+
+.evo-text-jumbo {
+  font-size: 6rem; }
+
+.evo-text-giant {
+  font-size: 10rem; }
+
 .evo-text-reset {
   line-height: initial; }
 
@@ -440,6 +1143,24 @@ hr {
 
 .evo-text-20 {
   font-size: 21rem; }
+
+.evo-leading-smallest {
+  line-height: 0.5; }
+
+.evo-leading-smaller {
+  line-height: 0.75; }
+
+.evo-leading-small {
+  line-height: 1; }
+
+.evo-leading-big {
+  line-height: 1.3125; }
+
+.evo-leading-bigger {
+  line-height: 1.875; }
+
+.evo-leading-biggest {
+  line-height: 2.6875; }
 
 .evo-leading-reset {
   line-height: initial; }
@@ -542,48 +1263,6 @@ hr {
 
 .evo-tracking-15 {
   letter-spacing: 0.625em; }
-
-.evo-text-smallest {
-  font-size: 0.5rem; }
-
-.evo-text-smaller {
-  font-size: 0.75rem; }
-
-.evo-text-small {
-  font-size: 1rem; }
-
-.evo-text-big {
-  font-size: 1.875rem; }
-
-.evo-text-bigger {
-  font-size: 2.6875rem; }
-
-.evo-text-biggest {
-  font-size: 3.75rem; }
-
-.evo-text-jumbo {
-  font-size: 6rem; }
-
-.evo-text-giant {
-  font-size: 10rem; }
-
-.evo-leading-smallest {
-  line-height: 0.5; }
-
-.evo-leading-smaller {
-  line-height: 0.75; }
-
-.evo-leading-small {
-  line-height: 1; }
-
-.evo-leading-big {
-  line-height: 1.3125; }
-
-.evo-leading-bigger {
-  line-height: 1.875; }
-
-.evo-leading-biggest {
-  line-height: 2.6875; }
 
 .evo-tracking-smallest {
   letter-spacing: -0.075em; }
@@ -908,9 +1587,9 @@ ul.evo-list-bullets-color {
   padding-top: 1.125em; }
 
 .evo-list-lines-black li {
-  border-top-color: #000 !important; }
+  border-top-color: black !important; }
   .evo-list-lines-black li:last-child {
-    border-bottom-color: #000 !important; }
+    border-bottom-color: black !important; }
 
 .evo-list-lines-gray li {
   border-top-color: #eee !important; }
@@ -918,9 +1597,9 @@ ul.evo-list-bullets-color {
     border-bottom-color: #eee !important; }
 
 .evo-list-lines-white li {
-  border-top-color: #fff !important; }
+  border-top-color: white !important; }
   .evo-list-lines-white li:last-child {
-    border-bottom-color: #fff !important; }
+    border-bottom-color: white !important; }
 
 .evo-list-lines-solid li {
   border-top-style: solid !important; }
@@ -985,31 +1664,31 @@ ul.evo-list-bullets-color {
   border-bottom-width: thick !important; }
 
 .evo-list-line-top-black li:first-child {
-  border-top-color: #000 !important; }
+  border-top-color: black !important; }
 
 .evo-list-line-top-gray li:first-child {
   border-top-color: #ccc !important; }
 
 .evo-list-line-top-white li:first-child {
-  border-top-color: #fff !important; }
+  border-top-color: white !important; }
 
 .evo-list-line-middle-black li:not(:first-child) {
-  border-top-color: #000 !important; }
+  border-top-color: black !important; }
 
 .evo-list-line-middle-gray li:not(:first-child) {
   border-top-color: #ccc !important; }
 
 .evo-list-line-middle-white li:not(:first-child) {
-  border-top-color: #fff !important; }
+  border-top-color: white !important; }
 
 .evo-list-line-bottom-black li:last-child {
-  border-bottom-color: #000 !important; }
+  border-bottom-color: black !important; }
 
 .evo-list-line-bottom-gray li:last-child {
   border-bottom-color: #ccc !important; }
 
 .evo-list-line-bottom-white li:last-child {
-  border-bottom-color: #fff !important; }
+  border-bottom-color: white !important; }
 
 .evo-list-line-top-solid li:first-child {
   border-top-style: solid !important; }
@@ -1467,6 +2146,24 @@ ul.evo-list-bullets-color {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.evo-space-smallest {
+  height: 0.5rem; }
+
+.evo-space-smaller {
+  height: 1.125rem; }
+
+.evo-space-small {
+  height: 1.875rem; }
+
+.evo-space-big {
+  height: 3.75rem; }
+
+.evo-space-bigger {
+  height: 6rem; }
+
+.evo-space-biggest {
+  height: 10rem; }
+
 .evo-space-0 {
   height: 1px; }
 
@@ -1559,24 +2256,6 @@ ul.evo-list-bullets-color {
 
 .evo-space-30 {
   height: 125rem; }
-
-.evo-space-smallest {
-  height: 0.5rem; }
-
-.evo-space-smaller {
-  height: 1.125rem; }
-
-.evo-space-small {
-  height: 1.875rem; }
-
-.evo-space-big {
-  height: 3.75rem; }
-
-.evo-space-bigger {
-  height: 6rem; }
-
-.evo-space-biggest {
-  height: 10rem; }
 
 hr.evo-line-reset {
   margin: 0;
@@ -1681,13 +2360,13 @@ hr.evo-line-biggest {
   border-top-width: 6px; }
 
 hr.evo-line-black {
-  border-top-color: #000; }
+  border-top-color: black; }
 
 hr.evo-line-gray {
   border-top-color: #ccc; }
 
 hr.evo-line-white {
-  border-top-color: #fff; }
+  border-top-color: white; }
 
 hr.evo-line-fade-thin {
   border: 0;
@@ -2572,61 +3251,61 @@ hr.evo-line-fade-pink {
   border-left-color: #ccc; }
 
 .evo-box-white {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-right-color: #fff;
-  border-left-color: #fff; }
+  border-top-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-left-color: white; }
 
 .evo-box-black {
-  border-top-color: #000;
-  border-bottom-color: #000;
-  border-right-color: #000;
-  border-left-color: #000; }
+  border-top-color: black;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-left-color: black; }
 
 .evo-box-top-black {
-  border-top-color: #000; }
+  border-top-color: black; }
 
 .evo-box-top-gray {
   border-top-color: #ccc; }
 
 .evo-box-top-white {
-  border-top-color: #fff; }
+  border-top-color: white; }
 
 .evo-box-bottom-black {
-  border-bottom-color: #000; }
+  border-bottom-color: black; }
 
 .evo-box-bottom-gray {
   border-bottom-color: #ccc; }
 
 .evo-box-bottom-white {
-  border-bottom-color: #fff; }
+  border-bottom-color: white; }
 
 .evo-box-right-black {
-  border-right-color: #000; }
+  border-right-color: black; }
 
 .evo-box-right-gray {
   border-right-color: #ccc; }
 
 .evo-box-right-white {
-  border-right-color: #fff; }
+  border-right-color: white; }
 
 .evo-box-left-black {
-  border-left-color: #000; }
+  border-left-color: black; }
 
 .evo-box-left-gray {
   border-left-color: #ccc; }
 
 .evo-box-left-white {
-  border-left-color: #fff; }
+  border-left-color: white; }
 
 .evo-box-gray-bg {
   background-color: #ccc !important; }
 
 .evo-box-white-bg {
-  background-color: #fff !important; }
+  background-color: white !important; }
 
 .evo-box-black-bg {
-  background-color: #000 !important; }
+  background-color: black !important; }
 
 .box-shadow-reset {
   box-shadow: initial; }

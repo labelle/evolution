@@ -52,6 +52,15 @@
 // @import "elements/box_mixin";
 // @import "elements/space_mixin";
 
+
+// Color
+@import "elements/color";
+@import "elements/color_gray";
+@import "elements/color_natural";
+@import "elements/color_gradient";
+@import "elements/color_effect";
+
+
 // Font
 @import "elements/font";
 @import "elements/font_style";
@@ -65,7 +74,11 @@
 @import "elements/text";
 @import "elements/text_style";
 @import "elements/text_size";
+@import "elements/text_leading";
+@import "elements/text_tracking";
+@import "elements/text_measure";
 @import "elements/text_effect";
+
 
 // List
 @import "elements/list";

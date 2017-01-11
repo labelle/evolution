@@ -4,6 +4,16 @@
 
 @import "../variables";
 
+
+
+// Space size scale
+#{$evo}-space-smallest    { height: #{$u-19}rem; }  // 8px
+#{$evo}-space-smaller     { height: #{$u-24}rem; }  // 18px
+#{$evo}-space-small       { height: #{$u-27}rem; }  // 30px
+#{$evo}-space-big         { height: #{$u-31}rem; }  // 60px
+#{$evo}-space-bigger      { height: #{$u-33}rem; }  // 96px
+#{$evo}-space-biggest     { height: #{$u-35}rem; }  // 160px
+
 // Space number scale
 #{$evo}-space-0   { height: 1px; }
 #{$evo}-space-1   { height: 2px; }
@@ -37,12 +47,3 @@
     // Are these two below the correct size?
 #{$evo}-space-29  { height: #{$u-44}rem; }  // 1423px
 #{$evo}-space-30  { height: #{$u-45}rem; }  // 1760px
-
-
-// Space size scale
-#{$evo}-space-smallest    { height: #{$u-19}rem; }  // 8px
-#{$evo}-space-smaller     { height: #{$u-24}rem; }  // 18px
-#{$evo}-space-small       { height: #{$u-27}rem; }  // 30px
-#{$evo}-space-big         { height: #{$u-31}rem; }  // 60px
-#{$evo}-space-bigger      { height: #{$u-33}rem; }  // 96px
-#{$evo}-space-biggest     { height: #{$u-35}rem; }  // 160px
