@@ -36,6 +36,23 @@ margin-bottom: 3em;
 outline: 5px solid red;
 }*/
 
+/* Color Pulse */
+/* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
+hr.color-pulse {
+    -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {border-top: solid lightblue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {border-top: solid lightblue;}
+}
+
 </style>
 
 </head>
@@ -308,6 +325,13 @@ evo-line-blur-10
 <div class="evo-space-19"></div>
 
 </section>
+
+
+line pulse animation test
+<hr class="evo-line evo-line-15 evo-line-color-10 color-pulse" />
+
+
+<div class="evo-space-19"></div>
 
 
 </main>

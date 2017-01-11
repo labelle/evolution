@@ -739,42 +739,191 @@ hr {
 .evo-light-0-bg {
   background-color: rgba(255, 255, 255, 0); }
 
-/* COLORS */
-.evo-red {
-  color: #ed1c24; }
+.evo-color-0 {
+  color: #fff02a; }
 
-.evo-red-bg {
-  background-color: #ed1c24; }
+.evo-color-0-bg {
+  background-color: #fff02a; }
 
-.evo-green {
-  color: #00a651; }
+.evo-color-1 {
+  color: #ffe52c; }
 
-.evo-green-bg {
-  background-color: #00a651; }
+.evo-color-1-bg {
+  background-color: #ffe52c; }
 
-.evo-blue {
-  color: #2e3192; }
+.evo-color-2 {
+  color: #fdc131; }
 
-.evo-blue-bg {
-  background-color: #2e3192; }
+.evo-color-2-bg {
+  background-color: #fdc131; }
 
-.evo-cyan {
-  color: #00aeef; }
+.evo-color-3 {
+  color: #f59331; }
 
-.evo-cyan-bg {
-  background-color: #00aeef; }
+.evo-color-3-bg {
+  background-color: #f59331; }
 
-.evo-magenta {
-  color: #ec008c; }
+.evo-color-4 {
+  color: #ef662f; }
 
-.evo-magenta-bg {
-  background-color: #ec008c; }
+.evo-color-4-bg {
+  background-color: #ef662f; }
 
-.evo-yellow {
-  color: #fff200; }
+.evo-color-5 {
+  color: #eb212e; }
 
-.evo-yellow-bg {
-  background-color: #fff200; }
+.evo-color-5-bg {
+  background-color: #eb212e; }
+
+.evo-color-6 {
+  color: #eb1f45; }
+
+.evo-color-6-bg {
+  background-color: #eb1f45; }
+
+.evo-color-7 {
+  color: #eb1d5d; }
+
+.evo-color-7-bg {
+  background-color: #eb1d5d; }
+
+.evo-color-8 {
+  color: #ea1873; }
+
+.evo-color-8-bg {
+  background-color: #ea1873; }
+
+.evo-color-9 {
+  color: #ea148c; }
+
+.evo-color-9-bg {
+  background-color: #ea148c; }
+
+.evo-color-10 {
+  color: #bb238c; }
+
+.evo-color-10-bg {
+  background-color: #bb238c; }
+
+.evo-color-11 {
+  color: #902c8e; }
+
+.evo-color-11-bg {
+  background-color: #902c8e; }
+
+.evo-color-12 {
+  color: #65318f; }
+
+.evo-color-12-bg {
+  background-color: #65318f; }
+
+.evo-color-13 {
+  color: #2f3490; }
+
+.evo-color-13-bg {
+  background-color: #2f3490; }
+
+.evo-color-14 {
+  color: #0056a4; }
+
+.evo-color-14-bg {
+  background-color: #0056a4; }
+
+.evo-color-15 {
+  color: #0073b9; }
+
+.evo-color-15-bg {
+  background-color: #0073b9; }
+
+.evo-color-16 {
+  color: #0090d2; }
+
+.evo-color-16-bg {
+  background-color: #0090d2; }
+
+.evo-color-17 {
+  color: #00afec; }
+
+.evo-color-17-bg {
+  background-color: #00afec; }
+
+.evo-color-18 {
+  color: #00abc3; }
+
+.evo-color-18-bg {
+  background-color: #00abc3; }
+
+.evo-color-19 {
+  color: #00a89c; }
+
+.evo-color-19-bg {
+  background-color: #00a89c; }
+
+.evo-color-20 {
+  color: #00a676; }
+
+.evo-color-20-bg {
+  background-color: #00a676; }
+
+.evo-color-21 {
+  color: #00a453; }
+
+.evo-color-21-bg {
+  background-color: #00a453; }
+
+.evo-color-22 {
+  color: #3fb34f; }
+
+.evo-color-22-bg {
+  background-color: #3fb34f; }
+
+.evo-color-23 {
+  color: #8ec549; }
+
+.evo-color-23-bg {
+  background-color: #8ec549; }
+
+.evo-color-24 {
+  color: #cbd93e; }
+
+.evo-color-24-bg {
+  background-color: #cbd93e; }
+
+.evo-color-25 {
+  color: #ede634; }
+
+.evo-color-25-bg {
+  background-color: #ede634; }
+
+.evo-color-26 {
+  color: #e3ca3c; }
+
+.evo-color-26-bg {
+  background-color: #e3ca3c; }
+
+.evo-color-27 {
+  color: #c9ac40; }
+
+.evo-color-27-bg {
+  background-color: #c9ac40; }
+
+.evo-color-28 {
+  color: #b38f44; }
+
+.evo-color-28-bg {
+  background-color: #b38f44; }
+
+.evo-color-29 {
+  color: #9c733a; }
+
+.evo-color-29-bg {
+  background-color: #9c733a; }
+
+.evo-color-30 {
+  color: #8a6132; }
+
+.evo-color-30-bg {
+  background-color: #8a6132; }
 
 /* COLORS */
 .evo-red {
@@ -2368,6 +2517,99 @@ hr.evo-line-gray {
 hr.evo-line-white {
   border-top-color: white; }
 
+hr.evo-line-color-0 {
+  border-top-color: #fff02a; }
+
+hr.evo-line-color-1 {
+  border-top-color: #ffe52c; }
+
+hr.evo-line-color-2 {
+  border-top-color: #fdc131; }
+
+hr.evo-line-color-3 {
+  border-top-color: #f59331; }
+
+hr.evo-line-color-4 {
+  border-top-color: #ef662f; }
+
+hr.evo-line-color-5 {
+  border-top-color: #eb212e; }
+
+hr.evo-line-color-6 {
+  border-top-color: #eb1f45; }
+
+hr.evo-line-color-7 {
+  border-top-color: #eb1d5d; }
+
+hr.evo-line-color-8 {
+  border-top-color: #ea1873; }
+
+hr.evo-line-color-9 {
+  border-top-color: #ea148c; }
+
+hr.evo-line-color-10 {
+  border-top-color: #bb238c; }
+
+hr.evo-line-color-11 {
+  border-top-color: #902c8e; }
+
+hr.evo-line-color-12 {
+  border-top-color: #65318f; }
+
+hr.evo-line-color-13 {
+  border-top-color: #2f3490; }
+
+hr.evo-line-color-14 {
+  border-top-color: #0056a4; }
+
+hr.evo-line-color-15 {
+  border-top-color: #0073b9; }
+
+hr.evo-line-color-16 {
+  border-top-color: #0090d2; }
+
+hr.evo-line-color-17 {
+  border-top-color: #00afec; }
+
+hr.evo-line-color-18 {
+  border-top-color: #00abc3; }
+
+hr.evo-line-color-19 {
+  border-top-color: #00a89c; }
+
+hr.evo-line-color-20 {
+  border-top-color: #00a676; }
+
+hr.evo-line-color-21 {
+  border-top-color: #00a453; }
+
+hr.evo-line-color-22 {
+  border-top-color: #3fb34f; }
+
+hr.evo-line-color-23 {
+  border-top-color: #8ec549; }
+
+hr.evo-line-color-24 {
+  border-top-color: #cbd93e; }
+
+hr.evo-line-color-25 {
+  border-top-color: #ede634; }
+
+hr.evo-line-color-26 {
+  border-top-color: #e3ca3c; }
+
+hr.evo-line-color-27 {
+  border-top-color: #c9ac40; }
+
+hr.evo-line-color-28 {
+  border-top-color: #b38f44; }
+
+hr.evo-line-color-29 {
+  border-top-color: #9c733a; }
+
+hr.evo-line-color-30 {
+  border-top-color: #8a6132; }
+
 hr.evo-line-fade-thin {
   border: 0;
   height: 1px;
@@ -3280,15 +3522,6 @@ hr.evo-line-fade-pink {
 .evo-box-bottom-white {
   border-bottom-color: white; }
 
-.evo-box-right-black {
-  border-right-color: black; }
-
-.evo-box-right-gray {
-  border-right-color: #ccc; }
-
-.evo-box-right-white {
-  border-right-color: white; }
-
 .evo-box-left-black {
   border-left-color: black; }
 
@@ -3298,6 +3531,15 @@ hr.evo-line-fade-pink {
 .evo-box-left-white {
   border-left-color: white; }
 
+.evo-box-right-black {
+  border-right-color: black; }
+
+.evo-box-right-gray {
+  border-right-color: #ccc; }
+
+.evo-box-right-white {
+  border-right-color: white; }
+
 .evo-box-gray-bg {
   background-color: #ccc !important; }
 
@@ -3306,6 +3548,750 @@ hr.evo-line-fade-pink {
 
 .evo-box-black-bg {
   background-color: black !important; }
+
+.evo-box-color-0 {
+  border-top-color: #fff02a;
+  border-bottom-color: #fff02a;
+  border-right-color: #fff02a;
+  border-left-color: #fff02a; }
+
+.evo-box-color-0 {
+  border-top-color: #fff02a;
+  border-bottom-color: #fff02a;
+  border-right-color: #fff02a;
+  border-left-color: #fff02a; }
+
+.evo-box-color-1 {
+  border-top-color: #ffe52c;
+  border-bottom-color: #ffe52c;
+  border-right-color: #ffe52c;
+  border-left-color: #ffe52c; }
+
+.evo-box-color-1 {
+  border-top-color: #ffe52c;
+  border-bottom-color: #ffe52c;
+  border-right-color: #ffe52c;
+  border-left-color: #ffe52c; }
+
+.evo-box-color-2 {
+  border-top-color: #fdc131;
+  border-bottom-color: #fdc131;
+  border-right-color: #fdc131;
+  border-left-color: #fdc131; }
+
+.evo-box-color-2 {
+  border-top-color: #fdc131;
+  border-bottom-color: #fdc131;
+  border-right-color: #fdc131;
+  border-left-color: #fdc131; }
+
+.evo-box-color-3 {
+  border-top-color: #f59331;
+  border-bottom-color: #f59331;
+  border-right-color: #f59331;
+  border-left-color: #f59331; }
+
+.evo-box-color-3 {
+  border-top-color: #f59331;
+  border-bottom-color: #f59331;
+  border-right-color: #f59331;
+  border-left-color: #f59331; }
+
+.evo-box-color-4 {
+  border-top-color: #ef662f;
+  border-bottom-color: #ef662f;
+  border-right-color: #ef662f;
+  border-left-color: #ef662f; }
+
+.evo-box-color-4 {
+  border-top-color: #ef662f;
+  border-bottom-color: #ef662f;
+  border-right-color: #ef662f;
+  border-left-color: #ef662f; }
+
+.evo-box-color-5 {
+  border-top-color: #eb212e;
+  border-bottom-color: #eb212e;
+  border-right-color: #eb212e;
+  border-left-color: #eb212e; }
+
+.evo-box-color-5 {
+  border-top-color: #eb212e;
+  border-bottom-color: #eb212e;
+  border-right-color: #eb212e;
+  border-left-color: #eb212e; }
+
+.evo-box-color-6 {
+  border-top-color: #eb1f45;
+  border-bottom-color: #eb1f45;
+  border-right-color: #eb1f45;
+  border-left-color: #eb1f45; }
+
+.evo-box-color-6 {
+  border-top-color: #eb1f45;
+  border-bottom-color: #eb1f45;
+  border-right-color: #eb1f45;
+  border-left-color: #eb1f45; }
+
+.evo-box-color-7 {
+  border-top-color: #eb1d5d;
+  border-bottom-color: #eb1d5d;
+  border-right-color: #eb1d5d;
+  border-left-color: #eb1d5d; }
+
+.evo-box-color-7 {
+  border-top-color: #eb1d5d;
+  border-bottom-color: #eb1d5d;
+  border-right-color: #eb1d5d;
+  border-left-color: #eb1d5d; }
+
+.evo-box-color-8 {
+  border-top-color: #ea1873;
+  border-bottom-color: #ea1873;
+  border-right-color: #ea1873;
+  border-left-color: #ea1873; }
+
+.evo-box-color-8 {
+  border-top-color: #ea1873;
+  border-bottom-color: #ea1873;
+  border-right-color: #ea1873;
+  border-left-color: #ea1873; }
+
+.evo-box-color-9 {
+  border-top-color: #ea148c;
+  border-bottom-color: #ea148c;
+  border-right-color: #ea148c;
+  border-left-color: #ea148c; }
+
+.evo-box-color-9 {
+  border-top-color: #ea148c;
+  border-bottom-color: #ea148c;
+  border-right-color: #ea148c;
+  border-left-color: #ea148c; }
+
+.evo-box-color-10 {
+  border-top-color: #bb238c;
+  border-bottom-color: #bb238c;
+  border-right-color: #bb238c;
+  border-left-color: #bb238c; }
+
+.evo-box-color-10 {
+  border-top-color: #bb238c;
+  border-bottom-color: #bb238c;
+  border-right-color: #bb238c;
+  border-left-color: #bb238c; }
+
+.evo-box-color-11 {
+  border-top-color: #902c8e;
+  border-bottom-color: #902c8e;
+  border-right-color: #902c8e;
+  border-left-color: #902c8e; }
+
+.evo-box-color-11 {
+  border-top-color: #902c8e;
+  border-bottom-color: #902c8e;
+  border-right-color: #902c8e;
+  border-left-color: #902c8e; }
+
+.evo-box-color-12 {
+  border-top-color: #65318f;
+  border-bottom-color: #65318f;
+  border-right-color: #65318f;
+  border-left-color: #65318f; }
+
+.evo-box-color-12 {
+  border-top-color: #65318f;
+  border-bottom-color: #65318f;
+  border-right-color: #65318f;
+  border-left-color: #65318f; }
+
+.evo-box-color-13 {
+  border-top-color: #2f3490;
+  border-bottom-color: #2f3490;
+  border-right-color: #2f3490;
+  border-left-color: #2f3490; }
+
+.evo-box-color-13 {
+  border-top-color: #2f3490;
+  border-bottom-color: #2f3490;
+  border-right-color: #2f3490;
+  border-left-color: #2f3490; }
+
+.evo-box-color-14 {
+  border-top-color: #0056a4;
+  border-bottom-color: #0056a4;
+  border-right-color: #0056a4;
+  border-left-color: #0056a4; }
+
+.evo-box-color-14 {
+  border-top-color: #0056a4;
+  border-bottom-color: #0056a4;
+  border-right-color: #0056a4;
+  border-left-color: #0056a4; }
+
+.evo-box-color-15 {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-right-color: #0073b9;
+  border-left-color: #0073b9; }
+
+.evo-box-color-15 {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-right-color: #0073b9;
+  border-left-color: #0073b9; }
+
+.evo-box-color-16 {
+  border-top-color: #0090d2;
+  border-bottom-color: #0090d2;
+  border-right-color: #0090d2;
+  border-left-color: #0090d2; }
+
+.evo-box-color-16 {
+  border-top-color: #0090d2;
+  border-bottom-color: #0090d2;
+  border-right-color: #0090d2;
+  border-left-color: #0090d2; }
+
+.evo-box-color-17 {
+  border-top-color: #00afec;
+  border-bottom-color: #00afec;
+  border-right-color: #00afec;
+  border-left-color: #00afec; }
+
+.evo-box-color-17 {
+  border-top-color: #00afec;
+  border-bottom-color: #00afec;
+  border-right-color: #00afec;
+  border-left-color: #00afec; }
+
+.evo-box-color-18 {
+  border-top-color: #00abc3;
+  border-bottom-color: #00abc3;
+  border-right-color: #00abc3;
+  border-left-color: #00abc3; }
+
+.evo-box-color-18 {
+  border-top-color: #00abc3;
+  border-bottom-color: #00abc3;
+  border-right-color: #00abc3;
+  border-left-color: #00abc3; }
+
+.evo-box-color-19 {
+  border-top-color: #00a89c;
+  border-bottom-color: #00a89c;
+  border-right-color: #00a89c;
+  border-left-color: #00a89c; }
+
+.evo-box-color-19 {
+  border-top-color: #00a89c;
+  border-bottom-color: #00a89c;
+  border-right-color: #00a89c;
+  border-left-color: #00a89c; }
+
+.evo-box-color-20 {
+  border-top-color: #00a676;
+  border-bottom-color: #00a676;
+  border-right-color: #00a676;
+  border-left-color: #00a676; }
+
+.evo-box-color-20 {
+  border-top-color: #00a676;
+  border-bottom-color: #00a676;
+  border-right-color: #00a676;
+  border-left-color: #00a676; }
+
+.evo-box-color-21 {
+  border-top-color: #00a453;
+  border-bottom-color: #00a453;
+  border-right-color: #00a453;
+  border-left-color: #00a453; }
+
+.evo-box-color-21 {
+  border-top-color: #00a453;
+  border-bottom-color: #00a453;
+  border-right-color: #00a453;
+  border-left-color: #00a453; }
+
+.evo-box-color-22 {
+  border-top-color: #3fb34f;
+  border-bottom-color: #3fb34f;
+  border-right-color: #3fb34f;
+  border-left-color: #3fb34f; }
+
+.evo-box-color-22 {
+  border-top-color: #3fb34f;
+  border-bottom-color: #3fb34f;
+  border-right-color: #3fb34f;
+  border-left-color: #3fb34f; }
+
+.evo-box-color-23 {
+  border-top-color: #8ec549;
+  border-bottom-color: #8ec549;
+  border-right-color: #8ec549;
+  border-left-color: #8ec549; }
+
+.evo-box-color-23 {
+  border-top-color: #8ec549;
+  border-bottom-color: #8ec549;
+  border-right-color: #8ec549;
+  border-left-color: #8ec549; }
+
+.evo-box-color-24 {
+  border-top-color: #cbd93e;
+  border-bottom-color: #cbd93e;
+  border-right-color: #cbd93e;
+  border-left-color: #cbd93e; }
+
+.evo-box-color-24 {
+  border-top-color: #cbd93e;
+  border-bottom-color: #cbd93e;
+  border-right-color: #cbd93e;
+  border-left-color: #cbd93e; }
+
+.evo-box-color-25 {
+  border-top-color: #ede634;
+  border-bottom-color: #ede634;
+  border-right-color: #ede634;
+  border-left-color: #ede634; }
+
+.evo-box-color-25 {
+  border-top-color: #ede634;
+  border-bottom-color: #ede634;
+  border-right-color: #ede634;
+  border-left-color: #ede634; }
+
+.evo-box-color-26 {
+  border-top-color: #e3ca3c;
+  border-bottom-color: #e3ca3c;
+  border-right-color: #e3ca3c;
+  border-left-color: #e3ca3c; }
+
+.evo-box-color-26 {
+  border-top-color: #e3ca3c;
+  border-bottom-color: #e3ca3c;
+  border-right-color: #e3ca3c;
+  border-left-color: #e3ca3c; }
+
+.evo-box-color-27 {
+  border-top-color: #c9ac40;
+  border-bottom-color: #c9ac40;
+  border-right-color: #c9ac40;
+  border-left-color: #c9ac40; }
+
+.evo-box-color-27 {
+  border-top-color: #c9ac40;
+  border-bottom-color: #c9ac40;
+  border-right-color: #c9ac40;
+  border-left-color: #c9ac40; }
+
+.evo-box-color-28 {
+  border-top-color: #b38f44;
+  border-bottom-color: #b38f44;
+  border-right-color: #b38f44;
+  border-left-color: #b38f44; }
+
+.evo-box-color-28 {
+  border-top-color: #b38f44;
+  border-bottom-color: #b38f44;
+  border-right-color: #b38f44;
+  border-left-color: #b38f44; }
+
+.evo-box-color-29 {
+  border-top-color: #9c733a;
+  border-bottom-color: #9c733a;
+  border-right-color: #9c733a;
+  border-left-color: #9c733a; }
+
+.evo-box-color-30 {
+  border-top-color: #8a6132;
+  border-bottom-color: #8a6132;
+  border-right-color: #8a6132;
+  border-left-color: #8a6132; }
+
+.evo-box-color-30 {
+  border-top-color: #8a6132;
+  border-bottom-color: #8a6132;
+  border-right-color: #8a6132;
+  border-left-color: #8a6132; }
+
+.evo-box-color-30 {
+  border-top-color: #8a6132;
+  border-bottom-color: #8a6132;
+  border-right-color: #8a6132;
+  border-left-color: #8a6132; }
+
+.evo-box-top-color-0 {
+  border-top-color: #fff02a; }
+
+.evo-box-top-color-1 {
+  border-top-color: #ffe52c; }
+
+.evo-box-top-color-2 {
+  border-top-color: #fdc131; }
+
+.evo-box-top-color-3 {
+  border-top-color: #f59331; }
+
+.evo-box-top-color-4 {
+  border-top-color: #ef662f; }
+
+.evo-box-top-color-5 {
+  border-top-color: #eb212e; }
+
+.evo-box-top-color-6 {
+  border-top-color: #eb1f45; }
+
+.evo-box-top-color-7 {
+  border-top-color: #eb1d5d; }
+
+.evo-box-top-color-8 {
+  border-top-color: #ea1873; }
+
+.evo-box-top-color-9 {
+  border-top-color: #ea148c; }
+
+.evo-box-top-color-10 {
+  border-top-color: #bb238c; }
+
+.evo-box-top-color-11 {
+  border-top-color: #902c8e; }
+
+.evo-box-top-color-12 {
+  border-top-color: #65318f; }
+
+.evo-box-top-color-13 {
+  border-top-color: #2f3490; }
+
+.evo-box-top-color-14 {
+  border-top-color: #0056a4; }
+
+.evo-box-top-color-15 {
+  border-top-color: #0073b9; }
+
+.evo-box-top-color-16 {
+  border-top-color: #0090d2; }
+
+.evo-box-top-color-17 {
+  border-top-color: #00afec; }
+
+.evo-box-top-color-18 {
+  border-top-color: #00abc3; }
+
+.evo-box-top-color-19 {
+  border-top-color: #00a89c; }
+
+.evo-box-top-color-20 {
+  border-top-color: #00a676; }
+
+.evo-box-top-color-21 {
+  border-top-color: #00a453; }
+
+.evo-box-top-color-22 {
+  border-top-color: #3fb34f; }
+
+.evo-box-top-color-23 {
+  border-top-color: #8ec549; }
+
+.evo-box-top-color-24 {
+  border-top-color: #cbd93e; }
+
+.evo-box-top-color-25 {
+  border-top-color: #ede634; }
+
+.evo-box-top-color-26 {
+  border-top-color: #e3ca3c; }
+
+.evo-box-top-color-27 {
+  border-top-color: #c9ac40; }
+
+.evo-box-top-color-28 {
+  border-top-color: #b38f44; }
+
+.evo-box-top-color-29 {
+  border-top-color: #9c733a; }
+
+.evo-box-top-color-30 {
+  border-top-color: #8a6132; }
+
+.evo-box-bottom-color-0 {
+  border-bottom-color: #fff02a; }
+
+.evo-box-bottom-color-1 {
+  border-bottom-color: #ffe52c; }
+
+.evo-box-bottom-color-2 {
+  border-bottom-color: #fdc131; }
+
+.evo-box-bottom-color-3 {
+  border-bottom-color: #f59331; }
+
+.evo-box-bottom-color-4 {
+  border-bottom-color: #ef662f; }
+
+.evo-box-bottom-color-5 {
+  border-bottom-color: #eb212e; }
+
+.evo-box-bottom-color-6 {
+  border-bottom-color: #eb1f45; }
+
+.evo-box-bottom-color-7 {
+  border-bottom-color: #eb1d5d; }
+
+.evo-box-bottom-color-8 {
+  border-bottom-color: #ea1873; }
+
+.evo-box-bottom-color-9 {
+  border-bottom-color: #ea148c; }
+
+.evo-box-bottom-color-10 {
+  border-bottom-color: #bb238c; }
+
+.evo-box-bottom-color-11 {
+  border-bottom-color: #902c8e; }
+
+.evo-box-bottom-color-12 {
+  border-bottom-color: #65318f; }
+
+.evo-box-bottom-color-13 {
+  border-bottom-color: #2f3490; }
+
+.evo-box-bottom-color-14 {
+  border-bottom-color: #0056a4; }
+
+.evo-box-bottom-color-15 {
+  border-bottom-color: #0073b9; }
+
+.evo-box-bottom-color-16 {
+  border-bottom-color: #0090d2; }
+
+.evo-box-bottom-color-17 {
+  border-bottom-color: #00afec; }
+
+.evo-box-bottom-color-18 {
+  border-bottom-color: #00abc3; }
+
+.evo-box-bottom-color-19 {
+  border-bottom-color: #00a89c; }
+
+.evo-box-bottom-color-20 {
+  border-bottom-color: #00a676; }
+
+.evo-box-bottom-color-21 {
+  border-bottom-color: #00a453; }
+
+.evo-box-bottom-color-22 {
+  border-bottom-color: #3fb34f; }
+
+.evo-box-bottom-color-23 {
+  border-bottom-color: #8ec549; }
+
+.evo-box-bottom-color-24 {
+  border-bottom-color: #cbd93e; }
+
+.evo-box-bottom-color-25 {
+  border-bottom-color: #ede634; }
+
+.evo-box-bottom-color-26 {
+  border-bottom-color: #e3ca3c; }
+
+.evo-box-bottom-color-27 {
+  border-bottom-color: #c9ac40; }
+
+.evo-box-bottom-color-28 {
+  border-bottom-color: #b38f44; }
+
+.evo-box-bottom-color-29 {
+  border-bottom-color: #9c733a; }
+
+.evo-box-bottom-color-30 {
+  border-bottom-color: #8a6132; }
+
+.evo-box-left-color-0 {
+  border-left-color: #fff02a; }
+
+.evo-box-left-color-1 {
+  border-left-color: #ffe52c; }
+
+.evo-box-left-color-2 {
+  border-left-color: #fdc131; }
+
+.evo-box-left-color-3 {
+  border-left-color: #f59331; }
+
+.evo-box-left-color-4 {
+  border-left-color: #ef662f; }
+
+.evo-box-left-color-5 {
+  border-left-color: #eb212e; }
+
+.evo-box-left-color-6 {
+  border-left-color: #eb1f45; }
+
+.evo-box-left-color-7 {
+  border-left-color: #eb1d5d; }
+
+.evo-box-left-color-8 {
+  border-left-color: #ea1873; }
+
+.evo-box-left-color-9 {
+  border-left-color: #ea148c; }
+
+.evo-box-left-color-10 {
+  border-left-color: #bb238c; }
+
+.evo-box-left-color-11 {
+  border-left-color: #902c8e; }
+
+.evo-box-left-color-12 {
+  border-left-color: #65318f; }
+
+.evo-box-left-color-13 {
+  border-left-color: #2f3490; }
+
+.evo-box-left-color-14 {
+  border-left-color: #0056a4; }
+
+.evo-box-left-color-15 {
+  border-left-color: #0073b9; }
+
+.evo-box-left-color-16 {
+  border-left-color: #0090d2; }
+
+.evo-box-left-color-17 {
+  border-left-color: #00afec; }
+
+.evo-box-left-color-18 {
+  border-left-color: #00abc3; }
+
+.evo-box-left-color-19 {
+  border-left-color: #00a89c; }
+
+.evo-box-left-color-20 {
+  border-left-color: #00a676; }
+
+.evo-box-left-color-21 {
+  border-left-color: #00a453; }
+
+.evo-box-left-color-22 {
+  border-left-color: #3fb34f; }
+
+.evo-box-left-color-23 {
+  border-left-color: #8ec549; }
+
+.evo-box-left-color-24 {
+  border-left-color: #cbd93e; }
+
+.evo-box-left-color-25 {
+  border-left-color: #ede634; }
+
+.evo-box-left-color-26 {
+  border-left-color: #e3ca3c; }
+
+.evo-box-left-color-27 {
+  border-left-color: #c9ac40; }
+
+.evo-box-left-color-28 {
+  border-left-color: #b38f44; }
+
+.evo-box-left-color-29 {
+  border-left-color: #9c733a; }
+
+.evo-box-left-color-30 {
+  border-left-color: #8a6132; }
+
+.evo-box-right-color-0 {
+  border-right-color: #fff02a; }
+
+.evo-box-right-color-1 {
+  border-right-color: #ffe52c; }
+
+.evo-box-right-color-2 {
+  border-right-color: #fdc131; }
+
+.evo-box-right-color-3 {
+  border-right-color: #f59331; }
+
+.evo-box-right-color-4 {
+  border-right-color: #ef662f; }
+
+.evo-box-right-color-5 {
+  border-right-color: #eb212e; }
+
+.evo-box-right-color-6 {
+  border-right-color: #eb1f45; }
+
+.evo-box-right-color-7 {
+  border-right-color: #eb1d5d; }
+
+.evo-box-right-color-8 {
+  border-right-color: #ea1873; }
+
+.evo-box-right-color-9 {
+  border-right-color: #ea148c; }
+
+.evo-box-right-color-10 {
+  border-right-color: #bb238c; }
+
+.evo-box-right-color-11 {
+  border-right-color: #902c8e; }
+
+.evo-box-right-color-12 {
+  border-right-color: #65318f; }
+
+.evo-box-right-color-13 {
+  border-right-color: #2f3490; }
+
+.evo-box-right-color-14 {
+  border-right-color: #0056a4; }
+
+.evo-box-right-color-15 {
+  border-right-color: #0073b9; }
+
+.evo-box-right-color-16 {
+  border-right-color: #0090d2; }
+
+.evo-box-right-color-17 {
+  border-right-color: #00afec; }
+
+.evo-box-right-color-18 {
+  border-right-color: #00abc3; }
+
+.evo-box-right-color-19 {
+  border-right-color: #00a89c; }
+
+.evo-box-right-color-20 {
+  border-right-color: #00a676; }
+
+.evo-box-right-color-21 {
+  border-right-color: #00a453; }
+
+.evo-box-right-color-22 {
+  border-right-color: #3fb34f; }
+
+.evo-box-right-color-23 {
+  border-right-color: #8ec549; }
+
+.evo-box-right-color-24 {
+  border-right-color: #cbd93e; }
+
+.evo-box-right-color-25 {
+  border-right-color: #ede634; }
+
+.evo-box-right-color-26 {
+  border-right-color: #e3ca3c; }
+
+.evo-box-right-color-27 {
+  border-right-color: #c9ac40; }
+
+.evo-box-right-color-28 {
+  border-right-color: #b38f44; }
+
+.evo-box-right-color-29 {
+  border-right-color: #9c733a; }
+
+.evo-box-right-color-30 {
+  border-right-color: #8a6132; }
 
 .box-shadow-reset {
   box-shadow: initial; }
