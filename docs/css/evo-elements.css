@@ -135,42 +135,11 @@ hr {
   box-sizing: border-box; }
 
 /* COLORS */
-.evo-red {
-  color: #ed1c24; }
+/* 
 
-.evo-red-bg {
-  background-color: #ed1c24; }
+--------------------------- GRAY COLORS --------------------------- 
 
-.evo-green {
-  color: #00a651; }
-
-.evo-green-bg {
-  background-color: #00a651; }
-
-.evo-blue {
-  color: #2e3192; }
-
-.evo-blue-bg {
-  background-color: #2e3192; }
-
-.evo-cyan {
-  color: #00aeef; }
-
-.evo-cyan-bg {
-  background-color: #00aeef; }
-
-.evo-magenta {
-  color: #ec008c; }
-
-.evo-magenta-bg {
-  background-color: #ec008c; }
-
-.evo-yellow {
-  color: #fff200; }
-
-.evo-yellow-bg {
-  background-color: #fff200; }
-
+*/
 .evo-gray-30 {
   color: black; }
 
@@ -359,384 +328,384 @@ hr {
 
 /* 
 
---------------------------- DARK TRANSLUCENT COLORS --------------------------- 
+--------------------------- GRAY TRANSLUCENT COLORS --------------------------- 
 
 */
-.evo-dark-30 {
+.evo-trans-gray-30 {
   color: black; }
 
-.evo-dark-30-bg {
+.evo-trans-gray-30-bg {
   background-color: black; }
 
-.evo-dark-29 {
-  color: rgba(0, 0, 0, 0.99); }
-
-.evo-dark-29-bg {
-  background-color: rgba(0, 0, 0, 0.99); }
-
-.evo-dark-28 {
+.evo-trans-gray-29 {
   color: rgba(0, 0, 0, 0.98); }
 
-.evo-dark-28-bg {
+.evo-trans-gray-29-bg {
   background-color: rgba(0, 0, 0, 0.98); }
 
-.evo-dark-27 {
+.evo-trans-gray-28 {
   color: rgba(0, 0, 0, 0.97); }
 
-.evo-dark-27-bg {
+.evo-trans-gray-28-bg {
   background-color: rgba(0, 0, 0, 0.97); }
 
-.evo-dark-26 {
+.evo-trans-gray-27 {
   color: rgba(0, 0, 0, 0.96); }
 
-.evo-dark-26-bg {
+.evo-trans-gray-27-bg {
   background-color: rgba(0, 0, 0, 0.96); }
 
-.evo-dark-25 {
+.evo-trans-gray-26 {
   color: rgba(0, 0, 0, 0.95); }
 
-.evo-dark-25-bg {
+.evo-trans-gray-26-bg {
   background-color: rgba(0, 0, 0, 0.95); }
 
-.evo-dark-24 {
-  color: rgba(0, 0, 0, 0.93); }
+.evo-trans-gray-25 {
+  color: rgba(0, 0, 0, 0.94); }
 
-.evo-dark-24-bg {
-  background-color: rgba(0, 0, 0, 0.93); }
+.evo-trans-gray-25-bg {
+  background-color: rgba(0, 0, 0, 0.94); }
 
-.evo-dark-23 {
+.evo-trans-gray-24 {
+  color: rgba(0, 0, 0, 0.92); }
+
+.evo-trans-gray-24-bg {
+  background-color: rgba(0, 0, 0, 0.92); }
+
+.evo-trans-gray-23 {
   color: rgba(0, 0, 0, 0.9); }
 
-.evo-dark-23-bg {
+.evo-trans-gray-23-bg {
   background-color: rgba(0, 0, 0, 0.9); }
 
-.evo-dark-22 {
+.evo-trans-gray-22 {
   color: rgba(0, 0, 0, 0.85); }
 
-.evo-dark-22-bg {
+.evo-trans-gray-22-bg {
   background-color: rgba(0, 0, 0, 0.85); }
 
-.evo-dark-21 {
+.evo-trans-gray-21 {
   color: rgba(0, 0, 0, 0.8); }
 
-.evo-dark-21-bg {
+.evo-trans-gray-21-bg {
   background-color: rgba(0, 0, 0, 0.8); }
 
-.evo-dark-20 {
+.evo-trans-gray-20 {
   color: rgba(0, 0, 0, 0.75); }
 
-.evo-dark-20-bg {
+.evo-trans-gray-20-bg {
   background-color: rgba(0, 0, 0, 0.75); }
 
-.evo-dark-19 {
+.evo-trans-gray-19 {
   color: rgba(0, 0, 0, 0.7); }
 
-.evo-dark-19-bg {
+.evo-trans-gray-19-bg {
   background-color: rgba(0, 0, 0, 0.7); }
 
-.evo-dark-18 {
+.evo-trans-gray-18 {
   color: rgba(0, 0, 0, 0.65); }
 
-.evo-dark-18-bg {
+.evo-trans-gray-18-bg {
   background-color: rgba(0, 0, 0, 0.65); }
 
-.evo-dark-17 {
+.evo-trans-gray-17 {
   color: rgba(0, 0, 0, 0.6); }
 
-.evo-dark-17-bg {
+.evo-trans-gray-17-bg {
   background-color: rgba(0, 0, 0, 0.6); }
 
-.evo-dark-16 {
+.evo-trans-gray-16 {
   color: rgba(0, 0, 0, 0.55); }
 
-.evo-dark-16-bg {
+.evo-trans-gray-16-bg {
   background-color: rgba(0, 0, 0, 0.55); }
 
-.evo-dark-15 {
+.evo-trans-gray-15 {
   color: rgba(0, 0, 0, 0.5); }
 
-.evo-dark-15-bg {
+.evo-trans-gray-15-bg {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.evo-dark-14 {
+.evo-trans-gray-14 {
   color: rgba(0, 0, 0, 0.45); }
 
-.evo-dark-14-bg {
+.evo-trans-gray-14-bg {
   background-color: rgba(0, 0, 0, 0.45); }
 
-.evo-dark-13 {
+.evo-trans-gray-13 {
   color: rgba(0, 0, 0, 0.4); }
 
-.evo-dark-13-bg {
+.evo-trans-gray-13-bg {
   background-color: rgba(0, 0, 0, 0.4); }
 
-.evo-dark-12 {
+.evo-trans-gray-12 {
   color: rgba(0, 0, 0, 0.35); }
 
-.evo-dark-12-bg {
+.evo-trans-gray-12-bg {
   background-color: rgba(0, 0, 0, 0.35); }
 
-.evo-dark-11 {
+.evo-trans-gray-11 {
   color: rgba(0, 0, 0, 0.3); }
 
-.evo-dark-11-bg {
+.evo-trans-gray-11-bg {
   background-color: rgba(0, 0, 0, 0.3); }
 
-.evo-dark-10 {
+.evo-trans-gray-10 {
   color: rgba(0, 0, 0, 0.25); }
 
-.evo-dark-10-bg {
+.evo-trans-gray-10-bg {
   background-color: rgba(0, 0, 0, 0.25); }
 
-.evo-dark-9 {
+.evo-trans-gray-9 {
   color: rgba(0, 0, 0, 0.2); }
 
-.evo-dark-9-bg {
+.evo-trans-gray-9-bg {
   background-color: rgba(0, 0, 0, 0.2); }
 
-.evo-dark-8 {
+.evo-trans-gray-8 {
   color: rgba(0, 0, 0, 0.15); }
 
-.evo-dark-8-bg {
+.evo-trans-gray-8-bg {
   background-color: rgba(0, 0, 0, 0.15); }
 
-.evo-dark-7 {
+.evo-trans-gray-7 {
   color: rgba(0, 0, 0, 0.1); }
 
-.evo-dark-7-bg {
+.evo-trans-gray-7-bg {
   background-color: rgba(0, 0, 0, 0.1); }
 
-.evo-dark-6 {
-  color: rgba(0, 0, 0, 0.07); }
+.evo-trans-gray-6 {
+  color: rgba(0, 0, 0, 0.08); }
 
-.evo-dark-6-bg {
-  background-color: rgba(0, 0, 0, 0.07); }
+.evo-trans-gray-6-bg {
+  background-color: rgba(0, 0, 0, 0.08); }
 
-.evo-dark-5 {
+.evo-trans-gray-5 {
+  color: rgba(0, 0, 0, 0.06); }
+
+.evo-trans-gray-5-bg {
+  background-color: rgba(0, 0, 0, 0.06); }
+
+.evo-trans-gray-4 {
   color: rgba(0, 0, 0, 0.05); }
 
-.evo-dark-5-bg {
+.evo-trans-gray-4-bg {
   background-color: rgba(0, 0, 0, 0.05); }
 
-.evo-dark-4 {
+.evo-trans-gray-3 {
   color: rgba(0, 0, 0, 0.04); }
 
-.evo-dark-4-bg {
+.evo-trans-gray-3-bg {
   background-color: rgba(0, 0, 0, 0.04); }
 
-.evo-dark-3 {
+.evo-trans-gray-2 {
   color: rgba(0, 0, 0, 0.03); }
 
-.evo-dark-3-bg {
+.evo-trans-gray-2-bg {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.evo-dark-2 {
+.evo-trans-gray-1 {
   color: rgba(0, 0, 0, 0.02); }
 
-.evo-dark-2-bg {
+.evo-trans-gray-1-bg {
   background-color: rgba(0, 0, 0, 0.02); }
 
-.evo-dark-1 {
-  color: rgba(0, 0, 0, 0.01); }
-
-.evo-dark-1-bg {
-  background-color: rgba(0, 0, 0, 0.01); }
-
-.evo-dark-0 {
+.evo-trans-gray-0 {
   color: transparent; }
 
-.evo-dark-0-bg {
+.evo-trans-gray-0-bg {
   background-color: transparent; }
 
 /* 
 
---------------------------- LIGHT TRANSLUCENT COLORS --------------------------- 
+--------------------------- INVERSE GRAY TRANSLUCENT COLORS --------------------------- 
 
 */
-.evo-light-30-inverse {
+.evo-inverse-trans-gray-30 {
   color: white; }
 
-.evo-light-30-bg {
+.evo-inverse-trans-gray-30-bg {
   background-color: white; }
 
-.evo-light-29 {
-  color: rgba(255, 255, 255, 0.99); }
-
-.evo-light-29-bg {
-  background-color: rgba(255, 255, 255, 0.99); }
-
-.evo-light-28 {
+.evo-inverse-trans-gray-29 {
   color: rgba(255, 255, 255, 0.98); }
 
-.evo-light-28-bg {
+.evo-inverse-trans-gray-29-bg {
   background-color: rgba(255, 255, 255, 0.98); }
 
-.evo-light-27 {
+.evo-inverse-trans-gray-28 {
   color: rgba(255, 255, 255, 0.97); }
 
-.evo-light-27-bg {
+.evo-inverse-trans-gray-28-bg {
   background-color: rgba(255, 255, 255, 0.97); }
 
-.evo-light-26 {
+.evo-inverse-trans-gray-27 {
   color: rgba(255, 255, 255, 0.96); }
 
-.evo-light-26-bg {
+.evo-inverse-trans-gray-27-bg {
   background-color: rgba(255, 255, 255, 0.96); }
 
-.evo-light-25 {
+.evo-inverse-trans-gray-26 {
   color: rgba(255, 255, 255, 0.95); }
 
-.evo-light-25-bg {
+.evo-inverse-trans-gray-26-bg {
   background-color: rgba(255, 255, 255, 0.95); }
 
-.evo-light-24 {
-  color: rgba(255, 255, 255, 0.93); }
+.evo-inverse-trans-gray-25 {
+  color: rgba(255, 255, 255, 0.94); }
 
-.evo-light-24-bg {
-  background-color: rgba(255, 255, 255, 0.93); }
+.evo-inverse-trans-gray-25-bg {
+  background-color: rgba(255, 255, 255, 0.94); }
 
-.evo-light-23 {
+.evo-inverse-trans-gray-24 {
+  color: rgba(255, 255, 255, 0.92); }
+
+.evo-inverse-trans-gray-24-bg {
+  background-color: rgba(255, 255, 255, 0.92); }
+
+.evo-inverse-trans-gray-23 {
   color: rgba(255, 255, 255, 0.9); }
 
-.evo-light-23-bg {
+.evo-inverse-trans-gray-23-bg {
   background-color: rgba(255, 255, 255, 0.9); }
 
-.evo-light-22 {
+.evo-inverse-trans-gray-22 {
   color: rgba(255, 255, 255, 0.85); }
 
-.evo-light-22-bg {
+.evo-inverse-trans-gray-22-bg {
   background-color: rgba(255, 255, 255, 0.85); }
 
-.evo-light-21 {
+.evo-inverse-trans-gray-21 {
   color: rgba(255, 255, 255, 0.8); }
 
-.evo-light-21-bg {
+.evo-inverse-trans-gray-21-bg {
   background-color: rgba(255, 255, 255, 0.8); }
 
-.evo-light-20 {
+.evo-inverse-trans-gray-20 {
   color: rgba(255, 255, 255, 0.75); }
 
-.evo-light-20-bg {
+.evo-inverse-trans-gray-20-bg {
   background-color: rgba(255, 255, 255, 0.75); }
 
-.evo-light-19 {
+.evo-inverse-trans-gray-19 {
   color: rgba(255, 255, 255, 0.7); }
 
-.evo-light-19-bg {
+.evo-inverse-trans-gray-19-bg {
   background-color: rgba(255, 255, 255, 0.7); }
 
-.evo-light-18 {
+.evo-inverse-trans-gray-18 {
   color: rgba(255, 255, 255, 0.65); }
 
-.evo-light-18-bg {
+.evo-inverse-trans-gray-18-bg {
   background-color: rgba(255, 255, 255, 0.65); }
 
-.evo-light-17 {
+.evo-inverse-trans-gray-17 {
   color: rgba(255, 255, 255, 0.6); }
 
-.evo-light-17-bg {
+.evo-inverse-trans-gray-17-bg {
   background-color: rgba(255, 255, 255, 0.6); }
 
-.evo-light-16 {
+.evo-inverse-trans-gray-16 {
   color: rgba(255, 255, 255, 0.55); }
 
-.evo-light-16-bg {
+.evo-inverse-trans-gray-16-bg {
   background-color: rgba(255, 255, 255, 0.55); }
 
-.evo-light-15 {
+.evo-inverse-trans-gray-15 {
   color: rgba(255, 255, 255, 0.5); }
 
-.evo-light-15-bg {
+.evo-inverse-trans-gray-15-bg {
   background-color: rgba(255, 255, 255, 0.5); }
 
-.evo-light-14 {
+.evo-inverse-trans-gray-14 {
   color: rgba(255, 255, 255, 0.45); }
 
-.evo-light-14-bg {
+.evo-inverse-trans-gray-14-bg {
   background-color: rgba(255, 255, 255, 0.45); }
 
-.evo-light-13 {
+.evo-inverse-trans-gray-13 {
   color: rgba(255, 255, 255, 0.4); }
 
-.evo-light-13-bg {
+.evo-inverse-trans-gray-13-bg {
   background-color: rgba(255, 255, 255, 0.4); }
 
-.evo-light-12 {
+.evo-inverse-trans-gray-12 {
   color: rgba(255, 255, 255, 0.35); }
 
-.evo-light-12-bg {
+.evo-inverse-trans-gray-12-bg {
   background-color: rgba(255, 255, 255, 0.35); }
 
-.evo-light-11 {
+.evo-inverse-trans-gray-11 {
   color: rgba(255, 255, 255, 0.3); }
 
-.evo-light-11-bg {
+.evo-inverse-trans-gray-11-bg {
   background-color: rgba(255, 255, 255, 0.3); }
 
-.evo-light-10 {
+.evo-inverse-trans-gray-10 {
   color: rgba(255, 255, 255, 0.25); }
 
-.evo-light-10-bg {
+.evo-inverse-trans-gray-10-bg {
   background-color: rgba(255, 255, 255, 0.25); }
 
-.evo-light-9 {
+.evo-inverse-trans-gray-9 {
   color: rgba(255, 255, 255, 0.2); }
 
-.evo-light-9-bg {
+.evo-inverse-trans-gray-9-bg {
   background-color: rgba(255, 255, 255, 0.2); }
 
-.evo-light-8 {
+.evo-inverse-trans-gray-8 {
   color: rgba(255, 255, 255, 0.15); }
 
-.evo-light-8-bg {
+.evo-inverse-trans-gray-8-bg {
   background-color: rgba(255, 255, 255, 0.15); }
 
-.evo-light-7 {
+.evo-inverse-trans-gray-7 {
   color: rgba(255, 255, 255, 0.1); }
 
-.evo-light-7-bg {
+.evo-inverse-trans-gray-7-bg {
   background-color: rgba(255, 255, 255, 0.1); }
 
-.evo-light-6 {
-  color: rgba(255, 255, 255, 0.07); }
+.evo-inverse-trans-gray-6 {
+  color: rgba(255, 255, 255, 0.08); }
 
-.evo-light-6-bg {
-  background-color: rgba(255, 255, 255, 0.07); }
+.evo-inverse-trans-gray-6-bg {
+  background-color: rgba(255, 255, 255, 0.08); }
 
-.evo-light-5 {
+.evo-inverse-trans-gray-5 {
+  color: rgba(255, 255, 255, 0.06); }
+
+.evo-inverse-trans-gray-5-bg {
+  background-color: rgba(255, 255, 255, 0.06); }
+
+.evo-inverse-trans-gray-4 {
   color: rgba(255, 255, 255, 0.05); }
 
-.evo-light-5-bg {
+.evo-inverse-trans-gray-4-bg {
   background-color: rgba(255, 255, 255, 0.05); }
 
-.evo-light-4 {
+.evo-inverse-trans-gray-3 {
   color: rgba(255, 255, 255, 0.04); }
 
-.evo-light-4-bg {
+.evo-inverse-trans-gray-3-bg {
   background-color: rgba(255, 255, 255, 0.04); }
 
-.evo-light-3 {
+.evo-inverse-trans-gray-2 {
   color: rgba(255, 255, 255, 0.03); }
 
-.evo-light-3-bg {
+.evo-inverse-trans-gray-2-bg {
   background-color: rgba(255, 255, 255, 0.03); }
 
-.evo-light-2 {
+.evo-inverse-trans-gray-1 {
   color: rgba(255, 255, 255, 0.02); }
 
-.evo-light-2-bg {
+.evo-inverse-trans-gray-1-bg {
   background-color: rgba(255, 255, 255, 0.02); }
 
-.evo-light-1 {
-  color: rgba(255, 255, 255, 0.01); }
-
-.evo-light-1-bg {
-  background-color: rgba(255, 255, 255, 0.01); }
-
-.evo-light-0 {
+.evo-inverse-trans-gray-0 {
   color: rgba(255, 255, 255, 0); }
 
-.evo-light-0-bg {
+.evo-inverse-trans-gray-0-bg {
   background-color: rgba(255, 255, 255, 0); }
 
 .evo-color-0 {
@@ -924,43 +893,6 @@ hr {
 
 .evo-color-30-bg {
   background-color: #8a6132; }
-
-/* COLORS */
-.evo-red {
-  color: #ed1c24; }
-
-.evo-red-bg {
-  background-color: #ed1c24; }
-
-.evo-green {
-  color: #00a651; }
-
-.evo-green-bg {
-  background-color: #00a651; }
-
-.evo-blue {
-  color: #2e3192; }
-
-.evo-blue-bg {
-  background-color: #2e3192; }
-
-.evo-cyan {
-  color: #00aeef; }
-
-.evo-cyan-bg {
-  background-color: #00aeef; }
-
-.evo-magenta {
-  color: #ec008c; }
-
-.evo-magenta-bg {
-  background-color: #ec008c; }
-
-.evo-yellow {
-  color: #fff200; }
-
-.evo-yellow-bg {
-  background-color: #fff200; }
 
 /*      FONTS     */
 .evo-font {
@@ -1876,42 +1808,6 @@ ul.evo-list-bullets-color {
   border-bottom-style: double !important; }
 
 /* COLORS */
-.evo-red {
-  color: #ed1c24; }
-
-.evo-red-bg {
-  background-color: #ed1c24; }
-
-.evo-green {
-  color: #00a651; }
-
-.evo-green-bg {
-  background-color: #00a651; }
-
-.evo-blue {
-  color: #2e3192; }
-
-.evo-blue-bg {
-  background-color: #2e3192; }
-
-.evo-cyan {
-  color: #00aeef; }
-
-.evo-cyan-bg {
-  background-color: #00aeef; }
-
-.evo-magenta {
-  color: #ec008c; }
-
-.evo-magenta-bg {
-  background-color: #ec008c; }
-
-.evo-yellow {
-  color: #fff200; }
-
-.evo-yellow-bg {
-  background-color: #fff200; }
-
 /*      SPACE     */
 .evo-space-reset {
   height: 0px;
@@ -2512,10 +2408,28 @@ hr.evo-line-black {
   border-top-color: black; }
 
 hr.evo-line-gray {
-  border-top-color: #ccc; }
+  border-top-color: #7f7f7f; }
 
 hr.evo-line-white {
   border-top-color: white; }
+
+hr.evo-line-gray-darkest {
+  border-top-color: #0d0d0d; }
+
+hr.evo-line-gray-darker {
+  border-top-color: #333333; }
+
+hr.evo-line-gray-dark {
+  border-top-color: #595959; }
+
+hr.evo-line-gray-light {
+  border-top-color: #a6a6a6; }
+
+hr.evo-line-gray-lighter {
+  border-top-color: #cccccc; }
+
+hr.evo-line-gray-lightest {
+  border-top-color: #f2f2f2; }
 
 hr.evo-line-color-0 {
   border-top-color: #fff02a; }
@@ -2609,6 +2523,99 @@ hr.evo-line-color-29 {
 
 hr.evo-line-color-30 {
   border-top-color: #8a6132; }
+
+hr.evo-line-gray-0 {
+  border-top-color: white; }
+
+hr.evo-line-gray-1 {
+  border-top-color: #fcfcfc; }
+
+hr.evo-line-gray-2 {
+  border-top-color: #fafafa; }
+
+hr.evo-line-gray-3 {
+  border-top-color: #f7f7f7; }
+
+hr.evo-line-gray-4 {
+  border-top-color: whitesmoke; }
+
+hr.evo-line-gray-5 {
+  border-top-color: #f2f2f2; }
+
+hr.evo-line-gray-6 {
+  border-top-color: #ededed; }
+
+hr.evo-line-gray-7 {
+  border-top-color: #e5e5e5; }
+
+hr.evo-line-gray-8 {
+  border-top-color: #d9d9d9; }
+
+hr.evo-line-gray-9 {
+  border-top-color: #cccccc; }
+
+hr.evo-line-gray-10 {
+  border-top-color: #bfbfbf; }
+
+hr.evo-line-gray-11 {
+  border-top-color: #b2b2b2; }
+
+hr.evo-line-gray-12 {
+  border-top-color: #a6a6a6; }
+
+hr.evo-line-gray-13 {
+  border-top-color: #999999; }
+
+hr.evo-line-gray-14 {
+  border-top-color: #8c8c8c; }
+
+hr.evo-line-gray-15 {
+  border-top-color: #7f7f7f; }
+
+hr.evo-line-gray-16 {
+  border-top-color: #737373; }
+
+hr.evo-line-gray-17 {
+  border-top-color: #666666; }
+
+hr.evo-line-gray-18 {
+  border-top-color: #595959; }
+
+hr.evo-line-gray-19 {
+  border-top-color: #4c4c4c; }
+
+hr.evo-line-gray-20 {
+  border-top-color: #404040; }
+
+hr.evo-line-gray-21 {
+  border-top-color: #333333; }
+
+hr.evo-line-gray-22 {
+  border-top-color: #262626; }
+
+hr.evo-line-gray-23 {
+  border-top-color: #191919; }
+
+hr.evo-line-gray-24 {
+  border-top-color: #121212; }
+
+hr.evo-line-gray-25 {
+  border-top-color: #0d0d0d; }
+
+hr.evo-line-gray-26 {
+  border-top-color: #0a0a0a; }
+
+hr.evo-line-gray-27 {
+  border-top-color: #080808; }
+
+hr.evo-line-gray-28 {
+  border-top-color: #050505; }
+
+hr.evo-line-gray-29 {
+  border-top-color: #030303; }
+
+hr.evo-line-gray-30 {
+  border-top-color: black; }
 
 hr.evo-line-fade-thin {
   border: 0;

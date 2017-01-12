@@ -1,29 +1,4 @@
-///*      C O L O R     */
+///*      C O L O R   G R A D I E N T     */
 
 @import "../variables";
 // @import "colors_mixin";
-
-/* COLORS */
-
-// Colors derived from CMYK palette in photoshop. 
-// These are more pleasing than RBG variants.
-// Note that these colors do not use black.
-// Need some other colors such as purple, orange
- 
-#{$evo}-red        { color: #{$red}; }
-#{$evo}-red-bg     { background-color: #{$red}; }
-
-#{$evo}-green      { color: #{$green}; }
-#{$evo}-green-bg   { background-color: #{$green}; }
-
-#{$evo}-blue       { color: #{$blue}; }
-#{$evo}-blue-bg    { background-color: #{$blue}; }
-
-#{$evo}-cyan       { color: #{$cyan}; }
-#{$evo}-cyan-bg    { background-color: #{$cyan}; }
-
-#{$evo}-magenta    { color: #{$magenta}; }
-#{$evo}-magenta-bg { background-color: #{$magenta}; }
-
-#{$evo}-yellow     { color: #{$yellow}; }
-#{$evo}-yellow-bg  { background-color: #{$yellow}; }
