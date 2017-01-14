@@ -91,8 +91,6 @@ h4 { font-size: #{$heading_size_h4}; }
 h5 { font-size: #{$heading_size_h5}; }
 h6 { font-size: #{$heading_size_h6}; }
 
-section,
-div,
 p,
 ul,
 ol,
@@ -112,6 +110,20 @@ p {
   color:          #555;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
+// section,
+// div {
+//   // font-size:       #{$text_size};
+//   // color:           #{$text_color};
+//   // font-family:     #{$text_font_family};
+//   // font-weight:     #{$text_font_weight};
+//   // line-height:     #{$text_line_height};
+//   // letter-spacing:  #{$text_letter_spacing};
+//   margin-top:      0;
+//   margin-bottom:  0;
+//     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
 
 hr {
 border: #{$hr_border};
@@ -160,6 +172,12 @@ all: initial;
 
 .evo-all-inherit {
 all: inherit;
+}
+
+// clearspace fix
+
+.after-box {
+    clear: left;
 }
 
 

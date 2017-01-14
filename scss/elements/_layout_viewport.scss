@@ -1,0 +1,70 @@
+///*      L A Y O U T   V I E W P O R T     */
+
+// Align elements on a grid across a page
+
+@import "../variables";
+
+
+
+// Just for the website
+
+
+.viewport-example > div {
+  margin-left:-5%;
+  margin-right:-5%;
+}
+
+
+// Simple grid
+
+/* https://snook.ca/archives/html_and_css/vm-vh-units */
+/* http://www.w3.org/TR/css3-values/#vm */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
+
+.viewport-0-row { height: 0vh; }
+.viewport-1-row { height: 5vh; }
+.viewport-2-row { height: 10vh; }
+.viewport-3-row { height: 15vh; }
+.viewport-4-row { height: 20vh; }
+.viewport-5-row { height: 25vh; }
+.viewport-6-row { height: 30vh; }
+.viewport-7-row { height: 35vh; }
+.viewport-8-row { height: 40vh; }
+.viewport-9-row { height: 45vh; }
+.viewport-10-row { height: 50vh; }
+.viewport-11-row { height: 55vh; }
+.viewport-12-row { height: 60vh; }
+.viewport-13-row { height: 65vh; }
+.viewport-14-row { height: 70vh; }
+.viewport-15-row { height: 75vh; }
+.viewport-16-row { height: 80vh; }
+.viewport-17-row { height: 85vh; }
+.viewport-18-row { height: 90vh; }
+.viewport-19-row { height: 95vh; }
+.viewport-20-row { height: 100vh; }
+
+
+.viewport-0-col { width: 0vw; float: left; }
+.viewport-1-col { width: 5vw; float: left; }
+.viewport-2-col { width: 10vw; float: left; }
+.viewport-3-col { width: 15vw; float: left; }
+.viewport-4-col { width: 20vw; float: left; }
+.viewport-5-col { width: 25vw; float: left; }
+.viewport-6-col { width: 30vw; float: left; }
+.viewport-7-col { width: 35vw; float: left; }
+.viewport-8-col { width: 40vw; float: left; }
+.viewport-9-col { width: 45vw; float: left; }
+.viewport-10-col { width: 50vw; float: left; }
+.viewport-11-col { width: 55vw; float: left; }
+.viewport-12-col { width: 60vw; float: left; }
+.viewport-13-col { width: 65vw; float: left; }
+.viewport-14-col { width: 70vw; float: left; }
+.viewport-15-col { width: 75vw; float: left; }
+.viewport-16-col { width: 80vw; float: left; }
+.viewport-17-col { width: 85vw; float: left; }
+.viewport-18-col { width: 90vw; float: left; }
+.viewport-19-col { width: 95vw; float: left; }
+.viewport-20-col { width: 100vw; float: left; }
+
+
+

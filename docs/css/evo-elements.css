@@ -78,8 +78,6 @@ h5 {
 h6 {
   font-size: normal; }
 
-section,
-div,
 p,
 ul,
 ol,
@@ -109,6 +107,9 @@ hr {
 .evo-all-inherit {
   all: inherit; }
 
+.after-box {
+  clear: left; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -133,6 +134,347 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.layout-example-grid > div {
+  border-left: solid 1px #ccc;
+  /*  background-color: rgba(235,235,235, 0.5);*/
+  height: 10vh;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  width: 8.333333333%;
+  float: left; }
+
+.layout-example-grid > div:nth-last-child(1) {
+  border-right: solid 1px #ccc; }
+
+/*      GRID     */
+.layout-example > div {
+  height: 7vh;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  margin-bottom: 10px;
+  background-color: #ccc; }
+
+.layout-example > div:first-child {
+  background-color: #ccc !important; }
+
+.layout-example > div:nth-child(even) {
+  background-color: #ccc; }
+
+.layout-example > div:nth-child(odd) {
+  background-color: #eee; }
+
+.evo-grid-1 {
+  width: 8.333333333%;
+  float: left; }
+
+.evo-grid-2 {
+  width: 16.666666666%;
+  float: left; }
+
+.evo-grid-3 {
+  width: 25%;
+  float: left; }
+
+.evo-grid-4 {
+  width: 33.333333333%;
+  float: left; }
+
+.evo-grid-5 {
+  width: 41.666666666666667%;
+  float: left; }
+
+.evo-grid-6 {
+  width: 50%;
+  float: left; }
+
+.evo-grid-7 {
+  width: 58.333333333%;
+  float: left; }
+
+.evo-grid-8 {
+  width: 66.666666666666667%;
+  float: left; }
+
+.evo-grid-9 {
+  width: 75%;
+  float: left; }
+
+.evo-grid-10 {
+  width: 83.333333333%;
+  float: left; }
+
+.evo-grid-11 {
+  width: 91.666666666666667%;
+  float: left; }
+
+.evo-grid-12 {
+  width: 100%;
+  float: left; }
+
+@media screen and (min-width: 1101px) {
+  .four-up {
+    width: 22.5%;
+    margin-right: 2.5%;
+    position: inline-block;
+    float: left; } }
+
+@media screen and (max-width: 1100px) {
+  .four-up {
+    width: 47.5%;
+    margin-right: 2.5%;
+    position: inline-block;
+    float: left; } }
+
+@media screen and (max-width: 480px) {
+  .four-up {
+    width: 100%;
+    position: inline-block;
+    float: left; } }
+
+@media screen and (max-width: 480px) {
+  .evo-grid-1,
+  .evo-grid-2,
+  .evo-grid-3,
+  .evo-grid-4,
+  .evo-grid-5,
+  .evo-grid-6,
+  .evo-grid-7,
+  .evo-grid-8,
+  .evo-grid-9,
+  .evo-grid-10,
+  .evo-grid-11,
+  .evo-grid-12 {
+    width: 100%;
+    position: inline-block;
+    float: left; } }
+
+.viewport-example > div {
+  margin-left: -5%;
+  margin-right: -5%; }
+
+/* https://snook.ca/archives/html_and_css/vm-vh-units */
+/* http://www.w3.org/TR/css3-values/#vm */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
+.viewport-0-row {
+  height: 0vh; }
+
+.viewport-1-row {
+  height: 5vh; }
+
+.viewport-2-row {
+  height: 10vh; }
+
+.viewport-3-row {
+  height: 15vh; }
+
+.viewport-4-row {
+  height: 20vh; }
+
+.viewport-5-row {
+  height: 25vh; }
+
+.viewport-6-row {
+  height: 30vh; }
+
+.viewport-7-row {
+  height: 35vh; }
+
+.viewport-8-row {
+  height: 40vh; }
+
+.viewport-9-row {
+  height: 45vh; }
+
+.viewport-10-row {
+  height: 50vh; }
+
+.viewport-11-row {
+  height: 55vh; }
+
+.viewport-12-row {
+  height: 60vh; }
+
+.viewport-13-row {
+  height: 65vh; }
+
+.viewport-14-row {
+  height: 70vh; }
+
+.viewport-15-row {
+  height: 75vh; }
+
+.viewport-16-row {
+  height: 80vh; }
+
+.viewport-17-row {
+  height: 85vh; }
+
+.viewport-18-row {
+  height: 90vh; }
+
+.viewport-19-row {
+  height: 95vh; }
+
+.viewport-20-row {
+  height: 100vh; }
+
+.viewport-0-col {
+  width: 0vw;
+  float: left; }
+
+.viewport-1-col {
+  width: 5vw;
+  float: left; }
+
+.viewport-2-col {
+  width: 10vw;
+  float: left; }
+
+.viewport-3-col {
+  width: 15vw;
+  float: left; }
+
+.viewport-4-col {
+  width: 20vw;
+  float: left; }
+
+.viewport-5-col {
+  width: 25vw;
+  float: left; }
+
+.viewport-6-col {
+  width: 30vw;
+  float: left; }
+
+.viewport-7-col {
+  width: 35vw;
+  float: left; }
+
+.viewport-8-col {
+  width: 40vw;
+  float: left; }
+
+.viewport-9-col {
+  width: 45vw;
+  float: left; }
+
+.viewport-10-col {
+  width: 50vw;
+  float: left; }
+
+.viewport-11-col {
+  width: 55vw;
+  float: left; }
+
+.viewport-12-col {
+  width: 60vw;
+  float: left; }
+
+.viewport-13-col {
+  width: 65vw;
+  float: left; }
+
+.viewport-14-col {
+  width: 70vw;
+  float: left; }
+
+.viewport-15-col {
+  width: 75vw;
+  float: left; }
+
+.viewport-16-col {
+  width: 80vw;
+  float: left; }
+
+.viewport-17-col {
+  width: 85vw;
+  float: left; }
+
+.viewport-18-col {
+  width: 90vw;
+  float: left; }
+
+.viewport-19-col {
+  width: 95vw;
+  float: left; }
+
+.viewport-20-col {
+  width: 100vw;
+  float: left; }
+
+.position-container {
+  background-color: #bbb;
+  color: white; }
+
+.evo-position-container {
+  position: relative; }
+
+.evo-position-top-left {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.evo-position-top-right {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.evo-position-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.evo-position-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.evo-position-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.evo-position-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
+
+.evo-position-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
+
+.evo-position-top-middle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%); }
+
+.evo-position-bottom-middle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%); }
+
+.evo-position-container:hover .evo-position-hover {
+  display: block; }
+
+.evo-position-container:hover {
+  display: inline-block; }
+
+.evo-position-hover {
+  display: none; }
 
 /* COLORS */
 /* 
@@ -1136,13 +1478,13 @@ hr {
   max-width: 55rem; }
 
 .evo-text-smallest {
-  font-size: 0.5rem; }
+  font-size: 0.625rem; }
 
 .evo-text-smaller {
   font-size: 0.75rem; }
 
 .evo-text-small {
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 .evo-text-big {
   font-size: 1.875rem; }

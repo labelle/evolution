@@ -1,0 +1,22 @@
+///*      L A Y O U T      */
+
+// Align elements on a grid across a page
+
+@import "../variables";
+
+// Just for the website
+
+.layout-example-grid > div {
+  border-left: solid 1px #ccc;
+/*  background-color: rgba(235,235,235, 0.5);*/
+  height: 10vh;
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left:8px;
+  width: 8.333333333%;
+  float:left;
+}
+
+.layout-example-grid > div:nth-last-child(1) {
+  border-right: solid 1px #ccc;
+}

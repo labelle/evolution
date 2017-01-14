@@ -6,12 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Grid</title>
+        <title>Evolution Layout</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
+<!--         <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
 <!--         <link rel="stylesheet" href="css/evo-reset.css"> -->
         <link rel="stylesheet" href="css/evo-elements.css">
 
@@ -26,62 +26,12 @@ margin-bottom: 3em;
 /*border-width: 1px;*/
 }
 
-
-@media screen and (min-width: 1101px) {
-    .four-up  {
-        width: 22.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .four-up  {
-        width: 47.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .four-up  {
-        width: 100%;
-        position: inline-block;
-    float: left;
-
-    }
-}
-
-.after-box {
-    clear: left;
-}
-
 div.color-swatch {
     height: 25px;
 }
 
 h2.margin-bottom-0 {
     margin-bottom: -20px;
-}
-
-/* https://snook.ca/archives/html_and_css/vm-vh-units */
-/* http://www.w3.org/TR/css3-values/#vm */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
-.grid-1-row {
-  height: 100vh;
-}
-
-.grid-12-col {
-  width:8.333333333%;
-  float:left;
-    padding-top:3px;
-  padding-bottom:2px;
-  padding-left:8px;
-    height: 100vh;
 }
 
 
@@ -101,9 +51,9 @@ h2.margin-bottom-0 {
 
 <section id="evoColorNaturaleIntro">
 
-<h1 class="evo-text-10" style="margin-bottom: .5em;">Grid</h1>
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Layout</h1>
 
-<p class="evo-text evo-measure">Grid usage.</p>
+<p class="evo-text evo-measure">Layout usage.</p>
 <!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
 
 <div class="evo-space-19"></div>
@@ -114,52 +64,31 @@ h2.margin-bottom-0 {
 
 <!-- Color Number -->
 
-<section id="evoColorNumber">
+<section id="evoGrid">
 
-<h2 class="evo-text evo-text-6">12 Column Bootstrap Grid</h2>
+<h2 class="evo-text evo-text-6">12 Column Grid</h2>
 
 <div class="evo-space-8"></div>
 
-</section>
 
-
-  <div class="grid-1-row">
-    <div class="grid-12-col evo-gray-9-bg">1</div>
-    <div class="grid-12-col evo-gray-7-bg">2</div>
-    <div class="grid-12-col evo-gray-9-bg">3</div>
-    <div class="grid-12-col evo-gray-7-bg">4</div>
-    <div class="grid-12-col evo-gray-9-bg">5</div>
-    <div class="grid-12-col evo-gray-7-bg">6</div>
-    <div class="grid-12-col evo-gray-9-bg">7</div>
-    <div class="grid-12-col evo-gray-7-bg">8</div>
-    <div class="grid-12-col evo-gray-9-bg">9</div>
-    <div class="grid-12-col evo-gray-7-bg">10</div>
-    <div class="grid-12-col evo-gray-9-bg">11</div>
-    <div class="grid-12-col evo-gray-7-bg">12</div>
+  <div class="layout-example-grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
   </div>
 
-<section>
+<div class="evo-space-8 after-box"></div>
 
-<!-- <section class="container">
-  <div class="row">
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-10-bg evo-space-10"></div>
-    <div class="col-xs-1 evo-gray-11-bg evo-space-10"></div>
-  </div>
-</section> -->
-
-<section>
-
-<p class="evo-measure-wide">Evolution uses a 12 column grid. the Bootstrap 3 responsive grid. This grid has been extracted from the overeall Bootstrap code base so that Bootstrap's styling does not interfer with the Evolution styling. 
+<p class="evo-measure-wide">Evolution uses a 12 column grid. the Bootstrap 3 responsive grid. This grid has been extracted from the overall Bootstrap code base so that Bootstrap's styling does not interfer with the Evolution styling. 
 
 Bootstrap 3 Grid
 
@@ -175,9 +104,63 @@ Zurb Foundation 6 Grid</p>
 </pre>
 
 
-<div class="evo-space-19"></div>
+<div class="evo-space-19 after-box"></div>
 
 </section>
+
+<section>
+
+<div class="evo-space-19"></div>
+
+  <div>
+    <div class="viewport-1-col evo-gray-9-bg" style="margin-left:-5vw;">1</div>
+    <div class="viewport-1-col evo-gray-7-bg">2</div>
+    <div class="viewport-1-col evo-gray-9-bg">3</div>
+    <div class="viewport-1-col evo-gray-7-bg">4</div>
+    <div class="viewport-1-col evo-gray-9-bg">5</div>
+    <div class="viewport-1-col evo-gray-7-bg">6</div>
+    <div class="viewport-1-col evo-gray-9-bg">7</div>
+    <div class="viewport-1-col evo-gray-7-bg">8</div>
+    <div class="viewport-1-col evo-gray-9-bg">9</div>
+    <div class="viewport-1-col evo-gray-7-bg">10</div>
+    <div class="viewport-1-col evo-gray-9-bg">11</div>
+    <div class="viewport-1-col evo-gray-7-bg">12</div>
+    <div class="viewport-1-col evo-gray-9-bg">13</div>
+    <div class="viewport-1-col evo-gray-7-bg">14</div>
+    <div class="viewport-1-col evo-gray-9-bg">15</div>
+    <div class="viewport-1-col evo-gray-7-bg">16</div>
+    <div class="viewport-1-col evo-gray-9-bg">17</div>
+    <div class="viewport-1-col evo-gray-7-bg">18</div>
+    <div class="viewport-1-col evo-gray-9-bg">19</div>
+    <div class="viewport-1-col evo-gray-7-bg" style="margin-right:-1vw;">20</div>
+  </div>
+
+<div class="evo-space-8 after-box"></div>
+
+  <div>
+    <div class="viewport-1-row evo-gray-9-bg">1</div>
+    <div class="viewport-1-row evo-gray-7-bg">2</div>
+    <div class="viewport-1-row evo-gray-9-bg">3</div>
+    <div class="viewport-1-row evo-gray-7-bg">4</div>
+    <div class="viewport-1-row evo-gray-9-bg">5</div>
+    <div class="viewport-1-row evo-gray-7-bg">6</div>
+    <div class="viewport-1-row evo-gray-9-bg">7</div>
+    <div class="viewport-1-row evo-gray-7-bg">8</div>
+    <div class="viewport-1-row evo-gray-9-bg">9</div>
+    <div class="viewport-1-row evo-gray-7-bg">10</div>
+    <div class="viewport-1-row evo-gray-9-bg">11</div>
+    <div class="viewport-1-row evo-gray-7-bg">12</div>
+    <div class="viewport-1-row evo-gray-9-bg">13</div>
+    <div class="viewport-1-row evo-gray-7-bg">14</div>
+    <div class="viewport-1-row evo-gray-9-bg">15</div>
+    <div class="viewport-1-row evo-gray-7-bg">16</div>
+    <div class="viewport-1-row evo-gray-9-bg">17</div>
+    <div class="viewport-1-row evo-gray-7-bg">18</div>
+    <div class="viewport-1-row evo-gray-9-bg">19</div>
+    <div class="viewport-1-row evo-gray-7-bg">20</div>
+  </div>
+
+  </section>
 
 
 <section>

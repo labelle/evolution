@@ -186,9 +186,9 @@
 
 // Size
 @mixin size($size) {
-  @if $size == smallest         { font-size: #{$u-19}rem; }
+  @if $size == smallest         { font-size: #{$u-20}rem; }
   @else if $size == smaller     { font-size: #{$u-21}rem; }
-  @else if $size == small       { font-size: #{$u-23}rem; }
+  @else if $size == small       { font-size: #{$u-22}rem; }
   @else if $size == big         { font-size: #{$u-27}rem; }
   @else if $size == bigger      { font-size: #{$u-29}rem; }
   @else if $size == biggest     { font-size: #{$u-31}rem; }

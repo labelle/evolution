@@ -1,0 +1,99 @@
+///*      L A Y O U T   P O S I T I O N     */
+
+// Position elements within a container
+
+@import "../variables";
+
+
+
+// Just for the website
+
+
+.position-container {
+   background-color: #bbb;
+   color:white;
+}
+
+
+// http://www.w3schools.com/w3css/w3css_display.asp
+
+#{$evo}-position-container {
+    position: relative
+}
+
+#{$evo}-position-top-left {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#{$evo}-position-top-right {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#{$evo}-position-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+#{$evo}-position-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+#{$evo}-position-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+#{$evo}-position-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+#{$evo}-position-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+#{$evo}-position-top-middle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+#{$evo}-position-bottom-middle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+#{$evo}-position-container:hover #{$evo}-position-hover {
+    display: block
+}
+
+#{$evo}-position-container:hover span.#{$evo}-position-hover {
+    display: inline-block
+}
+
+#{$evo}-position-hover {
+    display: none
+}
+
