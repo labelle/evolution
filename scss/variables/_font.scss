@@ -39,7 +39,7 @@ $times:            times, serif !default;
 $times-new:        TimesNewRoman, 'Times New Roman', times, baskerville, georgia, serif !default;
   // Borrowed from SmashingMagazine
   // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-a
-$native:           apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
+$native-smashing: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
   // Borrowed from Bootstrap
   // https://github.com/twbs/bootstrap/pull/19098
 $native-bootstrap: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
@@ -49,12 +49,20 @@ $native-tachyons:  -apple-system, BlinkMacSystemFont, 'avenir next', avenir, hel
 
 
 // Google Fonts
-$google-open-sans: 'Open Sans', sans-serif !default;
+// https://www.wired.com/2016/10/meet-noto-googles-free-font-800-languages/
+$google-source-sans: 'Source Sans Pro', sans-serif !default;
+$google-source-serif: 'Source Serif Pro', serif !default;
+$google-source-code: 'Source Code Pro', monospace !default;
+
+$google-noto-sans:  'Noto Sans', sans-serif !default;
+$google-noto-serif:  'Noto Serif', serif !default;
 
 
 // Adobe Edge Fonts
-// Note the suggested open-sans variable does not seem to work
-$adobe-open-sans:   'open sans', open-sans, sans-serif !default;
+$adobe-source-sans:  source-sans-pro, sans-serif !default;
+$adobe-source-serif: source-serif-pro, serif !default;
+$adobe-source-code:  source-code-pro, monospace !default;
+
 
 // Font Squirrel
 // Font Squirrel @font-face Webfont Kit

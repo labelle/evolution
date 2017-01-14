@@ -14,3 +14,8 @@
 #{$evo}-font-monaco            { font-family: #{$monaco}; }
 #{$evo}-font-times             { font-family: #{$times-new}; }
 #{$evo}-font-times-new         { font-family: #{$times}; }
+
+// Variable native system fonts
+#{$evo}-font-native-smashing { font-family: #{$native-smashing}; } // Font stack
+#{$evo}-font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
+#{$evo}-font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack

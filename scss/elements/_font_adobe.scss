@@ -3,20 +3,150 @@
 @import "../variables";
 
 // ADOBE EDGE FONTS
-// <script src="//use.edgefonts.net/open-sans.js"></script>
 
-#{$evo}-font-adobe-open-sans  {
-font-family: #{$adobe-open-sans};
-font-weight:400;
+// <script src="//use.edgefonts.net/source-code-pro:n2,n3,n4,n5,n6,n7,n9;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-serif-pro:n2,n3,n4,n6,n7,n9.js"></script>
+
+// Source sans pro
+
+.adobe-font-source-sans-extra-light  {
+font-family: #{$adobe-source-sans};
+font-weight:200;
 }
 
-#{$evo}-font-adobe-open-sans-light  {
-font-family: #{$adobe-open-sans};
+.adobe-font-source-sans-extra-light-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:200;
+font-style:italic;
+}
+
+.adobe-font-source-sans-light  {
+font-family: #{$adobe-source-sans};
 font-weight:300;
 }
 
-#{$evo}-font-adobe-open-sans-extra-bold  {
-font-family: #{$adobe-open-sans};
-font-weight:800;
+.adobe-font-source-sans-light-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:300;
+font-style:italic;
 }
+
+.adobe-font-source-sans  {
+font-family: #{$adobe-source-sans};
+font-weight:400;
+}
+
+.adobe-font-source-sans-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:400;
+font-style:italic;
+}
+
+.adobe-font-source-sans-semibold  {
+font-family: #{$adobe-source-sans};
+font-weight:600;
+}
+
+.adobe-font-source-sans-semibold-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:600;
+font-style:italic;
+}
+
+.adobe-font-source-sans-bold  {
+font-family: #{$adobe-source-sans};
+font-weight:700;
+}
+
+.adobe-font-source-sans-bold-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:700;
+font-style:italic;
+}
+
+.adobe-font-source-sans-black  {
+font-family: #{$adobe-source-sans};
+font-weight:900;
+}
+
+.adobe-font-source-sans-black-italic  {
+font-family: #{$adobe-source-sans};
+font-weight:900;
+font-style:italic;
+}
+
+
+
+// Source serif pro
+
+.adobe-font-source-serif-extra-light  {
+font-family: #{$adobe-source-serif};
+font-weight:200;
+}
+
+.adobe-font-source-serif-light  {
+font-family: #{$adobe-source-serif};
+font-weight:300;
+}
+
+.adobe-font-source-serif  {
+font-family: #{$adobe-source-serif};
+font-weight:400;
+}
+
+.adobe-font-source-serif-semibold  {
+font-family: #{$adobe-source-serif};
+font-weight:600;
+}
+
+.adobe-font-source-serif-bold  {
+font-family: #{$adobe-source-serif};
+font-weight:700;
+}
+
+.adobe-font-source-serif-black  {
+font-family: #{$adobe-source-serif};
+font-weight:900;
+}
+
+
+
+// Source code pro
+
+.adobe-font-source-code-extra-light  {
+font-family: #{$adobe-source-code};
+font-weight:200;
+}
+
+.adobe-font-source-code-light  {
+font-family: #{$adobe-source-code};
+font-weight:300;
+}
+
+.adobe-font-source-code  {
+font-family: #{$adobe-source-code};
+font-weight:400;
+}
+
+// Is medium needed?
+.adobe-font-source-code-medium  {
+font-family: #{$adobe-source-code};
+font-weight:500;
+}
+
+.adobe-font-source-code-semibold  {
+font-family: #{$adobe-source-code};
+font-weight:600;
+}
+
+.adobe-font-source-code-bold  {
+font-family: #{$adobe-source-code};
+font-weight:700;
+}
+
+.adobe-font-source-code-black  {
+font-family: #{$adobe-source-code};
+font-weight:900;
+}
+
+
 

@@ -43,7 +43,7 @@ code {
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
 html {
-  font-family: open sans, open-sans, sans-serif;
+  font-family: source-sans-pro, sans-serif;
   font-weight: 100;
   line-height: 1.4375;
   -webkit-tap-highlight-color: transparent; }
@@ -1238,7 +1238,7 @@ hr {
 
 /*      FONTS     */
 .evo-font {
-  font-family: open sans, open-sans, sans-serif;
+  font-family: source-sans-pro, sans-serif;
   font-weight: 100;
   line-height: 1.4375; }
 
@@ -1293,6 +1293,263 @@ hr {
 .evo-font-times-new {
   font-family: times, serif; }
 
+.evo-font-native-smashing {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
+
+.evo-font-native-bootstrap {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
+
+.evo-font-native-tachyons {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
+
+.adobe-font-source-sans-extra-light {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 200; }
+
+.adobe-font-source-sans-extra-light-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 200;
+  font-style: italic; }
+
+.adobe-font-source-sans-light {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300; }
+
+.adobe-font-source-sans-light-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic; }
+
+.adobe-font-source-sans {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400; }
+
+.adobe-font-source-sans-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.adobe-font-source-sans-semibold {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 600; }
+
+.adobe-font-source-sans-semibold-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 600;
+  font-style: italic; }
+
+.adobe-font-source-sans-bold {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 700; }
+
+.adobe-font-source-sans-bold-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic; }
+
+.adobe-font-source-sans-black {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 900; }
+
+.adobe-font-source-sans-black-italic {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: italic; }
+
+.adobe-font-source-serif-extra-light {
+  font-family: source-serif-pro, serif;
+  font-weight: 200; }
+
+.adobe-font-source-serif-light {
+  font-family: source-serif-pro, serif;
+  font-weight: 300; }
+
+.adobe-font-source-serif {
+  font-family: source-serif-pro, serif;
+  font-weight: 400; }
+
+.adobe-font-source-serif-semibold {
+  font-family: source-serif-pro, serif;
+  font-weight: 600; }
+
+.adobe-font-source-serif-bold {
+  font-family: source-serif-pro, serif;
+  font-weight: 700; }
+
+.adobe-font-source-serif-black {
+  font-family: source-serif-pro, serif;
+  font-weight: 900; }
+
+.adobe-font-source-code-extra-light {
+  font-family: source-code-pro, monospace;
+  font-weight: 200; }
+
+.adobe-font-source-code-light {
+  font-family: source-code-pro, monospace;
+  font-weight: 300; }
+
+.adobe-font-source-code {
+  font-family: source-code-pro, monospace;
+  font-weight: 400; }
+
+.adobe-font-source-code-medium {
+  font-family: source-code-pro, monospace;
+  font-weight: 500; }
+
+.adobe-font-source-code-semibold {
+  font-family: source-code-pro, monospace;
+  font-weight: 600; }
+
+.adobe-font-source-code-bold {
+  font-family: source-code-pro, monospace;
+  font-weight: 700; }
+
+.adobe-font-source-code-black {
+  font-family: source-code-pro, monospace;
+  font-weight: 900; }
+
+.google-font-source-sans-extra-light {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 200; }
+
+.google-font-source-sans-extra-light-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 200;
+  font-style: italic; }
+
+.google-font-source-sans-light {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 300; }
+
+.google-font-source-sans-light-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 300;
+  font-style: italic; }
+
+.google-font-source-sans {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400; }
+
+.google-font-source-sans-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.google-font-source-sans-semibold {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600; }
+
+.google-font-source-sans-semibold-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600;
+  font-style: italic; }
+
+.google-font-source-sans-bold {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700; }
+
+.google-font-source-sans-bold-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-style: italic; }
+
+.google-font-source-sans-black {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 900; }
+
+.google-font-source-sans-black-italic {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 900;
+  font-style: italic; }
+
+.google-font-source-serif-extra-light {
+  font-family: Source Serif Pro, serif;
+  font-weight: 200; }
+
+.google-font-source-serif-light {
+  font-family: Source Serif Pro, serif;
+  font-weight: 300; }
+
+.google-font-source-serif {
+  font-family: Source Serif Pro, serif;
+  font-weight: 400; }
+
+.google-font-source-serif-semibold {
+  font-family: Source Serif Pro, serif;
+  font-weight: 600; }
+
+.google-font-source-serif-bold {
+  font-family: Source Serif Pro, serif;
+  font-weight: 700; }
+
+.google-font-source-serif-black {
+  font-family: Source Serif Pro, serif;
+  font-weight: 900; }
+
+.google-font-source-code-extra-light {
+  font-family: Source Code Pro, monospace;
+  font-weight: 200; }
+
+.google-font-source-code-light {
+  font-family: Source Code Pro, monospace;
+  font-weight: 300; }
+
+.google-font-source-code {
+  font-family: Source Code Pro, monospace;
+  font-weight: 400; }
+
+.google-font-source-code-medium {
+  font-family: Source Code Pro, monospace;
+  font-weight: 500; }
+
+.google-font-source-code-semibold {
+  font-family: Source Code Pro, monospace;
+  font-weight: 600; }
+
+.google-font-source-code-bold {
+  font-family: Source Code Pro, monospace;
+  font-weight: 700; }
+
+.google-font-source-code-black {
+  font-family: Source Code Pro, monospace;
+  font-weight: 900; }
+
+.google-font-noto-sans {
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400; }
+
+.google-font-noto-sans-italic {
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.google-font-noto-sans-bold {
+  font-family: Noto Sans, sans-serif;
+  font-weight: 700; }
+
+.google-font-noto-sans-bold-italic {
+  font-family: Noto Sans, sans-serif;
+  font-weight: 700;
+  font-style: italic; }
+
+.google-font-noto-serif {
+  font-family: Noto Serif, serif;
+  font-weight: 400; }
+
+.google-font-noto-serif-italic {
+  font-family: Noto Serif, serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.google-font-noto-serif-bold {
+  font-family: Noto Serif, serif;
+  font-weight: 700; }
+
+.google-font-noto-serif-bold-italic {
+  font-family: Noto Serif, serif;
+  font-weight: 700;
+  font-style: italic; }
+
 .evo-font-athelas {
   font-family: athelas, georgia, serif; }
 
@@ -1322,39 +1579,6 @@ hr {
 
 .evo-font-gotham {
   font-family: gotham HTF, gotham, serif; }
-
-.evo-font-native {
-  font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
-
-.evo-font-native-bootstrap {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
-
-.evo-font-native-tachyons {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
-
-.evo-font-adobe-open-sans {
-  font-family: open sans, open-sans, sans-serif;
-  font-weight: 400; }
-
-.evo-font-adobe-open-sans-light {
-  font-family: open sans, open-sans, sans-serif;
-  font-weight: 300; }
-
-.evo-font-adobe-open-sans-extra-bold {
-  font-family: open sans, open-sans, sans-serif;
-  font-weight: 800; }
-
-.evo-font-google-open-sans {
-  font-family: Open Sans, sans-serif;
-  font-weight: 400; }
-
-.evo-font-google-open-sans-light {
-  font-family: Open Sans, sans-serif;
-  font-weight: 300; }
-
-.evo-font-google-open-sans-extra-bold {
-  font-family: Open Sans, sans-serif;
-  font-weight: 800; }
 
 /* Text */
 .evo-text-reset {
