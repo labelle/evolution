@@ -1248,58 +1248,107 @@ hr {
   font-weight: initial;
   line-height: initial; }
 
-.evo-font-sans-serif {
-  font-family: sans-serif; }
+.font-sans-serif {
+  font-family: sans-serif !important; }
 
-.evo-font-serif {
-  font-family: serif; }
+.font-serif {
+  font-family: serif !important; }
 
-.evo-font-monospace {
-  font-family: monospace; }
+.font-monospace {
+  font-family: monospace !important; }
 
-.evo-font-cursive {
-  font-family: cursive; }
+.font-cursive {
+  font-family: cursive !important; }
 
-.evo-font-fantasy {
-  font-family: fantasy; }
+.font-fantasy {
+  font-family: fantasy !important; }
 
-.evo-font-arial {
+.font-italic {
+  font-style: italic !important; }
+
+.font-oblique {
+  font-style: oblique !important; }
+
+.font-no-style {
+  font-style: normal !important; }
+
+.font-bold {
+  font-weight: bold !important; }
+
+.font-lighter {
+  font-weight: lighter !important; }
+
+.font-bolder {
+  font-weight: bolder !important; }
+
+.font-100 {
+  font-weight: 100 !important; }
+
+.font-200 {
+  font-weight: 200 !important; }
+
+.font-300 {
+  font-weight: 300 !important; }
+
+.font-400 {
+  font-weight: 400 !important; }
+
+.font-500 {
+  font-weight: 500 !important; }
+
+.font-600 {
+  font-weight: 600 !important; }
+
+.font-700 {
+  font-weight: 700 !important; }
+
+.font-800 {
+  font-weight: 800 !important; }
+
+.font-900 {
+  font-weight: 900 !important; }
+
+.font-no-weight {
+  font-weight: normal !important; }
+
+.font-arial {
   font-family: arial, Helvetica Neue, helvetica, sans-serif; }
 
-.evo-font-arial-black {
+.font-arial-black {
   font-family: Arial Black, Arial Bold, gadget, sans-serif; }
 
-.evo-font-courier-new {
+.font-courier-new {
   font-family: Courier New, courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
 
-.evo-font-georgia {
+.font-georgia {
   font-family: georgia, times, Times New Roman, serif; }
 
-.evo-font-helvetica {
+.font-helvetica {
   font-family: helvetica neue, helvetica, arial, sans-serif; }
 
-.evo-font-helvetica-thin {
+.font-helvetica-thin {
   font-family: HelveticaNeue-Thin, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; }
 
-.evo-font-menlo {
+.font-menlo {
   font-family: menlo, consolas, monaco, Courier New, monospace; }
 
-.evo-font-monaco {
+.font-monaco {
   font-family: monaco, consolas, menlo, Courier New, monospace; }
 
-.evo-font-times {
+.font-times {
   font-family: TimesNewRoman, Times New Roman, times, baskerville, georgia, serif; }
 
-.evo-font-times-new {
+.font-times-new {
   font-family: times, serif; }
 
-.evo-font-native-smashing {
+.font-native,
+.font-native-smashing {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 
-.evo-font-native-bootstrap {
+.font-native-bootstrap {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 
-.evo-font-native-tachyons {
+.font-native-tachyons {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
 
 .adobe-font-source-sans-extra-light {
@@ -1550,34 +1599,34 @@ hr {
   font-weight: 700;
   font-style: italic; }
 
-.evo-font-athelas {
+.font-athelas {
   font-family: athelas, georgia, serif; }
 
-.evo-font-avenir {
+.font-avenir {
   font-family: avenir next, avenir, sans-serif; }
 
-.evo-font-baskerville {
+.font-baskerville {
   font-family: baskerville, serif; }
 
-.evo-font-bodoni {
+.font-bodoni {
   font-family: Bodoni MT, serif; }
 
-.evo-font-calisto {
+.font-calisto {
   font-family: Calisto MT, serif; }
 
-.evo-font-consolas {
+.font-consolas {
   font-family: Consolas, monaco, monospace; }
 
-.evo-font-courier {
+.font-courier {
   font-family: Courier Next, courier, monospace; }
 
-.evo-font-didot {
+.font-didot {
   font-family: didot, serif; }
 
-.evo-font-garamond {
+.font-garamond {
   font-family: garamond, serif; }
 
-.evo-font-gotham {
+.font-gotham {
   font-family: gotham HTF, gotham, serif; }
 
 /* Text */
@@ -1606,100 +1655,49 @@ hr {
   line-height: 1.4375;
   letter-spacing: normal; }
 
-.evo-font-bold {
-  font-weight: bold; }
-
-.evo-font-lighter {
-  font-weight: lighter; }
-
-.evo-font-bolder {
-  font-weight: bolder; }
-
-.evo-font-100 {
-  font-weight: 100; }
-
-.evo-font-200 {
-  font-weight: 200; }
-
-.evo-font-300 {
-  font-weight: 300; }
-
-.evo-font-400 {
-  font-weight: 400; }
-
-.evo-font-500 {
-  font-weight: 500; }
-
-.evo-font-600 {
-  font-weight: 600; }
-
-.evo-font-700 {
-  font-weight: 700; }
-
-.evo-font-800 {
-  font-weight: 800; }
-
-.evo-font-900 {
-  font-weight: 900; }
-
-.evo-font-no-weight {
-  font-weight: normal; }
-
-.evo-font-italic {
-  font-style: italic; }
-
-.evo-font-oblique {
-  font-style: oblique; }
-
-.evo-font-no-style {
-  font-style: normal; }
-
-.evo-text-capitalize {
-  text-transform: capitalize; }
-
-.evo-text-uppercase {
-  text-transform: uppercase; }
-
-.evo-text-lowercase {
-  text-transform: lowercase; }
-
-.evo-text-no-case {
-  text-transform: none; }
-
-.evo-text-overline {
-  text-decoration: overline; }
-
-.evo-text-strikeline {
-  text-decoration: line-through; }
-
-.evo-text-underline {
-  text-decoration: underline; }
-
-.evo-text-no-line a,
-.evo-text-no-line {
-  text-decoration: none; }
-
-.evo-text-left {
+.text-left {
   text-align: left; }
 
-.evo-text-right {
+.text-right {
   text-align: right; }
 
-.evo-text-center {
+.text-center {
   text-align: center; }
 
-.evo-text-truncate {
+.text-capitalize {
+  text-transform: capitalize; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-no-capcase {
+  text-transform: none !important; }
+
+.text-overline {
+  text-decoration: overline; }
+
+.text-strikeline {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
+
+.text-no-line a,
+.text-no-line {
+  text-decoration: none !important; }
+
+.text-truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
 
-.evo-text-clip {
+.text-clip {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip; }
-
-.evo-measure {
-  max-width: 55rem; }
 
 .evo-text-smallest {
   font-size: 0.625rem; }
@@ -1928,6 +1926,9 @@ hr {
 
 .evo-tracking-biggest {
   letter-spacing: 0.1em; }
+
+.evo-measure {
+  max-width: 55rem; }
 
 .evo-measure-1 {
   max-width: 10rem; }

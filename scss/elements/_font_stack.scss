@@ -4,18 +4,19 @@
 
 // System Font Stacks
 // Font stacks are safer to use
-#{$evo}-font-arial             { font-family: #{$arial}; }
-#{$evo}-font-arial-black       { font-family: #{$arial-black}; }
-#{$evo}-font-courier-new       { font-family: #{$courier-new}; }
-#{$evo}-font-georgia           { font-family: #{$georgia}; }
-#{$evo}-font-helvetica         { font-family: #{$helvetica}; }
-#{$evo}-font-helvetica-thin    { font-family: #{$helvetica-thin}; }
-#{$evo}-font-menlo             { font-family: #{$menlo}; }
-#{$evo}-font-monaco            { font-family: #{$monaco}; }
-#{$evo}-font-times             { font-family: #{$times-new}; }
-#{$evo}-font-times-new         { font-family: #{$times}; }
+.font-arial             { font-family: #{$arial}; }
+.font-arial-black       { font-family: #{$arial-black}; }
+.font-courier-new       { font-family: #{$courier-new}; }
+.font-georgia           { font-family: #{$georgia}; }
+.font-helvetica         { font-family: #{$helvetica}; }
+.font-helvetica-thin    { font-family: #{$helvetica-thin}; }
+.font-menlo             { font-family: #{$menlo}; }
+.font-monaco            { font-family: #{$monaco}; }
+.font-times             { font-family: #{$times-new}; }
+.font-times-new         { font-family: #{$times}; }
 
 // Variable native system fonts
-#{$evo}-font-native-smashing { font-family: #{$native-smashing}; } // Font stack
-#{$evo}-font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
-#{$evo}-font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack
+.font-native,
+.font-native-smashing   { font-family: #{$native-smashing}; } // Font stack
+.font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
+.font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack
