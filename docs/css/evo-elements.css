@@ -27,7 +27,7 @@
 // *   _ERRORS - A selection of aliases that forgive common mistypes
 *
 *******************************************************************************/
-body.site-container {
+.site-container {
   margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 5%;
@@ -107,8 +107,21 @@ hr {
 .evo-all-inherit {
   all: inherit; }
 
-.after-box {
+.break-word {
+  overflow-wrap: break-word; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.after-box,
+.clear-float-left {
   clear: left; }
+
+.clear-float-right {
+  clear: right; }
 
 .sr-only {
   position: absolute;
@@ -322,88 +335,67 @@ hr {
   height: 100vh; }
 
 .viewport-0-col {
-  width: 0vw;
-  float: left; }
+  width: 0vw; }
 
 .viewport-1-col {
-  width: 5vw;
-  float: left; }
+  width: 5vw; }
 
 .viewport-2-col {
-  width: 10vw;
-  float: left; }
+  width: 10vw; }
 
 .viewport-3-col {
-  width: 15vw;
-  float: left; }
+  width: 15vw; }
 
 .viewport-4-col {
-  width: 20vw;
-  float: left; }
+  width: 20vw; }
 
 .viewport-5-col {
-  width: 25vw;
-  float: left; }
+  width: 25vw; }
 
 .viewport-6-col {
-  width: 30vw;
-  float: left; }
+  width: 30vw; }
 
 .viewport-7-col {
-  width: 35vw;
-  float: left; }
+  width: 35vw; }
 
 .viewport-8-col {
-  width: 40vw;
-  float: left; }
+  width: 40vw; }
 
 .viewport-9-col {
-  width: 45vw;
-  float: left; }
+  width: 45vw; }
 
 .viewport-10-col {
-  width: 50vw;
-  float: left; }
+  width: 50vw; }
 
 .viewport-11-col {
-  width: 55vw;
-  float: left; }
+  width: 55vw; }
 
 .viewport-12-col {
-  width: 60vw;
-  float: left; }
+  width: 60vw; }
 
 .viewport-13-col {
-  width: 65vw;
-  float: left; }
+  width: 65vw; }
 
 .viewport-14-col {
-  width: 70vw;
-  float: left; }
+  width: 70vw; }
 
 .viewport-15-col {
-  width: 75vw;
-  float: left; }
+  width: 75vw; }
 
 .viewport-16-col {
-  width: 80vw;
-  float: left; }
+  width: 80vw; }
 
 .viewport-17-col {
-  width: 85vw;
-  float: left; }
+  width: 85vw; }
 
 .viewport-18-col {
-  width: 90vw;
-  float: left; }
+  width: 90vw; }
 
 .viewport-19-col {
-  width: 95vw;
-  float: left; }
+  width: 95vw; }
 
 .viewport-20-col {
-  width: 100vw;
-  float: left; }
+  width: 100vw; }
 
 .position-container {
   background-color: #bbb;
@@ -475,6 +467,82 @@ hr {
 
 .evo-position-hover {
   display: none; }
+
+#columns {
+  column-width: 320px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto; }
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+  display: inline-block; }
+
+div#columns figure img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px; }
+
+div#columns:hover figure:not(:hover) {
+  opacity: 0.4; }
+
+@media screen and (max-width: 750px) {
+  #columns {
+    column-gap: 0px; }
+  #columns figure {
+    width: 100%; } }
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; }
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px; }
+
+body {
+  background: #111; }
+
+div {
+  box-sizing: border-box; }
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(250px + 1px);
+  max-height: 750px;
+  margin: 0;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-250px);
+  transform-origin: right top; }
+  .horizontal-scroll-wrapper > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top; }
+
+.squares {
+  padding: 250px 0 0 0; }
+  .squares > div {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0; }
 
 /* COLORS */
 /* 

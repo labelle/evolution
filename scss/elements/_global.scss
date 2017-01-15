@@ -4,7 +4,7 @@
 
 // General site-wide settings (optional)
 
-body.site-container {
+.site-container {
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 5%;
@@ -175,9 +175,25 @@ all: inherit;
 }
 
 // clearspace fix
+.break-word {
+  overflow-wrap: break-word;
+}
 
-.after-box {
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.after-box,
+.clear-float-left {
     clear: left;
+}
+
+.clear-float-right {
+    clear: right;
 }
 
 

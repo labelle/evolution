@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Layout Position</title>
+        <title>Evolution Layout Horizontal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -16,26 +16,6 @@
         <link rel="stylesheet" href="css/evo-elements.css">
 
 <style>
-
-div[class*="evo-box"]  {
-padding-bottom: 5rem;
-/*background-color: #eee;*/
-background-color: #f7f3e2;
-margin-top: .5em;
-margin-bottom: 3em;
-/*border-width: 1px;*/
-}
-
-div.color-swatch {
-    height: 25px;
-}
-
-h2.margin-bottom-0 {
-    margin-bottom: -20px;
-}
-
-
-
 </style>
 </head>
 <body class="site-container">
@@ -49,11 +29,11 @@ h2.margin-bottom-0 {
 <main>
 
 
-<section id="evoPositionIntro">
+<section id="evoHorizontalIntro">
 
-<h1 class="evo-text-10" style="margin-bottom: .5em;">Layout Position</h1>
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Layout Horizontal</h1>
 
-<p class="evo-text evo-measure">Position elements within a container.</p>
+<p class="evo-text evo-measure">Horizontal scrolling page.</p>
 <!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
 
 <div class="evo-space-19"></div>
@@ -62,25 +42,25 @@ h2.margin-bottom-0 {
 
 
 
-<!-- Layout Position -->
+<!-- Masonry -->
 
-<section id="evoPosition">
+<section id="evoMasonry">
 
-<h2 class="evo-text evo-text-6">Layout Position</h2>
+<h2 class="evo-text evo-text-6">Horizontal layout</h2>
 
 <div class="evo-space-8"></div>
 
+<div class="horizontal-scroll-wrapper squares">
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+  <div>item 6</div>
+  <div>item 7</div>
+  <div>item 8</div>
+</div>
 
-<div class="evo-position-container position-container" style="height:300px;">
-  <div class="evo-position-top-left">Top Left</div>
-  <div class="evo-position-top-right">Top Right</div>
-  <div class="evo-position-bottom-left">Bottom Left</div>
-  <div class="evo-position-bottom-right">Bottom Right</div>
-  <div class="evo-position-left">Left</div>
-  <div class="evo-position-right">Right</div>
-  <div class="evo-position-middle">Middle</div>
-  <div class="evo-position-top-middle">Top Middle</div>
-  <div class="evo-position-bottom-middle">Bottom Mid</div>
 </div>
 
 <div class="evo-space-8 after-box"></div>
