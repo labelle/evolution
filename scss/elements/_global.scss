@@ -196,6 +196,11 @@ all: inherit;
     clear: right;
 }
 
+.table-collapse {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
 
 // Screen readers
 
