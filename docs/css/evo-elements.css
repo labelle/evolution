@@ -107,6 +107,21 @@ hr {
 .evo-all-inherit {
   all: inherit; }
 
+.word-space-0 {
+  word-spacing: 0; }
+
+.word-space-1 {
+  word-spacing: .15em; }
+
+.word-space-2 {
+  word-spacing: .25em; }
+
+.word-space-4 {
+  word-spacing: .35em; }
+
+.word-space-5 {
+  word-spacing: .5em; }
+
 .break-word {
   overflow-wrap: break-word; }
 

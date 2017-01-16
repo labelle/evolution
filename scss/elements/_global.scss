@@ -174,6 +174,31 @@ all: initial;
 all: inherit;
 }
 
+// Word spacing
+// http://www.w3schools.com/cssref/pr_text_word-spacing.asp
+// word-spacing: normal|length|initial|inherit;
+// normally .25em
+
+.word-space-0 {
+word-spacing: 0;
+}
+
+.word-space-1 {
+word-spacing: .15em;
+}
+
+.word-space-2 {
+word-spacing: .25em; // default
+}
+
+.word-space-4 {
+word-spacing: .35em;
+}
+
+.word-space-5 {
+word-spacing: .5em;
+}
+
 
 // What is the difference between break-word and word-break?
 // http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
