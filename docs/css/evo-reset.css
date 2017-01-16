@@ -51,9 +51,6 @@ button,
 input {
   line-height: normal; }
 
-img {
-  vertical-align: initial; }
-
 address {
   font-style: normal; }
 
@@ -110,6 +107,9 @@ table {
 ul, li {
   margin-left: 0;
   padding-left: 0; }
+
+img {
+  border-style: none; }
 
 html {
   -ms-text-size-adjust: 100%;

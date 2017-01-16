@@ -58,9 +58,10 @@ input {
   line-height: normal;
 }
 
-img {
-  vertical-align: initial; // vertical-align: middle;
-}
+// not needed, as html5doctor uses vertical-align: baseline
+// img {
+//   vertical-align: initial; // vertical-align: middle;
+// }
 
 address {
   font-style: normal;

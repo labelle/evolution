@@ -55,6 +55,15 @@ ul, li {
   padding-left: 0;
 }
 
+// vertical-align https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+// border-style remove the border on images inside links in IE 10-
+// border 0 is set in html5doctor
+img {
+  // border: 0;
+  // vertical-align: initial; // override bootstrap vertical-align: middle;
+  border-style: none;
+}
+
 // From other sources
 
 // Only display content to screen readers

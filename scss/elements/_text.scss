@@ -27,6 +27,7 @@
   margin-bottom:   initial;
   margin-left:     initial;
   margin-right:    initial;
+  text-rendering:  initial;
 }
 
 
@@ -39,6 +40,7 @@
   font-weight:     #{$text_font_weight};
   line-height:     #{$text_line_height};
   letter-spacing:  #{$text_letter_spacing};
+  text-rendering:  #{$text_rendering};
 
   // margin-top:      inherit; // #{$text_margin_top}
   // margin-bottom:   inherit; // #{$text_margin_bottom}

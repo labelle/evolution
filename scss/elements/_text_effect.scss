@@ -28,7 +28,65 @@
 //   background-display: none;
 // }
 
-/* SHADOWS */
+
+// // Dropcap in span
+// // Wrap letter in span and apply this class
+// span.dropcap {
+//   color: #903;
+//   float: left;
+//   font-family: Georgia;
+//   font-size: 75px;
+//   line-height: 60px;
+//   padding-top: 4px;
+//   padding-right: 8px;
+//   padding-left: 3px;
+// }
+
+// // Dropcap with just CSS
+// figcaption.dropcap:first-letter {
+//   color: #903;
+//   float: left;
+//   font-family: Georgia;
+//   font-size: 75px;
+//   line-height: 60px;
+//   padding-top: 4px;
+//   padding-right: 8px;
+//   padding-left: 3px;
+// }
+
+// Dropcap in span
+// Wrap letter in span and apply this class
+span.dropcap {
+// @extend #{$evo}-text;
+@extend #{$evo}-text-big;
+color: #{$dropcap_color};
+font-size: 5ex;
+text-align: text-top;
+float:left;
+padding-right: .7ch;
+padding-left: .5ch;
+padding-top:0;
+line-height:1;
+font-feature-settings: "smcp" on;
+}
+
+// Dropcap with just CSS
+figcaption.dropcap:first-letter {
+// @extend #{$evo}-text;
+@extend #{$evo}-text-big;
+color: #{$dropcap_color};
+font-size: 5ex;
+text-align: text-top;
+float:left;
+padding-right: .7ch;
+padding-left: .5ch;
+padding-top:0;
+line-height:1;
+font-feature-settings: "smcp" on;
+}
+
+
+// /* SHADOWS */
 
 // Initial Value: none
 // /* offset-x | offset-y | blur-radius | color */

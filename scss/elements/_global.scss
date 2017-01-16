@@ -42,7 +42,7 @@ html {
   // margin-top:      #{$html_margin_top};
   // margin-bottom:   #{$html_margin_bottom};
     // color:           #{$html_color};
-    // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // body                       {}
@@ -172,10 +172,6 @@ all: initial;
 
 .evo-all-inherit {
 all: inherit;
-}
-
-.text-rotate {
-    -webkit-transform:rotate(90deg);
 }
 
 

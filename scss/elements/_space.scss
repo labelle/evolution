@@ -16,7 +16,7 @@
 #{$evo}-space {
      height: #{$space_height}; // 3rem
      width: #{$space_width}; // auto
-     clear: both;
+     clear: #{$space_clear_float}; // both
 }
 
 

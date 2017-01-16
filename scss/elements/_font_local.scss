@@ -4,4 +4,85 @@
 
 // @font-face import
 
+// @font-face  {
+//   font-family:'Refrigerator-Deluxe';
+//   src:url('../fonts/Refrigerator-Deluxe.otf') format('opentype');
+// /* src:url('fontname.ttf') format('truetype');  */ 
+// }
+
+// http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/
+// https://drafts.csswg.org/css-fonts-3/#the-font-face-rule
+// https://hacks.mozilla.org/2009/10/font-control-for-designers/
+
+
 // Adobe trajan font
+// https://helpx.adobe.com/typekit/using/ot-svg-color-fonts.html
+// https://fonts.google.com/?query=neon
+
+@font-face {
+  font-family: "Your typeface";
+  src: url(type/filename.eot);
+  src: local("☺"),
+    url("type/filename.woff") format("woff"),
+    url(type/filename.otf) format("opentype"),
+    url("type/filename.svg#filename") format("svg");
+  }
+@font-face {
+  font-family: "Your typeface";
+  font-style: italic;
+  src: url(type/filename-ital.eot);
+  src: local("☺"),
+    url("type/filename-ital.woff") format("woff"),
+    url(type/filename-ital.otf) format("opentype"),
+    url("type/filename-ital.svg#filename-ital") format("svg");
+  }
+h2 { font-family: "Your typeface", Georgia, serif; }
+em { font-style: italic; }
+
+
+// Didot
+
+// h1 {
+//   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+//   font-size: 23px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 500;
+//   line-height: 23px;
+// }
+// h3 {
+//   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+//   font-size: 17px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 500;
+//   line-height: 23px;
+// }
+// p {
+//   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+//   font-size: 14px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 23px;
+// }
+// blockquote {
+//   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+//   font-size: 17px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 23px;
+// }
+// pre {
+//   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+//   font-size: 11px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 23px;
+// }
+
+// Theano Didot for download
+
+// https://www.fontsquirrel.com/fonts/theano-didot

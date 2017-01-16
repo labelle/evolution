@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Box</title>
+        <title>Evolution Image</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -16,60 +16,6 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-
-/* Experimental XRAY inspired by Harry Roberts */
-
-/* If it's a class containing the string evo-,
-put a green border around it. */
-
-div[class*="evo-box"]  {
-padding-bottom: 5rem;
-background-color: #eee;
-margin-top: .5em;
-margin-bottom: 3em;
-/*border-width: 1px;*/
-}
-
-
-@media screen and (min-width: 1101px) {
-    .four-up  {
-        width: 22.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .four-up  {
-        width: 47.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .four-up  {
-        width: 100%;
-        position: inline-block;
-    float: left;
-
-    }
-}
-
-.after-box {
-    clear: left;
-}
-
-/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
-*/
-
-/*[class]:not([class*="evo-"]) {
-outline: 5px solid red;
-}*/
 </style>
 </head>
 <body class="site-container">
@@ -83,11 +29,11 @@ outline: 5px solid red;
 <main>
 
 
-<section id="evoBoxIntro">
+<section id="evoImageIntro">
 
-<h1 class="evo-text-10" style="margin-bottom: .5em;">Box</h1>
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Image</h1>
 
-<p class="evo-text evo-measure">Box borders and lines for <code>&lt;div&gt;</code> tags. Some boxes will default to a line-width equal to border-top-width: 'medium' (e.g. <code>evo-box-gray</code> and <code>evo-box-dashed</code>).</p>
+<p class="evo-text evo-measure">Image container for <code>&lt;img /&gt;</code> tags. Use <code>evo-image</code> and <code>evo-image-[size]</code>).</p>
 <!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
 
 <div class="evo-space-19"></div>
@@ -98,33 +44,30 @@ outline: 5px solid red;
 <!-- Box -->
 
 
-<section id="evoBox">
+<section id="evoImage">
 
-<h2 class="evo-text-6">evo-box</h2>
+<h2 class="evo-text-6">evo-image</h2>
 
 <div class="evo-space-8"></div>
 
-evo-box
-<div class="evo-box"></div>
-
 <div class="four-up">
-evo-box-top
-<div class="evo-box-top"></div>
+evo-image
+<img src="monolake.jpg" class="image" />
 </div>
 
 <div class="four-up">
-evo-box-bottom
-<div class="evo-box-bottom"></div>
+evo-image-square
+<img src="monolake.jpg" class="image-responsive image-square" />
 </div>
 
 <div class="four-up">
-evo-box-left
-<div class="evo-box-left"></div>
+evo-image-round
+<img src="monolake.jpg" class="image-responsive evo-image-round" />
 </div>
 
 <div class="four-up">
-evo-box-right
-<div class="evo-box-right"></div>
+evo-image-circle
+<img src="monolake.jpg" class="image-responsive image-circle" />
 </div>
 
 <div class="evo-space-10 after-box"></div>
@@ -137,35 +80,15 @@ evo-box-right
 <!-- Reset -->
 
 
-<section id="evoBoxReset">
+<section id="evoImageReset">
 
-<h2 class="evo-text-6">evo-box-reset</h2>
+<h2 class="evo-text-6">evo-image-reset</h2>
 
 <div class="evo-space-8"></div>
 
 
-evo-box-reset
-<div class="evo-box-reset"></div>
-
-<div class="four-up">
-evo-box-top-reset
-<div class="evo-box-top-reset"></div>
-</div>
-
-<div class="four-up">
-evo-box-bottom-reset
-<div class="evo-box-bottom-reset"></div>
-</div>
-
-<div class="four-up">
-evo-box-left-reset
-<div class="evo-box-left-reset"></div>
-</div>
-
-<div class="four-up">
-evo-box-right-reset
-<div class="evo-box-right-reset"></div>
-</div>
+evo-image-reset
+<img src="#" class="evo-image-reset" />
 
 <div class="evo-space-10 after-box"></div>
 

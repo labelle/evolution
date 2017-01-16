@@ -13,6 +13,16 @@
   margin-right:-5%;
 }
 
+// For view-row elements
+// Not perfect, needs refactoring
+// Should call it something else besides this general name
+.text-rotate {
+    -webkit-transform:rotate(90deg);
+    -webkit-transform-origin: 15px 25px;
+    display:inline-block;
+    width: 100px;
+}
+
 /* https://snook.ca/archives/html_and_css/vm-vh-units */
 /* http://www.w3.org/TR/css3-values/#vm */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/length */

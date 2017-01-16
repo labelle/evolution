@@ -4,14 +4,116 @@
 
 @import "../variables";
 
+
+
+// Define individual corners of boxes
+// Based on _scale.scss in variables
+// By default matches a round box in _box_shape.scss
+$image_corner_top_right:     #{$u-23}rem;
+$image_corner_top_left:      #{$u-23}rem;
+$image_corner_bottom_right:  #{$u-23}rem;
+$image_corner_bottom_left:   #{$u-23}rem;
+
+
 // evo-image
 
-// evo-image-square
+.image {
+	 width:100%;
+	 height:auto;
+	 display:block;
+}
 
-// evo-image-round
+.image-responsive {
+	 display: block;
+	 max-width: 100%;
+	 height:auto;
+}
 
-// evo-image-circle
+// .image-square {
+// 	 border-radius: 0 !important;
+// }
 
+.image-circle {
+	 border-radius: 50%;
+	 padding-bottom: 100%;
+}
+
+.image-bg {
+     display: block;
+     float: left;
+     width: 100%; 
+     height: 0;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     vertical-align: top;
+}
+
+.image-bg-fpo {
+	background: url(#{$image_fpo}) center center/cover no-repeat;
+}
+
+.image-bg-random {
+	background: url(#{$image_fpo}) center center/cover no-repeat;
+    background: url(#{$image_random}) center center/cover no-repeat;
+}
+
+.color-fpo {
+	color: #{$color_fpo};
+}
+
+.color-bg-fpo {
+	background-color: #{$color_fpo};
+}
+
+// .color-random {
+// 	color: unquote("#{$evo}-color-#{$color_random}");
+// }
+
+// .color-bg-random {
+// 	background-color: #{$evo}-color-#{$color_random};
+// }
+
+// // http://pankajparashar.com/posts/random-colors-sass/
+
+// $red: random(256)-1;
+// $green: random(256)-1;
+// $blue: random(256)-1;
+// $alpha: random(100)/100;
+
+// .color-bg-random {
+//     background-color: unquote("rgba(#{$red}, #{$green}, #{$blue}, #{$alpha})");
+// }
+
+// .color-random {
+//     color: unquote("rgb(#{$red}, #{$green}, #{$blue})");
+// }
+
+
+.image-square {
+     @extend .image-bg;
+     width: 100%;
+     padding-bottom: 100%;
+     border-radius: 0 !important;
+}
+
+
+
+// box corners are all round 
+#{$evo}-image-round {
+	border-top-right-radius:    #{$image_corner_top_right};
+	border-top-left-radius:     #{$image_corner_top_left};
+	border-bottom-right-radius: #{$image_corner_bottom_right};
+	border-bottom-left-radius:  #{$image_corner_bottom_left};
+}
+
+
+// Image reset
+
+#{$evo}-image-reset {
+	border: 0;
+	border-style: none;
+}
 
 
 

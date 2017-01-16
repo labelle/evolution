@@ -73,6 +73,7 @@ $heading_line_height:               inherit !default; // no em, rem, px, %
 $heading_margin_top:                0 !default;
 $heading_margin_bottom:             1.4375em !default; // OR REM?
 $heading_letter_spacing:            normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
+$heading_rendering:                 optimizeSpeed !default; // or optimizeLegibility or auto or unset;
 
 // H1-H6 tag sizes
 $heading_size_h1:                   normal !default; // e.g. 200% or normal
@@ -86,6 +87,7 @@ $heading_size_h6:                   normal !default; // e.g. 100% or normal
 // Text such as paragraphs
 // MATCH TO SETTINGS
 // MOVE TO TEXT VARIABLE PAGE?
+
 $text_size:                         1rem !default; // e.g. 1rem or 16px or 100%
 $text_color:                        inherit !default; // e.g. Inherit or Initial or Black or #000000
 $text_font_family:                  inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
@@ -94,6 +96,7 @@ $text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem
 $text_margin_top:                   0 !default;
 $text_margin_bottom:                1.4375em !default; // OR REM?
 $text_letter_spacing:               normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
+$text_rendering:                    optimizeLegibility !default; // or optimizeSpeed or auto or unset;
 
 // Links
 $link_color:                        #cccccc !default;
@@ -102,6 +105,9 @@ $link_color_hover:                  darker(rgb( 0, 174, 239 ),50%) !default; // 
 $link_color_active:                 rgb( 0, 174, 239 ) !default; // cyan
 $link_underline:                    none !default;
 
+// Dropcap
+$dropcap_color:						#{$color_10} !default;
+
 // HR
 $hr_border:                         0 !default; // do not change
 $hr_width:                          thin !default;
@@ -109,3 +115,13 @@ $hr_style:                          solid !default;
 $hr_color:                          #cccccc !default;
 $hr_margin_top:                     20px !default;
 $hr_margin_bottom:                  20px !default;
+
+// Image
+$image_random:					    "https://unsplash.it/1024/963?random";
+$image_fpo:						    "../image/monolake.jpg" !default;
+
+// Color
+// If starting from 0 to this to start at 1 random(30)-1;
+$color_random:					    random(30);
+$color_fpo:                         #{$gray_10} !default;
+
