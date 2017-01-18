@@ -18,12 +18,14 @@ $image_corner_bottom_left:   #{$u-23}rem;
 // evo-image
 
 .image {
+	 background-color: #{$color_fpo};
 	 width:100%;
 	 height:auto;
 	 display:block;
 }
 
 .image-responsive {
+	 background-color: #{$color_fpo};
 	 display: block;
 	 max-width: 100%;
 	 height:auto;

@@ -11,6 +11,7 @@
 // }
 
 // http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/
+// http://nicewebtype.com/notes/2010/05/20/bulletproof-smiley-font-face-syntax/
 // https://drafts.csswg.org/css-fonts-3/#the-font-face-rule
 // https://hacks.mozilla.org/2009/10/font-control-for-designers/
 
@@ -19,25 +20,203 @@
 // https://helpx.adobe.com/typekit/using/ot-svg-color-fonts.html
 // https://fonts.google.com/?query=neon
 
+// @font-face {
+//   font-family: "Your typeface";
+//   src: url(type/filename.eot);
+//   src: local("☺"),
+//     url("type/filename.woff") format("woff"),
+//     url(type/filename.otf) format("opentype"),
+//     url("type/filename.svg#filename") format("svg");
+//   }
+// @font-face {
+//   font-family: "Your typeface";
+//   font-style: italic;
+//   src: url(type/filename-ital.eot);
+//   src: local("☺"),
+//     url("type/filename-ital.woff") format("woff"),
+//     url(type/filename-ital.otf) format("opentype"),
+//     url("type/filename-ital.svg#filename-ital") format("svg");
+//   }
+// h2 { font-family: "Your typeface", Georgia, serif; }
+// em { font-style: italic; }
+
+
+// // Fnord
+// @font-face {
+//     font-family: 'fnordtwenty-three';
+//     src: url('fnord-twenty-three-webfont.eot');
+//     src: url('fnord-twenty-three-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fnord-twenty-three-webfont.woff2') format('woff2'),
+//          url('fnord-twenty-three-webfont.woff') format('woff'),
+//          url('fnord-twenty-three-webfont.ttf') format('truetype'),
+//          url('fnord-twenty-three-webfont.svg#fnordtwenty-three') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'fnordtwenty-three_italic';
+//     src: url('fnord-twenty-threeitalic-webfont.eot');
+//     src: url('fnord-twenty-threeitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fnord-twenty-threeitalic-webfont.woff2') format('woff2'),
+//          url('fnord-twenty-threeitalic-webfont.woff') format('woff'),
+//          url('fnord-twenty-threeitalic-webfont.ttf') format('truetype'),
+//          url('fnord-twenty-threeitalic-webfont.svg#fnordtwenty-three_italic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+
+// Didonesque
 @font-face {
-  font-family: "Your typeface";
-  src: url(type/filename.eot);
-  src: local("☺"),
-    url("type/filename.woff") format("woff"),
-    url(type/filename.otf) format("opentype"),
-    url("type/filename.svg#filename") format("svg");
-  }
+    font-family: 'didonesquedisplay';
+    src: url('../font/didonesque-display-webfont.eot');
+    src: local("☺"),
+         url('../font/didonesque-display-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/didonesque-display-webfont.woff2') format('woff2'),
+         url('../font/didonesque-display-webfont.woff') format('woff'),
+         url('../font/didonesque-display-webfont.ttf') format('truetype'),
+         url('../font/didonesque-display-webfont.svg#didonesquedisplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
-  font-family: "Your typeface";
-  font-style: italic;
-  src: url(type/filename-ital.eot);
-  src: local("☺"),
-    url("type/filename-ital.woff") format("woff"),
-    url(type/filename-ital.otf) format("opentype"),
-    url("type/filename-ital.svg#filename-ital") format("svg");
-  }
-h2 { font-family: "Your typeface", Georgia, serif; }
-em { font-style: italic; }
+    font-family: 'didonesquedisplay_italic';
+    src: url('../font/didonesque-displayitalic-webfont.eot');
+    src: local("☺"),
+         url('../font/didonesque-displayitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/didonesque-displayitalic-webfont.woff2') format('woff2'),
+         url('../font/didonesque-displayitalic-webfont.woff') format('woff'),
+         url('../font/didonesque-displayitalic-webfont.ttf') format('truetype'),
+         url('../font/didonesque-displayitalic-webfont.svg#didonesquedisplay_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-didonesquedisplay            { font-family: #{$didonesque-display}; }
+.font-didonesquedisplay-italic     { font-family: #{$didonesque-display-italic}; }
+
+
+// Diaria
+
+@font-face {
+    font-family: 'diaria_promedium';
+    src: url('../font/diariapro-medium-webfont.eot');
+    src: local("☺"),
+         url('../font/diariapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/diariapro-medium-webfont.woff2') format('woff2'),
+         url('../font/diariapro-medium-webfont.woff') format('woff'),
+         url('../font/diariapro-medium-webfont.ttf') format('truetype'),
+         url('../font/diariapro-medium-webfont.svg#diaria_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'diaria_promedium_italic';
+    src: url('../font/diariapro-mediumitalic-webfont.eot');
+    src: local("☺"),
+         url('../font/diariapro-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/diariapro-mediumitalic-webfont.woff2') format('woff2'),
+         url('../font/diariapro-mediumitalic-webfont.woff') format('woff'),
+         url('../font/diariapro-mediumitalic-webfont.ttf') format('truetype'),
+         url('../font/diariapro-mediumitalic-webfont.svg#diaria_promedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-diaria-promedium           { font-family: #{$diaria-promedium}; }
+.font-diaria-promedium-italic    { font-family: #{$diaria-promedium-italic}; }
+
+
+
+// Fnordtwenty-three
+
+@font-face {
+    font-family: 'fnordtwenty-three';
+    src: url('../font/fnord-twenty-three-webfont.eot');
+    src: local("☺"),
+         url('../font/fnord-twenty-three-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/fnord-twenty-three-webfont.woff2') format('woff2'),
+         url('../font/fnord-twenty-three-webfont.woff') format('woff'),
+         url('../font/fnord-twenty-three-webfont.ttf') format('truetype'),
+         url('../font/fnord-twenty-three-webfont.svg#fnordtwenty-three') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fnordtwenty-three_italic';
+    src: url('../font/fnord-twenty-threeitalic-webfont.eot');
+    src: local("☺"),
+         url('../font/fnord-twenty-threeitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/fnord-twenty-threeitalic-webfont.woff2') format('woff2'),
+         url('../font/fnord-twenty-threeitalic-webfont.woff') format('woff'),
+         url('../font/fnord-twenty-threeitalic-webfont.ttf') format('truetype'),
+         url('../font/fnord-twenty-threeitalic-webfont.svg#fnordtwenty-three_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-fnordtwenty-three           { font-family: #{$fnordtwenty-three}; }
+.font-fnordtwenty-three-italic    { font-family: #{$fnordtwenty-three-italic}; }
+
+
+// Harman Sans
+
+@font-face {
+    font-family: 'harmansans';
+    src: url('../font/Harman-Sans-webfont.eot');
+    src: local("☺"),
+         url('../font/Harman-Sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Harman-Sans-webfont.woff2') format('woff2'),
+         url('../font/Harman-Sans-webfont.woff') format('woff'),
+         url('../font/Harman-Sans-webfont.ttf') format('truetype'),
+         url('../font/Harman-Sans-webfont.svg#harmansans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'harmansans_inline';
+    src: url('../font/Harman-Sans-Inline-webfont.eot');
+    src: local("☺"),
+         url('../font/Harman-Sans-Inline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Harman-Sans-Inline-webfont.woff2') format('woff2'),
+         url('../font/Harman-Sans-Inline-webfont.woff') format('woff'),
+         url('../font/Harman-Sans-Inline-webfont.ttf') format('truetype'),
+         url('../font/Harman-Sans-Inline-webfont.svg#harmansans_inline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-harmansans           { font-family: #{$harmansans}; }
+.font-harmansans-inline    { font-family: #{$harmansans-inline}; }
+
+
+// @font-face{ 
+//   font-family: 'MyWebFont';
+//   src: url('WebFont.eot');
+//   src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+//        url('WebFont.woff') format('woff'),
+//        url('WebFont.ttf') format('truetype'),
+//        url('WebFont.svg#webfont') format('svg');
+// }
+
+// // <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+
+// p { font-family: 'MyWebFont', Arial, sans-serif; }
+
 
 
 // Didot

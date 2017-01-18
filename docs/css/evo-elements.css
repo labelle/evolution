@@ -43,7 +43,7 @@ code {
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
 html {
-  font-family: source-sans-pro, sans-serif;
+  font-family: diaria_promedium, serif;
   font-weight: 100;
   line-height: 1.4375;
   -webkit-tap-highlight-color: transparent; }
@@ -1978,7 +1978,7 @@ hr {
 
 /*      FONTS     */
 .evo-font {
-  font-family: source-sans-pro, sans-serif;
+  font-family: diaria_promedium, serif;
   font-weight: 100;
   line-height: 1.4375; }
 
@@ -2340,21 +2340,84 @@ hr {
   font-style: italic; }
 
 @font-face {
-  font-family: "Your typeface";
-  src: url(type/filename.eot);
-  src: local("☺"), url("type/filename.woff") format("woff"), url(type/filename.otf) format("opentype"), url("type/filename.svg#filename") format("svg"); }
+  font-family: 'didonesquedisplay';
+  src: url("../font/didonesque-display-webfont.eot");
+  src: local("☺"), url("../font/didonesque-display-webfont.eot?#iefix") format("embedded-opentype"), url("../font/didonesque-display-webfont.woff2") format("woff2"), url("../font/didonesque-display-webfont.woff") format("woff"), url("../font/didonesque-display-webfont.ttf") format("truetype"), url("../font/didonesque-display-webfont.svg#didonesquedisplay") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "Your typeface";
-  font-style: italic;
-  src: url(type/filename-ital.eot);
-  src: local("☺"), url("type/filename-ital.woff") format("woff"), url(type/filename-ital.otf) format("opentype"), url("type/filename-ital.svg#filename-ital") format("svg"); }
+  font-family: 'didonesquedisplay_italic';
+  src: url("../font/didonesque-displayitalic-webfont.eot");
+  src: local("☺"), url("../font/didonesque-displayitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/didonesque-displayitalic-webfont.woff2") format("woff2"), url("../font/didonesque-displayitalic-webfont.woff") format("woff"), url("../font/didonesque-displayitalic-webfont.ttf") format("truetype"), url("../font/didonesque-displayitalic-webfont.svg#didonesquedisplay_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-h2 {
-  font-family: "Your typeface", Georgia, serif; }
+.font-didonesquedisplay {
+  font-family: didonesquedisplay, serif; }
 
-em {
-  font-style: italic; }
+.font-didonesquedisplay-italic {
+  font-family: didonesquedisplay_italic, serif; }
+
+@font-face {
+  font-family: 'diaria_promedium';
+  src: url("../font/diariapro-medium-webfont.eot");
+  src: local("☺"), url("../font/diariapro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/diariapro-medium-webfont.woff2") format("woff2"), url("../font/diariapro-medium-webfont.woff") format("woff"), url("../font/diariapro-medium-webfont.ttf") format("truetype"), url("../font/diariapro-medium-webfont.svg#diaria_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'diaria_promedium_italic';
+  src: url("../font/diariapro-mediumitalic-webfont.eot");
+  src: local("☺"), url("../font/diariapro-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/diariapro-mediumitalic-webfont.woff2") format("woff2"), url("../font/diariapro-mediumitalic-webfont.woff") format("woff"), url("../font/diariapro-mediumitalic-webfont.ttf") format("truetype"), url("../font/diariapro-mediumitalic-webfont.svg#diaria_promedium_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.font-diaria-promedium {
+  font-family: diaria_promedium, serif; }
+
+.font-diaria-promedium-italic {
+  font-family: diaria_promedium_italic, serif; }
+
+@font-face {
+  font-family: 'fnordtwenty-three';
+  src: url("../font/fnord-twenty-three-webfont.eot");
+  src: local("☺"), url("../font/fnord-twenty-three-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fnord-twenty-three-webfont.woff2") format("woff2"), url("../font/fnord-twenty-three-webfont.woff") format("woff"), url("../font/fnord-twenty-three-webfont.ttf") format("truetype"), url("../font/fnord-twenty-three-webfont.svg#fnordtwenty-three") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fnordtwenty-three_italic';
+  src: url("../font/fnord-twenty-threeitalic-webfont.eot");
+  src: local("☺"), url("../font/fnord-twenty-threeitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fnord-twenty-threeitalic-webfont.woff2") format("woff2"), url("../font/fnord-twenty-threeitalic-webfont.woff") format("woff"), url("../font/fnord-twenty-threeitalic-webfont.ttf") format("truetype"), url("../font/fnord-twenty-threeitalic-webfont.svg#fnordtwenty-three_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.font-fnordtwenty-three {
+  font-family: fnordtwenty-three, serif; }
+
+.font-fnordtwenty-three-italic {
+  font-family: fnordtwenty-three_italic, serif; }
+
+@font-face {
+  font-family: 'harmansans';
+  src: url("../font/Harman-Sans-webfont.eot");
+  src: local("☺"), url("../font/Harman-Sans-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Harman-Sans-webfont.woff2") format("woff2"), url("../font/Harman-Sans-webfont.woff") format("woff"), url("../font/Harman-Sans-webfont.ttf") format("truetype"), url("../font/Harman-Sans-webfont.svg#harmansans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'harmansans_inline';
+  src: url("../font/Harman-Sans-Inline-webfont.eot");
+  src: local("☺"), url("../font/Harman-Sans-Inline-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Harman-Sans-Inline-webfont.woff2") format("woff2"), url("../font/Harman-Sans-Inline-webfont.woff") format("woff"), url("../font/Harman-Sans-Inline-webfont.ttf") format("truetype"), url("../font/Harman-Sans-Inline-webfont.svg#harmansans_inline") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.font-harmansans {
+  font-family: harmansans, sans-serif; }
+
+.font-harmansans-inline {
+  font-family: harmansans_inline, sans-serif; }
 
 .font-athelas {
   font-family: athelas, georgia, serif; }
@@ -3155,11 +3218,13 @@ ul.evo-list-bullets-color {
   border-bottom-style: double !important; }
 
 .image {
+  background-color: #bfbfbf;
   width: 100%;
   height: auto;
   display: block; }
 
 .image-responsive {
+  background-color: #bfbfbf;
   display: block;
   max-width: 100%;
   height: auto; }
