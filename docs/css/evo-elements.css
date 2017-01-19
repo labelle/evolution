@@ -43,7 +43,7 @@ code {
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
 html {
-  font-family: diaria_promedium, serif;
+  font-family: source-sans-pro, sans-serif;
   font-weight: 100;
   line-height: 1.4375;
   -webkit-tap-highlight-color: transparent; }
@@ -1978,7 +1978,7 @@ hr {
 
 /*      FONTS     */
 .evo-font {
-  font-family: diaria_promedium, serif;
+  font-family: source-sans-pro, sans-serif;
   font-weight: 100;
   line-height: 1.4375; }
 
@@ -2521,6 +2521,9 @@ hr {
   overflow: hidden;
   text-overflow: clip; }
 
+.evo-text-tiny {
+  font-size: 0.5rem; }
+
 .evo-text-smallest {
   font-size: 0.625rem; }
 
@@ -2530,86 +2533,98 @@ hr {
 .evo-text-small, .item > figcaption {
   font-size: 0.875rem; }
 
-.evo-text-big, span.dropcap, figcaption.dropcap:first-letter {
+.evo-text-medium {
+  font-size: 1.125rem; }
+
+.evo-text-large {
+  font-size: 1.3125rem; }
+
+.evo-text-larger {
+  font-size: 1.4375rem; }
+
+.evo-text-largest {
   font-size: 1.875rem; }
+
+.evo-text-big, span.dropcap, figcaption.dropcap:first-letter {
+  font-size: 2.3125rem; }
 
 .evo-text-bigger {
   font-size: 2.6875rem; }
 
 .evo-text-biggest {
-  font-size: 3.75rem; }
+  font-size: 3rem; }
 
 .evo-text-jumbo {
-  font-size: 6rem; }
+  font-size: 5rem; }
 
 .evo-text-giant {
-  font-size: 10rem; }
+  font-size: 3.75rem; }
 
 .evo-text-reset {
   line-height: initial; }
 
 .evo-text-0 {
-  font-size: 0.375rem; }
-
-.evo-text-1 {
   font-size: 0.5rem; }
 
-.evo-text-2 {
+.evo-text-1 {
   font-size: 0.625rem; }
 
-.evo-text-3 {
+.evo-text-2 {
   font-size: 0.75rem; }
 
-.evo-text-4 {
+.evo-text-3 {
   font-size: 0.875rem; }
 
-.evo-text-5 {
+.evo-text-4 {
   font-size: 1rem; }
 
-.evo-text-6 {
+.evo-text-5 {
   font-size: 1.125rem; }
 
-.evo-text-7 {
+.evo-text-6 {
   font-size: 1.3125rem; }
 
-.evo-text-8 {
+.evo-text-7 {
   font-size: 1.4375rem; }
 
-.evo-text-9 {
+.evo-text-8 {
   font-size: 1.875rem; }
 
-.evo-text-10 {
+.evo-text-9 {
   font-size: 2.3125rem; }
 
-.evo-text-11 {
+.evo-text-10 {
   font-size: 2.6875rem; }
 
-.evo-text-12 {
+.evo-text-11 {
   font-size: 3rem; }
 
-.evo-text-13 {
+.evo-text-12 {
   font-size: 3.75rem; }
 
-.evo-text-14 {
+.evo-text-13 {
   font-size: 5rem; }
 
-.evo-text-15 {
+.evo-text-14 {
   font-size: 6rem; }
 
-.evo-text-16 {
+.evo-text-15 {
   font-size: 8rem; }
 
-.evo-text-17 {
+.evo-text-16 {
   font-size: 10rem; }
 
-.evo-text-18 {
+.evo-text-17 {
   font-size: 13rem; }
 
-.evo-text-19 {
+.evo-text-18 {
   font-size: 16rem; }
 
-.evo-text-20 {
+.evo-text-19 {
   font-size: 21rem; }
+
+.evo-text-20 {
+  font-size: 26rem; }
 
 .evo-leading-smallest {
   line-height: 0.5; }

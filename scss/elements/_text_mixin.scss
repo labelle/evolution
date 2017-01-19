@@ -186,16 +186,22 @@
 
 // Size
 @mixin size($size) {
-  @if $size == smallest         { font-size: #{$u-20}rem; }
-  @else if $size == smaller     { font-size: #{$u-21}rem; }
-  @else if $size == small       { font-size: #{$u-22}rem; }
-  @else if $size == big         { font-size: #{$u-27}rem; }
-  @else if $size == bigger      { font-size: #{$u-29}rem; }
-  @else if $size == biggest     { font-size: #{$u-31}rem; }
-  @else if $size == jumbo       { font-size: #{$u-33}rem; }
-  @else if $size == giant       { font-size: #{$u-35}rem; }
+  @if $size == tiny                { font-size: #{$u-19}rem; } // 8px
+  @else if $size == smallest       { font-size: #{$u-20}rem; } // 10px
+  @else if $size == smaller        { font-size: #{$u-21}rem; } // 12px
+  @else if $size == small          { font-size: #{$u-22}rem; } // 14px
+  // Default is u-23 or 16px
+  @else if $size == medium         { font-size: #{$u-24}rem; } // 18px
+  @else if $size == large          { font-size: #{$u-25}rem; } // 21px
+  @else if $size == larger         { font-size: #{$u-26}rem; } // 23px
+  @else if $size == largest        { font-size: #{$u-27}rem; } // 30px
+  @else if $size == big            { font-size: #{$u-28}rem; } // 37px
+  @else if $size == bigger         { font-size: #{$u-29}rem; } // 43px
+  @else if $size == biggest        { font-size: #{$u-30}rem; } // 48px
+  @else if $size == giant          { font-size: #{$u-31}rem; } // 60px
+  @else if $size == jumbo          { font-size: #{$u-32}rem; } // 80px
     // Throw Warnings
-  @else { @warn "Size mixin supports: smallest, smaller, small, big, bigger, biggest, jumbo, giant"; }
+  @else { @warn "Size mixin supports: tiny, smallest, smaller, small, medium, large, larger, largest, big, bigger, biggest, giant, jumbo"; }
 }
 
 
