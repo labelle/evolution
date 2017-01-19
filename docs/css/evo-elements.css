@@ -2527,10 +2527,10 @@ hr {
 .evo-text-smallest {
   font-size: 0.625rem; }
 
-.evo-text-smaller {
+.evo-text-smaller, .item > figcaption {
   font-size: 0.75rem; }
 
-.evo-text-small, .item > figcaption {
+.evo-text-small {
   font-size: 0.875rem; }
 
 .evo-text-medium {

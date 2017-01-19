@@ -23,7 +23,7 @@
 }
 
 .item > figcaption {
-     @extend #{$evo}-text-small;
+     @extend #{$evo}-text-smaller;
      column-break-inside: avoid;
      display: inline-block;
 }
