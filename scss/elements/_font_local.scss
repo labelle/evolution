@@ -185,23 +185,115 @@
 
 }
 
+// @font-face {
+//     font-family: 'harmansans_inline';
+//     src: url('../font/Harman-Sans-Inline-webfont.eot');
+//     src: local("☺"),
+//          url('../font/Harman-Sans-Inline-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../font/Harman-Sans-Inline-webfont.woff2') format('woff2'),
+//          url('../font/Harman-Sans-Inline-webfont.woff') format('woff'),
+//          url('../font/Harman-Sans-Inline-webfont.ttf') format('truetype'),
+//          url('../font/Harman-Sans-Inline-webfont.svg#harmansans_inline') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+.font-harmansans           { font-family: #{$harmansans}; }
+// .font-harmansans-inline    { font-family: #{$harmansans-inline}; }
+
+
+// Halis Rounded
+
 @font-face {
-    font-family: 'harmansans_inline';
-    src: url('../font/Harman-Sans-Inline-webfont.eot');
+    font-family: 'halis_r_regularregular';
+    src: url('../font/HalisR-Regular-webfont.eot');
     src: local("☺"),
-         url('../font/Harman-Sans-Inline-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Harman-Sans-Inline-webfont.woff2') format('woff2'),
-         url('../font/Harman-Sans-Inline-webfont.woff') format('woff'),
-         url('../font/Harman-Sans-Inline-webfont.ttf') format('truetype'),
-         url('../font/Harman-Sans-Inline-webfont.svg#harmansans_inline') format('svg');
+         url('../font/HalisR-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/HalisR-Regular-webfont.woff2') format('woff2'),
+         url('../font/HalisR-Regular-webfont.woff') format('woff'),
+         url('../font/HalisR-Regular-webfont.ttf') format('truetype'),
+         url('../font/HalisR-Regular-webfont.svg#halis_r_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-.font-harmansans           { font-family: #{$harmansans}; }
-.font-harmansans-inline    { font-family: #{$harmansans-inline}; }
+.font-halis-rounded           { font-family: #{$halis-rounded}; }
 
+
+// Festovp
+
+@font-face {
+    font-family: 'festivo_lcbasic';
+    src: url('../font/Festivo-LC-Basic-webfont.eot');
+    src: local("☺"),
+         url('../font/Festivo-LC-Basic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Festivo-LC-Basic-webfont.woff2') format('woff2'),
+         url('../font/Festivo-LC-Basic-webfont.woff') format('woff'),
+         url('../font/Festivo-LC-Basic-webfont.ttf') format('truetype'),
+         url('../font/Festivo-LC-Basic-webfont.svg#festivo_lcbasic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'festivo_lcoutline';
+    src: url('../font/Festivo-LC-Outline-webfont.eot');
+    src: local("☺"),
+         url('../font/Festivo-LC-Outline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Festivo-LC-Outline-webfont.woff2') format('woff2'),
+         url('../font/Festivo-LC-Outline-webfont.woff') format('woff'),
+         url('../font/Festivo-LC-Outline-webfont.ttf') format('truetype'),
+         url('../font/Festivo-LC-Outline-webfont.svg#festivo_lcoutline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-festivo-lowercase        { font-family: #{$festivo-lowercase}; }
+.font-festivo-outline          { font-family: #{$festivo-outline}; }
+
+
+// Gangrena
+
+@font-face {
+    font-family: 'gangrenaregular';
+    src: url('../font/gangrena_regular-webfont.eot');
+    src: local("☺"),
+         url('../font/gangrena_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/gangrena_regular-webfont.woff2') format('woff2'),
+         url('../font/gangrena_regular-webfont.woff') format('woff'),
+         url('../font/gangrena_regular-webfont.ttf') format('truetype'),
+         url('../font/gangrena_regular-webfont.svg#gangrenaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-gangrena            { font-family: #{$gangrena}; }
+
+
+
+// Ebenezer
+
+@font-face {
+    font-family: 'ebenezerregular';
+    src: url('../font/ebenezer-webfont.eot');
+    src: local("☺"),
+         url('../font/ebenezer-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ebenezer-webfont.woff2') format('woff2'),
+         url('../font/ebenezer-webfont.woff') format('woff'),
+         url('../font/ebenezer-webfont.ttf') format('truetype'),
+         url('../font/ebenezer-webfont.svg#ebenezerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.font-ebenezer            { font-family: #{$ebenezer}; }
 
 // @font-face{ 
 //   font-family: 'MyWebFont';
