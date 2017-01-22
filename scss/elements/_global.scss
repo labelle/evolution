@@ -2,53 +2,184 @@
 
 @import "../variables";
 
+
+// Resets
+// An amalgam from different sources
+// http://cssreset.com/scripts/eric-meyer-reset-css/
+// github.com/necolas/normalize.css
+// https://html5boilerplate.com/
+// Bootstrap
+// Zurb Foundation
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,main { 
+    display:block;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle; // or baseline
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+iframe,
+svg {
+    vertical-align: middle;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+small {
+  font-size: 80%;
+}
+
+mark {
+  background: #ff0;
+  background-color: #ff0;
+  color: #000;
+  font-style:normal;
+  font-weight:normal;
+}
+
+dfn {
+  font-style: italic;
+}
+
+kbd,
+samp {
+  font-family: #{$monospace};
+  font-size: 1em;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+abbr[title] {
+  border-bottom: none; // or 1px dotted
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor:help;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+address {
+  font-style: normal;
+}
+
+
+
 // General site-wide settings (optional)
 
-.site-container {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    // background-color:#f7f7f7;
-    background-color: #fcfbf5;
-}
-
-// referenced from bootstrap 4
-// http://v4-alpha.getbootstrap.com/content/code/
-code {
-  padding: .2rem .4rem;
-  font-size: 80%;
-  color: darkslateblue; // bootstrap is #bd4147
-  // background-color: #f7f7f9;
-  background-color: #eee;
-  border-radius: .25rem;
-  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-
-// pre {
-// font-size: 80%;
-// }
-
-// code pre {
-// font-size: 80%;
-// }
-
 // html
+// settings are in _variables.scss
 html {
-  // font-size:       #{$html_font_size};
-  font-family:     #{$html_font_family};
-  font-weight:     #{$html_font_weight};
-  line-height:     #{$html_line_height};
+  font-style:      #{$html_font_style}; // normal
+  font-variant:    #{$html_font_variant}; // normal
+  font-weight:     #{$html_font_weight}; // normal
+  font-stretch:    #{$html_font_stretch}; // normal
+  font-size:       normal;
+  line-height:     #{$html_line_height}; // 1.4375
+  font-family:     #{$html_font_family}; // #{$sans-serif}
+  -webkit-tap-highlight-color: #{$html_tap_highlight_color}; //rgba(0, 0, 0, 0);
   // margin-top:      #{$html_margin_top};
   // margin-bottom:   #{$html_margin_bottom};
-    // color:           #{$html_color};
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // body                       {}
-
+// 
 body {
-  // font-size:       #{$text_size};
+  font-size:          #{$body_font_size:};
+  line-height:        #{$body_line_height}; // 1.4375 !default
+  color:              #{$body_font_color};
+  background-color:   #{$body_background_color};
   // color:           #{$text_color};
   // font-family:     #{$text_font_family}; /**/
   // font-weight:     #{$text_font_weight};
@@ -56,12 +187,14 @@ body {
   // letter-spacing:  #{$text_letter_spacing};
   // margin-top:      #{$text_margin_top};
   // margin-bottom:   #{$text_margin_bottom};
+  margin:0; //reset
+  // padding:0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 
 
-
-
-// a              {}
+// a
 
 // p
 // define a minimum text color
@@ -81,15 +214,27 @@ h6 {
   letter-spacing:  #{$heading_letter_spacing};
   margin-top:      #{$heading_margin_top};
   margin-bottom:   #{$heading_margin_bottom};
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-h1 { font-size: #{$heading_size_h1}; }
+h1 { font-size: #{$heading_size_h1}; 
+     margin: 0.67em 0; }
 h2 { font-size: #{$heading_size_h2}; }
 h3 { font-size: #{$heading_size_h3}; }
 h4 { font-size: #{$heading_size_h4}; }
 h5 { font-size: #{$heading_size_h5}; }
 h6 { font-size: #{$heading_size_h6}; }
+
+
+// List
+
+nav ul {
+  list-style:none;
+}
+
+ul, li {
+  margin-left: 0;
+  padding-left: 0;
+}
 
 p,
 ul,
@@ -103,12 +248,10 @@ li {
   // letter-spacing:  #{$text_letter_spacing};
   margin-top:      #{$text_margin_top};
   margin-bottom:   #{$text_margin_bottom};
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 p {
-  color:          #555;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color:          #{$text_color};
 }
 
 
@@ -126,20 +269,237 @@ p {
 // }
 
 hr {
-border: #{$hr_border};
+display:block;
+height:0;
+border:0;
+border-top:0;
+margin:0;
+padding:0;
+overflow: visible;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
 border-top-width: #{$hr_width};
 border-top-style: #{$hr_style};
 border-top-color: #{$hr_color};
 margin-top: #{$hr_margin_top};
 margin-bottom: #{$hr_margin_bottom};
-
 }
 
-// button           {}
+// referenced from bootstrap 4
+// http://v4-alpha.getbootstrap.com/content/code/
 
-// input            {}
+code {
+  padding: .2rem .4rem;
+  font-size: 1em;
+  // font-size: 80%;
+  color: darkslateblue; // bootstrap is #bd4147
+  // background-color: #f7f7f9;
+  background-color: #eee;
+  border-radius: .25rem;
+  font-family: #{$monospace};
+}
+
+pre {
+  font-family: #{$monospace};
+  font-size: 1em;
+  // font-size: 80%; // or 1rem or 1em
+  overflow: auto;
+}
+
+// blockquote
+
+blockquote, q {
+  quotes: none;
+  // quotes: "\201C" "\201D" "\2018" "\2019"; // bootstrap values
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+// Alternative here http://www.bootply.com/BH80o3yLJp
+
+
+// button
+
+button,
+
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  font-family: inherit; // font-family: sans-serif;
+  font-size: 100%;
+  line-height: normal; // line-height: 1.15;
+  margin: 0;
+  border-radius: 3px;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  // border: 0;
+  padding: 0;
+}
+
+button[disabled] {
+  cursor: default
+}
+
+button {
+  text-transform: none;
+  overflow: visible;
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
+// selection
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+p.highlight, span.highlight {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+
 
 // links states
+
+a {
+  color: initial; // color: #428bca;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover,
+a:focus {
+  color: #{$link_color_hover}; // color: #2a6496;
+  text-decoration: initial; // text-decoration: underline;
+  outline-width: 0;
+}
+
+// table
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+// forms
+
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  font-family: inherit; // font-family: sans-serif;
+  font-size: 100%;
+  line-height: normal; // line-height: 1.15;
+  margin: 0;
+}
+
+optgroup {
+    font-weight: bold
+}
+
+select {
+  width: 100%;
+  text-transform: none;
+  vertical-align:middle;
+  border-radius: 3px;
+}
+
+input {
+  overflow: visible;
+  vertical-align:middle;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  min-height: 50px;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[disabled] {
+  cursor: default
+}
+
+progress, meter {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 
 // highlight states
 // TO DO check the resets for these
@@ -223,20 +583,83 @@ word-spacing: .5em;
   float: right;
 }
 
-// clearspace fix
-.after-box,
-.clear-float-left {
-    clear: left;
+// Helper classes
+// From HTML5 Boilerplate
+
+// /*
+//  * Hide visually and from screen readers
+//  */
+
+.hidden {
+    display: none !important;
 }
 
-.clear-float-right {
-    clear: right;
+// /*
+//  * Hide only visually, but have it available for screen readers:
+//  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+//  */
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
-.table-collapse {
-    border-collapse: collapse;
-    border-spacing: 0
+// /*
+//  * Extends the .visuallyhidden class to allow the element
+//  * to be focusable when navigated to via the keyboard:
+//  * https://www.drupal.org/node/897638
+//  */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
+
+// /*
+//  * Hide visually and from screen readers, but maintain layout
+//  */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+// From HTML5 Boilerplate
+
+// /*
+//  * Clearfix: contain floats
+//  *
+//  * For modern browsers
+//  * 1. The space content is one way to avoid an Opera bug when the
+//  *    `contenteditable` attribute is included anywhere else in the document.
+//  *    Otherwise it causes space to appear at the top and bottom of elements
+//  *    that receive the `clearfix` class.
+//  * 2. The use of `table` rather than `block` is only necessary if using
+//  *    `:before` to contain the top-margins of child elements.
+//  */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 
 
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
@@ -307,10 +730,121 @@ word-spacing: .5em;
 
 // Already included with the bootstrap grid.
 // Remove this if bootstrap grid is used.
+// *,
+// *:before,
+// *:after {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+// From foundation
+// requires html to have border-box
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+// /* ==========================================================================
+//    Print styles.
+//    Inlined to avoid the additional HTTP request:
+//    http://www.phpied.com/delay-loading-your-print-css/
+//    ========================================================================== */
+
+// From HTML5 Boilerplate
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; // /* Black prints faster:
+                                  //  http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    // /*
+    //  * Don't show links that are fragment identifiers,
+    //  * or use the `javascript:` pseudo protocol
+    //  */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    // /*
+    //  * Printing Tables:
+    //  * http://css-discuss.incutio.com/wiki/Printing_Tables
+    //  */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+// MAIN
+
+// From HTML5 Boilerplate
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.site-container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    // background-color:#f7f7f7;
+    background-color: #fcfbf5;
 }

@@ -33,12 +33,12 @@ time, mark, audio, video {
     background:transparent;
 }
 
-body {
-    line-height:1;
-}
+// body {
+//     line-height:1;
+// }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section, main { 
     display:block;
 }
 
@@ -93,16 +93,14 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
+
+
 
 input, select {
     vertical-align:middle;
+}
+
+pre {
+  font-family: #{$monospace};
+  font-size: 1rem;
 }

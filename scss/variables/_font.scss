@@ -9,12 +9,14 @@
 
 
 // Fonts
-// sans-serif, serif, monospace, and cursive are defined in _general.scss
-// $sans-serif:       sans-serif;
-// $serif:            serif;
-// $monospace:        monospace;
-// $cursive:          cursive;
-// $fantasy:          fantasy;
+// Generic font-family
+$sans-serif:                        sans-serif !default;
+$serif:                             serif !default;
+$monospace:                         monospace !default;
+$cursive:                           cursive !default;
+$fantasy:                           fantasy !default;
+
+
   // Borrowed in part from Tachyons
   // Some reference from http://www.cssfontstack.com/
 $arial:            arial, 'Helvetica Neue', helvetica, sans-serif !default;

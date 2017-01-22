@@ -52,3 +52,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+pre {
+  font-family: #{$monospace};
+  font-size: 1em;
+}

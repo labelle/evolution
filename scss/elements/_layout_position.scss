@@ -9,14 +9,17 @@
 // Just for the website
 
 
-.position-container {
+.position-demo {
    background-color: #bbb;
    color:white;
+   height: 400px;
 }
 
 
 // http://www.w3schools.com/w3css/w3css_display.asp
 
+
+// This must go on the container
 #{$evo}-position-container {
     position: relative
 }
@@ -85,15 +88,15 @@
     -ms-transform: translate(-50%, 0%)
 }
 
-#{$evo}-position-container:hover #{$evo}-position-hover {
-    display: block
-}
+// #{$evo}-position-container:hover #{$evo}-position-hover {
+//     display: block
+// }
 
-#{$evo}-position-container:hover span.#{$evo}-position-hover {
-    display: inline-block
-}
+// #{$evo}-position-container:hover span.#{$evo}-position-hover {
+//     display: inline-block
+// }
 
-#{$evo}-position-hover {
-    display: none
-}
+// #{$evo}-position-hover {
+//     display: none
+// }
 

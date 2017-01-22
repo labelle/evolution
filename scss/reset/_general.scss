@@ -7,9 +7,11 @@
 
 // From Bootstrap 3
 
-html {
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+@import "../variables";
+
+// html {
+//  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
 
 mark {
   background: #ff0;

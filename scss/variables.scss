@@ -33,15 +33,6 @@ $license:                           "License MIT" !default;
 $brand:                             ".brand" !default;
 $evo:                               ".evo" !default;
 
-
-// Fonts
-// Generic font-stacks
-$sans-serif:                        sans-serif !default;
-$serif:                             serif !default;
-$monospace:                         monospace !default;
-$cursive:                           cursive !default;
-$fantasy:                           fantasy !default;
-
 // Branding
 
 // Brand Fonts
@@ -58,10 +49,33 @@ $brand_font_family_3:               #{$sans-serif} !default;
 // Global fonts assigned to html tag in _global.scss
 // alt font-size is calc(1em + 1vw)
 // pg 32 inclusive design patterns 
-// $html_font_size:                    1rem !default; // e.g. 1rem or 16px or 100%
-$html_font_family:                  #{$adobe-source-sans}; // e.g. Initial or #{$arial} or #{$sans-serif}
-$html_font_weight:                  100 !default;
-$html_line_height:                  1.4375 !default; // no em, rem, px, %
+// Standard browsers set font size at 16px
+// 62.5% font size equates to 1em = 10px on standard browsers
+
+$html_font_style:					normal !default; // or italics or oblique
+$html_font_variant:					normal !default; // or small-caps if the font supports it
+$html_font_weight:                  normal !default; // or 100
+$html_line_height:                  normal !default; // define this in body
+$html_font_stretch:                 normal !default; // or condensed or expanded
+$html_font_size:                    normal !default; // define this in body
+$html_font_family:                  #{$adobe-source-sans}; // or #{$sans-serif}
+$html_tap_highlight_color:          rgba(0, 0, 0, 0);
+
+// Body
+// $body_font_style:					normal !default; // or italics or oblique
+// $body_font_variant:					normal !default; // or small-caps if the font supports it
+// $body_font_weight:                  normal !default; // or 100
+// $body_line_height:                  1.4375 !default; // no em, rem, px, %
+// $body_font_stretch:                 normal !default; // or condensed or expanded
+// $body_font_size:                    normal !default; // define this in body
+// $body_font_family:                  #{$adobe-source-sans}; // or #{$sans-serif}
+// $body_tap_highlight_color:          rgba(0, 0, 0, 0);
+
+
+$body_font_size:                    normal !default; // or 1rem or 16px or 100%
+$body_line_height:                  1.4375 !default; // no em, rem, px, %
+$body_font_color:                   normal !default; // or black
+$body_background_color:             white !default; // or black
 
 
 // HTML Headings
@@ -88,7 +102,7 @@ $heading_size_h6:                   normal !default; // e.g. 100% or normal
 // MATCH TO SETTINGS
 // MOVE TO TEXT VARIABLE PAGE?
 
-$text_size:                         1rem !default; // e.g. 1rem or 16px or 100%
+$text_size:                         1rem !default; // e.g. 1rem or 16px or 100%. 1rem directly references the root font size.
 $text_color:                        inherit !default; // e.g. Inherit or Initial or Black or #000000
 $text_font_family:                  inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
 $text_font_weight:                  normal !default;
@@ -109,7 +123,6 @@ $link_underline:                    none !default;
 $dropcap_color:						#{$color_10} !default;
 
 // HR
-$hr_border:                         0 !default; // do not change
 $hr_width:                          thin !default;
 $hr_style:                          solid !default;
 $hr_color:                          #cccccc !default;
@@ -122,6 +135,6 @@ $image_fpo:						    "../image/monolake.jpg" !default;
 
 // Color
 // If starting from 0 to this to start at 1 random(30)-1;
-$color_random:					    random(30);
+// $color_random:					    random(30);
 $color_fpo:                         #{$gray_10} !default;
 

@@ -90,9 +90,6 @@ hr {
   border: 0;
   border-top: 1px solid; }
 
-html {
-  -webkit-tap-highlight-color: transparent; }
-
 mark {
   background: #ff0;
   color: #000; }
@@ -161,11 +158,6 @@ main {
 
 figure {
   margin: 1em 40px; }
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible; }
 
 pre {
   font-family: monospace, monospace;

@@ -82,11 +82,11 @@ figure {
 //  * 2. Show the overflow in Edge and IE.
 //  */
 
-hr {
-  box-sizing: content-box; // /* 1 */
-  height: 0; // /* 1 */
-  overflow: visible; // /* 2 */
-}
+// hr {
+//   box-sizing: content-box; // /* 1 */
+//   height: 0; // /* 1 */
+//   overflow: visible; // /* 2 */
+// }
 
 // /**
 //  * 1. Correct the inheritance and scaling of font size in all browsers.
