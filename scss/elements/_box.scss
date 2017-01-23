@@ -5,13 +5,6 @@
 // @import "box_mixin";
 
 
-// SHOULD SOME OF THESE INHERIT?
-// SHOULD SOME BE PERCENTAGES OR EMS?
-$box_width:      initial; // border-top-width, initial = medium
-$box_style:      solid;   // border-top-style
-$box_color:      #{$gray-light}; // border-top-color
-
-
 // box reset
 #{$evo}-box-reset           { 
 	border: initial;

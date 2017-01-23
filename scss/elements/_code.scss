@@ -1,29 +1,28 @@
-///*      C O D E   I N L I N E     */
+///*      C O D E     */
 
 @import "../variables";
 
 // Evo Code
-// Place Code within Pre
+// Place Code tag within Pre tag
 
 pre#{$evo}-code,
 pre#{$evo}-code-inverse {
   margin: 0 auto;
   white-space: pre; // or normal
+  font-family: #{$base_code_font_family};
+  font-size: #{$base_code_font_size};
 }
 
 pre#{$evo}-code > code {
-    background: transparent;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    color: #{$black};
-    font-family: #{$monospace};
-    // font-size:1em;
+    color: #{$code_color};
+    border-color: #{$code_border_color};
+    background-color: #{$code_background_color};
 }
 
 pre#{$evo}-code-inverse > code {
-    background-color: #{$black};
-    border: 1px solid #{$gray};
-    color: #{$white};
+    color: #{$inverse_code_color};
+    border-color: #{$inverse_code_border_color};
+    background-color: #{$inverse_code_background_color};
   }
 
 pre#{$evo}-code > code,
@@ -32,6 +31,11 @@ pre#{$evo}-code-inverse > code {
     padding: 10px;
     margin: 5px 0;
     display: inline-block;
+    border-width: #{$base_code_border_width};
+    border-style: #{$base_code_border_style};
+    border-radius: #{$base_code_border_radius};
+    font-family: inherit;
+    font-size: inherit;
   }
 
 pre.code-no-wrap > code {

@@ -46,7 +46,7 @@
 @import "elements/global";
 
 // Main
-@import "elements/code_inline";
+@import "elements/code";
 
 // Mixins
 @import "elements/font_mixin";
@@ -127,6 +127,9 @@
 @import "elements/line_size";
 @import "elements/line_color";
 @import "elements/line_gray";
+@import "elements/line_fade";
+@import "elements/line_shadow";
+@import "elements/line_blur";
 @import "elements/line_effect";
 // @import "elements/line_play";
 

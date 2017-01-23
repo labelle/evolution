@@ -5,12 +5,6 @@
 // @import "corner_mixin";
 
 
-// Define individual corners of boxes
-// Based on _scale.scss in variables
-$box_corner_top_right:     #{$u-23}rem;
-$box_corner_top_left:      #{$u-23}rem;
-$box_corner_bottom_right:  #{$u-23}rem;
-$box_corner_bottom_left:   #{$u-23}rem;
 
 // basic shapes
 #{$evo}-box-circle  { border-radius: 50%; }

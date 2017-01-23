@@ -43,6 +43,20 @@ $brand_font_family_1:               #{$sans-serif} !default;
 $brand_font_family_2:               #{$sans-serif} !default;
 $brand_font_family_3:               #{$sans-serif} !default;
 
+// Color
+// Gray color bases
+
+$base_dark_translucent:             $black;
+$base_light_translucent:            $white;
+
+// IS THIS CORRECT?
+$base_dark_brown_translucent:       $black;
+$base_light_brown_translucent:      $white;
+
+// IS THIS CORRECT?
+$base_dark_warm_gray_translucent:   $black;
+$base_light_brown_translucent:      $white;
+
 
 // Typography
 
@@ -55,7 +69,7 @@ $brand_font_family_3:               #{$sans-serif} !default;
 $html_font_style:					normal !default; // or italics or oblique
 $html_font_variant:					normal !default; // or small-caps if the font supports it
 $html_font_weight:                  normal !default; // or bolder or lighter or 400
-$html_line_height:                  normal !default; // define this in body
+$html_line_height:                  1.4375 !default; // define this in body
 $html_font_stretch:                 normal !default; // or condensed or expanded
 $html_font_size:                    normal !default; // define this in body
 $html_font_family:                  #{$adobe-source-sans}; // or #{$sans-serif}
@@ -146,12 +160,24 @@ $link_underline:                    none !default;
 $dropcap_color:						#{$color_10} !default;
 
 // HR Line
-
 $line_width:                        initial !default; // border-top-width, initial = medium
 $line_style:                        solid !default;   // border-top-style
 $line_color:                        #{$gray-light} !default; // border-top-color
 $line_margin_top:                   1em !default;
 $line_margin_bottom:                1em !default;
+
+// Box
+$box_width:      initial; // border-top-width, initial = medium
+$box_style:      solid;   // border-top-style
+$box_color:      #{$gray-light}; // border-top-color
+
+// Define individual corners of boxes
+// Based on _scale.scss in variables
+$box_corner_top_right:     #{$u-23}rem;
+$box_corner_top_left:      #{$u-23}rem;
+$box_corner_bottom_right:  #{$u-23}rem;
+$box_corner_bottom_left:   #{$u-23}rem;
+
 
 // Image
 $image_random:					    "https://unsplash.it/1024/963?random";
@@ -160,5 +186,22 @@ $image_fpo:						    "../image/monolake.jpg" !default;
 // Color
 // If starting from 0 to this to start at 1 random(30)-1;
 // $color_random:					    random(30);
-$color_fpo:                         #{$gray_10} !default;
+$color_fpo:                         #{$gray_8} !default;
 
+
+// Code base
+$base_code_font_family:             #{$monospace} !default;
+$base_code_font_size:               1em !default;
+$base_code_border_radius:           3px !default; //.25rem
+$base_code_border_width:            1px !default;
+$base_code_border_style:            solid !default;
+
+// Code
+$code_color:                        #{$black} !default;
+$code_border_color:                 #{$gray_8} !default;
+$code_background_color:             transparent !default;
+
+// Code Inverse
+$inverse_code_color:                #{$white} !default;
+$inverse_code_border_color:         #{$gray_10} !default;
+$inverse_code_background_color:     #{$black} !default;
