@@ -194,42 +194,75 @@ body {
 }
 
 
-// a
-
-// p
-// define a minimum text color
-// idealy a softer gray with decent contrast
-// this will be overriden by specific text classes
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  // color:           #{$heading_color};
-  // font-family:     #{$heading_font_family};
-  // font-weight:     #{$heading_font_weight};
-  line-height:     #{$heading_line_height};
-  letter-spacing:  #{$heading_letter_spacing};
-  margin-top:      #{$heading_margin_top};
-  margin-bottom:   #{$heading_margin_bottom};
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-style:      #{$heading_font_style};
+  font-variant:    #{$heading_font_variant};
+  color:           #{$heading_color};
+  font-family:     #{$heading_font_family};
+  font-weight:     #{$heading_font_weight};
+  font-stretch:    #{$heading_font_stretch};
+  text-rendering:  #{$heading_text_rendering};
+  margin-top:      0; // reset
 }
 
-h1 { font-size: #{$heading_size_h1}; 
-     margin: 0.67em 0; }
-h2 { font-size: #{$heading_size_h2}; }
-h3 { font-size: #{$heading_size_h3}; }
-h4 { font-size: #{$heading_size_h4}; }
-h5 { font-size: #{$heading_size_h5}; }
-h6 { font-size: #{$heading_size_h6}; }
+h1,
+.h1 { 
+  font-size:       #{$heading_size_h1}; 
+  line-height:     #{$heading_margin_bottom_h1};
+  letter-spacing:  #{$heading_letter_spacing_h1};
+  margin-bottom:   #{$heading_margin_bottom_h1};
+}
+
+h2,
+.h2 { 
+  font-size:       #{$heading_size_h2}; 
+  line-height:     #{$heading_margin_bottom_h2};
+  letter-spacing:  #{$heading_letter_spacing_h2};
+  margin-bottom:   #{$heading_margin_bottom_h2};
+}
+h3,
+.h3 { 
+  font-size:       #{$heading_size_h3}; 
+  line-height:     #{$heading_margin_bottom_h3};
+  letter-spacing:  #{$heading_letter_spacing_h3};
+  margin-bottom:   #{$heading_margin_bottom_h3};
+}
+h4,
+.h4 { 
+  font-size:       #{$heading_size_h4}; 
+  line-height:     #{$heading_margin_bottom_h4};
+  letter-spacing:  #{$heading_letter_spacing_h4};
+  margin-bottom:   #{$heading_margin_bottom_h4};
+}
+h5,
+.h5 { 
+  font-size:       #{$heading_size_h5}; 
+  line-height:     #{$heading_margin_bottom_h5};
+  letter-spacing:  #{$heading_letter_spacing_h5};
+  margin-bottom:   #{$heading_margin_bottom_h5};
+}
+h6,
+.h6 { 
+  font-size:       #{$heading_size_h6}; 
+  line-height:     #{$heading_margin_bottom_h6};
+  letter-spacing:  #{$heading_letter_spacing_h6};
+  margin-bottom:   #{$heading_margin_bottom_h6};
+}
 
 
 // List
 
-nav ul {
-  list-style:none;
-}
 
 ul, li {
   margin-left: 0;
@@ -241,7 +274,7 @@ ul,
 ol,
 li {
   // font-size:       #{$text_size};
-  // color:           #{$text_color};
+  color:           #{$text_color};
   // font-family:     #{$text_font_family};
   // font-weight:     #{$text_font_weight};
   // line-height:     #{$text_line_height};
@@ -250,41 +283,29 @@ li {
   margin-bottom:   #{$text_margin_bottom};
 }
 
-p {
-  color:          #{$text_color};
+nav ul {
+  list-style:none;
 }
 
 
-// section,
-// div {
-//   // font-size:       #{$text_size};
-//   // color:           #{$text_color};
-//   // font-family:     #{$text_font_family};
-//   // font-weight:     #{$text_font_weight};
-//   // line-height:     #{$text_line_height};
-//   // letter-spacing:  #{$text_letter_spacing};
-//   margin-top:      0;
-//   margin-bottom:  0;
-//     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+// hr {
+// display:block;
+// height:0;
+// border:0;
+// border-top:0;
+// margin:0;
+// padding:0;
+// overflow: visible;
+// -webkit-box-sizing: content-box;
+// -moz-box-sizing: content-box;
+// box-sizing: content-box;
+// border-top-width: #{$line_width};
+// border-top-style: #{$line_style};
+// border-top-color: #{$line_color};
+// margin-top: #{$line_margin_top};
+// margin-bottom: #{$line_margin_bottom};
 // }
-
-hr {
-display:block;
-height:0;
-border:0;
-border-top:0;
-margin:0;
-padding:0;
-overflow: visible;
--webkit-box-sizing: content-box;
--moz-box-sizing: content-box;
-box-sizing: content-box;
-border-top-width: #{$hr_width};
-border-top-style: #{$hr_style};
-border-top-color: #{$hr_color};
-margin-top: #{$hr_margin_top};
-margin-bottom: #{$hr_margin_bottom};
-}
 
 // referenced from bootstrap 4
 // http://v4-alpha.getbootstrap.com/content/code/

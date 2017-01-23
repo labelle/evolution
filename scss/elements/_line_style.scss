@@ -1,0 +1,16 @@
+///*      L I N E   S T Y L E    */
+
+@import "../variables";
+// @import "../variables/scale";
+// @import "line_mixin";
+
+
+// hr line style
+hr#{$evo}-line-solid           { border-top-style: solid; }
+hr#{$evo}-line-dotted          { border-top-style: dotted; }
+hr#{$evo}-line-dashed          { border-top-style: dashed; }
+hr#{$evo}-line-double          { border-top-style: double; }
+// hr#{$evo}-line-groove          { border-top-style: groove; }
+// hr#{$evo}-line-ridge           { border-top-style: ridge; }
+// hr#{$evo}-line-inset           { border-top-style: inset; }
+// hr#{$evo}-line-outset          { border-top-style: outset; }

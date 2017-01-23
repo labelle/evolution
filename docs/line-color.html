@@ -16,26 +16,12 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-
-/* Experimental XRAY inspired by Harry Roberts */
-
-/* If it's a class containing the string evo-,
-put a green border around it. */
-
 hr[class*="evo-line"]  {
 /*padding-bottom: 5rem;*/
 margin-top: .5em;
 /*background-color: #eee;*/
 margin-bottom: 3em;
 }
-
-/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
-*/
-
-/*[class]:not([class*="evo-"]) {
-outline: 5px solid red;
-}*/
-
 </style>
 
 </head>
@@ -47,7 +33,7 @@ outline: 5px solid red;
 <!-- Main navigation -->
 <!-- <header role="banner">
 </header> -->
-<main style="background-color:white;">
+<main>
 
 
 <section id="evoLineColorIntro">
@@ -61,255 +47,6 @@ outline: 5px solid red;
 
 </section>
 
-
-
-<!-- hr line neutral color -->
-
-<section id="evoLineColorNeutral">
-
-<h2 class="evo-text-6">evo-line-[neutral]</h2>
-
-<div class="evo-space-8"></div>
-
-<!-- <h3 class="evo-text-5">Neutral Color</h3> -->
-
-evo-line-black
-<hr class="evo-line evo-line-black" />
-
-evo-line-gray
-<hr class="evo-line evo-line-gray" />
-
-evo-line-white
-<hr class="evo-line evo-line-white" />
-
-<div class="evo-space-8"></div>
-
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[neutral]</code> class. Colors can be adusted in the _variables.scss file.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
-
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line evo-line-black" /&gt;
-   &lt;hr class="evo-line evo-line-gray" /&gt;
-   &lt;hr class="evo-line evo-line-white" /&gt;
-
-</pre>
-
-<div class="evo-space-19"></div>
-
-</section>
-
-
-<!-- hr line gray color -->
-
-<section id="evoLineGrayDarkness">
-
-<h2 class="evo-text-6">evo-line-gray-[darkness]</h2>
-
-<div class="evo-space-8"></div>
-
-<!-- <h3 class="evo-text-5">Gray Color</h3> -->
-
-evo-line-gray-lightest
-<hr class="evo-line-thick evo-line-gray-lightest" />
-
-evo-line-gray-lighter
-<hr class="evo-line-thick evo-line-gray-lighter" />
-
-evo-line-gray-light
-<hr class="evo-line-thick evo-line-gray-light" />
-
-evo-line-gray
-<hr class="evo-line-thick evo-line-gray" />
-
-evo-line-gray-dark
-<hr class="evo-line-thick evo-line-gray-dark" />
-
-evo-line-gray-darker
-<hr class="evo-line-thick evo-line-gray-darker" />
-
-evo-line-gray-darkest
-<hr class="evo-line-thick evo-line-gray-darkest" />
-
-<div class="evo-space-8"></div>
-
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-[color]</code> class, and then an <code>evo-line-color-[darkness]</code> class. Colors can be adusted in the _variables.scss file.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
-
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-lightest" /&gt;
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-lighter" /&gt;
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-light" /&gt;
-   &lt;hr class="evo-line-thick evo-gray" /&gt;
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-dark" /&gt;
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-darker" /&gt;
-   &lt;hr class="evo-line-thick evo-gray evo-line-color-darkest" /&gt;
-
-</pre>
-
-<div class="evo-space-3"></div>
-
-<p class="evo-measure-wide">By default, colors have a translucent opacity that reveals any background underneath. To remove the transparency, add the <code>evo-line-color-solid</code> class.</p>
-
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line evo-line-gray evo-line-color-solid evo-line-color-lightest" /&gt;
-
-</pre>
-
-<div class="evo-space-19"></div>
-
-</section>
-
-
-<!-- hr line gray gray -->
-
-<section id="evoLineGrayNumbers">
-
-<h2 class="evo-text-6">evo-line-gray-[number]</h2>
-
-<div class="evo-space-8"></div>
-
-<!-- <h3 class="evo-text-5">Gray grays</h3> -->
-
-<!-- evo-line-gray-0
-<hr class="evo-line evo-line-gray-0" /> -->
-
-evo-line-gray-1
-<hr class="evo-line-thick evo-line-gray-1" />
-
-evo-line-gray-2
-<hr class="evo-line-thick evo-line-gray-2" />
-
-evo-line-gray-3
-<hr class="evo-line-thick evo-line-gray-3" />
-
-evo-line-gray-4
-<hr class="evo-line-thick evo-line-gray-4" />
-
-evo-line-gray-5
-<hr class="evo-line-thick evo-line-gray-5" />
-
-evo-line-gray-6
-<hr class="evo-line-thick evo-line-gray-6" />
-
-evo-line-gray-7
-<hr class="evo-line-thick evo-line-gray-7" />
-
-evo-line-gray-8
-<hr class="evo-line-thick evo-line-gray-8" />
-
-evo-line-gray-9
-<hr class="evo-line-thick evo-line-gray-9" />
-
-evo-line-gray-10
-<hr class="evo-line-thick evo-line-gray-10" />
-
-evo-line-gray-11
-<hr class="evo-line-thick evo-line-gray-11" />
-
-evo-line-gray-12
-<hr class="evo-line-thick evo-line-gray-12" />
-
-evo-line-gray-13
-<hr class="evo-line-thick evo-line-gray-13" />
-
-evo-line-gray-14
-<hr class="evo-line-thick evo-line-gray-14" />
-
-evo-line-gray-15
-<hr class="evo-line-thick evo-line-gray-15" />
-
-evo-line-gray-16
-<hr class="evo-line-thick evo-line-gray-16" />
-
-evo-line-gray-17
-<hr class="evo-line-thick evo-line-gray-17" />
-
-evo-line-gray-18
-<hr class="evo-line-thick evo-line-gray-18" />
-
-evo-line-gray-19
-<hr class="evo-line-thick evo-line-gray-19" />
-
-evo-line-gray-20
-<hr class="evo-line-thick evo-line-gray-20" />
-
-evo-line-gray-21
-<hr class="evo-line-thick evo-line-gray-21" />
-
-evo-line-gray-22
-<hr class="evo-line-thick evo-line-gray-22" />
-
-evo-line-gray-23
-<hr class="evo-line-thick evo-line-gray-23" />
-
-evo-line-gray-24
-<hr class="evo-line-thick evo-line-gray-24" />
-
-evo-line-gray-25
-<hr class="evo-line-thick evo-line-gray-25" />
-
-evo-line-gray-26
-<hr class="evo-line-thick evo-line-gray-26" />
-
-evo-line-gray-27
-<hr class="evo-line-thick evo-line-gray-27" />
-
-evo-line-gray-28
-<hr class="evo-line-thick evo-line-gray-28" />
-
-evo-line-gray-29
-<hr class="evo-line-thick evo-line-gray-29" />
-
-evo-line-gray-30
-<hr class="evo-line-thick evo-line-gray-30" />
-
-<div class="evo-space-8"></div>
-
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[number]</code> class. Line grays 1-25 sync to the overall evolution grays located in the variables/_gray.scss file.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
-
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line-thick evo-line-gray-1" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-2" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-3" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-4" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-5" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-6" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-7" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-8" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-9" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-10" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-11" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-12" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-13" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-14" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-15" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-16" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-17" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-18" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-19" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-20" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-21" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-22" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-23" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-24" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-25" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-26" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-27" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-28" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-29" /&gt;
-   &lt;hr class="evo-line-thick evo-line-gray-30" /&gt;
-
-</pre>
-
-<div class="evo-space-19"></div>
-
-</section>
 
 <!-- hr line color numbers -->
 
@@ -416,7 +153,7 @@ evo-line-color-30
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[number]</code> class. Line colors 1-25 sync to the overall evolution colors located in the variables/_color.scss file.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag with an <code>evo-line-[number]</code> class. <code>evo-line-thick</code> is applied here to make the colors more obvious.</p>
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">

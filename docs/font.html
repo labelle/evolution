@@ -31,15 +31,15 @@
 
 <section id="evoFontIntro">
 
-<h1 class="evo-text evo-text-10" style="margin-bottom: .5em;">Font</h1>
+<h1 class="evo-text-10" style="margin-bottom: .5em;">Font</h1>
 
-<p class="evo-measure">Default styles for font-family, font-size, and line-height are applied globaly to the <code>&lt;html&gt;</code> tag.</p>
+<p class="evo-measure">Basic font styles.</p>
 <!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
 
-<div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
+<!-- <div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
 a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 1 2 3 4 5 6 7 8 9 0</div>
-
+ -->
 <div class="evo-space-19"></div>
 
 </section>
@@ -49,29 +49,92 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 
 <section id="evoFont">
 
-<h2 class="evo-text-6">evo-font</h2>
+<h2 class="evo-text-6">Base Font</h2>
 
 <div class="evo-space"></div>
 
-<div class="evo-measure-5">
+<!-- <div class="evo-measure-5">
 <div class="evo-font">This sentence displays the base font. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</div>
-</div>
+</div> -->
 
-<!-- <div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
+<div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
 a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
-1 2 3 4 5 6 7 8 9 0</div> -->
+1 2 3 4 5 6 7 8 9 0</div>
 
 <div class="evo-space"></div>
 
-<!--     <pre class="evo-code-inline">
+<!--     <pre class="evo-code">
       <code class="short">&lt;h2 class=&quot;evo-font&quot;&gt;This sentence displays the base font.&lt;/h2&gt;</code>
     </pre>
 
 <div class="evo-space-5"></div> -->
 
-<p class="evo-measure"><code>evo-font</code> class will apply the default font styles directly to an HTML element. Default styles for font-family, font-size, and line-height are applied globaly to the <code>&lt;html&gt;</code> tag in _global.scss. Styles can be adjusted in _variables.scss.</p>
+<p class="evo-measure">Global font styles are applied to the <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and other tags set in _global.scss. Styles can be adjusted from _variables.scss.</p>
+
+<p class="evo-measure">If needed, apply an <code>evo-font</code> class to set the global font styles directly to an HTML element.</p> 
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;p class="evo-font"&gt;&lt;/p&gt;</code>
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
 
 
+
+
+<!-- font italic -->
+
+<section id="evoFontItalic">
+
+<h2 class="evo-text-6">Italic</h2>
+
+<div class="evo-space"></div>
+
+
+<div class="evo-measure-5">
+<div class="font-italic">This text demonstrates italic. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</div>
+</div>
+
+<div class="evo-space"></div>
+
+<!-- font-oblique
+<p class="evo-text font-oblique"><a href="#">Oblique</a> Experience Design Made Simple for Living Design Systems</p>
+
+<div class="evo-space"></div> -->
+
+<p class="evo-measure">The <code>font-italic</code> class sets the font-style to italic. <code>font-oblique</code> is also available.</p> 
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;p class="font-italic"&gt;&lt;/p&gt;</code>
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- font bold -->
+
+<section id="evoFontBold">
+
+<h2 class="evo-text-6">Bold</h2>
+
+<div class="evo-space"></div>
+
+<div class="evo-measure-5">
+<div class="font-bold">This text demonstrates bold. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</div>
+</div>
+
+<div class="evo-space"></div>
+
+<p class="evo-measure">The <code>font-bold</code> class sets the font-weight to bold.</p> 
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;p class="font-bold"&gt;&lt;/p&gt;</code>
+</pre>
 
 <div class="evo-space-19"></div>
 
@@ -83,7 +146,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 
 <section id="evoFontReset">
 
-<h2 class="evo-text-6">evo-font-reset</h2>
+<h2 class="evo-text-6">Reset</h2>
 
 <div class="evo-space"></div>
 
@@ -92,7 +155,19 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 
 <div class="evo-space"></div>
 
-<p class="evo-measure-wide"><code>evo-font-reset</code> removes font styles.</p>
+<p class="evo-measure"><code>evo-font-reset</code> removes font styles.</p>
+
+<div class="evo-space"></div>
+
+font-no-weight
+<p class="evo-text font-no-weight"><a href="#">No-Weight</a> Experience Design Made Simple for Living Design Systems</p>
+
+<div class="evo-space"></div>
+
+
+font-no-style
+<p class="evo-text font-no-style"><a href="#">No-Style</a> Experience Design Made Simple for Living Design Systems</p>
+
 
 </section>
 

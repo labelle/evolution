@@ -5,41 +5,22 @@
 // @import "line_mixin";
 
 
-// SHOULD SOME OF THESE INHERIT?
-// SHOULD SOME BE PERCENTAGES OR EMS?
-$line_width:      initial; // border-top-width, initial = medium
-$line_style:      solid;   // border-top-style
-$line_color:      #{$gray-light}; // border-top-color
-// $hr_margin_top: 1em;
-// $hr_margin_bottom: 1em;
-
-
-// Set to 0 rather than initial, to avoid the medium line stroke
-hr#{$evo}-line-reset           { 
-  margin: 0;
-	border: 0;
-	border-top-width: 0;
-	border-top-style: 0;
-	border-top-color: 0;
+hr {
+// Resets
+display:block;
+height:0;
+border:0;
+border-top:0;
+margin:0;
+padding:0;
+overflow: visible;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+// Settings from _variables.scss
+border-top-width: #{$line_width};
+border-top-style: #{$line_style};
+border-top-color: #{$line_color};
+margin-top: #{$line_margin_top};
+margin-bottom: #{$line_margin_bottom};
 }
-
-// works for tags: div, hr, ol, ul, li, p, h1, h2, h3, h4, h5, h6
-hr#{$evo}-line {
-	border: 0;
-	margin: 0;
-	// margin-top: #{$hr_margin_top}; // 1em
-	// margin-bottom: #{$hr_margin_bottom}; // 1em
-	border-top-width: #{$line_width}; // initial, equal to medium
-	border-top-style: #{$line_style}; // solid
-	border-top-color: #{$line_color}; // initial
-}
-
-// hr line style
-hr#{$evo}-line-solid           { border-top-style: solid; }
-hr#{$evo}-line-dotted          { border-top-style: dotted; }
-hr#{$evo}-line-dashed          { border-top-style: dashed; }
-hr#{$evo}-line-double          { border-top-style: double; }
-// hr#{$evo}-line-groove          { border-top-style: groove; }
-// hr#{$evo}-line-ridge           { border-top-style: ridge; }
-// hr#{$evo}-line-inset           { border-top-style: inset; }
-// hr#{$evo}-line-outset          { border-top-style: outset; }

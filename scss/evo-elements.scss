@@ -45,6 +45,9 @@
 // @import "elements/reset";
 @import "elements/global";
 
+// Main
+@import "elements/code_inline";
+
 // Mixins
 @import "elements/font_mixin";
 @import "elements/text_mixin";
@@ -120,9 +123,10 @@
 
 // Line
 @import "elements/line";
-// @import "elements/line_style";
+@import "elements/line_style";
 @import "elements/line_size";
 @import "elements/line_color";
+@import "elements/line_gray";
 @import "elements/line_effect";
 // @import "elements/line_play";
 
@@ -139,8 +143,7 @@
 
 // Form
 
-// Main
-@import "elements/code_inline";
+
 
 
 

@@ -4,18 +4,13 @@
 // @import "../variables/scale";
 // @import "line_mixin";
 
-
-// SHOULD SOME OF THESE INHERIT?
-// SHOULD SOME BE PERCENTAGES OR EMS?
-$line_width:      initial; // border-top-width, initial = medium
-$line_style:      solid;   // border-top-style
-$line_color:      #{$gray-light}; // border-top-color
-// $hr_margin_top: 1em;
-// $hr_margin_bottom: 1em;
-
 // hr line scale
 
-hr#{$evo}-line-0          { border-top-width: 0; }
+hr#{$evo}-line-thin       { border-top-width: thin; }
+hr#{$evo}-line-medium     { border-top-width: medium; }
+hr#{$evo}-line-thick      { border-top-width: thick; }
+
+hr#{$evo}-line-0          { border-top-width: 1px; border-top-style: dotted; }
 hr#{$evo}-line-1          { border-top-width: 1px; }
 hr#{$evo}-line-2          { border-top-width: 2px; }
 hr#{$evo}-line-3          { border-top-width: 3px; }
@@ -31,16 +26,3 @@ hr#{$evo}-line-12         { border-top-width: #{$px-6}; } // 18px
 hr#{$evo}-line-13         { border-top-width: #{$px-7}; } // 21px
 hr#{$evo}-line-14         { border-top-width: #{$px-8}; } // 23px
 hr#{$evo}-line-15         { border-top-width: #{$px-9}; } // 30px
-
-hr#{$evo}-line-thin       { border-top-width: thin; }
-hr#{$evo}-line-medium     { border-top-width: medium; }
-hr#{$evo}-line-thick      { border-top-width: thick; }
-
-// css quick scale
-
-hr#{$evo}-line-smallest    { @extend #{$evo}-line; border-top-width: 1px; border-top-style: dotted; }
-hr#{$evo}-line-smaller     { @extend #{$evo}-line; border-top-width: 1px; }
-hr#{$evo}-line-small       { @extend #{$evo}-line; border-top-width: 2px; }
-hr#{$evo}-line-big         { @extend #{$evo}-line; border-top-width: 4px; }
-hr#{$evo}-line-bigger      { @extend #{$evo}-line; border-top-width: 5px; }
-hr#{$evo}-line-biggest     { @extend #{$evo}-line; border-top-width: #{$px-0}; }

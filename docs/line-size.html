@@ -16,42 +16,12 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-
-/* Experimental XRAY inspired by Harry Roberts */
-
-/* If it's a class containing the string evo-,
-put a green border around it. */
-
 hr[class*="evo-line"]  {
 /*padding-bottom: 5rem;*/
 margin-top: .5em;
 /*background-color: #eee;*/
 margin-bottom: 3em;
 }
-
-/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
-*/
-
-/*[class]:not([class*="evo-"]) {
-outline: 5px solid red;
-}*/
-
-/* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
-hr {
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {border-top: 15px solid lightblue;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {border-top: 15px solid lightblue;}
-}
-
 </style>
 
 </head>
@@ -85,88 +55,30 @@ hr {
 
 <h2 class="evo-text-6">evo-line-[thickness]</h2>
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
 
 evo-line-thin
-<hr class="evo-line evo-line-thin" />
+<hr class="evo-line-thin" />
 
 evo-line-medium
-<hr class="evo-line evo-line-medium" />
+<hr class="evo-line-medium" />
 
 evo-line-thick
-<hr class="evo-line evo-line-thick" />
+<hr class="evo-line-thick" />
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
 
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[thickness]</code> class. Uses the html <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width"><code>&lt;br-width&gt;</code></a> property values of thin, medium, and thick.<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> with an <code>evo-line-[thickness]</code> class. Uses the html <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width"><code>&lt;br-width&gt;</code></a> property values of thin, medium, and thick.</p>
 
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line evo-line-thin" /&gt;
-   &lt;hr class="evo-line evo-line-medium" /&gt;
-   &lt;hr class="evo-line evo-line-thick" /&gt;
-
+<pre class="evo-code">
+<code>&lt;hr class="evo-line-thin" /&gt;
+&lt;hr class="evo-line-medium" /&gt;
+&lt;hr class="evo-line-thick" /&gt;</code>
 </pre>
 
 <div class="evo-space-19"></div>
 
 </section>
-
-
-
-<!-- hr line size scale -->
-
-<section id="evoLineSize">
-
-<h2 class="evo-text-6">evo-line-[size]</h2>
-
-<div class="evo-space-8"></div>
-
-evo-line-smallest
-<hr class="evo-line evo-line-smallest" />
-
-evo-line-smaller
-<hr class="evo-line evo-line-smaller" />
-
-evo-line-small
-<hr class="evo-line evo-line-small" />
-
-evo-line
-<hr class="evo-line evo-line" />
-
-evo-line-big
-<hr class="evo-line evo-line-big" />
-
-evo-line-bigger
-<hr class="evo-line evo-line-bigger" />
-
-evo-line-biggest
-<hr class="evo-line evo-line-biggest" />
-
-<div class="evo-space-8"></div>
-
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[size]</code> class. The <code>evo-line</code> class by itself serves as the medium value.<!--  Example <code>&lt;hr class="evo-line evo-line-smallest" /&gt;</code>. --></p>
-
-
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line evo-line-smallest" /&gt;
-   &lt;hr class="evo-line evo-line-smaller" /&gt;
-   &lt;hr class="evo-line evo-line-small" /&gt;
-   &lt;hr class="evo-line" /&gt;
-   &lt;hr class="evo-line evo-line-big" /&gt;
-   &lt;hr class="evo-line evo-line-bigger" /&gt;
-   &lt;hr class="evo-line evo-line-biggest" /&gt;
-
-</pre>
-
-<div class="evo-space-19"></div>
-
-</section>
-
-
 
 <!-- hr line number scale -->
 
@@ -174,77 +86,77 @@ evo-line-biggest
 
 <h2 class="evo-text-6"">evo-line-[number]</h2>
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
+
+<!-- evo-line-0
+<hr class="evo-line-0" /> -->
 
 evo-line-1
-<hr class="evo-line evo-line-1" />
+<hr class="evo-line-1" />
 
 evo-line-2
-<hr class="evo-line evo-line-2" />
+<hr class="evo-line-2" />
 
 evo-line-3
-<hr class="evo-line evo-line-3" />
+<hr class="evo-line-3" />
 
 evo-line-4
-<hr class="evo-line evo-line-4" />
+<hr class="evo-line-4" />
 
 evo-line-5
-<hr class="evo-line evo-line-5" />
+<hr class="evo-line-5" />
 
 evo-line-6
-<hr class="evo-line evo-line-6" />
+<hr class="evo-line-6" />
 
 evo-line-7
-<hr class="evo-line evo-line-7" />
+<hr class="evo-line-7" />
 
 evo-line-8
-<hr class="evo-line evo-line-8" />
+<hr class="evo-line-8" />
 
 evo-line-9
-<hr class="evo-line evo-line-9" />
+<hr class="evo-line-9" />
 
 evo-line-10
-<hr class="evo-line evo-line-10" />
+<hr class="evo-line-10" />
 
 evo-line-11
-<hr class="evo-line evo-line-11" />
+<hr class="evo-line-11" />
 
 evo-line-12
-<hr class="evo-line evo-line-12" />
+<hr class="evo-line-12" />
 
 evo-line-13
-<hr class="evo-line evo-line-13" />
+<hr class="evo-line-13" />
 
 evo-line-14
-<hr class="evo-line evo-line-14" />
+<hr class="evo-line-14" />
 
 evo-line-15
-<hr class="evo-line evo-line-15" />
+<hr class="evo-line-15" />
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
 
-<p class="evo-measure-wide">Create an <code>&lt;hr /&gt;</code> tag, and apply the css class <code>evo-line</code>, followed by an <code>evo-line-[number]</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag with an <code>evo-line-[number]</code> class.</p>
 
 
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
-
-   &lt;hr class="evo-line evo-line-1" /&gt;
-   &lt;hr class="evo-line evo-line-2" /&gt;
-   &lt;hr class="evo-line evo-line-3" /&gt;
-   &lt;hr class="evo-line evo-line-4" /&gt;
-   &lt;hr class="evo-line evo-line-5" /&gt;
-   &lt;hr class="evo-line evo-line-6" /&gt;
-   &lt;hr class="evo-line evo-line-7" /&gt;
-   &lt;hr class="evo-line evo-line-8" /&gt;
-   &lt;hr class="evo-line evo-line-9" /&gt;
-   &lt;hr class="evo-line evo-line-10" /&gt;
-   &lt;hr class="evo-line evo-line-11" /&gt;
-   &lt;hr class="evo-line evo-line-12" /&gt;
-   &lt;hr class="evo-line evo-line-13" /&gt;
-   &lt;hr class="evo-line evo-line-14" /&gt;
-   &lt;hr class="evo-line evo-line-15" /&gt;
-
+<pre class="evo-code">
+<code>&lt;hr class="evo-line-1" /&gt;
+&lt;hr class="evo-line-2" /&gt;
+&lt;hr class="evo-line-3" /&gt;
+&lt;hr class="evo-line-4" /&gt;
+&lt;hr class="evo-line-5" /&gt;
+&lt;hr class="evo-line-6" /&gt;
+&lt;hr class="evo-line-7" /&gt;
+&lt;hr class="evo-line-8" /&gt;
+&lt;hr class="evo-line-9" /&gt;
+&lt;hr class="evo-line-10" /&gt;
+&lt;hr class="evo-line-11" /&gt;
+&lt;hr class="evo-line-12" /&gt;
+&lt;hr class="evo-line-13" /&gt;
+&lt;hr class="evo-line-14" /&gt;
+&lt;hr class="evo-line-15" /&gt;</code>
 </pre>
 
 </section>
