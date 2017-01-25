@@ -1,22 +1,129 @@
-///*      S P A C E     */
+///*      S P A C E   I N S I D E     */
 
-// Create space between elements
+// Create padding space between elements
+// This is called 'inside' to be more comprehendable to novices
 
 @import "../variables";
 
-/*      SPACE     */
+// /*      SPACE     */
 
 // Resets space style
-#{$evo}-space-reset {
-     height: 0px;
-     width: auto;
+#{$evo}-space-in-reset {
+     margin: 0;
      clear: both;
 }
 
-#{$evo}-space {
-     height: #{$space_height}; // 3rem
-     width: #{$space_width}; // auto
+#{$evo}-space-in {
+     margin: #{$space_inside}; // 1.4375rem
      clear: both;
+}
+
+// Scale
+
+#{$evo}-space-in-0 {
+    padding: 0
+}
+
+#{$evo}-space-in-1 {
+    padding: 1px;
+}
+
+#{$evo}-space-in-2 {
+    padding: 2px;
+}
+
+// Don't need?
+#{$evo}-space-in-3 {
+    padding: 3px;
+}
+
+#{$evo}-space-in-4 {
+    padding: 4px;
+}
+
+// Don't need?
+#{$evo}-space-in-5 {
+    padding: 5px;
+}
+
+#{$evo}-space-in-6 {
+    padding: #{$u-18}rem; // 6px
+}
+
+#{$evo}-space-in-7 {
+    padding: #{$u-19}rem; // 8px
+}
+
+#{$evo}-space-in-8 {
+    padding: #{$u-20}rem; // 10px
+}
+
+#{$evo}-space-in-9 {
+    padding: #{$u-21}rem; // 12px
+}
+
+#{$evo}-space-in-10 {
+    padding: #{$u-22}rem; // 14px
+}
+
+#{$evo}-space-in-11 {
+    padding: #{$u-23}rem; // 16px
+}
+
+#{$evo}-space-in-12 {
+    padding: #{$u-24}rem; // 18px
+}
+
+#{$evo}-space-in-13 {
+    padding: #{$u-25}rem; // 21px
+}
+
+#{$evo}-space-in-14 {
+    padding: #{$u-26}rem; // 23px
+}
+
+#{$evo}-space-in-15 {
+    padding: #{$u-27}rem; // 30px
+}
+
+#{$evo}-space-in-16 {
+    padding: #{$u-28}rem; // 37px
+}
+
+#{$evo}-space-in-17 {
+    padding: #{$u-29}rem; // 43px
+}
+
+#{$evo}-space-in-18 {
+    padding: #{$u-30}rem; // 48px
+}
+
+#{$evo}-space-in-19 {
+    padding: #{$u-31}rem; // 60px
+}
+
+#{$evo}-space-in-20 {
+    padding: #{$u-32}rem; // 80px
+}
+
+#{$evo}-space-in-21 {
+    padding: #{$u-33}rem; // 96x
+}
+
+#{$evo}-space-in-22 {
+    padding: #{$u-34}rem; // 128px
+}
+
+#{$evo}-space-in-23 {
+    padding: #{$u-35}rem; // 160px
+}
+
+#{$evo}-space-in-24 {
+    padding: #{$u-36}rem; // 208px
+}
+
+#{$evo}-space-in-25 {
+    padding: #{$u-37}rem; // 256px
 }
 
 

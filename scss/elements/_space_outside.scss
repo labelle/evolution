@@ -1,23 +1,132 @@
-///*      S P A C E     */
+///*      S P A C E   O U T S I D E     */
 
-// Create space between elements
+// Create margin space between elements
+// This is called 'outside' to be more comprehendable to novices
 
 @import "../variables";
 
-/*      SPACE     */
+// /*      SPACE     */
 
 // Resets space style
-#{$evo}-space-reset {
-     height: 0px;
-     width: auto;
+#{$evo}-space-out-reset {
+     margin: 0;
      clear: both;
 }
 
-#{$evo}-space {
-     height: #{$space_height}; // 3rem
-     width: #{$space_width}; // auto
+#{$evo}-space-out {
+     margin: #{$space_outside};  // 1.4375rem
      clear: both;
 }
+
+
+// Space out scale
+
+#{$evo}-space-out-0 {
+    margin: 0
+}
+
+#{$evo}-space-out-1 {
+    margin: 1px;
+}
+
+#{$evo}-space-out-2 {
+    margin: 2px;
+}
+
+#{$evo}-space-out-3 {
+    margin: 3px;
+}
+
+#{$evo}-space-out-4 {
+    margin: 4px;
+}
+
+#{$evo}-space-out-5 {
+    margin: 5px;
+}
+
+#{$evo}-space-out-6 {
+    margin: #{$u-18}rem; // 6px
+}
+
+#{$evo}-space-out-7 {
+    margin: #{$u-19}rem; // 8px
+}
+
+#{$evo}-space-out-8 {
+    margin: #{$u-20}rem; // 10px
+}
+
+#{$evo}-space-out-9 {
+    margin: #{$u-21}rem; // 12px
+}
+
+#{$evo}-space-out-10 {
+    margin: #{$u-22}rem; // 14px
+}
+
+#{$evo}-space-out-11 {
+    margin: #{$u-23}rem; // 16px
+}
+
+#{$evo}-space-out-12 {
+    margin: #{$u-24}rem; // 18px
+}
+
+#{$evo}-space-out-13 {
+    margin: #{$u-25}rem; // 21px
+}
+
+#{$evo}-space-out-14 {
+    margin: #{$u-26}rem; // 23px
+}
+
+#{$evo}-space-out-15 {
+    margin: #{$u-27}rem; // 30px
+}
+
+#{$evo}-space-out-16 {
+    margin: #{$u-28}rem; // 37px
+}
+
+#{$evo}-space-out-17 {
+    margin: #{$u-29}rem; // 43px
+}
+
+#{$evo}-space-out-18 {
+    margin: #{$u-30}rem; // 48px
+}
+
+#{$evo}-space-out-19 {
+    margin: #{$u-31}rem; // 60px
+}
+
+#{$evo}-space-out-20 {
+    margin: #{$u-32}rem; // 80px
+}
+
+#{$evo}-space-out-21 {
+    margin: #{$u-33}rem; // 96x
+}
+
+#{$evo}-space-out-22 {
+    margin: #{$u-34}rem; // 128px
+}
+
+#{$evo}-space-out-23 {
+    margin: #{$u-35}rem; // 160px
+}
+
+#{$evo}-space-out-24 {
+    margin: #{$u-36}rem; // 208px
+}
+
+#{$evo}-space-out-25 {
+    margin: #{$u-37}rem; // 256px
+}
+
+
+
 
 
 // Experimental
