@@ -161,7 +161,7 @@ body {
   font-size: normal:};
   line-height: 1.4375;
   color: normal;
-  background-color: white;
+  background-color: #fcfbf5;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -478,6 +478,9 @@ progress, meter {
 .clearfix:after {
   clear: both; }
 
+.clearfix {
+  zoom: 1; }
+
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
 .sr-only {
   position: absolute;
@@ -556,6 +559,25 @@ progress, meter {
   margin-left: 5%;
   margin-right: 5%;
   background-color: #fcfbf5; }
+
+.filler {
+  width: 100%;
+  height: 5rem;
+  background-color: #fcfbf5; }
+
+.divider {
+  padding-bottom: 5rem;
+  background-color: initial !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*border-width: 1px;*/ }
+
+.divider-small {
+  padding-bottom: 1rem;
+  background-color: initial !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*border-width: 1px;*/ }
 
 pre.evo-code,
 pre.evo-code-inverse {
@@ -3009,15 +3031,8 @@ pre.code-short > code {
 .font-times-new {
   font-family: times, serif; }
 
-.font-native,
-.font-native-smashing {
+.font-native {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
-
-.font-native-bootstrap {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
-
-.font-native-tachyons {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
 
 .adobe-font-source-sans-extra-light {
   font-family: source-sans-pro, sans-serif;

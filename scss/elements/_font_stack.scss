@@ -16,7 +16,8 @@
 .font-times-new         { font-family: #{$times}; }
 
 // Variable native system fonts
-.font-native,
-.font-native-smashing   { font-family: #{$native-smashing}; } // Font stack
-.font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
-.font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack
+.font-native            { font-family: #{$native-smashing}; } // Font stack
+
+// .font-native-smashing   { font-family: #{$native-smashing}; } // Font stack
+// .font-native-bootstrap  { font-family: #{$native-bootstrap}; } // Font stack
+// .font-native-tachyons   { font-family: #{$native-tachyons}; } // Font stack
