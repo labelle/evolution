@@ -150,11 +150,34 @@ $text_letter_spacing:               normal !default; // 0, or negative or positi
 $text_rendering:                    optimizeLegibility !default; // or optimizeSpeed or auto or unset;
 
 // Links
-$link_color:                        #cccccc !default;
-$link_color_visited:                #000000 !default;
-$link_color_hover:                  darker(rgb( 0, 174, 239 ),50%) !default; // cyan
-$link_color_active:                 rgb( 0, 174, 239 ) !default; // cyan
-$link_underline:                    none !default;
+
+// a
+$link_font_family:                  inherit !default;
+$link_font_weight:                  normal !default;
+
+// a:Link
+$link_color:                        red !default;
+$link_background_color:             transparent !default;
+$link_underline:                    none !default; // text-dectoration
+
+// a:visited
+$link_color_visited:                purple !default;
+
+// a:hover
+$link_color_hover:                  darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_underline_hover:				none !default; // text-dectoration
+
+// a:active
+$link_color_active:                 blue !default; // cyan
+$link_underline_active:				none !default; // text-dectoration
+
+// a:focus
+$link_color_focus:                  inverse !default; // cyan
+$link_underline_focus:				none !default;// text-decoration
+$link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
+$link_outline_width_focus:			thin !default;
+$link_outline_style_focus:			dotted !default;
+
 
 // Dropcap
 $dropcap_color:						#{$color_10} !default;

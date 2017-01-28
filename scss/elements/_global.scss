@@ -441,28 +441,70 @@ p.highlight, span.highlight {
 
 
 // links states
+// order must be a:link, a:visited, a:hover, a:active
 
 a {
-  color: initial; // color: #428bca;
-  background-color: transparent;
-  text-decoration: none;
-  -webkit-text-decoration-skip: objects;
+  font-family: #{$link_font_family};
+  font-weight: #{$link_font_weight};
+  background-color: transparent; // reset
+  text-decoration: none; // reset
+  -webkit-text-decoration-skip: objects; // reset
 }
 
-a:active,
-a:hover,
+.a-link,
+a:link    { 
+  color: #{$link_color};
+  background-color: #{$link_background_color};
+  text-decoration: #{$link_underline};
+}
+
+.a-visited,
+a:visited { 
+  color: #{$link_color_visited}; 
+}
+
+.a-hover,
+a:hover {
+  color: #{$link_color_hover};
+  text-decoration: #{$link_underline_hover};
+  outline-width: 0; // reset
+}
+
+.a-active,
+a:active {
+  color: #{$link_color_active};
+  text-decoration: #{$link_underline_active};
+  outline-width: 0; // reset
+}
+
+.a-focus,
 a:focus {
-  color: #{$link_color_hover}; // color: #2a6496;
-  text-decoration: initial; // text-decoration: underline;
-  outline-width: 0;
+  color: #{$link_color_focus};
+  text-decoration: #{$link_underline_focus};
+  outline: unset; // reset foundation
+  // outline: 5px auto -webkit-focus-ring-color; // what is this
+  outline-color: #{$link_outline_color_focus};
+  outline-width: #{$link_outline_width_focus};
+  outline-style: #{$link_outline_style_focus};
+  outline-offset: -2px; // from foundation
 }
 
 // table
+
+tr:hover {
+    color: black;
+    background-color: lightyellow;
+}
+
+tr:hover a {
+    color: rgba(0, 174, 239, 1);
+}
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 
 legend {
   color: inherit;

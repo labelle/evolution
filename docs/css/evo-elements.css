@@ -323,17 +323,50 @@ p.highlight, span.highlight {
   text-shadow: none; }
 
 a {
-  color: initial;
+  font-family: inherit;
+  font-weight: normal;
   background-color: transparent;
   text-decoration: none;
   -webkit-text-decoration-skip: objects; }
 
-a:active,
-a:hover,
-a:focus {
-  color: darker(#00aeef, 50%);
-  text-decoration: initial;
+.a-link,
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none; }
+
+.a-visited,
+a:visited {
+  color: purple; }
+
+.a-hover,
+a:hover {
+  color: darker(#00aeef, 75%);
+  text-decoration: none;
   outline-width: 0; }
+
+.a-active,
+a:active {
+  color: blue;
+  text-decoration: none;
+  outline-width: 0; }
+
+.a-focus,
+a:focus {
+  color: inverse;
+  text-decoration: none;
+  outline: unset;
+  outline-color: #00aeef;
+  outline-width: thin;
+  outline-style: dotted;
+  outline-offset: -2px; }
+
+tr:hover {
+  color: black;
+  background-color: lightyellow; }
+
+tr:hover a {
+  color: #00aeef; }
 
 table {
   border-collapse: collapse;
@@ -6812,34 +6845,12 @@ div.ad-shadow-300 {
   box-shadow: 0 34px 58px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center; }
 
-a:link {
-  color: black;
-  text-decoration: none;
-  font-weight: normal; }
-
-a:visited {
-  color: #555; }
-
-a:hover {
-  color: red; }
-
-a:active {
-  color: lime; }
+table {
+  border: 0;
+  width: 100%; }
 
 tr {
   color: #555; }
-
-tr:hover {
-  color: black;
-  background-color: lightyellow; }
-
-tr:hover a {
-  color: #00aeef; }
-
-table {
-  border: 0;
-  border-collapse: collapse;
-  width: 100%; }
 
 caption {
   margin-top: 1em;
