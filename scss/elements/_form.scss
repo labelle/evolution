@@ -1,0 +1,35 @@
+///*      T A B L E    */
+
+@import "../variables";
+// @import "../variables/scale";
+
+
+/* search form */
+
+.evo-form-text {
+    font-family: sans-serif;
+    display: block;
+    // overflow: auto; // buggy
+}
+
+input {
+    line-height: 200%;
+    width: 100%;
+    padding: .38rem;
+    font-size: .84rem;
+    border-radius: 5px;
+    border: 2px solid #CCC;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.uneditable-input.focus-border-color:focus,
+input.focus-border-color:focus,
+input[type].focus-border-color:focus,
+textarea.focus-border-color:focus {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0, 174, 239, .8);
+    outline: 0;
+}

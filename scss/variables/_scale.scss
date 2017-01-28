@@ -1,8 +1,10 @@
 ///*      S C A L E   V A R I A B L E S     */
 
-// relative number scale
+// Relative number scale
+// Increments based on 1/2 gold ratio of .80901699435
 // floor() rounds down
 // ceil() rounds up
+// Presumes root size of 16px
 
 $u-0: -.2 !default;
 $u-1: -.1875 !default;
@@ -22,9 +24,10 @@ $u-14: .1 !default;
 $u-15: .15 !default;
 $u-16: .2 !default;
 $u-17: .275 !default;
+// Above are optimized for line-height and letter-spacing
+// Below are optimized for text sizes
 $u-18: .375 !default;  	     // 6px // text size might render as 8px
-$u-19: .5 !default;          // 8px // smallest useful text size // smallest useful lowercase leading // avenir // georgia
-// $u-19b: .5625 !default; // optimized for lowercase touching // arial // gotham
+$u-19: .5 !default;          // 8px // smallest useful text size // smallest useful lowercase leading
 $u-20: .625 !default;        // 10px
 $u-21: .75 !default;         // 12px // smallest useful uppercase leading
 $u-22: .875 !default;        // 14px
@@ -40,6 +43,7 @@ $u-31: 3.75 !default;        // 60px
 $u-32: ceil(4.935) !default; // 80px
 $u-33: floor(6.1) !default;  // 96px
 $u-34: ceil(7.985) !default; // 128px
+// Below are jumbo sizes suitable for spacers and text measure
 $u-35: ceil(9.87) !default;  // 160px
 $u-36: ceil(12.92) !default; // 208px
 $u-37: ceil(15.97) !default; // 256px
@@ -54,38 +58,43 @@ $u-44: ceil(101.64285714) !default;  // 1423px
 $u-45: floor(125.71428571) !default;  // 1760px
 
 
-// pixel scale
-// sizes 1px - 5px should just be entered directly as needed
+// Pixel scale
+// Presumes root size of 16px
 
-$px-0: 6px !default;
-$px-1: 8px !default;
-$px-2: 10px !default;
-$px-3: 12px !default;
-$px-4: 14px !default;
-$px-5: 16px !default; // default text size
-$px-6: 18px !default;
-$px-7: 21px !default;
-$px-8: 23px !default;
-$px-9: 30px !default;
-$px-10: 37px !default;
-$px-11: 43px !default;
-$px-12: 48px !default;
-$px-13: 60px !default;
-$px-14: 80px !default;
-$px-15: 96px !default;
-$px-16: 128px !default;
-$px-17: 160px !default;
-$px-18: 208px !default;
-$px-19: 256px !default;
-$px-20: 336px !default;
-$px-21: 416px !default;
-$px-22: 544px !default;
-$px-23: 672px !default;
-$px-24: 880px !default;
-$px-25: 1088px !default;
+$px-0: 0px !default;
+$px-1: 1px !default;
+$px-2: 2px !default;
+$px-3: 3px !default;
+$px-4: 4px !default;
+$px-5: 5px !default;
+$px-6: 6px !default;
+$px-7: 8px !default;
+$px-8: 10px !default;
+$px-9: 12px !default;
+$px-10: 14px !default;
+$px-11: 16px !default; // default text size
+$px-12: 18px !default;
+$px-13: 21px !default;
+$px-14: 23px !default;
+$px-15: 30px !default;
+$px-16: 37px !default;
+$px-17: 43px !default;
+$px-18: 48px !default;
+$px-19: 60px !default;
+$px-20: 80px !default;
+$px-21: 96px !default;
+$px-22: 128px !default;
+$px-23: 160px !default;
+$px-24: 208px !default;
+$px-25: 256px !default;
+$px-26: 336px !default;
+$px-27: 416px !default;
+$px-28: 544px !default;
+$px-29: 672px !default;
+$px-30: 880px !default;
+$px-31: 1088px !default;
 // Are these below the correct value?
-$px-26: 1423px !default;
-$px-27: 1760px !default;
+$px-32: 1423px !default;
+$px-33: 1760px !default;
 
-// @import "settings";
 
