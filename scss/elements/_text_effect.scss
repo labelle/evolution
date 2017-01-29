@@ -122,6 +122,24 @@ font-feature-settings: "smcp" on;
     text-shadow: 6px 6px 12px rgba(0, 0, 0, .5)
 }
 
+// engraved
+// https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow/
+
+// On gray
+.engraved-gray-bg {
+  color: #000;
+  background: #666;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+// On black
+
+.engraved-black-bg {
+  color: #666;
+  background: #000;
+  text-shadow: 0px 1px 0px #ccc;
+}
+
 // effects
 
 .neon {
@@ -137,3 +155,24 @@ font-feature-settings: "smcp" on;
   0 0 1.2em #f0f
 }
 
+.neon-2 { 
+  background: #000;
+  background-image:
+    radial-gradient(center, ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,1)), 
+    url(../image/black-brick-wall-texture.jpg);
+    width: 768px;
+    text-align: center;
+    // font-family: Neon80sRegular, Arial Narrow, sans-serif;
+    color: #fee;
+    width: 768px;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    text-shadow: 0 0 30px rgba(255,0,84,0.6),
+      0 0 60px rgba(255,0,84,0.4),
+      0 0 100px rgba(255,0,84,0.2),
+      0 0 90px rgba(255,0,84,0.1);
+}
+// Try making it flicker
+// http://thenewcode.com/610/Create-A-Flickering-Neon-Bar-Sign-With-CSS3

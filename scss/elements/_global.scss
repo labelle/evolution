@@ -3,6 +3,7 @@
 @import "../variables";
 
 
+
 // Resets
 // An amalgam from different sources
 // http://cssreset.com/scripts/eric-meyer-reset-css/
@@ -420,22 +421,6 @@ button {
 }
 
 
-// selection
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-p.highlight, span.highlight {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
 
 
@@ -487,6 +472,89 @@ a:focus {
   outline-width: #{$link_outline_width_focus};
   outline-style: #{$link_outline_style_focus};
   outline-offset: -2px; // from foundation
+}
+
+
+
+// selection
+
+// Highlights for other browsers
+::-o-selection {
+   background-color: #{$selection_color_background};
+   color: #{$selection_color};
+}
+
+::-ms-selection {
+   background-color: #{$selection_color_background};
+   color: #{$selection_color};
+}
+
+// Highlights for webkit browsers
+::-webkit-selection {
+   background-color: #{$selection_color_background};
+   color: #{$selection_color};
+}
+
+// Highlights for mozilla browsers
+::-moz-selection  {
+    background: #{$selection_color_background};
+    color: #{$selection_color};
+    // text-shadow: #{$selection_text_shadow};
+}
+
+// Highlights
+::selection   {
+    background: #{$selection_color_background};
+    color: #{$selection_color};
+    text-shadow: #{$selection_text_shadow};
+}
+
+.selection,
+p.selection,
+span.selection {
+    // background-color: #{$selection_color_background};
+    background: #{$selection_color_background_demo}; // demo color
+    color: #{$selection_color};
+    text-shadow: #{$selection_text_shadow};
+}
+
+// http://callmenick.com/post/multi-line-padded-text-css-box-decoration-break
+// Use for highlights
+// Should work with inline code blocks, too
+
+// .highlight-small {
+//   // background: inherit;
+//   // color: inherit;
+//   // display: inline;
+//   // padding-left: .5ch;
+//   line-height: 3.5ex !important;
+//   padding-left: .5ch;
+//   padding-right: .5ch;
+//   padding-bottom: .5ex;
+//   padding-top: .5ex;
+//   -webkit-box-decoration-break: clone;
+//   box-decoration-break: clone;
+// }
+
+// Try improving this from
+// https://css-tricks.com/multi-line-padded-text/
+.highlight {
+  // background: inherit;
+  // color: inherit;
+  // display: inline;
+  // padding-left: .5ch;
+  line-height: 3.5ex !important;
+  padding-left: .6ch;
+  padding-right: .6ch;
+  padding-bottom: .6ex;
+  padding-top: .6ex;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.code-inline {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 // table
@@ -654,14 +722,23 @@ word-spacing: .5em;
 
 // What is the difference between break-word and word-break?
 // http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
+// https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+
+// replaces word-break. wraps long words starting at the next line, not where it should
 .break-word {
   overflow-wrap: break-word;
 }
+
+// // wraps long words starting at the point it should start
+// .word-break {
+//    word-wrap: break-word;
+// }
 
 // .no-break-word {
 //   overflow-wrap: keep-all;
 // }
 
+// wraps all words
 .all-break-word {
   word-break: break-all;
 }
@@ -925,6 +1002,10 @@ word-spacing: .5em;
         page-break-after: avoid;
     }
 }
+
+// Check this out for additional style
+// https://uxdesign.cc/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.iom71ij0h
+
 
 
 // MAIN

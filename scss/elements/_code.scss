@@ -6,6 +6,7 @@
 // Place Code tag within Pre tag
 // https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 
+
 pre#{$evo}-code,
 pre#{$evo}-code-inverse {
   margin: 0 auto;
@@ -37,6 +38,7 @@ pre#{$evo}-code-inverse > code {
     border-radius: #{$base_code_border_radius};
     font-family: inherit;
     font-size: inherit;
+    overflow-wrap: break-word;
   }
 
 pre.code-no-wrap > code {

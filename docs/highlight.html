@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Link</title>
+        <title>Evolution Text Highlight</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,11 +29,11 @@
 <main>
 
 
-<section id="evoLinkIntro">
+<section id="evoSelectionIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Link</h1>
+<h1 class="evo-text-13" style="margin-bottom: 0;">Highlight</h1>
 
-<p class="evo-measure">Basic link styles.</p>
+<p class="evo-measure">Basic styles for text selection and highlight.</p>
 
 <div class="evo-space-20"></div>
 
@@ -41,11 +41,12 @@
 
 
 
-<!-- base font -->
 
-<section id="evoLink">
+<!-- base selection -->
 
-<h2 class="evo-text-6">Base Link</h2>
+<section id="evoSelection">
+
+<h2 class="evo-text-6">Base Selection State</h2>
 
 <div class="evo-space"></div>
 
@@ -54,22 +55,22 @@
 <a>Pack my box with five dozen liquor jugs.</a>
  -->
 
-<code>&lt;a href="#"&gt;</code>
-<a href="#">Pack my box with five dozen liquor jugs.</a>
+<code>&lt;div class="selection"&gt;</code>
+<div class="selection">Pack my box with five dozen liquor jugs.</div>
 
 
 <div class="evo-space"></div>
 
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;Pack my box with five dozen liquor jugs.&lt;/a&gt;</code>
+<code class="evo-measure">&lt;div class="selection"&gt;Pack my box with five dozen liquor jugs.&lt;/div&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Global font styles are applied to the <code>a</code> tag - and other tags – set in _global.scss. Styles can be adjusted from _variables.scss.</p>
+<p class="evo-measure">Global <code>::selection</code> styles are set in _global.scss. Selection and highlight styles can be adjusted from _variables.scss.</p>
 
-<p class="evo-measure">If needed, directly apply an <code>.a-link</code> class to set the global link style to an HTML element.</p> 
+<p class="evo-measure">If needed, directly apply a <code>.selection</code> class to set the global selection style to an HTML element.</p> 
 
 
 <div class="evo-space-20"></div>
@@ -79,57 +80,43 @@
 
 
 
-<!-- font italic -->
+<!-- base selection -->
 
-<section id="evoLinkStates">
+<section id="evoHighlight">
 
-<h2 class="evo-text-6">Link States</h2>
+<h2 class="evo-text-6">Base Highlight</h2>
 
 <div class="evo-space"></div>
 
 
-<div class="evo-space-10"></div>
+<!-- <code>&lt;a&gt;</code>
+<a>Pack my box with five dozen liquor jugs.</a>
+ -->
 
-<code>&lt;a:link&gt;</code>
-<a class="a-link">Pack my box with five dozen liquor jugs.</a>
+<code>&lt;div class="selection highlight"&gt;</code>
+<br>
+<span class="evo-text-7 selection highlight">Clone Pack my box with five dozen liquor jugs.  Several fabulous dixieland jazz groups played with quick tempo. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</span>
 
-<div class="evo-space-10"></div>
-
-<code>&lt;a:visited&gt;</code>
-<a class="a-visited">Pack my box with five dozen liquor jugs.</a>
-
-<div class="evo-space-10"></div>
-
-<code>&lt;a:hover&gt;</code>
-<a class="a-hover">Pack my box with five dozen liquor jugs.</a>
-
-<div class="evo-space-10"></div>
-
-<code>&lt;a:active&gt;</code>
-<a class="a-active">Pack my box with five dozen liquor jugs.</a>
-
-<div class="evo-space-10"></div>
-
-<code>&lt;a:focus&gt;</code>
-<a class="a-focus">Pack my box with five dozen liquor jugs.</a>
 
 <div class="evo-space"></div>
 
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#" class=".a-hover"&gt;Pack my box with five dozen liquor jugs.&lt;/a&gt;
-</code>
+<code class="evo-measure">&lt;div class="selection highlight"&gt;Pack my box with five dozen liquor jugs.&lt;/div&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">If needed for demonstration purposes, apply an <code>.a-visited</code>, <code>.a-hover</code>, <code>.a-active</code>, or <code>.a-focus</code> class to set the global font pseudo style directly to an HTML <code>a</code> element or text.</p> 
+<p class="evo-measure">Create a <code>span</code> to contain your text, and apply the<code>highlight</code> class, when applied after any other styling, will improve the visual appearence. Global <code>::selection</code> styles are set in _global.scss. Selection and highlight styles can be adjusted from _variables.scss.</p>
+
+<p class="evo-measure">If needed, directly apply a <code>.highlight</code> after a <code>.selection</code> class to set the global selection style to an HTML element.</p> 
 
 
 <div class="evo-space-20"></div>
 
-
 </section>
+
+
 
 </main>
 

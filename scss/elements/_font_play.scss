@@ -18,3 +18,20 @@
 .font-gotham            { font-family: #{$gotham}; }
 .font-gotham            { font-family: #{$gotham}; }
 .font-goudy             { font-family: #{$goudy}; }
+
+
+// Font replacement
+// May require licenses
+
+// Neon
+// http://www.fontspace.com/essqu%C3%A9-productions/neon-80s
+
+@font-face {
+    font-family: 'neon';
+    src: url('../font/essqué-productions_neon-80s/neon.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-neon				{ font-family: #{$neon}; }

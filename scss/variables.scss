@@ -178,6 +178,12 @@ $link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 
+// Selection Highlights
+$selection_color:                   white !default;
+$selection_color_background:        rgba( 0, 0, 0, 1) !default;
+$selection_text_shadow:             none !default;
+
+$selection_color_background_demo:   rgba( 0, 0, 0, .8) !default; // slight translucency to match browser behavior
 
 // Dropcap
 $dropcap_color:						#{$color_10} !default;
