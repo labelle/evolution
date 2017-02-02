@@ -42,10 +42,87 @@
 
 
 
-<section id="evoForm">
+<section id="evoFormText">
 
-<form class="evo-form-text">
+<form>
     <input class="focus-border-color" style="background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg) no-repeat scroll 98% 50%; background-size: 25px 25px;" type="search" name="search" placeholder="Search">
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<section id="evoFormSelect">
+
+<form>
+<select id="select" class="focus-border-color" name="dropdown" placeholder="choose one">
+    <option value="option1">option 1</option>
+    <option value="option2">option 2</option>
+    <option value="option3">option 3</option>
+</select>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<section id="evoFormRadio">
+
+<div class="radio-group" id="radio-group1">
+    <fieldset>
+        <legend>Radio Group Title</legend>
+        <span>
+            <input id="radio-group1_input1" name="radio-group1" type="radio" value="1" checked />
+            <label for="radio-group1_input1">Input 1</label>
+        </span>
+        <span>
+            <input id="radio-group1_input2" name="radio-group1" type="radio" value="2" />
+            <label for="radio-group1_input2">Input 2</label>
+        </span>
+        <span>
+            <input id="radio-group1_input3" name="radio-group1" type="radio" value="3" />
+            <label for="radio-group1_input3">Input 3</label>
+        </span>
+    </fieldset>
+</div>
+
+
+<div class="evo-space-20"></div>
+
+
+</section>
+
+<section id="evoFormCheckbox">
+
+<fieldset>
+                <legend>Pure CSS (custom focus indicator)</legend>
+                <div class="checkbox">
+                    <input id="checkbox1_freeshipping2" type="checkbox" name="freeshipping2">
+                    <label for="checkbox1_freeshipping2">Free Shipping</label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox2_endssoon2" type="checkbox" name="endssoon2">
+                    <label for="checkbox2_endssoon2">Ends soon</label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox3_zerobids2" type="checkbox" name="zerobids2">
+                    <label for="checkbox3_zerobids2">Zero bids</label>
+                </div>
+            </fieldset>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<section id="evoFormButton">
+
+<form action="" method="post">
+  <!-- A button doesn't need anything! It'll just work! ARIA's role="button" is already assigned natively! Whoa! -->
+  <button type="submit">Simple A11Y Button</button>
 </form>
 
 </section>

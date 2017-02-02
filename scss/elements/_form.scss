@@ -4,32 +4,351 @@
 // @import "../variables/scale";
 
 
+///* --------------------------- FORMS --------------------------- */
+
+
+///* Adjust the non-increment variables for more dramatic effect */
+
+// $form_padding:               .3;
+// $form_padding_increment:     .04;
+// $form_font_size:             1rem;
+// $form_font_size_increment:   .09;
+$form_background_color:      $gray_5; // $white_evo
+
+// Define how round form corners are
+
+// $form_corners_evo:               5px;
+
+
+
 /* search form */
 
-.evo-form-text {
-    font-family: sans-serif;
-    display: block;
-    // overflow: auto; // buggy
-}
+// .evo-form-text {
+//     font-family: sans-serif;
+//     display: block;
+//     // overflow: auto; // buggy
+// }
 
-input {
-    line-height: 200%;
-    width: 100%;
-    padding: .38rem;
-    font-size: .84rem;
-    border-radius: 5px;
-    border: 2px solid #CCC;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+// input {
+//     line-height: 200%;
+//     padding: .38rem;
+//     font-size: .84rem;
+//     border-radius: 5px;
+//     border-width: 2px;
+//     border-style: solid;
+//     border-color: #CCC;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+// }
 
-.uneditable-input.focus-border-color:focus,
-input.focus-border-color:focus,
-input[type].focus-border-color:focus,
-textarea.focus-border-color:focus {
+.uneditable-input:focus,
+select:focus,
+input:focus,
+input[type]:focus,
+textarea:focus {
     border-width: 2px;
     border-style: solid;
     border-color: rgba(0, 174, 239, .8);
     outline: 0;
 }
+
+// // Save for branded focus states
+// .uneditable-input.focus-border-color:focus,
+// select.focus-border-color:focus,
+// input.focus-border-color:focus,
+// input[type].focus-border-color:focus,
+// textarea.focus-border-color:focus {
+//     border-width: 2px;
+//     border-style: solid;
+//     border-color: rgba(0, 174, 239, .8);
+//     outline: 0;
+// }
+
+
+// From older evolution
+
+  fieldset {
+    border: 1px solid $gray_15;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+    width: 100%;
+  }
+
+
+  input[type="date"],
+  input[type="time"] {
+    line-height: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    line-height: 5px;
+  }
+
+// Can we get rid of the 'input' because it's messing up the checkboxes
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="time"],
+  input[type="file"]
+  input[type="search"],
+  input[type="url"],
+  textarea,
+  select,
+  input {
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
+    // @extend .evo-form-1-base;
+    padding: 1rem; // $form_padding+$form_padding_increment*0.5rem;
+    font-size: 1rem; // $form_font_size+$form_font_size_increment*3rem;
+    border-radius: 5px; // $form_corners_evo;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $gray_15;
+    background-color: $form_background_color;
+    width: 100%;
+  }
+
+  // select:hover {
+  //   background-color: #eee;
+  //   border-color: #666;
+  // }
+
+
+/*********************
+    INPUT BUTTONS
+*********************/
+
+
+  .evo-form-input {
+
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inputfile + label {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: $white;
+      background-color: black;
+      display: inline-block;
+    }
+
+    .inputfile:focus + label,
+    .inputfile + label:hover {
+        background-color: gray;
+    }
+
+    .inputfile:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label {
+      cursor: pointer; /* "hand" cursor */
+    }
+
+  }
+
+
+  //   /* INPUT 1 */
+
+  // .evo-form-20-input {
+ 
+  //    @extend .evo-form-input-base;  
+  
+  // }
+
+
+
+/*********************
+      CHECKBOX 
+*********************/
+
+
+  // .evo-form-checkbox {
+
+
+  //   input[type=checkbox] {
+  //     display: none;
+  //   }
+
+  //   label {
+  //     display: inline-block;
+  //     cursor: pointer;
+  //     position: relative;
+  //     margin-right: 15px;
+  //     font-weight: 100;
+  //   }
+
+  //   label:before {
+  //     content: "";
+  //     display: inline-block;
+  //     position: absolute;
+  //     left: 0px;
+  //     border: 1px solid $gray_15;
+  //   }
+
+  //   input[type=checkbox]:checked + label:before {
+  //     content: "\2713";
+  //     color: $gray_15;
+  //     text-align: center;
+  //   }
+
+  // }
+
+
+  //   /* CHECKBOX 1 */
+
+  // .evo-form-1-checkbox {
+ 
+  //   @extend .evo-form-checkbox-base;  
+
+  //   label {
+  //   padding-left: 11px;
+  //   font-size: 6px;
+  //   }
+
+  //   label:before {
+  //     width: 7px;
+  //     height: 7px;
+  //     margin-right: 10px;
+  //     bottom: 1px;
+  //     border-radius: 2px;
+  //     background-color: $form_background_color;
+  //   }
+
+  //   input[type=checkbox]:checked + label:before {
+  //       font-size: 6px;
+  //       text-align: center;
+  //       line-height: 5px;
+  //       padding-left: .8px;
+  //   }
+
+  
+  // }
+
+
+/*********************
+    RADIO BUTTONS
+*********************/
+
+
+  // .evo-form-radio-base {
+
+  //   input[type=radio] {
+  //     display: none;
+  //   }
+
+  //   label {
+  //     display: inline-block;
+  //     cursor: pointer;
+  //     position: relative;
+  //     margin-right: 15px;
+  //     font-weight: 100;
+  //   }
+
+  //   label:before {
+  //     content: "";
+  //     display: inline-block;
+  //     position: absolute;
+  //     left: 0px;
+  //     border-radius: 100%;
+  //     border: 1px solid $gray_15;
+  //   }
+
+  //   input[type=radio]:checked + label:before {
+  //     content: "\2022";
+  //     color: $gray_15;
+  //   }
+
+  // }
+
+
+  //   /* RADIO 1 */
+
+  // .evo-form-radio {
+ 
+  //   @extend .evo-form-radio-base;  
+
+  //   label {
+  //   padding-left: 12px;
+  //   font-size: 6px;
+  //   margin-top: 0px;
+  //   margin-bottom: -3px;
+  //   }
+
+  //   label:before {
+  //     width: 8px;
+  //     height: 8px;
+  //     margin-right: 10px;
+  //     bottom: 1px;
+  //     background-color: $form_background_color;
+  //   }
+
+  //   input[type=radio]:checked + label:before {
+  //       font-size: 11px;
+  //       text-align: center;
+  //       line-height: 7px;
+  //       padding-left: .5px;
+  //   }
+
+  
+  // }
+
+
+// FROM TOOLKIT
+
+// .evo-form-radio {
+
+
+input[type=radio]{
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin-right: 15px;
+  font-weight: 100;
+  padding-left: 25px;
+  font-size: 19px;
+  margin-top: 4px; }
+
+label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  border-radius: 100%;
+  border: 1px solid #999999;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  bottom: 5px; 
+}
+
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #999999;
+  font-size: 27px;
+  text-align: center;
+  line-height: 17px;
+  padding-left: .5px;
+}
+
+// }
