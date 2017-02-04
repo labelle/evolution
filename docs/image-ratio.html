@@ -6,14 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Button</title>
+        <title>Evolution Image Ratio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!--         <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
 <!--         <link rel="stylesheet" href="css/evo-reset.css"> -->
-        <link rel="stylesheet" href="css/evo-elements.css">
+        <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
 </style>
@@ -29,42 +29,11 @@
 <main>
 
 
-<section id="evoButtonIntro">
+<section id="evoImageIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Button</h1>
+<h1 class="evo-text-13" style="margin-bottom: 0;">Image Ratio</h1>
 
-<p class="evo-measure">Basic buttons.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-<!-- base selection -->
-
-<section id="evoButton">
-
-<h2 class="evo-text-6">Base Button</h2>
-
-<div class="evo-space"></div>
-
-
-<a href="javascript: void(0);">
-<button class="evo-button">submit</button></a>
-
-
-<div class="evo-space"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="evo-button"&gt;submit&lt;/button&lt;/a&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create a <code>button</code> tag inside of an anchor <code>a</code> tag. Default button styles are set in _global.scss.</p>
+<p class="evo-measure">Image ratios for images using <code>img</code> tags.</p>
 
 <div class="evo-space-20"></div>
 
@@ -72,32 +41,20 @@
 
 
 
+<!-- Image Parallax -->
 
-<!-- base selection -->
+<section id="evoImageParallax">
 
-<section id="evoButtonColor">
-
-<h2 class="evo-text-6">Color Buttons</h2>
-
-<div class="evo-space"></div>
-
-
-<a href="javascript: void(0);" class="evo-color-15-bg">
-<button class="evo-button">submit</button></a>
-
+<h2 class="evo-text-6">image-ratio</h2>
 
 <div class="evo-space"></div>
 
+<!-- to use aspect-ratio-fill, use position relative on parent container to match parent container shape, or apply to self container to stretch to screen size -->
+<div class="image-ratio-16-9" style="position: relative;">
+<img class="image-ratio-fill" src="image/monolake.jpg" />
+</div>
 
-<pre class="evo-code">
-<code class="evo-measure">&lt;a href="#" class="color-15"&gt;&lt;button class="evo-button"&gt;submit&lt;/button&lt;/a&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create a <code>button</code> tag inside of an anchor <code>a</code> tag. Default button styles are set in _global.scss.</p>
-
-<div class="evo-space-20"></div>
+<div class="evo-space-20 clearfix"></div>
 
 </section>
 
@@ -106,8 +63,8 @@
 
 </main>
 
-<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- --><!--         <script src="js/main.js"></script> -->
+<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!--         <script src="js/main.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

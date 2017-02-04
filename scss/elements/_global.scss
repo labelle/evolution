@@ -177,7 +177,7 @@ html {
 // body                       {}
 // 
 body {
-  font-size:          #{$body_font_size:};
+  font-size:          #{$body_font_size};
   line-height:        #{$body_line_height}; // 1.4375 !default
   color:              #{$body_font_color};
   background-color:   #{$body_background_color};
@@ -377,7 +377,6 @@ q:before, q:after {
 // button
 
 button,
-
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -434,6 +433,10 @@ a {
   background-color: transparent; // reset
   text-decoration: none; // reset
   -webkit-text-decoration-skip: objects; // reset
+  -moz-transition:color 0.3s ease-in-out;
+  -webkit-transition:color 0.3s ease-in-out;
+  -o-transition:color 0.3s ease-in-out;
+  transition:color 0.3s ease-in-out;
 }
 
 .a-link,
@@ -453,6 +456,11 @@ a:hover {
   color: #{$link_color_hover};
   text-decoration: #{$link_underline_hover};
   outline-width: 0; // reset
+  //   button {
+  //   color: white;
+  //   border: 1px black;
+  //   background-color: red;
+  // }
 }
 
 .a-active,
@@ -624,6 +632,13 @@ textarea {
   resize: vertical;
 }
 
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+} // from bootstrap
+
 
 [type="checkbox"],
 [type="radio"] {
@@ -654,6 +669,10 @@ textarea {
 [disabled] {
   cursor: default
 }
+
+// html input[disabled] {
+//   cursor: default;
+// }
 
 progress, meter {
   display: inline-block;

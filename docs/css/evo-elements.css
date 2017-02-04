@@ -158,7 +158,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: normal:};
+  font-size: normal;
   line-height: 1.4375;
   color: normal;
   background-color: #fcfbf5;
@@ -315,7 +315,11 @@ a {
   font-weight: normal;
   background-color: transparent;
   text-decoration: none;
-  -webkit-text-decoration-skip: objects; }
+  -webkit-text-decoration-skip: objects;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
 
 .a-link,
 a:link {
@@ -329,7 +333,7 @@ a:visited {
 
 .a-hover,
 a:hover {
-  color: darker(#00aeef, 75%);
+  color: maroon;
   text-decoration: none;
   outline-width: 0; }
 
@@ -441,6 +445,12 @@ textarea {
   min-height: 50px;
   border-radius: 3px;
   resize: vertical; }
+
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
 
 [type="checkbox"],
 [type="radio"] {
@@ -890,70 +900,81 @@ pre.code-short > code {
 .view-tall-0 {
   height: 0vh; }
 
-.position-demo {
-  background-color: #bbb;
-  color: white;
-  height: 400px; }
-
-.evo-position-container {
+.evo-position,
+.position-relative {
   position: relative; }
 
-.evo-position-top-left {
+.position-absolute {
+  position: absolute; }
+
+.position-fixed {
+  position: fixed; }
+
+.position-top-left {
   position: absolute;
   left: 0;
   top: 0; }
 
-.evo-position-top-right {
+.position-top-right {
   position: absolute;
   right: 0;
   top: 0; }
 
-.evo-position-bottom-left {
+.position-bottom-left {
   position: absolute;
   left: 0;
   bottom: 0; }
 
-.evo-position-bottom-right {
+.position-bottom-right {
   position: absolute;
   right: 0;
   bottom: 0; }
 
-.evo-position-middle {
+.position-middle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-.evo-position-left {
+.position-left {
   position: absolute;
   top: 50%;
   left: 0%;
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%); }
 
-.evo-position-right {
+.position-right {
   position: absolute;
   top: 50%;
   right: 0%;
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%); }
 
-.evo-position-top-middle {
+.position-top-middle {
   position: absolute;
   left: 50%;
   top: 0;
   transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%); }
 
-.evo-position-bottom-middle {
+.position-bottom-middle {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%); }
 
-.flex-center {
+.center-horizontal {
+  margin-right: auto;
+  margin-left: auto; }
+
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); }
+
+.flex-center-vertical {
   display: flex;
   align-items: center; }
 
@@ -4552,74 +4573,17 @@ ul.evo-list-bullets-color {
   background: url(../image/monolake.jpg) center center/cover no-repeat;
   background: url(https://unsplash.it/1024/963?random) center center/cover no-repeat; }
 
+.image-bg-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .color-fpo {
   color: #d9d9d9; }
 
 .color-bg-fpo {
   background-color: #d9d9d9; }
-
-.image-16-9 {
-  padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */ }
-
-.image-4-3 {
-  padding-top: 75%;
-  /* 4:3 Aspect Ratio */ }
-
-.image-3-2 {
-  padding-top: 66.66%;
-  /* 3:2 Aspect Ratio */ }
-
-.image-8-5 {
-  padding-top: 62.5%;
-  /* 8:5 Aspect Ratio */ }
-
-.aspect-ratio {
-  height: 0;
-  position: relative; }
-
-.aspect-ratio--16x9 {
-  padding-bottom: 56.25%; }
-
-.aspect-ratio--9x16 {
-  padding-bottom: 177.77%; }
-
-.aspect-ratio--4x3 {
-  padding-bottom: 75%; }
-
-.aspect-ratio--3x4 {
-  padding-bottom: 133.33%; }
-
-.aspect-ratio--6x4 {
-  padding-bottom: 66.6%; }
-
-.aspect-ratio--4x6 {
-  padding-bottom: 150%; }
-
-.aspect-ratio--8x5 {
-  padding-bottom: 62.5%; }
-
-.aspect-ratio--5x8 {
-  padding-bottom: 160%; }
-
-.aspect-ratio--7x5 {
-  padding-bottom: 71.42%; }
-
-.aspect-ratio--5x7 {
-  padding-bottom: 140%; }
-
-.aspect-ratio--1x1 {
-  padding-bottom: 100%; }
-
-.aspect-ratio--object {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 6; }
 
 .evo-image-round {
   border-top-right-radius: 1rem;
@@ -4630,6 +4594,66 @@ ul.evo-list-bullets-color {
 .evo-image-reset {
   border: 0;
   border-style: none; }
+
+.image-ratio {
+  height: 0;
+  position: relative; }
+
+.image-ratio-1-1 {
+  padding-top: 100%; }
+
+.image-ratio-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6; }
+
+.image-ratio-16-9 {
+  padding-top: 56.25%; }
+
+.image-ratio-9-16 {
+  padding-top: 177.77%; }
+
+.image-ratio-5-8 {
+  padding-top: 160%; }
+
+.image-ratio-8-5 {
+  padding-top: 62.5%; }
+
+.image-ratio-5-7 {
+  padding-top: 140%; }
+
+.image-ratio-7-5 {
+  padding-top: 71.42%; }
+
+.image-ratio-4-6 {
+  padding-top: 150%; }
+
+.image-ratio-6-4 {
+  padding-top: 66.6%; }
+
+.image-ratio-4-3 {
+  padding-top: 75%; }
+
+.image-ratio-3-4 {
+  padding-top: 133.33%; }
+
+.image-ratio-3-2 {
+  padding-top: 66.66%; }
+
+.image-bg-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-device-width: 1024px) {
+  .image-bg-parallax {
+    background-attachment: scroll; } }
 
 hr {
   display: block;
@@ -7301,29 +7325,10 @@ input[type=radio]:checked + label:before {
   padding-left: .5px; }
 
 button {
-  display: inline-block;
-  padding-top: 1.215rem;
-  padding-bottom: 1.155rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.9rem;
-  border: 1px solid; }
-
-button:hover {
-  background-color: black; }
-
-.evo-button-base {
-  line-height: 0rem; }
-
-.evo-button-bold {
-  font-weight: bold;
-  line-height: 0rem; }
-
-.evo-button-caps {
-  text-transform: uppercase;
-  line-height: 0rem; }
-
-.evo-button-bold-caps {
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 0rem; }
+  font-size: 1rem;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid;
+  display: inline-block; }

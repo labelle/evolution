@@ -1,0 +1,22 @@
+///*      I M A G E   P A R A L L A X     */
+
+// Basic fixed-position image parallax
+
+@import "../variables";
+
+
+// http://www.w3schools.com/howto/howto_css_parallax.asp
+.image-bg-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+// Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed
+@media only screen and (max-device-width: 1024px) {
+    .image-bg-parallax {
+        background-attachment: scroll;
+    }
+}

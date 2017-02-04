@@ -5,87 +5,85 @@
 @import "../variables";
 
 
-
-// Just for the website
-
-
-.position-demo {
-   background-color: #bbb;
-   color:white;
-   height: 400px;
-}
-
-
 // http://www.w3schools.com/w3css/w3css_display.asp
 
 
-// This must go on the container
-#{$evo}-position-container {
-    position: relative
+// This must go on the container for the absolute positions below
+#{$evo}-position,
+.position-relative {
+    position: relative;
 }
 
-#{$evo}-position-top-left {
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.position-top-left {
     position: absolute;
     left: 0;
-    top: 0
+    top: 0;
 }
 
-#{$evo}-position-top-right {
+.position-top-right {
     position: absolute;
     right: 0;
-    top: 0
+    top: 0;
 }
 
-#{$evo}-position-bottom-left {
+.position-bottom-left {
     position: absolute;
     left: 0;
-    bottom: 0
+    bottom: 0;
 }
 
-#{$evo}-position-bottom-right {
+.position-bottom-right {
     position: absolute;
     right: 0;
-    bottom: 0
+    bottom: 0;
 }
 
-#{$evo}-position-middle {
+.position-middle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%);
 }
 
-#{$evo}-position-left {
+.position-left {
     position: absolute;
     top: 50%;
     left: 0%;
     transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
+    -ms-transform: translate(-0%, -50%);
 }
 
-#{$evo}-position-right {
+.position-right {
     position: absolute;
     top: 50%;
     right: 0%;
     transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
+    -ms-transform: translate(0%, -50%);
 }
 
-#{$evo}-position-top-middle {
+.position-top-middle {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
+    -ms-transform: translate(-50%, 0%);
 }
 
-#{$evo}-position-bottom-middle {
+.position-bottom-middle {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
+    -ms-transform: translate(-50%, 0%);
 }
 
 // #{$evo}-position-container:hover #{$evo}-position-hover {
@@ -101,14 +99,37 @@
 // }
 
 
+// .position-height-100 {
+//     height:100%;
+// }
+
+// http://www.w3schools.com/howto/howto_css_center_website.asp
+// Horizontal centering
+.center-horizontal {
+    // max-width: 100px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// does not require parent container?
+
+// vertical centering
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+
+
 // Flex
 // http://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically#19027949
 
-.flex-center {
+.flex-center-vertical {
     display: flex;
     align-items: center;
 }
-
 
 // Tachyons flex classes
 // Make a dedicated flex position and alignment page?

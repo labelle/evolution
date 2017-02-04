@@ -16,6 +16,16 @@
         <link rel="stylesheet" href="css/evo-elements.css">
 
 <style>
+
+
+/*Just for the website*/
+.position-demo {
+   background-color: black; /* #bbb*/
+   color:white;
+   height: 400px;
+}
+
+
 </style>
 </head>
 <body class="site-container">
@@ -50,34 +60,94 @@
 <div class="evo-space"></div>
 
 
-<div class="evo-position-container position-demo">
-  <div class="evo-position-top-left">Top Left</div>
-  <div class="evo-position-top-right">Top Right</div>
-  <div class="evo-position-bottom-left">Bottom Left</div>
-  <div class="evo-position-bottom-right">Bottom Right</div>
-  <div class="evo-position-left">Left</div>
-  <div class="evo-position-right">Right</div>
-  <div class="evo-position-middle">Middle</div>
-  <div class="evo-position-top-middle">Top Middle</div>
-  <div class="evo-position-bottom-middle">Bottom Middle</div>
+<div class="evo-position position-demo">
+  <div class="position-top-left">Top Left</div>
+  <div class="position-top-right">Top Right</div>
+  <div class="position-bottom-left">Bottom Left</div>
+  <div class="position-bottom-right">Bottom Right</div>
+  <div class="position-left">Left</div>
+  <div class="position-right">Right</div>
+  <div class="position-middle">Middle</div>
+  <div class="position-top-middle">Top Middle</div>
+  <div class="position-bottom-middle">Bottom Middle</div>
 </div>
 
 <div class="evo-space-8 clearfix"></div>
 
-<p class="evo-measure-wide">The position classes are helpful for displaying content within a container.</p>
+<p class="evo-measure">These absolute position classes are helpful for displaying content within a container.</p>
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-inline-code evo-box evo-box-1">
 
-   &lt;div class="evo-position-top-left"&gt;Top Left&lt;/div&gt;
-   &lt;div class="evo-position-top-right"&gt;Top Right&lt;/div&gt;
-   &lt;div class="evo-position-bottom-left"&gt;Bottom Left&lt;/div&gt;
-   &lt;div class="evo-position-bottom-right"&gt;Bottom Right&lt;/div&gt;
-   &lt;div class="evo-position-left"&gt;Left&lt;/div&gt;
-   &lt;div class="evo-position-right"&gt;Right&lt;/div&gt;
-   &lt;div class="evo-position-middle"&gt;Middle&lt;/div&gt;
-   &lt;div class="evo-position-top-middle"&gt;Top Middle&lt;/div&gt;
-   &lt;div class="evo-position-bottom-middle"&gt;Bottom Middle&lt;/div&gt;
+   &lt;div class="position-top-left"&gt;Top Left&lt;/div&gt;
+   &lt;div class="position-top-right"&gt;Top Right&lt;/div&gt;
+   &lt;div class="position-bottom-left"&gt;Bottom Left&lt;/div&gt;
+   &lt;div class="position-bottom-right"&gt;Bottom Right&lt;/div&gt;
+   &lt;div class="position-left"&gt;Left&lt;/div&gt;
+   &lt;div class="position-right"&gt;Right&lt;/div&gt;
+   &lt;div class="position-middle"&gt;Middle&lt;/div&gt;
+   &lt;div class="position-top-middle"&gt;Top Middle&lt;/div&gt;
+   &lt;div class="position-bottom-middle"&gt;Bottom Middle&lt;/div&gt;
+
+</pre>
+
+<div class="evo-space-20 clearfix"></div>
+
+</section>
+
+
+
+<!-- Center Horizontal -->
+
+<section id="evoPositionCenterHorizontal">
+
+<h2 class="evo-text-6">Center Horizontal</h2>
+
+<div class="evo-space"></div>
+
+<div class="evo-box evo-box-1" style="height: 400px;">
+<div class="center-horizontal evo-measure-1">
+  <div class="text-center" style="background-color: black; color:white;">object</div>
+  </div>
+</div>
+
+<div class="evo-space-8 clearfix"></div>
+
+<p class="evo-measure">Simple non-flexbox solution for centering content horizontally. Place in the parent container to the object you want centered, along with a max-width class such as <code>.evo-measure-1</code>. Useful for centering a website.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;div class="center-horizontal evo-measure-1"&gt;&lt;div&gt;object&lt;/div&gt;&lt;/div&gt;
+
+</pre>
+
+
+<div class="evo-space-19 clearfix"></div>
+
+</section>
+
+
+<!-- Center Vertical -->
+
+<section id="evoPositionCenterVertical">
+
+<h2 class="evo-text-6">Center Vertical</h2>
+
+<div class="evo-space"></div>
+
+<div class="evo-box evo-box-1" style="height: 400px;">
+  <span class="center-vertical" style="background-color: black; color:white;">object</span>
+</div>
+
+<div class="evo-space-8 clearfix"></div>
+
+<p class="evo-measure">Simple non-flexbox solution for centering content vertically. Place on the object itself that you want centered.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;div class="center-vertical"&gt;object&lt;/div&gt;
 
 </pre>
 
@@ -88,33 +158,36 @@
 
 
 
-<!-- Layout Position -->
+
+
+<!-- Flex Layout Position -->
 
 <section id="evoPositionFlexCenter">
 
-<h2 class="evo-text-6">Flex Center</h2>
+<h2 class="evo-text-6">Flex Center Vertical</h2>
 
 <div class="evo-space"></div>
 
-<div class="flex-center evo-box evo-box-1" style="height: 400px;">
+<div class="flex-center-vertical evo-box evo-box-1" style="height: 400px;">
   <span style="background-color: black; color:white;">object</span>
 </div>
 
 <div class="evo-space-8 clearfix"></div>
 
-<p class="evo-measure-wide">Simple flexbox solution for centering content vertically.</p>
+<p class="evo-measure-wide">Simple flexbox solution for centering content vertically. Place in the parent container to the object you want centered.</p>
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-inline-code evo-box evo-box-1">
 
-   &lt;div class="flex-center"&gt;object&lt;/div&gt;
+   &lt;div class="flex-center-vertical"&gt;object&lt;/div&gt;
 
 </pre>
 
 
-<div class="evo-space-19 clearfix"></div>
+<div class="evo-space-20 clearfix"></div>
 
 </section>
+
 
 
 </main>
