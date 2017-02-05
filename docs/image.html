@@ -16,6 +16,24 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
+
+/* http://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.image-ratio-fill {
+     opacity: 0;
+     transition: .5s ease;
+     background-color: #008CBA;
+}
+
+.position-relative:hover .image-ratio-fill {
+    opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+}
+
+
 </style>
 </head>
 <body class="site-container">
@@ -56,43 +74,73 @@ evo-image
 
 <div class="four-up">
 image-square (needs fixing)
-<img src="image/monolake.jpg" class="image-responsive image-square" />
+<img src="image/monolake.jpg" class="image-square" />
 </div>
 
 <div class="four-up">
 image-round
-<img src="image/monolake.jpg" class="image-responsive evo-image-round" />
+<img src="image/monolake.jpg" class="evo-image-round" />
+</div>
+
+<div class="four-up">
+image-circle (needs fixing1)
+<img src="image/monolake.jpg" style="width:100%;border-radius:50%;padding-bottom:100%;"/>
+</div>
+
+<div class="four-up">
+image-circle (needs fixing2)
+<img src="image/monolake.jpg" class="evo-image-round" style="width:100%;border-radius:50%;"/>
 </div>
 
 <div class="four-up">
 image-circle (needs fixing)
-<img src="image/monolake.jpg" class="image-responsive image-circle" />
+<img src="image/monolake.jpg" class="image-bg image-circle image-bg-fpo" style="padding-top:100%;"/>
 </div>
 
 <div class="evo-space-10 clearfix"></div>
 
 </section>
 
+<section>
+
+<!-- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade -->
+<div class="four-up position-relative">
+  <img src="image/monolake.jpg" alt="Avatar" class="image">
+  <div class="image-ratio-fill">
+    <div class="text position-middle">Hello World</div>
+  </div>
+</div>
+
+<div class="evo-space-10 clearfix"></div>
+</section>
 
 
 
 
-<!-- Image Ratio -->
 
-<!-- 
+<!-- Image Construction -->
+
+
 <section id="evoImageRatio">
 
-<h2 class="evo-text-6">evo-image-[ratio]</h2>
+<h2 class="evo-text-6">How to construct an image</h2>
 
 <div class="evo-space"></div>
 
+evo-image-16-9 tachyons
+<div class="image-ratio image-ratio-16-9">
+    <div class="image-ratio-fill cover image-bg-fpo"></div>
+  </div>
 
-evo-image-16-9
-<img src="image/monolake.jpg" class="image-responsive image-16-9" />
+
+evo-image-16-9 just on img bg
+<img class="image-bg image-bg-fpo image-ratio-16-9" />
+
+
 
 <div class="evo-space-10 clearfix"></div>
 
-</section> -->
+</section>
 
 
 

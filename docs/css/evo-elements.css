@@ -4549,11 +4549,11 @@ ul.evo-list-bullets-color {
 
 .image-circle {
   border-radius: 50%;
-  padding-bottom: 100%; }
+  padding-top: 100%; }
 
 .image-square {
   width: 100%;
-  padding-bottom: 100%;
+  padding-top: 100%;
   border-radius: 0 !important; }
 
 .image-bg {
@@ -4584,6 +4584,32 @@ ul.evo-list-bullets-color {
 
 .color-bg-fpo {
   background-color: #d9d9d9; }
+
+.cover {
+  background-size: cover !important; }
+
+.contain {
+  background-size: contain !important; }
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+.bg-top {
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.bg-right {
+  background-repeat: no-repeat;
+  background-position: 100%; }
+
+.bg-bottom {
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.bg-left {
+  background-repeat: no-repeat;
+  background-position: 0; }
 
 .evo-image-round {
   border-top-right-radius: 1rem;
@@ -4630,20 +4656,19 @@ ul.evo-list-bullets-color {
 .image-ratio-7-5 {
   padding-top: 71.42%; }
 
-.image-ratio-4-6 {
-  padding-top: 150%; }
-
+.image-ratio-3-2,
 .image-ratio-6-4 {
   padding-top: 66.6%; }
+
+.image-ratio-2-3,
+.image-ratio-4-6 {
+  padding-top: 150%; }
 
 .image-ratio-4-3 {
   padding-top: 75%; }
 
 .image-ratio-3-4 {
   padding-top: 133.33%; }
-
-.image-ratio-3-2 {
-  padding-top: 66.66%; }
 
 .image-bg-parallax {
   background-attachment: fixed;
