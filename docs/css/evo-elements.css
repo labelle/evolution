@@ -3764,7 +3764,7 @@ pre.code-short > code {
 @font-face {
   font-family: 'ebenezerregular';
   src: url("../font/ebenezer-webfont.eot");
-  src: local("☺"), url("../font/ebenezer-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ebenezer-webfont.woff2") format("woff2"), url("../font/ebenezer-webfont.woff") format("woff"), url("../font/ebenezer-webfont.ttf") format("truetype"), url("../font/ebenezer-webfont.svg#ebenezerregular") format("svg");
+  src: local("☺"), url("../font/ebenezer-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ebenezer-webfont.woff") format("woff"), url("../font/ebenezer-webfont.ttf") format("truetype"), url("../font/ebenezer-webfont.svg#ebenezerregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
