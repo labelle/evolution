@@ -1,0 +1,64 @@
+///*      I M A G E   S I Z E     */
+
+// Basic image sizes
+
+@import "../variables";
+
+
+// From evolution version 1.0
+
+// base
+#{evo}-image {
+    width: 100%
+    display: block;
+    float: left;
+    height: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-color: #{$color_fpo};
+    // border-style: none;
+    // border: 0;
+}
+
+#{evo}-image-square {
+    @extend #{evo}-image;
+    padding-top: 100%;
+}
+
+
+#{evo}-image-1 { @extend .evo-image; padding-top: 1%; }
+#{evo}-image-2 { @extend .evo-image; padding-top: 2%; }
+#{evo}-image-3 { @extend .evo-image; padding-top: 3%; }
+#{evo}-image-4 { @extend .evo-image; padding-top: 4%; }
+#{evo}-image-5 { @extend .evo-image; padding-top: 5%; }
+#{evo}-image-6 { @extend .evo-image; padding-top: 6%; }
+#{evo}-image-7 { @extend .evo-image; padding-top: 7%; }
+#{evo}-image-8 { @extend .evo-image; padding-top: 8%; }
+#{evo}-image-9 { @extend .evo-image; padding-top: 9%; }
+#{evo}-image-10 { @extend .evo-image; padding-top: 10%; }
+#{evo}-image-11 { @extend .evo-image; padding-top: 11%; }
+#{evo}-image-12 { @extend .evo-image; padding-top: 12%; }
+#{evo}-image-13 { @extend .evo-image; padding-top: 14%; }
+#{evo}-image-14 { @extend .evo-image; padding-top: 16%; }
+#{evo}-image-15 { @extend .evo-image; padding-top: 18%; }
+#{evo}-image-16 { @extend .evo-image; padding-top: 21%; }
+#{evo}-image-17 { @extend .evo-image; padding-top: 23%; }
+#{evo}-image-18 { @extend .evo-image; padding-top: 30%; }
+#{evo}-image-19 { @extend .evo-image; padding-top: 37%; }
+#{evo}-image-20 { @extend .evo-image; padding-top: 43%; }
+#{evo}-image-21 { @extend .evo-image; padding-top: 48%; }
+#{evo}-image-22 { @extend .evo-image; padding-top: 60%; }
+#{evo}-image-23 { @extend .evo-image; padding-top: 80%; }
+#{evo}-image-24 { @extend .evo-image; padding-top: 96%; }
+#{evo}-image-25 { @extend .evo-image; padding-top: 128%; }
+#{evo}-image-26 { @extend .evo-image; padding-top: 160%; }
+#{evo}-image-27 { @extend .evo-image; padding-top: 208%; }
+#{evo}-image-28 { @extend .evo-image; padding-top: 256%; }
+#{evo}-image-29 { @extend .evo-image; padding-top: 336%; }
+#{evo}-image-30 { @extend .evo-image; padding-top: 416%; }
+#{evo}-image-31 { @extend .evo-image; padding-top: 544%; }
+#{evo}-image-32 { @extend .evo-image; padding-top: 672%; }
+#{evo}-image-33 { @extend .evo-image; padding-top: 880%; }
+#{evo}-image-34 { @extend .evo-image; padding-top: 1088%; }
