@@ -1022,6 +1022,12 @@ word-spacing: .5em;
     h3 {
         page-break-after: avoid;
     }
+
+// // Force printing of background images in chrome
+// // http://stackoverflow.com/questions/6670151/how-can-i-force-browsers-to-print-background-images-in-css
+//     { -webkit-print-color-adjust: exact;
+//     color-adjust: exact; }
+
 }
 
 // Check this out for additional style

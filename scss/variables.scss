@@ -71,7 +71,7 @@ $html_font_variant:					normal !default; // or small-caps if the font supports i
 $html_font_weight:                  normal !default; // or bolder or lighter or 400
 $html_line_height:                  1.4375 !default; // define this in body
 $html_font_stretch:                 normal !default; // or condensed or expanded
-$html_font_size:                    normal !default; // define this in body
+$html_font_size:                    1rem !default; // define this in body
 $html_font_family:                  #{$adobe-source-sans}; // or #{$sans-serif}
 $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 
@@ -86,9 +86,9 @@ $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 // $body_tap_highlight_color:          rgba(0, 0, 0, 0);
 
 // Body
-$body_font_size:                    normal !default; // or 1rem or 16px or 100%
+$body_font_size:                    1rem !default; // or 1rem or 16px or 100%
 $body_line_height:                  1.4375 !default; // no em, rem, px, %
-$body_font_color:                   normal !default; // or black
+$body_font_color:                   initial !default; // or black
 $body_background_color:             #fcfbf5 !default; // or white or black
 
 

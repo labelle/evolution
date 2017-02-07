@@ -48,6 +48,7 @@ $image_corner_bottom_left:   #{$u-23}rem;
 }
 
 // This forces a float?
+// This closely matches the original evolution 1.0 images
 .image-bg {
      display: block;
      float: left;
@@ -57,7 +58,15 @@ $image_corner_bottom_left:   #{$u-23}rem;
      background-size: cover;
      background-repeat: no-repeat;
      vertical-align: top;
+     // background-color: gray; // #{$color_fpo};
+    // border-style: none;
+    // border: 0;
 }
+
+.image-bg-fpo-test {
+    background-image: url(#{$image_fpo});
+}
+
 
 .image-bg-fpo {
 	background: url(#{$image_fpo}) center center/cover no-repeat;
