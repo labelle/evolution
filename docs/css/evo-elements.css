@@ -556,6 +556,9 @@ progress, meter {
   zoom: 1; }
 
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
+.debug * {
+  outline: 1px solid gold; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -619,8 +622,7 @@ progress, meter {
     widows: 3; }
   h2,
   h3 {
-    page-break-after: avoid; }
-  -webkit-print-color-adjust: exact; }
+    page-break-after: avoid; } }
 
 .browserupgrade {
   margin: 0.2em 0;
