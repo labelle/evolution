@@ -24,6 +24,9 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var neat = require('node-neat').includePaths;
+var postcss      = require('gulp-postcss');
+var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
 
 /* Scripts task */
 gulp.task('scripts', function() {
@@ -49,6 +52,9 @@ gulp.task('brand', function () {
     .pipe(gulp.dest('docs/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('docs/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
@@ -64,6 +70,9 @@ gulp.task('evolution', function () {
     .pipe(gulp.dest('docs/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('docs/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
@@ -79,6 +88,9 @@ gulp.task('elements', function () {
     .pipe(gulp.dest('docs/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('docs/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
@@ -98,6 +110,7 @@ gulp.task('reset', function () {
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
+
 
 /* Reload task */
 gulp.task('bs-reload', function () {
