@@ -73,8 +73,8 @@
 @import "elements/space";
 @import "elements/space_block";
 // @import "elements/space_view";
-@import "elements/space_outside";
-@import "elements/space_inside";
+@import "elements/space_margin";
+@import "elements/space_padding";
 // @import "elements/space_effect";
 // @import "elements/space_play";
 
@@ -142,11 +142,14 @@
 @import "elements/box_shape";
 @import "elements/box_size";
 @import "elements/box_color";
+@import "elements/box_gray";
 @import "elements/box_effect";
 // @import "elements/box_play";
 
 // Table
 @import "elements/table";
+@import "elements/table_space";
+@import "elements/table_style";
 
 // Form
 @import "elements/form";

@@ -6,53 +6,53 @@
 
 
 // box border styles
-#{$evo}-box-solid          { border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid; }
-#{$evo}-box-dotted         { border-top-style: dotted; border-bottom-style: dotted; border-right-style: dotted; border-left-style: dotted; }
-#{$evo}-box-dashed         { border-top-style: dashed; border-bottom-style: dashed; border-right-style: dashed; border-left-style: dashed; }
-#{$evo}-box-double         { border-top-style: double; border-bottom-style: double; border-right-style: double; border-left-style: double; }
-// #{$evo}-box-groove         { border-top-style: groove; border-bottom-style: groove; border-right-style: groove; border-left-style: groove; }
-// #{$evo}-box-ridge          { border-top-style: ridge; border-bottom-style: ridge; border-right-style: ridge; border-left-style: ridge; }
-// #{$evo}-box-inset          { border-top-style: inset; border-bottom-style: inset; border-right-style: inset; border-left-style: inset; }
-// #{$evo}-box-outset         { border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
+.box-solid          { border-top-style: solid; border-bottom-style: solid; border-right-style: solid; border-left-style: solid; }
+.box-dotted         { border-top-style: dotted; border-bottom-style: dotted; border-right-style: dotted; border-left-style: dotted; }
+.box-dashed         { border-top-style: dashed; border-bottom-style: dashed; border-right-style: dashed; border-left-style: dashed; }
+.box-double         { border-top-style: double; border-bottom-style: double; border-right-style: double; border-left-style: double; }
+// .box-groove         { border-top-style: groove; border-bottom-style: groove; border-right-style: groove; border-left-style: groove; }
+// .box-ridge          { border-top-style: ridge; border-bottom-style: ridge; border-right-style: ridge; border-left-style: ridge; }
+// .box-inset          { border-top-style: inset; border-bottom-style: inset; border-right-style: inset; border-left-style: inset; }
+// .box-outset         { border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
 
 
 // box border side styles
 
-#{$evo}-box-top-solid           { border-top-style: solid; }
-#{$evo}-box-top-dotted          { border-top-style: dotted; }
-#{$evo}-box-top-dashed          { border-top-style: dashed; }
-#{$evo}-box-top-double          { border-top-style: double; }
-// #{$evo}-box-top-groove          { border-top-style: groove; }
-// #{$evo}-box-top-ridge           { border-top-style: ridge; }
-// #{$evo}-box-top-inset           { border-top-style: inset; }
-// #{$evo}-box-top-outset          { border-top-style: outset; }
+.box-top-solid           { border-top-style: solid; }
+.box-top-dotted          { border-top-style: dotted; }
+.box-top-dashed          { border-top-style: dashed; }
+.box-top-double          { border-top-style: double; }
+// .box-top-groove          { border-top-style: groove; }
+// .box-top-ridge           { border-top-style: ridge; }
+// .box-top-inset           { border-top-style: inset; }
+// .box-top-outset          { border-top-style: outset; }
 
-#{$evo}-box-bottom-solid        { border-bottom-style: solid; }
-#{$evo}-box-bottom-dotted       { border-bottom-style: dotted; }
-#{$evo}-box-bottom-dashed       { border-bottom-style: dashed; }
-#{$evo}-box-bottom-double       { border-bottom-style: double; }
-// #{$evo}-box-bottom-groove       { border-bottom-style: groove; }
-// #{$evo}-box-bottom-ridge        { border-bottom-style: ridge; }
-// #{$evo}-box-bottom-inset        { border-bottom-style: inset; }
-// #{$evo}-box-bottom-outset       { border-bottom-style: outset; }
+.box-bottom-solid        { border-bottom-style: solid; }
+.box-bottom-dotted       { border-bottom-style: dotted; }
+.box-bottom-dashed       { border-bottom-style: dashed; }
+.box-bottom-double       { border-bottom-style: double; }
+// .box-bottom-groove       { border-bottom-style: groove; }
+// .box-bottom-ridge        { border-bottom-style: ridge; }
+// .box-bottom-inset        { border-bottom-style: inset; }
+// .box-bottom-outset       { border-bottom-style: outset; }
 
-#{$evo}-box-right-solid         { border-right-style: solid; }
-#{$evo}-box-right-dotted        { border-right-style: dotted; }
-#{$evo}-box-right-dashed        { border-right-style: dashed; }
-#{$evo}-box-right-double        { border-right-style: double; }
-// #{$evo}-box-right-groove        { border-right-style: groove; }
-// #{$evo}-box-right-ridge         { border-right-style: ridge; }
-// #{$evo}-box-right-inset         { border-right-style: inset; }
-// #{$evo}-box-right-outset        { border-right-style: outset; }
+.box-right-solid         { border-right-style: solid; }
+.box-right-dotted        { border-right-style: dotted; }
+.box-right-dashed        { border-right-style: dashed; }
+.box-right-double        { border-right-style: double; }
+// .box-right-groove        { border-right-style: groove; }
+// .box-right-ridge         { border-right-style: ridge; }
+// .box-right-inset         { border-right-style: inset; }
+// .box-right-outset        { border-right-style: outset; }
 
-#{$evo}-box-left-solid          { border-left-style: solid; }
-#{$evo}-box-left-dotted         { border-left-style: dotted; }
-#{$evo}-box-left-dashed         { border-left-style: dashed; }
-#{$evo}-box-left-double         { border-left-style: double; }
-// #{$evo}-box-left-groove         { border-left-style: groove; }
-// #{$evo}-box-left-ridge          { border-left-style: ridge; }
-// #{$evo}-box-left-inset          { border-left-style: inset; }
-// #{$evo}-box-left-outset         { border-left-style: outset; }
+.box-left-solid          { border-left-style: solid; }
+.box-left-dotted         { border-left-style: dotted; }
+.box-left-dashed         { border-left-style: dashed; }
+.box-left-double         { border-left-style: double; }
+// .box-left-groove         { border-left-style: groove; }
+// .box-left-ridge          { border-left-style: ridge; }
+// .box-left-inset          { border-left-style: inset; }
+// .box-left-outset         { border-left-style: outset; }
 
 
 

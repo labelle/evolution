@@ -7,44 +7,44 @@
 
 
 // basic shapes
-#{$evo}-box-circle  { border-radius: 50%; }
-#{$evo}-box-pill    { border-radius: 9999px; }
-#{$evo}-box-square  { border-radius: 0; }
+.box-circle  { border-radius: 50%; }
+.box-pill    { border-radius: 9999px; }
+.box-square  { border-radius: 0; }
 
 
 
 // all box corners - scale
 // Based on _scale.scss in variables
-#{$evo}-box-round-0 { border-radius: #{$u-15}rem; }
-#{$evo}-box-round-1 { border-radius: #{$u-16}rem; }
-#{$evo}-box-round-2 { border-radius: #{$u-17}rem; }
-#{$evo}-box-round-3 { border-radius: #{$u-18}rem; }
-#{$evo}-box-round-4 { border-radius: #{$u-19}rem; }
-#{$evo}-box-round-5 { border-radius: #{$u-20}rem; }
-#{$evo}-box-round-6 { border-radius: #{$u-21}rem; }
-#{$evo}-box-round-7 { border-radius: #{$u-22}rem; }
-#{$evo}-box-round-8 { border-radius: #{$u-23}rem; }
-#{$evo}-box-round-9 { border-radius: #{$u-24}rem; }
-#{$evo}-box-round-10 { border-radius: #{$u-25}rem; }
-#{$evo}-box-round-11 { border-radius: #{$u-26}rem; }
-#{$evo}-box-round-12 { border-radius: #{$u-27}rem; }
-#{$evo}-box-round-13 { border-radius: #{$u-28}rem; }
-#{$evo}-box-round-14 { border-radius: #{$u-29}rem; }
-#{$evo}-box-round-15 { border-radius: #{$u-30}rem; }
-// #{$evo}-box-round-16 { border-radius: #{$u-31}rem; }
-// #{$evo}-box-round-17 { border-radius: #{$u-32}rem; }
-// #{$evo}-box-round-18 { border-radius: #{$u-33}rem; }
-// #{$evo}-box-round-19 { border-radius: #{$u-34}rem; }
-// #{$evo}-box-round-20 { border-radius: #{$u-35}rem; }
-// #{$evo}-box-round-21 { border-radius: #{$u-36}rem; }
-// #{$evo}-box-round-22 { border-radius: #{$u-37}rem; }
-// #{$evo}-box-round-23 { border-radius: #{$u-38}rem; }
-// #{$evo}-box-round-24 { border-radius: #{$u-39}rem; }
-// #{$evo}-box-round-25 { border-radius: #{$u-40}rem; }
+.box-round-0 { border-radius: #{$u-15}rem; }
+.box-round-1 { border-radius: #{$u-16}rem; }
+.box-round-2 { border-radius: #{$u-17}rem; }
+.box-round-3 { border-radius: #{$u-18}rem; }
+.box-round-4 { border-radius: #{$u-19}rem; }
+.box-round-5 { border-radius: #{$u-20}rem; }
+.box-round-6 { border-radius: #{$u-21}rem; }
+.box-round-7 { border-radius: #{$u-22}rem; }
+.box-round-8 { border-radius: #{$u-23}rem; }
+.box-round-9 { border-radius: #{$u-24}rem; }
+.box-round-10 { border-radius: #{$u-25}rem; }
+.box-round-11 { border-radius: #{$u-26}rem; }
+.box-round-12 { border-radius: #{$u-27}rem; }
+.box-round-13 { border-radius: #{$u-28}rem; }
+.box-round-14 { border-radius: #{$u-29}rem; }
+.box-round-15 { border-radius: #{$u-30}rem; }
+// .box-round-16 { border-radius: #{$u-31}rem; }
+// .box-round-17 { border-radius: #{$u-32}rem; }
+// .box-round-18 { border-radius: #{$u-33}rem; }
+// .box-round-19 { border-radius: #{$u-34}rem; }
+// .box-round-20 { border-radius: #{$u-35}rem; }
+// .box-round-21 { border-radius: #{$u-36}rem; }
+// .box-round-22 { border-radius: #{$u-37}rem; }
+// .box-round-23 { border-radius: #{$u-38}rem; }
+// .box-round-24 { border-radius: #{$u-39}rem; }
+// .box-round-25 { border-radius: #{$u-40}rem; }
 
 
 // box corners are all round 
-#{$evo}-box-round {
+.box-round {
 	border-top-right-radius:    #{$box_corner_top_right};
 	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: #{$box_corner_bottom_right};
@@ -52,7 +52,7 @@
 }
 
 // box top is round
-#{$evo}-box-round-top {
+.box-round-top {
 	border-top-right-radius:    #{$box_corner_top_right};
 	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: 0;
@@ -60,7 +60,7 @@
 }
 
 // box bottom is round
-#{$evo}-box-round-bottom {
+.box-round-bottom {
 	border-top-right-radius:    0;
 	border-top-left-radius:     0;
 	border-bottom-right-radius: #{$box_corner_bottom_right};
@@ -68,7 +68,7 @@
 }
 
 // box right side is round
-#{$evo}-box-round-right {
+.box-round-right {
 	border-top-right-radius:    #{$box_corner_top_right};
 	border-top-left-radius:     0;
 	border-bottom-right-radius: #{$box_corner_bottom_right};
@@ -76,7 +76,7 @@
 }
 
 // box left side is round
-#{$evo}-box-round-left {
+.box-round-left {
 	border-top-right-radius:    0;
 	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: 0;
@@ -84,7 +84,7 @@
 }
 
 // box top left is round
-#{$evo}-box-round-top-left {
+.box-round-top-left {
 	border-top-right-radius:    0;
 	border-top-left-radius:     #{$box_corner_top_left};
 	border-bottom-right-radius: 0;
@@ -92,7 +92,7 @@
 }
 
 // box top right is round
-#{$evo}-box-round-top-right {
+.box-round-top-right {
 	border-top-right-radius:    #{$box_corner_top_right};
 	border-top-left-radius:     0;
 	border-bottom-right-radius: 0;
@@ -100,7 +100,7 @@
 }
 
 // box bottom left is round
-#{$evo}-box-round-bottom-left {
+.box-round-bottom-left {
 	border-top-right-radius:    0;
 	border-top-left-radius:     0;
 	border-bottom-right-radius: 0;
@@ -108,7 +108,7 @@
 }
 
 // box bottom right is round
-#{$evo}-box-round-bottom-right {
+.box-round-bottom-right {
 	border-top-right-radius:    0;
 	border-top-left-radius:     0;
 	border-bottom-right-radius: #{$box_corner_bottom_right};
@@ -123,14 +123,14 @@
 // 2) use of !important to force an override
 
 // force zero radius to pairs of box corners on a single side
-#{$evo}-box-corner-top    { border-top-right-radius: 0 !important; border-top-left-radius: 0 !important; }
-#{$evo}-box-corner-bottom { border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
-#{$evo}-box-corner-left   { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
-#{$evo}-box-corner-right  { border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+.box-corner-top    { border-top-right-radius: 0 !important; border-top-left-radius: 0 !important; }
+.box-corner-bottom { border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+.box-corner-left   { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+.box-corner-right  { border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; }
 
 // force zero radius to invividual box corners
-#{$evo}-box-corner-top-left      { border-top-left-radius: 0 !important; }
-#{$evo}-box-corner-top-right     { border-top-right-radius: 0 !important; }
-#{$evo}-box-corner-bottom-left   { border-bottom-left-radius: 0 !important; }
-#{$evo}-box-corner-bottom-right  { border-bottom-right-radius: 0 !important; }
+.box-corner-top-left      { border-top-left-radius: 0 !important; }
+.box-corner-top-right     { border-top-right-radius: 0 !important; }
+.box-corner-bottom-left   { border-bottom-left-radius: 0 !important; }
+.box-corner-bottom-right  { border-bottom-right-radius: 0 !important; }
 

@@ -1,0 +1,51 @@
+///*      T A B L E   S T Y L E    */
+
+@import "../variables";
+// @import "../variables/scale";
+
+
+.table-lines-dotted {
+
+    th,
+    td {
+    border-bottom: 1px dotted #ccc;
+    // border-bottom-style: dotted;
+}
+}
+
+.table-lines-dashed {
+
+    th,
+    td {
+    border-bottom: 1px dashed #ccc;
+    // border-bottom-style: dotted;
+}
+}
+
+.table-lines-thin {
+
+    th,
+    td {
+    border-bottom: thin solid #ccc;
+    // border-bottom-size: thin;
+}
+}
+
+.table-lines-medium {
+
+    th,
+    td {
+    border-bottom: medium solid #ccc;
+    // border-bottom-size: medium;
+}
+}
+
+.table-lines-thick {
+
+    th,
+    td {
+    border-bottom: thick solid #ccc;
+    // border-bottom-size: thick;
+}
+}
+

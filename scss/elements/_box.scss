@@ -6,7 +6,7 @@
 
 
 // box reset
-#{$evo}-box-reset           { 
+.box-reset           { 
 	border: initial;
 	border-top-width: initial;
 	border-bottom-width: initial;
@@ -22,10 +22,10 @@
 	border-left-color: initial;
 }
 
-#{$evo}-box-top-reset       { border-top-width: initial; border-top-style: initial; border-top-color: initial; }
-#{$evo}-box-bottom-reset    { border-bottom-width: initial;border-bottom-style: initial;  border-bottom-color: initial; }
-#{$evo}-box-right-reset     { border-right-width: initial; border-right-style: initial; border-right-color: initial; }
-#{$evo}-box-left-reset      { border-left-width: initial; border-left-style: initial; border-left-color: initial; }
+.box-top-reset       { border-top-width: initial; border-top-style: initial; border-top-color: initial; }
+.box-bottom-reset    { border-bottom-width: initial;border-bottom-style: initial;  border-bottom-color: initial; }
+.box-right-reset     { border-right-width: initial; border-right-style: initial; border-right-color: initial; }
+.box-left-reset      { border-left-width: initial; border-left-style: initial; border-left-color: initial; }
 
 
 // box base styles
