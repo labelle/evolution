@@ -107,12 +107,15 @@
 
 // List
 @import "elements/list";
-// @import "elements/list_bullet";
-// @import "elements/list_line";
-// @import "elements/list_number";
+@import "elements/list_style";
+@import "elements/list_bullet";
+@import "elements/list_line";
+@import "elements/list_number";
+@import "elements/list_icon";
+
 
 // UI
-// @import "elements/hihlight";
+// @import "elements/highlight";
 
 // Image
 @import "elements/image";

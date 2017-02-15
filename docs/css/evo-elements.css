@@ -4492,7 +4492,18 @@ figcaption.dropcap:first-letter {
   letter-spacing: 2rem;
   text-shadow: 0 0 30px rgba(255, 0, 84, 0.6), 0 0 60px rgba(255, 0, 84, 0.4), 0 0 100px rgba(255, 0, 84, 0.2), 0 0 90px rgba(255, 0, 84, 0.1); }
 
-/* Lists */
+.evo-list, ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc, ol.evo-list, ol.evo-list-decimal, ol.evo-list-decimal-zero, ol.evo-list-lower-alpha, ol.evo-list-upper-alpha, ol.evo-list-lower-latin, ol.evo-list-upper-latin, ol.evo-list-lower-roman, ol.evo-list-upper-roman {
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.275em; }
+
+.evo-list-inline {
+  list-style: none;
+  padding-left: 0;
+  display: inline; }
+  .evo-list-inline li {
+    display: inline; }
+
 .evo-list-none {
   list-style: disc outside none;
   list-style-type: disc;
@@ -4506,11 +4517,6 @@ figcaption.dropcap:first-letter {
   list-style-position: inherit;
   list-style-image: inherit;
   padding-bottom: inherit; }
-
-.evo-list, ul.evo-list, ul.evo-list-circle, ul.evo-list-square, ul.evo-list-disc, ol.evo-list, ol.evo-list-decimal, ol.evo-list-decimal-zero, ol.evo-list-lower-alpha, ol.evo-list-upper-alpha, ol.evo-list-lower-latin, ol.evo-list-upper-latin, ol.evo-list-lower-roman, ol.evo-list-upper-roman {
-  margin-left: 0;
-  padding-left: 0;
-  padding-bottom: 0.275em; }
 
 ul {
   list-style-position: outside; }
@@ -4537,38 +4543,38 @@ ul {
     padding-bottom: initial;
     padding-right: initial; }
 
-ol {
-  list-style-type: decimal;
-  list-style-position: inside; }
-  ol.evo-list-hang {
-    list-style-position: outside; }
-  ol.evo-list-align {
-    list-style-position: inside; }
-  ol.evo-list-decimal {
-    list-style-type: decimal; }
-  ol.evo-list-decimal-zero {
-    list-style-type: decimal-leading-zero; }
-  ol.evo-list-lower-alpha {
-    list-style-type: lower-alpha; }
-  ol.evo-list-upper-alpha {
-    list-style-type: upper-alpha; }
-  ol.evo-list-lower-latin {
-    list-style-type: lower-latin; }
-  ol.evo-list-upper-latin {
-    list-style-type: upper-latin; }
-  ol.evo-list-lower-roman {
-    list-style-type: lower-roman; }
-  ol.evo-list-upper-roman {
-    list-style-type: upper-roman; }
-  ol.evo-list-reset {
-    list-style: decimal;
-    list-style-type: decimal;
-    list-style-position: initial;
-    padding: initial;
-    padding-top: initial;
-    padding-left: initial;
-    padding-bottom: initial;
-    padding-right: initial; }
+.evo-list-bullets li:before {
+  content: '';
+  position: absolute;
+  height: .5em;
+  width: .5em;
+  background-image: url("circle-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -1em;
+  top: .275em; }
+
+.evo-list-bullets li {
+  margin-left: 1em;
+  position: relative;
+  list-style-type: none; }
+
+.evo-list-bullets-color-dot li:before {
+  content: "•";
+  /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #eee;
+  /* Or a color you prefer */ }
+
+.evo-list-bullets-color-dash li:before {
+  content: "–";
+  /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #eee;
+  /* Or a color you prefer */ }
+
+ul.evo-list-bullets-color {
+  list-style-type: none; }
 
 .evo-list-lines {
   margin-bottom: 0.275em;
@@ -4589,81 +4595,6 @@ ol {
       border-bottom-style: solid;
       border-bottom-width: medium;
       border-bottom-color: #000; }
-
-.evo-list-bullets li:before {
-  content: '';
-  position: absolute;
-  height: .5em;
-  width: .5em;
-  background-image: url("circle-solid.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: -1em;
-  top: .275em; }
-
-.evo-list-bullets li {
-  margin-left: 1em;
-  position: relative;
-  list-style-type: none; }
-
-.evo-list-inline {
-  list-style: none;
-  padding-left: 0;
-  display: inline; }
-  .evo-list-inline li {
-    display: inline; }
-
-.evo-list-bullets-color-dot li:before {
-  content: "•";
-  /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: #eee;
-  /* Or a color you prefer */ }
-
-.evo-list-bullets-color-dash li:before {
-  content: "–";
-  /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: #eee;
-  /* Or a color you prefer */ }
-
-ul.evo-list-bullets-color {
-  list-style-type: none; }
-
-.list-counter {
-  counter-reset: my-awesome-counter;
-  margin-top: 1.5em; }
-
-.list-counter,
-.list-counter ol,
-.list-counter ol ol {
-  list-style: none; }
-
-.list-counter li {
-  position: relative;
-  counter-increment: my-awesome-counter;
-  padding-left: 2em; }
-
-.list-counter li::before {
-  position: absolute;
-  top: .5em;
-  left: 0;
-  transform: translateY(-50%);
-  content: counter(my-awesome-counter);
-  background: #662974;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 1.5em;
-  color: white;
-  text-align: center; }
-
-.list-counter ol ol li::before {
-  background: #DE51FF; }
-
-.list-counter ol ol ol li::before {
-  background: #EE9EFF; }
 
 .evo-list-stripe li:nth-child(even),
 .evo-list-stripe-even li:nth-child(even) {
@@ -4880,6 +4811,74 @@ ul.evo-list-bullets-color {
 
 .evo-list-line-bottom-double li:last-child {
   border-bottom-style: double !important; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside; }
+  ol.evo-list-hang {
+    list-style-position: outside; }
+  ol.evo-list-align {
+    list-style-position: inside; }
+  ol.evo-list-decimal {
+    list-style-type: decimal; }
+  ol.evo-list-decimal-zero {
+    list-style-type: decimal-leading-zero; }
+  ol.evo-list-lower-alpha {
+    list-style-type: lower-alpha; }
+  ol.evo-list-upper-alpha {
+    list-style-type: upper-alpha; }
+  ol.evo-list-lower-latin {
+    list-style-type: lower-latin; }
+  ol.evo-list-upper-latin {
+    list-style-type: upper-latin; }
+  ol.evo-list-lower-roman {
+    list-style-type: lower-roman; }
+  ol.evo-list-upper-roman {
+    list-style-type: upper-roman; }
+  ol.evo-list-reset {
+    list-style: decimal;
+    list-style-type: decimal;
+    list-style-position: initial;
+    padding: initial;
+    padding-top: initial;
+    padding-left: initial;
+    padding-bottom: initial;
+    padding-right: initial; }
+
+.list-counter {
+  counter-reset: my-awesome-counter;
+  margin-top: 1.5em; }
+
+.list-counter,
+.list-counter ol,
+.list-counter ol ol {
+  list-style: none; }
+
+.list-counter li {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  padding-left: 2em; }
+
+.list-counter li::before {
+  position: absolute;
+  top: .5em;
+  left: 0;
+  transform: translateY(-50%);
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1.5em;
+  color: white;
+  text-align: center; }
+
+.list-counter ol ol li::before {
+  background: #DE51FF; }
+
+.list-counter ol ol ol li::before {
+  background: #EE9EFF; }
 
 .image {
   background-color: #d9d9d9;

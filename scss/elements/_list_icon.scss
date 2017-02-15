@@ -1,0 +1,106 @@
+///*      L I S T   I C O N    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+// /* Lists */
+// http://alistapart.com/article/taminglists/
+// How to customize lists
+
+
+// Custom bullet images
+
+// https://css-tricks.com/style-list-markers-css/
+// http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
+
+// // List 'list-style-image' approach
+// // Doesn't work so well because the PNG image needs to be the exact size in px
+// // There isn't a way to control the size of the list-style-image
+// #{$evo}-list-bullets {
+//   margin-left:     #{$text_list_margin_left}; // 0
+//   padding-left:    #{$text_list_padding_left}; // 0
+//   list-style-image: url('circle-solid-1x.png');
+//   list-style-position: inside;
+//   background-position: #{$text_bullet_list_icon_background_position};
+//   background-size: #{$text_bullet_list_icon_background_size};
+//   // padding-bottom:  #{$text_list_padding_bottom}; // .25em
+// }
+
+
+
+
+
+
+// // List Background Image Approach
+// #{$evo}-list-bullets li:before {
+// content:''; 
+// // display:inline-block; 
+// position: absolute;
+// height:.5em; 
+// width:.5em; 
+// background-image: #{$bullet_list_icon_background}; 
+// background-size: contain; 
+// background-repeat:no-repeat; 
+// left: -1em;
+// top: .275em;
+// }
+// #{$evo}-list-bullets li {
+//     margin-left: 1em;
+//     position: relative;
+//     list-style-type: none;
+//     // padding-left: -3em;
+// }
+
+
+
+// // #{$evo}-list-bullets {
+// // @extend #{$evo}-list-circle;
+// // & li{
+// // // margin-left: #{$text_list_margin_left};
+// // // padding-left: #{$text_list_padding_left};
+// // // margin-bottom: #{$text_list_margin_bottom};
+// // // line-height: #{$text_list_line_height};
+// // // list-style-type: #{$text_list_style_type};
+// // background-image: #{$text_bullet_list_icon_background};
+// // background-position: #{$text_bullet_list_icon_background_position};
+// // background-size: #{$text_bullet_list_icon_background_size};
+// // }
+// // }
+
+
+// // // List Background Image Approach
+// // #{$evo}-list-bullets li:before {
+// // content:''; 
+// // display:inline-block; 
+// // height:.5em; 
+// // width:.5em; 
+// // background-image: #{$text_bullet_list_icon_background}; 
+// // background-size:contain; 
+// // background-repeat:no-repeat; 
+// // padding-left: 1em; 
+// // }
+// // #{$evo}-list-bullets {
+// // list-style-type: none;
+// // }
+
+
+
+// #{$evo}-list-bullets-color-dot li:before {
+//     content: "•"; /* Insert content that looks like bullets */
+//     padding-right: 8px;
+//     color: #{$gray-lighter}; /* Or a color you prefer */
+// }
+
+// #{$evo}-list-bullets-color-dash li:before {
+//     content: "–"; /* Insert content that looks like bullets */
+//     padding-right: 8px;
+//     color: #{$gray-lighter}; /* Or a color you prefer */
+// }
+
+
+// ul.evo-list-bullets-color {
+//     list-style-type: none; // none
+// }
+
+
