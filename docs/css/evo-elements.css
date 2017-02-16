@@ -161,8 +161,8 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.4375;
-  color: #eeeeee;
-  background-color: #111111;
+  color: #111111;
+  background-color: #eeeeee;
   height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -290,7 +290,10 @@ button {
   font-size: 100%;
   line-height: normal;
   margin: 0;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
+  display: inline-block; }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -635,7 +638,7 @@ progress, meter {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: #111111; }
+  background-color: #eeeeee; }
 
 .filler {
   width: 100%;
@@ -8580,11 +8583,28 @@ input[type=radio]:checked + label:before {
   line-height: 17px;
   padding-left: .5px; }
 
+.evo-button,
+a button,
 button {
   font-size: 1rem;
+  text-align: center;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: transparent;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 1em;
-  padding-right: 1em;
-  border: 1px solid;
-  display: inline-block; }
+  padding-right: 1em; }
+
+.evo-button:hover,
+button:hover {
+  color: red;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: red;
+  background-color: white;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.1s; }

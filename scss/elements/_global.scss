@@ -394,6 +394,9 @@ button {
   line-height: normal; // line-height: 1.15;
   margin: 0;
   border-radius: 3px;
+  border: none; // from w3school
+  text-decoration: none; // from w3school
+  display: inline-block; // from w3school
 }
 
 button::-moz-focus-inner,

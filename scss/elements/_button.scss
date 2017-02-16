@@ -4,35 +4,45 @@
 // @import "../variables/scale";
 // @import "box_mixin";
 
-///* --------------------------- BUTTONS --------------------------- */
-
-
-///* Adjust the non-increment variables for more dramatic effect */
-
+// Button Text
 $button_font_size:                 1rem;
+$button_text_align:                center;
+
+// Button Structure
 $button_padding_top:               .75em;
 $button_padding_bottom:            .75em;
 $button_padding_left:              1em;
 $button_padding_right:             1em;
 
-///* Define button colors */
+// Button transition
+// https://www.w3schools.com/css/css3_transitions.asp
+$button_hover_duration:            0.4s;
+$button_hover_timing:              ease-out;
+$button_hover_delay:               0.1s;
+// $button_hover_transition:          width 2s, height 2s, transform 2s; // not needed
 
-$button_color:                      $black;
-$button_border_color:               $black;
-$button_background_color:           $white;
+// button colors
+$button_color:                      #{$black};
+// $button_border_color:               #{$black};
+$button_background_color:           transparent;
+$button_border_style:               solid;
+$button_border_width:               2px;
+$button_border_color:               #{$black}; // or transparent
+// $button_border:               2px solid #4CAF50; // Green
 
-$button_color_inverse:              $white;
-$button_border_color_inverse:       $white;
-$button_background_color_inverse:   $black;
+// Inverse Colors
+$button_color_inverse:              #{$white};
+$button_border_color_inverse:       #{$white};
+$button_background_color_inverse:   #{$black};
 
-
-
-///* Variables for buttons.scss */
-
-$button_border_inverse:            1px solid; // $button_border_color_inverse
-$button_border_1:                  1px solid; // $button_border_color button 1 thru button 12
-$button_border_2:                  2px solid; // $button_border_color button 13 thru button 24
-$button_border_3:                  3px solid; // $button_border_color button 25 thru button 30
+// button hover colors
+$button_hover_color:                 red;
+// $button_border_color:             $black;
+$button_hover_background_color:      #{$white};
+$button_hover_border_style:          dashed;
+$button_hover_border_width:          2px;
+$button_hover_border_color:          red; // or transparent
+// $button_hover_border:             2px solid #4CAF50; // Green
 
 
 // @mixin padding-left($sizeValue) {
@@ -40,19 +50,49 @@ $button_border_3:                  3px solid; // $button_border_color button 25 
 // }
 
 
+#{$evo}-button,
+a button,
 button {
-     font-size: $button_font_size;
-     padding-top: $button_padding_top;
-     padding-bottom: $button_padding_bottom;
-     padding-left: $button_padding_left;
-     padding-right: $button_padding_right;
-     border: $button_border_1;
+     font-size: #{$button_font_size};
+     text-align: #{$button_text_align};
+     color: #{$button_color};
+     // border: $button_border_style};
+     border-style: #{$button_border_style};
+     border-width: #{$button_border_width};
+     border-color: #{$button_border_color};
+     background-color: #{$button_background_color};
+     padding-top: #{$button_padding_top};
+     padding-bottom: #{$button_padding_bottom};
+     padding-left: #{$button_padding_left};
+     padding-right: #{$button_padding_right};
+     // border: #{$button_border};
+     // -webkit-transition-duration: #{$button_hover_duration}; /* Safari */
+     // transition-duration: #{$button_hover_duration};
+     // transition-timing-function: #{$button_hover_timing};
+     // transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
      // background-color: transparent;
-     display:inline-block;
+     // display:inline-block;
      // -moz-transition:color 0.3s ease-out;
      // -webkit-transition:color 0.3s ease-out;
      // -o-transition:color 0.3s ease-out;
      // transition:color 0.3s ease-out;
+}
+
+#{$evo}-button:hover,
+button:hover {
+     color: #{$button_hover_color};
+     // border: $button_border_style};
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     border-color: #{$button_hover_border_color};
+     background-color: #{$button_hover_background_color};
+     // border: #{$button_hover_border_1};
+     // -webkit-transition-duration: #{$button_hover_duration}; /* Safari */
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     transition: #{$button_hover_transition}; // this is not needed
 }
 
 // a:hover {
