@@ -92,7 +92,7 @@ button:hover {
      transition-duration: #{$button_hover_duration};
      transition-timing-function: #{$button_hover_timing};
      transition-delay: #{$button_hover_delay};
-     transition: #{$button_hover_transition}; // this is not needed
+     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // a:hover {
