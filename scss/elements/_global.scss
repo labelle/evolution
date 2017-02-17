@@ -388,15 +388,19 @@ button,
 
 button {
   color: inherit;
+  background-color: transparent;
   font: inherit;
   font-family: inherit; // font-family: sans-serif;
   font-size: 100%;
   line-height: normal; // line-height: 1.15;
   margin: 0;
-  border-radius: 3px;
   border: none; // from w3school
   text-decoration: none; // from w3school
   display: inline-block; // from w3school
+  text-transform: none;
+  overflow: visible;
+  -webkit-appearance: button;
+  cursor: pointer
 }
 
 button::-moz-focus-inner,
@@ -412,17 +416,16 @@ button[disabled] {
   cursor: default
 }
 
-button {
-  text-transform: none;
-  overflow: visible;
-  -webkit-appearance: button;
-  cursor: pointer
-}
-
+// File upload button
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
+
+// button:focus {
+//   text-decoration: none;
+//   outline: unset; // reset foundation
+// }
 
 
 
@@ -476,7 +479,8 @@ a:active {
 }
 
 .a-focus,
-a:focus {
+a:focus,
+button:focus {
   color: #{$link_color_focus};
   text-decoration: #{$link_underline_focus};
   outline: unset; // reset foundation
@@ -484,7 +488,7 @@ a:focus {
   outline-color: #{$link_outline_color_focus};
   outline-width: #{$link_outline_width_focus};
   outline-style: #{$link_outline_style_focus};
-  outline-offset: -2px; // from foundation
+  outline-offset: 0; // -2px; // from foundation
 }
 
 
@@ -684,6 +688,42 @@ progress, meter {
   vertical-align: baseline;
 }
 
+
+// Button and input disabled
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.inherit {
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+  border-top: inherit;
+  border-bottom: inherit;
+  border-left: inherit;
+  border-right: inherit;
+}
+
+.inherit-font {
+  font: inherit;
+}
+
+.inherit-color {
+  color: inherit;
+}
+
+.inherit-color-bg {
+  background-color: inherit;
+}
+
+.inherit-border {
+  border-top: inherit;
+  border-bottom: inherit;
+  border-left: inherit;
+  border-right: inherit;
+}
 
 // highlight states
 // TO DO check the resets for these

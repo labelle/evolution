@@ -33,7 +33,7 @@
 
 <h1 class="evo-text-13" style="margin-bottom: 0;">Button</h1>
 
-<p class="evo-measure">Basic buttons.</p>
+<p class="evo-measure">Basic buttons for <code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>, or <code>&lt;a&gt;</code> tags.</p>
 
 <div class="evo-space-20"></div>
 
@@ -41,62 +41,173 @@
 
 
 
+<!-- base button -->
 
-<!-- base selection -->
+<section id="Button">
 
-<section id="evoButton">
-
-<h2 class="evo-text-6">Base Button</h2>
+<h2 class="evo-text-6">button</h2>
 
 <div class="evo-space"></div>
 
 <button>submit</button>
-<br>
-<a href="javascript: void(0);">
-<button>submit</button></a>
 
-
-<div class="evo-space"></div>
-
+<div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="evo-button"&gt;submit&lt;/button&lt;/a&gt;</code>
+<code class="evo-measure">&lt;button&gt;submit&lt;/button&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>button</code> tag inside of an anchor <code>a</code> tag. Default button styles are set in _global.scss.</p>
+<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag. Default button styles are set in _global.scss.</p>
+
+<div class="evo-space"></div>
+
+
+<!-- Button wrapped in anchor tag -->
+
+<a href="#"><button>submit</button></a>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;a&gt;&lt;button&gt;submit&lt;/button&gt;&lt;a&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag, and wrap it inside <code>&lt;a&gt;</code> tags. Default button styles are set in _global.scss.</p>
+
+<div class="evo-space"></div>
+
+
+<!-- Input button -->
+
+<input type="button" onclick="alert('Hello World!')" value="submit" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="button" value="submit" /&gt;</code>
+</pre>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
+
+
+
+<!-- evo button -->
+
+<section id="evoButton">
+
+<h2 class="evo-text-6">evo-button</h2>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;button&gt;</code>, <code>input type="button"&gt;</code>, or <code>&lt;a&gt;</code> tag and apply the <code>.evo-button</code> class. Default styles are set in _variables.scss.</p>
+
+<div class="evo-space-15"></div>
+
+<!-- Normal button -->
+<button class="evo-button">submit</button>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;button class="evo-button"&gt;submit&lt;/button&gt;</code>
+</pre>
+
+<div class="evo-space-17"></div>
+
+<!-- Anchor link button -->
+<!-- Add a role for accessibility? -->
+<a href="#" class="evo-button">submit</a>
+
+<div class="evo-space"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;a href="#" class="evo-button"&gt;submit&lt;/a&gt;</code>
+</pre>
+
+
+
+<div class="evo-space-17"></div>
+
+<!-- Input button -->
+
+<input type="button" onclick="alert('Hello World!')" value="submit" class="evo-button" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="button" value="submit" class="evo-button" /&gt;</code>
+</pre>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- disabled button -->
+
+<section id="evoButtonDisabled">
+
+<h2 class="evo-text-6">disabled</h2>
+
+<div class="evo-space"></div>
+
+<button class="disabled">submit</button>
+
+<div class="evo-space"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;button class="disabled"&gt;submit&lt;/button&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag and apply the <code>.disabled</code> class. Default button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
 <!-- base selection -->
 
 <section id="evoButtonColor">
 
-<h2 class="evo-text-6">Color Buttons</h2>
+<h2 class="evo-text-6">Color Button Examples</h2>
 
-<div class="evo-space"></div>
-
-
-<a href="javascript: void(0);" class="evo-color-15-bg">
-<button class="evo-button">submit</button></a>
-
-
-<div class="evo-space"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;a href="#" class="color-15"&gt;&lt;button class="evo-button"&gt;submit&lt;/button&lt;/a&gt;</code>
-</pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>button</code> tag inside of an anchor <code>a</code> tag. Default button styles are set in _global.scss.</p>
+<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag and apply the <code>.evo-button</code> class for structure. Add <code>.evo-color-9</code> and <code>.box-color-9</code> and <code>.evo-color-1-bg</code> classes for styling. Default button styles are set in _variables.scss.</p>
+
+
+<div class="evo-space"></div>
+
+<a href="javascript: void(0);"><button class="evo-color-20 box-color-20">submit</button></a>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="evo-color-20 box-color-20"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
+</pre>
+
+<div class="evo-space-17"></div>
+
+<a href="javascript: void(0);"><button class="evo-gray-0 box-color-14 evo-color-17-bg">submit</button></a>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="evo-gray-0 box-color-14 evo-color-17-bg"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
+</pre>
 
 <div class="evo-space-20"></div>
 

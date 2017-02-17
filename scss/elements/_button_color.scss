@@ -6,17 +6,14 @@
 
 
 #{$evo}-button,
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+button {
      // Type
      font-family: #{$button_font_family};
      // font-size: #{$button_font_size};
      text-align: #{$button_text_align};
      // // text-decoration: #{$button_text_decoration}; // Doesn't work
      // // color
-     // color: #{$button_color} !important;
+     // color: #{$button_color};
      // background-color: #{$button_background_color};
      // border-color: #{$button_border_color};
      // Structure
@@ -30,7 +27,8 @@ button,
      padding-right: #{$button_padding_right};
 }
 
-#{$evo}-button {
+
+.ghost-to-solid {
      // Type
      // font-family: #{$button_font_family};
      // font-size: #{$button_font_size};
@@ -51,13 +49,8 @@ button,
      // padding-right: #{$button_padding_right};
 }
 
-
-
 #{$evo}-button:hover,
-button:hover,
-[type="button"]:hover,
-[type="reset"]:hover,
-[type="submit"]:hover {
+.ghost-to-solid:hover {
      // type
      // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color

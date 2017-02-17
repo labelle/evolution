@@ -43,7 +43,13 @@ $brand_font_family_1:               #{$sans-serif} !default;
 $brand_font_family_2:               #{$sans-serif} !default;
 $brand_font_family_3:               #{$sans-serif} !default;
 
+
 // Color
+
+
+// Primary accent color
+$evo_color:							#{$color_8} !default;
+
 // Gray color bases
 
 $base_dark_translucent:             $black;
@@ -214,7 +220,7 @@ $link_font_family:                  inherit !default;
 $link_font_weight:                  normal !default;
 
 // a:Link
-$link_color:                        red !default;
+$link_color:                        #{$evo_color} !default;
 $link_background_color:             transparent !default;
 $link_underline:                    none !default; // text-dectoration
 
@@ -226,7 +232,7 @@ $link_color_hover:                  maroon; // darker(rgb( 0, 174, 239 ), 75%) !
 $link_underline_hover:				none !default; // text-dectoration
 
 // a:active
-$link_color_active:                 blue !default; // cyan
+$link_color_active:                 red !default; // cyan
 $link_underline_active:				none !default; // text-dectoration
 
 // a:focus
@@ -236,6 +242,53 @@ $link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 
+
+
+// Button Text
+$button_font_family:               #{$html_font_family};
+// $button_font_size:                 1rem;
+$button_text_align:                center;
+// $button_text_decoration:           none;  // Doesn't work
+
+// Button Structure
+$button_padding_top:               .75em;
+$button_padding_bottom:            .75em;
+$button_padding_left:              1em;
+$button_padding_right:             1em;
+$button_corner:                    3px;
+
+// Button transition
+// https://www.w3schools.com/css/css3_transitions.asp
+$button_hover_duration:            0.4s;
+$button_hover_timing:              ease-out;
+$button_hover_delay:               0.1s;
+// $button_hover_text_decoration:     2px solid red;  // Doesn't work
+// $button_hover_transition:          width 2s, height 2s, transform 2s; // not needed
+
+// button colors
+$button_color:                      #{$black};
+// $button_border_color:               #{$black};
+$button_background_color:           transparent;
+$button_border_style:               solid;
+$button_border_width:               2px;
+$button_border_color:               #{$black}; // or transparent
+// $button_border:             #{$button_border_width} #{$button_border_style} #{$button_border_color}; // Green
+
+// Inverse Colors
+$button_color_inverse:              #{$white};
+$button_border_color_inverse:       #{$white};
+$button_background_color_inverse:   #{$black};
+
+// button hover colors
+$button_hover_color:                 #{$white};
+// $button_border_color:             #{$black};
+$button_hover_background_color:      #{$black};
+$button_hover_border_width:          2px;
+$button_hover_border_style:          solid;
+$button_hover_border_color:          #{$black}; // or transparent
+// $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
+
+
 // Selection Highlights
 $selection_color:                   white !default;
 $selection_color_background:        rgba( 0, 0, 0, 1) !default;
@@ -243,20 +296,23 @@ $selection_text_shadow:             none !default;
 
 $selection_color_background_demo:   rgba( 0, 0, 0, .8) !default; // slight translucency to match browser behavior
 
+
+
+
 // Dropcap
-$dropcap_color:						#{$color_10} !default;
+$dropcap_color:						#{$evo_color} !default;
 
 // HR Line
 $line_width:                        initial !default; // border-top-width, initial = medium
 $line_style:                        solid !default;   // border-top-style
-$line_color:                        #{$gray-light} !default; // border-top-color
+$line_color:                        #{$gray_light} !default; // border-top-color
 $line_margin_top:                   1em !default;
 $line_margin_bottom:                1em !default;
 
 // Box
 $box_width:      initial; // border-top-width, initial = medium
 $box_style:      solid;   // border-top-style
-$box_color:      #{$gray-light}; // border-top-color
+$box_color:      #{$gray_light}; // border-top-color
 
 // Define individual corners of boxes
 // Based on _scale.scss in variables
@@ -273,7 +329,7 @@ $image_fpo:						    "../image/monolake.jpg" !default;
 // Color
 // If starting from 0 to this to start at 1 random(30)-1;
 // $color_random:					    random(30);
-$color_fpo:                         #{$gray_8} !default;
+$color_fpo:                         #{$evo_color} !default;
 
 
 // Code base

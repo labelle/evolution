@@ -4,9 +4,6 @@
 // Default Variables
 // Override these in settings.scss
 
-
-// @import "settings";
-
 // color spetrum
 $color_0:  rgb( 255, 240, 42 );  // #fff02a yellow
 $color_1:  rgb( 255, 229, 44 );  // #ffe52c orange yellow
@@ -82,8 +79,8 @@ $white:     rgb( 255, 255, 255 );       // #FFFFFF	White
 // Move them to mixins
 // http://www.w3schools.com/colors/colors_shades.asp
 $gray:      rgb( 127, 127, 127 );		// #EDEDED
-$gray-light: #ccc;   
-$gray-lighter: #eee;
+$gray_light: #ccc;   
+$gray_lighter: #eee;
 // need other grays
 // move these to settings?
 
