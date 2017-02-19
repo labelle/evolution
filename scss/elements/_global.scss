@@ -441,10 +441,10 @@ a {
   background-color: transparent; // reset
   text-decoration: none; // reset
   -webkit-text-decoration-skip: objects; // reset
-  -moz-transition:color 0.3s ease-in-out;
-  -webkit-transition:color 0.3s ease-in-out;
-  -o-transition:color 0.3s ease-in-out;
-  transition:color 0.3s ease-in-out;
+  -moz-transition: #{$link_transition};
+  -webkit-transition: #{$link_transition};
+  -o-transition: #{$link_transition};
+  transition: #{$link_transition};
 }
 
 .a-link,
@@ -689,12 +689,16 @@ progress, meter {
 }
 
 
+
 // Button and input disabled
 
 .disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+
+// Experimental inherit classes
 
 .inherit {
   font-family: inherit;
@@ -723,6 +727,17 @@ progress, meter {
   border-bottom: inherit;
   border-left: inherit;
   border-right: inherit;
+}
+
+
+// Width utilities
+
+.width-full {
+  width: 100%;
+}
+
+.width-auto {
+  width: auto;
 }
 
 // highlight states

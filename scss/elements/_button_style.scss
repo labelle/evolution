@@ -161,8 +161,8 @@ a.solid-to-solid-color:hover,
      border-color: #{$evo_color} !important;
 }
 
-a.solid-to-solid-color:hover,
-.solid-to-solid-color:hover {
+a.solid-color-to-solid:hover,
+.solid-color-to-solid:hover {
      // color
      color: #{$button_hover_color} !important;
      background-color: #{$button_hover_background_color} !important;
@@ -349,5 +349,357 @@ a.ghost-color-to-ghost:hover,
      transition-delay: #{$button_hover_delay};
      // transition: #{$button_hover_transition}; // this is not needed
 }
+
+
+
+
+
+
+// Inverse buttons
+// Button ghost to solid
+
+.inverse-ghost-to-solid {
+     // Type
+     // font-family: #{$button_font_family};
+     // font-size: #{$button_font_size};
+     // text-align: #{$button_text_align};
+     // text-decoration: #{$button_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+     // // Structure
+     // border-width: #{$button_border_width};
+     // border-style: #{$button_border_style};
+     // border-radius: #{$button_corner};
+     // // border: #{$button_border};
+     // padding-top: #{$button_padding_top};
+     // padding-bottom: #{$button_padding_bottom};
+     // padding-left: #{$button_padding_left};
+     // padding-right: #{$button_padding_right};
+}
+
+.inverse-ghost-to-solid:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$inverse_button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button solid to ghost
+
+.inverse-solid-to-ghost {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+}
+
+a.inverse-solid-to-ghost:hover,
+.inverse-solid-to-ghost:hover {
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+// Button solid to ghost color
+
+.inverse-solid-to-ghost-color {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+}
+
+a.inverse-solid-to-ghost-color:hover,
+.inverse-solid-to-ghost-color:hover {
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+// Button ghost color to solid
+
+.inverse-ghost-color-to-solid {
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-ghost-color-to-solid:hover,
+.inverse-ghost-color-to-solid:hover {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+// Button solid to solid color
+
+.inverse-solid-to-solid-color {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+}
+
+a.inverse-solid-to-solid-color:hover,
+.inverse-solid-to-solid-color:hover {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button solid color to solid
+
+.inverse-solid-color-to-solid {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-solid-color-to-solid:hover,
+.inverse-solid-color-to-solid:hover {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$inverse_button_hover_background_color} !important;
+     border-color: #{$inverse_button_hover_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+// Button ghost to solid color
+
+.inverse-ghost-to-solid-color {
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+}
+
+a.inverse-ghost-to-solid-color:hover,
+.inverse-ghost-to-solid-color:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button ghost to solid color
+
+.inverse-solid-color-to-ghost {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-solid-color-to-ghost:hover,
+.inverse-solid-color-to-ghost:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button solid color to ghost color
+
+.inverse-solid-color-to-ghost-color {
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-solid-color-to-ghost-color:hover,
+.inverse-solid-color-to-ghost-color:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+// Button ghost color to solid color
+
+.inverse-ghost-color-to-solid-color {
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-ghost-color-to-solid-color:hover,
+.inverse-ghost-color-to-solid-color:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_hover_color} !important;
+     background-color: #{$evo_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button ghost to ghost color
+
+.inverse-ghost-to-ghost-color {
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+}
+
+a.inverse-ghost-to-ghost-color:hover,
+.inverse-ghost-to-ghost-color:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
+
+// Button ghost color to ghost
+
+.inverse-ghost-color-to-ghost {
+     // color
+     color: #{$evo_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$evo_color} !important;
+}
+
+a.inverse-ghost-color-to-ghost:hover,
+.inverse-ghost-color-to-ghost:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #{$inverse_button_color} !important;
+     background-color: #{$inverse_button_background_color} !important;
+     border-color: #{$inverse_button_border_color} !important;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}
+
 
 

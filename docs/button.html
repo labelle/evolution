@@ -33,7 +33,7 @@
 
 <h1 class="evo-text-13" style="margin-bottom: 0;">Button</h1>
 
-<p class="evo-measure">Basic buttons for <code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>, or <code>&lt;a&gt;</code> tags.</p>
+<p class="evo-measure">Basic buttons for <code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>, or <code>&lt;a&gt;</code> tags, along with inverse button.</p>
 
 <div class="evo-space-20"></div>
 
@@ -90,6 +90,10 @@
 <pre class="evo-code">
 <code class="evo-measure">&lt;input type="button" value="submit" /&gt;</code>
 </pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;input type="button"&gt;</code> tag. Default input button styles are set in _global.scss.</p>
 
 <div class="evo-space-20"></div>
 
@@ -152,7 +156,68 @@
 
 
 
+
+
+<!-- evo button inverse -->
+
+<div style="background-color: #111111">
+
+<div class="evo-space-20"></div>
+
+<section id="evoButtonInverse">
+
+<h2 class="evo-text-6">evo-inverse-button</h2>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;button&gt;</code>, <code>input type="button"&gt;</code>, or <code>&lt;a&gt;</code> tag and apply the <code>.evo-button</code> class. Default styles are set in _variables.scss.</p>
+
+<div class="evo-space-15"></div>
+
+<!-- Normal button -->
+<button class="evo-inverse-button">submit</button>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-inverse-code">
+<code class="evo-measure">&lt;button class="evo-inverse-button"&gt;submit&lt;/button&gt;</code>
+</pre>
+
+<div class="evo-space-17"></div>
+
+<!-- Anchor link button -->
+<!-- Add a role for accessibility? -->
+<a href="#" class="evo-inverse-button">submit</a>
+
+<div class="evo-space"></div>
+
+<pre class="evo-inverse-code">
+<code class="evo-measure">&lt;a href="#" class="evo-inverse-button"&gt;submit&lt;/a&gt;</code>
+</pre>
+
+<div class="evo-space-17"></div>
+
+<!-- Input button -->
+
+<input type="button" onclick="alert('Hello World!')" value="submit" class="evo-inverse-button" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-inverse-code">
+<code class="evo-measure">&lt;input type="button" value="submit" class="evo-inverse-button" /&gt;</code>
+</pre>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+</div>
+
+
+
 <!-- disabled button -->
+
+<div class="evo-space-20"></div>
 
 <section id="evoButtonDisabled">
 
@@ -177,7 +242,57 @@
 </section>
 
 
-<!-- base selection -->
+
+
+
+<!-- with utilities -->
+
+<section id="evoButtonUtility">
+
+<h2 class="evo-text-6">Width Utilities</h2>
+
+<div class="evo-space"></div>
+
+
+<!-- Button example -->
+
+<button class="width-full">submit</button>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;button class="width-full"&gt;submit&lt;/button&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Add a <code>.width-full</code> class to make a button span the full width of its container.
+
+<div class="evo-space-17"></div>
+
+
+<!-- Input button example -->
+
+<input type="button" onclick="alert('Hello World!')" value="submit" class="width-auto" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="button" value="submit" class="width-auto" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Add a <code>.width-auto</code> class to collapse the button to the width of its text content.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
+<!-- color button examples -->
 
 <section id="evoButtonColor">
 

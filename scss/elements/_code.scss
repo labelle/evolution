@@ -8,7 +8,7 @@
 
 
 pre#{$evo}-code,
-pre#{$evo}-code-inverse {
+pre#{$evo}-inverse-code {
   margin: 0 auto;
   white-space: pre; // or normal
   font-family: #{$base_code_font_family};
@@ -21,14 +21,14 @@ pre#{$evo}-code > code {
     background-color: #{$code_background_color};
 }
 
-pre#{$evo}-code-inverse > code {
+pre#{$evo}-inverse-code > code {
     color: #{$inverse_code_color};
     border-color: #{$inverse_code_border_color};
     background-color: #{$inverse_code_background_color};
   }
 
 pre#{$evo}-code > code,
-pre#{$evo}-code-inverse > code {
+pre#{$evo}-inverse-code > code {
     width: calc(100%);
     padding: 10px;
     margin: 5px 0;

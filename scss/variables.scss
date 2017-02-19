@@ -49,6 +49,7 @@ $brand_font_family_3:               #{$sans-serif} !default;
 
 // Primary accent color
 $evo_color:							#{$color_8} !default;
+$inverse_evo_color:					#{$color_8} !default;
 
 // Gray color bases
 
@@ -218,6 +219,7 @@ $bullet_list_icon_background_position:  0px 0.41667rem;
 // a
 $link_font_family:                  inherit !default;
 $link_font_weight:                  normal !default;
+$link_transition:					0.2s ease; // 0.3s ease-in-out
 
 // a:Link
 $link_color:                        #{$evo_color} !default;
@@ -259,9 +261,9 @@ $button_corner:                    3px;
 
 // Button transition
 // https://www.w3schools.com/css/css3_transitions.asp
-$button_hover_duration:            0.4s;
-$button_hover_timing:              ease-out;
-$button_hover_delay:               0.1s;
+$button_hover_duration:            0.2s;
+$button_hover_timing:              ease;
+$button_hover_delay:               0; // or 0.1s
 // $button_hover_text_decoration:     2px solid red;  // Doesn't work
 // $button_hover_transition:          width 2s, height 2s, transform 2s; // not needed
 
@@ -269,23 +271,34 @@ $button_hover_delay:               0.1s;
 $button_color:                      #{$black};
 // $button_border_color:               #{$black};
 $button_background_color:           transparent;
+$button_border_color:               #{$black}; // or transparent
 $button_border_style:               solid;
 $button_border_width:               2px;
-$button_border_color:               #{$black}; // or transparent
 // $button_border:             #{$button_border_width} #{$button_border_style} #{$button_border_color}; // Green
 
 // Inverse Colors
-$button_color_inverse:              #{$white};
-$button_border_color_inverse:       #{$white};
-$button_background_color_inverse:   #{$black};
+$inverse_button_color:              #{$white};
+$inverse_button_background_color:   transparent;
+$inverse_button_border_color:       #{$white};
+$inverse_button_border_style:       solid;
+$inverse_button_border_width:       2px;
 
 // button hover colors
 $button_hover_color:                 #{$white};
 // $button_border_color:             #{$black};
 $button_hover_background_color:      #{$black};
+$button_hover_border_color:          #{$black}; // or transparent
 $button_hover_border_width:          2px;
 $button_hover_border_style:          solid;
-$button_hover_border_color:          #{$black}; // or transparent
+// $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
+
+// button inverse hover colors
+$inverse_button_hover_color:         #{$black};
+// $button_border_color:             #{$black};
+$inverse_button_hover_background_color: #{$white};
+$inverse_button_hover_border_color:  #{$white}; // or transparent
+$inverse_button_hover_border_width:  2px;
+$inverse_button_hover_border_style:  solid;
 // $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
 
 
@@ -346,5 +359,5 @@ $code_background_color:             transparent !default;
 
 // Code Inverse
 $inverse_code_color:                #{$white} !default;
-$inverse_code_border_color:         #{$gray_10} !default;
+$inverse_code_border_color:         #{$gray_20} !default;
 $inverse_code_background_color:     #{$black} !default;
