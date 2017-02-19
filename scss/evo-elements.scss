@@ -113,9 +113,15 @@
 @import "elements/list_number";
 @import "elements/list_icon";
 
+// Selection
+@import "elements/selection";
+// @import "elements/selection_gray";
+// @import "elements/selection_color";
 
-// UI
-// @import "elements/highlight";
+// Highlight
+@import "elements/highlight";
+@import "elements/highlight_color";
+@import "elements/highlight_gray";
 
 // Image
 @import "elements/image";

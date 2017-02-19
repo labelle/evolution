@@ -28,6 +28,11 @@ button,
      padding-bottom: #{$button_padding_bottom};
      padding-left: #{$button_padding_left};
      padding-right: #{$button_padding_right};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 #{$evo}-button {
@@ -68,11 +73,6 @@ button:hover,
      border-style: #{$button_hover_border_style};
      border-width: #{$button_hover_border_width};
      // border: #{$button_hover_border};
-     // hover
-     transition-duration: #{$button_hover_duration};
-     transition-timing-function: #{$button_hover_timing};
-     transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -103,6 +103,11 @@ button,
      padding-bottom: #{$button_padding_bottom};
      padding-left: #{$button_padding_left};
      padding-right: #{$button_padding_right};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 #{$evo}-inverse-button {
@@ -139,9 +144,4 @@ button,
      border-style: #{$inverse_button_hover_border_style};
      border-width: #{$inverse_button_hover_border_width};
      // border: #{$button_hover_border};
-     // hover
-     transition-duration: #{$button_hover_duration};
-     transition-timing-function: #{$button_hover_timing};
-     transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }

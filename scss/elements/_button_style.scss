@@ -8,29 +8,13 @@
 // Button ghost to solid
 
 .ghost-to-solid {
-     // Type
-     // font-family: #{$button_font_family};
-     // font-size: #{$button_font_size};
-     // text-align: #{$button_text_align};
-     // text-decoration: #{$button_text_decoration}; // Doesn't work
      // color
      color: #{$button_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$button_border_color} !important;
-     // // Structure
-     // border-width: #{$button_border_width};
-     // border-style: #{$button_border_style};
-     // border-radius: #{$button_corner};
-     // // border: #{$button_border};
-     // padding-top: #{$button_padding_top};
-     // padding-bottom: #{$button_padding_bottom};
-     // padding-left: #{$button_padding_left};
-     // padding-right: #{$button_padding_right};
 }
 
 .ghost-to-solid:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$button_hover_color} !important;
      background-color: #{$button_hover_background_color} !important;
@@ -38,12 +22,6 @@
      // structure
      border-style: #{$button_hover_border_style};
      border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -62,15 +40,6 @@ a.solid-to-ghost:hover,
      color: #{$button_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button solid to ghost color
@@ -88,15 +57,6 @@ a.solid-to-ghost-color:hover,
      color: #{$evo_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost color to solid
@@ -114,15 +74,6 @@ a.ghost-color-to-solid:hover,
      color: #{$button_hover_color} !important;
      background-color: #{$button_hover_background_color} !important;
      border-color: #{$button_hover_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button solid to solid color
@@ -140,15 +91,6 @@ a.solid-to-solid-color:hover,
      color: #{$button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -167,15 +109,6 @@ a.solid-color-to-solid:hover,
      color: #{$button_hover_color} !important;
      background-color: #{$button_hover_background_color} !important;
      border-color: #{$button_hover_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost to solid color
@@ -189,21 +122,10 @@ a.solid-color-to-solid:hover,
 
 a.ghost-to-solid-color:hover,
 .ghost-to-solid-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -218,21 +140,10 @@ a.ghost-to-solid-color:hover,
 
 a.solid-color-to-ghost:hover,
 .solid-color-to-ghost:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$button_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -247,21 +158,10 @@ a.solid-color-to-ghost:hover,
 
 a.solid-color-to-ghost-color:hover,
 .solid-color-to-ghost-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$evo_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost color to solid color
@@ -275,21 +175,10 @@ a.solid-color-to-ghost-color:hover,
 
 a.ghost-color-to-solid-color:hover,
 .ghost-color-to-solid-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -304,21 +193,10 @@ a.ghost-color-to-solid-color:hover,
 
 a.ghost-to-ghost-color:hover,
 .ghost-to-ghost-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$evo_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -333,21 +211,10 @@ a.ghost-to-ghost-color:hover,
 
 a.ghost-color-to-ghost:hover,
 .ghost-color-to-ghost:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$button_color} !important;
      background-color: #{$button_background_color} !important;
      border-color: #{$button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -380,15 +247,10 @@ a.ghost-color-to-ghost:hover,
 }
 
 .inverse-ghost-to-solid:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$inverse_button_hover_background_color} !important;
      border-color: #{$inverse_button_hover_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
      // border: #{$inverse_button_hover_border};
      // hover
      // transition-duration: #{$button_hover_duration};
@@ -413,15 +275,6 @@ a.inverse-solid-to-ghost:hover,
      color: #{$inverse_button_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$inverse_button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button solid to ghost color
@@ -439,15 +292,6 @@ a.inverse-solid-to-ghost-color:hover,
      color: #{$evo_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost color to solid
@@ -465,15 +309,6 @@ a.inverse-ghost-color-to-solid:hover,
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$inverse_button_hover_background_color} !important;
      border-color: #{$inverse_button_hover_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button solid to solid color
@@ -491,15 +326,6 @@ a.inverse-solid-to-solid-color:hover,
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -518,15 +344,6 @@ a.inverse-solid-color-to-solid:hover,
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$inverse_button_hover_background_color} !important;
      border-color: #{$inverse_button_hover_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost to solid color
@@ -540,21 +357,10 @@ a.inverse-solid-color-to-solid:hover,
 
 a.inverse-ghost-to-solid-color:hover,
 .inverse-ghost-to-solid-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -569,21 +375,10 @@ a.inverse-ghost-to-solid-color:hover,
 
 a.inverse-solid-color-to-ghost:hover,
 .inverse-solid-color-to-ghost:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$inverse_button_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$inverse_button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -598,21 +393,10 @@ a.inverse-solid-color-to-ghost:hover,
 
 a.inverse-solid-color-to-ghost-color:hover,
 .inverse-solid-color-to-ghost-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$evo_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 // Button ghost color to solid color
@@ -626,21 +410,10 @@ a.inverse-solid-color-to-ghost-color:hover,
 
 a.inverse-ghost-color-to-solid-color:hover,
 .inverse-ghost-color-to-solid-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$inverse_button_hover_color} !important;
      background-color: #{$evo_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -655,21 +428,10 @@ a.inverse-ghost-color-to-solid-color:hover,
 
 a.inverse-ghost-to-ghost-color:hover,
 .inverse-ghost-to-ghost-color:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$evo_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$evo_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 
@@ -684,21 +446,10 @@ a.inverse-ghost-to-ghost-color:hover,
 
 a.inverse-ghost-color-to-ghost:hover,
 .inverse-ghost-color-to-ghost:hover {
-     // type
-     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
      color: #{$inverse_button_color} !important;
      background-color: #{$inverse_button_background_color} !important;
      border-color: #{$inverse_button_border_color} !important;
-     // structure
-     // border-style: #{$button_hover_border_style};
-     // border-width: #{$button_hover_border_width};
-     // border: #{$button_hover_border};
-     // hover
-     // transition-duration: #{$button_hover_duration};
-     // transition-timing-function: #{$button_hover_timing};
-     // transition-delay: #{$button_hover_delay};
-     // transition: #{$button_hover_transition}; // this is not needed
 }
 
 

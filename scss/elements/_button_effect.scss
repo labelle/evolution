@@ -1,14 +1,15 @@
-///*      B U T T O N    */
+///*      B U T T O N   E F F E C T    */
 
 @import "../variables";
 // @import "../variables/scale";
 // @import "box_mixin";
 
 
-#{$evo}-button,
-button {
+// Neon button structure
+
+#{$evo}-button-neon {
      // Type
-     font-family: #{$button_font_family};
+     font-family: #{$neon};
      // font-size: #{$button_font_size};
      text-align: #{$button_text_align};
      // // text-decoration: #{$button_text_decoration}; // Doesn't work
@@ -27,17 +28,18 @@ button {
      padding-right: #{$button_padding_right};
 }
 
+// Neon color, ghost to solid
 
-.button-ghost-to-solid {
+#{$evo}-button-neon {
      // Type
      // font-family: #{$button_font_family};
      // font-size: #{$button_font_size};
      // text-align: #{$button_text_align};
      // text-decoration: #{$button_text_decoration}; // Doesn't work
      // color
-     color: #{$button_color} !important;
-     background-color: #{$button_background_color};
-     border-color: #{$button_border_color};
+     color: #f0f !important;
+     background-color: transparent;
+     border-color: #f0f;
      // // Structure
      // border-width: #{$button_border_width};
      // border-style: #{$button_border_style};
@@ -49,8 +51,13 @@ button {
      // padding-right: #{$button_padding_right};
 }
 
-#{$evo}-button:hover,
-.button-ghost-to-solid:hover {
+
+// Neon hover, ghost to solid
+// #f7f
+// #f0f
+// #fff
+
+#{$evo}-button-neon:hover {
      // type
      // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color

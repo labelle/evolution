@@ -491,83 +491,7 @@ button:focus {
   outline-offset: 0; // -2px; // from foundation
 }
 
-
-
-// selection
-
-// Highlights for other browsers
-::-o-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-}
-
-::-ms-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-}
-
-// Highlights for webkit browsers
-::-webkit-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-}
-
-// Highlights for mozilla browsers
-::-moz-selection  {
-    background: #{$selection_color_background};
-    color: #{$selection_color};
-    // text-shadow: #{$selection_text_shadow};
-}
-
-// Highlights
-::selection   {
-    background: #{$selection_color_background};
-    color: #{$selection_color};
-    text-shadow: #{$selection_text_shadow};
-}
-
-.selection,
-p.selection,
-span.selection {
-    // background-color: #{$selection_color_background};
-    background: #{$selection_color_background_demo}; // demo color
-    color: #{$selection_color};
-    text-shadow: #{$selection_text_shadow};
-}
-
-// http://callmenick.com/post/multi-line-padded-text-css-box-decoration-break
-// Use for highlights
-// Should work with inline code blocks, too
-
-// .highlight-small {
-//   // background: inherit;
-//   // color: inherit;
-//   // display: inline;
-//   // padding-left: .5ch;
-//   line-height: 3.5ex !important;
-//   padding-left: .5ch;
-//   padding-right: .5ch;
-//   padding-bottom: .5ex;
-//   padding-top: .5ex;
-//   -webkit-box-decoration-break: clone;
-//   box-decoration-break: clone;
-// }
-
-// Try improving this from
-// https://css-tricks.com/multi-line-padded-text/
-.highlight {
-  // background: inherit;
-  // color: inherit;
-  // display: inline;
-  // padding-left: .5ch;
-  line-height: #{$highlight_line_height};
-  padding-left: #{$highlight_padding_left};
-  padding-right: #{$highlight_padding_right};
-  padding-bottom: #{$highlight_padding_bottom};
-  padding-top: #{$highlight_padding_top};
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
+// Move to code page...
 
 .code-inline {
   -webkit-box-decoration-break: clone;
@@ -688,6 +612,11 @@ progress, meter {
   vertical-align: baseline;
 }
 
+
+.collapse {
+    border-collapse: collapse;
+    border-spacing: 0
+}
 
 
 // Button and input disabled

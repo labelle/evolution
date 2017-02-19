@@ -51,6 +51,24 @@ $brand_font_family_3:               #{$sans-serif} !default;
 $evo_color:							#{$color_8} !default;
 $inverse_evo_color:					#{$color_8} !default;
 
+
+// Primary neutral colors
+$evo_black:							#{$black} !default;
+$inverse_evo_black:					#{$white} !default;
+
+$evo_white:							#{$white} !default;
+$inverse_evo_white:					#{$black} !default;
+
+$evo_gray_light:					#{$gray_9} !default;
+$inverse_evo_gray_light:			#{$gray_21} !default;
+
+$evo_gray:					        #{$gray_15} !default;
+$inverse_evo_gray:			        #{$gray_15} !default;
+
+$evo_gray_dark:						#{$gray_21} !default;
+$inverse_evo_gray_dark:				#{$gray_9} !default;
+
+
 // Gray color bases
 
 $base_dark_translucent:             $black;
@@ -303,14 +321,46 @@ $inverse_button_hover_border_style:  solid;
 // $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
 
 
-// Selection Highlights
-$selection_color:                   white !default;
-$selection_color_background:        rgba( 0, 0, 0, 1) !default;
+// Selection
+$selection_color:                   #{$evo_white} !default;
+$selection_color_background:        #{$evo_color} !default;
 $selection_text_shadow:             none !default;
+$selection_color_background_demo:   rgba( 234, 24, 115, 0.9 ) !default;  // slightly translucent for demonstration
 
-$selection_color_background_demo:   rgba( 0, 0, 0, .8) !default; // slight translucency to match browser behavior
+// // Selection Black
+// $selection_black:                   #{$evo_white} !default;
+// $selection_black_background:        #{$evo_black} !default;
+// $selection_text_shadow:             none !default;
+// $selection_black_background_demo:   rgba( 0, 0, 0, 0.8 ) !default; // for demonstration
 
-// Highlight
+// // Selection White
+// $selection_white:                   #{$evo_black} !default;
+// $selection_white_background:        #{$evo_white} !default;
+// $selection_text_shadow:             none !default;
+// $selection_white_background_demo:   rgba( 255, 255, 255, 0.8 ) !default; // for demonstration
+
+
+// Highlight Color
+$highlight_color:                   #{$evo_white} !default;
+$highlight_color_background:        #{$evo_color} !default;
+$highlight_text_shadow:             none !default;
+
+// Inverse Highlight Color
+$inverse_highlight_color:            #{$evo_black} !default;
+$inverse_highlight_color_background: #{$evo_color} !default;
+$inverse_highlight_text_shadow:      none !default;
+
+// Highlight Black
+$highlight_black:                   #{$evo_white} !default;
+$highlight_black_background:        #{$evo_black} !default;
+$highlight_text_shadow:             none !default;
+
+// Highlight White
+$highlight_white:                   #{$evo_black} !default;
+$highlight_white_background:        #{$evo_white} !default;
+$highlight_text_shadow:             none !default;
+
+// Highlith Structure
 // Variables may need adjustment depending on font-family used and size
 $highlight_line_height: 200% !important; // or try 3.5 or 4 ex
 $highlight_padding_left: .6ch;
@@ -325,14 +375,14 @@ $dropcap_color:						#{$evo_color} !default;
 // HR Line
 $line_width:                        initial !default; // border-top-width, initial = medium
 $line_style:                        solid !default;   // border-top-style
-$line_color:                        #{$gray_light} !default; // border-top-color
+$line_color:                        #{$gray_9} !default; // border-top-color
 $line_margin_top:                   1em !default;
 $line_margin_bottom:                1em !default;
 
 // Box
 $box_width:      initial; // border-top-width, initial = medium
 $box_style:      solid;   // border-top-style
-$box_color:      #{$gray_light}; // border-top-color
+$box_color:      #{$gray_9}; // border-top-color
 
 // Define individual corners of boxes
 // Based on _scale.scss in variables
@@ -361,10 +411,10 @@ $base_code_border_style:            solid !default;
 
 // Code
 $code_color:                        #{$black} !default;
-$code_border_color:                 #{$gray_8} !default;
+$code_border_color:                 #{$gray_9} !default;
 $code_background_color:             transparent !default;
 
 // Code Inverse
 $inverse_code_color:                #{$white} !default;
-$inverse_code_border_color:         #{$gray_20} !default;
+$inverse_code_border_color:         #{$gray_21} !default;
 $inverse_code_background_color:     #{$black} !default;
