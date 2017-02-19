@@ -560,11 +560,11 @@ span.selection {
   // color: inherit;
   // display: inline;
   // padding-left: .5ch;
-  line-height: 3.5ex !important;
-  padding-left: .6ch;
-  padding-right: .6ch;
-  padding-bottom: .6ex;
-  padding-top: .6ex;
+  line-height: #{$highlight_line_height};
+  padding-left: #{$highlight_padding_left};
+  padding-right: #{$highlight_padding_right};
+  padding-bottom: #{$highlight_padding_bottom};
+  padding-top: #{$highlight_padding_top};
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }

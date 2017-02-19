@@ -319,10 +319,10 @@ a {
   background-color: transparent;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
-  -moz-transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease; }
+  -moz-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
 
 .a-link,
 a:link {
@@ -386,11 +386,11 @@ span.selection {
   text-shadow: none; }
 
 .highlight {
-  line-height: 3.5ex !important;
-  padding-left: .6ch;
-  padding-right: .6ch;
-  padding-bottom: .6ex;
-  padding-top: .6ex;
+  line-height: 200% !important;
+  padding-left: 0.6ch;
+  padding-right: 0.6ch;
+  padding-bottom: 0.6ex;
+  padding-top: 0.6ex;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone; }
 
@@ -2821,8 +2821,23 @@ pre.code-short > code {
 .padding-bottom-25 {
   padding-bottom: 16rem; }
 
-.transparent-bg {
+.transparent-bg .transparent-bg-hover:hover {
   background-color: transparent; }
+
+.evo-color,
+.evo-color-hover:hover {
+  color: #ea1873; }
+
+.evo-color-bg,
+.evo-color-bg-hover:hover {
+  background-color: #ea1873; }
+
+.evo-color-box,
+.evo-color-box-hover:hover {
+  border-top-color: #ea1873;
+  border-bottom-color: #ea1873;
+  border-right-color: #ea1873;
+  border-left-color: #ea1873; }
 
 /* COLORS */
 /* 
@@ -8508,10 +8523,7 @@ button,
   background-color: black !important;
   border-color: black !important;
   border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-width: 2px; }
 
 .solid-to-ghost {
   color: white !important;
@@ -8522,12 +8534,7 @@ a.solid-to-ghost:hover,
 .solid-to-ghost:hover {
   color: black !important;
   background-color: transparent !important;
-  border-color: black !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: black !important; }
 
 .solid-to-ghost-color {
   color: white !important;
@@ -8538,12 +8545,7 @@ a.solid-to-ghost-color:hover,
 .solid-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .ghost-color-to-solid {
   color: #ea1873 !important;
@@ -8554,12 +8556,7 @@ a.ghost-color-to-solid:hover,
 .ghost-color-to-solid:hover {
   color: white !important;
   background-color: black !important;
-  border-color: black !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: black !important; }
 
 .solid-to-solid-color {
   color: white !important;
@@ -8570,12 +8567,7 @@ a.solid-to-solid-color:hover,
 .solid-to-solid-color:hover {
   color: white !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .solid-color-to-solid {
   color: white !important;
@@ -8586,12 +8578,7 @@ a.solid-color-to-solid:hover,
 .solid-color-to-solid:hover {
   color: white !important;
   background-color: black !important;
-  border-color: black !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: black !important; }
 
 .ghost-to-solid-color {
   color: black !important;
@@ -8602,12 +8589,7 @@ a.ghost-to-solid-color:hover,
 .ghost-to-solid-color:hover {
   color: white !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .solid-color-to-ghost {
   color: white !important;
@@ -8618,12 +8600,7 @@ a.solid-color-to-ghost:hover,
 .solid-color-to-ghost:hover {
   color: black !important;
   background-color: transparent !important;
-  border-color: black !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: black !important; }
 
 .solid-color-to-ghost-color {
   color: white !important;
@@ -8634,12 +8611,7 @@ a.solid-color-to-ghost-color:hover,
 .solid-color-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .ghost-color-to-solid-color {
   color: #ea1873 !important;
@@ -8650,12 +8622,7 @@ a.ghost-color-to-solid-color:hover,
 .ghost-color-to-solid-color:hover {
   color: white !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .ghost-to-ghost-color {
   color: black !important;
@@ -8666,12 +8633,7 @@ a.ghost-to-ghost-color:hover,
 .ghost-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .ghost-color-to-ghost {
   color: #ea1873 !important;
@@ -8682,12 +8644,7 @@ a.ghost-color-to-ghost:hover,
 .ghost-color-to-ghost:hover {
   color: black !important;
   background-color: transparent !important;
-  border-color: black !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: black !important; }
 
 .inverse-ghost-to-solid {
   color: white !important;
@@ -8697,12 +8654,7 @@ a.ghost-color-to-ghost:hover,
 .inverse-ghost-to-solid:hover {
   color: black !important;
   background-color: white !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .inverse-solid-to-ghost {
   color: black !important;
@@ -8713,12 +8665,7 @@ a.inverse-solid-to-ghost:hover,
 .inverse-solid-to-ghost:hover {
   color: white !important;
   background-color: transparent !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .inverse-solid-to-ghost-color {
   color: black !important;
@@ -8729,12 +8676,7 @@ a.inverse-solid-to-ghost-color:hover,
 .inverse-solid-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-ghost-color-to-solid {
   color: #ea1873 !important;
@@ -8745,12 +8687,7 @@ a.inverse-ghost-color-to-solid:hover,
 .inverse-ghost-color-to-solid:hover {
   color: black !important;
   background-color: white !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .inverse-solid-to-solid-color {
   color: black !important;
@@ -8761,12 +8698,7 @@ a.inverse-solid-to-solid-color:hover,
 .inverse-solid-to-solid-color:hover {
   color: black !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-solid-color-to-solid {
   color: black !important;
@@ -8777,12 +8709,7 @@ a.inverse-solid-color-to-solid:hover,
 .inverse-solid-color-to-solid:hover {
   color: black !important;
   background-color: white !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .inverse-ghost-to-solid-color {
   color: white !important;
@@ -8793,12 +8720,7 @@ a.inverse-ghost-to-solid-color:hover,
 .inverse-ghost-to-solid-color:hover {
   color: black !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-solid-color-to-ghost {
   color: black !important;
@@ -8809,12 +8731,7 @@ a.inverse-solid-color-to-ghost:hover,
 .inverse-solid-color-to-ghost:hover {
   color: white !important;
   background-color: transparent !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .inverse-solid-color-to-ghost-color {
   color: black !important;
@@ -8825,12 +8742,7 @@ a.inverse-solid-color-to-ghost-color:hover,
 .inverse-solid-color-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-ghost-color-to-solid-color {
   color: #ea1873 !important;
@@ -8841,12 +8753,7 @@ a.inverse-ghost-color-to-solid-color:hover,
 .inverse-ghost-color-to-solid-color:hover {
   color: black !important;
   background-color: #ea1873 !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-ghost-to-ghost-color {
   color: white !important;
@@ -8857,12 +8764,7 @@ a.inverse-ghost-to-ghost-color:hover,
 .inverse-ghost-to-ghost-color:hover {
   color: #ea1873 !important;
   background-color: transparent !important;
-  border-color: #ea1873 !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: #ea1873 !important; }
 
 .inverse-ghost-color-to-ghost {
   color: #ea1873 !important;
@@ -8873,12 +8775,7 @@ a.inverse-ghost-color-to-ghost:hover,
 .inverse-ghost-color-to-ghost:hover {
   color: white !important;
   background-color: transparent !important;
-  border-color: white !important;
-  border-style: solid;
-  border-width: 2px;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0; }
+  border-color: white !important; }
 
 .evo-button,
 button {

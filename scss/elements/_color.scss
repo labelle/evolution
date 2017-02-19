@@ -3,9 +3,19 @@
 @import "../variables";
 // @import "colors_mixin";
 
-.transparent-bg {
+.transparent-bg
+.transparent-bg-hover:hover   {
 	background-color: transparent;
 }
+
+#{$evo}-color,
+#{$evo}-color-hover:hover      { color: #{$evo_color}; }
+
+#{$evo}-color-bg,
+#{$evo}-color-bg-hover:hover   { background-color: #{$evo_color}; }
+
+#{$evo}-color-box,
+#{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
 
 /* COLORS */
 

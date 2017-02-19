@@ -219,7 +219,7 @@ $bullet_list_icon_background_position:  0px 0.41667rem;
 // a
 $link_font_family:                  inherit !default;
 $link_font_weight:                  normal !default;
-$link_transition:					0.2s ease; // 0.3s ease-in-out
+$link_transition:					color 0.2s ease; // or color 0.3s ease-in-out
 
 // a:Link
 $link_color:                        #{$evo_color} !default;
@@ -261,6 +261,7 @@ $button_corner:                    3px;
 
 // Button transition
 // https://www.w3schools.com/css/css3_transitions.asp
+// Note: To avoid conflict, button hover and link hover should share the same values
 $button_hover_duration:            0.2s;
 $button_hover_timing:              ease;
 $button_hover_delay:               0; // or 0.1s
@@ -309,7 +310,13 @@ $selection_text_shadow:             none !default;
 
 $selection_color_background_demo:   rgba( 0, 0, 0, .8) !default; // slight translucency to match browser behavior
 
-
+// Highlight
+// Variables may need adjustment depending on font-family used and size
+$highlight_line_height: 200% !important; // or try 3.5 or 4 ex
+$highlight_padding_left: .6ch;
+$highlight_padding_right: .6ch;
+$highlight_padding_bottom: .6ex;
+$highlight_padding_top: .6ex;
 
 
 // Dropcap
