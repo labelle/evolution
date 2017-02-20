@@ -1305,6 +1305,51 @@ pre.code-short > code {
     -webkit-column-count: 4;
     column-count: 4; } }
 
+iframe.iframe-box-bevel {
+  border-width: 1px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial; }
+
+iframe.iframe-box-bevel-2 {
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial; }
+
+div.iframe-container {
+  position: relative; }
+
+div.iframe-container > iframe {
+  display: block;
+  position: relative;
+  z-index: 1; }
+
+div.iframe-container::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none; }
+
+div.iframe-container-red::before {
+  background-color: rgba(234, 24, 115, 0.5); }
+
+div.iframe-container-dark::before {
+  background-color: rgba(0, 0, 0, 0.3) inset; }
+
+div.iframe-container-shadow::before {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3) inset; }
+
+div.iframe-container-shadow-2::before {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset; }
+
+div.iframe-container-shadow-3::before {
+  box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black; }
+
 .viewport-example > div {
   margin-left: -5%;
   margin-right: -5%; }
