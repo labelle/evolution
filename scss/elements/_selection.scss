@@ -4,7 +4,22 @@
 
 @import "../variables";
 
-// Selection default
+// https://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+
+// Note how the selectors are not combined, 
+// even though the style block is doing the same thing. 
+// It doesn't work if you combine them:
+// /* Combining like this WILL NOT WORK */
+// p.yellow::selection,
+// p.yellow::-moz-selection {
+//   background: #fff2a8;
+// }
+
+// That's because browsers ignore the entire selector 
+// if there is a part of it they don't understand or 
+// is invalid. There is some exceptions to this (IE 7?) 
+// but not in relation to these selectors.
+
 
 // For other browsers
 ::-o-selection {
@@ -50,6 +65,7 @@ span#{$evo}-selection {
     text-shadow: #{$selection_text_shadow};
     cursor: text;
 }
+
 
 
 
