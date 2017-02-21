@@ -16,35 +16,6 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-
-/* From http://www.prowebdesign.ro/tutorials/css3_shadows/ */
-
-.curved-shadow
-{
-    position:relative;
-  -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-            box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/*==================================================
- * Drop shadow effect with box-shadow
- * ===============================================*/
-.curved-shadow:after
-{
-  content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 40px rgba(0,0,0,1);
-        box-shadow:0 0 40px rgba(0,0,0,1);
-    bottom:0px;
-  width:90%;
-  height:10%;
-    -moz-border-radius:100%;
-    border-radius:100%;
-  left:5%;
-  right:5%;
-}
-
 </style>
 
 </head>
@@ -61,9 +32,9 @@
 
 <section id="evoBoxShadowIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Box Shadow</h1>
+<h1 class="evo-text-13" style="margin-bottom: 0;">Box Effect</h1>
 
-<p class="evo-measure">Box shadow styles.</p>
+<p class="evo-measure">Box effect.</p>
 
 <div class="evo-space-20"></div>
 
@@ -71,131 +42,14 @@
 
 
 
-<section id="evoBoxShadow">
+<section id="evoBoxShadowHover">
 
-<div class="evo-space-15 box-shadow">Box Shadow</div>
+<div class="evo-space-20 color-white-bg evo-box box-black box-thin shadow-hover-up">Box Shadow Hover</div>
 <div class="evo-space-11"></div>
-
-<div class="evo-space-20 box-shadow-inset" style=" border: 1px solid #eee;">Box Shadow Inset</div>
-<div class="evo-space-11"></div>
-
-<div class="evo-space-15 box-shadow-offset" style=" border: 1px solid #eee;">Box Shadow Offset</div>
-<div class="evo-space-11"></div>
-
-<div class="evo-space-15 box-shadow-offset-more" style=" border: 1px solid #eee;">Box Shadow Offset More</div>
-<div class="evo-space-11"></div>
-
-<div class="evo-space-15 box-shadow-offset-most" style=" border: 1px solid #eee;">Box Shadow Offset Most</div>
-<div class="evo-space-11"></div>
-
-<div class="evo-space-20 box-shadow-test" style=" border: 1px solid #eee;">Test</div>
-<div class="evo-space-11"></div>
-
 
     </div>
   </div>
 </section>
-
-
-<section id="boxShadow" class="container">
-  <div class="row">
-    <div class="col-xs-12">
-
-      <div class="evo-space-15"></div>
-
-<!-- Testing Scale -->
-<div class="evo-space-15 box-shadow-0">0</div>
-<div class="evo-space-11"></div>
-<div class="evo-space-15 box-shadow-1">1</div>
-<div class="evo-space-12"></div>
-<div class="evo-space-15 box-shadow-2">2</div>
-<div class="evo-space-13"></div>
-<div class="evo-space-15 box-shadow-3">3</div>
-<div class="evo-space-14"></div>
-<div class="evo-space-15 box-shadow-4">4</div>
-<div class="evo-space-15"></div>
-<div class="evo-space-15 box-shadow-5">5</div>
-<div class="evo-space-16"></div>
-<div class="evo-space-15 box-shadow-6">6</div>
-<div class="evo-space-17"></div>
-<div class="evo-space-15 box-shadow-7">7</div>
-<div class="evo-space-18"></div>
-<div class="evo-space-15 box-shadow-8">8</div>
-<div class="evo-space-19"></div>
-<div class="evo-space-15 box-shadow-9">9</div>
-<div class="evo-space-20"></div>
-<div class="evo-space-15 box-shadow-10">10</div>
-<div class="evo-space-21"></div>
-<div class="evo-space-15 box-shadow-11">11</div>
-<div class="evo-space-22"></div>
-<div class="evo-space-15 box-shadow-12">12</div>
-<div class="evo-space-23"></div>
-
-    </div>
-  </div>
-</section>
-
-<section id="boxShadow" class="container">
-  <div class="row">
-    <div class="col-xs-12">
-
-      <div class="evo-space-15"></div>
-
-<!-- Testing Scale -->
-<div class="evo-space-15 box-shadow-down-0">0</div>
-<div class="evo-space-11"></div>
-<div class="evo-space-15 box-shadow-down-1">1</div>
-<div class="evo-space-12"></div>
-<div class="evo-space-15 box-shadow-down-2">2</div>
-<div class="evo-space-13"></div>
-<div class="evo-space-15 box-shadow-down-3">3</div>
-<div class="evo-space-14"></div>
-<div class="evo-space-15 box-shadow-down-4">4</div>
-<div class="evo-space-15"></div>
-<div class="evo-space-15 box-shadow-down-5">5</div>
-<div class="evo-space-16"></div>
-<div class="evo-space-15 box-shadow-down-6">6</div>
-<div class="evo-space-17"></div>
-<div class="evo-space-15 box-shadow-down-7">7</div>
-<div class="evo-space-18"></div>
-<div class="evo-space-15 box-shadow-down-8">8</div>
-<div class="evo-space-19"></div>
-<div class="evo-space-15 box-shadow-down-9">9</div>
-<div class="evo-space-20"></div>
-<div class="evo-space-15 box-shadow-down-10">10</div>
-<div class="evo-space-21"></div>
-<div class="evo-space-15 box-shadow-down-15">15</div>
-<div class="evo-space-22"></div>
-<div class="evo-space-15 box-shadow-down-20">20</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-25">25</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-30">30</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-35">35</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-40">40</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-45">45</div>
-<div class="evo-space-23"></div>
-<div class="evo-space-15 box-shadow-down-50">50</div>
-<div class="evo-space-23"></div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!--     <div class="curved-shadow" style="background-color: white;">
-      <h4>css3-shadow</h4>
-        <p>Box-shadow css property is used to create the rounded drop shadow effect.</p>  
-    </div> -->
-
-<!-- See CSS code above in the style area -->
-curved-shadow
-<div class="curved-shadow" style="border: 0; height: 100px; background-color: white;"></div>
-
 
 
 </main>

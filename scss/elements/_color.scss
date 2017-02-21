@@ -17,6 +17,13 @@
 #{$evo}-color-box,
 #{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
 
+#{$evo}-color-white            { color: #{$evo_white}; }
+#{$evo}-color-white-bg         { background-color: #{$evo_white}; }
+
+#{$evo}-color-black            { color: #{$evo_black}; }
+#{$evo}-color-black-bg         { background-color: #{$evo_black}; }
+
+
 /* COLORS */
 
 // Colors derived from CMYK palette in photoshop. 

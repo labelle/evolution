@@ -2478,6 +2478,18 @@ div.iframe-container-shadow-3::before {
   border-right-color: #ea1873;
   border-left-color: #ea1873; }
 
+.evo-color-white {
+  color: white; }
+
+.evo-color-white-bg {
+  background-color: white; }
+
+.evo-color-black {
+  color: black; }
+
+.evo-color-black-bg {
+  background-color: black; }
+
 /* COLORS */
 /* 
 
@@ -8187,6 +8199,13 @@ hr.evo-line-fade-pink {
 .box-right-gray-30 {
   border-right-color: black; }
 
+.shadow-hover-up {
+  transition: 0.4s ease-out; }
+
+.shadow-hover-up:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-1em); }
+
 .box-shadow-reset {
   box-shadow: initial; }
 
@@ -9154,48 +9173,37 @@ a.inverse-ghost-color-to-ghost:hover,
 .button-box-none:hover {
   border-width: 0; }
 
+.sub-main {
+  width: 30%;
+  margin: 22px;
+  float: left; }
+
 /*Button One*/
 .button-one {
-  padding: 20px 60px;
-  outline: none;
-  background-color: #27ae60;
-  border: none;
-  border-radius: 5px;
   box-shadow: 0 9px #95a5a6; }
 
-.button-one:hover {
-  background-color: #2ecc71; }
-
 .button-one:active {
-  background-color: #2ecc71;
+  background-color: #ea1873;
+  border-color: #ea1873;
   box-shadow: 0 5px #95a5a6;
   transform: translateY(4px); }
 
 /*Button Two*/
-.button-two {
-  border-radius: 4px;
-  background-color: #d35400;
-  border: none;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s; }
-
 .button-two span {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s; }
+  transition: 0.2s; }
 
 .button-two span:after {
   content: '»';
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
-  transition: 0.5s; }
+  right: 1em; }
 
 .button-two:hover span {
-  padding-right: 25px; }
+  padding-right: 1em; }
 
 .button-two:hover span:after {
   opacity: 1;
@@ -9204,21 +9212,10 @@ a.inverse-ghost-color-to-ghost:hover,
 /*Button Three*/
 .button-three {
   position: relative;
-  background-color: #f39c12;
-  border: none;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
   overflow: hidden; }
 
 .button-three:hover {
-  background: #fff;
-  box-shadow: 0px 2px 10px 5px #97B1BF;
-  color: #000; }
+  box-shadow: 0px 2px 10px 5px #97B1BF; }
 
 .button-three:after {
   content: "";
