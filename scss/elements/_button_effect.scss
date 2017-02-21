@@ -21,7 +21,9 @@
   // background-color: #27ae60;
   // border: none;
   // border-radius:5px;
-  box-shadow: 0 9px #95a5a6;
+  // box-shadow: 0 9px #95a5a6;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 
 .button-one:hover{
@@ -31,8 +33,9 @@
 .button-one:active {
   background-color:#{$evo_color};
   border-color:#{$evo_color};
-  box-shadow: 0 5px #95a5a6;
-  transform: translateY(4px);
+  // box-shadow: 0 5px #95a5a6;
+ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  transform: translateY(.1em);
 }
 
 
@@ -95,7 +98,7 @@
 
 .button-three:after {
     content: "";
-    background: #f1c40f;
+    background: #{$evo_color};
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -169,9 +172,9 @@
      // type
      // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
-     color: #{$button_hover_color} !important;
-     background-color: #{$button_hover_background_color};
-     border-color: #{$button_hover_border_color};
+     color: #f7f !important;
+     background-color: #{$inverse_button_hover_background_color};
+     border-color: #f7f;
      // structure
      border-style: #{$button_hover_border_style};
      border-width: #{$button_hover_border_width};

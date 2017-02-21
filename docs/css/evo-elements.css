@@ -9180,13 +9180,13 @@ a.inverse-ghost-color-to-ghost:hover,
 
 /*Button One*/
 .button-one {
-  box-shadow: 0 9px #95a5a6; }
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
 .button-one:active {
   background-color: #ea1873;
   border-color: #ea1873;
-  box-shadow: 0 5px #95a5a6;
-  transform: translateY(4px); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(0.1em); }
 
 /*Button Two*/
 .button-two span {
@@ -9219,7 +9219,7 @@ a.inverse-ghost-color-to-ghost:hover,
 
 .button-three:after {
   content: "";
-  background: #f1c40f;
+  background: #ea1873;
   display: block;
   position: absolute;
   padding-top: 300%;
@@ -9252,9 +9252,9 @@ a.inverse-ghost-color-to-ghost:hover,
   border-color: #f0f; }
 
 .evo-button-neon:hover {
-  color: white !important;
-  background-color: black;
-  border-color: black;
+  color: #f7f !important;
+  background-color: white;
+  border-color: #f7f;
   border-style: solid;
   border-width: 2px;
   transition-duration: 0.2s;
