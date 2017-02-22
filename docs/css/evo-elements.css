@@ -9179,23 +9179,23 @@ a.inverse-ghost-color-to-ghost:hover,
   float: left; }
 
 /*Button One*/
-.button-one {
+button.button-one {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.button-one:active {
+button.button-one:active {
   background-color: #ea1873;
   border-color: #ea1873;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translateY(0.1em); }
 
 /*Button Two*/
-.button-two span {
+button.button-two span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.2s; }
 
-.button-two span:after {
+button.button-two span:after {
   content: '»';
   position: absolute;
   opacity: 0;
@@ -9205,19 +9205,19 @@ a.inverse-ghost-color-to-ghost:hover,
 .button-two:hover span {
   padding-right: 1em; }
 
-.button-two:hover span:after {
+button.button-two:hover span:after {
   opacity: 1;
   right: 0; }
 
 /*Button Three*/
-.button-three {
+button.button-three {
   position: relative;
   overflow: hidden; }
 
-.button-three:hover {
+button.button-three:hover {
   box-shadow: 0px 2px 10px 5px #97B1BF; }
 
-.button-three:after {
+button.button-three:after {
   content: "";
   background: #ea1873;
   display: block;
@@ -9229,13 +9229,13 @@ a.inverse-ghost-color-to-ghost:hover,
   opacity: 0;
   transition: all 0.8s; }
 
-.button-three:active:after {
+button.button-three:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   transition: 0s; }
 
-.evo-button-neon {
+button.evo-button-neon {
   font-family: neon, sans-serif;
   text-align: center;
   border-width: 2px;
@@ -9246,12 +9246,12 @@ a.inverse-ghost-color-to-ghost:hover,
   padding-left: 1em;
   padding-right: 1em; }
 
-.evo-button-neon {
+button.evo-button-neon {
   color: #f0f !important;
   background-color: transparent;
   border-color: #f0f; }
 
-.evo-button-neon:hover {
+button.evo-button-neon:hover {
   color: #f7f !important;
   background-color: white;
   border-color: #f7f;
