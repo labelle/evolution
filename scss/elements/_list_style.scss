@@ -9,7 +9,7 @@
 
 // Make lists inline
 // Note that line height, padding bottom, margin bottom don't work in conjunction with this
-#{$evo}-list-inline {
+.list-inline {
   list-style:none;
   padding-left:0;
   display: inline;

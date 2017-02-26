@@ -26,6 +26,27 @@ top: .275em;
     // padding-left: -3em;
 }
 
+// List Background Image Approach
+#{$evo}-list-bullets-big li:before {
+content:''; 
+// display:inline-block; 
+position: absolute;
+height: 1.5em; // .5em; 
+width: 1.5em; // .5em; 
+background-image: url('../image/circle-solid.svg'); 
+background-size: contain;
+// background-position: auto;
+background-repeat:no-repeat; 
+left: -2em; // -1em;
+top: -.1em; // .275em;
+}
+#{$evo}-list-bullets-big li {
+    margin-left: 2em;
+    position: relative;
+    list-style-type: none;
+    // padding-left: -3em;
+}
+
 
 // /* Lists */
 // http://alistapart.com/article/taminglists/
@@ -50,23 +71,23 @@ top: .275em;
 
 
 
-// // Custom bullet images
+// Custom bullet images
 
-// // https://css-tricks.com/style-list-markers-css/
-// // http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
+// https://css-tricks.com/style-list-markers-css/
+// http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
 
-// // List 'list-style-image' approach
-// // Doesn't work so well because the PNG image needs to be the exact size in px
-// // There isn't a way to control the size of the list-style-image
-// #{$evo}-list-icon {
-//   margin-left:     #{$text_list_margin_left}; // 0
-//   padding-left:    #{$text_list_padding_left}; // 0
-//   list-style-image: #{$bullet_list_icon_background}; // url('circle-solid-1x.png');
-//   list-style-position: inside;
-//   background-position: #{$bullet_list_icon_background_position};
-//   background-size: #{$bullet_list_icon_background_size};
-//   // padding-bottom:  #{$text_list_padding_bottom}; // .25em
-// }
+// List 'list-style-image' approach
+// Doesn't work so well because the PNG image needs to be the exact size in px
+// There isn't a way to control the size of the list-style-image
+#{$evo}-list-icon {
+  margin-left:     #{$text_list_margin_left}; // 0
+  padding-left:    #{$text_list_padding_left}; // 0
+  list-style-image: #{$bullet_list_icon_background}; // url('circle-solid-1x.png');
+  list-style-position: inside;
+  background-position: #{$bullet_list_icon_background_position};
+  background-size: #{$bullet_list_icon_background_size};
+  // padding-bottom:  #{$text_list_padding_bottom}; // .25em
+}
 
 
 
