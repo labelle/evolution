@@ -35,33 +35,19 @@
   // list-style-image: none;
 }
 
+// List
 
-// Text and utility classes
-
-#{$evo}-list-inline {
-  list-style:none;
-  padding-left:0;
-  display: inline;
-    & li {
-    display: inline;
-  }
-}
-
-
-
-#{$evo}-list-none            {
-  list-style: disc outside none;
-  list-style-type: disc;
-  list-style-position: outside;
+  .list-none {
+  list-style-type: none;
   list-style-image: none;
-  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
 }
 
 
-#{$evo}-list-inherit         {
-  list-style: inherit;
-  list-style-type: inherit;
-  list-style-position: inherit;
-  list-style-image: inherit;
-  padding-bottom: inherit;
-}
+// // Hang bullets and numbers to the left
+// .list-hang           {
+//   // list-style: disc outside none;
+//   // list-style-type: disc;
+//   list-style-position: outside;
+//   // list-style-image: none;
+//   // padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+// }

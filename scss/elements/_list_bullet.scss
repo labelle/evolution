@@ -4,144 +4,256 @@
 // @import "../variables/scale";
 @import "text_mixin";
 
-// /* Lists */
-// http://alistapart.com/article/taminglists/
-// How to customize lists
 
-// ul lists
-
-ul {
-list-style-position: #{$ul_list_style_position}; // outside
-
-// ul base list class
-
-  &#{$evo}-list {
-  @extend #{$evo}-list;
-  list-style-type: #{$ul_list_style_type}; // none
+// Make small and large version, each with correct number alignment?
+#{$evo}-list-bullet {
+  // counter-reset: '•';
+list-style-type: none;
+& ul,
+& ul ul {
+  margin-top: 1.5em;
+  list-style-position: #{$ul_list_style_position}; // outside
+  list-style-type: none;
+    // margin-bottom: 1.5em;
 }
-
-// ul utility classes
-  &#{$evo}-list-hang {
-  // @extend #{$evo}-list;
-  margin-left: -1em;
-  }
-  &#{$evo}-list-align {
-  // @extend #{$evo}-list;
-  margin-left: 1em;
-  // list-style-position: inside; // none
-  }
-  &#{$evo}-list-circle {
-  @extend #{$evo}-list;
-  list-style-type: circle;
+& li {
+  position: relative;
+  // counter-increment: awesome-counter;
+  // margin-left: -1em;
+  padding-left:  2ch; // #{$number_list_padding_left};
 }
-  &#{$evo}-list-square {
-  @extend #{$evo}-list;
-  list-style-type: square;
+& li::before {
+  content: '•';
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  // top: .5em; // use with transform: translateY();
+  left: .2ch; // was left: 0;
+  // transform: translateY(#{$number_list_number_position}); // use with top: 0;
+  background: #{$number_list_background_color_1};
+  width: auto;
+  height: auto;
+  border-radius: #{$number_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  color: #{$number_list_number_color};
+  text-align: center;
+  font-family: #{$number_list_number_font_family};
+  // margin-right: 0.5em;
 }
-  &#{$evo}-list-disc {
-  @extend #{$evo}-list;
-  list-style-type: disc;
+& ul li::before {
+  background: #{$number_list_background_color_2};
 }
-  &#{$evo}-list-reset {
-  list-style:      unset;
-  list-style-type: initial;
-  list-style-position: initial;
-  list-style-image: initial;
-  padding:         initial;
-  padding-top:     initial;
-  padding-left:    initial;
-  padding-bottom:  initial;
-  padding-right:   initial;
+& ul ul li::before {
+  background: #{$number_list_background_color_3};
 }
 }
 
-
-// Custom bullet images
-
-// https://css-tricks.com/style-list-markers-css/
-// http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
-
-// // List 'list-style-image' approach
-// // Doesn't work so well because the PNG image needs to be the exact size in px
-// // There isn't a way to control the size of the list-style-image
-// #{$evo}-list-bullets {
-//   margin-left:     #{$text_list_margin_left}; // 0
-//   padding-left:    #{$text_list_padding_left}; // 0
-//   list-style-image: url('circle-solid-1x.png');
-//   list-style-position: inside;
-//   background-position: #{$text_bullet_list_icon_background_position};
-//   background-size: #{$text_bullet_list_icon_background_size};
-//   // padding-bottom:  #{$text_list_padding_bottom}; // .25em
+// .list-number-up li::before {
+//   transform: translateY(#{$number_list_number_position_up});
 // }
 
-
-// List Background Image Approach
-#{$evo}-list-bullets li:before {
-content:''; 
-// display:inline-block; 
-position: absolute;
-height:.5em; 
-width:.5em; 
-background-image: #{$bullet_list_icon_background}; 
-background-size: contain; 
-background-repeat:no-repeat; 
-left: -1em;
-top: .275em;
+// Hacky fix to nudge list numbers down in position when using line lists
+#{$evo}-list-bulet.list-number-down li::before {
+  transform: translateY(#{$number_list_number_position_down});
 }
-#{$evo}-list-bullets li {
-    margin-left: 1em;
-    position: relative;
-    list-style-type: none;
-    // padding-left: -3em;
+
+// Hacky utility to swap-in decimal-leading-zero...
+#{$evo}-list-bulet.list-number-counter-zero li::before {
+  content: counter(awesome-counter, decimal-leading-zero) "."; 
 }
 
 
 
-// #{$evo}-list-bullets {
-// @extend #{$evo}-list-circle;
-// & li{
-// // margin-left: #{$text_list_margin_left};
-// // padding-left: #{$text_list_padding_left};
-// // margin-bottom: #{$text_list_margin_bottom};
-// // line-height: #{$text_list_line_height};
-// // list-style-type: #{$text_list_style_type};
-// background-image: #{$text_bullet_list_icon_background};
-// background-position: #{$text_bullet_list_icon_background_position};
-// background-size: #{$text_bullet_list_icon_background_size};
-// }
-// }
 
+// A simpler list bullet
+// May not align with paragragh text as well
+// // https://www.w3schools.com/cssref/pr_gen_content.asp
 
-// // List Background Image Approach
-// #{$evo}-list-bullets li:before {
-// content:''; 
-// display:inline-block; 
-// height:.5em; 
-// width:.5em; 
-// background-image: #{$text_bullet_list_icon_background}; 
-// background-size:contain; 
-// background-repeat:no-repeat; 
-// padding-left: 1em; 
-// }
-// #{$evo}-list-bullets {
-// list-style-type: none;
-// }
-
-
-
-#{$evo}-list-bullets-color-dot li:before {
-    content: "•"; /* Insert content that looks like bullets */
-    padding-right: 8px;
-    color: #{$gray-lighter}; /* Or a color you prefer */
-}
-
-#{$evo}-list-bullets-color-dash li:before {
-    content: "–"; /* Insert content that looks like bullets */
-    padding-right: 8px;
-    color: #{$gray-lighter}; /* Or a color you prefer */
-}
-
-
-ul.evo-list-bullets-color {
+ul.list-bullet {
     list-style-type: none; // none
+    & ul {
+    margin-bottom: #{$bullet_list_margin_bottom};
 }
+& li:before {
+    content: "•"; // insert content that looks like bullets
+    padding-right: #{$bullet_list_icon_padding};
+    color: #{$bullet_list_icon_color}; // or a color you prefer
+}
+}
+
+
+
+
+// Other unicode symbols
+
+// Bullet U+2022
+ul.list-dot li:before {
+    content: "•"; // insert content that looks like bullets
+}
+
+// White Bullet U+25E6
+ul.list-dot-open li:before {
+    content: "◦"; // insert content that looks like bullets
+}
+
+// ul.list-dot-open-dash li:before {
+//     content: "◌"; // insert content that looks like bullets
+// }
+
+// En Dash U+2013
+ul.list-dash li:before {
+    content: "–"; // insert content that looks like bullets
+}
+
+// Triangular Bullet U+2023 (only browser)
+ul.list-triangle-small li:before {
+    content: "‣"; // insert content that looks like bullets
+}
+
+// ul.list-triangle-large li:before {
+//     content: "►"; // insert content that looks like bullets
+// }
+
+// ul.list-triangle-open-large li:before {
+//     content: "▷"; // insert content that looks like bullets
+// }
+
+// Black Right-Pointing Small Triangle U+25B8 (only browser)
+ul.list-triangle li:before {
+    content: "▸"; // insert content that looks like bullets
+}
+
+// White Right-Pointing Small Triangle U+25B9 (only brower)
+ul.list-triangle-open li:before {
+    content: "▹"; // insert content that looks like bullets
+}
+
+// Black Diamond U+25C6 (only browser)
+ul.list-diamond li:before {
+    content: "◆"; // insert content that looks like bullets
+}
+
+// White Diamond U+25C7 (only browser)
+ul.list-diamond-open li:before {
+    content: "◇"; // insert content that looks like bullets
+}
+
+// Rightwards Arrow U+2192
+ul.list-arrow li:before {
+    content: "→"; // insert content that looks like bullets
+}
+
+// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
+ul.list-arrow-heavy li:before {
+    content: "➜"; // insert content that looks like bullets
+}
+
+// Single Right-Pointing Angle Quotation Mark U+203A
+ul.list-arrow-single li:before {
+    content: "›"; // insert content that looks like bullets
+}
+
+ul.list-arrow-double li:before {
+    content: "»"; // insert content that looks like bullets
+}
+
+// Right-Pointing Double Angle Quotation Mark U+00BB
+ul.list-arrow-down li:before {
+    content: "↓"; // insert content that looks like bullets
+}
+
+// Heavy Asterisk U+2731 (only browser)
+ul.list-asterisk-heavy li:before {
+    content: "✱"; // insert content that looks like bullets
+}
+
+// Asterisk U+002A
+ul.list-asterisk li:before {
+    content: "*"; // insert content that looks like bullets
+}
+
+// Circled Asterisk Operator U+229B (only browse)
+ul.list-asterisk-circle li:before {
+    content: "⊛"; // insert content that looks like bullets
+}
+
+// Note there are many more star unicode symbols
+// https://unicode-table.com/en/search/?q=star 
+
+// Black Small Star U+2B51
+ul.list-star li:before {
+    content: "⭑"; // insert content that looks like bullets
+}
+
+// White Small Star U+2B52
+ul.list-star-open li:before {
+    content: "⭒"; // insert content that looks like bullets
+}
+
+// Apl Functional Symbol Circle Star U+235F (only browser)
+ul.list-star-circle li:before {
+    content: "⍟"; // insert content that looks like bullets
+}
+
+// Snowflake U+2744 (only browser plus OS)
+ul.list-snowflake li:before {
+    content: "❄"; // insert content that looks like bullets
+}
+
+// Ballot X U+2717 (only browser)
+ul.list-x li:before {
+    content: "✗"; // insert content that looks like bullets
+}
+
+// Check Mark U+2713 (only browser)
+ul.list-check li:before {
+    content: "✓"; // insert content that looks like bullets
+}
+
+// Heavy Check Mark U+2714 (only browser plus OS)
+ul.list-check-heavy li:before {
+    content: "✔"; // insert content that looks like bullets
+}
+
+// List color
+
+ul.list-color li:before {
+    color: #{$evo_color}; // or a color you prefer
+}
+
+ul.list-black li:before {
+    color: #{$evo_black}; // or a color you prefer
+}
+
+ul.list-white li:before {
+    color: #{$evo_white}; // or a color you prefer
+}
+
+ul.list-gray-dark li:before {
+    color: #{$evo_gray_dark}; // or a color you prefer
+}
+
+ul.list-gray li:before {
+    color: #{$evo_gray}; // or a color you prefer
+}
+
+ul.list-gray-light li:before {
+    color: #{$evo_gray_light}; // or a color you prefer
+}
+
+
+// MORE
+// https://unicode-table.com/en/blocks/arrows/
+// https://unicode-table.com/en/blocks/dingbats/
+// https://unicode-table.com/en/blocks/counting-rod-numerals/
+// https://unicode-table.com/en/blocks/miscellaneous-symbols-and-pictographs/
+// https://unicode-table.com/en/blocks/block-elements/
+// https://unicode-table.com/en/blocks/miscellaneous-technical/
+
+
+// https://unicode-table.com/en/blocks/supplemental-arrows-c/
+// https://unicode-table.com/en/blocks/geometric-shapes/
+// https://unicode-table.com/en/blocks/geometric-shapes-extended/
+
+// https://unicode-table.com/en/blocks/mathematical-operators/
+

@@ -1,0 +1,106 @@
+///*      L I S T   S I Z E    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+
+
+// List size large
+.list-size-large {
+     font-size: 125%;
+}
+
+// List size normal
+.list-size-medium {
+     font-size: 100%;
+}
+
+// List size small
+.list-size-small {
+     font-size: 75%;
+}
+
+// Space between lines
+
+// .list-tightest li {
+//     padding-bottom: #{$u-14}em;
+//     padding-top: #{$u-14}em;
+// }
+
+// .list-tighter li {
+//     padding-bottom: #{$u-15}em;
+//     padding-top: #{$u-15}em;
+// }
+
+// .list-tight li {
+//     padding-bottom: #{$u-16}em; // .2em
+//     padding-top: #{$u-16}em; // .2em
+// }
+
+.list-padding-thick li {
+    padding-bottom: 1.25em !important;
+    padding-top: 1.25em !important;
+}
+
+.list-padding-medium li {
+    padding-bottom: 1em !important;
+    padding-top: 1em !important;
+}
+
+.list-padding-thin li {
+    padding-bottom: .5em !important;
+    padding-top: .5em !important;
+}
+
+.list-padding-none li {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+
+.list-margin-none li {
+    margin-bottom: 0;
+}
+
+
+// 
+.list-loose li {
+    padding-bottom: #{$u-19}em; // .375em
+    padding-top: #{$u-19}em; // .375em
+}
+
+.list-looser li {
+    padding-bottom: #{$u-21}em;
+    padding-top: #{$u-21}em;
+}
+
+.list-loosest li {
+    padding-bottom: #{$u-24}em;
+    padding-top: #{$u-24}em;
+}
+
+
+
+// Space between lines
+
+
+// .list-loose li {
+//     padding-bottom: 125%;
+//     padding-top: 125%;
+// }
+
+
+// // Space between lines
+
+
+// .list-tight li {
+//     padding-bottom: .8em;
+//     padding-top: .8em;
+// }
+
+// .list-loose li {
+//     padding-bottom: 1.2em;
+//     padding-top: 1.2em;
+// }

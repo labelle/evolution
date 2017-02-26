@@ -39,6 +39,53 @@ button.button-one:active {
 }
 
 
+/*Button One Alt*/
+
+
+// http://codepen.io/phyesix/pen/EZebOJ?editors=1100
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50%{
+    transform: scale3d(.97, .97, .97) translateY(.15em);
+  }
+
+  65% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+button.button-one-alt {
+  // padding:20px 60px;
+  // outline: none;
+  // background-color: #27ae60;
+  // border: none;
+  // border-radius:5px;
+  // box-shadow: 0 9px #95a5a6;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ animation-iteration-count: 1;
+}
+
+button.button-one-alt:hover{
+  // background-color: #2ecc71;
+}
+
+button.button-one-alt:active {
+  background-color:#{$evo_color};
+  border-color:#{$evo_color};
+  // box-shadow: 0 5px #95a5a6;
+ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4), 0 5px 10px 0 rgba(0,0,0,0.4);
+  // transform: translateY(.1em);
+  animation-duration: .5s; 
+  animation-name: pulse;
+}
+
 /*Button Two*/
 button.button-two {
   // border-radius: 4px;

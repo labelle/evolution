@@ -42,82 +42,211 @@
 
 
 
-<!-- text -->
+<!-- evo-list -->
 
-<section id="evoList">
+<section id="evoUnorderedList">
 
-<h2 class="evo-text-6">Base List</h2>
+<h2 class="evo-text-6">evo-list</h2>
 
 <div class="evo-space"></div>
 
 
-<!-- Evo Base Classes Only -->
-
-
-<ul>
-By default, bullets removed and text aligned
-<li>ul</li>
-<li>ul</li>
-<li>ul</li>
+<ul class="evo-list">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ul>
+
 
 <div class="evo-space-10"></div>
 
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="evo-list"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
 
-<ol>
-<li>ol</li>
-<li>ol</li>
-<li>ol</li>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This removes the bullets from an unordered list and controls text styles. Create a <code>&lt;ul&gt;</code> tag with the <code>evo-list</code> class. Place <code>&lt;li&gt;</code> tags nested underneath. Variables can be adjusted in _variables.scss</p>
+
+<!-- 
+<div class="evo-space-10"></div>
+
+<ol class="evo-list">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ol>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="evo-list&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre> -->
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- list rest -->
 
-<section id="evoListReset">
+<!-- no list -->
 
-<h2 class="evo-text-6">List Reset</h2>
+<section id="evoListNone">
+
+<h2 class="evo-text-6">list-none</h2>
 
 <div class="evo-space"></div>
 
-<p class="evo-text-reset">
-evo-text-reset</p>
 
-<div class="evo-space-10"></div>
-
-
-<ul class="evo-list-reset">
-<li>ul evo-list-reset</li>
+<ul class="list-none">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ul>
+<ol class="list-none">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ol>
+
+
 
 <div class="evo-space-10"></div>
 
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-none"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
 
-<ol class="evo-list-reset">
-<li>ol evo-list-reset</li>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This removes the bullets from an unordered list and controls text styles. Create a <code>&lt;ul&gt;</code> tag with the <code>evo-list</code> class. Place <code>&lt;li&gt;</code> tags nested underneath. Variables can be adjusted in _variables.scss</p>
+
+<!-- 
+<div class="evo-space-10"></div>
+
+<ol class="evo-list">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ol>
 
 <div class="evo-space-10"></div>
 
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="evo-list&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre> -->
 
-<ul class="evo-list-none">
-<li>ul evo-list-none</li>
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- list reset -->
+
+<section id="evoListReset">
+
+<h2 class="evo-text-6">list-hang</h2>
+
+<div class="evo-space"></div>
+
+<ul class="list-hang list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ul>
 
 <div class="evo-space-10"></div>
 
-
-
-<ul class="evo-list-inherit">
-<li>ul evo-list-inherit</li>
-</ul>
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-hang"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
 
+<p class="evo-measure">This hangs bullets beyond the left text axis. Create a <code>&lt;ul&gt;</code> tag and apply the <code>list-hang</code> class.</p>
 
+<div class="evo-space-17"></div>
+
+<ol class="list-hang">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ol>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="list-hang"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Also works with an ordered <code>&lt;ol&gt;</code> list.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- list example -->
+
+<section id="evoListExample">
+
+<h2 class="evo-text-6">List Example</h2>
+
+<div class="evo-space"></div>
+
+<!-- <ol class="evo-list-number evo-list-lines evo-text-6"> -->
+<ol class="list-decimal-zero evo-list-lines evo-text-6">
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  </ol>
+
+<div class="evo-space-10"></div>
+
+<!-- Replace this with a code mirror? -->
+<pre class="evo-code">
+<code class="evo-measure"> &lt;ol class="list-decimal-zero evo-list-lines evo-text-6""&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;/ol&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with customized numbers. Number background colors can be customized for up to three levels of nested list. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-number</code> class. List variables can be adjusted in _variables.scss</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 

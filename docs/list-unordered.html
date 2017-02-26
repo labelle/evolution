@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution List Number</title>
+        <title>Evolution List Bullet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,127 +30,212 @@
 <main>
 
 
-<section id="evoListNumberIntro">
+<section id="evoListUnorderedIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">List Number</h1>
+<h1 class="evo-text-13" style="margin-bottom: 0;">List Unordered</h1>
 
-<p class="evo-measure">Need number lists, custom number color lists, demonstration of larger size</p>
+<p>Unordered lists use a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- list number -->
+<!-- list unordered -->
 
-<section id="evoListNumber">
+<section id="evoListUnordered">
 
-<h2 class="evo-text-6">evo-list-number</h2>
+<h2 class="evo-text-6">ol</h2>
 
 <div class="evo-space"></div>
 
-<ol class="evo-list-number">
+<ul class="list-align">
   <li>List item level 1</li>
   <li>List item level 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis.</li>
-    <ol>
+    <ul>
       <li>List item level 2</li>
       <li>List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.</li>
-    </ol>
-    <ol>
+    </ul>
+    <ul>
        <li>List item level 2</li>
        <li>List item level 2</li>
-         <ol>
+         <ul>
           <li>List item level 3</li>
           <li>List item level 3</li>
-        </ol>
-    </ol>
+        </ul>
+    </ul>
   <li>List item level 1</li>
   <li>List item level 1</li>
-  </ol>
+  </ul>
 
 <div class="evo-space-10"></div>
 
-<!-- Replace this with a code mirror? -->
 <pre class="evo-code">
-<code class="evo-measure"> &lt;ol class="evo-list-number"&gt;
+<code class="evo-measure"> &lt;ul class="list-align"&gt;
   &lt;li&gt;List item level 1&lt;/li&gt;
   &lt;li&gt;List item level 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis.&lt;/li&gt;
-    &lt;ol&gt;
+    &lt;ul&gt;
       &lt;li&gt;List item level 2&lt;/li&gt;
       &lt;li&gt;List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
        &lt;li&gt;List item level 2&lt;/li&gt;
        &lt;li&gt;List item level 2&lt;/li&gt;
-         &lt;ol>
+         &lt;ul>
           &lt;li&gt;List item level 3&lt;/li&gt;
           &lt;li&gt;List item level 3&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/ol&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
   &lt;li&gt;List item level 1&lt;/li&gt;
   &lt;li&gt;List item level 1&lt;/li&gt;
-  &lt;/ol&gt;</code>
+  &lt;/ul&gt;</code>
 </pre>
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with customized numbers. Number background colors can be customized for up to three levels of nested list. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-number</code> class. Add the <code>list-number-counter-zero</code> class to the <code>&lt;ol&gt;</code> to change the number format. Use the <code>list-number-down</code> class to scootch the numbers down a bit. List variables can be adjusted in _variables.scss</p>
+<p class="evo-measure">These are nested unordered <code>&lt;ul&gt;</code> lists. Create <code>&lt;ul&gt;</code> tags that contain <code>&lt;li&gt;</code> tags. List variables can be adjusted in _global.scss</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- simple list number -->
-<!-- 
-<section id="evoListNumber">
 
-<h2 class="evo-text-6">list-number</h2>
+<!-- ul list -->
+
+<section id="evoListUnordered">
+
+<h2 class="evo-text-6">ul</h2>
 
 <div class="evo-space"></div>
 
 
-<ol class="list-number">
+<ul>
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
-</ol>
+</ul>
 
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ol class="list-number&gt;
+<code class="evo-measure">&lt;ul&gt;
 &lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ol&gt;</code>
+&lt;/ul&gt;</code>
 </pre>
 <div class="evo-space-10"></div>
 
-This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors can bullet symbol character can be customized. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-bullet</code> class. Add the <code>list-bullet-dash</code> class to the <code>&lt;ul&gt;</code> to change the symbol character. Use the <code>list-bullet-gray</code> class make the bullets look more neutral. List variables can be adjusted in _variables.scss</p>
+<p class="evo-measure">Default <code>&lt;ul&gt;</code> unordered list without a class. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags. List variables can be adjusted in _global.scss</p>
 
 <div class="evo-space-20"></div>
 
 </section>
- -->
 
 
-<!-- <section>
-<div class="ui ordered list">
-      <a class="list-item">Getting Started</a>
-      <a class="list-item">Introduction</a>
-      <div class="list-item">
-        <a>Languages</a>
-        <div class="list">
-          <a class="list-item">HTML</a>
-          <a class="list-item">Javascript</a>
-          <a class="list-item">CSS</a>
-        </div>
-      </div>
-      <a class="list-item">Review</a>
-    </div>
 
-</section> -->
+<!-- list circle -->
+
+<section id="evoListCircle">
+
+<h2 class="evo-text-6">list-circle</h2>
+
+<div class="evo-space"></div>
+
+
+<ul class="list-circle">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-circle"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-circle</code> class. List variables can be adjusted in _global.scss</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- list disk -->
+
+<section id="evoListDisk">
+
+<h2 class="evo-text-6">list-disk</h2>
+
+<div class="evo-space"></div>
+
+
+<ul class="list-disk">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-disk"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-disk</code> class. List variables can be adjusted in _global.scss</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- list square -->
+
+<section id="evoListSquare">
+
+<h2 class="evo-text-6">list-square</h2>
+
+<div class="evo-space"></div>
+
+
+<ul class="list-square">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-square"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-square</code> class. List variables can be adjusted in _global.scss</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
 
 </main>
 

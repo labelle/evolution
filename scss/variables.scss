@@ -180,22 +180,53 @@ $text_rendering:                    optimizeLegibility !default; // or optimizeS
 // SHOULD SOME BE PERCENTAGES OR EMS?
 
 // For default Ul and OL lists
+
 $text_list_margin_top:                       0;
 $text_list_margin_left:                      0;
-$text_list_margin_bottom:                    #{$u-17}em; // .275em bottom of each list
+$text_list_margin_bottom:                    #{$u-17}rem; // .275em bottom of each list
 $text_list_padding_left:                     0;
 $text_list_padding_bottom:                   #{$u-17}em; // .275em space between list items
 
 
 // For default Ul lists
-$ul_list_style_type:                         none; // remove bullets
-$ul_list_style_position:                     outside; // or inside, which indents. default is outside.
+$ul_list_style_type:                         none; // 'none' to remove bullets
+$ul_list_style_position:                     inside; // or inside, which indents. default is outside.
 
 
 // For default OL lists
 $ol_list_style_type:                         decimal; // remove bullets
-$ol_list_style_position:                     inside; // or outisde, which aligns flush left with text.
+$ol_list_style_position:                     inside; // outside aligns text flush left with text, or outside
 
+
+// For content replacement bullets
+// $bullet_list_icon:                           "•";
+$bullet_list_icon_color:                    #{$evo_color};
+$bullet_list_icon_padding:                  .5ch;
+
+
+// For custom image bullets Lists
+// make background more specific than "background?" maybe background-image
+// $bullet_list_margin_left:                    0; // or -1.25em
+// $bullet_list_padding_left:                   0;
+$bullet_list_icon_background:                url('/css/circle-solid.svg');
+$bullet_list_icon_background_size:           0px;
+$bullet_list_icon_background_position:       0px 0.41667rem;
+
+$bullet_list_margin_bottom:                  #{$u-17}rem;
+
+
+// For awesome-counter OL lists
+$number_list_number_font_family:             inherit; // or #{$sans-serif}
+$number_list_number_color:                   #{$evo_color}; // or #{$evo_white}
+$number_list_number_position:                -40%; // or less than -50% will move numbers down
+// $number_list_number_position_up:          -45%;
+$number_list_number_position_down:           -18%; // hacky, delete later?
+$number_list_padding_left:                   3ch; // or 2em
+
+$number_list_background_corner:              10%; // 50% would be a circle, 0 is a square
+$number_list_background_color_1:             transparent; // or #{$evo_color}
+$number_list_background_color_2:             transparent; // nested
+$number_list_background_color_3:             transparent; // nested further
 
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
@@ -204,31 +235,25 @@ $ol_list_style_position:                     inside; // or outisde, which aligns
 $line_list_padding_left:                0; // .5em
 $line_list_bullet_type:                 none; // list-style-type of bullets
 
-$line_list_margin_bottom:               #{$u-17}em; // .275em bottom of each list
+$line_list_margin_bottom:               #{$u-17}rem; // .275em bottom of each list
+$line_list_item_margin_bottom:          0;
 
-$line_list_padding_top:                 #{$u-17}em; // .275em space between list item and line
-$line_list_padding_bottom:              #{$u-17}em; // .275em space between list item and line
+$line_list_padding_top:                 1em; // or #{$u-17}em or .275em space between list item and line
+$line_list_padding_bottom:              1em; // or #{$u-17}em or .275em space between list item and line
 
-$line_list_top_line_width:              thick;
+$line_list_top_line_width:              thin; // thick
 $line_list_top_line_style:              solid;
 $line_list_top_line_color:              #000;
 
 $line_list_middle_line_width:           thin;
-$line_list_middle_line_style:           solid;
-$line_list_middle_line_color:           #000;
+$line_list_middle_line_style:           dotted; // solid
+$line_list_middle_line_color:           #ccc;
 
-$line_list_bottom_line_width:           medium;
+$line_list_bottom_line_width:           thin; // medium
 $line_list_bottom_line_style:           solid;
 $line_list_bottom_line_color:           #000;
 
 
-// For custom image bullets Lists
-// make background more specific than "background?" maybe background-image
-// $bullet_list_margin_left:               0; // or -1.25em
-// $bullet_list_padding_left:              0;
-$bullet_list_icon_background:           url('circle-solid.svg');
-$bullet_list_icon_background_size:      0px;
-$bullet_list_icon_background_position:  0px 0.41667rem;
 
 
 

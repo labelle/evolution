@@ -1,4 +1,4 @@
-///*      L I S T   I C O N    */
+///*      L I S T   I M A G E    */
 
 @import "../variables";
 // @import "../variables/scale";
@@ -7,7 +7,7 @@
 
 
 // List Background Image Approach
-#{$evo}-list-bullets li:before {
+#{$evo}-list-icon li:before {
 content:''; 
 // display:inline-block; 
 position: absolute;
@@ -19,54 +19,28 @@ background-repeat:no-repeat;
 left: -1em;
 top: .275em;
 }
-#{$evo}-list-bullets li {
-    margin-left: 1em;
-    position: relative;
-    list-style-type: none;
-    // padding-left: -3em;
-}
-
-
-// /* Lists */
-// http://alistapart.com/article/taminglists/
-// How to customize lists
-
-
-// // List Background Image Approach
-// #{$evo}-list-icon li:before {
-// content:''; 
-// // display:inline-block; 
-// position: absolute;
-// height:.5em; 
-// width:.5em; 
-// background-image: #{$bullet_list_icon_background}; 
-// background-size: contain; 
-// background-repeat:no-repeat; 
-// left: -1em;
-// top: .275em;
-// }
 
 
 
+// Custom bullet images
 
-
-// // Custom bullet images
-
-// // https://css-tricks.com/style-list-markers-css/
-// // http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
+// https://css-tricks.com/style-list-markers-css/
+// http://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit
 
 // // List 'list-style-image' approach
 // // Doesn't work so well because the PNG image needs to be the exact size in px
 // // There isn't a way to control the size of the list-style-image
-// #{$evo}-list-icon {
+// #{$evo}-list-bullets {
 //   margin-left:     #{$text_list_margin_left}; // 0
 //   padding-left:    #{$text_list_padding_left}; // 0
-//   list-style-image: #{$bullet_list_icon_background}; // url('circle-solid-1x.png');
+//   list-style-image: url('circle-solid-1x.png');
 //   list-style-position: inside;
-//   background-position: #{$bullet_list_icon_background_position};
-//   background-size: #{$bullet_list_icon_background_size};
+//   background-position: #{$text_bullet_list_icon_background_position};
+//   background-size: #{$text_bullet_list_icon_background_size};
 //   // padding-bottom:  #{$text_list_padding_bottom}; // .25em
 // }
+
+
 
 
 
@@ -88,19 +62,17 @@ top: .275em;
 
 
 // // List Background Image Approach
-// #{$evo}-list-icon li:before {
+// #{$evo}-list-bullets li:before {
 // content:''; 
 // display:inline-block; 
-// height: auto; // was .5em; 
-// width: auto; // was .5em; 
-// background-image: #{$bullet_list_icon_background}; 
+// height:.5em; 
+// width:.5em; 
+// background-image: #{$text_bullet_list_icon_background}; 
 // background-size:contain; 
 // background-repeat:no-repeat; 
 // padding-left: 1em; 
 // }
-// #{$evo}-list-icon {
+// #{$evo}-list-bullets {
 // list-style-type: none;
 // }
-
-
 

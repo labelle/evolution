@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution List Icons</title>
+        <title>Evolution List Icon</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,11 +30,11 @@
 <main>
 
 
-<section id="evoListNumbersIntro">
+<section id="evoListIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">List Icons</h1>
+<h1 class="evo-text-13" style="margin-bottom: 0;">List</h1>
 
-<p class="evo-measure">Need lists with icons instead of bullets, and demonstration of larger size. Icons could be arrows, chevrons, circles, checks and Xs</p>
+<p class="evo-measure">Text Lists are more dependentent upon HTML and CSS resets than other elements, particularly to control indents.</p>
 
 <div class="evo-space-20"></div>
 
@@ -42,164 +42,218 @@
 
 
 
-<!-- text -->
+<!-- evo-list -->
 
-<section id="evoListNumbers">
+<section id="evoUnorderedList">
 
-<h2 class="evo-text-6">evo-list-numbers</h2>
+<h2 class="evo-text-6">evo-list-icon</h2>
 
 <div class="evo-space"></div>
 
 
-<!-- List Numbers -->
+<ul class="evo-list-icon">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
 
-
-<ol class="evo-list-reset">
-<li>ol evo-list-reset</li>
-</ol>
 
 <div class="evo-space-10"></div>
 
+<ul class="evo-list-bullets">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="evo-list"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This removes the bullets from an unordered list and controls text styles. Create a <code>&lt;ul&gt;</code> tag with the <code>evo-list</code> class. Place <code>&lt;li&gt;</code> tags nested underneath. Variables can be adjusted in _variables.scss</p>
+
+<!-- 
+<div class="evo-space-10"></div>
 
 <ol class="evo-list">
-<li>ol evo-list</li>
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ol>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="evo-list&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre> -->
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- no list -->
+
+<section id="evoListNone">
+
+<h2 class="evo-text-6">list-none</h2>
+
+<div class="evo-space"></div>
+
+
+<ul class="list-none">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<ol class="list-none">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ol>
+
 
 
 <div class="evo-space-10"></div>
 
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-none"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This removes the bullets from an unordered list and controls text styles. Create a <code>&lt;ul&gt;</code> tag with the <code>evo-list</code> class. Place <code>&lt;li&gt;</code> tags nested underneath. Variables can be adjusted in _variables.scss</p>
+
+<!-- 
+<div class="evo-space-10"></div>
 
 <ol class="evo-list">
-combine with a list class
-<li>ol evo-list</li>
-<li>ol evo-list</li>
-<li>ol evo-list</li>
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ol>
 
 <div class="evo-space-10"></div>
 
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="evo-list&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre> -->
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
-<ol class="evo-list evo-list-hang">
-To hang a list, combine the list class with evo-list-align
-<li>ol evo-list evo-list-hang</li>
-<li>ol evo-list evo-list-hang</li>
-<li>ol evo-list evo-list-hang</li>
+
+<!-- list reset -->
+
+<section id="evoListReset">
+
+<h2 class="evo-text-6">list-hang</h2>
+
+<div class="evo-space"></div>
+
+<ul class="list-hang list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-hang"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This hangs bullets beyond the left text axis. Create a <code>&lt;ul&gt;</code> tag and apply the <code>list-hang</code> class.</p>
+
+<div class="evo-space-17"></div>
+
+<ol class="list-hang">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
 </ol>
 
 <div class="evo-space-10"></div>
 
-
-
-<ol class="evo-list evo-list-align">
-To align a list, combine the list class with evo-list-align
-<li>ol evo-list evo-list-align</li>
-<li>ol evo-list evo-list-align</li>
-<li>ol evo-list evo-list-align</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ol class="evo-list-decimal">
-<li>ol evo-list-decimal</li>
-</ol>
+<pre class="evo-code">
+<code class="evo-measure">&lt;ol class="list-hang"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
 
+<p class="evo-measure">Also works with an ordered <code>&lt;ol&gt;</code> list.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
-<ol class="evo-list-decimal-zero">
-<li>ol evo-list-decimal-zero</li>
-</ol>
+<!-- list example -->
 
-<div class="evo-space-10"></div>
+<section id="evoListExample">
 
+<h2 class="evo-text-6">List Example</h2>
 
+<div class="evo-space"></div>
 
-
-
-<ol class="evo-list-lower-alpha">
-<li>ol evo-list-lower-alpha</li>
-<li>ol evo-list-lower-alpha</li>
-<li>ol evo-list-lower-alpha</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-
-
-<ol class="evo-list-upper-alpha">
-<li>ol evo-list-upper-alpha</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-
-<ol class="evo-list-lower-latin">
-<li>ol evo-list-lower-latin</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-
-<ol class="evo-list-upper-latin">
-<li>ol evo-list-upper-latin</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ol class="evo-list-lower-roman">
-<li>ol evo-list-lower-roman</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-
-
-<ol class="evo-list-upper-roman">
-<li>ol evo-list-upper-roman</li>
-</ol>
-
-<div class="evo-space-10"></div>
-
-
-<div class="evo-space-10"></div>
-
-<!-- <div class="list-counter"> -->
-<ol class="evo-text evo-list list-counter">
-  <li>List item</li>
-  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis, rem, porro. Commodi itaque, recusandae eaque.</li>
-  <ol>
-    <li>List item</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.</li>
+<!-- <ol class="evo-list-number evo-list-lines evo-text-6"> -->
+<ol class="list-decimal-zero evo-list-lines evo-text-6">
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
+  <li>List item level 1</li>
   </ol>
-  <ol>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe error magnam, enim non neque aliquam, harum laborum veritatis a facilis repellat expedita consectetur est fugiat explicabo minima, excepturi quam veniam.</li>
-    <li>List item</li>
-      <li>List item</li>
-      <li>List item</li>
 
-    <li>List item</li>
-    <li>List item</li>
-  </ol>
-</ol>
-<!-- </div> -->
+<div class="evo-space-10"></div>
+
+<!-- Replace this with a code mirror? -->
+<pre class="evo-code">
+<code class="evo-measure"> &lt;ol class="list-decimal-zero evo-list-lines evo-text-6""&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;/ol&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with customized numbers. Number background colors can be customized for up to three levels of nested list. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-number</code> class. List variables can be adjusted in _variables.scss</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
