@@ -1,0 +1,29 @@
+///*      L I S T   I C O N    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+
+
+// Evo List Icons
+#{$evo}-list-icon li:before {
+content:''; 
+// display:inline-block; 
+position: absolute;
+height: 1em;
+width: 1em;
+background-image: #{$icon_list_background}; 
+background-size: contain;
+// background-position: auto;
+background-repeat:no-repeat; 
+left: -1.5em;
+top: .15em;
+}
+#{$evo}-list-icon li {
+    margin-left: 1.5em;
+    position: relative;
+    list-style-type: none;
+    // padding-left: -3em;
+}
+

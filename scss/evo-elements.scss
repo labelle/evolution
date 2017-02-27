@@ -104,19 +104,6 @@
 @import "elements/text_measure";
 @import "elements/text_effect";
 
-
-// List
-@import "elements/list";
-@import "elements/list_style";
-@import "elements/list_size";
-@import "elements/list_unordered";
-@import "elements/list_bullet";
-@import "elements/list_ordered";
-@import "elements/list_number";
-@import "elements/list_line";
-// @import "elements/list_image";
-@import "elements/list_icon";
-
 // Selection
 @import "elements/selection";
 // @import "elements/selection_gray";
@@ -127,6 +114,24 @@
 @import "elements/highlight_color";
 @import "elements/highlight_gray";
 
+// List
+@import "elements/list";
+@import "elements/list_style";
+// @import "elements/list_icon";
+@import "elements/list_size";
+@import "elements/list_unordered";
+@import "elements/list_bullet";
+@import "elements/list_ordered";
+@import "elements/list_number";
+@import "elements/list_line";
+// @import "elements/list_image";
+
+// Icon
+@import "elements/icon";
+@import "elements/icon_size";
+@import "elements/icon_list";
+
+
 // Image
 @import "elements/image";
 @import "elements/image_size";
@@ -135,7 +140,6 @@
 
 // Video
 // @import "elements/video";
-
 
 // Line
 @import "elements/line";

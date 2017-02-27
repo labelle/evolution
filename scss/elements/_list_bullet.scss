@@ -29,39 +29,24 @@ list-style-type: none;
   // top: .5em; // use with transform: translateY();
   left: .2ch; // was left: 0;
   // transform: translateY(#{$number_list_number_position}); // use with top: 0;
-  background: #{$number_list_background_color_1};
+  background: #{$bullet_list_background_color_1};
   width: auto;
   height: auto;
-  border-radius: #{$number_list_background_corner};
+  border-radius: #{$bullet_list_background_corner};
   display: inline-block;
   line-height: inherit; // or #{$body_line_height}, was 1.5em
-  color: #{$number_list_number_color};
+  color: #{$bullet_list_bullet_color};
   text-align: center;
-  font-family: #{$number_list_number_font_family};
+  font-family: #{$bullet_list_bullet_font_family};
   // margin-right: 0.5em;
 }
 & ul li::before {
-  background: #{$number_list_background_color_2};
+  background: #{$bullet_list_background_color_2};
 }
 & ul ul li::before {
-  background: #{$number_list_background_color_3};
+  background: #{$bullet_list_background_color_3};
 }
 }
-
-// .list-number-up li::before {
-//   transform: translateY(#{$number_list_number_position_up});
-// }
-
-// Hacky fix to nudge list numbers down in position when using line lists
-#{$evo}-list-bulet.list-number-down li::before {
-  transform: translateY(#{$number_list_number_position_down});
-}
-
-// Hacky utility to swap-in decimal-leading-zero...
-#{$evo}-list-bulet.list-number-counter-zero li::before {
-  content: counter(awesome-counter, decimal-leading-zero) "."; 
-}
-
 
 
 
@@ -76,8 +61,8 @@ ul.list-bullet {
 }
 & li:before {
     content: "•"; // insert content that looks like bullets
-    padding-right: #{$bullet_list_icon_padding};
-    color: #{$bullet_list_icon_color}; // or a color you prefer
+    padding-right: #{$bullet_list_bullet_padding};
+    color: #{$bullet_list_bullet_color}; // or a color you prefer
 }
 }
 

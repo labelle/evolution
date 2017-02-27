@@ -1,0 +1,96 @@
+///*      I C O N   S I Z E    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+
+
+// XXX Large Icon
+.list-icon-xxx-large li:before {
+height: 2em;
+width: 2em;
+left: -2.5em;
+top: -.45em;
+}
+.list-icon-xxx-large li {
+    margin-left: 2.5em;
+}
+
+// XX Large Icon
+.list-icon-xx-large li:before {
+height: 1.75em;
+width: 1.75em;
+left: -2.25em;
+top: -.3em;
+}
+.list-icon-xx-large li {
+    margin-left: 2.25em;
+}
+
+// X large Icon
+.list-icon-x-large li:before {
+height: 1.5em;
+width: 1.5em;
+left: -2em;
+top: -.15em;
+}
+.list-icon-x-large li {
+    margin-left: 2em;
+}
+
+// Large Icon
+.list-icon-large li:before {
+height: 1.25em;
+width: 1.25em;
+left: -1.75em;
+top: 0; // or -.05em
+}
+.list-icon-large li {
+    margin-left: 1.75em;
+}
+
+// Medium Icon
+.list-icon-medium li:before {
+height: 1em;
+width: 1em;
+left: -1.5em;
+top: .15em;
+}
+.list-icon-medium li {
+    margin-left: 1.5em;
+}
+
+
+// Small Icon
+.list-icon-small li:before {
+height:.75em; 
+width:.75em; 
+left: -1.25em;
+top: .3em;
+}
+.list-icon-small li {
+    margin-left: 1.25em;
+}
+
+// X Small Icon
+.list-icon-x-small li:before {
+height:.5em; 
+width:.5em; 
+left: -1em;
+top: .425em;
+}
+.list-icon-x-small li {
+    margin-left: 1em;
+}
+
+// XX Small Icon
+.list-icon-xx-small li:before {
+height: .35em; 
+width: .35em; 
+left: -.75em;
+top: .45em;
+}
+.list-icon-xx-small li {
+    margin-left: .75em;
+}

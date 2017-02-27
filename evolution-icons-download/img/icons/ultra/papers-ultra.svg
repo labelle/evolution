@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>papers-ultra</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="evo-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="papers-ultra" stroke-width="10" stroke="#000000">
+            <polyline id="chevron1" points="7 17 17 17 17 7"></polyline>
+            <polyline id="path1" points="19 44 7 44 7 17 17 7 40 7 40 15"></polyline>
+            <polyline id="chevron2" points="24 30 34 30 34 20"></polyline>
+            <polygon id="path2" points="34 20 57 20 57 57 24 57 24 30"></polygon>
+        </g>
+    </g>
+</svg>

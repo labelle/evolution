@@ -200,19 +200,29 @@ $ol_list_style_position:                     inside; // outside aligns text flus
 
 // For content replacement bullets
 // $bullet_list_icon:                           "•";
-$bullet_list_icon_color:                    #{$evo_color};
-$bullet_list_icon_padding:                  .5ch;
+$bullet_list_bullet_font_family:             inherit; // or #{$sans-serif}
+$bullet_list_bullet_color:                    #{$evo_color};
+$bullet_list_bullet_padding:                  .5ch;
 
 
 // For custom image bullets Lists
 // make background more specific than "background?" maybe background-image
 // $bullet_list_margin_left:                    0; // or -1.25em
 // $bullet_list_padding_left:                   0;
-$bullet_list_icon_background:                url('../image/circle-solid.svg');
-$bullet_list_icon_background_size:           0px;
-$bullet_list_icon_background_position:       0px 0.41667rem;
+// $bullet_list_background:                     url('../image/circle-chevron-book.svg');
+$bullet_list_background_size:                0px;
+$bullet_list_background_position:            0px 0.41667rem;
 
 $bullet_list_margin_bottom:                  #{$u-17}rem;
+
+$bullet_list_background_corner:              10%; // 50% would be a circle, 0 is a square
+$bullet_list_background_color_1:             transparent; // or #{$evo_color}
+$bullet_list_background_color_2:             transparent; // nested
+$bullet_list_background_color_3:             transparent; // nested further
+
+
+// For List Icon Images
+$icon_list_background:                       url('../image/circle-chevron-book.svg');
 
 
 // For awesome-counter OL lists
