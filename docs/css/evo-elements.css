@@ -5084,35 +5084,14 @@ ul.list-bullet {
     padding-right: 0.5ch;
     color: #ea1873; }
 
-ul.list-dot li:before {
-  content: "•"; }
-
-ul.list-dot-open li:before {
-  content: "◦"; }
-
 ul.list-dash li:before {
   content: "–"; }
 
-ul.list-triangle-small li:before {
-  content: "‣"; }
-
 ul.list-triangle li:before {
-  content: "▸"; }
-
-ul.list-triangle-open li:before {
-  content: "▹"; }
-
-ul.list-diamond li:before {
-  content: "◆"; }
-
-ul.list-diamond-open li:before {
-  content: "◇"; }
+  content: "‣"; }
 
 ul.list-arrow li:before {
   content: "→"; }
-
-ul.list-arrow-heavy li:before {
-  content: "➜"; }
 
 ul.list-arrow-single li:before {
   content: "›"; }
@@ -5129,20 +5108,11 @@ ul.list-asterisk-heavy li:before {
 ul.list-asterisk li:before {
   content: "*"; }
 
-ul.list-asterisk-circle li:before {
-  content: "⊛"; }
-
 ul.list-star li:before {
   content: "⭑"; }
 
 ul.list-star-open li:before {
   content: "⭒"; }
-
-ul.list-star-circle li:before {
-  content: "⍟"; }
-
-ul.list-snowflake li:before {
-  content: "❄"; }
 
 ul.list-x li:before {
   content: "✗"; }
@@ -5495,6 +5465,36 @@ ol.list-lower-greek {
 
 .evo-list-line-bottom-double li:last-child {
   border-bottom-style: double !important; }
+
+ul.list-dot li:before {
+  content: "•"; }
+
+ul.list-dot-open li:before {
+  content: "◦"; }
+
+ul.list-arrow-heavy li:before {
+  content: "➜"; }
+
+ul.list-triangle-large li:before {
+  content: "▸"; }
+
+ul.list-triangle-open-large li:before {
+  content: "▹"; }
+
+ul.list-diamond li:before {
+  content: "◆"; }
+
+ul.list-diamond-open li:before {
+  content: "◇"; }
+
+ul.list-asterisk-circle li:before {
+  content: "⊛"; }
+
+ul.list-star-circle li:before {
+  content: "⍟"; }
+
+ul.list-snowflake li:before {
+  content: "❄"; }
 
 .evo-icon-list li:before {
   content: '';

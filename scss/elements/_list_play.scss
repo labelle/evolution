@@ -1,0 +1,87 @@
+///*      L I S T   P L A Y    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixin";
+
+
+// Unicode symbols
+
+// Bullet U+2022
+ul.list-dot li:before {
+    content: "•"; // insert content that looks like bullets
+}
+
+// White Bullet U+25E6
+ul.list-dot-open li:before {
+    content: "◦"; // insert content that looks like bullets
+}
+
+// ul.list-dot-open-dash li:before {
+//     content: "◌"; // insert content that looks like bullets
+// }
+
+// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
+ul.list-arrow-heavy li:before {
+    content: "➜"; // insert content that looks like bullets
+}
+
+// ul.list-triangle-large li:before {
+//     content: "►"; // insert content that looks like bullets
+// }
+
+// ul.list-triangle-open-large li:before {
+//     content: "▷"; // insert content that looks like bullets
+// }
+
+// Black Right-Pointing Small Triangle U+25B8 (only browser)
+ul.list-triangle-large li:before {
+    content: "▸"; // insert content that looks like bullets
+}
+
+// White Right-Pointing Small Triangle U+25B9 (only brower)
+ul.list-triangle-open-large li:before {
+    content: "▹"; // insert content that looks like bullets
+}
+
+// Black Diamond U+25C6 (only browser)
+ul.list-diamond li:before {
+    content: "◆"; // insert content that looks like bullets
+}
+
+// White Diamond U+25C7 (only browser)
+ul.list-diamond-open li:before {
+    content: "◇"; // insert content that looks like bullets
+}
+
+// Circled Asterisk Operator U+229B (only browse)
+ul.list-asterisk-circle li:before {
+    content: "⊛"; // insert content that looks like bullets
+}
+
+// Apl Functional Symbol Circle Star U+235F (only browser)
+ul.list-star-circle li:before {
+    content: "⍟"; // insert content that looks like bullets
+}
+
+// Snowflake U+2744 (only browser plus OS)
+ul.list-snowflake li:before {
+    content: "❄"; // insert content that looks like bullets
+}
+
+
+// MORE
+// https://unicode-table.com/en/blocks/arrows/
+// https://unicode-table.com/en/blocks/dingbats/
+// https://unicode-table.com/en/blocks/counting-rod-numerals/
+// https://unicode-table.com/en/blocks/miscellaneous-symbols-and-pictographs/
+// https://unicode-table.com/en/blocks/block-elements/
+// https://unicode-table.com/en/blocks/miscellaneous-technical/
+
+
+// https://unicode-table.com/en/blocks/supplemental-arrows-c/
+// https://unicode-table.com/en/blocks/geometric-shapes/
+// https://unicode-table.com/en/blocks/geometric-shapes-extended/
+
+// https://unicode-table.com/en/blocks/mathematical-operators/
+

@@ -71,19 +71,6 @@ ul.list-bullet {
 
 // Other unicode symbols
 
-// Bullet U+2022
-ul.list-dot li:before {
-    content: "•"; // insert content that looks like bullets
-}
-
-// White Bullet U+25E6
-ul.list-dot-open li:before {
-    content: "◦"; // insert content that looks like bullets
-}
-
-// ul.list-dot-open-dash li:before {
-//     content: "◌"; // insert content that looks like bullets
-// }
 
 // En Dash U+2013
 ul.list-dash li:before {
@@ -91,46 +78,13 @@ ul.list-dash li:before {
 }
 
 // Triangular Bullet U+2023 (only browser)
-ul.list-triangle-small li:before {
-    content: "‣"; // insert content that looks like bullets
-}
-
-// ul.list-triangle-large li:before {
-//     content: "►"; // insert content that looks like bullets
-// }
-
-// ul.list-triangle-open-large li:before {
-//     content: "▷"; // insert content that looks like bullets
-// }
-
-// Black Right-Pointing Small Triangle U+25B8 (only browser)
 ul.list-triangle li:before {
-    content: "▸"; // insert content that looks like bullets
-}
-
-// White Right-Pointing Small Triangle U+25B9 (only brower)
-ul.list-triangle-open li:before {
-    content: "▹"; // insert content that looks like bullets
-}
-
-// Black Diamond U+25C6 (only browser)
-ul.list-diamond li:before {
-    content: "◆"; // insert content that looks like bullets
-}
-
-// White Diamond U+25C7 (only browser)
-ul.list-diamond-open li:before {
-    content: "◇"; // insert content that looks like bullets
+    content: "‣"; // insert content that looks like bullets
 }
 
 // Rightwards Arrow U+2192
 ul.list-arrow li:before {
     content: "→"; // insert content that looks like bullets
-}
-
-// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
-ul.list-arrow-heavy li:before {
-    content: "➜"; // insert content that looks like bullets
 }
 
 // Single Right-Pointing Angle Quotation Mark U+203A
@@ -157,11 +111,6 @@ ul.list-asterisk li:before {
     content: "*"; // insert content that looks like bullets
 }
 
-// Circled Asterisk Operator U+229B (only browse)
-ul.list-asterisk-circle li:before {
-    content: "⊛"; // insert content that looks like bullets
-}
-
 // Note there are many more star unicode symbols
 // https://unicode-table.com/en/search/?q=star 
 
@@ -173,16 +122,6 @@ ul.list-star li:before {
 // White Small Star U+2B52
 ul.list-star-open li:before {
     content: "⭒"; // insert content that looks like bullets
-}
-
-// Apl Functional Symbol Circle Star U+235F (only browser)
-ul.list-star-circle li:before {
-    content: "⍟"; // insert content that looks like bullets
-}
-
-// Snowflake U+2744 (only browser plus OS)
-ul.list-snowflake li:before {
-    content: "❄"; // insert content that looks like bullets
 }
 
 // Ballot X U+2717 (only browser)
