@@ -278,17 +278,21 @@ $link_transition:					color 0.2s ease; // or color 0.3s ease-in-out
 $link_color:                        #{$evo_color} !default;
 $link_background_color:             transparent !default;
 $link_underline:                    none !default; // text-dectoration
+$link_opacity:                      1; // or .5
 
 // a:visited
-$link_color_visited:                purple !default;
+$link_color_visited:                inherit !default;
+$link_opacity_visited:				1;
 
 // a:hover
-$link_color_hover:                  maroon; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_color_hover:                  #{$evo_black}; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $link_underline_hover:				none !default; // text-dectoration
+$link_opacity_hover:                1;
 
 // a:active
-$link_color_active:                 red !default; // cyan
+$link_color_active:                 #{$evo_black} !default; // cyan
 $link_underline_active:				none !default; // text-dectoration
+$link_opacity_active:               1;
 
 // a:focus
 $link_color_focus:                  inverse !default; // cyan
@@ -296,6 +300,7 @@ $link_underline_focus:				none !default;// text-decoration
 $link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
+$link_opacity_focus:                1;
 
 
 

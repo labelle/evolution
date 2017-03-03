@@ -41,14 +41,16 @@
 // Method 2
 // Add underlines, but classes must be placed on each a inside of li
 
-li > a.borderborder {
+li > a.borderborder,
+span.borderborder {
 	border-bottom-padding: 1em;
 	border-bottom-style: solid;
 	border-bottom-width: thin;
 	border-bottom-color: gray;
 }
 
-li > a.borderborder:hover {
+li > a.borderborder:hover,
+span.borderborder:hover {
 	border-bottom-style: dashed;
 	border-bottom-color: red;
 }

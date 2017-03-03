@@ -20,7 +20,7 @@ list-style-type: none;
   position: relative;
   // counter-increment: awesome-counter;
   // margin-left: -1em;
-  padding-left:  2ch; // #{$number_list_padding_left};
+  padding-left: 2ch; // #{$number_list_padding_left};
 }
 & li::before {
   content: '•';
@@ -73,95 +73,97 @@ ul.list-bullet {
 
 
 // En Dash U+2013
-ul.list-dash li:before {
+ul.bullet-dash li:before,
+a.bullet-dash:before,
+button.bullet-dash:before {
     content: "–"; // insert content that looks like bullets
 }
 
 // Triangular Bullet U+2023 (only browser)
-ul.list-triangle li:before {
+ul.bullet-triangle li:before,
+a.bullet-triangle:before,
+button.bullet-triangle:before  {
     content: "‣"; // insert content that looks like bullets
 }
 
 // Rightwards Arrow U+2192
-ul.list-arrow li:before {
+ul.bullet-arrow li:before,
+a.bullet-arrow:before,
+button.bullet-arrrow:before {
     content: "→"; // insert content that looks like bullets
 }
 
 // Single Right-Pointing Angle Quotation Mark U+203A
-ul.list-arrow-single li:before {
+ul.bullet-arrow-single li:before,
+a.bullet-arrow-single:before,
+button.bullet-arrow-single:before {
     content: "›"; // insert content that looks like bullets
 }
 
-ul.list-arrow-double li:before {
+ul.bullet-arrow-double li:before,
+a.bullet-arrow-double:before,
+button.bullet-arrow-double:before {
     content: "»"; // insert content that looks like bullets
 }
 
 // Right-Pointing Double Angle Quotation Mark U+00BB
-ul.list-arrow-down li:before {
+ul.bullet-arrow-down li:before,
+a.bullet-arrow-down:before,
+button.bullet-arrow-down:before {
     content: "↓"; // insert content that looks like bullets
 }
 
-// Heavy Asterisk U+2731 (only browser)
-ul.list-asterisk-heavy li:before {
-    content: "✱"; // insert content that looks like bullets
-}
-
-// Asterisk U+002A
-ul.list-asterisk li:before {
-    content: "*"; // insert content that looks like bullets
-}
-
-// Note there are many more star unicode symbols
-// https://unicode-table.com/en/search/?q=star 
-
-// Black Small Star U+2B51
-ul.list-star li:before {
-    content: "⭑"; // insert content that looks like bullets
-}
-
-// White Small Star U+2B52
-ul.list-star-open li:before {
-    content: "⭒"; // insert content that looks like bullets
-}
 
 // Ballot X U+2717 (only browser)
-ul.list-x li:before {
+ul.bullet-x li:before,
+a.bullet-x:before,
+button.bullet-x:before {
     content: "✗"; // insert content that looks like bullets
 }
 
 // Check Mark U+2713 (only browser)
-ul.list-check li:before {
+ul.bullet-check li:before,
+a.bullet-check:before,
+button.bullet-check:before {
     content: "✓"; // insert content that looks like bullets
 }
 
-// Heavy Check Mark U+2714 (only browser plus OS)
-ul.list-check-heavy li:before {
-    content: "✔"; // insert content that looks like bullets
-}
 
 // List color
 
-ul.list-color li:before {
+ul.bullet-color li:before,
+a.bullet-color:before,
+button.bullet-color:before {
     color: #{$evo_color}; // or a color you prefer
 }
 
-ul.list-black li:before {
+ul.bullet-black li:before,
+a.bullet-black:before,
+button.bullet-black:before {
     color: #{$evo_black}; // or a color you prefer
 }
 
-ul.list-white li:before {
+ul.bullet-white li:before,
+a.bullet-white:before,
+button.bullet-black:before {
     color: #{$evo_white}; // or a color you prefer
 }
 
-ul.list-gray-dark li:before {
+ul.bullet-gray-dark li:before,
+a.bullet-gray-dark:before,
+button.bullet-gray-dark:before {
     color: #{$evo_gray_dark}; // or a color you prefer
 }
 
-ul.list-gray li:before {
+ul.bullet-gray li:before,
+a.bullet-gray:before,
+button.bullet-gray:before {
     color: #{$evo_gray}; // or a color you prefer
 }
 
-ul.list-gray-light li:before {
+ul.bullet-gray-light li:before,
+a.bullet-gray-light:before,
+button.bullet-gray-light:before {
     color: #{$evo_gray_light}; // or a color you prefer
 }
 

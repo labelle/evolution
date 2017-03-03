@@ -70,6 +70,35 @@ ul.list-snowflake li:before {
 }
 
 
+// Heavy Asterisk U+2731 (only browser)
+ul.list-asterisk-heavy li:before {
+    content: "✱"; // insert content that looks like bullets
+}
+
+// Asterisk U+002A
+ul.list-asterisk li:before {
+    content: "*"; // insert content that looks like bullets
+}
+
+// Note there are many more star unicode symbols
+// https://unicode-table.com/en/search/?q=star 
+
+// Black Small Star U+2B51
+ul.list-star li:before {
+    content: "⭑"; // insert content that looks like bullets
+}
+
+// White Small Star U+2B52
+ul.list-star-open li:before {
+    content: "⭒"; // insert content that looks like bullets
+}
+
+// Heavy Check Mark U+2714 (only browser plus OS)
+ul.list-check-heavy li:before {
+    content: "✔"; // insert content that looks like bullets
+}
+
+
 // MORE
 // https://unicode-table.com/en/blocks/arrows/
 // https://unicode-table.com/en/blocks/dingbats/

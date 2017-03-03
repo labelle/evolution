@@ -1,0 +1,69 @@
+///*      L I N K    */
+
+@import "../variables";
+// @import "../variables/scale";
+
+
+// links states
+// order must be a:link, a:visited, a:hover, a:active
+
+a {
+  font-family: #{$link_font_family};
+  font-weight: #{$link_font_weight};
+  background-color: transparent; // reset
+  text-decoration: none; // reset
+  -webkit-text-decoration-skip: objects; // reset
+  -moz-transition: #{$link_transition};
+  -webkit-transition: #{$link_transition};
+  -o-transition: #{$link_transition};
+  transition: #{$link_transition};
+}
+
+.a-link,
+a:link    { 
+  color: #{$link_color};
+  background-color: #{$link_background_color};
+  text-decoration: #{$link_underline};
+  opacity: #{$link_opacity};
+}
+
+.a-visited,
+a:visited { 
+  color: #{$link_color_visited};
+  opacity: #{$link_opacity_visited};
+}
+
+.a-hover,
+a:hover {
+  color: #{$link_color_hover};
+  text-decoration: #{$link_underline_hover};
+  outline-width: 0; // reset
+  opacity: #{$link_opacity_hover};
+  //   button {
+  //   color: white;
+  //   border: 1px black;
+  //   background-color: red;
+  // }
+}
+
+.a-active,
+a:active {
+  color: #{$link_color_active};
+  text-decoration: #{$link_underline_active};
+  outline-width: 0; // reset
+  opacity: #{$link_opacity_active};
+}
+
+.a-focus,
+a:focus,
+button:focus {
+  color: #{$link_color_focus};
+  text-decoration: #{$link_underline_focus};
+  outline: unset; // reset foundation
+  opacity: #{$link_opacity_focus};
+  // outline: 5px auto -webkit-focus-ring-color; // what is this
+  outline-color: #{$link_outline_color_focus};
+  outline-width: #{$link_outline_width_focus};
+  outline-style: #{$link_outline_style_focus};
+  outline-offset: 0; // -2px; // from foundation
+}
