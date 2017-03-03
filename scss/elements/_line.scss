@@ -5,7 +5,8 @@
 // @import "line_mixin";
 
 
-hr {
+hr,
+#{$evo}-line {
 // Resets
 display:block;
 height:0;

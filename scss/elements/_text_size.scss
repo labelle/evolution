@@ -8,28 +8,10 @@
 // see variables/scale for actual units
 // https://css-tricks.com/confused-rem-em/
 
-
-// /* Text Utilities */
-
-
-// Relative Text Size
-#{$evo}-text-tiny      { @include size(tiny); }
-#{$evo}-text-smallest  { @include size(smallest); }
-#{$evo}-text-smaller   { @include size(smaller); }
-#{$evo}-text-small     { @include size(small); }
-// Default is between small and medium
-#{$evo}-text-medium    { @include size(medium); }
-#{$evo}-text-large     { @include size(large); }
-#{$evo}-text-larger    { @include size(larger); }
-#{$evo}-text-largest   { @include size(largest); }
-#{$evo}-text-big       { @include size(big); }
-#{$evo}-text-bigger    { @include size(bigger); }
-#{$evo}-text-biggest   { @include size(biggest); }
-#{$evo}-text-jumbo     { @include size(jumbo); }
-#{$evo}-text-giant     { @include size(giant); }
-
+// MOVE VARIABLES TO TEXT VARIABLES FILE
 
 // Text Size
+// HOOK VARIABLES INTO SETTINGS, USE MORE AGRESSIVE TRACKING AND LEADING AND TEXT STYLE CONTROLS
 // rems
 #{$evo}-text-reset     { line-height: initial; }
 #{$evo}-text-0         { font-size: #{$u-19}rem; } // 8px
@@ -58,3 +40,57 @@
 // #{$evo}-text-23        { font-size: #{$u-42}rem; } 
 // #{$evo}-text-24        { font-size: #{$u-43}rem; }
 // #{$evo}-text-25        { font-size: #{$u-44}rem; }
+
+
+// Text Size
+// Just the size
+// rems
+.text-size-reset     { line-height: initial; }
+.text-size-0         { font-size: #{$u-19}rem; } // 8px
+.text-size-1         { font-size: #{$u-20}rem; } // 10px
+.text-size-2         { font-size: #{$u-21}rem; } // 12px
+.text-size-3         { font-size: #{$u-22}rem; } // 14px
+.text-size-4         { font-size: #{$u-23}rem; } // 16px default
+.text-size-5         { font-size: #{$u-24}rem; } // 18px
+.text-size-6         { font-size: #{$u-25}rem; } // 21px
+.text-size-7         { font-size: #{$u-26}rem; } // 23px
+.text-size-8         { font-size: #{$u-27}rem; } // 30px
+.text-size-9         { font-size: #{$u-28}rem; } // 37px
+.text-size-10        { font-size: #{$u-29}rem; } // 43px
+.text-size-11        { font-size: #{$u-30}rem; } // 48px
+.text-size-12        { font-size: #{$u-31}rem; } // 60px
+.text-size-13        { font-size: #{$u-32}rem; } // 80px
+.text-size-14        { font-size: #{$u-33}rem; } // 96px
+.text-size-15        { font-size: #{$u-34}rem; } // 128px
+.text-size-16        { font-size: #{$u-35}rem; } // 160px
+.text-size-17        { font-size: #{$u-36}rem; } // 208px
+.text-size-18        { font-size: #{$u-37}rem; } // 256px
+.text-size-19        { font-size: #{$u-38}rem; } // 336px
+.text-size-20        { font-size: #{$u-39}rem; } // 416px
+// .text-size-21        { font-size: #{$u-40}rem; } 
+// .text-size-22        { font-size: #{$u-41}rem; } 
+// .text-size-23        { font-size: #{$u-42}rem; } 
+// .text-size-24        { font-size: #{$u-43}rem; }
+// .text-size-25        { font-size: #{$u-44}rem; }
+
+
+// /* Text Utilities */
+
+
+// // Relative Text Size
+// #{$evo}-text-tiny      { @include size(tiny); }
+// #{$evo}-text-smallest  { @include size(smallest); }
+// #{$evo}-text-smaller   { @include size(smaller); }
+// #{$evo}-text-small     { @include size(small); }
+// // Default is between small and medium
+// #{$evo}-text-medium    { @include size(medium); }
+// #{$evo}-text-large     { @include size(large); }
+// #{$evo}-text-larger    { @include size(larger); }
+// #{$evo}-text-largest   { @include size(largest); }
+// #{$evo}-text-big       { @include size(big); }
+// #{$evo}-text-bigger    { @include size(bigger); }
+// #{$evo}-text-biggest   { @include size(biggest); }
+// #{$evo}-text-jumbo     { @include size(jumbo); }
+// #{$evo}-text-giant     { @include size(giant); }
+
+

@@ -1,4 +1,4 @@
-///*      L I N E   S C A L E   */
+///*      L I N E   S I Z E   */
 
 @import "../variables";
 // @import "../variables/scale";
@@ -6,6 +6,7 @@
 
 // hr line scale
 
+// CHANGE TO LINE-SIZE- instead of evo-line-?
 hr#{$evo}-line-thin       { border-top-width: thin; }
 hr#{$evo}-line-medium     { border-top-width: medium; }
 hr#{$evo}-line-thick      { border-top-width: thick; }

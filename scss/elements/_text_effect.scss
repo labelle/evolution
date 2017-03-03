@@ -56,9 +56,9 @@
 
 // Dropcap in span
 // Wrap letter in span and apply this class
-span.dropcap {
+span.text-dropcap {
 // @extend #{$evo}-text;
-@extend #{$evo}-text-big;
+@extend #{$evo}-text-10;
 color: #{$dropcap_color};
 font-size: 5ex;
 text-align: text-top;
@@ -71,9 +71,9 @@ font-feature-settings: "smcp" on;
 }
 
 // Dropcap with just CSS
-figcaption.dropcap:first-letter {
+figcaption.text-dropcap:first-letter {
 // @extend #{$evo}-text;
-@extend #{$evo}-text-big;
+@extend #{$evo}-text-10;
 color: #{$dropcap_color};
 font-size: 5ex;
 text-align: text-top;
@@ -126,7 +126,7 @@ font-feature-settings: "smcp" on;
 // https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow/
 
 // On gray
-.engraved-gray-bg {
+.text-engraved-gray-bg {
   color: #000;
   background: #666;
   text-shadow: 0px 1px 1px #fff;
@@ -134,7 +134,7 @@ font-feature-settings: "smcp" on;
 
 // On black
 
-.engraved-black-bg {
+.text-engraved-black-bg {
   color: #666;
   background: #000;
   text-shadow: 0px 1px 0px #ccc;
@@ -142,7 +142,7 @@ font-feature-settings: "smcp" on;
 
 // effects
 
-.neon {
+.text-neon {
   text-shadow: 
   // white
   0 0 0.1em #fff, 
@@ -155,7 +155,7 @@ font-feature-settings: "smcp" on;
   0 0 1.2em #f0f
 }
 
-.neon-2 { 
+.text-neon-2 { 
   background: #000;
   background-image:
     radial-gradient(center, ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,1)), 

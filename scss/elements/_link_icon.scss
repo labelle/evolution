@@ -28,3 +28,29 @@ a#{$evo}-link-icon {
     // list-style-type: none;
     // padding-left: -3em;
 }
+
+
+// https://labelle.github.io/evolution-patterns/patterns-library/icons-links.html
+
+
+a.link-icon {
+	// position: absolute;
+	background-image: #{$icon_list_background};
+	display:inline-block;
+	line-height: 0;
+	background-repeat:no-repeat;
+	background-size: contain;
+    height: 1em;
+    width: 1em;
+    top: .5em;
+    margin-left: 25px;
+    // margin-top: -1px;
+    padding-right: 25px;
+    white-space: nowrap; // no-wrap
+    vertical-align: middle;
+}
+// a.link-icon {
+// 	position: relative;
+// 	    vertical-align: middle;
+
+// }

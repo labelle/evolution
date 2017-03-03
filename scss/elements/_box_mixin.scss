@@ -4,6 +4,8 @@
 // @import "../variables/scale";
 
 
+// THIS BOX MIXIN CONFLICTS WITH THE EVO-BOX CLASS IN THE _BOX.SCSS PAGE
+
 #{$evo}-box {
 border-top-width:      #{$box_width}; // initial
 border-bottom-width:   #{$box_width}; // initial 

@@ -10,38 +10,38 @@
 
 
 // Text Block Width
-#{$evo}-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
+.text-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
 
 // /* Text Utilities */
 
 
 // Relative Text Measure
-// #{$evo}-measure-1   { max-width: 10rem; }
+// .text-measure-1   { max-width: 10rem; }
 
-// #{$evo}-measure-widest   { @include measure(widest); }
-// #{$evo}-measure-wider    { @include measure(wider); }
-// #{$evo}-measure-wide     { @include measure(wide); }
-// #{$evo}-measure-tight    { @include measure(tight); }
-// #{$evo}-measure-tighter  { @include measure(tighter); }
-// #{$evo}-measure-tightest { @include measure(tightest); }
+// .text-measure-widest   { @include measure(widest); }
+// .text-measure-wider    { @include measure(wider); }
+// .text-measure-wide     { @include measure(wide); }
+// .text-measure-tight    { @include measure(tight); }
+// .text-measure-tighter  { @include measure(tighter); }
+// .text-measure-tightest { @include measure(tightest); }
 
-// #{$evo}-measure-wide     { @include measure(wide); }
-// #{$evo}-measure-medium   { @include measure(wide); }
-// #{$evo}-measure-tight    { @include measure(tight); }
+// .text-measure-wide     { @include measure(wide); }
+// .text-measure-medium   { @include measure(wide); }
+// .text-measure-tight    { @include measure(tight); }
 
 // Text Measure alt TEST
-#{$evo}-measure-1   { max-width: #{$u-35}rem; } // ceil(9.87)
-#{$evo}-measure-2   { max-width: #{$u-36}rem; } // ceil(12.92)
-#{$evo}-measure-3   { max-width: #{$u-37}rem; } // ceil(15.97)
-#{$evo}-measure-4   { max-width: #{$u-38}rem; } // ceil(20.905)
-#{$evo}-measure-5   { max-width: #{$u-39}rem; } // ceil(25.84)
-#{$evo}-measure-6   { max-width: #{$u-40}rem; } // ceil(33.825)
-#{$evo}-measure-7   { max-width: #{$u-41}rem; } // ceil(41.81)
-#{$evo}-measure-8   { max-width: #{$u-42}rem; } // ceil(54.73)
-#{$evo}-measure-9   { max-width: #{$u-43}rem; } // ceil(67.65)
-#{$evo}-measure-10  { max-width: 80rem; } // max usefulness
-// #{$evo}-measure-11  { max-width: 100rem; }
-// #{$evo}-measure-12  { max-width: 120rem; }
-// #{$evo}-measure-13  { max-width: 130rem; }
-// #{$evo}-measure-14  { max-width: 140rem; }
-// #{$evo}-measure-15  { max-width: 150rem; }
+.text-measure-1   { max-width: #{$u-35}rem; } // ceil(9.87)
+.text-measure-2   { max-width: #{$u-36}rem; } // ceil(12.92)
+.text-measure-3   { max-width: #{$u-37}rem; } // ceil(15.97)
+.text-measure-4   { max-width: #{$u-38}rem; } // ceil(20.905)
+.text-measure-5   { max-width: #{$u-39}rem; } // ceil(25.84)
+.text-measure-6   { max-width: #{$u-40}rem; } // ceil(33.825)
+.text-measure-7   { max-width: #{$u-41}rem; } // ceil(41.81)
+.text-measure-8   { max-width: #{$u-42}rem; } // ceil(54.73)
+.text-measure-9   { max-width: #{$u-43}rem; } // ceil(67.65)
+.text-measure-10  { max-width: 80rem; } // max usefulness
+// .text-measure-11  { max-width: 100rem; }
+// .text-measure-12  { max-width: 120rem; }
+// .text-measure-13  { max-width: 130rem; }
+// .text-measure-14  { max-width: 140rem; }
+// .text-measure-15  { max-width: 150rem; }

@@ -11,67 +11,67 @@
 
 // Source sans pro
 
-.google-font-source-sans-extra-light  {
+.font-google-source-sans-extra-light  {
 font-family: #{$google-source-sans};
 font-weight:200;
 }
 
-.google-font-source-sans-extra-light-italic  {
+.font-google-source-sans-extra-light-italic  {
 font-family: #{$google-source-sans};
 font-weight:200;
 font-style:italic;
 }
 
-.google-font-source-sans-light  {
+.font-google-source-sans-light  {
 font-family: #{$google-source-sans};
 font-weight:300;
 }
 
-.google-font-source-sans-light-italic  {
+.font-google-source-sans-light-italic  {
 font-family: #{$google-source-sans};
 font-weight:300;
 font-style:italic;
 }
 
-.google-font-source-sans  {
+.font-google-source-sans  {
 font-family: #{$google-source-sans};
 font-weight:400;
 }
 
-.google-font-source-sans-italic  {
+.font-google-source-sans-italic  {
 font-family: #{$google-source-sans};
 font-weight:400;
 font-style:italic;
 }
 
-.google-font-source-sans-semibold  {
+.font-google-source-sans-semibold  {
 font-family: #{$google-source-sans};
 font-weight:600;
 }
 
-.google-font-source-sans-semibold-italic  {
+.font-google-source-sans-semibold-italic  {
 font-family: #{$google-source-sans};
 font-weight:600;
 font-style:italic;
 }
 
-.google-font-source-sans-bold  {
+.font-google-source-sans-bold  {
 font-family: #{$google-source-sans};
 font-weight:700;
 }
 
-.google-font-source-sans-bold-italic  {
+.font-google-source-sans-bold-italic  {
 font-family: #{$google-source-sans};
 font-weight:700;
 font-style:italic;
 }
 
-.google-font-source-sans-black  {
+.font-google-source-sans-black  {
 font-family: #{$google-source-sans};
 font-weight:900;
 }
 
-.google-font-source-sans-black-italic  {
+.font-google-source-sans-black-italic  {
 font-family: #{$google-source-sans};
 font-weight:900;
 font-style:italic;
@@ -82,32 +82,32 @@ font-style:italic;
 // Source serif pro
 // Note as of Jan 14th 2017 the new serif fonts have not been loaded
 
-.google-font-source-serif-extra-light  {
+.font-google-source-serif-extra-light  {
 font-family: #{$google-source-serif};
 font-weight:200;
 }
 
-.google-font-source-serif-light  {
+.font-google-source-serif-light  {
 font-family: #{$google-source-serif};
 font-weight:300;
 }
 
-.google-font-source-serif  {
+.font-google-source-serif  {
 font-family: #{$google-source-serif};
 font-weight:400;
 }
 
-.google-font-source-serif-semibold  {
+.font-google-source-serif-semibold  {
 font-family: #{$google-source-serif};
 font-weight:600;
 }
 
-.google-font-source-serif-bold  {
+.font-google-source-serif-bold  {
 font-family: #{$google-source-serif};
 font-weight:700;
 }
 
-.google-font-source-serif-black  {
+.font-google-source-serif-black  {
 font-family: #{$google-source-serif};
 font-weight:900;
 }
@@ -116,38 +116,38 @@ font-weight:900;
 
 // Source code pro
 
-.google-font-source-code-extra-light  {
+.font-google-source-code-extra-light  {
 font-family: #{$google-source-code};
 font-weight:200;
 }
 
-.google-font-source-code-light  {
+.font-google-source-code-light  {
 font-family: #{$google-source-code};
 font-weight:300;
 }
 
-.google-font-source-code  {
+.font-google-source-code  {
 font-family: #{$google-source-code};
 font-weight:400;
 }
 
 // Is medium needed?
-.google-font-source-code-medium  {
+.font-google-source-code-medium  {
 font-family: #{$google-source-code};
 font-weight:500;
 }
 
-.google-font-source-code-semibold  {
+.font-google-source-code-semibold  {
 font-family: #{$google-source-code};
 font-weight:600;
 }
 
-.google-font-source-code-bold  {
+.font-google-source-code-bold  {
 font-family: #{$google-source-code};
 font-weight:700;
 }
 
-.google-font-source-code-black  {
+.font-google-source-code-black  {
 font-family: #{$google-source-code};
 font-weight:900;
 }
@@ -156,23 +156,23 @@ font-weight:900;
 
 // Noto Sans
 
-.google-font-noto-sans  {
+.font-google-noto-sans  {
 font-family: #{$google-noto-sans};
 font-weight:400;
 }
 
-.google-font-noto-sans-italic  {
+.font-google-noto-sans-italic  {
 font-family: #{$google-noto-sans};
 font-weight:400;
 font-style:italic;
 }
 
-.google-font-noto-sans-bold  {
+.font-google-noto-sans-bold  {
 font-family: #{$google-noto-sans};
 font-weight:700;
 }
 
-.google-font-noto-sans-bold-italic  {
+.font-google-noto-sans-bold-italic  {
 font-family: #{$google-noto-sans};
 font-weight:700;
 font-style:italic;
@@ -181,23 +181,23 @@ font-style:italic;
 
 // Noto Serif
 
-.google-font-noto-serif  {
+.font-google-noto-serif  {
 font-family: #{$google-noto-serif};
 font-weight:400;
 }
 
-.google-font-noto-serif-italic  {
+.font-google-noto-serif-italic  {
 font-family: #{$google-noto-serif};
 font-weight:400;
 font-style:italic;
 }
 
-.google-font-noto-serif-bold  {
+.font-google-noto-serif-bold  {
 font-family: #{$google-noto-serif};
 font-weight:700;
 }
 
-.google-font-noto-serif-bold-italic  {
+.font-google-noto-serif-bold-italic  {
 font-family: #{$google-noto-serif};
 font-weight:700;
 font-style:italic;

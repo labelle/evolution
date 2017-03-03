@@ -1214,7 +1214,7 @@ pre.code-short > code {
 .view-tall-0 {
   height: 0vh; }
 
-.masonry {
+.evo-masonry {
   column-count: 4;
   margin: 1.5em 0;
   padding: 0;
@@ -1222,43 +1222,43 @@ pre.code-short > code {
   -webkit-column-gap: 1.5em;
   column-gap: 1.5em; }
 
-.item {
+.masonry-item {
   background: #fff;
   margin: 0 0 1.5em;
   display: inline-block;
   padding: .25rem;
   width: 100%; }
 
-.item > figcaption {
+.masonry-item > figcaption {
   column-break-inside: avoid;
   display: inline-block; }
 
 @media only screen and (min-width: 300px) {
-  .masonry {
+  .evo-masonry {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; } }
 
 @media only screen and (min-width: 700px) {
-  .masonry {
+  .evo-masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3; } }
 
 @media only screen and (min-width: 900px) {
-  .masonry {
+  .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1100px) {
-  .masonry {
+  .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1300px) {
-  .masonry {
+  .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
@@ -1462,7 +1462,7 @@ div.iframe-container-shadow-3::before {
   width: auto;
   clear: both; }
 
-.evo-space-reset {
+.space-reset {
   height: 0px;
   width: auto;
   clear: both; }
@@ -3240,7 +3240,7 @@ div.iframe-container-shadow-3::before {
   font-weight: normal;
   line-height: 1.4375; }
 
-.evo-font-reset {
+.font-reset {
   font-size: initial;
   font-family: initial;
   font-weight: initial;
@@ -3261,6 +3261,7 @@ div.iframe-container-shadow-3::before {
 .font-fantasy {
   font-family: fantasy !important; }
 
+.text-italic,
 .font-italic {
   font-style: italic !important; }
 
@@ -3270,6 +3271,7 @@ div.iframe-container-shadow-3::before {
 .font-no-style {
   font-style: normal !important; }
 
+.text-bold,
 .font-bold {
   font-weight: bold !important; }
 
@@ -3342,250 +3344,250 @@ div.iframe-container-shadow-3::before {
 .font-native {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 
-.adobe-font-source-sans-extra-light {
+.font-adobe-source-sans-extra-light {
   font-family: source-sans-pro, sans-serif;
   font-weight: 200; }
 
-.adobe-font-source-sans-extra-light-italic {
+.font-adobe-source-sans-extra-light-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 200;
   font-style: italic; }
 
-.adobe-font-source-sans-light {
+.font-adobe-source-sans-light {
   font-family: source-sans-pro, sans-serif;
   font-weight: 300; }
 
-.adobe-font-source-sans-light-italic {
+.font-adobe-source-sans-light-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 300;
   font-style: italic; }
 
-.adobe-font-source-sans {
+.font-adobe-source-sans {
   font-family: source-sans-pro, sans-serif;
   font-weight: 400; }
 
-.adobe-font-source-sans-italic {
+.font-adobe-source-sans-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 400;
   font-style: italic; }
 
-.adobe-font-source-sans-semibold {
+.font-adobe-source-sans-semibold {
   font-family: source-sans-pro, sans-serif;
   font-weight: 600; }
 
-.adobe-font-source-sans-semibold-italic {
+.font-adobe-source-sans-semibold-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 600;
   font-style: italic; }
 
-.adobe-font-source-sans-bold {
+.font-adobe-source-sans-bold {
   font-family: source-sans-pro, sans-serif;
   font-weight: 700; }
 
-.adobe-font-source-sans-bold-italic {
+.font-adobe-source-sans-bold-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 700;
   font-style: italic; }
 
-.adobe-font-source-sans-black {
+.font-adobe-source-sans-black {
   font-family: source-sans-pro, sans-serif;
   font-weight: 900; }
 
-.adobe-font-source-sans-black-italic {
+.font-adobe-source-sans-black-italic {
   font-family: source-sans-pro, sans-serif;
   font-weight: 900;
   font-style: italic; }
 
-.adobe-font-source-serif-extra-light {
+.font-adobe-source-serif-extra-light {
   font-family: source-serif-pro, serif;
   font-weight: 200; }
 
-.adobe-font-source-serif-light {
+.font-adobe-source-serif-light {
   font-family: source-serif-pro, serif;
   font-weight: 300; }
 
-.adobe-font-source-serif {
+.font-adobe-source-serif {
   font-family: source-serif-pro, serif;
   font-weight: 400; }
 
-.adobe-font-source-serif-semibold {
+.font-adobe-source-serif-semibold {
   font-family: source-serif-pro, serif;
   font-weight: 600; }
 
-.adobe-font-source-serif-bold {
+.font-adobe-source-serif-bold {
   font-family: source-serif-pro, serif;
   font-weight: 700; }
 
-.adobe-font-source-serif-black {
+.font-adobe-source-serif-black {
   font-family: source-serif-pro, serif;
   font-weight: 900; }
 
-.adobe-font-source-code-extra-light {
+.font-adobe-source-code-extra-light {
   font-family: source-code-pro, monospace;
   font-weight: 200; }
 
-.adobe-font-source-code-light {
+.font-adobe-source-code-light {
   font-family: source-code-pro, monospace;
   font-weight: 300; }
 
-.adobe-font-source-code {
+.font-adobe-source-code {
   font-family: source-code-pro, monospace;
   font-weight: 400; }
 
-.adobe-font-source-code-medium {
+.font-adobe-source-code-medium {
   font-family: source-code-pro, monospace;
   font-weight: 500; }
 
-.adobe-font-source-code-semibold {
+.font-adobe-source-code-semibold {
   font-family: source-code-pro, monospace;
   font-weight: 600; }
 
-.adobe-font-source-code-bold {
+.font-adobe-source-code-bold {
   font-family: source-code-pro, monospace;
   font-weight: 700; }
 
-.adobe-font-source-code-black {
+.font-adobe-source-code-black {
   font-family: source-code-pro, monospace;
   font-weight: 900; }
 
-.google-font-source-sans-extra-light {
+.font-google-source-sans-extra-light {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 200; }
 
-.google-font-source-sans-extra-light-italic {
+.font-google-source-sans-extra-light-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 200;
   font-style: italic; }
 
-.google-font-source-sans-light {
+.font-google-source-sans-light {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 300; }
 
-.google-font-source-sans-light-italic {
+.font-google-source-sans-light-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 300;
   font-style: italic; }
 
-.google-font-source-sans {
+.font-google-source-sans {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 400; }
 
-.google-font-source-sans-italic {
+.font-google-source-sans-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 400;
   font-style: italic; }
 
-.google-font-source-sans-semibold {
+.font-google-source-sans-semibold {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 600; }
 
-.google-font-source-sans-semibold-italic {
+.font-google-source-sans-semibold-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 600;
   font-style: italic; }
 
-.google-font-source-sans-bold {
+.font-google-source-sans-bold {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 700; }
 
-.google-font-source-sans-bold-italic {
+.font-google-source-sans-bold-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 700;
   font-style: italic; }
 
-.google-font-source-sans-black {
+.font-google-source-sans-black {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 900; }
 
-.google-font-source-sans-black-italic {
+.font-google-source-sans-black-italic {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 900;
   font-style: italic; }
 
-.google-font-source-serif-extra-light {
+.font-google-source-serif-extra-light {
   font-family: Source Serif Pro, serif;
   font-weight: 200; }
 
-.google-font-source-serif-light {
+.font-google-source-serif-light {
   font-family: Source Serif Pro, serif;
   font-weight: 300; }
 
-.google-font-source-serif {
+.font-google-source-serif {
   font-family: Source Serif Pro, serif;
   font-weight: 400; }
 
-.google-font-source-serif-semibold {
+.font-google-source-serif-semibold {
   font-family: Source Serif Pro, serif;
   font-weight: 600; }
 
-.google-font-source-serif-bold {
+.font-google-source-serif-bold {
   font-family: Source Serif Pro, serif;
   font-weight: 700; }
 
-.google-font-source-serif-black {
+.font-google-source-serif-black {
   font-family: Source Serif Pro, serif;
   font-weight: 900; }
 
-.google-font-source-code-extra-light {
+.font-google-source-code-extra-light {
   font-family: Source Code Pro, monospace;
   font-weight: 200; }
 
-.google-font-source-code-light {
+.font-google-source-code-light {
   font-family: Source Code Pro, monospace;
   font-weight: 300; }
 
-.google-font-source-code {
+.font-google-source-code {
   font-family: Source Code Pro, monospace;
   font-weight: 400; }
 
-.google-font-source-code-medium {
+.font-google-source-code-medium {
   font-family: Source Code Pro, monospace;
   font-weight: 500; }
 
-.google-font-source-code-semibold {
+.font-google-source-code-semibold {
   font-family: Source Code Pro, monospace;
   font-weight: 600; }
 
-.google-font-source-code-bold {
+.font-google-source-code-bold {
   font-family: Source Code Pro, monospace;
   font-weight: 700; }
 
-.google-font-source-code-black {
+.font-google-source-code-black {
   font-family: Source Code Pro, monospace;
   font-weight: 900; }
 
-.google-font-noto-sans {
+.font-google-noto-sans {
   font-family: Noto Sans, sans-serif;
   font-weight: 400; }
 
-.google-font-noto-sans-italic {
+.font-google-noto-sans-italic {
   font-family: Noto Sans, sans-serif;
   font-weight: 400;
   font-style: italic; }
 
-.google-font-noto-sans-bold {
+.font-google-noto-sans-bold {
   font-family: Noto Sans, sans-serif;
   font-weight: 700; }
 
-.google-font-noto-sans-bold-italic {
+.font-google-noto-sans-bold-italic {
   font-family: Noto Sans, sans-serif;
   font-weight: 700;
   font-style: italic; }
 
-.google-font-noto-serif {
+.font-google-noto-serif {
   font-family: Noto Serif, serif;
   font-weight: 400; }
 
-.google-font-noto-serif-italic {
+.font-google-noto-serif-italic {
   font-family: Noto Serif, serif;
   font-weight: 400;
   font-style: italic; }
 
-.google-font-noto-serif-bold {
+.font-google-noto-serif-bold {
   font-family: Noto Serif, serif;
   font-weight: 700; }
 
-.google-font-noto-serif-bold-italic {
+.font-google-noto-serif-bold-italic {
   font-family: Noto Serif, serif;
   font-weight: 700;
   font-style: italic; }
@@ -3765,7 +3767,16 @@ div.iframe-container-shadow-3::before {
   font-family: neon, sans-serif; }
 
 /* Text */
-.evo-text-reset {
+.evo-text {
+  font-size: 1rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.4375;
+  letter-spacing: normal;
+  text-rendering: optimizeLegibility; }
+
+.text-reset {
   font-size: initial;
   color: initial;
   font-family: initial;
@@ -3782,15 +3793,6 @@ div.iframe-container-shadow-3::before {
   margin-left: initial;
   margin-right: initial;
   text-rendering: initial; }
-
-.evo-text {
-  font-size: 1rem;
-  color: inherit;
-  font-family: inherit;
-  font-weight: normal;
-  line-height: 1.4375;
-  letter-spacing: normal;
-  text-rendering: optimizeLegibility; }
 
 .text-left {
   text-align: left; }
@@ -3836,45 +3838,6 @@ div.iframe-container-shadow-3::before {
   overflow: hidden;
   text-overflow: clip; }
 
-.evo-text-tiny {
-  font-size: 0.5rem; }
-
-.evo-text-smallest {
-  font-size: 0.625rem; }
-
-.evo-text-smaller, .item > figcaption {
-  font-size: 0.75rem; }
-
-.evo-text-small {
-  font-size: 0.875rem; }
-
-.evo-text-medium {
-  font-size: 1.125rem; }
-
-.evo-text-large {
-  font-size: 1.3125rem; }
-
-.evo-text-larger {
-  font-size: 1.4375rem; }
-
-.evo-text-largest {
-  font-size: 1.875rem; }
-
-.evo-text-big, span.dropcap, figcaption.dropcap:first-letter {
-  font-size: 2.3125rem; }
-
-.evo-text-bigger {
-  font-size: 2.6875rem; }
-
-.evo-text-biggest {
-  font-size: 3rem; }
-
-.evo-text-jumbo {
-  font-size: 5rem; }
-
-.evo-text-giant {
-  font-size: 3.75rem; }
-
 .evo-text-reset {
   line-height: initial; }
 
@@ -3884,7 +3847,7 @@ div.iframe-container-shadow-3::before {
 .evo-text-1 {
   font-size: 0.625rem; }
 
-.evo-text-2 {
+.evo-text-2, .masonry-item > figcaption {
   font-size: 0.75rem; }
 
 .evo-text-3 {
@@ -3908,7 +3871,7 @@ div.iframe-container-shadow-3::before {
 .evo-text-9 {
   font-size: 2.3125rem; }
 
-.evo-text-10 {
+.evo-text-10, span.text-dropcap, figcaption.text-dropcap:first-letter {
   font-size: 2.6875rem; }
 
 .evo-text-11 {
@@ -3941,178 +3904,208 @@ div.iframe-container-shadow-3::before {
 .evo-text-20 {
   font-size: 26rem; }
 
-.evo-leading-smallest {
-  line-height: 0.5; }
-
-.evo-leading-smaller {
-  line-height: 0.75; }
-
-.evo-leading-small {
-  line-height: 1; }
-
-.evo-leading-big {
-  line-height: 1.3125; }
-
-.evo-leading-bigger {
-  line-height: 1.875; }
-
-.evo-leading-biggest {
-  line-height: 2.6875; }
-
-.evo-leading-reset {
+.text-size-reset {
   line-height: initial; }
 
-.evo-leading-0 {
+.text-size-0 {
+  font-size: 0.5rem; }
+
+.text-size-1 {
+  font-size: 0.625rem; }
+
+.text-size-2 {
+  font-size: 0.75rem; }
+
+.text-size-3 {
+  font-size: 0.875rem; }
+
+.text-size-4 {
+  font-size: 1rem; }
+
+.text-size-5 {
+  font-size: 1.125rem; }
+
+.text-size-6 {
+  font-size: 1.3125rem; }
+
+.text-size-7 {
+  font-size: 1.4375rem; }
+
+.text-size-8 {
+  font-size: 1.875rem; }
+
+.text-size-9 {
+  font-size: 2.3125rem; }
+
+.text-size-10 {
+  font-size: 2.6875rem; }
+
+.text-size-11 {
+  font-size: 3rem; }
+
+.text-size-12 {
+  font-size: 3.75rem; }
+
+.text-size-13 {
+  font-size: 5rem; }
+
+.text-size-14 {
+  font-size: 6rem; }
+
+.text-size-15 {
+  font-size: 8rem; }
+
+.text-size-16 {
+  font-size: 10rem; }
+
+.text-size-17 {
+  font-size: 13rem; }
+
+.text-size-18 {
+  font-size: 16rem; }
+
+.text-size-19 {
+  font-size: 21rem; }
+
+.text-size-20 {
+  font-size: 26rem; }
+
+.text-leading-reset {
+  line-height: initial; }
+
+.text-leading-0 {
   line-height: 0.375; }
 
-.evo-leading-1 {
+.text-leading-1 {
   line-height: 0.5; }
 
-.evo-leading-2 {
+.text-leading-2 {
   line-height: 0.625; }
 
-.evo-leading-3 {
+.text-leading-3 {
   line-height: 0.75; }
 
-.evo-leading-4 {
+.text-leading-4 {
   line-height: 0.875; }
 
-.evo-leading-5 {
+.text-leading-5 {
   line-height: 1; }
 
-.evo-leading-6 {
+.text-leading-6 {
   line-height: 1.125; }
 
-.evo-leading-7 {
+.text-leading-7 {
   line-height: 1.3125; }
 
-.evo-leading-8 {
+.text-leading-8 {
   line-height: 1.4375; }
 
-.evo-leading-9 {
+.text-leading-9 {
   line-height: 1.875; }
 
-.evo-leading-10 {
+.text-leading-10 {
   line-height: 2.3125; }
 
-.evo-leading-11 {
+.text-leading-11 {
   line-height: 2.6875; }
 
-.evo-leading-12 {
+.text-leading-12 {
   line-height: 3; }
 
-.evo-leading-13 {
+.text-leading-13 {
   line-height: 3.75; }
 
-.evo-leading-14 {
+.text-leading-14 {
   line-height: 5; }
 
-.evo-leading-15 {
+.text-leading-15 {
   line-height: 6; }
 
-.evo-tracking-reset {
+.text-tracking-reset {
   letter-spacing: initial; }
 
-.evo-tracking-0 {
+.text-tracking-0 {
   letter-spacing: -0.1375em; }
 
-.evo-tracking-1 {
+.text-tracking-1 {
   letter-spacing: -0.125em; }
 
-.evo-tracking-2 {
+.text-tracking-2 {
   letter-spacing: -0.1em; }
 
-.evo-tracking-3 {
+.text-tracking-3 {
   letter-spacing: -0.075em; }
 
-.evo-tracking-4 {
+.text-tracking-4 {
   letter-spacing: -0.05em; }
 
-.evo-tracking-5 {
+.text-tracking-5 {
   letter-spacing: -0.025em; }
 
-.evo-tracking-6 {
+.text-tracking-6 {
   letter-spacing: 0em; }
 
-.evo-tracking-7 {
+.text-tracking-7 {
   letter-spacing: 0.025em; }
 
-.evo-tracking-8 {
+.text-tracking-8 {
   letter-spacing: 0.05em; }
 
-.evo-tracking-9 {
+.text-tracking-9 {
   letter-spacing: 0.1em; }
 
-.evo-tracking-10 {
+.text-tracking-10 {
   letter-spacing: 0.15em; }
 
-.evo-tracking-11 {
+.text-tracking-11 {
   letter-spacing: 0.2em; }
 
-.evo-tracking-12 {
+.text-tracking-12 {
   letter-spacing: 0.275em; }
 
-.evo-tracking-13 {
+.text-tracking-13 {
   letter-spacing: 0.375em; }
 
-.evo-tracking-14 {
+.text-tracking-14 {
   letter-spacing: 0.5em; }
 
-.evo-tracking-15 {
+.text-tracking-15 {
   letter-spacing: 0.625em; }
 
-.evo-tracking-smallest {
-  letter-spacing: -0.075em; }
-
-.evo-tracking-smaller {
-  letter-spacing: -0.05em; }
-
-.evo-tracking-small {
-  letter-spacing: -0.025em; }
-
-.evo-tracking-big {
-  letter-spacing: 0.025em; }
-
-.evo-tracking-bigger {
-  letter-spacing: 0.05em; }
-
-.evo-tracking-biggest {
-  letter-spacing: 0.1em; }
-
-.evo-measure {
+.text-measure {
   max-width: 55rem; }
 
-.evo-measure-1 {
+.text-measure-1 {
   max-width: 10rem; }
 
-.evo-measure-2 {
+.text-measure-2 {
   max-width: 13rem; }
 
-.evo-measure-3 {
+.text-measure-3 {
   max-width: 16rem; }
 
-.evo-measure-4 {
+.text-measure-4 {
   max-width: 21rem; }
 
-.evo-measure-5 {
+.text-measure-5 {
   max-width: 26rem; }
 
-.evo-measure-6 {
+.text-measure-6 {
   max-width: 34rem; }
 
-.evo-measure-7 {
+.text-measure-7 {
   max-width: 42rem; }
 
-.evo-measure-8 {
+.text-measure-8 {
   max-width: 55rem; }
 
-.evo-measure-9 {
+.text-measure-9 {
   max-width: 68rem; }
 
-.evo-measure-10 {
+.text-measure-10 {
   max-width: 80rem; }
 
-span.dropcap {
+span.text-dropcap {
   color: #ea1873;
   font-size: 5ex;
   text-align: text-top;
@@ -4123,7 +4116,7 @@ span.dropcap {
   line-height: 1;
   font-feature-settings: "smcp" on; }
 
-figcaption.dropcap:first-letter {
+figcaption.text-dropcap:first-letter {
   color: #ea1873;
   font-size: 5ex;
   text-align: text-top;
@@ -4155,20 +4148,20 @@ figcaption.dropcap:first-letter {
 .text-shadow-6 {
   text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); }
 
-.engraved-gray-bg {
+.text-engraved-gray-bg {
   color: #000;
   background: #666;
   text-shadow: 0px 1px 1px #fff; }
 
-.engraved-black-bg {
+.text-engraved-black-bg {
   color: #666;
   background: #000;
   text-shadow: 0px 1px 0px #ccc; }
 
-.neon {
+.text-neon {
   text-shadow: 0 0 0.1em #fff,  0 0 0.2em #fff,  0 0 0.3em #fff,  0 0 0.4em #f7f,  0 0 0.6em #f0f,  0 0 0.8em #f0f,  0 0 1em #f0f,  0 0 1.2em #f0f; }
 
-.neon-2 {
+.text-neon-2 {
   background: #000;
   background-image: radial-gradient(center, ellipse farthest-corner, transparent, black), url(../image/black-brick-wall-texture.jpg);
   width: 768px;
@@ -4862,6 +4855,7 @@ span.evo-highlight {
   color: white;
   text-shadow: none; }
 
+a.evo-link,
 a {
   font-family: inherit;
   font-weight: normal;
@@ -4873,6 +4867,7 @@ a {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease; }
 
+a.evo-link:link,
 .a-link,
 a:link {
   color: #ea1873;
@@ -4880,11 +4875,13 @@ a:link {
   text-decoration: none;
   opacity: 1; }
 
+a.evo-link:visited,
 .a-visited,
 a:visited {
   color: inherit;
   opacity: 1; }
 
+a.evo-link:hover,
 .a-hover,
 a:hover {
   color: black;
@@ -4892,6 +4889,7 @@ a:hover {
   outline-width: 0;
   opacity: 1; }
 
+a.evo-link:active,
 .a-active,
 a:active {
   color: black;
@@ -4899,6 +4897,7 @@ a:active {
   outline-width: 0;
   opacity: 1; }
 
+a.evo-link:focus,
 .a-focus,
 a:focus,
 button:focus {
@@ -5055,6 +5054,20 @@ a.evo-link-icon:before {
 a.evo-link-icon {
   padding-left: 2.5em;
   position: relative; }
+
+a.link-icon {
+  background-image: url("../image/circle-chevron-book.svg");
+  display: inline-block;
+  line-height: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1em;
+  width: 1em;
+  top: .5em;
+  margin-left: 25px;
+  padding-right: 25px;
+  white-space: nowrap;
+  vertical-align: middle; }
 
 .evo-icon-list li:before {
   content: '';
@@ -6431,7 +6444,7 @@ ul.list-check-heavy li:before {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem; }
 
-.evo-image-reset {
+.image-reset {
   border: 0;
   border-style: none; }
 
@@ -6717,7 +6730,8 @@ ul.list-check-heavy li:before {
   .image-bg-parallax {
     background-attachment: scroll; } }
 
-hr {
+hr,
+.evo-line {
   display: block;
   height: 0;
   border: 0;

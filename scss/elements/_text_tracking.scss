@@ -14,100 +14,105 @@
 
 // TO DO: Pixel to rem mixin?
 // https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
-// #{$evo}-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
+// .text-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
 
 // Text Leading rems
-#{$evo}-tracking-reset  { letter-spacing: initial; }
-#{$evo}-tracking-0      { letter-spacing: #{$u-5}em; }
-#{$evo}-tracking-1      { letter-spacing: #{$u-6}em; }
-#{$evo}-tracking-2      { letter-spacing: #{$u-7}em; }
-#{$evo}-tracking-3      { letter-spacing: #{$u-8}em; }
-#{$evo}-tracking-4      { letter-spacing: #{$u-9}em; } 
-#{$evo}-tracking-5      { letter-spacing: #{$u-10}em; } // negative *
-#{$evo}-tracking-6      { letter-spacing: #{$u-11}em; } // zero
-#{$evo}-tracking-7      { letter-spacing: #{$u-12}em; } // positive *
-#{$evo}-tracking-8      { letter-spacing: #{$u-13}em; }
-#{$evo}-tracking-9      { letter-spacing: #{$u-14}em; } // *
-#{$evo}-tracking-10     { letter-spacing: #{$u-15}em; }
-#{$evo}-tracking-11     { letter-spacing: #{$u-16}em; }
-#{$evo}-tracking-12     { letter-spacing: #{$u-17}em; }
-#{$evo}-tracking-13     { letter-spacing: #{$u-18}em; }
-#{$evo}-tracking-14     { letter-spacing: #{$u-19}em; }
-#{$evo}-tracking-15     { letter-spacing: #{$u-20}em; }
+.text-tracking-reset  { letter-spacing: initial; }
+.text-tracking-0      { letter-spacing: #{$u-5}em; }
+.text-tracking-1      { letter-spacing: #{$u-6}em; }
+.text-tracking-2      { letter-spacing: #{$u-7}em; }
+.text-tracking-3      { letter-spacing: #{$u-8}em; }
+.text-tracking-4      { letter-spacing: #{$u-9}em; } 
+.text-tracking-5      { letter-spacing: #{$u-10}em; } // negative *
+.text-tracking-6      { letter-spacing: #{$u-11}em; } // zero
+.text-tracking-7      { letter-spacing: #{$u-12}em; } // positive *
+.text-tracking-8      { letter-spacing: #{$u-13}em; }
+.text-tracking-9      { letter-spacing: #{$u-14}em; } // *
+.text-tracking-10     { letter-spacing: #{$u-15}em; }
+.text-tracking-11     { letter-spacing: #{$u-16}em; }
+.text-tracking-12     { letter-spacing: #{$u-17}em; }
+.text-tracking-13     { letter-spacing: #{$u-18}em; }
+.text-tracking-14     { letter-spacing: #{$u-19}em; }
+.text-tracking-15     { letter-spacing: #{$u-20}em; }
 
 
-// Relative Text Tracking
-#{$evo}-tracking-smallest { @include tracking(tightest); }
-#{$evo}-tracking-smaller  { @include tracking(tighter); }
-#{$evo}-tracking-small    { @include tracking(tight); }
-#{$evo}-tracking-big      { @include tracking(loose); }
-#{$evo}-tracking-bigger   { @include tracking(looser); }
-#{$evo}-tracking-biggest  { @include tracking(loosest); }
+// // Relative Text Tracking
+// .text-tracking-smallest { @include tracking(tightest); }
+// .text-tracking-smaller  { @include tracking(tighter); }
+// .text-tracking-small    { @include tracking(tight); }
+// .text-tracking-big      { @include tracking(loose); }
+// .text-tracking-bigger   { @include tracking(looser); }
+// .text-tracking-biggest  { @include tracking(loosest); }
+
+
+
+
+
 
 
 // // Tracking
-// #{$evo}-tracking-tightest  { letter-spacing: -.1em; }
-// #{$evo}-tracking-tighter   { letter-spacing: -.065em; }
-// #{$evo}-tracking-tight     { letter-spacing: -.035em; }
-// #{$evo}-tracking-loose     { letter-spacing: .035em; }
-// #{$evo}-tracking-looser    { letter-spacing: .065em; }
-// #{$evo}-tracking-loosest   { letter-spacing: .1em; }
+// .text-tracking-tightest  { letter-spacing: -.1em; }
+// .text-tracking-tighter   { letter-spacing: -.065em; }
+// .text-tracking-tight     { letter-spacing: -.035em; }
+// .text-tracking-loose     { letter-spacing: .035em; }
+// .text-tracking-looser    { letter-spacing: .065em; }
+// .text-tracking-loosest   { letter-spacing: .1em; }
 
 
 // // TO DO: Pixel to rem mixin?
 // // https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
-// // #{$evo}-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
+// // .text-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
 
 // // Text Leading rems
-// #{$evo}-tracking-reset  { letter-spacing: initial; }
-// #{$evo}-tracking-0      { letter-spacing: #{$u-0}em; }
-// #{$evo}-tracking-1      { letter-spacing: #{$u-1}em; }
-// #{$evo}-tracking-2      { letter-spacing: #{$u-2}em; }
-// #{$evo}-tracking-3      { letter-spacing: #{$u-3}em; }
-// #{$evo}-tracking-4      { letter-spacing: #{$u-4}em; }
-// #{$evo}-tracking-5      { letter-spacing: #{$u-5}em; }
-// #{$evo}-tracking-6      { letter-spacing: #{$u-6}em; }
-// #{$evo}-tracking-7      { letter-spacing: #{$u-7}em; }
-// #{$evo}-tracking-8      { letter-spacing: #{$u-8}em; }
-// #{$evo}-tracking-9      { letter-spacing: #{$u-9}em; } 
-// #{$evo}-tracking-10     { letter-spacing: #{$u-10}em; } // negative
-// #{$evo}-tracking-11     { letter-spacing: #{$u-11}em; } // zero
-// #{$evo}-tracking-12     { letter-spacing: #{$u-12}em; } // positive
-// #{$evo}-tracking-13     { letter-spacing: #{$u-13}em; }
-// #{$evo}-tracking-14     { letter-spacing: #{$u-14}em; }
-// #{$evo}-tracking-15     { letter-spacing: #{$u-15}em; }
-// #{$evo}-tracking-16     { letter-spacing: #{$u-16}em; }
-// #{$evo}-tracking-17     { letter-spacing: #{$u-17}em; }
-// #{$evo}-tracking-18     { letter-spacing: #{$u-18}em; }
-// #{$evo}-tracking-19     { letter-spacing: #{$u-19}em; }
-// #{$evo}-tracking-20     { letter-spacing: #{$u-20}em; }
-// #{$evo}-tracking-21     { letter-spacing: #{$u-21}em; }
-// #{$evo}-tracking-22     { letter-spacing: #{$u-22}em; } 
-// #{$evo}-tracking-23     { letter-spacing: #{$u-23}em; }
-// #{$evo}-tracking-24     { letter-spacing: #{$u-24}em; }
-// #{$evo}-tracking-25     { letter-spacing: #{$u-25}em; }
+// .text-tracking-reset  { letter-spacing: initial; }
+// .text-tracking-0      { letter-spacing: #{$u-0}em; }
+// .text-tracking-1      { letter-spacing: #{$u-1}em; }
+// .text-tracking-2      { letter-spacing: #{$u-2}em; }
+// .text-tracking-3      { letter-spacing: #{$u-3}em; }
+// .text-tracking-4      { letter-spacing: #{$u-4}em; }
+// .text-tracking-5      { letter-spacing: #{$u-5}em; }
+// .text-tracking-6      { letter-spacing: #{$u-6}em; }
+// .text-tracking-7      { letter-spacing: #{$u-7}em; }
+// .text-tracking-8      { letter-spacing: #{$u-8}em; }
+// .text-tracking-9      { letter-spacing: #{$u-9}em; } 
+// .text-tracking-10     { letter-spacing: #{$u-10}em; } // negative
+// .text-tracking-11     { letter-spacing: #{$u-11}em; } // zero
+// .text-tracking-12     { letter-spacing: #{$u-12}em; } // positive
+// .text-tracking-13     { letter-spacing: #{$u-13}em; }
+// .text-tracking-14     { letter-spacing: #{$u-14}em; }
+// .text-tracking-15     { letter-spacing: #{$u-15}em; }
+// .text-tracking-16     { letter-spacing: #{$u-16}em; }
+// .text-tracking-17     { letter-spacing: #{$u-17}em; }
+// .text-tracking-18     { letter-spacing: #{$u-18}em; }
+// .text-tracking-19     { letter-spacing: #{$u-19}em; }
+// .text-tracking-20     { letter-spacing: #{$u-20}em; }
+// .text-tracking-21     { letter-spacing: #{$u-21}em; }
+// .text-tracking-22     { letter-spacing: #{$u-22}em; } 
+// .text-tracking-23     { letter-spacing: #{$u-23}em; }
+// .text-tracking-24     { letter-spacing: #{$u-24}em; }
+// .text-tracking-25     { letter-spacing: #{$u-25}em; }
 
 
 // // TO DO: Pixel to rem mixin?
 // // https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
-// // #{$evo}-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
+// // .text-tracking-10      { letter-spacing: remCalc(#{$u-10})rem; }
 
 // // Text Leading rems
-// #{$evo}-tracking-reset  { letter-spacing: initial; }
-// #{$evo}-tracking-0      { letter-spacing: #{$u-4}em; }
-// #{$evo}-tracking-1      { letter-spacing: #{$u-5}em; }
-// #{$evo}-tracking-2      { letter-spacing: #{$u-6}em; }
-// #{$evo}-tracking-3      { letter-spacing: #{$u-7}em; }
-// #{$evo}-tracking-4      { letter-spacing: #{$u-8}em; } 
-// #{$evo}-tracking-5      { letter-spacing: #{$u-9}em; } 
-// #{$evo}-tracking-6      { letter-spacing: #{$u-10}em; } // negative *
-// #{$evo}-tracking-7      { letter-spacing: #{$u-11}em; } // zero
-// #{$evo}-tracking-8      { letter-spacing: #{$u-12}em; } // positive *
-// #{$evo}-tracking-9      { letter-spacing: #{$u-13}em; } 
-// #{$evo}-tracking-10     { letter-spacing: #{$u-14}em; } // *
-// #{$evo}-tracking-11     { letter-spacing: #{$u-15}em; }
-// #{$evo}-tracking-12     { letter-spacing: #{$u-16}em; }
-// #{$evo}-tracking-13     { letter-spacing: #{$u-17}em; }
-// #{$evo}-tracking-14     { letter-spacing: #{$u-18}em; }
-// #{$evo}-tracking-15     { letter-spacing: #{$u-19}em; }
-// // #{$evo}-tracking-16     { letter-spacing: #{$u-20}em; }
+// .text-tracking-reset  { letter-spacing: initial; }
+// .text-tracking-0      { letter-spacing: #{$u-4}em; }
+// .text-tracking-1      { letter-spacing: #{$u-5}em; }
+// .text-tracking-2      { letter-spacing: #{$u-6}em; }
+// .text-tracking-3      { letter-spacing: #{$u-7}em; }
+// .text-tracking-4      { letter-spacing: #{$u-8}em; } 
+// .text-tracking-5      { letter-spacing: #{$u-9}em; } 
+// .text-tracking-6      { letter-spacing: #{$u-10}em; } // negative *
+// .text-tracking-7      { letter-spacing: #{$u-11}em; } // zero
+// .text-tracking-8      { letter-spacing: #{$u-12}em; } // positive *
+// .text-tracking-9      { letter-spacing: #{$u-13}em; } 
+// .text-tracking-10     { letter-spacing: #{$u-14}em; } // *
+// .text-tracking-11     { letter-spacing: #{$u-15}em; }
+// .text-tracking-12     { letter-spacing: #{$u-16}em; }
+// .text-tracking-13     { letter-spacing: #{$u-17}em; }
+// .text-tracking-14     { letter-spacing: #{$u-18}em; }
+// .text-tracking-15     { letter-spacing: #{$u-19}em; }
+// // .text-tracking-16     { letter-spacing: #{$u-20}em; }

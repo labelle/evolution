@@ -7,6 +7,7 @@
 // links states
 // order must be a:link, a:visited, a:hover, a:active
 
+a#{$evo}-link,
 a {
   font-family: #{$link_font_family};
   font-weight: #{$link_font_weight};
@@ -19,6 +20,7 @@ a {
   transition: #{$link_transition};
 }
 
+a#{$evo}-link:link,
 .a-link,
 a:link    { 
   color: #{$link_color};
@@ -27,12 +29,14 @@ a:link    {
   opacity: #{$link_opacity};
 }
 
+a#{$evo}-link:visited,
 .a-visited,
 a:visited { 
   color: #{$link_color_visited};
   opacity: #{$link_opacity_visited};
 }
 
+a#{$evo}-link:hover,
 .a-hover,
 a:hover {
   color: #{$link_color_hover};
@@ -46,6 +50,7 @@ a:hover {
   // }
 }
 
+a#{$evo}-link:active,
 .a-active,
 a:active {
   color: #{$link_color_active};
@@ -54,6 +59,7 @@ a:active {
   opacity: #{$link_opacity_active};
 }
 
+a#{$evo}-link:focus,
 .a-focus,
 a:focus,
 button:focus {

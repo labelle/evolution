@@ -141,7 +141,7 @@
 // Relative Text Measure
 #{$evo}-text-measure-widest   { @include measure(widest); }
 #{$evo}-text-measure-wider    { @include measure(wider); }
-#{$evo}-text-measure-wide     { @include measure(wide); }
+#{$evo}-text-measure     { @include measure(wide); }
 #{$evo}-text-measure-tight    { @include measure(tight); }
 #{$evo}-text-measure-tighter  { @include measure(tighter); }
 #{$evo}-text-measure-tightest { @include measure(tightest); }

@@ -1,10 +1,12 @@
-///*      B O X   S C A L E    */
+///*      B O X   S I Z E    */
 
 @import "../variables";
 // @import "../variables/scale";
 // @import "box_mixin";
 
+// Do we call these instead .box-size-10 ?
 
+// Size of box border width
 .box-0              { border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; } // 0px
 .box-1              { border-top-width: #{$px-1}; border-bottom-width: #{$px-1}; border-right-width: #{$px-1}; border-left-width: #{$px-1}; } // 1px
 .box-2              { border-top-width: #{$px-2}; border-bottom-width: #{$px-2}; border-right-width: #{$px-2}; border-left-width: #{$px-2}; } // 2px
@@ -23,8 +25,7 @@
 .box-15             { border-top-width: #{$px-15}; border-bottom-width: #{$px-15}; border-right-width: #{$px-15}; border-left-width: #{$px-15}; } // 30px
 
 
-// div box scale
-
+// Size of box border top width
 .box-top-0          { border-top-width: #{$px-0}; } // 0px
 .box-top-1          { border-top-width: #{$px-1}; } // 1px
 .box-top-2          { border-top-width: #{$px-2}; } // 2px
@@ -42,6 +43,7 @@
 .box-top-14         { border-top-width: #{$px-14}; } // 23px
 .box-top-15         { border-top-width: #{$px-15}; } // 30px
 
+// Size of box border bottom width
 .box-bottom-0       { border-bottom-width: #{$px-0}; } // 0px
 .box-bottom-1       { border-bottom-width: #{$px-1}; } // 1px
 .box-bottom-2       { border-bottom-width: #{$px-2}; } // 2px
@@ -59,6 +61,7 @@
 .box-bottom-14      { border-bottom-width: #{$px-14}; } // 23px
 .box-bottom-15      { border-bottom-width: #{$px-15}; } // 30px
 
+// Size of box border right width
 .box-right-0        { border-right-width: #{$px-0}; } // 0px
 .box-right-1        { border-right-width: #{$px-1}; } // 1px
 .box-right-2        { border-right-width: #{$px-2}; } // 2px
@@ -76,6 +79,7 @@
 .box-right-14       { border-right-width: #{$px-14}; } // 23px
 .box-right-15       { border-right-width: #{$px-15}; } // 30px
 
+// Size of box border left width
 .box-left-0         { border-left-width: #{$px-0}; } // 0px
 .box-left-1         { border-left-width: #{$px-1}; } // 1px
 .box-left-2         { border-left-width: #{$px-2}; } // 2px
@@ -94,7 +98,7 @@
 .box-left-15        { border-left-width: #{$px-15}; } // 30px
 
 
-// css border values
+// css border width values
 
 .box-thin           { border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: thin; }
 .box-medium         { border-top-width: medium; border-bottom-width: medium; border-right-width: medium; border-left-width: medium; }

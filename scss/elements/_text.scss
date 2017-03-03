@@ -8,29 +8,6 @@
 /* Text */
 
 
-
-// Text Reset
-
-#{$evo}-text-reset {
-  font-size:       initial;
-  color:           initial;
-  font-family:     initial;
-  font-weight:     initial;
-  font-weight:     initial;
-  font-style:      initial;
-  line-height:     initial;
-  text-decoration: initial;
-  text-transform:  initial;
-  text-align:      initial;
-  margin:          initial;
-  margin-top:      initial;
-  margin-bottom:   initial;
-  margin-left:     initial;
-  margin-right:    initial;
-  text-rendering:  initial;
-}
-
-
 // Text
 // Should we eliminate margin top and margin bottom? Or make them inherit?
 #{$evo}-text {
@@ -49,6 +26,28 @@
   // padding-left:    #{$text_padding_left};
   // list-style-position: #{$text_list_style_position};
 }
+
+// Text Reset
+
+.text-reset {
+  font-size:       initial;
+  color:           initial;
+  font-family:     initial;
+  font-weight:     initial;
+  font-weight:     initial;
+  font-style:      initial;
+  line-height:     initial;
+  text-decoration: initial;
+  text-transform:  initial;
+  text-align:      initial;
+  margin:          initial;
+  margin-top:      initial;
+  margin-bottom:   initial;
+  margin-left:     initial;
+  margin-right:    initial;
+  text-rendering:  initial;
+}
+
 
 
 // Element Mixins

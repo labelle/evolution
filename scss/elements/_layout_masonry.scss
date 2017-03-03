@@ -5,7 +5,7 @@
 @import "../variables";
 
 
-.masonry {
+#{$evo}-masonry {
     column-count: 4;
     margin: 1.5em 0;
     padding: 0;
@@ -14,7 +14,7 @@
     column-gap: 1.5em;
 }
 
-.item {
+.masonry-item {
     background: #fff;
     margin: 0 0 1.5em;
     display: inline-block;
@@ -22,14 +22,14 @@
     width: 100%;
 }
 
-.item > figcaption {
-     @extend #{$evo}-text-smaller;
+.masonry-item > figcaption {
+     @extend #{$evo}-text-2;
      column-break-inside: avoid;
      display: inline-block;
 }
 
 @media only screen and (min-width:300px) {
-    .masonry {
+    #{$evo}-masonry {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
@@ -37,7 +37,7 @@
 }
 
 @media only screen and (min-width:700px) {
-    .masonry {
+    #{$evo}-masonry {
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
@@ -45,7 +45,7 @@
 }
 
 @media only screen and (min-width:900px) {
-    .masonry {
+    #{$evo}-masonry {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
@@ -53,7 +53,7 @@
 }
 
 @media only screen and (min-width:1100px) {
-    .masonry {
+    #{$evo}-masonry {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (min-width:1300px) {
-    .masonry {
+    #{$evo}-masonry {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
