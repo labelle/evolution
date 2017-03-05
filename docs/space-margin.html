@@ -16,21 +16,10 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-div[class*="margin-"] {
-padding-bottom: 5rem;
-background-color: white;
-}
-.space-container {
-margin-top: .5em;
-margin-bottom: 3em;
-border: 1px solid #ccc;
-background-color: black;
-}
-
 </style>
 
 </head>
-<body class="site-container">
+<body class="site-container space-demo debug-space">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -88,14 +77,64 @@ margin-biggest
 
 
 
+<!-- space margin -->
+
+<section id="evoSpaceMarginWidth">
+
+<h2 class="evo-text-6">evo-space-margin-[width]</h2>
+
+<div class="divider"></div>
+
+evo-space-margin-thin
+<div class="space-container">
+<div class="evo-space-margin-thin"></div>
+</div>
+
+evo-space-margin-medium
+<div class="space-container">
+<div class="evo-space-margin-medium"></div>
+</div>
+
+evo-space-margin-thick
+<div class="space-container">
+<div class="evo-space-margin-thick"></div>
+</div>
+
+
+<div class="divider-small"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;div class="evo-space-margin-thick"&gt;&lt;/div&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
+
+<p class="evo-measure">Place a <code>&lt;div&gt;</code> tag on the element for which you want negative space at the bottom on the outside, and apply the <code>evo-space-margin-thick</code> class.</p>
+
+<div class="divider"></div>
+
+</section>
+
+
 
 <!-- space margin number -->
 
-<section id="evoSpaceMarginNumber">
+<section id="evoMarginNumber">
 
 <h2 class="evo-text-6">margin-[number]</h2>
 
 <div class="divider-small"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;div class="margin-10"&gt;&lt;/div&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
+
+<p class="evo-measure">Place a <code>&lt;div&gt;</code> tag on the element for which you want negative space at the bottom on the outside, and apply the <code>margin-10</code> class. You can also use just the <code>space-10</code> class which will only apply a height value.</p>
+ 
+ <div class="divider"></div>
+
 
 <!-- margin-0
 <div class="margin-0"></div> -->
@@ -226,6 +265,9 @@ margin-25
 </div>
 
 <!-- 
+
+<div class="divider-small">
+
 margin-26
 <div class="margin-26"></div>
 
@@ -240,9 +282,12 @@ margin-29
 
 margin-30
 <div class="margin-30"></div>
+
+<div class="divider-small">
+
  -->
 
-<div class="divider"></div>
+ <div class="divider">
  
 </section>
 

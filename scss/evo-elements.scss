@@ -4,10 +4,6 @@
 
 ///* =========================== */
 
-// Elements
-// (multiple sizes) do have evo prefex since they are styled
-// and class driven, with modular scale, tints, opacity, and richer variety
-
 
 /*******************************************************************************
 *
@@ -63,6 +59,7 @@
 @import "elements/layout";
 @import "elements/layout_grid";
 @import "elements/layout_position";
+@import "elements/layout_flex";
 @import "elements/layout_screen";
 @import "elements/layout_view";
 @import "elements/layout_masonry";
@@ -153,7 +150,7 @@
 @import "elements/image_parallax";
 
 // Video
-// @import "elements/video";
+@import "elements/video";
 
 // Line
 @import "elements/line";

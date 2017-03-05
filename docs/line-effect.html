@@ -16,43 +16,6 @@
         <link rel="stylesheet" href="css/evo-elements.css"> 
 
 <style>
-
-/* Experimental XRAY inspired by Harry Roberts */
-
-/* If it's a class containing the string evo-,
-put a green border around it. */
-
-hr[class*="evo-line"]  {
-/*padding-bottom: 5rem;*/
-margin-top: .5em;
-/*background-color: #eee;*/
-margin-bottom: 3em;
-}
-
-/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
-*/
-
-/*[class]:not([class*="evo-"]) {
-outline: 5px solid red;
-}*/
-
-/* Color Pulse */
-/* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
-hr.color-pulse {
-    -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
-    animation: mymove 5s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {border-top: solid lightblue;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {border-top: solid lightblue;}
-}
-
 </style>
 
 </head>
@@ -83,31 +46,31 @@ hr.color-pulse {
 
 <section id="evoLineFade">
 
-<h2 class="evo-text-6"">evo-line-fade-[thickness]</h2>
+<h2 class="evo-text-6"">line-fade-[thickness]</h2>
 
 <div class="evo-space"></div>
 
-evo-line-fade-thin
-<hr class="evo-line-fade-thin" />
+line-fade-thin
+<hr class="line-fade-thin" />
 
-evo-line-fade-medium
-<hr class="evo-line-fade-medium" />
+line-fade-medium
+<hr class="line-fade-medium" />
 
-evo-line-fade-thick
-<hr class="evo-line-fade-thick" />
+line-fade-thick
+<hr class="line-fade-thick" />
 
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>evo-line-fade-[thickness]</code> class. Default 'fade' lines are translucent. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>line-fade-[thickness]</code> class. Default 'fade' lines are translucent. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line line-1" /&gt;</code>. --></p>
 
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-   &lt;hr class="evo-line-fade-thin" /&gt;
-   &lt;hr class="evo-line-fade-medium" /&gt;
-   &lt;hr class="evo-line-fade-thick" /&gt;
+   &lt;hr class="line-fade-thin" /&gt;
+   &lt;hr class="line-fade-medium" /&gt;
+   &lt;hr class="line-fade-thick" /&gt;
 
 </pre>
 
@@ -119,47 +82,47 @@ evo-line-fade-thick
 
 <!-- Line color -->
 
-<h2 class="evo-text-6"">evo-line-fade-[color]</h2>
+<h2 class="evo-text-6"">line-fade-[color]</h2>
 
 <div class="evo-space-3"></div>
 
-evo-line-fade-black
-<hr class="evo-line-fade-thick evo-line-fade-black" />
+line-fade-black
+<hr class="line-fade-thick line-fade-black" />
 
-evo-line-fade-gray
-<hr class="evo-line-fade-thick evo-line-fade-gray" />
+line-fade-gray
+<hr class="line-fade-thick line-fade-gray" />
 
-evo-line-fade-white
-<hr class="evo-line-fade-thick evo-line-fade-white" />
+line-fade-white
+<hr class="line-fade-thick line-fade-white" />
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>evo-line-fade-[thickness]</code> class, followed by an <code>evo-line-fade-[color]</code> class. Fade 'color' lines are opaque. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>line-fade-[thickness]</code> class, followed by an <code>line-fade-[color]</code> class. Fade 'color' lines are opaque. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line line-1" /&gt;</code>. --></p>
 
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-   &lt;hr class="evo-line-fade-thick evo-line-fade-black" /&gt;
-   &lt;hr class="evo-line-fade-thick evo-line-fade-gray" /&gt;
-   &lt;hr class="evo-line-fade-thick evo-line-fade-white" /&gt;
+   &lt;hr class="line-fade-thick line-fade-black" /&gt;
+   &lt;hr class="line-fade-thick line-fade-gray" /&gt;
+   &lt;hr class="line-fade-thick line-fade-white" /&gt;
 
 </pre>
 
 <div class="evo-space-15"></div>
 
-<p class="evo-measure">Experiment with other colors, as in this CSS example.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Experiment with other colors, as in this CSS example.<!--  Example <code>&lt;hr class="evo-line line-1" /&gt;</code>. --></p>
 
 <div class="evo-space-1"></div>
 
-<!-- evo-line-fade-pink -->
-<hr class="evo-line-fade-thick evo-line-fade-pink" />
+<!-- line-fade-pink -->
+<hr class="line-fade-thick line-fade-pink" />
 
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-   hr.evo-line-fade-pink {  
+   hr.line-fade-pink {  
      background-image: linear-gradient(to right, rgba(255, 0, 255, 0), rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0)); 
    }
 
@@ -174,62 +137,62 @@ evo-line-fade-white
 
 <section id="evoLineShadow">
 
-<h2 class="evo-text-6"">evo-line-[shadow]</h2>
+<h2 class="evo-text-6"">line-[shadow]</h2>
 
 <div class="evo-space-8"></div>
 
-<!-- evo-line-shadow-0
-<hr class="evo-line-shadow-0" /> -->
+<!-- line-shadow-0
+<hr class="line-shadow-0" /> -->
 
-evo-line-shadow-1
-<hr class="evo-line-shadow-1" />
+line-shadow-1
+<hr class="line-shadow-1" />
 
-evo-line-shadow-2
-<hr class="evo-line-shadow-2" />
+line-shadow-2
+<hr class="line-shadow-2" />
 
-evo-line-shadow-3
-<hr class="evo-line-shadow-3" />
+line-shadow-3
+<hr class="line-shadow-3" />
 
-evo-line-shadow-4
-<hr class="evo-line-shadow-4" />
+line-shadow-4
+<hr class="line-shadow-4" />
 
-evo-line-shadow-5
-<hr class="evo-line-shadow-5" />
+line-shadow-5
+<hr class="line-shadow-5" />
 
-evo-line-shadow-6
-<hr class="evo-line-shadow-6" />
+line-shadow-6
+<hr class="line-shadow-6" />
 
-evo-line-shadow-7
-<hr class="evo-line-shadow-7" />
+line-shadow-7
+<hr class="line-shadow-7" />
 
-evo-line-shadow-8
-<hr class="evo-line-shadow-8" />
+line-shadow-8
+<hr class="line-shadow-8" />
 
-evo-line-shadow-9
-<hr class="evo-line-shadow-9" />
+line-shadow-9
+<hr class="line-shadow-9" />
 
-evo-line-shadow-10
-<hr class="evo-line-shadow-10" />
+line-shadow-10
+<hr class="line-shadow-10" />
 
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>evo-line-shadow-[number]</code> class. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>line-shadow-[number]</code> class. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line line-1" /&gt;</code>. --></p>
 
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-   &lt;hr class="evo-line-shadow-1" /&gt;
-   &lt;hr class="evo-line-shadow-2" /&gt;
-   &lt;hr class="evo-line-shadow-3" /&gt;
-   &lt;hr class="evo-line-shadow-4" /&gt;
-   &lt;hr class="evo-line-shadow-5" /&gt;
-   &lt;hr class="evo-line-shadow-6" /&gt;
-   &lt;hr class="evo-line-shadow-7" /&gt;
-   &lt;hr class="evo-line-shadow-8" /&gt;
-   &lt;hr class="evo-line-shadow-9" /&gt;
-   &lt;hr class="evo-line-shadow-10" /&gt;
+   &lt;hr class="line-shadow-1" /&gt;
+   &lt;hr class="line-shadow-2" /&gt;
+   &lt;hr class="line-shadow-3" /&gt;
+   &lt;hr class="line-shadow-4" /&gt;
+   &lt;hr class="line-shadow-5" /&gt;
+   &lt;hr class="line-shadow-6" /&gt;
+   &lt;hr class="line-shadow-7" /&gt;
+   &lt;hr class="line-shadow-8" /&gt;
+   &lt;hr class="line-shadow-9" /&gt;
+   &lt;hr class="line-shadow-10" /&gt;
 
 </pre>
 
@@ -241,83 +204,83 @@ evo-line-shadow-10
 
 <!-- Blur shadow -->
 
-<h2 class="evo-text-6"">evo-line-blur-[number]</h2>
+<h2 class="evo-text-6"">line-blur-[number]</h2>
 
 <div class="evo-space-3"></div>
 
-evo-line-blur-0
-<hr class="evo-line-blur-0" />
+line-blur-0
+<hr class="line-blur-0" />
 
 <div class="evo-space-6"></div>
 
-evo-line-blur-1
-<hr class="evo-line-blur-1" />
+line-blur-1
+<hr class="line-blur-1" />
 
 <div class="evo-space-6"></div>
 
-evo-line-blur-2
-<hr class="evo-line-blur-2" />
+line-blur-2
+<hr class="line-blur-2" />
 
 <div class="evo-space-12"></div>
 
-evo-line-blur-3
-<hr class="evo-line-blur-3" />
+line-blur-3
+<hr class="line-blur-3" />
 
 <div class="evo-space-15"></div>
 
-evo-line-blur-4
-<hr class="evo-line-blur-4" />
+line-blur-4
+<hr class="line-blur-4" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-5
-<hr class="evo-line-blur-5" />
+line-blur-5
+<hr class="line-blur-5" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-6
-<hr class="evo-line-blur-6" />
+line-blur-6
+<hr class="line-blur-6" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-7
-<hr class="evo-line-blur-7" />
+line-blur-7
+<hr class="line-blur-7" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-8
-<hr class="evo-line-blur-8" />
+line-blur-8
+<hr class="line-blur-8" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-9
-<hr class="evo-line-blur-9" />
+line-blur-9
+<hr class="line-blur-9" />
 
 <div class="evo-space-16"></div>
 
-evo-line-blur-10
-<hr class="evo-line-blur-10" />
+line-blur-10
+<hr class="line-blur-10" />
 
 
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>evo-line-blur-[number]</code> class. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line evo-line-1" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;hr /&gt;</code> tag, and apply an <code>line-blur-[number]</code> class. Do not apply the <code>evo-line</code> class.<!--  Example <code>&lt;hr class="evo-line line-1" /&gt;</code>. --></p>
 
 
 <!-- TO DO: replace with .evo-inline-code block pattern -->
 <pre class="evo-text-3 evo-inline-code evo-box evo-box-1">
 
-   &lt;hr class="evo-line-blur-1" /&gt;
-   &lt;hr class="evo-line-blur-2" /&gt;
-   &lt;hr class="evo-line-blur-3" /&gt;
-   &lt;hr class="evo-line-blur-4" /&gt;
-   &lt;hr class="evo-line-blur-5" /&gt;
-   &lt;hr class="evo-line-blur-6" /&gt;
-   &lt;hr class="evo-line-blur-7" /&gt;
-   &lt;hr class="evo-line-blur-8" /&gt;
-   &lt;hr class="evo-line-blur-9" /&gt;
-   &lt;hr class="evo-line-blur-10" /&gt;
+   &lt;hr class="line-blur-1" /&gt;
+   &lt;hr class="line-blur-2" /&gt;
+   &lt;hr class="line-blur-3" /&gt;
+   &lt;hr class="line-blur-4" /&gt;
+   &lt;hr class="line-blur-5" /&gt;
+   &lt;hr class="line-blur-6" /&gt;
+   &lt;hr class="line-blur-7" /&gt;
+   &lt;hr class="line-blur-8" /&gt;
+   &lt;hr class="line-blur-9" /&gt;
+   &lt;hr class="line-blur-10" /&gt;
 
 </pre>
 
@@ -327,7 +290,7 @@ evo-line-blur-10
 
 
 line pulse animation test
-<hr class="evo-line evo-line-15 evo-line-color-10 color-pulse" />
+<hr class="evo-line line-15 line-color-10 color-pulse" />
 
 
 <div class="evo-space-19"></div>

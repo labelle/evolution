@@ -4,25 +4,118 @@
 
 @import "../variables";
 
-// /*      SPACE     */
 
-
+// Space
 #{$evo}-space {
      height: #{$space_height}; // 3rem
      width: #{$space_width}; // auto
+     background-color: #{$space_background_color};
      clear: #{$space_clear_float}; // both
 }
 
-// Resets space style
-.space-reset {
-     height: 0px;
-     width: auto;
-     clear: both;
+// // Resets space style
+// .space-reset {
+//      height: 0px;
+//      width: auto;
+//      clear: both;
+// }
+
+// Margin
+#{$evo}-margin        { margin-bottom: #{$margin_size};   clear: #{$margin_clear_float}; } // 3rem
+
+// #{$evo}-margin        { margin: #{$margin_size};         clear: #{$margin_clear_float}; } // 3rem
+// #{$evo}-margin-top    { margin-top: #{$margin_size};     clear: #{$margin_clear_float}; } // 3rem
+// #{$evo}-margin-bottom { margin-bottom: #{$margin_size};  clear: #{$margin_clear_float}; } // 3rem
+// #{$evo}-margin-left   { margin-left: #{$margin_size};    clear: #{$margin_clear_float}; } // 3rem
+// #{$evo}-margin-right  { margin-right: #{$margin_size};   clear: #{$margin_clear_float}; } // 3rem
+
+// // Resets margin bottom
+// .margin-reset {
+//      margin-bottom: 0px;
+//      clear: both;
+// }
+
+
+// Padding
+#{$evo}-padding       { padding-bottom: #{$padding_size};  clear: #{$padding_clear_float}; } // 3rem
+
+// #{$evo}-padding        { padding: #{$padding_size};        clear: #{$padding_clear_float}; } // 3rem
+// #{$evo}-padding-top    { padding-top: #{$padding_size};    clear: #{$padding_clear_float}; } // 3rem
+// #{$evo}-padding-bottom { padding-bottom: #{$padding_size}; clear: #{$padding_clear_float}; } // 3rem
+// #{$evo}-padding-left   { padding-left: #{$padding_size};   clear: #{$padding_clear_float}; } // 3rem
+// #{$evo}-padding-right  { padding-right: #{$padding_size};  clear: #{$padding_clear_float}; } // 3rem
+
+// // Resets padding bottom
+// .padding-reset {
+//      padding-bottom: 0px;
+//      clear: both;
+// }
+
+
+
+
+// Debug classes to colorize the items
+// Apply to the body tag on a given page
+// Needs testing
+
+body.debug-space div[class*="evo-space"],
+body.debug-space div[class*="margin-"],
+body.debug-space div[class*="padding-"] {
+    outline: 1px solid red !important;
+    background-color: red !important;
 }
 
 
-// Need padding space
+// For website demo only
 
-// Need margin space
+body.space-demo div[class*="evo-space"] {
+/*padding-bottom: 5rem;*/
+background-color: #fff;
+margin-top: .5em;
+margin-bottom: 3em;
+/*border-width: 1px;*/
+}
 
-// Need vh space
+body.space-demo div[class*="margin-"] {
+padding-bottom: #{$padding_size};
+background-color: white;
+}
+.space-container {
+margin-top: .5em;
+margin-bottom: 3em;
+border: 1px solid #ccc;
+background-color: black;
+}
+
+body.space-demo div[class*="padding-"] {
+/*padding-bottom: 5rem;*/
+color: black;
+background-color: black;
+margin-top: .5em;
+margin-bottom: #{$margin_size};
+border-style: solid;
+border-width: 1px;
+border-color: #ccc;
+}
+
+.filler {
+ width:100%;
+ height:5rem;
+ background-color: #fff; // #fcfbf5
+}
+
+.divider {
+padding-bottom: 5rem;
+background-color: initial !important;
+margin-top: 0;
+margin-bottom: 0;
+/*border-width: 1px;*/
+}
+
+.divider-small {
+padding-bottom: 1rem;
+background-color: initial !important;
+margin-top: 0;
+margin-bottom: 0;
+/*border-width: 1px;*/
+}

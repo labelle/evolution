@@ -4,19 +4,9 @@
 
 @import "../variables";
 
-
-// Resets padding style
-#{$evo}-padding {
-     padding: #{$space_padding};  // 1.4375rem
-     clear: both;
-}
-
-
-// Resets padding style
-.padding-reset {
-     padding: 0;
-     clear: both;
-}
+#{$evo}-space-padding-thin     { padding-bottom: #{$space_padding_thin}; }
+#{$evo}-space-padding-medium   { padding-bottom: #{$space_padding_medium}; }
+#{$evo}-space-padding-thick    { padding-bottom: #{$space_padding_thick}; }
 
 // Padding
 

@@ -79,6 +79,21 @@ button.bullet-dash:before {
     content: "–"; // insert content that looks like bullets
 }
 
+// Division Slash U+2215
+ul.bullet-slash li:before,
+a.bullet-slash:before,
+button.bullet-slash:before {
+    content: "∕"; // insert content that looks like bullets
+}
+
+// Solidus U+002F
+ul.bullet-solidus li:before,
+a.bullet-solidus:before,
+button.bullet-solidus:before {
+    content: "/"; // insert content that looks like bullets
+}
+
+
 // Triangular Bullet U+2023 (only browser)
 ul.bullet-triangle li:before,
 a.bullet-triangle:before,

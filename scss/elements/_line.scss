@@ -25,3 +25,30 @@ border-top-color: #{$line_color};
 margin-top: #{$line_margin_top};
 margin-bottom: #{$line_margin_bottom};
 }
+
+
+// For website demo only
+
+hr[class*="line-"]  {
+/*padding-bottom: 5rem;*/
+margin-top: .5em;
+/*background-color: #eee;*/
+margin-bottom: 3em;
+}
+
+// // /* Color Pulse */
+// // /* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
+// hr.color-pulse {
+//     -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
+//     animation: mymove 5s infinite;
+// }
+
+// // /* Chrome, Safari, Opera */
+// @-webkit-keyframes mymove {
+//     50% {border-top: solid lightblue;}
+// }
+
+// // /* Standard syntax */
+// @keyframes mymove {
+//     50% {border-top: solid lightblue;}
+// }
