@@ -1,0 +1,23 @@
+///*      B R A N D   C O L O R     */
+
+@import "variables_hrf";
+
+
+
+// HRF Green
+#{$brand}-color-1     { color: #{$brand_color_1}; }
+#{$brand}-color-1-bg  { background-color: #{$brand_color_1}; }
+
+
+// HEP Green
+#{$brand}-color-2     { color: #{$brand_color_2}; }
+#{$brand}-color-2-bg  { background-color: #{$brand_color_2}; }
+
+// HRF Blue
+#{$brand}-color-3     { color: #{$brand_color_3}; }
+#{$brand}-color-3-bg  { background-color: #{$brand_color_3}; }
+
+
+// HRF Warm Gray
+#{$brand}-color-4     { color: #{$brand_color_4}; }
+#{$brand}-color-4-bg  { background-color: #{$brand_color_4}; }

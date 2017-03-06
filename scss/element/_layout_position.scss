@@ -1,0 +1,193 @@
+///*      L A Y O U T   P O S I T I O N     */
+
+// Position elements within a container
+
+@import "../variables";
+
+
+// http://www.w3schools.com/w3css/w3css_display.asp
+
+// This must go on the container for the absolute positions below
+#{$evo}-position,
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.position-top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.position-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.position-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.position-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.position-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.position-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%);
+}
+
+.position-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+.position-top-middle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.position-bottom-middle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+// #{$evo}-position-container:hover #{$evo}-position-hover {
+//     display: block
+// }
+
+// #{$evo}-position-container:hover span.#{$evo}-position-hover {
+//     display: inline-block
+// }
+
+// #{$evo}-position-hover {
+//     display: none
+// }
+
+
+// .position-height-100 {
+//     height:100%;
+// }
+
+
+// Centering
+// http://thenewcode.com/723/Seven-Ways-of-Centering-With-CSS
+
+
+
+// http://www.w3schools.com/howto/howto_css_center_website.asp
+// Horizontal centering
+.center-horizontal {
+    // max-width: 100px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// does not require parent container?
+
+// vertical centering
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+
+
+// Flex
+// http://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically#19027949
+
+.flex-center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.z--1 {
+    z-index: -1
+}
+
+// From tachyons
+
+.z-0 {
+    z-index: 0
+}
+
+.z-1 {
+    z-index: 1
+}
+
+.z-2 {
+    z-index: 2
+}
+
+.z-3 {
+    z-index: 3
+}
+
+.z-4 {
+    z-index: 4
+}
+
+.z-5 {
+    z-index: 5
+}
+
+.z-999 {
+    z-index: 999
+}
+
+.z-9999 {
+    z-index: 9999
+}
+
+// http://stackoverflow.com/questions/8565821/css-max-z-index-value#8565868
+.z-max {
+    z-index: 16777271; // for safari 3
+    z-index: 2147483647
+}
+
+.z-inherit {
+    z-index: inherit
+}
+
+.z-initial {
+    z-index: auto
+}
+
+.z-unset {
+    z-index: unset
+}

@@ -97,8 +97,8 @@ gulp.task('elements', function () {
 });
 
 /* Sass task */
-gulp.task('reset', function () {  
-    return gulp.src('scss/evo-reset.scss')
+gulp.task('design', function () {  
+    return gulp.src('scss/evo-design.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
@@ -134,7 +134,7 @@ gulp.task('browser-sync', function() {
 });
 
 /* Watch scss, js and html files, doing different things with each. */
-gulp.task('default', ['brand', 'evolution', 'elements', 'reset', 'scripts', 'browser-sync'], function () {
+gulp.task('default', ['brand', 'evolution', 'elements', 'design', 'scripts', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['default'])
     /* Watch app.js file, run the scripts task on change. */

@@ -1,0 +1,27 @@
+///*      B R A N D   I M A G E    */
+
+@import "variables_hrf";
+
+
+// Person
+
+#{$brand}-image-person-bg    { background-image: url(#{$image_person}); }
+
+
+
+// Place
+
+#{$brand}-image-place-bg    { background-image: url(#{$image_place}); }
+
+
+
+// Thing
+
+#{$brand}-image-thing-bg    { background-image: url(#{$image_thing}); }
+
+
+
+// Texture
+
+#{$brand}-image-texture-bg    { background-image: url(#{$image_texture}); }
+

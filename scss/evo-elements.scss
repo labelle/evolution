@@ -38,150 +38,151 @@
 @import "variables";
 
 // Global styles
-// @import "elements/reset";
-@import "elements/global";
+// @import "element/reset";
+@import "element/global";
 
 // Main
-@import "elements/code";
+@import "element/code";
 
 // Mixins
-@import "elements/font_mixin";
-@import "elements/text_mixin";
-// @import "elements/line_mixin";
-@import "elements/color_mixin";
-// @import "elements/box_mixin";
-// @import "elements/space_mixin";
-// @import "elements/layout_mixin";
-// @import "elements/image_mixin";
+@import "element/font_mixin";
+@import "element/text_mixin";
+// @import "element/line_mixin";
+@import "element/color_mixin";
+// @import "element/box_mixin";
+// @import "element/space_mixin";
+// @import "element/layout_mixin";
+// @import "element/image_mixin";
 
 
 // layout
-@import "elements/layout";
-@import "elements/layout_grid";
-@import "elements/layout_position";
-@import "elements/layout_flex";
-@import "elements/layout_screen";
-@import "elements/layout_view";
-@import "elements/layout_masonry";
-@import "elements/layout_iframe";
-@import "elements/layout_play";
+@import "element/layout";
+@import "element/layout_grid";
+@import "element/layout_position";
+@import "element/layout_flex";
+@import "element/layout_screen";
+@import "element/layout_view";
+@import "element/layout_masonry";
+@import "element/layout_iframe";
+@import "element/layout_play";
 
 // space
-@import "elements/space";
-@import "elements/space_block";
-// @import "elements/space_view";
-@import "elements/space_margin";
-@import "elements/space_padding";
-// @import "elements/space_effect";
-// @import "elements/space_play";
+@import "element/space";
+@import "element/space_block";
+// @import "element/space_view";
+@import "element/space_margin";
+@import "element/space_padding";
+// @import "element/space_effect";
+// @import "element/space_play";
 
 // Color
-@import "elements/color";
-@import "elements/color_gray";
-@import "elements/color_natural";
-@import "elements/color_gradient";
-@import "elements/color_effect";
+@import "element/color";
+@import "element/color_gray";
+@import "element/color_natural";
+@import "element/color_gradient";
+@import "element/color_effect";
 
 
 // Font
-@import "elements/font";
-@import "elements/font_style";
-@import "elements/font_stack";
-@import "elements/font_adobe";
-@import "elements/font_google";
-@import "elements/font_local";
-@import "elements/font_play";
+@import "element/font";
+@import "element/font_style";
+@import "element/font_stack";
+@import "element/font_adobe";
+@import "element/font_google";
+@import "element/font_local";
+@import "element/font_play";
 
 // Text
-@import "elements/text";
-@import "elements/text_style";
-@import "elements/text_size";
-@import "elements/text_leading";
-@import "elements/text_tracking";
-@import "elements/text_measure";
-@import "elements/text_effect";
+@import "element/text";
+@import "element/text_style";
+@import "element/text_size";
+@import "element/text_leading";
+@import "element/text_tracking";
+@import "element/text_measure";
+@import "element/text_effect";
 
 // Selection
-@import "elements/selection";
-// @import "elements/selection_gray";
-// @import "elements/selection_color";
+@import "element/selection";
+// @import "element/selection_gray";
+// @import "element/selection_color";
 
 // Highlight
-@import "elements/highlight";
-@import "elements/highlight_color";
-@import "elements/highlight_gray";
+@import "element/highlight";
+@import "element/highlight_color";
+@import "element/highlight_gray";
 
 // Link
-@import "elements/link";
-@import "elements/link_bullet";
-@import "elements/link_icon";
+@import "element/link";
+@import "element/link_bullet";
+@import "element/link_icon";
 
 // Icon
-@import "elements/icon";
-@import "elements/icon_list";
-@import "elements/icon_size";
+@import "element/icon";
+@import "element/icon_list";
+@import "element/icon_size";
+@import "element/icon_scroll";
 
 // Button
-@import "elements/button";
-@import "elements/button_style";
-@import "elements/button_size";
-@import "elements/button_color";
-@import "elements/button_gray";
-@import "elements/button_bullet";
-@import "elements/button_icon";
-@import "elements/button_effect";
-@import "elements/button_play";
+@import "element/button";
+@import "element/button_style";
+@import "element/button_size";
+@import "element/button_color";
+@import "element/button_gray";
+@import "element/button_bullet";
+@import "element/button_icon";
+@import "element/button_effect";
+@import "element/button_play";
 
 // List
-@import "elements/list";
-@import "elements/list_style";
-@import "elements/list_size";
-@import "elements/list_unordered";
-@import "elements/list_bullet";
-@import "elements/list_ordered";
-@import "elements/list_number";
-@import "elements/list_line";
-@import "elements/list_play";
+@import "element/list";
+@import "element/list_style";
+@import "element/list_size";
+@import "element/list_unordered";
+@import "element/list_bullet";
+@import "element/list_ordered";
+@import "element/list_number";
+@import "element/list_line";
+@import "element/list_play";
 
 // Image
-@import "elements/image";
-@import "elements/image_size";
-@import "elements/image_ratio";
-@import "elements/image_parallax";
+@import "element/image";
+@import "element/image_size";
+@import "element/image_ratio";
+@import "element/image_parallax";
 
 // Video
-@import "elements/video";
+@import "element/video";
 
 // Line
-@import "elements/line";
-@import "elements/line_style";
-@import "elements/line_size";
-@import "elements/line_color";
-@import "elements/line_gray";
-@import "elements/line_fade";
-@import "elements/line_shadow";
-@import "elements/line_blur";
-@import "elements/line_effect";
-// @import "elements/line_play";
+@import "element/line";
+@import "element/line_style";
+@import "element/line_size";
+@import "element/line_color";
+@import "element/line_gray";
+@import "element/line_fade";
+@import "element/line_shadow";
+@import "element/line_blur";
+@import "element/line_effect";
+// @import "element/line_play";
 
 // Box
-@import "elements/box";
-@import "elements/box_style";
-@import "elements/box_shape";
-@import "elements/box_size";
-@import "elements/box_color";
-@import "elements/box_gray";
-@import "elements/box_effect";
-@import "elements/box_shadow";
-// @import "elements/box_play";
+@import "element/box";
+@import "element/box_style";
+@import "element/box_shape";
+@import "element/box_size";
+@import "element/box_color";
+@import "element/box_gray";
+@import "element/box_effect";
+@import "element/box_shadow";
+// @import "element/box_play";
 
 // Table
-@import "elements/table";
-@import "elements/table_space";
-@import "elements/table_style";
+@import "element/table";
+@import "element/table_space";
+@import "element/table_style";
 
 // Form
-@import "elements/form";
+@import "element/form";
 
 
 

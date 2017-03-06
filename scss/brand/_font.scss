@@ -1,20 +1,44 @@
-///*      F O N T     */
+///*      B R A N D   F O N T S     */
 
-@import "../variables";
-// @import "../settings";
+@import "variables_hrf";
 
-/*      BRAND FONTS     */
 
 
 // Brand Fonts
 #{$brand}-font-1 { 
-  font-family: #{$brand_font_family_1};
+font-family: #{$google_merriweather};
+font-weight:400;
 }
 
 #{$brand}-font-2 { 
-  font-family: #{$brand_font_family_2};
+font-family: #{$google_montserrat};
+font-weight:400;
 }
 
 #{$brand}-font-3 { 
-  font-family: #{$brand_font_family_3};
+font-family: #{$google_montserrat};
+font-weight:700;
+}
+
+
+
+// <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+
+// Google Merriweather
+
+.font-google-merriweather  {
+font-family: #{$google_merriweather};
+font-weight:400;
+}
+
+// Google Montserrat
+
+.font-google-montserrat  {
+font-family: #{$google_montserrat};
+font-weight:400;
+}
+
+.font-google-montserrat-bold  {
+font-family: #{$google_montserrat};
+font-weight:700;
 }

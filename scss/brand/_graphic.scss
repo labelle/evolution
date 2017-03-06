@@ -1,0 +1,27 @@
+///*      B R A N D   G R A P H I C    */
+
+@import "variables_hrf";
+
+
+// Infograph
+
+#{$brand}-graphic-infograph-bg    { background-image: url(#{$graphic_infograph}); }
+
+
+
+// Chart
+
+#{$brand}-graphic-chart-bg    { background-image: url(#{$graphic_chart}); }
+
+
+
+// Map
+
+#{$brand}-graphic-map-bg    { background-image: url(#{$graphic_map}); }
+
+
+
+// Dataviz
+
+#{$brand}-graphic-dataviz-bg    { background-image: url(#{$graphic_dataviz}); }
+

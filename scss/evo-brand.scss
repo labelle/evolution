@@ -38,7 +38,26 @@
 *
 *******************************************************************************/
 
-// @import "settings";
-@import "variables";
+// Import variables
+@import "brand/variables_hrf";
+
+// Import logos
+@import "brand/logo";
+
+// Import fonts
 @import "brand/font";
+
+// Import colors
+@import "brand/color";
+
+// Import icons
+@import "brand/icon";
+
+// Import images
+@import "brand/image";
+
+// Import graphics
+@import "brand/graphic";
+
+
 

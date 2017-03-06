@@ -6,50 +6,129 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution</title>
+        <title>HRF / Style Guide and Design System</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!--         <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
-<!--         <link rel="stylesheet" href="css/evo-reset.css">
- -->        <link rel="stylesheet" href="css/evo-elements.css">
+        <link rel="stylesheet" href="css/evo-elements.css">
+        <link rel="stylesheet" href="css/evo-brand.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+
 
 <style>
-/** { outline: 1px solid gray; }*/
-
-@media screen and (min-width: 1101px) {
-    .two-up  {
-        width: 47.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .two-up  {
-        width: 47.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .two-up  {
-        width: 100%;
-        position: inline-block;
-    float: left;
-
-    }
-}
-
 </style>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+// Begin Scroll Script
+
+  $("#evo-scroll-1-run").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#sitemap").offset().top
+    }, 1500);
+});
+
+  window.mobilecheck = function() {
+    var check = false;
+    (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+    return check; 
+  }
+
+// End Scroll script
+
+
+// Begin Opacity Script
+// Place .image-hero-scroll class on your background image container
+
+  if(window.mobilecheck() === false) {
+  
+    $(window).scroll(function() {
+      var $scroll_img = $('.image-hero-scroll');
+      var st = $(window).scrollTop();
+      var opac = (1 - (st-400)/300);
+
+      // Obtains value for how far from top page is scrolled
+      var top_scroll = $(window).scrollTop();
+
+
+      // Parallax effect to main background
+      $scroll_img.css({
+        top: (Math.abs(top_scroll) * 0.7) + 'px'
+      });
+      if(top_scroll > 200) {
+        $scroll_img.css({
+          "opacity": opac
+        });
+      }
+      // if(top_scroll < 200) {
+      //   $scroll_img.css({
+      //     "opacity": 0
+      //   });
+      // }
+    });
+
+
+    // Fade in / Fade out effect on windows resize
+    $(window).resize(function(){
+      var $resize_img = $('.image-hero-scroll');
+
+      var timer;
+
+      if ($(window).width() < 580) {
+        timer = setTimeout(function() {
+          $($resize_img).animate({
+            opacity: '0'
+          }, 800);
+
+        }, 0);
+
+        function stopTimer() {
+          if ($resize_img.css('opacity') == 0) {
+            clearTimeout(timer);
+          }
+        }
+
+        stopTimer();
+
+      }
+
+      if ($(window).width() > 581) {
+        timer = setTimeout(function() {
+          if ($resize_img.css('opacity') == 0) {
+            $($resize_img).animate({
+              opacity: '1'
+            }, 800);
+          }
+
+        }, 0);
+
+        function stopTimer() {
+          if ($resize_img.css('opacity') == 1) {
+            clearTimeout(timer);
+          }
+        }
+
+        stopTimer();
+
+      }
+
+    });
+
+  }
+
+// End Opacity Script
+
+});
+
+</script>
+
 </head>
-<body class="reset">
+<body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -57,340 +136,68 @@
 <!-- Main navigation -->
 <!-- <header role="banner">
 </header> -->
-<main>
 
 
-
-<!-- Elements -->
-<section id="evolution" class="evo-position view-tall-full evo-color-23-bg">
-<!--     <h1 class="evo-text-7 evo-measure-5 evo-position-top-left">Evolution</h1>
- -->    <div class="position-middle">
-        <h2 class="evo-text-12 font-bold text-center font-festivo-outline evo-tracking-4">Evolution</h2>
-        <p class="evo-measure text-center evo-text-8">A living design system and style guide framework.</p>
+<!-- Landing -->
+<!-- <section id="evolution" class="evo-position view-tall-full evo-image-bg image-bg-fpo"> -->
+<section id="welcome" class="evo-position screen-100 evo-image-bg bg-right bg-top cover hrf-image-place-bg">
+        <div class="position-middle z-2">
+        <h1 class="evo-color-white text-center text-tracking-4 margin-bottom-10 brand-font-1">Hudson River Foundation</h1>
+        <p class="evo-measure text-center evo-gray-8">Living style guide and design system framework.</p>
         <div class="evo-space"></div>
-    </div>
+            <div class="text-center view-wide-75">
+              <ul class="evo-list-bullet bullet-slash bullet-gray list-inline evo-text-4">
+                  <li><a href="harbor/index.html">Site</a></li>
+                  <li><a href="guide/index.html">Guide</a></li>
+                  <li><a href="design/index.html">Design</a></li>
+                  <li><a href="brand/index.html">Brand</a></li>
+                  <li><a href="elements/index.html">Elements</a></li>
+               </ul>
+              <div class="evo-space"></div>
+            </div>
+        </div>
+        <a href="javascript: void(0);" id="evo-scroll-1-run">
+        <div class="position-bottom-middle z-2">
+           <div class="icon-scroll-chevron-container margin-bottom-20">
+             <div class="icon-scroll-chevron evo-color-15"></div>
+             <div class="icon-scroll-chevron evo-color-15"></div>
+             <div class="icon-scroll-chevron evo-color-15"></div>
+             <span class="icon-scroll-chevron-text">Scroll down</span>
+              </div>
+        </div>
+        </a>
+        <div class="evo-trans-gray-15-bg image-ratio-fill"></div>
 </section>
 
+<section id="sitemap" class="screen-tall-100 center-horizontal text-measure-6 padding-top-20">
+        <h2 class="text-center text-tracking-4 margin-bottom-10 brand-font-1">Completed Site Pages</h2>
+        <p class="evo-measure text-center evo-gray-15 evo-margin">Hudson River Foundation list of completed page templates.</p>
 
-<div class="site-container">
+              <ul class="evo-list-bullet bullet-check list-size-medium margin-left-15 margin-right-20 margin-bottom-20 float-left">
+                  <li><a href="harbor/index.html">Landing</a></li>
+                  <li><a href="harbor/our-work.html">Our Work</a></li>
+                  <li><a href="harbor/state-of-the-hudson.html">State of the Hudson</a></li>
+                  <li><a href="harbor/what-can-i-do.html">What Can I Do</a></li>
+                  <li><a href="harbor/our-grants.html">Our Grants</a></li>
+                  <li><a href="harbor/media-library.html">Media Library</a></li>
+                  <li><a href="harbor/research-finder.html">Research Finder</a></li>
+               </ul>
 
-<div class="evo-space"></div>
-
-
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="layout.html">Layout</a></li>
-<li><a href="layout-grid.html">Layout Grid</a></li>
-<li><a href="layout-position.html">Layout Position</a></li>
-<li><a href="layout-screen.html">Layout Screen</a></li>
-<li><a href="layout-view.html">Layout View</a></li>
-<li><a href="layout-iframe.html">Layout Iframe</a></li>
-<li><a href="layout-play.html">Layout Play</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="space.html">Space</a></li>
-<li><a href="space-block.html">Space Block</a></li>
-<li><a href="space-margin.html">Space Margin</a></li>
-<li><a href="space-padding.html">Space Padding</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="color.html">Color (add a evo-color, evo-white, evo-black)</a></li>
-<li><a href="color-natural.html">Color Natural</a></li>
-<li><a href="color-gray.html">Color Gray (- fix solids)</a></li>
-<li><a href="color-warm.html">Color Warm (-) </a></li>
-<li><a href="color-cool.html">Color Cool (-)</a></li>
-<li><a href="color-gradient.html">Color Gradient (-)</a></li>
-<li><a href="color-effect.html">Color Effect (-)</a></li>
-<li><a href="color-play.html">Color Play (1 sample color from image, font colors, etc)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="font.html">Font</a></li>
-<li><a href="font-weight.html">Font Weight</a></li>
-<li><a href="font-stack.html">Font Stack</a></li>
-<li><a href="font-adobe.html">Font Adobe</a></li>
-<li><a href="font-google.html">Font Google</a></li>
-<li><a href="font-local.html">Font Local</a></li>
-<li><a href="font-effect.html">Font Effect</a></li>
-<li><a href="font-play.html">Font Play</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="selection.html">Selection</a></li>
-<li><a href="highlight.html">Highlight</a></li>
-<li><a href="highlight-size.html">Highlight Size</a></li>
-<li><a href="highlight-color.html">Highlight Color</a></li>
-<li><a href="highlight-gray.html">Highlight Gray</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="link.html">Link</a></li>
-<li><a href="link-style.html">Link Style (underlines and hovers) (-)</a></li>
-<li><a href="link-size.html">Link Size (small, large)(-)</a></li>
-<li><a href="link-gray.html">Link Gray (-)</a></li>
-<li><a href="link-color.html">Link Color (-)</a></li>
-<li><a href="link-bullet.html">Link Bullet</a></li>
-<li><a href="link-icon.html">Link Icon</a></li>
-<li><a href="link-effect.html">Link Effect (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="button.html">Button</a></li>
-<li><a href="button-style.html">Button Style</a></li>
-<li><a href="button-size.html">Button Size</a></li>
-<li><a href="button-gray.html">Button Gray (-)</a></li>
-<li><a href="button-color.html">Button Color (-)</a></li>
-<li><a href="button-bullet.html">Button Bullet</a></li>
-<li><a href="button-icon.html">Button Icon</a></li>
-<li><a href="button-effect.html">Button Effect (animation)(-)</a></li>
-<li><a href="button-play.html">Button Play (everything ultra button)(-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="icon.html">Icon (-)</a></li>
-<li><a href="icon-size.html">Icon Size</a></li>
-<li><a href="icon-link.html">Icon Link (-)</a></li>
-<li><a href="icon-button.html">Icon Button (-)</a></li>
-<li><a href="icon-list.html">Icon List</a></li>
-<li><a href="icon-effect.html">Icon Effect (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="text.html">Text (show p tags, h tags, and other html defaults)</a></li>
-<li><a href="text-style.html">Text Style</a></li>
-<li><a href="text-size.html">Text Size</a></li>
-<li><a href="text-leading.html">Text Leading</a></li>
-<li><a href="text-tracking.html">Text Tracking</a></li>
-<li><a href="text-measure.html">Text Measure</a></li>
-<li><a href="text-effect.html">Text Effect (-)</a></li>
-<li><a href="text-play.html">Text Play (vh ch etc) (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="list.html">List</a></li>
-<li><a href="list-style.html">List Style (inline?) (-)</a></li>
-<li><a href="list-size.html">List Size</a></li>
-<li><a href="list-unordered.html">List Unordered</a></li>
-<li><a href="list-bullet.html">List Bullet</a></li>
-<li><a href="list-ordered.html">List Ordered</a></li>
-<li><a href="list-number.html">List Number</a></li>
-<li><a href="list-line.html">List Line (-)</a></li>
-<!-- <li><a href="list-effect.html">List Effect (-)</a></li> -->
-<li><a href="list-play.html">List Play</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="image.html">Image (just one, show fpo, show random)</a></li>
-<li><a href="image-shape.html">Image Shape (-)</a></li>
-<li><a href="image-size.html">Image Size</a></li>
-<li><a href="image-ratio.html">Image Ratio</a></li>
-<li><a href="image-parallax.html">Image Parallax</a></li>
-<li><a href="image-effect.html">Image Effect (-)</a></li>
-<li><a href="image-play.html">Image Play (-)</a></li>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="video.html">Video (-)</a></li>
-<li><a href="video-size.html">Video Size (-)</a></li>
-<li><a href="video-ratio.html">Video Ratio (-)</a></li>
-<li><a href="video-parallax.html">Video Parallax (-)</a></li>
-<li><a href="video-modal.html">Video Modal (-)</a></li>
-<li><a href="video-effect.html">Video Effect (-)</a></li>
-<li><a href="video-play.html">Video Play (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="line.html">Line</a></li>
-<li><a href="line-style.html">Line Style</a></li>
-<li><a href="line-size.html">Line Size</a></li>
-<li><a href="line-color.html">Line Color</a></li>
-<li><a href="line-gray.html">Line Gray</a></li>
-<li><a href="line-fade.html">Line Fade</a></li>
-<li><a href="line-shadow.html">Line Shadow</a></li>
-<li><a href="line-blur.html">Line Blur</a></li>
-<li><a href="line-effect.html">Line Effect</a></li>
-<!-- <li><a href="line-play.html">Line Play</a></li> -->
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="box.html">Box</a></li>
-<li><a href="box-style.html">Box Style</a></li>
-<li><a href="box-shape.html">Box Shape</a></li>
-<li><a href="box-size.html">Box Size</a></li>
-<li><a href="box-color.html">Box Color</a></li>
-<li><a href="box-gray.html">Box Gray</a></li>
-<li><a href="box-effect.html">Box Effect (shadows ) (-)</a></li>
-<li><a href="box-play.html">Box Play (hover animate and pulse?) (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="table.html">Table</a></li>
-<li><a href="table-style.html">Table Style</a></li>
-<li><a href="table-space.html">Table Space</a></li>
-<li><a href="table-size.html">Table Size</a></li>
-<li><a href="table-color.html">Table Color (-)</a></li>
-<li><a href="table-effect.html">Table Effect (-)</a></li>
-<li><a href="table-play.html">Table Play (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="form.html">Form</a></li>
-<li><a href="form-types.html">Form Types (-)</a></li>
-<li><a href="form-style.html">Form Style (-)</a></li>
-<li><a href="form-shape.html">Form Shape (-)</a></li>
-<li><a href="form-size.html">Form Size (-)</a></li>
-<li><a href="form-color.html">Form Color (-)</a></li>
-<li><a href="form-effect.html">Form Effect (-)</a></li>
-<li><a href="form-play.html">Form Play (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="usage.html">Usage (-)</a></li>
-</ul>
-</section>
-
-<div class="evo-space-20"></div>
-</div>
-
-
-<div class="site-container">
-
-
-<!-- Blueprint -->
-
-<section id="evoBlueprint">
-<hr class="evo-line">
-<div class="evo-space"></div>
-<h2 class="evo-text evo-text-7">Blueprints</h2>
-<p class="evo-text evo-measure">Semantic HTML 5 elements with several options for CSS resets.</p>
-<div class="evo-space"></div>
-
-<ul class="evo-list evo-text">
-<li><a href="html.html">HTML</a></li>
-</ul>
-
-<div class="evo-space-20"></div>
-</section>
-
-
-<!-- Brand -->
-
-<hr class="evo-line">
-<div class="evo-space"></div>
-<h2 class="evo-text evo-text-7">Brand</h2>
-<p class="evo-text evo-measure">Brand system focused on fonts, colors, and graphic styling.</p>
-<div class="evo-space"></div>
-
-<ul class="evo-list">
-<li><a href="brand-font-family.html">Brand Font Family</a></li>
-</ul>
-
-
-<div class="evo-space-20"></div>
-
-
-<!-- Evolution -->
-
-<hr class="evo-line">
-<div class="evo-space"></div>
-<h2 class="evo-text evo-text-7">Evolution</h2>
-<p class="evo-text evo-measure">CSS style guide with typography engine and inverse color classes.</p>
-<div class="evo-space"></div>
-
-<!-- <ul class="evo-list">
-<li><a href="brand-font-family.html">Style Guide</a></li>
-<li><a href="brand-font-family.html">Style Guide Inverse</a></li>
-</ul> -->
-
-<div class="evo-space-20"></div>
+                <ul class="evo-list-bullet bullet-x list-size-medium float-left margin-bottom-20">
+                  <li><a href="harbor/index.html">Landing</a></li>
+                  <li><a href="harbor/our-work.html">Our Work</a></li>
+                  <li><a href="harbor/state-of-the-hudson.html">State of the Hudson</a></li>
+                  <li><a href="harbor/what-can-i-do.html">What Can I Do</a></li>
+                  <li><a href="harbor/our-grants.html">Our Grants</a></li>
+                  <li><a href="harbor/media-library.html">Media Library</a></li>
+                  <li><a href="harbor/research-finder.html">Research Finder</a></li>
+               </ul>
 
 </section>
 
 
-<!-- Patterns -->
-
-<hr class="evo-line">
-<div class="evo-space"></div>
-<h2 class="evo-text evo-text-7">Patterns</h2>
-<p class="evo-text evo-measure">Design patterns and components</p>
-<div class="evo-space"></div>
 
 
-<section class="view-tall-full flex-center-vertical">
-<ul class="evo-list evo-text">
-<li><a href="layout-masonry.html">Layout Masonry</a></li>
-<li><a href="image-modal.html">Image Modal (-)</a></li>
-<li><a href="image-slider.html">Image Slider (-)</a></li>
-<li><a href="image-carousel.html">Image Carousel (-)</a></li>
-<li><a href="image-slideshow.html">Image Slideshow (-)</a></li>
-<div class="evo-space"></div>
-</ul>
-</section>
-
-<div class="evo-space-10"></div>
-
-</section>
-
-
-</div>
-
-</main>
-
-<script src="//use.edgefonts.net/source-code-pro:n2,n3,n4,n5,n6,n7,n9;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-serif-pro:n2,n3,n4,n6,n7,n9.js"></script>
-
-
-<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!--         <script src="js/main.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

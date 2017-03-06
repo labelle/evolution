@@ -1,0 +1,26 @@
+///*      B R A N D   L O G O S     */
+
+@import "variables_HRF";
+
+
+// HRF Logo Color
+
+.hrf-logo-bg           { background-image: url(#{$logo-hrf}); }
+
+
+
+// HRF Logo White
+
+.hrf-logo-white-bg     { background-image: url(#{$logo-hrf-white}); }
+
+
+
+// HEP Logo Color
+
+.hep-logo-bg           { background-image: url(#{$logo-hep}); }
+
+
+
+// HEP Logo White
+
+.hep-logo-white-bg     { background-image: url(#{$logo-hep-white}); }
