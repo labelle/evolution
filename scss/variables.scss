@@ -101,8 +101,8 @@ $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 // Body
 $body_font_size:                    1rem !default; // or 1rem or 16px or 100%
 $body_line_height:                  1.4375 !default; // no em, rem, px, %
-$body_font_color:                   #111111 !default; // or black
-$body_background_color:             #ffffff !default; // or white or black or #eeeeee #111111
+$body_font_color:                   #{$evo_black} !default; // or black
+$body_background_color:             #{$evo_white} !default; // or white or black or #eeeeee #111111
 
 
 // HTML Headings
@@ -111,21 +111,21 @@ $heading_font_style:				inherit !default; // or italics or oblique
 $heading_font_variant:				inherit !default; // or small-caps if the font supports it
 $heading_color:                     inherit !default; // e.g. Inherit or Black or #000000
 $heading_font_family:               #{$google-montserrat} !default; // e.g. or Inherit or Initial or #{$arial} or #{$sans-serif}
-$heading_font_weight:               700 !default; // e.g. or Inherit or Initial or Bold or 500
+$heading_font_weight:               400 !default; // e.g. or Inherit or Initial or Bold or 500
 $heading_font_stretch:              inherit !default; // or condensed or expanded
 $heading_text_rendering:            optimizeSpeed !default; // or optimizeLegibility or auto or unset;
 
 // H1-H6 tag sizes
-$heading_size_h1:                   #{$u-29}rem !default; // 43px
-$heading_size_h2:                   #{$u-28}rem !default; // 37px
+$heading_size_h1:                   #{$u-30}rem !default; // 48px
+$heading_size_h2:                   #{$u-29}rem !default; // 43px
 $heading_size_h3:                   #{$u-27}rem !default; // 30px
-$heading_size_h4:                   #{$u-26}rem !default; // 23px
-$heading_size_h5:                   #{$u-25}rem !default; // 21px
-$heading_size_h6:                   #{$u-24}rem !default; // 18px
+$heading_size_h4:                   #{$u-25}rem !default; // 22px
+$heading_size_h5:                   #{$u-23}rem !default; // 16px
+$heading_size_h6:                   #{$u-22}rem !default; // 14px
 
 // H1-H6 tag line height
-$heading_leading_h1:                inherit !default; // no em, rem, px, %
-$heading_leading_h2:                inherit !default; // no em, rem, px, %
+$heading_leading_h1:                .95 !default; // no em, rem, px, %
+$heading_leading_h2:                1.2 !default; // no em, rem, px, %
 $heading_leading_h3:                inherit !default; // no em, rem, px, %
 $heading_leading_h4:                inherit !default; // no em, rem, px, %
 $heading_leading_h5:                inherit !default; // no em, rem, px, %
@@ -140,7 +140,7 @@ $heading_margin_bottom_h5:          1.4375em !default; // OR REM?
 $heading_margin_bottom_h6:          1.4375em !default; // OR REM?
 
 // H1-H6 tag letter spacing
-$heading_letter_spacing_h1:         normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
+$heading_letter_spacing_h1:         #{$u-10}em !default; // 0, or negative or positive (e.g. -.025em or .025em)
 $heading_letter_spacing_h2:         normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
 $heading_letter_spacing_h3:         normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
 $heading_letter_spacing_h4:         normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
@@ -156,7 +156,7 @@ $text_size:                         1rem !default; // e.g. 1rem or 16px or 100%.
 $text_color:                        inherit !default; // e.g. Inherit or Initial or Black or #000000
 $text_font_family:                  inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
 $text_font_weight:                  normal !default;
-$text_line_height:                  1.4375 !default; // 1.5 multiple, no em, rem, px, %
+$text_line_height:                  1.9 !default; // 1.4375 or 1.5 multiple, no em, rem, px, %
 $text_margin_top:                   0 !default;
 $text_margin_bottom:                1.4375em !default; // OR REM?
 $text_letter_spacing:               normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
@@ -353,7 +353,7 @@ $inverse_button_hover_border_style:  solid;
 $selection_color:                   #{$evo_white} !default;
 $selection_color_background:        #{$evo_color} !default;
 $selection_text_shadow:             none !default;
-$selection_color_background_demo:   rgba( 234, 24, 115, 0.9 ) !default;  // slightly translucent for demonstration
+$selection_color_background_demo:   #{$evo_color} !default;  // slightly translucent for demonstration
 
 // // Selection Black
 // $selection_black:                   #{$evo_white} !default;

@@ -16,61 +16,9 @@
         <link rel="stylesheet" href="../css/evo-elements.css"> 
 
 <style>
-
-/* Experimental XRAY inspired by Harry Roberts */
-
-/* If it's a class containing the string evo-,
-put a green border around it. */
-
-div[class*="box-"]  {
-padding-bottom: 5rem;
-/*background-color: #eee;*/
-background-color: #f7f3e2;
-margin-top: .5em;
-margin-bottom: 3em;
-/*border-width: 1px;*/
-}
-
-
-@media screen and (min-width: 1101px) {
-    .four-up  {
-        width: 22.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .four-up  {
-        width: 47.5%;
-        margin-right: 2.5%;
-        position: inline-block;
-        float: left;
-
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .four-up  {
-        width: 100%;
-        position: inline-block;
-    float: left;
-
-    }
-}
-
-
-/* If it's a class, but isn't a class containing the string evo-, put a red border around it.
-*/
-
-/*[class]:not([class*="evo-"]) {
-outline: 5px solid red;
-}*/
 </style>
 </head>
-<body class="site-container">
+<body class="site-container demo-box">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -85,7 +33,7 @@ outline: 5px solid red;
 
 <h1 class="evo-text-13" style="margin-bottom: 0;">Box Gray</h1>
 
-<p class="evo-measure">Gray color box borders and lines for <code>&lt;div&gt;</code> tags. Some boxes will default to a line-width equal to border-width: 'medium' (e.g. <code>evo-box-gray</code> and <code>evo-box-dashed</code>).</p>
+<p class="evo-measure">Gray color box borders and lines for <code>&lt;div&gt;</code> tags. Some boxes will default to a line-width equal to border-width: 'medium' (e.g. <code>evo-box box-gray</code> and <code>box-dashed</code>).</p>
 
 
 <div class="evo-space-20"></div>
@@ -97,30 +45,30 @@ outline: 5px solid red;
 
 <section id="evoBoxNeutral">
 
-evo-box-black
+evo-box box-black
 <div class="evo-box box-black"></div>
 
 <div class="four-up">
-box-top-black
+evo-box-top box-top-black
 <div class="evo-box-top box-top-black"></div>
 </div>
 
 <div class="four-up">
-box-bottom-black
+evo-box-bottom box-bottom-black
 <div class="evo-box-bottom box-bottom-black"></div>
 </div>
 
 <div class="four-up">
-box-left-black
+evo-box-left box-left-black
 <div class="evo-box-left box-left-black"></div>
 </div>
 
 <div class="four-up">
-box-right-black
+evo-box-right box-right-black
 <div class="evo-box-right box-right-black"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -129,30 +77,30 @@ box-right-black
 
 <section>
 
-evo-box-gray
+evo-box box-gray
 <div class="evo-box box-gray"></div>
 
 <div class="four-up">
-box-top-gray
+evo-box-top box-top-gray
 <div class="evo-box-top box-top-gray"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray
+evo-box-bottom box-bottom-gray
 <div class="evo-box-bottom box-bottom-gray"></div>
 </div>
 
 <div class="four-up">
-box-left-gray
+evo-box-left box-left-gray
 <div class="evo-box-left box-left-gray"></div>
 </div>
 
 <div class="four-up">
-box-right-gray
+evo-box-right box-right-gray
 <div class="evo-box-right box-right-gray"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -161,30 +109,30 @@ box-right-gray
 
 <section>
 
-evo-box-white
+evo-box box-white
 <div class="evo-box box-white"></div>
 
 <div class="four-up">
-box-top-white
+evo-box-top box-top-white
 <div class="evo-box-top box-top-white"></div>
 </div>
 
 <div class="four-up">
-box-bottom-white
+evo-box-bottom box-bottom-white
 <div class="evo-box-bottom box-bottom-white"></div>
 </div>
 
 <div class="four-up">
-box-left-white
+evo-box-left box-left-white
 <div class="evo-box-left box-left-white"></div>
 </div>
 
 <div class="four-up">
-box-right-white
+evo-box-right box-right-white
 <div class="evo-box-right box-right-white"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -193,30 +141,30 @@ box-right-white
 
 <section>
 
-box-gray-0
+evo-box box-gray-0
 <div class="evo-box box-gray-0"></div>
 
 <div class="four-up">
-box-top-gray-0
+evo-box-top box-top-gray-0
 <div class="evo-box-top box-top-gray-0"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-0
+evo-box-bottom box-bottom-gray-0
 <div class="evo-box-bottom box-bottom-gray-0"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-0
+evo-box-left box-left-gray-0
 <div class="evo-box-left box-left-gray-0"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-0
+evo-box-right box-right-gray-0
 <div class="evo-box-right box-right-gray-0"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -225,30 +173,30 @@ box-right-gray-0
 
 <section>
 
-box-gray-1
+evo-box box-gray-1
 <div class="evo-box box-gray-1"></div>
 
 <div class="four-up">
-box-top-gray-1
+evo-box-top box-top-gray-1
 <div class="evo-box-top box-top-gray-1"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-1
+evo-box-bottom box-bottom-gray-1
 <div class="evo-box-bottom box-bottom-gray-1"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-1
+evo-box-left box-left-gray-1
 <div class="evo-box-left box-left-gray-1"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-1
+evo-box-right box-right-gray-1
 <div class="evo-box-right box-right-gray-1"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -257,30 +205,30 @@ box-right-gray-1
 
 <section>
 
-box-gray-2
+evo-box box-gray-2
 <div class="evo-box box-gray-2"></div>
 
 <div class="four-up">
-box-top-gray-2
+evo-box-top box-top-gray-2
 <div class="evo-box-top box-top-gray-2"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-2
+evo-box-bottom box-bottom-gray-2
 <div class="evo-box-bottom box-bottom-gray-2"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-2
+evo-box-left box-left-gray-2
 <div class="evo-box-left box-left-gray-2"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-2
+evo-box-right box-right-gray-2
 <div class="evo-box-right box-right-gray-2"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -294,26 +242,26 @@ box-gray-3
 <div class="evo-box box-gray-3"></div>
 
 <div class="four-up">
-box-top-gray-3
+evo-box-top box-top-gray-3
 <div class="evo-box-top box-top-gray-3"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-3
+evo-box-bottom box-bottom-gray-3
 <div class="evo-box-bottom box-bottom-gray-3"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-3
+evo-box-left box-left-gray-3
 <div class="evo-box-left box-left-gray-3"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-3
+evo-box-right box-right-gray-3
 <div class="evo-box-right box-right-gray-3"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -322,30 +270,30 @@ box-right-gray-3
 
 <section>
 
-box-gray-4
+evo-box box-gray-4
 <div class="evo-box box-gray-4"></div>
 
 <div class="four-up">
-box-top-gray-4
+evo-box-top box-top-gray-4
 <div class="evo-box-top box-top-gray-4"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-4
+evo-box-bottom box-bottom-gray-4
 <div class="evo-box-bottom box-bottom-gray-4"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-4
+evo-box-left box-left-gray-4
 <div class="evo-box-left box-left-gray-4"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-4
+evo-box-right box-right-gray-4
 <div class="evo-box-right box-right-gray-4"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -354,30 +302,30 @@ box-right-gray-4
 
 <section>
 
-box-gray-5
+evo-box box-gray-5
 <div class="evo-box box-gray-5"></div>
 
 <div class="four-up">
-box-top-gray-5
+evo-box-top box-top-gray-5
 <div class="evo-box-top box-top-gray-5"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-5
+evo-box-bottom box-bottom-gray-5
 <div class="evo-box-bottom box-bottom-gray-5"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-5
+evo-box-left box-left-gray-5
 <div class="evo-box-left box-left-gray-5"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-5
+evo-box-right box-right-gray-5
 <div class="evo-box-right box-right-gray-5"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -385,30 +333,30 @@ box-right-gray-5
 
 <section>
 
-box-gray-6
+evo-box box-gray-6
 <div class="evo-box box-gray-6"></div>
 
 <div class="four-up">
-box-top-gray-6
+evo-box-top box-top-gray-6
 <div class="evo-box-top box-top-gray-6"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-6
+evo-box-bottom box-bottom-gray-6
 <div class="evo-box-bottom box-bottom-gray-6"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-6
+evo-box-left box-left-gray-6
 <div class="evo-box-left box-left-gray-6"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-6
+evo-box-right box-right-gray-6
 <div class="evo-box-right box-right-gray-6"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -417,30 +365,30 @@ box-right-gray-6
 
 <section>
 
-box-gray-7
+evo-box box-gray-7
 <div class="evo-box box-gray-7"></div>
 
 <div class="four-up">
-box-top-gray-7
+evo-box-top box-top-gray-7
 <div class="evo-box-top box-top-gray-7"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-7
+evo-box-bottom box-bottom-gray-7
 <div class="evo-box-bottom box-bottom-gray-7"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-7
+evo-box-left box-left-gray-7
 <div class="evo-box-left box-left-gray-7"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-7
+evo-box-right box-right-gray-7
 <div class="evo-box-right box-right-gray-7"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -448,30 +396,30 @@ box-right-gray-7
 
 <section>
 
-box-gray-8
+evo-box box-gray-8
 <div class="evo-box box-gray-8"></div>
 
 <div class="four-up">
-box-top-gray-8
+evo-box-top box-top-gray-8
 <div class="evo-box-top box-top-gray-8"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-8
+evo-box-bottom box-bottom-gray-8
 <div class="evo-box-bottom box-bottom-gray-8"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-8
+evo-box-left box-left-gray-8
 <div class="evo-box-left box-left-gray-8"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-8
+evo-box-right box-right-gray-8
 <div class="evo-box-right box-right-gray-8"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -479,30 +427,30 @@ box-right-gray-8
 
 <section>
 
-box-gray-9
+evo-box box-gray-9
 <div class="evo-box box-gray-9"></div>
 
 <div class="four-up">
-box-top-gray-9
+evo-box-top box-top-gray-9
 <div class="evo-box-top box-top-gray-9"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-9
+evo-box-bottom box-bottom-gray-9
 <div class="evo-box-bottom box-bottom-gray-9"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-9
+evo-box-left box-left-gray-9
 <div class="evo-box-left box-left-gray-9"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-9
+evo-box-right box-right-gray-9
 <div class="evo-box-right box-right-gray-9"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -511,30 +459,30 @@ box-right-gray-9
 
 <section>
 
-box-gray-10
+evo-box box-gray-10
 <div class="evo-box box-gray-10"></div>
 
 <div class="four-up">
-box-top-gray-10
+evo-box-top box-top-gray-10
 <div class="evo-box-top box-top-gray-10"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-10
+evo-box-bottom box-bottom-gray-10
 <div class="evo-box-bottom box-bottom-gray-10"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-10
+evo-box-left box-left-gray-10
 <div class="evo-box-left box-left-gray-10"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-10
+evo-box-right box-right-gray-10
 <div class="evo-box-right box-right-gray-10"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -543,30 +491,30 @@ box-right-gray-10
 
 <section>
 
-box-gray-11
+evo-box-right box-right-gray-10
 <div class="evo-box box-gray-11"></div>
 
 <div class="four-up">
-box-top-gray-11
+evo-box-top box-top-gray-11
 <div class="evo-box-top box-top-gray-11"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-11
+evo-box-bottom box-bottom-gray-11
 <div class="evo-box-bottom box-bottom-gray-11"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-11
+evo-box-left box-left-gray-11
 <div class="evo-box-left box-left-gray-11"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-11
+evo-box-right box-right-gray-11
 <div class="evo-box-right box-right-gray-11"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -574,30 +522,30 @@ box-right-gray-11
 
 <section>
 
-box-gray-12
+evo-box-right box-right-gray-11
 <div class="evo-box box-gray-12"></div>
 
 <div class="four-up">
-box-top-gray-12
+evo-box-top box-top-gray-12
 <div class="evo-box-top box-top-gray-12"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-12
+evo-box-bottom box-bottom-gray-12
 <div class="evo-box-bottom box-bottom-gray-12"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-12
+evo-box-left box-left-gray-12
 <div class="evo-box-left box-left-gray-12"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-12
+evo-box-right box-right-gray-12
 <div class="evo-box-right box-right-gray-12"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -605,30 +553,30 @@ box-right-gray-12
 
 <section>
 
-box-gray-13
+evo-box box-gray-13
 <div class="evo-box box-gray-13"></div>
 
 <div class="four-up">
-box-top-gray-13
+evo-box-top box-top-gray-13
 <div class="evo-box-top box-top-gray-13"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-13
+evo-box-bottom box-bottom-gray-13
 <div class="evo-box-bottom box-bottom-gray-13"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-13
+evo-box-left box-left-gray-13
 <div class="evo-box-left box-left-gray-13"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-13
+evo-box-right box-right-gray-13
 <div class="evo-box-right box-right-gray-13"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -636,30 +584,30 @@ box-right-gray-13
 
 <section>
 
-box-gray-14
+evo-box box-gray-14
 <div class="evo-box box-gray-14"></div>
 
 <div class="four-up">
-box-top-gray-14
+evo-box-top box-top-gray-14
 <div class="evo-box-top box-top-gray-14"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-14
+evo-box-bottom box-bottom-gray-14
 <div class="evo-box-bottom box-bottom-gray-14"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-14
+evo-box-left box-left-gray-14
 <div class="evo-box-left box-left-gray-14"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-14
+evo-box-right box-right-gray-14
 <div class="evo-box-right box-right-gray-14"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -667,30 +615,30 @@ box-right-gray-14
 
 <section>
 
-box-gray-15
+evo-box box-gray-15
 <div class="evo-box box-gray-15"></div>
 
 <div class="four-up">
-box-top-gray-15
+evo-box-top box-top-gray-15
 <div class="evo-box-top box-top-gray-15"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-15
+evo-box-bottom box-bottom-gray-15
 <div class="evo-box-bottom box-bottom-gray-15"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-15
+evo-box-left box-left-gray-15
 <div class="evo-box-left box-left-gray-15"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-15
+evo-box-right box-right-gray-15
 <div class="evo-box-right box-right-gray-15"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -698,30 +646,30 @@ box-right-gray-15
 
 <section>
 
-box-gray-16
+evo-box box-gray-16
 <div class="evo-box box-gray-16"></div>
 
 <div class="four-up">
-box-top-gray-16
+evo-box-top box-top-gray-16
 <div class="evo-box-top box-top-gray-16"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-16
+evo-box-bottom box-bottom-gray-16
 <div class="evo-box-bottom box-bottom-gray-16"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-16
+evo-box-left box-left-gray-16
 <div class="evo-box-left box-left-gray-16"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-16
+evo-box-right box-right-gray-16
 <div class="evo-box-right box-right-gray-16"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -729,30 +677,30 @@ box-right-gray-16
 
 <section>
 
-box-gray-17
+bevo-box box-gray-17
 <div class="evo-box box-gray-17"></div>
 
 <div class="four-up">
-box-top-gray-17
+evo-box-top box-top-gray-17
 <div class="evo-box-top box-top-gray-17"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-17
+evo-box-bottom box-bottom-gray-17
 <div class="evo-box-bottom box-bottom-gray-17"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-17
+evo-box-left box-left-gray-17
 <div class="evo-box-left box-left-gray-17"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-17
+evo-box-right box-right-gray-17
 <div class="evo-box-right box-right-gray-17"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -760,30 +708,30 @@ box-right-gray-17
 
 <section>
 
-box-gray-18
+evo-box box-gray-18
 <div class="evo-box box-gray-18"></div>
 
 <div class="four-up">
-box-top-gray-18
+evo-box-top box-top-gray-18
 <div class="evo-box-top box-top-gray-18"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-18
+evo-box-bottom box-bottom-gray-18
 <div class="evo-box-bottom box-bottom-gray-18"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-18
+evo-box-left box-left-gray-18
 <div class="evo-box-left box-left-gray-18"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-18
+evo-box-right box-right-gray-18
 <div class="evo-box-right box-right-gray-18"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -791,30 +739,30 @@ box-right-gray-18
 
 <section>
 
-box-gray-19
+evo-box box-gray-19
 <div class="evo-box box-gray-19"></div>
 
 <div class="four-up">
-box-top-gray-19
+evo-box-top box-top-gray-19
 <div class="evo-box-top box-top-gray-19"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-19
+evo-box-bottom box-bottom-gray-19"
 <div class="evo-box-bottom box-bottom-gray-19"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-19
+evo-box-left box-left-gray-19
 <div class="evo-box-left box-left-gray-19"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-19
+evo-box-right box-right-gray-19
 <div class="evo-box-right box-right-gray-19"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -822,30 +770,30 @@ box-right-gray-19
 
 <section>
 
-box-gray-20
+evo-box box-gray-20
 <div class="evo-box box-gray-20"></div>
 
 <div class="four-up">
-box-top-gray-20
+evo-box-top box-top-gray-20
 <div class="evo-box-top box-top-gray-20"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-20
+evo-box-bottom box-bottom-gray-20
 <div class="evo-box-bottom box-bottom-gray-20"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-20
+evo-box-left box-left-gray-20
 <div class="evo-box-left box-left-gray-20"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-20
+evo-box-right box-right-gray-20
 <div class="evo-box-right box-right-gray-20"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -853,30 +801,30 @@ box-right-gray-20
 
 <section>
 
-box-gray-21
+evo-box box-gray-21
 <div class="evo-box box-gray-21"></div>
 
 <div class="four-up">
-box-top-gray-21
+evo-box-top box-top-gray-21
 <div class="evo-box-top box-top-gray-21"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-21
+evo-box-bottom box-bottom-gray-21
 <div class="evo-box-bottom box-bottom-gray-21"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-21
+evo-box-left box-left-gray-21
 <div class="evo-box-left box-left-gray-21"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-21
+evo-box-right box-right-gray-21
 <div class="evo-box-right box-right-gray-21"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -885,30 +833,30 @@ box-right-gray-21
 
 <section>
 
-box-gray-22
+evo-box box-gray-22
 <div class="evo-box box-gray-22"></div>
 
 <div class="four-up">
-box-top-gray-22
+evo-box-top box-top-gray-22
 <div class="evo-box-top box-top-gray-22"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-22
+evo-box-bottom box-bottom-gray-22
 <div class="evo-box-bottom box-bottom-gray-22"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-22
+evo-box-left box-left-gray-22
 <div class="evo-box-left box-left-gray-22"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-22
+evo-box-right box-right-gray-22
 <div class="evo-box-right box-right-gray-22"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -916,30 +864,30 @@ box-right-gray-22
 
 <section>
 
-box-gray-23
+evo-box box-gray-23
 <div class="evo-box box-gray-23"></div>
 
 <div class="four-up">
-box-top-gray-23
+evo-box-top box-top-gray-23
 <div class="evo-box-top box-top-gray-23"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-23
+evo-box-bottom box-bottom-gray-23
 <div class="evo-box-bottom box-bottom-gray-23"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-23
+evo-box-left box-left-gray-23
 <div class="evo-box-left box-left-gray-23"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-23
+evo-box-right box-right-gray-23
 <div class="evo-box-right box-right-gray-23"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -947,30 +895,30 @@ box-right-gray-23
 
 <section>
 
-box-gray-24
+evo-box box-gray-24
 <div class="evo-box box-gray-24"></div>
 
 <div class="four-up">
-box-top-gray-24
+evo-box-top box-top-gray-24
 <div class="evo-box-top box-top-gray-24"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-24
+evo-box-bottom box-bottom-gray-24
 <div class="evo-box-bottom box-bottom-gray-24"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-24
+evo-box-left box-left-gray-24
 <div class="evo-box-left box-left-gray-24"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-24
+evo-box-right box-right-gray-24
 <div class="evo-box-right box-right-gray-24"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -978,30 +926,30 @@ box-right-gray-24
 
 <section>
 
-box-gray-25
+evo-box box-gray-25
 <div class="evo-box box-gray-25"></div>
 
 <div class="four-up">
-box-top-gray-25
+evo-box-top box-top-gray-25
 <div class="evo-box-top box-top-gray-25"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-25
+evo-box-bottom box-bottom-gray-25
 <div class="evo-box-bottom box-bottom-gray-25"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-25
+evo-box-left box-left-gray-25
 <div class="evo-box-left box-left-gray-25"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-25
+evo-box-right box-right-gray-25
 <div class="evo-box-right box-right-gray-25"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -1009,30 +957,30 @@ box-right-gray-25
 
 <section>
 
-box-gray-26
+evo-box box-gray-26
 <div class="evo-box box-gray-26"></div>
 
 <div class="four-up">
-box-top-gray-26
+evo-box-top box-top-gray-26
 <div class="evo-box-top box-top-gray-26"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-26
+evo-box-bottom box-bottom-gray-26
 <div class="evo-box-bottom box-bottom-gray-26"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-26
+evo-box-left box-left-gray-26
 <div class="evo-box-left box-left-gray-26"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-26
+evo-box-right box-right-gray-26
 <div class="evo-box-right box-right-gray-26"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -1040,30 +988,30 @@ box-right-gray-26
 
 <section>
 
-box-gray-27
+evo-box box-gray-27
 <div class="evo-box box-gray-27"></div>
 
 <div class="four-up">
-box-top-gray-27
+evo-box-top box-top-gray-27
 <div class="evo-box-top box-top-gray-27"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-27
+evo-box-bottom box-bottom-gray-27
 <div class="evo-box-bottom box-bottom-gray-27"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-27
+evo-box-left box-left-gray-27
 <div class="evo-box-left box-left-gray-27"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-27
+evo-box-right box-right-gray-27
 <div class="evo-box-right box-right-gray-27"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -1071,26 +1019,26 @@ box-right-gray-27
 
 <section>
 
-box-gray-28
+evo-box box-gray-28
 <div class="evo-box box-gray-28"></div>
 
 <div class="four-up">
-box-top-gray-28
+evo-box-top box-top-gray-28
 <div class="evo-box-top box-top-gray-28"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-28
+evo-box-bottom box-bottom-gray-28
 <div class="evo-box-bottom box-bottom-gray-28"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-28
+evo-box-left box-left-gray-28
 <div class="evo-box-left box-left-gray-28"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-28
+evo-box-right box-right-gray-28
 <div class="evo-box-right box-right-gray-28"></div>
 </div>
 
@@ -1102,30 +1050,30 @@ box-right-gray-28
 
 <section>
 
-box-gray-29
+evo-box box-gray-29
 <div class="evo-box box-gray-29"></div>
 
 <div class="four-up">
-box-top-gray-29
+evo-box-top box-top-gray-29
 <div class="evo-box-top box-top-gray-29"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-29
+evo-box-bottom box-bottom-gray-29
 <div class="evo-box-bottom box-bottom-gray-29"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-29
+evo-box-left box-left-gray-29
 <div class="evo-box-left box-left-gray-29"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-29
+evo-box-right box-right-gray-29
 <div class="evo-box-right box-right-gray-29"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 
@@ -1133,30 +1081,30 @@ box-right-gray-29
 
 <section>
 
-box-gray-30
+evo-box box-gray-30
 <div class="evo-box box-gray-30"></div>
 
 <div class="four-up">
-box-top-gray-30
+evo-box-top box-top-gray-30
 <div class="evo-box-top box-top-gray-30"></div>
 </div>
 
 <div class="four-up">
-box-bottom-gray-30
+evo-box-bottom box-bottom-gray-30
 <div class="evo-box-bottom box-bottom-gray-30"></div>
 </div>
 
 <div class="four-up">
-box-left-gray-30
+evo-box-left box-left-gray-30
 <div class="evo-box-left box-left-gray-30"></div>
 </div>
 
 <div class="four-up">
-box-right-gray-30
+evo-box-right box-right-gray-30
 <div class="evo-box-right box-right-gray-30"></div>
 </div>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-10"></div>
 
 </section>
 

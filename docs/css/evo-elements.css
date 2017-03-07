@@ -161,8 +161,8 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.4375;
-  color: #111111;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
   height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -184,21 +184,21 @@ h6,
   font-variant: inherit;
   color: inherit;
   font-family: Montserrat, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-stretch: inherit;
   text-rendering: optimizeSpeed;
   margin-top: 0; }
 
 h1,
 .h1 {
-  font-size: 2.6875rem;
+  font-size: 3rem;
   line-height: 1.4375em;
-  letter-spacing: normal;
+  letter-spacing: -0.025em;
   margin-bottom: 1.4375em; }
 
 h2,
 .h2 {
-  font-size: 2.3125rem;
+  font-size: 2.6875rem;
   line-height: 1.4375em;
   letter-spacing: normal;
   margin-bottom: 1.4375em; }
@@ -212,21 +212,21 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.4375rem;
+  font-size: 1.3125rem;
   line-height: 1.4375em;
   letter-spacing: normal;
   margin-bottom: 1.4375em; }
 
 h5,
 .h5 {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   line-height: 1.4375em;
   letter-spacing: normal;
   margin-bottom: 1.4375em; }
 
 h6,
 .h6 {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   line-height: 1.4375em;
   letter-spacing: normal;
   margin-bottom: 1.4375em; }
@@ -523,6 +523,9 @@ progress, meter {
 .word-space-5 {
   word-spacing: .5em; }
 
+.white-space-normal {
+  white-space: normal !important; }
+
 .break-word {
   overflow-wrap: break-word; }
 
@@ -574,6 +577,9 @@ progress, meter {
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
 .debug * {
   outline: 1px solid gold; }
+
+.evo-debug [class]:not([class*="evo-"]) {
+  outline: 5px solid red; }
 
 .sr-only {
   position: absolute;
@@ -651,7 +657,7 @@ progress, meter {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: #ffffff; }
+  background-color: white; }
 
 pre.evo-code,
 pre.evo-inverse-code {
@@ -693,6 +699,52 @@ pre.code-short > code {
   display: inline-block;
   white-space: nowrap;
   overflow: scroll; }
+
+.evo-codeblock-list pre {
+  margin: 0 auto;
+  white-space: pre-wrap;
+  display: flex; }
+  .evo-codeblock-list pre code {
+    width: calc(100% - 22px);
+    padding: 0 10px;
+    margin: 5px 0;
+    display: inline-block;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #676767;
+    font-family: monospace;
+    line-height: 1.25em; }
+  .evo-codeblock-list pre code.nowrap {
+    white-space: nowrap;
+    overflow: scroll; }
+  .evo-codeblock-list pre code.darktheme {
+    background: #31343F;
+    border: 1px solid #1B1C22;
+    color: #f7f7f7; }
+  .evo-codeblock-list pre code.short {
+    width: auto;
+    max-width: calc(100% - 22px);
+    display: inline-block;
+    white-space: pre-wrap;
+    overflow: scroll; }
+
+.evo-codeblock-list code.fixheight {
+  max-height: 465px;
+  overflow: scroll; }
+
+.evo-codeblock-list code.hidden-block {
+  display: none !important; }
+
+.example-button {
+  text-transform: uppercase;
+  line-height: 0;
+  display: inline-block;
+  font-size: .84rem;
+  border: 1px solid;
+  padding: 1.065rem .925rem .975rem .9em;
+  background-color: #fff;
+  cursor: pointer; }
 
 .layout-example-grid > div {
   border-left: solid 1px #ccc;
@@ -2761,6 +2813,12 @@ body.space-demo div[class*="padding-"] {
 .evo-color-black-bg {
   background-color: black; }
 
+.evo-gray {
+  color: #7f7f7f; }
+
+.evo-gray-bg {
+  background-color: #7f7f7f; }
+
 /* COLORS */
 /* 
 
@@ -4059,7 +4117,7 @@ body.space-demo div[class*="padding-"] {
   color: inherit;
   font-family: inherit;
   font-weight: normal;
-  line-height: 1.4375;
+  line-height: 1.9;
   letter-spacing: normal;
   text-rendering: optimizeLegibility; }
 
@@ -4488,7 +4546,7 @@ figcaption.text-dropcap:first-letter {
   cursor: text; }
 
 span.evo-selection {
-  background: rgba(234, 24, 115, 0.9);
+  background: #009877;
   color: white;
   text-shadow: none;
   cursor: text; }
@@ -6452,7 +6510,8 @@ ol.list-lower-greek {
   .evo-list-number .evo-list-number,
   .evo-list-number ol,
   .evo-list-number ol ol {
-    margin-top: 1.5em; }
+    margin-top: 1.5em;
+    list-style-type: none; }
   .evo-list-number li {
     position: relative;
     counter-increment: awesome-counter;
@@ -7198,275 +7257,257 @@ hr.line-dashed {
 hr.line-double {
   border-top-style: double; }
 
-hr.evo-line-thin {
+hr.line-thin {
   border-top-width: thin; }
 
-hr.evo-line-medium {
+hr.line-medium {
   border-top-width: medium; }
 
-hr.evo-line-thick {
+hr.line-thick {
   border-top-width: thick; }
 
-hr.evo-line-0 {
+hr.line-0 {
   border-top-width: 0px;
   border-top-style: dotted; }
 
-hr.evo-line-1 {
+hr.line-1 {
   border-top-width: 1px; }
 
-hr.evo-line-2 {
+hr.line-2 {
   border-top-width: 2px; }
 
-hr.evo-line-3 {
+hr.line-3 {
   border-top-width: 3px; }
 
-hr.evo-line-4 {
+hr.line-4 {
   border-top-width: 4px; }
 
-hr.evo-line-5 {
+hr.line-5 {
   border-top-width: 5px; }
 
-hr.evo-line-6 {
+hr.line-6 {
   border-top-width: 6px; }
 
-hr.evo-line-7 {
+hr.line-7 {
   border-top-width: 8px; }
 
-hr.evo-line-8 {
+hr.line-8 {
   border-top-width: 10px; }
 
-hr.evo-line-9 {
+hr.line-9 {
   border-top-width: 12px; }
 
-hr.evo-line-10 {
+hr.line-10 {
   border-top-width: 14px; }
 
-hr.evo-line-11 {
+hr.line-11 {
   border-top-width: 16px; }
 
-hr.evo-line-12 {
+hr.line-12 {
   border-top-width: 18px; }
 
-hr.evo-line-13 {
+hr.line-13 {
   border-top-width: 21px; }
 
-hr.evo-line-14 {
+hr.line-14 {
   border-top-width: 23px; }
 
-hr.evo-line-15 {
+hr.line-15 {
   border-top-width: 30px; }
 
-hr.evo-line-color-0 {
+hr.line-color-0 {
   border-top-color: #fff02a; }
 
-hr.evo-line-color-1 {
+hr.line-color-1 {
   border-top-color: #ffe52c; }
 
-hr.evo-line-color-2 {
+hr.line-color-2 {
   border-top-color: #fdc131; }
 
-hr.evo-line-color-3 {
+hr.line-color-3 {
   border-top-color: #f59331; }
 
-hr.evo-line-color-4 {
+hr.line-color-4 {
   border-top-color: #ef662f; }
 
-hr.evo-line-color-5 {
+hr.line-color-5 {
   border-top-color: #eb212e; }
 
-hr.evo-line-color-6 {
+hr.line-color-6 {
   border-top-color: #eb1f45; }
 
-hr.evo-line-color-7 {
+hr.line-color-7 {
   border-top-color: #eb1d5d; }
 
-hr.evo-line-color-8 {
+hr.line-color-8 {
   border-top-color: #ea1873; }
 
-hr.evo-line-color-9 {
+hr.line-color-9 {
   border-top-color: #ea148c; }
 
-hr.evo-line-color-10 {
+hr.line-color-10 {
   border-top-color: #bb238c; }
 
-hr.evo-line-color-11 {
+hr.line-color-11 {
   border-top-color: #902c8e; }
 
-hr.evo-line-color-12 {
+hr.line-color-12 {
   border-top-color: #65318f; }
 
-hr.evo-line-color-13 {
+hr.line-color-13 {
   border-top-color: #2f3490; }
 
-hr.evo-line-color-14 {
+hr.line-color-14 {
   border-top-color: #0056a4; }
 
-hr.evo-line-color-15 {
+hr.line-color-15 {
   border-top-color: #0073b9; }
 
-hr.evo-line-color-16 {
+hr.line-color-16 {
   border-top-color: #0090d2; }
 
-hr.evo-line-color-17 {
+hr.line-color-17 {
   border-top-color: #00afec; }
 
-hr.evo-line-color-18 {
+hr.line-color-18 {
   border-top-color: #00abc3; }
 
-hr.evo-line-color-19 {
+hr.line-color-19 {
   border-top-color: #00a89c; }
 
-hr.evo-line-color-20 {
+hr.line-color-20 {
   border-top-color: #00a676; }
 
-hr.evo-line-color-21 {
+hr.line-color-21 {
   border-top-color: #00a453; }
 
-hr.evo-line-color-22 {
+hr.line-color-22 {
   border-top-color: #3fb34f; }
 
-hr.evo-line-color-23 {
+hr.line-color-23 {
   border-top-color: #8ec549; }
 
-hr.evo-line-color-24 {
+hr.line-color-24 {
   border-top-color: #cbd93e; }
 
-hr.evo-line-color-25 {
+hr.line-color-25 {
   border-top-color: #ede634; }
 
-hr.evo-line-color-26 {
+hr.line-color-26 {
   border-top-color: #e3ca3c; }
 
-hr.evo-line-color-27 {
+hr.line-color-27 {
   border-top-color: #c9ac40; }
 
-hr.evo-line-color-28 {
+hr.line-color-28 {
   border-top-color: #b38f44; }
 
-hr.evo-line-color-29 {
+hr.line-color-29 {
   border-top-color: #9c733a; }
 
-hr.evo-line-color-30 {
+hr.line-color-30 {
   border-top-color: #8a6132; }
 
-hr.evo-line-black {
+hr.line-black {
   border-top-color: black; }
 
-hr.evo-line-white {
+hr.line-white {
   border-top-color: white; }
 
-hr.evo-line-gray-darkest {
-  border-top-color: #0d0d0d; }
+hr.line-gray {
+  border-top-color: #ccc; }
 
-hr.evo-line-gray-darker {
-  border-top-color: #333333; }
-
-hr.evo-line-gray-dark {
-  border-top-color: #595959; }
-
-hr.evo-line-gray {
-  border-top-color: #7f7f7f; }
-
-hr.evo-line-gray-light {
-  border-top-color: #a6a6a6; }
-
-hr.evo-line-gray-lighter {
-  border-top-color: #cccccc; }
-
-hr.evo-line-gray-lightest {
-  border-top-color: #f2f2f2; }
-
-hr.evo-line-gray-0 {
+hr.line-gray-0 {
   border-top-color: white; }
 
-hr.evo-line-gray-1 {
+hr.line-gray-1 {
   border-top-color: #fcfcfc; }
 
-hr.evo-line-gray-2 {
+hr.line-gray-2 {
   border-top-color: #fafafa; }
 
-hr.evo-line-gray-3 {
+hr.line-gray-3 {
   border-top-color: #f7f7f7; }
 
-hr.evo-line-gray-4 {
+hr.line-gray-4 {
   border-top-color: whitesmoke; }
 
-hr.evo-line-gray-5 {
+hr.line-gray-5 {
   border-top-color: #f2f2f2; }
 
-hr.evo-line-gray-6 {
+hr.line-gray-6 {
   border-top-color: #ededed; }
 
-hr.evo-line-gray-7 {
+hr.line-gray-7 {
   border-top-color: #e5e5e5; }
 
-hr.evo-line-gray-8 {
+hr.line-gray-8 {
   border-top-color: #d9d9d9; }
 
-hr.evo-line-gray-9 {
+hr.line-gray-9 {
   border-top-color: #cccccc; }
 
-hr.evo-line-gray-10 {
+hr.line-gray-10 {
   border-top-color: #bfbfbf; }
 
-hr.evo-line-gray-11 {
+hr.line-gray-11 {
   border-top-color: #b2b2b2; }
 
-hr.evo-line-gray-12 {
+hr.line-gray-12 {
   border-top-color: #a6a6a6; }
 
-hr.evo-line-gray-13 {
+hr.line-gray-13 {
   border-top-color: #999999; }
 
-hr.evo-line-gray-14 {
+hr.line-gray-14 {
   border-top-color: #8c8c8c; }
 
-hr.evo-line-gray-15 {
+hr.line-gray-15 {
   border-top-color: #7f7f7f; }
 
-hr.evo-line-gray-16 {
+hr.line-gray-16 {
   border-top-color: #737373; }
 
-hr.evo-line-gray-17 {
+hr.line-gray-17 {
   border-top-color: #666666; }
 
-hr.evo-line-gray-18 {
+hr.line-gray-18 {
   border-top-color: #595959; }
 
-hr.evo-line-gray-19 {
+hr.line-gray-19 {
   border-top-color: #4c4c4c; }
 
-hr.evo-line-gray-20 {
+hr.line-gray-20 {
   border-top-color: #404040; }
 
-hr.evo-line-gray-21 {
+hr.line-gray-21 {
   border-top-color: #333333; }
 
-hr.evo-line-gray-22 {
+hr.line-gray-22 {
   border-top-color: #262626; }
 
-hr.evo-line-gray-23 {
+hr.line-gray-23 {
   border-top-color: #191919; }
 
-hr.evo-line-gray-24 {
+hr.line-gray-24 {
   border-top-color: #121212; }
 
-hr.evo-line-gray-25 {
+hr.line-gray-25 {
   border-top-color: #0d0d0d; }
 
-hr.evo-line-gray-26 {
+hr.line-gray-26 {
   border-top-color: #0a0a0a; }
 
-hr.evo-line-gray-27 {
+hr.line-gray-27 {
   border-top-color: #080808; }
 
-hr.evo-line-gray-28 {
+hr.line-gray-28 {
   border-top-color: #050505; }
 
-hr.evo-line-gray-29 {
+hr.line-gray-29 {
   border-top-color: #030303; }
 
-hr.evo-line-gray-30 {
+hr.line-gray-30 {
   border-top-color: black; }
 
 hr.line-fade-thin {
@@ -7812,6 +7853,15 @@ hr.line-fade-pink {
   border-left-width: initial;
   border-left-style: solid;
   border-left-color: #cccccc; }
+
+.demo-box div[class*="box-"],
+.demo-box div[class*="evo-box"] {
+  padding-bottom: 5rem;
+  /*background-color: #eee;*/
+  background-color: #eee;
+  margin-top: .5em;
+  margin-bottom: 3em;
+  /*border-width: 1px;*/ }
 
 .box-solid {
   border-top-style: solid;
@@ -10127,6 +10177,29 @@ hr.line-fade-pink {
 
 .box-shadow-blur-150 {
   box-shadow: 0 0 150px; }
+
+/* From http://www.prowebdesign.ro/tutorials/css3_shadows/ */
+.curved-shadow {
+  position: relative;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+/*==================================================
+ * Drop shadow effect with box-shadow
+ * ===============================================*/
+.curved-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 40px black;
+  box-shadow: 0 0 40px black;
+  bottom: 0px;
+  width: 90%;
+  height: 10%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  left: 5%;
+  right: 5%; }
 
 .l-grid-block {
   background-color: #FFFFFF;

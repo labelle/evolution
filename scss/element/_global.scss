@@ -752,6 +752,11 @@ word-spacing: .5em;
 }
 
 
+
+.white-space-normal {
+  white-space: normal !important;
+}
+
 // What is the difference between break-word and word-break?
 // http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
 // https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
@@ -877,6 +882,11 @@ word-spacing: .5em;
     outline: 1px solid gold;
 }
 
+// If it's a class, but isn't a class containing the string evo-, put a red border around it.
+
+.evo-debug [class]:not([class*="evo-"]) {
+outline: 5px solid red;
+}
 
 // Tachyons grid debug, cool idea
 

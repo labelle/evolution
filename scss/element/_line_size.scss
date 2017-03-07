@@ -7,23 +7,23 @@
 // hr line scale
 
 // CHANGE TO LINE-SIZE- instead of evo-line-?
-hr#{$evo}-line-thin       { border-top-width: thin; }
-hr#{$evo}-line-medium     { border-top-width: medium; }
-hr#{$evo}-line-thick      { border-top-width: thick; }
+hr.line-thin       { border-top-width: thin; }
+hr.line-medium     { border-top-width: medium; }
+hr.line-thick      { border-top-width: thick; }
 
-hr#{$evo}-line-0          { border-top-width: #{$px-0}; border-top-style: dotted; } // 1px
-hr#{$evo}-line-1          { border-top-width: #{$px-1}; } // 1px
-hr#{$evo}-line-2          { border-top-width: #{$px-2}; } // 2px
-hr#{$evo}-line-3          { border-top-width: #{$px-3}; } // 3px
-hr#{$evo}-line-4          { border-top-width: #{$px-4}; } // 4px
-hr#{$evo}-line-5          { border-top-width: #{$px-5}; } // 5px
-hr#{$evo}-line-6          { border-top-width: #{$px-6}; } // 6px
-hr#{$evo}-line-7          { border-top-width: #{$px-7}; } // 8px
-hr#{$evo}-line-8          { border-top-width: #{$px-8}; } // 10px
-hr#{$evo}-line-9          { border-top-width: #{$px-9}; } // 12px
-hr#{$evo}-line-10         { border-top-width: #{$px-10}; } // 14px
-hr#{$evo}-line-11         { border-top-width: #{$px-11}; } // 16px
-hr#{$evo}-line-12         { border-top-width: #{$px-12}; } // 18px
-hr#{$evo}-line-13         { border-top-width: #{$px-13}; } // 21px
-hr#{$evo}-line-14         { border-top-width: #{$px-14}; } // 23px
-hr#{$evo}-line-15         { border-top-width: #{$px-15}; } // 30px
+hr.line-0          { border-top-width: #{$px-0}; border-top-style: dotted; } // 1px
+hr.line-1          { border-top-width: #{$px-1}; } // 1px
+hr.line-2          { border-top-width: #{$px-2}; } // 2px
+hr.line-3          { border-top-width: #{$px-3}; } // 3px
+hr.line-4          { border-top-width: #{$px-4}; } // 4px
+hr.line-5          { border-top-width: #{$px-5}; } // 5px
+hr.line-6          { border-top-width: #{$px-6}; } // 6px
+hr.line-7          { border-top-width: #{$px-7}; } // 8px
+hr.line-8          { border-top-width: #{$px-8}; } // 10px
+hr.line-9          { border-top-width: #{$px-9}; } // 12px
+hr.line-10         { border-top-width: #{$px-10}; } // 14px
+hr.line-11         { border-top-width: #{$px-11}; } // 16px
+hr.line-12         { border-top-width: #{$px-12}; } // 18px
+hr.line-13         { border-top-width: #{$px-13}; } // 21px
+hr.line-14         { border-top-width: #{$px-14}; } // 23px
+hr.line-15         { border-top-width: #{$px-15}; } // 30px

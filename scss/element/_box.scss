@@ -74,3 +74,21 @@ border-left-color:      #{$box_color}; // initial
 // #{$evo}-box-hidden         { border-width: hidden; }
 // #{$evo}-box-none           { border-width: none; }
 // ADD Inherit
+
+
+// For Demo only
+
+.demo-box div[class*="box-"],
+.demo-box div[class*="evo-box"]  {
+padding-bottom: 5rem;
+/*background-color: #eee;*/
+background-color: #eee;
+margin-top: .5em;
+margin-bottom: 3em;
+/*border-width: 1px;*/
+}
+
+  // .pv5-l {
+  //       padding-top: 4rem;
+  //       padding-bottom: 4rem
+  //   }
