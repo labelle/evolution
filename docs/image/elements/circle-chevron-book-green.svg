@@ -1,0 +1,22 @@
+
+<svg width="68px" height="68px" viewBox="-2 -2 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+    </defs>
+    <g id="circle-chevron-book" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(2.000000, 2.000000)">
+        <g id="evo-icon">
+            <g id="circle">
+                <g id="path-1-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <circle id="path-1" stroke="#009877" stroke-width="8" mask="url(#mask-2)" cx="30" cy="30" r="30"></circle>
+                </g>
+            </g>
+            <polyline id="chevron" stroke="#009877" stroke-width="4" points="25 16 39 30 25 44"></polyline>
+        </g>
+    </g>
+</svg>

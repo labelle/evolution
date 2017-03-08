@@ -23,6 +23,22 @@
 .evo-codeblock-target > pre > code {
   all: unset;
 }
+
+.demo-form input,
+.demo-form select {
+ margin-bottom: 3em;
+}
+
+.demo-icon span,
+.demo-icon img {
+  max-width: 15%;
+/*  height: auto;*/
+  margin: 1rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+/*  float: left;*/
+}
+
 </style>
 
 </head>
@@ -97,15 +113,6 @@
   </div> -->
 
 
-Typography
-Buttons
-Icons
-Links
-Images
-Video
-Lines
-Boxes
-Forms
 </div>
 
 <div class="container">
@@ -475,7 +482,7 @@ Forms
     <div class="col-xs-12 col-sm-6">
 
 <div class="evo-codeblock" data-identifier="serif-hero-paragraph">
-<div class="image-bg image-square image-bg-fpo evo-position">
+<div class="image-bg image-ratio-16-9 image-bg-fpo evo-position">
 <p class="evo-text-10 text-center evo-color-white hrf-font-1 position-middle">Lorem ipsum dolor sit amet.</p>
 </div>
 </div>
@@ -523,6 +530,7 @@ Forms
       <ul class="evo-list-lines list-size-small">
         <li class="hrf-font-2 text-uppercase text-tracking-10">Intro Copy</li>
           <div class="evo-space-5"></div>
+        </ul>
 <div class="evo-codeblock-target" data-target="serif-intro-copy">
     <pre>
 <code class="white-space-normal">
@@ -558,6 +566,7 @@ consequat.</p>
       <ul class="evo-list-lines list-size-small">
         <li class="hrf-font-2 text-uppercase text-tracking-10">Body Copy</li>
           <div class="evo-space-5"></div>
+        </ul>
 <div class="evo-codeblock-target" data-target="serif-body-copy">
     <pre>
 <code class="white-space-normal">
@@ -661,73 +670,51 @@ consequat.</p>
 </div>
 
 
+
+<!-- ********************* -->
+<!--    ICON         -->
+<!-- ********************* -->
+
+
 <div class="row view-tall-75">
 
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-icon-circle-chevron-right-bg contain evo-image-16">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-20">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Circle Chevron Right</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-circle-chevron-right-bg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/circle-chevron-book.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_circle_chevron_right</li>
-        <li><a href="../image/brand/circle-chevron-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-icon" data-identifier="icon">
+<img class="image-bg hrf-icon-menu-bg contain evo-image-5">
+<img class="image-bg hrf-icon-close-bg contain evo-image-5">
+<img class="image-bg hrf-icon-search-bg contain evo-image-5">
+<img class="image-bg hrf-icon-mail-bg contain evo-image-5">
+<img class="image-bg hrf-icon-circle-plus-bg contain evo-image-5">
+<img class="image-bg hrf-icon-circle-chevron-right-bg contain evo-image-5">
+<img class="image-bg hrf-icon-chevron-right-bg contain evo-image-5">
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-icon-chevron-right-bg contain evo-image-16">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-20">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Chevron Right</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-chevron-right-bg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/chevron-book.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_chevron_right</li>
-        <li><a href="../image/brand/chevron-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
+      <div class="evo-space-15"></div>
+</div>
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Icons</li>
+          <div class="evo-space-5"></div>
       </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-icon-search-bg contain evo-image-16">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-20">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Search</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-search-bg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/search-book.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_search</li>
-        <li><a href="../image/brand/search-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-icon-mail-bg contain evo-image-16">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-20">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Mail</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-mail-bg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/mail-book.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_mail</li>
-        <li><a href="../image/brand/mail-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-
-</div><!-- /.Brand Logos -->
+<div class="evo-codeblock-target" data-target="icon">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
 </div>
 
+      <div class="evo-space-15"></div>
+    </div>
 
+</div><!-- /.Icon -->
+
+<div class="evo-space-20 clearfix"></div>
+
+</div>
+
+<div class="evo-space-20 clearfix"></div>
 
 <div class="container">
 <!-- ********************* -->
@@ -813,11 +800,13 @@ consequat.</p>
 </div><!-- /.Image Thumb -->
 
 
+<div class="evo-space-20 clearfix"></div>
+
+
 
 <!-- ********************* -->
 <!--    IMAGE HALF HERO PARALLAX    -->
 <!-- ********************* -->
-
 
 <div class="row view-tall-75">
 
@@ -849,12 +838,9 @@ consequat.</p>
 
 </div><!-- /.Image Thumb -->
 
-
 </div>
 
 <div class="evo-space-20 clearfix"></div>
-
-
 
 <div class="container">
 <!-- ********************* -->
@@ -976,7 +962,7 @@ consequat.</p>
 <div class="evo-image-15 evo-box-top box-top-medium box-top-gray-18"></div>
 <div class="evo-image-15 evo-box box-thin"></div>
     </div>
-
+      <div class="evo-space-20"></div>
 </div>
 <div class="col-xs-12 col-sm-6">
       <ul class="evo-list-lines list-size-small">
@@ -994,7 +980,7 @@ consequat.</p>
       <div class="evo-space-15"></div>
     </div>
 
-</div><!-- /.Image Thumb -->
+</div><!-- /.Boxes -->
 
 <div class="evo-space-20 clearfix"></div>
 
@@ -1013,7 +999,7 @@ consequat.</p>
 <hr class="evo-line line-gray-18 line-thin" />
 <hr class="evo-line line-thin" />
     </div>
-
+      <div class="evo-space-20"></div>
 </div>
 <div class="col-xs-12 col-sm-6">
       <ul class="evo-list-lines list-size-small">
@@ -1031,10 +1017,661 @@ consequat.</p>
       <div class="evo-space-15"></div>
     </div>
 
-</div><!-- /.Image Thumb -->
+</div><!-- /.Lines -->
 
 <div class="evo-space-20 clearfix"></div>
 
+
+</div>
+
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+
+<div class="container">
+<!-- ********************* -->
+<!--       LINKS       -->
+<!-- ********************* -->
+
+<div class="row view-tall-25" id="designLinks">
+  <div class="col-xs-12">
+      <div class="evo-space-15"></div>
+       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Links</h2>
+        <p>Link elements <code>evo-link</code>.</p>
+    <div class="evo-space-20"></div>
+  </div>
+</div>
+
+
+<!-- ********************* -->
+<!--       LINK        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock" data-identifier="link">
+<a href="javascript: void(0);">Just a link</a>
+    </div>
+      <div class="evo-space-15"></div>
+</div>
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Link</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="link">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Link -->
+
+<div class="evo-space-20 clearfix"></div>
+
+<!-- ********************* -->
+<!--       LINK INVERSE        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="link-inverse">
+<a class="evo-link-inverse" href="javascript: void(0);">Just an inverse link</a>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Inverse Link</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="link-inverse">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Link Inverse -->
+
+
+<div class="evo-space-20 clearfix"></div>
+
+<!-- ********************* -->
+<!--       LINK WITH ICON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock" data-identifier="link-icon-inverse">
+<a href="javascript: void(0);" class="evo-link-icon">Link with icon</a>
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Link with icon</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="link-icon-inverse">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Link with Icon -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      INVERSE LINK WITH ICON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="link-icon-inverse">
+<a href="javascript: void(0);" class="evo-link-inverse evo-link-icon">Inverse link with icon</a>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Inverse link with icon</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="link-icon-inverse">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Link with Icon -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+</div>
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+
+<div class="container">
+<!-- ********************* -->
+<!--       BUTTONS       -->
+<!-- ********************* -->
+
+<div class="row view-tall-25" id="designButtons">
+  <div class="col-xs-12">
+      <div class="evo-space-15"></div>
+       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Buttons</h2>
+        <p>Button elements <code>#</code>.</p>
+    <div class="evo-space-20"></div>
+  </div>
+</div>
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      BUTTON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="button">
+<button>Button</button>
+<a class="evo-icon-button-2 ghost-to-solid-color">submit</a>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Inverse link with icon</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="button">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Button -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      BUTTON INVERSE        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="button-inverse">
+<button class="inverse-ghost-to-solid">submit</button>
+<a class="evo-icon-button-2 ghost-to-solid-color">submit</a>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Inverse Button</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="button-inverse">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Button -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      BUTTON WITH ICON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="button-icon">
+<button class="evo-icon-button-2 ghost-to-solid-color">submit</button>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Button with Icon</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="button-icon">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Button -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      INVERSE BUTTON WITH ICON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+<div class="evo-color-bg padding-left-10 padding-top-15 padding-bottom-15">
+    <div class="evo-codeblock" data-identifier="button-icon-inverse">
+<button class="evo-icon-button-2 ghost-to-solid-color">submit</button>
+    </div>
+</div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Inverse Button with Icon</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="button-icon-inverse">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Button -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+</div>
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+
+<div class="container">
+<!-- ********************* -->
+<!--       FORMS        -->
+<!-- ********************* -->
+
+<div class="row view-tall-25" id="designForms">
+  <div class="col-xs-12">
+      <div class="evo-space-15"></div>
+       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Forms</h2>
+        <p>Form elements <code>#</code>.</p>
+    <div class="evo-space-20"></div>
+  </div>
+</div>
+
+
+<!-- ********************* -->
+<!--      TEXT INPUT        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-form" data-identifier="input-text">
+<label for="text">enter text</label>
+<input type="text" id="text" placeholder="placeholder text" />
+<input type="text" id="text-disabled" placeholder="placeholder text (disabled)" disabled />
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Text Input</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="input-text">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Text Input -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      DROPDOWN INPUT        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-form" data-identifier="input-dropdown">
+    <label for="select">Choose one</label>
+<select id="select">
+    <option value="option 1">Select Item 1</option>
+    <option value="option 2">Select Item 2</option>
+    <option value="option 3">Select Item 3</option>
+    <option value="option 4">Select Item 4</option>
+    <option value="option 5">Select Item 5</option>
+</select>
+<select id="select-disabled" disabled>
+    <option value="option 1">Select Item 1 (disabled)</option>
+    <option value="option 2">Select Item 2</option>
+    <option value="option 3">Select Item 3</option>
+    <option value="option 4">Select Item 4</option>
+    <option value="option 5">Select Item 5</option>
+</select>
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Dropdown Input</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="input-dropdown">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Dropdown Input -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      INPUT RADIO        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-form" data-identifier="input-radio">
+<input type="radio" id="radio1" name="radio" value="value" checked /><label for="radio1">radio 1</label>
+<input type="radio" id="radio1" name="radio" value="value"  /><label for="radio2">radio 2</label>
+<input type="radio" id="radio3" name="radio" value="value" disabled /><label for="radio3">disabled</label>
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Radio Input</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="input-radio">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Dropdown Input -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+<!-- ********************* -->
+<!--      INPUT CHECKBOX        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-form" data-identifier="input-checkbox">
+<input type="checkbox" id="checkbox1" checked /><label for="checkbox1">checkbox 1</label>
+<input type="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+<input type="checkbox" id="checkbox3" disabled /><label for="checkbox3">disabled</label>
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Checkbox Input</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="input-checkbox">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Dropdown Input -->
+
+<div class="evo-space-20 clearfix"></div>
+
+
+<!-- ********************* -->
+<!--      INPUT BUTTON        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock demo-form" data-identifier="input-button">
+<input type="button" onclick="alert('Hello World!')" value="submit" class="width-auto" />
+<input type="button" onclick="alert('Hello World!')" value="submit (disabled)"  class="width-auto" disabled />
+<input type="button" onclick="alert('Hello World!')" value="reset" class="width-auto" />
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Dropdown Input</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="input-button">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Dropdown Input -->
+
+<div class="evo-space-20 clearfix"></div>
+
+</div>
+
+<div class="evo-space-20 clearfix"></div>
+
+
+
+<div class="container">
+<!-- ********************* -->
+<!--       VIDEOS       -->
+<!-- ********************* -->
+
+<div class="row view-tall-25" id="designVideos">
+  <div class="col-xs-12">
+      <div class="evo-space-15"></div>
+       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Videos</h2>
+        <p>Video elements <code>#</code>.</p>
+    <div class="evo-space-20"></div>
+  </div>
+</div>
+
+
+<!-- ********************* -->
+<!--      VIDEO        -->
+<!-- ********************* -->
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-6">
+
+    <div class="evo-codeblock" data-identifier="video">
+<!-- begin 1 Column HTML5 Video -->
+  <div class="video-image">
+    <div class="video-container">
+      <video width="100%" controls loop poster="https://labelle.github.io/evolution-patterns/img/video-bg.png">
+      <source src="https://labelle.github.io/evolution-patterns/video/video.mp4" type="video/mp4">
+<!--  <source src="../video/video.mp4" type="video/mp4"> -->
+      Your browser does not support the video tag.
+      </video>
+
+    </div>
+  </div>
+<!-- end 1 Column HTML5 Video -->
+    </div>
+
+      <div class="evo-space-15"></div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6">
+      <ul class="evo-list-lines list-size-small">
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Video</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock-target" data-target="video">
+    <pre>
+<code>
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+
+      <div class="evo-space-15"></div>
+    </div>
+
+</div><!-- /.Video -->
+
+<div class="evo-space-20 clearfix"></div>
 
 </div>
 

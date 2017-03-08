@@ -87,6 +87,9 @@
 .hrf-color-4-bg {
   background-color: #939597; }
 
+.hrf-icon-circle-plus-bg {
+  background-image: url(../image/brand/circle-plus-book.svg); }
+
 .hrf-icon-circle-chevron-right-bg {
   background-image: url(../image/brand/circle-chevron-book.svg); }
 
@@ -95,6 +98,12 @@
 
 .hrf-icon-search-bg {
   background-image: url(../image/brand/search-book.svg); }
+
+.hrf-icon-menu-bg {
+  background-image: url(../image/brand/menu-book.svg); }
+
+.hrf-icon-close-bg {
+  background-image: url(../image/brand/close-book.svg); }
 
 .hrf-icon-mail-bg {
   background-image: url(../image/brand/mail-book.svg); }

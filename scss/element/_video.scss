@@ -5,3 +5,56 @@
 @import "../variables";
 
 // https://labelle.github.io/evolution-patterns/patterns-library/html5-video.html
+
+
+// /***************************
+// VIDEO AND TEXT ABOVE STYLES
+// ***************************/
+
+.video-container { position:relative; }
+.video-container video {
+    position:relative;
+    z-index:0;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+
+
+
+// this hack is to make video full width / source: https://css-tricks.com/reframe-js-notes/
+.full-width-container {
+  overflow: hidden;
+  height: 0px; 
+  padding-bottom: 500px; // padding-bottom sets the height inside not at the bottom
+  position: relative;
+}
+
+.full-width-container video { 
+  position: absolute;
+  width: 100%;
+}
+
+
+// this is alternative to the above full-width-container class
+.full-width-container-responsive {
+width: 100% !important;
+height: auto !important;
+}
+
+.html5-video-full-width-wrapper {
+  background-color: #000000;
+  height: 500px;
+  width: 100%;
+}
+
+.html5-video-full-width-wrapper video {
+  width: auto;
+  height: 500px;
+  margin-top: 0px;
+}

@@ -34,6 +34,7 @@ $evo:                               ".evo" !default;
 
 // Color
 
+// DO I NEED THESE INVERSE COLORS?
 
 // Primary accent color
 $evo_color:							#{$brand_color_1} !default;
@@ -115,6 +116,8 @@ $heading_font_weight:               400 !default; // e.g. or Inherit or Initial 
 $heading_font_stretch:              inherit !default; // or condensed or expanded
 $heading_text_rendering:            optimizeSpeed !default; // or optimizeLegibility or auto or unset;
 
+// $inverse_heading_color:             #{$evo_white} !default; 
+
 // H1-H6 tag sizes
 $heading_size_h1:                   #{$u-30}rem !default; // 48px
 $heading_size_h2:                   #{$u-29}rem !default; // 43px
@@ -162,6 +165,7 @@ $text_margin_bottom:                1.4375em !default; // OR REM?
 $text_letter_spacing:               normal !default; // 0, or negative or positive (e.g. -.025em or .025em)
 $text_rendering:                    optimizeLegibility !default; // or optimizeSpeed or auto or unset;
 
+$inverse_text_color:                #{$evo_white} !default;
 
 // List
 // SHOULD SOME OF THESE INHERIT?
@@ -189,8 +193,8 @@ $ol_list_style_position:                     inside; // outside aligns text flus
 // For content replacement bullets
 // $bullet_list_icon:                           "•";
 $bullet_list_bullet_font_family:             inherit; // or #{$sans-serif}
-$bullet_list_bullet_color:                    #{$evo_color};
-$bullet_list_bullet_padding:                  .5ch;
+$bullet_list_bullet_color:                   #{$evo_color};
+$bullet_list_bullet_padding:                 .5ch;
 
 
 // For custom image bullets Lists
@@ -203,15 +207,23 @@ $bullet_list_background_position:            0px 0.41667rem;
 
 $bullet_list_margin_bottom:                  #{$u-17}rem;
 
+
 $bullet_list_background_corner:              10%; // 50% would be a circle, 0 is a square
 $bullet_list_background_color_1:             transparent; // or #{$evo_color}
 $bullet_list_background_color_2:             transparent; // nested
 $bullet_list_background_color_3:             transparent; // nested further
 
 
-// For List Icon Images
+// For list icon images
 $icon_list_background:                       "../image/elements/circle-chevron-book.svg";
 
+$inverse_icon_list_background:               "../image/elements/circle-chevron-book-green.svg";
+
+
+// For link icon images
+$icon_link_background:                       "../image/elements/circle-chevron-book.svg";
+
+$inverse_icon_link_background:               "../image/elements/circle-chevron-book.svg";
 
 // For awesome-counter OL lists
 $number_list_number_font_family:             inherit; // or #{$sans-serif}
@@ -239,17 +251,26 @@ $line_list_item_margin_bottom:          0;
 $line_list_padding_top:                 1em; // or #{$u-17}em or .275em space between list item and line
 $line_list_padding_bottom:              1em; // or #{$u-17}em or .275em space between list item and line
 
+
 $line_list_top_line_width:              thin; // thick
 $line_list_top_line_style:              solid;
 $line_list_top_line_color:              #000;
+
+$inverse_line_list_top_line_color:      #333;
+
 
 $line_list_middle_line_width:           thin;
 $line_list_middle_line_style:           dotted; // solid
 $line_list_middle_line_color:           #ccc;
 
+$inverse_line_list_middle_line_color:   #333;
+
+
 $line_list_bottom_line_width:           thin; // medium
 $line_list_bottom_line_style:           solid;
 $line_list_bottom_line_color:           #000;
+
+$inverse_line_list_bottom_line_color:   #fff;
 
 
 
@@ -268,27 +289,41 @@ $link_background_color:             transparent !default;
 $link_underline:                    none !default; // text-dectoration
 $link_opacity:                      1; // or .5
 
+$inverse_link_color:                #{$evo_white} !default;
+
 // a:visited
-$link_color_visited:                inherit !default;
+$link_color_visited:                #{$evo_color} !default; // or inherit
 $link_opacity_visited:				1;
 
+$inverse_link_color_visited:        #{$evo_white} !default;
+
 // a:hover
-$link_color_hover:                  #{$evo_black}; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
-$link_underline_hover:				none !default; // text-dectoration
+$link_color_hover:                  inherit !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_background_color_hover:       transparent;
+$link_underline_hover:				none !default; // or none or underline or line-through
 $link_opacity_hover:                1;
+
+$inverse_link_color_hover:          cyan !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$inverse_link_background_color_hover: transparent;
 
 // a:active
 $link_color_active:                 #{$evo_black} !default; // cyan
 $link_underline_active:				none !default; // text-dectoration
 $link_opacity_active:               1;
 
+$inverse_link_color_active:         #{$evo_white} !default; // cyan
+
 // a:focus
-$link_color_focus:                  inverse !default; // cyan
+// https://www.w3schools.com/cssref/pr_outline-color.asp
+// https://davidwalsh.name/invert-colors-css
+$link_color_focus:                  invert !default; // cyan
 $link_underline_focus:				none !default;// text-decoration
 $link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 $link_opacity_focus:                1;
+
+$inverse_link_outline_color_focus:	invert !default;
 
 
 

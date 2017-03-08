@@ -415,7 +415,8 @@ button::-moz-focus-inner,
 }
 
 button[disabled] {
-  cursor: default
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 // File upload button
@@ -544,8 +545,13 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
+input[type="submit"]:disabled,
+[value="disabled"],
+[value="disabled"]:disabled,
+[disabled]:disabled,
 [disabled] {
-  cursor: default
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 // html input[disabled] {
@@ -634,7 +640,7 @@ progress, meter {
 }
 
 .display-block {
-    display: block
+    display: block !important;
 }
 
 .display-inline-block {
@@ -788,6 +794,133 @@ word-spacing: .5em;
 .float-right {
   float: right;
 }
+
+
+// Overflows...
+
+.pre {
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow: scroll
+}
+
+
+.overflow-visible {
+    overflow: visible
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.overflow-scroll {
+    overflow: scroll
+}
+
+.overflow-auto {
+    overflow: auto
+}
+
+.overflow-x-visible {
+    overflow-x: visible
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll
+}
+
+.overflow-x-auto {
+    overflow-x: auto
+}
+
+.overflow-y-visible {
+    overflow-y: visible
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll
+}
+
+.overflow-y-auto {
+    overflow-y: auto
+}
+
+.static {
+    position: static
+}
+
+.relative {
+    position: relative
+}
+
+.absolute {
+    position: absolute
+}
+
+.fixed {
+    position: fixed
+}
+
+.o-100 {
+    opacity: 1
+}
+
+.o-90 {
+    opacity: .9
+}
+
+.o-80 {
+    opacity: .8
+}
+
+.o-70 {
+    opacity: .7
+}
+
+.o-60 {
+    opacity: .6
+}
+
+.o-50 {
+    opacity: .5
+}
+
+.o-40 {
+    opacity: .4
+}
+
+.o-30 {
+    opacity: .3
+}
+
+.o-20 {
+    opacity: .2
+}
+
+.o-10 {
+    opacity: .1
+}
+
+.o-05 {
+    opacity: .05
+}
+
+.o-025 {
+    opacity: .025
+}
+
+.o-0 {
+    opacity: 0
+}
+
 
 // Helper classes
 // From HTML5 Boilerplate

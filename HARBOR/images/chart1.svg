@@ -1,0 +1,42 @@
+
+<svg width="560px" height="255px" viewBox="196 275 560 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="35.3165329%" y1="100%" x2="35.3165329%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#009777" offset="0%"></stop>
+            <stop stop-color="#6DD6C0" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <text id="WATER-LEVEL-Copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="16" font-weight="normal" letter-spacing="-0.827586174">
+        <tspan x="196" y="526" fill="#58585B">WATER LEVEL</tspan>
+    </text>
+    <text id="LIVE-DATA---THE-BATT-Copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="16" font-weight="normal" letter-spacing="-0.827586174">
+        <tspan x="196.144827" y="290" fill="#58585B">LIVE DATA - THE BATTERY, NY</tspan>
+    </text>
+    <text id="-10-FT-Copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="197.724138" y="463" fill="#58585B">-10 FT</tspan>
+    </text>
+    <text id="12:00-copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="240" y="488" fill="#58585B">12:00</tspan>
+    </text>
+    <text id="16:00-copy-2" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="484" y="488" fill="#58585B">16:00</tspan>
+    </text>
+    <text id="20:00-copy-2" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="723.751448" y="488" fill="#58585B">20:00</tspan>
+    </text>
+    <text id="0-FT-Copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="206.442759" y="399" fill="#58585B">0 FT</tspan>
+    </text>
+    <text id="10-FT-Copy" stroke="none" fill="none" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="-0.620689631">
+        <tspan x="202.491448" y="336" fill="#58585B">10 FT</tspan>
+    </text>
+    <rect id="Rectangle-219-Copy-7" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="240" y="324" width="516" height="1"></rect>
+    <rect id="Rectangle-219-Copy-8" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="240" y="465" width="516" height="1"></rect>
+    <rect id="Rectangle-219-Copy-9" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="498" y="324" width="1" height="141"></rect>
+    <rect id="Rectangle-219-Copy-10" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="240" y="324" width="1" height="141"></rect>
+    <rect id="Rectangle-219-Copy-11" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="755" y="324" width="1" height="141"></rect>
+    <rect id="Rectangle-219-Copy-12" stroke="none" fill="#DDDDDD" fill-rule="evenodd" x="240" y="394" width="516" height="1"></rect>
+    <path d="M241,424.826884 C241,424.826884 286.507813,427.197978 356.728516,410.740947 C426.949219,394.283915 492.171875,386.887431 566.710938,384.293681 C628.968105,382.127307 752,392.656867 755,392.656867 L755,464.418681 L241,464.418681 L241,424.826884 Z" id="Actual-Copy" stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+</svg>

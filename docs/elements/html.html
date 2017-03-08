@@ -26,8 +26,94 @@
     margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    // background-color:#f7f7f7;
+/*    // background-color:#f7f7f7;*/
 }
+
+.switcher-bar {
+  position: fixed;
+/*  height: 5rem;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+/*  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+  padding-left: 3em;*/
+}
+
+.switcher-bar {
+/*    box-shadow: 0 10px 1px -1px;*/
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+
+.switcher-bar select:focus,
+.switcher-bar input:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 174, 239, .8);
+    outline: 0;
+}
+
+.switcher-bar select,
+.switcher-bar input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb( 89, 89, 89 , .8);
+/*  color: white;*/
+/*  font: inherit;*/
+/*  font-family: arial; // font-family: sans-serif;*/
+  font-size: 100%;
+  line-height: normal; /*// line-height: 1.15*/
+/*  margin: 0;*/
+/*  margin-top: 2em;*/
+  margin-left: 3em;
+  width: auto;
+  background-color: inherit;
+/*  padding: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;*/
+}
+
+.switcher-bar {
+/*    box-shadow: 0 10px 1px -1px;*/
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+
+.switcher-bar select:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 174, 239, .8);
+    outline: 0;
+}
+
+.switcher-bar select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb( 89, 89, 89 , .8);
+/*  color: white;*/
+/*  font: inherit;*/
+/*  font-family: arial; // font-family: sans-serif;*/
+  font-size: 100%;
+  line-height: normal; /*// line-height: 1.15*/
+/*  margin: 0;*/
+/*  margin-top: 2em;*/
+  margin-left: 3em;
+  width: auto;
+  background-color: inherit;
+/*  padding: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;*/
+}
+
+
 
 </style>
 <!-- <script src="//use.edgefonts.net/open-sans.js"></script> -->
@@ -42,6 +128,7 @@
 </header> -->
 <main>
 
+<div class="switcher-bar">
 <select id="style-list">
     <option value="evo-elements.css">Evo</option>
     <option value="html-opp.css">Opp</option>
@@ -51,10 +138,10 @@
     <option value="custom">Custom</option>
 </select>
 
-
 <br>
 <!--  custom input box for custom style sheet name-->
 <input type="text" id="custom" placeholder="Please enter css file name"  />
+</div>
 
 
 <section id="evoHtmlIntro">
@@ -203,7 +290,7 @@ Experience Design Made Simple for living design systems
 <label for="text">enter text</label>
 <input type="text" id="text" placeholder="placeholder text" />
 <input type="text" id="text" placeholder="text" value="text content example" />
-<input type="text" id="text" placeholder="disabled" disabled />
+<input type="text" id="text-disabled" placeholder="disabled" disabled />
 
 <div class="evo-space-10"></div>
 
@@ -312,6 +399,7 @@ Experience Design Made Simple for living design systems
 <code>&lt;button&gt;</code>
 <br />
 <button>Button</button>
+<button disabled>Button</button>
 
 <div class="evo-space-10"></div>
 
@@ -457,6 +545,7 @@ Experience Design Made Simple for living design systems
       $("link").attr("href","css-for-html/html-theme.css"); 
     }else{
       $("#custom").css("display","none");
+      // Allow fully custom url by removing this below--> "css-for-html/"+
       $("link").attr("href","css-for-html/"+$(this).val());  
     }
     return false;

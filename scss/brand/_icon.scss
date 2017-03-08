@@ -4,26 +4,32 @@
 
 
 
-// Circle Chevron Right
+// Circle Plus
+#{$brand}-icon-circle-plus-bg           { background-image: url(#{$icon_circle_plus}); }
 
-#{$brand}-icon-circle-chevron-right-bg    { background-image: url(#{$icon_circle_chevron_right}); }
+
+// Circle Chevron Right
+#{$brand}-icon-circle-chevron-right-bg  { background-image: url(#{$icon_circle_chevron_right}); }
 
 
 // Chevron Right
-
-#{$brand}-icon-chevron-right-bg       { background-image: url(#{$icon_chevron_right}); }
-
+#{$brand}-icon-chevron-right-bg         { background-image: url(#{$icon_chevron_right}); }
 
 
 // Search
+#{$brand}-icon-search-bg                { background-image: url(#{$icon_search}); }
 
-#{$brand}-icon-search-bg       { background-image: url(#{$icon_search}); }
 
+// Menu
+#{$brand}-icon-menu-bg                  { background-image: url(#{$icon_menu}); }
+
+
+// Close
+#{$brand}-icon-close-bg                 { background-image: url(#{$icon_close}); }
 
 
 // Mail
-
-#{$brand}-icon-mail-bg       { background-image: url(#{$icon_mail}); }
+#{$brand}-icon-mail-bg                  { background-image: url(#{$icon_mail}); }
 
 
 

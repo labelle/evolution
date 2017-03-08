@@ -5,8 +5,16 @@
 @import "text_mixin";
 
 
+// Evo list style
+#{$evo}-icon-list li,
+.icon-list-inverse li {
+    margin-left: 1.5em;
+    position: relative;
+    list-style-type: none;
+    // padding-left: -3em;
+}
 
-// Evo List Icons
+// Evo list icons
 #{$evo}-icon-list li:before {
 content:''; 
 // display:inline-block; 
@@ -20,10 +28,8 @@ background-repeat:no-repeat;
 left: -1.5em;
 top: .15em;
 }
-#{$evo}-icon-list li {
-    margin-left: 1.5em;
-    position: relative;
-    list-style-type: none;
-    // padding-left: -3em;
-}
 
+// Evo list icons
+.icon-list-inverse li:before {
+background-image: url(#{$inverse_icon_list_background}); 
+}

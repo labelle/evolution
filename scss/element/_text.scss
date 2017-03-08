@@ -27,6 +27,12 @@
   // list-style-position: #{$text_list_style_position};
 }
 
+// Text Inverse
+
+.text-inverse {
+   color:    #{$inverse_text_color};
+}
+
 // Text Reset
 
 .text-reset {
@@ -50,12 +56,12 @@
 
 
 
-// Element Mixins
-@mixin base($base) { 
-    @if $base == text            { @extend #{$evo}-text; }
-    @else if $base == font       { @extend #{$evo}-font; }
-    // Throw Warnings
-  @else { @warn "Base mixin supports: text, font"; }
-}
+// // Element Mixins
+// @mixin base($base) { 
+//     @if $base == text            { @extend #{$evo}-text; }
+//     @else if $base == font       { @extend #{$evo}-font; }
+//     // Throw Warnings
+//   @else { @warn "Base mixin supports: text, font"; }
+// }
 
 

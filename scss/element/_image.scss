@@ -24,8 +24,9 @@ $image_corner_bottom_left:   #{$u-23}rem;
 	 display:block;
 }
 
-// Is image-responsive even needed?
 // http://stackoverflow.com/questions/7519080/image-auto-width-in-css-for-all-browsers#7519456
+// This will allow images to scale up but never bigger than the originals
+// https://www.w3schools.com/css/css3_images.asp
 .image-responsive {
 	 // background-color: #{$color_fpo};
 	 display: block;
