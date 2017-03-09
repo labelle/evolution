@@ -87,26 +87,71 @@
 .hrf-color-4-bg {
   background-color: #939597; }
 
+.hrf-icon-search-bg-white {
+  background-image: url(../image/brand/search-book-white.svg); }
+
+.hrf-icon-wavy-menu-bg-white {
+  background-image: url(../image/brand/hrf-wavy-menu-white.svg); }
+
+.hrf-icon-close-bg-white {
+  background-image: url(../image/brand/close-book-white.svg); }
+
+.hrf-icon-circle-chevron-bg-white {
+  background-image: url(../image/brand/circle-chevron-book-white.svg); }
+
+.hrf-icon-social-facebook-bg-white {
+  background-image: url(../image/brand/hrf-facebook-white.svg); }
+
+.hrf-icon-social-twitter-bg-white {
+  background-image: url(../image/brand/hrf-twitter-white.svg); }
+
+.hrf-icon-social-mail-bg-white {
+  background-image: url(../image/brand/hrf-mail-white.svg); }
+
+.hrf-icon-search-bg-gray {
+  background-image: url(../image/brand/search-book-gray.svg); }
+
+.hrf-icon-column-bg-gray {
+  background-image: url(../image/brand/column-book-gray.svg); }
+
+.hrf-icon-grid-bg-gray {
+  background-image: url(../image/brand/grid-book-gray.svg); }
+
+.hrf-icon-circle-play-bg {
+  background-image: url(../image/brand/circle-play-book.svg); }
+
 .hrf-icon-circle-plus-bg {
   background-image: url(../image/brand/circle-plus-book.svg); }
 
-.hrf-icon-circle-chevron-right-bg {
+.hrf-icon-circle-chevron-bg {
   background-image: url(../image/brand/circle-chevron-book.svg); }
 
-.hrf-icon-chevron-right-bg {
+.hrf-icon-chevron-bg {
   background-image: url(../image/brand/chevron-book.svg); }
+
+.hrf-icon-chevron-down-bg {
+  background-image: url(../image/brand/chevron-down-book.svg); }
 
 .hrf-icon-search-bg {
   background-image: url(../image/brand/search-book.svg); }
 
-.hrf-icon-menu-bg {
-  background-image: url(../image/brand/menu-book.svg); }
-
 .hrf-icon-close-bg {
   background-image: url(../image/brand/close-book.svg); }
 
-.hrf-icon-mail-bg {
-  background-image: url(../image/brand/mail-book.svg); }
+.hrf-icon-download-bg {
+  background-image: url(../image/brand/download-book.svg); }
+
+.hrf-icon-upload-bg {
+  background-image: url(../image/brand/upload-book.svg); }
+
+.hrf-icon-page-bg {
+  background-image: url(../image/brand/page-book.svg); }
+
+.hrf-icon-column-bg {
+  background-image: url(../image/brand/column-book.svg); }
+
+.hrf-icon-grid-bg {
+  background-image: url(../image/brand/grid-book.svg); }
 
 .hrf-image-person-bg {
   background-image: url(../image/brand/person.jpg); }

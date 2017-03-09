@@ -5348,7 +5348,7 @@ a.evo-link-inverse:visited,
 a.evo-link:hover,
 .a-hover,
 a:hover {
-  color: inherit;
+  color: #1a9ad6;
   background: transparent;
   text-decoration: none;
   outline-width: 0;
@@ -5358,7 +5358,7 @@ a:hover {
 a.evo-link-inverse:hover,
 .a-hover-inverse,
 .a-hover-inverse a {
-  color: cyan !important;
+  color: #1a9ad6 !important;
   background: transparent !important; }
 
 .evo-link a:active,
@@ -5385,7 +5385,7 @@ button:focus {
   text-decoration: none;
   outline: unset;
   opacity: 1;
-  outline-color: #00aeef;
+  outline-color: #1a9ad6;
   outline-width: thin;
   outline-style: dotted;
   outline-offset: 0; }
@@ -5502,7 +5502,7 @@ a:visited {
 
 .a-hover,
 a:hover {
-  color: inherit;
+  color: #1a9ad6;
   text-decoration: none;
   outline-width: 0; }
 
@@ -5518,7 +5518,7 @@ button:focus {
   color: invert;
   text-decoration: none;
   outline: unset;
-  outline-color: #00aeef;
+  outline-color: #1a9ad6;
   outline-width: thin;
   outline-style: dotted;
   outline-offset: 0; }
@@ -8061,31 +8061,31 @@ hr.line-fade-pink {
   border-bottom-style: solid;
   border-right-style: solid;
   border-left-style: solid;
-  border-top-color: #cccccc;
-  border-bottom-color: #cccccc;
-  border-right-color: #cccccc;
-  border-left-color: #cccccc;
+  border-top-color: #d9d9d9;
+  border-bottom-color: #d9d9d9;
+  border-right-color: #d9d9d9;
+  border-left-color: #d9d9d9;
   border-left-style: solid; }
 
 .evo-box-top {
   border-top-width: initial;
   border-top-style: solid;
-  border-top-color: #cccccc; }
+  border-top-color: #d9d9d9; }
 
 .evo-box-bottom {
   border-bottom-width: initial;
   border-bottom-style: solid;
-  border-bottom-color: #cccccc; }
+  border-bottom-color: #d9d9d9; }
 
 .evo-box-right {
   border-right-width: initial;
   border-right-style: solid;
-  border-right-color: #cccccc; }
+  border-right-color: #d9d9d9; }
 
 .evo-box-left {
   border-left-width: initial;
   border-left-style: solid;
-  border-left-color: #cccccc; }
+  border-left-color: #d9d9d9; }
 
 .demo-box div[class*="box-"],
 .demo-box div[class*="evo-box"] {

@@ -5,11 +5,6 @@
 	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <title>menu-book</title>
 <desc>Created with Sketch.</desc>
-<g id="evo-icon">
-	<g id="menu-book">
-		<path id="line1" fill="none" stroke="#009877" stroke-width="4" d="M4,12.5h56"/>
-		<path id="line2" fill="none" stroke="#009877" stroke-width="4" d="M4,32h56"/>
-		<path id="line3" fill="none" stroke="#009877" stroke-width="4" d="M4,51.5h56"/>
-	</g>
-</g>
+<circle id="path-1_1_" fill="none" stroke="#939597" stroke-width="4" cx="27" cy="28" r="22"/>
+<path id="line" fill="none" stroke="#939597" stroke-width="4" d="M59.5,60.5L41,42L59.5,60.5z"/>
 </svg>

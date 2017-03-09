@@ -298,12 +298,12 @@ $link_opacity_visited:				1;
 $inverse_link_color_visited:        #{$evo_white} !default;
 
 // a:hover
-$link_color_hover:                  inherit !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_color_hover:                  #{$brand_color_3} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $link_background_color_hover:       transparent;
 $link_underline_hover:				none !default; // or none or underline or line-through
 $link_opacity_hover:                1;
 
-$inverse_link_color_hover:          cyan !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$inverse_link_color_hover:          #{$brand_color_3} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $inverse_link_background_color_hover: transparent;
 
 // a:active
@@ -318,7 +318,7 @@ $inverse_link_color_active:         #{$evo_white} !default; // cyan
 // https://davidwalsh.name/invert-colors-css
 $link_color_focus:                  invert !default; // cyan
 $link_underline_focus:				none !default;// text-decoration
-$link_outline_color_focus:			rgb( 0, 174, 239 ) !default;
+$link_outline_color_focus:			#{$brand_color_3} !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 $link_opacity_focus:                1;
@@ -445,7 +445,7 @@ $line_margin_bottom:                1em !default;
 // Box
 $box_width:      initial; // border-top-width, initial = medium
 $box_style:      solid;   // border-top-style
-$box_color:      #{$gray_9}; // border-top-color
+$box_color:      #{$gray_8}; // border-top-color
 
 // Define individual corners of boxes
 // Based on _scale.scss in variables

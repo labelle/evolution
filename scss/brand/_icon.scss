@@ -3,33 +3,94 @@
 @import "variables_hrf";
 
 
+// White Icons
+
+// Search
+#{$brand}-icon-search-bg-white          { background-image: url(#{$icon_search_white}); }
+
+// Wavy Menu
+#{$brand}-icon-wavy-menu-bg-white       { background-image: url(#{$icon_wavy_menu_white}); }
+
+// Wavy Menu
+#{$brand}-icon-close-bg-white           { background-image: url(#{$icon_close_white}); }
+
+// Circle Chevron Right
+#{$brand}-icon-circle-chevron-bg-white  { background-image: url(#{$icon_circle_chevron_white}); }
+
+// Social Facebook
+#{$brand}-icon-social-facebook-bg-white { background-image: url(#{$icon_social_facebook_white}); }
+
+// Social Twitter
+#{$brand}-icon-social-twitter-bg-white  { background-image: url(#{$icon_social_twitter_white}); }
+
+// Social Mail
+#{$brand}-icon-social-mail-bg-white     { background-image: url(#{$icon_social_mail_white}); }
+
+
+
+
+
+// Gray Icons
+
+// Search
+#{$brand}-icon-search-bg-gray           { background-image: url(#{$icon_search_gray}); }
+
+// Column
+#{$brand}-icon-column-bg-gray           { background-image: url(#{$icon_column_gray}); }
+
+// Grid
+#{$brand}-icon-grid-bg-gray             { background-image: url(#{$icon_grid_gray}); }
+
+
+
+
+// Green Icons
+
+// Circle Play
+#{$brand}-icon-circle-play-bg           { background-image: url(#{$icon_circle_play}); }
 
 // Circle Plus
 #{$brand}-icon-circle-plus-bg           { background-image: url(#{$icon_circle_plus}); }
 
+// Circle Chevron
+#{$brand}-icon-circle-chevron-bg        { background-image: url(#{$icon_circle_chevron}); }
 
-// Circle Chevron Right
-#{$brand}-icon-circle-chevron-right-bg  { background-image: url(#{$icon_circle_chevron_right}); }
+// Chevron
+#{$brand}-icon-chevron-bg               { background-image: url(#{$icon_chevron}); }
 
+// Chevron Down
+#{$brand}-icon-chevron-down-bg          { background-image: url(#{$icon_chevron_down}); }
 
-// Chevron Right
-#{$brand}-icon-chevron-right-bg         { background-image: url(#{$icon_chevron_right}); }
-
+// // Mail
+// #{$brand}-icon-mail-bg                  { background-image: url(#{$icon_mail}); }
 
 // Search
 #{$brand}-icon-search-bg                { background-image: url(#{$icon_search}); }
 
-
-// Menu
-#{$brand}-icon-menu-bg                  { background-image: url(#{$icon_menu}); }
-
+// // Menu
+// #{$brand}-icon-menu-bg                  { background-image: url(#{$icon_menu}); }
 
 // Close
 #{$brand}-icon-close-bg                 { background-image: url(#{$icon_close}); }
 
+// // Mail
+// #{$brand}-icon-mail-bg                  { background-image: url(#{$icon_mail}); }
 
-// Mail
-#{$brand}-icon-mail-bg                  { background-image: url(#{$icon_mail}); }
+// Download
+#{$brand}-icon-download-bg              { background-image: url(#{$icon_download}); }
+
+// Upload
+#{$brand}-icon-upload-bg                { background-image: url(#{$icon_upload}); }
+
+// Page
+#{$brand}-icon-page-bg                  { background-image: url(#{$icon_page}); }
+
+// Column
+#{$brand}-icon-column-bg                { background-image: url(#{$icon_column}); }
+
+// Grid
+#{$brand}-icon-grid-bg                  { background-image: url(#{$icon_grid}); }
+
 
 
 
