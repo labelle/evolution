@@ -29,103 +29,126 @@
 </header> -->
 <main>
 
-
 <section id="evoFormIntro">
 
 <h1 class="evo-text-13" style="margin-bottom: 0;">Form</h1>
 
-<p>Form elements sync with overall styling of evo text and colors.</p>
+<p class="evo-measure">Form elements sync with overall styling of evo text and colors. Use <code>&lt;input type="text"&gt;</code>, <code>&lt;option&gt;</code>, and <code>&lt;textarea&gt;</code> tags.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- basic inputs -->
+
+<section id="InputText">
+
+<h2 class="evo-text-6">evo-form input</h2>
 
 <div class="evo-space"></div>
 
-</section>
-
-
-
-<section id="evoFormText">
 
 <form>
-    <input class="focus-border-color" style="background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg) no-repeat scroll 98% 50%; background-size: 25px 25px;" type="search" name="search" placeholder="Search">
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<section id="evoFormSelect">
-
-<form>
-<select id="select" class="focus-border-color" name="dropdown" placeholder="choose one">
-    <option value="option1">option 1</option>
-    <option value="option2">option 2</option>
-    <option value="option3">option 3</option>
-</select>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<section id="evoFormRadio">
-
-<div class="radio-group" id="radio-group1">
-    <fieldset>
-        <legend>Radio Group Title</legend>
-        <span>
-            <input id="radio-group1_input1" name="radio-group1" type="radio" value="1" checked />
-            <label for="radio-group1_input1">Input 1</label>
-        </span>
-        <span>
-            <input id="radio-group1_input2" name="radio-group1" type="radio" value="2" />
-            <label for="radio-group1_input2">Input 2</label>
-        </span>
-        <span>
-            <input id="radio-group1_input3" name="radio-group1" type="radio" value="3" />
-            <label for="radio-group1_input3">Input 3</label>
-        </span>
-    </fieldset>
-</div>
-
-
-<div class="evo-space-20"></div>
-
-
-</section>
-
-<section id="evoFormCheckbox">
-
 <fieldset>
-                <legend>Pure CSS (custom focus indicator)</legend>
-                <div class="checkbox">
-                    <input id="checkbox1_freeshipping2" type="checkbox" name="freeshipping2">
-                    <label for="checkbox1_freeshipping2">Free Shipping</label>
-                </div>
-                <div class="checkbox">
-                    <input id="checkbox2_endssoon2" type="checkbox" name="endssoon2">
-                    <label for="checkbox2_endssoon2">Ends soon</label>
-                </div>
-                <div class="checkbox">
-                    <input id="checkbox3_zerobids2" type="checkbox" name="zerobids2">
-                    <label for="checkbox3_zerobids2">Zero bids</label>
-                </div>
-            </fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="evo-space-15"></div>
+
+<label>Label</label>
+
+<input type="text" name="text" placeholder="Text Input" />
+
+<div class="evo-space-15"></div>
+
+<input type="text" name="text" placeholder="Text Input" class="evo-form" />
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" placeholder="Text" class="evo-form"/&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Default form styles are set in _variables.scss.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
+<!-- basic containers and labels -->
 
-<section id="evoFormButton">
+<section id="InputForm">
 
-<form action="" method="post">
-  <!-- A button doesn't need anything! It'll just work! ARIA's role="button" is already assigned natively! Whoa! -->
-  <button type="submit">Simple A11Y Button</button>
+<h2 class="evo-text-6">containers and labels</h2>
+
+<div class="evo-space-10"></div>
+
+<form>
+<fieldset>
+<legend>Legend</legend>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="evo-space-15"></div>
+
+<label>Label</label>
+
+</fieldset>
 </form>
 
+<div class="evo-space-20"></div>
 </section>
+
+
+
+
+
+<label>Form Mix</label>
+
+<input type="text" name="text" placeholder="Text Input" class="padding-10 evo-color-10-bg evo-color-white evo-box box-3" />
+
+<div class="evo-space-15"></div>
+
+
+
+
+
+<!-- button -->
+
+<section id="InputButton">
+
+<h2 class="evo-text-6">button (maybe form example mixes go down here? mix colors, shapes, borders, backgrounds, icons)</h2>
+
+<div class="evo-space"></div>
+
+
+<input type="submit" />
+<!-- <input type="submit" class="evo-button" /> -->
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="submit" class="evo-button" /&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+</fieldset>
+</form>
+
 
 </main>
 

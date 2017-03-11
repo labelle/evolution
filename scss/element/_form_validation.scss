@@ -1,0 +1,42 @@
+///*      F O R M   V A L I D A T I O N       */
+
+@import "../variables";
+
+
+// https://www.smashingmagazine.com/2013/02/css-form-elements-problem/
+
+
+// Form Validation
+
+ul.helper-text {
+    // display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
+    }
+  }
+
+ul.helper-text-1 {
+    // display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
+    }
+  }
+  
+  // &.valid {
+  //   input { border: 2px solid #1fd34a; }
+  // }
+

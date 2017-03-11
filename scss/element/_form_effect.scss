@@ -1,0 +1,355 @@
+///*      F O R M   E F F E C T       */
+
+@import "../variables";
+
+
+// /*********************
+//     FLOATING LABELS
+// *********************/
+
+// Text Area
+
+// Starting postion
+textarea ~ .label-floating  {
+  position: absolute;
+  pointer-events: none;
+  left: 1em !important;
+  top: 1em !important;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+textarea:focus ~ .label-floating,
+textarea:not(:focus):valid ~ .label-floating {
+  top: -5em;
+  bottom: 1em;
+  color: #00aeef;
+  left: 1.5em;
+  font-size: .75em;
+  opacity: 1;
+}
+
+
+// /*********************
+//     FORM FOCUS
+// *********************/
+
+// How to get labels to highlight when focused / hovered on the field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+
+
+// Default focus state
+// Default hover state (matches focus state)
+.form-focus,
+#{$evo}-form-focus:focus,
+.uneditable-input:focus,
+select:focus,
+input:focus,
+input[type]:focus,
+textarea:focus,
+.form-hover,
+#{$evo}-form-hover:hover,
+.uneditable-input:hover,
+select:hover,
+input:hover,
+input[type]:hover,
+textarea:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+  }
+
+
+// Form box focus
+#{$evo}-form-box-focus,
+#{$evo}-form-box:focus,
+select#{$evo}-form-box:focus,
+input#{$evo}-form-box:focus,
+input[type]#{$evo}-form-box:focus,
+textarea#{$evo}-form-box:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    // box-shadow: #{$focus_box_shadow};
+    // transition: #{$focus_transition};
+    // outline: 0 none;
+  }
+
+// Form line focus
+#{$evo}-form-line-focus,
+#{$evo}-form-line:focus,
+select#{$evo}-form-line:focus,
+input#{$evo}-form-line:focus,
+input[type]#{$evo}-form-line:focus,
+textarea#{$evo}-form-line:focus {
+    // border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    // border-left-color: #{$focus_border_color};
+    // border-right-color: #{$focus_border_color};
+    // box-shadow: #{$focus_box_shadow};
+    // transition: #{$focus_transition};
+    // outline: 0 none;
+  }
+
+
+// Black color focus
+.form-focus-black,
+.focus-black:focus,
+.uneditable-input-black:focus,
+select.focus-black:focus,
+input.focus-black:focus,
+input[type].focus-black:focus,
+textarea.focus-black:focus {
+    border-top-color: #{$evo_black};
+    border-bottom-color: #{$evo_black};
+    border-left-color: #{$evo_black};
+    border-right-color: #{$evo_black};
+    // border-color: #{$evo_black};
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    // outline: 0 none;
+}
+
+// White color focus
+.form-focus-white,
+.focus-white:focus,
+.uneditable-input-white:focus,
+select.focus-white:focus,
+input.focus-white:focus,
+input[type].focus-white:focus,
+textarea.focus-white:focus {
+    border-top-color: #{$evo_black};
+    border-bottom-color: #{$evo_black};
+    border-left-color: #{$evo_black};
+    border-right-color: #{$evo_black};
+    border-color: #{$evo_white};
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    // outline: 0 none;
+}
+
+
+// Blue color focus
+.form-focus-blue,
+.focus-blue:focus,
+.uneditable-input-blue:focus,
+select.focus-blue:focus,
+input.focus-blue:focus,
+input[type].focus-blue:focus,
+textarea.focus-blue:focus {
+    border-top-color: #{$color_15};
+    border-bottom-color: #{$color_15};
+    border-left-color: #{$color_15};
+    border-right-color: #{$color_15};
+    border-color: #{$color_15};
+    // box-shadow: 0 1px 1px rgba(0, 115, 185, 0.075) inset, 0 0 8px rgba(0, 115, 185, 0.6);
+    // outline: 0 none;
+}
+
+// Green color focus
+.form-focus-green,
+.focus-green:focus,
+.uneditable-input-green:focus,
+select.focus-green:focus,
+input.focus-green:focus,
+input[type].focus-green:focus,
+textarea.focus-green:focus {
+    border-top-color: #{$color_21};
+    border-bottom-color: #{$color_21};
+    border-left-color: #{$color_21};
+    border-right-color: #{$color_21};
+    border-color: #{$color_21};
+    // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
+    // outline: 0 none;
+}
+
+// Red color focus
+.form-focus-red,
+.focus-red:focus,
+.uneditable-input-red:focus,
+select.focus-red:focus,
+input.focus-red:focus,
+input[type].focus-red:focus,
+textarea.focus-red:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-color: #{$color_5};
+    // box-shadow: 0 1px 1px rgba(235, 33, 46, 0.075) inset, 0 0 8px rgba(235, 33, 46, 0.6);
+    // outline: 0 none;
+}
+
+
+
+
+// /*********************
+//     FLOATING LABELS
+// *********************/
+
+// Floating Labels
+// https://css-tricks.com/float-labels-css/
+// http://codepen.io/collection/IjFib/
+// Label must be placed underneath the input
+
+
+
+// How to get labels to appear as if they are before the form field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+// Inputs such as text fields
+
+// Starting position
+.label-floating  {
+  position: absolute;
+  pointer-events: none;
+  left: 1em;
+  top: 0;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+input:focus ~ .label-floating,
+input:not(:focus):valid ~ .label-floating {
+  top: -1.5em;
+  bottom: 1em;
+  color: #00aeef;
+  left: 1.5em;
+  font-size: .65em;
+  opacity: 1;
+  // background-color: #fff;
+}
+
+
+
+// VERSION 1
+// .evo-form-container {
+//   display: flex;
+//   flex-direction: column; /** vertical layout **/
+// }
+
+// .evo-form-container label {
+//   order: 1;
+// }
+
+// .evo-form-container input {
+//   order: 0;
+// }
+
+// .evo-form-container label:focus + input {
+//   color: red;
+// }
+
+// VERSION 2
+// .evo-form-container {
+//   display: flex;
+//   flex-direction: column; /** vertical layout **/
+//   // position:relative;
+//   // padding:0;
+//   // margin:0;
+// }
+
+// .evo-form-label {
+//   order: 1;
+// }
+
+// .evo-form-input {
+//   order: 0;
+// }
+
+// .evo-form-label:focus + .evo-form-input {
+//   color: red;
+// }
+
+
+
+
+
+
+
+// input:not(:focus):valid ~ .label-floating {
+//   color: #808080;
+// }
+
+
+
+
+
+
+// textarea:not(:focus):valid ~ .label-floating {
+//   color: #808080;
+// }
+
+
+
+
+// .inputText {
+//   font-size: 10px;
+//   width: 200px;
+//   height: 35px;
+// }
+
+
+
+// .label-floating {
+//   position: absolute;
+//   pointer-events: none;
+//   left: 15px;
+//   top: 5px;
+//   transition: 0.3s ease all;
+// }
+
+// input:focus ~ .label-floating,
+// input:not(:focus):valid ~ .label-floating {
+//   top: -20px;
+//   bottom: 10px;
+//   color: #00aeef;
+//   left: 15px;
+//   font-size: 14px;
+//   opacity: 1;
+// }
+
+
+// input:not(:focus):valid ~ .label-floating {
+//   color: #808080;
+// }
+
+
+// input#{$evo}-form-line:focus { 
+//     border-bottom: 1px solid #00aeef !important;
+//     transition:0.5s ease all; 
+//     // -moz-transition:0.5s ease all; 
+//     // -webkit-transition:0.5s ease all;
+// }
+
+
+// textarea:focus ~ .label-floating,
+// textarea:not(:focus):valid ~ .label-floating {
+//   top: -20px;
+//   bottom: 10px;
+//   color: #00aeef;
+//   left: 15px;
+//   font-size: 14px;
+//   opacity: 1;
+// }
+
+
+// textarea:not(:focus):valid ~ .label-floating {
+//   color: #808080;
+// }
+
+
+// textarea#{$evo}-form-line:focus { 
+//     border-bottom: 1px solid #00aeef !important;
+//     transition:0.5s ease all; 
+//     // -moz-transition:0.5s ease all; 
+//     // -webkit-transition:0.5s ease all;
+// }

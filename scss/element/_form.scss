@@ -3,174 +3,179 @@
 @import "../variables";
 // @import "../variables/scale";
 
-
-///* --------------------------- FORMS --------------------------- */
-
-
-///* Adjust the non-increment variables for more dramatic effect */
-
-// $form_padding:               .3;
-// $form_padding_increment:     .04;
-// $form_font_size:             1rem;
-// $form_font_size_increment:   .09;
-$form_background_color:      $gray_5; // $white_evo
-
-// Define how round form corners are
-
-// $form_corners_evo:               5px;
+// https://www.smashingmagazine.com/2013/02/css-form-elements-problem/
 
 
+// Border Color
 
-/* search form */
 
-// .evo-form-text {
-//     font-family: sans-serif;
-//     display: block;
-//     // overflow: auto; // buggy
-// }
-
-// input {
-//     line-height: 200%;
-//     padding: .38rem;
-//     font-size: .84rem;
-//     border-radius: 5px;
-//     border-width: 2px;
-//     border-style: solid;
-//     border-color: #CCC;
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-// }
-
+// Form Focus
+// Change border color on focus
+.form-focus,
+#{$evo}-focus:focus,
 .uneditable-input:focus,
 select:focus,
 input:focus,
 input[type]:focus,
 textarea:focus {
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgba(0, 174, 239, .8);
-    outline: 0;
-}
-
-// // Save for branded focus states
-// .uneditable-input.focus-border-color:focus,
-// select.focus-border-color:focus,
-// input.focus-border-color:focus,
-// input[type].focus-border-color:focus,
-// textarea.focus-border-color:focus {
-//     border-width: 2px;
-//     border-style: solid;
-//     border-color: rgba(0, 174, 239, .8);
-//     outline: 0;
-// }
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+  }
 
 
 // From older evolution
 
-  fieldset {
-    border: 1px solid $gray_15;
-    padding: 1.25rem;
-    margin: 1.25rem 0;
-    width: 100%;
-  }
+
+fieldset { 
+  display: block;
+  margin-left: #{$fieldset_margin_left};
+  margin-right: #{$fieldset_margin_right};
+  padding-top: #{$fieldset_padding_top};
+  padding-bottom: #{$fieldset_padding_bottom};
+  padding-left: #{$fieldset_padding_left};
+  padding-right: #{$fieldset_padding_right};
+  border: #{$fieldset_border};
+}
+
+legend {
+  padding-left:  #{$legend_padding_left};
+  padding-right: #{$legend_padding_right};
+  border:        none;
+  float:         left; // float turns this into a block element
+  // display:       block;
+}
 
 
-  input[type="date"],
-  input[type="time"] {
-    line-height: 100%;
-  }
+input[type="date"],
+input[type="time"] {
+  line-height: 100%;
+}
 
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin-right: 5px;
-  }
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 1em;
+}
 
-  input[type="file"] {
-    line-height: 5px;
-  }
+input[type="file"] {
+  line-height: 1em; // px
+}
+
+// http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript#13968900
+// Get rid of styling for option, so that custom styling is applied
+select,
+select[disabled],
+select#{$evo}-form,
+#{$evo}-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #{$form_triangle_background};
+}
 
 // Can we get rid of the 'input' because it's messing up the checkboxes
-  input[type="text"], 
-  input[type="password"], 
-  input[type="email"],
-  input[type="date"],
-  input[type="number"],
-  input[type="time"],
-  input[type="file"]
-  input[type="search"],
-  input[type="url"],
-  textarea,
-  select,
-  input {
-    // -webkit-appearance: none;
-    // -moz-appearance: none;
-    // appearance: none;
-    // @extend .evo-form-1-base;
-    padding: 1rem; // $form_padding+$form_padding_increment*0.5rem;
-    font-size: 1rem; // $form_font_size+$form_font_size_increment*3rem;
-    border-radius: 5px; // $form_corners_evo;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $gray_15;
-    background-color: $form_background_color;
-    width: 100%;
-  }
+#{$evo}-form,
+input[type="text"], 
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="time"],
+input[type="file"],
+input[type="search"],
+input[type="url"],
+textarea,
+select,
+input {
+  // Form Input
+  font-size:  #{$form_font_size};
+  border-radius: #{$form_border_radius};
+  width: #{$form_width};
+  background-color: #{$form_background_color};
+}
+
+// CAUTION: IE hackery ahead 
+
+select::-ms-expand { 
+    display: none; // remove default arrow in IE 10 and 11
+}
+
+// target Internet Explorer 9 to undo the custom arrow
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+// select {
+//     width: 100%;
+//     // @extend .evo-form-3-base;
+//     padding: $form_padding+$form_padding_increment*1.5rem;
+//     font-size: $form_font_size+$form_font_size_increment*5rem;
+//     border-radius: $form_corners_evo;
+//     border: 2px solid $gray_20_evo;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     background-color: $form_background_color;
+//   }
+
+//   // select:hover {
+//   //   background-color: #eee;
+//   //   border-color: #666;
+//   // }
+
+#{$evo}-form {
+  // padding
+  padding-top: #{$form_padding_top};
+  padding-bottom: #{$form_padding_bottom};
+  padding-left: #{$form_padding_left};
+  padding-right: #{$form_padding_right};
+  // border width
+  border-top-width: #{$form_border_top_width};
+  border-bottom-width: #{$form_border_bottom_width};
+  border-left-width: #{$form_border_left_width};
+  border-right-width: #{$form_border_right_width};
+  // border style
+  border-top-style: #{$form_border_top_style};
+  border-bottom-style: #{$form_border_bottom_style};
+  border-left-style: #{$form_border_left_style};
+  border-right-style: #{$form_border_right_style};
+  // border color
+  border-top-color: #{$form_border_top_color};
+  border-bottom-color: #{$form_border_bottom_color};
+  border-left-color: #{$form_border_left_color};
+  border-right-color: #{$form_border_right_color};
+}
+
+// Combine with floating labels
+
+input#{$evo}-form:focus { 
+    border-bottom: 1px solid #00aeef !important;
+    transition:0.5s ease all; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}
+
+
+textarea#{$evo}-form:focus { 
+    border-bottom: 1px solid #00aeef !important;
+    transition:0.5s ease all; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}
+
 
   // select:hover {
   //   background-color: #eee;
   //   border-color: #666;
   // }
 
-
-/*********************
-    INPUT BUTTONS
-*********************/
-
-
-  .evo-form-input {
-
-    .inputfile {
-      width: 0.1px;
-      height: 0.1px;
-      opacity: 0;
-      overflow: hidden;
-      position: absolute;
-      z-index: -1;
-    }
-
-    .inputfile + label {
-      font-size: 1.25em;
-      font-weight: 700;
-      color: $white;
-      background-color: black;
-      display: inline-block;
-    }
-
-    .inputfile:focus + label,
-    .inputfile + label:hover {
-        background-color: gray;
-    }
-
-    .inputfile:focus + label {
-      outline: 1px dotted #000;
-      outline: -webkit-focus-ring-color auto 5px;
-    }
-
-    .inputfile + label {
-      cursor: pointer; /* "hand" cursor */
-    }
-
-  }
-
-
-  //   /* INPUT 1 */
-
-  // .evo-form-20-input {
- 
-  //    @extend .evo-form-input-base;  
-  
-  // }
 
 
 
@@ -214,7 +219,7 @@ textarea:focus {
   //   /* CHECKBOX 1 */
 
   // .evo-form-1-checkbox {
- 
+
   //   @extend .evo-form-checkbox-base;  
 
   //   label {
@@ -281,7 +286,7 @@ textarea:focus {
   //   /* RADIO 1 */
 
   // .evo-form-radio {
- 
+
   //   @extend .evo-form-radio-base;  
 
   //   label {

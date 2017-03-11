@@ -150,8 +150,6 @@ address {
   font-style: normal;
 }
 
-
-
 // General site-wide settings (optional)
 
 // html
@@ -197,93 +195,12 @@ body {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-style:      #{$heading_font_style};
-  font-variant:    #{$heading_font_variant};
-  color:           #{$heading_color};
-  font-family:     #{$heading_font_family};
-  font-weight:     #{$heading_font_weight};
-  font-stretch:    #{$heading_font_stretch};
-  text-rendering:  #{$heading_text_rendering};
-  margin-top:      0; // reset
-}
-
-h1,
-.h1 { 
-  font-size:       #{$heading_size_h1}; 
-  line-height:     #{$heading_margin_bottom_h1};
-  letter-spacing:  #{$heading_letter_spacing_h1};
-  margin-bottom:   #{$heading_margin_bottom_h1};
-}
-
-h2,
-.h2 { 
-  font-size:       #{$heading_size_h2}; 
-  line-height:     #{$heading_margin_bottom_h2};
-  letter-spacing:  #{$heading_letter_spacing_h2};
-  margin-bottom:   #{$heading_margin_bottom_h2};
-}
-h3,
-.h3 { 
-  font-size:       #{$heading_size_h3}; 
-  line-height:     #{$heading_margin_bottom_h3};
-  letter-spacing:  #{$heading_letter_spacing_h3};
-  margin-bottom:   #{$heading_margin_bottom_h3};
-}
-h4,
-.h4 { 
-  font-size:       #{$heading_size_h4}; 
-  line-height:     #{$heading_margin_bottom_h4};
-  letter-spacing:  #{$heading_letter_spacing_h4};
-  margin-bottom:   #{$heading_margin_bottom_h4};
-}
-h5,
-.h5 { 
-  font-size:       #{$heading_size_h5}; 
-  line-height:     #{$heading_margin_bottom_h5};
-  letter-spacing:  #{$heading_letter_spacing_h5};
-  margin-bottom:   #{$heading_margin_bottom_h5};
-}
-h6,
-.h6 { 
-  font-size:       #{$heading_size_h6}; 
-  line-height:     #{$heading_margin_bottom_h6};
-  letter-spacing:  #{$heading_letter_spacing_h6};
-  margin-bottom:   #{$heading_margin_bottom_h6};
-}
-
-
 // List
 
 
 ul, li {
   margin-left: 0;
   padding-left: 0;
-}
-
-p,
-ul,
-ol,
-li {
-  // font-size:       #{$text_size};
-  color:           #{$text_color};
-  // font-family:     #{$text_font_family};
-  // font-weight:     #{$text_font_weight};
-  // line-height:     #{$text_line_height};
-  // letter-spacing:  #{$text_letter_spacing};
-  margin-top:      #{$text_margin_top};
-  margin-bottom:   #{$text_margin_bottom};
 }
 
 nav ul {
@@ -490,7 +407,7 @@ select {
   width: 100%;
   text-transform: none;
   vertical-align:middle;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 input {
@@ -506,10 +423,11 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
-  min-height: 50px;
-  border-radius: 3px;
+  min-height: 10rem;
+  border-radius: 0;
   resize: vertical;
 }
+
 
 html input[type="button"],
 input[type="reset"],
@@ -692,11 +610,15 @@ progress, meter {
 // Width utilities
 
 .width-full {
-  width: 100%;
+  width: 100% !important;
+}
+
+.width-half {
+  width: 50% !important;
 }
 
 .width-auto {
-  width: auto;
+  width: auto !important;
 }
 
 // highlight states

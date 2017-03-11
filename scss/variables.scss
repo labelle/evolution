@@ -328,9 +328,11 @@ $inverse_link_outline_color_focus:	invert !default;
 
 
 // Button Text
-$button_font_family:               #{$html_font_family};
+$button_font_family:               #{$google-montserrat};
 // $button_font_size:                 1rem;
 $button_text_align:                center;
+$button_text_transform:            uppercase;
+$button_font_weight:               700; // or bold
 // $button_text_decoration:           none;  // Doesn't work
 
 // Button Structure
@@ -430,6 +432,123 @@ $highlight_padding_left: .6ch;
 $highlight_padding_right: .6ch;
 $highlight_padding_bottom: .6ex;
 $highlight_padding_top: .6ex;
+
+
+// Form Fieldset
+$fieldset_margin_left:              0;
+$fieldset_margin_right:             0;
+$fieldset_padding_top:              0;
+$fieldset_padding_bottom:           1em;
+$fieldset_padding_left:             0;
+$fieldset_padding_right:            0;
+$fieldset_border:                   none; // 2px groove (internal value);
+
+// Form Legend
+$legend_padding_left:               none;
+$legend_padding_right:              1em;
+$legend_display:                    block;
+
+// Form Focus
+$focus_border_color:                rgba(26, 154, 214, .8);
+$focus_transition:                  0.5s ease all; 
+$focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
+
+// Form Select Dropdown
+// Replace icon
+// url / percent to right / size of icon / no repeat / background color
+$form_chevron_background:           url(../image/elements/chevron-down-book.svg) 96% / 1.5em no-repeat #{$gray_5};
+$form_triangle_background:          url(../image/elements/triangle-down-solid.svg) 96% / .75em no-repeat #{$gray_5};
+$form_search_background:            url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+$form_email_background:             url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+$form_url_background:               url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+$form_password_background:          url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+$form_password_lock_background:     url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+
+
+// FORM
+// Form Input
+$form_font_size:                    1rem;
+$form_border_radius:                5px;
+$form_width:                        100%;
+$form_background_color:             #{$gray_5};
+// padding
+$form_padding_top:                  1rem;
+$form_padding_bottom:               1rem;
+$form_padding_left:                 1rem;
+$form_padding_right:                1rem;
+// border width
+$form_border_top_width:             thin;
+$form_border_bottom_width:          thin;
+$form_border_left_width:            thin;
+$form_border_right_width:           thin;
+// border style
+$form_border_top_style:             solid;
+$form_border_bottom_style:          solid;
+$form_border_left_style:            solid;
+$form_border_right_style:           solid;
+// border color
+$form_border_top_color:             #{$gray_15};
+$form_border_bottom_color:          #{$gray_15};
+$form_border_left_color:            #{$gray_15};
+$form_border_right_color:           #{$gray_15};
+
+
+
+// BOX FORM
+// Form Input
+$box_form_font_size:                    1rem;
+$box_form_border_radius:                0;
+$box_form_width:                        100%;
+$box_form_background_color:             #{$gray_5};
+// padding
+$box_form_padding_top:                  1rem;
+$box_form_padding_bottom:               1rem;
+$box_form_padding_left:                 1rem;
+$box_form_padding_right:                1rem;
+// border width
+$box_form_border_top_width:             2px;
+$box_form_border_bottom_width:          2px;
+$box_form_border_left_width:            2px;
+$box_form_border_right_width:           2px;
+// border style
+$box_form_border_top_style:             solid;
+$box_form_border_bottom_style:          solid;
+$box_form_border_left_style:            solid;
+$box_form_border_right_style:           solid;
+// border color
+$box_form_border_top_color:             #{$gray_15};
+$box_form_border_bottom_color:          #{$gray_15};
+$box_form_border_left_color:            #{$gray_15};
+$box_form_border_right_color:           #{$gray_15};
+
+
+
+// LINE FORM
+// Form Input
+$line_form_font_size:                    1rem;
+$line_form_border_radius:                0;
+$line_form_width:                        100%;
+$line_form_background_color:             #{$gray_5};
+// padding
+$line_form_padding_top:                  1rem;
+$line_form_padding_bottom:               1rem;
+$line_form_padding_left:                 1rem;
+$line_form_padding_right:                1rem;
+// border width
+$line_form_border_top_width:             0;
+$line_form_border_bottom_width:          2px;
+$line_form_border_left_width:            0;
+$line_form_border_right_width:           0;
+// border style
+$line_form_border_top_style:             none;
+$line_form_border_bottom_style:          solid;
+$line_form_border_left_style:            none;
+$line_form_border_right_style:           none;
+// border color
+$line_form_border_top_color:             transparent;
+$line_form_border_bottom_color:          #{$gray_15};
+$line_form_border_left_color:            transparent;
+$line_form_border_right_color:           transparent;
 
 
 // Dropcap
