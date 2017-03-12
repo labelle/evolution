@@ -6,613 +6,278 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HRF Brand</title>
+        <title>Brand</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="../css/bootstrap-grid.css">
-        <link rel="stylesheet" href="../css/evo-elements.min.css">
-        <link rel="stylesheet" href="../css/evo-brand.min.css">
+<!--         <link rel="stylesheet" href="../css/bootstrap-grid.css"> -->
+     <link rel="stylesheet" href="../css/evo-elements.css">
 
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+        
 <style>
+
+
+/*Flex*/
+
+.evo-flex {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+/*.inline-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}*/
+
+.flex-auto {
+        max-width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0
+}
+
+.flex-column {
+/*  margin: 1em;*/
+   padding: 1em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 8.333333333333%;
+}
+
+/*section:nth-of-type(1) .column:first-of-type {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 22px;
+}*/
+
+.flex-column-4 {
+  padding: 1em;
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 8.333333333333%;
+  min-width: 20%;
+}
+
+.flex-column-3 {
+  padding: 1em;
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 8.333333333333%;
+}
+
+/*section:first-of-type .column:nth-of-type(1) {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 66px;
+}*/
+
+
+/*Get rid of gutter in bootstrap rows*/
+
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:first-child,
+.row.no-gutter [class*='col-']:last-child{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+
+
+/*From slide site*/
+/*  [class*="card-"][class*="bg-"] figure img,
+  .fullscreen [class*="card-"] figure img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }*/
+
+    .flex-image-full,
+   .flex-image-full img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+ .min-width {
+    min-width: 50%;
+ }
+
+  .min-width-25 {
+    min-width: 25%;
+ }
+
+  @media screen and (max-width: 480px) {
+    .flex-wrap-sm  {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+    }
+    .min-width {
+    min-width: 100%;
+ }
+    .min-width-25 {
+    min-width: 100%;
+ }
+}
+
+
+
 </style>
 
 </head>
-<body>
+<body class="evo-gray-5-bg">
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="evo/http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 <!-- Main navigation -->
 <!-- <header role="banner">
 </header> -->
 <main>
-<!-- This line and above, edit only with global find and replace in sublime text -->
-
-<div class="container">
-
-  <!-- Begin Title -->
-  <section class="row">
-
-    <div class="col-xs-12">
-        <div class="evo-space-15"></div>
-    </div>
 
 
-    <div class="col-xs-12">
-
-<!-- <a href="../index.html"><span class="evo-icon-small evo-icon-chevron-left-light" style="margin-left: -5px;"></span><p class="evo-text-2 no-wrap" style="margin-left: 15px; margin-top: -20px;">Back to Index</p></a><div class="evo-space"></div> -->
+<div class="site-container evo-gray-5-bg">
 
 <a href="../index.html"><p class="evo-text-2">Back to Index</p></a>
     <div class="evo-space"></div>
-    <h1 class="evo-text-10">HRF Brand Guide</h1>
-      <div class="evo-space-5"></div>
+
+<!-- Elements -->
+<section id="brand" class="evo-position">
+        <div class="evo-space"></div>
+<!--     <h1 class="evo-text-7 evo-measure-5 evo-position-top-left">Evolution</h1>
+ --> 
+        <h1 class="margin-bottom-10">Brand</h1>
+        <p>HRF digital brand guidelines and assets.</p>
+        <div class="evo-space"></div>
+</section>
+
+
+
+<div class="evo-color-white-bg">
+<section class="evo-flex flex-wrap flex-wrap-sm" style="min-height: 500px; max-height: 500px !important;">
+
+<div class="position-relative flex-auto flex-column-3 min-width">
+<div class="position-absolute flex-image-full image-bg-fpo" style="max-height: 500px !important; min-height: 250px">
+    <div class="position-middle text-center hrf-font-1 evo-color-white">
+    <h2 class="evo-text-10 text-leading-5 margin-bottom-10">Brand Guide.</h2>
+    <p class="margin-bottom-0">Core digital brand assets for the Hudson River Fund.</p>
+    <div class="evo-space-9"></div>
+    <a href="brand.html""><button class="evo-button inverse-ghost-to-solid button-size-small button-box-thin">View Guide</button></a>
     </div>
+</div>
+</div>
 
-    <div class="col-xs-12">
-    <p class="text-measure">Use this digital brand guide to manage the HRF website’s brand look and feel, from 'agile' prototype to production. Link directly to the brand CSS to sync website styles with this brand guide.</p>
-    <code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="../css/evo-brand.css"&gt;</code>
-    <div class="evo-space-20"></div>
-  </div>
+<div class="flex-column flex-center-vertical self-center" style="min-height: 200px;">
+<ul class="evo-list list-padding-thin">
+<li><a href="brand.html#brandLogos">Logos</a></li>
+<li><a href="brand.html#brandColors">Colors</a></li>
+<li><a href="brand.html#brandFonts">Fonts</a></li>
+</ul>
+</div>
 
-  </section>
-  <!-- /.Title -->
+<div class="flex-column self-center" style="min-height: 200px;">
+<ul class="evo-list list-padding-thin">
+<li><a href="brand.html#brandIcons">Icons</a></li>
+<li><a href="brand.html#brandImages">Images</a></li>
+<li><a href="brand.html#brandGraphics">Graphics</a></li>
+</ul>
+</div>
 
-
-<!-- <div class="row">
-  <div class="col-xs-5 col-sm-3 col-md-2">
-    <div class="evo-space-5"></div>
-      <div class="elements-banner-links">
-        <a href="https://raw.githubusercontent.com/labelle/evolution/css-files/css/styleguide.css"><p class="evo-text">Download this Styleguide</p></a>
-    </div>
-    <div class="evo-space"></div>
-  </div>
-</div> -->
-<!-- 
+</section>
+</div>
 
 <div class="evo-space"></div>
 
-  <div>
-    <div class="evo-space-5"></div>
-    <div style="display: inline-block;">
-      <a class="evo-icon-header evo-icon-double-chevron-down-light"></a>
-    </div>
 
-      <div class="evo-form-checkbox evo_wrapper">
-        <input type="checkbox" id="image" class="toggle_placeholder" ng-click="toggleImage = !toggleImage" checked><label for="image">Show inverse classes</label>
-      </div>
-
-    <div class="evo-space"></div>
-  </div> -->
-
-
-</div>
-
-<div class="container">
-<!-- ********************* -->
-<!--         LOGOS         -->
-<!-- ********************* -->
-
-<div class="row view-tall-25" id="brandLogos">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Logos</h2>
-<!--         <p>Choose a color or white logo depending on need.</p> -->
-    <div class="evo-space-20"></div>
-  </div>
-</div>
-
-
-<div class="row view-tall-75">
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3>HRF Logo</h3> -->
-        <div class="evo-space-5"></div>
-          <img class="padding-10 padding-right-20 padding-bottom-16" src="../image/brand/logo-hrf.svg" style="width: 100%; height: 100%;">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HRF Logo</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/logo-hrf.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$logo-hrf</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>logo-hrf-bg</li>
-        <li><a href="../image/brand/logo-hrf.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Logo</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3>HRF Logo</h3> -->
-        <div class="evo-space-5"></div>
-          <img class="padding-10 padding-right-20 padding-bottom-16 evo-color-bg" src="../image/brand/logo-hrf-white.svg" style="width: 100%; height: 100%;">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HRF Logo White</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/logo-hrf-white.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$logo-hrf-white</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>logo-hrf-white-bg</li>
-        <li><a href="../image/brand/logo-hrf-white.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Logo</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3>HRF Logo</h3> -->
-        <div class="evo-space-5"></div>
-          <img class="padding-10 padding-right-20" src="../image/brand/logo-hep.svg" style="width: 100%; height: 100%;">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HEP Logo</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/logo-hep.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$logo-hep</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>logo-hep-bg</li>
-        <li><a href="../image/brand/logo-hep.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Logo</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3>HRF Logo</h3> -->
-        <div class="evo-space-5"></div>
-          <img class="padding-10 padding-right-20 evo-color-bg" src="../image/brand/logo-hep-white.svg" style="width: 100%; height: 100%;">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HEP Logo White</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/logo-hep-white.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$logo-hep-white</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>logo-hep-white-bg</li>
-        <li><a href="../image/brand/logo-hep-white.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Logo</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-</div><!-- /.Brand Logos -->
-</div>
-
-<div class="container">
-<!-- ********************* -->
-<!--          COLORS         -->
-<!-- ********************* -->
-
-<div class="row view-tall-25" id="brandColors">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Colors</h2>
-<!--         <p>Choose a color or white logo depending on need.</p> -->
-    <div class="evo-space-20"></div>
-  </div>
-</div>
-
-<div class="row view-tall-75">
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3 class="evo-text">HRF Green</h3> -->
-        <div class="evo-space-5"></div>
-        <div class="evo-image-25 hrf-color-1-bg">
-          <div class="color-box-full"></div>
-        </div>
-        <div class="evo-space-5"></div>
-
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HRF Green</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">HEX</span>#009877</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">RGB</span>( 0, 152, 119 )</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$brand_color_1</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-1</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-1-bg</li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3 class="evo-text">HEP Green</h3> -->
-        <div class="evo-space-5"></div>
-        <div class="evo-image-25 hrf-color-2-bg">
-          <div class="color-box-full"></div>
-        </div>
-        <div class="evo-space-5"></div>
-
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HEP Green</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">HEX</span>#78BC42</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">RGB</span>( 120, 188, 66 )</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$brand_color_2</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-2</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-2-bg</li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3 class="evo-text">HRF Blue</h3> -->
-        <div class="evo-space-5"></div>
-        <div class="evo-image-25 hrf-color-3-bg">
-          <div class="color-box-full"></div>
-        </div>
-        <div class="evo-space-5"></div>
-
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HRF Blue</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">HEX</span>#1A9AD6</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">RGB</span>( 26, 154, 214 )</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$brand_color_3</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-3</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-3-bg</li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-<!--       <h3 class="evo-text">HRF Warm Gray</h3> -->
-        <div class="evo-space-5"></div>
-        <div class="evo-image-25 hrf-color-4-bg">
-          <div class="color-box-full"></div>
-        </div>
-        <div class="evo-space-5"></div>
-
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">HRF Warm Gray</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">HEX</span>#939597</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">RGB</span>( 147, 149, 151 )</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$brand_color_4</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-4</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-color-4-bg</li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    </div>
-
-</div>
-
-
-<div class="container">
-<!-- ********************* -->
-<!--         FONTS         -->
-<!-- ********************* -->
-
-<div class="row view-tall-25" id="brandFonts">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Fonts</h2>
-        <p>Place this link at the top of each page.</p>
-        <code class="evo-code code-nowrap">&lt;link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet"&gt;</code>
-    <div class="evo-space-20"></div>
-  </div>
-</div>
-
-
-<div class="row view-tall-75">
-
-    <div class="col-xs-12 col-lg-6">
-<!--       <h3 class="evo-text">Merriweather</h3> -->
-        <div class="evo-space-5"></div>
-        <p class="evo-text-8 hrf-font-1 all-break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ <br />abcdefghijklmnopqrstuvwxyz <br />1234567890!@#$%^&*( )</p>
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Merriweather</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">400</span>Regular</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$google-merriweather</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-font-1</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>font-google-merriweather</li>
-        <li><a href="https://fonts.google.com/specimen/Merriweather"><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">GET</span>Google Fonts</a></li>
-          <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-        <div class="col-xs-12 col-lg-6">
-<!--       <h3 class="evo-text">Montserrat</h3> -->
-        <div class="evo-space-5"></div>
-        <p class="evo-text-8 hrf-font-2 all-break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ <br />abcdefghijklmnopqrstuvwxyz <br />1234567890!@#$%^&*( )</p>
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Montserrat</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">400</span>Regular</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$google-montserrat</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-font-2</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>font-google-montserrat</li>
-        <li><a href="https://fonts.google.com/specimen/Montserrat"><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">GET</span>Google Fonts</a></li>
-          <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-            <div class="col-xs-12 col-lg-6">
-<!--       <h3 class="evo-text">Montserrat</h3> -->
-        <div class="evo-space-5"></div>
-        <p class="evo-text-8 text-tracking-5 hrf-font-3 all-break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ <br />abcdefghijklmnopqrstuvwxyz <br />1234567890!@#$%^&*( )</p>
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-7">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Montserrat Bold</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">700</span>Bold</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$google-montserrat</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-font-3</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>font-google-montserrat-bold</li>
-        <li><a href="https://fonts.google.com/specimen/Montserrat"><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">GET</span>Google Fonts</a></li>
-          <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-
-    <div class="evo-space"></div>
-
-</div><!-- /.Brand Fonts -->
-</div>
-
-
-
-<div class="container">
-<!-- ********************* -->
-<!--         ICONS         -->
-<!-- ********************* -->
-
-<div class="row view-tall-25" id="brandIcons">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Icons</h2>
-        <p>Approved icon colors and background color placement.</p>
-        <a class="evo-link-icon hrf-font-2 evo-text-3 icon-size-large text-uppercase" href="icons.html">View All Icons</a>
-    <div class="evo-space-20"></div>
-  </div>
-</div>
 
 <div class="row">
 
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-position image-bg image-bg-fpo evo-image-25">
-          <img class="image-bg image-bg-fpo hrf-icon-search-bg-white contain evo-image-16 position-middle" />
-          </div>
-        <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Search White</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/search-book-white.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_search_white</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-search-bg-white</li>
-        <li><a href="../image/brand/close-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
+<div class="two-up shadow-hover-up evo-position">
+<a href="icons.html">
+<div class="image-ratio evo-image-20 evo-color-white-bg">
+<div src="#" class="position-absolute image image-ratio-fill image-bg-fpo" style="width: 50%"></div>
+<div class="position-right width-half">
+<h3 class="padding-left-15 text-leading-6 h4">Icons<br>for Digital</h3>
+</div>
+</div>
+</a>
+</div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-position image-bg hrf-color-1-bg evo-image-25">
-          <img class="image-bg hrf-icon-search-bg-white contain evo-image-16 position-middle" />
-          </div>
-        <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Search White</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/search-book-white.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_search_white</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-search-bg-white</li>
-        <li><a href="../image/brand/search-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
+<div class="two-up shadow-hover-up evo-position">
+<a href="library/index.html">
+<div class="image-ratio evo-image-20 evo-color-white-bg">
+<div src="#" class="position-absolute image image-ratio-fill image-bg-fpo" style="width: 50%"></div>
+<div class="position-right width-half">
+<h3 class="padding-left-15 text-leading-6 h4">Image<br>Library</h3>
+</div>
+</div>
+</a>
+</div>
 
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-position image-bg evo-box box-1 evo-box-gray-1 evo-image-25">
-          <img class="image-bg hrf-icon-search-bg-gray contain evo-image-16 position-middle" />
-          </div>
-        <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Search Gray</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/search-book-gray.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_search_gray</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-search-bg-gray</li>
-        <li><a href="../image/brand/search-book-gray.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-      <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-position image-bg evo-box box-1 evo-box-gray-1 evo-image-25">
-          <img class="image-bg hrf-icon-search-bg contain evo-image-16 position-middle" />
-          </div>
-        <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Search</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/search-book.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$icon_search</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-icon-search-bg</li>
-        <li><a href="../image/brand/search-book.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Icon</a></li>
-        <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-</div><!-- /.Icons -->
-
-
+<div class="evo-space-10"></div>
 
 </div>
 
 
-<div class="container">
-<!-- ********************* -->
-<!--         IMAGES         -->
-<!-- ********************* -->
+<div class="row">
 
-<div class="row view-tall-25" id="brandImages">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Images</h2>
-<!--         <p>Choose a color or white logo depending on need.</p> -->
-    <div class="evo-space-20"></div>
-  </div>
+<div class="two-up shadow-hover-up evo-position">
+<a href="graphics.html">
+<div class="image-ratio evo-image-20 evo-color-white-bg">
+<div src="#" class="position-absolute image image-ratio-fill image-bg-fpo" style="width: 50%"></div>
+<div class="position-right width-half">
+<h3 class="padding-left-15 text-leading-6 h4">Graphics<br>Library</h3>
+</div>
+</div>
+</a>
 </div>
 
+<div class="two-up shadow-hover-up evo-position">
+<a href="playground.html">
+<div class="image-ratio evo-image-20 evo-color-white-bg">
+<div src="#" class="position-absolute image image-ratio-fill image-bg-fpo" style="width: 50%"></div>
+<div class="position-right width-half">
+<h3 class="padding-left-15 text-leading-6 h4">Digital Branding<br>Sandbox</h3>
+<p class="padding-left-15 evo-text-2 text-measure-2">Try your hand at editing the brand styles of website buttons and text</p>
+</div>
+</div>
+</a>
+</div>
 
-<div class="row view-tall-75">
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-image-person-bg evo-image-25">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Person</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/person.jpg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$image_person</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-image-person-bg</li>
-        <li><a href="../image/brand/person.jpg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">JPG</span>Download Image</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-image-place-bg evo-image-25">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Place</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/place.jpg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$image_place</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-image-place-bg</li>
-        <li><a href="../image/brand/place.jpg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">JPG</span>Download Image</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-image-thing-bg evo-image-25">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Thing</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/thing.jpg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$image_thing</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-image-thing-bg</li>
-        <li><a href="../image/brand/thing.jpg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">JPG</span>Download Image</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-image-texture-bg evo-image-25">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Texture</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/texture.jpg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$image_texture</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-image-texture-bg</li>
-        <li><a href="../image/brand/texture.jpg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">JPG</span>Download Image</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-</div><!-- /.Brand Images -->
+<div class="evo-space-10"></div>
 
 </div>
 
-
-
-<div class="container">
-<!-- ********************* -->
-<!--         GRAPHICS         -->
-<!-- ********************* -->
-
-<div class="row view-tall-25" id="brandGraphics">
-  <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Graphics</h2>
-<!--         <p>Choose a color or white logo depending on need.</p> -->
-    <div class="evo-space-20"></div>
-  </div>
 </div>
-
-
-<div class="row view-tall-75">
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-graphic-infograph-bg evo-image-25 contain">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Infograph</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/infograph.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$graphic_infograph</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-graphic-infograph-bg</li>
-        <li><a href="../image/brand/infograph.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Graphic</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-graphic-chart-bg evo-image-25 contain">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Chart</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/chart.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$graphic_chart</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-graphic-chart-bg</li>
-        <li><a href="../image/brand/chart.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Graphic</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-graphic-map-bg evo-image-25 contain">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Map</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/map.svg</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$graphic_map</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-graphic-map-bg</li>
-        <li><a href="../image/brand/map.svg" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SVG</span>Download Graphic</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="evo-space-5"></div>
-          <img class="image-bg hrf-graphic-dataviz-bg evo-image-25 contain">
-            <div class="evo-space-5"></div>
-      <ul class="evo-list-lines list-size-small margin-top-6">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Dataviz</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">URL</span>../image/brand/dataviz.png</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">SASS</span>$graphic_dataviz</li>
-        <li><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">CSS</span>hrf-graphic-dataviz-bg</li>
-        <li><a href="../image/brand/dataviz.png" download><span class="hrf-color-4 evo-text-2 display-inline margin-right-10">PNG</span>Download Graphic</a></li>
-            <div class="evo-space-5"></div>
-      </ul>
-      <div class="evo-space"></div>
-    </div>
-
-</div><!-- /.Brand Graphics -->
-
-</div>
-
-
 </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="//use.edgefonts.net/source-code-pro:n2,n3,n4,n5,n6,n7,n9;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-serif-pro:n2,n3,n4,n6,n7,n9.js"></script>
 
 
 <!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-<!--         <script src="js/main.js"></script> -->
+<!--         <script src="../js/main.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

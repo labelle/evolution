@@ -1,0 +1,575 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Evolution HTML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="../css/evo-elements.css" rel="stylesheet" type="text/css">
+
+<!--         <link rel="stylesheet" href="../css/bootstrap-grid.css"> -->
+<!--         <link rel="stylesheet" href="../css/evo-reset.css"> -->
+<!--         <link rel="stylesheet" href="../css/evo-elements.css">  -->
+
+<style>
+  #custom{
+    display: none;
+  }
+
+  .site-container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+/*    // background-color:#f7f7f7;*/
+}
+
+.switcher-bar {
+  position: fixed;
+/*  height: 5rem;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+/*  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+  padding-left: 3em;*/
+}
+
+.switcher-bar {
+/*    box-shadow: 0 10px 1px -1px;*/
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+
+.switcher-bar select:focus,
+.switcher-bar input:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 174, 239, .8);
+    outline: 0;
+}
+
+.switcher-bar select,
+.switcher-bar input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb( 89, 89, 89 , .8);
+/*  color: white;*/
+/*  font: inherit;*/
+/*  font-family: arial; // font-family: sans-serif;*/
+  font-size: 100%;
+  line-height: normal; /*// line-height: 1.15*/
+/*  margin: 0;*/
+/*  margin-top: 2em;*/
+  margin-left: 3em;
+  width: auto;
+  background-color: inherit;
+/*  padding: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;*/
+}
+
+.switcher-bar {
+/*    box-shadow: 0 10px 1px -1px;*/
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+
+.switcher-bar select:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 174, 239, .8);
+    outline: 0;
+}
+
+.switcher-bar select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb( 89, 89, 89 , .8);
+/*  color: white;*/
+/*  font: inherit;*/
+/*  font-family: arial; // font-family: sans-serif;*/
+  font-size: 100%;
+  line-height: normal; /*// line-height: 1.15*/
+/*  margin: 0;*/
+/*  margin-top: 2em;*/
+  margin-left: 3em;
+  width: auto;
+  background-color: inherit;
+/*  padding: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;*/
+}
+
+
+
+</style>
+<!-- <script src="//use.edgefonts.net/open-sans.js"></script> -->
+</head>
+<body class="site-container">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Main navigation -->
+<!-- <header role="banner">
+</header> -->
+<main>
+
+<div class="switcher-bar">
+<select id="style-list">
+    <option value="evo-elements.css">Evo</option>
+    <option value="html-opp.css">Opp</option>
+    <option value="foundation.min.css">Foundation</option>
+    <option value="bootstrap.min.css">Bootstrap</option>
+    <option value="">None</option>
+    <option value="custom">Custom</option>
+</select>
+
+<br>
+<!--  custom input box for custom style sheet name-->
+<input type="text" id="custom" placeholder="Please enter css file name"  />
+</div>
+
+
+<section id="evoHtmlIntro">
+
+<h1 class="evo-text-13" style="margin-bottom: 0;">HTML</h1>
+
+<p class="evo-measure">Unstyled HTML elements for reference as you style HTML tags and test CSS resets.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- Begin HTML Examples -->
+
+<section class="evoHtml">
+
+<code>&lt;hr /&gt;</code>
+<hr />
+
+<div class="evo-space-10"></div>
+
+This sentence has no html tag and no css class, other than the <code>&lt;body&gt;</code> and <code>&lt;main&gt;</code> tags.
+
+</section>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a&gt;</code>
+<a>Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a href="#"&gt;</code>
+<a href="#" class="a-link">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a:link&gt;</code>
+<a class="a-link">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a:visited&gt;</code>
+<a class="a-visited">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a:hover&gt;</code>
+<a class="a-hover">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a:active&gt;</code>
+<a class="a-active">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a:focus&gt;</code>
+<a class="a-focus">Pack my box with five dozen liquor jugs.</a>
+
+<div class="evo-space-10"></div>
+
+
+
+<code>&lt;h1&gt;</code>
+<h1>Experience Design Made Simple for living design systems</h1>
+
+<code>&lt;h2&gt;</code>
+<h2>Experience Design Made Simple for living design systems</h2>
+
+<code>&lt;h3&gt;</code>
+<h3>Experience Design Made Simple for living design systems</h3>
+
+<code>&lt;h4&gt;</code>
+<h4>Experience Design Made Simple for living design systems</h4>
+
+<code>&lt;h5&gt;</code>
+<h5>Experience Design Made Simple for living design systems</h5>
+
+<code>&lt;h6&gt;</code>
+<h6>Experience Design Made Simple for living design systems</h6>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;p&gt;</code>
+<p>Experience Design Made Simple for living design systems</p>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;ul&gt;</code>
+<ul>
+<li><code>&lt;li&gt;</code>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;ol&gt;</code>
+<ol>
+<li><code>&lt;li&gt;</code>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;div&gt;</code>
+<div>Experience Design Made Simple for living design systems</div>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;section&gt;</code>
+<section>Experience Design Made Simple for living design systems</section>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;code&gt;</code>
+<br />
+<code>Experience Design Made Simple for living design systems</code>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;pre&gt;</code>
+<pre>
+Experience Design Made Simple for living design systems
+</pre>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;a href="#"&gt;</code>
+
+<a href="#">link text</a>
+
+<div class="evo-space-10"></div>
+
+
+
+<form>
+<fieldset>
+<legend>Sample form elements</legend>
+
+<code>&lt;input type="text" id="text" placeholder="placeholder text" /&gt;</code>
+<br />
+<label for="text">enter text</label>
+<input type="text" id="text" placeholder="placeholder text" />
+<input type="text" id="text" placeholder="text" value="text content example" />
+<input type="text" id="text-disabled" placeholder="disabled" disabled />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="password" name="password" placeholder="password" /&gt;</code>
+<br />
+<label for="password">enter password</label>
+<input type="password" id="password" name="password" placeholder="password" />
+<input type="password" id="password" name="password" placeholder="password" value="password example" />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;type="radio" id="radio1" name="radio" value="value" checked /&gt;</code>
+<code>&lt;label for="radio1"&gt;</code>
+<br />
+<input type="radio" id="radio1" name="radio" value="value" checked /><label for="radio1">radio 1</label>
+<input type="radio" id="radio1" name="radio" value="value"  /><label for="radio2">radio 2</label>
+<input type="radio" id="radio3" name="radio" value="value" disabled /><label for="radio3">disabled</label>
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="checkbox" id="checkbox1" checked /&gt;</code>
+<code>&lt;label for="checkbox1"&gt;</code>
+<br />
+<input type="checkbox" id="checkbox1" checked /><label for="checkbox1">checkbox 1</label>
+<input type="checkbox" id="checkbox2" /><label for="checkbox2">checkbox 2</label>
+<input type="checkbox" id="checkbox3" disabled /><label for="checkbox3">disabled</label>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;select id="select"&gt;</code>
+<br />
+<label for="select">Choose one</label>
+<select id="select">
+    <option value="option1">option 1</option>
+    <option value="option2">option 2</option>
+    <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+<select id="select-disabled" disabled >
+<option value="option1">disabled</option>
+</select>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="number" placeholder="number" /&gt;</code>
+<br />
+<label for="number">select a number</label>
+<input type="number" id="number" placeholder="number" />
+<input type="number" id="number-disabled" placeholder="disabled" disabled />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="file" id="file" /&gt;</code>
+<br />
+<label for="file">upload a file</label>
+<input type="file" id="file" />
+<input type="file" id="file-disabled" disabled />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;textarea name="message" placeholder="enter a message" rows="3" cols="auto" /&gt;</code>
+<br />
+<label for="time">enter a message</label>
+<textarea name="message" id="time" placeholder="enter a message" rows="3" cols="auto" ></textarea>
+<textarea name="message" id="time-2" placeholder="enter a message" rows="3" cols="auto">Message content example.</textarea>
+<textarea name="message" id="time-disabled" placeholder="disabled" rows="3" cols="auto" disabled></textarea>
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="date" id="date" placeholder="date"&gt;</code>
+<br />
+<label for="date">select a date</label>
+<input type="date" id="date" placeholder="date" />
+<input type="date" id="date-disabled" placeholder="disabled" disabled />
+
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="range" name="points" min="0" max="10" /&gt;</code>
+<br />
+<label for="range">select a number</label>
+<input type="range" id="range" name="points" min="0" max="10" />
+<input type="range" id="range-disabled" name="points" min="0" max="10" disabled />
+
+<div class="evo-space-10"></div>
+
+
+<code>&lt;input type="color" name="yourcolor" /&gt;</code>
+<br />
+<label for="color">select a color</label>
+<input type="color" id="color" name="yourcolor" />
+<input type="color" id="color-disabled" name="yourcolor" disabled />
+
+<div class="evo-space-10"></div>
+
+<code>&lt;input type="button" onclick="alert('Hello World!')" value="submit" /&gt;</code>
+<br />
+<input type="button" onclick="alert('Hello World!')" value="submit" />
+<input type="button" onclick="alert('Hello World!')" value="disabled" disabled />
+
+<div class="evo-space-10"></div>
+
+</fieldset>
+
+</form>
+
+
+<code>&lt;button&gt;</code>
+<br />
+<button>Button</button>
+<button disabled>Button</button>
+
+<div class="evo-space-10"></div>
+
+<!-- begin table -->
+
+<code>&lt;table&gt;</code>
+<br />
+<table>
+  <tr>
+    <th>First</th>
+    <th>Last</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Kevin</td>
+    <td>Stark</td> 
+    <td>44</td>
+  </tr>
+  <tr>
+    <td>Emily</td>
+    <td>Smith</td> 
+    <td>34</td>
+  </tr>
+</table>
+
+<!-- end table -->
+
+<!-- beging extra table -->
+
+<p>Simple table with header</p>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+
+<p>Table with thead, tfoot, and tbody</p>
+<table>
+  <thead>
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Footer content 1</td>
+      <td>Footer content 2</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table with colgroup</p>
+<table>
+  <colgroup span="4"></colgroup>
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+    <th>Language</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+
+<p>Table with colgroup and col</p>
+<table>
+  <colgroup>
+    <col style="background-color: #0f0">
+    <col span="2">
+  </colgroup>
+  <tr>
+    <th>Lime</th>
+    <th>Lemon</th>
+    <th>Orange</th>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+</table>
+
+<p>Simple table with caption</p>
+<table>
+  <caption>Awesome caption</caption>
+  <tr>
+    <td>Awesome data</td>
+  </tr>
+</table>
+
+<!-- end extra table -->
+
+<div class="evo-space-10"></div>
+
+<code>&lt;img&gt;</code>
+<br />
+<img src="http://tinyurl.com/zxp2jkj" alt="unsplash girl" width="100%">
+
+
+
+</main>
+
+<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ -->        
+ <!--         <script src="../../js/main.js"></script> -->
+
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() { 
+// when dropdown item changes its state then this event will fire
+  $("#style-list").change(function() { 
+    // if we select custom from dropdown, make visible the custom textbox for custom stylesheet.
+    // otherwise set stylesheet which we have selected
+    if($(this).val()=="custom")
+    {
+      $("#custom").css("display","block");
+      $("link").attr("href","css-for-elements/html-theme.css"); 
+    }else{
+      $("#custom").css("display","none");
+      // Allow fully custom url by removing this below--> "css-for-html/"+
+      $("link").attr("href","css-for-elements/"+$(this).val());  
+    }
+    return false;
+  });
+
+// when entering style sheet name in textbox it will set that file name in style of html doc
+  $("#custom").change(function(){
+    $("link").attr("href","css-for-elements/"+$(this).val());
+  });
+});
+</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--         <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+    </body>
+</html>

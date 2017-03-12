@@ -4,7 +4,6 @@
 
 @import "../variables";
 
-/*      GRID     */
 
 
 
@@ -105,7 +104,7 @@
     .four-up  {
         width: 22.5%;
         margin-right: 2.5%;
-        position: inline-block;
+        // display: inline-block;
         float: left;
 
     }
@@ -115,7 +114,7 @@
     .four-up  {
         width: 47.5%;
         margin-right: 2.5%;
-        position: inline-block;
+        // display: inline-block;
         float: left;
 
     }
@@ -124,15 +123,49 @@
 @media screen and (max-width: 480px) {
     .four-up  {
         width: 100%;
-        position: inline-block;
+        // display: inline-block;
     float: left;
 
     }
 }
 
 
-
 // two-up
+
+
+.row .two-up:first-of-type {
+  margin-right: 2%;
+}
+.row .two-up:last-of-type {
+  margin-left: 2%;
+}  
+
+@media screen and (min-width: 1101px) {
+    .two-up  {
+        width: 49%;
+        // display: inline-block;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .two-up  {
+        width: 49%;
+        // display: inline-block;
+        float: left;
+    }
+}
+    @media screen and (max-width: 480px) {
+    .two-up  {
+        width: 100%;
+         // display: inline-block;
+        float: left;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 480px) {
 #{$evo}-grid-1,
@@ -147,8 +180,8 @@
 #{$evo}-grid-10,
 #{$evo}-grid-11,
 #{$evo}-grid-12 {
-        width: 100%;
-        position: inline-block;
+    width: 100%;
+    // display: inline-block;
     float: left;
 
     }

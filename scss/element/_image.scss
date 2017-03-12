@@ -67,6 +67,17 @@ $image_corner_bottom_left:   #{$u-23}rem;
     // border: 0;
 }
 
+.image-bg-test {
+     width: 100%; 
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     vertical-align: top;
+     // background-color: gray; // #{$color_fpo};
+    // border-style: none;
+    // border: 0;
+}
+
 .image-bg-fpo-test {
     background-image: url(#{$image_fpo});
 }
