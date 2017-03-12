@@ -99,6 +99,9 @@
 .hrf-icon-circle-chevron-bg-white {
   background-image: url(../image/brand/circle-chevron-book-white.svg); }
 
+.hrf-icon-circle-play-bg-white {
+  background-image: url(../image/brand/circle-play-book-white.svg); }
+
 .hrf-icon-social-facebook-bg-white {
   background-image: url(../image/brand/hrf-facebook-white.svg); }
 
@@ -116,9 +119,6 @@
 
 .hrf-icon-grid-bg-gray {
   background-image: url(../image/brand/grid-book-gray.svg); }
-
-.hrf-icon-circle-play-bg {
-  background-image: url(../image/brand/circle-play-book.svg); }
 
 .hrf-icon-circle-plus-bg {
   background-image: url(../image/brand/circle-plus-book.svg); }

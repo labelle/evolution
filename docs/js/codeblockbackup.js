@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.evo-codeblock').each(function() {
             // Grabs the identifier based on being first in order.
             var identifier = $(this).attr('data-identifier');
-            // Get the html for the div with matching identifier and remove phantom characters
+            // Get the html for the div with matching identifier
             var html = $('[data-identifier=' + identifier + ']').html().replace(/=""/g,""); 
             // Fills the html in the target.
             $('[data-target=' + identifier + '] pre code').text(html);
