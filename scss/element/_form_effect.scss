@@ -3,31 +3,6 @@
 @import "../variables";
 
 
-// /*********************
-//     FLOATING LABELS
-// *********************/
-
-// Text Area
-
-// Starting postion
-textarea ~ .label-floating  {
-  position: absolute;
-  pointer-events: none;
-  left: 1em !important;
-  top: 1em !important;
-  transition: 0.3s ease all;
-}
-
-// Ending position
-textarea:focus ~ .label-floating,
-textarea:not(:focus):valid ~ .label-floating {
-  top: -5em;
-  bottom: 1em;
-  color: #00aeef;
-  left: 1.5em;
-  font-size: .75em;
-  opacity: 1;
-}
 
 
 // /*********************
@@ -65,6 +40,10 @@ textarea:hover {
     box-shadow: #{$focus_box_shadow};
     transition: #{$focus_transition};
     outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
   }
 
 
@@ -84,6 +63,10 @@ textarea#{$evo}-form-box:focus {
     // box-shadow: #{$focus_box_shadow};
     // transition: #{$focus_transition};
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
   }
 
 // Form line focus
@@ -100,6 +83,10 @@ textarea#{$evo}-form-line:focus {
     // box-shadow: #{$focus_box_shadow};
     // transition: #{$focus_transition};
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
   }
 
 
@@ -118,6 +105,10 @@ textarea.focus-black:focus {
     // border-color: #{$evo_black};
     // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
 }
 
 // White color focus
@@ -135,6 +126,10 @@ textarea.focus-white:focus {
     border-color: #{$evo_white};
     // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
 }
 
 
@@ -153,6 +148,10 @@ textarea.focus-blue:focus {
     border-color: #{$color_15};
     // box-shadow: 0 1px 1px rgba(0, 115, 185, 0.075) inset, 0 0 8px rgba(0, 115, 185, 0.6);
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
 }
 
 // Green color focus
@@ -170,6 +169,10 @@ textarea.focus-green:focus {
     border-color: #{$color_21};
     // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
 }
 
 // Red color focus
@@ -185,6 +188,10 @@ textarea.focus-red:focus {
     border-color: #{$color_5};
     // box-shadow: 0 1px 1px rgba(235, 33, 46, 0.075) inset, 0 0 8px rgba(235, 33, 46, 0.6);
     // outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
 }
 
 
@@ -194,11 +201,36 @@ textarea.focus-red:focus {
 //     FLOATING LABELS
 // *********************/
 
+
+
 // Floating Labels
 // https://css-tricks.com/float-labels-css/
 // http://codepen.io/collection/IjFib/
 // Label must be placed underneath the input
 
+
+
+// Text Area
+
+// Starting postion
+textarea ~ .label-floating  {
+  position: absolute;
+  pointer-events: none;
+  left: 1em !important;
+  top: 1em !important;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+textarea:focus ~ .label-floating,
+textarea:not(:focus):valid ~ .label-floating {
+  top: -5em;
+  bottom: 1em;
+  color: #00aeef;
+  left: 1.5em;
+  font-size: .75em;
+  opacity: 1;
+}
 
 
 // How to get labels to appear as if they are before the form field

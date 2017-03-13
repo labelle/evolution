@@ -456,10 +456,11 @@ $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075)
 // Form Select Dropdown
 // Replace icon
 // url / percent to right / size of icon / no repeat / background color
-$form_chevron_background:           url(../image/elements/chevron-down-book.svg) 96% / 1.5em no-repeat #{$gray_5};
+$form_chevron_down_background:      url(../image/elements/chevron-down-book.svg) 96% / 1.5em no-repeat #{$gray_5};
 $form_triangle_background:          url(../image/elements/triangle-down-solid.svg) 96% / .75em no-repeat #{$gray_5};
 $form_search_background:            url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
 $form_email_background:             url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
+$form_chevron_background:           url(../image/elements/chevron-book.svg) 96% / 1.5em no-repeat #{$gray_5};
 $form_url_background:               url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
 $form_password_background:          url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};
 $form_password_lock_background:     url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg) 96% / 1.5em no-repeat scroll #{$gray_5};

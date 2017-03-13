@@ -476,6 +476,18 @@ progress, meter {
 .float-right {
   float: right; }
 
+.vertical-align-baseline {
+  vertical-align: baseline; }
+
+.vertical-align-middle {
+  vertical-align: middle; }
+
+.vertical-align-top {
+  vertical-align: top; }
+
+.vertical-align-bottom {
+  vertical-align: bottom; }
+
 .pre {
   overflow-x: auto;
   overflow-y: hidden;
@@ -5552,9 +5564,11 @@ a.evo-link-icon:before {
   width: 1em;
   background-image: url(../image/elements/circle-chevron-book.svg);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   left: -1.5em;
-  top: .10em;
+  top: 0;
+  vertical-align: middle;
   opacity: .5; }
 
 a.evo-link-icon:hover:before {
@@ -5573,9 +5587,11 @@ a.evo-link-icon:hover:before {
   width: 1em;
   background-image: url(../image/elements/circle-chevron-book.svg);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   left: -1.5em;
-  top: .15em; }
+  top: 0;
+  vertical-align: middle; }
 
 .icon-list-inverse li:before {
   background-image: url(../image/elements/circle-chevron-book-green.svg); }
@@ -5584,8 +5600,7 @@ a.evo-link-icon:hover:before {
 a.icon-size-xxx-large:before {
   height: 2em;
   width: 2em;
-  left: -2.5em;
-  top: -.45em; }
+  left: -2.5em; }
 
 .icon-size-xxx-large li {
   margin-left: 2.5em; }
@@ -5597,8 +5612,7 @@ a.icon-size-xxx-large {
 a.icon-size-xx-large:before {
   height: 1.75em;
   width: 1.75em;
-  left: -2.25em;
-  top: -.3em; }
+  left: -2.25em; }
 
 .icon-size-xx-large li {
   margin-left: 2.25em; }
@@ -5610,8 +5624,7 @@ a.icon-size-xx-large {
 a.icon-size-x-large:before {
   height: 1.5em;
   width: 1.5em;
-  left: -2em;
-  top: -.2em; }
+  left: -2em; }
 
 .icon-size-x-large li {
   margin-left: 2em; }
@@ -5623,8 +5636,7 @@ a.icon-size-x-large {
 a.icon-size-large:before {
   height: 1.25em;
   width: 1.25em;
-  left: -1.75em;
-  top: -.05em; }
+  left: -1.75em; }
 
 .icon-size-large li {
   margin-left: 1.75em; }
@@ -5636,8 +5648,7 @@ a.icon-size-large {
 a.icon-size-medium:before {
   height: 1em;
   width: 1em;
-  left: -1.5em;
-  top: .05em; }
+  left: -1.5em; }
 
 .icon-size-medium li {
   margin-left: 1.5em; }
@@ -5649,8 +5660,7 @@ a.icon-size-medium {
 a.icon-size-small:before {
   height: .75em;
   width: .75em;
-  left: -1.25em;
-  top: .3em; }
+  left: -1.25em; }
 
 .icon-size-small li {
   margin-left: 1.25em; }
@@ -5662,8 +5672,7 @@ a.icon-size-small {
 a.icon-size-x-small:before {
   height: .5em;
   width: .5em;
-  left: -1em;
-  top: .3em; }
+  left: -1em; }
 
 .icon-size-x-small li {
   margin-left: 1em; }
@@ -5675,8 +5684,7 @@ a.icon-size-x-small {
 a.icon-size-xx-small:before {
   height: .35em;
   width: .35em;
-  left: -.75em;
-  top: .425em; }
+  left: -.75em; }
 
 .icon-size-xx-small li {
   margin-left: .75em; }
@@ -6215,6 +6223,7 @@ input.evo-bullet-button:hover::before {
   color: #009877;
   opacity: 1; }
 
+label.evo-icon-button:before,
 a.evo-icon-button:before,
 button.evo-icon-button:before {
   content: '';
@@ -6226,14 +6235,22 @@ button.evo-icon-button:before {
   width: 1em;
   background-image: url(../image/elements/circle-chevron-book.svg);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   left: -1.5em;
-  top: .9em; }
+  top: auto;
+  vertical-align: middle; }
 
+label.evo-icon-button,
 a.evo-icon-button,
 button.evo-icon-button {
   padding-left: 2.5em;
   position: relative; }
+
+label.button-upload:before,
+a.button-upload:before,
+button.button-upload:before {
+  background-image: url("../image/brand/upload-book.svg"); }
 
 a.evo-icon-button-2:before,
 button.evo-icon-button-2:before {
@@ -6246,9 +6263,11 @@ button.evo-icon-button-2:before {
   width: 1em;
   background-image: url(../image/elements/circle-chevron-book.svg);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   left: -1.5em;
-  top: .9em; }
+  top: auto;
+  vertical-align: middle; }
 
 a.evo-icon-button-2,
 button.evo-icon-button-2 {
@@ -6424,7 +6443,7 @@ span.borderborder:hover {
   height: 2em;
   width: 2em;
   left: -2.5em;
-  top: -.45em; }
+  top: .65em; }
 
 .list-icon-xxx-large li {
   margin-left: 2.5em; }
@@ -6433,7 +6452,7 @@ span.borderborder:hover {
   height: 1.75em;
   width: 1.75em;
   left: -2.25em;
-  top: -.3em; }
+  top: .65em; }
 
 .list-icon-xx-large li {
   margin-left: 2.25em; }
@@ -6442,7 +6461,7 @@ span.borderborder:hover {
   height: 1.5em;
   width: 1.5em;
   left: -2em;
-  top: -.15em; }
+  top: .65em; }
 
 .list-icon-x-large li {
   margin-left: 2em; }
@@ -6451,7 +6470,7 @@ span.borderborder:hover {
   height: 1.25em;
   width: 1.25em;
   left: -1.75em;
-  top: 0; }
+  top: .65em; }
 
 .list-icon-large li {
   margin-left: 1.75em; }
@@ -6460,7 +6479,7 @@ span.borderborder:hover {
   height: 1em;
   width: 1em;
   left: -1.5em;
-  top: .15em; }
+  top: .65em; }
 
 .list-icon-medium li {
   margin-left: 1.5em; }
@@ -6469,7 +6488,7 @@ span.borderborder:hover {
   height: .75em;
   width: .75em;
   left: -1.25em;
-  top: .3em; }
+  top: .65em; }
 
 .list-icon-small li {
   margin-left: 1.25em; }
@@ -6478,7 +6497,7 @@ span.borderborder:hover {
   height: .5em;
   width: .5em;
   left: -1em;
-  top: .425em; }
+  top: .7em; }
 
 .list-icon-x-small li {
   margin-left: 1em; }
@@ -6487,26 +6506,42 @@ span.borderborder:hover {
   height: .35em;
   width: .35em;
   left: -.75em;
-  top: .45em; }
+  top: .65em; }
 
 .list-icon-xx-small li {
   margin-left: .75em; }
 
 .list-padding-thick li {
-  padding-bottom: 1.25em !important;
-  padding-top: 1.25em !important; }
+  padding-bottom: 1.25em;
+  padding-top: 1.25em; }
+
+.list-padding-thick li:before {
+  padding-bottom: inherit;
+  padding-top: inherit; }
 
 .list-padding-medium li {
   padding-bottom: 1em !important;
   padding-top: 1em !important; }
 
-.list-padding-thin li {
-  padding-bottom: .5em !important;
-  padding-top: .5em !important; }
+.list-padding-medium li:before {
+  padding-bottom: inherit;
+  padding-top: inherit; }
 
-.list-padding-none li {
+.list-padding-thin li {
+  padding-bottom: .65em !important;
+  padding-top: .65em !important; }
+
+.list-padding-thin li:before {
+  padding-bottom: inherit;
+  padding-top: inherit; }
+
+.list-padding-none li:before {
   padding-bottom: 0 !important;
   padding-top: 0 !important; }
+
+.list-padding-none li:before {
+  padding-bottom: inherit;
+  padding-top: inherit; }
 
 .list-margin-none li {
   margin-bottom: 0; }
@@ -10552,6 +10587,25 @@ textarea:focus {
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
+  .form-focus + label,
+  .evo-focus:focus + label,
+  .uneditable-input:focus + label,
+  select:focus + label,
+  input:focus + label,
+  input[type]:focus + label,
+  textarea:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
+
+.disabled + label,
+.uneditable-input:disabled + label,
+select:disabled + label,
+input:disabled + label,
+input[type]:disabled + label,
+textarea:disabled + label,
+[disabled] + label {
+  opacity: 0.5;
+  cursor: not-allowed; }
 
 fieldset {
   display: block;
@@ -10636,10 +10690,52 @@ select::-ms-expand {
 input.evo-form:focus {
   border-bottom: 1px solid #00aeef !important;
   transition: 0.5s ease all; }
+  input.evo-form:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 textarea.evo-form:focus {
   border-bottom: 1px solid #00aeef !important;
   transition: 0.5s ease all; }
+  textarea.evo-form:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
+
+label.form-radio,
+label.form-checkbox {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em; }
+
+.form-radio input,
+.form-checkbox input {
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -.3em;
+  *overflow: hidden; }
+
+fieldset.overflow {
+  overflow: hidden; }
+
+.form-checkbox-inline,
+.form-radio-inline {
+  float: left;
+  clear: none;
+  margin-left: .1em; }
+
+.form-checkbox-inline label,
+.form-radio-inline label {
+  float: left;
+  clear: none;
+  display: block; }
+
+.form-checkbox-inline .form-checkbox:not(:first-of-type) input,
+.form-radio-inline .form-radio:not(:first-of-type) input {
+  margin-left: 1em; }
 
 /*********************
       CHECKBOX 
@@ -10656,6 +10752,9 @@ textarea.evo-form:focus {
 .form-email {
   background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
 
+.form-chevron {
+  background: url(../image/elements/chevron-book.svg) 96%/1.5em no-repeat #f2f2f2; }
+
 .form-url {
   background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
 
@@ -10668,7 +10767,7 @@ textarea.evo-form:focus {
 .form-triangle {
   background: url(../image/elements/triangle-down-solid.svg) 96%/0.75em no-repeat #f2f2f2 !important; }
 
-.form-chevron {
+.form-chevron-down {
   background: url(../image/elements/chevron-down-book.svg) 96%/1.5em no-repeat #f2f2f2 !important; }
 
 label.evo-button input[type="file"] {
@@ -10683,35 +10782,6 @@ label.evo-button :invalid + span {
 label.evo-button :valid + span {
   color: #4A4;
   border-color: #4A4 !important; }
-
-/*********************
-    INPUT BUTTONS
-*********************/
-.evo-form-input .inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1; }
-
-.evo-form-input .inputfile + label {
-  font-size: 1.25em;
-  font-weight: 700;
-  color: white;
-  background-color: black;
-  display: inline-block; }
-
-.evo-form-input .inputfile:focus + label,
-.evo-form-input .inputfile + label:hover {
-  background-color: gray; }
-
-.evo-form-input .inputfile:focus + label {
-  outline: 1px dotted #000;
-  outline: -webkit-focus-ring-color auto 5px; }
-
-.evo-form-input .inputfile + label {
-  cursor: pointer; }
 
 .evo-form-line,
 input[type="text"].evo-form-line,
@@ -10804,22 +10874,6 @@ input.evo-form-box:focus {
 textarea.evo-form-box:focus {
   border-bottom-width: rgba(26, 154, 214, 0.8) !important; }
 
-textarea ~ .label-floating {
-  position: absolute;
-  pointer-events: none;
-  left: 1em !important;
-  top: 1em !important;
-  transition: 0.3s ease all; }
-
-textarea:focus ~ .label-floating,
-textarea:not(:focus):valid ~ .label-floating {
-  top: -5em;
-  bottom: 1em;
-  color: #00aeef;
-  left: 1.5em;
-  font-size: .75em;
-  opacity: 1; }
-
 .form-focus,
 .evo-form-focus:focus,
 .uneditable-input:focus,
@@ -10841,6 +10895,22 @@ textarea:hover {
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
+  .form-focus + label,
+  .evo-form-focus:focus + label,
+  .uneditable-input:focus + label,
+  select:focus + label,
+  input:focus + label,
+  input[type]:focus + label,
+  textarea:focus + label,
+  .form-hover + label,
+  .evo-form-hover:hover + label,
+  .uneditable-input:hover + label,
+  select:hover + label,
+  input:hover + label,
+  input[type]:hover + label,
+  textarea:hover + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .evo-form-box-focus,
 .evo-form-box:focus,
@@ -10852,6 +10922,14 @@ textarea.evo-form-box:focus {
   border-bottom-color: rgba(26, 154, 214, 0.8);
   border-left-color: rgba(26, 154, 214, 0.8);
   border-right-color: rgba(26, 154, 214, 0.8); }
+  .evo-form-box-focus + label,
+  .evo-form-box:focus + label,
+  select.evo-form-box:focus + label,
+  input.evo-form-box:focus + label,
+  input[type].evo-form-box:focus + label,
+  textarea.evo-form-box:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .evo-form-line-focus,
 .evo-form-line:focus,
@@ -10860,6 +10938,14 @@ input.evo-form-line:focus,
 input[type].evo-form-line:focus,
 textarea.evo-form-line:focus {
   border-bottom-color: rgba(26, 154, 214, 0.8); }
+  .evo-form-line-focus + label,
+  .evo-form-line:focus + label,
+  select.evo-form-line:focus + label,
+  input.evo-form-line:focus + label,
+  input[type].evo-form-line:focus + label,
+  textarea.evo-form-line:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .form-focus-black,
 .focus-black:focus,
@@ -10872,6 +10958,15 @@ textarea.focus-black:focus {
   border-bottom-color: black;
   border-left-color: black;
   border-right-color: black; }
+  .form-focus-black + label,
+  .focus-black:focus + label,
+  .uneditable-input-black:focus + label,
+  select.focus-black:focus + label,
+  input.focus-black:focus + label,
+  input[type].focus-black:focus + label,
+  textarea.focus-black:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .form-focus-white,
 .focus-white:focus,
@@ -10885,6 +10980,15 @@ textarea.focus-white:focus {
   border-left-color: black;
   border-right-color: black;
   border-color: white; }
+  .form-focus-white + label,
+  .focus-white:focus + label,
+  .uneditable-input-white:focus + label,
+  select.focus-white:focus + label,
+  input.focus-white:focus + label,
+  input[type].focus-white:focus + label,
+  textarea.focus-white:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .form-focus-blue,
 .focus-blue:focus,
@@ -10898,6 +11002,15 @@ textarea.focus-blue:focus {
   border-left-color: #0073b9;
   border-right-color: #0073b9;
   border-color: #0073b9; }
+  .form-focus-blue + label,
+  .focus-blue:focus + label,
+  .uneditable-input-blue:focus + label,
+  select.focus-blue:focus + label,
+  input.focus-blue:focus + label,
+  input[type].focus-blue:focus + label,
+  textarea.focus-blue:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .form-focus-green,
 .focus-green:focus,
@@ -10911,6 +11024,15 @@ textarea.focus-green:focus {
   border-left-color: #00a453;
   border-right-color: #00a453;
   border-color: #00a453; }
+  .form-focus-green + label,
+  .focus-green:focus + label,
+  .uneditable-input-green:focus + label,
+  select.focus-green:focus + label,
+  input.focus-green:focus + label,
+  input[type].focus-green:focus + label,
+  textarea.focus-green:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
 
 .form-focus-red,
 .focus-red:focus,
@@ -10920,6 +11042,31 @@ input.focus-red:focus,
 input[type].focus-red:focus,
 textarea.focus-red:focus {
   border-color: #eb212e; }
+  .form-focus-red + label,
+  .focus-red:focus + label,
+  .uneditable-input-red:focus + label,
+  select.focus-red:focus + label,
+  input.focus-red:focus + label,
+  input[type].focus-red:focus + label,
+  textarea.focus-red:focus + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
+
+textarea ~ .label-floating {
+  position: absolute;
+  pointer-events: none;
+  left: 1em !important;
+  top: 1em !important;
+  transition: 0.3s ease all; }
+
+textarea:focus ~ .label-floating,
+textarea:not(:focus):valid ~ .label-floating {
+  top: -5em;
+  bottom: 1em;
+  color: #00aeef;
+  left: 1.5em;
+  font-size: .75em;
+  opacity: 1; }
 
 .label-floating {
   position: absolute;

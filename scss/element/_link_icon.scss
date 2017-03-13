@@ -23,10 +23,11 @@ height: 1em;
 width: 1em;
 background-image: url(#{$icon_link_background}); 
 background-size: contain;
-// background-position: auto;
+background-position: center;
 background-repeat:no-repeat; 
 left: -1.5em;
-top: .10em;
+top: 0;
+vertical-align: middle;
 opacity: .5;
 }
 

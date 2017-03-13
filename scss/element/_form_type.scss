@@ -20,6 +20,11 @@
   background: #{$form_email_background};
 }
 
+.form-chevron {
+  background: #{$form_chevron_background};
+}
+
+
 .form-url {
   background: #{$form_url_background};
 }
@@ -39,8 +44,8 @@
   background: #{$form_triangle_background} !important;
 }
 
-.form-chevron {
-  background: #{$form_chevron_background} !important;
+.form-chevron-down {
+  background: #{$form_chevron_down_background} !important;
 }
 
 
@@ -50,7 +55,7 @@
 // *********************/
 
 // http://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button#21842275
-
+// Note that the _button_icon.scss file has a condition for the label tag that relates to the custom button available for the custom upload button
 label.evo-button input[type="file"] {
     position: fixed;
     top: -1000px;
@@ -77,6 +82,7 @@ label.evo-button input[type="file"] {
 //   border-width: 0;
 // }
 
+
 label.evo-button :invalid + span {
     color: inherit;
     border-color: inherit;
@@ -87,47 +93,14 @@ label.evo-button :valid + span {
     border-color: #4A4 !important;
 }
 
+// // This relates to the custom file upload button code in _button_icon.scss
+// label.evo-button:before :invalid {
+// background-image: url("../image/brand/chevron-book.svg") !important; 
+// }
 
-
-/*********************
-    INPUT BUTTONS
-*********************/
-
-
-.evo-form-input {
-
-  .inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-  }
-
-  .inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: $white;
-    background-color: black;
-    display: inline-block;
-  }
-
-  .inputfile:focus + label,
-  .inputfile + label:hover {
-    background-color: gray;
-  }
-
-  .inputfile:focus + label {
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
-  }
-
-  .inputfile + label {
-      cursor: pointer; // "hand" cursor
-    }
-
-  }
+// label.evo-button:before :valid {
+// background-image: url("../image/brand/download-book.svg") !important; 
+// }
 
 
   //   /* INPUT 1 */

@@ -4,7 +4,9 @@
 // @import "../variables/scale";
 // @import "box_mixin";
 
-// Evo List button
+// Evo icon button
+// The label version is for the custom file-upload button
+label#{$evo}-icon-button:before,
 a#{$evo}-icon-button:before,
 button#{$evo}-icon-button:before {
 content:''; 
@@ -16,12 +18,15 @@ height: 1em;
 width: 1em;
 background-image: url(#{$icon_list_background}); 
 background-size: contain;
-// background-position: auto;
+background-position: center;
 background-repeat:no-repeat; 
 left: -1.5em;
-top: .9em; // .95em
+top: auto; // or 0
+vertical-align: middle;
 }
 
+
+label#{$evo}-icon-button,
 a#{$evo}-icon-button,
 button#{$evo}-icon-button {
     padding-left: 2.5em;
@@ -30,6 +35,16 @@ button#{$evo}-icon-button {
     // list-style-type: none;
     // padding-left: -3em;
 }
+
+
+// BUTTON UPLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+label.button-upload:before,
+a.button-upload:before,
+button.button-upload:before {
+background-image: url("../image/brand/upload-book.svg"); 
+}
+
 
 
 
@@ -45,10 +60,11 @@ height: 1em;
 width: 1em;
 background-image: url(#{$icon_list_background}); 
 background-size: contain;
-// background-position: auto;
+background-position: center;
 background-repeat:no-repeat; 
 left: -1.5em;
-top: .9em; // .95em
+top: auto;
+vertical-align: middle;
 }
 
 a#{$evo}-icon-button-2,
@@ -60,6 +76,7 @@ button#{$evo}-icon-button-2 {
     // list-style-type: none;
     // padding-left: -3em;
 }
+
 
 
 // // Place this directly on a link class

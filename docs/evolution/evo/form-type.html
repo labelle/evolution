@@ -80,6 +80,10 @@
 
 <input type="email" name="email" placeholder="Email" class="evo-form form-email" />
 
+<div class="evo-space-5"></div>
+
+<input type="email" name="email" placeholder="Email" class="evo-form form-chevron" />
+
 <div class="evo-space-15"></div>
 
 
@@ -159,15 +163,23 @@
   <option value="option1">option 1</option>
   <option value="option2" selected>option 2</option>
   <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
 </select>
 
 <div class="evo-space-10"></div>
 
 <label for="select">Choose one</label>
-<select id="select" placeholder="choose one" class="evo-form form-chevron">
+<select id="select" placeholder="choose one" class="evo-form form-chevron-down">
   <option value="option1">option 1</option>
   <option value="option2" selected>option 2</option>
   <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
 </select>
 
 
@@ -215,8 +227,8 @@
 
 <div class="evo-space-15"></div>
 
-<label class="evo-button width-auto button-box-none">
-    <input type="file" required/>
+<label class="evo-button evo-icon-button ghost-color-to-ghost width-auto button-box-thin box-dashed button-upload">
+    <input type="file" multiple/>
     <span>Upload File</span>
 </label>
 
@@ -244,35 +256,27 @@
 
 <section id="InputCheckbox">
 
-<h2 class="evo-text-6">checkbox</h2>
+<h2 class="evo-text-6">form-checkbox</h2>
 
 <div class="evo-space"></div>
 
-                <legend>Pure CSS (custom focus indicator)</legend>
-                <div class="checkbox">
-                    <input id="checkbox1_freeshipping2" type="checkbox" name="freeshipping2">
-                    <label for="checkbox1_freeshipping2">Free Shipping</label>
-                </div>
-                <div class="checkbox">
-                    <input id="checkbox2_endssoon2" type="checkbox" name="endssoon2">
-                    <label for="checkbox2_endssoon2">Ends soon</label>
-                </div>
-                <div class="checkbox">
-                    <input id="checkbox3_zerobids2" type="checkbox" name="zerobids2">
-                    <label for="checkbox3_zerobids2">Zero bids</label>
-                </div>
+<label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
+
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;???????????input type="submit" class="evo-button" /&gt;
+<code class="evo-measure">&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2" /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3" /&gt;&nbsp;checkbox 3&lt;/label&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
-
+<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-checkbox</code> class, and place an <code>&lt;input type="checkbox"&gt;</code> element inside. Default input button styles are set in _variables.scss.</p>
 
 <div class="evo-space-20"></div>
 
@@ -280,38 +284,111 @@
 
 
 
-<!-- radio -->
 
-<section id="InputRadio">
+<!-- checkbox inline -->
 
-<h2 class="evo-text-6">radio</h2>
+<section id="InputCheckboxInline">
+
+<h2 class="evo-text-6">form-checkbox-inline</h2>
 
 <div class="evo-space"></div>
 
-        <span>
-            <input id="radio-group1_input1" name="radio-group1" type="radio" value="1" checked />
-            <label for="radio-group1_input1">Input 1</label>
-        </span>
-        <span>
-            <input id="radio-group1_input2" name="radio-group1" type="radio" value="2" />
-            <label for="radio-group1_input2">Input 2</label>
-        </span>
-        <span>
-            <input id="radio-group1_input3" name="radio-group1" type="radio" value="3" />
-            <label for="radio-group1_input3">Input 3</label>
-        </span>
+<fieldset class="overflow">
+  <div class="form-checkbox-inline">
+    <label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
+    <label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
+    <label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
+  </div>
+</fieldset>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;???????????input type="submit" class="evo-button" /&gt;
+<code class="evo-measure">&lt;fieldset class="overflow"&gt;
+  &lt;div class="form-checkbox-inline"&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2" /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3" /&gt;&nbsp;checkbox 3&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-checkbox-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then an <code>&lt;input type="checkbox"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _variables.scss.</p>
 
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
+
+<!-- radio -->
+
+<section id="InputRadio">
+
+<h2 class="evo-text-6">form-radio</h2>
+
+<div class="evo-space"></div>
+
+<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value" checked />&nbsp;radio 1</label>
+<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2</label>
+<label class="form-radio"><input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" checked /&gt;&nbsp;radio 1&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3&gt;/label&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-radio</code> class,and place an <code>&lt;input type="radio"&gt;</code> element inside. Default input button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- radio inline -->
+
+<section id="InputRadioInline">
+
+<h2 class="evo-text-6">form-radio-inline</h2>
+
+<div class="evo-space"></div>
+
+<fieldset class="overflow">
+  <div class="form-radio-inline">
+    <label class="form-radio"><input type="radio" id="radio1" name="radio" value="value" checked />&nbsp;radio 1</label>
+    <label class="form-radio"><input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2</label>
+    <label class="form-radio"><input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3</label>
+  </div>
+</fieldset>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;fieldset class="overflow"&gt;
+  &lt;div class="form-radio-inline"&gt;
+  &lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" checked /&gt;&nbsp;radio 1&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3&gt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-radio-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then a <code>&lt;input type="radio"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _variables.scss.</p>
 
 <div class="evo-space-20"></div>
 
