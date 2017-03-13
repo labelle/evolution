@@ -132,43 +132,57 @@ top: .65em; // .45em;
 // }
 
 .list-padding-thick li{
-    padding-bottom: 1.25em;
     padding-top: 1.25em;
+    padding-bottom: 1.25em;
+   &:first-of-type {
+    padding-top: 0;
 }
-.list-padding-thick li:before {
-    padding-bottom: inherit;
+   &:last-of-type {
+    padding-bottom: 0;
+}
+   &:before {
     padding-top: inherit;
+    padding-bottom: inherit;
+}
 }
 
 .list-padding-medium li {
-    padding-bottom: 1em !important;
-    padding-top: 1em !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+   &:first-of-type {
+    padding-top: 0;
 }
-
-.list-padding-medium li:before {
-    padding-bottom: inherit;
+   &:last-of-type {
+    padding-bottom: 0;
+}
+   &:before {
     padding-top: inherit;
+    padding-bottom: inherit;
+}
 }
 
 .list-padding-thin li {
-    padding-bottom: .65em !important;
-    padding-top: .65em !important;
+    padding-top: .65em;
+    padding-bottom: .65em;
+   &:first-of-type {
+    padding-top: 0;
 }
-
-.list-padding-thin li:before {
-    padding-bottom: inherit;
+   &:last-of-type {
+    padding-bottom: 0;
+}
+   &:before {
     padding-top: inherit;
-}
-
-
-.list-padding-none li:before {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
-}
-
-.list-padding-none li:before {
     padding-bottom: inherit;
+}
+}
+
+.list-padding-none li {
+    padding-top: 0;
+    padding-bottom: 0;
+    &:before {
     padding-top: inherit;
+    padding-bottom: inherit;
+}
 }
 
 
