@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HRF Layout</title>
+        <title>HRF Components</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -47,7 +47,7 @@
 <!-- Main navigation -->
 <!-- <header role="banner">
 </header> -->
-<main>
+<!-- <main> -->
 <!-- This line and above, edit only with global find and replace in sublime text -->
 
 <div class="container">
@@ -66,29 +66,13 @@
 
 <a href="../index.html"><p class="evo-text-2">Back to Index</p></a>
     <div class="evo-space"></div>
-    <h1 class="evo-text-10">HRF Layout</h1>
+    <h1 class="evo-text-10">HRF Components</h1>
       <div class="evo-space-5"></div>
     </div>
 
     <div class="col-xs-12">
-    <p class="text-measure">We use a responsive 12-column grid from Bootstrap 3. This grid has been customized to remove most of the Boostrap features and css resets, leaving only essential grid styles and grid functionality. To use it, <a href="../css/bootstrap-grid.css">grab the code</a> or simply connect to the style sheet.</p>
-    <code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="../css/bootstrap-grid.css"&gt;</code>
-    <div class="evo-space-10"></div>
-    <p class="text-measure">Be sure to follow the Bootstrap convention correctly by at least nesting a <code>col-xs-12</code> inside a <code>row</code>, and place the row inside a <code>container</code> as follows.</p>
-    <hr class="evo-line line-1 text-measure">
-    <div class="evo-codeblock-target">
-    <pre>
-<code>&lt;div class="container"&gt;
-  &lt;div class="row"&gt;
-   &lt;div class="col-xs-12"&gt;
-     &lt;!-- your content here --&gt;
-   &lt;/div&gt;&lt;!-- /.col --&gt;
-  &lt;/div&gt;&lt;!-- /.row --&gt;
-&lt;/div&gt;&lt;!-- /.container --&gt;</code>
-    </pre>
-    </div>
-    <div class="evo-space-5"></div>
-    <p class="text-measure">To allow elements to stretch the full-width of the screen, place them outside the <code>container</code>. Or, use <code>container-fluid</code> which stretches nearly to the edges of the screen. Use multiple containers in the page if necessary, but avoid nesting them.</p>
+    <p class="text-measure">Use the full HRF Evolution framework to make new components, and to use them in pages.</p>
+    <code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="../css/hrf-evolution.css"&gt;</code>
     <div class="evo-space-20"></div>
   </div>
   </section>
@@ -105,25 +89,43 @@
 <div class="row view-tall-25" id="designViewport">
   <div class="col-xs-12">
       <div class="evo-space-15"></div>
-       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Viewport Layouts</h2>
+       <h2 class="hrf-font-1 evo-box-top box-top-1 padding-top-15 padding-bottom-0">Hero Components</h2>
     <div class="evo-space-5"></div>
   </div>
 </div>
 </div>
 
 <!-- ********************* -->
-<!--    IMAGE HALF HERO PARALLAX    -->
+<!--    IMAGE HALF HERO   -->
 <!-- ********************* -->
 
-    <div class="evo-codeblock" data-identifier="viewport-half">
-<div class="view-tall-half image-bg-fpo image-bg-parallax"></div>
+<div class="evo-codeblock screen-full" data-identifier="viewport-half">
+<hr class="evo-line line-thin">
+<div class="screen-tall-half flex-center-vertical">
+<div class="container">
+<!-- begin alt 2 column grid -->
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+  <img class="image padding-10" src="../image/brand/logo-hrf.svg" />
+      <div class="evo-space-15"></div>
+  </div>
+  <div class="col-xs-12 col-sm-8">
+  <p class="evo-text evo-text-4 hrf-font-1">As the primary resource and advocate for science and environmental research on the Hudson River and its watershed, the Hudson River Foundation (HRF) connects the scientific community, policy makers, and the general public with a wealth of information and analysis. For the general public, the HRF offers research results, reports, and opportunities for education regarding efforts to restore and sustain the Hudson’s waters.</p> 
+      <div class="evo-space-15"></div>
+  </div>
+</div>
+<!-- end alt 2 column grid -->
+</div><!-- /.container -->
+
+</div>
+<div class="screen-tall-half view-wide-full hrf-image-texture-bg cover"></div>
     </div>
 
 <div class="container">
 <div class="col-xs-12">
 <div class="evo-space-15"></div>
       <ul class="evo-list-lines list-size-small">
-        <li class="hrf-font-2 text-uppercase text-tracking-10">Half Viewport</li>
+        <li class="hrf-font-2 text-uppercase text-tracking-10">Half Screen Tall</li>
           <div class="evo-space-5"></div>
       </ul>
 <div class="evo-codeblock-target" data-target="viewport-half">
@@ -145,7 +147,23 @@
 <!-- ********************* -->
 
     <div class="evo-codeblock" data-identifier="viewport-full">
-<div class="view-full image-bg-fpo"></div>
+<div class="view-full image-bg-fpo position-relative flex-center-vertical">
+<div class="container flex-center-vertical">
+<p class="evo-text-10 text-center evo-color-white hrf-font-1 padding-top-20 z-2">The Foundation was established in 1981 under the terms of an agreement among environmental groups, government regulatory agencies and utility companies. The majority of HRF’s funds are used to support independent, objective research that will inform policy making concerning a broad range of scientific and public policy areas.</p>
+<!-- Scroll down requires additional javascript -->
+<a href="javascript: void(0);" id="evo-scroll-1-run z-2">
+  <div class="position-bottom-middle z-2">
+    <div class="icon-scroll-chevron-container margin-bottom-20">
+      <div class="icon-scroll-chevron evo-color-15"></div>
+      <div class="icon-scroll-chevron evo-color-15"></div>
+      <div class="icon-scroll-chevron evo-color-15"></div>
+      <span class="icon-scroll-chevron-text">Scroll down</span>
+    </div>
+  </div>
+</a>
+</div><!-- /.container -->
+<div class="evo-trans-gray-15-bg image-ratio-fill"></div>
+</div><!-- /.view-full -->
     </div>
 
 <div class="container">
@@ -158,7 +176,7 @@
       </ul>
 <div class="evo-codeblock-target" data-target="viewport-full">
     <pre>
-<code class="white-space-normal">
+<code>
             <!-- HTML will show up inside here -->  
         </code>
     </pre>
