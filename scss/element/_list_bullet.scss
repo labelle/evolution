@@ -102,7 +102,7 @@ ul.list-bullet {
     margin-bottom: #{$bullet_list_margin_bottom};
 }
 & li:before {
-    content: "•"; // insert content that looks like bullets
+    content: "#{$bullet_list_icon}"; // insert content that looks like bullets
     padding-right: #{$bullet_list_bullet_padding};
     color: #{$bullet_list_bullet_color}; // or a color you prefer
 }

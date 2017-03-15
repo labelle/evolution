@@ -17,16 +17,19 @@
 .text-uppercase        { text-transform: uppercase; }
 .text-lowercase        { text-transform: lowercase; }
 
+.text-capcase-none,
 .text-no-capcase       { text-transform: none !important; }
 
 
 // Text Decoration
-.text-overline         { text-decoration: overline; }
-.text-strikeline       { text-decoration: line-through; }
-.text-underline        { text-decoration: underline; }
+.text-line-over        { text-decoration: overline; }
+.text-line-middle      { text-decoration: line-through; }
+.text-line-under       { text-decoration: underline; }
+// Decoration can be combined
+.text-line-over-under  { text-decoration: overline underline; }
+.text-line-all         { text-decoration: overline underline line-through; }
 
-.text-no-line a,
-.text-no-line          { text-decoration: none !important; }
+.text-line-none          { text-decoration: none !important; }
 
 
 // Text Overflow

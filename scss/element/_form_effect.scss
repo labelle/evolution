@@ -253,7 +253,8 @@ input:focus ~ .label-floating,
 input:not(:focus):valid ~ .label-floating {
   top: -1.5em;
   bottom: 1em;
-  color: #00aeef;
+  color:#{$focus_border_color};
+  font-family: inherit;
   left: 1.5em;
   font-size: .65em;
   opacity: 1;

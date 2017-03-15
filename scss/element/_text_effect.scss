@@ -54,38 +54,6 @@
 //   padding-left: 3px;
 // }
 
-// Dropcap in span
-// Wrap letter in span and apply this class
-span.text-dropcap {
-// @extend #{$evo}-text;
-@extend #{$evo}-text-10;
-color: #{$dropcap_color};
-font-size: 5ex;
-text-align: text-top;
-float:left;
-padding-right: .7ch;
-padding-left: .5ch;
-padding-top:0;
-line-height:1;
-font-feature-settings: "smcp" on;
-}
-
-// Dropcap with just CSS
-figcaption.text-dropcap:first-letter {
-// @extend #{$evo}-text;
-@extend #{$evo}-text-10;
-color: #{$dropcap_color};
-font-size: 5ex;
-text-align: text-top;
-float:left;
-padding-right: .7ch;
-padding-left: .5ch;
-padding-top:0;
-line-height:1;
-font-feature-settings: "smcp" on;
-}
-
-
 // /* SHADOWS */
 
 // Initial Value: none
@@ -122,8 +90,18 @@ font-feature-settings: "smcp" on;
     text-shadow: 6px 6px 12px rgba(0, 0, 0, .5)
 }
 
+// Produces a sharp shadow edge to the text
+.text-shadow {
+  text-shadow: 1px 1px #000;
+}
+
+.text-shadow-inverse {
+  text-shadow: 1px 1px #fff;
+}
+
 // engraved
 // https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow/
+
 
 // On gray
 .text-engraved-gray-bg {

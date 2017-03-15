@@ -112,9 +112,14 @@
 @import "element/highlight_color";
 @import "element/highlight_gray";
 
+// Quotes, etc.
+@import "element/quote";
+@import "element/dropcap";
+@import "element/breadcrumb";
+
 // Link
 @import "element/link";
-// @import "element/link_style";
+@import "element/link_style";
 @import "element/link_bullet";
 @import "element/link_icon";
 
@@ -155,9 +160,6 @@
 @import "element/image_parallax";
 // @import "element/image_play";
 
-// Video
-@import "element/video";
-
 // Line
 @import "element/line";
 @import "element/line_style";
@@ -194,6 +196,9 @@
 @import "element/form_effect";
 @import "element/form_validation"; // delete after combining
 @import "element/form_password"; // delete after combining
+
+// Video
+@import "element/video";
 
 
 

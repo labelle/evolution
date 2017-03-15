@@ -145,12 +145,15 @@ select::-ms-expand {
 //   //   border-color: #666;
 //   // }
 
-#{$evo}-form {
+.form-padding {
   // padding
   padding-top: #{$form_padding_top};
   padding-bottom: #{$form_padding_bottom};
   padding-left: #{$form_padding_left};
   padding-right: #{$form_padding_right};
+}
+
+.form-box {
   // border width
   border-top-width: #{$form_border_top_width};
   border-bottom-width: #{$form_border_bottom_width};
@@ -168,10 +171,11 @@ select::-ms-expand {
   border-right-color: #{$form_border_right_color};
 }
 
+
 // Combine with floating labels
 
 input#{$evo}-form:focus { 
-    border-bottom: 1px solid #00aeef !important;
+    border: inherit inherit #{$focus_border_color} !important;
     transition:0.5s ease all; 
     // -moz-transition:0.5s ease all; 
     // -webkit-transition:0.5s ease all;
@@ -183,7 +187,7 @@ input#{$evo}-form:focus {
 
 
 textarea#{$evo}-form:focus { 
-    border-bottom: 1px solid #00aeef !important;
+    border: inherit inherit #{$focus_border_color} !important;
     transition:0.5s ease all; 
     // -moz-transition:0.5s ease all; 
     // -webkit-transition:0.5s ease all;

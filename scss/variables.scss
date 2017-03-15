@@ -191,7 +191,7 @@ $ol_list_style_position:                     inside; // outside aligns text flus
 
 
 // For content replacement bullets
-// $bullet_list_icon:                           "•";
+$bullet_list_icon:                           "•";
 $bullet_list_bullet_font_family:             inherit; // or #{$sans-serif}
 $bullet_list_bullet_color:                   #{$evo_color};
 $bullet_list_bullet_padding:                 .5ch;
@@ -615,6 +615,30 @@ $image_fpo:						    "../image/brand/fpo.jpg";
 // If starting from 0 to this to start at 1 random(30)-1;
 // $color_random:					    random(30);
 $color_fpo:                         #{$evo_color} !default;
+
+// Dropcap
+$dropcap_font:					    inherit !default;
+$dropcap_color:                     #{$evo_color} !default;
+
+// Dropcap box
+$box_dropcap_font:					inherit !default;
+$box_dropcap_color:                 #{$evo_color} !default;
+$box_dropcap_color_background:      #{$color_25} !default;
+$box_dropcap_border_width:          thick !default;
+$box_dropcap_border_style:          double !default;
+$box_dropcap_border_color:          #{$color_20} !default;
+
+// Quote
+$quote_color:						#{$evo_color} !default;
+$quote_font_family:					#{$google-montserrat} !default;
+
+$quote_character_before:			"“" !default;
+$quote_color_before:			    #{$evo_color} !default;
+$quote_font_before:			        #{$google-montserrat} !default;
+
+$quote_character_after:			    "”" !default;
+$quote_color_after:			        #{$evo_color} !default;
+$quote_font_after:			        #{$google-montserrat} !default;
 
 
 // Code base
