@@ -128,9 +128,6 @@ abbr[title] {
   text-decoration: underline dotted;
   cursor: help; }
 
-figure {
-  margin: 1em 40px; }
-
 ins {
   background-color: #ff9;
   color: #000;
@@ -6882,10 +6879,6 @@ span.borderborder:hover {
 .list-padding-thick li {
   padding-top: 1.25em;
   padding-bottom: 1.25em; }
-  .list-padding-thick li:first-of-type {
-    padding-top: 0; }
-  .list-padding-thick li:last-of-type {
-    padding-bottom: 0; }
   .list-padding-thick li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
@@ -6893,10 +6886,6 @@ span.borderborder:hover {
 .list-padding-medium li {
   padding-top: 1em;
   padding-bottom: 1em; }
-  .list-padding-medium li:first-of-type {
-    padding-top: 0; }
-  .list-padding-medium li:last-of-type {
-    padding-bottom: 0; }
   .list-padding-medium li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
@@ -6904,10 +6893,6 @@ span.borderborder:hover {
 .list-padding-thin li {
   padding-top: .65em;
   padding-bottom: .65em; }
-  .list-padding-thin li:first-of-type {
-    padding-top: 0; }
-  .list-padding-thin li:last-of-type {
-    padding-bottom: 0; }
   .list-padding-thin li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
@@ -6921,18 +6906,6 @@ span.borderborder:hover {
 
 .list-margin-none li {
   margin-bottom: 0; }
-
-.list-loose li {
-  padding-bottom: 0.5em;
-  padding-top: 0.5em; }
-
-.list-looser li {
-  padding-bottom: 0.75em;
-  padding-top: 0.75em; }
-
-.list-loosest li {
-  padding-bottom: 1.125em;
-  padding-top: 1.125em; }
 
 ul {
   list-style-position: inside; }
@@ -10845,12 +10818,7 @@ tr {
   color: #555; }
 
 caption {
-  margin-top: 1em;
-  padding-bottom: 1em;
-  text-align: left;
-  margin-top: 3em;
-  text-transform: uppercase;
-  letter-spacing: .1em; }
+  text-align: left; }
 
 th,
 td {
@@ -11385,7 +11353,8 @@ textarea:focus ~ .label-floating,
 textarea:not(:focus):valid ~ .label-floating {
   top: -5em;
   bottom: 1em;
-  color: #00aeef;
+  color: rgba(26, 154, 214, 0.8);
+  font-family: inherit;
   left: 1.5em;
   font-size: .75em;
   opacity: 1; }

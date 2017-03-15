@@ -134,12 +134,12 @@ top: .65em; // .45em;
 .list-padding-thick li{
     padding-top: 1.25em;
     padding-bottom: 1.25em;
-   &:first-of-type {
-    padding-top: 0;
-}
-   &:last-of-type {
-    padding-bottom: 0;
-}
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
    &:before {
     padding-top: inherit;
     padding-bottom: inherit;
@@ -149,12 +149,12 @@ top: .65em; // .45em;
 .list-padding-medium li {
     padding-top: 1em;
     padding-bottom: 1em;
-   &:first-of-type {
-    padding-top: 0;
-}
-   &:last-of-type {
-    padding-bottom: 0;
-}
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
    &:before {
     padding-top: inherit;
     padding-bottom: inherit;
@@ -164,12 +164,12 @@ top: .65em; // .45em;
 .list-padding-thin li {
     padding-top: .65em;
     padding-bottom: .65em;
-   &:first-of-type {
-    padding-top: 0;
-}
-   &:last-of-type {
-    padding-bottom: 0;
-}
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
    &:before {
     padding-top: inherit;
     padding-bottom: inherit;
@@ -191,21 +191,21 @@ top: .65em; // .45em;
 }
 
 
-// Delete?
-.list-loose li {
-    padding-bottom: #{$u-19}em; // .375em
-    padding-top: #{$u-19}em; // .375em
-}
+// // Delete?
+// .list-loose li {
+//     padding-bottom: #{$u-19}em; // .375em
+//     padding-top: #{$u-19}em; // .375em
+// }
 
-.list-looser li {
-    padding-bottom: #{$u-21}em;
-    padding-top: #{$u-21}em;
-}
+// .list-looser li {
+//     padding-bottom: #{$u-21}em;
+//     padding-top: #{$u-21}em;
+// }
 
-.list-loosest li {
-    padding-bottom: #{$u-24}em;
-    padding-top: #{$u-24}em;
-}
+// .list-loosest li {
+//     padding-bottom: #{$u-24}em;
+//     padding-top: #{$u-24}em;
+// }
 
 
 
