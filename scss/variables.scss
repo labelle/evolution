@@ -85,7 +85,7 @@ $html_font_variant:					normal !default; // or small-caps if the font supports i
 $html_font_weight:                  normal !default; // or bolder or lighter or 400
 $html_line_height:                  1.4375 !default; // define this in body
 $html_font_stretch:                 normal !default; // or condensed or expanded
-$html_font_size:                    1rem !default; // define this in body
+$html_font_size:                    1rem !default; // // or 1 rem, define this in body
 $html_font_family:                  #{$google-merriweather}; // or #{$sans-serif}
 $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 
