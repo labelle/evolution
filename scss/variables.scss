@@ -527,18 +527,18 @@ $box_form_border_right_color:           #{$gray_15};
 
 // LINE FORM
 // Form Input
-$line_form_font_size:                    1rem;
+$line_form_font_size:                    inherit;
 $line_form_border_radius:                0;
 $line_form_width:                        100%;
-$line_form_background_color:             #{$gray_5};
+$line_form_background_color:             transparent;
 // padding
 $line_form_padding_top:                  1rem;
 $line_form_padding_bottom:               1rem;
-$line_form_padding_left:                 1rem;
+$line_form_padding_left:                 0;
 $line_form_padding_right:                1rem;
 // border width
 $line_form_border_top_width:             0;
-$line_form_border_bottom_width:          2px;
+$line_form_border_bottom_width:          thin;
 $line_form_border_left_width:            0;
 $line_form_border_right_width:           0;
 // border style
