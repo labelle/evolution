@@ -17,7 +17,7 @@ list-style-position: #{$ul_list_style_position}; // outside
 // ul base list class
 
   &#{$evo}-list {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: #{$ul_list_style_type}; // none
 }
 
@@ -25,7 +25,7 @@ list-style-position: #{$ul_list_style_position}; // outside
   &.list-align,
   &.list-align ul,
   &.list-align ul ul {
-  // @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-position: outside;
   margin-left: 1em;
   // list-style-position: inside; // none
@@ -34,19 +34,19 @@ list-style-position: #{$ul_list_style_position}; // outside
   &.list-hang,
   &.list-hang ul,
   &.list-hand ul ul {
-  // @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   margin-left: -.1ch;
   }
   &.list-circle {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: circle;
 }
   &.list-square {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: square;
 }
   &.list-disc {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: disc;
 }
 }

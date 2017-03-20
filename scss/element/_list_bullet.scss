@@ -27,7 +27,7 @@ width: auto; // 1em;
 background: #{$bullet_list_background_color_1};
 border-radius: #{$bullet_list_background_corner};
 color: #{$bullet_list_bullet_color};
-font-family: #{$bullet_list_bullet_font_family};
+// font-family: #{$bullet_list_bullet_font_family};// DISABLED
 text-align: center;
 left: -.2ch; // was left: 0;// was left: -1.5em;
 top: 0;

@@ -48,7 +48,7 @@
   line-height: inherit; // or #{$body_line_height}, was 1.5em
   color: #{$number_list_number_color};
   text-align: center;
-  font-family: #{$number_list_number_font_family};
+  // font-family: #{$number_list_number_font_family}; // DISABLED
   // margin-right: 0.5em;
 }
 & ol li::before {

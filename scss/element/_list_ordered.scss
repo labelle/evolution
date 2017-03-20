@@ -18,9 +18,9 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 // ol base list class
 
-  &#{$evo}-list {
-  @extend #{$evo}-list;
-}
+//   &#{$evo}-list {
+//   @extend #{$evo}-list;
+// }
 
 // ol utility classes
 
@@ -38,35 +38,35 @@ list-style-position: #{$ol_list_style_position}; // inside
   list-style-position: outside;
   }
   &.list-decimal {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: decimal;
 }
   &.list-decimal-zero {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: decimal-leading-zero;
 }
   &.list-lower-alpha {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: lower-alpha;
 }
   &.list-upper-alpha {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: upper-alpha;
 }
   &.list-lower-latin {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: lower-latin;
 }
   &.list-upper-latin {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: upper-latin;
 }
   &.list-lower-roman {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: lower-roman;
 }
   &.list-upper-roman {
-  @extend #{$evo}-list;
+  // @extend #{$evo}-list; // DISABLED - DELETE?
   list-style-type: upper-roman;
 }
 }

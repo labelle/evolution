@@ -107,7 +107,7 @@ textarea,
 select,
 input {
   // Form Input
-  font-size:  #{$form_font_size};
+  // font-size:  #{$form_font_size}; // DISABLED
   border-radius: #{$form_border_radius};
   width: #{$form_width};
   background-color: #{$form_background_color};

@@ -167,7 +167,7 @@ button.button-three:active:after {
 button#{$evo}-button-neon {
      // Type
      font-family: #{$neon};
-     // font-size: #{$button_font_size};
+     // font-size: #{$button_font_size}; // DISABLED
      text-align: #{$button_text_align};
      // // text-decoration: #{$button_text_decoration}; // Doesn't work
      // // color

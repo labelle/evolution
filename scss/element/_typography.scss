@@ -10,11 +10,11 @@
 // Default evo-text
 // Adjust from settings.scss
 #{$evo}-text {
-  font-size: #{$text_size};
-  color: #{$text_color};
-  font-family: #{$text_font_family};
-  font-weight: #{$text_font_weight};
-  line-height: #{$text_line_height};
+  // font-size: #{$text_size}; // DISABLED
+  // color: #{$text_color}; // DISABLED
+  // font-family: #{$text_font_family}; // DISABLED
+  // font-weight: #{$text_font_weight}; // DISABLED
+  // line-height: #{$text_line_height}; // DISABLED
   margin-top: #{$text_margin_top};
   margin-bottom: #{$text_margin_bottom};
       &-caps {

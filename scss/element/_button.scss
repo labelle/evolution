@@ -12,7 +12,7 @@ button,
 [type="submit"] {
      // Type
      font-family: #{$button_font_family};
-     // font-size: #{$button_font_size};
+     // font-size: #{$button_font_size}; // DISABLED
      font-weight: #{$button_font_weight};
      text-transform: #{$button_text_transform};
      text-align: #{$button_text_align};
@@ -89,7 +89,7 @@ button,
 [type="submit"] {
      // Type
      font-family: #{$button_font_family};
-     // font-size: #{$button_font_size};
+     // font-size: #{$button_font_size}; // DISABLED
      text-align: #{$button_text_align};
      // // text-decoration: #{$button_text_decoration}; // Doesn't work
      // // color

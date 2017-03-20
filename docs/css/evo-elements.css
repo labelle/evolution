@@ -144,7 +144,6 @@ html {
   font-variant: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-size: normal;
   line-height: 1.4375;
   font-family: Merriweather, serif;
   height: 100%;
@@ -156,7 +155,6 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: 1rem;
   line-height: 1.4375;
   color: black;
   background-color: white;
@@ -6750,7 +6748,7 @@ button.evo-button-neon:hover {
   transition-timing-function: ease;
   transition-delay: 0; }
 
-.evo-list, ul.evo-list, ul.list-circle, ul.list-square, ul.list-disc, ol.evo-list, ol.list-decimal, ol.list-decimal-zero, ol.list-lower-alpha, ol.list-upper-alpha, ol.list-lower-latin, ol.list-upper-latin, ol.list-lower-roman, ol.list-upper-roman {
+.evo-list {
   margin-left: 0;
   padding-left: 0;
   padding-bottom: 0.275em; }
@@ -6909,7 +6907,7 @@ span.borderborder:hover {
 
 ul {
   list-style-position: inside; }
-  ul.evo-list, ul.list-circle, ul.list-square, ul.list-disc {
+  ul.evo-list {
     list-style-type: none; }
   ul.list-align,
   ul.list-align ul,
@@ -6943,7 +6941,6 @@ ul {
   background: transparent;
   border-radius: 10%;
   color: #009877;
-  font-family: inherit;
   text-align: center;
   left: -.2ch;
   top: 0;
@@ -7122,8 +7119,7 @@ ol.list-lower-greek {
     display: inline-block;
     line-height: inherit;
     color: #009877;
-    text-align: center;
-    font-family: inherit; }
+    text-align: center; }
   .evo-list-number ol li::before {
     background: transparent; }
   .evo-list-number ol ol li::before {
@@ -10944,7 +10940,6 @@ input[type="url"],
 textarea,
 select,
 input {
-  font-size: 1rem;
   border-radius: 5px;
   width: 100%;
   background-color: #f2f2f2; }
@@ -10958,10 +10953,10 @@ select::-ms-expand {
     padding: 5px\9; } }
 
 .form-padding {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .form-box {
   border-top-width: thin;
@@ -11073,6 +11068,75 @@ label.evo-button :valid + span {
   color: #4A4;
   border-color: #4A4 !important; }
 
+.form-size-large {
+  font-size: 125%; }
+
+.form-size-medium {
+  font-size: 100%; }
+
+.form-size-small {
+  font-size: 75%; }
+
+.form-padding-thick {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.form-padding-medium {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.form-padding-thin {
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: .5em;
+  padding-right: .5em; }
+
+.form-padding-none {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: .25em;
+  padding-right: .25em; }
+
+.form-box-thick {
+  border-width: thick; }
+
+.form-box-thick:hover {
+  border-width: thick; }
+
+.form-box-thick:focus {
+  border-width: thick; }
+
+.form-box-medium {
+  border-width: medium; }
+
+.form-box-medium:hover {
+  border-width: medium; }
+
+.form-box-medium:focus {
+  border-width: medium; }
+
+.form-box-thin {
+  border-width: thin; }
+
+.form-box-thin:hover {
+  border-width: thin; }
+
+.form-box-thin:focus {
+  border-width: thin; }
+
+.form-box-none {
+  border-width: 0; }
+
+.form-box-none:hover {
+  border-width: 0; }
+
+.form-box-none:focus {
+  border-width: 0; }
+
 .evo-form-line,
 input[type="text"].evo-form-line,
 input[type="password"].evo-form-line,
@@ -11088,12 +11152,11 @@ input[type="url"].evo-form-line,
 textarea.evo-form-line,
 select.evo-form-line,
 input.evo-form-line {
-  font-size: inherit;
   border-radius: 0;
   width: 100%;
   background-color: transparent; }
 
-.form-line,
+.form-line-padding,
 .evo-form-line {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -11139,12 +11202,8 @@ input.evo-form-box {
   width: 100%;
   background-color: #f2f2f2; }
 
-.evo-form-box,
-.form-box {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.form-box-box,
+.evo-form-box {
   border-top-width: 2px;
   border-bottom-width: 2px;
   border-left-width: 2px;
@@ -11356,7 +11415,6 @@ textarea:not(:focus):valid ~ .label-floating {
   color: rgba(26, 154, 214, 0.8);
   font-family: inherit;
   left: 1.5em;
-  font-size: .75em;
   opacity: 1; }
 
 .label-floating {
@@ -11373,7 +11431,6 @@ input:not(:focus):valid ~ .label-floating {
   color: rgba(26, 154, 214, 0.8);
   font-family: inherit;
   left: 1.5em;
-  font-size: .65em;
   opacity: 1; }
 
 ul.helper-text {

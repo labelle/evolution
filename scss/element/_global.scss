@@ -162,7 +162,7 @@ html {
   font-variant:    #{$html_font_variant}; // normal
   font-weight:     #{$html_font_weight}; // normal
   font-stretch:    #{$html_font_stretch}; // normal
-  font-size:       normal;
+  // font-size:       normal; // DISABLED
   line-height:     #{$html_line_height}; // 1.4375
   font-family:     #{$html_font_family}; // #{$sans-serif}
   height:          100%; // necessary for full-screen image containers
@@ -179,7 +179,8 @@ html {
 // body                       {}
 // 
 body {
-  font-size:          #{$body_font_size};
+  // font-size:          #{$body_font_size}; // DISABLED
+  // font-size:          #{$body_font_size}; // DISABLED
   line-height:        #{$body_line_height}; // 1.4375 !default
   color:              #{$body_font_color};
   background-color:   #{$body_background_color};
