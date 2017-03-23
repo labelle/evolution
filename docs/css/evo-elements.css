@@ -8491,6 +8491,12 @@ hr.line-fade-pink {
   border-right-style: double;
   border-left-style: double; }
 
+.box-outset {
+  border-top-style: outset;
+  border-bottom-style: outset;
+  border-right-style: outset;
+  border-left-style: outset; }
+
 .box-top-solid {
   border-top-style: solid; }
 
@@ -10924,7 +10930,12 @@ select.evo-form,
 .evo-form select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url(../image/elements/triangle-down-solid.svg) 96%/0.75em no-repeat #f2f2f2; }
+  background-color: transparent;
+  background-image: url(../image/elements/triangle-down-solid.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1em;
+  background-position: 100%; }
 
 .evo-form,
 input[type="text"],
@@ -10942,7 +10953,11 @@ select,
 input {
   border-radius: 5px;
   width: 100%;
-  background-color: #f2f2f2; }
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1em;
+  background-position: 100%; }
 
 select::-ms-expand {
   display: none; }
@@ -11031,29 +11046,35 @@ fieldset.overflow {
 /*********************
     TEXT INPUTS
 *********************/
+.form-icon {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1em;
+  background-position: 100%; }
+
 .form-search {
-  background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
+  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg); }
 
 .form-email {
-  background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
+  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg); }
 
 .form-chevron {
-  background: url(../image/elements/chevron-book.svg) 96%/1.5em no-repeat #f2f2f2; }
+  background-image: url(../image/elements/chevron-book.svg); }
 
 .form-url {
-  background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
+  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg); }
 
 .form-password {
-  background: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
+  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg); }
 
 .form-password-lock {
-  background: url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg) 96%/1.5em no-repeat scroll #f2f2f2; }
+  background-image: url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg); }
 
 .form-triangle {
-  background: url(../image/elements/triangle-down-solid.svg) 96%/0.75em no-repeat #f2f2f2 !important; }
+  background-image: url(../image/elements/triangle-down-solid.svg) !important; }
 
 .form-chevron-down {
-  background: url(../image/elements/chevron-down-book.svg) 96%/1.5em no-repeat #f2f2f2 !important; }
+  background-image: url(../image/elements/chevron-down-book.svg) !important; }
 
 label.evo-button input[type="file"] {
   position: fixed;
@@ -11076,6 +11097,27 @@ label.evo-button :valid + span {
 
 .form-size-small {
   font-size: 75%; }
+
+.form-icon-large {
+  background-size: 1.25em; }
+
+.form-icon-medium {
+  background-size: 1em; }
+
+.form-icon-small {
+  background-size: .75em; }
+
+.form-icon-right-flush {
+  background-position: 100%; }
+
+.form-icon-right {
+  background-position: 96%; }
+
+.form-icon-left {
+  background-position: 6%; }
+
+.form-icon-left-flush {
+  background-position: 0%; }
 
 .form-padding-thick {
   padding-top: 1.25em;
@@ -11154,7 +11196,11 @@ select.evo-form-line,
 input.evo-form-line {
   border-radius: 0;
   width: 100%;
-  background-color: transparent; }
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1em;
+  background-position: 100%; }
 
 .form-line-padding,
 .evo-form-line {
@@ -11200,7 +11246,11 @@ input.evo-form-box {
   font-size: 1rem;
   border-radius: 0;
   width: 100%;
-  background-color: #f2f2f2; }
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1em;
+  background-position: 100%; }
 
 .form-box-box,
 .evo-form-box {

@@ -12,40 +12,58 @@
 
 // Text
 
+// .form-search {
+//   background: #{$form_search_background};
+// }
+
+.form-icon {
+  // background-color:      #{$form_background_color};
+  // background-image:      #{$form_background_search};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
+}
+
 .form-search {
-  background: #{$form_search_background};
+  // background-color:      #{$form_background_color};
+  background-image:      #{$form_background_search};
+  // background-repeat:     #{$form_background_repeat};
+  // background-attachment: #{$form_background_attachment};
+  // background-size:       #{$form_background_size};
+  // background-position:   #{$form_background_position};
 }
 
 .form-email {
-  background: #{$form_email_background};
+  background-image: #{$form_background_email};
 }
 
 .form-chevron {
-  background: #{$form_chevron_background};
+  background-image: #{$form_background_chevron};
 }
 
 
 .form-url {
-  background: #{$form_url_background};
+  background-image: #{$form_background_url};
 }
 
 .form-password {
-  background: #{$form_password_background};
+  background-image: #{$form_background_password};
 }
 
 .form-password-lock {
-  background: #{$form_password_lock_background};
+  background-image: #{$form_background_password_lock};
 }
 
 // Select
 
 
 .form-triangle {
-  background: #{$form_triangle_background} !important;
+  background-image: #{$form_background_triangle} !important;
 }
 
 .form-chevron-down {
-  background: #{$form_chevron_down_background} !important;
+  background-image: #{$form_background_chevron_down} !important;
 }
 
 

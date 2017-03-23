@@ -88,7 +88,12 @@ select#{$evo}-form,
 #{$evo}-form select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #{$form_triangle_background};
+  background-color:      #{$form_background_color};
+  background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
 }
 
 // Can we get rid of the 'input' because it's messing up the checkboxes
@@ -110,7 +115,12 @@ input {
   // font-size:  #{$form_font_size}; // DISABLED
   border-radius: #{$form_border_radius};
   width: #{$form_width};
-  background-color: #{$form_background_color};
+  background-color:      #{$form_background_color};
+  // background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
 }
 
 // CAUTION: IE hackery ahead 

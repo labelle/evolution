@@ -12,6 +12,7 @@
 
 
 
+
 // Form size large
 .form-size-large {
      font-size: 125%;
@@ -28,6 +29,45 @@
 }
 
 
+
+
+// Form icon large
+.form-icon-large {
+     background-size: 1.25em;
+}
+
+// Form icon normal
+.form-icon-medium {
+     background-size: 1em;
+}
+
+// Form icon small
+.form-icon-small {
+     background-size: .75em;
+}
+
+
+// Form icon alignment
+
+// Flush right
+.form-icon-right-flush {
+     background-position: 100%;
+}
+
+// Align right
+.form-icon-right {
+     background-position: 96%;
+}
+
+// Align left
+.form-icon-left {
+     background-position: 6%;
+}
+
+// Flush left
+.form-icon-left-flush{
+     background-position: 0%;
+}
 
 
 // Padding

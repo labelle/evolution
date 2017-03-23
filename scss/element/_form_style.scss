@@ -30,7 +30,12 @@ input#{$evo}-form-line {
   // font-size:  #{$line_form_font_size}; // DISABLED
   border-radius: #{$line_form_border_radius};
   width: #{$line_form_width};
-  background-color: #{$line_form_background_color};
+  background-color:      #{$form_background_color};
+  // background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
 }
 
 	// border-bottom: 1px solid gray; 
@@ -105,7 +110,12 @@ input#{$evo}-form-box {
   font-size:  #{$box_form_font_size};
   border-radius: #{$box_form_border_radius};
   width: #{$box_form_width};
-  background-color: #{$box_form_background_color};
+  background-color:      #{$form_background_color};
+  // background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
 }
 
   // border-bottom: 1px solid gray; 
