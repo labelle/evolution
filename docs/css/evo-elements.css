@@ -4266,7 +4266,7 @@ p {
   text-align: left; }
 
 .text-right {
-  text-align: right; }
+  text-align: right !important; }
 
 .text-center {
   text-align: center; }
@@ -5439,7 +5439,8 @@ a {
   -moz-transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
-  transition: color 0.2s ease; }
+  transition: color 0.2s ease;
+  cursor: pointer; }
 
 .evo-link-paragraph .evo-link-paragraph a,
 p a,
@@ -6614,6 +6615,11 @@ label.button-upload:before,
 a.button-upload:before,
 button.button-upload:before {
   background-image: url("../image/brand/upload-book.svg"); }
+
+label.button-download:before,
+a.button-download:before,
+button.button-download:before {
+  background-image: url("../image/brand/download-book.svg"); }
 
 a.evo-icon-button-2:before,
 button.evo-icon-button-2:before {
@@ -8250,143 +8256,6 @@ hr.line-blur-10 {
   border: 0;
   height: 0;
   box-shadow: 0 0 50px 1px black; }
-
-hr.line-fade-thin {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent); }
-
-hr.line-fade-medium {
-  border: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent); }
-
-hr.line-fade-thick {
-  border: 0;
-  height: 5px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent); }
-
-hr.line-shadow-0 {
-  height: 5px;
-  border: 0;
-  box-shadow: 0 6px 2px -6px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-1 {
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 3px -10px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-2 {
-  height: 20px;
-  border: 0;
-  box-shadow: 0 20px 5px -20px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-3 {
-  height: 30px;
-  border: 0;
-  box-shadow: 0 30px 10px -30px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-4 {
-  height: 40px;
-  border: 0;
-  box-shadow: 0 40px 20px -40px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-5 {
-  height: 50px;
-  border: 0;
-  box-shadow: 0 50px 30px -50px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-6 {
-  height: 60px;
-  border: 0;
-  box-shadow: 0 60px 40px -60px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-7 {
-  height: 70px;
-  border: 0;
-  box-shadow: 0 70px 60px -70px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-8 {
-  height: 80px;
-  border: 0;
-  box-shadow: 0 80px 60px -80px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-9 {
-  height: 90px;
-  border: 0;
-  box-shadow: 0 90px 70px -90px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-shadow-10 {
-  height: 100px;
-  border: 0;
-  box-shadow: 0 100px 80px -100px rgba(0, 0, 0, 0.5) inset; }
-
-hr.line-blur-0 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 3px 1px black; }
-
-hr.line-blur-1 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 5px 1px black; }
-
-hr.line-blur-2 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 10px 1px black; }
-
-hr.line-blur-3 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 15px 1px black; }
-
-hr.line-blur-4 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 20px 1px black; }
-
-hr.line-blur-5 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 25px 1px black; }
-
-hr.line-blur-6 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 30px 1px black; }
-
-hr.line-blur-7 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 35px 1px black; }
-
-hr.line-blur-8 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 40px 1px black; }
-
-hr.line-blur-9 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 45px 1px black; }
-
-hr.line-blur-10 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 50px 1px black; }
-
-hr.line-fade-black {
-  background-image: linear-gradient(to right, transparent, black, transparent); }
-
-hr.line-fade-gray {
-  background-image: linear-gradient(to right, rgba(128, 128, 128, 0), gray, rgba(128, 128, 128, 0)); }
-
-hr.line-fade-white {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)); }
-
-hr.line-fade-pink {
-  background-image: linear-gradient(to right, rgba(255, 0, 255, 0), rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0)); }
 
 .box-reset {
   border: initial;
@@ -10812,23 +10681,35 @@ div.ad-shadow-300 {
   box-shadow: 0 34px 58px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center; }
 
-table {
+.evo-table,
+table.evo-table {
   border: 0;
   width: 100%; }
+  .evo-table tr,
+  table.evo-table tr {
+    color: #555; }
+  .evo-table caption,
+  table.evo-table caption {
+    text-align: left; }
+  .evo-table th,
+  table.evo-table th {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: .5em;
+    text-align: left;
+    border-bottom: 1px solid #ccc; }
+  .evo-table td,
+  table.evo-table td {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: left;
+    border-bottom: 1px solid #ccc; }
 
-tr {
-  color: #555; }
-
-caption {
-  text-align: left; }
-
-th,
-td {
-  border: 0;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  text-align: left;
-  border-bottom: 1px solid #ccc; }
+.right-align-last-column tbody > tr > td:last-of-type,
+.right-align-last-column thead > tr > th:last-of-type {
+  text-align: right; }
 
 .table-loose th,
 .table-loose td {
@@ -10934,7 +10815,7 @@ select.evo-form,
   background-image: url(../image/elements/triangle-down-solid.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 1em;
+  background-size: 1.25em;
   background-position: 100%; }
 
 .evo-form,
@@ -10956,7 +10837,7 @@ input {
   background-color: transparent;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 1em;
+  background-size: 1.25em;
   background-position: 100%; }
 
 select::-ms-expand {
@@ -11049,7 +10930,7 @@ fieldset.overflow {
 .form-icon {
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 1em;
+  background-size: 1.25em;
   background-position: 100%; }
 
 .form-search {
@@ -11200,7 +11081,7 @@ input.evo-form-line {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 1em;
-  background-position: 100%; }
+  background-position: 100; }
 
 .form-line-padding,
 .evo-form-line {
@@ -11246,11 +11127,11 @@ input.evo-form-box {
   font-size: 1rem;
   border-radius: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 1em;
-  background-position: 100%; }
+  background-position: 96%; }
 
 .form-box-box,
 .evo-form-box {

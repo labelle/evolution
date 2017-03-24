@@ -3,18 +3,17 @@
 @import "../variables";
 // @import "../variables/scale";
 
+#{$evo}-table,
+table#{$evo}-table {
 
-table {
   border: 0;
   width: 100%; 
-}
 
-
-tr {
+& tr {
    color: #555;
 }
 
-caption {
+& caption {
     // margin-top: 1em;
     // padding-bottom: 1em;
     text-align: left;
@@ -23,8 +22,19 @@ caption {
     // letter-spacing: .1em;
 }
 
-th,
-td {
+& th {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: .5em;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    // border-bottom-size: 1px;
+    // border-bottom-style: solid;
+    // border-bottom-color: #ccc;
+}
+
+& td {
     border: 0;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -33,4 +43,12 @@ td {
     // border-bottom-size: 1px;
     // border-bottom-style: solid;
     // border-bottom-color: #ccc;
+}
+
+}
+
+// Utility to right-align the last column on the right
+.right-align-last-column tbody > tr > td:last-of-type,
+.right-align-last-column thead > tr > th:last-of-type {
+    text-align: right;
 }

@@ -45,6 +45,13 @@ button.button-upload:before {
 background-image: url("../image/brand/upload-book.svg"); 
 }
 
+// BUTTON DOWNLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+label.button-download:before,
+a.button-download:before,
+button.button-download:before {
+background-image: url("../image/brand/download-book.svg"); 
+}
 
 
 

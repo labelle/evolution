@@ -69,11 +69,17 @@
 .hrf-color-1-bg {
   background-color: #009877; }
 
+.hrf-box-color-1 {
+  border-color: #009877; }
+
 .hrf-color-2 {
   color: #78bc42; }
 
 .hrf-color-2-bg {
   background-color: #78bc42; }
+
+.hrf-box-color-2 {
+  border-color: #78bc42; }
 
 .hrf-color-3 {
   color: #1a9ad6; }
@@ -81,11 +87,17 @@
 .hrf-color-3-bg {
   background-color: #1a9ad6; }
 
+.hrf-box-color-3 {
+  border-color: #1a9ad6; }
+
 .hrf-color-4 {
   color: #939597; }
 
 .hrf-color-4-bg {
   background-color: #939597; }
+
+.hrf-box-color-4 {
+  border-color: #939597; }
 
 .hrf-icon-search-bg-white {
   background-image: url(../image/brand/search-book-white.svg); }

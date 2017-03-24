@@ -19,14 +19,17 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
 <style>
 
-.hrf-image-texture-bg {
-  background-image: url(image/half-image-river-lowrez.jpg);
+.image-bg-fpo  {
+  background-image: url(image/graphics/river-lowrez.jpg);
 }
 
-.hrf-image-thing-bg {
-  background-image: url(image/image-birds-lowerz.jpg);
+.image-bg-mother-daughter  {
+  background-image: url(image/image-mother-daughter-lowrez.jpg);
 }
 
+.image-bg-fpo-map  {
+  background-image: url(image/graphics/fpo-map.png);
+}
 
 </style>
 
@@ -148,7 +151,7 @@ $(document).ready(function() {
 <!-- Main navigation -->
 <!-- <header role="banner">
 </header> -->
-<!-- <main> -->
+<main>
 <!-- This line and above, edit only with global find and replace in sublime text -->
 
 
@@ -158,7 +161,7 @@ $(document).ready(function() {
 
 <div class="view-full image-bg-fpo position-relative flex-center-vertical image-bg-parallax">
 <div class="container flex-center-vertical">
-<p class="evo-text-10 text-center evo-color-white padding-top-20 z-2">The Foundation was established in 1981 under the terms of an agreement among environmental groups, government regulatory agencies and utility companies. The majority of HRF’s funds are used to support independent, objective research that will inform policy making concerning a broad range of scientific and public policy areas.</p>
+<p class="evo-text-10 text-center evo-color-white padding-top-20 z-2">The Hudson River is a 315-mile river that flows from north to south primarily through eastern New York. The river originates in the Adirondack Mountains of Upstate New York, flows through the Hudson Valley, and eventually drains into the Atlantic Ocean, between New York City and Jersey City.</p>
 <!-- Scroll down requires additional javascript -->
 <a href="javascript: void(0);" id="evo-scroll-1-run z-2">
   <div class="position-bottom-middle z-2">
@@ -179,7 +182,7 @@ $(document).ready(function() {
 <!--    GEOGRAPHY   -->
 <!-- ********************* -->
 
-<div class="view-full position-relative">
+<div class="view-full flex-center-vertical position-relative" id="sothGeography">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -188,7 +191,7 @@ $(document).ready(function() {
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <h1 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Geography</h1>
+        <h2 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Geography</h2>
         <div class="evo-space"></div>
         <p class="evo-text evo-text-6 hrf-font-1 margin-bottom-0">The geographic footprint includes the Hudson River watershed up to the Troy Dam, as well as the watersheds of the Raritan, Passaic, Hackensack Rivers in New Jersey.</p>
         <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
@@ -197,14 +200,121 @@ $(document).ready(function() {
         <div class="evo-space"></div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <!-- Image -->
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="position-relative image-ratio-9-16">
-<div class="image-ratio-fill hrf-graphic-map-bg"></div>
-</div>
+        <img alt="Image" class="Geography Map" src="image/graphics/graphic-geography-map.png" />
+        <div class="evo-space"></div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- ********************* -->
+<!--    BIG IMAGE 2  -->
+<!-- ********************* -->
+
+<div class="view-tall-half image-bg-mother-daughter image-bg-parallax box-shadow-inset"></div>
+
+<!-- ********************* -->
+<!--    WILDLIFE   -->
+<!-- ********************* -->
+<div class="view-full flex-center-vertical position-relative" id="sothWildlife">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Wildlife</h2>
+        <div class="evo-space"></div>
+        <p class="evo-text evo-text-6 hrf-font-1 margin-bottom-0">Over $30,000,000 has been focused on acquisition of 1,700 acres and $64,000,000 on restoration of 650 acres. As many of these sites continue to be threatened by pollution and development, stakeholders are working to further protect and restore these areas.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-wildlife-map.png" />
+        <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ********************* -->
+<!--    STATE OF THE ESTUARY   -->
+<!-- ********************* -->
+
+<div class="view-full flex-center-vertical position-relative" id="sothStateOfTheEstuary">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">State of the Estuary</h2>
+        <div class="evo-space"></div>
+        <p class="evo-text evo-text-6 hrf-font-1 margin-bottom-0 text-measure">More than 70 percent of the wetlands that existed at the turn of the 20th Century in the Hackensack Meadowlands has been lost. Still, this is the largest expanse of tidal wetlands in our Estuary.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-estuary-maps.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ********************* -->
+<!--    BIG IMAGE 3  -->
+<!-- ********************* -->
+
+<!-- <div class="view-full image-bg-fpo-map box-shadow-inset contain" style="background-repeat: no-repeat;"></div> -->
+<div class="view-full image-bg-fpo-map box-shadow-inset contain image-bg-parallax"></div>
+
+<!-- ********************* -->
+<!--    CURRENT CONDITIONS  -->
+<!-- ********************* -->
+
+<div class="view-full flex-center-vertical position-relative" id="sothCurrentConditions">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Current Conditions</h2>
+        <div class="evo-space"></div>
+        <p class="evo-text evo-text-6 hrf-font-1 margin-bottom-0 text-measure">Our partnership with HRECOS allows us to access real-time data about environmental conditions in the Hudson River and Harbor Estuary.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12">
+           <h3 class="evo-text-4 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0 text-uppercase">Live Update - The Battery, NY</h3>
+         <div class="evo-space-10"></div>
+      </div>
+       <div class="col-xs-12 col-md-6">
+        <img alt="Water Temperature" class="image" src="image/graphics/graphic-current-conditions-1.png" />
+          <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img alt="Water Level" class="image" src="image/graphics/graphic-current-conditions-2.png" />
+         <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div><!-- /.container -->
 </div>
 

@@ -22,6 +22,7 @@ a {
   -webkit-transition: #{$link_transition};
   -o-transition: #{$link_transition};
   transition: #{$link_transition};
+  cursor: pointer;
 }
 
 // Links in paragraphs

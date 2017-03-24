@@ -8,7 +8,7 @@
 
 // Text Align
 .text-left             { text-align: left; }
-.text-right            { text-align: right; }
+.text-right            { text-align: right !important; } // important is for table dividers
 .text-center           { text-align: center; }
 
 
