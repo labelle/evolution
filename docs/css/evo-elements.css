@@ -4262,6 +4262,15 @@ p {
   margin-top: 0;
   margin-bottom: 1.4375em; }
 
+header.fluid-header {
+  padding: 10vmin 1rem;
+  margin: 0 0 8vmin 0; }
+
+header.fluid-header p {
+  margin: 0;
+  font-size: 3rem;
+  font-size: calc(12px + (48 - 12) * ((100vw - 300px) / (1600 - 300))); }
+
 .text-left {
   text-align: left; }
 
