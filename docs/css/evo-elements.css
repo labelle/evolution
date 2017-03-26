@@ -11154,20 +11154,163 @@ input.evo-form-box:focus {
 textarea.evo-form-box:focus {
   border-bottom-width: rgba(26, 154, 214, 0.8) !important; }
 
+.form-placeholder-black::-webkit-input-placeholder,
+select.form-placeholder-black::-webkit-input-placeholder,
+input.form-placeholder-black::-webkit-input-placeholder,
+input[type].form-placeholder-black::-webkit-input-placeholder,
+textarea.form-placeholder-black::-webkit-input-placeholder {
+  color: black; }
+
+.form-placeholder-black:-moz-placeholder,
+select.form-placeholder-black:-moz-placeholder,
+input.form-placeholder-black:-moz-placeholder,
+input[type].form-placeholder-black:-moz-placeholder,
+textarea.form-placeholder-black:-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+.form-placeholder-black::-moz-placeholder,
+select.form-placeholder-black::-moz-placeholder,
+input.form-placeholder-black::-moz-placeholder,
+input[type].form-placeholder-black::-moz-placeholder,
+textarea.form-placeholder-black::-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+.form-placeholder-black:-ms-input-placeholder,
+select.form-placeholder-black:-ms-input-placeholder,
+input.form-placeholder-black:-ms-input-placeholder,
+input[type].form-placeholder-black:-ms-input-placeholder,
+textarea.form-placeholder-black:-ms-input-placeholder {
+  color: black; }
+
+.form-placeholder-white::-webkit-input-placeholder,
+select.form-placeholder-white::-webkit-input-placeholder,
+input.form-placeholder-white::-webkit-input-placeholder,
+input[type].form-placeholder-white::-webkit-input-placeholder,
+textarea.form-placeholder-white::-webkit-input-placeholder {
+  color: white; }
+
+.form-placeholder-white:-moz-placeholder,
+select.form-placeholder-white:-moz-placeholder,
+input.form-placeholder-white:-moz-placeholder,
+input[type].form-placeholder-white:-moz-placeholder,
+textarea.form-placeholder-white:-moz-placeholder {
+  color: white;
+  opacity: 1; }
+
+.form-placeholder-white::-moz-placeholder,
+select.form-placeholder-white::-moz-placeholder,
+input.form-placeholder-white::-moz-placeholder,
+input[type].form-placeholder-white::-moz-placeholder,
+textarea.form-placeholder-white::-moz-placeholder {
+  color: white;
+  opacity: 1; }
+
+.form-placeholder-white:-ms-input-placeholder,
+select.form-placeholder-white:-ms-input-placeholder,
+input.form-placeholder-white:-ms-input-placeholder,
+input[type].form-placeholder-white:-ms-input-placeholder,
+textarea.form-placeholder-white:-ms-input-placeholder {
+  color: white; }
+
+.form-placeholder-blue::-webkit-input-placeholder,
+select.form-placeholder-blue::-webkit-input-placeholder,
+input.form-placeholder-blue::-webkit-input-placeholder,
+input[type].form-placeholder-blue::-webkit-input-placeholder,
+textarea.form-placeholder-blue::-webkit-input-placeholder {
+  color: #0073b9; }
+
+.form-placeholder-blue:-moz-placeholder,
+select.form-placeholder-blue:-moz-placeholder,
+input.form-placeholder-blue:-moz-placeholder,
+input[type].form-placeholder-blue:-moz-placeholder,
+textarea.form-placeholder-blue:-moz-placeholder {
+  color: #0073b9;
+  opacity: 1; }
+
+.form-placeholder-blue::-moz-placeholder,
+select.form-placeholder-blue::-moz-placeholder,
+input.form-placeholder-blue::-moz-placeholder,
+input[type].form-placeholder-blue::-moz-placeholder,
+textarea.form-placeholder-blue::-moz-placeholder {
+  color: #0073b9;
+  opacity: 1; }
+
+.form-placeholder-blue:-ms-input-placeholder,
+select.form-placeholder-blue:-ms-input-placeholder,
+input.form-placeholder-blue:-ms-input-placeholder,
+input[type].form-placeholder-blue:-ms-input-placeholder,
+textarea.form-placeholder-blue:-ms-input-placeholder {
+  color: #0073b9; }
+
+.form-placeholder-green::-webkit-input-placeholder,
+select.form-placeholder-green::-webkit-input-placeholder,
+input.form-placeholder-green::-webkit-input-placeholder,
+input[type].form-placeholder-green::-webkit-input-placeholder,
+textarea.form-placeholder-green::-webkit-input-placeholder {
+  color: #00a453; }
+
+.form-placeholder-green:-moz-placeholder,
+select.form-placeholder-green:-moz-placeholder,
+input.form-placeholder-green:-moz-placeholder,
+input[type].form-placeholder-green:-moz-placeholder,
+textarea.form-placeholder-green:-moz-placeholder {
+  color: #00a453;
+  opacity: 1; }
+
+.form-placeholder-green::-moz-placeholder,
+select.form-placeholder-green::-moz-placeholder,
+input.form-placeholder-green::-moz-placeholder,
+input[type].form-placeholder-green::-moz-placeholder,
+textarea.form-placeholder-green::-moz-placeholder {
+  color: #00a453;
+  opacity: 1; }
+
+.form-placeholder-green:-ms-input-placeholder,
+select.form-placeholder-green:-ms-input-placeholder,
+input.form-placeholder-green:-ms-input-placeholder,
+input[type].form-placeholder-green:-ms-input-placeholder,
+textarea.form-placeholder-green:-ms-input-placeholder {
+  color: #00a453; }
+
+.form-placeholder-red::-webkit-input-placeholder,
+select.form-placeholder-red::-webkit-input-placeholder,
+input.form-placeholder-red::-webkit-input-placeholder,
+input[type].form-placeholder-red::-webkit-input-placeholder,
+textarea.form-placeholder-red::-webkit-input-placeholder {
+  color: #eb212e; }
+
+.form-placeholder-red:-moz-placeholder,
+select.form-placeholder-red:-moz-placeholder,
+input.form-placeholder-red:-moz-placeholder,
+input[type].form-placeholder-red:-moz-placeholder,
+textarea.form-placeholder-red:-moz-placeholder {
+  color: #eb212e;
+  opacity: 1; }
+
+.form-placeholder-red::-moz-placeholder,
+select.form-placeholder-red::-moz-placeholder,
+input.form-placeholder-red::-moz-placeholder,
+input[type].form-placeholder-red::-moz-placeholder,
+textarea.form-placeholder-red::-moz-placeholder {
+  color: #eb212e;
+  opacity: 1; }
+
+.form-placeholder-red:-ms-input-placeholder,
+select.form-placeholder-red:-ms-input-placeholder,
+input.form-placeholder-red:-ms-input-placeholder,
+input[type].form-placeholder-red:-ms-input-placeholder,
+textarea.form-placeholder-red:-ms-input-placeholder {
+  color: #eb212e; }
+
 .form-focus,
 .evo-form-focus:focus,
 .uneditable-input:focus,
-select:focus,
-input:focus,
-input[type]:focus,
-textarea:focus,
-.form-hover,
-.evo-form-hover:hover,
-.uneditable-input:hover,
-select:hover,
-input:hover,
-input[type]:hover,
-textarea:hover {
+select.form-focus:focus,
+input.form-focus:focus,
+input[type].form-focus:focus,
+textarea.form-focus:focus {
   border-top-color: rgba(26, 154, 214, 0.8);
   border-bottom-color: rgba(26, 154, 214, 0.8);
   border-left-color: rgba(26, 154, 214, 0.8);
@@ -11178,17 +11321,10 @@ textarea:hover {
   .form-focus + label,
   .evo-form-focus:focus + label,
   .uneditable-input:focus + label,
-  select:focus + label,
-  input:focus + label,
-  input[type]:focus + label,
-  textarea:focus + label,
-  .form-hover + label,
-  .evo-form-hover:hover + label,
-  .uneditable-input:hover + label,
-  select:hover + label,
-  input:hover + label,
-  input[type]:hover + label,
-  textarea:hover + label {
+  select.form-focus:focus + label,
+  input.form-focus:focus + label,
+  input[type].form-focus:focus + label,
+  textarea.form-focus:focus + label {
     color: rgba(26, 154, 214, 0.8);
     cursor: pointer; }
 
@@ -11229,7 +11365,6 @@ textarea.evo-form-line:focus {
 
 .form-focus-black,
 .focus-black:focus,
-.uneditable-input-black:focus,
 select.focus-black:focus,
 input.focus-black:focus,
 input[type].focus-black:focus,
@@ -11240,7 +11375,6 @@ textarea.focus-black:focus {
   border-right-color: black; }
   .form-focus-black + label,
   .focus-black:focus + label,
-  .uneditable-input-black:focus + label,
   select.focus-black:focus + label,
   input.focus-black:focus + label,
   input[type].focus-black:focus + label,
@@ -11250,19 +11384,17 @@ textarea.focus-black:focus {
 
 .form-focus-white,
 .focus-white:focus,
-.uneditable-input-white:focus,
 select.focus-white:focus,
 input.focus-white:focus,
 input[type].focus-white:focus,
 textarea.focus-white:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: white;
   border-color: white; }
   .form-focus-white + label,
   .focus-white:focus + label,
-  .uneditable-input-white:focus + label,
   select.focus-white:focus + label,
   input.focus-white:focus + label,
   input[type].focus-white:focus + label,
@@ -11272,7 +11404,6 @@ textarea.focus-white:focus {
 
 .form-focus-blue,
 .focus-blue:focus,
-.uneditable-input-blue:focus,
 select.focus-blue:focus,
 input.focus-blue:focus,
 input[type].focus-blue:focus,
@@ -11284,7 +11415,6 @@ textarea.focus-blue:focus {
   border-color: #0073b9; }
   .form-focus-blue + label,
   .focus-blue:focus + label,
-  .uneditable-input-blue:focus + label,
   select.focus-blue:focus + label,
   input.focus-blue:focus + label,
   input[type].focus-blue:focus + label,
@@ -11294,7 +11424,6 @@ textarea.focus-blue:focus {
 
 .form-focus-green,
 .focus-green:focus,
-.uneditable-input-green:focus,
 select.focus-green:focus,
 input.focus-green:focus,
 input[type].focus-green:focus,
@@ -11306,7 +11435,6 @@ textarea.focus-green:focus {
   border-color: #00a453; }
   .form-focus-green + label,
   .focus-green:focus + label,
-  .uneditable-input-green:focus + label,
   select.focus-green:focus + label,
   input.focus-green:focus + label,
   input[type].focus-green:focus + label,
@@ -11316,7 +11444,6 @@ textarea.focus-green:focus {
 
 .form-focus-red,
 .focus-red:focus,
-.uneditable-input-red:focus,
 select.focus-red:focus,
 input.focus-red:focus,
 input[type].focus-red:focus,
@@ -11324,12 +11451,55 @@ textarea.focus-red:focus {
   border-color: #eb212e; }
   .form-focus-red + label,
   .focus-red:focus + label,
-  .uneditable-input-red:focus + label,
   select.focus-red:focus + label,
   input.focus-red:focus + label,
   input[type].focus-red:focus + label,
   textarea.focus-red:focus + label {
     color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
+
+.form-hover,
+.evo-form-hover:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+input[type].form-hover:hover,
+textarea.form-hover:hover {
+  border-top-color: rgba(26, 154, 214, 0.8);
+  border-bottom-color: rgba(26, 154, 214, 0.8);
+  border-left-color: rgba(26, 154, 214, 0.8);
+  border-right-color: rgba(26, 154, 214, 0.8);
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover + label,
+  .evo-form-hover:hover + label,
+  select.form-hover:hover + label,
+  input.form-hover:hover + label,
+  input[type].form-hover:hover + label,
+  textarea.form-hover:hover + label {
+    color: rgba(26, 154, 214, 0.8);
+    cursor: pointer; }
+
+.form-hover-white,
+.evo-form-hover-white:hover,
+select.form-hover-white:hover,
+input.form-hover-white:hover,
+input[type].form-hover-white:hover,
+textarea.form-hover-white:hover {
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-white + label,
+  .evo-form-hover-white:hover + label,
+  select.form-hover-white:hover + label,
+  input.form-hover-white:hover + label,
+  input[type].form-hover-white:hover + label,
+  textarea.form-hover-white:hover + label {
+    color: white;
     cursor: pointer; }
 
 textarea ~ .label-floating {

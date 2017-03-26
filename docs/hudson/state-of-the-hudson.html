@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   $("#evo-scroll-1-run").click(function() {
     $('html, body').animate({
-        scrollTop: $("#sitemap").offset().top
+        scrollTop: $("#geography").offset().top
     }, 1500);
 });
 
@@ -163,7 +163,7 @@ $(document).ready(function() {
 <div class="container flex-center-vertical">
 <p class="evo-text-10 text-center evo-color-white padding-top-20 z-2">The Hudson River is a 315-mile river that flows from north to south primarily through eastern New York. The river originates in the Adirondack Mountains of Upstate New York, flows through the Hudson Valley, and eventually drains into the Atlantic Ocean, between New York City and Jersey City.</p>
 <!-- Scroll down requires additional javascript -->
-<a href="javascript: void(0);" id="evo-scroll-1-run z-2">
+<a href="javascript: void(0);" id="evo-scroll-1-run">
   <div class="position-bottom-middle z-2">
     <div class="icon-scroll-chevron-container margin-bottom-20">
       <div class="icon-scroll-chevron"></div>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 <!--    GEOGRAPHY   -->
 <!-- ********************* -->
 
-<div class="view-full flex-center-vertical position-relative" id="sothGeography">
+<div id="geography" class="view-full flex-center-vertical position-relative" id="sothGeography">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -211,7 +211,13 @@ $(document).ready(function() {
 <!--    BIG IMAGE 2  -->
 <!-- ********************* -->
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
 <div class="view-tall-half image-bg-mother-daughter image-bg-parallax box-shadow-inset"></div>
+</div>
+</div>
+</div>
 
 <!-- ********************* -->
 <!--    WILDLIFE   -->
@@ -264,7 +270,7 @@ $(document).ready(function() {
         <div class="evo-space"></div>
       </div>
       <div class="col-xs-12 col-sm-10">
-        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-estuary-maps.png" />
+        <img alt="Wildlife Map" class="image padding-bottom-20" src="image/graphics/graphic-estuary-maps.png" />
           <div class="evo-space"></div>
       </div>
     </div>
