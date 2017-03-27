@@ -248,19 +248,63 @@ $(document).ready(function() {
 <nav class="main-nav z-5">
 <ul>
   <li><a href="javascript:void(0);"><span class="image-bg hrf-icon-wavy-menu-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
-  <li><a href="our-grants.html"><div>Our<br>Grants</div></a></li>
-  <li><a href="our-work.html"><div>Our<br>Work</div></a></li>
+  <li class="dropdown">
+    <a href="our-grants.html"><div>Our<br>Grants</div></a>
+    <div class="dropdown-content">
+      <a href="our-grants.html">Overview</a>
+      <a href="our-grants.html#ourGrants">Our Grants</a>
+      <a href="our-grants.html#applyForGrant">Apply for a Grant</a>
+      <a href="javascript:void(0);">Grantees</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="our-work.html"><div>Our<br>Work</div></a>
+    <div class="dropdown-content">
+      <a href="our-work.html#ourWorkWaterQuality">Water Quality</a>
+      <a href="our-work.html#ourWorkHabitat">Habitat</a>
+      <a href="our-work.html#ourWorkFisheries">Fisheries</a>
+      <a href="our-work.html#ourWorkContaminants">Contaminants</a>
+      <a href="our-work.html#ourWorkEducation">Education + Community Engagement</a>
+      <a href="our-work.html#ourWorkPublicAccess">Public Access</a>
+      <a href="our-work.html#ourWorkClimateChange">Climate change</a>
+    </div>
+  </li>
   <li class="dropdown">
     <a href="research-finder.html"><div>Research<br>Finder</div></a>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="research-finder-search-results.html">Reports</a>
+      <a href="javascript:void(0);">Journal Articles</a>
+      <a href="research-finder-one-search-result.html">Publications</a>
     </div>
   </li>
-  <li><a href="state-of-the-hudson.html"><div><span class="hidden-xs hidden-sm hidden-md">State of </span>the<br>Hudson</div></a></li>
-  <li><a href="working-with-us.html"><div>Working<br>With Us</div></a></li>
-  <li><a href="media-library.html"><div>Media<br>Library</div></a></li>
+  <li class="dropdown">
+    <a href="state-of-the-hudson.html"><div><span class="hidden-xs hidden-sm hidden-md">State of </span>the<br>Hudson</div></a>
+    <div class="dropdown-content">
+      <a href="javascript:void(0);">Description</a>
+      <a href="javascript:void(0);">Geography</a>
+      <a href="javascript:void(0);">Wildlife</a>
+      <a href="javascript:void(0);">Status</a>
+      <a href="javascript:void(0);">Current Conditions (HRECOS)</a>
+      <a href="javascript:void(0);">State of the Harbor Estuary</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="working-with-us.html"><div>Working<br>With Us</div></a>
+    <div class="dropdown-content">
+      <a href="javascript:void(0);">Subscribe</a>
+      <a href="javascript:void(0);">Partners</a>
+      <a href="javascript:void(0);">Events</a>
+      <a href="javascript:void(0);">Seminars</a>
+      <a href="javascript:void(0);">Collaborate</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="media-library.html"><div>Media<br>Library</div></a>
+    <div class="dropdown-content">
+      <a href="javascript:void(0);">Photos</a>
+      <a href="javascript:void(0);">Videos</a>
+    </div>
+  </li>
   <li class="text-right padding-right-15"><a href="search.html"><span class="image-bg hrf-icon-search-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
 </ul>
 </nav>
@@ -399,15 +443,15 @@ What’s New or important.</h3>
 <div class="evo-space"></div>
 
 <!-- ********************* -->
-<!--    EVENTS   -->
+<!--    CALENDAR   -->
 <!-- ********************* -->
 
 
-<div class="position-relative" id="events">
+<div class="position-relative" id="calendar">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Events</h2>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Calendar</h2>
         <div class="row">
           <div class="col-xs-12">
             <div class="evo-box box-thin box-dashed text-center padding-top-23 padding-bottom-23">FPO Block</div>
@@ -558,7 +602,7 @@ What’s New or important.</h3>
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Current Conditions</h2>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">HRECOS Current Conditions</h2>
 <!--         <div class="evo-space-5"></div> -->
         <p class="evo-text text-measure-7 text-leading-8 margin-bottom-10">Our partnership with HRECOS allows us to access real-time data about environmental conditions in the Hudson River and Harbor Estuary.</p>
         <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
