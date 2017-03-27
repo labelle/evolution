@@ -53,6 +53,78 @@ background-image: url(image/graphics/newton-creek-fund.png);
 
 </style>
 
+<style>
+
+header.top {
+  z-index: 5;
+/*  background-color: transparent;*/
+  top:0;
+  position:fixed;
+}
+
+nav.main-nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.main-nav > ul > li {
+    float: left;
+    min-width:  12.5%;
+    width:12%;
+}
+
+nav.main-nav > ul > li > a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity:.7;
+/*    border-left-style: solid;
+    border-left-size: thin;
+    border-left-color: white;*/
+}
+
+nav.main-nav > ul > li > a > div, .dropbtn > div {
+    border-left: solid 1px white;
+    padding-left:10px;
+}
+
+nav.main-nav > ul > li a:hover, .dropdown:hover .dropbtn {
+    opacity:1;
+}
+
+li.dropdown {
+    display: inline-block;
+    min-width:  12.5%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover { opacity:1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -169,8 +241,34 @@ $(document).ready(function() {
         <![endif]-->
 
 <!-- Main navigation -->
-<!-- <header role="banner">
-</header> -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12" style="margin-top:-1px;">
+<header class="top hrf-font-2 evo-text-2 text-uppercase text-tracking-8 width-full text-leading-7" role="banner">
+<nav class="main-nav z-5">
+<ul>
+  <li><a href="our-grants.html"><span class="image-bg hrf-icon-wavy-menu-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
+  <li><a href="our-grants.html"><div>Our<br>Grants</div></a></li>
+  <li><a href="our-work.html"><div>Our<br>Work</div></a></li>
+  <li class="dropdown">
+    <a href="research-finder.html"><div>Research<br>Finder</div></a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li><a href="research-finder.html"><div><span class="hidden-xs hidden-sm hidden-md">State of </span>the<br>Hudson</div></a></li>
+  <li><a href="working-with-us.html"><div>Working<br>With Us</div></a></li>
+  <li><a href="working-with-us.html"><div>Media<br>Library</div></a></li>
+  <li><a href="search.html"><span class="image-bg hrf-icon-search-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
+</ul>
+</nav>
+</header>
+</div>
+</div>
+</div>
+
 <main>
 <!-- This line and above, edit only with global find and replace in sublime text -->
 
@@ -216,7 +314,7 @@ What’s New or important.</h3>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-6 hrf-font-2 hrf-color-1">What's Going On</h2>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">What's Going On</h2>
       </div>
     </div>
     <div class="row">
@@ -309,7 +407,7 @@ What’s New or important.</h3>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-6 hrf-font-2 hrf-color-1">Events</h2>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Events</h2>
         <div class="row">
           <div class="col-xs-12">
             <div class="evo-box box-thin box-dashed text-center padding-top-23 padding-bottom-23">FPO Block</div>
@@ -331,7 +429,7 @@ What’s New or important.</h3>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-6 hrf-font-2 hrf-color-1">Funds + Grants</h2>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Funds + Grants</h2>
       </div>
     </div>
     <div class="row">
@@ -460,9 +558,9 @@ What’s New or important.</h3>
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="evo-text-10 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Current Conditions</h2>
-        <div class="evo-space"></div>
-        <p class="evo-text evo-text-6 hrf-font-1 margin-bottom-0 text-measure">Our partnership with HRECOS allows us to access real-time data about environmental conditions in the Hudson River and Harbor Estuary.</p>
+        <h2 class="evo-text-8 hrf-font-2 hrf-color-1">Current Conditions</h2>
+<!--         <div class="evo-space-5"></div> -->
+        <p class="evo-text text-measure-7 text-leading-8 margin-bottom-10">Our partnership with HRECOS allows us to access real-time data about environmental conditions in the Hudson River and Harbor Estuary.</p>
         <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
           <li><a href="javascript:void(0);">Learn More</a></li>
         </ul>
@@ -494,7 +592,10 @@ What’s New or important.</h3>
 <footer id="footer" class="container-fluid hrf-color-1-bg">
 <div class="container">
 <div class="row">
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-12 col-md-6">
+
+<div class="row">
+    <div class="col-xs-6">
   <h5 class="evo-color-white margin-top-17 hrf-font-3">More Information</h5>
   <ul class="evo-list evo-color-white list-padding-thin list-size-small">
     <li><a class="evo-link-inverse" href="javascript:void(0);">Hudson River Foundation</a></li>
@@ -506,7 +607,7 @@ What’s New or important.</h3>
   </ul>
       <div class="evo-space-15"></div>
   </div>
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6">
   <h5 class="evo-color-white margin-top-17 hrf-font-3">Contact Us</h5>
   <ul class="evo-list evo-color-white list-size-small">
     <li>17 Battery Place, Suite 915</li>
@@ -519,7 +620,12 @@ What’s New or important.</h3>
   </ul>
       <div class="evo-space-15"></div>
   </div>
-  <div class="col-xs-6 col-md-3">
+  </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+  <div class="row">
+    <div class="col-xs-6">
   <h5 class="evo-color-white margin-top-17 hrf-font-3">Stay Informed</h5>
   <ul class="evo-list evo-color-white list-size-small">
     <li>Sign up with your email address and stay up to date on the latest Hudson + Harbor news.</li>
@@ -530,11 +636,14 @@ What’s New or important.</h3>
   </ul>
       <div class="evo-space-15"></div>
   </div>
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6">
   <img class="margin-bottom-0" src="../image/brand/logo-hrf-white.svg" style="height: 200px; width: 200px;" />
       <div class="evo-space-15"></div>
   </div>
 </div>
+</div>
+</div>
+
 <div class="row">
   <div class="col-xs-12">
     <hr class="evo-line line-thin line-white" />

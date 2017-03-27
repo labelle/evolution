@@ -12,12 +12,116 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!--         <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
+<!--         <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="css/evo-elements.css">
         <link rel="stylesheet" href="css/evo-brand.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
 
 
 <style>
+
+.navbar {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar > li {
+    display: inline-block;
+}
+
+
+.navbar-brand{
+    display: block;
+    max-width: 50%;
+    padding: 10px 15px;
+}
+
+.navbar > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+  
+  .navbar-default {
+      background: none;
+      border: none;
+      box-shadow: none;
+  }
+  .navbar-right {
+float: right;
+  }
+
+  .navbar-default .navbar-brand {
+      color: #000000;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+      color: #00a651;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+      color: #000000;
+      font-weight: normal;
+      cursor: pointer;
+  }
+
+  .navbar-default .navbar-nav .evo-button-smaller {
+      margin-top: -10px;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+      color: #00a651;
+      text-decoration: none;
+  }
+  .navbar-default .navbar-nav > .active > a, 
+  .navbar-default .navbar-nav > .active > a:hover, 
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: #555;
+  }
+
+  /* hamburger button */
+  .navbar-default .navbar-toggle {
+      background: none;
+      border: none;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+      background: none;
+      border: none;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+      background-color: black;
+  }
+
+
+/*.nav-body {
+      padding-top: 85px;
+  }*/
+
+
+.nav-header {
+      background: #ffffff;
+      border-bottom: 1px solid black;
+      height: 85px;
+      position: fixed;
+      top: 0;
+      transition: top 0.2s ease-in-out;
+      width: 100%;
+      z-index: 3;
+  }
+
+  .nav-up {
+      top: -85px;
+  }
+
+    .nav-down {
+/*      top: -85px;*/
+      background: #ffffff;
+    }
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -127,15 +231,82 @@ $(document).ready(function() {
 
 </script>
 
+<script>
+  // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('header').outerHeight();
+
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+
+  function hasScrolled() {
+      var st = $(this).scrollTop();
+      
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+      
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+          // Scroll Down
+          $('header').removeClass('nav-down').addClass('nav-up');
+      } else {
+          // Scroll Up
+          if(st + $(window).height() < $(document).height()) {
+              $('header').removeClass('nav-up').addClass('nav-down');
+          }
+      }
+      
+      lastScrollTop = st;
+  }
+</script>
+
+
 </head>
-<body>
+<body class="nav-body">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<!-- Main navigation -->
-<!-- <header role="banner">
-</header> -->
+<header class="nav-header nav-down evo-white-bg" role="banner">  
+  <nav class="navbar navbar-default navbar-custom">
+    <div class="container">
+      <div class="evo-line-10"></div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand hidden-xs" href="index.html">HRF</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse evo-white-bg" id="bs-example-navbar-collapse-2">
+        <ul class="navbar navbar-nav navbar-right evo-text-small">
+          <li><a href="hudson/index.html" class="evo-active">Site</a></li>
+          <li><a href="brand/index.html" class="evo-active">Brand</a></li>
+          <li><a href="design/index.html" class="evo-active">Design</a></li>
+          <li><a href="evolution/index.html" class="evo-active">Evolution</a></li>
+          <li><a href="hudson/" class="evo-active" download><span class="evo-button-smaller">Download</span></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
 
 
 <!-- Landing -->
