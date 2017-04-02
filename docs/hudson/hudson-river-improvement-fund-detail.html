@@ -19,9 +19,72 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
 <style>
 
-/*.hrf-image-place-bg {
-  background-image: url(image/fpo-image-bridge-lowrez.jpg);
-}*/
+header.top {
+  z-index: 5;
+  top:0;
+  position:fixed;
+}
+
+nav.main-nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.main-nav > ul > li {
+    float: left;
+    min-width:  12.5%;
+}
+
+nav.main-nav > ul > li > a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity:.7;
+/*    border-left-style: solid;
+    border-left-size: thin;
+    border-left-color: white;*/
+}
+
+nav.main-nav > ul > li > a > div, .dropbtn > div {
+    border-left: solid 1px white;
+    padding-left:10px;
+}
+
+nav.main-nav > ul > li a:hover, .dropdown:hover .dropbtn {
+    opacity:1;
+}
+
+li.dropdown {
+    display: inline-block;
+    min-width:  12.5%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover { opacity:1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
 
 </head>
@@ -31,8 +94,78 @@
         <![endif]-->
 
 <!-- Main navigation -->
-<!-- <header role="banner">
-</header> -->
+<div class="container-fluid">
+<div class="row" style="margin-left:-30px">
+<div class="col-xs-12" style="margin-top:-1px;">
+<header class="top hrf-font-2 evo-text-2 text-uppercase text-tracking-8 width-full text-leading-7" role="banner">
+<nav class="main-nav z-5 hrf-color-1-bg">
+<ul>
+  <li class="padding-left-15"><a href="javascript:void(0);"><span class="image-bg hrf-icon-wavy-menu-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
+  <li class="dropdown">
+    <a href="our-grants.html"><div>Our<br>Grants</div></a>
+    <div class="dropdown-content">
+      <a href="our-grants.html">Overview</a>
+      <a href="our-grants.html#ourGrants">Our Grants</a>
+      <a href="our-grants.html#applyForGrant">Apply for a Grant</a>
+      <a href="hudson-river-improvement-fund.html">Grantees</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="our-work.html"><div>Our<br>Work</div></a>
+    <div class="dropdown-content">
+      <a href="our-work.html#ourWorkWaterQuality">Water Quality</a>
+      <a href="our-work.html#ourWorkHabitat">Habitat</a>
+      <a href="our-work.html#ourWorkFisheries">Fisheries</a>
+      <a href="our-work.html#ourWorkContaminants">Contaminants</a>
+      <a href="our-work.html#ourWorkEducation">Education + Community Engagement</a>
+      <a href="our-work.html#ourWorkPublicAccess">Public Access</a>
+      <a href="our-work.html#ourWorkClimateChange">Climate change</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="research-finder.html"><div>Research<br>Finder</div></a>
+    <div class="dropdown-content">
+      <a href="research-finder-search-results.html">Reports</a>
+      <a href="javascript:void(0);">Journal Articles</a>
+      <a href="research-finder-one-search-result.html">Publications</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="state-of-the-hudson.html"><div><span class="hidden-xs hidden-sm hidden-md">State of </span>the<br>Hudson</div></a>
+    <div class="dropdown-content">
+      <a href="javascript:void(0);">Description</a>
+      <a href="javascript:void(0);">Geography</a>
+      <a href="javascript:void(0);">Wildlife</a>
+      <a href="javascript:void(0);">Status</a>
+      <a href="javascript:void(0);">Current Conditions (HRECOS)</a>
+      <a href="javascript:void(0);">State of the Harbor Estuary</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="working-with-us.html"><div>Working<br>With Us</div></a>
+    <div class="dropdown-content">
+      <a href="subscribe.html">Subscribe</a>
+      <a href="javascript:void(0);">Partners</a>
+      <a href="javascript:void(0);">Events</a>
+      <a href="javascript:void(0);">Seminars</a>
+      <a href="javascript:void(0);">Collaborate</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="media-library.html"><div>Media<br>Library</div></a>
+    <div class="dropdown-content">
+      <a href="javascript:void(0);">Photos</a>
+      <a href="javascript:void(0);">Videos</a>
+    </div>
+  </li>
+  <li class="text-right padding-right-15"><a href="search.html"><span class="image-bg hrf-icon-search-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
+</ul>
+</nav>
+</header>
+</div>
+</div>
+</div>
+
 <main>
 <!-- This line and above, edit only with global find and replace in sublime text -->
 
@@ -46,7 +179,7 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <div class="evo-space"></div>
+    <div class="evo-space-19"></div>
     <ul class="evo-link list-bullet bullet-slash bullet-gray list-inline list-size-small evo-gray-12 hrf-font-2 text-uppercase text-tracking-8 vertical-align-middle">
       <li><a href="javascript:void(0);">&nbsp;Your Hudson + Harbor</a></li>
       <li><a href="javascript:void(0);">&nbsp;Our Grants</a></li>
