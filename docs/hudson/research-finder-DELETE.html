@@ -87,6 +87,29 @@ li.dropdown {
 }
 </style>
 
+<script>
+// From w3schools https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
 </head>
 <body>
         <!--[if lt IE 8]>
@@ -187,126 +210,23 @@ li.dropdown {
       </div>
    </div>
 
+<!-- ********************* -->
+<!--     MEGA SEARCH WITH LINK  -->
+<!-- ********************* -->
+
+    <div class="row">
+      <div class="col-xs-12">
+<input type="search" id="search1" placeholder="search" class="evo-form padding-top-10 padding-right-0 padding-bottom-10 padding-left-0 box-corner-square evo-box box-top-0 box-left-0 box-right-0 evo-text-10 vertical-align-middle box-corner margin-bottom-3 transparent-bg evo-text-10 form-search form-icon-right-flush">
+<label class="hrf-font-2 evo-text-3 evo-gray-15 visually-hidden" for="search1">Type your search term above.</label>
+<div class="margin-top-10 text-right" id="flip"><a href="research-finder-advanced-search.html" class="evo-link">advanced search</a></div>
+<div class="evo-space-17"></div>
+      </div>
    </div>
-
-<!-- ********************* -->
-<!--    ADVANCED SEARCH   -->
-<!-- ********************* -->
-
- <form name="form-validation-contact-line" id="form-validation-contact-line" id="advancedSearch1">
-  <fieldset form="advancedSearch1">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-11">
-<!--            <div class="evo-space-10"></div> -->
-            <legend class="evo-text-12 hrf-font-2 evo-gray-18">Advanced Search</legend>
-            </div>
-        <div class="col-xs-1">
-        <a href="research-finder.html"><span class="image image-square hrf-icon-close-bg contain margin-top-10 margin-right-10" style="width:2em;height:2em;background-repeat:no-repeat;"></span></a>
-        </div>
-          <div class="evo-space"></div>
-        </div>
-      <div class="row">
-<!--         <div class="col-xs-12">
-          <h3 class="h4">Author</h3>
-        </div> -->
-        <div class="col-xs-12 col-md-6">
-          <select class="evo-form-line form-chevron-down font-google-montserrat margin-bottom-3" id="selectAuthor1">
-            <option value="option1">option 1</option>
-            <option value="option2">option 2</option>
-            <option value="option3">option 3</option>
-          </select>
-          <label for="selectAuthor1" class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8 text-uppercase">Author</label>
-          <div class="evo-space-12"></div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <span class="input-container">
-            <input class="evo-form-line margin-bottom-3" type="text" name="name_contact_line" placeholder="Author" id="author1" autocomplete>
-            <label class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8" for="author1">Or type to search authors.</label> 
-          </span>
-          <!-- error message -->
-          <span class="evo-text-2">
-            <h5 id="author1_error_search_line" class="evo-color-5 evo-text-2"></h5>
-            <div class="evo-space"></div>
-          </span>
-        </div>
-      </div>
-      <div class="row">
-<!--         <div class="col-xs-12">
-          <h3 class="h4">Interest Area</h3>
-        </div> -->
-        <div class="col-xs-12 col-md-6">
-          <select class="evo-form-line form-chevron-down font-google-montserrat margin-bottom-3" id="selectInterest1">
-            <option value="option1">option 1</option>
-            <option value="option2">option 2</option>
-            <option value="option3">option 3</option>
-          </select>
-          <label for="selectInterest1" class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8 text-uppercase">Interest Area</label>
-          <div class="evo-space-12"></div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-        </div>
-          <div class="evo-space"></div>
-      </div>
-      <div class="row">
-<!--         <div class="col-xs-12">
-          <h3 class="h4">Organization</h3>
-        </div> -->
-        <div class="col-xs-12 col-md-6">
-          <select class="evo-form-line form-chevron-down font-google-montserrat margin-bottom-3" id="selectOrganization1">
-            <option value="option1">option 1</option>
-            <option value="option2">option 2</option>
-            <option value="option3">option 3</option>
-          </select>
-          <label for="selectOrganization1" class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8 text-uppercase">Organization</label>
-          <div class="evo-space-12"></div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <span class="input-container">
-            <input class="evo-form-line margin-bottom-3" type="text" name="name_contact_line" placeholder="e.g. harbor estuary program" id="selectOrganization1" autocomplete>
-            <label class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8" for="organization1">Or type to search in organization.</label> 
-          </span>
-          <!-- error message -->
-          <span class="evo-text-2">
-            <h5 id="organization1_error_search_line" class="evo-color-5 evo-text-2"></h5>
-            <div class="evo-space"></div>
-          </span>
-        </div>
-      </div>
-      <div class="row">
-<!--         <div class="col-xs-12">
-          <h3 class="h4">Keyword</h3>
-        </div> -->
-        <div class="col-xs-12 col-md-6">
-          <span class="input-container">
-            <input class="evo-form-line margin-bottom-3" type="text" name="keyword_search_line" placeholder="e.g. hurricane sandy" id="keyword1" autocomplete>
-            <label class="hrf-font-2 evo-text-3 evo-gray-15 text-tracking-8 text-uppercase" for="keyword1">Keyword</label> 
-          </span>
-          <!-- error message -->
-          <span class="evo-text-2">
-            <h5 id="keyword1_error_search_line" class="evo-color-5 evo-text-2"></h5>
-            <div class="evo-space"></div>
-          </span>
-        </div>
-        <div class="col-xs-12">
-<a href="javascript:void(0);"><input type="button" onclick="alert('Hello World!')" value="submit" class="evo-button ghost-color-to-ghost width-auto"></a>
-<a href="javascript:void(0);"><input type="reset" onclick="alert('Hello World!')" value="reset" class="button-box-none ghost-color-to-ghost transparent-bg width-auto"></a>
-              <div class="evo-space-17"></div>
-        </div>
-      </div>
-            </fieldset>
-          </form>
-
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div> <!-- /.container -->
-
-        <!-- END ADVANCED SEARCH FORM -->
 
 <!-- ********************* -->
 <!--    MOST POPULAR RESEARCH   -->
 <!-- ********************* -->
- <div class="container">
+
 <div class="row">
 
   <div class="col-xs-12">
