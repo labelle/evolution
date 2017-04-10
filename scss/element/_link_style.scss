@@ -93,31 +93,31 @@
 
 
 // Text Decoration
-a.text-link-over              { text-decoration: overline; border-bottom-width: none; }
-a.text-link-over-hover        { text-decoration: none; border-bottom-width: none; }
-a.text-link-over-hover:hover  { text-decoration: overline; border-bottom-width: none; }
+a.text-link-over              { text-decoration: overline !important; border-bottom-width: none; }
+a.text-link-over-hover        { text-decoration: none !important; border-bottom-width: none; }
+a.text-link-over-hover:hover  { text-decoration: overline !important; border-bottom-width: none; }
 
-a.text-link-middle              { text-decoration: line-through; border-bottom-width: none; }
-a.text-link-middle-hover        { text-decoration: none; border-bottom-width: none; }
-a.text-link-middle-hover:hover  { text-decoration: line-through; border-bottom-width: none; }
+a.text-link-middle              { text-decoration: line-through !important; border-bottom-width: none; }
+a.text-link-middle-hover        { text-decoration: none !important; border-bottom-width: none; }
+a.text-link-middle-hover:hover  { text-decoration: line-through !important; border-bottom-width: none; }
 
-a.text-link-under              { text-decoration: underline; border-bottom-width: none; }
-a.text-link-under-hover        { text-decoration: none; border-bottom-width: none; }
-a.text-link-under-hover:hover  { text-decoration: underline; border-bottom-width: none; }
+a.text-link-under              { text-decoration: underline !important; border-bottom-width: none; }
+a.text-link-under-hover        { text-decoration: none !important; border-bottom-width: none; }
+a.text-link-under-hover:hover  { text-decoration: underline !important; border-bottom-width: none; }
 
-a.text-link-over-under              { text-decoration: overline underline; border-bottom-width: none; }
-a.text-link-over-under-hover        { text-decoration: none; border-bottom-width: none; }
-a.text-link-over-under-hover:hover  { text-decoration: overline underline; border-bottom-width: none; }
+a.text-link-over-under              { text-decoration: overline underline !important; border-bottom-width: none; }
+a.text-link-over-under-hover        { text-decoration: none !important; border-bottom-width: none; }
+a.text-link-over-under-hover:hover  { text-decoration: overline underline !important; border-bottom-width: none; }
 
-a.text-link-all              { text-decoration: overline line-through underline; border-bottom-width: none; }
-a.text-link-all-hover        { text-decoration: none; border-bottom-width: none; }
-a.text-link-all-hover:hover  { text-decoration: overline line-through underline; border-bottom-width: none; }
+a.text-link-all              { text-decoration: overline line-through underline !important; border-bottom-width: none; }
+a.text-link-all-hover        { text-decoration: none !important; border-bottom-width: none; }
+a.text-link-all-hover:hover  { text-decoration: overline line-through underline !important; border-bottom-width: none; }
 
 // Decoration can be combined
 
-a.text-link-none              { text-decoration: none; border-bottom: none; }
+a.text-link-none              { text-decoration: none !important; border-bottom: none; }
 // a.text-link-none-hover        { text-decoration: none; border-bottom: none; }
-a.text-link-none-hover:hover  { text-decoration: none; border-bottom: none; }
+a.text-link-none-hover:hover  { text-decoration: none !important; border-bottom: none; }
 
 
 
@@ -213,17 +213,17 @@ a.link-line-color-to-black:hover    { border-bottom-color: #{$evo_black} !import
 // Link background color
 a.link-highlight-color                 { color: inherit; background-color: inherit; }
 a.link-highlight-color-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-color-hover:hover     { color: #{$evo_white}; background-color: #{$link_color} !important; }
+a.link-highlight-color-hover:hover     { color: #{$evo_white} !important; background-color: #{$link_color} !important; }
 
 // Link background color black
 a.link-highlight-black                 { color: inherit; background-color: inherit; }
 a.link-highlight-black-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-black-hover:hover     { color: #{$evo_white}; background-color: #{$evo_black} !important; }
+a.link-highlight-black-hover:hover     { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
 
 // Link background color white
 a.link-highlight-white                 { color: inherit; background-color: inherit; }
 a.link-highlight-white-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-white-hover:hover     { color: #{$evo_black}; background-color: #{$evo_white} !important; }
+a.link-highlight-white-hover:hover     { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
 
 
 

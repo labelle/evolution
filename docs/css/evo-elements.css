@@ -5829,71 +5829,71 @@ a.evo-link-inverse:focus,
   color: invert !important; }
 
 a.text-link-over {
-  text-decoration: overline;
+  text-decoration: overline !important;
   border-bottom-width: none; }
 
 a.text-link-over-hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-width: none; }
 
 a.text-link-over-hover:hover {
-  text-decoration: overline;
+  text-decoration: overline !important;
   border-bottom-width: none; }
 
 a.text-link-middle {
-  text-decoration: line-through;
+  text-decoration: line-through !important;
   border-bottom-width: none; }
 
 a.text-link-middle-hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-width: none; }
 
 a.text-link-middle-hover:hover {
-  text-decoration: line-through;
+  text-decoration: line-through !important;
   border-bottom-width: none; }
 
 a.text-link-under {
-  text-decoration: underline;
+  text-decoration: underline !important;
   border-bottom-width: none; }
 
 a.text-link-under-hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-width: none; }
 
 a.text-link-under-hover:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   border-bottom-width: none; }
 
 a.text-link-over-under {
-  text-decoration: overline underline;
+  text-decoration: overline underline !important;
   border-bottom-width: none; }
 
 a.text-link-over-under-hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-width: none; }
 
 a.text-link-over-under-hover:hover {
-  text-decoration: overline underline;
+  text-decoration: overline underline !important;
   border-bottom-width: none; }
 
 a.text-link-all {
-  text-decoration: overline line-through underline;
+  text-decoration: overline line-through underline !important;
   border-bottom-width: none; }
 
 a.text-link-all-hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-width: none; }
 
 a.text-link-all-hover:hover {
-  text-decoration: overline line-through underline;
+  text-decoration: overline line-through underline !important;
   border-bottom-width: none; }
 
 a.text-link-none {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom: none; }
 
 a.text-link-none-hover:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom: none; }
 
 a.evo-link-line {
@@ -6045,7 +6045,7 @@ a.link-highlight-color-hover:link {
   background-color: inherit; }
 
 a.link-highlight-color-hover:hover {
-  color: white;
+  color: white !important;
   background-color: #009877 !important; }
 
 a.link-highlight-black {
@@ -6057,7 +6057,7 @@ a.link-highlight-black-hover:link {
   background-color: inherit; }
 
 a.link-highlight-black-hover:hover {
-  color: white;
+  color: white !important;
   background-color: black !important; }
 
 a.link-highlight-white {
@@ -6069,7 +6069,7 @@ a.link-highlight-white-hover:link {
   background-color: inherit; }
 
 a.link-highlight-white-hover:hover {
-  color: black;
+  color: black !important;
   background-color: white !important; }
 
 a.evo-link-bullet {
