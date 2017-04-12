@@ -150,26 +150,31 @@ function closeNav() {
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
+    left: -1px;
+    background-color: #fff; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-right: 1px solid #ccc;
 }
 
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+/*    font-size: 25px;*/
+    color: #999;
     display: block;
     transition: 0.3s
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav-inverse a:hover, .offcanvas-inverse a:focus{
     color: #f1f1f1;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000;
 }
 
 /* Position and style the close button (top right corner) */
@@ -180,6 +185,8 @@ function closeNav() {
     font-size: 36px;
     margin-left: 50px;
 }
+
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -203,10 +210,26 @@ function closeNav() {
         <![endif]-->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <div class="hrf-font-3 hidden-md hidden-lg">
+  <a href="index.html">Home</a>
+  <a href="our-grants.html">Our Grants</a>
+  <a href="our-work.html">Our Work</a>
+  <a href="research-finder.html">Research Finder</a>
+  <a href="state-of-the-hudson.html">The Hudson</a>
+  <a href="working-with-us.html">Working with Us</a>
+  <a href="media-library.html">Media Library</a>
+  </div>
+  <div class="evo-space-10"></div>
+  <div class="evo-text-2 hrf-font-2">
+  <a href="about-us.html">About Us</a>
+  <a href="our-work-fisheries-striped-bass.html">Striped Bass Tagging</a>
+  <a href="index.html#sothCurrentConditions">HRECOS</a>
+  <a href="ed-ames-seminars.html">Ed Ames Seminars</a>
+  <a href="javascript:void(0);">Tidal Exchange News</a>
+  <a href="press.html">Press</a>
+  <a href="research-finder.html">Publications</a>
+  <a href="contact-us.html">Talk to Us</a>
+  </div>
 </div>
 
 <div id="main">
@@ -215,9 +238,9 @@ function closeNav() {
 <div class="col-xs-12" style="margin-top:-1px;">
 <header class="top hrf-font-2 evo-text-2 text-uppercase text-tracking-8 width-full text-leading-7" role="banner">
 <nav class="main-nav z-5 hrf-color-1-bg">
-<ul>
+<ul class="hidden-xs hidden-sm">
   <li class="padding-left-15"><a><span class="image-bg hrf-icon-wavy-menu-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;cursor:pointer;" onclick="openNav()"></span></a></li>
-  <li class="dropdown hidden-xs hidden-sm">
+  <li class="dropdown">
     <a href="our-grants.html"><div>Our<br>Grants</div></a>
     <div class="dropdown-content">
       <a href="our-grants.html">Overview</a>
@@ -226,7 +249,7 @@ function closeNav() {
       <a href="hudson-river-improvement-fund.html">Grantees</a>
     </div>
   </li>
-    <li class="dropdown hidden-xs hidden-sm">
+    <li class="dropdown">
     <a href="our-work.html"><div>Our<br>Work</div></a>
     <div class="dropdown-content">
       <a href="our-work.html#ourWorkWaterQuality">Water Quality</a>
@@ -238,7 +261,7 @@ function closeNav() {
       <a href="our-work.html#ourWorkClimateChange">Climate change</a>
     </div>
   </li>
-  <li class="dropdown hidden-xs hidden-sm">
+  <li class="dropdown">
     <a href="research-finder.html"><div>Research<br>Finder</div></a>
     <div class="dropdown-content">
       <a href="research-finder-search-results.html">Reports</a>
@@ -246,7 +269,7 @@ function closeNav() {
       <a href="research-finder-one-search-result.html">Publications</a>
     </div>
   </li>
-  <li class="dropdown hidden-xs hidden-sm">
+  <li class="dropdown">
     <a href="state-of-the-hudson.html"><div><span class="hidden-xs hidden-sm hidden-md">State of </span>the<br>Hudson</div></a>
     <div class="dropdown-content">
       <a href="state-of-the-hudson.html#sohOverview">Description</a>
@@ -257,7 +280,7 @@ function closeNav() {
       <a href="javascript:void(0);">State of the Harbor Estuary</a>
     </div>
   </li>
-  <li class="dropdown hidden-xs hidden-sm">
+  <li class="dropdown">
     <a href="working-with-us.html"><div>Working<br>With Us</div></a>
     <div class="dropdown-content">
       <a href="subscribe.html">Subscribe</a>
@@ -267,7 +290,7 @@ function closeNav() {
       <a href="javascript:void(0);">Collaborate</a>
     </div>
   </li>
-  <li class="dropdown hidden-xs hidden-sm">
+  <li class="dropdown">
     <a href="media-library.html"><div>Media<br>Library</div></a>
     <div class="dropdown-content">
       <a href="javascript:void(0);">Photos</a>
@@ -275,6 +298,10 @@ function closeNav() {
     </div>
   </li>
   <li class="text-right padding-right-15"><a href="search.html"><span class="image-bg hrf-icon-search-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
+</ul>
+<ul class="hidden-md hidden-lg">
+  <li class="padding-left-15" style="display:inline-block;float:left;"><a><span class="image-bg hrf-icon-wavy-menu-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;cursor:pointer;" onclick="openNav()"></span></a></li>
+  <li class="text-right padding-right-15" style="float:right;display:inline-block"><a href="search.html"><span class="image-bg hrf-icon-search-bg-white contain evo-image-5 contain display-inline-block" style="width:2.5em;height:2.5em;"></span></a></li>
 </ul>
 </nav>
 </header>
