@@ -8,6 +8,9 @@
 // see variables/scale for actual units
 // https://css-tricks.com/confused-rem-em/
 
+// Global
+#{$evo}-tracking,
+.text-tracking       { letter-spacing: #{$text_tracking}em; }
 
 // /* Text Utilities */
 

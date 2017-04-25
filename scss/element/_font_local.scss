@@ -276,24 +276,44 @@
 
 
 
-// Ebenezer
+// // Ebenezer
+// // There is a glitch for one of the characters in ebenezer
+
+// @font-face {
+//     font-family: 'ebenezerregular';
+//     src: url('../font/ebenezer-webfont.eot');
+//     src: local("☺"),
+//          url('../font/ebenezer-webfont.eot?#iefix') format('embedded-opentype'),
+//          // url('../font/ebenezer-webfont.woff2') format('woff2'),
+//          url('../font/ebenezer-webfont.woff') format('woff'),
+//          url('../font/ebenezer-webfont.ttf') format('truetype'),
+//          url('../font/ebenezer-webfont.svg#ebenezerregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+
+// .font-ebenezer            { font-family: #{$ebenezer}; }
+
+
+
+// Font replacement
+// May require licenses
+
+// Neon
+// http://www.fontspace.com/essqu%C3%A9-productions/neon-80s
 
 @font-face {
-    font-family: 'ebenezerregular';
-    src: url('../font/ebenezer-webfont.eot');
-    src: local("☺"),
-         url('../font/ebenezer-webfont.eot?#iefix') format('embedded-opentype'),
-         // url('../font/ebenezer-webfont.woff2') format('woff2'),
-         url('../font/ebenezer-webfont.woff') format('woff'),
-         url('../font/ebenezer-webfont.ttf') format('truetype'),
-         url('../font/ebenezer-webfont.svg#ebenezerregular') format('svg');
+    font-family: 'neon';
+    src: url('../font/essqué-productions_neon-80s/neon.ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
+.font-neon              { font-family: #{$neon}; }
 
-.font-ebenezer            { font-family: #{$ebenezer}; }
 
 // @font-face{ 
 //   font-family: 'MyWebFont';

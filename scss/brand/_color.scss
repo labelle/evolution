@@ -1,30 +1,31 @@
 ///*      B R A N D   C O L O R     */
 
-@import "variables_hrf";
+@import "variables";
 
 
 
-// HRF Green
+// Brand Color 1
 #{$brand}-color-1     { color: #{$brand_color_1}; }
 #{$brand}-color-1-bg  { background-color: #{$brand_color_1}; }
 
 #{$brand}-box-color-1  { border-color: #{$brand_color_1}; }
 
 
-// HEP Green
+// Brand Color 2
 #{$brand}-color-2     { color: #{$brand_color_2}; }
 #{$brand}-color-2-bg  { background-color: #{$brand_color_2}; }
 
 #{$brand}-box-color-2  { border-color: #{$brand_color_2}; }
 
-// HRF Blue
+
+// Brand Color 3
 #{$brand}-color-3     { color: #{$brand_color_3}; }
 #{$brand}-color-3-bg  { background-color: #{$brand_color_3}; }
 
 #{$brand}-box-color-3  { border-color: #{$brand_color_3}; }
 
 
-// HRF Warm Gray
+// Brand Color 4
 #{$brand}-color-4     { color: #{$brand_color_4}; }
 #{$brand}-color-4-bg  { background-color: #{$brand_color_4}; }
 

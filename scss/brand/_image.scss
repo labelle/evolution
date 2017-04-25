@@ -1,27 +1,12 @@
 ///*      B R A N D   I M A G E    */
 
-@import "variables_hrf";
+@import "variables";
 
 
-// Person
+// Person, place, thing, texture
 
-#{$brand}-image-person-bg    { background-image: url(#{$image_person}); }
-
-
-
-// Place
-
-#{$brand}-image-place-bg    { background-image: url(#{$image_place}); }
-
-
-
-// Thing
-
-#{$brand}-image-thing-bg    { background-image: url(#{$image_thing}); }
-
-
-
-// Texture
-
-#{$brand}-image-texture-bg    { background-image: url(#{$image_texture}); }
+#{$brand}-image-person-bg    { background-image: url(#{$brand_image_person}); }
+#{$brand}-image-place-bg     { background-image: url(#{$brand_image_place}); }
+#{$brand}-image-thing-bg     { background-image: url(#{$brand_image_thing}); }
+#{$brand}-image-texture-bg   { background-image: url(#{$brand_image_texture}); }
 

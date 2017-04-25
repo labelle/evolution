@@ -32,9 +32,9 @@
 
 <section id="evoTextIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Text</h1>
+<h1 class="text-size-13" style="margin-bottom: 0;">Text</h1>
 
-<p class="evo-measure">Change the style of text.</p>
+<p class="evo-measure">Change the style of text. Styles controlled are font-size, color, font-family, font-weight, line-height, letter-spacing, ad text-rendering. Place the <code>evo-text</code> tag first before other structural classes that include <code>text-size-10</code> which modifies sizes, or <code>text-leading-10</code> which modifies line-height. Leave out the <code>evo-text</code> class if you prefer to modify styles using a class such as <code>evo-color-10</code>.</p>
 
 <div class="evo-space-20"></div>
 
@@ -46,7 +46,7 @@
 
 <section id="evoText">
 
-<h2 class="evo-text-6">evo-text</h2>
+<h2 class="text-size-6">evo-text</h2>
 
 <div class="divider"></div>
 
@@ -62,7 +62,34 @@
 
 <p class="evo-measure">Create a <code>&lt;p&gt;</code> tag, and apply the css class <code>evo-text</code>. Text styles can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
 
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- text inverse -->
+
+<section id="evoTextInverse">
+
+<h2 class="text-size-6">text-inverse</h2>
+
 <div class="divider"></div>
+
+<div class="evo-color-black-bg padding-10">
+<p class="evo-text text-inverse">Experience Design Made Simple for living design systems</p>
+</div>
+
+<div class="divider"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="evo-text text-inverse"&gt;&lt;/p&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
+
+<p class="evo-measure">Create a <code>&lt;p&gt;</code> tag, and apply the css class <code>evo-text</code> followed by <code>text-inverse</code>. Using only the <code>text-inverse</code> tag will simply apply the inverse color from _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -72,14 +99,11 @@
 
 <section id="evoParagraph">
 
-<h2 class="evo-text-6">p</h2>
+<h2 class="text-size-6">p</h2>
 
 <div class="divider"></div>
 
-<p>paragraph of copy here... lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+<p>paragraph of copy here... lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -91,10 +115,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <div class="divider-small"></div>
 
-<p class="evo-measure">Create a <code>&lt;p /&gt;</code> tag. Optionally, you can apply the css class <code>evo-text</code>. Text styles can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+<p class="evo-measure">Create a <code>&lt;p&gt;</code> tag. <code>&lt;p&gt;</code> tags set the global text color and margin-top plus margin-bottom padding. To cancel out the default margin-bottom setting, use the <code>margin-bottom-0</code> class. <code>&lt;p&gt;</code> tag styles can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
 
-
-<div class="divider"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -103,7 +126,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <section id="evoH">
 
-<h2 class="evo-text-6">H</h2>
+<h2 class="text-size-6">H</h2>
 
 <div class="divider"></div>
 
@@ -122,14 +145,26 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <div class="divider-small"></div>
 
 <pre class="evo-code">
-<code>&lt;h1&gt;H1 Header&lt;/h1&gt;</code>
+<code>&lt;h1&gt;H1 header&lt;/h1&gt;</code>
 </pre>
 
 <div class="divider-small"></div>
 
-<p class="evo-measure">Create an <code>&lt;h1&gt;</code> tag. Text styles can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+<p class="evo-measure">Create an <code>&lt;h1&gt;</code> tag. This controls font-size, line-height, letter-spacing, and margin-bottom. Text styles can be adjusted in _variables.scss. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
 
 <div class="divider"></div>
+
+<h1 class="h3">H1 header with H3 class</h1>
+
+<pre class="evo-code">
+<code>&lt;h1 class="h3"&gt;H1 header with H3 style&lt;/h1&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
+
+<p class="evo-measure">You can also apply a header style, such as the <code>h3</code> class, to directly to any H tag. For example, create an <code>&lt;h1&gt;</code> tag and apply the <code>h3</code> class. The <code>&lt;h1&gt;</code> tag retains the semantic hierarchy information, but now displays the <code>h3</code> class styling. <!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -138,23 +173,56 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <section id="evoTextReset">
 
-<h2 class="evo-text-6">text-reset</h2>
+<h2 class="text-size-6">text-reset</h2>
 
 <div class="divider"></div>
 
 <!-- text-reset -->
 <p class="text-reset">This sentence demonstrates the reset of styles.</p>
 
-<div class="evo-space-8"></div>
+<div class="divider"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="text-reset"&gt;This sentence demonstrates the reset of styles.&lt;/hp&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
 
 <p class="evo-measure">Use the <code>text-reset</code> class to remove text styles.</p>
 
-<!-- TO DO: replace with .evo-inline-code block pattern -->
-<pre class="evo-text-3 evo-inline-code evo-box box-1">
+<div class="evo-space-20"></div>
 
-   &lt;p class="text-reset"&gt;&lt;/p&gt;
+</section>
 
+
+
+<!-- text example -->
+
+<section id="evoTextExamples">
+
+<h2 class="text-size-6">Text Examples</h2>
+
+<div class="divider"></div>
+
+<p class="font-arial-black evo-color text-size-10 text-tracking-2 text-leading-5 text-uppercase text-center text-measure-3 text-bevel-3 text-line-under">The best revenge is massive success.</p></p>
+
+<div class="divider-small"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="font-arial-black evo-color text-size-10 text-tracking-2 text-leading-5 text-uppercase text-center text-measure-3 text-bevel-3 text-line-under"&gt;The best revenge is massive success.&lt;/hp&gt;</code>
 </pre>
+
+<div class="divider"></div>
+
+<p class="font-times-new font-italic evo-gray text-size-4 text-leading-10 text-measure-5 text-measure-4">Take up one idea. Make that one idea your life–think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. –Swami Vivekananda</p>
+
+<div class="divider-small"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="font-times-new font-italic text-size-4 text-leading-10 text-measure-5 text-measure-4"&gt;Take up one idea...&lt;/hp&gt;</code>
+</pre>
+
+<div class="evo-space-20"></div>
 
 </section>
 

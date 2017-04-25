@@ -5,3 +5,8 @@
 @import "text_mixin";
 
 
+.breadcrumb-back-to:before {
+content:'\00AB';
+padding-right:.5em;
+display:inline;
+}

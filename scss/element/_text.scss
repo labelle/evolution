@@ -137,26 +137,6 @@ p {
 }
 
 
-// Fluid header concept
-// http://codepen.io/chriscoyier/pen/RpKEzV?editors=1100
-// https://css-tricks.com/simple-little-use-case-vmin/
-// combine with hidden and visible classes from bootstrap
-
-// Apply class to header tag
-header.fluid-header {
-  padding: 10vmin 1rem;
-  // text-align: center;
-  margin: 0 0 8vmin 0;
-}
-
-// Nest tag inside
-header.fluid-header p {
-  margin: 0;
-  font-size: 3rem;
-  font-size: calc(12px + (48 - 12) * ((100vw - 300px) / (1600 - 300)));
-
-}
-
 
 
 // // Element Mixins

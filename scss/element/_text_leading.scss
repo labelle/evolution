@@ -11,6 +11,9 @@
 
 // /* Text Utilities */
 
+// Global
+#{$evo}-leading,
+.text-leading         { line-height: #{$text_leading}; } // equal to text-leading-10
 
 // // Relative Text Leading
 // .text-leading-smallest  { @include leading(tightest); }

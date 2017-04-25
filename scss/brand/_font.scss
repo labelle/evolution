@@ -1,44 +1,32 @@
 ///*      B R A N D   F O N T S     */
 
-@import "variables_hrf";
+@import "variables";
 
 
 
 // Brand Fonts
 #{$brand}-font-1 { 
-font-family: #{$google_merriweather};
-font-weight:400;
+font-family: #{$brand_font_1};
 }
 
 #{$brand}-font-2 { 
-font-family: #{$google_montserrat};
-font-weight:400;
-}
-
-#{$brand}-font-3 { 
-font-family: #{$google_montserrat};
-font-weight:700;
+font-family: #{$brand_font_2};
 }
 
 
 
-// <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+// Halis Rounded
 
-// Google Merriweather
+@font-face {
+    font-family: 'halis_r_regularregular';
+    src: url('../font/HalisR-Regular-webfont.eot');
+    src: local("☺"),
+         url('../font/HalisR-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/HalisR-Regular-webfont.woff2') format('woff2'),
+         url('../font/HalisR-Regular-webfont.woff') format('woff'),
+         url('../font/HalisR-Regular-webfont.ttf') format('truetype'),
+         url('../font/HalisR-Regular-webfont.svg#halis_r_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-.font-google-merriweather  {
-font-family: #{$google_merriweather};
-font-weight:400;
-}
-
-// Google Montserrat
-
-.font-google-montserrat  {
-font-family: #{$google_montserrat};
-font-weight:400;
-}
-
-.font-google-montserrat-bold  {
-font-family: #{$google_montserrat};
-font-weight:700;
 }

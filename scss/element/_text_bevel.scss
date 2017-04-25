@@ -1,0 +1,266 @@
+///*      T E X T   B E V E L     */
+
+@import "../variables";
+
+// global
+
+#{$evo}-text-bevel,
+.text-bevel {
+    text-shadow: #{$text_bevel};
+}
+
+#{$evo}-text-bevel-inverse,
+.inverse-text-bevel {
+    text-shadow: #{$inverse_text_bevel};
+}
+
+
+// Thickness
+
+// Produces a sharp bevel edge to the text
+.text-bevel-thin {
+  text-shadow: .01em .01em rgba(0, 0, 0, .5);
+}
+
+.text-bevel-medium {
+  text-shadow: .02em .02em rgba(0, 0, 0, .5);
+}
+
+.text-bevel-thick {
+  text-shadow: .03em .03em rgba(0, 0, 0, .5);
+}
+
+
+.inverse-text-bevel-thin {
+  text-shadow: .01em .01em rgba(255, 255, 255, .75);
+}
+
+.inverse-text-bevel-medium {
+  text-shadow: .02em .02em rgba(255, 255, 255, .75);
+}
+
+.inverse-text-bevel-thick {
+  text-shadow: .03em .03em rgba(255, 255, 255, .75);
+}
+
+
+
+
+// Number Scale
+
+// Initial Value: none
+// /* offset-x | offset-y | blur-radius | color */
+// text-shadow: 1px 1px 2px black;…
+
+// If you want to try REMS http://jsfiddle.net/4dgaurav/5Sptc/1/
+
+.text-bevel-0 {
+    text-shadow: .01em .01em #{$text_bevel_color};
+}
+
+.text-bevel-1 {
+    text-shadow: .02em .02em #{$text_bevel_color};
+}
+
+.text-bevel-2 {
+    text-shadow: .03em .03em #{$text_bevel_color};
+}
+
+.text-bevel-3 {
+    text-shadow: .04em .04em #{$text_bevel_color};
+}
+
+.text-bevel-4 {
+    text-shadow: .05em .05em #{$text_bevel_color};
+}
+
+.text-bevel-5 {
+    text-shadow: .06em .06em #{$text_bevel_color};
+}
+
+.text-bevel-6 {
+    text-shadow: .07em .07em #{$text_bevel_color};
+}
+
+.text-bevel-7 {
+    text-shadow: .08em .08em #{$text_bevel_color};
+}
+
+.text-bevel-8 {
+    text-shadow: .09em .09em #{$text_bevel_color};
+}
+
+.text-bevel-9 {
+    text-shadow: .1em .1em #{$text_bevel_color};
+}
+
+.text-bevel-10 {
+    text-shadow: .11em .11em #{$text_bevel_color};
+}
+
+.text-bevel-11 {
+    text-shadow: .12em .12em #{$text_bevel_color};
+}
+
+.text-bevel-12 {
+    text-shadow: .13em .13em #{$text_bevel_color};
+}
+
+.text-bevel-13 {
+    text-shadow: .14em .14em #{$text_bevel_color};
+}
+
+.text-bevel-14 {
+    text-shadow: .15em .15em #{$text_bevel_color};
+}
+
+.text-bevel-15 {
+    text-shadow: .16em .16em #{$text_bevel_color};
+}
+
+.text-bevel-16 {
+    text-shadow: .17em .17em #{$text_bevel_color};
+}
+
+.text-bevel-17 {
+    text-shadow: .18em .18em #{$text_bevel_color};
+}
+
+.text-bevel-18 {
+    text-shadow: .19em .19em #{$text_bevel_color};
+}
+
+.text-bevel-19 {
+    text-shadow: .2em .2em #{$text_bevel_color};
+}
+
+.text-bevel-20 {
+    text-shadow: .21em .21em #{$text_bevel_color};
+}
+
+.text-bevel-21 {
+    text-shadow: .22em .22em #{$text_bevel_color};
+}
+
+.text-bevel-22 {
+    text-shadow: .23em .23em #{$text_bevel_color};
+}
+
+.text-bevel-23 {
+    text-shadow: .24em .24em #{$text_bevel_color};
+}
+
+.text-bevel-24 {
+    text-shadow: .25em .25em #{$text_bevel_color};
+}
+
+.text-bevel-25 {
+    text-shadow: .26em .26em #{$text_bevel_color};
+}
+
+
+// Inverse Numbered
+
+.inverse-text-bevel-0 {
+    text-shadow: .01em .01em  #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-1 {
+    text-shadow: .02em .02em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-2 {
+    text-shadow: .03em .03em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-3 {
+    text-shadow: .04em .04em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-4 {
+    text-shadow: .05em .05em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-5 {
+    text-shadow: .06em .06em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-6 {
+    text-shadow: .07em .07em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-7 {
+    text-shadow: .08em .08em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-8 {
+    text-shadow: .09em .09em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-9 {
+    text-shadow: .1em .1em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-10 {
+    text-shadow: .11em .11em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-11 {
+    text-shadow: .12em .12em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-12 {
+    text-shadow: .13em .13em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-13 {
+    text-shadow: .14em .14em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-14 {
+    text-shadow: .15em .15em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-15 {
+    text-shadow: .16em .16em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-16 {
+    text-shadow: .17em .17em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-17 {
+    text-shadow: .18em .18em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-18 {
+    text-shadow: .19em .19em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-19 {
+    text-shadow: .2em .2em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-20 {
+    text-shadow: .21em .21em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-21 {
+    text-shadow: .22em .22em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-22 {
+    text-shadow: .23em .23em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-23 {
+    text-shadow: .24em .24em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-24 {
+    text-shadow: .25em .25em #{$inverse_text_bevel_color};
+}
+
+.inverse-text-bevel-25 {
+    text-shadow: .26em .26em #{$inverse_text_bevel_color};
+}

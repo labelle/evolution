@@ -1,0 +1,26 @@
+///*      F O N T   W E I G H T    */
+
+@import "../variables";
+
+// Marked as !important due to common use-case of overriding a style
+
+// Font Weight
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+// Added text- class as alias for common errors
+.text-bold,
+.font-bold             { font-weight: bold !important; }
+
+.font-lighter          { font-weight: lighter !important; }
+.font-bolder           { font-weight: bolder !important; }
+
+.font-100              { font-weight: 100 !important; }
+.font-200              { font-weight: 200 !important; }
+.font-300              { font-weight: 300 !important; }
+.font-400              { font-weight: 400 !important; }
+.font-500              { font-weight: 500 !important; }
+.font-600              { font-weight: 600 !important; }
+.font-700              { font-weight: 700 !important; }
+.font-800              { font-weight: 800 !important; }
+.font-900              { font-weight: 900 !important; }
+
+.font-no-weight        { font-weight: normal !important; }

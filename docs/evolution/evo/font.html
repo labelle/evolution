@@ -31,9 +31,9 @@
 
 <section id="evoFontIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Font</h1>
+<h1 class="text-size-13" style="margin-bottom: 0;">Font</h1>
 
-<p class="evo-measure">Basic font styles.</p>
+<p class="evo-measure">Basic font styles. Global font styles are applied to the <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and other tags set in _global.scss. Styles can be adjusted from _variables.scss.</p>
 <!-- <code>&lt;hr class="evo-line evo-line-thin"&gt;</code> -->
 
 <!-- <div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
@@ -49,7 +49,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 
 <section id="evoFont">
 
-<h2 class="evo-text-6">evo-font</h2>
+<h2 class="text-size-6">evo-font</h2>
 
 <div class="evo-space"></div>
 
@@ -73,75 +73,9 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 <code class="evo-measure">&lt;p class="evo-font"&gt;&lt;/p&gt;</code>
 </pre>
 
-<div class="evo-space-10"></div>
+<div class="divider-small"></div>
 
-<p class="evo-measure">Global font styles are applied to the <code>html</code>, <code>body</code>, and other tags set in _global.scss. Styles can be adjusted from _variables.scss.</p>
-
-<p class="evo-measure">If needed, apply an <code>.evo-font</code> class to set the global font styles directly to an HTML element.</p> 
-
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-<!-- font italic -->
-
-<section id="evoFontItalic">
-
-<h2 class="evo-text-6">Italic</h2>
-
-<div class="evo-space"></div>
-
-
-<div class="evo-measure-5">
-<div class="font-italic">This text demonstrates italic. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</div>
-</div>
-
-<div class="evo-space"></div>
-
-<!-- font-oblique
-<p class="evo-text font-oblique"><a href="#">Oblique</a> Experience Design Made Simple for Living Design Systems</p>
-
-<div class="evo-space"></div> -->
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;p class="font-italic"&gt;&lt;/p&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">The <code>.font-italic</code> class sets the font-style to italic. <code>.font-oblique</code> is also available.</p> 
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- font bold -->
-
-<section id="evoFontBold">
-
-<h2 class="evo-text-6">Bold</h2>
-
-<div class="evo-space"></div>
-
-<div class="evo-measure-5">
-<div class="font-bold">This text demonstrates bold. Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</div>
-</div>
-
-<div class="evo-space"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;p class="font-bold"&gt;&lt;/p&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">The <code>.font-bold</code> class sets the font-weight to bold.</p> 
+<p class="evo-measure">To force the default font style, apply an <code>evo-font</code> class directly to an HTML element. Create a container for your text such as a <code>&lt;p&gt;</code> tag or <code>&lt;h1&gt;</code> tag, and apply the <code>evo-font</code> class. This class is not required. </p> 
 
 <div class="evo-space-20"></div>
 
@@ -153,30 +87,58 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<div>
 
 <section id="evoFontReset">
 
-<h2 class="evo-text-6">Reset</h2>
+<h2 class="text-size-6">Reset</h2>
 
 <div class="evo-space"></div>
 
 <!-- font-reset -->
 <p class="font-reset">This sentence demonstrates the reset of font styles.</p>
 
-<div class="evo-space"></div>
+<div class="divider-small"></div>
 
-<p class="evo-measure"><code>.font-reset</code> removes font styles.</p>
+<pre class="evo-code">
+<code class="evo-measure">&lt;p class="font-reset"&gt;This sentence demonstrates the reset of font styles&lt;/p&gt;</code>
+</pre>
 
-<div class="evo-space"></div>
+<div class="divider-small"></div>
 
-font-no-weight
-<p class="evo-text font-no-weight"><a href="#">No-Weight</a> Experience Design Made Simple for Living Design Systems</p>
+<p class="evo-measure"><code>font-reset</code> removes font styles.</p>
 
-<div class="evo-space"></div>
-
-
-font-no-style
-<p class="evo-text font-no-style"><a href="#">No-Style</a> Experience Design Made Simple for Living Design Systems</p>
-
+<div class="evo-space-20"></div>
 
 </section>
+
+
+<!-- font examples -->
+
+<section id="evoFontExamples">
+
+<h2 class="text-size-6">Font Examples</h2>
+
+<div class="divider"></div>
+
+<p class="font-didot font-italic evo-color-9 text-size-12 text-tracking-2 text-leading-3 text-uppercase text-right text-measure-5">The best revenge is massive success.</p></p>
+
+<div class="divider-small"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="font-didot font-italic evo-color-20 text-size-10 text-tracking-2 text-leading-3 text-uppercase text-center text-measure-3"&gt;The best revenge is massive success.&lt;/hp&gt;</code>
+</pre>
+
+<div class="divider"></div>
+
+<p class="font-fantasy font-bold evo-color-28 text-size-4 text-leading-10 text-measure-5 text-measure-4">Take up one idea. Make that one idea your life – think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. –Swami Vivekananda</p>
+
+<div class="divider-small"></div>
+
+<pre class="evo-code">
+<code>&lt;p class="font-fantasy font-bold evo-color-28 text-size-4 text-leading-10 text-measure-5 text-measure-4"&gt;Take up one idea...&lt;/hp&gt;</code>
+</pre>
+
+<div class="evo-space-20"></div>
+
+</section>
+
 
 </main>
 

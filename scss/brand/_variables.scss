@@ -1,0 +1,86 @@
+///*      B R A N D    V A R I A B L E S     */
+
+
+// @import "../variables";
+
+// Brand prefix
+
+$brand:                              ".massive" !default;
+
+
+
+// Logos
+// Found in /image/brand/
+
+$logo-massive:                         "../image/brand/logo-massive.svg";
+
+$logo-massive-white:                      "../image/brand/logo-massive-white.svg";
+
+
+
+
+// Brand Fonts
+// Found in /variables_element/_font.scss
+
+$brand_font_1:  'halis_r_regularregular', sans-serif;
+
+$brand_font_2:  sans-serif;
+
+
+
+
+// Brand Colors
+
+$brand_color_1:  rgb( 235, 33, 46 );  // #eb212e red
+
+$brand_color_2:  rgb( 142, 197, 73 );  // #8ec549
+
+$brand_color_3:  rgb( 0, 144, 210 );  // #0090d2
+
+$brand_color_4:  rgb( 253, 193, 49 );  // #fdc131
+
+
+// Icons
+// Found in /image/brand/
+
+$icon_search:                                  "../image/brand/search-book.svg";
+
+$icon_search_white:                            "../image/brand/search-book-white.svg";
+
+$icon_search_gray:                            "../image/brand/search-book-gray.svg";
+
+
+$icon_menu:                                    "../image/brand/menu-book.svg";
+
+$icon_menu_white:                              "../image/brand/menu-book-white.svg";
+
+$icon_close:                                    "../image/brand/close-book.svg";
+
+$icon_close_white:                              "../image/brand/close-book-white.svg";
+
+
+
+// Brand Images
+
+$brand_image_person:                         "../image/brand/person.jpg";
+
+$brand_image_place:                          "../image/brand/place.jpg";
+
+$brand_image_thing:                          "../image/brand/thing.jpg";
+
+$brand_image_texture:                        "../image/brand/texture.jpg";
+
+
+
+
+// Brand Graphics
+
+$graphic_1:                                  "../image/brand/graphic1.png";
+
+$graphic_2:                                  "../image/brand/graphic2.png";
+
+$graphic_3:                                  "../image/brand/graphic3.png";
+
+$graphic_4:                                  "../image/brand/graphic4.png";
+
+

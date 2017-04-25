@@ -1,26 +1,20 @@
 ///*      B R A N D   L O G O S     */
 
-@import "variables_HRF";
-
-
-// HRF Logo Color
-
-.hrf-logo-bg           { background-image: url(#{$logo-hrf}); }
+@import "variables";
 
 
 
-// HRF Logo White
+#{$brand}-logo-1-bg           { background-image: url(#{$logo-massive}); }
+#{$brand}-logo-1-white-bg     { background-image: url(#{$logo-massive-white}); }
 
-.hrf-logo-white-bg     { background-image: url(#{$logo-hrf-white}); }
+// #{$brand}-logo-2-bg           { background-image: url(#{$brand_logo_2}); }
+// #{$brand}-logo-2-white-bg     { background-image: url(#{$brand_logo_2_white}); }
 
+// #{$brand}-logo-3-bg           { background-image: url(#{$brand_logo_3}); }
+// #{$brand}-logo-3-white-bg     { background-image: url(#{$brand_logo_3_white}); }
 
+// #{$brand}-logo-4-bg           { background-image: url(#{$brand_logo_4}); }
+// #{$brand}-logo-4-white-bg     { background-image: url(#{$brand_logo_4_white}); }
 
-// HEP Logo Color
-
-.hep-logo-bg           { background-image: url(#{$logo-hep}); }
-
-
-
-// HEP Logo White
-
-.hep-logo-white-bg     { background-image: url(#{$logo-hep-white}); }
+// #{$brand}-logo-5-bg           { background-image: url(#{$brand_logo_5}); }
+// #{$brand}-logo-5-white-bg     { background-image: url(#{$brand_logo_5_white}); }

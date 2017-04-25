@@ -1,190 +1,103 @@
 @charset "UTF-8";
-/*******************************************************************************
-*
-* The goal of this CSS file is to capture all Evo-Brand HTML and CSS styles.
-* This CSS resets classes and then offers unstyled structure for you to modify.
-* The order of CSS placement – or links to CSS files – has an impact on styles.
-*
-* Outline: (update as needed)
-*   _GLOBAL - General HTML, BODY, BUTTON, LINK settings (optional)
-*   _FONTS - Several different font families for quick styling
-*   _TYPE - 2 different text styles: regular and caps (size 1 - 24)
-// *         - _TEXT is also used within ordered/unordered list
-// *         - 4 different list styes: regular/no-style, bullets, numbers and lines
-// *         - bullets list are using custom SVGs
-// *   _COLORS - 5 different color palettes are included in this file
-// *   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-// *            - http://elements.humanig.com/#/buttons
-// *   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
-// *            dropdown menu, text input, number input
-// *   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
-// *          - borders: top border (solid, dots, dash), (size 1 - 10)
-// *                     bottom border (solid, dots, dash), (size 1 - 10)
-// *          - boxes: (solid, dots, dash), (size 1 - 10)        
-// *          - double: (solid), (size 1 - 10)
-// *   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
-*   _SPACERS - Create space between elements (size 1 - 24)
-// *   _ERRORS - A selection of aliases that forgive common mistypes
-*
-*******************************************************************************/
-.hrf-logo-bg {
-  background-image: url(../image/brand/logo-hrf.svg); }
+/* =========================== */
+/*      B R A N D      */
+/* =========================== */
+.massive-logo-1-bg {
+  background-image: url(../image/brand/logo-massive.svg); }
 
-.hrf-logo-white-bg {
-  background-image: url(../image/brand/logo-hrf-white.svg); }
+.massive-logo-1-white-bg {
+  background-image: url(../image/brand/logo-massive-white.svg); }
 
-.hep-logo-bg {
-  background-image: url(../image/brand/logo-hep.svg); }
+.massive-font-1 {
+  font-family: halis_r_regularregular, sans-serif; }
 
-.hep-logo-white-bg {
-  background-image: url(../image/brand/logo-hep-white.svg); }
+.massive-font-2 {
+  font-family: sans-serif; }
 
-.hrf-font-1 {
-  font-family: Merriweather, serif;
-  font-weight: 400; }
+@font-face {
+  font-family: 'halis_r_regularregular';
+  src: url("../font/HalisR-Regular-webfont.eot");
+  src: local("☺"), url("../font/HalisR-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/HalisR-Regular-webfont.woff2") format("woff2"), url("../font/HalisR-Regular-webfont.woff") format("woff"), url("../font/HalisR-Regular-webfont.ttf") format("truetype"), url("../font/HalisR-Regular-webfont.svg#halis_r_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-.hrf-font-2 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 400; }
+.massive-color-1 {
+  color: #eb212e; }
 
-.hrf-font-3 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 700; }
+.massive-color-1-bg {
+  background-color: #eb212e; }
 
-.font-google-merriweather {
-  font-family: Merriweather, serif;
-  font-weight: 400; }
+.massive-box-color-1 {
+  border-color: #eb212e; }
 
-.font-google-montserrat {
-  font-family: Montserrat, sans-serif;
-  font-weight: 400; }
+.massive-color-2 {
+  color: #8ec549; }
 
-.font-google-montserrat-bold {
-  font-family: Montserrat, sans-serif;
-  font-weight: 700; }
+.massive-color-2-bg {
+  background-color: #8ec549; }
 
-.hrf-color-1 {
-  color: #009877; }
+.massive-box-color-2 {
+  border-color: #8ec549; }
 
-.hrf-color-1-bg {
-  background-color: #009877; }
+.massive-color-3 {
+  color: #0090d2; }
 
-.hrf-box-color-1 {
-  border-color: #009877; }
+.massive-color-3-bg {
+  background-color: #0090d2; }
 
-.hrf-color-2 {
-  color: #78bc42; }
+.massive-box-color-3 {
+  border-color: #0090d2; }
 
-.hrf-color-2-bg {
-  background-color: #78bc42; }
+.massive-color-4 {
+  color: #fdc131; }
 
-.hrf-box-color-2 {
-  border-color: #78bc42; }
+.massive-color-4-bg {
+  background-color: #fdc131; }
 
-.hrf-color-3 {
-  color: #1a9ad6; }
+.massive-box-color-4 {
+  border-color: #fdc131; }
 
-.hrf-color-3-bg {
-  background-color: #1a9ad6; }
-
-.hrf-box-color-3 {
-  border-color: #1a9ad6; }
-
-.hrf-color-4 {
-  color: #939597; }
-
-.hrf-color-4-bg {
-  background-color: #939597; }
-
-.hrf-box-color-4 {
-  border-color: #939597; }
-
-.hrf-icon-search-bg-white {
-  background-image: url(../image/brand/search-book-white.svg); }
-
-.hrf-icon-wavy-menu-bg-white {
-  background-image: url(../image/brand/hrf-wavy-menu-white.svg); }
-
-.hrf-icon-close-bg-white {
-  background-image: url(../image/brand/close-book-white.svg); }
-
-.hrf-icon-circle-chevron-bg-white {
-  background-image: url(../image/brand/circle-chevron-book-white.svg); }
-
-.hrf-icon-circle-play-bg-white {
-  background-image: url(../image/brand/circle-play-book-white.svg); }
-
-.hrf-icon-social-facebook-bg-white {
-  background-image: url(../image/brand/hrf-facebook-white.svg); }
-
-.hrf-icon-social-twitter-bg-white {
-  background-image: url(../image/brand/hrf-twitter-white.svg); }
-
-.hrf-icon-social-mail-bg-white {
-  background-image: url(../image/brand/hrf-mail-white.svg); }
-
-.hrf-icon-search-bg-gray {
+.massive-icon-search-bg-gray {
   background-image: url(../image/brand/search-book-gray.svg); }
 
-.hrf-icon-column-bg-gray {
-  background-image: url(../image/brand/column-book-gray.svg); }
+.massive-icon-search-bg-white {
+  background-image: url(../image/brand/search-book-white.svg); }
 
-.hrf-icon-grid-bg-gray {
-  background-image: url(../image/brand/grid-book-gray.svg); }
+.massive-icon-menu-bg-white {
+  background-image: url(../image/brand/menu-book-white.svg); }
 
-.hrf-icon-circle-plus-bg {
-  background-image: url(../image/brand/circle-plus-book.svg); }
+.massive-icon-close-bg-white {
+  background-image: url(../image/brand/close-book-white.svg); }
 
-.hrf-icon-circle-chevron-bg {
-  background-image: url(../image/brand/circle-chevron-book.svg); }
-
-.hrf-icon-chevron-bg {
-  background-image: url(../image/brand/chevron-book.svg); }
-
-.hrf-icon-chevron-down-bg {
-  background-image: url(../image/brand/chevron-down-book.svg); }
-
-.hrf-icon-search-bg {
+.massive-icon-search-bg {
   background-image: url(../image/brand/search-book.svg); }
 
-.hrf-icon-close-bg {
+.massive-icon-menu-bg {
+  background-image: url(../image/brand/menu-book.svg); }
+
+.massive-icon-close-bg {
   background-image: url(../image/brand/close-book.svg); }
 
-.hrf-icon-download-bg {
-  background-image: url(../image/brand/download-book.svg); }
-
-.hrf-icon-upload-bg {
-  background-image: url(../image/brand/upload-book.svg); }
-
-.hrf-icon-page-bg {
-  background-image: url(../image/brand/page-book.svg); }
-
-.hrf-icon-column-bg {
-  background-image: url(../image/brand/column-book.svg); }
-
-.hrf-icon-grid-bg {
-  background-image: url(../image/brand/grid-book.svg); }
-
-.hrf-image-person-bg {
+.massive-image-person-bg {
   background-image: url(../image/brand/person.jpg); }
 
-.hrf-image-place-bg {
+.massive-image-place-bg {
   background-image: url(../image/brand/place.jpg); }
 
-.hrf-image-thing-bg {
+.massive-image-thing-bg {
   background-image: url(../image/brand/thing.jpg); }
 
-.hrf-image-texture-bg {
+.massive-image-texture-bg {
   background-image: url(../image/brand/texture.jpg); }
 
-.hrf-graphic-infograph-bg {
-  background-image: url(../image/brand/infograph.svg); }
+.massive-graphic-1-bg {
+  background-image: url(../image/brand/graphic1.png); }
 
-.hrf-graphic-chart-bg {
-  background-image: url(../image/brand/chart.svg); }
+.massive-graphic-2-bg {
+  background-image: url(../image/brand/graphic2.png); }
 
-.hrf-graphic-map-bg {
-  background-image: url(../image/brand/map.svg); }
+.massive-graphic-3-bg {
+  background-image: url(../image/brand/graphic3.png); }
 
-.hrf-graphic-dataviz-bg {
-  background-image: url(../image/brand/dataviz.png); }
+.massive-graphic-4-bg {
+  background-image: url(../image/brand/graphic4.png); }

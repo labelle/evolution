@@ -10,7 +10,8 @@
 
 
 // Text Block Width
-.text-measure               { max-width: #{$u-42}rem; } // ceil(54.73)
+#{$evo}-measure,
+.text-measure               { max-width: #{$text_measure}rem; }
 
 // /* Text Utilities */
 

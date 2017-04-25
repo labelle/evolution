@@ -19,9 +19,8 @@
 p {
 /*padding-bottom: 5rem;*/
 /*background-color: #eee;*/
-margin-top: 1em;
-margin-bottom: 10rem;
-margin-bottom: 25vh;
+margin-top: .5em;
+margin-bottom: 3em;
 /*border-width: 1px;*/
 }
 </style>
@@ -40,42 +39,64 @@ margin-bottom: 25vh;
 
 <section id="evoTextLeadingIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Text Leading</h1>
+<h1 class="text-size-13" style="margin-bottom: 0;">Text Leading</h1>
 
-<p class="evo-measure">Space Between Sentence Lines.</p>
+<p class="evo-measure">Space between sentence lines (line-height). Examples with overlapping text are demonstrated because in cases of extreme text size, capitalization, or font-family these options may work best.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
+<!-- text leading-->
+
+<section id="evoTextLeading">
+
+<h2 class="text-size-6">text-leading</h2>
+
+<div class="evo-space"></div>
+
+<p class="text-leading text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+
+<pre class="evo-code">
+<code>&lt;p class="text-leading"&gt;Try a thing you haven’t done three times. Once, to get over the fear of doing it...&lt;/p&gt;</code>
+</pre>
+
+<div class="divider-small"></div>
+
+<p class="evo-measure">Create a container for your text such as a <code>&lt;p&gt;</code> tag or <code>&lt;h1&gt;</code> tag, and apply the <code>text-leading</code> class. Global leading is defined in _variables.scss<!--  Example <code>&lt;hr class="evo-line evo-line-thin" /&gt;</code>. --></p>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
 <!-- text leading size -->
 
 <!-- <section id="evoTextLeadingSize">
 
-<h2 class="evo-text-6">text-leading-[size]</h2>
+<h2 class="text-size-6">text-leading-[size]</h2>
 
 <div class="evo-space"></div>
 
 text-leading-smallest
-<p class="evo-text-bigger evo-tracking-tighter text-leading-smallest text-measure-7">concrete<br>canvas</p>
+<p class="text-size-bigger evo-tracking-tighter text-leading-smallest text-measure-7">concrete<br>canvas</p>
 
 text-leading-smaller
-<p class="evo-text-bigger text-leading-smaller text-measure-7">concrete<br>canvas</p>
+<p class="text-size-bigger text-leading-smaller text-measure-7">concrete<br>canvas</p>
 
 text-leading-small
-<p class="evo-text-big text-leading-small evo-text-uppercase text-measure-7">concrete<br>canvas</p>
+<p class="text-size-big text-leading-small text-size-uppercase text-measure-7">concrete<br>canvas</p>
 
 text-leading-big
-<p class="evo-text-big text-leading-big evo-text-uppercase text-measure-7">concrete<br>canvas</p>
+<p class="text-size-big text-leading-big text-size-uppercase text-measure-7">concrete<br>canvas</p>
 
 text-leading-bigger
-<p class="evo-text-big text-leading-bigger text-measure-7">Experience<br>Design</p>
+<p class="text-size-big text-leading-bigger text-measure-7">Experience<br>Design</p>
 
 text-leading-biggest
-<p class="evo-text-big text-leading-biggest text-measure-7">Experience<br>Design</p>
+<p class="text-size-big text-leading-biggest text-measure-7">Experience<br>Design</p>
 
 <div class="evo-space-19"></div>
 
@@ -86,80 +107,69 @@ text-leading-biggest
 
 <section id="evoTextLeadingNumber">
 
-<h2 class="evo-text-6">text-leading-[number]</h2>
+<h2 class="text-size-6">text-leading-[number]</h2>
 
 <div class="evo-space"></div>
+
+<code>text-leading-15</code>
+<p class="text-leading-15 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-14</code>
+<p class="text-leading-14 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+
+<code>text-leading-13</code>
+<p class="text-leading-13 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-12</code>
+<p class="text-leading-12 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-11</code>
+<p class="text-leading-11 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-10</code>
+<p class="text-leading-10 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-9</code>
+<p class="text-leading-9 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-8</code>
+<p class="text-leading-8 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-7</code>
+<p class="text-leading-7 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+
+<code>text-leading-6</code>
+<!-- <p class="text-size-big text-leading-6 text-measure-7">Experience<br>Design</p> -->
+<p class="text-leading-6 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-5</code>
+<!-- <p class="text-size-big text-leading-5 text-measure-7">Experience<br>Design</p> -->
+<p class="text-leading-5 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-4</code>
+<!-- <p class="text-size-big text-leading-4 text-size-uppercase text-measure-7">concrete<br>canvas</p> -->
+<p class="text-leading-4 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-3</code>
+<!-- <p class="text-size-big text-leading-3 text-size-uppercase text-measure-7">concrete<br>canvas</p> -->
+<p class="text-leading-3 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-2</code>
+<!-- <p class="text-size-bigger text-leading-2 text-measure-7">concrete<br>canvas</p> -->
+<p class="text-leading-2 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
+<code>text-leading-1</code>
+<!-- <p class="text-size-bigger evo-tracking-tighter text-leading-1 text-measure-7">concrete<br>canvas</p> -->
+<p class="text-leading-1 text-measure-7">Try a thing you haven’t done three times. Once, to get over the fear of doing it. Twice, to learn how to do it. And a third time, to figure out whether you like it or not. —Virgil Garnett Thomson</p>
+
 <!-- 
 text-leading-0
-<p class="evo-text-big text-leading-0 text-measure-7">0 Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
+<p class="text-size-big text-leading-0 text-measure-7">The two most important days in your life are the day you are born and the day you find out why. –Mark Twain</p>
 
-<p class="evo-text-small text-leading-0 text-measure-5">0 Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-<div class="evo-space-15"></div> -->
-
-<code>.text-leading-1</code>
-<!-- <p class="evo-text-bigger evo-tracking-tighter text-leading-1 text-measure-7">concrete<br>canvas</p> -->
-<p class="evo-text text-leading-1 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-2</code>
-<!-- <p class="evo-text-bigger text-leading-2 text-measure-7">concrete<br>canvas</p> -->
-<p class="evo-text text-leading-2 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-3</code>
-<!-- <p class="evo-text-big text-leading-3 evo-text-uppercase text-measure-7">concrete<br>canvas</p> -->
-<p class="evo-text text-leading-3 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-4</code>
-<!-- <p class="evo-text-big text-leading-4 evo-text-uppercase text-measure-7">concrete<br>canvas</p> -->
-<p class="evo-text text-leading-4 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-5</code>
-<!-- <p class="evo-text-big text-leading-5 text-measure-7">Experience<br>Design</p> -->
-<p class="evo-text text-leading-5 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-6</code>
-<!-- <p class="evo-text-big text-leading-6 text-measure-7">Experience<br>Design</p> -->
-<p class="evo-text text-leading-6 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-7</code>
-<p class="evo-text text-leading-7 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-8</code>
-<p class="evo-text text-leading-8 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-9</code>
-<p class="evo-text text-leading-9 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-<code>.text-leading-10</code>
-<p class="evo-text text-leading-10 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-11</code>
-<p class="evo-text text-leading-11 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-<code>.text-leading-12</code>
-<p class="evo-text text-leading-12 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-13</code>
-<p class="evo-text text-leading-13 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-14</code>
-<p class="evo-text text-leading-14 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
-
-<code>.text-leading-15</code>
-<p class="evo-text text-leading-15 text-measure-7">Experience Design Made Simple for Living Design Systems that Anyone Loves to Use Anywhere in the World on Earth Forever and Ever and Ever and Ever and Ever and Ever and Ever and Ever</p>
-
+<p class="text-size-small text-leading-0 text-measure-5">The two most important days in your life are the day you are born and the day you find out why. –Mark Twain</p>
+-->
 
 <div class="evo-space-20"></div>
 

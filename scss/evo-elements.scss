@@ -11,27 +11,6 @@
 * This CSS resets classes and then offers unstyled structure for you to modify.
 * The order of CSS placement – or links to CSS files – has an impact on styles.
 *
-* Outline: (update as needed)
-*   _GLOBAL - General HTML, BODY, BUTTON, LINK settings (optional)
-*   _FONTS - Several different font families for quick styling
-*   _TYPE - 2 different text styles: regular and caps (size 1 - 24)
-// *         - _TEXT is also used within ordered/unordered list
-// *         - 4 different list styes: regular/no-style, bullets, numbers and lines
-// *         - bullets list are using custom SVGs
-// *   _COLORS - 5 different color palettes are included in this file
-// *   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-// *            - http://elements.humanig.com/#/buttons
-// *   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
-// *            dropdown menu, text input, number input
-// *   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
-// *          - borders: top border (solid, dots, dash), (size 1 - 10)
-// *                     bottom border (solid, dots, dash), (size 1 - 10)
-// *          - boxes: (solid, dots, dash), (size 1 - 10)        
-// *          - double: (solid), (size 1 - 10)
-// *   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
-*   _SPACERS - Create space between elements (size 1 - 24)
-// *   _ERRORS - A selection of aliases that forgive common mistypes
-*
 *******************************************************************************/
 
 // @import "settings";
@@ -40,7 +19,7 @@
 // Global styles
 // @import "element/reset";
 @import "element/global";
-@import "element/nav";
+// @import "element/nav";
 
 // Main
 @import "element/code";
@@ -83,15 +62,19 @@
 @import "element/color_natural";
 @import "element/color_gradient";
 @import "element/color_effect";
+@import "element/color_play"; // Need html page
 
 
 // Font
 @import "element/font";
-@import "element/font_style";
+@import "element/font_type";
+@import "element/font_italic";
+@import "element/font_weight";
 @import "element/font_stack";
 @import "element/font_adobe";
 @import "element/font_google";
 @import "element/font_local";
+@import "element/font_effect";
 @import "element/font_play";
 
 // Text
@@ -101,7 +84,11 @@
 @import "element/text_leading";
 @import "element/text_tracking";
 @import "element/text_measure";
-@import "element/text_effect";
+@import "element/text_shadow";
+@import "element/text_bevel";
+@import "element/text_glow";
+// @import "element/text_effect"; // maybe a sliding-up motion effect
+@import "element/text_play";
 
 // Selection
 @import "element/selection";

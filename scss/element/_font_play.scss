@@ -2,6 +2,7 @@
 
 @import "../variables";
 
+
 // Individual System Fonts
 // May not be available in all devices
 // Use for experimentation and quick styling
@@ -20,18 +21,7 @@
 .font-goudy             { font-family: #{$goudy}; }
 
 
-// Font replacement
-// May require licenses
+// Helvetica Neue
+.font-helvetica-thin    { font-family: #{$helvetica-thin}; }
 
-// Neon
-// http://www.fontspace.com/essqu%C3%A9-productions/neon-80s
 
-@font-face {
-    font-family: 'neon';
-    src: url('../font/essqué-productions_neon-80s/neon.ttf');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-.font-neon				{ font-family: #{$neon}; }
