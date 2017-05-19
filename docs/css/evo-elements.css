@@ -166,7 +166,8 @@ code {
   font-size: 1em;
   font-family: monospace; }
 
-code.evo-inverse {
+code.evo-inverse,
+code.code-inverse {
   color: white;
   border-color: #333333;
   background-color: black; }
@@ -5987,7 +5988,7 @@ p a:hover {
 a.evo-link:link,
 .a-link,
 a:link {
-  color: #eb212e;
+  color: inherit;
   background-color: transparent;
   text-decoration: none;
   opacity: 1; }
@@ -6061,251 +6062,221 @@ button:focus {
 a.evo-link-inverse:focus,
 .a-focus-inverse,
 .a-focus-inverse a {
-  color: invert !important; }
+  color: white !important;
+  outline-color: invert !important; }
 
-a.text-link-over {
+a.link-line-over-hover,
+a.link-line-over:hover {
   text-decoration: overline !important;
   border-bottom-width: none; }
 
-a.text-link-over-hover {
+a.link-line-over {
   text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-over-hover:hover {
-  text-decoration: overline !important;
-  border-bottom-width: none; }
-
-a.text-link-middle {
+a.link-line-middle-hover,
+a.link-line-middle:hover {
   text-decoration: line-through !important;
   border-bottom-width: none; }
 
-a.text-link-middle-hover {
+a.link-line-middle {
   text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-middle-hover:hover {
-  text-decoration: line-through !important;
-  border-bottom-width: none; }
-
-a.text-link-under {
+a.link-line-under-hover,
+a.link-line-under:hover {
   text-decoration: underline !important;
   border-bottom-width: none; }
 
-a.text-link-under-hover {
+a.link-line-under {
   text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-under-hover:hover {
-  text-decoration: underline !important;
-  border-bottom-width: none; }
-
-a.text-link-over-under {
+a.link-line-over-under-hover,
+a.link-line-over-under:hover {
   text-decoration: overline underline !important;
   border-bottom-width: none; }
 
-a.text-link-over-under-hover {
+a.link-line-over-under {
   text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-over-under-hover:hover {
-  text-decoration: overline underline !important;
-  border-bottom-width: none; }
-
-a.text-link-all {
+a.link-line-over-middle-under-hover,
+a.link-line-over-middle-under:hover {
   text-decoration: overline line-through underline !important;
   border-bottom-width: none; }
 
-a.text-link-all-hover {
+a.link-line-over-middle-under {
   text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-all-hover:hover {
-  text-decoration: overline line-through underline !important;
+a.link-line-none-hover,
+a.link-line-none:hover {
+  text-decoration: none !important;
+  border-bottom: none; }
+
+a.link-line-none {
+  text-decoration: none !important;
   border-bottom-width: none; }
 
-a.text-link-none {
-  text-decoration: none !important;
-  border-bottom: none; }
-
-a.text-link-none-hover:hover {
-  text-decoration: none !important;
-  border-bottom: none; }
-
-a.evo-link-line {
-  border-bottom-width: medium;
-  border-bottom-color: inherit;
+.link-line-border-bottom, a.link-solid-hover,
+a.link-solid:hover, a.link-solid, a.link-dotted-hover,
+a.link-dotted:hover, a.link-dotted, a.link-dashed-hover,
+span.link-dashed-hover,
+a.link-dashed:hover,
+span.link-dashed:hover, a.link-dashed,
+span.link-dashed, a.link-dotted-to-solid-hover,
+a.link-dotted-to-solid:hover, a.link-dotted-to-solid, a.link-dashed-to-solid-hover,
+a.link-dashed-to-solid:hover, a.link-dashed-to-solid, a.link-thin-hover,
+a.link-thin:hover, a.link-thin, a.link-medium-hover,
+a.link-medium:hover, a.link-medium, a.link-thick-hover,
+a.link-thick:hover, a.link-thick, a.link-thin-to-thick-hover,
+a.link-thin-to-thick:hover, a.link-thin-to-thick, a.link-color-hover,
+a.link-color:hover, a.link-color, a.link-black-hover,
+a.link-black:hover, a.link-black, a.link-white-hover,
+a.link-white:hover, a.link-white, a.link-color-to-white-hover,
+a.link-color-to-white:hover, a.link-color-to-white, a.link-color-to-black-hover,
+a.link-color-to-black:hover, a.link-color-to-black {
+  border-bottom-width: thin;
   border-bottom-style: solid; }
 
-a.link-line-solid {
+a.link-solid-hover,
+a.link-solid:hover {
+  border-bottom-style: hidden !important; }
+
+a.link-solid {
   border-bottom-style: solid !important; }
 
-a.link-line-solid:link {
-  border-bottom-style: solid !important; }
+a.link-dotted-hover,
+a.link-dotted:hover {
+  border-bottom-style: hidden !important; }
 
-a.link-line-solid:hover {
-  border-bottom-style: solid !important; }
-
-a.link-line-dotted {
+a.link-dotted {
   border-bottom-style: dotted !important; }
 
-a.link-line-dotted:link {
-  border-bottom-style: dotted !important; }
+a.link-dashed-hover,
+span.link-dashed-hover,
+a.link-dashed:hover,
+span.link-dashed:hover {
+  border-bottom-style: hidden !important; }
 
-a.link-line-dotted:hover {
-  border-bottom-style: dotted !important; }
-
-a.link-line-dashed {
+a.link-dashed,
+span.link-dashed {
   border-bottom-style: dashed !important; }
 
-a.link-line-dashed:link {
-  border-bottom-style: dashed !important; }
+a.link-double-hover,
+a.link-double:hover {
+  border-bottom-width: medium;
+  border-bottom-style: hidden !important; }
 
-a.link-line-dashed:hover {
-  border-bottom-style: dashed !important; }
-
-a.link-line-double {
+a.link-double {
+  border-bottom-width: medium;
   border-bottom-style: double !important; }
 
-a.link-line-double:link {
-  border-bottom-style: double !important; }
-
-a.link-line-double:hover {
-  border-bottom-style: double !important; }
-
-a.link-line-dotted-to-solid {
-  border-bottom-style: dotted !important; }
-
-a.link-line-dotted-to-solid:link {
-  border-bottom-style: dotted !important; }
-
-a.link-line-dotted-to-solid:hover {
+a.link-dotted-to-solid-hover,
+a.link-dotted-to-solid:hover {
   border-bottom-style: solid !important; }
 
-a.link-line-dashed-to-solid {
-  border-bottom-style: dashed !important; }
+a.link-dotted-to-solid {
+  border-bottom-style: dotted !important; }
 
-a.link-line-dashed-to-solid:link {
-  border-bottom-style: dashed !important; }
-
-a.link-line-dashed-to-solid:hover {
+a.link-dashed-to-solid-hover,
+a.link-dashed-to-solid:hover {
   border-bottom-style: solid !important; }
 
-a.link-line-thin {
+a.link-dashed-to-solid {
+  border-bottom-style: dashed !important; }
+
+a.link-thin-hover,
+a.link-thin:hover {
   border-bottom-width: thin !important; }
 
-a.link-line-thin:link {
+a.link-thin {
   border-bottom-width: thin !important; }
 
-a.link-line-thin:hover {
-  border-bottom-width: thin !important; }
-
-a.link-line-medium {
+a.link-medium-hover,
+a.link-medium:hover {
   border-bottom-width: medium !important; }
 
-a.link-line-medium:link {
+a.link-medium {
   border-bottom-width: medium !important; }
 
-a.link-line-medium:hover {
-  border-bottom-width: medium !important; }
-
-a.link-line-thick {
+a.link-thick-hover,
+a.link-thick:hover {
   border-bottom-width: thick !important; }
 
-a.link-line-thick:link {
+a.link-thick {
   border-bottom-width: thick !important; }
 
-a.link-line-thick:hover {
+a.link-thin-to-thick-hover,
+a.link-thin-to-thick:hover {
   border-bottom-width: thick !important; }
 
-a.link-line-thin-to-thick {
+a.link-thin-to-thick {
+  transition: .1s;
   border-bottom-width: thin !important; }
 
-a.link-line-thin-to-thick:link {
-  border-bottom-width: thin !important; }
-
-a.link-line-thin-to-thick:hover {
-  border-bottom-width: thick !important; }
-
-a.link-line-color {
+a.link-color-hover,
+a.link-color:hover {
   border-bottom-color: #eb212e !important; }
 
-a.link-line-color:link {
+a.link-color {
   border-bottom-color: #eb212e !important; }
 
-a.link-line-color:hover {
-  border-bottom-color: #eb212e !important; }
-
-a.link-line-black {
+a.link-black-hover,
+a.link-black:hover {
   border-bottom-color: black !important; }
 
-a.link-line-black:link {
+a.link-black {
   border-bottom-color: black !important; }
 
-a.link-line-black:hover {
+a.link-white-hover,
+a.link-white:hover {
+  border-bottom-color: white !important; }
+
+a.link-white {
+  border-bottom-color: white !important; }
+
+a.link-color-to-white-hover,
+a.link-color-to-white:hover {
+  border-bottom-color: #eb212e !important; }
+
+a.link-color-to-white {
+  border-bottom-color: white !important; }
+
+a.link-color-to-black-hover,
+a.link-color-to-black:hover {
+  border-bottom-color: #eb212e !important; }
+
+a.link-color-to-black {
   border-bottom-color: black !important; }
 
-a.link-line-white {
-  border-bottom-color: white !important; }
-
-a.link-line-white:link {
-  border-bottom-color: white !important; }
-
-a.link-line-white:hover {
-  border-bottom-color: white !important; }
-
-a.link-line-color-to-white {
-  border-bottom-color: #eb212e !important; }
-
-a.link-line-color-to-white:link {
-  border-bottom-color: #eb212e !important; }
-
-a.link-line-color-to-white:hover {
-  border-bottom-color: white !important; }
-
-a.link-line-color-to-black {
-  border-bottom-color: #eb212e !important; }
-
-a.link-line-color-to-black:link {
-  border-bottom-color: #eb212e !important; }
-
-a.link-line-color-to-black:hover {
-  border-bottom-color: black !important; }
+a.link-highlight-color-hover,
+a.link-highlight-color:hover {
+  color: white !important;
+  background-color: #eb212e !important; }
 
 a.link-highlight-color {
   color: inherit;
   background-color: inherit; }
 
-a.link-highlight-color-hover:link {
-  color: inherit;
-  background-color: inherit; }
-
-a.link-highlight-color-hover:hover {
+a.link-highlight-black-hover,
+a.link-highlight-black:hover {
   color: white !important;
-  background-color: #eb212e !important; }
+  background-color: black !important; }
 
 a.link-highlight-black {
   color: inherit;
   background-color: inherit; }
 
-a.link-highlight-black-hover:link {
-  color: inherit;
-  background-color: inherit; }
-
-a.link-highlight-black-hover:hover {
-  color: white !important;
-  background-color: black !important; }
+a.link-highlight-white-hover,
+a.link-highlight-white:hover {
+  color: black !important;
+  background-color: white !important; }
 
 a.link-highlight-white {
   color: inherit;
   background-color: inherit; }
-
-a.link-highlight-white-hover:link {
-  color: inherit;
-  background-color: inherit; }
-
-a.link-highlight-white-hover:hover {
-  color: black !important;
-  background-color: white !important; }
 
 a.evo-link-bullet {
   position: relative;
@@ -6324,115 +6295,18 @@ a.evo-link-bullet::before {
   color: #eb212e;
   text-align: center;
   font-family: inherit;
-  opacity: .5; }
+  opacity: .5;
+  transition: 0.3s ease; }
 
 a.evo-link-bullet:hover::before {
   color: #eb212e;
   opacity: 1; }
 
-.evo-link-bullet-span > span,
-.evo-link-bullet-span > li > a > span {
-  position: relative;
-  padding-left: 2ch; }
-
-.evo-link-bullet-span > span::before,
-.evo-link-bullet-span > li > a > span::before {
-  content: '•';
-  position: absolute;
-  left: .2ch;
-  background: transparent;
-  width: auto;
-  height: auto;
-  border-radius: 10%;
-  display: inline-block;
-  line-height: inherit;
-  color: #eb212e;
-  text-align: center;
-  font-family: inherit;
-  opacity: .5; }
-
-.evo-link-bullet-span:hover > span::before,
-.evo-link-bullet-span:hover > li > a > span::before {
-  color: #eb212e;
-  opacity: 1; }
-
-.list-bullet-test-2 ul {
-  list-style-type: none; }
-
-.list-bullet-test-2 li > a {
-  position: relative;
-  padding-left: 2ch; }
-
-.list-bullet-test-2 li > a:before {
-  content: '•';
-  position: absolute;
-  left: .2ch;
-  background: transparent;
-  width: auto;
-  height: auto;
-  border-radius: 10%;
-  display: inline-block;
-  line-height: inherit;
-  color: #eb212e;
-  text-align: center;
-  font-family: inherit;
-  opacity: .5; }
-
-.list-bullet-test-2 li > a:before:hover {
-  opacity: 1; }
-
-ul.bullet-link-2 {
-  list-style-type: none; }
-  ul.bullet-link-2 ul {
-    margin-bottom: 0.275rem; }
-  ul.bullet-link-2 li:before {
-    opacity: .5; }
-
-.bullet-link-2 > li:before a:hover {
-  opacity: 1 !important;
-  text-decoration: underline !important; }
-
-.link-bullet-test li > a:before {
+ul.link-bullet li:before,
+a.link-bullet:before,
+button.link-bullet:before {
   content: "•";
-  padding-right: 0.5ch;
-  color: #eb212e;
-  opacity: .5; }
-
-.link-bullet-test li > a:hover {
-  opacity: 1; }
-
-.a-link,
-a:link {
-  color: #eb212e;
-  background-color: transparent;
-  text-decoration: none; }
-
-.a-visited,
-a:visited {
-  color: #eb212e; }
-
-.a-hover,
-a:hover {
-  color: #0090d2;
-  text-decoration: none;
-  outline-width: 0; }
-
-.a-active,
-a:active {
-  color: black;
-  text-decoration: none;
-  outline-width: 0; }
-
-.a-focus,
-a:focus,
-button:focus {
-  color: invert;
-  text-decoration: none;
-  outline: unset;
-  outline-color: #0090d2;
-  outline-width: thin;
-  outline-style: dotted;
-  outline-offset: 0; }
+  padding-right: 1ch; }
 
 a.evo-link-icon {
   padding-left: 1.5em;

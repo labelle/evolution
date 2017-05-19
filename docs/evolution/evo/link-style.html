@@ -31,44 +31,9 @@
 
 <section id="evoLinkIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Link Style</h1>
+<h1 class="text-size-13" style="margin-bottom: 0;">Link Style</h1>
 
-<p class="evo-measure">Basic link styles. For URL placeholders use <code>&lt;a href="#"&gt;</code> or <code>&lt;a href="javascript:void(0);"&gt;</code>.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- base link -->
-
-<section id="LinkStyle">
-
-<h2 class="evo-text-6">evo-link-line</h2>
-
-<div class="evo-space"></div>
-
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line">Pack my box with five dozen liquor jugs after after.</a>
-
-
-<div class="evo-space"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;Pack my box with five dozen liquor jugs.&lt;/a&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Global font styles are applied to the <code>a</code> tag - and other tags – set in _global.scss. You can also directly apply <code>evo-link</code> to an anchor tag. Styles can be adjusted from _variables.scss.</p>
-
-<p class="evo-measure">If needed, directly apply an <code>.a-link</code> class to set the global link style to an HTML element.</p> 
-
+<p class="evo-measure">Basic link styles. Some styles use 'text-decoration', others use 'border-bottom'. For demonstration purposes, apply the -hover suffix to any link state such as <code>link-dashed-hover</code>.For URL placeholders use <code>&lt;a href="#"&gt;</code> or <code>&lt;a href="javascript:void(0);"&gt;</code>.</p>
 
 <div class="evo-space-20"></div>
 
@@ -81,218 +46,311 @@
 
 <section id="evoLinkStates">
 
-<h2 class="evo-text-6">Link Text Decoration Options</h2>
+<h2 class="text-size-6">Link Text Decoration Options</h2>
 
 <div class="evo-space"></div>
 
-
+<!-- link line over -->
+<div class="evo-space-5"></div>
+<a class="link-line-over" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
 <div class="evo-space-10"></div>
-
-<code>&lt;a href="javascript:void(0);" class="text-link-over"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-over">Pack my box with five dozen liquor jugs after after.</a>
-
+<code>&lt;a class="link-line-over" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
+<a class="link-line-over-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-over-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
 
-<code>&lt;a href="javascript:void(0);" class="text-link-middle"&gt;</code>
+<!-- link line middle -->
 <div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-middle">Pack my box with five dozen liquor jugs after after.</a>
-
+<a class="link-line-middle" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-middle" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
+<a class="link-line-middle-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-middle-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
-
-<code>&lt;a href="javascript:void(0);" class="text-link-under"&gt;</code>
+<!-- link line under -->
 <div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-under">Pack my box with five dozen liquor jugs after after.</a>
-
+<a class="link-line-under" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-under" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
+<a class="link-line-under-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-under-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
-
-<code>&lt;a href="javascript:void(0);" class="text-link-oover-under&gt;</code>
+<!-- link line over under -->
 <div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-over-under">Pack my box with five dozen liquor jugs after after.</a>
-
+<a class="link-line-over-under" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-over-under" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
+<a class="link-line-over-under-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-over-under-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
-
-<code>&lt;a href="javascript:void(0);" class="text-link-all"&gt;</code>
+<!-- link line over middle under -->
 <div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-all">Pack my box with five dozen liquor jugs after after.</a>
-
+<a class="link-line-over-middle-under" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-over-middle-under" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
+<a class="link-line-over-middle-under-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-over-middle-under-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
 
-<code>&lt;a href="javascript:void(0);" class="text-link-none"&gt;</code>
+<!-- link line none -->
 <div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="text-link-none">Pack my box with five dozen liquor jugs after after.</a>
-
+<a class="link-none" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-none" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
-
-
-
-
-
+<a class="link-line-none" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-line-none" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
 
 </section>
 
 
 
-<!-- link states -->
+<!-- link border states -->
 
 <section id="evoLinkStates">
 
-<h2 class="evo-text-6">Link Border Bottom States</h2>
+<h2 class="text-size-6">Link Border Bottom States</h2>
 
 <div class="evo-space"></div>
 
-
+<!-- link line solid -->
+<div class="evo-space-5"></div>
+<a class="link-solid" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
 <div class="evo-space-10"></div>
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-solid"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-solid">Pack my box with five dozen liquor jugs after after.</a>
-
+<code>&lt;a class="link-solid" href="javascript:void(0);"&gt;</code>
 <div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-dotted"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-dotted">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-dashed"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-dashed">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-double"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-double">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-dotted-to-solid"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-dotted-to-solid">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-dashed-to-solid"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-dashed-to-solid">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-thin"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-thin">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-medium"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-medium">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-thick"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-thick">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-thin-to-thick"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-thin-to-thick">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-color"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-color">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-black"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-black">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-white"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-white">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-color-to-white"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-color-to-white">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-<code>&lt;a href="javascript:void(0);" class="evo-link-line link-line-color-to-black"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="evo-link-line link-line-color-to-black">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-
-<code>&lt;a href="javascript:void(0);" class="link-highlight-color"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="link-highlight-color">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="link-highlight-black"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="link-highlight-black">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-<code>&lt;a href="javascript:void(0);" class="link-highlight-white"&gt;</code>
-<div class="evo-space-5"></div>
-<a href="javascript:void(0);" class="link-highlight-white">Pack my box with five dozen liquor jugs after after.</a>
-
-<div class="evo-space"></div>
-
-
-
-<div class="evo-space"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;a href="#" class=".a-hover"&gt;Pack my box with five dozen liquor jugs.&lt;/a&gt;
-</code>
-</pre>
-
+<a class="link-solid-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
 <div class="evo-space-10"></div>
-
-<p class="evo-measure">If needed for demonstration purposes, apply an <code>.a-visited</code>, <code>.a-hover</code>, <code>.a-active</code>, or <code>.a-focus</code> class to set the global font pseudo style directly to an HTML <code>a</code> element or text.</p> 
-
-
+<code>&lt;a class="link-solid-hover" href="javascript:void(0);"&gt;</code>
 <div class="evo-space-20"></div>
 
+
+<!-- link line dotted -->
+<div class="evo-space-5"></div>
+<a class="link-dotted" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dotted" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-dotted-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dotted-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line dashed -->
+<div class="evo-space-5"></div>
+<a class="link-dashed" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dashed" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-dashed-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dashed-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line double -->
+<div class="evo-space-5"></div>
+<a class="link-double" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-double" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-double-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-double-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line dotted to solid -->
+<div class="evo-space-5"></div>
+<a class="link-dotted-to-solid" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dotted-to-solid" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-dotted-to-solid-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dotted-to-solid-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line dashed to solid -->
+<div class="evo-space-5"></div>
+<a class="link-dashed-to-solid" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dashed-to-solid" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-dashed-to-solid-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-dashed-to-solid-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line thin -->
+<div class="evo-space-5"></div>
+<a class="link-thin" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thin" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-thin-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thin-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line medium -->
+<div class="evo-space-5"></div>
+<a class="link-medium" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-medium" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-medium-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-medium-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line thick -->
+<div class="evo-space-5"></div>
+<a class="link-thick" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thick" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-thick-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thick-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line thin to thick -->
+<div class="evo-space-5"></div>
+<a class="link-thin-to-thick" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thin-to-thick" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-thin-to-thick-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-thin-to-thick-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+
+
+<!-- link line color -->
+<div class="evo-space-5"></div>
+<a class="link-color" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-color-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line black -->
+<div class="evo-space-5"></div>
+<a class="link-black" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-black" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-black-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-black-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line white -->
+<div class="evo-space-5"></div>
+<a class="link-white" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-white" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-white-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-white-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+
+<!-- link line color to white -->
+<div class="evo-space-5"></div>
+<a class="link-color-to-white" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color-to-white" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-color-to-white-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color-to-white-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+<!-- link line color to black -->
+<div class="evo-space-5"></div>
+<a class="link-color-to-black" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color-to-black" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-color-to-black-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-color-to-black-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+
+<!-- link line highlight color -->
+<div class="evo-space-5"></div>
+<a class="link-highlight-color" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-color" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-highlight-color-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-color-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+
+<!-- link line highlight black -->
+<div class="evo-space-5"></div>
+<a class="link-highlight-black" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-black" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-highlight-black-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-black-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
+
+
+
+<!-- link line highlight white -->
+<div class="evo-space-5"></div>
+<a class="link-highlight-white" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-white" href="javascript:void(0);"&gt;</code>
+<div class="evo-space"></div>
+<a class="link-highlight-white-hover" href="javascript:void(0);">Pack my box with five dozen liquor jugs after after.</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-highlight-white-hover" href="javascript:void(0);"&gt;</code>
+<div class="evo-space-20"></div>
 
 </section>
 

@@ -223,6 +223,9 @@ $bullet_list_bullet_font_family:             inherit; // or #{$sans-serif}
 $bullet_list_bullet_color:                   #{$evo_color};
 $bullet_list_bullet_padding:                 .5ch;
 
+// This is set to a slightly longer delay than the link_transition
+$bullet_link_transition:				     0.3s ease; // or color 0.3s ease-in-out
+
 
 // For custom image bullets Lists
 // make background more specific than "background?" maybe background-image
@@ -312,7 +315,7 @@ $link_font_weight:                  inherit !default;
 $link_transition:					color 0.2s ease; // or color 0.3s ease-in-out
 
 // a:Link
-$link_color:                        #{$evo_color} !default;
+$link_color:                        inherit !default; // or #{$evo_color}
 $link_background_color:             transparent !default;
 $link_underline:                    none !default; // text-dectoration
 $link_opacity:                      1; // or .5
@@ -351,6 +354,7 @@ $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 $link_opacity_focus:                1;
 
+$inverse_link_color_focus:          #{$evo_white} !default;
 $inverse_link_outline_color_focus:	invert !default;
 
 

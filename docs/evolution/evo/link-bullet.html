@@ -32,40 +32,135 @@
 
 <section id="evoLinkBulletIntro">
 
-<h1 class="evo-text-13" style="margin-bottom: 0;">Link Bullet</h1>
+<h1 class="text-size-13" style="margin-bottom: 0;">Link Bullet</h1>
 
-<p>Bullet link styles for links. Apply <code>evo-link-bullet</code> to a <code>&lt;a&gt;</code> tag. Do not use a  <code>evo-list-bullet</code> class if this is within a list, use <code>evo-list</code> instead. Directly modify the link bullet with a <code>bullet-dot</code> class.</p>
+<p class="evo-measure">Bullet styles for links. Evo link bullet styles can be adjusted from _variables.scss. Regular link bullets will inherit styles from the link text. See the <a href="list-bullet.html">list-bullet</a> page for more bullet-[style] options.</p></p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<section>
 
-<a href="#" class="evo-link-bullet">Link is here</a>
+<!-- evo link bullet -->
 
+<section id="evoLinkBullet">
+
+<h2 class="text-size-6">Evo Link Bullet</h2>
+
+<div class="evo-space"></div>
+
+<a class="evo-link-bullet" href="javascript:void(0);">Evo link with default bullet</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="evo-link-bullet" href="javascript:void(0);"&gt;Evo link with default bullet&lt;/a&gt;</code>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply <code>evo-link-bullet</code> to an <code>&lt;a&gt;</code> tag.</p> 
 <div class="evo-space-20"></div>
+
+
+<a class="evo-link-bullet bullet-check" href="javascript:void(0);">Evo link with modified bullet</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="evo-link-bullet bullet-check" href="javascript:void(0);"&gt;Evo link with modified bullet&lt;/a&gt;</code>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Add any bullet-[style] such as <code>bullet-check</code> to change the bullet icon.
+<div class="evo-space-20"></div>
+
 
 <ul class="evo-list">
-<li><a href="#" class="evo-link-bullet">list item 1</a></li>
-<li><a href="#" class="evo-link-bullet">list item 2</a></li>
-<li><a href="#" class="evo-link-bullet">list item 3</a></li>
+<li><a class="evo-link-bullet" href="#">list item 1</a></li>
+<li><a class="evo-link-bullet" href="#">list item 2</a></li>
+<li><a class="evo-link-bullet" href="#">list item 3</a></li>
 </ul>
+<div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="evo-list&gt;
+&lt;li class="evo-link-bullet" href="#"&gt;list item 1&lt;/li&gt;
+&lt;li class="evo-link-bullet" href="#"&gt;list item 2&lt;/li&gt;
+&lt;li class="evo-link-bullet" href="#"&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+<p class="evo-measure">If this is within an unordered list, use the <code>evo-list</code> class on the <code>&lt;ul&gt;</code> tag, and <code>evo-link-bullet</code> class on the <code>&lt;a&gt;</code> tags. Place the <code>&lt;a&gt;</code> tags inside the <code>&lt;li&gt;</code> items, as shown in the example.</p>
 <div class="evo-space-20"></div>
 
-<!-- This is a more hacky solution for quick styling -->
-<a href="#" class="bullet-check padding-right-10-before">Link is here</a>
 
-<div class="evo-space-20"></div>
-
-<!-- Apply borderborder to span so that link does not stretch to the icon -->
 <ul class="evo-list">
-<li><a href="#" class="bullet-check padding-right-10-before"><span class="borderborder">list item 1</span></a></li>
-<li><a href="#" class="bullet-check padding-right-10-before"><span class="borderborder">list item 2</span></a></li>
-<li><a href="#" class="bullet-check padding-right-10-before"><span class="borderborder">list item 3</span></a></li>
+<li><a class="evo-link-bullet bullet-check" href="#">list item 1</a></li>
+<li><a class="evo-link-bullet bullet-check" href="#">list item 2</a></li>
+<li><a class="evo-link-bullet bullet-check" href="#">list item 3</a></li>
+</ul>
+<div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="evo-list&gt;
+&lt;li class="evo-link-bullet bullet-check" href="#"&gt;list item 1&lt;/li&gt;
+&lt;li class="evo-link-bullet bullet-check" href="#"&gt;list item 2&lt;/li&gt;
+&lt;li class="evo-link-bullet bullet-check" href="#"&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Add any bullet-[style] such as <code>bullet-check</code> to change the bullet icon.
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- simple link bullet -->
+
+<section id="LinkBullet">
+
+<h2 class="text-size-6">Link Bullet</h2>
+
+<div class="evo-space"></div>
+
+<a class="link-bullet" href="javascript:void(0);">Link with default bullet</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-bullet" href="javascript:void(0);"&gt;Link with default bullet&lt;/a&gt;</code>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply <code>link-bullet</code> to an <code>&lt;a&gt;</code> tag.</p> 
+<div class="evo-space-20"></div>
+
+
+<a class="link-bullet bullet-check" href="javascript:void(0);">Link with modified bullet</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="link-bullet bullet-check" href="javascript:void(0);"&gt;Link with modified bullet&lt;/a&gt;</code>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Add any bullet-[style] such as <code>bullet-check</code> to change the bullet icon.
+<div class="evo-space-20"></div>
+
+<a class="bullet-check padding-right-8-before" href="javascript:void(0);">Alternate link bullet approach</a>
+<div class="evo-space-10"></div>
+<code>&lt;a class="bullet-check padding-right-8-before" href="javascript:void(0);"&gt;Alternate link bullet approach&lt;/a&gt;</code>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply any bullet-[style] such as <code>bullet-check</code>, then add a 'padding-right-[number]-before' class such as <code>padding-right-8-before</code>. These special 'before' padding classes range from number 0 to 25.</p>
+<div class="evo-space-20"></div>
+
+</section>
+
+<!-- simple link bullet example -->
+
+<section id="LinkBulletExample">
+
+<h2 class="text-size-6">Link Bullet Example</h2>
+
+<div class="evo-space"></div>
+
+<ul class="evo-list list-size-large">
+<li><a href="#" class="bullet-check padding-right-8-before bullet-color"><span class="link-dashed">list item 1</span></a></li>
+<li><a href="#" class="bullet-check padding-right-8-before bullet-color"><span class="link-dashed">list item 2</span></a></li>
+<li><a href="#" class="bullet-check padding-right-8-before bullet-color"><span class="link-dashed">list item 3</span></a></li>
 </ul>
 
+<div class="evo-space-10"></div>
+<pre class="evo-code">
+<code>&lt;ul class="evo-list list-size-large"&gt;
+&lt;li&gt;&lt;a class="bullet-check padding-right-8-before bullet-color" href="#"&gt;&lt;span class="link-dashed"&gt;list item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="bullet-check padding-right-8-before bullet-color" href="#"&gt;&lt;span class="link-dashed"&gt;list item 2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="bullet-check padding-right-8-before bullet-color" href="#"&gt;&lt;span class="link-dashed"&gt;list item 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Try mixing link-bullet styles with styles from the <a href="list-bullet.html">list-bullet</a> or <a href="link-style.html">link-style</a> pages.
 <div class="evo-space-20"></div>
 
 </section>

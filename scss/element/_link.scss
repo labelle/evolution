@@ -170,5 +170,6 @@ button:focus {
 a#{$evo}-link-inverse:focus,
 .a-focus-inverse,
 .a-focus-inverse a {
-color: #{$inverse_link_outline_color_focus} !important;
+color: #{$inverse_link_color_focus} !important;
+outline-color: #{$inverse_link_outline_color_focus} !important;
 }

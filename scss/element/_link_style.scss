@@ -93,137 +93,149 @@
 
 
 // Text Decoration
-a.text-link-over              { text-decoration: overline !important; border-bottom-width: none; }
-a.text-link-over-hover        { text-decoration: none !important; border-bottom-width: none; }
-a.text-link-over-hover:hover  { text-decoration: overline !important; border-bottom-width: none; }
+a.link-line-over-hover, 
+a.link-line-over:hover    { text-decoration: overline !important; border-bottom-width: none; }
+a.link-line-over          { text-decoration: none !important; border-bottom-width: none; }
 
-a.text-link-middle              { text-decoration: line-through !important; border-bottom-width: none; }
-a.text-link-middle-hover        { text-decoration: none !important; border-bottom-width: none; }
-a.text-link-middle-hover:hover  { text-decoration: line-through !important; border-bottom-width: none; }
+a.link-line-middle-hover, 
+a.link-line-middle:hover    { text-decoration: line-through !important; border-bottom-width: none; }
+a.link-line-middle          { text-decoration: none !important; border-bottom-width: none; }
 
-a.text-link-under              { text-decoration: underline !important; border-bottom-width: none; }
-a.text-link-under-hover        { text-decoration: none !important; border-bottom-width: none; }
-a.text-link-under-hover:hover  { text-decoration: underline !important; border-bottom-width: none; }
+a.link-line-under-hover, 
+a.link-line-under:hover    { text-decoration: underline !important; border-bottom-width: none; }
+a.link-line-under          { text-decoration: none !important; border-bottom-width: none; }
 
-a.text-link-over-under              { text-decoration: overline underline !important; border-bottom-width: none; }
-a.text-link-over-under-hover        { text-decoration: none !important; border-bottom-width: none; }
-a.text-link-over-under-hover:hover  { text-decoration: overline underline !important; border-bottom-width: none; }
-
-a.text-link-all              { text-decoration: overline line-through underline !important; border-bottom-width: none; }
-a.text-link-all-hover        { text-decoration: none !important; border-bottom-width: none; }
-a.text-link-all-hover:hover  { text-decoration: overline line-through underline !important; border-bottom-width: none; }
+a.link-line-over-under-hover, 
+a.link-line-over-under:hover    { text-decoration: overline underline !important; border-bottom-width: none; }
+a.link-line-over-under          { text-decoration: none !important; border-bottom-width: none; }
 
 // Decoration can be combined
-
-a.text-link-none              { text-decoration: none !important; border-bottom: none; }
-// a.text-link-none-hover        { text-decoration: none; border-bottom: none; }
-a.text-link-none-hover:hover  { text-decoration: none !important; border-bottom: none; }
-
+a.link-line-over-middle-under-hover, 
+a.link-line-over-middle-under:hover    { text-decoration: overline line-through underline !important; border-bottom-width: none; }
+a.link-line-over-middle-under          { text-decoration: none !important; border-bottom-width: none; }
 
 
-a#{$evo}-link-line {
-	border-bottom-width: medium;
-	border-bottom-color: inherit;
+
+a.link-line-none-hover, 
+a.link-line-none:hover    { text-decoration: none !important; border-bottom: none; }
+a.link-line-none          { text-decoration: none !important; border-bottom-width: none; }
+
+
+
+.link-line-border-bottom {
+	border-bottom-width: thin;
+	// border-bottom-color: inherit;
 	border-bottom-style: solid;
 }
 
-// Link Solid
-a.link-line-solid           { border-bottom-style: solid !important; }
-a.link-line-solid:link      { border-bottom-style: solid !important; }
-a.link-line-solid:hover     { border-bottom-style: solid !important; }
-
-// Link Dotted
-a.link-line-dotted          { border-bottom-style: dotted !important; }
-a.link-line-dotted:link     { border-bottom-style: dotted !important; }
-a.link-line-dotted:hover    { border-bottom-style: dotted !important; }
-
-// Link Dashed
-a.link-line-dashed          { border-bottom-style: dashed !important; }
-a.link-line-dashed:link     { border-bottom-style: dashed !important; }
-a.link-line-dashed:hover    { border-bottom-style: dashed !important; }
-
-// Link Double
-a.link-line-double          { border-bottom-style: double !important; }
-a.link-line-double:link     { border-bottom-style: double !important; }
-a.link-line-double:hover    { border-bottom-style: double !important; }
-
-// Link Dotted to Solid
-a.link-line-dotted-to-solid          { border-bottom-style: dotted !important; }
-a.link-line-dotted-to-solid:link     { border-bottom-style: dotted !important; }
-a.link-line-dotted-to-solid:hover    { border-bottom-style: solid !important; }
-
-// Link Dashed to Solid
-a.link-line-dashed-to-solid          { border-bottom-style: dashed !important; }
-a.link-line-dashed-to-solid:link     { border-bottom-style: dashed !important; }
-a.link-line-dashed-to-solid:hover    { border-bottom-style: solid !important; }
+// Link solid
+a.link-solid-hover,           
+a.link-solid:hover   { @extend .link-line-border-bottom; border-bottom-style: hidden !important; }
+a.link-solid         { @extend .link-line-border-bottom; border-bottom-style: solid !important;  }
 
 
-// Link Thin
-a.link-line-thin           { border-bottom-width: thin !important; }
-a.link-line-thin:link      { border-bottom-width: thin !important; }
-a.link-line-thin:hover     { border-bottom-width: thin !important; }
+// Link dotted
+a.link-dotted-hover,           
+a.link-dotted:hover   { @extend .link-line-border-bottom; border-bottom-style: hidden !important; }
+a.link-dotted         { @extend .link-line-border-bottom; border-bottom-style: dotted !important;  }
 
-// Link Medium
-a.link-line-medium          { border-bottom-width: medium !important; }
-a.link-line-medium:link     { border-bottom-width: medium !important; }
-a.link-line-medium:hover    { border-bottom-width: medium !important; }
+// Link dashed
+a.link-dashed-hover,
+span.link-dashed-hover,          
+a.link-dashed:hover,
+span.link-dashed:hover   { @extend .link-line-border-bottom; border-bottom-style: hidden !important; }
+a.link-dashed,
+span.link-dashed         { @extend .link-line-border-bottom; border-bottom-style: dashed !important;  }
 
-// Link Thick
-a.link-line-thick          { border-bottom-width: thick !important; }
-a.link-line-thick:link     { border-bottom-width: thick !important; }
-a.link-line-thick:hover    { border-bottom-width: thick !important; }
-
-
-// Link Thin to Thick
-a.link-line-thin-to-thick          { border-bottom-width: thin !important; }
-a.link-line-thin-to-thick:link     { border-bottom-width: thin !important; }
-a.link-line-thin-to-thick:hover    { border-bottom-width: thick !important; }
+// Link double
+// Must have a border width thick enough to display double border
+a.link-double-hover,           
+a.link-double:hover   { border-bottom-width: medium; border-bottom-style: hidden !important; }
+a.link-double         { border-bottom-width: medium; border-bottom-style: double !important;  }
 
 
-
-// Link Color
-a.link-line-color          { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color:link     { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color:hover    { border-bottom-color: #{$evo_color} !important; }
-
-// Link Black
-a.link-line-black          { border-bottom-color: #{$evo_black} !important; }
-a.link-line-black:link     { border-bottom-color: #{$evo_black} !important; }
-a.link-line-black:hover    { border-bottom-color: #{$evo_black} !important; }
-
-// Link White
-a.link-line-white          { border-bottom-color: #{$evo_white} !important; }
-a.link-line-white:link     { border-bottom-color: #{$evo_white} !important; }
-a.link-line-white:hover    { border-bottom-color: #{$evo_white} !important; }
+// Link dotted to solid
+a.link-dotted-to-solid-hover,           
+a.link-dotted-to-solid:hover   { @extend .link-line-border-bottom; border-bottom-style: solid !important; }
+a.link-dotted-to-solid         { @extend .link-line-border-bottom; border-bottom-style: dotted !important;  }
 
 
-// Link Color to White
-a.link-line-color-to-white          { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color-to-white:link     { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color-to-white:hover    { border-bottom-color: #{$evo_white} !important; }
+// Link dashed to solid
+a.link-dashed-to-solid-hover,           
+a.link-dashed-to-solid:hover   { @extend .link-line-border-bottom; border-bottom-style: solid !important; }
+a.link-dashed-to-solid         { @extend .link-line-border-bottom; border-bottom-style: dashed !important;  }
 
-// Link Color to Black
-a.link-line-color-to-black          { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color-to-black:link     { border-bottom-color: #{$evo_color} !important; }
-a.link-line-color-to-black:hover    { border-bottom-color: #{$evo_black} !important; }
+
+// Link thin
+a.link-thin-hover,           
+a.link-thin:hover   { @extend .link-line-border-bottom; border-bottom-width: thin !important; }
+a.link-thin         { @extend .link-line-border-bottom; border-bottom-width: thin !important;  }
+
+// Link medium
+a.link-medium-hover,           
+a.link-medium:hover   { @extend .link-line-border-bottom; border-bottom-width: medium !important; }
+a.link-medium         { @extend .link-line-border-bottom; border-bottom-width: medium !important;  }
+
+
+// Link thick
+a.link-thick-hover,           
+a.link-thick:hover   { @extend .link-line-border-bottom; border-bottom-width: thick !important; }
+a.link-thick         { @extend .link-line-border-bottom; border-bottom-width: thick !important;  }
+
+
+// Link thin to thick
+a.link-thin-to-thick-hover,           
+a.link-thin-to-thick:hover   { @extend .link-line-border-bottom; border-bottom-width: thick !important; }
+a.link-thin-to-thick         { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: thin !important;}
+
+
+// Link color
+a.link-color-hover,           
+a.link-color:hover   { @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
+a.link-color         { @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
+
+// Link black
+a.link-black-hover,           
+a.link-black:hover   { @extend .link-line-border-bottom; border-bottom-color: #{$evo_black} !important; }
+a.link-black         { @extend .link-line-border-bottom; border-bottom-color: #{$evo_black} !important; }
+
+// Link white
+a.link-white-hover,           
+a.link-white:hover   { @extend .link-line-border-bottom; border-bottom-color: #{$evo_white} !important; }
+a.link-white         { @extend .link-line-border-bottom; border-bottom-color: #{$evo_white} !important; }
+
+
+
+// Link color to white
+a.link-color-to-white-hover,           
+a.link-color-to-white:hover   { @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
+a.link-color-to-white         { @extend .link-line-border-bottom; border-bottom-color: #{$evo_white} !important; }
+
+
+// Link color to black
+a.link-color-to-black-hover,           
+a.link-color-to-black:hover   { @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
+a.link-color-to-black         { @extend .link-line-border-bottom; border-bottom-color: #{$evo_black} !important; }
 
 
 
 
 // Link background color
-a.link-highlight-color                 { color: inherit; background-color: inherit; }
-a.link-highlight-color-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-color-hover:hover     { color: #{$evo_white} !important; background-color: #{$link_color} !important; }
+a.link-highlight-color-hover,           
+a.link-highlight-color:hover   { color: #{$evo_white} !important; background-color: #{$brand_color_1} !important; }
+a.link-highlight-color         { color: inherit; background-color: inherit; }
+
 
 // Link background color black
-a.link-highlight-black                 { color: inherit; background-color: inherit; }
-a.link-highlight-black-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-black-hover:hover     { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
+a.link-highlight-black-hover,           
+a.link-highlight-black:hover   { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
+a.link-highlight-black         { color: inherit; background-color: inherit; }
+
 
 // Link background color white
-a.link-highlight-white                 { color: inherit; background-color: inherit; }
-a.link-highlight-white-hover:link      { color: inherit; background-color: inherit; }
-a.link-highlight-white-hover:hover     { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
+a.link-highlight-white-hover,           
+a.link-highlight-white:hover   { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
+a.link-highlight-white         { color: inherit; background-color: inherit; }
 
 
 

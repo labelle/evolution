@@ -274,7 +274,8 @@ code {
   font-family: #{$base_code_font_family};
 }
 
-code#{$evo}-inverse {
+code#{$evo}-inverse,
+code.code-inverse {
   color: #{$inverse_code_color}; // darkslateblue; // bootstrap is #bd4147
   border-color: #{$inverse_code_border_color};
   background-color: #{$inverse_code_background_color}; // #eee
