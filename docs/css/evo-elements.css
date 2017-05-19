@@ -7343,6 +7343,11 @@ ul.list-bullet {
     padding-right: 0.5ch;
     color: #eb212e; }
 
+ul.bullet-dot li:before,
+a.bullet-dot:before,
+button.bullet-dot:before {
+  content: '•'; }
+
 ul.bullet-dash li:before,
 a.bullet-dash:before,
 button.bullet-dash:before {
@@ -7377,6 +7382,11 @@ ul.bullet-arrow-double li:before,
 a.bullet-arrow-double:before,
 button.bullet-arrow-double:before {
   content: "»"; }
+
+ul.bullet-arrow-double-back li:before,
+a.bullet-arrow-double-back:before,
+button.bullet-arrow-double-back:before {
+  content: "\00AB"; }
 
 ul.bullet-arrow-down li:before,
 a.bullet-arrow-down:before,

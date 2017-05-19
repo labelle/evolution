@@ -113,6 +113,11 @@ ul.list-bullet {
 
 // Other unicode symbols
 
+ul.bullet-dot li:before,
+a.bullet-dot:before,
+button.bullet-dot:before {
+    content: '•'; // insert content that looks like bullets
+}
 
 // En Dash U+2013
 ul.bullet-dash li:before,
@@ -161,6 +166,12 @@ ul.bullet-arrow-double li:before,
 a.bullet-arrow-double:before,
 button.bullet-arrow-double:before {
     content: "»"; // insert content that looks like bullets
+}
+
+ul.bullet-arrow-double-back li:before,
+a.bullet-arrow-double-back:before,
+button.bullet-arrow-double-back:before {
+    content: "\00AB"; // insert content that looks like bullets
 }
 
 // Right-Pointing Double Angle Quotation Mark U+00BB
