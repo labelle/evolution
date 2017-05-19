@@ -21,33 +21,33 @@
 // but not in relation to these selectors.
 
 
-// For other browsers
-::-o-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-   cursor: text;
-}
+// // For other browsers
+// ::-o-selection {
+//    background-color: #{$selection_color_background};
+//    color: #{$selection_color};
+//    cursor: text;
+// }
 
-::-ms-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-   cursor: text;
-}
+// ::-ms-selection {
+//    background-color: #{$selection_color_background};
+//    color: #{$selection_color};
+//    cursor: text;
+// }
 
-// For webkit browsers
-::-webkit-selection {
-   background-color: #{$selection_color_background};
-   color: #{$selection_color};
-    cursor: text;
-}
+// // For webkit browsers
+// ::-webkit-selection {
+//    background-color: #{$selection_color_background};
+//    color: #{$selection_color};
+//     cursor: text;
+// }
 
-// For mozilla browsers
-::-moz-selection  {
-    background: #{$selection_color_background};
-    color: #{$selection_color};
-    // text-shadow: #{$selection_text_shadow};
-    cursor: text;
-}
+// // For mozilla browsers
+// ::-moz-selection  {
+//     background: #{$selection_color_background};
+//     color: #{$selection_color};
+//     // text-shadow: #{$selection_text_shadow};
+//     cursor: text;
+// }
 
 // Selection
 ::selection   {

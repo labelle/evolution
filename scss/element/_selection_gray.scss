@@ -1,0 +1,604 @@
+///*      S E L E C T I O N   G R A Y     */
+
+// Selection state when selecting text in browser
+
+@import "../variables";
+
+// https://css-tricks.com/overriding-the-default-text-selection-gray-with-css/
+
+// Note how the selectors are not combined, 
+// even though the style block is doing the same thing. 
+// It doesn't work if you combine them:
+// /* Combining like this WILL NOT WORK */
+// p.yellow::selection,
+// p.yellow::-moz-selection {
+//   background: #fff2a8;
+// }
+
+// That's because browsers ignore the entire selector 
+// if there is a part of it they don't understand or 
+// is invalid. There is some exceptions to this (IE 7?) 
+// but not in relation to these selectors.
+
+
+
+
+// Selection gray 0
+
+body.selection-gray-0 ::selection   {
+    background: #{$gray_0};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-0 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_0}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 1
+
+body.selection-gray-1 ::selection   {
+    background: #{$gray_1};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-1 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_1}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 2
+
+body.selection-gray-2 ::selection   {
+    background: #{$gray_2};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-2 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_2}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection gray 3
+
+body.selection-gray-3 ::selection   {
+    background: #{$gray_3};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-3 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_3}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection gray 4
+
+body.selection-gray-4 ::selection   {
+    background: #{$gray_4};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-4 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_4}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection gray 5
+
+body.selection-gray-5 ::selection   {
+    background: #{$gray_5};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-5 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_5}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 6
+
+body.selection-gray-6 ::selection   {
+    background: #{$gray_6};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-6 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_6}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 7
+
+body.selection-gray-7 ::selection   {
+    background: #{$gray_7};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-7 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_7}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 8
+
+body.selection-gray-8 ::selection   {
+    background: #{$gray_8};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-8 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_8}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 9
+
+body.selection-gray-9 ::selection   {
+    background: #{$gray_9};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-9 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_9}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 10
+
+body.selection-gray-10 ::selection   {
+    background: #{$gray_10};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-10 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_10}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 11
+
+body.selection-gray-11 ::selection   {
+    background: #{$gray_11};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-11 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_11}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 12
+
+body.selection-gray-12 ::selection   {
+    background: #{$gray_12};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-12 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_12}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 13
+
+body.selection-gray-13 ::selection   {
+    background: #{$gray_13};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-13 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_13}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 14
+
+body.selection-gray-14 ::selection   {
+    background: #{$gray_14};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-14 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_14}; // demo gray
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 15
+
+body.selection-gray-15 ::selection   {
+    background: #{$gray_15};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-15 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_15}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 16
+
+body.selection-gray-16 ::selection   {
+    background: #{$gray_16};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-16 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_16}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection gray 17
+
+body.selection-gray-17 ::selection   {
+    background: #{$gray_17};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-17 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_17}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 18
+
+body.selection-gray-18 ::selection   {
+    background: #{$gray_18};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-18 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_18}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 19
+
+body.selection-gray-19 ::selection   {
+    background: #{$gray_19};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-19 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_19}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 20
+
+body.selection-gray-20 ::selection   {
+    background: #{$gray_20};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-20 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_20}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 21
+
+body.selection-gray-21 ::selection   {
+    background: #{$gray_21};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-21 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_21}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 22
+
+body.selection-gray-22 ::selection   {
+    background: #{$gray_22};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-22 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_22}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 23
+
+body.selection-gray-23 ::selection   {
+    background: #{$gray_23};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-23 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_23}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 24
+
+body.selection-gray-24 ::selection   {
+    background: #{$gray_24};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-24 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_24}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 25
+
+body.selection-gray-25 ::selection   {
+    background: #{$gray_25};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-25 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_25}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 26
+
+body.selection-gray-26 ::selection   {
+    background: #{$gray_26};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-26 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_26}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection gray 27
+
+body.selection-gray-27 ::selection   {
+    background: #{$gray_27};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-27 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_27}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 28
+
+body.selection-gray-28 ::selection   {
+    background: #{$gray_28};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-28 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_28}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 29
+
+body.selection-gray-29 ::selection   {
+    background: #{$gray_29};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-29 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_29}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection gray 30
+
+body.selection-gray-30 ::selection   {
+    background: #{$gray_30};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-gray-30 {
+    // background-color: #{$selection_gray_background};
+    background: #{$gray_30}; // demo gray
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+

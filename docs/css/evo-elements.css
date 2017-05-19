@@ -78,13 +78,6 @@ sup {
 small {
   font-size: 80%; }
 
-mark {
-  background: #ff0;
-  background-color: #ff0;
-  color: #000;
-  font-style: normal;
-  font-weight: normal; }
-
 dfn {
   font-style: italic; }
 
@@ -2857,190 +2850,190 @@ body.space-demo div[class*="padding-"] {
 --------------------------- GRAY COLORS --------------------------- 
 
 */
-.evo-gray-30 {
+.gray-30 {
   color: black; }
 
-.evo-gray-30-bg {
+.gray-30-bg {
   background-color: black; }
 
-.evo-gray-29 {
+.gray-29 {
   color: #030303; }
 
-.evo-gray-29-bg {
+.gray-29-bg {
   background-color: #030303; }
 
-.evo-gray-28 {
+.gray-28 {
   color: #050505; }
 
-.evo-gray-28-bg {
+.gray-28-bg {
   background-color: #050505; }
 
-.evo-gray-27 {
+.gray-27 {
   color: #080808; }
 
-.evo-gray-27-bg {
+.gray-27-bg {
   background-color: #080808; }
 
-.evo-gray-26 {
+.gray-26 {
   color: #0a0a0a; }
 
-.evo-gray-26-bg {
+.gray-26-bg {
   background-color: #0a0a0a; }
 
-.evo-gray-25 {
+.gray-25 {
   color: #0d0d0d; }
 
-.evo-gray-25-bg {
+.gray-25-bg {
   background-color: #0d0d0d; }
 
-.evo-gray-24 {
+.gray-24 {
   color: #121212; }
 
-.evo-gray-24-bg {
+.gray-24-bg {
   background-color: #121212; }
 
-.evo-gray-23 {
+.gray-23 {
   color: #191919; }
 
-.evo-gray-23-bg {
+.gray-23-bg {
   background-color: #191919; }
 
-.evo-gray-22 {
+.gray-22 {
   color: #262626; }
 
-.evo-gray-22-bg {
+.gray-22-bg {
   background-color: #262626; }
 
-.evo-gray-21 {
+.gray-21 {
   color: #333333; }
 
-.evo-gray-21-bg {
+.gray-21-bg {
   background-color: #333333; }
 
-.evo-gray-20 {
+.gray-20 {
   color: #404040; }
 
-.evo-gray-20-bg {
+.gray-20-bg {
   background-color: #404040; }
 
-.evo-gray-19 {
+.gray-19 {
   color: #4c4c4c; }
 
-.evo-gray-19-bg {
+.gray-19-bg {
   background-color: #4c4c4c; }
 
-.evo-gray-18 {
+.gray-18 {
   color: #595959; }
 
-.evo-gray-18-bg {
+.gray-18-bg {
   background-color: #595959; }
 
-.evo-gray-17 {
+.gray-17 {
   color: #666666; }
 
-.evo-gray-17-bg {
+.gray-17-bg {
   background-color: #666666; }
 
-.evo-gray-16 {
+.gray-16 {
   color: #737373; }
 
-.evo-gray-16-bg {
+.gray-16-bg {
   background-color: #737373; }
 
-.evo-gray-15 {
+.gray-15 {
   color: #7f7f7f; }
 
-.evo-gray-15-bg {
+.gray-15-bg {
   background-color: #7f7f7f; }
 
-.evo-gray-14 {
+.gray-14 {
   color: #8c8c8c; }
 
-.evo-gray-14-bg {
+.gray-14-bg {
   background-color: #8c8c8c; }
 
-.evo-gray-13 {
+.gray-13 {
   color: #999999; }
 
-.evo-gray-13-bg {
+.gray-13-bg {
   background-color: #999999; }
 
-.evo-gray-12 {
+.gray-12 {
   color: #a6a6a6; }
 
-.evo-gray-12-bg {
+.gray-12-bg {
   background-color: #a6a6a6; }
 
-.evo-gray-11 {
+.gray-11 {
   color: #b2b2b2; }
 
-.evo-gray-11-bg {
+.gray-11-bg {
   background-color: #b2b2b2; }
 
-.evo-gray-10 {
+.gray-10 {
   color: #bfbfbf; }
 
-.evo-gray-10-bg {
+.gray-10-bg {
   background-color: #bfbfbf; }
 
-.evo-gray-9 {
+.gray-9 {
   color: #cccccc; }
 
-.evo-gray-9-bg {
+.gray-9-bg {
   background-color: #cccccc; }
 
-.evo-gray-8 {
+.gray-8 {
   color: #d9d9d9; }
 
-.evo-gray-8-bg {
+.gray-8-bg {
   background-color: #d9d9d9; }
 
-.evo-gray-7 {
+.gray-7 {
   color: #e5e5e5; }
 
-.evo-gray-7-bg {
+.gray-7-bg {
   background-color: #e5e5e5; }
 
-.evo-gray-6 {
+.gray-6 {
   color: #ededed; }
 
-.evo-gray-6-bg {
+.gray-6-bg {
   background-color: #ededed; }
 
-.evo-gray-5 {
+.gray-5 {
   color: #f2f2f2; }
 
-.evo-gray-5-bg {
+.gray-5-bg {
   background-color: #f2f2f2; }
 
-.evo-gray-4 {
+.gray-4 {
   color: whitesmoke; }
 
-.evo-gray-4-bg {
+.gray-4-bg {
   background-color: whitesmoke; }
 
-.evo-gray-3 {
+.gray-3 {
   color: #f7f7f7; }
 
-.evo-gray-3-bg {
+.gray-3-bg {
   background-color: #f7f7f7; }
 
-.evo-gray-2 {
+.gray-2 {
   color: #fafafa; }
 
-.evo-gray-2-bg {
+.gray-2-bg {
   background-color: #fafafa; }
 
-.evo-gray-1 {
+.gray-1 {
   color: #fcfcfc; }
 
-.evo-gray-1-bg {
+.gray-1-bg {
   background-color: #fcfcfc; }
 
-.evo-gray-0 {
+.gray-0 {
   color: white; }
 
-.evo-gray-0-bg {
+.gray-0-bg {
   background-color: white; }
 
 /* 
@@ -3048,190 +3041,190 @@ body.space-demo div[class*="padding-"] {
 --------------------------- GRAY TRANSLUCENT COLORS --------------------------- 
 
 */
-.evo-trans-gray-30 {
+.trans-gray-30 {
   color: black; }
 
-.evo-trans-gray-30-bg {
+.trans-gray-30-bg {
   background-color: black; }
 
-.evo-trans-gray-29 {
+.trans-gray-29 {
   color: rgba(0, 0, 0, 0.98); }
 
-.evo-trans-gray-29-bg {
+.trans-gray-29-bg {
   background-color: rgba(0, 0, 0, 0.98); }
 
-.evo-trans-gray-28 {
+.trans-gray-28 {
   color: rgba(0, 0, 0, 0.97); }
 
-.evo-trans-gray-28-bg {
+.trans-gray-28-bg {
   background-color: rgba(0, 0, 0, 0.97); }
 
-.evo-trans-gray-27 {
+.trans-gray-27 {
   color: rgba(0, 0, 0, 0.96); }
 
-.evo-trans-gray-27-bg {
+.trans-gray-27-bg {
   background-color: rgba(0, 0, 0, 0.96); }
 
-.evo-trans-gray-26 {
+.trans-gray-26 {
   color: rgba(0, 0, 0, 0.95); }
 
-.evo-trans-gray-26-bg {
+.trans-gray-26-bg {
   background-color: rgba(0, 0, 0, 0.95); }
 
-.evo-trans-gray-25 {
+.trans-gray-25 {
   color: rgba(0, 0, 0, 0.94); }
 
-.evo-trans-gray-25-bg {
+.trans-gray-25-bg {
   background-color: rgba(0, 0, 0, 0.94); }
 
-.evo-trans-gray-24 {
+.trans-gray-24 {
   color: rgba(0, 0, 0, 0.92); }
 
-.evo-trans-gray-24-bg {
+.trans-gray-24-bg {
   background-color: rgba(0, 0, 0, 0.92); }
 
-.evo-trans-gray-23 {
+.trans-gray-23 {
   color: rgba(0, 0, 0, 0.9); }
 
-.evo-trans-gray-23-bg {
+.trans-gray-23-bg {
   background-color: rgba(0, 0, 0, 0.9); }
 
-.evo-trans-gray-22 {
+.trans-gray-22 {
   color: rgba(0, 0, 0, 0.85); }
 
-.evo-trans-gray-22-bg {
+.trans-gray-22-bg {
   background-color: rgba(0, 0, 0, 0.85); }
 
-.evo-trans-gray-21 {
+.trans-gray-21 {
   color: rgba(0, 0, 0, 0.8); }
 
-.evo-trans-gray-21-bg {
+.trans-gray-21-bg {
   background-color: rgba(0, 0, 0, 0.8); }
 
-.evo-trans-gray-20 {
+.trans-gray-20 {
   color: rgba(0, 0, 0, 0.75); }
 
-.evo-trans-gray-20-bg {
+.trans-gray-20-bg {
   background-color: rgba(0, 0, 0, 0.75); }
 
-.evo-trans-gray-19 {
+.trans-gray-19 {
   color: rgba(0, 0, 0, 0.7); }
 
-.evo-trans-gray-19-bg {
+.trans-gray-19-bg {
   background-color: rgba(0, 0, 0, 0.7); }
 
-.evo-trans-gray-18 {
+.trans-gray-18 {
   color: rgba(0, 0, 0, 0.65); }
 
-.evo-trans-gray-18-bg {
+.trans-gray-18-bg {
   background-color: rgba(0, 0, 0, 0.65); }
 
-.evo-trans-gray-17 {
+.trans-gray-17 {
   color: rgba(0, 0, 0, 0.6); }
 
-.evo-trans-gray-17-bg {
+.trans-gray-17-bg {
   background-color: rgba(0, 0, 0, 0.6); }
 
-.evo-trans-gray-16 {
+.trans-gray-16 {
   color: rgba(0, 0, 0, 0.55); }
 
-.evo-trans-gray-16-bg {
+.trans-gray-16-bg {
   background-color: rgba(0, 0, 0, 0.55); }
 
-.evo-trans-gray-15 {
+.trans-gray-15 {
   color: rgba(0, 0, 0, 0.5); }
 
-.evo-trans-gray-15-bg {
+.trans-gray-15-bg {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.evo-trans-gray-14 {
+.trans-gray-14 {
   color: rgba(0, 0, 0, 0.45); }
 
-.evo-trans-gray-14-bg {
+.trans-gray-14-bg {
   background-color: rgba(0, 0, 0, 0.45); }
 
-.evo-trans-gray-13 {
+.trans-gray-13 {
   color: rgba(0, 0, 0, 0.4); }
 
-.evo-trans-gray-13-bg {
+.trans-gray-13-bg {
   background-color: rgba(0, 0, 0, 0.4); }
 
-.evo-trans-gray-12 {
+.trans-gray-12 {
   color: rgba(0, 0, 0, 0.35); }
 
-.evo-trans-gray-12-bg {
+.trans-gray-12-bg {
   background-color: rgba(0, 0, 0, 0.35); }
 
-.evo-trans-gray-11 {
+.trans-gray-11 {
   color: rgba(0, 0, 0, 0.3); }
 
-.evo-trans-gray-11-bg {
+.trans-gray-11-bg {
   background-color: rgba(0, 0, 0, 0.3); }
 
-.evo-trans-gray-10 {
+.trans-gray-10 {
   color: rgba(0, 0, 0, 0.25); }
 
-.evo-trans-gray-10-bg {
+.trans-gray-10-bg {
   background-color: rgba(0, 0, 0, 0.25); }
 
-.evo-trans-gray-9 {
+.trans-gray-9 {
   color: rgba(0, 0, 0, 0.2); }
 
-.evo-trans-gray-9-bg {
+.trans-gray-9-bg {
   background-color: rgba(0, 0, 0, 0.2); }
 
-.evo-trans-gray-8 {
+.trans-gray-8 {
   color: rgba(0, 0, 0, 0.15); }
 
-.evo-trans-gray-8-bg {
+.trans-gray-8-bg {
   background-color: rgba(0, 0, 0, 0.15); }
 
-.evo-trans-gray-7 {
+.trans-gray-7 {
   color: rgba(0, 0, 0, 0.1); }
 
-.evo-trans-gray-7-bg {
+.trans-gray-7-bg {
   background-color: rgba(0, 0, 0, 0.1); }
 
-.evo-trans-gray-6 {
+.trans-gray-6 {
   color: rgba(0, 0, 0, 0.08); }
 
-.evo-trans-gray-6-bg {
+.trans-gray-6-bg {
   background-color: rgba(0, 0, 0, 0.08); }
 
-.evo-trans-gray-5 {
+.trans-gray-5 {
   color: rgba(0, 0, 0, 0.06); }
 
-.evo-trans-gray-5-bg {
+.trans-gray-5-bg {
   background-color: rgba(0, 0, 0, 0.06); }
 
-.evo-trans-gray-4 {
+.trans-gray-4 {
   color: rgba(0, 0, 0, 0.05); }
 
-.evo-trans-gray-4-bg {
+.trans-gray-4-bg {
   background-color: rgba(0, 0, 0, 0.05); }
 
-.evo-trans-gray-3 {
+.trans-gray-3 {
   color: rgba(0, 0, 0, 0.04); }
 
-.evo-trans-gray-3-bg {
+.trans-gray-3-bg {
   background-color: rgba(0, 0, 0, 0.04); }
 
-.evo-trans-gray-2 {
+.trans-gray-2 {
   color: rgba(0, 0, 0, 0.03); }
 
-.evo-trans-gray-2-bg {
+.trans-gray-2-bg {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.evo-trans-gray-1 {
+.trans-gray-1 {
   color: rgba(0, 0, 0, 0.02); }
 
-.evo-trans-gray-1-bg {
+.trans-gray-1-bg {
   background-color: rgba(0, 0, 0, 0.02); }
 
-.evo-trans-gray-0 {
+.trans-gray-0 {
   color: transparent; }
 
-.evo-trans-gray-0-bg {
+.trans-gray-0-bg {
   background-color: transparent; }
 
 /* 
@@ -3239,376 +3232,376 @@ body.space-demo div[class*="padding-"] {
 --------------------------- INVERSE GRAY TRANSLUCENT COLORS --------------------------- 
 
 */
-.evo-inverse-trans-gray-30 {
+.inverse-trans-gray-30 {
   color: white; }
 
-.evo-inverse-trans-gray-30-bg {
+.inverse-trans-gray-30-bg {
   background-color: white; }
 
-.evo-inverse-trans-gray-29 {
+.inverse-trans-gray-29 {
   color: rgba(255, 255, 255, 0.98); }
 
-.evo-inverse-trans-gray-29-bg {
+.inverse-trans-gray-29-bg {
   background-color: rgba(255, 255, 255, 0.98); }
 
-.evo-inverse-trans-gray-28 {
+.inverse-trans-gray-28 {
   color: rgba(255, 255, 255, 0.97); }
 
-.evo-inverse-trans-gray-28-bg {
+.inverse-trans-gray-28-bg {
   background-color: rgba(255, 255, 255, 0.97); }
 
-.evo-inverse-trans-gray-27 {
+.inverse-trans-gray-27 {
   color: rgba(255, 255, 255, 0.96); }
 
-.evo-inverse-trans-gray-27-bg {
+.inverse-trans-gray-27-bg {
   background-color: rgba(255, 255, 255, 0.96); }
 
-.evo-inverse-trans-gray-26 {
+.inverse-trans-gray-26 {
   color: rgba(255, 255, 255, 0.95); }
 
-.evo-inverse-trans-gray-26-bg {
+.inverse-trans-gray-26-bg {
   background-color: rgba(255, 255, 255, 0.95); }
 
-.evo-inverse-trans-gray-25 {
+.inverse-trans-gray-25 {
   color: rgba(255, 255, 255, 0.94); }
 
-.evo-inverse-trans-gray-25-bg {
+.inverse-trans-gray-25-bg {
   background-color: rgba(255, 255, 255, 0.94); }
 
-.evo-inverse-trans-gray-24 {
+.inverse-trans-gray-24 {
   color: rgba(255, 255, 255, 0.92); }
 
-.evo-inverse-trans-gray-24-bg {
+.inverse-trans-gray-24-bg {
   background-color: rgba(255, 255, 255, 0.92); }
 
-.evo-inverse-trans-gray-23 {
+.inverse-trans-gray-23 {
   color: rgba(255, 255, 255, 0.9); }
 
-.evo-inverse-trans-gray-23-bg {
+.inverse-trans-gray-23-bg {
   background-color: rgba(255, 255, 255, 0.9); }
 
-.evo-inverse-trans-gray-22 {
+.inverse-trans-gray-22 {
   color: rgba(255, 255, 255, 0.85); }
 
-.evo-inverse-trans-gray-22-bg {
+.inverse-trans-gray-22-bg {
   background-color: rgba(255, 255, 255, 0.85); }
 
-.evo-inverse-trans-gray-21 {
+.inverse-trans-gray-21 {
   color: rgba(255, 255, 255, 0.8); }
 
-.evo-inverse-trans-gray-21-bg {
+.inverse-trans-gray-21-bg {
   background-color: rgba(255, 255, 255, 0.8); }
 
-.evo-inverse-trans-gray-20 {
+.inverse-trans-gray-20 {
   color: rgba(255, 255, 255, 0.75); }
 
-.evo-inverse-trans-gray-20-bg {
+.inverse-trans-gray-20-bg {
   background-color: rgba(255, 255, 255, 0.75); }
 
-.evo-inverse-trans-gray-19 {
+.inverse-trans-gray-19 {
   color: rgba(255, 255, 255, 0.7); }
 
-.evo-inverse-trans-gray-19-bg {
+.inverse-trans-gray-19-bg {
   background-color: rgba(255, 255, 255, 0.7); }
 
-.evo-inverse-trans-gray-18 {
+.inverse-trans-gray-18 {
   color: rgba(255, 255, 255, 0.65); }
 
-.evo-inverse-trans-gray-18-bg {
+.inverse-trans-gray-18-bg {
   background-color: rgba(255, 255, 255, 0.65); }
 
-.evo-inverse-trans-gray-17 {
+.inverse-trans-gray-17 {
   color: rgba(255, 255, 255, 0.6); }
 
-.evo-inverse-trans-gray-17-bg {
+.inverse-trans-gray-17-bg {
   background-color: rgba(255, 255, 255, 0.6); }
 
-.evo-inverse-trans-gray-16 {
+.inverse-trans-gray-16 {
   color: rgba(255, 255, 255, 0.55); }
 
-.evo-inverse-trans-gray-16-bg {
+.inverse-trans-gray-16-bg {
   background-color: rgba(255, 255, 255, 0.55); }
 
-.evo-inverse-trans-gray-15 {
+.inverse-trans-gray-15 {
   color: rgba(255, 255, 255, 0.5); }
 
-.evo-inverse-trans-gray-15-bg {
+.inverse-trans-gray-15-bg {
   background-color: rgba(255, 255, 255, 0.5); }
 
-.evo-inverse-trans-gray-14 {
+.inverse-trans-gray-14 {
   color: rgba(255, 255, 255, 0.45); }
 
-.evo-inverse-trans-gray-14-bg {
+.inverse-trans-gray-14-bg {
   background-color: rgba(255, 255, 255, 0.45); }
 
-.evo-inverse-trans-gray-13 {
+.inverse-trans-gray-13 {
   color: rgba(255, 255, 255, 0.4); }
 
-.evo-inverse-trans-gray-13-bg {
+.inverse-trans-gray-13-bg {
   background-color: rgba(255, 255, 255, 0.4); }
 
-.evo-inverse-trans-gray-12 {
+.inverse-trans-gray-12 {
   color: rgba(255, 255, 255, 0.35); }
 
-.evo-inverse-trans-gray-12-bg {
+.inverse-trans-gray-12-bg {
   background-color: rgba(255, 255, 255, 0.35); }
 
-.evo-inverse-trans-gray-11 {
+.inverse-trans-gray-11 {
   color: rgba(255, 255, 255, 0.3); }
 
-.evo-inverse-trans-gray-11-bg {
+.inverse-trans-gray-11-bg {
   background-color: rgba(255, 255, 255, 0.3); }
 
-.evo-inverse-trans-gray-10 {
+.inverse-trans-gray-10 {
   color: rgba(255, 255, 255, 0.25); }
 
-.evo-inverse-trans-gray-10-bg {
+.inverse-trans-gray-10-bg {
   background-color: rgba(255, 255, 255, 0.25); }
 
-.evo-inverse-trans-gray-9 {
+.inverse-trans-gray-9 {
   color: rgba(255, 255, 255, 0.2); }
 
-.evo-inverse-trans-gray-9-bg {
+.inverse-trans-gray-9-bg {
   background-color: rgba(255, 255, 255, 0.2); }
 
-.evo-inverse-trans-gray-8 {
+.inverse-trans-gray-8 {
   color: rgba(255, 255, 255, 0.15); }
 
-.evo-inverse-trans-gray-8-bg {
+.inverse-trans-gray-8-bg {
   background-color: rgba(255, 255, 255, 0.15); }
 
-.evo-inverse-trans-gray-7 {
+.inverse-trans-gray-7 {
   color: rgba(255, 255, 255, 0.1); }
 
-.evo-inverse-trans-gray-7-bg {
+.inverse-trans-gray-7-bg {
   background-color: rgba(255, 255, 255, 0.1); }
 
-.evo-inverse-trans-gray-6 {
+.inverse-trans-gray-6 {
   color: rgba(255, 255, 255, 0.08); }
 
-.evo-inverse-trans-gray-6-bg {
+.inverse-trans-gray-6-bg {
   background-color: rgba(255, 255, 255, 0.08); }
 
-.evo-inverse-trans-gray-5 {
+.inverse-trans-gray-5 {
   color: rgba(255, 255, 255, 0.06); }
 
-.evo-inverse-trans-gray-5-bg {
+.inverse-trans-gray-5-bg {
   background-color: rgba(255, 255, 255, 0.06); }
 
-.evo-inverse-trans-gray-4 {
+.inverse-trans-gray-4 {
   color: rgba(255, 255, 255, 0.05); }
 
-.evo-inverse-trans-gray-4-bg {
+.inverse-trans-gray-4-bg {
   background-color: rgba(255, 255, 255, 0.05); }
 
-.evo-inverse-trans-gray-3 {
+.inverse-trans-gray-3 {
   color: rgba(255, 255, 255, 0.04); }
 
-.evo-inverse-trans-gray-3-bg {
+.inverse-trans-gray-3-bg {
   background-color: rgba(255, 255, 255, 0.04); }
 
-.evo-inverse-trans-gray-2 {
+.inverse-trans-gray-2 {
   color: rgba(255, 255, 255, 0.03); }
 
-.evo-inverse-trans-gray-2-bg {
+.inverse-trans-gray-2-bg {
   background-color: rgba(255, 255, 255, 0.03); }
 
-.evo-inverse-trans-gray-1 {
+.inverse-trans-gray-1 {
   color: rgba(255, 255, 255, 0.02); }
 
-.evo-inverse-trans-gray-1-bg {
+.inverse-trans-gray-1-bg {
   background-color: rgba(255, 255, 255, 0.02); }
 
-.evo-inverse-trans-gray-0 {
+.inverse-trans-gray-0 {
   color: rgba(255, 255, 255, 0); }
 
-.evo-inverse-trans-gray-0-bg {
+.inverse-trans-gray-0-bg {
   background-color: rgba(255, 255, 255, 0); }
 
-.evo-color-0 {
+.color-0 {
   color: #fff02a; }
 
-.evo-color-0-bg {
+.color-0-bg {
   background-color: #fff02a; }
 
-.evo-color-1 {
+.color-1 {
   color: #ffe52c; }
 
-.evo-color-1-bg {
+.color-1-bg {
   background-color: #ffe52c; }
 
-.evo-color-2 {
+.color-2 {
   color: #fdc131; }
 
-.evo-color-2-bg {
+.color-2-bg {
   background-color: #fdc131; }
 
-.evo-color-3 {
+.color-3 {
   color: #f59331; }
 
-.evo-color-3-bg {
+.color-3-bg {
   background-color: #f59331; }
 
-.evo-color-4 {
+.color-4 {
   color: #ef662f; }
 
-.evo-color-4-bg {
+.color-4-bg {
   background-color: #ef662f; }
 
-.evo-color-5 {
+.color-5 {
   color: #eb212e; }
 
-.evo-color-5-bg {
+.color-5-bg {
   background-color: #eb212e; }
 
-.evo-color-6 {
+.color-6 {
   color: #eb1f45; }
 
-.evo-color-6-bg {
+.color-6-bg {
   background-color: #eb1f45; }
 
-.evo-color-7 {
+.color-7 {
   color: #eb1d5d; }
 
-.evo-color-7-bg {
+.color-7-bg {
   background-color: #eb1d5d; }
 
-.evo-color-8 {
+.color-8 {
   color: #ea1873; }
 
-.evo-color-8-bg {
+.color-8-bg {
   background-color: #ea1873; }
 
-.evo-color-9 {
+.color-9 {
   color: #ea148c; }
 
-.evo-color-9-bg {
+.color-9-bg {
   background-color: #ea148c; }
 
-.evo-color-10 {
+.color-10 {
   color: #bb238c; }
 
-.evo-color-10-bg {
+.color-10-bg {
   background-color: #bb238c; }
 
-.evo-color-11 {
+.color-11 {
   color: #902c8e; }
 
-.evo-color-11-bg {
+.color-11-bg {
   background-color: #902c8e; }
 
-.evo-color-12 {
+.color-12 {
   color: #65318f; }
 
-.evo-color-12-bg {
+.color-12-bg {
   background-color: #65318f; }
 
-.evo-color-13 {
+.color-13 {
   color: #2f3490; }
 
-.evo-color-13-bg {
+.color-13-bg {
   background-color: #2f3490; }
 
-.evo-color-14 {
+.color-14 {
   color: #0056a4; }
 
-.evo-color-14-bg {
+.color-14-bg {
   background-color: #0056a4; }
 
-.evo-color-15 {
+.color-15 {
   color: #0073b9; }
 
-.evo-color-15-bg {
+.color-15-bg {
   background-color: #0073b9; }
 
-.evo-color-16 {
+.color-16 {
   color: #0090d2; }
 
-.evo-color-16-bg {
+.color-16-bg {
   background-color: #0090d2; }
 
-.evo-color-17 {
+.color-17 {
   color: #00afec; }
 
-.evo-color-17-bg {
+.color-17-bg {
   background-color: #00afec; }
 
-.evo-color-18 {
+.color-18 {
   color: #00abc3; }
 
-.evo-color-18-bg {
+.color-18-bg {
   background-color: #00abc3; }
 
-.evo-color-19 {
+.color-19 {
   color: #00a89c; }
 
-.evo-color-19-bg {
+.color-19-bg {
   background-color: #00a89c; }
 
-.evo-color-20 {
+.color-20 {
   color: #00a676; }
 
-.evo-color-20-bg {
+.color-20-bg {
   background-color: #00a676; }
 
-.evo-color-21 {
+.color-21 {
   color: #00a453; }
 
-.evo-color-21-bg {
+.color-21-bg {
   background-color: #00a453; }
 
-.evo-color-22 {
+.color-22 {
   color: #3fb34f; }
 
-.evo-color-22-bg {
+.color-22-bg {
   background-color: #3fb34f; }
 
-.evo-color-23 {
+.color-23 {
   color: #8ec549; }
 
-.evo-color-23-bg {
+.color-23-bg {
   background-color: #8ec549; }
 
-.evo-color-24 {
+.color-24 {
   color: #cbd93e; }
 
-.evo-color-24-bg {
+.color-24-bg {
   background-color: #cbd93e; }
 
-.evo-color-25 {
+.color-25 {
   color: #ede634; }
 
-.evo-color-25-bg {
+.color-25-bg {
   background-color: #ede634; }
 
-.evo-color-26 {
+.color-26 {
   color: #e3ca3c; }
 
-.evo-color-26-bg {
+.color-26-bg {
   background-color: #e3ca3c; }
 
-.evo-color-27 {
+.color-27 {
   color: #c9ac40; }
 
-.evo-color-27-bg {
+.color-27-bg {
   background-color: #c9ac40; }
 
-.evo-color-28 {
+.color-28 {
   color: #b38f44; }
 
-.evo-color-28-bg {
+.color-28-bg {
   background-color: #b38f44; }
 
-.evo-color-29 {
+.color-29 {
   color: #9c733a; }
 
-.evo-color-29-bg {
+.color-29-bg {
   background-color: #9c733a; }
 
-.evo-color-30 {
+.color-30 {
   color: #8a6132; }
 
-.evo-color-30-bg {
+.color-30-bg {
   background-color: #8a6132; }
 
 /*      FONTS     */
@@ -5148,26 +5141,6 @@ header.fluid-header p {
   letter-spacing: 2rem;
   text-shadow: 0 0 30px rgba(255, 0, 84, 0.6), 0 0 60px rgba(255, 0, 84, 0.4), 0 0 100px rgba(255, 0, 84, 0.2), 0 0 90px rgba(255, 0, 84, 0.1); }
 
-::-o-selection {
-  background-color: #eb212e;
-  color: white;
-  cursor: text; }
-
-::-ms-selection {
-  background-color: #eb212e;
-  color: white;
-  cursor: text; }
-
-::-webkit-selection {
-  background-color: #eb212e;
-  color: white;
-  cursor: text; }
-
-::-moz-selection {
-  background: #eb212e;
-  color: white;
-  cursor: text; }
-
 ::selection {
   background: #eb212e;
   color: white;
@@ -5177,6 +5150,1122 @@ header.fluid-header p {
 span.evo-selection {
   background: #eb212e;
   color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-0 ::selection {
+  background: white;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-0 {
+  background: white;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-1 ::selection {
+  background: #fcfcfc;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-1 {
+  background: #fcfcfc;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-2 ::selection {
+  background: #fafafa;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-2 {
+  background: #fafafa;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-3 ::selection {
+  background: #f7f7f7;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-3 {
+  background: #f7f7f7;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-4 ::selection {
+  background: whitesmoke;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-4 {
+  background: whitesmoke;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-5 ::selection {
+  background: #f2f2f2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-5 {
+  background: #f2f2f2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-6 ::selection {
+  background: #ededed;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-6 {
+  background: #ededed;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-7 ::selection {
+  background: #e5e5e5;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-7 {
+  background: #e5e5e5;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-8 ::selection {
+  background: #d9d9d9;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-8 {
+  background: #d9d9d9;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-9 ::selection {
+  background: #cccccc;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-9 {
+  background: #cccccc;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-10 ::selection {
+  background: #bfbfbf;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-10 {
+  background: #bfbfbf;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-11 ::selection {
+  background: #b2b2b2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-11 {
+  background: #b2b2b2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-12 ::selection {
+  background: #a6a6a6;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-12 {
+  background: #a6a6a6;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-13 ::selection {
+  background: #999999;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-13 {
+  background: #999999;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-14 ::selection {
+  background: #8c8c8c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-14 {
+  background: #8c8c8c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-15 ::selection {
+  background: #7f7f7f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-15 {
+  background: #7f7f7f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-16 ::selection {
+  background: #737373;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-16 {
+  background: #737373;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-17 ::selection {
+  background: #666666;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-17 {
+  background: #666666;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-18 ::selection {
+  background: #595959;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-18 {
+  background: #595959;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-19 ::selection {
+  background: #4c4c4c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-19 {
+  background: #4c4c4c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-20 ::selection {
+  background: #404040;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-20 {
+  background: #404040;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-21 ::selection {
+  background: #333333;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-21 {
+  background: #333333;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-22 ::selection {
+  background: #262626;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-22 {
+  background: #262626;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-23 ::selection {
+  background: #191919;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-23 {
+  background: #191919;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-24 ::selection {
+  background: #121212;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-24 {
+  background: #121212;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-25 ::selection {
+  background: #0d0d0d;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-25 {
+  background: #0d0d0d;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-26 ::selection {
+  background: #0a0a0a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-26 {
+  background: #0a0a0a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-27 ::selection {
+  background: #080808;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-27 {
+  background: #080808;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-28 ::selection {
+  background: #050505;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-28 {
+  background: #050505;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-29 ::selection {
+  background: #030303;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-29 {
+  background: #030303;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-gray-30 ::selection {
+  background: black;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-gray-30 {
+  background: black;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-0 ::selection {
+  background: #fff02a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-0 {
+  background: #fff02a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-1 ::selection {
+  background: #ffe52c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-1 {
+  background: #ffe52c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-2 ::selection {
+  background: #fdc131;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-2 {
+  background: #fdc131;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-3 ::selection {
+  background: #f59331;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-3 {
+  background: #f59331;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-4 ::selection {
+  background: #ef662f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-4 {
+  background: #ef662f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-5 ::selection {
+  background: #eb212e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-5 {
+  background: #eb212e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-6 ::selection {
+  background: #eb1f45;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-6 {
+  background: #eb1f45;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-7 ::selection {
+  background: #eb1d5d;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-7 {
+  background: #eb1d5d;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-8 ::selection {
+  background: #ea1873;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-8 {
+  background: #ea1873;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-9 ::selection {
+  background: #ea148c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-9 {
+  background: #ea148c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-10 ::selection {
+  background: #bb238c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-10 {
+  background: #bb238c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-11 ::selection {
+  background: #902c8e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-11 {
+  background: #902c8e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-12 ::selection {
+  background: #65318f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-12 {
+  background: #65318f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-13 ::selection {
+  background: #2f3490;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-13 {
+  background: #2f3490;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-14 ::selection {
+  background: #0056a4;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-14 {
+  background: #0056a4;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-15 ::selection {
+  background: #0073b9;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-15 {
+  background: #0073b9;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-16 ::selection {
+  background: #0090d2;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-16 {
+  background: #0090d2;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-17 ::selection {
+  background: #00afec;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-17 {
+  background: #00afec;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-18 ::selection {
+  background: #00abc3;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-18 {
+  background: #00abc3;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-19 ::selection {
+  background: #00a89c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-19 {
+  background: #00a89c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-20 ::selection {
+  background: #00a676;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-20 {
+  background: #00a676;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-21 ::selection {
+  background: #00a453;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-21 {
+  background: #00a453;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-22 ::selection {
+  background: #3fb34f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-22 {
+  background: #3fb34f;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-23 ::selection {
+  background: #8ec549;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-23 {
+  background: #8ec549;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-24 ::selection {
+  background: #cbd93e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-24 {
+  background: #cbd93e;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-25 ::selection {
+  background: #ede634;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-25 {
+  background: #ede634;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-26 ::selection {
+  background: #e3ca3c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-26 {
+  background: #e3ca3c;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-27 ::selection {
+  background: #c9ac40;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-27 {
+  background: #c9ac40;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-28 ::selection {
+  background: #b38f44;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-28 {
+  background: #b38f44;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-29 ::selection {
+  background: #9c733a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-29 {
+  background: #9c733a;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.selection-color-30 ::selection {
+  background: #8a6132;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+span.selection-color-30 {
+  background: #8a6132;
+  color: white;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-0 ::selection {
+  background: #fff02a;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-0 {
+  background: #fff02a;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-1 ::selection {
+  background: #ffe52c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-1 {
+  background: #ffe52c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-2 ::selection {
+  background: #fdc131;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-2 {
+  background: #fdc131;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-3 ::selection {
+  background: #f59331;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-3 {
+  background: #f59331;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-4 ::selection {
+  background: #ef662f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-4 {
+  background: #ef662f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-5 ::selection {
+  background: #eb212e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-5 {
+  background: #eb212e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-6 ::selection {
+  background: #eb1f45;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-6 {
+  background: #eb1f45;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-7 ::selection {
+  background: #eb1d5d;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-7 {
+  background: #eb1d5d;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-8 ::selection {
+  background: #ea1873;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-8 {
+  background: #ea1873;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-9 ::selection {
+  background: #ea148c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-9 {
+  background: #ea148c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-10 ::selection {
+  background: #bb238c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-10 {
+  background: #bb238c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-11 ::selection {
+  background: #902c8e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-11 {
+  background: #902c8e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-12 ::selection {
+  background: #65318f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-12 {
+  background: #65318f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-13 ::selection {
+  background: #2f3490;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-13 {
+  background: #2f3490;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-14 ::selection {
+  background: #0056a4;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-14 {
+  background: #0056a4;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-15 ::selection {
+  background: #0073b9;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-15 {
+  background: #0073b9;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-16 ::selection {
+  background: #0090d2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-16 {
+  background: #0090d2;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-17 ::selection {
+  background: #00afec;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-17 {
+  background: #00afec;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-18 ::selection {
+  background: #00abc3;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-18 {
+  background: #00abc3;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-19 ::selection {
+  background: #00a89c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-19 {
+  background: #00a89c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-20 ::selection {
+  background: #00a676;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-20 {
+  background: #00a676;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-21 ::selection {
+  background: #00a453;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-21 {
+  background: #00a453;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-22 ::selection {
+  background: #3fb34f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-22 {
+  background: #3fb34f;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-23 ::selection {
+  background: #8ec549;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-23 {
+  background: #8ec549;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-24 ::selection {
+  background: #cbd93e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-24 {
+  background: #cbd93e;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-25 ::selection {
+  background: #ede634;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-25 {
+  background: #ede634;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-26 ::selection {
+  background: #e3ca3c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-26 {
+  background: #e3ca3c;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-27 ::selection {
+  background: #c9ac40;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-27 {
+  background: #c9ac40;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-28 ::selection {
+  background: #b38f44;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-28 {
+  background: #b38f44;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-29 ::selection {
+  background: #9c733a;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-29 {
+  background: #9c733a;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+body.inverse-selection-color-30 ::selection {
+  background: #8a6132;
+  color: black;
+  text-shadow: none;
+  cursor: text; }
+
+span.inverse-selection-color-30 {
+  background: #8a6132;
+  color: black;
   text-shadow: none;
   cursor: text; }
 
@@ -5208,6 +6297,13 @@ span.evo-highlight {
   background-color: white;
   color: black;
   text-shadow: none; }
+
+mark {
+  background: #ff0;
+  background-color: #ff0;
+  color: #000;
+  font-style: normal;
+  font-weight: normal; }
 
 .highlight-color-0 {
   background-color: #fff02a;

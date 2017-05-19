@@ -92,11 +92,12 @@
 
 // Selection
 @import "element/selection";
-// @import "element/selection_gray";
-// @import "element/selection_color";
+@import "element/selection_gray";
+@import "element/selection_color";
 
 // Highlight
 @import "element/highlight";
+@import "element/highlight_mark";
 @import "element/highlight_color";
 @import "element/highlight_gray";
 

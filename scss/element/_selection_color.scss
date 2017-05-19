@@ -1,0 +1,1194 @@
+///*      S E L E C T I O N   C O L O R     */
+
+// Selection state when selecting text in browser
+
+@import "../variables";
+
+// https://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+
+// Note how the selectors are not combined, 
+// even though the style block is doing the same thing. 
+// It doesn't work if you combine them:
+// /* Combining like this WILL NOT WORK */
+// p.yellow::selection,
+// p.yellow::-moz-selection {
+//   background: #fff2a8;
+// }
+
+// That's because browsers ignore the entire selector 
+// if there is a part of it they don't understand or 
+// is invalid. There is some exceptions to this (IE 7?) 
+// but not in relation to these selectors.
+
+
+
+
+// Selection color 0
+
+body.selection-color-0 ::selection   {
+    background: #{$color_0};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-0 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_0}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 1
+
+body.selection-color-1 ::selection   {
+    background: #{$color_1};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-1 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_1}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 2
+
+body.selection-color-2 ::selection   {
+    background: #{$color_2};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-2 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_2}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection color 3
+
+body.selection-color-3 ::selection   {
+    background: #{$color_3};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-3 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_3}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection color 4
+
+body.selection-color-4 ::selection   {
+    background: #{$color_4};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-4 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_4}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Selection color 5
+
+body.selection-color-5 ::selection   {
+    background: #{$color_5};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-5 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_5}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 6
+
+body.selection-color-6 ::selection   {
+    background: #{$color_6};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-6 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_6}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 7
+
+body.selection-color-7 ::selection   {
+    background: #{$color_7};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-7 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_7}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 8
+
+body.selection-color-8 ::selection   {
+    background: #{$color_8};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-8 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_8}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 9
+
+body.selection-color-9 ::selection   {
+    background: #{$color_9};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-9 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_9}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 10
+
+body.selection-color-10 ::selection   {
+    background: #{$color_10};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-10 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_10}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 11
+
+body.selection-color-11 ::selection   {
+    background: #{$color_11};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-11 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_11}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 12
+
+body.selection-color-12 ::selection   {
+    background: #{$color_12};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-12 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_12}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 13
+
+body.selection-color-13 ::selection   {
+    background: #{$color_13};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-13 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_13}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 14
+
+body.selection-color-14 ::selection   {
+    background: #{$color_14};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-14 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_14}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 15
+
+body.selection-color-15 ::selection   {
+    background: #{$color_15};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-15 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_15}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 16
+
+body.selection-color-16 ::selection   {
+    background: #{$color_16};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-16 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_16}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Selection color 17
+
+body.selection-color-17 ::selection   {
+    background: #{$color_17};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-17 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_17}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 18
+
+body.selection-color-18 ::selection   {
+    background: #{$color_18};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-18 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_18}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 19
+
+body.selection-color-19 ::selection   {
+    background: #{$color_19};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-19 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_19}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 20
+
+body.selection-color-20 ::selection   {
+    background: #{$color_20};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-20 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_20}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 21
+
+body.selection-color-21 ::selection   {
+    background: #{$color_21};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-21 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_21}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 22
+
+body.selection-color-22 ::selection   {
+    background: #{$color_22};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-22 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_22}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 23
+
+body.selection-color-23 ::selection   {
+    background: #{$color_23};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-23 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_23}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 24
+
+body.selection-color-24 ::selection   {
+    background: #{$color_24};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-24 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_24}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 25
+
+body.selection-color-25 ::selection   {
+    background: #{$color_25};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-25 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_25}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 26
+
+body.selection-color-26 ::selection   {
+    background: #{$color_26};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-26 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_26}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Selection color 27
+
+body.selection-color-27 ::selection   {
+    background: #{$color_27};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-27 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_27}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 28
+
+body.selection-color-28 ::selection   {
+    background: #{$color_28};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-28 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_28}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 29
+
+body.selection-color-29 ::selection   {
+    background: #{$color_29};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-29 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_29}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Selection color 30
+
+body.selection-color-30 ::selection   {
+    background: #{$color_30};
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.selection-color-30 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_30}; // demo color
+    color: #{$evo_white};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+
+// Inverse
+
+
+// Inverse selection color 0
+
+body.inverse-selection-color-0 ::selection   {
+    background: #{$color_0};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-0 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_0}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 1
+
+body.inverse-selection-color-1 ::selection   {
+    background: #{$color_1};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-1 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_1}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 2
+
+body.inverse-selection-color-2 ::selection   {
+    background: #{$color_2};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-2 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_2}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Inverse selection color 3
+
+body.inverse-selection-color-3 ::selection   {
+    background: #{$color_3};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-3 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_3}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Inverse selection color 4
+
+body.inverse-selection-color-4 ::selection   {
+    background: #{$color_4};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-4 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_4}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+// Inverse selection color 5
+
+body.inverse-selection-color-5 ::selection   {
+    background: #{$color_5};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-5 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_5}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 6
+
+body.inverse-selection-color-6 ::selection   {
+    background: #{$color_6};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-6 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_6}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 7
+
+body.inverse-selection-color-7 ::selection   {
+    background: #{$color_7};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-7 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_7}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 8
+
+body.inverse-selection-color-8 ::selection   {
+    background: #{$color_8};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-8 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_8}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 9
+
+body.inverse-selection-color-9 ::selection   {
+    background: #{$color_9};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-9 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_9}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 10
+
+body.inverse-selection-color-10 ::selection   {
+    background: #{$color_10};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-10 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_10}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 11
+
+body.inverse-selection-color-11 ::selection   {
+    background: #{$color_11};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-11 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_11}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 12
+
+body.inverse-selection-color-12 ::selection   {
+    background: #{$color_12};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-12 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_12}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 13
+
+body.inverse-selection-color-13 ::selection   {
+    background: #{$color_13};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-13 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_13}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 14
+
+body.inverse-selection-color-14 ::selection   {
+    background: #{$color_14};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-14 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_14}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+// Inverse selection color 15
+
+body.inverse-selection-color-15 ::selection   {
+    background: #{$color_15};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-15 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_15}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 16
+
+body.inverse-selection-color-16 ::selection   {
+    background: #{$color_16};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-16 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_16}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 17
+
+body.inverse-selection-color-17 ::selection   {
+    background: #{$color_17};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-17 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_17}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 18
+
+body.inverse-selection-color-18 ::selection   {
+    background: #{$color_18};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-18 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_18}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 19
+
+body.inverse-selection-color-19 ::selection   {
+    background: #{$color_19};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-19 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_19}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 20
+
+body.inverse-selection-color-20 ::selection   {
+    background: #{$color_20};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-20 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_20}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 21
+
+body.inverse-selection-color-21 ::selection   {
+    background: #{$color_21};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-21 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_21}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 22
+
+body.inverse-selection-color-22 ::selection   {
+    background: #{$color_22};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-22 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_22}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 23
+
+body.inverse-selection-color-23 ::selection   {
+    background: #{$color_23};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-23 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_23}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 24
+
+body.inverse-selection-color-24 ::selection   {
+    background: #{$color_24};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-24 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_24}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 25
+
+body.inverse-selection-color-25 ::selection   {
+    background: #{$color_25};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-25 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_25}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 26
+
+body.inverse-selection-color-26 ::selection   {
+    background: #{$color_26};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-26 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_26}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+// Inverse selection color 27
+
+body.inverse-selection-color-27 ::selection   {
+    background: #{$color_27};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-27 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_27}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 28
+
+body.inverse-selection-color-28 ::selection   {
+    background: #{$color_28};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-28 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_28}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 29
+
+body.inverse-selection-color-29 ::selection   {
+    background: #{$color_29};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-29 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_29}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+// Inverse selection color 30
+
+body.inverse-selection-color-30 ::selection   {
+    background: #{$color_30};
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+// For demonstration
+span.inverse-selection-color-30 {
+    // background-color: #{$selection_color_background};
+    background: #{$color_30}; // demo color
+    color: #{$evo_black};
+    text-shadow: #{$selection_text_shadow};
+    cursor: text;
+}
+
+
+
+
+
+
