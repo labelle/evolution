@@ -27,7 +27,7 @@
 // Silent classes are available e.g. %text-15
 // Based on a half-measure of the golden raito
 // 1. @for $i from 0 through 4
-// 2. Creates e.g. evo-text- 15 and auto increments by 1
+// 2. Creates e.g. text-size- 15 and auto increments by 1
 // 3. Extends the default evo-text
 // 4. Modifies the tracking and leading via mixins from _text_mixins.scss
 // 5.T he brackets here are modifying {font-size: ;} via mixins from _text_mixins.scss
