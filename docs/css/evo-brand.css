@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* =========================== */
+/*      B R A N D      */
+/* =========================== */
+.massive-logo-1-bg {
+  background-image: url(../image/brand/logo-massive.svg); }
+
+.massive-logo-1-white-bg {
+  background-image: url(../image/brand/logo-massive-white.svg); }
+
+.massive-font-1 {
+  font-family: halis_r_regularregular, sans-serif; }
+
+.massive-font-2 {
+  font-family: sans-serif; }
+
+@font-face {
+  font-family: 'halis_r_regularregular';
+  src: url("../font/HalisR-Regular-webfont.eot");
+  src: local("☺"), url("../font/HalisR-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/HalisR-Regular-webfont.woff2") format("woff2"), url("../font/HalisR-Regular-webfont.woff") format("woff"), url("../font/HalisR-Regular-webfont.ttf") format("truetype"), url("../font/HalisR-Regular-webfont.svg#halis_r_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.massive-color-1 {
+  color: #eb212e; }
+
+.massive-color-1-bg {
+  background-color: #eb212e; }
+
+.massive-box-color-1 {
+  border-color: #eb212e; }
+
+.massive-color-2 {
+  color: #8ec549; }
+
+.massive-color-2-bg {
+  background-color: #8ec549; }
+
+.massive-box-color-2 {
+  border-color: #8ec549; }
+
+.massive-color-3 {
+  color: #0090d2; }
+
+.massive-color-3-bg {
+  background-color: #0090d2; }
+
+.massive-box-color-3 {
+  border-color: #0090d2; }
+
+.massive-color-4 {
+  color: #fdc131; }
+
+.massive-color-4-bg {
+  background-color: #fdc131; }
+
+.massive-box-color-4 {
+  border-color: #fdc131; }
+
+.massive-icon-search-bg-gray {
+  background-image: url(../image/brand/search-book-gray.svg); }
+
+.massive-icon-search-bg-white {
+  background-image: url(../image/brand/search-book-white.svg); }
+
+.massive-icon-menu-bg-white {
+  background-image: url(../image/brand/menu-book-white.svg); }
+
+.massive-icon-close-bg-white {
+  background-image: url(../image/brand/close-book-white.svg); }
+
+.massive-icon-search-bg {
+  background-image: url(../image/brand/search-book.svg); }
+
+.massive-icon-menu-bg {
+  background-image: url(../image/brand/menu-book.svg); }
+
+.massive-icon-close-bg {
+  background-image: url(../image/brand/close-book.svg); }
+
+.massive-image-person-bg {
+  background-image: url(../image/brand/person.jpg); }
+
+.massive-image-place-bg {
+  background-image: url(../image/brand/place.jpg); }
+
+.massive-image-thing-bg {
+  background-image: url(../image/brand/thing.jpg); }
+
+.massive-image-texture-bg {
+  background-image: url(../image/brand/texture.jpg); }
+
+.massive-graphic-1-bg {
+  background-image: url(../image/brand/graphic1.png); }
+
+.massive-graphic-2-bg {
+  background-image: url(../image/brand/graphic2.png); }
+
+.massive-graphic-3-bg {
+  background-image: url(../image/brand/graphic3.png); }
+
+.massive-graphic-4-bg {
+  background-image: url(../image/brand/graphic4.png); }
