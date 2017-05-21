@@ -551,6 +551,9 @@ progress, meter {
 .hidden {
   display: none !important; }
 
+.display-hidden {
+  display: hidden; }
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
