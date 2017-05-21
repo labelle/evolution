@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Box</title>
+        <title>Evolution Image Placeholder</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,10 +15,10 @@
 <!--         <link rel="stylesheet" href="../../css/evo-reset.css"> -->
         <link rel="stylesheet" href="../../css/evo-elements.css"> 
 
-<style> 
+<style>
 </style>
 </head>
-<body class="site-container demo-box">
+<body class="site-container">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,93 +28,66 @@
 </header> -->
 <main>
 
-<section id="evoBoxIntro">
+<section id="evoImageFPOIntro">
 
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
-<h1 class="text-size-13 margin-bottom-0">Box</h1>
+<h1 class="text-size-13 margin-bottom-0">Image Placeholder</h1>
 
-<p class="evo-measure">Box styles for <code>&lt;div&gt;</code> tags. Some boxes will default to a line-width equal to border-top-width: 'medium' (e.g. <code>box-gray</code> and <code>box-dashed</code>).</p>
+<p class="evo-measure">Placeholder image backgrounds for <code>&lt;img /&gt;</code> or <code>&lt;div&gt;</code> tags. Default images are from <a href="http://www.unsplash.com" target="_blank">unsplash</a>.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- Box -->
 
+<!-- Image FPO -->
 
-<section id="evoBox">
+<section id="evoImageFPO">
 
-<h2 class="text-size-6">evo-box</h2>
+<h2 class="text-size-6">image-fpo</h2>
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
 
-evo-box
-<div class="evo-box"></div>
-
-<div class="four-up">
-evo-box-top
-<div class="evo-box-top"></div>
+<div class="text-measure-5">
+<img class="evo-image image-ratio-16-9 image-fpo" />
 </div>
-
-<div class="four-up">
-evo-box-bottom
-<div class="evo-box-bottom"></div>
-</div>
-
-<div class="four-up">
-evo-box-left
-<div class="evo-box-left"></div>
-</div>
-
-<div class="four-up">
-evo-box-right
-<div class="evo-box-right"></div>
-</div>
-
 <div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-ratio-16-9 image-fpo" /&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+<p class="evo-measure">FPO placeholder image is defined in the _variables.scss file. Combine the <code>image-fpo</code> class with <code>evo-image</code>, and the <code>image-size-[number]</code> or <code>image-ratio-[number]</code> class. The default image file is named <code>fpo.jpg</code> and may be located at<code>../image/brand/fpo.jpg</code>.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
 
 
+<!-- Image Random -->
 
-<!-- Reset -->
+<section id="evoImageRandom">
 
+<h2 class="text-size-6">image-random</h2>
 
-<section id="evoBoxReset">
+<div class="evo-space"></div>
 
-<h2 class="text-size-6">box-reset</h2>
-
-<div class="evo-space-8"></div>
-
-
-box-reset
-<div class="box-reset"></div>
-
-<div class="four-up">
-box-top-reset
-<div class="box-top-reset"></div>
+<div class="text-measure-5">
+<img class="evo-image image-ratio-16-9 image-random" />
 </div>
-
-<div class="four-up">
-box-bottom-reset
-<div class="box-bottom-reset"></div>
-</div>
-
-<div class="four-up">
-box-left-reset
-<div class="box-left-reset"></div>
-</div>
-
-<div class="four-up">
-box-right-reset
-<div class="box-right-reset"></div>
-</div>
-
 <div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-ratio-16-9 image-random" /&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Generates a random square placeholder image pulled from unsplash.com, that loads with each browser refresh. Combine the <code>image-random</code> class with <code>evo-image</code>, and the <code>image-size-[number]</code> or <code>image-ratio-[number]</code> class. The default <a href="https://unsplash.it/1024/963?random" target="_blank">randomizer URL</a> is <code>https://unsplash.it/1024/963?random</code></p>
+
+<div class="evo-space-20"></div>
 
 </section>
+
+
 
 </main>
 

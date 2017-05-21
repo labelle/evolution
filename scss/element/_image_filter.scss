@@ -1,0 +1,21 @@
+///*      I M A G E   F I L T E R     */
+
+// Basic images
+
+@import "../variables";
+
+
+// Opacity
+// https://www.w3schools.com/css/css3_images.asp
+
+img.opacity-50 {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+// Filters
+img.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}

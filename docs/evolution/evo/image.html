@@ -16,24 +16,6 @@
         <link rel="stylesheet" href="../../css/evo-elements.css"> 
 
 <style>
-
-/* http://www.w3schools.com/howto/howto_css_image_overlay.asp */
-.image-ratio-fill-2 {
-     opacity: 0;
-     transition: .5s ease;
-     background-color: #008CBA;
-}
-
-.position-relative:hover .image-ratio-fill-2 {
-    opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-}
-
-
 </style>
 </head>
 <body class="site-container">
@@ -51,7 +33,31 @@
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
 <h1 class="text-size-13 margin-bottom-0">Image</h1>
 
-<p class="evo-measure">Image container for <code>&lt;img /&gt;</code> tags. Use <code>evo-image</code> and <code>evo-image-[size]</code>).</p>
+<p class="evo-measure">Image container for <code>&lt;img /&gt;</code> tags. Images will span 100% of their container.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- Image -->
+
+<section id="evoImg">
+
+<h2 class="text-size-6">img</h2>
+
+<div class="evo-space"></div>
+
+<div class="text-measure-5">
+<img src="../../image/brand/fpo.jpg" />
+<div class="evo-space-5"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img src="../../image/brand/fpo.jpg" /&gt;</code>
+</pre>
+</div>
+
+<div class="evo-space-10"></div>
+<p class="evo-measure">Use the <code>&lt;img /&gt;</code> tag with a source URL.</p>
 
 <div class="evo-space-20"></div>
 
@@ -61,82 +67,65 @@
 
 <!-- Image -->
 
-<section id="evoImage">
+<section id="evoImg">
 
 <h2 class="text-size-6">evo-image</h2>
 
 <div class="evo-space"></div>
 
-<div class="four-up">
-evo-image
-<img src="../../image/brand/fpo.jpg" class="image" />
+<div class="text-measure-5">
+<img class="evo-image image-size-28 image-fpo" />
+<div class="evo-space-5"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-size-28 image-fpo" /&gt;</code>
+</pre>
 </div>
 
-<div class="four-up">
-image-square (div)
-<div class="image-bg image-square image-bg-fpo"></div>
-</div>
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply the <code>evo-image</code> class as in the above example. Background images will automatically size and crop to fit.</p>
 
-<div class="four-up">
-image-square (img)
-<img src="../../image/brand/fpo.jpg" class="images-size-32" />
-</div>
-
-
-<div class="four-up">
-image-round
-<img src="../../image/brand/fpo.jpg" class="evo-image-round" />
-</div>
-
-<div class="four-up">
-image-circle (needs fixing)
-<img src="../../image/brand/fpo.jpg" class="image-bg image-circle image-bg-fpo" />
-</div>
-
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
 
+<!-- Image Fill -->
 
-<section>
+<section id="evoImageFill">
 
-<!-- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade -->
-<div class="four-up position-relative">
-  <img src="../../image/brand/fpo.jpg" alt="Avatar" class="image">
-  <div class="image-ratio-fill-2">
-    <div class="text position-middle">Hello World</div>
-  </div>
-</div>
-
-<div class="evo-space-10 clearfix"></div>
-</section>
-
-
-
-
-
-<!-- Image Construction -->
-
-
-<section id="evoImageRatio">
-
-<h2 class="text-size-6">How to construct an image</h2>
+<h2 class="text-size-6">image-fill</h2>
 
 <div class="evo-space"></div>
 
-image-size-16-9 tachyons
-<div class="image-ratio image-ratio-16-9">
-    <div class="image-bg image-bg-fpo image-ratio-fill cover"></div>
-  </div>
+<div class="text-measure-6">
+<div class="position-relative image-ratio-16-9">
+<a href="image-fill.html">
+<img class="image-fill" src="../../image/brand/fpo.jpg" /></a>
+</div>
+</div>
+<div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;div class="position-relative image-ratio-16-9"&gt;
+&lt;a href="image-fill.html" target="_blank"&gt;
+&lt;img class="image-fill" src="../../image/brand/fpo.jpg" /&gt;&lt;/a&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply the <code>image-fill</code> class as in the above example. This will stretch the image to fill the container edge-to-edge. Requires <code>position-relative</code> as a parent class, and an image source <code>&lt;src="../../image/brand/fpo.jpg"&gt;</code>.</p>
+<div class="evo-space-10"></div>
 
-image-size-16-9 just on img bg
-<img class="image-bg image-bg-fpo image-ratio-16-9" />
+<pre class="evo-code">
+<code class="evo-measure">&lt;a href="javascript:voide(0);"&gt;&lt;img class="evo-image image-random image-fill" /&gt;&lt;/a&gt;</code>
+</pre>
+</div>
 
+<div class="evo-space-10"></div>
 
+<p class="evo-measure">Use the <code>image-fill</code> class by itself, without <code>position-absolute</code> as a parent class. This will stretch image from edge-to-edge of your screen as in <a href="image-fill.html">this example</a>.</p>
 
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -149,18 +138,15 @@ image-size-16-9 just on img bg
 
 <h2 class="text-size-6">image-reset</h2>
 
-<div class="evo-space"></div>
+<div class="evo-space-10"></div>
 
+<p class="evo-measure">Use <code>image-border-none</code> to suppress border attributes. <code>&lt;img /&gt;</code> tags with an empty source <code>src=""</code> may display border lines, a box, or bevel. This is particularly true if you apply a link to an <code>&lt;img /&gt;</code> tag. In such cases, try using a <code>&lt;div&gt;</code> tag instead.</p>
 
-image-reset
-<img src="#" class="image-reset" />
-
-<div class="evo-space-10 clearfix"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
 </main>
-
 <!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!--         <script src="../../js/main.js"></script> -->
 

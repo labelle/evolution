@@ -1,0 +1,43 @@
+///*      I M A G E   S T Y L E     */
+
+
+
+@import "../variables";
+
+
+
+// from tachyons
+
+.cover {
+    background-size: cover!important
+}
+
+.contain {
+    background-size: contain!important
+}
+
+.bg-center {
+	background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.bg-top {
+	background-repeat: no-repeat;
+    background-position: top
+}
+
+.bg-right {
+	background-repeat: no-repeat;
+    background-position: 100%
+}
+
+.bg-bottom {
+	background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: 0
+}
+

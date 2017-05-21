@@ -6,7 +6,7 @@
 
 
 // http://www.w3schools.com/howto/howto_css_parallax.asp
-.image-bg-parallax {
+.image-parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 // Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed
 @media only screen and (max-device-width: 1024px) {
-    .image-bg-parallax {
+    .image-parallax {
         background-attachment: scroll;
     }
 }

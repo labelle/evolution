@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Box</title>
+        <title>Evolution Image Shape</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,10 +15,10 @@
 <!--         <link rel="stylesheet" href="../../css/evo-reset.css"> -->
         <link rel="stylesheet" href="../../css/evo-elements.css"> 
 
-<style> 
+<style>
 </style>
 </head>
-<body class="site-container demo-box">
+<body class="site-container">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,93 +28,109 @@
 </header> -->
 <main>
 
-<section id="evoBoxIntro">
+<section id="evoImageIntro">
 
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
-<h1 class="text-size-13 margin-bottom-0">Box</h1>
+<h1 class="text-size-13 margin-bottom-0">Image Shape</h1>
 
-<p class="evo-measure">Box styles for <code>&lt;div&gt;</code> tags. Some boxes will default to a line-width equal to border-top-width: 'medium' (e.g. <code>box-gray</code> and <code>box-dashed</code>).</p>
+<p class="evo-measure">Image containers for <code>&lt;img /&gt;</code> tags. Combine the <code>evo-image</code> class with any <code>image-size-[number]</code> class such as <code>image-size-32</code>.
+
+NOTE TO SELF: Use some sort of image-square and image-circle that equalize the shape. Otherwise rely on the box corners to modify...</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- Box -->
 
+<!-- Image -->
 
-<section id="evoBox">
+<section id="evoImage">
 
-<h2 class="text-size-6">evo-box</h2>
+<h2 class="text-size-6">img class image-[shape]</h2>
 
-<div class="evo-space-8"></div>
+<div class="evo-space"></div>
 
-evo-box
-<div class="evo-box"></div>
 
 <div class="four-up">
-evo-box-top
-<div class="evo-box-top"></div>
+image-square
+<img class="evo-image image-square image-fpo" />
 </div>
 
 <div class="four-up">
-evo-box-bottom
-<div class="evo-box-bottom"></div>
+image-square box-round-top-right
+<div class="evo-image image-square image-fpo box-round-top-right" /></div>
+</div>
+
+
+
+<div class="four-up">
+image-round
+<img src="../../image/brand/fpo.jpg" class="image-round" />
 </div>
 
 <div class="four-up">
-evo-box-left
-<div class="evo-box-left"></div>
+image-circle (needs fixing)
+<img src="../../image/brand/fpo.jpg" class="evo-image image-circle image-fpo" />
 </div>
 
 <div class="four-up">
-evo-box-right
-<div class="evo-box-right"></div>
+image-circle 2
+<img src="../../image/brand/fpo.jpg" style="border-radius:50%;" />
 </div>
 
-<div class="evo-space-10"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
 
 
 
-<!-- Reset -->
 
 
-<section id="evoBoxReset">
+<!-- Image -->
 
-<h2 class="text-size-6">box-reset</h2>
+<section id="evoImage">
 
-<div class="evo-space-8"></div>
+<h2 class="text-size-6">img src image-[shape]</h2>
 
+<div class="evo-space"></div>
 
-box-reset
-<div class="box-reset"></div>
 
 <div class="four-up">
-box-top-reset
-<div class="box-top-reset"></div>
+image-square (img)
+<img src="../../image/brand/fpo.jpg" height="300px" width="300px" />
 </div>
 
 <div class="four-up">
-box-bottom-reset
-<div class="box-bottom-reset"></div>
+image-square box-round-top-right 2
+<img src="../../image/brand/fpo.jpg" class="box-round-top-right" />
 </div>
 
 <div class="four-up">
-box-left-reset
-<div class="box-left-reset"></div>
+box-round
+<img src="../../image/brand/fpo.jpg" class="box-round" />
 </div>
 
 <div class="four-up">
-box-right-reset
-<div class="box-right-reset"></div>
+box-pill
+<img src="../../image/brand/fpo.jpg" class="box-pill" />
 </div>
 
-<div class="evo-space-10"></div>
+<div class="four-up">
+box-circle
+<img src="../../image/brand/fpo.jpg" class="evo-image image-circle image-fpo box-circle" />
+</div>
+
+<div class="four-up">
+image-circle 2
+<img src="../../image/brand/fpo.jpg" style="border-radius:50%;" />
+</div>
+
+<div class="evo-space-20"></div>
 
 </section>
+
 
 </main>
 

@@ -1,0 +1,49 @@
+///*      I M A G E   S H A P E     */
+
+
+@import "../variables";
+
+
+
+// Define individual corners of boxes
+// Based on _scale.scss in variables
+// By default matches a round box in _box_shape.scss
+$image_corner_top_right:     #{$u-23}rem;
+$image_corner_top_left:      #{$u-23}rem;
+$image_corner_bottom_right:  #{$u-23}rem;
+$image_corner_bottom_left:   #{$u-23}rem;
+
+// box corners are all round 
+#{$evo}-image-rounded {
+	border-top-right-radius:    #{$image_corner_top_right};
+	border-top-left-radius:     #{$image_corner_top_left};
+	border-bottom-right-radius: #{$image_corner_bottom_right};
+	border-bottom-left-radius:  #{$image_corner_bottom_left};
+}
+
+
+.image-round {
+	border-radius: 50%;
+}
+
+.image-rounded {
+	border-radius: 1rem;
+}
+
+.image-circle {
+	 border-radius: 50%;
+	 padding-top: 100%;
+}
+
+.image-squared {
+     border-radius: 0 !important;
+}
+
+.image-square {
+     // @extend .image-bg;
+     width: 100%;
+     padding-top: 100%;
+}
+
+
+

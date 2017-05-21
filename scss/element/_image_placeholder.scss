@@ -1,0 +1,15 @@
+///*      I M A G E   P L A C E H O L D E R     */
+
+
+
+@import "../variables";
+
+
+.image-random {
+    background-image: url(#{$image_random});
+}
+
+.image-fpo {
+    background-image: url(#{$image_fpo});
+}
+
