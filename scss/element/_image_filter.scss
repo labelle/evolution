@@ -8,14 +8,30 @@
 // Opacity
 // https://www.w3schools.com/css/css3_images.asp
 
+img.opacity-25 {
+    opacity: 0.25;
+    filter: alpha(opacity=25); // For IE8 and earlier
+}
+
 img.opacity-50 {
     opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    filter: alpha(opacity=50); // For IE8 and earlier
 }
+
+img.opacity-75 {
+    opacity: 0.75;
+    filter: alpha(opacity=75); // For IE8 and earlier
+}
+
 
 
 // Filters
 img.grayscale {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    // -webkit-filter: grayscale(100%); // Safari 6.0 - 9.0
     filter: grayscale(100%);
+}
+
+img.sepia {
+    // -webkit-filter: grayscale(100%); // Safari 6.0 - 9.0
+    filter: sepia(100%);
 }

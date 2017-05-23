@@ -9366,15 +9366,23 @@ button.bullet-check-heavy:before {
   color: white;
   font-size: 20px; }
 
+img.opacity-25 {
+  opacity: 0.25;
+  filter: alpha(opacity=25); }
+
 img.opacity-50 {
   opacity: 0.5;
-  filter: alpha(opacity=50);
-  /* For IE8 and earlier */ }
+  filter: alpha(opacity=50); }
+
+img.opacity-75 {
+  opacity: 0.75;
+  filter: alpha(opacity=75); }
 
 img.grayscale {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
+
+img.sepia {
+  filter: sepia(100%); }
 
 hr,
 .evo-line {
