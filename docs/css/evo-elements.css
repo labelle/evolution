@@ -8969,6 +8969,9 @@ button.bullet-check-heavy:before {
 .contain {
   background-size: contain !important; }
 
+.no-repeat {
+  background-repeat: no-repeat; }
+
 .bg-center {
   background-repeat: no-repeat;
   background-position: 50%; }
@@ -9353,7 +9356,6 @@ button.bullet-check-heavy:before {
 .image-fpo {
   background-image: url(../image/brand/fpo.jpg); }
 
-/* http://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image-fill-2 {
   opacity: 0;
   transition: .5s ease;
@@ -9366,23 +9368,223 @@ button.bullet-check-heavy:before {
   color: white;
   font-size: 20px; }
 
-img.opacity-25 {
+img.image-opacity-10-hover:hover,
+img.image-opacity-10-hover-none,
+img.image-opacity-10 {
+  opacity: 0.1;
+  filter: alpha(opacity=10); }
+
+img.image-opacity-25-hover:hover,
+img.image-opacity-25-hover-none,
+img.image-opacity-25 {
   opacity: 0.25;
   filter: alpha(opacity=25); }
 
-img.opacity-50 {
+img.image-opacity-50-hover:hover,
+img.image-opacity-50-hover-none,
+img.image-opacity-50 {
   opacity: 0.5;
   filter: alpha(opacity=50); }
 
-img.opacity-75 {
+img.image-opacity-75-hover:hover,
+img.image-opacity-75-hover-none,
+img.image-opacity-75 {
   opacity: 0.75;
   filter: alpha(opacity=75); }
 
-img.grayscale {
+img.image-opacity-90-hover:hover,
+img.image-opacity-90-hover-none,
+img.image-opacity-90 {
+  opacity: 0.90;
+  filter: alpha(opacity=90); }
+
+img.image-opacity-10-hover,
+img.image-opacity-25-hover,
+img.image-opacity-50-hover,
+img.image-opacity-75-hover,
+img.image-opacity-90-hover,
+img.image-opacity-10-hover-none:hover,
+img.image-opacity-25-hover-none:hover,
+img.image-opacity-50-hover-none:hover,
+img.image-opacity-75-hover-none:hover,
+img.image-opacity-90-hover-none:hover,
+img.image-opacity-100 {
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+img.image-grayscale-10-hover:hover,
+img.image-grayscale-10-hover-none,
+img.image-grayscale-10 {
+  filter: grayscale(10%); }
+
+img.image-grayscale-25-hover:hover,
+img.image-grayscale-25-hover-none,
+img.image-grayscale-25 {
+  filter: grayscale(25%); }
+
+img.image-grayscale-50-hover:hover,
+img.image-grayscale-50-hover-none,
+img.image-grayscale-50 {
+  filter: grayscale(50%); }
+
+img.image-grayscale-75-hover:hover,
+img.image-grayscale-75-hover-none,
+img.image-grayscale-75 {
+  filter: grayscale(75%); }
+
+img.image-grayscale-90-hover:hover,
+img.image-grayscale-90-hover-none,
+img.image-grayscale-90 {
+  filter: grayscale(90%); }
+
+img.image-grayscale-100,
+img.image-grayscale {
   filter: grayscale(100%); }
 
-img.sepia {
+img.image-grayscale-0,
+img.image-grayscale-none,
+img.image-grayscale-10-hover,
+img.image-grayscale-25-hover,
+img.image-grayscale-50-hover,
+img.image-grayscale-75-hover,
+img.image-grayscale-90-hover,
+img.image-grayscale-10-hover-none:hover,
+img.image-grayscale-25-hover-none:hover,
+img.image-grayscale-50-hover-none:hover,
+img.image-grayscale-75-hover-none:hover,
+img.image-grayscale-90-hover-none:hover {
+  filter: grayscale(0%);
+  transition: .3s; }
+
+img.image-sepia-10-hover:hover,
+img.image-sepia-10-hover-none,
+img.image-sepia-10 {
+  filter: sepia(10%); }
+
+img.image-sepia-25-hover:hover,
+img.image-sepia-25-hover-none,
+img.image-sepia-25 {
+  filter: sepia(25%); }
+
+img.image-sepia-50-hover:hover,
+img.image-sepia-50-hover-none,
+img.image-sepia-50 {
+  filter: sepia(50%); }
+
+img.image-sepia-75-hover:hover,
+img.image-sepia-75-hover-none,
+img.image-sepia-75 {
+  filter: sepia(75%); }
+
+img.image-sepia-90-hover:hover,
+img.image-sepia-90-hover-none,
+img.image-sepia-90 {
+  filter: sepia(90%); }
+
+img.image-sepia-100,
+img.image-sepia {
   filter: sepia(100%); }
+
+img.image-sepia-0,
+img.image-sepia-none,
+img.image-sepia-10-hover,
+img.image-sepia-25-hover,
+img.image-sepia-50-hover,
+img.image-sepia-75-hover,
+img.image-sepia-90-hover,
+img.image-sepia-10-hover-none:hover,
+img.image-sepia-25-hover-none:hover,
+img.image-sepia-50-hover-none:hover,
+img.image-sepia-75-hover-none:hover,
+img.image-sepia-90-hover-none:hover {
+  filter: sepia(0%);
+  transition: .3s; }
+
+img.image-blur-3,
+img.image-blur-3-hover:hover,
+img.image-blur-3-hover-none {
+  filter: blur(3px); }
+
+img.image-blur-5,
+img.image-blur-5-hover:hover,
+img.image-blur-5-hover-none {
+  filter: blur(5px); }
+
+img.image-blur-10,
+img.image-blur-10-hover:hover,
+img.image-blur-10-hover-none {
+  filter: blur(10px); }
+
+img.image-blur-15,
+img.image-blur-15-hover:hover,
+img.image-blur-15-hover-none {
+  filter: blur(15px); }
+
+img.image-blur-20,
+img.image-blur-20-hover:hover,
+img.image-blur-20-hover-none {
+  filter: blur(20px); }
+
+img.image-blur-25,
+img.image-blur-25-hover:hover,
+img.image-blur-25-hover-none,
+img.image-blur {
+  filter: blur(25px); }
+
+img.image-blur-none,
+img.image-blur-0,
+img.image-blur-3-hover,
+img.image-blur-5-hover,
+img.image-blur-10-hover,
+img.image-blur-15-hover,
+img.image-blur-20-hover,
+img.image-blur-25-hover,
+img.image-blur-3-hover-none:hover,
+img.image-blur-5-hover-none:hover,
+img.image-blur-10-hover-none:hover,
+img.image-blur-15-hover-none:hover,
+img.image-blur-20-hover-none:hover,
+img.image-blur-25-hover-none:hover {
+  filter: blur(0px);
+  transition: .3s; }
+
+.green {
+  background-color: #00ff36; }
+
+.green img {
+  filter: grayscale(100%) contrast(1);
+  mix-blend-mode: multiply; }
+
+.green::after {
+  background-color: #23278a;
+  mix-blend-mode: lighten; }
+
+.purple {
+  background-color: #88169d; }
+
+.purple img {
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1.2);
+  mix-blend-mode: lighten; }
+
+.purple::after {
+  mix-blend-mode: hard-light;
+  background: linear-gradient(to top left, #75d775, #321a5b); }
+
+.column::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out .5s; }
+
+.column:hover::after, .column:hover, .column:hover img {
+  filter: none;
+  -webkit-filter: none;
+  mix-blend-mode: unset !important;
+  background: transparent; }
 
 hr,
 .evo-line {

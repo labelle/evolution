@@ -29,6 +29,46 @@
     border-style: none;
 }
 
+// Image Utilities
+// most from tachyons
+
+.cover {
+    background-size: cover!important
+}
+
+.contain {
+    background-size: contain!important
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.bg-top {
+    background-repeat: no-repeat;
+    background-position: top
+}
+
+.bg-right {
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: 0
+}
+
 
 
 // // For use with an img tag with src

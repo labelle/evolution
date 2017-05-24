@@ -143,7 +143,6 @@
 
 // Image
 @import "element/image";
-@import "element/image_style";
 @import "element/image_shape";
 @import "element/image_size";
 @import "element/image_ratio";
@@ -152,7 +151,7 @@
 @import "element/image_placeholder";
 @import "element/image_effect";
 @import "element/image_filter";
-// @import "element/image_play";
+@import "element/image_play";
 
 // Line
 @import "element/line";
