@@ -1,8 +1,6 @@
 ///*      B O X   S I Z E    */
 
 @import "../variables";
-// @import "../variables/scale";
-// @import "box_mixin";
 
 // Do we call these instead .box-size-10 ?
 
@@ -119,48 +117,4 @@
 .box-left-thin      { border-left-width: thin; }
 .box-left-medium    { border-left-width: medium; }
 .box-left-thick     { border-left-width: thick; }
-
-
-// // css quick scale
-// .box-smallest       { @extend .box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-left-style: dotted; border-bottom-style: dotted;}
-// .box-smaller        { @extend .box; border-top-width: 1px; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 1px; }
-// .box-small          { @extend .box; border-top-width: 2px; border-bottom-width: 2px; border-right-width: 2px; border-left-width: 2px; }
-// .box-big            { @extend .box; border-top-width: 4px; border-bottom-width: 4px; border-right-width: 4px; border-left-width: 4px; }
-// .box-bigger         { @extend .box; border-top-width: 5px; border-bottom-width: 5px; border-right-width: 5px; border-left-width: 5px; }
-// .box-biggest        { @extend .box; border-top-width: #{$px-0}; border-bottom-width: #{$px-0}; border-right-width: #{$px-0}; border-left-width: #{$px-0}; }
-
-
-// // css quick scale top side
-// .box-top-smallest       { @extend .box-top; border-top-width: 1px; border-top-style: dotted; }
-// .box-top-smaller        { @extend .box-top; border-top-width: 1px; }
-// .box-top-small          { @extend .box-top; border-top-width: 2px; }
-// .box-top-big            { @extend .box-top; border-top-width: 4px; }
-// .box-top-bigger         { @extend .box-top; border-top-width: 5px; }
-// .box-top-biggest        { @extend .box-top; border-top-width: #{$px-0}; }
-
-
-// // css quick scale bottom side
-// .box-bottom-smallest       { @extend .box-bottom; border-bottom-width: 1px; border-bottom-style: dotted; }
-// .box-bottom-smaller        { @extend .box-bottom; border-bottom-width: 1px; }
-// .box-bottom-small          { @extend .box-bottom; border-bottom-width: 2px; }
-// .box-bottom-big            { @extend .box-bottom; border-bottom-width: 4px; }
-// .box-bottom-bigger         { @extend .box-bottom; border-bottom-width: 5px; }
-// .box-bottom-biggest        { @extend .box-bottom; border-bottom-width: #{$px-0}; }
-
-// // css quick scale right side
-// .box-right-smallest       { @extend .box-right; border-right-width: 1px; border-right-style: dotted; }
-// .box-right-smaller        { @extend .box-right; border-right-width: 1px; }
-// .box-right-small          { @extend .box-right; border-right-width: 2px; }
-// .box-right-big            { @extend .box-right; border-right-width: 4px; }
-// .box-right-bigger         { @extend .box-right; border-right-width: 5px; }
-// .box-right-biggest        { @extend .box-right; border-right-width: #{$px-0}; }
-
-// // css quick scale left side
-// .box-left-smallest       { @extend .box-left; border-left-width: 1px; border-left-style: dotted; }
-// .box-left-smaller        { @extend .box-left; border-left-width: 1px; }
-// .box-left-small          { @extend .box-left; border-left-width: 2px; }
-// .box-left-big            { @extend .box-left; border-left-width: 4px; }
-// .box-left-bigger         { @extend .box-left; border-left-width: 5px; }
-// .box-left-biggest        { @extend .box-left; border-left-width: #{$px-0}; }
-
 

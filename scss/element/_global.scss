@@ -163,8 +163,8 @@ html {
   // margin-bottom:   #{$html_margin_bottom};
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  // -webkit-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -436,8 +436,8 @@ input[type="submit"] {
 
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  // -webkit-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -448,9 +448,9 @@ input[type="submit"] {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: border-box; // was content-box
-  -moz-box-sizing: border-box; // was content-box
+  // -webkit-appearance: textfield;
+  // -webkit-box-sizing: border-box; // was content-box
+  // -moz-box-sizing: border-box; // was content-box
   box-sizing: border-box; // was content-box
   outline-offset: -2px;
 }
@@ -1013,13 +1013,13 @@ outline: 5px solid red;
   }
 }
 
-// Already included with the bootstrap grid.
-// Remove this if bootstrap grid is used.
+// // Already included with the bootstrap grid.
+// // Remove this if bootstrap grid is used.
 // *,
 // *:before,
 // *:after {
-//   -webkit-box-sizing: border-box;
-//   -moz-box-sizing: border-box;
+//   // -webkit-box-sizing: border-box;
+//   // -moz-box-sizing: border-box;
 //   box-sizing: border-box;
 // }
 
@@ -1028,8 +1028,8 @@ outline: 5px solid red;
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
+    // -webkit-box-sizing: inherit;
+    // -moz-box-sizing: inherit;
     box-sizing: inherit
 }
 
