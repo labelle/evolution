@@ -8951,7 +8951,6 @@ button.bullet-check-heavy:before {
 
 .evo-image {
   width: 100%;
-  max-width: 100%;
   height: 0;
   display: inline-block;
   background-position: center;
@@ -8959,17 +8958,24 @@ button.bullet-check-heavy:before {
   background-repeat: no-repeat;
   vertical-align: top; }
 
+.image-fluid {
+  max-width: 100% !important;
+  height: auto !important; }
+
 .image-border-none {
   border: 0;
   border-style: none; }
 
-.cover {
+.cover,
+.bg-cover {
   background-size: cover !important; }
 
-.contain {
+.contain,
+.bg-contain {
   background-size: contain !important; }
 
-.no-repeat {
+.no-repeat,
+.bg-no-repeat {
   background-repeat: no-repeat; }
 
 .bg-center {
@@ -8992,28 +8998,14 @@ button.bullet-check-heavy:before {
   background-repeat: no-repeat;
   background-position: 0; }
 
-.evo-image-rounded {
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem; }
-
-.image-round {
-  border-radius: 50%; }
-
-.image-rounded {
-  border-radius: 1rem; }
-
-.image-circle {
-  border-radius: 50%;
-  padding-top: 100%; }
-
-.image-squared {
-  border-radius: 0 !important; }
-
-.image-square {
-  width: 100%;
-  padding-top: 100%; }
+.demo-image img[class*="image-"],
+.demo-image img[class*="evo-image"] {
+  padding-bottom: 5rem;
+  /*background-color: #eee;*/
+  background-color: #eee;
+  margin-top: 3em;
+  margin-bottom: .5em;
+  /*border-width: 1px;*/ }
 
 .image-size-1 {
   height: 0;
@@ -9294,6 +9286,10 @@ button.bullet-check-heavy:before {
 .image-size-70 {
   height: 0;
   padding-top: 650%; }
+
+.image-square {
+  width: 100%;
+  padding-top: 100%; }
 
 .image-ratio-1-1 {
   padding-top: 100%; }
@@ -10012,41 +10008,6 @@ hr.line-blur-10 {
   height: 0;
   box-shadow: 0 0 50px 1px black; }
 
-.box-reset {
-  border: initial;
-  border-top-width: initial;
-  border-bottom-width: initial;
-  border-right-width: initial;
-  border-left-width: initial;
-  border-top-style: initial;
-  border-bottom-style: initial;
-  border-right-style: initial;
-  border-left-style: initial;
-  border-top-color: initial;
-  border-bottom-color: initial;
-  border-right-color: initial;
-  border-left-color: initial; }
-
-.box-top-reset {
-  border-top-width: initial;
-  border-top-style: initial;
-  border-top-color: initial; }
-
-.box-bottom-reset {
-  border-bottom-width: initial;
-  border-bottom-style: initial;
-  border-bottom-color: initial; }
-
-.box-right-reset {
-  border-right-width: initial;
-  border-right-style: initial;
-  border-right-color: initial; }
-
-.box-left-reset {
-  border-left-width: initial;
-  border-left-style: initial;
-  border-left-color: initial; }
-
 .evo-box {
   border-top-width: initial;
   border-bottom-width: initial;
@@ -10087,8 +10048,8 @@ hr.line-blur-10 {
   padding-bottom: 5rem;
   /*background-color: #eee;*/
   background-color: #eee;
-  margin-top: .5em;
-  margin-bottom: 3em;
+  margin-top: 3em;
+  margin-bottom: .5em;
   /*border-width: 1px;*/ }
 
 .box-solid {
@@ -10121,52 +10082,52 @@ hr.line-blur-10 {
   border-right-style: outset;
   border-left-style: outset; }
 
-.box-top-solid {
+.box-solid-top {
   border-top-style: solid; }
 
-.box-top-dotted {
+.box-dotted-top {
   border-top-style: dotted; }
 
-.box-top-dashed {
+.box-dashed-top {
   border-top-style: dashed; }
 
-.box-top-double {
+.box-double-top {
   border-top-style: double; }
 
-.box-bottom-solid {
+.box-solid-bottom {
   border-bottom-style: solid; }
 
-.box-bottom-dotted {
+.box-dotted-bottom {
   border-bottom-style: dotted; }
 
-.box-bottom-dashed {
+.box-dashed-bottom {
   border-bottom-style: dashed; }
 
-.box-bottom-double {
+.box-double-bottom {
   border-bottom-style: double; }
 
-.box-right-solid {
+.box-solid-right {
   border-right-style: solid; }
 
-.box-right-dotted {
+.box-dotted-right {
   border-right-style: dotted; }
 
-.box-right-dashed {
+.box-dashed-right {
   border-right-style: dashed; }
 
-.box-right-double {
+.box-double-right {
   border-right-style: double; }
 
-.box-left-solid {
+.box-solid-left {
   border-left-style: solid; }
 
-.box-left-dotted {
+.box-dotted-left {
   border-left-style: dotted; }
 
-.box-left-dashed {
+.box-dashed-left {
   border-left-style: dashed; }
 
-.box-left-double {
+.box-double-left {
   border-left-style: double; }
 
 .box-circle {

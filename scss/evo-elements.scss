@@ -168,7 +168,7 @@
 // Box
 @import "element/box";
 @import "element/box_style";
-@import "element/box_shape";
+@import "element/box_shape"; // Also used by image-shape
 @import "element/box_size";
 @import "element/box_color";
 @import "element/box_gray";

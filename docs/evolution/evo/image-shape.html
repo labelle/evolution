@@ -18,7 +18,7 @@
 <style>
 </style>
 </head>
-<body class="site-container">
+<body class="site-container demo-image"">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -33,7 +33,7 @@
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
 <h1 class="text-size-13 margin-bottom-0">Image Shape</h1>
 
-<p class="evo-measure">Border box shape for <code>&lt;img /&gt;</code> or <code>&lt;div&gt;</code> tags. We simply repurpose the <a href="box-shape.html">evolution box shape</a> classes.</p>
+<p class="evo-measure">Border box shape for <code>&lt;img /&gt;</code> or <code>&lt;div&gt;</code> tags. We simply repurpose the <a href="box-shape.html">box-shape</a> classes. The <code>box-round</code> class can be adjusted from _variables.scss.</p>
 
 <div class="evo-space-20"></div>
 
@@ -47,28 +47,36 @@
 
 <h2 class="text-size-6">box-[shape]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
 <div class="four-up">
-box-square
-<div class="evo-image image-fpo image-size-23 box-square"></div>
+<img class="evo-image image-fpo image-size-10 box-square" />
+<code>box-square</code>
 </div>
 
 <div class="four-up">
-box-round
-<div class="evo-image image-fpo image-size-23 box-round"></div>
+<img class="evo-image image-fpo image-size-10 box-round" />
+<code>box-round</code>
 </div>
 
 <div class="four-up">
-box-pill
-<div class="evo-image image-fpo image-size-23 box-pill"></div>
+<img class="evo-image image-fpo image-size-10 box-pill" />
+<code>box-pill</code>
 </div>
 
 <div class="four-up">
-box-circle
-<div class="evo-image image-fpo image-size-23 box-circle"></div>
+<img class="evo-image image-fpo image-size-10 box-circle" />
 <!-- <div class="evo-box box-circle" style="height:5.5rem; width:5.5rem; padding-bottom:0;"></div> -->
+<code>box-circle</code>
 </div>
+
+<div class="evo-space-10"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-10 box-circle" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-[shape] class such as <code>box-shape</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too. <code>box-round</code> values are set within _variables.scss</p>
 
 <div class="evo-space-20"></div>
 
@@ -78,94 +86,103 @@ box-circle
 
 
 
-<!-- Box Corner Number -->
+<!-- Box Round Number -->
 
 
-<section id="evoBoxCornerNumber">
+<section id="evoBoxRoundNumber">
 
-<h2 class="text-size-6">box-corner-[number]</h2>
+<h2 class="text-size-6">box-round-[number]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
-<!-- box-round-0
-<div class="evo-box box-round-0""></div> -->
+<!-- <img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-0""></div>
+<code>box-round-0</code> -->
 
-box-round-1
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-1"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-1" />
+<code>box-round-1</code>
 
-box-round-2
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-2"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-2" />
+<code>box-round-2</code>
 
-box-round-3
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-3"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-3" />
+<code>box-round-3</code>
 
-box-round-4
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-4"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-4" />
+<code>box-round-4</code>
 
-box-round-5
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-5"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-5" />
+<code>box-round-5</code>
 
-box-round-6
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-6"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-6" />
+<code>box-round-6</code>
 
-box-round-7
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-7"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-7" />
+<code>box-round-7</code>
 
-box-round-8
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-8"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-8" />
+<code>box-round-8</code>
 
-box-round-9
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-9"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-9" />
+<code>box-round-9</code>
 
-box-round-10
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-10"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-10" />
+<code>box-round-10</code>
 
-<!-- box-round-11
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-11"></div>
+<!-- <img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-11" />
+<code>box-round-11</code>
 
-box-round-12
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-12"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-12" />
+<code>box-round-12</code>
 
-box-round-13
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-13"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-13" />
+<code>box-round-13</code>
 
-box-round-14
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-14"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-14" />
+<code>box-round-14</code>
 
-box-round-15
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-15"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-15" />
+<code>box-round-15</code>
 
-box-round-16
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-16"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-16" />
+<code>box-round-16</code>
 
-box-round-17
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-17"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-17" />
+<code>box-round-17</code>
 
-box-round-18
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-18"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-18" />
+<code>box-round-18</code>
 
-box-round-19
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-19"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-19" />
+<code>box-round-19</code>
 
-box-round-20
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-20"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-20" />
+<code>box-round-20</code>
 
-box-round-21
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-21"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-21" />
+<code>box-round-21</code>
 
-box-round-22
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-22"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-22" />
+<code>box-round-22</code>
 
-box-round-23
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-23"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-23" />
+<code>box-round-23</code>
 
-box-round-24
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-24"></div>
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-24" />
+<code>box-round-24</code>
 
-box-round-25
-<div class="evo-image image-fpo image-size-10 evo-box box-thin box-round-25"></div> -->
+<img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-25" />
+<code>box-round-25</code> -->
 
-<div class="evo-space-15"></div>
+
+<div class="evo-space"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-3 evo-box box-thin box-round-10" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-round-[number] class such as <code>box-round-10</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -176,29 +193,37 @@ box-round-25
 
 <h2 class="text-size-6">box-round-[side]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
 <div class="four-up">
-box-round-top
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-top"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-top" />
+<code>box-round-top</code>
 </div>
 
 <div class="four-up">
-box-round-bottom
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-bottom"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-bottom" />
+<code>box-round-bottom</code>
 </div>
 
 <div class="four-up">
-box-round-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-right" />
+<code>box-round-right</code>
 </div>
 
 <div class="four-up">
-box-round-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-left" />
+<code>box-round-left</code>
 </div>
+
+<div class="evo-space"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-left" /&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-round-[side] class such as <code>box-round-left</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -212,29 +237,37 @@ box-round-left
 
 <h2 class="text-size-6">box-round-[corner]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
 <div class="four-up">
-box-round-top-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-top-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-top-left" />
+<code>box-round-top-left</code>
 </div>
 
 <div class="four-up">
-box-round-top-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-top-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-top-right" />
+<code>box-round-top-right</code>
 </div>
 
 <div class="four-up">
-box-round-bottom-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-bottom-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-bottom-left" />
+<code>box-round-bottom-left</code>
 </div>
 
 <div class="four-up">
-box-round-bottom-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round-bottom-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round-bottom-right" />
+<code>box-round-bottom-right</code>
 </div>
+
+<div class="evo-space"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-10 box-round-bottom-right" /&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-round-[corner] class such as <code>box-round-bottom-right</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -246,29 +279,37 @@ box-round-bottom-right
 
 <h2 class="text-size-6">box-corner-[side]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
 <div class="four-up">
-box-corner-top
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-top"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-top" />
+<code>box-corner-top</code>
 </div>
 
 <div class="four-up">
-box-corner-bottom
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-bottom"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-bottom" />
+<code>box-corner-bottom</code>
 </div>
 
 <div class="four-up">
-box-corner-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-left" />
+<code>box-corner-left</code>
 </div>
 
 <div class="four-up">
-box-corner-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-right" />
+<code>box-corner-right</code>
 </div>
+
+<div class="evo-space"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-10 box-round box-corner-right" /&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-corner-[side] class such as <code>box-corner-right</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too. This will force corners on a round box.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 
@@ -281,29 +322,38 @@ box-corner-right
 
 <h2 class="text-size-6">box-corner-[corner]</h2>
 
-<div class="evo-space-8"></div>
+<!-- <div class="evo-space-8"></div> -->
 
 <div class="four-up">
-box-corner-top-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-top-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-top-left" />
+<code>box-corner-top-left</code>
 </div>
 
 <div class="four-up">
-box-corner-top-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-top-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-top-right" />
+<code>box-corner-top-right</code>
 </div>
 
 <div class="four-up">
-box-corner-bottom-left
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-bottom-left"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-bottom-left" />
+<code>box-corner-bottom-left</code>
 </div>
 
 <div class="four-up">
-box-corner-bottom-right
-<div class="evo-image image-fpo image-size-23 evo-box box-thin box-round box-corner-bottom-right"></div>
+<img class="evo-image image-fpo image-size-10 evo-box box-thin box-round box-corner-bottom-right" />
+<code>box-corner-bottom-right</code>
 </div>
+
+
+<div class="evo-space"></div>
+<pre class="evo-code">
+<code class="evo-measure">&lt;img class="evo-image image-fpo image-size-10 box-round box-corner-bottom-right" /&gt;</code>
+</pre>
 
 <div class="evo-space-10"></div>
+<p class="evo-measure">Apply a box-corner-[corner] class such as <code>box-corner-bottom-right</code>, as in the above example. Works with <code>&lt;div&gt;</code> tags too. This will force a corner on a round box.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
 

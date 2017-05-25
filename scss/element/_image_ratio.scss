@@ -7,6 +7,12 @@
 // w3schools + tachyons
 
 
+.image-square {
+     // @extend .image-bg;
+     width: 100%;
+     padding-top: 100%;
+}
+
 // square
 .image-ratio-1-1 {
     padding-top: 100%;
