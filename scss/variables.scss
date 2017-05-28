@@ -174,17 +174,17 @@ $inverse_text_color:                #{$evo_white} !default;
 
 
 // Text Shadow
-$text_shadow:                       .02em .02em .06em rgba(0, 0, 0, .25) !default;
+$text_shadow:                       .02em .02em .06em rgba(0, 0, 0, .5) !default;
 $inverse_text_shadow:               .02em .02em .06em rgba(255, 255, 255, .75) !default;
 
-$text_shadow_color:                 rgba(0, 0, 0, .25) !default;
+$text_shadow_color:                 rgba(0, 0, 0, .4) !default;
 $inverse_text_shadow_color:         rgba(255, 255, 255, .75) !default;
 
 // Text Bevel
-$text_bevel:                        .02em .02em  rgba(0, 0, 0, .25) !default;
+$text_bevel:                        .02em .02em  rgba(0, 0, 0, .4) !default;
 $inverse_text_bevel:                .02em .02em  rgba(255, 255, 255, .75) !default;
 
-$text_bevel_color:                  rgba(0, 0, 0, .25) !default;
+$text_bevel_color:                  rgba(0, 0, 0, .4) !default;
 $inverse_text_bevel_color:          rgba(255, 255, 255, .75) !default;
 
 // Text Glow
@@ -193,6 +193,11 @@ $inverse_text_glow:                 0 0 .5em rgba(255, 255, 255, 1) !default;
 
 $text_glow_color:                   rgba(0, 0, 0, 1) !default;
 $inverse_text_glow_color:           rgba(255, 255, 255, 1) !default;
+
+
+// Text Shadow
+$text_shadow:                       .02em .02em .06em rgba(0, 0, 0, .5) !default;
+$inverse_text_shadow:               .02em .02em .06em rgba(255, 255, 255, .75) !default;
 
 // List
 // SHOULD SOME OF THESE INHERIT?

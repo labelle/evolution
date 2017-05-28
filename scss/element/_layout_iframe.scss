@@ -8,6 +8,7 @@
 
 // https://labelle.github.io/evolution-patterns/patterns-library/interactions.html
 
+
 // Usually the global CSS reset eliminates the bevel. This adds one back.
 
 iframe.iframe-box-bevel {
@@ -23,6 +24,9 @@ iframe.iframe-box-bevel-2 {
     border-color: initial;
     border-image: initial;
 }
+
+// Sandbox attribute
+// http://webdesign.about.com/od/iframes/a/html5-iframe-attributes.htm
 
 
 // iframe.iframe-box-shadow {

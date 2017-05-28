@@ -613,18 +613,20 @@
  * ===============================================*/
 .curved-shadow:after
 {
-  content:"";
+    content:"";
     position:absolute;
     z-index:-1;
-    -webkit-box-shadow:0 0 40px rgba(0,0,0,1);
-        box-shadow:0 0 40px rgba(0,0,0,1);
+    // -webkit-box-shadow:0 0 40px rgba(0,0,0,1);
+    // box-shadow:0 0 40px rgba(0,0,0,1);
+    // box-shadow: #{$text_shadow};
+    box-shadow: .02em .02em 3em rgba(0, 0, 0, .5);
     bottom:0px;
-  width:90%;
-  height:10%;
-    -moz-border-radius:100%;
+    width:90%;
+    height:10%;
+    // -moz-border-radius:100%;
     border-radius:100%;
-  left:5%;
-  right:5%;
+    left:5%;
+    right:5%;
 }
 
 
