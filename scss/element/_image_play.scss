@@ -7,16 +7,16 @@
 
 // Green
 
-.green{
+.blend-green{
    background-color: #00ff36;
 }
 
-.green img{
+.blend-green img{
    filter: grayscale(100%) contrast(1);
    mix-blend-mode: multiply;
 }
 
-.green::after{
+.blend-green::after{
   background-color: #23278a;
   mix-blend-mode: lighten;
 }
@@ -24,20 +24,20 @@
 
 // Purple
 
-.purple{
+.blend-purple{
    background-color: #88169d;
 }
-.purple img{
+.blend-purple img{
    -webkit-filter: grayscale(100%) contrast(1.2);
    filter: grayscale(100%) contrast(1.2);
    mix-blend-mode: lighten;
 }
-.purple::after{
+.blend-purple::after{
    mix-blend-mode: hard-light;
    background: linear-gradient(to top left, #75d775, #321a5b);
 }
 
-.column::after{
+.blend-column::after{
   content: '';
   position: absolute;
   top: 0;
@@ -48,7 +48,7 @@
 }
 
 // Removed effects to show original on hover
-.column:hover::after, .column:hover, .column:hover img{
+.blend-column:hover::after, .blend-column:hover, .blend-column:hover img{
   filter: none;
   -webkit-filter: none;
   mix-blend-mode: unset !important;

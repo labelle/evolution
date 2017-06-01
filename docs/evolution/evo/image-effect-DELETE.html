@@ -45,34 +45,48 @@
 
 <section id="evoImageText">
 
-<h2 class="text-size-6">image-text (change text to image-text and image-fill-2 something else? Introduce a hover class and a static image-text class?</h2>
+<h2 class="text-size-6">image hover effect</h2>
 
 <div class="evo-space"></div>
 
 
 <!-- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade -->
-<div class="four-up position-relative">
-  <img src="../../image/brand/fpo.jpg" alt="Avatar">
-  <div class="image-fill-2">
-    <div class="text position-middle">Hello World</div>
+<div class="four-up">
+<div class="position-relative">
+  <img src="../../image/brand/fpo.jpg">
+  <div class="position-absolute image-fill transition-5-ease opacity-8-hover color-15-bg">
+    <div class="text-size-6 text-inverse position-middle">Hello World</div>
   </div>
+</div>
+</div>
+
+<div class="evo-space-10"></div>
+
+<div class="fadeinup">
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient -->
+<div class="four-up">
+<div class="position-relative">
+  <img src="../../image/brand/fpo.jpg">
+  <div class="position-absolute image-fill transition-5-ease opacity-8-hover evo-gradient-bg">
+    <div class="text-size-6 text-inverse position-middle">Hello World</div>
+  </div>
+</div>
+</div>
 </div>
 
 <div class="evo-space-10"></div>
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="position-relative"&gt;
-&lt;img src="../../image/brand/fpo.jpg" alt="Avatar"&gt;
-&lt;div class="image-fill-2"&gt;
-&lt;div class="text position-middle"&gt;Hello World
-&lt;/div&lt;
+&lt;img src="../../image/brand/fpo.jpg"&gt;
+&lt;div class="position-absolute image-fill transition-5-ease opacity-8-hover color-15-bg"&gt;
+&lt;div class="text-size-6 text-inverse position-middle"&gt;Hello World&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
 <div class="evo-space-10"></div>
-<p class="evo-measure">Mix the <code>image-fill-2</code> class with other classes.</p>
+<p class="evo-measure">For hover effects, mix image classes, opacity classes, and transition classes, as in the above example. Note the reverse stacking order of element layers.  </p>
 
 <div class="evo-space-20"></div>
-
-</section>
 </section>
 
 
