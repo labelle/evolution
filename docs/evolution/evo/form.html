@@ -46,9 +46,9 @@
 
 <section id="InputText">
 
-<h2 class="text-size-6">evo-form input</h2>
+<h2 class="text-size-6">input</h2>
 
-<div class="evo-space"></div>
+<div class="evo-space-10"></div>
 
 
 <form>
@@ -58,18 +58,40 @@
 <div class="evo-space-15"></div>
 
 <label>Label</label>
-
 <input type="text" name="text" placeholder="Text Input" />
-
-<div class="evo-space-15"></div>
-
-<input type="text" name="text" placeholder="Text Input" class="evo-form form-padding form-box" />
-
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" placeholder="Text" class="evo-form"/&gt;</code>
+<code class="evo-measure">&lt;label&gt;Label&lt;/label&gt;
+&lt;input type="text" name="text" placeholder="Text Input" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. The basic <code>&lt;input&gt;</code> tag is generally unstyled, so that you might style it using classes. Default form styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- basic inputs -->
+
+<section id="InputText">
+
+<h2 class="text-size-6">evo-form</h2>
+
+<div class="evo-space-10"></div>
+
+<input type="text" name="text" placeholder="Text Input" class="evo-form form-padding form-box margin-bottom-5" />
+<label class="text-uppercase text-size-3 text-tracking-10">Label</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form form-padding form-box margin-bottom-5" /&gt;
+&lt;label class="text-uppercase"&gt;Label&lt;/label&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
@@ -80,6 +102,9 @@
 
 </section>
 
+</fieldset>
+</form>
+</section>
 
 <!-- basic containers and labels -->
 
@@ -91,55 +116,79 @@
 
 <form>
 <fieldset>
-<legend>Legend</legend>
-<legend class="visually-hidden">Legend</legend>
+<legend>Legend (visible)</legend>
+<legend class="visually-hidden">Legend (visullly hidden)</legend>
 
-<div class="evo-space-15"></div>
-
-<label>Label</label>
+<div class="evo-space"></div>
 
 </fieldset>
 </form>
+<!-- <div class="evo-space-10"></div> -->
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;form&gt;
+ &lt;fieldset&gt;
+  &lt;legend&gt;Legend (visible)&lt;/legend&gt;
+  &lt;legend class="visually-hidden"&gt;Legend (visullly hidden)&lt;/legend&gt;
+   &lt;!-- place form inputs here --&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Default form styles are set in _variables.scss.</p>
 
 <div class="evo-space-20"></div>
+
 </section>
 
 
 
 
 
-<label>Form Mix</label>
+<!-- basic containers and labels -->
 
-<input type="text" name="text" placeholder="Text Input" class="padding-10 color-10-bg evo-color-white evo-box box-3" />
+<section id="InputForm">
 
-<div class="evo-space-15"></div>
+<h2 class="text-size-6">Form Examples</h2>
 
+<div class="evo-space-10"></div>
 
+<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-3" />
 
+<div class="evo-space-10"></div>
 
-
-<!-- button -->
-
-<section id="InputButton">
-
-<h2 class="text-size-6">button (maybe form example mixes go down here? mix colors, shapes, borders, backgrounds, icons)</h2>
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-3" /&gt;
+</code>
+</pre>
 
 <div class="evo-space"></div>
 
+<input class="evo-form form-padding box-thin box-corner-bottom" type="text" name="text" placeholder="Text Input" />
+<div class="evo-space-10"></div>
 
-<input type="submit" />
+<pre class="evo-code">
+<code class="evo-measure">&lt;input class="evo-form form-padding box-thin box-corner-bottom" type="text" name="text" placeholder="Text Input" /&gt;
+</code>
+</pre>
+
+<div class="evo-space-15"></div>
+
+<input type="submit" class="evo-button solid-to-ghost width-auto" />
 <!-- <input type="submit" class="evo-button" /> -->
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="submit" class="evo-button" /&gt;
+<code class="evo-measure">&lt;input type="submit" class="evo-button solid-to-ghost width-auto" /&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">Create an <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
 
 
 <div class="evo-space-20"></div>

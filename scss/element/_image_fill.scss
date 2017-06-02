@@ -14,6 +14,7 @@
 
 // fill container if parent container has position: relative;
 // fill viewport of screen if there is no container
+.image-fill-after::after,
 .image-fill {
     position: absolute;
     top: 0;

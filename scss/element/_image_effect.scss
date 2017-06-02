@@ -8,7 +8,8 @@
 
 // Evo transition
 // Need to hook into variables
-.evo-transition    { transition: .5s; }
+.evo-transition           { transition: .5s; }
+.evo-transition-after::after    { transition: .5s; }
 
 // Transitions
 .transition-1      { transition: .1s; }
@@ -39,6 +40,7 @@
 // Evo opacity
 // Need to hook into variables
 .evo-opacity             { opacity: .5; }
+.evo-opacity-after::after  { opacity: .5; }
 
 .evo-opacity-hover       { opacity: 0; }
 .evo-opacity-hover:hover { opacity: .5; }
@@ -117,19 +119,19 @@
 // Linear Gradient Shadow
 // https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
 
-.evo-gradient-bg {
+.gradient-bg {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.6),transparent);
 }
 
-.evo-gradient-bg-to-right {
+.gradient-bg-to-right {
   background-image: linear-gradient(to right,hsla(0, 0%, 0%, 0.6),transparent);
 }
 
-.evo-gradient-bg-to-left {
+.gradient-bg-to-left {
   background-image: linear-gradient(to left,hsla(0, 0%, 0%, 0.6),transparent);
 }
 
-.evo-gradient-bg-to-top {
+.gradient-bg-to-top {
   background-image: linear-gradient(to top,hsla(0, 0%, 0%, 0.6),transparent);
 }
 
