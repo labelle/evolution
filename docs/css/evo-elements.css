@@ -429,6 +429,9 @@ progress, meter {
 .width-half {
   width: 50% !important; }
 
+.width-quarter {
+  width: 25% !important; }
+
 .width-auto {
   width: auto !important; }
 
@@ -11203,22 +11206,22 @@ fieldset.overflow {
   background-position: 100%; }
 
 .form-search {
-  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg); }
+  background-image: url(../image/elements/search-book-gray.svg); }
 
 .form-email {
-  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg); }
+  background-image: url(../image/elements/mail-book-gray.svg); }
 
 .form-chevron {
   background-image: url(../image/elements/chevron-book.svg); }
 
 .form-url {
-  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg); }
+  background-image: url(../image/elements/arrow-book-gray.svg); }
 
 .form-password {
-  background-image: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg); }
+  background-image: url(../image/elements/eye-book-gray.svg); }
 
 .form-password-lock {
-  background-image: url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg); }
+  background-image: url(../image/elements/lock-book-gray.svg); }
 
 .form-triangle {
   background-image: url(../image/elements/triangle-down-solid.svg) !important; }
