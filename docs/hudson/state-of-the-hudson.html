@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hudson River Foundation | Learn More</title>
+        <title>Hudson River Foundation | State of the Estuary</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -23,13 +23,18 @@
   background-image: url(image/graphics/river-lowrez.jpg);
 }
 
-.image-bg-mother-daughter  {
-  background-image: url(image/image-mother-daughter-lowrez.jpg);
+.image-bg-seahorse  {
+  background-image: url(image/image-sea-horse-lowrez.jpg);
 }
 
-.image-bg-fpo-map  {
-  background-image: url(image/graphics/fpo-map.png);
+.image-bg-trash  {
+  background-image: url(image/graphics/our-work-community-trash.jpg);
 }
+
+.image-bg-balloons  {
+  background-image: url(image/graphics/our-work-kids-balloons-lowrez.jpg);
+}
+
 
 </style>
 
@@ -115,7 +120,7 @@ $(document).ready(function() {
 
   $("#evo-scroll-1-run").click(function() {
     $('html, body').animate({
-        scrollTop: $("#geography").offset().top
+        scrollTop: $("#sohGeography").offset().top
     }, 1500);
 });
 
@@ -298,7 +303,8 @@ $(document).ready(function() {
 <div id="sohOverview" class="view-full image-bg-fpo position-relative flex-center-vertical image-bg-parallax">
 <div class="container flex-center-vertical">
 <header class="fluid-header z-2">
-<p class="evo-text-10 text-center evo-color-white padding-top-20">The Hudson River is a 315-mile river that flows from north to south primarily through eastern New York. The river originates in the Adirondack Mountains of Upstate New York, flows through the Hudson Valley, and eventually drains into the Atlantic Ocean, between New York City and Jersey City.</p>
+<h1 class="evo-text-4 text-uppercase text-tracking-10 evo-gray-10 hrf-font-3 text-center padding-top-15 margin-bottom-10">State of the Estuary</h1>
+<p class="evo-text-10 text-center evo-color-white">The Hudson River is a 315-mile river that flows from north to south primarily through eastern New York. The river originates in the Adirondack Mountains of Upstate New York, flows through the Hudson Valley, and eventually drains into the Atlantic Ocean, between New York City and Jersey City.</p>
 </header>
 <!-- Scroll down requires additional javascript -->
 <a href="javascript: void(0);" class="hidden-xs" id="evo-scroll-1-run">
@@ -320,7 +326,7 @@ $(document).ready(function() {
 <!--    GEOGRAPHY   -->
 <!-- ********************* -->
 
-<div id="sohGeography" class="view-full flex-center-vertical position-relative" id="sothGeography">
+<div id="sohGeography" class="view-full flex-center-vertical position-relative">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -345,22 +351,14 @@ $(document).ready(function() {
   </div>
 </div>
 
-<!-- ********************* -->
-<!--    BIG IMAGE 2  -->
-<!-- ********************* -->
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-<div class="view-tall-half image-bg-mother-daughter image-bg-parallax box-shadow-inset"></div>
-</div>
-</div>
-</div>
+
 
 <!-- ********************* -->
-<!--    WILDLIFE   -->
+<!--    WATER QUALITY   -->
 <!-- ********************* -->
-<div class="view-full flex-center-vertical position-relative" id="sohWildlife">
+
+<div id="ourWorkWaterQuality" lass="view-full flex-center-vertical position-relative">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -369,17 +367,17 @@ $(document).ready(function() {
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Wildlife</h2>
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Water Quality</h2>
         <div class="evo-space-10"></div>
-        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">Over $30,000,000 has been focused on acquisition of 1,700 acres and $64,000,000 on restoration of 650 acres. As many of these sites continue to be threatened by pollution and development, stakeholders are working to further protect and restore these areas.</p>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">Acid impairment has drastically increased since the early 1900s. Comparisons to pre-industrial data attribute the impairment to sediment deposition.</p>
         <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
           <li><a href="javascript:void(0);">Learn More</a></li>
         </ul>
         <div class="evo-space"></div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-wildlife-map.png" />
-        <div class="evo-space"></div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-water-quality.png" />
+          <div class="evo-space"></div>
       </div>
     </div>
   </div>
@@ -387,10 +385,10 @@ $(document).ready(function() {
 
 
 <!-- ********************* -->
-<!--    STATE OF THE ESTUARY   -->
+<!--    HABITAT   -->
 <!-- ********************* -->
 
-<div class="view-full flex-center-vertical position-relative" id="sohStateOfTheEstuary">
+<div id="ourWorkHabitat" class="view-full flex-center-vertical position-relative">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -398,17 +396,148 @@ $(document).ready(function() {
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
-        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">State of the Estuary</h2>
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Habitat</h2>
         <div class="evo-space-10"></div>
-        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">More than 70 percent of the wetlands that existed at the turn of the 20th Century in the Hackensack Meadowlands has been lost. Still, this is the largest expanse of tidal wetlands in our Estuary.</p>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">Recent efforts have greatly improved the conditions of the Hudson River and waters in and around New York Harbor.</p>
         <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
           <li><a href="javascript:void(0);">Learn More</a></li>
         </ul>
         <div class="evo-space"></div>
       </div>
-      <div class="col-xs-12 col-sm-10">
-        <img alt="Wildlife Map" class="image padding-bottom-20" src="image/graphics/graphic-estuary-maps.png" />
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-habitat.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ********************* -->
+<!--    BIG IMAGE 2  -->
+<!-- ********************* -->
+
+<div class="view-tall-full image-bg-seahorse image-bg-parallax box-shadow-inset"></div>
+
+<!-- ********************* -->
+<!--    FISHERIES   -->
+<!-- ********************* -->
+
+<div id="ourWorkFisheries" class="view-full flex-center-vertical position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Fisheries</h2>
+        <div class="evo-space-10"></div>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">We’re funding 3 fisheries that will increase stock of native bass and trout by 50% over the next 10 years.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-fisheries.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ********************* -->
+<!--    CONTAMINANTS   -->
+<!-- ********************* -->
+
+<div id="ourWorkContaminants" class="view-full flex-center-vertical position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Contaminants</h2>
+        <div class="evo-space-10"></div>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">CARP data show that average concentrations of PCBs in American eel currently exceed U.S. Federal Food and Drug Administration FDA limits.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-contaminants.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ********************* -->
+<!--    BIG IMAGE 2  -->
+<!-- ********************* -->
+
+<div class="view-tall-full image-bg-trash image-bg-parallax box-shadow-inset"></div>
+
+
+<!-- ********************* -->
+<!--    EDUCATION   -->
+<!-- ********************* -->
+
+<div id="ourWorkEducation" class="view-full flex-center-vertical position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Education + Community Engagement</h2>
+        <div class="evo-space-10"></div>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">Between 2002 and 2013 over 100 grants were awarded to projects supporting Stewardship, Habitat Restoration, and Public Access.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-community-engagement.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ********************* -->
+<!--    PUBLIC ACCESS   -->
+<!-- ********************* -->
+
+<div id="ourWorkPublicAccess" class="view-full flex-center-vertical position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Public Access</h2>
+        <div class="evo-space-10"></div>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">On average every year we open
+up 3 new ways for the public to access the rivers and tributaries.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-public-access.png" />
           <div class="evo-space"></div>
       </div>
     </div>
@@ -419,14 +548,44 @@ $(document).ready(function() {
 <!--    BIG IMAGE 3  -->
 <!-- ********************* -->
 
-<!-- <div class="view-full image-bg-fpo-map box-shadow-inset contain" style="background-repeat: no-repeat;"></div> -->
-<div class="view-full image-bg-fpo-map box-shadow-inset contain image-bg-parallax"></div>
+<div class="view-tall-full image-bg-balloons image-bg-parallax box-shadow-inset"></div>
+
+
+<!-- ********************* -->
+<!--    CLIMATE CHANGE   -->
+<!-- ********************* -->
+
+<div id="ourWorkClimateChange" class="view-full flex-center-vertical position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="evo-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="evo-text-8 hrf-font-2 evo-gray-18 text-leading-6 margin-bottom-0">Climate Change</h2>
+        <div class="evo-space-10"></div>
+        <p class="evo-text evo-text-4 hrf-font-1 margin-bottom-0 text-measure">Water levels have risen over 12 inches since 1900. Scientists project that levels may rise another 7-12 inches by the 2050s and 12-23 inches by the 2080s.</p>
+        <ul class="evo-icon-list list-padding-medium hrf-font-2 list-icon-large evo-text-3 text-uppercase">
+          <li><a href="javascript:void(0);">Learn More</a></li>
+        </ul>
+        <div class="evo-space"></div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <img alt="Wildlife Map" class="image" src="image/graphics/graphic-climate-change.png" />
+          <div class="evo-space"></div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+</div>
+
 
 <!-- ********************* -->
 <!--    CURRENT CONDITIONS  -->
 <!-- ********************* -->
 
-<div class="view-full flex-center-vertical position-relative" id="sohCurrentConditions">
+<div id="sohCurrentConditions" class="view-full flex-center-vertical position-relative">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
