@@ -37,8 +37,8 @@ $evo:                               ".evo" !default;
 // DO I NEED THESE INVERSE COLORS?
 
 // Primary accent color
-$evo_color:							#{$brand_color_1} !default;
-$inverse_evo_color:					#{$brand_color_1} !default;
+$evo_color:							#{$color_15} !default;
+$inverse_evo_color:					#{$color_15} !default;
 
 
 // Primary neutral colors
@@ -86,7 +86,7 @@ $html_font_weight:                  normal !default; // or bolder or lighter or 
 $html_line_height:                  1.4375 !default; // define this in body
 $html_font_stretch:                 normal !default; // or condensed or expanded
 $html_font_size:                    1rem !default; // // or 1 rem, define this in body
-$html_font_family:                  #{$sans-serif}; // or #{$sans-serif}
+$html_font_family:                  #{$google-source-sans}; // or #{$sans-serif}
 $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 
 
@@ -111,7 +111,7 @@ $body_background_color:             #{$evo_white} !default; // or white or black
 $heading_font_style:				inherit !default; // or italics or oblique
 $heading_font_variant:				inherit !default; // or small-caps if the font supports it
 $heading_color:                     inherit !default; // e.g. Inherit or Black or #000000
-$heading_font_family:               #{$halis-rounded} !default; // e.g. or Inherit or Initial or #{$arial} or #{$sans-serif}
+$heading_font_family:               #{$google-source-sans} !default; // e.g. or Inherit or Initial or #{$arial} or #{$sans-serif}
 $heading_font_weight:               400 !default; // e.g. or Inherit or Initial or Bold or 500
 $heading_font_stretch:              inherit !default; // or condensed or expanded
 $heading_text_rendering:            optimizeSpeed !default; // or optimizeLegibility or auto or unset;
@@ -334,12 +334,12 @@ $link_opacity_visited:				1;
 $inverse_link_color_visited:        #{$evo_white} !default;
 
 // a:hover
-$link_color_hover:                  #{$brand_color_3} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_color_hover:                  #{$color_17} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $link_background_color_hover:       transparent;
 $link_underline_hover:				none !default; // or none or underline or line-through
 $link_opacity_hover:                1;
 
-$inverse_link_color_hover:          #{$brand_color_3} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$inverse_link_color_hover:          #{$color_17} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $inverse_link_background_color_hover: transparent;
 
 // a:active
@@ -354,7 +354,7 @@ $inverse_link_color_active:         #{$evo_white} !default; // cyan
 // https://davidwalsh.name/invert-colors-css
 $link_color_focus:                  invert !default; // cyan
 $link_underline_focus:				none !default;// text-decoration
-$link_outline_color_focus:			#{$brand_color_3} !default;
+$link_outline_color_focus:			#{$color_17} !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 $link_opacity_focus:                1;
@@ -509,12 +509,12 @@ $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075)
 // https://www.w3schools.com/css/css_background.asp
 $form_background_chevron_down: url(../image/elements/chevron-down-book.svg);
 $form_background_triangle: url(../image/elements/triangle-down-solid.svg);
-$form_background_search: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/search-book-gray.svg);
-$form_background_email: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/mail-book-gray.svg);
+$form_background_search: url(../image/elements/search-book-gray.svg);
+$form_background_email: url(../image/elements/mail-book-gray.svg);
 $form_background_chevron: url(../image/elements/chevron-book.svg);
-$form_background_url: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/arrow-book-gray.svg);
-$form_background_password: url(https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg);
-$form_background_password_lock: url(https://labelle.github.io/evolution-patterns/img/lock-book-gray.svg);
+$form_background_url: url(../image/elements/arrow-book-gray.svg);
+$form_background_password: url(../image/elements/eye-book-gray.svg);
+$form_background_password_lock: url(../image/elements/lock-book-gray.svg);
 
 
 
@@ -704,7 +704,7 @@ $quote_font_family:					#{$sans-serif} !default;
 
 $quote_character_before:			"“" !default;
 $quote_color_before:			    #{$evo_color} !default;
-$quote_font_before:			        #{$helvetica-thin} !default;
+$quote_font_before:			        #{$google-source-sans} !default;
 
 $quote_character_after:			    "”" !default;
 $quote_color_after:			        #{$evo_color} !default;

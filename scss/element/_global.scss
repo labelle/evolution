@@ -420,7 +420,7 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
-  min-height: 10rem;
+  // min-height: 10rem;
   border-radius: 0;
   resize: vertical;
 }
@@ -491,7 +491,6 @@ progress, meter {
     opacity: 0.5;
     cursor: not-allowed;
 }
-
 
 // Experimental inherit classes
 

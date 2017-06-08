@@ -55,56 +55,388 @@
 <fieldset>
 <legend class="visually-hidden">Legend</legend>
 
-<div class="evo-space-15"></div>
+<div class="evo-space"></div>
 
-<label>Label</label>
-<input type="text" name="text" placeholder="Text Input" />
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label&gt;Label&lt;/label&gt;
-&lt;input type="text" name="text" placeholder="Text Input" /&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. The basic <code>&lt;input&gt;</code> tag is generally unstyled, so that you might style it using classes. Default form styles are set in _variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<!-- basic inputs -->
-
-<section id="InputText">
-
-<h2 class="text-size-6">evo-form</h2>
-
-<div class="evo-space-10"></div>
-
-<input type="text" name="text" placeholder="Text Input" class="evo-form form-padding form-box margin-bottom-5" />
-<label class="text-uppercase text-size-3 text-tracking-10">Label</label>
+<label>Input Label</label>
+<input name="input" placeholder="Input Placeholder" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form form-padding form-box margin-bottom-5" /&gt;
-&lt;label class="text-uppercase"&gt;Label&lt;/label&gt;</code>
+<code class="evo-measure">&lt;label&gt;Input Label&lt;/label&gt;
+&lt;input name="input" placeholder="Input Placeholder" /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Default form styles are set in _variables.scss.</p>
+<p class="evo-measure">These are unstyled inputs, intended as a foundation for your own custom styling. Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. If a browser does not support a particular input type, it will default to basic text input. The basic <code>&lt;input&gt;</code> tag is generally unstyled, so that you might style it using classes. Typically, using an input type will trigger a related keyboard behavior on iOS devices. Form elements will stretch across their continer unless the width is constrained. Default form styles are set in _variables.scss.</p>
 
-<div class="evo-space-20"></div>
-
-</section>
 
 </fieldset>
 </form>
+
+<div class="evo-space-20"></div>
+
 </section>
+
+
+
+
+<!-- basic input types -->
+
+<section id="InputText">
+
+<h2 class="text-size-6">input type</h2>
+
+<div class="evo-space-10"></div>
+
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="evo-space"></div>
+
+<label>Text Label</label>
+<input type="text" name="text" placeholder="Text Placeholder" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;Text Label&lt;/label&gt;
+&lt;input type="text" name="text" placeholder="Text Placeholder" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">These are unstyled inputs, intended as a foundation for your own custom styling. Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. If a browser does not support a particular input type, it will default to basic text input. The basic <code>&lt;input&gt;</code> tag is generally unstyled, so that you might style it using classes. Typically, using an input type will trigger a related keyboard behavior on iOS devices. Form elements will stretch across their continer unless the width is constrained. Default form styles are set in _variables.scss.</p>
+
+
+<div class="evo-space"></div>
+
+<label>Search Label</label>
+<input type="search" name="search" placeholder="Search Placeholder" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;Search&lt;/label&gt;
+&lt;input type="search" name="search" placeholder="Search" /&gt;</code>
+</pre>
+
+
+<div class="evo-space"></div>
+
+<label>Email Label</label>
+<input type="email" name="email" placeholder="Email Placeholder" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;Email Label&lt;/label&gt;
+&lt;input type="email" name="email" placeholder="Email Placeholder" /&gt;</code>
+</pre>
+
+<div class="evo-space"></div>
+
+<label>URL Label</label>
+<input type="url" name="url" placeholder="URL Placeholder" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;URL Label&lt;/label&gt;
+&lt;input type="url" name="url" placeholder="URL Placeholder" /&gt;</code>
+</pre>
+
+
+<div class="evo-space"></div>
+
+<label>Password Label</label>
+<input type="password" name="password" placeholder="Password Placeholder" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;Password Label&lt;/label&gt;
+&lt;input type="password" name="password" placeholder="Password Placeholder" /&gt;</code>
+</pre>
+
+<div class="evo-space"></div>
+
+<label>File Label</label>
+<input type="file" name="file" multiple />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;File Label&lt;/label&gt;
+&lt;input type="file" name="file" multiple /&gt;</code>
+</pre>
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- basic textarea -->
+
+<section id="InputText">
+
+<h2 class="text-size-6">textarea</h2>
+
+<div class="evo-space-10"></div>
+
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="evo-space"></div>
+
+<label>Textarea Label</label>
+<textarea type="text" name="message" placeholder="Textarea Placeholder"></textarea>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label&gt;Textarea Label&lt;/label&gt;
+&lt;textarea type="text" name="message" placeholder="Textarea Placeholder"&gt;&lt;/textarea&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;textarea type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Default form styles are set in _variables.scss.. Default form styles are set in _variables.scss.</p>
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- Select dropdown -->
+
+<section id="formSelect">
+
+<h2 class="text-size-6">select</h2>
+
+<div class="evo-space"></div>
+
+<label for="select">Choose one</label>
+<select name="select" placeholder="choose one">
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;select name="select" placeholder="choose one" /&gt;
+&lt;option value="option1"&gt;option 1&lt;/option&gt;
+&lt;option value="option2"&gt;option 2&lt;/option&gt;
+&lt;option value="option3"&gt;option 3&lt;/option&gt;
+&lt;/select&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;select&gt;</code> tag with nested <code>&lt;option&gt;</code> and/or <code>&lt;optgroup&gt;</code> tags. Default select styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- checkbox -->
+
+<section id="InputCheckbox">
+
+<h2 class="text-size-6">form-checkbox</h2>
+
+<div class="evo-space"></div>
+
+<label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2" /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3" /&gt;&nbsp;checkbox 3&lt;/label&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-checkbox</code> class, and place an <code>&lt;input type="checkbox"&gt;</code> element inside. Default input button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
+<!-- checkbox inline -->
+
+<section id="InputCheckboxInline">
+
+<h2 class="text-size-6">form-checkbox-inline</h2>
+
+<div class="evo-space"></div>
+
+<fieldset class="overflow">
+  <div class="form-checkbox-inline">
+    <label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
+    <label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
+    <label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
+  </div>
+</fieldset>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;fieldset class="overflow"&gt;
+  &lt;div class="form-checkbox-inline"&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2" /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3" /&gt;&nbsp;checkbox 3&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-checkbox-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then an <code>&lt;input type="checkbox"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
+
+<!-- radio -->
+
+<section id="InputRadio">
+
+<h2 class="text-size-6">form-radio</h2>
+
+<div class="evo-space"></div>
+
+<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value" checked />&nbsp;radio 1</label>
+<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2</label>
+<label class="form-radio"><input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" checked /&gt;&nbsp;radio 1&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3&gt;/label&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-radio</code> class,and place an <code>&lt;input type="radio"&gt;</code> element inside. Default input button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- radio inline -->
+
+<section id="InputRadioInline">
+
+<h2 class="text-size-6">form-radio-inline</h2>
+
+<div class="evo-space"></div>
+
+<fieldset class="overflow">
+  <div class="form-radio-inline">
+    <label class="form-radio"><input type="radio" id="radio1" name="radio" value="value" checked />&nbsp;radio 1</label>
+    <label class="form-radio"><input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2</label>
+    <label class="form-radio"><input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3</label>
+  </div>
+</fieldset>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;fieldset class="overflow"&gt;
+  &lt;div class="form-radio-inline"&gt;
+  &lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" checked /&gt;&nbsp;radio 1&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2&gt;/label&gt;
+&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3&gt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-radio-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then a <code>&lt;input type="radio"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- button -->
+
+<section id="InputButton">
+
+<h2 class="text-size-6">button</h2>
+
+<div class="evo-space"></div>
+
+
+<input type="submit" />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="submit" /&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+</fieldset>
+</form>
+
+
+
+
 
 <!-- basic containers and labels -->
 
@@ -143,11 +475,12 @@
 
 </section>
 
+<form>
 
 
 
 
-<!-- basic containers and labels -->
+<!-- Form examples -->
 
 <section id="InputForm">
 
@@ -155,34 +488,43 @@
 
 <div class="evo-space-15"></div>
 
-<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-3" />
+<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-round-8 box-3" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-3" /&gt;
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-round-8 box-3" /&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create an <code>&lt;input type="submit"&gt;</code> tag and apply any <a href="box.html">box classes</a>. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">Create an <code>&lt;input type="text"&gt;</code> tag and apply any <a href="box.html">box classes</a>. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
 
-<div class="evo-space-20"></div>
 
-<input class="evo-form form-padding box-thin box-corner-bottom" type="text" name="text" placeholder="Text Input" />
+<div class="evo-space"></div>
+
+
+<label class="evo-button evo-icon-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed button-upload">
+    <input type="file" multiple/>
+    <span>Upload File</span>
+</label>
+
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input class="evo-form form-padding box-thin box-corner-bottom" type="text" name="text" placeholder="Text Input" /&gt;
+<code class="evo-measure">&lt;label class="evo-button evo-icon-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed button-upload"&gt;
+&lt;input type="file" required /&gt;
+&lt;span&gt;Upload File&lt;/span&gt;
+&lt;/label&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">To change the shape or corners of a form input, create an <code>&lt;input type="submit"&gt;</code> tag and apply any <a href="box-shape.html">box-shape</a> classes. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">An alternate upload file button. Create a <code>&lt;input type="file"&gt;</code> tag. Default input button styles are set in _variables.scss. See the "buttons" section for more styles.</p>
 
-<div class="evo-space-20"></div>
+<div class="evo-space"></div>
 
 <input type="submit" class="evo-button solid-to-ghost width-auto" />
 <!-- <input type="submit" class="evo-button" /> -->
