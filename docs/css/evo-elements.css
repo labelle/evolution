@@ -9428,6 +9428,13 @@ button.bullet-check-heavy:before {
 .image-fpo {
   background-image: url(../image/brand/fpo.jpg); }
 
+.image-opacity-0-hover:hover,
+.image-opacity-0-hover-none,
+.image-opacity-0,
+.image-opacity-none {
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
 .image-opacity-10-hover:hover,
 .image-opacity-10-hover-none,
 .image-opacity-10 {
@@ -9458,11 +9465,13 @@ button.bullet-check-heavy:before {
   opacity: 0.90;
   filter: alpha(opacity=90); }
 
+.image-opacity-0-hover,
 .image-opacity-10-hover,
 .image-opacity-25-hover,
 .image-opacity-50-hover,
 .image-opacity-75-hover,
 .image-opacity-90-hover,
+.image-opacity-0-hover-none:hover,
 .image-opacity-10-hover-none:hover,
 .image-opacity-25-hover-none:hover,
 .image-opacity-50-hover-none:hover,
@@ -9501,13 +9510,17 @@ button.bullet-check-heavy:before {
 .image-grayscale {
   filter: grayscale(100%); }
 
-.image-grayscale-0,
 .image-grayscale-none,
+.image-grayscale-0,
+.image-grayscale-none-hover,
+.image-grayscale-0-hover,
 .image-grayscale-10-hover,
 .image-grayscale-25-hover,
 .image-grayscale-50-hover,
 .image-grayscale-75-hover,
 .image-grayscale-90-hover,
+.image-grayscale-none-hover-none:hover,
+.image-grayscale-0-hover-none:hover,
 .image-grayscale-10-hover-none:hover,
 .image-grayscale-25-hover-none:hover,
 .image-grayscale-50-hover-none:hover,
@@ -9545,13 +9558,17 @@ button.bullet-check-heavy:before {
 .image-sepia {
   filter: sepia(100%); }
 
-.image-sepia-0,
 .image-sepia-none,
+.image-sepia-0,
+.image-sepia-none-hover,
+.image-sepia-0-hover,
 .image-sepia-10-hover,
 .image-sepia-25-hover,
 .image-sepia-50-hover,
 .image-sepia-75-hover,
 .image-sepia-90-hover,
+.image-sepia-none-hover-none:hover,
+.image-sepia-0-hover-none:hover,
 .image-sepia-10-hover-none:hover,
 .image-sepia-25-hover-none:hover,
 .image-sepia-50-hover-none:hover,
@@ -9591,14 +9608,18 @@ button.bullet-check-heavy:before {
 .image-blur {
   filter: blur(25px); }
 
-.image-blur-none,
 .image-blur-0,
+.image-blur-none,
+.image-blur-none-hover,
+.image-blur-0-hover,
 .image-blur-3-hover,
 .image-blur-5-hover,
 .image-blur-10-hover,
 .image-blur-15-hover,
 .image-blur-20-hover,
 .image-blur-25-hover,
+.image-blur-none-hover-none:hover,
+.image-blur-0-hover-none:hover,
 .image-blur-3-hover-none:hover,
 .image-blur-5-hover-none:hover,
 .image-blur-10-hover-none:hover,
