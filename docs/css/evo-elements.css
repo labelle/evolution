@@ -9644,7 +9644,7 @@ button.bullet-check-heavy:before {
 .blend-lighten {
   mix-blend-mode: lighten; }
 
-.blend-dodge-after::after,
+.blend-dodge-after::after img,
 .blend-dodge {
   mix-blend-mode: color-dodge; }
 
@@ -9760,15 +9760,12 @@ button.bullet-check-heavy:before {
 .blend-luminosity-bg {
   background-blend-mode: luminosity; }
 
-.evo-color-blend img {
+.color-blend-multiply img {
   filter: grayscale(100%) contrast(1.2);
   mix-blend-mode: multiply; }
 
-.blend-purple {
-  background-color: #88169d; }
-
 .blend-purple img {
-  filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(0.8);
   mix-blend-mode: lighten; }
 
 .blend-purple::after {
