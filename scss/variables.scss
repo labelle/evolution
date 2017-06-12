@@ -512,9 +512,10 @@ $form_background_triangle: url(../image/elements/triangle-down-solid.svg);
 $form_background_search: url(../image/elements/search-book-gray.svg);
 $form_background_email: url(../image/elements/mail-book-gray.svg);
 $form_background_chevron: url(../image/elements/chevron-book.svg);
-$form_background_url: url(../image/elements/arrow-book-gray.svg);
-$form_background_password: url(../image/elements/eye-book-gray.svg);
-$form_background_password_lock: url(../image/elements/lock-book-gray.svg);
+$form_background_arrow: url(../image/elements/arrow-book-gray.svg);
+$form_background_eye: url(../image/elements/eye-book-gray.svg);
+$form_background_eye_slash: url(../image/elements/eye-slash-book-gray.svg);
+$form_background_lock: url(../image/elements/lock-book-gray.svg);
 
 
 
@@ -530,9 +531,9 @@ $form_background_size:              1.25em;
 $form_background_position:          99%; // or 100%
 // Form Input
 $form_font_size:                    1rem;
-$form_border_radius:                5px;
+$form_border_radius:                none; // or 5px
 $form_width:                        100%;
-$form_background_color:             #{$gray_5}; // or transparent
+$form_background_color:             none; // or #{$gray_5} or transparent
 // padding
 $form_padding_top:                  1em;
 $form_padding_bottom:               1em;
@@ -556,71 +557,71 @@ $form_border_right_color:           #{$gray_15};
 
 
 
-// BOX FORM
-// Background controls
-$box_form_background_size:           1.25em;
-$box_form_background_position:       96%; // or 100%
-// Form Input
-$box_form_font_size:                 1rem;
-$box_form_border_radius:             0;
-$box_form_width:                     100%;
-$box_form_background_color:          #{$gray_5};
-$box_form_background_size:           1em;
-$box_form_background_position:       96%;
-// padding
-$box_form_padding_top:               1rem;
-$box_form_padding_bottom:            1rem;
-$box_form_padding_left:              1rem;
-$box_form_padding_right:             1rem;
-// border width
-$box_form_border_top_width:          2px;
-$box_form_border_bottom_width:       2px;
-$box_form_border_left_width:         2px;
-$box_form_border_right_width:        2px;
-// border style
-$box_form_border_top_style:          solid;
-$box_form_border_bottom_style:       solid;
-$box_form_border_left_style:         solid;
-$box_form_border_right_style:        solid;
-// border color
-$box_form_border_top_color:          #{$gray_15};
-$box_form_border_bottom_color:       #{$gray_15};
-$box_form_border_left_color:         #{$gray_15};
-$box_form_border_right_color:        #{$gray_15};
+// // BOX FORM
+// // Background controls
+// $box_form_background_size:           1.25em;
+// $box_form_background_position:       96%; // or 100%
+// // Form Input
+// $box_form_font_size:                 1rem;
+// $box_form_border_radius:             0;
+// $box_form_width:                     100%;
+// $box_form_background_color:          #{$gray_5};
+// $box_form_background_size:           1em;
+// $box_form_background_position:       96%;
+// // padding
+// $box_form_padding_top:               1rem;
+// $box_form_padding_bottom:            1rem;
+// $box_form_padding_left:              1rem;
+// $box_form_padding_right:             1rem;
+// // border width
+// $box_form_border_top_width:          2px;
+// $box_form_border_bottom_width:       2px;
+// $box_form_border_left_width:         2px;
+// $box_form_border_right_width:        2px;
+// // border style
+// $box_form_border_top_style:          solid;
+// $box_form_border_bottom_style:       solid;
+// $box_form_border_left_style:         solid;
+// $box_form_border_right_style:        solid;
+// // border color
+// $box_form_border_top_color:          #{$gray_15};
+// $box_form_border_bottom_color:       #{$gray_15};
+// $box_form_border_left_color:         #{$gray_15};
+// $box_form_border_right_color:        #{$gray_15};
 
 
 
-// LINE FORM
-// Background controls
-$line_form_background_size:         1.25em;
-$line_form_background_position:     100%; // or 96%
-// Form Input
-$line_form_font_size:               inherit;
-$line_form_border_radius:           0;
-$line_form_width:                   100%;
-$line_form_background_color:        transparent;
-$line_form_background_size:         1em;
-$line_form_background_position:     100;
-// padding
-$line_form_padding_top:             1rem;
-$line_form_padding_bottom:          1rem;
-$line_form_padding_left:            0;
-$line_form_padding_right:           1rem;
-// border width
-$line_form_border_top_width:        0;
-$line_form_border_bottom_width:     thin;
-$line_form_border_left_width:       0;
-$line_form_border_right_width:      0;
-// border style
-$line_form_border_top_style:        none;
-$line_form_border_bottom_style:     solid;
-$line_form_border_left_style:       none;
-$line_form_border_right_style:      none;
-// border color
-$line_form_border_top_color:        transparent;
-$line_form_border_bottom_color:     #{$gray_15};
-$line_form_border_left_color:       transparent;
-$line_form_border_right_color:      transparent;
+// // LINE FORM
+// // Background controls
+// $line_form_background_size:         1.25em;
+// $line_form_background_position:     100%; // or 96%
+// // Form Input
+// $line_form_font_size:               inherit;
+// $line_form_border_radius:           0;
+// $line_form_width:                   100%;
+// $line_form_background_color:        transparent;
+// $line_form_background_size:         1em;
+// $line_form_background_position:     100;
+// // padding
+// $line_form_padding_top:             1rem;
+// $line_form_padding_bottom:          1rem;
+// $line_form_padding_left:            0;
+// $line_form_padding_right:           1rem;
+// // border width
+// $line_form_border_top_width:        0;
+// $line_form_border_bottom_width:     thin;
+// $line_form_border_left_width:       0;
+// $line_form_border_right_width:      0;
+// // border style
+// $line_form_border_top_style:        none;
+// $line_form_border_bottom_style:     solid;
+// $line_form_border_left_style:       none;
+// $line_form_border_right_style:      none;
+// // border color
+// $line_form_border_top_color:        transparent;
+// $line_form_border_bottom_color:     #{$gray_15};
+// $line_form_border_left_color:       transparent;
+// $line_form_border_right_color:      transparent;
 
 
 // Dropcap

@@ -34,232 +34,165 @@
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
 <h1 class="text-size-13 margin-bottom-0">Form Effect</h1>
 
-<p class="evo-measure">Form elements sync with overall styling of evo text and colors. Use <code>&lt;input type="text"&gt;</code>, <code>&lt;option&gt;</code>, and <code>&lt;textarea&gt;</code> tags.</p>
+<p class="evo-measure">Form focus and hover effects.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
-
-
-<!-- Label Floating -->
-
-<section id="LabelFloating">
-
-<h2 class="text-size-6">label-floating</h2>
-
-<div class="evo-space"></div>
 
 
 <form>
 <fieldset>
-<legend class="visually-hidden">Label Floating</legend>
-
-<div class="evo-space-15"></div>
-
-<span class="input-container">
-<input type="text" name="text" class="evo-form-box" required />
-<label class="label-floating">Label</label>
-</span>
+<legend class="visually-hidden">Form Effects</legend>
 
 
-<div class="evo-space-15"></div>
+<!-- focus color -->
 
-<pre class="evo-code">
-<code class="evo-measure">&lt;span class="input-container"&gt;
-&lt;input type="text" name="text" class="evo-form-box" required /&gt;
-&lt;label class="label-floating"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code>
-</pre>
+<section id="InputFocus">
 
-<div class="evo-space-15"></div>
-
-<p class="evo-measure">Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag below it (not above). Apply the <code>label-floating</code> tag to the label, and the <code>input-container</code> tag to a span that contains the label and the input. Default form styles are set in _variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-
-<!-- focus and hover states -->
-
-<section id="InputText">
-
-<h2 class="text-size-6">form-focus</h2>
+<h2 class="text-size-6">form-focus-[color]</h2>
 
 <div class="evo-space"></div>
 
+<code>form-focus-color</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-color" />
+<label>Label</label>
 
-<form>
-<fieldset>
-<legend class="visually-hidden">Form Focus</legend>
-
-<div class="evo-space-15"></div>
-
-<label>form-focus</label>
-<input type="text" name="text" class="evo-form form-padding form-box"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus</label>
-<input type="text" name="text" class="evo-form-box"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-line-focus</label>
-<input type="text" name="text" class="evo-form-line"/>
-
-<div class="evo-space-15"></div>
-
+<div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;???????????span class="input-container"&gt;
-&lt;input type="text" name="text" class="evo-form-box" required /&gt;
-&lt;label class="label-floating"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code>
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-color" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
 </pre>
 
-<div class="evo-space-15"></div>
+<div class="evo-space-5"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag below it (not above). Apply the <code>label-floating</code> tag to the label, and the <code>input-container</code> tag to a span that contains the label and the input. Default form styles are set in _variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-
-<!-- focus and hover states -->
-
-<section id="InputText">
-
-<h2 class="text-size-6">form-focus</h2>
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-focus-color</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-focus-color-demo</code>.Default form styles are set in _variables.scss.</p>
 
 <div class="evo-space"></div>
 
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Form Focus</legend>
-
-<div class="evo-space-15"></div>
-
-<label>form-box-focus focus-black</label>
-<input type="text" name="text" class="evo-form-box focus-black"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-white</label>
-<input type="text" name="text" class="evo-form-box focus-white"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-blue</label>
-<input type="text" name="text" class="evo-form-box focus-blue"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-green hover-red</label>
-<input type="text" name="text" class="evo-form-box focus-green"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-red</label>
-<input type="text" name="text" class="evo-form-box focus-red"/>
-
-<div class="evo-space-15"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;???????????span class="input-container"&gt;
-&lt;input type="text" name="text" class="evo-form-box" required /&gt;
-&lt;label class="label-floating"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code>
-</pre>
-
-<div class="evo-space-15"></div>
-
-<p class="evo-measure">Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag below it (not above). Apply the <code>label-floating</code> tag to the label, and the <code>input-container</code> tag to a span that contains the label and the input. Default form styles are set in _variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-
-<!-- demo classes -->
-
-<section id="InputText">
-
-<h2 class="text-size-6">demo classes</h2>
+<code>form-focus-black</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-black" />
+<label>Label</label>
 
 <div class="evo-space"></div>
 
+<code>form-focus-gray</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-gray" />
+<label>Label</label>
 
-<form>
-<fieldset>
-<legend class="visually-hidden">Form Focus Demo</legend>
+<div class="evo-space"></div>
 
-<div class="evo-space-15"></div>
+<code>form-focus-white</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-white" />
+<label>Label</label>
 
-<label>form-box-focus focus-black</label>
-<input type="text" name="text" class="evo-form-box form-focus-black"/>
+<div class="evo-space"></div>
 
-<div class="evo-space-15"></div>
+<code>form-focus-blue</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-blue" />
+<label>Label</label>
 
+<div class="evo-space"></div>
 
-<label>form-box-focus focus-white</label>
-<input type="text" name="text" class="evo-form-box form-focus-white"/>
+<code>form-focus-green</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-green" />
+<label>Label</label>
 
-<div class="evo-space-15"></div>
+<div class="evo-space"></div>
 
-
-<label>form-box-focus focus-blue</label>
-<input type="text" name="text" class="evo-form-box form-focus-blue"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-green</label>
-<input type="text" name="text" class="evo-form-box form-focus-green"/>
-
-<div class="evo-space-15"></div>
-
-
-<label>form-box-focus focus-red</label>
-<input type="text" name="text" class="evo-form-box form-focus-red"/>
-
-<div class="evo-space-15"></div>
-
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;???????????span class="input-container"&gt;
-&lt;input type="text" name="text" class="evo-form-box" required /&gt;
-&lt;label class="label-floating"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code>
-</pre>
-
-<div class="evo-space-15"></div>
-
-<p class="evo-measure">Classes are available that demonstrate a fix state, for style guide purposes. Create a <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag below it (not above). Apply the <code>label-floating</code> tag to the label, and the <code>input-container</code> tag to a span that contains the label and the input. Default form styles are set in _variables.scss.</p>
+<code>form-focus-red</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-red" />
+<label>Label</label>
 
 <div class="evo-space-20"></div>
 
 </section>
 
+
+
+
+<!-- hover color -->
+
+<section id="InputHover">
+
+<h2 class="text-size-6">form-hover-[color]</h2>
+
+<div class="evo-space"></div>
+
+<code>form-hover-color</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-hover-color" />
+<label>Label</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-hover-color" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-hover-color</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-hover-color-demo</code>. Default form styles are set in _variables.scss.</p>
+
+<div class="evo-space"></div>
+
+<code>form-hover-black</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-hover-black" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-hover-gray</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-hover-gray" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-hover-white</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-hover-white" />
+<label>Label</label>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- hover color -->
+
+<section id="InputHover">
+
+<h2 class="text-size-6">Form Mix</h2>
+
+<div class="evo-space"></div>
+
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding evo-box form-hover-color form-focus-red" />
+<label>Label</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding evo-box form-hover-color form-focus-red" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
 </fieldset>

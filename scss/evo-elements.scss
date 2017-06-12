@@ -149,7 +149,7 @@
 @import "element/image_parallax";
 @import "element/image_fill";
 @import "element/image_placeholder";
-@import "element/image_effect";
+// @import "element/image_effect";
 @import "element/image_filter";
 @import "element/image_play";
 
@@ -185,13 +185,10 @@
 @import "element/form";
 @import "element/form_type";
 @import "element/form_size";
-@import "element/form_style";
-@import "element/form_placeholder";
-@import "element/form_focus";
-@import "element/form_hover";
-@import "element/form_effect";
-@import "element/form_validation"; // delete after combining
-@import "element/form_password"; // delete after combining
+// @import "element/form_placeholder"; // form placeholder text colors
+// @import "element/form_extras"; // form validation and password, needs works
+@import "element/form_effect"; // focus, hover
+@import "element/form_play"; // floating label
 
 // Video
 @import "element/video";

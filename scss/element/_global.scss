@@ -452,7 +452,7 @@ input[type="submit"] {
   // -webkit-box-sizing: border-box; // was content-box
   // -moz-box-sizing: border-box; // was content-box
   box-sizing: border-box; // was content-box
-  outline-offset: -2px;
+  // outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-cancel-button,

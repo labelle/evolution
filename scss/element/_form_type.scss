@@ -43,16 +43,20 @@
 }
 
 
-.form-url {
-  background-image: #{$form_background_url};
+.form-arrow {
+  background-image: #{$form_background_arrow};
 }
 
-.form-password {
-  background-image: #{$form_background_password};
+.form-eye {
+  background-image: #{$form_background_eye};
 }
 
-.form-password-lock {
-  background-image: #{$form_background_password_lock};
+.form-eye-slash {
+  background-image: #{$form_background_eye_slash};
+}
+
+.form-lock {
+  background-image: #{$form_background_lock};
 }
 
 // Select
@@ -79,28 +83,6 @@ label.evo-button input[type="file"] {
     top: -1000px;
 }
 
-/***** Example custom styling *****/
-// .evo-button {
-//     border: 2px solid #AAA;
-//     border-radius: 4px;
-//     padding: 2px 5px;
-//     margin: 2px;
-//     background: #DDD;
-//     display: inline-block;
-// }
-// .evo-button:hover {
-//     background: #CCC;
-// }
-// .evo-button:active {
-//     background: #CCF;
-// }
-
-// label.evo-button,
-// label.evo-button:hover {
-//   border-width: 0;
-// }
-
-
 label.evo-button :invalid + span {
     color: inherit;
     border-color: inherit;
@@ -110,21 +92,3 @@ label.evo-button :valid + span {
     color: #4A4;
     border-color: #4A4 !important;
 }
-
-// // This relates to the custom file upload button code in _button_icon.scss
-// label.evo-button:before :invalid {
-// background-image: url("../image/brand/chevron-book.svg") !important; 
-// }
-
-// label.evo-button:before :valid {
-// background-image: url("../image/brand/download-book.svg") !important; 
-// }
-
-
-  //   /* INPUT 1 */
-
-  // .evo-form-20-input {
-
-  //    @extend .evo-form-input-base;  
-  
-  // }
