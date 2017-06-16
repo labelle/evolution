@@ -181,6 +181,19 @@ button.bullet-arrow-down:before {
     content: "↓"; // insert content that looks like bullets
 }
 
+// // Lock U+1F512
+// ul.bullet-lock li:before,
+// a.bullet-lock:before,
+// button.bullet-lock:before {
+//     content: "🔒"; // insert content that looks like bullets
+// }
+
+// // Lock Open U+1F512
+// ul.bullet-lock-open li:before,
+// a.bullet-lock-open:before,
+// button.bullet-lock-open:before {
+//     content: "🔓"; // insert content that looks like bullets
+// }
 
 // Ballot X U+2717 (only browser)
 ul.bullet-x li:before,
