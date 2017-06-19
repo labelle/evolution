@@ -13,6 +13,10 @@
     position: relative;
 }
 
+.position-static {
+    position: static;
+}
+
 .position-absolute {
     position: absolute;
 }
@@ -83,6 +87,126 @@
     bottom: 0;
     transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
+}
+
+
+
+
+// top bottom left right
+
+.top-0 {
+    top:0;
+}
+
+.bottom-0 {
+    bottom:0;
+}
+
+.left-0 {
+    left:0;
+}
+
+.right-0 {
+    right:0;
+}
+
+
+// Fill utility
+
+.absolute--fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+
+// Floats
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+
+
+// Clear utilities
+
+
+.clear-left {
+    clear: left
+}
+
+.clear-right {
+    clear: right
+}
+
+.clear-both {
+    clear: both
+}
+
+.clear-none {
+    clear: none
+}
+
+
+
+
+// From HTML5 Boilerplate
+
+// /*
+//  * Clearfix: contain floats
+//  *
+//  * For modern browsers
+//  * 1. The space content is one way to avoid an Opera bug when the
+//  *    `contenteditable` attribute is included anywhere else in the document.
+//  *    Otherwise it causes space to appear at the top and bottom of elements
+//  *    that receive the `clearfix` class.
+//  * 2. The use of `table` rather than `block` is only necessary if using
+//  *    `:before` to contain the top-margins of child elements.
+//  */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+// From https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
+.clearfix {
+  // *zoom: 1; // tachyons
+  zoom: 1; // ie 6/7
+}
+
+
+
+
+
+
+
+// Width utilities
+
+.width-full {
+  width: 100% !important;
+}
+
+.width-half {
+  width: 50% !important;
+}
+
+.width-quarter {
+  width: 25% !important;
+}
+
+.width-auto {
+  width: auto !important;
 }
 
 // #{$evo}-position-container:hover #{$evo}-position-hover {

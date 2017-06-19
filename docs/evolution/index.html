@@ -14,110 +14,15 @@
 <!--         <link rel="stylesheet" href="../css/bootstrap-grid.css"> -->
      <link rel="stylesheet" href="../css/evo-elements.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
         
 <style>
 
 
-/*Flex*/
 
-.evo-flex {
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-/*.inline-flex {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex
-}*/
-
-.flex-auto {
-        max-width: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-width: 0;
-    min-height: 0
-}
-
-.flex-column {
-/*  margin: 1em;*/
-   padding: 1em;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 8.333333333333%;
-}
-
-/*section:nth-of-type(1) .column:first-of-type {
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 22px;
-}*/
-
-.flex-column-4 {
-  padding: 1em;
-  flex-grow: 3;
-  flex-shrink: 3;
-  flex-basis: 8.333333333333%;
-  min-width: 20%;
-}
-
-.flex-column-3 {
-  padding: 1em;
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 8.333333333333%;
-}
-
-/*section:first-of-type .column:nth-of-type(1) {
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 66px;
-}*/
-
-
-/*Get rid of gutter in bootstrap rows*/
-
-
-.row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.row.no-gutter [class*='col-']:first-child,
-.row.no-gutter [class*='col-']:last-child{
-  padding-right: 0;
-  padding-left: 0;
-}
-
-
-
-
-/*From slide site*/
-/*  [class*="card-"][class*="bg-"] figure img,
-  .fullscreen [class*="card-"] figure img {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }*/
-
-    .flex-image-full,
-   .flex-image-full img {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ .min-width-75 {
+    min-width: 75%;
+ }
 
 
  .min-width {
@@ -146,7 +51,7 @@
 </style>
 
 </head>
-<body class="gray-5-bg">
+<body class="gray-2-bg">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="evo/http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -156,417 +61,999 @@
 </header> -->
 <main>
 
-
-<div class="site-container gray-5-bg">
+<div class="site-container gray-2-bg">
 
 <a href="../index.html"><p class="text-size-2 breadcrumb-back-to">Back to Index</p></a>
     <div class="evo-space"></div>
-
-<!-- Elements -->
-<section id="elements" class="evo-position">
-        <div class="evo-space"></div>
-<!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
- --> 
-        <h1 class="margin-bottom-10">Evolution</h1>
-        <p>Reusable CSS framework of UI elements and widgets.</p>
-        <div class="evo-space"></div>
-</section>
-
-
-
-<div class="evo-color-white-bg">
-<section class="evo-flex flex-wrap flex-wrap-sm" style="min-height: 500px; max-height: 500px !important;">
-
-<div class="position-relative flex-auto flex-column-3 min-width-25">
-<div class="position-absolute evo-image flex-image-full image-fpo" style="max-height: 500px !important; min-height: 250px">
-    <div class="position-middle text-center massive-font-1 evo-color-white">
-    <h2 class="text-size-10 text-leading-5 margin-bottom-10">Evo Guide.</h2>
-    <p class="margin-bottom-0">The core evo system for Massive.Guide.</p>
-    <div class="evo-space-9"></div>
-    <a href="evo/index.html""><button class="evo-button inverse-ghost-to-solid button-size-small button-box-thin">View Guide</button></a>
-    </div>
-</div>
-</div>
-
-<div class="flex-column flex-center-vertical self-end" style="min-height: 250px;">
-<ul class="evo-list margin-left-20 list-padding-thin">
-<li><a href="evo/layout.html">Layout</a></li>
-<li><a href="evo/space.html">Space</a></li>
-<li><a href="evo/color.html">Color</a></li>
-<li><a href="evo/font.html">Font</a></li>
-<li><a href="evo/selection.html">Selection</a></li>
-<li><a href="evo/highlight.html">Highlight</a></li>
-<li><a href="evo/link.html">Link</a></li>
-<li><a href="evo/button.html">Button</a></li>
-<li><a href="evo/icon.html">Icon&nbsp;✗</a></li>
-</ul>
-</div>
-
-<div class="flex-column self-end" style="min-height: 250px;">
-<ul class="evo-list list-padding-thin">
-<li><a href="evo/text.html">Text</a></li>
-<li><a href="evo/list.html">List</a></li>
-<li><a href="evo/image.html">Image</a></li>
-<li><a href="evo/video.html">Video&nbsp;✗</a></li>
-<li><a href="evo/line.html">Line</a></li>
-<li><a href="evo/box.html">Box</a></li>
-<li><a href="evo/table.html">Table</a></li>
-<li><a href="evo/form.html">Form</a></li>
-</ul>
-</div>
-
-</section>
-</div>
-
-<div class="evo-space"></div>
-
-
-
-
-<div class="row">
-
-<div class="two-up shadow-hover-up evo-position">
-<a href="elements.html">
-<div class="position-relative image-size-20 evo-color-white-bg">
-<div src="#" class="position-absolute evo-image image-fill image-fpo" style="width: 50%"></div>
-<div class="position-right width-half">
-<h3 class="padding-left-15 text-leading-6 h4">HTML<br>Element<br>Inspector</h3>
-</div>
-</div>
-</a>
-</div>
-
-<div class="two-up shadow-hover-up evo-position">
-<a href="grids.html">
-<div class="position-relative image-size-20 evo-color-white-bg">
-<div src="#" class="position-absolute evo-image image-fill image-fpo" style="width: 50%"></div>
-<div class="position-right width-half">
-<h3 class="padding-left-15 text-leading-6 h4">Grid<br>Patterns</h3>
-</div>
-</div>
-</a>
-</div>
-
-<div class="evo-space-10"></div>
-
-</div>
-
-
-<div class="row">
-
-<div class="two-up shadow-hover-up evo-position">
-<a href="icons.html">
-<div class="position-relative image-size-20 evo-color-white-bg">
-<div src="#" class="position-absolute evo-image image-fill image-fpo" style="width: 50%"></div>
-<div class="position-right width-half">
-<h3 class="padding-left-15 text-leading-6 h4">Icon<br>Library</h3>
-</div>
-</div>
-</a>
-</div>
-
-<div class="two-up shadow-hover-up evo-position">
-<a href="toolkit.html">
-<div class="position-relative image-size-20 evo-color-white-bg">
-<div src="#" class="position-absolute evo-image image-fill image-fpo" style="width: 50%"></div>
-<div class="position-right width-half">
-<h3 class="padding-left-15 text-leading-6 h4">Rapid<br>UI Design<br>Toolkit</h3>
-</div>
-</div>
-</a>
-</div>
-
-<div class="evo-space-20"></div>
-
 
 <section id="evo" class="evo-position">
 <!--         <div class="evo-space"></div> -->
 <!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
  --> 
-        <h2 class="margin-bottom-10">Evo Framework</h2>
-        <p>The complete CSS library of integrated UI elements and reusable widgets.</p>
-        <div class="evo-space"></div>
+<h2 class="margin-bottom-10">Evo Framework</h2>
+<p>Design web pages simply using HTML. Powered by pure open-source CSS.</p>
+<ul class="evo-list-bullet list-bullet bullet-slash list-inline">
+<li><a href="evo/usage.html">Usage</a></li>
+<li><a href="evo/layout.html">Layout</a></li>
+<li><a href="evo/space.html">Space</a></li>
+<li><a href="evo/color.html">Color</a></li>
+<li><a href="evo/gray.html">Gray</a></li>
+<li><a href="evo/shadow.html">Shadow</a></li>
+<li><a href="evo/line.html">Line</a></li>
+<li><a href="evo/box.html">Box</a></li>
+<li><a href="evo/icon.html">Icon&nbsp;✗</a></li>
+<li><a href="evo/font.html">Font</a></li>
+<li><a href="evo/text.html">Text</a></li>
+<li><a href="evo/selection.html">Selection</a></li>
+<li><a href="evo/highlight.html">Highlight</a></li>
+<li><a href="evo/list.html">List</a></li>
+<li><a href="evo/link.html">Link</a></li>
+<li><a href="evo/button.html">Button</a></li>
+<li><a href="evo/table.html">Table</a></li>
+<li><a href="evo/form.html">Form</a></li>
+<li><a href="evo/image.html">Image</a></li>
+<li><a href="evo/video.html">Video&nbsp;✗</a></li>
+<!-- <li><a href="evo/map.html">Map&nbsp;✗</a></li>
+<li><a href="evo/chart.html">Chart&nbsp;✗</a></li> -->
+</ul>
+<div class="evo-space"></div>
 </section>
 
 
+<!-- ********************* -->
+<!--    USAGE   -->
+<!-- ********************* -->
 
-<section class="evo-list evo-flex flex-wrap list-padding-thin">
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/layout.html"><h3 class="h4">Layout</h3></a></li>
-<li><a href="evo/layout-grid.html">Layout Grid</a></li>
-<li><a href="evo/layout-position.html">Layout Position</a></li>
-<li><a href="evo/layout-screen.html">Layout Screen</a></li>
-<li><a href="evo/layout-view.html">Layout View</a></li>
-<li><a href="evo/layout-iframe.html">Layout Iframe</a></li>
-<li><a href="evo/layout-play.html">Layout Play</a></li>
+<section id="usage" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Usage</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/usage.html">Usage&nbsp;✗</a></li>
+      <li><a href="evo/usage-download.html">Usage Download&nbsp;✗</a></li>
+      <li><a href="evo/usage-setup.html">Usage Setup&nbsp;✗</a></li>
+      <li><a href="evo/usage-styling.html">Usage Styling&nbsp;✗</a></li>
+      <li><a href="evo/usage-nomenclature.html">Usage Nomenclature&nbsp;✗</a></li>
+      <li><a href="evo/usage-theme.html">Usage Theme&nbsp;✗</a></li>
+      <li><a href="evo/usage-organization.html">Usage Source&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start styling text, color, buttons, or images. Use this page as a general style guide.</p>
+<ul class="evo-list list-bullet bullet-arrow">
+<li><a href="evo/usage.html">Demo: style playground for beginners</a></li>
+<li><a href="evo/usage.html">Video: essential styles</a></li>
+</ul>
+</div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<section>
+
+<h4>Download</h4>
+<p class="text-measure-7">Simply <a href="https://labelle.github.io/evo/css/evo-elements.css" download>download the CSS file</a> or <a href="https://pdickan.github.io/hudson/css/evo-elements.css">grab the CSS code</a> and save it within your project. Some <a href="evo/font-local.html">fonts</a> may require download and purchase.
+<div class="evo-space-18"></div>
+
+
+<h4>Setup</h4>
+<p class="text-measure-7">Place the following CSS <code>&lt;link&gt;</code> in the document <code>&lt;head&gt;</code>. Evo can be used by itself.
+<div class="evo-space-1"></div>
+<code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="css/evo-elements.css"&gt;</code>
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">If using Evo alongside a framework such as Bootstrap, place Evo last in the stacking order. This insures the Evo styles override any other 'opinionated' CSS for HTML inputs and resets.
+<div class="evo-space-1"></div>
+<div class="text-measure-7 evo-box padding-10"><pre>&lt;!doctype html&gt;
+ &lt;head&gt;
+   &lt;!-- Place your other CSS above Evo --&gt;
+   &lt;link rel="stylesheet" href="css/bootstrap.css"&gt;
+   &lt;!-- Place Evo below other CSS in the stacking order --&gt;
+   &lt;link rel="stylesheet" href="css/evo-elements.css"&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+   &lt;h1&gt;Content Goes Here&lt;/h1&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<div class="evo-space-medium"></div>
+ <a href="evo/font-google.html">Google fonts</a> or <a href="evo/font-adobe.html">Adobe fonts</a> may require additional minor installation.</p>
+<div class="evo-space-18"></div>
+
+
+<h4>Styling</h4>
+<p class="text-measure-7">Evo is a design system of semantic CSS class names. To create an Evo element, simply make an HTML tag, and mix in Evo classes to style it.</p>
+<code class="evo-code code-nowrap">&lt;p class="text-size-7 gray-12"&gt;This text is large and gray.&lt;/p&gt;</code>
+<div class="evo-space-7"></div>
+<p class="text-size-7 gray-12">This text is large and gray.</p>
+<p class="text-measure-7">By changing the class names or numbers, we make Evo elements larger or smaller, darker or lighter, thick or thin. The combinations are endless.</p>
+<code class="evo-code code-nowrap">&lt;p class="text-size-8 color-12"&gt;This text is larger and in color.&lt;/p&gt;</code>
+<div class="evo-space-7"></div>
+<p class="text-size-8 color-12">This text is larger and in color.</p>
+<div class="evo-space-18"></div>
+
+<h4>Nomenclature</h4>
+<p class="text-measure-7">There are two types of class names. Those that begin with the prefix <code>evo-</code>, and those that do not, as such these color classes which can be applied to text.</p>
+<code>evo-color</code> vs. <code>color-15</code>
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">Suffixes such as <code>-bg</code> help create special powers. By adding <code>-bg</code> to our color classes, we target the background-color instead.</p>
+<code>evo-color-bg</code> vs. <code>color-15-bg</code>
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">The <code>evo-</code> prefix generally indicates that a class is controlled from the Evo theme, which is defined in a variables file. Changing these variables will alter the overall Evo framework on a global level.</p>
+<code>evo-color</code> <code>evo-font</code> <code>evo-box</code> <code>evo-line</code> etc.
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">The remaining classes are descriptive and utilitarian. These utilities may also be controlled by variables, but most are hard-coded.</p>
+<code>text-size-8</code> <code>gray-15</code> <code>text-tracking-4</code> <code>image-size-25</code> etc.
+<div class="evo-space-medium"></div>
+The utility numbers are usually set on a modular scale, from 0 to 15, or 0 to 25, or higher, depending on the element.</p>
+<div class="evo-space-thin"></div>
+<ul class="evo-list list-inline">
+<li class="text-size-15 text-tracking-3 margin-right-10">15</li>
+<li class="text-size-14 text-tracking-1 margin-right-10">14</li>
+<li class="text-size-13 text-tracking-3 margin-right-10">13</li>
+<li class="text-size-12 text-tracking-3 margin-right-10">12</li>
+<li class="text-size-11 text-tracking-3 margin-right-10">11</li>
+<li class="text-size-10 text-tracking-3 margin-right-10">10</li>
+<li class="text-size-9 margin-right-10">9</li>
+<li class="text-size-8 margin-right-10">8</li>
+<li class="text-size-7 margin-right-10">7</li>
+<li class="text-size-6 margin-right-10">6</li>
+<li class="text-size-5 margin-right-10">5</li>
+<li class="text-size-4 margin-right-10">4</li>
+<li class="text-size-3 margin-right-10">3</li>
+<li class="text-size-2 margin-right-10">2</li>
+<li class="text-size-1 margin-right-10">1</li>
+<li class="text-size-0 margin-right-10">0</li>
+</ul>
+<div class="evo-space-thin"></div>
+Utility numbers are usually relative to each other and follow a modular scale defined in the Evo theme's variables.</p>
+<div class="evo-space-18"></div>
+
+<h4>Theme</h4>
+<p class="text-measure-7"><a href="https://github.com/labelle/evolution/blob/master/scss/variables.scss" target="_blank">Evo theme variables</a> are found in the <code>_variables.scss</code> file. Run Gulp and Sass on the source files, then edit the variables to match the desired look and feel. Example variables below.</p>
+<div class="evo-space-1"></div>
+<div class="text-measure-7 evo-box padding-10"><pre>// Primary accent color
+$evo_color:                 #{$color_15} !default;
+$inverse_evo_color:         #{$color_15} !default;
+
+// Typography
+$html_font_style:           normal !default; // or italics or oblique
+$html_font_variant:         normal !default; // or small-caps if the font supports it
+$html_font_weight:          normal !default; // or bolder or lighter or 400
+$html_line_height:          1.4375 !default; // define this in body
+$html_font_stretch:         normal !default; // or condensed or expanded
+$html_font_size:            1rem !default; // // or 1 rem, define this in body
+$html_font_family:          #{$google-source-sans}; // or #{$sans-serif}
+$html_tap_highlight_color:  rgba(0, 0, 0, 0);
+</pre></div>
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">These variables power the <code>evo-color</code> and <code>evo-font</code> classes, demonstrated below.</p>
+<div class="evo-space-1"></div>
+<div class="text-measure-7 evo-box padding-10"><pre>// evo color
+#{$evo}-color,
+#{$evo}-color-hover:hover      { color: #{$evo_color}; }
+
+#{$evo}-color-bg,
+#{$evo}-color-bg-hover:hover   { background-color: #{$evo_color}; }
+
+#{$evo}-color-box,
+#{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
+
+// evo font
+#{$evo}-font { 
+  // font-size:    #{$html_font_size};
+  font-family:     #{$html_font_family};
+  font-weight:     #{$html_font_weight};
+  line-height:     #{$html_line_height};
+}
+
+</pre></div>
+<div class="evo-space-18"></div>
+
+<h4>Source</h4>
+<p class="text-measure-7">Advanced developers can download the Gulp and Sass files from the open-source <a href="https://github.com/labelle/evolution" target="_blank">Evo Repository on Github</a>, which allows for editing theme variables. Distributed under the MIT License.</p>
+<a href="https://github.com/labelle/evolution/archive/master.zip"><button class="evo-button button-size-small">Download Source</button></a>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    LAYOUT   -->
+<!-- ********************* -->
+
+<section id="layout" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Layout</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/layout.html">Layout</a></li>
+      <li><a href="evo/layout-grid.html">Layout Grid</a></li>
+      <li><a href="evo/layout-position.html">Layout Position</a></li>
+      <li><a href="evo/layout-screen.html">Layout Screen</a></li>
+      <li><a href="evo/layout-view.html">Layout View</a></li>
+      <li><a href="evo/layout-iframe.html">Layout Iframe</a></li>
+      <li><a href="evo/layout-masonry.html">Layout Masonry</a></li>
+      <li><a href="evo/layout-play.html">Layout Play</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+
+<!-- ********************* -->
+<!--    SPACE   -->
+<!-- ********************* -->
+
+<section id="space" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Space</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/space.html">Space</a></li>
+        <li><a href="evo/space-block.html">Space Block</a></li>
+        <li><a href="evo/space-margin.html">Space Margin</a></li>
+        <li><a href="evo/space-padding.html">Space Padding</a></li>
+        <li><a href="evo/space-xray.html">Space Xray&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    COLOR   -->
+<!-- ********************* -->
+
+<section id="color" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Color</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/color.html">Color</a></li>
+        <li><a href="evo/color-natural.html">Color Natural</a></li>
+        <li><a href="evo/color-gray.html">Color Gray&nbsp;✗</a></li>
+        <li><a href="evo/color-neon.html">Color Neon&nbsp;✗</a></li>
+        <li><a href="evo/color-pastel.html">Color Pastel&nbsp;✗</a></li>
+        <!-- <li><a href="evo/color-warm.html">Color Warm&nbsp;✗</a></li>
+        <li><a href="evo/color-cool.html">Color Cool&nbsp;✗</a></li> -->
+        <li><a href="evo/color-gradient.html">Color Gradient&nbsp;✗</a></li>
+        <li><a href="evo/color-effect.html">Color Effect&nbsp;✗</a></li>
+        <li><a href="evo/color-play.html">Color Play&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    GRAY   -->
+<!-- ********************* -->
+
+<section id="gray" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Gray</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/gray.html">Gray&nbsp;✗</a></li>
+      <li><a href="evo/gray-neutral.html">Gray Neutral&nbsp;✗</a></li>
+      <li><a href="evo/gray-transparent.html">Gray Transparent&nbsp;✗</a></li>
+      <li><a href="evo/gray-warm.html">Gray Warm&nbsp;✗</a></li>
+      <li><a href="evo/gray-cool.html">Gray Cool&nbsp;✗</a></li>
+      <li><a href="evo/gray-gradient.html">Gray Gradient&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    SHADOW   -->
+<!-- ********************* -->
+
+<section id="shadow" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Shadow</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/shadow.html">Shadow&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    LINE   -->
+<!-- ********************* -->
+
+<section id="line" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Line</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/line.html">Line</a></li>
+      <li><a href="evo/line-style.html">Line Style</a></li>
+      <li><a href="evo/line-size.html">Line Size</a></li>
+      <li><a href="evo/line-color.html">Line Color</a></li>
+      <li><a href="evo/line-gray.html">Line Gray</a></li>
+      <li><a href="evo/line-fade.html">Line Fade</a></li>
+      <li><a href="evo/line-shadow.html">Line Shadow</a></li>
+      <li><a href="evo/line-blur.html">Line Blur</a></li>
+      <!-- <li><a href="evo/line-effect.html">Line Effect</a></li> -->
+      <!-- <li><a href="line-play.html">Line Play</a></li> -->
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    BOX   -->
+<!-- ********************* -->
+
+<section id="box" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Box</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/box.html">Box</a></li>
+      <li><a href="evo/box-style.html">Box Style</a></li>
+      <li><a href="evo/box-shape.html">Box Shape</a></li>
+      <li><a href="evo/box-size.html">Box Size</a></li>
+      <li><a href="evo/box-color.html">Box Color</a></li>
+      <li><a href="evo/box-gray.html">Box Gray</a></li>
+      <li><a href="evo/box-effect.html">Box Effect&nbsp;✗</a></li>
+      <li><a href="evo/box-play.html">Box Play&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    ICON   -->
+<!-- ********************* -->
+
+<section id="icon" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Icon</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/icon.html">Icon&nbsp;✗</a></li>
+      <li><a href="evo/icon-size.html">Icon Size</a></li>
+      <li><a href="evo/icon-link.html">Icon Link&nbsp;✗</a></li>
+      <li><a href="evo/icon-button.html">Icon Button&nbsp;✗</a></li>
+      <li><a href="evo/icon-scroll.html">Icon Scroll&nbsp;✗</a></li>
+      <li><a href="evo/icon-list.html">Icon List</a></li>
+      <li><a href="evo/icon-effect.html">Icon Effect&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+
+<!-- ********************* -->
+<!--    FONT   -->
+<!-- ********************* -->
+
+<section id="font" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Font</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/font.html">Font</a></li>
+        <li><a href="evo/font-type.html">Font Type</a></li>
+        <li><a href="evo/font-italic.html">Font Italic</a></li>
+        <li><a href="evo/font-weight.html">Font Weight</a></li>
+        <li><a href="evo/font-stack.html">Font Stack</a></li>
+        <li><a href="evo/font-adobe.html">Font Adobe</a></li>
+        <li><a href="evo/font-google.html">Font Google</a></li>
+        <li><a href="evo/font-local.html">Font Local</a></li>
+        <li><a href="evo/font-effect.html">Font Effect</a></li>
+        <li><a href="evo/font-play.html">Font Play</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    SELECTION   -->
+<!-- ********************* -->
+
+<section id="selection" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Selection</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/selection.html">Selection</a></li>
+      <li><a href="evo/selection-color.html">Selection Color</a></li>
+      <li><a href="evo/selection-gray.html">Selection Gray</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15">Background color accents for selected text, defined in Evo theme variables.</p>
+<pre class="evo-box-left box-left-thin padding-left-9">&lt;span class="evo-selection"&gt;
+Demo showing select state&lt;/span&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <span class="evo-selection">Demo showing select state</span>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+
+<!-- ********************* -->
+<!--    HIGHLIGHT   -->
+<!-- ********************* -->
+
+<section id="highlight" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Highlight</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/highlight.html">Highlight</a></li>
+        <li><a href="evo/highlight-mark.html">Highlight Mark</a></li>
+        <li><a href="evo/highlight-size.html">Highlight Size</a></li>
+        <li><a href="evo/highlight-color.html">Highlight Color</a></li>
+        <li><a href="evo/highlight-gray.html">Highlight Gray</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15">Background color accent to call-out important text, text on an image, or a <a href="evo/quote.html">quote</a>.</p>
+<pre class="evo-box-left box-left-thin padding-left-9">&lt;span class="evo-highlight highlight-color"&gt;
+Sample output from HTML&lt;/span&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <span class="evo-highlight highlight-color">Sample output from HTML</span>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
 <div class="evo-space"></div>
-</ul>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/space.html"><h3 class="h4">Space</h3></a></li>
-<li><a href="evo/space-block.html">Space Block</a></li>
-<li><a href="evo/space-margin.html">Space Margin</a></li>
-<li><a href="evo/space-padding.html">Space Padding</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 inverse-trans-gray-15">Use an inverse highlight on a dark background.</p>
+<pre class="evo-box-left box-left-thin padding-left-9 text-inverse">&lt;span class="evo-highlight inverse-highlight-color"&gt;
+Sample output from HTML&lt;/span&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <span class="evo-highlight inverse-highlight-color">Sample output from HTML</span>
+      <!-- <div class="evo-space"></div> -->
+    </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/color.html"><h3 class="h4">Color</h3></a></li>
-<li><a href="evo/color-natural.html">Color Natural</a></li>
-<li><a href="evo/color-gray.html">Color Gray&nbsp;✗</a></li>
-<li><a href="evo/color-warm.html">Color Warm&nbsp;✗</a></li>
-<li><a href="evo/color-cool.html">Color Cool&nbsp;✗</a></li>
-<li><a href="evo/color-gradient.html">Color Gradient&nbsp;✗</a></li>
-<li><a href="evo/color-effect.html">Color Effect&nbsp;✗</a></li>
-<li><a href="evo/color-play.html">Color Play&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+<div class="evo-space-18"></div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/font.html"><h3 class="h4">Font</h3></a></li>
-<li><a href="evo/font-type.html">Font Type</a></li>
-<li><a href="evo/font-italic.html">Font Italic</a></li>
-<li><a href="evo/font-weight.html">Font Weight</a></li>
-<li><a href="evo/font-stack.html">Font Stack</a></li>
-<li><a href="evo/font-adobe.html">Font Adobe</a></li>
-<li><a href="evo/font-google.html">Font Google</a></li>
-<li><a href="evo/font-local.html">Font Local</a></li>
-<li><a href="evo/font-effect.html">Font Effect</a></li>
-<li><a href="evo/font-play.html">Font Play</a></li>
-<div class="evo-space"></div>
-</ul>
+</section>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/selection.html"><h3 class="h4">Selection</h3></a></li>
-<li><a href="evo/selection-color.html">Selection Color</a></li>
-<li><a href="evo/selection-gray.html">Selection Gray</a></li>
-<div class="evo-space"></div>
-</ul>
+<!-- ********************* -->
+<!--    TEXT   -->
+<!-- ********************* -->
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/highlight.html"><h3 class="h4">Highlight</h3></a></li>
-<li><a href="evo/highlight-mark.html">Highlight Mark</a></li>
-<li><a href="evo/highlight-size.html">Highlight Size</a></li>
-<li><a href="evo/highlight-color.html">Highlight Color</a></li>
-<li><a href="evo/highlight-gray.html">Highlight Gray</a></li>
-<div class="evo-space"></div>
-</ul>
+<section id="text" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/link.html"><h3 class="h4">Link</h3></a></li>
-<li><a href="evo/link-style.html">Link Style</a></li>
-<li><a href="evo/link-size.html">Link Size&nbsp;✗</a></li>
-<li><a href="evo/link-gray.html">Link Gray&nbsp;✗</a></li>
-<li><a href="evo/link-color.html">Link Color&nbsp;✗</a></li>
-<li><a href="evo/link-bullet.html">Link Bullet</a></li>
-<li><a href="evo/link-icon.html">Link Icon</a></li>
-<li><a href="evo/link-effect.html">Link Effect&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <h3 class="text-tracking-4 width-full margin-bottom">Text</h3>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/button.html"><h3 class="h4">Button</h3></a></li>
-<li><a href="evo/button-style.html">Button Style</a></li>
-<li><a href="evo/button-size.html">Button Size</a></li>
-<li><a href="evo/button-gray.html">Button Gray&nbsp;✗</a></li>
-<li><a href="evo/button-color.html">Button Color&nbsp;✗</a></li>
-<li><a href="evo/button-bullet.html">Button Bullet</a></li>
-<li><a href="evo/button-icon.html">Button Icon</a></li>
-<li><a href="evo/button-effect.html">Button Effect&nbsp;✗</a></li>
-<li><a href="evo/button-play.html">Button Play&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/text.html">Text</a></li>
+      <li><a href="evo/text-style.html">Text Style</a></li>
+      <li><a href="evo/text-size.html">Text Size</a></li>
+      <li><a href="evo/text-leading.html">Text Leading</a></li>
+      <li><a href="evo/text-tracking.html">Text Tracking</a></li>
+      <li><a href="evo/text-measure.html">Text Measure</a></li>
+      <li><a href="evo/text-shadow.html">Text Shadow</a></li>
+      <li><a href="evo/text-bevel.html">Text Bevel</a></li>
+      <li><a href="evo/text-glow.html">Text Glow</a></li>
+      <li><a href="evo/quote.html">Quote</a></li>
+      <li><a href="evo/dropcap.html">Dropcap&nbsp;✗</a></li>
+      <li><a href="evo/code.html">Code&nbsp;✗</a></li>
+      <!-- <li><a href="evo/text-effect.html">Text Effect</a></li> -->
+      <li><a href="evo/text-play.html">Text Play</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/icon.html"><h3 class="h4">Icon&nbsp;✗</h3></a></li>
-<li><a href="evo/icon-size.html">Icon Size</a></li>
-<li><a href="evo/icon-link.html">Icon Link&nbsp;✗</a></li>
-<li><a href="evo/icon-button.html">Icon Button&nbsp;✗</a></li>
-<li><a href="evo/icon-list.html">Icon List</a></li>
-<li><a href="evo/icon-effect.html">Icon Effect&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/text.html"><h3 class="h4">Text</h3></a></li>
-<li><a href="evo/text-style.html">Text Style</a></li>
-<li><a href="evo/text-size.html">Text Size</a></li>
-<li><a href="evo/text-leading.html">Text Leading</a></li>
-<li><a href="evo/text-tracking.html">Text Tracking</a></li>
-<li><a href="evo/text-measure.html">Text Measure</a></li>
-<li><a href="evo/text-shadow.html">Text Shadow</a></li>
-<li><a href="evo/text-bevel.html">Text Bevel</a></li>
-<li><a href="evo/text-glow.html">Text Glow</a></li>
-<!-- <li><a href="evo/text-effect.html">Text Effect</a></li> -->
-<li><a href="evo/text-play.html">Text Play</a></li>
-<div class="evo-space"></div>
-</ul>
+<div class="evo-space-18"></div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/list.html"><h3 class="h4">List</h3></a></li>
-<li><a href="evo/list-style.html">List Style&nbsp;✗</a></li>
-<li><a href="evo/list-size.html">List Size</a></li>
-<li><a href="evo/list-unordered.html">List Unordered</a></li>
-<li><a href="evo/list-bullet.html">List Bullet</a></li>
-<li><a href="evo/list-ordered.html">List Ordered</a></li>
-<li><a href="evo/list-number.html">List Number</a></li>
-<li><a href="evo/list-line.html">List Line&nbsp;✗</a></li>
-<!-- <li><a href="evo/list-effect.html">List Effect (-)</a></li> -->
-<li><a href="evo/list-play.html">List Play</a></li>
-<div class="evo-space"></div>
-</ul>
+</section>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/image.html"><h3 class="h4">Image</h3></a></li>
-<li><a href="evo/image-shape.html">Image Shape</a></li>
-<li><a href="evo/image-size.html">Image Size</a></li>
-<li><a href="evo/image-ratio.html">Image Ratio</a></li>
-<li><a href="evo/image-fill.html">Image Fill</a></li>
-<li><a href="evo/image-parallax.html">Image Parallax</a></li>
-<li><a href="evo/image-placeholder.html">Image Placeholder</a></li>
-<!-- <li><a href="evo/image-effect.html">Image Effect</a></li> -->
-<li><a href="evo/image-filter.html">Image Filter</a></li>
-<li><a href="evo/image-play.html">Image Play&nbsp;✗</a></li>
-</ul>
+<!-- ********************* -->
+<!--    LIST   -->
+<!-- ********************* -->
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/video.html"><h3 class="h4">Video&nbsp;✗</h3></a></li>
-<!-- <li><a href="evo/video-size.html">Video Size&nbsp;✗</a></li>
-<li><a href="evo/video-ratio.html">Video Ratio&nbsp;✗</a></li>
-<li><a href="evo/video-parallax.html">Video Parallax&nbsp;✗</a></li>
-<li><a href="evo/video-modal.html">Video Modal&nbsp;✗</a></li>
-<li><a href="evo/video-effect.html">Video Effect&nbsp;✗</a></li>
-<li><a href="evo/video-play.html">Video Play&nbsp;✗</a></li> -->
-<div class="evo-space"></div>
-</ul>
+<section id="list" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/line.html"><h3 class="h4">Line</h3></a></li>
-<li><a href="evo/line-style.html">Line Style</a></li>
-<li><a href="evo/line-size.html">Line Size</a></li>
-<li><a href="evo/line-color.html">Line Color</a></li>
-<li><a href="evo/line-gray.html">Line Gray</a></li>
-<li><a href="evo/line-fade.html">Line Fade</a></li>
-<li><a href="evo/line-shadow.html">Line Shadow</a></li>
-<li><a href="evo/line-blur.html">Line Blur</a></li>
-<!-- <li><a href="evo/line-effect.html">Line Effect</a></li> -->
-<!-- <li><a href="line-play.html">Line Play</a></li> -->
-<div class="evo-space"></div>
-</ul>
+  <h3 class="text-tracking-4 width-full margin-bottom">List</h3>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/box.html"><h3 class="h4">Box</h3></a></li>
-<li><a href="evo/box-style.html">Box Style</a></li>
-<li><a href="evo/box-shape.html">Box Shape</a></li>
-<li><a href="evo/box-size.html">Box Size</a></li>
-<li><a href="evo/box-color.html">Box Color</a></li>
-<li><a href="evo/box-gray.html">Box Gray</a></li>
-<li><a href="evo/box-effect.html">Box Effect&nbsp;✗</a></li>
-<li><a href="evo/box-play.html">Box Play&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/list.html">List</a></li>
+      <li><a href="evo/list-style.html">List Style&nbsp;✗</a></li>
+      <li><a href="evo/list-size.html">List Size</a></li>
+      <li><a href="evo/list-unordered.html">List Unordered</a></li>
+      <li><a href="evo/list-bullet.html">List Bullet</a></li>
+      <li><a href="evo/list-ordered.html">List Ordered</a></li>
+      <li><a href="evo/list-number.html">List Number</a></li>
+      <li><a href="evo/list-line.html">List Line&nbsp;✗</a></li>
+      <!-- <li><a href="evo/list-effect.html">List Effect (-)</a></li> -->
+      <li><a href="evo/list-play.html">List Play</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/table.html"><h3 class="h4">Table</h3></a></li>
-<li><a href="evo/table-style.html">Table Style</a></li>
-<li><a href="evo/table-space.html">Table Space</a></li>
-<li><a href="evo/table-size.html">Table Size</a></li>
-<li><a href="evo/table-color.html">Table Color&nbsp;✗</a></li>
-<li><a href="evo/table-effect.html">Table Effect&nbsp;✗</a></li>
-<li><a href="evo/table-play.html">Table Play&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/form.html"><h3 class="h4">Form</h3></a></li>
-<li><a href="evo/form-type.html">Form Type</a></li>
-<li><a href="evo/form-size.html">Form Size</a></li>
-<!-- <li><a href="evo/form-placeholder.html">Form Placeholder</a></li> -->
-<li><a href="evo/form-effect.html">Form Effect</a></li>
-<li><a href="evo/form-play.html">Form Play</a></li>
-<div class="evo-space"></div>
-</ul>
+<div class="evo-space-18"></div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/image-overlay.html">Image Overlay&nbsp;✗</a></li>
+</section>
+
+
+<!-- ********************* -->
+<!--    LINK   -->
+<!-- ********************* -->
+
+<section id="link" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Link</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/link.html">Link</a></li>
+      <li><a href="evo/link-style.html">Link Style</a></li>
+      <li><a href="evo/link-size.html">Link Size&nbsp;✗</a></li>
+      <li><a href="evo/link-gray.html">Link Gray&nbsp;✗</a></li>
+      <li><a href="evo/link-color.html">Link Color&nbsp;✗</a></li>
+      <li><a href="evo/link-bullet.html">Link Bullet</a></li>
+      <li><a href="evo/link-icon.html">Link Icon</a></li>
+      <li><a href="evo/link-effect.html">Link Effect&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    BUTTON   -->
+<!-- ********************* -->
+
+<section id="button" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Button</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/button.html">Button</a></li>
+      <li><a href="evo/button-style.html">Button Style</a></li>
+      <li><a href="evo/button-size.html">Button Size</a></li>
+      <li><a href="evo/button-gray.html">Button Gray&nbsp;✗</a></li>
+      <li><a href="evo/button-color.html">Button Color&nbsp;✗</a></li>
+      <li><a href="evo/button-bullet.html">Button Bullet</a></li>
+      <li><a href="evo/button-icon.html">Button Icon</a></li>
+      <li><a href="evo/button-effect.html">Button Effect&nbsp;✗</a></li>
+      <li><a href="evo/button-play.html">Button Play&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+
+<!-- ********************* -->
+<!--    TABLE   -->
+<!-- ********************* -->
+
+<section id="table" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Table</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/table.html">Table</a></li>
+      <li><a href="evo/table-style.html">Table Style</a></li>
+      <li><a href="evo/table-space.html">Table Space</a></li>
+      <li><a href="evo/table-size.html">Table Size</a></li>
+      <li><a href="evo/table-color.html">Table Color&nbsp;✗</a></li>
+      <li><a href="evo/table-effect.html">Table Effect&nbsp;✗</a></li>
+      <li><a href="evo/table-play.html">Table Play&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+
+<!-- ********************* -->
+<!--    FORM   -->
+<!-- ********************* -->
+
+<section id="form" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Form</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/form.html">Form</a></li>
+        <li><a href="evo/form-type.html">Form Type</a></li>
+        <li><a href="evo/form-size.html">Form Size</a></li>
+        <!-- <li><a href="evo/form-placeholder.html">Form Placeholder</a></li> -->
+        <li><a href="evo/form-effect.html">Form Effect</a></li>
+        <li><a href="evo/form-play.html">Form Play</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
+
+<!-- ********************* -->
+<!--    IMAGE   -->
+<!-- ********************* -->
+
+<section id="image" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Image</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+        <li><a href="evo/image.html">Image</a></li>
+        <li><a href="evo/image-shape.html">Image Shape</a></li>
+        <li><a href="evo/image-size.html">Image Size</a></li>
+        <li><a href="evo/image-ratio.html">Image Ratio</a></li>
+        <li><a href="evo/image-fill.html">Image Fill</a></li>
+        <li><a href="evo/image-parallax.html">Image Parallax</a></li>
+        <li><a href="evo/image-placeholder.html">Image Placeholder</a></li>
+        <!-- <li><a href="evo/image-effect.html">Image Effect</a></li> -->
+        <li><a href="evo/image-filter.html">Image Filter</a></li>
+        <li><a href="evo/image-play.html">Image Play&nbsp;✗</a></li>
+              <div class="evo-space"></div>
+        <li><a href="evo/image-overlay.html">Image Overlay&nbsp;✗</a></li>
 <li><a href="evo/image-modal.html">Image Modal&nbsp;✗</a></li>
 <li><a href="evo/image-slider.html">Image Slider&nbsp;✗</a></li>
 <li><a href="evo/image-carousel.html">Image Carousel&nbsp;✗</a></li>
 <!-- <li><a href="evo/image-slideshow.html">Image Slideshow&nbsp;✗</a></li> -->
-<div class="evo-space"></div>
-</ul>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
 
-<ul class="evo-list flex-auto four-up">
-<li><a href="evo/layout-masonry.html"><h3 class="h4">Layout Masonry</h3></a></li>
-<li><a href="evo/quote.html">Quote</a></li>
-<li><a href="evo/dropcap.html">Dropcap&nbsp;✗</a></li>
-<li><a href="evo/icon-scroll.html">Icon Scroll&nbsp;✗</a></li>
-<li><a href="evo/code.html">Code&nbsp;✗</a></li>
-<div class="evo-space"></div>
-</ul>
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
 
-<ul class="evo-list flex-auto four-up">
-<!-- <li><a href="#"><h3 class="h4"Name</h3></a></li> -->
-<div class="evo-space"></div>
-</ul>
+<div class="evo-space-18"></div>
 
+</section>
 
+<!-- ********************* -->
+<!--    VIDEO   -->
+<!-- ********************* -->
+
+<section id="video" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Video</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/video.html">Video&nbsp;✗</a></li>
+      <!-- <li><a href="evo/video-size.html">Video Size&nbsp;✗</a></li>
+      <li><a href="evo/video-ratio.html">Video Ratio&nbsp;✗</a></li>
+      <li><a href="evo/video-parallax.html">Video Parallax&nbsp;✗</a></li>
+      <li><a href="evo/video-modal.html">Video Modal&nbsp;✗</a></li>
+      <li><a href="evo/video-effect.html">Video Effect&nbsp;✗</a></li>
+      <li><a href="evo/video-play.html">Video Play&nbsp;✗</a></li> -->
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
 
 </section>
 
 
+<!-- ********************* -->
+<!--    MAP   -->
+<!-- ********************* -->
+
+<section id="map" class="margin-top-15">
+  <hr class="evo-line line-thin line-dashed" />
+  <div class="evo-space-5"></div>
+
+  <h3 class="text-tracking-4 width-full margin-bottom">Map</h3>
+
+  <div class="float-right min-width-25">
+    <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
+      <li><a href="evo/map.html">Map&nbsp;✗</a></li>
+      <!-- <div class="evo-space"></div> -->
+    </ul>
+    <div class="evo-space-10"></div>
+  </div>
+
+  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
+    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
+      evo-box-left box-left-color-22 padding-left-8"&gt;
+      Sample output from HTML.&lt;/p&gt;</pre>
+      <div class="evo-space-medium"></div>
+      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
+      <!-- <div class="evo-space"></div> -->
+    </div>
+
+<div class="evo-space-18"></div>
+
+</section>
 </div>
 </main>
 
-<div class="padding-19 evo-color-bg">
-<section id="evo" class="evo-position">
-        <div class="evo-space"></div>
-<!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
- --> 
-        <h2 class="margin-bottom-10 evo-color-white">Design System Benefits</h2>
-        <p>Save time and money by using this 'living style guide' for ongoing design and development.</p>
-        <div class="evo-space"></div>
-</section>
 
-
-<section>
-<ul class="evo-list-bullet bullet-check bullet-black evo-color-white evo-color-black list-padding-thin">
-<li><strong class="evo-color-white">Encourage team collaboration</strong> between designers, developers, and managers</li>
-<li><strong class="evo-color-white">Increase productivity</strong> as the same size team can now produce 5x more output</li>
-<li><strong class="evo-color-white">Improve consistency</strong> because visual design files are synced to the HTML / CSS styles</li>
-<li><strong class="evo-color-white">Lower production costs</strong> through more efficient retrieval of reusable assets</li>
-<li><strong class="evo-color-white">Create prototypes faster</strong> due to power of underlying CSS framework and pattern library</li>
-<li><strong class="evo-color-white">Less QA effort</strong> as bug fixes applied to the shared CSS improves overall future quality</li>
-<li><strong class="evo-color-white">Better brand governance</strong> as guidelines live online rather than sent through email</li>
-<li><strong class="evo-color-white">Higher quality designs</strong> as a standard is set by interactive UX examples and a shared asset</li>
-<li><strong class="evo-color-white">Lighten management load</strong> as the team is supported by guidelines, docs, and knowledge center</li>
-<li><strong class="evo-color-white">Faster project kick-offs</strong> through ready-made templates and shared asset library</li>
-<li><strong class="evo-color-white">Clarify “tech” talk</strong> as the website sets a common vernacular bridging design and dev language</li>
-<li><strong class="evo-color-white">Reduced project risk</strong> as better IP and knowledge management result in less errors</li>
-<li><strong class="evo-color-white">Institutional knowledge sharing</strong> is improved and more accessible to employees and vendors</li>
-<li><strong class="evo-color-white">On-board new hires faster</strong> and help veterans keep up with changes</li>
-<li><strong class="evo-color-white">Inspire and dare new ideas</strong> thanks to the code playgrounds and educational content</li>
-</ul>
-</section>
-
-</div>
-
-
-<script src="//use.edgefonts.net/source-code-pro:n2,n3,n4,n5,n6,n7,n9;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-serif-pro:n2,n3,n4,n6,n7,n9.js"></script>
-
-
-<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-<!--         <script src="../js/main.js"></script> -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

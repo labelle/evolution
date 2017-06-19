@@ -5,6 +5,7 @@
 // @import "box_mixin";
 
 a#{$evo}-inverse-button,
+#{$evo}-inverse-button a,
 input#{$evo}-inverse-button,
 a#{$evo}-button,
 input#{$evo}-button,
@@ -120,7 +121,7 @@ button:hover,
      // text-align: #{$button_text_align};
      // text-decoration: #{$button_text_decoration}; // Doesn't work
      // color
-     color: #{$inverse_button_color};
+     color: #{$inverse_button_color} !important;
      background-color: #{$inverse_button_background_color};
      border-color: #{$inverse_button_border_color};
      // // Structure
@@ -140,7 +141,7 @@ button:hover,
      // type
      // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color
-     color: #{$inverse_button_hover_color};
+     color: #{$inverse_button_hover_color} !important;
      background-color: #{$inverse_button_hover_background_color};
      border-color: #{$inverse_button_hover_border_color};
      // structure

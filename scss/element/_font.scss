@@ -24,6 +24,10 @@
   line-height:     initial;
 }
 
+.inherit-font {
+  font: inherit;
+}
+
 // System fonts
 // #{$evo}-font-1 { 
 //   font-family: #{$html_font_family_1};

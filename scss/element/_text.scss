@@ -137,6 +137,61 @@ p {
 }
 
 
+// Word spacing
+// http://www.w3schools.com/cssref/pr_text_word-spacing.asp
+// word-spacing: normal|length|initial|inherit;
+// normally .25em
+
+.word-space-0 {
+word-spacing: 0;
+}
+
+.word-space-1 {
+word-spacing: .15em;
+}
+
+.word-space-2 {
+word-spacing: .25em; // default
+}
+
+.word-space-4 {
+word-spacing: .35em;
+}
+
+.word-space-5 {
+word-spacing: .5em;
+}
+
+
+
+.white-space-normal {
+  white-space: normal !important;
+}
+
+// What is the difference between break-word and word-break?
+// http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
+// https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+
+// replaces word-break. wraps long words starting at the next line, not where it should
+.break-word {
+  overflow-wrap: break-word;
+}
+
+// wraps long words starting at the point it should start
+// .word-break {
+//    word-wrap: break-word;
+// }
+
+// .no-break-word {
+//   overflow-wrap: keep-all;
+// }
+
+// wraps all words
+.all-break-word {
+  word-break: break-all;
+}
+
+
 
 
 // // Element Mixins
