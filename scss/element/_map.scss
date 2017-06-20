@@ -1,0 +1,26 @@
+///*      M A P     */
+
+
+@import "../variables";
+
+// https://labelle.github.io/evolution-patterns/patterns-library/google-map.html
+
+
+// /***************************
+// MAP NO SCROLL
+// ***************************/
+
+// Disable scrollwheel on embedded google map
+// https://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps
+
+// Place this div directly above your iframe embed
+// <div class="map-no-scroll" onClick="style.pointerEvents='none'"></div>
+
+.map-no-scroll {
+   background:transparent; 
+   position:relative; 
+   width:auto;
+   height:450px; // your iframe height
+   top:450px;  // your iframe height
+   margin-top:-450px;  // your iframe height
+}

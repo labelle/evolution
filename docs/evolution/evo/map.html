@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution Video</title>
+        <title>Evolution Map</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -33,12 +33,12 @@
 </header> -->
 <main>
 
-<section id="evoVideoIntro">
+<section id="evoMapIntro">
 
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
-<h1 class="text-size-13 margin-bottom-0">Video</h1>
+<h1 class="text-size-13 margin-bottom-0">Map</h1>
 
-<p class="evo-measure">Basic HTML5 video embed. More video players can be found at <a href="https://labelle.github.io/evolution-patterns/">Evolution-Patterns</a>.</p>
+<p class="evo-measure">Basic Google Map embed. More map patterns can be found at <a href="labelle.github.io/evolution-patterns/">Evolution-Patterns</a>.</p>
 
 <div class="evo-space-20"></div>
 
@@ -46,25 +46,24 @@
 
 
 
-<!-- Video -->
+<!-- Map -->
 
-<section id="evoVideo">
+<section id="evoMapGray">
 
-<h2 class="text-size-6">video</h2>
+<h2 class="text-size-6">map</h2>
 
 <!-- <div class="evo-space-5"></div> -->
 
-<div class="evo-codeblock" data-identifier="video">
-<div>
-  <video width="100%" controls poster="https://labelle.github.io/evolution-patterns/img/video-bg.png">
-    <source src="https://labelle.github.io/evolution-patterns/video/video.mp4" type="video/mp4">
-      <!--  <source src="../video/video.mp4" type="video/mp4"> -->
-      Your browser does not support the video tag.
-      </video>
-  </div>
+<div class="evo-codeblock" data-identifier="map-gray">
+<div class="image-grayscale-100">
+<div class="evo-position">
+  <div class="map-no-scroll" onClick="style.pointerEvents='none'"></div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5820171330543!2d-74.01819544914268!3d40.70520234586713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1186270317%3A0xa27eda49614b1d4!2s17+Battery+Pl+%23915%2C+New+York%2C+NY+10004!5e0!3m2!1sen!2sus!4v1489628723969" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div class="evo-space-5"></div>
-<div class="evo-codeblock evo-codeblock-target" data-target="video">
+</div>
+</div>
+<div class="evo-space-10"></div>
+<div class="evo-codeblock evo-codeblock-target" data-target="map-gray">
 <button class="evo-multiline-reveal-button evo-remove-this evo-button button-box-thin text-size-1 text-tracking-8 ghost-color-to-ghost">view code</button>
 <pre class="evo-box-left box-left-thin padding-left-9"><code class="hidden-block">
 <!-- HTML will show up inside here --></code>
@@ -73,38 +72,27 @@
 
 <div class="evo-space"></div>
 
-<p class="text-measure">To embed a basic HTML5 video, create a <code>&lt;video&gt;</code> tag and add or remove attributes such as <code>controls</code>, <code>autoplay</code>, or <code>muted</code>. Nest <code>&lt;source&gt;</code> tags inside, as in the code example above. Customize the source URLs for the poster image, and the video itself.</p>
+<p class="text-measure">This is a desaturated Google Map embed, with scrollwheel disabled. Use the <code>image-grayscale-100</code> and <code>map-no-scroll</code> classes, along with the onClick event. See code example for proper format.</p>
 
 <div class="evo-space-18"></div>
 
 </section>
 
 
-<!-- Video Background -->
 
-<section id="evoVideoBackground">
+<!-- Map -->
 
-<h2 class="text-size-6">video background</h2>
+<section id="evoMap">
+
+<h2 class="text-size-6">simple map</h2>
 
 <!-- <div class="evo-space-5"></div> -->
 
-<div class="evo-codeblock" data-identifier="video-background">
-<div class="evo-position">
-      <div class="position-middle z-2 text-center">
-      <div class="text-inverse text-size-10 text-glow">The Best. Ever.</div>
-      <div class="evo-space-5"></div>
-      <button class="evo-inverse-button button-size-small">Check it out</button>
-      </div>
-      <div class="image-fill trans-gray-15-bg"></div>
-  <video width="100%" playsinline autoplay muted loop poster="https://labelle.github.io/evolution-patterns/img/video-bg.png">
-    <source src="https://labelle.github.io/evolution-patterns/video/video.mp4" type="video/mp4">
-      <!--  <source src="../video/video.mp4" type="video/mp4"> -->
-      Your browser does not support the video tag.
-      </video>
-  </div>
+<div class="evo-codeblock" data-identifier="map-simple">
+<iframe class="view-wide-half" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5820171330543!2d-74.01819544914268!3d40.70520234586713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1186270317%3A0xa27eda49614b1d4!2s17+Battery+Pl+%23915%2C+New+York%2C+NY+10004!5e0!3m2!1sen!2sus!4v1489628723969" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div class="evo-space-5"></div>
-<div class="evo-codeblock evo-codeblock-target" data-target="video-background">
+<div class="evo-space-10"></div>
+<div class="evo-codeblock evo-codeblock-target" data-target="map-simple">
 <button class="evo-multiline-reveal-button evo-remove-this evo-button button-box-thin text-size-1 text-tracking-8 ghost-color-to-ghost">view code</button>
 <pre class="evo-box-left box-left-thin padding-left-9"><code class="hidden-block">
 <!-- HTML will show up inside here --></code>
@@ -113,7 +101,7 @@
 
 <div class="evo-space"></div>
 
-<p class="text-measure">Variation designed as a looping background video.</p>
+<p class="text-measure">To embed a basic Google Map, create a custom embed on <a href="https://www.google.com/maps" target="_blank">Google Maps</a> by clicking on the 'share' icon, and paste the associated <code>&lt;iframe&gt;</code> tag in your layout. Add a size class such as <code>view-tall-half</code>, making sure to change the <code>&lt;iframe&gt;</code> width and height attributes to 100% so it fills the container.</p>
 
 <div class="evo-space-18"></div>
 

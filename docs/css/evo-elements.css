@@ -13205,39 +13205,10 @@ input:not(:focus):valid ~ .label-floating {
   left: 1.5em;
   opacity: 1; }
 
-.evo-video {
-  position: relative; }
-
-.evo-video video {
+.map-no-scroll {
+  background: transparent;
   position: relative;
-  z-index: 0; }
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-
-.video-full-width-container {
-  overflow: hidden;
-  height: 0px;
-  padding-bottom: 500px;
-  position: relative; }
-
-.video-full-width-container video {
-  position: absolute;
-  width: 100%; }
-
-.video-full-width-container-responsive {
-  width: 100% !important;
-  height: auto !important; }
-
-.video-html5-full-width-wrapper {
-  background-color: #000000;
-  height: 500px;
-  width: 100%; }
-
-.video-html5-full-width-wrapper video {
   width: auto;
-  height: 500px;
-  margin-top: 0px; }
+  height: 450px;
+  top: 450px;
+  margin-top: -450px; }
