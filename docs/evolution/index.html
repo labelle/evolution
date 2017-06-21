@@ -90,14 +90,14 @@
 <!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
  --> 
 <h2 class="margin-bottom-10">Evo Framework</h2>
-<p>Design web pages simply using HTML. Powered by <a href="/index.html">Evo</a>, an open-source CSS Framework.</p>
+<p>Design web pages simply using HTML. Powered by <a href="evo/index.html">Evo</a>, an open-source functional CSS Framework.</p>
 <ul class="evo-list-bullet list-bullet bullet-slash list-inline">
-<li><a href="evo/usage.html">Usage</a></li>
+<li><a href="evo/usage.html">Usage&nbsp;✗</a></li>
 <li><a href="evo/layout.html">Layout</a></li>
 <li><a href="evo/space.html">Space</a></li>
 <li><a href="evo/color.html">Color</a></li>
-<li><a href="evo/gray.html">Gray</a></li>
-<li><a href="evo/shadow.html">Shadow</a></li>
+<li><a href="evo/gray.html">Gray&nbsp;✗</a></li>
+<li><a href="evo/shadow.html">Shadow&nbsp;✗</a></li>
 <li><a href="evo/line.html">Line</a></li>
 <li><a href="evo/box.html">Box</a></li>
 <li><a href="evo/icon.html">Icon&nbsp;✗</a></li>
@@ -111,7 +111,7 @@
 <li><a href="evo/table.html">Table</a></li>
 <li><a href="evo/form.html">Form</a></li>
 <li><a href="evo/image.html">Image</a></li>
-<li><a href="evo/video.html">Video&nbsp;✗</a></li>
+<li><a href="evo/video.html">Video</a></li>
 <!-- <li><a href="evo/map.html">Map&nbsp;✗</a></li>
 <li><a href="evo/chart.html">Chart&nbsp;✗</a></li> -->
 </ul>
@@ -138,7 +138,7 @@
       <li><a href="evo/usage-styling.html">Usage Styling&nbsp;✗</a></li>
       <li><a href="evo/usage-nomenclature.html">Usage Nomenclature&nbsp;✗</a></li>
       <li><a href="evo/usage-theme.html">Usage Theme&nbsp;✗</a></li>
-      <li><a href="evo/usage-organization.html">Usage Source&nbsp;✗</a></li>
+      <li><a href="evo/usage-organization.html">Usage Organization&nbsp;✗</a></li>
       <!-- <div class="evo-space"></div> -->
     </ul>
     <div class="evo-space-10"></div>
@@ -151,134 +151,6 @@
 <li><a href="evo/usage.html">Video: essential styles</a></li>
 </ul>
 </div>
-
-<div class="evo-space-18"></div>
-
-</section>
-
-<section>
-
-<h4>Download</h4>
-<p class="text-measure-7">Simply <a href="https://labelle.github.io/evo/css/evo-elements.css" download>download the CSS file</a> or <a href="https://pdickan.github.io/hudson/css/evo-elements.css">grab the CSS code</a> and save it within your project. Some <a href="evo/font-local.html">fonts</a> may require download and purchase.
-<div class="evo-space-18"></div>
-
-
-<h4>Setup</h4>
-<p class="text-measure-7">Place the following CSS <code>&lt;link&gt;</code> in the document <code>&lt;head&gt;</code>. Evo can be used by itself.
-<div class="evo-space-1"></div>
-<code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="css/evo-elements.css"&gt;</code>
-<div class="evo-space-medium"></div>
-<p class="text-measure-7">If using Evo alongside a framework such as Bootstrap, place Evo last in the stacking order. This insures the Evo styles override any other 'opinionated' CSS for HTML inputs and resets.
-<div class="evo-space-1"></div>
-<div class="text-measure-7 evo-box padding-10"><pre>&lt;!doctype html&gt;
- &lt;head&gt;
-   &lt;!-- Place your other CSS above Evo --&gt;
-   &lt;link rel="stylesheet" href="css/bootstrap.css"&gt;
-   &lt;!-- Place Evo below other CSS in the stacking order --&gt;
-   &lt;link rel="stylesheet" href="css/evo-elements.css"&gt;
- &lt;/head&gt;
- &lt;body&gt;
-   &lt;h1&gt;Content Goes Here&lt;/h1&gt;
- &lt;/body&gt;
-&lt;/html&gt;
-</pre></div>
-<div class="evo-space-medium"></div>
- <a href="evo/font-google.html">Google fonts</a> or <a href="evo/font-adobe.html">Adobe fonts</a> may require additional minor installation.</p>
-<div class="evo-space-18"></div>
-
-
-<h4>Styling</h4>
-<p class="text-measure-7">Evo is a design system of semantic CSS class names. To create an Evo element, simply make an HTML tag, and mix in Evo classes to style it.</p>
-<code class="evo-code code-nowrap">&lt;p class="text-size-7 gray-12"&gt;This text is large and gray.&lt;/p&gt;</code>
-<div class="evo-space-7"></div>
-<p class="text-size-7 gray-12">This text is large and gray.</p>
-<p class="text-measure-7">By changing the class names or numbers, we make Evo elements larger or smaller, darker or lighter, thick or thin. The combinations are endless.</p>
-<code class="evo-code code-nowrap">&lt;p class="text-size-8 color-12"&gt;This text is larger and in color.&lt;/p&gt;</code>
-<div class="evo-space-7"></div>
-<p class="text-size-8 color-12">This text is larger and in color.</p>
-<div class="evo-space-18"></div>
-
-<h4>Nomenclature</h4>
-<p class="text-measure-7">There are two types of class names. The first type are those that begin with the prefix <code>evo-</code>, such as these color classes which can be applied to text.</p>
-<code>evo-color</code> vs. <code>color-15</code>
-<div class="evo-space-medium"></div>
-<p class="text-measure-7">Suffixes such as <code>-bg</code> help create special powers. By adding <code>-bg</code> to our color classes, we target the background-color instead.</p>
-<code>evo-color-bg</code> vs. <code>color-15-bg</code>
-<div class="evo-space-medium"></div>
-<p class="text-measure-7">The <code>evo-</code> prefix generally indicates that a class is controlled from the Evo theme, which is defined in a variables file. Changing these variables will alter the overall Evo framework on a global level.</p>
-<code>evo-color</code> <code>evo-font</code> <code>evo-box</code> <code>evo-line</code> etc.
-<div class="evo-space-medium"></div>
-<p class="text-measure-7">The second type of classes are descriptive and utilitarian. These classes may also be controlled by variables, but most are hard-coded.</p>
-<code>text-size-8</code> <code>gray-15</code> <code>text-tracking-4</code> <code>image-size-25</code> etc.
-<div class="evo-space-medium"></div>
-The utility numbers are usually set on a modular scale, from 0 to 15, or 0 to 25, or higher, depending on the element.</p>
-<div class="evo-space-thin"></div>
-<ul class="evo-list list-inline">
-<li class="text-size-15 text-tracking-3 margin-right-10">15</li>
-<li class="text-size-14 text-tracking-1 margin-right-10">14</li>
-<li class="text-size-13 text-tracking-3 margin-right-10">13</li>
-<li class="text-size-12 text-tracking-3 margin-right-10">12</li>
-<li class="text-size-11 text-tracking-3 margin-right-10">11</li>
-<li class="text-size-10 text-tracking-3 margin-right-10">10</li>
-<li class="text-size-9 margin-right-10">9</li>
-<li class="text-size-8 margin-right-10">8</li>
-<li class="text-size-7 margin-right-10">7</li>
-<li class="text-size-6 margin-right-10">6</li>
-<li class="text-size-5 margin-right-10">5</li>
-<li class="text-size-4 margin-right-10">4</li>
-<li class="text-size-3 margin-right-10">3</li>
-<li class="text-size-2 margin-right-10">2</li>
-<li class="text-size-1 margin-right-10">1</li>
-<li class="text-size-0 margin-right-10">0</li>
-</ul>
-<div class="evo-space-thin"></div>
-Utility numbers are usually relative to each other and follow a modular scale defined in the Evo theme's variables.</p>
-<div class="evo-space-18"></div>
-
-<h4>Theme</h4>
-<p class="text-measure-7"><a href="https://github.com/labelle/evolution/blob/master/scss/variables.scss" target="_blank">Evo theme variables</a> are found in the <code>_variables.scss</code> file. Run Gulp and Sass on the source files, then edit the variables to match the desired look and feel. Example variables below.</p>
-<div class="evo-space-1"></div>
-<div class="text-measure-7 evo-box padding-10"><pre>// Primary accent color
-$evo_color:                 #{$color_15} !default;
-$inverse_evo_color:         #{$color_15} !default;
-
-// Typography
-$html_font_style:           normal !default; // or italics or oblique
-$html_font_variant:         normal !default; // or small-caps if the font supports it
-$html_font_weight:          normal !default; // or bolder or lighter or 400
-$html_line_height:          1.4375 !default; // define this in body
-$html_font_stretch:         normal !default; // or condensed or expanded
-$html_font_size:            1rem !default; // // or 1 rem, define this in body
-$html_font_family:          #{$google-source-sans}; // or #{$sans-serif}
-$html_tap_highlight_color:  rgba(0, 0, 0, 0);
-</pre></div>
-<div class="evo-space-medium"></div>
-<p class="text-measure-7">These variables power the <code>evo-color</code> and <code>evo-font</code> classes, demonstrated below.</p>
-<div class="evo-space-1"></div>
-<div class="text-measure-7 evo-box padding-10"><pre>// evo color
-#{$evo}-color,
-#{$evo}-color-hover:hover      { color: #{$evo_color}; }
-
-#{$evo}-color-bg,
-#{$evo}-color-bg-hover:hover   { background-color: #{$evo_color}; }
-
-#{$evo}-color-box,
-#{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
-
-// evo font
-#{$evo}-font { 
-  // font-size:    #{$html_font_size};
-  font-family:     #{$html_font_family};
-  font-weight:     #{$html_font_weight};
-  line-height:     #{$html_line_height};
-}
-
-</pre></div>
-<div class="evo-space-18"></div>
-
-<h4>Source</h4>
-<p class="text-measure-7">Advanced developers can download the Gulp and Sass files from the open-source <a href="https://github.com/labelle/evolution" target="_blank">Evo Repository on Github</a>, which allows for editing theme variables. Distributed under the MIT License.</p>
-<a href="https://github.com/labelle/evolution/archive/master.zip"><button class="evo-button button-size-small">Download Source</button></a>
 
 <div class="evo-space-18"></div>
 
@@ -310,13 +182,21 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
   </div>
 
   <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
+  <p class="text-measure-6 text-size-6 trans-gray-15">A responsive 12 column grid is recommended.</p>
+  <div class="layout-example-grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
     </div>
 
 <div class="evo-space-18"></div>
@@ -347,14 +227,20 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
   </div>
 
   <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
-    </div>
+<p class="text-measure-6 text-size-6 trans-gray-15">Space blocks are a novel approach to managing negative space in a layout.</p>
+<div class="evo-codeblock space-demo" data-identifier="space">
+<div class="space-5"></div>
+<div class="space-10"></div>
+<div class="space-15"></div>
+<div class="space-17"></div>
+<div class="space-20"></div>
+</div>
+<div class="evo-codeblock-target" data-target="space">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
 
 <div class="evo-space-18"></div>
 
@@ -387,15 +273,21 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
-    </div>
+<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<p class="text-measure-6 text-size-6 trans-gray-15">The primary color is defined in the <a href="evo/usage-theme.html">theme variables</a>.</p>
+<div class="four-up">
+<div class="evo-codeblock" data-identifier="color">
+<h2 class="evo-color text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="evo-color-bg">&nbsp;</div>
+</div>
+</div>
+<div class="evo-space-10"></div>
+<div class="evo-codeblock-target" data-target="color">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
 
 <div class="evo-space-18"></div>
 
@@ -424,15 +316,21 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
-    </div>
+<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<p class="text-measure-6 text-size-6 trans-gray-15">The primary gray is defined in the <a href="evo/usage-theme.html">theme variables</a>.</p>
+<div class="four-up">
+<div class="evo-codeblock" data-identifier="gray">
+<h2 class="evo-gray text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="evo-gray-bg">&nbsp;</div>
+</div>
+</div>
+<div class="evo-space-10"></div>
+<div class="evo-codeblock-target" data-target="gray">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
 
 <div class="evo-space-18"></div>
 
@@ -456,15 +354,21 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
-    </div>
+<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<p class="text-measure-6 text-size-6 trans-gray-15">Text and box shadows are available.</p>
+<div class="four-up">
+<div class="evo-codeblock" data-identifier="shadow">
+<h2 class="text-shadow evo-color-white text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="box-shadow evo-color-white-bg">&nbsp;</div>
+</div>
+</div>
+<div class="evo-space-10"></div>
+<div class="evo-codeblock-target" data-target="shadow">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
 
 <div class="evo-space-18"></div>
 
@@ -499,10 +403,10 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
 
 <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Horizontal lines.</h3>
-<div class="evo-codeblock" data-identifier="box"><hr class="evo-line line-thin line-dashed" />
+<div class="evo-codeblock" data-identifier="line"><hr class="evo-line line-thin line-dashed" />
 </div>
 <div class="evo-space"></div>
-<div class="evo-codeblock-target" data-target="box">
+<div class="evo-codeblock-target" data-target="line">
 <pre class="evo-box-left box-left-thin padding-left-9"><code>
 <!-- HTML will show up inside here --></code>
 </pre>
@@ -540,8 +444,8 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
 
 <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Border box lines.</h3>
-<div class="evo-codeblock" data-identifier="box"><div class="evo-box image-size-20">
-</div>
+<div class="evo-codeblock" data-identifier="box">
+<div class="evo-box image-size-20"></div>
 </div>
 <div class="evo-space"></div>
 <div class="evo-codeblock-target" data-target="box">
@@ -579,15 +483,18 @@ $html_tap_highlight_color:  rgba(0, 0, 0, 0);
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-    <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start designing in-browser using only HTML, like this:</p>
-    <pre class="evo-box-left box-left-thin padding-left-9">&lt;p class="text-bold text-size-6 text-tracking-5 color-22 
-      evo-box-left box-left-color-22 padding-left-8"&gt;
-      Sample output from HTML.&lt;/p&gt;</pre>
-      <div class="evo-space-medium"></div>
-      <p class="text-bold text-size-6 text-tracking-5 color-22 evo-box-left box-left-color-22 padding-left-8">Sample output from HTML.</p>
-      <!-- <div class="evo-space"></div> -->
-    </div>
+<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<p class="text-measure-6 text-size-6 trans-gray-15">Evo icons are available in multiple weights.</p>
+<div class="evo-codeblock" data-identifier="image">
+<img src="../image/elements/circle-chevron-bold.svg" height="50rem" width="50rem" />
+</div>
+<div class="evo-space-5"></div>
+<div class="evo-codeblock-target" data-target="image">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
 
 <div class="evo-space-18"></div>
 

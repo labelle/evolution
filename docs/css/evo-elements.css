@@ -1647,12 +1647,14 @@ body.debug-space div[class*="padding-"] {
   outline: 1px solid red !important;
   background-color: red !important; }
 
-body.space-demo div[class*="evo-space"] {
+.space-demo > div[class*="space-"] {
   /*padding-bottom: 5rem;*/
   background-color: #fff;
   margin-top: .5em;
   margin-bottom: 3em;
-  /*border-width: 1px;*/ }
+  border-width: 1px;
+  border-style: dashed;
+  border-color: gray; }
 
 body.space-demo div[class*="margin-"] {
   padding-bottom: 3rem;
