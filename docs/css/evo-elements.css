@@ -5163,6 +5163,18 @@ p {
 .inverse-text-glow-25 {
   text-shadow: 0 0 15.97em white; }
 
+.text-rotate {
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-90 {
+  transform: rotate(90deg); }
+
+.text-rotate--90 {
+  transform: rotate(-90deg); }
+
 header.fluid-header {
   padding: 10vmin 1rem;
   margin: 0 0 8vmin 0; }
