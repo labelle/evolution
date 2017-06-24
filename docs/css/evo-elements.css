@@ -1995,13 +1995,13 @@ body.space-demo div[class*="padding-"] {
 .space-30 {
   height: 125rem; }
 
-.evo-space-margin-thin {
+.evo-margin-thin {
   margin-bottom: 0.625rem; }
 
-.evo-space-margin-medium {
+.evo-margin-medium {
   margin-bottom: 1.4375rem; }
 
-.evo-space-margin-thick {
+.evo-margin-thick {
   margin-bottom: 3.75rem; }
 
 .margin-0 {
@@ -2394,13 +2394,13 @@ body.space-demo div[class*="padding-"] {
 .margin-right-25 {
   margin-right: 16rem; }
 
-.evo-space-padding-thin {
+.evo-padding-thin {
   padding-bottom: 0.625rem; }
 
-.evo-space-padding-medium {
+.evo-padding-medium {
   padding-bottom: 1.4375rem; }
 
-.evo-space-padding-thick {
+.evo-padding-thick {
   padding-bottom: 3.75rem; }
 
 .padding-0 {
