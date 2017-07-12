@@ -2,6 +2,11 @@
 
 @import "../evo_variables/evo_variables";
 
+.code-inline {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 // Evo Code
 // Place Code tag within Pre tag
 // https://developer.mozilla.org/en-US/docs/Web/CSS/white-space

@@ -47,6 +47,49 @@
 }
 }
 
+// Inverse list lines
+
+#{$evo}-list-lines-inverse {
+// @extend #{$evo}-text;
+  // margin-left: #{$text_line_list_margin_left};
+  list-style-type: #{$line_list_bullet_type};
+  & ul,
+  & ol {
+  margin-bottom: #{$line_list_margin_bottom};
+// width: 90%;
+}
+& li {
+  padding-top: #{$line_list_padding_top}; // .25em
+  padding-left: #{$line_list_padding_left}; // 0
+  padding-bottom: #{$line_list_padding_bottom}; // .25em
+  margin-bottom: #{$line_list_item_margin_bottom}; //0
+  &:before {
+  // This is to accomodate special numbered lists
+  // transform: translateY(-17%); // delete
+  // transform: translateY(50%); // list-padding-thick
+  transform: translateY(30%); // list-padding-medium
+  // transform: translateY(-5%); // list-padding-thin
+  // transform: translateY(-34%); // list-padding-none
+  }
+  &:first-child {
+  // border-top: #{$line_list_top_line};
+  border-top-style: #{$line_list_top_line_style};
+  border-top-width: #{$line_list_top_line_width};
+  border-top-color: #{$inverse_line_list_top_line_color};
+}
+   &:not(:first-child) {
+  border-top-style: #{$line_list_middle_line_style};
+  border-top-width: #{$line_list_middle_line_width};
+  border-top-color: #{$inverse_line_list_middle_line_color};
+}
+   &:last-child {
+  border-bottom-style: #{$line_list_bottom_line_style};
+  border-bottom-width: #{$line_list_bottom_line_width};
+  border-bottom-color: #{$inverse_line_list_bottom_line_color};
+}
+}
+}
+
 
 // Hacky utility helpers to align number lists vertically
 .align-number-thick li:before {

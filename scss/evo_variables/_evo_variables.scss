@@ -300,8 +300,8 @@ $line_list_padding_bottom:              1em; // or #{$u-17}em or .275em space be
 
 
 $line_list_top_line_width:              thin; // thick
-$line_list_top_line_style:              solid;
-$line_list_top_line_color:              #000;
+$line_list_top_line_style:              solid; // solid
+$line_list_top_line_color:              #ccc;
 
 $inverse_line_list_top_line_color:      #333;
 
@@ -315,9 +315,9 @@ $inverse_line_list_middle_line_color:   #333;
 
 $line_list_bottom_line_width:           thin; // medium
 $line_list_bottom_line_style:           solid;
-$line_list_bottom_line_color:           #000;
+$line_list_bottom_line_color:           #ccc;
 
-$inverse_line_list_bottom_line_color:   #fff;
+$inverse_line_list_bottom_line_color:   #333;
 
 
 

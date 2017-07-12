@@ -213,17 +213,6 @@ button[disabled] {
   -webkit-appearance: button;
   font: inherit; }
 
-.code-inline {
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone; }
-
-tr:hover {
-  color: black;
-  background-color: lightyellow; }
-
-tr:hover a {
-  color: #00aeef; }
-
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -328,9 +317,6 @@ progress, meter {
 .evo-all-inherit {
   all: inherit; }
 
-.evo-codeblock-target > pre > code {
-  all: unset; }
-
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
 .debug * {
   outline: 1px solid gold; }
@@ -412,6 +398,10 @@ progress, meter {
   margin-right: 5%;
   background-color: white; }
 
+.code-inline {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
+
 pre.evo-code,
 pre.evo-inverse-code {
   margin: 0 auto;
@@ -452,6 +442,9 @@ pre.code-short > code {
   display: inline-block;
   white-space: nowrap;
   overflow: scroll; }
+
+.evo-codeblock-target > pre > code {
+  all: unset; }
 
 .evo-codeblock pre {
   margin: 0 auto;
@@ -1709,24 +1702,6 @@ body.space-demo div[class*="padding-"] {
   margin-bottom: 0;
   /*border-width: 1px;*/ }
 
-.evo-space-thin {
-  height: 0.625rem;
-  width: auto;
-  background-color: transparent;
-  clear: both; }
-
-.evo-space-medium {
-  height: 1.4375rem;
-  width: auto;
-  background-color: transparent;
-  clear: both; }
-
-.evo-space-thick {
-  height: 3.75rem;
-  width: auto;
-  background-color: transparent;
-  clear: both; }
-
 .space-none {
   height: 0; }
 
@@ -2008,15 +1983,6 @@ body.space-demo div[class*="padding-"] {
 
 .space-30 {
   height: 125rem; }
-
-.evo-margin-thin {
-  margin-bottom: 0.625rem; }
-
-.evo-margin-medium {
-  margin-bottom: 1.4375rem; }
-
-.evo-margin-thick {
-  margin-bottom: 3.75rem; }
 
 .margin-0 {
   margin: 0; }
@@ -2407,15 +2373,6 @@ body.space-demo div[class*="padding-"] {
 
 .margin-right-25 {
   margin-right: 16rem; }
-
-.evo-padding-thin {
-  padding-bottom: 0.625rem; }
-
-.evo-padding-medium {
-  padding-bottom: 1.4375rem; }
-
-.evo-padding-thick {
-  padding-bottom: 3.75rem; }
 
 .padding-0 {
   padding: 0; }
@@ -8725,7 +8682,7 @@ ol.list-lower-greek {
     .evo-list-lines li:first-child {
       border-top-style: solid;
       border-top-width: thin;
-      border-top-color: #000; }
+      border-top-color: #ccc; }
     .evo-list-lines li:not(:first-child) {
       border-top-style: dotted;
       border-top-width: thin;
@@ -8733,7 +8690,32 @@ ol.list-lower-greek {
     .evo-list-lines li:last-child {
       border-bottom-style: solid;
       border-bottom-width: thin;
-      border-bottom-color: #000; }
+      border-bottom-color: #ccc; }
+
+.evo-list-lines-inverse {
+  list-style-type: none; }
+  .evo-list-lines-inverse ul,
+  .evo-list-lines-inverse ol {
+    margin-bottom: 0.275rem; }
+  .evo-list-lines-inverse li {
+    padding-top: 1em;
+    padding-left: 0;
+    padding-bottom: 1em;
+    margin-bottom: 0; }
+    .evo-list-lines-inverse li:before {
+      transform: translateY(30%); }
+    .evo-list-lines-inverse li:first-child {
+      border-top-style: solid;
+      border-top-width: thin;
+      border-top-color: #333; }
+    .evo-list-lines-inverse li:not(:first-child) {
+      border-top-style: dotted;
+      border-top-width: thin;
+      border-top-color: #333; }
+    .evo-list-lines-inverse li:last-child {
+      border-bottom-style: solid;
+      border-bottom-width: thin;
+      border-bottom-color: #333; }
 
 .align-number-thick li:before {
   transform: translateY(50%); }
@@ -12621,6 +12603,13 @@ div.ad-shadow-300 {
   box-shadow: 0 34px 58px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center; }
 
+tr:hover {
+  color: black;
+  background-color: lightyellow; }
+
+tr:hover a {
+  color: #00aeef; }
+
 .evo-table,
 table.evo-table {
   border: 0;
@@ -12630,6 +12619,7 @@ table.evo-table {
     color: #555; }
   .evo-table caption,
   table.evo-table caption {
+    color: #555;
     text-align: left; }
   .evo-table th,
   table.evo-table th {
@@ -12646,6 +12636,33 @@ table.evo-table {
     padding-top: 1em;
     text-align: left;
     border-bottom: 1px solid #ccc; }
+
+.evo-table-inverse,
+table.evo-table-inverse {
+  border: 0;
+  width: 100%; }
+  .evo-table-inverse tr,
+  table.evo-table-inverse tr {
+    color: #fff; }
+  .evo-table-inverse caption,
+  table.evo-table-inverse caption {
+    color: #fff;
+    text-align: left; }
+  .evo-table-inverse th,
+  table.evo-table-inverse th {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: .5em;
+    text-align: left;
+    border-bottom: 1px solid #333; }
+  .evo-table-inverse td,
+  table.evo-table-inverse td {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: left;
+    border-bottom: 1px solid #333; }
 
 .right-align-last-column tbody > tr > td:last-of-type,
 .right-align-last-column thead > tr > th:last-of-type {

@@ -2,6 +2,18 @@
 
 @import "../evo_variables/evo_variables";
 
+// table
+
+tr:hover {
+    color: black;
+    background-color: lightyellow;
+}
+
+tr:hover a {
+    color: rgba(0, 174, 239, 1);
+}
+
+
 #{$evo}-table,
 table#{$evo}-table {
 
@@ -15,6 +27,7 @@ table#{$evo}-table {
 & caption {
     // margin-top: 1em;
     // padding-bottom: 1em;
+    color: #555;
     text-align: left;
     // margin-top: 3em;
     // text-transform: uppercase;
@@ -39,6 +52,53 @@ table#{$evo}-table {
     padding-top: 1em;
     text-align: left;
     border-bottom: 1px solid #ccc;
+    // border-bottom-size: 1px;
+    // border-bottom-style: solid;
+    // border-bottom-color: #ccc;
+}
+
+}
+
+
+#{$evo}-table-inverse,
+table#{$evo}-table-inverse {
+
+  border: 0;
+  width: 100%;
+
+& tr {
+    // Text color
+   color: #fff;
+}
+
+& caption {
+    // margin-top: 1em;
+    // padding-bottom: 1em;
+    color: #fff;
+    text-align: left;
+    // margin-top: 3em;
+    // text-transform: uppercase;
+    // letter-spacing: .1em;
+}
+
+& th {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: .5em;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    // border-bottom-size: 1px;
+    // border-bottom-style: solid;
+    // border-bottom-color: #ccc;
+}
+
+& td {
+    border: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: left;
+    border-bottom: 1px solid #333;
     // border-bottom-size: 1px;
     // border-bottom-style: solid;
     // border-bottom-color: #ccc;

@@ -5,9 +5,9 @@
 @import "../evo_variables/evo_variables";
 
 
-#{$evo}-space-thin     { height: #{$space_block_thin};   width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
-#{$evo}-space-medium   { height: #{$space_block_medium}; width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
-#{$evo}-space-thick    { height: #{$space_block_thick};  width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
+// #{$evo}-space-thin     { height: #{$space_block_thin};   width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
+// #{$evo}-space-medium   { height: #{$space_block_medium}; width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
+// #{$evo}-space-thick    { height: #{$space_block_thick};  width: #{$space_width}; background-color: #{$space_background_color}; clear: #{$space_clear_float}; }
 
 .space-none            { height: 0; }
 

@@ -2,6 +2,14 @@
 
 @import "../evo_variables/evo_variables";
 
+// This unsets the styling for evo HTML code and pre tags
+// Allows for cleaner looking code mirrors and code blocks
+// Primarily for style guide and design pattern pages
+
+.evo-codeblock-target > pre > code {
+  all: unset;
+}
+
 // Evo Code Block
 // https://github.com/labelle/evo-code-block
 

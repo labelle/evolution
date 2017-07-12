@@ -353,22 +353,6 @@ button[disabled] {
 
 // Move to code page...
 
-.code-inline {
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-// table
-
-tr:hover {
-    color: black;
-    background-color: lightyellow;
-}
-
-tr:hover a {
-    color: rgba(0, 174, 239, 1);
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -529,14 +513,6 @@ all: initial;
 
 .evo-all-inherit {
 all: inherit;
-}
-
-// This unsets the styling for evo HTML code and pre tags
-// Allows for cleaner looking code mirrors and code blocks
-// Primarily for style guide and design pattern pages
-
-.evo-codeblock-target > pre > code {
-  all: unset;
 }
 
 /* // https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
