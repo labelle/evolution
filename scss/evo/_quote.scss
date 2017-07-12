@@ -1,0 +1,140 @@
+///*      Q U O T E    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Q tag
+// https://www.w3schools.com/Tags/tag_q.asp
+// q {
+//     display: inline;
+// }
+ 
+// q:before {
+//     content: open-quote;
+// }
+ 
+// q:after {
+//     content: close-quote;
+// }
+
+// Q tag quote
+// https://www.dwheeler.com/essays/quotes-in-html.html
+
+// Double quote
+.text-quote,
+q.text-quote {
+    display: inline;
+}
+ 
+q.text-quote:before {
+    content: "“";
+    color: black;
+}
+ 
+q.text-quote:after {
+    content: "”";
+    color: black;
+}
+
+// Single quote
+.text-quote-single,
+q.text-quote-single.text-quote {
+    display: inline;
+}
+ 
+q.text-quote-single:before {
+    content: "‘";
+    color: black;
+}
+ 
+q.text-quote-single:after {
+    content: "’";
+    color: black;
+}
+
+
+// TEST
+// Note the Q inside blockquote, not the P
+
+.test-blockquote {
+    position: relative;
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-top-color: red;
+    padding-top: 2em;
+    // vertical-align: baseline;
+ & > q  {
+    padding-left: 5em;
+    // position: absolute;
+    font-family: "halis-rounded", sans-serif;
+    font-weight: bold;
+    color: red;
+    quotes: none;
+    display: block;
+}
+    & > q:before{
+    // vertical-align: baseline;
+    line-height: 1;
+    position: absolute;
+    font-size: 10em;
+    // padding-bottom: 0;
+    font-family: "halis-rounded", sans-serif;
+    font-weight: normal;
+    content: "“";
+    color: red;
+    left: 0;
+    top: .1em;
+}
+}
+
+// Look up more of these
+// https://unicode-table.com/en/blocks/general-punctuation/
+
+// Left Double Quotation Mark U+201C
+.test-blockquote-double {
+   & > q:before{
+    content: "“";
+}
+}
+
+// Heavy Double Turned Comma Quotation Mark Ornament U+275D
+.test-blockquote-double-round {
+   & > q:before{
+    content: "❝";
+    font-size: 5em;
+    top: .3em;
+}
+}
+
+
+
+// Double quote
+#{$evo}-text-quote,
+q#{evo}-text-quote {
+    display: inline;
+    color: #{$quote_color};
+    font-family: #{$quote_font_family};
+}
+ 
+q#{$evo}-text-quote:before {
+    content: "#{$quote_character_before}";
+    color: #{$quote_color_before};
+    font-family: #{$quote_font_before};
+}
+ 
+q#{$evo}-text-quote:after {
+    content: "#{$quote_character_after}";
+    color: #{$quote_font_after};
+    font-family: #{$quote_font_after};
+}
+
+
+// Blockquote tag
+// https://www.w3schools.com/Tags/tag_blockquote.asp
+// blockquote {
+//     display: block;
+//     margin-top: 1em;
+//     margin-bottom: 1em;
+//     margin-left: 40px;
+//     margin-right: 40px;
+// }

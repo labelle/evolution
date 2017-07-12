@@ -1,0 +1,138 @@
+///*      L A Y O U T   S C R E E N     */
+
+// Screen width and height size units
+
+@import "../evo_variables/evo_variables";
+
+// Just for the website
+
+// .screen-example > div {
+//   margin-left:-5%;
+//   margin-right:-5%;
+// }
+
+// http://www.w3schools.com/howto/howto_css_full_page.asp
+// Divs or tags must be placed directly within body, and not be nested in main, section, or other div tags
+
+
+// Full screen percent blocks
+
+.screen-200 { width: 100%; height: 200%; }
+
+.screen-150 { width: 100%; height: 150%; }
+
+.screen-full,
+.screen-100 { width: 100%; height: 100%; }
+
+.screen-90 { width: 90%; height: 90%; }
+
+.screen-80 { width: 80%; height: 80%; }
+
+.screen-75 { width: 75%; height: 75%; }
+
+.screen-70 { width: 70%; height: 70%; }
+
+.screen-66 { width: 66%; height: 66%; }
+
+.screen-60 { width: 60%; height: 60%; }
+
+.screen-half,
+.screen-50 { width: 50%; height: 50%; }
+
+.screen-40 { width: 40%; height: 40%; }
+
+.screen-third,
+.screen-33 { width: 33%; height: 33%; }
+
+.screen-30 { width: 30%; height: 30%; }
+
+.screen-quarter,
+.screen-25 { width: 25%; height: 25%; }
+
+.screen-20 { width: 20%; height: 20%; }
+
+.screen-10 { width: 10%; height: 10%; }
+
+.screen-none,
+.screen-0 { width: 0; height: 0; }
+
+
+
+// Wide percent blocks
+
+.screen-wide-full,
+.screen-wide-100 { width: 100%; }
+
+.screen-wide-90 { width: 90%; }
+
+.screen-wide-80 { width: 80%; }
+
+.screen-wide-75 { width: 75%; }
+
+.screen-wide-70 { width: 70%; }
+
+.screen-wide-66 { width: 66%; }
+
+.screen-wide-60 { width: 60%; }
+
+.screen-wide-half,
+.screen-wide-50 { width: 50%; }
+
+.screen-wide-40 { width: 40%; }
+
+.screen-wide-third,
+.screen-wide-33 { width: 33%; }
+
+.screen-wide-30 { width: 30%; }
+
+.screen-wide-quarter,
+.screen-wide-25 { width: 25%; }
+
+.screen-wide-20 { width: 20%; }
+
+.screen-wide-10 { width: 10%; }
+
+.screen-wide-none,
+.screen-wide-0 { width: 0; }
+
+
+// Tall percent blocks
+
+.screen-tall-full,
+.screen-tall-100 { height: 100%; }
+
+.screen-tall-90 { height: 90%; }
+
+.screen-tall-80 { height: 80%; }
+
+.screen-tall-75 { height: 75%; }
+
+.screen-tall-70 { height: 70%; }
+
+.screen-tall-66 { height: 66%; }
+
+.screen-tall-60 { height: 60%; }
+
+.screen-tall-50 { height: 50%; }
+
+.screen-tall-half,
+.screen-tall-50 { height: 50%; }
+
+.screen-tall-40 { height: 40%; }
+
+.screen-tall-third,
+.screen-tall-33 { height: 33%; }
+
+.screen-tall-30 { height: 30%; }
+
+.screen-tall-quarter,
+.screen-tall-25 { height: 25%; }
+
+.screen-tall-20 { height: 20%; }
+
+.screen-tall-10 { height: 10%; }
+
+.screen-tall-none,
+.screen-tall-0 { height: 0; }
+
+

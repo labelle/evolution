@@ -1,0 +1,186 @@
+///*      L I N E   E F F E C T S    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Artistic lines
+// http://www.cssportal.com/blog/style-hr-tag-with-css/
+
+// Horizontal shadow gradients
+
+hr.line-fade-thin { 
+  border: 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+}
+
+hr.line-fade-medium { 
+  border: 0;
+  height: 3px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+}
+
+hr.line-fade-thick { 
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+}
+
+// Vertical shadow gradients
+
+hr.line-shadow-0 {
+  height: 5px;
+  border: 0;
+  box-shadow: 0 6px 2px -6px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-1 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 3px -10px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-2 {
+  height: 20px;
+  border: 0;
+  box-shadow: 0 20px 5px -20px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-3 {
+  height: 30px;
+  border: 0;
+  box-shadow: 0 30px 10px -30px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-4 {
+  height: 40px;
+  border: 0;
+  box-shadow: 0 40px 20px -40px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-5 {
+  height: 50px;
+  border: 0;
+  box-shadow: 0 50px 30px -50px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-6 {
+  height: 60px;
+  border: 0;
+  box-shadow: 0 60px 40px -60px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-7 {
+  height: 70px;
+  border: 0;
+  box-shadow: 0 70px 60px -70px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-8 {
+  height: 80px;
+  border: 0;
+  box-shadow: 0 80px 60px -80px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-9 {
+  height: 90px;
+  border: 0;
+  box-shadow: 0 90px 70px -90px rgba(0, 0, 0, 0.5) inset;
+}
+
+hr.line-shadow-10 {
+  height: 100px;
+  border: 0;
+  box-shadow: 0 100px 80px -100px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+// Shadow Blurs
+
+hr.line-blur-0 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 3px 1px black;
+}
+
+hr.line-blur-1 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 5px 1px black;
+}
+
+hr.line-blur-2 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 10px 1px black;
+}
+
+hr.line-blur-3 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 15px 1px black;
+}
+
+hr.line-blur-4 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 20px 1px black;
+}
+
+hr.line-blur-5 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 25px 1px black;
+}
+
+hr.line-blur-6 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 30px 1px black;
+}
+
+hr.line-blur-7 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 35px 1px black;
+}
+
+hr.line-blur-8 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 40px 1px black;
+}
+
+hr.line-blur-9 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 45px 1px black;
+}
+
+hr.line-blur-10 {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 50px 1px black;
+}
+
+
+// Color
+
+hr.line-fade-black { 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+}
+
+hr.line-fade-gray { 
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 1), rgba(128, 128, 128, 0)); 
+}
+
+hr.line-fade-white { 
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
+}
+
+hr.line-fade-pink { 
+  // border: 0;
+  // height: 5px; 
+  background-image: linear-gradient(to right, rgba(255, 0, 255, 0), rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0)); 
+}
+

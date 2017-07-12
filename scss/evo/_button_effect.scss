@@ -1,0 +1,231 @@
+///*      B U T T O N   E F F E C T    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+
+.sub-main{
+  width: 30%;
+  margin:22px;
+  float: left;
+}
+
+
+/*Button One*/
+button.button-one {
+  // padding:20px 60px;
+  // outline: none;
+  // background-color: #27ae60;
+  // border: none;
+  // border-radius:5px;
+  // box-shadow: 0 9px #95a5a6;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+button.button-one:hover{
+  // background-color: #2ecc71;
+}
+
+button.button-one:active {
+  background-color:#{$evo_color};
+  border-color:#{$evo_color};
+  // box-shadow: 0 5px #95a5a6;
+ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  transform: translateY(.1em);
+}
+
+
+/*Button One Alt*/
+
+
+// http://codepen.io/phyesix/pen/EZebOJ?editors=1100
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50%{
+    transform: scale3d(.97, .97, .97) translateY(.15em);
+  }
+
+  65% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+button.button-one-alt {
+  // padding:20px 60px;
+  // outline: none;
+  // background-color: #27ae60;
+  // border: none;
+  // border-radius:5px;
+  // box-shadow: 0 9px #95a5a6;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ animation-iteration-count: 1;
+}
+
+button.button-one-alt:hover{
+  // background-color: #2ecc71;
+}
+
+button.button-one-alt:active {
+  background-color:#{$evo_color};
+  border-color:#{$evo_color};
+  // box-shadow: 0 5px #95a5a6;
+ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4), 0 5px 10px 0 rgba(0,0,0,0.4);
+  // transform: translateY(.1em);
+  animation-duration: .5s; 
+  animation-name: pulse;
+}
+
+/*Button Two*/
+button.button-two {
+  // border-radius: 4px;
+  // background-color:#d35400;
+  // border: none;
+  // padding: 20px;
+  // width: 200px;
+  // transition: all 0.5s;
+}
+
+
+button.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+button.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 1em;
+  // transition: 0.2s;
+}
+
+.button-two:hover span {
+  padding-right: 1em;
+}
+
+button.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Button Three*/
+button.button-three {
+    position: relative;
+    // background-color: #f39c12;
+    // border: none;
+    // padding: 20px;
+    // width: 200px;
+    // text-align: center;
+    // -webkit-transition-duration: 0.4s; /* Safari */
+    // transition-duration: 0.4s;
+    // text-decoration: none;
+    overflow: hidden;
+}
+
+button.button-three:hover{
+   // background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   // color:#000;
+}
+
+button.button-three:after {
+    content: "";
+    background: #{$evo_color};
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+// Neon button structure
+
+button#{$evo}-button-neon {
+     // Type
+     font-family: #{$neon};
+     // font-size: #{$button_font_size}; // DISABLED
+     text-align: #{$button_text_align};
+     // // text-decoration: #{$button_text_decoration}; // Doesn't work
+     // // color
+     // color: #{$button_color} !important;
+     // background-color: #{$button_background_color};
+     // border-color: #{$button_border_color};
+     // Structure
+     border-width: #{$button_border_width};
+     border-style: #{$button_border_style};
+     border-radius: #{$button_corner};
+     // border: #{$button_border};
+     padding-top: #{$button_padding_top};
+     padding-bottom: #{$button_padding_bottom};
+     padding-left: #{$button_padding_left};
+     padding-right: #{$button_padding_right};
+}
+
+// Neon color, ghost to solid
+
+button#{$evo}-button-neon {
+     // Type
+     // font-family: #{$button_font_family};
+     // font-size: #{$button_font_size};
+     // text-align: #{$button_text_align};
+     // text-decoration: #{$button_text_decoration}; // Doesn't work
+     // color
+     color: #f0f !important;
+     background-color: transparent;
+     border-color: #f0f;
+     // // Structure
+     // border-width: #{$button_border_width};
+     // border-style: #{$button_border_style};
+     // border-radius: #{$button_corner};
+     // // border: #{$button_border};
+     // padding-top: #{$button_padding_top};
+     // padding-bottom: #{$button_padding_bottom};
+     // padding-left: #{$button_padding_left};
+     // padding-right: #{$button_padding_right};
+}
+
+
+// Neon hover, ghost to solid
+// #f7f
+// #f0f
+// #fff
+
+button#{$evo}-button-neon:hover {
+     // type
+     // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
+     // color
+     color: #f7f !important;
+     background-color: #{$inverse_button_hover_background_color};
+     border-color: #f7f;
+     // structure
+     border-style: #{$button_hover_border_style};
+     border-width: #{$button_hover_border_width};
+     // border: #{$button_hover_border};
+     // hover
+     transition-duration: #{$button_hover_duration};
+     transition-timing-function: #{$button_hover_timing};
+     transition-delay: #{$button_hover_delay};
+     // transition: #{$button_hover_transition}; // this is not needed
+}

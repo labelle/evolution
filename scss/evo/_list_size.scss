@@ -1,0 +1,230 @@
+///*      L I S T   S I Z E    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+// List size large
+.list-size-large {
+     font-size: 115%;
+}
+
+// List size normal
+.list-size-medium {
+     font-size: 100%;
+}
+
+// List size small
+.list-size-small {
+     font-size: 85%;
+}
+
+
+// XXX Large Icon
+.list-icon-xxx-large li:before {
+height: 2em;
+width: 2em;
+left: -2.5em;
+top: .65em; // -.45em;
+}
+.list-icon-xxx-large li {
+    margin-left: 2.5em;
+}
+
+// XX Large Icon
+.list-icon-xx-large li:before {
+height: 1.75em;
+width: 1.75em;
+left: -2.25em;
+top: .65em; // -.3em;
+}
+.list-icon-xx-large li {
+    margin-left: 2.25em;
+}
+
+// X large Icon
+.list-icon-x-large li:before {
+height: 1.5em;
+width: 1.5em;
+left: -2em;
+top: .65em; // .5em or -.15em;
+}
+.list-icon-x-large li {
+    margin-left: 2em;
+}
+
+// Large Icon
+.list-icon-large li:before {
+height: 1.25em;
+width: 1.25em;
+left: -1.75em;
+top: .65em; // or -.05em
+}
+.list-icon-large li {
+    margin-left: 1.75em;
+}
+
+// Medium Icon
+.list-icon-medium li:before {
+height: 1em;
+width: 1em;
+left: -1.5em;
+top: .65em; //. 15em;
+}
+.list-icon-medium li {
+    margin-left: 1.5em;
+}
+
+
+// Small Icon
+.list-icon-small li:before {
+height:.75em; 
+width:.75em; 
+left: -1.25em;
+top: .65em; // .3em
+}
+.list-icon-small li {
+    margin-left: 1.25em;
+}
+
+// X Small Icon
+.list-icon-x-small li:before {
+height:.5em; 
+width:.5em; 
+left: -1em;
+top: .7em; // .425em;
+}
+.list-icon-x-small li {
+    margin-left: 1em;
+}
+
+// XX Small Icon
+.list-icon-xx-small li:before {
+height: .35em; 
+width: .35em; 
+left: -.75em;
+top: .65em; // .45em;
+}
+.list-icon-xx-small li {
+    margin-left: .75em;
+}
+
+
+
+
+// Space between lines
+
+// .list-tightest li {
+//     padding-bottom: #{$u-14}em;
+//     padding-top: #{$u-14}em;
+// }
+
+// .list-tighter li {
+//     padding-bottom: #{$u-15}em;
+//     padding-top: #{$u-15}em;
+// }
+
+// .list-tight li {
+//     padding-bottom: #{$u-16}em; // .2em
+//     padding-top: #{$u-16}em; // .2em
+// }
+
+.list-padding-thick li{
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
+   &:before {
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+}
+
+.list-padding-medium li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
+   &:before {
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+}
+
+.list-padding-thin li {
+    padding-top: .65em;
+    padding-bottom: .65em;
+//    &:first-of-type {
+//     padding-top: 0;
+// }
+//    &:last-of-type {
+//     padding-bottom: 0;
+// }
+   &:before {
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+}
+
+.list-padding-none li {
+    padding-top: 0;
+    padding-bottom: 0;
+    &:before {
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+}
+
+
+.list-margin-none li {
+    margin-bottom: 0;
+}
+
+
+// // Delete?
+// .list-loose li {
+//     padding-bottom: #{$u-19}em; // .375em
+//     padding-top: #{$u-19}em; // .375em
+// }
+
+// .list-looser li {
+//     padding-bottom: #{$u-21}em;
+//     padding-top: #{$u-21}em;
+// }
+
+// .list-loosest li {
+//     padding-bottom: #{$u-24}em;
+//     padding-top: #{$u-24}em;
+// }
+
+
+
+// Space between lines
+
+
+// .list-loose li {
+//     padding-bottom: 125%;
+//     padding-top: 125%;
+// }
+
+
+// // Space between lines
+
+
+// .list-tight li {
+//     padding-bottom: .8em;
+//     padding-top: .8em;
+// }
+
+// .list-loose li {
+//     padding-bottom: 1.2em;
+//     padding-top: 1.2em;
+// }

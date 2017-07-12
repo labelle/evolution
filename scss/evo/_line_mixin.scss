@@ -1,0 +1,153 @@
+///*      L I N E   M I X I N    */
+
+@import "../evo_variables/evo_variables";
+
+// Line base
+@mixin line($base) {
+  @if $base == base    {     
+  	border: 0;
+	margin: 0;
+	// margin-top: #{$hr_margin_top}; // 1em
+	// margin-bottom: #{$hr_margin_bottom}; // 1em
+	border-top-width: #{$line_width}; // initial, equal to medium
+	border-top-style: #{$line_style}; // solid
+	border-top-color: #{$line_color}; // initial }
+}
+  // Throw Warnings
+  @else { @warn "Line base mixin supports: base"; }
+}
+
+
+// Line size
+@mixin line($size) {
+@include line(base)
+  @if $size == thin        { border-top-width: thin; }
+  @else if $size == medium      { border-top-width: medium; }
+  @else if $size == thick       { border-top-width: thick; }
+
+  @else if $size == smallest    { border-top-width: 1px; border-top-style: dotted; }
+  @else if $size == smaller     { border-top-width: 1px; }
+  @else if $size == small       { border-top-width: 2px; }
+  @else if $size == big         { border-top-width: 4px; }
+  @else if $size == bigger      { border-top-width: 5px; }
+  @else if $size == biggest     { border-top-width: #{$px-0}; }
+
+  @else if $size == 0           { border-top-width: 0; }
+  @else if $size == 1           { border-top-width: 1px; }
+  @else if $size == 2           { border-top-width: 2px; }
+  @else if $size == 3           { border-top-width: 3px; }
+  @else if $size == 4           { border-top-width: 4px; }
+  @else if $size == 5           { border-top-width: 5px; }
+  @else if $size == 6           { border-top-width: #{$px-0}; } // 6px
+  @else if $size == 7           { border-top-width: #{$px-1}; } // 8px
+  @else if $size == 8           { border-top-width: #{$px-2}; } // 10px
+  @else if $size == 9           { border-top-width: #{$px-3}; } // 12px
+  @else if $size == 10          { border-top-width: #{$px-4}; } // 14px
+  @else if $size == 11          { border-top-width: #{$px-5}; } // 16px
+  @else if $size == 12          { border-top-width: #{$px-6}; } // 18px
+  @else if $size == 13          { border-top-width: #{$px-7}; } // 21px
+  @else if $size == 14          { border-top-width: #{$px-8}; } // 23px
+  @else if $size == 15          { border-top-width: #{$px-9}; } // 30px
+}
+
+// Line style
+@mixin line($style) {
+@include line(base)
+  @if $style == solid                  { border-top-style: solid; }
+  @else if $style == dotted            { border-top-style: dotted; }
+  @else if $style == dashed            { border-top-style: dashed; }
+  @else if $style == double            { border-top-style: double; }
+  // Extended styles
+  @else if $style == groove         { border-top-style: groove; }
+  @else if $style == ridge          { border-top-style: ridge; }
+  @else if $style == inset          { border-top-style: inset; }
+  @else if $style == outset         { border-top-style: outset; }
+  // Throw Warnings
+  @else { @warn "Line style mixin supports: solid, dotted, dashed, double, groove, ridge, inset, outset"; }
+}
+
+// Line color
+@mixin line($color) {
+@include line(base)
+  @if $color == black          { border-top-color: #{$black}; }
+  @else if $color == gray           { border-top-color: #{$gray-light}; }
+  @else if $color == white          { border-top-color: #{$white}; }
+    // Throw Warnings
+  @else { @warn "Line color mixin supports: black, gray, white"; }
+}
+
+// // Line effect fade
+// @mixin fade($base) {
+//   @if $base == base          { 
+//   border: 0;
+//   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+//  }
+
+// Line effect fade
+@mixin line($fade) {
+  hr { 
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+ }
+  @if $fade == fade-thin           { height: 1px;  }
+  @else if $fade == fade-medium    { height: 3px; }
+  @else if $fade == fade-thick     { height: 5px; }
+
+  @else if $fade == fade-black     { background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); }
+  @else if $fade == fade-gray      { background-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 1), rgba(128, 128, 128, 0)); }
+  @else if $fade == fade-white     { background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); }
+  @else if $fade == fade-pink     { background-image: linear-gradient(to right, rgba(255, 0, 255, 0), rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0)); }
+
+  // Throw Warnings
+  @else { @warn "Line fade mixin supports: fade-thin, fade-medium, fade-thick, fade-black, fade-gray, fade-white, fade-pink"; }
+}
+
+// Line effect shadow
+@mixin line($shadow) {
+  hr {  border: 0; }
+  @if $shadow == 0         { height: 5px; box-shadow: 0 6px 2px -6px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 1    { height: 10px; box-shadow: 0 10px 3px -10px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 2    { height: 20px; box-shadow: 0 20px 5px -20px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 3    { height: 30px; box-shadow: 0 30px 10px -30px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 4    { height: 40px; box-shadow: 0 40px 20px -40px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 5    { height: 50px; box-shadow: 0 50px 30px -50px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 6    { height: 60px; box-shadow: 0 60px 40px -60px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 7    { height: 70px; box-shadow: 0 70px 60px -70px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 8    { height: 80px; box-shadow: 0 80px 60px -80px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 9    { height: 90px; box-shadow: 0 90px 70px -90px rgba(0, 0, 0, 0.5) inset; }
+  @else if $shadow == 10   { height: 100px; box-shadow: 0 100px 80px -100px rgba(0, 0, 0, 0.5) inset; }
+  // Throw Warnings
+  @else { @warn "Line shadow mixin supports: numbers 0-10"; }
+}
+
+// Line effect blur
+@mixin line($blur) {
+  hr { border: 0; height: 0; }
+  @if $blur == 0         { box-shadow: 0 0 3px 1px black; }
+  @else if $blur == 1    { box-shadow: 0 0 5px 1px black; }
+  @else if $blur == 2    { box-shadow: 0 0 10px 1px black; }
+  @else if $blur == 3    { box-shadow: 0 0 15px 1px black; }
+  @else if $blur == 4    { box-shadow: 0 0 20px 1px black; }
+  @else if $blur == 5    { box-shadow: 0 0 25px 1px black; }
+  @else if $blur == 6    { box-shadow: 0 0 30px 1px black; }
+  @else if $blur == 7    { box-shadow: 0 0 35px 1px black; }
+  @else if $blur == 8    { box-shadow: 0 0 40px 1px black; }
+  @else if $blur == 9    { box-shadow: 0 0 45px 1px black; }
+  @else if $blur == 10   { box-shadow: 0 0 50px 1px black; }
+  // Throw Warnings
+  @else { @warn "Line blur mixin supports: numbers 0-10"; }
+}
+
+// Line reset
+@mixin line($reset) {
+  @if $reset == reset    { 
+  // Set to 0 rather than initial, to avoid the medium line stroke    
+  margin: 0;
+  border: 0;
+  border-top-width: 0;
+  border-top-style: 0;
+  border-top-color: 0;
+}
+  // Throw Warnings
+  @else { @warn "Line reset mixin supports: reset"; }
+}

@@ -4,198 +4,197 @@
 
 ///* =========================== */
 
+// @import "settings";
+@import "evo_variables/evo_variables";
 
 /*******************************************************************************
 *
 * Evo Elements (beta)
 * A CSS framework for rapid HTML design
-* Copyright 2017 Labelle Creative LLC
-* MIT License
-*
+* #{$version_text} #{$version} #{$version_url} #{$copyright} #{$license}
+* Full MIT license details live in the Github repository
 *******************************************************************************/
 
-// @import "settings";
-@import "variables";
 
 // Global styles
-// @import "element/reset";
-@import "element/global";
-// @import "element/nav";
+// @import "evo/reset";
+@import "evo/global";
+// @import "evo/nav";
 
 // Main
-@import "element/code";
-@import "element/code_mirror";
+@import "evo/code";
+@import "evo/code_mirror";
 
 // Mixins
-@import "element/font_mixin";
-@import "element/text_mixin";
-// @import "element/line_mixin";
-@import "element/color_mixin";
-// @import "element/box_mixin";
-// @import "element/space_mixin";
-// @import "element/layout_mixin";
-// @import "element/image_mixin";
+@import "evo/font_mixin";
+@import "evo/text_mixin";
+// @import "evo/line_mixin";
+@import "evo/color_mixin";
+// @import "evo/box_mixin";
+// @import "evo/space_mixin";
+// @import "evo/layout_mixin";
+// @import "evo/image_mixin";
 
 
 // layout
-@import "element/layout";
-@import "element/layout_grid";
-@import "element/layout_position";
-@import "element/layout_flex";
-@import "element/layout_screen";
-@import "element/layout_view";
-@import "element/layout_masonry";
-@import "element/layout_iframe";
-@import "element/layout_play";
+@import "evo/layout";
+@import "evo/layout_grid";
+@import "evo/layout_position";
+@import "evo/layout_flex";
+@import "evo/layout_screen";
+@import "evo/layout_view";
+@import "evo/layout_masonry";
+@import "evo/layout_iframe";
+@import "evo/layout_play";
 
 // space
-@import "element/space";
-@import "element/space_block";
-// @import "element/space_view";
-@import "element/space_margin";
-@import "element/space_padding";
-// @import "element/space_effect";
-// @import "element/space_play";
+@import "evo/space";
+@import "evo/space_block";
+// @import "evo/space_view";
+@import "evo/space_margin";
+@import "evo/space_padding";
+// @import "evo/space_effect";
+// @import "evo/space_play";
 
 // Color
-@import "element/color";
-@import "element/color_gray";
-@import "element/color_natural";
-@import "element/color_gradient";
-@import "element/color_effect";
-@import "element/color_play"; // Need html page
+@import "evo/color";
+@import "evo/color_gray";
+@import "evo/color_natural";
+@import "evo/color_gradient";
+@import "evo/color_effect";
+@import "evo/color_play"; // Need html page
 
 
 // Font
-@import "element/font";
-@import "element/font_type";
-@import "element/font_italic";
-@import "element/font_weight";
-@import "element/font_stack";
-@import "element/font_adobe";
-@import "element/font_google";
-@import "element/font_local";
-@import "element/font_effect";
-@import "element/font_play";
+@import "evo/font";
+@import "evo/font_type";
+@import "evo/font_italic";
+@import "evo/font_weight";
+@import "evo/font_stack";
+@import "evo/font_adobe";
+@import "evo/font_google";
+@import "evo/font_local";
+@import "evo/font_effect";
+@import "evo/font_play";
 
 // Text
-@import "element/text";
-@import "element/text_style";
-@import "element/text_size";
-@import "element/text_leading";
-@import "element/text_tracking";
-@import "element/text_measure";
-@import "element/text_shadow";
-@import "element/text_bevel";
-@import "element/text_glow";
-@import "element/text_effect"; // need to document
-@import "element/text_play";
+@import "evo/text";
+@import "evo/text_style";
+@import "evo/text_size";
+@import "evo/text_leading";
+@import "evo/text_tracking";
+@import "evo/text_measure";
+@import "evo/text_shadow";
+@import "evo/text_bevel";
+@import "evo/text_glow";
+@import "evo/text_effect"; // need to document
+@import "evo/text_play";
 
 // Selection
-@import "element/selection";
-@import "element/selection_gray";
-@import "element/selection_color";
+@import "evo/selection";
+@import "evo/selection_gray";
+@import "evo/selection_color";
 
 // Highlight
-@import "element/highlight";
-@import "element/highlight_mark";
-@import "element/highlight_color";
-@import "element/highlight_gray";
+@import "evo/highlight";
+@import "evo/highlight_mark";
+@import "evo/highlight_color";
+@import "evo/highlight_gray";
 
 // Quotes, etc.
-@import "element/quote";
-@import "element/dropcap";
-@import "element/breadcrumb";
+@import "evo/quote";
+@import "evo/dropcap";
+@import "evo/breadcrumb";
 
 // Link
-@import "element/link";
-@import "element/link_style";
-@import "element/link_bullet";
-@import "element/link_icon";
+@import "evo/link";
+@import "evo/link_style";
+@import "evo/link_bullet";
+@import "evo/link_icon";
 
 
 // Icon
-@import "element/icon";
-@import "element/icon_list";
-@import "element/icon_size";
-@import "element/icon_scroll";
+@import "evo/icon";
+@import "evo/icon_list";
+@import "evo/icon_size";
+@import "evo/icon_scroll";
 
 // Button
-@import "element/button";
-@import "element/button_style";
-@import "element/button_size";
-@import "element/button_color";
-@import "element/button_gray";
-@import "element/button_bullet";
-@import "element/button_icon";
-@import "element/button_effect";
-@import "element/button_play";
+@import "evo/button";
+@import "evo/button_style";
+@import "evo/button_size";
+@import "evo/button_color";
+@import "evo/button_gray";
+@import "evo/button_bullet";
+@import "evo/button_icon";
+@import "evo/button_effect";
+@import "evo/button_play";
 
 // List
-@import "element/list";
-@import "element/list_style";
-@import "element/list_size";
-@import "element/list_unordered";
-@import "element/list_bullet";
-@import "element/list_ordered";
-@import "element/list_number";
-@import "element/list_line";
-@import "element/list_play";
+@import "evo/list";
+@import "evo/list_style";
+@import "evo/list_size";
+@import "evo/list_unordered";
+@import "evo/list_bullet";
+@import "evo/list_ordered";
+@import "evo/list_number";
+@import "evo/list_line";
+@import "evo/list_play";
 
 // Image
-@import "element/image";
-@import "element/image_shape";
-@import "element/image_size";
-@import "element/image_ratio";
-@import "element/image_parallax";
-@import "element/image_fill";
-@import "element/image_placeholder";
-// @import "element/image_effect";
-@import "element/image_filter";
-@import "element/image_play";
+@import "evo/image";
+@import "evo/image_shape";
+@import "evo/image_size";
+@import "evo/image_ratio";
+@import "evo/image_parallax";
+@import "evo/image_fill";
+@import "evo/image_placeholder";
+// @import "evo/image_effect";
+@import "evo/image_filter";
+@import "evo/image_play";
 
 // Line
-@import "element/line";
-@import "element/line_style";
-@import "element/line_size";
-@import "element/line_color";
-@import "element/line_gray";
-@import "element/line_fade";
-@import "element/line_shadow";
-@import "element/line_blur";
-// @import "element/line_effect";
-// @import "element/line_play";
+@import "evo/line";
+@import "evo/line_style";
+@import "evo/line_size";
+@import "evo/line_color";
+@import "evo/line_gray";
+@import "evo/line_fade";
+@import "evo/line_shadow";
+@import "evo/line_blur";
+// @import "evo/line_effect";
+// @import "evo/line_play";
 
 // Box
-@import "element/box";
-@import "element/box_style";
-@import "element/box_shape"; // Also used by image-shape
-@import "element/box_size";
-@import "element/box_color";
-@import "element/box_gray";
-@import "element/box_effect";
-@import "element/box_shadow";
-// @import "element/box_play";
+@import "evo/box";
+@import "evo/box_style";
+@import "evo/box_shape"; // Also used by image-shape
+@import "evo/box_size";
+@import "evo/box_color";
+@import "evo/box_gray";
+@import "evo/box_effect";
+@import "evo/box_shadow";
+// @import "evo/box_play";
 
 // Table
-@import "element/table";
-@import "element/table_space";
-@import "element/table_style";
+@import "evo/table";
+@import "evo/table_space";
+@import "evo/table_style";
 
 // Form
-@import "element/form";
-@import "element/form_type";
-@import "element/form_size";
-// @import "element/form_placeholder"; // form placeholder text colors
-// @import "element/form_extras"; // form validation and password, needs works
-@import "element/form_effect"; // focus, hover
-@import "element/form_play"; // floating label
+@import "evo/form";
+@import "evo/form_type";
+@import "evo/form_size";
+// @import "evo/form_placeholder"; // form placeholder text colors
+// @import "evo/form_extras"; // form validation and password, needs works
+@import "evo/form_effect"; // focus, hover
+@import "evo/form_play"; // floating label
 
 // Video
-@import "element/video";
+@import "evo/video";
 
 // Map
-@import "element/map";
+@import "evo/map";
 
 
 

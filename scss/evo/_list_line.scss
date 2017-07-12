@@ -1,0 +1,268 @@
+///*      L I S T   L I N E    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Lists with lines
+// https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
+
+#{$evo}-list-lines {
+// @extend #{$evo}-text;
+  // margin-left: #{$text_line_list_margin_left};
+  list-style-type: #{$line_list_bullet_type};
+  & ul,
+  & ol {
+  margin-bottom: #{$line_list_margin_bottom};
+// width: 90%;
+}
+& li {
+  padding-top: #{$line_list_padding_top}; // .25em
+  padding-left: #{$line_list_padding_left}; // 0
+  padding-bottom: #{$line_list_padding_bottom}; // .25em
+  margin-bottom: #{$line_list_item_margin_bottom}; //0
+  &:before {
+  // This is to accomodate special numbered lists
+  // transform: translateY(-17%); // delete
+  // transform: translateY(50%); // list-padding-thick
+  transform: translateY(30%); // list-padding-medium
+  // transform: translateY(-5%); // list-padding-thin
+  // transform: translateY(-34%); // list-padding-none
+  }
+  &:first-child {
+  // border-top: #{$line_list_top_line};
+  border-top-style: #{$line_list_top_line_style};
+  border-top-width: #{$line_list_top_line_width};
+  border-top-color: #{$line_list_top_line_color};
+}
+   &:not(:first-child) {
+  border-top-style: #{$line_list_middle_line_style};
+  border-top-width: #{$line_list_middle_line_width};
+  border-top-color: #{$line_list_middle_line_color};
+}
+   &:last-child {
+  border-bottom-style: #{$line_list_bottom_line_style};
+  border-bottom-width: #{$line_list_bottom_line_width};
+  border-bottom-color: #{$line_list_bottom_line_color};
+}
+}
+}
+
+
+// Hacky utility helpers to align number lists vertically
+.align-number-thick li:before {
+  transform: translateY(50%); // list-padding-thick
+}
+
+.align-number-medium li:before {
+  transform: translateY(30%); // list-padding-medium
+}
+
+.align-number-thin li:before {
+  transform: translateY(-5%); // list-padding-thin
+}
+
+.align-number-none li:before {
+  transform: translateY(-34%); // list-padding-none
+}
+
+
+// list striping
+// IE 8 and earlier may require a jquery solution
+
+
+#{$evo}-list-stripe,
+#{$evo}-list-stripe-even {
+ li:nth-child(even) {
+  background-color: #{$gray-lighter};   
+}
+}
+
+#{$evo}-list-stripe-odd {
+ li:nth-child(odd) {
+  background-color: #{$gray-lighter};   
+}
+}
+
+
+// list indent
+// useful with striping
+
+// #{$evo}-list-lines-indent li {
+//   padding-left: .5em;
+//   padding-right: .5em;
+// }
+
+#{$evo}-list-lines-indent li {
+  padding-left: .75ch;
+  padding-right: .75ch;
+}
+
+#{$evo}-list-lines-indent-more li {
+  padding-left: 3ch;
+  padding-right: 3ch;
+}
+
+
+
+#{$evo}-list-lines-top li {
+  padding-top: 1.25ex !important;
+  min-height: 8ex !important;
+  padding-bottom: 1.25ex !important;
+}
+
+
+// list indent
+// useful with striping
+
+// #{$evo}-list-lines-phone li {
+//    padding-bottom: 1.5em !important;
+// }
+
+// Adjusts the height of each row consistently
+#{$evo}-list-lines-phone-1 li { min-height: 1em !important; }
+#{$evo}-list-lines-phone-2 li { min-height: 2em !important; }
+#{$evo}-list-lines-phone-3 li { min-height: 3em !important; }
+#{$evo}-list-lines-phone-4 li { min-height: 4em !important; }
+#{$evo}-list-lines-phone-5 li { min-height: 5em !important; }
+#{$evo}-list-lines-phone-6 li { min-height: 6em !important; }
+
+// Adds padding on the bottom
+// experiment with ch values? e.g. #{$u-30}ch
+#{$evo}-list-lines-phone-a li { padding-bottom: #{$u-25}em !important; }
+#{$evo}-list-lines-phone-b li { padding-bottom: #{$u-26}em  !important; }
+#{$evo}-list-lines-phone-c li { padding-bottom: #{$u-27}em  !important; }
+#{$evo}-list-lines-phone-d li { padding-bottom: #{$u-28}em  !important; }
+#{$evo}-list-lines-phone-e li { padding-bottom: #{$u-29}em  !important; }
+#{$evo}-list-lines-phone-f li { padding-bottom: #{$u-30}em  !important; }
+
+
+
+// line colors
+
+#{$evo}-list-lines-black li {
+  border-top-color: #{$black} !important;
+  &:last-child {
+  border-bottom-color: #{$black} !important;
+}
+}
+
+#{$evo}-list-lines-gray li {
+  border-top-color: #{$gray-lighter} !important;
+  &:last-child {
+  border-bottom-color: #{$gray-lighter} !important;
+}
+}
+
+#{$evo}-list-lines-white li {
+  border-top-color: #{$white} !important;
+  &:last-child {
+  border-bottom-color: #{$white} !important;
+}
+}
+
+
+// line styles
+
+#{$evo}-list-lines-solid li {
+  border-top-style: solid !important;
+  &:last-child {
+  border-bottom-style: solid !important;
+}
+}
+
+#{$evo}-list-lines-dotted li {
+  border-top-style: dotted !important;
+  &:last-child {
+  border-bottom-style: dotted !important;
+}
+}
+
+#{$evo}-list-lines-dashed li {
+  border-top-style: dashed !important;
+  &:last-child {
+  border-bottom-style: dashed !important;
+}
+}
+
+#{$evo}-list-lines-double li {
+  border-top-style: double !important;
+  &:last-child {
+  border-bottom-style: double !important;
+}
+}
+
+
+
+// line widths
+
+#{$evo}-list-lines-thin li { border-top-width: thin !important;
+&:last-child {
+  border-bottom-width: thin !important;
+}
+}
+
+#{$evo}-list-lines-medium li { border-top-width: medium !important;
+&:last-child {
+  border-bottom-width: medium !important;
+}
+}
+
+#{$evo}-list-lines-thick li { border-top-width: thick !important;
+&:last-child {
+  border-bottom-width: thick !important;
+}
+}
+
+
+
+// Top line width
+#{$evo}-list-line-top-thin li:first-child    { border-top-width: thin !important; }
+#{$evo}-list-line-top-medium li:first-child  { border-top-width: medium !important; }
+#{$evo}-list-line-top-thick li:first-child   { border-top-width: thick !important; }
+
+// Middle lines width
+#{$evo}-list-line-middle-thin li:not(:first-child)   { border-top-width: thin !important; }
+#{$evo}-list-line-middle-medium li:not(:first-child) { border-top-width: medium !important; }
+#{$evo}-list-line-middle-thick li:not(:first-child)  { border-top-width: thick !important; }
+
+// Bottom line width
+#{$evo}-list-line-bottom-thin li:last-child   { border-bottom-width: thin !important; }
+#{$evo}-list-line-bottom-medium li:last-child { border-bottom-width: medium !important; }
+#{$evo}-list-line-bottom-thick li:last-child  { border-bottom-width: thick !important; }
+
+
+// Top line colors
+#{$evo}-list-line-top-black li:first-child    { border-top-color: #{$black} !important; }
+#{$evo}-list-line-top-gray li:first-child  { border-top-color: #{$gray-light} !important; }
+#{$evo}-list-line-top-white li:first-child   { border-top-color: #{$white} !important; }
+
+// Middle lines colors
+#{$evo}-list-line-middle-black li:not(:first-child)   { border-top-color: #{$black} !important; }
+#{$evo}-list-line-middle-gray li:not(:first-child) { border-top-color: #{$gray-light} !important; }
+#{$evo}-list-line-middle-white li:not(:first-child)  { border-top-color: #{$white} !important; }
+
+// Bottom line colors
+#{$evo}-list-line-bottom-black li:last-child   { border-bottom-color: #{$black} !important; }
+#{$evo}-list-line-bottom-gray li:last-child { border-bottom-color: #{$gray-light} !important; }
+#{$evo}-list-line-bottom-white li:last-child  { border-bottom-color: #{$white} !important; }
+
+
+
+// Top line style
+#{$evo}-list-line-top-solid li:first-child    { border-top-style: solid !important; }
+#{$evo}-list-line-top-dotted li:first-child  { border-top-style: dotted !important; }
+#{$evo}-list-line-top-dashed li:first-child   { border-top-style: dashed !important; }
+#{$evo}-list-line-top-double li:first-child   { border-top-style: double !important; }
+
+// Middle lines style
+#{$evo}-list-line-middle-solid li:not(:first-child)   { border-top-style: solid !important; }
+#{$evo}-list-line-middle-dotted li:not(:first-child) { border-top-style: dotted !important; }
+#{$evo}-list-line-middle-dashed li:not(:first-child)  { border-top-style: dashed !important; }
+#{$evo}-list-line-middle-double li:not(:first-child)  { border-top-style: double !important; }
+
+// Bottom line style
+#{$evo}-list-line-bottom-solid li:last-child   { border-bottom-style: solid !important; }
+#{$evo}-list-line-bottom-dotted li:last-child { border-bottom-style: dotted !important; }
+#{$evo}-list-line-bottom-dashed li:last-child  { border-bottom-style: dashed !important; }
+#{$evo}-list-line-bottom-double li:last-child  { border-bottom-style: double !important; }
+

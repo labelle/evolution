@@ -1,0 +1,115 @@
+///*      C O L O R     */
+
+@import "../evo_variables/evo_variables";
+
+
+// For Demo
+
+
+body.color-demo {
+div[class*="evo-box"]  {
+margin-top: .5em;
+margin-bottom: 3em;
+/*border-width: 1px;*/
+}
+
+div.color-swatch {
+    height: 25px;
+}
+
+h2.margin-bottom-0 {
+    margin-bottom: -20px;
+}
+}
+
+// FPO Colors
+
+
+.color-fpo {
+	color: #{$color_fpo};
+}
+
+.color-bg-fpo {
+	background-color: #{$color_fpo};
+}
+
+
+.inherit-color {
+  color: inherit;
+}
+
+.inherit-color-bg {
+  background-color: inherit;
+}
+
+
+
+// Color classes
+
+.transparent-bg,
+.transparent-bg-hover:hover   {
+	background-color: transparent;
+}
+
+#{$evo}-color,
+#{$evo}-color-hover:hover      { color: #{$evo_color}; }
+
+#{$evo}-color-bg,
+#{$evo}-color-bg-hover:hover   { background-color: #{$evo_color}; }
+
+#{$evo}-color-box,
+#{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
+
+
+#{$evo}-color-white            { color: #{$evo_white}; }
+#{$evo}-color-white-bg         { background-color: #{$evo_white}; }
+
+#{$evo}-color-black            { color: #{$evo_black}; }
+#{$evo}-color-black-bg         { background-color: #{$evo_black}; }
+
+
+#{$evo}-gray                   { color: #{$evo_gray}; }
+#{$evo}-gray-bg                { background-color: #{$evo_gray}; }
+
+
+/* COLORS */
+
+// Colors derived from CMYK palette in photoshop. 
+// These are more pleasing than RBG variants.
+ 
+// #{$evo}-yellow     { color: #{$yellow}; }
+// #{$evo}-yellow-bg  { background-color: #{$yellow}; }
+
+// #{$evo}-orange     { color: #{$orange}; }
+// #{$evo}-orange-bg  { background-color: #{$orange}; }
+
+// #{$evo}-red        { color: #{$red}; }
+// #{$evo}-red-bg     { background-color: #{$red}; }
+
+// #{$evo}-pink    { color: #{$pink}; }
+// #{$evo}-pink-bg { background-color: #{$pink}; }
+
+// #{$evo}-purple    { color: #{$purple}; }
+// #{$evo}-purple-bg { background-color: #{$purple}; }
+
+// // #{$evo}-dark-blue       { color: #{$dark-blue}; }
+// // #{$evo}-dark-blue-bg    { background-color: #{$dark-blue}; }
+
+// #{$evo}-blue       { color: #{$blue}; }
+// #{$evo}-blue-bg    { background-color: #{$blue}; }
+
+// // #{$evo}-light-blue       { color: #{$light-blue}; }
+// // #{$evo}-light-blue-bg    { background-color: #{$light-blue}; }
+
+// #{$evo}-teal      { color: #{$teal}; }
+// #{$evo}-teal-bg   { background-color: #{$teal}; }
+
+// #{$evo}-green      { color: #{$green}; }
+// #{$evo}-green-bg   { background-color: #{$green}; }
+
+// // #{$evo}-lime      { color: #{$lime}; }
+// // #{$evo}-lime-bg   { background-color: #{$lime}; }
+
+// #{$evo}-gold    { color: #{$gold}; }
+// #{$evo}-gold-bg { background-color: #{$gold}; }
+

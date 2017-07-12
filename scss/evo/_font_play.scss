@@ -1,0 +1,27 @@
+///*      F O N T   P L A Y    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Individual System Fonts
+// May not be available in all devices
+// Use for experimentation and quick styling
+// Not recommended for production
+.font-athelas           { font-family: #{$athelas}; }
+.font-avenir            { font-family: #{$avenir}; }
+.font-baskerville       { font-family: #{$baskerville}; }
+.font-bodoni            { font-family: #{$bodoni}; }
+.font-calisto           { font-family: #{$calisto}; }
+.font-consolas          { font-family: #{$consolas}; }
+.font-courier           { font-family: #{$courier}; }
+.font-didot             { font-family: #{$didot}; }
+.font-garamond          { font-family: #{$garamond}; }
+.font-gotham            { font-family: #{$gotham}; }
+.font-gotham            { font-family: #{$gotham}; }
+.font-goudy             { font-family: #{$goudy}; }
+
+
+// Helvetica Neue
+.font-helvetica-thin    { font-family: #{$helvetica-thin}; }
+
+

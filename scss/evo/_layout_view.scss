@@ -1,0 +1,87 @@
+///*      L A Y O U T   V I E W     */
+
+// Viewport width and height size units
+
+@import "../evo_variables/evo_variables";
+
+
+
+// Just for the website
+
+.viewport-example > div {
+  margin-left:-5%;
+  margin-right:-5%;
+}
+
+/* https://snook.ca/archives/html_and_css/vm-vh-units */
+/* http://www.w3.org/TR/css3-values/#vm */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
+
+
+// Full screen viewport blocks
+
+.view-full,
+.view-100 { width: 100vw; height: 100vh; }
+
+.view-75 { width: 75vw; height: 75vh; }
+
+.view-66 { width: 66vw; height: 66vh; }
+
+.view-half,
+.view-50 { width: 50vw; height: 50vh; }
+
+.view-third,
+.view-33 { width: 33vw; height: 33vh; }
+
+.view-quarter,
+.view-25 { width: 25vw; height: 25vh; }
+
+.view-none,
+.view-0 { width: 0vw; height: 0vh; }
+
+
+
+// Wide viewport blocks
+
+.view-wide-full,
+.view-wide-100 { width: 100vw; }
+
+.view-wide-75 { width: 75vw; }
+
+.view-wide-66 { width: 66vw; }
+
+.view-wide-half,
+.view-wide-50 { width: 50vw; }
+
+.view-wide-third,
+.view-wide-33 { width: 33vw; }
+
+.view-wide-quarter,
+.view-wide-25 { width: 25vw; }
+
+.view-wide-none,
+.view-wide-0 { width: 0vw; }
+
+
+// Tall viewport blocks
+
+.view-tall-full,
+.view-tall-100 { height: 100vh; }
+
+.view-tall-75 { height: 75vh; }
+
+.view-tall-66 { height: 66vh; }
+
+.view-tall-half,
+.view-tall-50 { height: 50vh; }
+
+.view-tall-third,
+.view-tall-33 { height: 33vh; }
+
+.view-tall-quarter,
+.view-tall-25 { height: 25vh; }
+
+.view-tall-none,
+.view-tall-0 { height: 0vh; }
+
+

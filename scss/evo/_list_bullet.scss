@@ -1,0 +1,264 @@
+///*      L I S T   B U L L E T    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Evo list style
+#{$evo}-list-bullet li,
+.list-bullet-inverse li {
+    margin-left: #{$bullet_list_margin-left};
+    position: relative;
+    list-style-type: none;
+    list-style-position: #{$ul_list_style_position}; // outside
+    padding-left: #{$bullet_list_padding_left};
+    // vertical-align: middle;
+    // padding-left: -3em;
+}
+
+// Evo list icons
+#{$evo}-list-bullet li:before {
+content: '•';
+// display:inline-block;
+position: absolute;
+height: auto;// 1em;
+width: auto; // 1em;
+background: #{$bullet_list_background_color_1};
+border-radius: #{$bullet_list_background_corner};
+color: #{$bullet_list_bullet_color};
+// font-family: #{$bullet_list_bullet_font_family};// DISABLED
+text-align: center;
+left: -.2ch; // was left: 0;// was left: -1.5em;
+top: 0;
+vertical-align: middle;
+}
+
+// Evo list icons
+#{$evo}-list-bullet li:before li:before {
+background-image: url(#{$inverse_icon_list_background}); 
+}
+
+
+
+// // Make small and large version, each with correct number alignment?
+// #{$evo}-list-bullet {
+//   // counter-reset: '•';
+// list-style-type: none;
+// & ul,
+// & ul ul {
+//   margin-top: 1.5em;
+//   list-style-position: #{$ul_list_style_position}; // outside
+//   list-style-type: none;
+//     // margin-bottom: 1.5em;
+// }
+// & li {
+//   position: relative;
+//   // counter-increment: awesome-counter;
+//   // margin-left: -1em;
+//   padding-left: 2ch; // #{$number_list_padding_left};
+//   padding-top: inherit;
+//   padding-bottom: inherit;
+//   // vertical-align: bottom;
+// }
+// & li::before {
+//   content: '•';
+//   // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+//   position: absolute;
+//   // top: .5em; // use with transform: translateY();
+//   left: .2ch; // was left: 0;
+//   // transform: translateY(#{$number_list_number_position}); // use with top: 0;
+//   background: #{$bullet_list_background_color_1};
+//   width: auto;
+//   height: auto;
+//   border-radius: #{$bullet_list_background_corner};
+//   display: inline-block;
+//   line-height: inherit; // or #{$body_line_height}, was 1.5em
+//   color: #{$bullet_list_bullet_color};
+//   text-align: center;
+//   font-family: #{$bullet_list_bullet_font_family};
+//   padding-top: inherit;
+//   padding-bottom: inherit;
+//   // margin-right: 0.5em;
+// }
+// & ul li::before {
+//   background: #{$bullet_list_background_color_2};
+// }
+// & ul ul li::before {
+//   background: #{$bullet_list_background_color_3};
+// }
+// }
+
+
+
+// A simpler list bullet
+// May not align with paragragh text as well
+// // https://www.w3schools.com/cssref/pr_gen_content.asp
+
+ul.list-bullet {
+    list-style-type: none; // none
+    list-style-position: #{$ul_list_style_position}; // outside
+    & ul {
+    margin-bottom: #{$bullet_list_margin_bottom};
+}
+& li:before {
+    content: "#{$bullet_list_icon}"; // insert content that looks like bullets
+    padding-right: #{$bullet_list_bullet_padding};
+    color: #{$bullet_list_bullet_color}; // or a color you prefer
+}
+}
+
+
+
+
+// Other unicode symbols
+
+ul.bullet-dot li:before,
+a.bullet-dot:before,
+button.bullet-dot:before {
+    content: '•'; // insert content that looks like bullets
+}
+
+// En Dash U+2013
+ul.bullet-dash li:before,
+a.bullet-dash:before,
+button.bullet-dash:before {
+    content: "–"; // insert content that looks like bullets
+}
+
+// Division Slash U+2215
+ul.bullet-slash li:before,
+a.bullet-slash:before,
+button.bullet-slash:before {
+    content: "∕"; // insert content that looks like bullets
+}
+
+// Solidus U+002F
+ul.bullet-solidus li:before,
+a.bullet-solidus:before,
+button.bullet-solidus:before {
+    content: "/"; // insert content that looks like bullets
+}
+
+
+// Triangular Bullet U+2023 (only browser)
+ul.bullet-triangle li:before,
+a.bullet-triangle:before,
+button.bullet-triangle:before  {
+    content: "‣"; // insert content that looks like bullets
+}
+
+// Rightwards Arrow U+2192
+ul.bullet-arrow li:before,
+a.bullet-arrow:before,
+button.bullet-arrrow:before {
+    content: "→"; // insert content that looks like bullets
+}
+
+// Single Right-Pointing Angle Quotation Mark U+203A
+ul.bullet-arrow-single li:before,
+a.bullet-arrow-single:before,
+button.bullet-arrow-single:before {
+    content: "›"; // insert content that looks like bullets
+}
+
+ul.bullet-arrow-double li:before,
+a.bullet-arrow-double:before,
+button.bullet-arrow-double:before {
+    content: "»"; // insert content that looks like bullets
+}
+
+ul.bullet-arrow-double-back li:before,
+a.bullet-arrow-double-back:before,
+button.bullet-arrow-double-back:before {
+    content: "\00AB"; // insert content that looks like bullets
+}
+
+// Right-Pointing Double Angle Quotation Mark U+00BB
+ul.bullet-arrow-down li:before,
+a.bullet-arrow-down:before,
+button.bullet-arrow-down:before {
+    content: "↓"; // insert content that looks like bullets
+}
+
+// // Lock U+1F512
+// ul.bullet-lock li:before,
+// a.bullet-lock:before,
+// button.bullet-lock:before {
+//     content: "🔒"; // insert content that looks like bullets
+// }
+
+// // Lock Open U+1F512
+// ul.bullet-lock-open li:before,
+// a.bullet-lock-open:before,
+// button.bullet-lock-open:before {
+//     content: "🔓"; // insert content that looks like bullets
+// }
+
+// Ballot X U+2717 (only browser)
+ul.bullet-x li:before,
+a.bullet-x:before,
+button.bullet-x:before {
+    content: "✗"; // insert content that looks like bullets
+}
+
+// Check Mark U+2713 (only browser)
+ul.bullet-check li:before,
+a.bullet-check:before,
+button.bullet-check:before {
+    content: "✓"; // insert content that looks like bullets
+}
+
+
+// List color
+
+ul.bullet-color li:before,
+a.bullet-color:before,
+button.bullet-color:before {
+    color: #{$evo_color}; // or a color you prefer
+}
+
+ul.bullet-black li:before,
+a.bullet-black:before,
+button.bullet-black:before {
+    color: #{$evo_black}; // or a color you prefer
+}
+
+ul.bullet-white li:before,
+a.bullet-white:before,
+button.bullet-black:before {
+    color: #{$evo_white}; // or a color you prefer
+}
+
+ul.bullet-gray-dark li:before,
+a.bullet-gray-dark:before,
+button.bullet-gray-dark:before {
+    color: #{$evo_gray_dark}; // or a color you prefer
+}
+
+ul.bullet-gray li:before,
+a.bullet-gray:before,
+button.bullet-gray:before {
+    color: #{$evo_gray}; // or a color you prefer
+}
+
+ul.bullet-gray-light li:before,
+a.bullet-gray-light:before,
+button.bullet-gray-light:before {
+    color: #{$evo_gray_light}; // or a color you prefer
+}
+
+
+// MORE
+// https://unicode-table.com/en/blocks/arrows/
+// https://unicode-table.com/en/blocks/dingbats/
+// https://unicode-table.com/en/blocks/counting-rod-numerals/
+// https://unicode-table.com/en/blocks/miscellaneous-symbols-and-pictographs/
+// https://unicode-table.com/en/blocks/block-elements/
+// https://unicode-table.com/en/blocks/miscellaneous-technical/
+
+
+// https://unicode-table.com/en/blocks/supplemental-arrows-c/
+// https://unicode-table.com/en/blocks/geometric-shapes/
+// https://unicode-table.com/en/blocks/geometric-shapes-extended/
+
+// https://unicode-table.com/en/blocks/mathematical-operators/
+

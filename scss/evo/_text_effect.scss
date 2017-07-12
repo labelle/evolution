@@ -1,0 +1,26 @@
+///*      T E X T   E F F E C T     */
+
+@import "../evo_variables/evo_variables";
+
+// Move fluid text here after more R&D
+
+// maybe a sliding-up motion effect
+
+// MOVE THIS TO TEXT PLAY?
+// For view-row elements
+// Not perfect, needs refactoring
+// Should call it something else besides this general name
+.text-rotate {
+    -webkit-transform:rotate(90deg);
+    -webkit-transform-origin: 15px 25px;
+    display:inline-block;
+    width: 100px;
+}
+
+.text-rotate-90 {
+    transform:rotate(90deg);
+}
+
+.text-rotate--90 {
+    transform:rotate(-90deg);
+}

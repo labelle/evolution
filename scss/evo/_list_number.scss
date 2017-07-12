@@ -1,0 +1,190 @@
+///*      L I S T   N U M B E R    */
+
+@import "../evo_variables/evo_variables";
+
+
+// http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses#1636635
+// Add list counter utilities?
+
+
+// List Number
+// List 'Counter' approach
+// http://codepen.io/_lukewh/pen/WopzzO
+// https://css-tricks.com/style-list-markers-css/
+// https://www.w3schools.com/cssref/tryit.asp?filename=trycss_gen_counter-reset
+
+
+// Make small and large version, each with correct number alignment?
+#{$evo}-list-number {
+  counter-reset: awesome-counter;
+  list-style-type: none;
+& #{$evo}-list-number,
+& ol,
+& ol ol {
+  margin-top: 1.5em;
+  list-style-type: none;
+    // margin-bottom: 1.5em;
+}
+& li {
+  position: relative;
+  counter-increment: awesome-counter;
+  // margin-left: -1em;
+  padding-left: #{$number_list_padding_left};
+}
+& li::before {
+  content: counter(awesome-counter);
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  top: .5em;
+  left: 0;
+  transform: translateY(#{$number_list_number_position});
+  background: #{$number_list_background_color_1};
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: #{$number_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  color: #{$number_list_number_color};
+  text-align: center;
+  // font-family: #{$number_list_number_font_family}; // DISABLED
+  // margin-right: 0.5em;
+}
+& ol li::before {
+  background: #{$number_list_background_color_2};
+}
+& ol ol li::before {
+  background: #{$number_list_background_color_3};
+}
+}
+
+// .list-number-up li::before {
+//   transform: translateY(#{$number_list_number_position_up});
+// }
+
+// Hacky fix to nudge list numbers down in position when using line lists
+#{$evo}-list-number.list-number-down li::before {
+  transform: translateY(#{$number_list_number_position_down});
+}
+
+// Hacky utility to swap-in decimal-leading-zero...
+#{$evo}-list-number.list-number-counter-zero li::before {
+  content: counter(awesome-counter, decimal-leading-zero) "."; 
+}
+
+
+
+// A simpler list number
+// May not align with paragragh text as well
+// // https://www.w3schools.com/cssref/pr_gen_content.asp
+
+// ol .list-number {
+//     list-style-type: none; // none
+//     counter-reset: item;
+//     & ol {
+//     margin-bottom: #{$bullet_list_margin_bottom};
+// }
+// ol > li {
+//    counter-increment: item;
+// }
+// & li:before {
+//     content: counters(item, decimal-leading-zero);
+//     padding-right: #{$bullet_list_icon_padding};
+//     color: #{$bullet_list_icon_color}; // or a color you prefer
+// }
+// }
+
+
+
+// Need...
+// Here's another take on a numbered list, with purposeful alignment
+// http://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1?rq=1
+
+
+// ol .list-number-2 {
+// ol {
+//   list-style-type: none;
+//   counter-reset: item;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// & ol > li {
+//   display: table;
+//   counter-increment: item;
+//   margin-bottom: 0.6em;
+// }
+
+// & ol > li:before {
+//   content: counters(item, ".") ". ";
+//   display: table-cell;
+//   padding-right: 0.6em;    
+// }
+
+// & li ol > li {
+//   margin: 0;
+// }
+
+// & li ol > li:before {
+//   content: counters(item, ".") " ";
+// }
+// }
+
+
+
+
+
+// // http://semantic-ui.com/elements/list.html
+
+// .ui.ordered.list .list>.list-item, 
+// .ui.ordered.list>.list-item, 
+// ol.ui.list li {
+//   list-style-type: none;
+//   position: relative;
+// }
+
+// .ui.list .list>a.list-item, 
+// .ui.list>a.list-item {
+//   cursor: pointer;
+//   color: #4183c4;
+// }
+
+// .ui.list .list>.list-item, 
+// .ui.list>.list-item, 
+// ol.ui.list li, 
+// ul.ui.list li {
+//   display: list-item;
+//   table-layout: fixed;
+//   list-style-type: none;
+//   list-style-position: outside;
+//   padding: .21428571em 0;
+//   line-height: 1.14285714em;
+// }
+
+// .ui.ordered.list .list>.list-item:before, 
+// .ui.ordered.list>.list-item:before, 
+// ol.ui.list li:before {
+//   position: absolute;
+//   top: auto;
+//   left: auto;
+//   user-select: none;
+//   pointer-events: none;
+//   margin-left: -1.25rem;
+//   content: counters(ordered, ".") " ";
+//   text-align: right;
+//   color: rgba(0,0,0,.87);
+//   vertical-align: middle;
+//   opacity: .8;
+// }
+
+// .ui.list>.list-item:after, 
+// .ui.list>.list>.list-item, 
+// ol.ui.list>li:first-child:after, 
+// ul.ui.list>li:first-child:after {
+//   content: '';
+//   display: block;
+//   height: 0;
+//   clear: both;
+//   visibility: hidden;
+// }
+
+

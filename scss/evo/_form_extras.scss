@@ -1,0 +1,93 @@
+///*      F O R M   E X T R A S       */
+
+@import "../evo_variables/evo_variables";
+
+
+///*      F O R M   P A S S W O R D    */
+
+// using eye-book-gray to show/hide password
+
+.input-container,
+#input_container {
+    position:relative;
+    padding:0;
+    margin:0;
+}
+
+
+#input {
+    height:35px;
+    margin:0;
+    // padding-left: 30px;
+}
+
+#input_img {
+    position:absolute;
+    cursor: pointer;
+    bottom:10px;
+    right:10px;
+    width:23px;
+    height:23px;
+}
+
+#input_img_box {
+    position:absolute;
+    cursor: pointer;
+    bottom:5px;
+    right:10px;
+    width:23px;
+    height:23px;
+}
+
+#input_img,
+#input_img_box {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    width: 23px;
+    height: 23px
+}
+
+
+
+
+
+///*      F O R M   V A L I D A T I O N       */
+
+// https://www.smashingmagazine.com/2013/02/css-form-elements-problem/
+
+
+// Form Validation
+
+ul.helper-text {
+    // display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
+    }
+  }
+
+ul.helper-text-1 {
+    // display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
+    }
+  }
+  
+  // &.valid {
+  //   input { border: 2px solid #1fd34a; }
+  // }
+

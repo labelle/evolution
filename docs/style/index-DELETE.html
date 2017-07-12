@@ -1,0 +1,374 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!--         <link rel="stylesheet" href="../css/bootstrap-grid-only.css"> -->
+     <link rel="stylesheet" href="../css/evo-elements.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+        
+<style>
+
+.image-bg-styleguide {
+background-image: url(image/styleguide.jpg);
+}
+.image-bg-layout {
+background-image: url(image/layout.jpg);
+}
+.image-bg-code-playground {
+background-image: url(image/code-playground.jpg);
+}
+
+
+/*Flex*/
+
+.evo-flex {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+/*.inline-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}*/
+
+.flex-auto {
+        max-width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0
+}
+
+.flex-column {
+/*  margin: 1em;*/
+   padding: 1em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 8.333333333333%;
+}
+
+/*section:nth-of-type(1) .column:first-of-type {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 22px;
+}*/
+
+.flex-column-4 {
+  padding: 1em;
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 8.333333333333%;
+  min-width: 20%;
+}
+
+.flex-column-3 {
+  padding: 1em;
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 8.333333333333%;
+}
+
+/*section:first-of-type .column:nth-of-type(1) {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 66px;
+}*/
+
+
+/*Get rid of gutter in bootstrap rows*/
+
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:first-child,
+.row.no-gutter [class*='col-']:last-child{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+
+
+/*From slide site*/
+/*  [class*="card-"][class*="bg-"] figure img,
+  .fullscreen [class*="card-"] figure img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }*/
+
+    .flex-image-full,
+   .flex-image-full img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+ .min-width {
+    min-width: 50%;
+ }
+
+  .min-width-25 {
+    min-width: 25%;
+ }
+
+  @media screen and (max-width: 480px) {
+    .flex-wrap-sm  {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+    }
+    .min-width {
+    min-width: 100%;
+ }
+    .min-width-25 {
+    min-width: 100%;
+ }
+}
+
+
+
+</style>
+
+</head>
+<body class="gray-5-bg">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="evo/http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Main navigation -->
+<!-- <header role="banner">
+</header> -->
+<main>
+
+
+<div class="site-container gray-5-bg">
+
+<a href="../index.html"><p class="text-size-2 breadcrumb-back-to">Back to Index</p></a>
+<!--     <div class="evo-space"></div> -->
+
+<!-- Elements -->
+<section id="brand" class="evo-position">
+<!--         <div class="evo-space"></div> -->
+<!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
+ --> 
+        <h1 class="margin-bottom-10">Design</h1>
+        <p>Digital design guidelines, patterns, and assets.</p>
+<!--         <div class="evo-space"></div> -->
+</section>
+
+
+
+<div class="evo-color-white-bg">
+<section class="evo-flex flex-wrap flex-wrap-sm" style="min-height: 500px; max-height: 500px !important;">
+
+<div class="position-relative min-width">
+<div class="position-absolute flex-image-full image-bg-styleguide bg-cover" style="max-height: 500px !important; min-height: 250px">
+    <div class="position-middle text-center massive-font-1 evo-color-white z-2">
+    <h2 class="text-size-10 text-leading-5 margin-bottom-10 text-glow">Style Guide</h2>
+    <p class="margin-bottom-0">Core digital style guide for Evo.</p>
+    <div class="evo-space-9"></div>
+    <a href="style.html"><button class="evo-button inverse-ghost-to-solid button-size-small button-box-thin">View Guide</button></a>
+    </div>
+            <div class="trans-gray-15-bg image-fill"></div>
+</div>
+</div>
+
+<div class="flex-column flex-center-vertical self-center" style="min-height: 200px;">
+<ul class="evo-list list-padding-thin">
+<li><a href="style.html#designBW">Black and White</a></li>
+<li><a href="style.html#designGrays">Grays</a></li>
+<li><a href="style.html#designType">Typography</a></li>
+<li><a href="style.html#designIcons">Icons</a></li>
+<li><a href="style.html#designImages">Images</a></li>
+<li><a href="style.html#designGraphics">Graphics</a></li>
+<li><a href="style.html#designBoxesLines">Boxes + Lines</a></li>
+</ul>
+</div>
+
+<div class="flex-column self-center" style="min-height: 200px;">
+<ul class="evo-list list-padding-thin">
+<li><a href="style.html#designLists">Lists</a></li>
+<li><a href="style.html#designTables">Tables</a></li>
+<li><a href="style.html#designLinks">Links</a></li>
+<li><a href="style.html#designButtons">Buttons</a></li>
+<li><a href="style.html#designForms">Forms</a></li>
+<li><a href="style.html#designVideos">Videos</a></li>
+<li><a href="elements.html">Elements</a></li>
+</ul>
+</div>
+
+</section>
+</div>
+
+<div class="evo-space"></div>
+
+
+
+<div class="row">
+
+<div class="two-up shadow-hover-up evo-position">
+<a href="layout.html">
+<div class="position-relative image-size-20 evo-color-white-bg">
+<div src="#" class="position-absolute evo-image image-fill image-bg-layout bg-cover" style="width: 50%">
+              <div class="trans-gray-15-bg image-fill"></div>
+</div>
+<div class="position-right width-half z-2">
+<h3 class="padding-left-15 text-leading-6 h4">Website Section<br>Layouts</h3>
+<p class="padding-left-15 text-size-2 text-measure-2">Ready-made page layout and grid configurations</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="two-up shadow-hover-up evo-position">
+<a href="code-playground/index.html">
+<div class="position-relative image-size-20 evo-color-white-bg">
+<div src="#" class="position-absolute evo-image image-fill image-bg-code-playground bg-cover" style="width: 50%">
+              <div class="trans-gray-15-bg image-fill"></div>
+</div>
+<div class="position-right width-half z-2">
+<h3 class="padding-left-15 text-leading-6 h4">UI Code<br>Playground</h3>
+<p class="padding-left-15 text-size-2 text-measure-2">Practice editing some UI elements to better understand how this system works</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="evo-space-20"></div>
+
+
+<section id="evo" class="evo-position">
+<!--         <div class="evo-space"></div> -->
+<!--     <h1 class="text-size-7 evo-measure-5 evo-position-top-left">Evolution</h1>
+ --> 
+        <h2 class="margin-bottom-10">Design Pattern Library</h2>
+        <p>Reusable page templates, section templates, and component widget combinations.</p>
+        <div class="evo-space"></div>
+</section>
+
+
+
+<section class="evo-flex flex-wrap list-padding-thin">
+
+<ul class="evo-list flex-auto two-up">
+<li><a href="../hudson/index.html">Landing</a></li>
+<li><a href="../hudson/our-work.html">Our Work</a></li>
+<li><a href="../hudson/our-work-contaminants.html">Our Work Contaminants</a></li>
+<li><a href="../hudson/our-work-striped-bass.html">Our Work Striped Bass</a></li>
+<li><a href="../hudson/our-work-fisheries-striped-bass.html">Our Work Fisheries Striped Bass</a></li>
+<li><a href="../hudson/our-work-public-access.html">Our Work Public Access</a></li>
+<li><a href="../hudson/our-work-public-access-details.html">Our Work Public Access Details</a></li>
+<li><a href="../hudson/our-work-education.html">Our Work Education</a></li>
+<li><a href="../hudson/our-work-education-materials.html">Our Work Education Materials</a></li>
+<li><a href="../hudson/state-of-the-hudson.html">State of the Hudson</a></li>
+<li><a href="../hudson/our-grants.html">Our Grants</a></li>
+<li><a href="../hudson/hudson-river-improvement-fund.html">Hudson River Improvement Fund</a></li>
+<li><a href="../hudson/hudson-river-improvement-fund-detail.html">Hudson River Improvement Fund Detail</a></li>
+<li><a href="../hudson/hudson-river-improvement-fund-apply.html">Hudson River Improvement Fund Apply</a></li>
+<li><a href="../hudson/hudson-river-improvement-fund-upload.html">Hudson River Improvement Fund Upload</a></li>
+<li><a href="../hudson/hudson-river-improvement-fund-upload-success.html">Hudson River Improvement Fund Upload Success</a></li>
+<li><a href="../hudson/media-library.html">Media Library</a></li>
+<li><a href="../hudson/media-library-search-results.html">Media Library Search Results</a></li>
+<li><a href="../hudson/research-finder.html">Research Finder</a></li>
+<li><a href="../hudson/research-finder-search-results.html">Research Finder Search Results</a></li>
+<li><a href="../hudson/research-finder-one-search-result.html">Research Finder One Search Result</a></li>
+<li><a href="../hudson/about-us.html">About Us</a></li>
+<li><a href="../hudson/learn-more-hudson-river-foundation.html">Learn More: HRF</a></li>
+<li><a href="../hudson/learn-more-harbor-estuary-program.html">Learn More: HEP</a></li>
+<li><a href="../hudson/urban-water-ambassador.html">Article 1: Water Ambassador</a></li>
+<li><a href="../hudson/harbor-estuary-water-flow-volume.html">Article 2: Water Flow</a></li>
+<li><a href="../hudson/working-with-us.html">Working With Us</a></li>
+<li><a href="../hudson/subscribe.html">Subscribe</a></li>
+<li><a href="../hudson/press.html">Press</a></li>
+<li><a href="../hudson/ed-ames-seminars.html">Ed Ames Seminars</a></li>
+<li><a href="../hudson/ed-ames-seminars-grid.html">Ed Ames Seminars (grid view)</a></li>
+<li><a href="../hudson/contact-us.html">Contact Us</a></li>
+<li><a href="../hudson/search.html">Search</a></li>
+<li><a href="../hudson/search-results.html">Search Results</a></li>
+<div class="evo-space"></div>
+</ul>
+
+<ul class="evo-list flex-auto two-up">
+<li><a href="../design/component.html"><h3 class="h4">Components</h3></a></li>
+<li><a href="../design/component.html#imageHalfHero">Image Half Hero</a></li>
+<li><a href="../design/component.html#imageFullParallax">Image Full Parallax</a></li>
+<li><a href="../design/component.html#imageFullParallax2">Image Full Parallax 2</a></li>
+<li><a href="../design/component.html#articleHeroGraphic">Article Hero Graphic</a></li>
+<li><a href="../design/component.html#169ArticleHeroBackgroundImage">16:9 Article Hero Background Image</a></li>
+<li><a href="../design/component.html#imageLeftTextRight">Image Left Text Right</a></li>
+<li><a href="../design/component.html#textLeftImageRight">Text Left Image Right</a></li>
+<li><a href="../design/component.html#pageTitle">Page Title</a></li>
+<li><a href="../design/component.html#pageTitleBreadcrumb">Page Title Breadcrumb</a></li>
+<li><a href="../design/component.html#pageTitleBreadcrumbButton">Page Title Breadcrumb Button</a></li>
+<li><a href="../design/component.html#pageTitleIntro">Page Title Intro</a></li>
+<li><a href="../design/component.html#graySectionTitleCopy">Gray Section Title and Copy</a></li>
+<li><a href="../design/component.html#articleContent">Article Content</a></li>
+<li><a href="../design/component.html#contactUsForm">Contact Us Form</a></li>
+<li><a href="../design/component.html#uploadApplicationForm">Upload Application Form</a></li>
+<li><a href="../design/component.html#advancedSearch1">Upload Application Form</a></li>
+<li><a href="../design/component.html#map">Map</a></li>
+<li><a href="../design/component.html#tiles">Tiles</a></li>
+<li><a href="../design/component.html#relatedMedia">Related Media</a></li>
+<li><a href="../design/component.html#3columnTiles">3 Column Tiles</a></li>
+<li><a href="../design/component.html#2columnTiles">2 Column Tiles</a></li>
+<li><a href="../design/component.html#numberCircles">Number Circles</a></li>
+<li><a href="../design/component.html#mostPopularPhotos">Most Popular Photos</a></li>
+<li><a href="../design/component.html#fundsGrants">Funds Grants</a></li>
+<li><a href="../design/component.html#calendar">Calendar</a></li>
+<li><a href="../design/component.html#calendarTable">Calendar Table</a></li>
+<li><a href="../design/component.html#footer">Footer</a></li>
+<div class="evo-space"></div>
+</ul>
+
+<ul class="evo-list flex-auto four-up">
+<div class="evo-space"></div>
+</ul>
+
+
+</section>
+
+
+</div>
+</main>
+
+
+<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!--         <script src="../js/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

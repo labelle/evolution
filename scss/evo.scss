@@ -4,40 +4,194 @@
 
 ///* =========================== */
 
+@import "settings";
+// @import "evo_variables/evo_variables";
+
 /*******************************************************************************
 *
-* evolution.css
-*
-* The goal of this file is to capture all Evolution styles, used throughout the 
-* Elements site; some page specific styles are captured in seperate css files 
-* which are animation.css, style.css and stylguide.css. These three files can be 
-* found in same directory (css/)
-*
-*
-* Outline: (update as needed)
-*   _VARIABLES - Variables for controlling certain element structures and styles
-*              - All the variables are in this file
-*   _COLORS - 5 different color palettes are included in this file
-*   _FONTS - 4 different font families are included in this file
-*   _HEADERS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*              4 different styles: regular, bold, caps, bold-caps
-*              By default comes with line above headers (just use .evo-no-line class to toggle line)
-*   _TEXT - 2 different styles: regular and bold (size 1 - 30)
-*         - _TEXT is also used within orderd/unorderd list
-*         - 4 different list styes: regular/no-style, bullets, numbers and lines
-*         - bullets list are using custom SVGs
-*   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
-*            - http://elements.humanig.com/#/buttons
-*   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
-*            dropdown menu, text input, number input
-*   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
-*          - borders: top border (solid, dots, dash), (size 1 - 10)
-*                     bottom border (solid, dots, dash), (size 1 - 10)
-*          - boxes: (solid, dots, dash), (size 1 - 10)        
-*          - double: (solid), (size 1 - 10)
-*   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
-*   _SPACERS - Create space between elements (size 1 - 30)
-*   _ERRORS - A selection of aliases that forgive common mistypes
+* Evo Elements (beta)
+* A CSS framework for rapid HTML design
+* #{$version_text} #{$version} #{$version_url} #{$copyright} #{$license}
+* Full MIT license details live in the Github repository
 *
 *******************************************************************************/
 
+// Global styles
+// @import "evo/reset";
+@import "evo/global";
+// @import "evo/nav";
+
+// Main
+@import "evo/code";
+@import "evo/code_mirror";
+
+// Mixins
+@import "evo/font_mixin";
+@import "evo/text_mixin";
+// @import "evo/line_mixin";
+@import "evo/color_mixin";
+// @import "evo/box_mixin";
+// @import "evo/space_mixin";
+// @import "evo/layout_mixin";
+// @import "evo/image_mixin";
+
+
+// layout
+@import "evo/layout";
+@import "evo/layout_grid";
+@import "evo/layout_position";
+@import "evo/layout_flex";
+@import "evo/layout_screen";
+@import "evo/layout_view";
+@import "evo/layout_masonry";
+@import "evo/layout_iframe";
+@import "evo/layout_play";
+
+// space
+@import "evo/space";
+@import "evo/space_block";
+// @import "evo/space_view";
+@import "evo/space_margin";
+@import "evo/space_padding";
+// @import "evo/space_effect";
+// @import "evo/space_play";
+
+// Color
+@import "evo/color";
+@import "evo/color_gray";
+@import "evo/color_natural";
+@import "evo/color_gradient";
+@import "evo/color_effect";
+@import "evo/color_play"; // Need html page
+
+
+// Font
+@import "evo/font";
+@import "evo/font_type";
+@import "evo/font_italic";
+@import "evo/font_weight";
+@import "evo/font_stack";
+@import "evo/font_adobe";
+@import "evo/font_google";
+@import "evo/font_local";
+@import "evo/font_effect";
+@import "evo/font_play";
+
+// Text
+@import "evo/text";
+@import "evo/text_style";
+@import "evo/text_size";
+@import "evo/text_leading";
+@import "evo/text_tracking";
+@import "evo/text_measure";
+@import "evo/text_shadow";
+@import "evo/text_bevel";
+@import "evo/text_glow";
+@import "evo/text_effect"; // need to document
+@import "evo/text_play";
+
+// Selection
+@import "evo/selection";
+@import "evo/selection_gray";
+@import "evo/selection_color";
+
+// Highlight
+@import "evo/highlight";
+@import "evo/highlight_mark";
+@import "evo/highlight_color";
+@import "evo/highlight_gray";
+
+// Quotes, etc.
+@import "evo/quote";
+@import "evo/dropcap";
+@import "evo/breadcrumb";
+
+// Link
+@import "evo/link";
+@import "evo/link_style";
+@import "evo/link_bullet";
+@import "evo/link_icon";
+
+
+// Icon
+@import "evo/icon";
+@import "evo/icon_list";
+@import "evo/icon_size";
+@import "evo/icon_scroll";
+
+// Button
+@import "evo/button";
+@import "evo/button_style";
+@import "evo/button_size";
+@import "evo/button_color";
+@import "evo/button_gray";
+@import "evo/button_bullet";
+@import "evo/button_icon";
+@import "evo/button_effect";
+@import "evo/button_play";
+
+// List
+@import "evo/list";
+@import "evo/list_style";
+@import "evo/list_size";
+@import "evo/list_unordered";
+@import "evo/list_bullet";
+@import "evo/list_ordered";
+@import "evo/list_number";
+@import "evo/list_line";
+@import "evo/list_play";
+
+// Image
+@import "evo/image";
+@import "evo/image_shape";
+@import "evo/image_size";
+@import "evo/image_ratio";
+@import "evo/image_parallax";
+@import "evo/image_fill";
+@import "evo/image_placeholder";
+// @import "evo/image_effect";
+@import "evo/image_filter";
+@import "evo/image_play";
+
+// Line
+@import "evo/line";
+@import "evo/line_style";
+@import "evo/line_size";
+@import "evo/line_color";
+@import "evo/line_gray";
+@import "evo/line_fade";
+@import "evo/line_shadow";
+@import "evo/line_blur";
+// @import "evo/line_effect";
+// @import "evo/line_play";
+
+// Box
+@import "evo/box";
+@import "evo/box_style";
+@import "evo/box_shape"; // Also used by image-shape
+@import "evo/box_size";
+@import "evo/box_color";
+@import "evo/box_gray";
+@import "evo/box_effect";
+@import "evo/box_shadow";
+// @import "evo/box_play";
+
+// Table
+@import "evo/table";
+@import "evo/table_space";
+@import "evo/table_style";
+
+// Form
+@import "evo/form";
+@import "evo/form_type";
+@import "evo/form_size";
+// @import "evo/form_placeholder"; // form placeholder text colors
+// @import "evo/form_extras"; // form validation and password, needs works
+@import "evo/form_effect"; // focus, hover
+@import "evo/form_play"; // floating label
+
+// Video
+@import "evo/video";
+
+// Map
+@import "evo/map";

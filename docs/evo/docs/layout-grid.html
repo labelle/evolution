@@ -1,0 +1,770 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Evolution Layout Grid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!--         <link rel="stylesheet" href="../css/bootstrap-grid-only.css"> -->
+
+        <link rel="stylesheet" href="../css/evo-elements.css">
+
+<style>
+
+div[class*="evo-box"]  {
+padding-bottom: 5rem;
+/*background-color: #eee;*/
+background-color: #f7f3e2;
+margin-top: .5em;
+margin-bottom: 3em;
+/*border-width: 1px;*/
+}
+
+div.color-swatch {
+    height: 25px;
+}
+
+h2.margin-bottom-0 {
+    margin-bottom: -20px;
+}
+
+
+</style>
+</head>
+<body class="site-container">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Main navigation -->
+<!-- <header role="banner">
+</header> -->
+<main>
+
+<section id="evoLayoutGridIntro">
+
+<a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
+<h1 class="text-size-13 margin-bottom-0">Layout Grid</h1>
+
+<p class="evo-measure">Layout usage.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- Grid Col -->
+
+<section id="evoGrid">
+
+<h2 class="evo-text text-size-6">12 Column Grid</h2>
+
+<div class="evo-space-8"></div>
+
+<div class="layout-example">
+    <div class="evo-grid-12">evo-grid-12</div>
+
+    <div class="evo-grid-11">evo-grid-11</div>
+    <div class="evo-grid-1">evo-grid-1</div>
+
+    <div class="evo-grid-10">evo-grid-10</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+
+    <div class="evo-grid-9">evo-grid-9</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+
+    <div class="evo-grid-8">evo-grid-8</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+
+    <div class="evo-grid-8">evo-grid-8</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+
+    <div class="evo-grid-7">evo-grid-7</div>
+    <div class="evo-grid-5">evo-grid-5</div>
+
+    <div class="evo-grid-6">evo-grid-6</div>
+    <div class="evo-grid-6">evo-grid-6</div>
+
+    <div class="evo-grid-6">evo-grid-6</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+
+    <div class="evo-grid-5">evo-grid-5</div>
+    <div class="evo-grid-7">evo-grid-7</div>
+
+<!--     <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-8">evo-grid-8</div> -->
+
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+
+<!--     <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-9">evo-grid-9</div> -->
+
+<!--     <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-6">evo-grid-6</div>
+ -->
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+
+<!--     <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-10">evo-grid-10</div> -->
+
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-5">evo-grid-5</div>
+    <div class="evo-grid-5">evo-grid-5</div>
+
+<!--     <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+ -->
+
+<!--     <div class="evo-grid-1">evo-grid-1</div>
+    <div class="evo-grid-11">evo-grid-11</div> -->
+
+</div>
+<div class="evo-space-8"></div>
+
+<p class="evo-measure">Evolution features a basic 12 column responsive grid. Create an HTML tag using <code>&lt;div&gt;</code> or <code>&lt;section&gt;</code>, and apply an <code>evo-grid-[number]</code> class. To fix any layout issues try using the <code>clearfix</code> class on the very last element.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- Grid Col -->
+
+<section id="evoGrid">
+
+<h2 class="evo-text text-size-6">12 Column Grid</h2>
+
+<div class="evo-space-8"></div>
+
+<div class="layout-example">
+    <div class="evo-grid-12">evo-grid-12</div>
+
+    <div class="evo-grid-11">evo-grid-11</div>
+    <div class="evo-grid-1">evo-grid-1</div>
+
+    <div class="evo-grid-10">evo-grid-10</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+
+    <div class="evo-grid-9">evo-grid-9</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+
+    <div class="evo-grid-8">evo-grid-8</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+
+    <div class="evo-grid-7">evo-grid-7</div>
+    <div class="evo-grid-5">evo-grid-5</div>
+
+    <div class="evo-grid-6">evo-grid-6</div>
+    <div class="evo-grid-6">evo-grid-6</div>
+
+    <div class="evo-grid-5">evo-grid-5</div>
+    <div class="evo-grid-7">evo-grid-7</div>
+
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-8">evo-grid-8</div>
+
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-9">evo-grid-9</div>
+
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-10">evo-grid-10</div>
+
+    <div class="evo-grid-1">evo-grid-1</div>
+    <div class="evo-grid-11">evo-grid-11</div>
+
+</div>
+<div class="evo-space-8"></div>
+
+<p class="evo-measure">Evolution features a basic 12 column responsive grid. Create an HTML tag using <code>&lt;div&gt;</code> or <code>&lt;section&gt;</code>, and apply an <code>evo-grid-[number]</code> class. To fix any layout issues try using the <code>clearfix</code> class on the very last element.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+<!-- common grid variations -->
+<section>
+
+Common Grid Variations
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+<h4>1-up-grid</h4>
+    <div class="evo-grid-12">evo-grid-12</div>
+
+<section class="evo-space-10"></section>
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+<!-- common grid variations -->
+<section>
+
+Common Grid Variations
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+<h4>1-up-grid</h4>
+    <div class="evo-grid-12">evo-grid-12</div>
+
+<section class="evo-space-10"></section>
+
+<h4>2-up-grid</h4>
+    <div class="evo-grid-6">evo-grid-6</div>
+    <div class="evo-grid-6">evo-grid-6</div>
+
+<section class="evo-space-10"></section>
+
+<h4>3-up-grid</h4>
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+    <div class="evo-grid-4">evo-grid-4</div>
+
+<section class="evo-space-10"></section>
+
+<h4>4-up-grid</h4>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+    <div class="evo-grid-3">evo-grid-3</div>
+
+<section class="evo-space-10"></section>
+
+<h4>6-up-grid</h4>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+    <div class="evo-grid-2">evo-grid-2</div>
+
+<section class="evo-space-10"></section>
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+
+<!-- 4 column responsive grid sections -->
+
+<section>
+
+4 Column Grid Variations
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+    <div class="evo-grid-3">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+    <div class="evo-grid-3">4</div>
+
+<section class="evo-space-10"></section>
+
+
+
+    <div class="evo-grid-6">1</div>
+    <div class="evo-grid-6">2</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-8">1</div>
+    <div class="evo-grid-4">2</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-10">1</div>
+    <div class="evo-grid-2">2</div>
+
+<section class="evo-space-10"></section> -->
+
+    <div class="evo-grid-9">1</div>
+    <div class="evo-grid-3">2</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-4">3</div>
+
+<section class="evo-space-10"></section> -->
+
+    <div class="evo-grid-6">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-8">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+
+<section class="evo-space-10"></section> -->
+
+
+<!--     <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-6">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section> -->
+
+<!-- <h4>6-up-grid</h4>
+    <div class="evo-grid-2">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+    <div class="evo-grid-2">5</div>
+    <div class="evo-grid-2">6</div>
+
+<section class="evo-space-10"></section> -->
+
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- 3 column responsive grid sections -->
+
+<section>
+
+3 Column Grid Variations
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+    <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-4">3</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-8">1</div>
+    <div class="evo-grid-4">2</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-8">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-12">1</div>
+
+<section class="evo-space-10"></section> -->
+
+<!--     <div class="evo-grid-6">1</div>
+    <div class="evo-grid-6">2</div>
+
+<section class="evo-space-10"></section> -->
+
+
+
+<!--     <div class="evo-grid-10">1</div>
+    <div class="evo-grid-2">2</div>
+
+<section class="evo-space-10"></section>
+ -->
+<!--     <div class="evo-grid-9">1</div>
+    <div class="evo-grid-3">2</div>
+
+<section class="evo-space-10"></section> -->
+
+
+
+
+<!--     <div class="evo-grid-6">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+
+<section class="evo-space-10"></section> -->
+
+
+
+<!--     <div class="evo-grid-3">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+    <div class="evo-grid-3">4</div>
+
+<section class="evo-space-10"></section> -->
+
+    <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-6">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section>
+ -->
+    <div class="evo-grid-2">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+    <div class="evo-grid-2">5</div>
+    <div class="evo-grid-2">6</div>
+
+<section class="evo-space-10"></section>
+
+<!-- <h4>12-up-grid</h4>
+    <div class="evo-grid-1">1</div>
+    <div class="evo-grid-1">2</div>
+    <div class="evo-grid-1">3</div>
+    <div class="evo-grid-1">4</div>
+    <div class="evo-grid-1">5</div>
+    <div class="evo-grid-1">6</div>
+    <div class="evo-grid-1">7</div>
+    <div class="evo-grid-1">8</div>
+    <div class="evo-grid-1">9</div>
+    <div class="evo-grid-1">10</div>
+    <div class="evo-grid-1">11</div>
+    <div class="evo-grid-1">12</div>
+
+<section class="evo-space-10"></section> -->
+
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+
+<!-- 3 column responsive grid sections - Extended -->
+
+<section>
+
+3 Column Grid Variations - Extended
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+<h4>1-up-grid</h4>
+    <div class="evo-grid-12">1</div>
+
+<section class="evo-space-10"></section>
+
+<h4>2-up-grid</h4>
+    <div class="evo-grid-6">1</div>
+    <div class="evo-grid-6">2</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-8">1</div>
+    <div class="evo-grid-4">2</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-10">1</div>
+    <div class="evo-grid-2">2</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-9">1</div>
+    <div class="evo-grid-3">2</div>
+
+<section class="evo-space-10"></section> -->
+
+
+<h4>3-up-grid</h4>
+    <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-4">3</div>
+
+<section class="evo-space-10"></section>
+
+<!--     <div class="evo-grid-6">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+
+<section class="evo-space-10"></section> -->
+
+    <div class="evo-grid-8">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+
+<section class="evo-space-10"></section>
+
+<h4>4-up-grid</h4>
+<!--     <div class="evo-grid-3">1</div>
+    <div class="evo-grid-3">2</div>
+    <div class="evo-grid-3">3</div>
+    <div class="evo-grid-3">4</div>
+
+<section class="evo-space-10"></section> -->
+
+    <div class="evo-grid-4">1</div>
+    <div class="evo-grid-4">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-6">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+
+<section class="evo-space-10"></section>
+
+<h4>6-up-grid</h4>
+    <div class="evo-grid-2">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+    <div class="evo-grid-2">5</div>
+    <div class="evo-grid-2">6</div>
+
+<section class="evo-space-10"></section>
+
+<h4>12-up-grid</h4>
+    <div class="evo-grid-1">1</div>
+    <div class="evo-grid-1">2</div>
+    <div class="evo-grid-1">3</div>
+    <div class="evo-grid-1">4</div>
+    <div class="evo-grid-1">5</div>
+    <div class="evo-grid-1">6</div>
+    <div class="evo-grid-1">7</div>
+    <div class="evo-grid-1">8</div>
+    <div class="evo-grid-1">9</div>
+    <div class="evo-grid-1">10</div>
+    <div class="evo-grid-1">11</div>
+    <div class="evo-grid-1">12</div>
+
+<section class="evo-space-10"></section>
+
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+
+<!-- 7 column responsive grid sections -->
+
+<section>
+
+7 Column Grid Variations
+<div class="evo-space-8"></div>
+
+</section>
+
+<div class="layout-example">
+
+<h4>7-up-grid</h4>
+    <div class="evo-grid-1">1</div>
+    <div class="evo-grid-1">2</div>
+    <div class="evo-grid-1">3</div>
+    <div class="evo-grid-6">4</div>
+    <div class="evo-grid-1">5</div>
+    <div class="evo-grid-1">6</div>
+    <div class="evo-grid-1">7</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-1">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-2">3</div>
+    <div class="evo-grid-2">4</div>
+    <div class="evo-grid-2">5</div>
+    <div class="evo-grid-2">6</div>
+    <div class="evo-grid-1">7</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-2">1</div>
+    <div class="evo-grid-2">2</div>
+    <div class="evo-grid-1">3</div>
+    <div class="evo-grid-2">4</div>
+    <div class="evo-grid-1">5</div>
+    <div class="evo-grid-2">6</div>
+    <div class="evo-grid-2">7</div>
+
+<section class="evo-space-10"></section>
+
+    <div class="evo-grid-2">1</div>
+    <div class="evo-grid-1">2</div>
+    <div class="evo-grid-1">3</div>
+    <div class="evo-grid-4">4</div>
+    <div class="evo-grid-1">5</div>
+    <div class="evo-grid-1">6</div>
+    <div class="evo-grid-2">7</div>
+
+<section class="evo-space-10"></section>
+
+
+</div>
+
+<section>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">More grid variations can be found here.</p>
+
+<!-- TO DO: replace with .evo-inline-code block pattern -->
+<pre class="evo-inline-code evo-box evo-box-1">
+
+   &lt;p class="color-0"&gt;&lt;/p&gt;
+
+</pre>
+
+<div class="evo-space-19"></div>
+
+</section>
+
+
+</main>
+
+<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!--         <script src="../js/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

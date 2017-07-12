@@ -1,0 +1,104 @@
+///*      F O N T   V A R I A B L E S     */
+
+
+// Generic font-family
+$sans-serif:                        sans-serif !default;
+$serif:                             serif !default;
+$monospace:                         monospace !default;
+$cursive:                           cursive !default;
+$fantasy:                           fantasy !default;
+
+
+  // Borrowed in part from Tachyons
+  // Some reference from http://www.cssfontstack.com/
+$arial:            arial, 'Helvetica Neue', helvetica, sans-serif !default;
+$arial-black:      'Arial Black', 'Arial Bold', gadget, sans-serif !default;
+$athelas:          athelas, georgia, serif !default;
+$avenir:           'avenir next', avenir, sans-serif !default;
+$baskerville:      baskerville, serif !default;
+$bodoni:           "Bodoni MT", serif !default;
+$calisto:          "Calisto MT", serif !default;
+$consolas:         Consolas, monaco, monospace !default;
+$courier:          'Courier Next', courier, monospace !default;
+$courier-new:      'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace !default;
+$didot:            Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !default;
+$garamond:         garamond, serif !default;
+$goudy:            'Goudy Old Style', goudy, serif !default;
+$georgia:          georgia, times, 'Times New Roman', serif !default;
+$gotham:           'gotham HTF', gotham, serif !default;
+$helvetica:        'helvetica neue', helvetica, arial, sans-serif !default;
+$helvetica-thin:   'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$menlo:            menlo, consolas, monaco, 'Courier New', monospace !default;
+$monaco:           monaco, consolas, menlo, 'Courier New', monospace !default;
+$times:            times, serif !default;
+$times-new:        TimesNewRoman, 'Times New Roman', times, baskerville, georgia, serif !default;
+// Native from Booking.com
+// https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f
+$native-booking: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif !default;
+  // Borrowed from SmashingMagazine
+  // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-a
+$native-smashing: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
+  // Borrowed from Bootstrap
+  // https://github.com/twbs/bootstrap/pull/19098
+  // http://v4-alpha.getbootstrap.com/content/reboot/#native-font-stack
+$native-bootstrap: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+  // Borrowed from Tachyons
+  // http://tachyons.io/#style
+$native-tachyons:  -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
+
+
+// Google Fonts
+// https://www.wired.com/2016/10/meet-noto-googles-free-font-800-languages/
+$google-source-sans: 'Source Sans Pro', sans-serif !default;
+$google-source-serif: 'Source Serif Pro', serif !default;
+$google-source-code: 'Source Code Pro', monospace !default;
+
+$google-noto-sans: 'Noto Sans', sans-serif !default;
+$google-noto-serif: 'Noto Serif', serif !default;
+
+$google-lato: 'Lato', sans-serif !default;
+
+$google-garamond: 'Cormorant Garamond', 'Goudy Old Style', goudy, serif !default;
+
+
+// Adobe Edge Fonts
+$adobe-source-sans:  source-sans-pro, sans-serif !default;
+$adobe-source-serif: source-serif-pro, serif !default;
+$adobe-source-code:  source-code-pro, monospace !default;
+
+
+// Font Squirrel
+// Font Squirrel @font-face Webfont Kit
+// https://www.fontsquirrel.com/fonts/open-sans
+
+
+// Fontspring local fonts
+$didonesque-display: 'didonesquedisplay', serif;
+$didonesque-display-italic: 'didonesquedisplay_italic', serif;
+
+$diaria-promedium: 'diaria_promedium', serif;
+$diaria-promedium-italic: 'diaria_promedium_italic', serif;
+
+
+$fnordtwenty-three: 'fnordtwenty-three', serif;
+$fnordtwenty-three-italic: 'fnordtwenty-three_italic', serif;
+
+$harmansans:'harmansans', sans-serif;
+// $harmansans-inline: 'harmansans_inline', sans-serif;
+
+$halis-rounded: 'halis_r_regularregular', sans-serif;
+
+$festivo-lowercase: 'festivo_lcbasic', sans-serif;
+$festivo-outline: 'festivo_lcoutline', sans-serif;
+
+$gangrena: 'gangrenaregular', sans-serif;
+
+// // There is a glitch in one of the characters for ebenezer
+// $ebenezer: 'ebenezerregular', sans-serif;
+
+
+// Fontspace
+
+$neon:  'neon', sans-serif;
+
+

@@ -1,0 +1,55 @@
+///*      R E S E T     */
+
+@import "../evo_variables/evo_variables";
+
+
+// A very simple reset
+
+body .blueprint {
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    // margin: 0;
+}
+
+// Gives the body a margin
+body {
+    // margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main { 
+  line-height: 1.5rem;
+}
+
+
+// Very simple styling
+
+// Owl selector for line height white space rhythm
+main * + * {
+  margin-top: 1.5rem;
+}
+li, dt, dd, br, th, td {
+  margin-top: 0;
+}
+
+* + h2,
+* + h3 {
+	margin-top: 1.5em; // em, not rem, now
+}
+
+main * + *:not(p) {
+	margin: 3rem 0;
+}
+
+main :empty {
+	display: none;
+}
+
+}
+
+body .blueprint-inverse {
+ color: white;
+ background-color: black;
+}

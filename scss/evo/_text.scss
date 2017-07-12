@@ -1,0 +1,203 @@
+///*      T E X T    */
+
+@import "../evo_variables/evo_variables";
+
+
+/* Text */
+
+
+// Text
+// Should we eliminate margin top and margin bottom? Or make them inherit?
+#{$evo}-text {
+  font-size:       #{$text_size};
+  color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  letter-spacing:  #{$text_letter_spacing};
+  text-rendering:  #{$text_rendering};
+
+  // margin-top:      inherit; // #{$text_margin_top}
+  // margin-bottom:   inherit; // #{$text_margin_bottom}
+  
+  // margin-left:     #{$text_margin_left};
+  // padding-left:    #{$text_padding_left};
+  // list-style-position: #{$text_list_style_position};
+}
+
+// Text Inverse
+
+.text-inverse {
+   color:    #{$inverse_text_color};
+}
+
+// Text Reset
+
+.text-reset {
+  font-size:       initial;
+  color:           initial;
+  font-family:     initial;
+  font-weight:     initial;
+  font-weight:     initial;
+  font-style:      initial;
+  line-height:     initial;
+  text-decoration: initial;
+  text-transform:  initial;
+  text-align:      initial;
+  margin:          initial;
+  margin-top:      initial;
+  margin-bottom:   initial;
+  margin-left:     initial;
+  margin-right:    initial;
+  text-rendering:  initial;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-style:      #{$heading_font_style};
+  font-variant:    #{$heading_font_variant};
+  color:           #{$heading_color};
+  font-family:     #{$heading_font_family};
+  font-weight:     #{$heading_font_weight};
+  font-stretch:    #{$heading_font_stretch};
+  text-rendering:  #{$heading_text_rendering};
+  margin-top:      0; // reset
+}
+
+h1,
+.h1 { 
+  font-size:       #{$heading_size_h1}; 
+  line-height:     #{$heading_margin_bottom_h1};
+  letter-spacing:  #{$heading_letter_spacing_h1};
+  margin-bottom:   #{$heading_margin_bottom_h1};
+}
+
+h2,
+.h2 { 
+  font-size:       #{$heading_size_h2}; 
+  line-height:     #{$heading_margin_bottom_h2};
+  letter-spacing:  #{$heading_letter_spacing_h2};
+  margin-bottom:   #{$heading_margin_bottom_h2};
+}
+h3,
+.h3 { 
+  font-size:       #{$heading_size_h3}; 
+  line-height:     #{$heading_margin_bottom_h3};
+  letter-spacing:  #{$heading_letter_spacing_h3};
+  margin-bottom:   #{$heading_margin_bottom_h3};
+}
+h4,
+.h4 { 
+  font-size:       #{$heading_size_h4}; 
+  line-height:     #{$heading_margin_bottom_h4};
+  letter-spacing:  #{$heading_letter_spacing_h4};
+  margin-bottom:   #{$heading_margin_bottom_h4};
+}
+h5,
+.h5 { 
+  font-size:       #{$heading_size_h5}; 
+  line-height:     #{$heading_margin_bottom_h5};
+  letter-spacing:  #{$heading_letter_spacing_h5};
+  margin-bottom:   #{$heading_margin_bottom_h5};
+}
+h6,
+.h6 { 
+  font-size:       #{$heading_size_h6}; 
+  line-height:     #{$heading_margin_bottom_h6};
+  letter-spacing:  #{$heading_letter_spacing_h6};
+  margin-bottom:   #{$heading_margin_bottom_h6};
+}
+
+
+// Paragraph
+// Generally matches list style
+
+p {
+  // font-size:       #{$text_size};
+  color:           #{$text_color};
+  // font-family:     #{$text_font_family};
+  // font-weight:     #{$text_font_weight};
+  // line-height:     #{$text_line_height};
+  // letter-spacing:  #{$text_letter_spacing};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
+}
+
+
+// Word spacing
+// http://www.w3schools.com/cssref/pr_text_word-spacing.asp
+// word-spacing: normal|length|initial|inherit;
+// normally .25em
+
+.word-space-0 {
+word-spacing: 0;
+}
+
+.word-space-1 {
+word-spacing: .15em;
+}
+
+.word-space-2 {
+word-spacing: .25em; // default
+}
+
+.word-space-4 {
+word-spacing: .35em;
+}
+
+.word-space-5 {
+word-spacing: .5em;
+}
+
+
+
+.white-space-normal {
+  white-space: normal !important;
+}
+
+// What is the difference between break-word and word-break?
+// http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
+// https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+
+// replaces word-break. wraps long words starting at the next line, not where it should
+.break-word {
+  overflow-wrap: break-word;
+}
+
+// wraps long words starting at the point it should start
+// .word-break {
+//    word-wrap: break-word;
+// }
+
+// .no-break-word {
+//   overflow-wrap: keep-all;
+// }
+
+// wraps all words
+.all-break-word {
+  word-break: break-all;
+}
+
+
+
+
+// // Element Mixins
+// @mixin base($base) { 
+//     @if $base == text            { @extend #{$evo}-text; }
+//     @else if $base == font       { @extend #{$evo}-font; }
+//     // Throw Warnings
+//   @else { @warn "Base mixin supports: text, font"; }
+// }
+
+

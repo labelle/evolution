@@ -1,0 +1,184 @@
+///*      L I S T   N U M B E R    */
+
+@import "../evo_variables/evo_variables";
+
+
+// ol lists
+
+ol {
+list-style-type: #{$ol_list_style_type}; // decimal-leading
+list-style-position: #{$ol_list_style_position}; // inside
+
+// ol base list class
+
+  &#{$evo}-list {
+  @extend #{$evo}-list;
+}
+
+// ol utility classes
+
+// Hang the numbers and left align text to the other text blocks
+  &#{$evo}-list-hang {
+  // @extend #{$evo}-list;
+  list-style-position: outside;
+  }
+  &#{$evo}-list-align {
+  // @extend #{$evo}-list;
+  list-style-position: inside;
+  }
+  &#{$evo}-list-decimal {
+  @extend #{$evo}-list;
+  list-style-type: decimal;
+}
+  &#{$evo}-list-decimal-zero {
+  @extend #{$evo}-list;
+  list-style-type: decimal-leading-zero;
+}
+  &#{$evo}-list-lower-alpha {
+  @extend #{$evo}-list;
+  list-style-type: lower-alpha;
+}
+  &#{$evo}-list-upper-alpha {
+  @extend #{$evo}-list;
+  list-style-type: upper-alpha;
+}
+  &#{$evo}-list-lower-latin {
+  @extend #{$evo}-list;
+  list-style-type: lower-latin;
+}
+  &#{$evo}-list-upper-latin {
+  @extend #{$evo}-list;
+  list-style-type: upper-latin;
+}
+  &#{$evo}-list-lower-roman {
+  @extend #{$evo}-list;
+  list-style-type: lower-roman;
+}
+  &#{$evo}-list-upper-roman {
+  @extend #{$evo}-list;
+  list-style-type: upper-roman;
+}
+  &#{$evo}-list-reset {
+  list-style:      decimal;
+  list-style-type: decimal;
+  list-style-position: initial;
+  padding:         initial;
+  padding-top:     initial;
+  padding-left:    initial;
+  padding-bottom:  initial;
+  padding-right:   initial;
+}
+}
+
+
+// // ol extended utility classes
+// ol.armenian           {list-style-type: armenian;}
+// ol.cjk-ideographic    {list-style-type: cjk-ideographic;}
+// ol.georgian           {list-style-type: georgian;}
+// ol.hebrew             {list-style-type: hebrew;}
+// ol.hiragana           {list-style-type: hiragana;}
+// ol.hiragana-iroha     {list-style-type: hiragana-iroha;}
+// ol.katakana           {list-style-type: katakana;}
+// ol.katakana-iroha     {list-style-type: katakana-iroha;}
+// ol.lower-greek        {list-style-type: lower-greek;}
+
+
+
+
+// http://semantic-ui.com/elements/list.html
+
+.ui.ordered.list .list>.list-item, 
+.ui.ordered.list>.list-item, 
+ol.ui.list li {
+  list-style-type: none;
+  position: relative;
+}
+
+.ui.list .list>a.list-item, 
+.ui.list>a.list-item {
+  cursor: pointer;
+  color: #4183c4;
+}
+
+.ui.list .list>.list-item, 
+.ui.list>.list-item, 
+ol.ui.list li, 
+ul.ui.list li {
+  display: list-item;
+  table-layout: fixed;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: .21428571em 0;
+  line-height: 1.14285714em;
+}
+
+.ui.ordered.list .list>.list-item:before, 
+.ui.ordered.list>.list-item:before, 
+ol.ui.list li:before {
+  position: absolute;
+  top: auto;
+  left: auto;
+  user-select: none;
+  pointer-events: none;
+  margin-left: -1.25rem;
+  content: counters(ordered, ".") " ";
+  text-align: right;
+  color: rgba(0,0,0,.87);
+  vertical-align: middle;
+  opacity: .8;
+}
+
+.ui.list>.list-item:after, 
+.ui.list>.list>.list-item, 
+ol.ui.list>li:first-child:after, 
+ul.ui.list>li:first-child:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+// List 'Counter' approach
+// http://codepen.io/_lukewh/pen/WopzzO
+// https://css-tricks.com/style-list-markers-css/
+
+.list-counter {
+  counter-reset: my-awesome-counter;
+  margin-top: 1.5em;
+}
+.list-counter,
+.list-counter ol,
+.list-counter ol ol
+ {
+    list-style: none;
+    // margin-bottom: 1.5em;
+}
+.list-counter li {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  // margin-left: -1em;
+  padding-left: 2em;
+}
+.list-counter li::before {
+  position: absolute;
+  top: .5em;
+  left: 0;
+  transform: translateY(-50%);
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
+  // margin-right: 0.5em;
+}
+.list-counter ol ol li::before {
+  background: #DE51FF;
+}
+.list-counter ol ol ol li::before {
+  background: #EE9EFF;
+}

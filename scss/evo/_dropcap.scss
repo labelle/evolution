@@ -1,0 +1,68 @@
+///*      D R O P C A P     */
+
+@import "../evo_variables/evo_variables";
+
+
+// TODO Make a generica text-dropcap that simply resizes a text proportionate to the paragraph, plus an integrated text-size-dropcap that does the same but with many other special powers
+
+
+// Dropcaps in span
+// Wrap letter in span and apply one of these classes
+
+// Just a colored letter
+span.text-dropcap {
+font-family: #{$dropcap_font};
+color: #{$dropcap_color};
+font-size: 5ex;
+text-align: text-top;
+float:left;
+padding-right: .7ch;
+padding-left: .5ch;
+padding-top:0;
+line-height:1;
+font-feature-settings: "smcp" on;
+}
+
+
+// Colored letter in colored box
+span.text-dropcap-box {
+font-family: #{$box_dropcap_font};
+color: #{$box_dropcap_color};
+background-color: #{$box_dropcap_color_background};
+border-width: #{$box_dropcap_border_width};
+border-style: #{$box_dropcap_border_style};
+border-color: #{$box_dropcap_border_color};
+font-size: 5ex;
+text-align: text-top;
+float:left;
+padding-right: .5ch;
+padding-left: .5ch;
+padding-top:.2ch;
+padding-bottom:.1ch; // try to adjust for line-height
+margin-right: .5ch;
+line-height:1;
+font-feature-settings: "smcp" on;
+}
+
+
+// Dropcap with just CSS
+// Does not work as well cross-browser
+// Primarily meant for testing with the masonry grid
+
+figcaption.text-dropcap:first-letter {
+// @extend #{$evo}-text;
+@extend #{$evo}-text-10;
+color: #{$dropcap_color};
+font-size: 5ex;
+text-align: text-top;
+float:left;
+padding-right: .7ch;
+padding-left: .5ch;
+padding-top:0;
+line-height:1;
+font-feature-settings: "smcp" on;
+}
+
+
+
+

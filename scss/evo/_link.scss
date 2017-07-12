@@ -1,0 +1,174 @@
+///*      L I N K    */
+
+@import "../evo_variables/evo_variables";
+
+
+// links states
+// order must be a:link, a:visited, a:hover, a:active
+
+// a
+#{$evo}-link a,
+a#{$evo}-link,
+a#{$evo}-link-inverse,
+#{$evo}-link-inverse a,
+a {
+  font-family: #{$link_font_family};
+  font-weight: #{$link_font_weight};
+  background-color: transparent; // reset
+  text-decoration: none; // reset
+  -webkit-text-decoration-skip: objects; // reset
+  -moz-transition: #{$link_transition};
+  -webkit-transition: #{$link_transition};
+  -o-transition: #{$link_transition};
+  transition: #{$link_transition};
+  cursor: pointer;
+}
+
+// Links in paragraphs
+// http://stackoverflow.com/questions/14401454/transition-only-for-the-border-on-hover-but-not-for-background
+
+#{$evo}-link-paragraph
+#{$evo}-link-paragraph a,
+p a,
+figcaption a,
+ {
+    color: inherit;
+    // transition: color 1s ease;
+    text-decoration: none;
+    border-bottom: thin dotted;
+    transition: .1s ease;
+    // transition: border-color 2s ease;
+}
+
+#{$evo}-link-paragraph:link,
+#{$evo}-link-paragraph a:link,
+p a:link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: thin dotted;
+}
+
+#{$evo}-link-paragraph:hover,
+#{$evo}-link-paragraph a:hover,
+p a:hover {
+    color: #{$evo_color};
+    // transition: color .2s; // color 0s ease;
+    border-bottom: thin solid;
+}
+
+
+
+// link
+#{$evo}-link a:link,
+a#{$evo}-link:link,
+.a-link,
+a:link    { 
+  color: #{$link_color};
+  background-color: #{$link_background_color};
+  text-decoration: #{$link_underline};
+  opacity: #{$link_opacity}; 
+}
+
+// link inverse
+#{$evo}-link-inverse:link a,
+a#{$evo}-link-inverse:link,
+.a-link-inverse,
+.a-link-inverse a {
+  color: #{$inverse_link_color} !important;
+}
+
+
+
+// visited
+#{$evo}-link a:visited,
+a#{$evo}-link:visited,
+.a-visited,
+a:visited { 
+  color: #{$link_color_visited};
+  opacity: #{$link_opacity_visited};
+}
+
+// visited inverse
+#{$evo}-link-inverse a:visited,
+a#{$evo}-link-inverse:visited,
+.a-visited-inverse,
+.a-visited-inverse a {
+  color: #{$inverse_link_color_visited} !important;
+}
+
+
+
+// hover
+#{$evo}-link a:hover,
+a#{$evo}-link:hover,
+.a-hover,
+a:hover {
+  color: #{$link_color_hover};
+  background: #{$link_background_color_hover};
+  text-decoration: #{$link_underline_hover};
+  outline-width: 0; // reset
+  opacity: #{$link_opacity_hover};
+  //   button {
+  //   color: white;
+  //   border: 1px black;
+  //   background-color: red;
+  // }
+}
+
+// hover inverse
+#{$evo}-link-inverse a:hover,
+a#{$evo}-link-inverse:hover,
+.a-hover-inverse,
+.a-hover-inverse a {
+  color: #{$inverse_link_color_hover} !important;
+  background: #{$inverse_link_background_color_hover} !important;
+}
+
+
+
+// active
+#{$evo}-link a:active,
+a#{$evo}-link:active,
+.a-active,
+a:active {
+  color: #{$link_color_active};
+  text-decoration: #{$link_underline_active};
+  outline-width: 0; // reset
+  opacity: #{$link_opacity_active};
+}
+
+// active inverse
+#{$evo}-link-inverse a:active,
+a#{$evo}-link-inverse:active,
+.a-active-inverse,
+.a-active-inverse a {
+color: #{$inverse_link_color_active} !important;
+  }
+
+
+
+// focus
+a#{$evo}-link:focus,
+#{$evo}-link a:focus,
+.a-focus,
+a:focus,
+button:focus {
+  color: #{$link_color_focus};
+  text-decoration: #{$link_underline_focus};
+  outline: unset; // reset foundation
+  opacity: #{$link_opacity_focus};
+  // outline: 5px auto -webkit-focus-ring-color; // what is this
+  outline-color: #{$link_outline_color_focus};
+  outline-width: #{$link_outline_width_focus};
+  outline-style: #{$link_outline_style_focus};
+  outline-offset: 0; // -2px; // from foundation
+}
+
+// focus inverse
+#{$evo}-link-inverse a:focus,
+a#{$evo}-link-inverse:focus,
+.a-focus-inverse,
+.a-focus-inverse a {
+color: #{$inverse_link_color_focus} !important;
+outline-color: #{$inverse_link_outline_color_focus} !important;
+}

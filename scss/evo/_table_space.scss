@@ -1,0 +1,30 @@
+///*      T A B L E   S P A C E   */
+
+@import "../evo_variables/evo_variables";
+
+
+.table-loose {
+
+    th,
+    td {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+}
+
+.table-tight {
+
+    th,
+    td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+}
+
+
+.table-tall {
+
+    tr {
+    height: 5em;
+}
+}

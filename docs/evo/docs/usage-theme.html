@@ -1,0 +1,103 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Evolution Usage Theme</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!--         <link rel="stylesheet" href="../css/bootstrap-grid-only.css"> -->
+
+        <link rel="stylesheet" href="../css/evo-elements.css"> 
+
+<style>
+</style>
+
+</head>
+<body class="site-container">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Main navigation -->
+<!-- <header role="banner">
+</header> -->
+<main>
+
+<section id="evoThemeIntro">
+
+<a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
+<h1 class="text-size-13 margin-bottom-0">Usage Theme</h1>
+
+<p class="evo-measure"><a href="https://pdickan.github.io/hudson/css/evo-elements.css">Grab the CSS code</a> and start styling text, color, buttons, or images. Use this page as a general style guide.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+<section>
+
+<h4>Theme</h4>
+<p class="text-measure-7"><a href="https://github.com/labelle/evolution/blob/master/scss/variables.scss" target="_blank">Evo theme variables</a> are found in the <code>_variables.scss</code> file. Run Gulp and Sass on the source files, then edit the variables to match the desired look and feel. Example variables below.</p>
+<div class="evo-space-1"></div>
+<div class="text-measure-7 evo-box padding-10"><pre>// Primary accent color
+$evo_color:                 #{$color_15} !default;
+$inverse_evo_color:         #{$color_15} !default;
+
+// Typography
+$html_font_style:           normal !default; // or italics or oblique
+$html_font_variant:         normal !default; // or small-caps if the font supports it
+$html_font_weight:          normal !default; // or bolder or lighter or 400
+$html_line_height:          1.4375 !default; // define this in body
+$html_font_stretch:         normal !default; // or condensed or expanded
+$html_font_size:            1rem !default; // // or 1 rem, define this in body
+$html_font_family:          #{$google-source-sans}; // or #{$sans-serif}
+$html_tap_highlight_color:  rgba(0, 0, 0, 0);
+</pre></div>
+<div class="evo-space-medium"></div>
+<p class="text-measure-7">These variables power the <code>evo-color</code> and <code>evo-font</code> classes, demonstrated below.</p>
+<div class="evo-space-1"></div>
+<div class="text-measure-7 evo-box padding-10"><pre>// evo color
+#{$evo}-color,
+#{$evo}-color-hover:hover      { color: #{$evo_color}; }
+
+#{$evo}-color-bg,
+#{$evo}-color-bg-hover:hover   { background-color: #{$evo_color}; }
+
+#{$evo}-color-box,
+#{$evo}-color-box-hover:hover  { border-top-color: #{$evo_color}; border-bottom-color: #{$evo_color}; border-right-color: #{$evo_color}; border-left-color: #{$evo_color}; }
+
+// evo font
+#{$evo}-font { 
+  // font-size:    #{$html_font_size};
+  font-family:     #{$html_font_family};
+  font-weight:     #{$html_font_weight};
+  line-height:     #{$html_line_height};
+}
+
+</pre></div>
+<div class="evo-space-18"></div>
+
+</section>
+
+</main>
+
+<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!--         <script src="../js/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

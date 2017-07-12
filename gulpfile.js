@@ -32,8 +32,8 @@ var autoprefixer = require('autoprefixer');
 gulp.task('scripts', function() {
   return gulp.src([
     /* Add your JS files here, they will be combined in this order */
-    'docs/js/vendor/jquery-1.11.1.js',
-    'docs/js/app.js'
+    'docs/evo/js/vendor/jquery-1.11.1.js',
+    'docs/evo/js/app.js'
     ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('js'))
@@ -49,13 +49,13 @@ gulp.task('brand', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
     .pipe(sourcemaps.init())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -67,13 +67,13 @@ gulp.task('evolution', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
     .pipe(sourcemaps.init())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -85,13 +85,13 @@ gulp.task('elements', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
     .pipe(sourcemaps.init())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -103,10 +103,10 @@ gulp.task('design', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('docs/css'))
+    .pipe(gulp.dest('docs/evo/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -119,7 +119,7 @@ gulp.task('bs-reload', function () {
 
 /* Prepare Browser-sync for localhost */
 gulp.task('browser-sync', function() {
-    browserSync.init(['docs/css/*.css', 'docs/js/*.js'], {
+    browserSync.init(['docs/evo/css/*.css', 'docs/evo/js/*.js'], {
         /*
         I like to use a vhost, WAMP guide: https://www.kristengrote.com/blog/articles/how-to-set-up-virtual-hosts-using-wamp, XAMP guide: http://sawmac.com/xampp/virtualhosts/
         */
@@ -137,8 +137,6 @@ gulp.task('browser-sync', function() {
 gulp.task('default', ['brand', 'evolution', 'elements', 'design', 'scripts', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['default'])
-    /* Watch app.js file, run the scripts task on change. */
-    gulp.watch(['docs/js/app.js'], ['scripts'])
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['docs/*.html'], ['bs-reload']);
 });

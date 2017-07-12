@@ -1,0 +1,61 @@
+///*      F O N T   M I X I N S   */
+
+@import "../evo_variables/evo_variables";
+
+    // Mixins
+@mixin font($font) {
+  @if $font == reset  { 
+  font-family: initial;
+  font-weight: initial;
+  font-style: initial;
+  font-family: #{$sans-serif}; 
+}
+    // Unstyled
+  @else if $font == sans-serif       { font-family: #{$sans-serif}; }
+  @else if $font == serif            { font-family: #{$serif}; }
+  @else if $font == monospace        { font-family: #{$monospace}; }
+  @else if $font == cursive          { font-family: #{$cursive}; }
+  // Font Stacks
+  @else if $font == arial            { font-family: #{$arial}; } // Font stack
+  @else if $font == arial-black      { font-family: #{$arial-black}; } // Font stack
+  @else if $font == athelas          { font-family: #{$athelas}; }
+  @else if $font == avenir           { font-family: #{$avenir}; }
+  @else if $font == baskerville      { font-family: #{$baskerville}; }
+  @else if $font == bodoni           { font-family: #{$bodoni}; }
+  @else if $font == calisto          { font-family: #{$calisto}; }
+  @else if $font == consolas         { font-family: #{$consolas}; }
+  @else if $font == courier          { font-family: #{$courier}; }
+  @else if $font == courier-new      { font-family: #{$courier-new}; } // Font stack
+  @else if $font == didot            { font-family: #{$didot}; }
+  @else if $font == garamond         { font-family: #{$garamond}; }
+  @else if $font == georgia          { font-family: #{$georgia};  } // Font stack
+  @else if $font == gotham           { font-family: #{$gotham}; }
+  @else if $font == helvetica        { font-family: #{$helvetica}; } // Font stack
+  @else if $font == helvetica-thin   { font-family: #{$helvetica-thin}; } // Font stack
+  @else if $font == menlo            { font-family: #{$menlo}; } // Font stack
+  @else if $font == monaco           { font-family: #{$monaco}; } // Font stack
+  @else if $font == times            { font-family: #{$times}; }
+  @else if $font == times-new        { font-family: #{$times-new}; } // Font stack
+  @else if $font == native           { font-family: #{$native}; }
+  @else if $font == native-bootstrap { font-family: #{$native-bootstrap}; }
+  @else if $font == native-tachyons  {font-family: #{$native-tachyons}; }
+    // Throw Warnings
+  @else { @warn "Font mixin supports: reset, sans-serif, serif, monospace, cursive, arial, arial-black, athelas, avenir, baskerville, bodoni, calisto, consolas, courier, courier-new, didot, garamond, georgia, gotham, helvetica, helvetica-thin, menlo, monaco, times, times-new, native, native-bootstrap, native-tachyons"; }
+}
+
+    // Google Font Mixins
+@mixin font-google($font) {
+    // Google
+  @if $font == open-sans            { font-family: #{$google-open-sans}; }
+    // Throw Warnings
+  @else { @warn "Google Font mixin supports: open-sans"; }
+}
+
+    // Adobe Edge Font Mixins
+@mixin font-adobe($font) {
+    // Google
+  @if $font == open-sans            { font-family: #{$adobe-open-sans}; }
+    // Throw Warnings
+  @else { @warn "Adobe Edge Font mixin supports: open-sans"; }
+}
+

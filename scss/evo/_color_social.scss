@@ -1,0 +1,49 @@
+///*      C O L O R   S O C I A L     */
+
+@import "../evo_variables/evo_variables";
+
+
+// Social colors
+
+// Experimental states
+.color-facebook,
+.color-facebook-hover:hover     { color: #{$facebook}; }
+.color-facebook-bg,
+.color-facebook-bg-hover:hover { background-color: #{$facebook}; }
+.color-facebook-box,
+.color-facebook-box-hover:hover { border-color: #{$facebook}; }
+
+// .color-0-link
+// .color-0-link-underline
+// .color-0-highlight
+// .color-0-button
+// .color-0-button-solid
+// .color-0-button-ghost
+
+.color-googleplus                { color: #{$googleplus}; }
+.color-googleplus-bg             { background-color: #{$googleplus}; }
+.color-googleplus-box            { border-color: #{$googleplus}; }
+
+.color-instagram                { color: #{$instagram}; }
+.color-instagram-bg             { background-color: #{$instagram}; }
+.color-instagram-box            { border-color: #{$instagram}; }
+
+.color-linkedin                { color: #{$linkedin}; }
+.color-linkedin-bg             { background-color: #{$linkedin}; }
+.color-linkedin-box            { border-color: #{$linkedin}; }
+
+.color-pinterest                { color: #{$pinterest}; }
+.color-pinterest-bg             { background-color: #{$pinterest}; }
+.color-pinterest-box            { border-color: #{$pinterest}; }
+
+.color-twitter                { color: #{$twitter}; }
+.color-twitter-bg             { background-color: #{$twitter}; }
+.color-twitter-box            { border-color: #{$twitter}; }
+
+.color-vimeo                { color: #{$vimeo}; }
+.color-vimeo-bg             { background-color: #{$vimeo}; }
+.color-vimeo-box            { border-color: #{$vimeo}; }
+
+.color-youtube                { color: #{$youtube}; }
+.color-youtube-bg             { background-color: #{$youtube}; }
+.color-youtube-box            { border-color: #{$youtube}; }

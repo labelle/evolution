@@ -1,0 +1,265 @@
+///*      T E X T   G L O W     */
+
+@import "../evo_variables/evo_variables";
+
+// global
+
+#{$evo}-text-glow,
+.text-glow {
+    text-shadow: #{$text_glow};
+}
+
+#{$evo}-text-glow-inverse,
+.inverse-text-glow {
+    text-shadow: #{$inverse_text_glow};
+}
+
+
+// Thickness
+
+.text-glow-thin {
+  text-shadow: 0 0 .25em rgba(0, 0, 0, .5);
+}
+
+.text-glow-medium {
+  text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+}
+
+.text-glow-thick {
+  text-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
+
+.inverse-text-glow-thin {
+  text-shadow: 0 0 .25em rgba(255, 255, 255, .75);
+}
+
+.inverse-text-glow-medium {
+  text-shadow: 0 0 .5em rgba(255, 255, 255, .75);
+}
+
+.inverse-text-glow-thick {
+  text-shadow: 0 0 1em rgba(255, 255, 255, .75);
+}
+
+
+
+
+// Number Scale
+
+// Initial Value: none
+// /* offset-x | offset-y | blur-radius | color */
+// text-shadow: 1px 1px 2px black;…
+
+// If you want to try REMS http://jsfiddle.net/4dgaurav/5Sptc/1/
+
+.text-glow-0 {
+    text-shadow: 0 0 .025em #{$text_glow_color};
+}
+
+.text-glow-1 {
+    text-shadow: 0 0 .05em #{$text_glow_color};
+}
+
+.text-glow-2 {
+    text-shadow: 0 0 .1em #{$text_glow_color};
+}
+
+.text-glow-3 {
+    text-shadow: 0 0 .15em #{$text_glow_color};
+}
+
+.text-glow-4 {
+    text-shadow: 0 0 .2em #{$text_glow_color};
+}
+
+.text-glow-5 {
+    text-shadow: 0 0 .275em #{$text_glow_color};
+}
+
+.text-glow-6 {
+    text-shadow: 0 0 .375em #{$text_glow_color};
+}
+
+.text-glow-7 {
+    text-shadow: 0 0 .5em #{$text_glow_color};
+}
+
+.text-glow-8 {
+    text-shadow: 0 0 .625em #{$text_glow_color};
+}
+
+.text-glow-9 {
+    text-shadow: 0 0 .75em #{$text_glow_color};
+}
+
+.text-glow-10 {
+    text-shadow: 0 0 .875em #{$text_glow_color};
+}
+
+.text-glow-11 {
+    text-shadow: 0 0 1.02em #{$text_glow_color};
+}
+
+.text-glow-12 {
+    text-shadow: 0 0 1.125em #{$text_glow_color};
+}
+
+.text-glow-13 {
+    text-shadow: 0 0 1.3125em #{$text_glow_color};
+}
+
+.text-glow-14 {
+    text-shadow: 0 0 1.4375em #{$text_glow_color};
+}
+
+.text-glow-15 {
+    text-shadow: 0 0 1.875em #{$text_glow_color};
+}
+
+.text-glow-16 {
+    text-shadow: 0 0 2.3125em #{$text_glow_color};
+}
+
+.text-glow-17 {
+    text-shadow: 0 0 2.6875em #{$text_glow_color};
+}
+
+.text-glow-18 {
+    text-shadow: 0 0 3.05em #{$text_glow_color};
+}
+
+.text-glow-19 {
+    text-shadow: 0 0 3.75em #{$text_glow_color};
+}
+
+.text-glow-20 {
+    text-shadow: 0 0 4.935em #{$text_glow_color};
+}
+
+.text-glow-21 {
+    text-shadow: 0 0 6.1em #{$text_glow_color};
+}
+
+.text-glow-22 {
+    text-shadow: 0 0 7.985em #{$text_glow_color};
+}
+
+.text-glow-23 {
+    text-shadow: 0 0 9.87em #{$text_glow_color};
+}
+
+.text-glow-24 {
+    text-shadow: 0 0 12.92em #{$text_glow_color};
+}
+
+.text-glow-25 {
+    text-shadow: 0 0 15.97em #{$text_glow_color};
+}
+
+
+// Inverse Numbered
+
+.inverse-text-glow-0 {
+    text-shadow: 0 0 .025em  #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-1 {
+    text-shadow: 0 0 .05em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-2 {
+    text-shadow: 0 0 .1em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-3 {
+    text-shadow: 0 0 .15em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-4 {
+    text-shadow: 0 0 .2em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-5 {
+    text-shadow: 0 0 .275em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-6 {
+    text-shadow: 0 0 .375em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-7 {
+    text-shadow: 0 0 .5em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-8 {
+    text-shadow: 0 0 .625em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-9 {
+    text-shadow: 0 0 .75em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-10 {
+    text-shadow: 0 0 .875em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-11 {
+    text-shadow: 0 0 1.02em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-12 {
+    text-shadow: 0 0 1.125em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-13 {
+    text-shadow: 0 0 1.3125em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-14 {
+    text-shadow: 0 0 1.4375em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-15 {
+    text-shadow: 0 0 1.875em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-16 {
+    text-shadow: 0 0 2.3125em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-17 {
+    text-shadow: 0 0 2.6875em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-18 {
+    text-shadow: 0 0 3.05em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-19 {
+    text-shadow: 0 0 3.75em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-20 {
+    text-shadow: 0 0 4.935em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-21 {
+    text-shadow: 0 0 6.1em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-22 {
+    text-shadow: 0 0 7.985em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-23 {
+    text-shadow: 0 0 9.87em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-24 {
+    text-shadow: 0 0 12.92em #{$inverse_text_glow_color};
+}
+
+.inverse-text-glow-25 {
+    text-shadow: 0 0 15.97em #{$inverse_text_glow_color};
+}

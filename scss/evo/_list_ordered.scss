@@ -1,0 +1,84 @@
+///*      L I S T   O R D E R E D    */
+
+@import "../evo_variables/evo_variables";
+
+
+// http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses#1636635
+// Add list counter utilities?
+
+
+
+// ol lists
+
+ol {
+list-style-type: #{$ol_list_style_type}; // decimal-leading
+list-style-position: #{$ol_list_style_position}; // inside
+
+// ol base list class
+
+//   &#{$evo}-list {
+//   @extend #{$evo}-list;
+// }
+
+// ol utility classes
+
+  &.list-align,
+  &.list-align ol,
+  &.list-align ol ol {
+  // @extend #{$evo}-list;
+  list-style-position: inside;
+  }
+  // Hang numbers to the left
+  &.list-hang,
+  &.list-hang ol,
+  &.list-hang ol ol {
+  // @extend #{$evo}-list;
+  list-style-position: outside;
+  }
+  &.list-decimal {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: decimal;
+}
+  &.list-decimal-zero {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: decimal-leading-zero;
+}
+  &.list-lower-alpha {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: lower-alpha;
+}
+  &.list-upper-alpha {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: upper-alpha;
+}
+  &.list-lower-latin {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: lower-latin;
+}
+  &.list-upper-latin {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: upper-latin;
+}
+  &.list-lower-roman {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: lower-roman;
+}
+  &.list-upper-roman {
+  // @extend #{$evo}-list; // DISABLED - DELETE?
+  list-style-type: upper-roman;
+}
+}
+
+
+// ol extended utility classes
+ol.list-armenian           {list-style-type: armenian;}
+ol.list-cjk-ideographic    {list-style-type: cjk-ideographic;}
+ol.list-georgian           {list-style-type: georgian;}
+ol.list-hebrew             {list-style-type: hebrew;}
+ol.list-hiragana           {list-style-type: hiragana;}
+ol.list-hiragana-iroha     {list-style-type: hiragana-iroha;}
+ol.list-katakana           {list-style-type: katakana;}
+ol.list-katakana-iroha     {list-style-type: katakana-iroha;}
+ol.list-lower-greek        {list-style-type: lower-greek;}
+
+

@@ -1,0 +1,21 @@
+///*      L A Y O U T   M I X I N      */
+
+
+@import "../evo_variables/evo_variables";
+
+
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+
+// / Mixin /
+// @mixin vertical-align($position: relative) {
+// position: $position;
+// top: 50%;
+// -webkit-transform: translateY(-50%);
+// -ms-transform: translateY(-50%);
+// transform: translateY(-50%);
+// }
+
+// .element p {
+// @include vertical-align();
+// }
