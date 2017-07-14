@@ -78,7 +78,7 @@ h6,
 h1,
 .h1 { 
   font-size:       #{$heading_size_h1}; 
-  line-height:     #{$heading_margin_bottom_h1};
+  line-height:     #{$heading_leading_h1};
   letter-spacing:  #{$heading_letter_spacing_h1};
   margin-bottom:   #{$heading_margin_bottom_h1};
 }
@@ -86,35 +86,35 @@ h1,
 h2,
 .h2 { 
   font-size:       #{$heading_size_h2}; 
-  line-height:     #{$heading_margin_bottom_h2};
+  line-height:     #{$heading_leading_h2};
   letter-spacing:  #{$heading_letter_spacing_h2};
   margin-bottom:   #{$heading_margin_bottom_h2};
 }
 h3,
 .h3 { 
   font-size:       #{$heading_size_h3}; 
-  line-height:     #{$heading_margin_bottom_h3};
+  line-height:     #{$heading_leading_h3};
   letter-spacing:  #{$heading_letter_spacing_h3};
   margin-bottom:   #{$heading_margin_bottom_h3};
 }
 h4,
 .h4 { 
   font-size:       #{$heading_size_h4}; 
-  line-height:     #{$heading_margin_bottom_h4};
+  line-height:     #{$heading_leading_h4};
   letter-spacing:  #{$heading_letter_spacing_h4};
   margin-bottom:   #{$heading_margin_bottom_h4};
 }
 h5,
 .h5 { 
   font-size:       #{$heading_size_h5}; 
-  line-height:     #{$heading_margin_bottom_h5};
+  line-height:     #{$heading_leading_h5};
   letter-spacing:  #{$heading_letter_spacing_h5};
   margin-bottom:   #{$heading_margin_bottom_h5};
 }
 h6,
 .h6 { 
   font-size:       #{$heading_size_h6}; 
-  line-height:     #{$heading_margin_bottom_h6};
+  line-height:     #{$heading_leading_h6};
   letter-spacing:  #{$heading_letter_spacing_h6};
   margin-bottom:   #{$heading_margin_bottom_h6};
 }
@@ -161,10 +161,28 @@ word-spacing: .5em;
 }
 
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 
 .white-space-normal {
   white-space: normal !important;
 }
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.white-space-pre {
+  white-space: pre;
+}
+
+.white-space-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.white-space-pre-line {
+  white-space: pre-line;
+}
+
 
 // What is the difference between break-word and word-break?
 // http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break#15137272
@@ -188,6 +206,7 @@ word-spacing: .5em;
 .all-break-word {
   word-break: break-all;
 }
+
 
 
 

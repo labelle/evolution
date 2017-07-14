@@ -70,7 +70,7 @@ border-left-style:     #{$box_style}; // solid
 // &-inset          { @extend #{$evo}-box; border-top-style: inset; border-bottom-style: inset; border-right-style: inset; border-left-style: inset; }
 // &-outset         { @extend #{$evo}-box; border-top-style: outset; border-bottom-style: outset; border-right-style: outset; border-left-style: outset; }
 
-&-gray           { @extend #{$evo}-box; border-top-color: #{$gray-light}; border-bottom-color: #{$gray-light}; border-right-color: #{$gray-light}; border-left-color: #{$gray-light}; }
+&-gray           { @extend #{$evo}-box; border-top-color: #{$evo_gray_light}; border-bottom-color: #{$evo_gray_light}; border-right-color: #{$evo_gray_light}; border-left-color: #{$evo_gray_light}; }
 &-white          { @extend #{$evo}-box; border-top-color: #{$white}; border-bottom-color: #{$white}; border-right-color: #{$white}; border-left-color: #{$white}; }
 &-black          { @extend #{$evo}-box; border-top-color: #{$black}; border-bottom-color: #{$black}; border-right-color: #{$black}; border-left-color: #{$black}; }
   // Throw Warnings

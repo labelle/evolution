@@ -190,6 +190,10 @@ body {
   -moz-osx-font-smoothing: grayscale
 }
 
+.inverse-bg {
+  background-color: #{$inverse_body_background_color};
+  }
+
 
 // List
 

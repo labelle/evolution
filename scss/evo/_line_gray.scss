@@ -5,9 +5,9 @@
 
 
 // Line bw
-hr.line-black          { border-top-color: #{$black}; }
-hr.line-white          { border-top-color: #{$white}; }
-hr.line-gray           { border-top-color: #{$gray-light}; }
+hr.line-black          { border-top-color: #{$evo_black}; }
+hr.line-white          { border-top-color: #{$evo_white}; }
+hr.line-gray           { border-top-color: #{$evo_gray_light}; }
 
 // // Line gray relative scale
 // hr#{$evo}-line-gray-darkest   { border-top-color: #{$gray_25}; }

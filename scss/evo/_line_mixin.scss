@@ -70,7 +70,7 @@
 @mixin line($color) {
 @include line(base)
   @if $color == black          { border-top-color: #{$black}; }
-  @else if $color == gray           { border-top-color: #{$gray-light}; }
+  @else if $color == gray           { border-top-color: #{$evo_gray_light}; }
   @else if $color == white          { border-top-color: #{$white}; }
     // Throw Warnings
   @else { @warn "Line color mixin supports: black, gray, white"; }

@@ -13,6 +13,109 @@
   margin-right:-5%;
 }
 
+
+/* https://snook.ca/archives/html_and_css/vm-vh-units */
+/* http://www.w3.org/TR/css3-values/#vm */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
+
+
+// Simple grid columns
+
+// wide viewport blocks
+
+.view-wide-none,
+.view-wide-0 { width: 0vw; }
+
+.view-wide-5 { width: 5vw; }
+.view-wide-10 { width: 10vw; }
+.view-wide-15 { width: 15vw; }
+.view-wide-20 { width: 20vw; }
+
+.view-wide-quarter,
+.view-wide-25 { width: 25vw; }
+
+.view-wide-30 { width: 30vw; }
+.view-wide-35 { width: 35vw; }
+.view-wide-40 { width: 40vw; }
+.view-wide-45 { width: 45vw; }
+
+.view-wide-half,
+.view-wide-50 { width: 50vw; }
+
+.view-wide-55 { width: 55vw; }
+.view-wide-60 { width: 60vw; }
+.view-wide-65 { width: 65vw; }
+.view-wide-70 { width: 70vw; }
+.view-wide-75 { width: 75vw; }
+.view-wide-80 { width: 80vw; }
+.view-wide-85 { width: 85vw; }
+.view-wide-90 { width: 90vw; }
+.view-wide-95 { width: 95vw; }
+
+.view-wide-full,
+.view-wide-100 { width: 100vw; }
+
+
+
+.view-wide-66 { width: 66vw; }
+
+.view-wide-third,
+.view-wide-33 { width: 33vw; }
+
+
+
+
+// Tall viewport blocks
+
+.view-tall-none,
+.view-tall-0 { height: 0vh; }
+
+.view-tall-5 { height: 5vh; }
+.view-tall-10 { height: 10vh; }
+.view-tall-15 { height: 15vh; }
+.view-tall-20 { height: 20vh; }
+
+.view-tall-quarter,
+.view-tall-25 { height: 25vh; }
+
+.view-tall-30 { height: 30vh; }
+.view-tall-35 { height: 35vh; }
+.view-tall-40 { height: 40vh; }
+.view-tall-45 { height: 45vh; }
+
+.view-tall-half,
+.view-tall-50 { height: 50vh; }
+
+.view-tall-55 { height: 55vh; }
+.view-tall-60 { height: 60vh; }
+.view-tall-65 { height: 65vh; }
+.view-tall-70 { height: 70vh; }
+.view-tall-75 { height: 75vh; }
+.view-tall-80 { height: 80vh; }
+.view-tall-85 { height: 85vh; }
+.view-tall-90 { height: 90vh; }
+.view-tall-95 { height: 95vh; }
+
+.view-tall-full,
+.view-tall-100 { height: 100vh; }
+
+
+// Tall viewport blocks
+
+.view-tall-66 { height: 66vh; }
+
+.view-tall-third,
+.view-tall-33 { height: 33vh; }
+
+
+
+// // Experimental extenstion to full-screen views
+// // Incorporate center position classes for these?
+// .view-95 { width: 95vw; height: 95vh; vertical-align:middle; }
+// .view-90 { width: 90vw; height: 90vh; vertical-align:middle; }
+
+
+
 /* https://snook.ca/archives/html_and_css/vm-vh-units */
 /* http://www.w3.org/TR/css3-values/#vm */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
@@ -20,68 +123,23 @@
 
 // Full screen viewport blocks
 
-.view-full,
-.view-100 { width: 100vw; height: 100vh; }
+.view-full { width: 100vw; height: 100vh; }
 
-.view-75 { width: 75vw; height: 75vh; }
+// .view-75 { width: 75vw; height: 75vh; }
 
-.view-66 { width: 66vw; height: 66vh; }
+// .view-66 { width: 66vw; height: 66vh; }
 
-.view-half,
-.view-50 { width: 50vw; height: 50vh; }
+// .view-half,
+// .view-50 { width: 50vw; height: 50vh; }
 
-.view-third,
-.view-33 { width: 33vw; height: 33vh; }
+// .view-third,
+// .view-33 { width: 33vw; height: 33vh; }
 
-.view-quarter,
-.view-25 { width: 25vw; height: 25vh; }
+// .view-quarter,
+// .view-25 { width: 25vw; height: 25vh; }
 
-.view-none,
-.view-0 { width: 0vw; height: 0vh; }
+// .view-none,
+// .view-0 { width: 0vw; height: 0vh; }
 
-
-
-// Wide viewport blocks
-
-.view-wide-full,
-.view-wide-100 { width: 100vw; }
-
-.view-wide-75 { width: 75vw; }
-
-.view-wide-66 { width: 66vw; }
-
-.view-wide-half,
-.view-wide-50 { width: 50vw; }
-
-.view-wide-third,
-.view-wide-33 { width: 33vw; }
-
-.view-wide-quarter,
-.view-wide-25 { width: 25vw; }
-
-.view-wide-none,
-.view-wide-0 { width: 0vw; }
-
-
-// Tall viewport blocks
-
-.view-tall-full,
-.view-tall-100 { height: 100vh; }
-
-.view-tall-75 { height: 75vh; }
-
-.view-tall-66 { height: 66vh; }
-
-.view-tall-half,
-.view-tall-50 { height: 50vh; }
-
-.view-tall-third,
-.view-tall-33 { height: 33vh; }
-
-.view-tall-quarter,
-.view-tall-25 { height: 25vh; }
-
-.view-tall-none,
-.view-tall-0 { height: 0vh; }
 
 

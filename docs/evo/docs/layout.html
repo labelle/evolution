@@ -31,7 +31,8 @@
 <section id="evoLayoutIntro">
 
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="../index.html">Evo</a>
-<h1 class="text-size-13 margin-bottom-0">Layout</h1>
+<div class="evo-space"></div>
+<h1 class="text-size-10">Layout</h1>
 
 <p class="text-measure">We use a responsive 12-column grid from Bootstrap 3. This grid has been customized to remove most of the Bootstrap features and css resets, leaving only essential grid styles and grid functionality.</p>
 <div class="evo-space-20"></div>
@@ -49,18 +50,18 @@
 
 <div class="layout-example">
 
-    <div class="evo-grid-1">1</div>
-    <div class="evo-grid-1">2</div>
-    <div class="evo-grid-1">3</div>
-    <div class="evo-grid-1">4</div>
-    <div class="evo-grid-1">5</div>
-    <div class="evo-grid-1">6</div>
-    <div class="evo-grid-1">7</div>
-    <div class="evo-grid-1">8</div>
-    <div class="evo-grid-1">9</div>
-    <div class="evo-grid-1">10</div>
-    <div class="evo-grid-1">11</div>
-    <div class="evo-grid-1">12</div>
+    <div class="grid-1">1</div>
+    <div class="grid-1">2</div>
+    <div class="grid-1">3</div>
+    <div class="grid-1">4</div>
+    <div class="grid-1">5</div>
+    <div class="grid-1">6</div>
+    <div class="grid-1">7</div>
+    <div class="grid-1">8</div>
+    <div class="grid-1">9</div>
+    <div class="grid-1">10</div>
+    <div class="grid-1">11</div>
+    <div class="grid-1">12</div>
 
     </div>
 
@@ -83,37 +84,6 @@
 
 <div class="evo-space-20"></div>
 
-</section>
-
-
-<!-- usage -->
-
-<section id="evoGrid">
-
-<h2 class="evo-text text-size-6">Usage</h2>
-
-<div class="evo-space"></div>
-
-To use the grid, <a href="../css/bootstrap-grid-only.css">grab the code</a> or simply connect to the style sheet.</p>
-    <code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="../css/bootstrap-grid-only.css"&gt;</code>
-    <div class="evo-space-10"></div>
-    <p class="text-measure">Be sure to follow the Bootstrap convention correctly by at least nesting a <code>col-xs-12</code> inside a <code>row</code>, and place the row inside a <code>container</code> as follows.</p>
-    <hr class="evo-line line-1 text-measure" />
-    <div class="evo-codeblock-target">
-    <pre>
-<code>&lt;div class="container"&gt;
-  &lt;div class="row"&gt;
-   &lt;div class="col-xs-12"&gt;
-     &lt;!-- your content here --&gt;
-   &lt;/div&gt;&lt;!-- /.col --&gt;
-  &lt;/div&gt;&lt;!-- /.row --&gt;
-&lt;/div&gt;&lt;!-- /.container --&gt;</code>
-    </pre>
-    </div>
-    <div class="evo-space-5"></div>
-    <p class="text-measure">To allow elements to stretch the full-width of the screen, place them outside the <code>container</code>. Or, use <code>container-fluid</code> which stretches nearly to the edges of the screen. Use multiple containers in the page if necessary, but avoid nesting them.</p>
-     <p class="text-measure">A foundation version of the grid is <a href="https://github.com/labelle/evolution-patterns/tree/extras">available from here</a>.</p>
-    <div class="evo-space-20"></div>
 </section>
 
 <div class="container">
@@ -217,18 +187,18 @@ To use the grid, <a href="../css/bootstrap-grid-only.css">grab the code</a> or s
 <div class="col-xs-12">
 
     <div class="evo-codeblock demo-space" data-identifier="spacer">
-<div class="evo-space-5"></div>
-<div class="evo-space-10"></div>
-<div class="evo-space-15"></div>
-<div class="evo-space-17"></div>
-<div class="evo-space-20"></div>
+<div class="space-5"></div>
+<div class="space-10"></div>
+<div class="space-15"></div>
+<div class="space-17"></div>
+<div class="space-20"></div>
   </div>
 
 </div>
 <div class="col-xs-12">
 <div class="evo-space-15"></div>
       <ul class="evo-list-lines list-size-small">
-        <li class="text-uppercase text-tracking-10">Evo Spacers</li>
+        <li class="text-uppercase text-tracking-10">Spacers</li>
           <div class="evo-space-5"></div>
       </ul>
 <div class="evo-codeblock-target" data-target="spacer">
@@ -247,18 +217,87 @@ To use the grid, <a href="../css/bootstrap-grid-only.css">grab the code</a> or s
 <div class="evo-space-20"></div>
 
 
+<!-- ********************* -->
+<!--    FPO BLOCK   -->
+<!-- ********************* -->
+
+<div class="evo-codeblock" data-identifier="fpo-block">
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+      <div class="evo-box box-thin box-dashed text-center padding-top-23 padding-bottom-23">FPO Block</div>
+      <div class="evo-space-15"></div>
+    </div>
+  </div>
+</div><!-- /.container -->
+</div>
+
+<div class="container">
+  <div class="row">
+<div class="col-xs-12">
+      <div class="evo-space-15"></div>
+      <ul class="evo-list-lines list-size-small">
+        <li class="text-uppercase text-tracking-10">FPO Code Block</li>
+          <div class="evo-space-5"></div>
+      </ul>
+<div class="evo-codeblock evo-codeblock-target" data-target="fpo-block">
+<button class="evo-multiline-reveal-button evo-remove-this evo-button button-size-small button-box-thin ghost-color-to-ghost">view code</button>
+    <pre>
+<code class="hidden-block">
+            <!-- HTML will show up inside here -->  
+        </code>
+    </pre>
+</div>
+    </div>
+    </div>
+    </div>
+
+
+<div class="evo-space-20"></div>
+
+
 <div class="container">
 <!-- ********************* -->
-<!--       GRID LAYOUTS        -->
+<!--       BOOTSTRAP GRID LAYOUTS        -->
 <!-- ********************* -->
 
 <div class="row view-tall-25" id="designGrid1">
   <div class="col-xs-12">
       <div class="evo-space-15"></div>
-       <h2 class="evo-box-top box-top-1 padding-top-15 padding-bottom-0">Grid Layouts</h2>
+       <h2 class="evo-box-top box-top-1 padding-top-15 padding-bottom-0">Bootstrap Grid Layouts</h2>
     <div class="evo-space-15"></div>
   </div>
 </div>
+
+<!-- usage -->
+
+<section id="evoGrid">
+
+<h2 class="evo-text text-size-6">Usage</h2>
+
+<div class="evo-space"></div>
+
+To use the grid, <a href="../css/bootstrap-grid-only.css">grab the code</a> or simply connect to the style sheet.</p>
+    <code class="evo-code code-nowrap">&lt;link rel="stylesheet" href="../css/bootstrap-grid-only.css"&gt;</code>
+    <div class="evo-space-10"></div>
+    <p class="text-measure">Be sure to follow the Bootstrap convention correctly by at least nesting a <code>col-xs-12</code> inside a <code>row</code>, and place the row inside a <code>container</code> as follows.</p>
+    <hr class="evo-line line-1 text-measure" />
+    <div class="evo-codeblock-target">
+    <pre>
+<code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+   &lt;div class="col-xs-12"&gt;
+     &lt;!-- your content here --&gt;
+   &lt;/div&gt;&lt;!-- /.col --&gt;
+  &lt;/div&gt;&lt;!-- /.row --&gt;
+&lt;/div&gt;&lt;!-- /.container --&gt;</code>
+    </pre>
+    </div>
+    <div class="evo-space-5"></div>
+    <p class="text-measure">To allow elements to stretch the full-width of the screen, place them outside the <code>container</code>. Or, use <code>container-fluid</code> which stretches nearly to the edges of the screen. Use multiple containers in the page if necessary, but avoid nesting them.</p>
+     <p class="text-measure">A foundation version of the grid is <a href="https://github.com/labelle/evolution-patterns/tree/extras">available from here</a>.</p>
+    <div class="evo-space-20"></div>
+</section>
 
 
 
@@ -592,43 +631,6 @@ To use the grid, <a href="../css/bootstrap-grid-only.css">grab the code</a> or s
 
 </div><!-- /end container -->
 
-<!-- ********************* -->
-<!--    FPO BLOCK   -->
-<!-- ********************* -->
-
-<div class="evo-codeblock" data-identifier="fpo-block">
-<div class="container">
-  <div class="row">
-      <div class="col-xs-12">
-      <div class="evo-box box-thin box-dashed text-center padding-top-23 padding-bottom-23">FPO Block</div>
-      <div class="evo-space-15"></div>
-    </div>
-  </div>
-</div><!-- /.container -->
-</div>
-
-<div class="container">
-  <div class="row">
-<div class="col-xs-12">
-      <div class="evo-space-15"></div>
-      <ul class="evo-list-lines list-size-small">
-        <li class="text-uppercase text-tracking-10">FPO Code Block</li>
-          <div class="evo-space-5"></div>
-      </ul>
-<div class="evo-codeblock evo-codeblock-target" data-target="fpo-block">
-<button class="evo-multiline-reveal-button evo-remove-this evo-button button-size-small button-box-thin ghost-color-to-ghost">view code</button>
-    <pre>
-<code class="hidden-block">
-            <!-- HTML will show up inside here -->  
-        </code>
-    </pre>
-</div>
-    </div>
-    </div>
-    </div>
-
-
-<div class="evo-space-20"></div>
 
 </main>
          <script src="../js/jquery.min.js"></script>

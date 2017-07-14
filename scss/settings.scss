@@ -86,24 +86,29 @@ $body_background_color:             null; // #{$evo_white} or white or black or 
 
 // Primary accent color
 $evo_color:							null; // or #{$color_15}
-$inverse_evo_color:					null; // or #{$color_15}
+// $inverse_evo_color:					null; // or #{$color_15}
 
 
 // Primary neutral colors
 $evo_black:							null; // or #{$black}
-$inverse_evo_black:					null; // or #{$white}
-
 $evo_white:							null; // or #{$white}
-$inverse_evo_white:					null; // or #{$black}
-
 $evo_gray_light:					null; // or #{$gray_9}
-$inverse_evo_gray_light:			null; // or #{$gray_21}
-
 $evo_gray:					        null; // or #{$gray_15}
-$inverse_evo_gray:			        null; // or #{$gray_15}
-
 $evo_gray_dark:						null; // or #{$gray_21}
-$inverse_evo_gray_dark:				null; // or #{$gray_9}
+
+// TO-DO need to create these gray color classes and variables
+// Gray color bases
+
+$base_dark_translucent:             null; // $black;
+$base_light_translucent:            null; // $white;
+
+// IS THIS CORRECT?
+$base_dark_brown_translucent:       null; // $black;
+$base_light_brown_translucent:      null; // $white;
+
+// IS THIS CORRECT?
+$base_dark_warm_gray_translucent:   null; // $black;
+$base_light_warm_gray_translucent:  null; // $white;
 
 // HTML Headings
 // Base variables
@@ -660,5 +665,15 @@ $code_background_color:             null; // transparent !default;
 $inverse_code_color:                null; // #{$white} !default;
 $inverse_code_border_color:         null; // #{$gray_21} !default;
 $inverse_code_background_color:     null; // #{$black} !default;
+
+// Masonry
+
+$masonry_font_size:                 null; // #{$u-21}rem !default; // 12px
+
+$masonry_item_color:                null; // inherit !default; // or #{$black}
+$masonry_item_background_color:     null; // #{$white} !default; // or transparent
+
+$inverse_masonry_item_color:            null; // #{$white} !default;
+$inverse_masonry_item_background_color: null; // #{$black} !default; // or transparent
 
 // @import "variables";

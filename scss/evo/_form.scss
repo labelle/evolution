@@ -253,7 +253,7 @@ fieldset.overflow {
 .form-radio-inline {
   float: left;
   clear: none;
-    margin-left: .1em;
+  margin-left: .1em;
 }
 
 .form-checkbox-inline label,
@@ -268,4 +268,14 @@ fieldset.overflow {
 .form-checkbox-inline .form-checkbox:not(:first-of-type) input,
 .form-radio-inline .form-radio:not(:first-of-type) input {
   margin-left: 1em;
+}
+
+// From Rob G
+
+@media (max-width: 768px) {
+#{$evo}-form,
+input,
+input[type=text] {
+display: block !important;
+}
 }

@@ -116,13 +116,13 @@
 #{$evo}-list-stripe,
 #{$evo}-list-stripe-even {
  li:nth-child(even) {
-  background-color: #{$gray-lighter};   
+  background-color: #{$evo_gray_light};   
 }
 }
 
 #{$evo}-list-stripe-odd {
  li:nth-child(odd) {
-  background-color: #{$gray-lighter};   
+  background-color: #{$evo_gray_light};   
 }
 }
 
@@ -183,23 +183,23 @@
 // line colors
 
 #{$evo}-list-lines-black li {
-  border-top-color: #{$black} !important;
+  border-top-color: #{$evo_black} !important;
   &:last-child {
-  border-bottom-color: #{$black} !important;
+  border-bottom-color: #{$evo_black} !important;
 }
 }
 
 #{$evo}-list-lines-gray li {
-  border-top-color: #{$gray-lighter} !important;
+  border-top-color: #{$evo_gray_light} !important;
   &:last-child {
-  border-bottom-color: #{$gray-lighter} !important;
+  border-bottom-color: #{$evo_gray_light} !important;
 }
 }
 
 #{$evo}-list-lines-white li {
-  border-top-color: #{$white} !important;
+  border-top-color: #{$evo_white} !important;
   &:last-child {
-  border-bottom-color: #{$white} !important;
+  border-bottom-color: #{$evo_white} !important;
 }
 }
 
@@ -275,19 +275,19 @@
 
 
 // Top line colors
-#{$evo}-list-line-top-black li:first-child    { border-top-color: #{$black} !important; }
-#{$evo}-list-line-top-gray li:first-child  { border-top-color: #{$gray-light} !important; }
-#{$evo}-list-line-top-white li:first-child   { border-top-color: #{$white} !important; }
+#{$evo}-list-line-top-black li:first-child    { border-top-color: #{$evo_black} !important; }
+#{$evo}-list-line-top-gray li:first-child  { border-top-color: #{$evo_gray_light} !important; }
+#{$evo}-list-line-top-white li:first-child   { border-top-color: #{$evo_white} !important; }
 
 // Middle lines colors
-#{$evo}-list-line-middle-black li:not(:first-child)   { border-top-color: #{$black} !important; }
-#{$evo}-list-line-middle-gray li:not(:first-child) { border-top-color: #{$gray-light} !important; }
-#{$evo}-list-line-middle-white li:not(:first-child)  { border-top-color: #{$white} !important; }
+#{$evo}-list-line-middle-black li:not(:first-child)   { border-top-color: #{$evo_black} !important; }
+#{$evo}-list-line-middle-gray li:not(:first-child) { border-top-color: #{$evo_gray_light} !important; }
+#{$evo}-list-line-middle-white li:not(:first-child)  { border-top-color: #{$evo_white} !important; }
 
 // Bottom line colors
-#{$evo}-list-line-bottom-black li:last-child   { border-bottom-color: #{$black} !important; }
-#{$evo}-list-line-bottom-gray li:last-child { border-bottom-color: #{$gray-light} !important; }
-#{$evo}-list-line-bottom-white li:last-child  { border-bottom-color: #{$white} !important; }
+#{$evo}-list-line-bottom-black li:last-child   { border-bottom-color: #{$evo_black} !important; }
+#{$evo}-list-line-bottom-gray li:last-child { border-bottom-color: #{$evo_gray_light} !important; }
+#{$evo}-list-line-bottom-white li:last-child  { border-bottom-color: #{$evo_white} !important; }
 
 
 

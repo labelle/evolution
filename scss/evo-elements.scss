@@ -17,19 +17,17 @@
 
 
 // Global styles
-// @import "evo/reset";
 @import "evo/global";
-// @import "evo/nav";
 
 // Main
 @import "evo/code";
 @import "evo/code_mirror";
 
 // Mixins
-@import "evo/font_mixin";
-@import "evo/text_mixin";
+// @import "evo/font_mixin"; //
+// @import "evo/text_mixin"; //
 // @import "evo/line_mixin";
-@import "evo/color_mixin";
+// @import "evo/color_mixin"; //
 // @import "evo/box_mixin";
 // @import "evo/space_mixin";
 // @import "evo/layout_mixin";
@@ -58,11 +56,18 @@
 
 // Color
 @import "evo/color";
-@import "evo/color_gray";
 @import "evo/color_natural";
 @import "evo/color_gradient";
 @import "evo/color_effect";
 @import "evo/color_play"; // Need html page
+
+// Gray
+@import "evo/gray";
+// @import "evo/gray_neutral";
+@import "evo/gray_trans";
+// @import "evo/gray_gradient";
+// @import "evo/gray_effect";
+// @import "evo/gray_play";
 
 
 // Font

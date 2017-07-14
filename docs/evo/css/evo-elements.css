@@ -133,6 +133,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.inverse-bg {
+  background-color: black; }
+
 ul, li {
   margin-left: 0;
   padding-left: 0; }
@@ -654,51 +657,51 @@ pre.code-short > code {
 .layout-example > div:nth-child(odd) {
   background-color: #eee; }
 
-.evo-grid-1 {
+.grid-1 {
   width: 8.333333333%;
   float: left; }
 
-.evo-grid-2 {
+.grid-2 {
   width: 16.666666666%;
   float: left; }
 
-.evo-grid-3 {
+.grid-3 {
   width: 25%;
   float: left; }
 
-.evo-grid-4 {
+.grid-4 {
   width: 33.333333333%;
   float: left; }
 
-.evo-grid-5 {
+.grid-5 {
   width: 41.666666666666667%;
   float: left; }
 
-.evo-grid-6 {
+.grid-6 {
   width: 50%;
   float: left; }
 
-.evo-grid-7 {
+.grid-7 {
   width: 58.333333333%;
   float: left; }
 
-.evo-grid-8 {
+.grid-8 {
   width: 66.666666666666667%;
   float: left; }
 
-.evo-grid-9 {
+.grid-9 {
   width: 75%;
   float: left; }
 
-.evo-grid-10 {
+.grid-10 {
   width: 83.333333333%;
   float: left; }
 
-.evo-grid-11 {
+.grid-11 {
   width: 91.666666666666667%;
   float: left; }
 
-.evo-grid-12 {
+.grid-12 {
   width: 100%;
   float: left; }
 
@@ -741,18 +744,18 @@ pre.code-short > code {
     float: left; } }
 
 @media screen and (max-width: 480px) {
-  .evo-grid-1,
-  .evo-grid-2,
-  .evo-grid-3,
-  .evo-grid-4,
-  .evo-grid-5,
-  .evo-grid-6,
-  .evo-grid-7,
-  .evo-grid-8,
-  .evo-grid-9,
-  .evo-grid-10,
-  .evo-grid-11,
-  .evo-grid-12 {
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12 {
     width: 100%;
     float: left; } }
 
@@ -1304,90 +1307,160 @@ pre.code-short > code {
 /* https://snook.ca/archives/html_and_css/vm-vh-units */
 /* http://www.w3.org/TR/css3-values/#vm */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
-.view-full,
-.view-100 {
-  width: 100vw;
-  height: 100vh; }
+.view-wide-none,
+.view-wide-0 {
+  width: 0vw; }
 
-.view-75 {
-  width: 75vw;
-  height: 75vh; }
+.view-wide-5 {
+  width: 5vw; }
 
-.view-66 {
-  width: 66vw;
-  height: 66vh; }
+.view-wide-10 {
+  width: 10vw; }
 
-.view-half,
-.view-50 {
-  width: 50vw;
-  height: 50vh; }
+.view-wide-15 {
+  width: 15vw; }
 
-.view-third,
-.view-33 {
-  width: 33vw;
-  height: 33vh; }
-
-.view-quarter,
-.view-25 {
-  width: 25vw;
-  height: 25vh; }
-
-.view-none,
-.view-0 {
-  width: 0vw;
-  height: 0vh; }
-
-.view-wide-full,
-.view-wide-100 {
-  width: 100vw; }
-
-.view-wide-75 {
-  width: 75vw; }
-
-.view-wide-66 {
-  width: 66vw; }
-
-.view-wide-half,
-.view-wide-50 {
-  width: 50vw; }
-
-.view-wide-third,
-.view-wide-33 {
-  width: 33vw; }
+.view-wide-20 {
+  width: 20vw; }
 
 .view-wide-quarter,
 .view-wide-25 {
   width: 25vw; }
 
-.view-wide-none,
-.view-wide-0 {
-  width: 0vw; }
+.view-wide-30 {
+  width: 30vw; }
 
-.view-tall-full,
-.view-tall-100 {
-  height: 100vh; }
+.view-wide-35 {
+  width: 35vw; }
 
-.view-tall-75 {
-  height: 75vh; }
+.view-wide-40 {
+  width: 40vw; }
 
-.view-tall-66 {
-  height: 66vh; }
+.view-wide-45 {
+  width: 45vw; }
 
-.view-tall-half,
-.view-tall-50 {
-  height: 50vh; }
+.view-wide-half,
+.view-wide-50 {
+  width: 50vw; }
 
-.view-tall-third,
-.view-tall-33 {
-  height: 33vh; }
+.view-wide-55 {
+  width: 55vw; }
+
+.view-wide-60 {
+  width: 60vw; }
+
+.view-wide-65 {
+  width: 65vw; }
+
+.view-wide-70 {
+  width: 70vw; }
+
+.view-wide-75 {
+  width: 75vw; }
+
+.view-wide-80 {
+  width: 80vw; }
+
+.view-wide-85 {
+  width: 85vw; }
+
+.view-wide-90 {
+  width: 90vw; }
+
+.view-wide-95 {
+  width: 95vw; }
+
+.view-wide-full,
+.view-wide-100 {
+  width: 100vw; }
+
+.view-wide-66 {
+  width: 66vw; }
+
+.view-wide-third,
+.view-wide-33 {
+  width: 33vw; }
+
+.view-tall-none,
+.view-tall-0 {
+  height: 0vh; }
+
+.view-tall-5 {
+  height: 5vh; }
+
+.view-tall-10 {
+  height: 10vh; }
+
+.view-tall-15 {
+  height: 15vh; }
+
+.view-tall-20 {
+  height: 20vh; }
 
 .view-tall-quarter,
 .view-tall-25 {
   height: 25vh; }
 
-.view-tall-none,
-.view-tall-0 {
-  height: 0vh; }
+.view-tall-30 {
+  height: 30vh; }
+
+.view-tall-35 {
+  height: 35vh; }
+
+.view-tall-40 {
+  height: 40vh; }
+
+.view-tall-45 {
+  height: 45vh; }
+
+.view-tall-half,
+.view-tall-50 {
+  height: 50vh; }
+
+.view-tall-55 {
+  height: 55vh; }
+
+.view-tall-60 {
+  height: 60vh; }
+
+.view-tall-65 {
+  height: 65vh; }
+
+.view-tall-70 {
+  height: 70vh; }
+
+.view-tall-75 {
+  height: 75vh; }
+
+.view-tall-80 {
+  height: 80vh; }
+
+.view-tall-85 {
+  height: 85vh; }
+
+.view-tall-90 {
+  height: 90vh; }
+
+.view-tall-95 {
+  height: 95vh; }
+
+.view-tall-full,
+.view-tall-100 {
+  height: 100vh; }
+
+.view-tall-66 {
+  height: 66vh; }
+
+.view-tall-third,
+.view-tall-33 {
+  height: 33vh; }
+
+/* https://snook.ca/archives/html_and_css/vm-vh-units */
+/* http://www.w3.org/TR/css3-values/#vm */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
+.view-full {
+  width: 100vw;
+  height: 100vh; }
 
 .evo-masonry {
   column-count: 4;
@@ -1398,42 +1471,49 @@ pre.code-short > code {
   column-gap: 1.5em; }
 
 .masonry-item {
-  background: #fff;
   margin: 0 0 1.5em;
   display: inline-block;
   padding: .25rem;
   width: 100%; }
 
+.evo-masonry .masonry-item {
+  background: white;
+  color: inherit; }
+
+.evo-masonry-inverse .masonry-item {
+  background: black; }
+
 .masonry-item > figcaption {
+  font-size: 0.75rem;
   column-break-inside: avoid;
   display: inline-block; }
 
 @media only screen and (min-width: 300px) {
-  .evo-masonry {
+  .evo-masonry-inverse, .evo-masonry {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; } }
 
 @media only screen and (min-width: 700px) {
-  .evo-masonry {
+  .evo-masonry-inverse, .evo-masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3; } }
 
 @media only screen and (min-width: 900px) {
-  .evo-masonry {
+  .evo-masonry-inverse, .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1100px) {
-  .evo-masonry {
+  .evo-masonry-inverse, .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1300px) {
-  .evo-masonry {
+  .evo-masonry-inverse, .evo-masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
@@ -1492,145 +1572,6 @@ div.iframe-container-shadow-3::before {
   -webkit-transform-origin: 15px 25px;
   display: inline-block;
   width: 100px; }
-
-/* https://snook.ca/archives/html_and_css/vm-vh-units */
-/* http://www.w3.org/TR/css3-values/#vm */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/length */
-.view-col-0 {
-  width: 0vw; }
-
-.view-col-1 {
-  width: 5vw; }
-
-.view-col-2 {
-  width: 10vw; }
-
-.view-col-3 {
-  width: 15vw; }
-
-.view-col-4 {
-  width: 20vw; }
-
-.view-col-5 {
-  width: 25vw; }
-
-.view-col-6 {
-  width: 30vw; }
-
-.view-col-7 {
-  width: 35vw; }
-
-.view-col-8 {
-  width: 40vw; }
-
-.view-col-9 {
-  width: 45vw; }
-
-.view-col-10 {
-  width: 50vw; }
-
-.view-col-11 {
-  width: 55vw; }
-
-.view-col-12 {
-  width: 60vw; }
-
-.view-col-13 {
-  width: 65vw; }
-
-.view-col-14 {
-  width: 70vw; }
-
-.view-col-15 {
-  width: 75vw; }
-
-.view-col-16 {
-  width: 80vw; }
-
-.view-col-17 {
-  width: 85vw; }
-
-.view-col-18 {
-  width: 90vw; }
-
-.view-col-19 {
-  width: 95vw; }
-
-.view-col-20 {
-  width: 100vw; }
-
-.view-row-0 {
-  height: 0vh; }
-
-.view-row-1 {
-  height: 5vh; }
-
-.view-row-2 {
-  height: 10vh; }
-
-.view-row-3 {
-  height: 15vh; }
-
-.view-row-4 {
-  height: 20vh; }
-
-.view-row-5 {
-  height: 25vh; }
-
-.view-row-6 {
-  height: 30vh; }
-
-.view-row-7 {
-  height: 35vh; }
-
-.view-row-8 {
-  height: 40vh; }
-
-.view-row-9 {
-  height: 45vh; }
-
-.view-row-10 {
-  height: 50vh; }
-
-.view-row-11 {
-  height: 55vh; }
-
-.view-row-12 {
-  height: 60vh; }
-
-.view-row-13 {
-  height: 65vh; }
-
-.view-row-14 {
-  height: 70vh; }
-
-.view-row-15 {
-  height: 75vh; }
-
-.view-row-16 {
-  height: 80vh; }
-
-.view-row-17 {
-  height: 85vh; }
-
-.view-row-18 {
-  height: 90vh; }
-
-.view-row-19 {
-  height: 95vh; }
-
-.view-row-20 {
-  height: 100vh; }
-
-.view-95 {
-  width: 95vw;
-  height: 95vh;
-  vertical-align: middle; }
-
-.view-90 {
-  width: 90vw;
-  height: 90vh;
-  vertical-align: middle; }
 
 .evo-space {
   height: 3rem;
@@ -2811,6 +2752,10 @@ body.color-demo h2.margin-bottom-0 {
 .inherit-color-bg {
   background-color: inherit; }
 
+.transparent,
+.transparent-hover:hover {
+  color: transparent; }
+
 .transparent-bg,
 .transparent-bg-hover:hover {
   background-color: transparent; }
@@ -2830,17 +2775,221 @@ body.color-demo h2.margin-bottom-0 {
   border-right-color: #0073b9;
   border-left-color: #0073b9; }
 
-.evo-color-white {
+/* COLORS */
+.color-0 {
+  color: #fff02a; }
+
+.color-0-bg {
+  background-color: #fff02a; }
+
+.color-1 {
+  color: #ffe52c; }
+
+.color-1-bg {
+  background-color: #ffe52c; }
+
+.color-2 {
+  color: #fdc131; }
+
+.color-2-bg {
+  background-color: #fdc131; }
+
+.color-3 {
+  color: #f59331; }
+
+.color-3-bg {
+  background-color: #f59331; }
+
+.color-4 {
+  color: #ef662f; }
+
+.color-4-bg {
+  background-color: #ef662f; }
+
+.color-5 {
+  color: #eb212e; }
+
+.color-5-bg {
+  background-color: #eb212e; }
+
+.color-6 {
+  color: #eb1f45; }
+
+.color-6-bg {
+  background-color: #eb1f45; }
+
+.color-7 {
+  color: #eb1d5d; }
+
+.color-7-bg {
+  background-color: #eb1d5d; }
+
+.color-8 {
+  color: #ea1873; }
+
+.color-8-bg {
+  background-color: #ea1873; }
+
+.color-9 {
+  color: #ea148c; }
+
+.color-9-bg {
+  background-color: #ea148c; }
+
+.color-10 {
+  color: #bb238c; }
+
+.color-10-bg {
+  background-color: #bb238c; }
+
+.color-11 {
+  color: #902c8e; }
+
+.color-11-bg {
+  background-color: #902c8e; }
+
+.color-12 {
+  color: #65318f; }
+
+.color-12-bg {
+  background-color: #65318f; }
+
+.color-13 {
+  color: #2f3490; }
+
+.color-13-bg {
+  background-color: #2f3490; }
+
+.color-14 {
+  color: #0056a4; }
+
+.color-14-bg {
+  background-color: #0056a4; }
+
+.color-15 {
+  color: #0073b9; }
+
+.color-15-bg {
+  background-color: #0073b9; }
+
+.color-16 {
+  color: #0090d2; }
+
+.color-16-bg {
+  background-color: #0090d2; }
+
+.color-17 {
+  color: #00afec; }
+
+.color-17-bg {
+  background-color: #00afec; }
+
+.color-18 {
+  color: #00abc3; }
+
+.color-18-bg {
+  background-color: #00abc3; }
+
+.color-19 {
+  color: #00a89c; }
+
+.color-19-bg {
+  background-color: #00a89c; }
+
+.color-20 {
+  color: #00a676; }
+
+.color-20-bg {
+  background-color: #00a676; }
+
+.color-21 {
+  color: #00a453; }
+
+.color-21-bg {
+  background-color: #00a453; }
+
+.color-22 {
+  color: #3fb34f; }
+
+.color-22-bg {
+  background-color: #3fb34f; }
+
+.color-23 {
+  color: #8ec549; }
+
+.color-23-bg {
+  background-color: #8ec549; }
+
+.color-24 {
+  color: #cbd93e; }
+
+.color-24-bg {
+  background-color: #cbd93e; }
+
+.color-25 {
+  color: #ede634; }
+
+.color-25-bg {
+  background-color: #ede634; }
+
+.color-26 {
+  color: #e3ca3c; }
+
+.color-26-bg {
+  background-color: #e3ca3c; }
+
+.color-27 {
+  color: #c9ac40; }
+
+.color-27-bg {
+  background-color: #c9ac40; }
+
+.color-28 {
+  color: #b38f44; }
+
+.color-28-bg {
+  background-color: #b38f44; }
+
+.color-29 {
+  color: #9c733a; }
+
+.color-29-bg {
+  background-color: #9c733a; }
+
+.color-30 {
+  color: #8a6132; }
+
+.color-30-bg {
+  background-color: #8a6132; }
+
+body.color-demo div[class*="evo-box"] {
+  margin-top: .5em;
+  margin-bottom: 3em;
+  /*border-width: 1px;*/ }
+
+body.color-demo div.color-swatch {
+  height: 25px; }
+
+body.color-demo h2.margin-bottom-0 {
+  margin-bottom: -20px; }
+
+.evo-white {
   color: white; }
 
-.evo-color-white-bg {
+.evo-white-bg {
   background-color: white; }
 
-.evo-color-black {
+.evo-black {
   color: black; }
 
-.evo-color-black-bg {
+.evo-black-bg {
   background-color: black; }
+
+.evo-gray-dark {
+  color: #333333; }
+
+.evo-gray-dark-bg {
+  background-color: #333333; }
 
 .evo-gray {
   color: #7f7f7f; }
@@ -2848,7 +2997,12 @@ body.color-demo h2.margin-bottom-0 {
 .evo-gray-bg {
   background-color: #7f7f7f; }
 
-/* COLORS */
+.evo-gray-light {
+  color: #cccccc; }
+
+.evo-gray-light-bg {
+  background-color: #cccccc; }
+
 /* 
 
 --------------------------- GRAY COLORS --------------------------- 
@@ -3422,192 +3576,6 @@ body.color-demo h2.margin-bottom-0 {
 .inverse-trans-gray-0-bg {
   background-color: rgba(255, 255, 255, 0); }
 
-.color-0 {
-  color: #fff02a; }
-
-.color-0-bg {
-  background-color: #fff02a; }
-
-.color-1 {
-  color: #ffe52c; }
-
-.color-1-bg {
-  background-color: #ffe52c; }
-
-.color-2 {
-  color: #fdc131; }
-
-.color-2-bg {
-  background-color: #fdc131; }
-
-.color-3 {
-  color: #f59331; }
-
-.color-3-bg {
-  background-color: #f59331; }
-
-.color-4 {
-  color: #ef662f; }
-
-.color-4-bg {
-  background-color: #ef662f; }
-
-.color-5 {
-  color: #eb212e; }
-
-.color-5-bg {
-  background-color: #eb212e; }
-
-.color-6 {
-  color: #eb1f45; }
-
-.color-6-bg {
-  background-color: #eb1f45; }
-
-.color-7 {
-  color: #eb1d5d; }
-
-.color-7-bg {
-  background-color: #eb1d5d; }
-
-.color-8 {
-  color: #ea1873; }
-
-.color-8-bg {
-  background-color: #ea1873; }
-
-.color-9 {
-  color: #ea148c; }
-
-.color-9-bg {
-  background-color: #ea148c; }
-
-.color-10 {
-  color: #bb238c; }
-
-.color-10-bg {
-  background-color: #bb238c; }
-
-.color-11 {
-  color: #902c8e; }
-
-.color-11-bg {
-  background-color: #902c8e; }
-
-.color-12 {
-  color: #65318f; }
-
-.color-12-bg {
-  background-color: #65318f; }
-
-.color-13 {
-  color: #2f3490; }
-
-.color-13-bg {
-  background-color: #2f3490; }
-
-.color-14 {
-  color: #0056a4; }
-
-.color-14-bg {
-  background-color: #0056a4; }
-
-.color-15 {
-  color: #0073b9; }
-
-.color-15-bg {
-  background-color: #0073b9; }
-
-.color-16 {
-  color: #0090d2; }
-
-.color-16-bg {
-  background-color: #0090d2; }
-
-.color-17 {
-  color: #00afec; }
-
-.color-17-bg {
-  background-color: #00afec; }
-
-.color-18 {
-  color: #00abc3; }
-
-.color-18-bg {
-  background-color: #00abc3; }
-
-.color-19 {
-  color: #00a89c; }
-
-.color-19-bg {
-  background-color: #00a89c; }
-
-.color-20 {
-  color: #00a676; }
-
-.color-20-bg {
-  background-color: #00a676; }
-
-.color-21 {
-  color: #00a453; }
-
-.color-21-bg {
-  background-color: #00a453; }
-
-.color-22 {
-  color: #3fb34f; }
-
-.color-22-bg {
-  background-color: #3fb34f; }
-
-.color-23 {
-  color: #8ec549; }
-
-.color-23-bg {
-  background-color: #8ec549; }
-
-.color-24 {
-  color: #cbd93e; }
-
-.color-24-bg {
-  background-color: #cbd93e; }
-
-.color-25 {
-  color: #ede634; }
-
-.color-25-bg {
-  background-color: #ede634; }
-
-.color-26 {
-  color: #e3ca3c; }
-
-.color-26-bg {
-  background-color: #e3ca3c; }
-
-.color-27 {
-  color: #c9ac40; }
-
-.color-27-bg {
-  background-color: #c9ac40; }
-
-.color-28 {
-  color: #b38f44; }
-
-.color-28-bg {
-  background-color: #b38f44; }
-
-.color-29 {
-  color: #9c733a; }
-
-.color-29-bg {
-  background-color: #9c733a; }
-
-.color-30 {
-  color: #8a6132; }
-
-.color-30-bg {
-  background-color: #8a6132; }
-
 /*      FONTS     */
 .evo-font {
   font-family: Source Sans Pro, sans-serif;
@@ -4147,7 +4115,7 @@ body.color-demo h2.margin-bottom-0 {
   letter-spacing: normal;
   text-rendering: optimizeLegibility; }
 
-.text-inverse {
+.text-inverse, .evo-masonry-inverse .masonry-item {
   color: white; }
 
 .text-reset {
@@ -4191,45 +4159,45 @@ h6,
 
 h1,
 .h1 {
-  font-size: 3rem;
-  line-height: 1.4375em;
+  font-size: 2.3125rem;
+  line-height: 1;
   letter-spacing: -0.025em;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 h2,
 .h2 {
-  font-size: 2.6875rem;
-  line-height: 1.4375em;
+  font-size: 1.875rem;
+  line-height: 1.125;
   letter-spacing: normal;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 h3,
 .h3 {
-  font-size: 1.875rem;
-  line-height: 1.4375em;
+  font-size: 1.4375rem;
+  line-height: 1.3125;
   letter-spacing: normal;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 h4,
 .h4 {
   font-size: 1.3125rem;
-  line-height: 1.4375em;
+  line-height: 1.4375;
   letter-spacing: normal;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 h5,
 .h5 {
-  font-size: 1rem;
-  line-height: 1.4375em;
+  font-size: 1.125rem;
+  line-height: 1.4375;
   letter-spacing: normal;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 h6,
 .h6 {
-  font-size: 0.875rem;
-  line-height: 1.4375em;
+  font-size: 1rem;
+  line-height: 1.4375;
   letter-spacing: normal;
-  margin-bottom: 1.4375em; }
+  margin-bottom: 0.5em; }
 
 p {
   color: inherit;
@@ -4253,6 +4221,18 @@ p {
 
 .white-space-normal {
   white-space: normal !important; }
+
+.white-space-nowrap {
+  white-space: nowrap; }
+
+.white-space-pre {
+  white-space: pre; }
+
+.white-space-pre-wrap {
+  white-space: pre-wrap; }
+
+.white-space-pre-line {
+  white-space: pre-line; }
 
 .break-word {
   overflow-wrap: break-word; }
@@ -4319,7 +4299,7 @@ p {
 .evo-text-1 {
   font-size: 0.625rem; }
 
-.evo-text-2, .masonry-item > figcaption {
+.evo-text-2 {
   font-size: 0.75rem; }
 
 .evo-text-3 {
@@ -8729,10 +8709,10 @@ ol.list-lower-greek {
 
 .evo-list-stripe li:nth-child(even),
 .evo-list-stripe-even li:nth-child(even) {
-  background-color: #eee; }
+  background-color: #cccccc; }
 
 .evo-list-stripe-odd li:nth-child(odd) {
-  background-color: #eee; }
+  background-color: #cccccc; }
 
 .evo-list-lines-indent li {
   padding-left: .75ch;
@@ -8789,9 +8769,9 @@ ol.list-lower-greek {
     border-bottom-color: black !important; }
 
 .evo-list-lines-gray li {
-  border-top-color: #eee !important; }
+  border-top-color: #cccccc !important; }
   .evo-list-lines-gray li:last-child {
-    border-bottom-color: #eee !important; }
+    border-bottom-color: #cccccc !important; }
 
 .evo-list-lines-white li {
   border-top-color: white !important; }
@@ -8864,7 +8844,7 @@ ol.list-lower-greek {
   border-top-color: black !important; }
 
 .evo-list-line-top-gray li:first-child {
-  border-top-color: #ccc !important; }
+  border-top-color: #cccccc !important; }
 
 .evo-list-line-top-white li:first-child {
   border-top-color: white !important; }
@@ -8873,7 +8853,7 @@ ol.list-lower-greek {
   border-top-color: black !important; }
 
 .evo-list-line-middle-gray li:not(:first-child) {
-  border-top-color: #ccc !important; }
+  border-top-color: #cccccc !important; }
 
 .evo-list-line-middle-white li:not(:first-child) {
   border-top-color: white !important; }
@@ -8882,7 +8862,7 @@ ol.list-lower-greek {
   border-bottom-color: black !important; }
 
 .evo-list-line-bottom-gray li:last-child {
-  border-bottom-color: #ccc !important; }
+  border-bottom-color: #cccccc !important; }
 
 .evo-list-line-bottom-white li:last-child {
   border-bottom-color: white !important; }
@@ -9026,6 +9006,18 @@ button.bullet-check-heavy:before {
 .no-repeat,
 .bg-no-repeat {
   background-repeat: no-repeat; }
+
+.repeat,
+.bg-repeat {
+  background-repeat: repeat; }
+
+.repeat-y,
+.bg-repeat-y {
+  background-repeat: repeat-y; }
+
+.repeat-x,
+.bg-repeat-x {
+  background-repeat: repeat-x; }
 
 .bg-center {
   background-repeat: no-repeat;
@@ -9976,7 +9968,7 @@ hr.line-white {
   border-top-color: white; }
 
 hr.line-gray {
-  border-top-color: #ccc; }
+  border-top-color: #cccccc; }
 
 hr.line-gray-0 {
   border-top-color: white; }
@@ -10250,10 +10242,10 @@ hr.line-blur-10 {
   border-left-color: #d9d9d9; }
 
 .box-gray {
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
-  border-right-color: #ccc;
-  border-left-color: #ccc; }
+  border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
+  border-right-color: #cccccc;
+  border-left-color: #cccccc; }
 
 .box-white {
   border-top-color: white;
@@ -10271,7 +10263,7 @@ hr.line-blur-10 {
   border-top-color: black; }
 
 .box-top-gray {
-  border-top-color: #ccc; }
+  border-top-color: #cccccc; }
 
 .box-top-white {
   border-top-color: white; }
@@ -10280,7 +10272,7 @@ hr.line-blur-10 {
   border-bottom-color: black; }
 
 .box-bottom-gray {
-  border-bottom-color: #ccc; }
+  border-bottom-color: #cccccc; }
 
 .box-bottom-white {
   border-bottom-color: white; }
@@ -10289,7 +10281,7 @@ hr.line-blur-10 {
   border-left-color: black; }
 
 .box-left-gray {
-  border-left-color: #ccc; }
+  border-left-color: #cccccc; }
 
 .box-left-white {
   border-left-color: white; }
@@ -10298,13 +10290,13 @@ hr.line-blur-10 {
   border-right-color: black; }
 
 .box-right-gray {
-  border-right-color: #ccc; }
+  border-right-color: #cccccc; }
 
 .box-right-white {
   border-right-color: white; }
 
 .box-gray-bg {
-  background-color: #ccc !important; }
+  background-color: #cccccc !important; }
 
 .box-white-bg {
   background-color: white !important; }
@@ -12601,13 +12593,6 @@ div.ad-shadow-300 {
   box-shadow: 0 34px 58px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center; }
 
-tr:hover {
-  color: black;
-  background-color: lightyellow; }
-
-tr:hover a {
-  color: #00aeef; }
-
 .evo-table,
 table.evo-table {
   border: 0;
@@ -12615,6 +12600,13 @@ table.evo-table {
   .evo-table tr,
   table.evo-table tr {
     color: #555; }
+  .evo-table tr:hover,
+  table.evo-table tr:hover {
+    color: inherit;
+    background-color: #fcfcfc; }
+  .evo-table tr:hover a,
+  table.evo-table tr:hover a {
+    color: #00afec; }
   .evo-table caption,
   table.evo-table caption {
     color: #555;
@@ -12642,6 +12634,12 @@ table.evo-table-inverse {
   .evo-table-inverse tr,
   table.evo-table-inverse tr {
     color: #fff; }
+  .evo-table-inverse tr:hover,
+  table.evo-table-inverse tr:hover {
+    background-color: #0c0c0c; }
+  .evo-table-inverse tr:hover a,
+  table.evo-table-inverse tr:hover a {
+    color: #00afec; }
   .evo-table-inverse caption,
   table.evo-table-inverse caption {
     color: #fff;
@@ -12872,6 +12870,12 @@ fieldset.overflow {
 .form-checkbox-inline .form-checkbox:not(:first-of-type) input,
 .form-radio-inline .form-radio:not(:first-of-type) input {
   margin-left: 1em; }
+
+@media (max-width: 768px) {
+  .evo-form,
+  input,
+  input[type=text] {
+    display: block !important; } }
 
 /*********************
     TEXT INPUTS

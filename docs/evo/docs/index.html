@@ -18,6 +18,37 @@
         
 <style>
 
+.hero-usage {
+  background-image: url(../image/IMG_1224.JPG);
+}
+
+.hero-layout {
+  background-image: url(../image/IMG_6894.JPG);
+}
+
+.hero-color {
+  background-image: url(../image/IMG_3125.JPG);
+}
+
+.hero-line {
+  background-image: url(../image/IMG_5572.JPG);
+}
+
+.hero-icon {
+  background-image: url(../image/IMG_5838.JPG);
+}
+
+.hero-typography {
+  background-image: url(../image/IMG_7172.JPG);
+}
+
+.hero-inputs {
+  background-image: url(../image/IMG_6903.JPG);
+}
+
+.hero-image {
+  background-image: url(../image/IMG_2971.JPG);
+}
 
 
 .demo-form input:not([type="checkbox"]),
@@ -100,15 +131,15 @@
 <p class="text-measure-6">This documentation acts as a style guide for the Evo framework. It's organized into 20+ UI groups, and includes over 1000+ CSS style functions.</p>
 <div class="text-measure">
 <ul class="evo-list-bullet list-bullet bullet-slash list-inline">
-<li><a href="#usage">Usage&nbsp;✗</a></li>
+<li><a href="#usage">Usage</a></li>
 <li><a href="#layout">Layout</a></li>
 <li><a href="#space">Space</a></li>
 <li><a href="#color">Color</a></li>
-<li><a href="#gray">Gray&nbsp;✗</a></li>
-<li><a href="#shadow">Shadow&nbsp;✗</a></li>
+<li><a href="#gray">Gray</a></li>
+<li><a href="#shadow">Shadow</a></li>
 <li><a href="#line">Line</a></li>
 <li><a href="#box">Box</a></li>
-<li><a href="#icon">Icon&nbsp;✗</a></li>
+<li><a href="#icon">Icon</a></li>
 <li><a href="#font">Font</a></li>
 <li><a href="#text">Text</a></li>
 <li><a href="#selection">Selection</a></li>
@@ -127,6 +158,11 @@
 <div class="evo-space"></div>
 </section>
 
+
+<div class="evo-position">
+<div class="view-tall-half hero-usage image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Usage</h1>
+</div>
 
 <!-- ********************* -->
 <!--    USAGE   -->
@@ -153,7 +189,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15"><a href="https://pdickan.github.io/hudson/css/evo-elements.css"><mark>Grab the CSS code</mark></a> and start styling text, color, buttons, or images. Use this page as a general style guide.</p>
 <ul class="evo-list list-bullet bullet-arrow">
 <li><a href="usage.html">Demo: style playground for beginners</a></li>
@@ -164,6 +200,11 @@
 <div class="evo-space-18"></div>
 
 </section>
+
+<div class="evo-position">
+<div class="view-tall-half hero-layout image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Layout</h1>
+</div>
 
 <!-- ********************* -->
 <!--    LAYOUT   -->
@@ -190,7 +231,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
   <p class="text-measure-6 text-size-6 trans-gray-15">A responsive 12 column grid is recommended.</p>
   <div class="layout-example-grid">
     <div>1</div>
@@ -236,7 +277,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Space blocks are a novel approach to managing negative space in a layout.</p>
 <div class="evo-codeblock space-demo" data-identifier="space1">
 <div class="evo-space evo-box box-thin box-dashed"></div>
@@ -249,6 +290,8 @@
 </div>
 
 <div class="evo-space"></div>
+
+<p class="text-measure-6 text-size-6 trans-gray-15">Use different space sizes to control vertical spacing.</p>
 
 <div class="evo-codeblock" data-identifier="space1-2">
 <div class="evo-space-5 evo-box box-thin box-dashed evo-margin"></div>
@@ -267,7 +310,7 @@
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Padding for the bottom inside of a container.</p>
 <div class="evo-codeblock space-demo" data-identifier="space3">
 <div class="evo-padding evo-box box-thin box-dashed"><div class="evo-gray-bg text-center text-inverse">This is the content area. Padding space is below.</div></div>
@@ -280,6 +323,8 @@
 </div>
 
 <div class="evo-space"></div>
+
+<p class="text-measure-6 text-size-6 trans-gray-15">Bottom padding size options are available.</p>
 
 <div class="evo-codeblock" data-identifier="space3-2">
 <div class="padding-bottom-10 evo-box box-thin box-dashed evo-margin"><div class="evo-gray-bg text-center text-inverse">This is the content area. Padding space is below.</div></div>
@@ -296,7 +341,7 @@
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Margin for bottom outside of an element.</p>
 <div class="evo-codeblock space-demo" data-identifier="space4">
 <div class="evo-margin evo-box box-thin box-dashed"><div class="evo-gray-bg text-center text-inverse">This is the content area. Margin space is below.</div></div>
@@ -310,6 +355,8 @@
 </div>
 
 <div class="evo-space"></div>
+
+<p class="text-measure-6 text-size-6 trans-gray-15">Bottom margin size options are available.</p>
 
 <div class="evo-codeblock" data-identifier="space4-2">
 <div class="margin-bottom-10 evo-box box-thin box-dashed"><div class="evo-gray-bg text-center text-inverse">This is the content area. Margin space is below.</div></div>
@@ -328,6 +375,11 @@
 
 </section>
 
+<div class="evo-position">
+<div class="view-tall-half hero-color image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Color</h1>
+</div>
+
 <!-- ********************* -->
 <!--    COLOR   -->
 <!-- ********************* -->
@@ -342,7 +394,6 @@
     <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
         <li><a href="color.html">Color</a></li>
         <li><a href="color-natural.html">Color Natural</a></li>
-        <li><a href="color-gray.html">Color Gray&nbsp;✗</a></li>
         <li><a href="color-neon.html">Color Neon&nbsp;✗</a></li>
         <li><a href="color-pastel.html">Color Pastel&nbsp;✗</a></li>
         <!-- <li><a href="color-warm.html">Color Warm&nbsp;✗</a></li>
@@ -355,7 +406,8 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
+
 <p class="text-measure-6 text-size-6 trans-gray-15">The primary color is defined in the <a href="usage-theme.html">theme variables</a>.</p>
 <div class="four-up">
 <div class="evo-codeblock" data-identifier="color">
@@ -369,6 +421,31 @@
 <!-- HTML will show up inside here --></code>
 </pre>
 </div>
+
+<div class="evo-space"></div>
+
+<p class="text-measure-6 text-size-6 trans-gray-15">Color accents.</p>
+<div class="evo-codeblock" data-identifier="color-accents">
+
+<div class="four-up">
+<h2 class="color-17 text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="color-17-bg">&nbsp;</div>
+</div>
+
+<div class="four-up">
+<h2 class="color-20 text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="color-20-bg">&nbsp;</div>
+</div>
+
+</div>
+
+<div class="evo-space-10"></div>
+<div class="evo-codeblock-target" data-target="color-accents">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+
 </div>
 
 <div class="evo-space-18"></div>
@@ -388,8 +465,8 @@
   <div class="float-right min-width-25">
     <ul class="evo-list list-bullet bullet-arrow bullet-gray-light">
       <li><a href="gray.html">Gray&nbsp;✗</a></li>
-      <li><a href="gray-neutral.html">Gray Neutral&nbsp;✗</a></li>
-      <li><a href="gray-transparent.html">Gray Transparent&nbsp;✗</a></li>
+      <li><a href="gray-neutral.html">Gray Neutral</a></li>
+      <li><a href="gray-trans.html">Gray Trans</a></li>
       <li><a href="gray-warm.html">Gray Warm&nbsp;✗</a></li>
       <li><a href="gray-cool.html">Gray Cool&nbsp;✗</a></li>
       <li><a href="gray-gradient.html">Gray Gradient&nbsp;✗</a></li>
@@ -398,7 +475,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">The primary gray is defined in the <a href="usage-theme.html">theme variables</a>.</p>
 <div class="four-up">
 <div class="evo-codeblock" data-identifier="gray">
@@ -412,11 +489,46 @@
 <!-- HTML will show up inside here --></code>
 </pre>
 </div>
+
+<div class="evo-space"></div>
+
+<p class="text-measure-6 text-size-6 trans-gray-15">Gray accents.</p>
+<div class="evo-codeblock" data-identifier="gray-accents">
+
+<div class="four-up">
+<h2 class="gray-20 text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="gray-20-bg">&nbsp;</div>
+</div>
+
+<div class="four-up">
+<h2 class="gray-10 text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="gray-10-bg">&nbsp;</div>
+</div>
+
+<div class="four-up">
+<h2 class="gray-5 text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="gray-5-bg">&nbsp;</div>
+</div>
+
+</div>
+
+<div class="evo-space-10"></div>
+<div class="evo-codeblock-target" data-target="gray-accents">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+
 </div>
 
 <div class="evo-space-18"></div>
 
 </section>
+
+<div class="evo-position">
+<div class="view-tall-half hero-line image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Graphics</h1>
+</div>
 
 <!-- ********************* -->
 <!--    SHADOW   -->
@@ -436,12 +548,12 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Text and box shadows are available.</p>
 <div class="four-up">
 <div class="evo-codeblock" data-identifier="shadow">
-<h2 class="text-shadow evo-color-white text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
-<div class="box-shadow evo-color-white-bg">&nbsp;</div>
+<h2 class="text-shadow evo-white text-size-15 text-bold margin-bottom-0 text-leading-4">Aa</h2>
+<div class="box-shadow evo-white-bg">&nbsp;</div>
 </div>
 </div>
 <div class="evo-space-10"></div>
@@ -483,7 +595,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Horizontal lines.</h3>
 <div class="evo-codeblock" data-identifier="line">
 <hr class="evo-line" />
@@ -526,7 +638,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Border box lines.</h3>
 <div class="evo-codeblock" data-identifier="box">
 <div class="evo-box image-size-15"></div>
@@ -541,7 +653,7 @@
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Rounded border box.</h3>
 <div class="evo-codeblock" data-identifier="box2">
 <div class="evo-box box-round image-size-15"></div>
@@ -557,6 +669,11 @@
 <div class="evo-space-18"></div>
 
 </section>
+
+<div class="evo-position">
+<div class="view-tall-half hero-icon image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Icon</h1>
+</div>
 
 <!-- ********************* -->
 <!--    ICON   -->
@@ -582,7 +699,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Evo icons are available in multiple weights.</p>
 <div class="evo-codeblock" data-identifier="image">
 <img src="../image/circle-chevron-bold.svg" height="50rem" width="50rem" />
@@ -599,6 +716,10 @@
 
 </section>
 
+<div class="evo-position">
+<div class="view-tall-half hero-typography image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Typography</h1>
+</div>
 
 <!-- ********************* -->
 <!--    FONT   -->
@@ -627,7 +748,7 @@
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Central control of font family.</h3>
 <div class="evo-codeblock" data-identifier="font"><p class="evo-font text-size-6">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
 a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
@@ -665,7 +786,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
     <p class="text-measure-6 text-size-6 trans-gray-15">Background color accents for selected text, defined in Evo theme variables.</p>
 <pre class="evo-box-left box-left-thin padding-left-9">&lt;span class="evo-selection"&gt;
 Demo showing select state&lt;/span&gt;</pre>
@@ -701,7 +822,7 @@ Demo showing select state&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
     <p class="text-measure-6 text-size-6 trans-gray-15">Background color accent to call-out important text, text on an image, or a <a href="quote.html">quote</a>.</p>
 <pre class="evo-box-left box-left-thin padding-left-9">&lt;span class="evo-highlight highlight-color"&gt;
 Sample output from HTML&lt;/span&gt;</pre>
@@ -712,7 +833,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-  <div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
     <p class="text-measure-6 text-size-6 inverse-trans-gray-15">Use an inverse highlight on a dark background.</p>
 <pre class="evo-box-left box-left-thin padding-left-9 text-inverse">&lt;span class="evo-highlight inverse-highlight-color"&gt;
 Sample output from HTML&lt;/span&gt;</pre>
@@ -756,7 +877,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Powerful typographic controls.</h3>
 <div class="evo-codeblock" data-identifier="text"><p>This is paragraph text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
@@ -771,7 +892,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Centrally controlled inverse classes.</h3>
 <div class="evo-codeblock" data-identifier="text-inverse"><p class="text-inverse">This is paragraph text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
@@ -787,8 +908,8 @@ Sample output from HTML&lt;/span&gt;</pre>
 <div class="evo-space"></div>
 
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
-<h3 class="text-measure-6 text-size-6 trans-gray-15">Central control of headers.</h3>
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
+<h3 class="text-measure-6 text-size-6 trans-gray-15 evo-margin">Central control of headers.</h3>
 <div class="evo-codeblock" data-identifier="font-classes">
 <h4>This header text can be styled with functional CSS classes.</h4>
 <h5>This header text can be styled with functional CSS classes.</h5>
@@ -834,7 +955,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Unordered list without bullets.</h3>
 <div class="evo-codeblock" data-identifier="list"><ul class="evo-list">
 <li>List item 1</li>
@@ -852,7 +973,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Unordered list with custom bullets.</h3>
 <div class="evo-codeblock" data-identifier="list-bullet"><ul class="evo-list-bullet">
 <li>List item 1</li>
@@ -870,7 +991,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Ordered list with custom number styling.</h3>
 <div class="evo-codeblock" data-identifier="list-number"><ol class="evo-list-number">
 <li>List item 1</li>
@@ -888,7 +1009,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">List with lines.</h3>
 <div class="evo-codeblock" data-identifier="list-lines"><ul class="evo-list-lines">
 <li>List item 1</li>
@@ -906,9 +1027,9 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-black-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Inverse list with lines.</h3>
-<div class="evo-codeblock" data-identifier="list-lines-inverse"><ul class="evo-list-lines-inverse evo-color-white">
+<div class="evo-codeblock" data-identifier="list-lines-inverse"><ul class="evo-list-lines-inverse evo-white">
 <li>List item 1</li>
 <li>List item 2</li>
 <li>List item 3</li>
@@ -952,7 +1073,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Links synchronized to brand accent colors.</h3>
 <div class="evo-codeblock" data-identifier="link"><a href="javascript:void(0)" class="evo-link">This is a link</a>
 </div>
@@ -966,7 +1087,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Use inverse links for dark backgrounds.</h3>
 <div class="evo-codeblock" data-identifier="link-inverse"><a href="javascript:void(0)" class="evo-link-inverse">This is an inverse link</a>
 </div>
@@ -981,6 +1102,11 @@ Sample output from HTML&lt;/span&gt;</pre>
 <div class="evo-space-18"></div>
 
 </section>
+
+<div class="evo-position">
+<div class="view-tall-half hero-inputs image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Inputs</h1>
+</div>
 
 <!-- ********************* -->
 <!--    BUTTON   -->
@@ -1008,7 +1134,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Simple and powerful button styles.</h3>
 <div class="evo-codeblock" data-identifier="button"><button class="evo-button button-size-large">Large</button>
 <button>Medium</button>
@@ -1023,7 +1149,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Use inverse classes on a dark background.</h3>
 <div class="evo-codeblock" data-identifier="button-inverse"><button class="evo-inverse-button button-size-large">Large</button>
 <button class="evo-inverse-button">Medium</button>
@@ -1065,7 +1191,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Adaptive table with mouseover rows.</h3>
 <div class="evo-codeblock" data-identifier="table">
 <table class="evo-table">
@@ -1110,7 +1236,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-black-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Inverse table style.</h3>
 <div class="evo-codeblock" data-identifier="table-inverse">
 <table class="evo-table-inverse">
@@ -1181,7 +1307,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Please sign in.</h3>
 <div class="evo-codeblock" data-identifier="input-sign-in">
   <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box margin-bottom-3" />
@@ -1204,7 +1330,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Sign up for the newsletter.</h3>
 <div class="evo-codeblock" data-identifier="input-email">
 <div class="evo-position">
@@ -1226,7 +1352,7 @@ Sample output from HTML&lt;/span&gt;</pre>
 
 <div class="evo-space"></div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15">Mega search box.</h3>
 <div class="evo-codeblock" data-identifier="input-search">
 <div class="evo-position">
@@ -1245,6 +1371,11 @@ Sample output from HTML&lt;/span&gt;</pre>
 <div class="evo-space-18"></div>
 
 </section>
+
+<div class="evo-position">
+<div class="view-tall-half hero-image image-parallax bg-cover bg-center" style="margin-left:-5.5%;margin-right:-5.5%;"></div>
+<h1 class="position-bottom-left">Image</h1>
+</div>
 
 <!-- ********************* -->
 <!--    IMAGE   -->
@@ -1279,7 +1410,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Basic image with placeholder background.</p>
 <div class="evo-codeblock" data-identifier="image">
 <img class="evo-image image-ratio-16-9 image-fpo" />
@@ -1315,7 +1446,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     </ul>
     <div class="evo-space-10"></div>
   </div>
-<div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Basic HTML5 video embed.</p>
 <div class="evo-codeblock" data-identifier="video">
 <video width="100%" controls poster="https://labelle.github.io/evolution-patterns/img/video-bg.png">
@@ -1355,7 +1486,7 @@ Sample output from HTML&lt;/span&gt;</pre>
     <div class="evo-space-10"></div>
   </div>
 
-  <div class="float-left min-width margin-right-10 evo-color-white-bg padding-15 box-shadow screen-wide-70">
+  <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <p class="text-measure-6 text-size-6 trans-gray-15">Desaturated Google Map embed with scrollwheel disabled.</p>
 
 <div class="evo-codeblock" data-identifier="map">

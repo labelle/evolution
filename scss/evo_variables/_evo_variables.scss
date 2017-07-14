@@ -48,39 +48,30 @@ $evo:                               ".evo" !default;
 
 // Primary accent color
 $evo_color:							#{$color_15} !default;
-$inverse_evo_color:					#{$color_15} !default;
+// $inverse_evo_color:					#{$color_15} !default;
 
 
 // Primary neutral colors
 $evo_black:							#{$black} !default;
-$inverse_evo_black:					#{$white} !default;
-
 $evo_white:							#{$white} !default;
-$inverse_evo_white:					#{$black} !default;
-
 $evo_gray_light:					#{$gray_9} !default;
-$inverse_evo_gray_light:			#{$gray_21} !default;
-
 $evo_gray:					        #{$gray_15} !default;
-$inverse_evo_gray:			        #{$gray_15} !default;
-
 $evo_gray_dark:						#{$gray_21} !default;
-$inverse_evo_gray_dark:				#{$gray_9} !default;
 
 
 // TO-DO need to create these gray color classes and variables
 // Gray color bases
 
-$base_dark_translucent:             $black;
-$base_light_translucent:            $white;
+$base_dark_translucent:             black;
+$base_light_translucent:            white;
 
 // IS THIS CORRECT?
-$base_dark_brown_translucent:       $black;
-$base_light_brown_translucent:      $white;
+$base_dark_brown_translucent:       brown;
+$base_light_brown_translucent:      tan;
 
 // IS THIS CORRECT?
-$base_dark_warm_gray_translucent:   $black;
-$base_light_brown_translucent:      $white;
+$base_dark_warm_gray_translucent:   darkslateblue;
+$base_light_warm_gray_translucent:  slateblue;
 
 
 // Typography
@@ -116,6 +107,8 @@ $body_line_height:                  1.4375 !default; // no em, rem, px, %
 $body_font_color:                   #{$evo_black} !default; // or black
 $body_background_color:             #{$evo_white} !default; // or white or black or #eeeeee #111111
 
+$inverse_body_background_color:     #{$evo_black} !default;
+
 
 // HTML Headings
 // Base variables
@@ -130,28 +123,28 @@ $heading_text_rendering:            optimizeSpeed !default; // or optimizeLegibi
 // $inverse_heading_color:             #{$evo_white} !default; 
 
 // H1-H6 tag sizes
-$heading_size_h1:                   #{$u-30}rem !default; // 48px
-$heading_size_h2:                   #{$u-29}rem !default; // 43px
-$heading_size_h3:                   #{$u-27}rem !default; // 30px
-$heading_size_h4:                   #{$u-25}rem !default; // 22px
-$heading_size_h5:                   #{$u-23}rem !default; // 16px
-$heading_size_h6:                   #{$u-22}rem !default; // 14px
+$heading_size_h1:                   #{$u-28}rem !default; // 37px
+$heading_size_h2:                   #{$u-27}rem !default; // 30px
+$heading_size_h3:                   #{$u-26}rem !default; // 23px
+$heading_size_h4:                   #{$u-25}rem !default; // 21px
+$heading_size_h5:                   #{$u-24}rem !default; // 18px
+$heading_size_h6:                   #{$u-23}rem !default; // 16px
 
 // H1-H6 tag line height
-$heading_leading_h1:                .95 !default; // no em, rem, px, %
-$heading_leading_h2:                1.2 !default; // no em, rem, px, %
-$heading_leading_h3:                inherit !default; // no em, rem, px, %
-$heading_leading_h4:                inherit !default; // no em, rem, px, %
-$heading_leading_h5:                inherit !default; // no em, rem, px, %
-$heading_leading_h6:                inherit !default; // no em, rem, px, %
+$heading_leading_h1:                #{$u-23} !default; // inherit, no em, rem, px, %
+$heading_leading_h2:                #{$u-24} !default; // inherit, no em, rem, px, %
+$heading_leading_h3:                #{$u-25} !default; // inherit, no em, rem, px, %
+$heading_leading_h4:                #{$u-26} !default; // inherit, no em, rem, px, %
+$heading_leading_h5:                #{$u-26} !default; // inherit, no em, rem, px, %
+$heading_leading_h6:                #{$u-26} !default; // inherit, no em, rem, px, %
 
 // H1-H6 tag margin bottom
-$heading_margin_bottom_h1:          1.4375em !default; // OR REM?
-$heading_margin_bottom_h2:          1.4375em !default; // OR REM?
-$heading_margin_bottom_h3:          1.4375em !default; // OR REM?
-$heading_margin_bottom_h4:          1.4375em !default; // OR REM?
-$heading_margin_bottom_h5:          1.4375em !default; // OR REM?
-$heading_margin_bottom_h6:          1.4375em !default; // OR REM?
+$heading_margin_bottom_h1:          #{$u-19}em !default; // .5 
+$heading_margin_bottom_h2:          #{$u-19}em !default; // .5 
+$heading_margin_bottom_h3:          #{$u-19}em !default; // .5  
+$heading_margin_bottom_h4:          #{$u-19}em !default; // .5 
+$heading_margin_bottom_h5:          #{$u-19}em !default; // .5 
+$heading_margin_bottom_h6:          #{$u-19}em !default; // .5 
 
 // H1-H6 tag letter spacing
 $heading_letter_spacing_h1:         #{$u-10}em !default; // 0, or negative or positive (e.g. -.025em or .025em)
@@ -400,35 +393,35 @@ $button_hover_delay:               0; // or 0.1s
 // $button_hover_transition:          width 2s, height 2s, transform 2s; // not needed
 
 // button colors
-$button_color:                      #{$black};
-// $button_border_color:               #{$black};
+$button_color:                      #{$evo_black};
+// $button_border_color:               #{$evo_black};
 $button_background_color:           transparent;
-$button_border_color:               #{$black}; // or transparent
+$button_border_color:               #{$evo_black}; // or transparent
 $button_border_style:               solid;
 $button_border_width:               2px;
 // $button_border:             #{$button_border_width} #{$button_border_style} #{$button_border_color}; // Green
 
 // Inverse Colors
-$inverse_button_color:              #{$white};
+$inverse_button_color:              #{$evo_white};
 $inverse_button_background_color:   transparent;
-$inverse_button_border_color:       #{$white};
+$inverse_button_border_color:       #{$evo_white};
 $inverse_button_border_style:       solid;
 $inverse_button_border_width:       2px;
 
 // button hover colors
-$button_hover_color:                 #{$white};
-// $button_border_color:             #{$black};
-$button_hover_background_color:      #{$black};
-$button_hover_border_color:          #{$black}; // or transparent
+$button_hover_color:                 #{$evo_white};
+// $button_border_color:             #{$evo_black};
+$button_hover_background_color:      #{$evo_black};
+$button_hover_border_color:          #{$evo_black}; // or transparent
 $button_hover_border_width:          2px;
 $button_hover_border_style:          solid;
 // $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
 
 // button inverse hover colors
-$inverse_button_hover_color:         #{$black};
-// $button_border_color:             #{$black};
-$inverse_button_hover_background_color: #{$white};
-$inverse_button_hover_border_color:  #{$white}; // or transparent
+$inverse_button_hover_color:         #{$evo_black};
+// $button_border_color:             #{$evo_black};
+$inverse_button_hover_background_color: #{$evo_white};
+$inverse_button_hover_border_color:  #{$evo_white}; // or transparent
 $inverse_button_hover_border_width:  2px;
 $inverse_button_hover_border_style:  solid;
 // $button_hover_border:             #{$button_hover_border_width} #{$button_hover_border_style} #{$button_hover_border_color}; // Green
@@ -732,14 +725,24 @@ $base_code_border_width:            1px !default;
 $base_code_border_style:            solid !default;
 
 // Code
-$code_color:                        #{$black} !default;
+$code_color:                        #{$evo_black} !default;
 $code_border_color:                 #{$gray_9} !default;
 $code_background_color:             transparent !default;
 
 // Code Inverse
-$inverse_code_color:                #{$white} !default;
+$inverse_code_color:                #{$evo_white} !default;
 $inverse_code_border_color:         #{$gray_21} !default;
-$inverse_code_background_color:     #{$black} !default;
+$inverse_code_background_color:     #{$evo_black} !default;
+
+// Masonry
+
+$masonry_font_size:                 #{$u-21}rem !default; // 12px
+
+$masonry_item_color:                inherit !default; // or #{$evo_black}
+$masonry_item_background_color:     #{$evo_white} !default; // or transparent
+
+$inverse_masonry_item_color:            #{$evo_white} !default;
+$inverse_masonry_item_background_color: #{$evo_black} !default; // or transparent
 
 
 // This will import a mirror set of variables with each variable set to null

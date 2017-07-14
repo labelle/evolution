@@ -47,9 +47,26 @@
     background-size: contain !important;
 }
 
+// https://www.w3schools.com/CSSref/pr_background-repeat.asp
+
 .no-repeat,
 .bg-no-repeat {
     background-repeat: no-repeat;
+}
+
+.repeat,
+.bg-repeat {
+    background-repeat: repeat;
+}
+
+.repeat-y,
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.repeat-x,
+.bg-repeat-x {
+    background-repeat: repeat-x;
 }
 
 .bg-center {

@@ -4,15 +4,6 @@
 
 // table
 
-tr:hover {
-    color: black;
-    background-color: lightyellow;
-}
-
-tr:hover a {
-    color: rgba(0, 174, 239, 1);
-}
-
 
 #{$evo}-table,
 table#{$evo}-table {
@@ -22,6 +13,15 @@ table#{$evo}-table {
 
 & tr {
    color: #555;
+}
+
+& tr:hover {
+    color: inherit;
+    background-color: #fcfcfc;
+}
+
+& tr:hover a {
+    color: #{$link_color_hover};
 }
 
 & caption {
@@ -69,6 +69,15 @@ table#{$evo}-table-inverse {
 & tr {
     // Text color
    color: #fff;
+}
+
+& tr:hover {
+    // color: inherit;
+    background-color: #0c0c0c;
+}
+
+& tr:hover a {
+    color: #{$inverse_link_color_hover};
 }
 
 & caption {
