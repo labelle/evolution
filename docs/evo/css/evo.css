@@ -399,8 +399,7 @@ progress, meter {
   margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 5%;
-  margin-right: 5%;
-  background-color: white; }
+  margin-right: 5%; }
 
 .code-inline {
   -webkit-box-decoration-break: clone;
