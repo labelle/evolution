@@ -38,7 +38,7 @@ img {
   height: auto;
   -ms-interpolation-mode: bicubic;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: bottom; }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -97,7 +97,7 @@ strong {
   font-weight: inherit; }
 
 abbr[title] {
-  border-bottom: none;
+  border-bottom: 1px dotted;
   text-decoration: underline;
   text-decoration: underline dotted;
   cursor: help; }
@@ -224,7 +224,8 @@ legend {
   color: inherit;
   display: table;
   max-width: 100%;
-  white-space: normal; }
+  white-space: normal;
+  padding-bottom: .5em; }
 
 input,
 optgroup,

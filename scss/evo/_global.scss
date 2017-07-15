@@ -47,7 +47,7 @@ img {
   height: auto;
   -ms-interpolation-mode: bicubic;
   display: inline-block;
-  vertical-align: middle; // or baseline
+  vertical-align: bottom; // or baseline or middle
 }
 
 svg:not(:root) {
@@ -121,7 +121,7 @@ strong {
 }
 
 abbr[title] {
-  border-bottom: none; // or 1px dotted
+  border-bottom: 1px dotted; // or none
   text-decoration: underline;
   text-decoration: underline dotted;
   cursor:help;
@@ -136,6 +136,12 @@ ins {
     color:#000;
     text-decoration:none;
 }
+
+// or...
+// ins {
+//   text-decoration: none;
+//   border-bottom: 3px double #333;
+// }
 
 del {
     text-decoration: line-through;
@@ -368,6 +374,8 @@ legend {
   display: table;
   max-width: 100%;
   white-space: normal;
+  // http://www.cssmojo.com/extras/css-reset_versus_css-starter/base.css
+  padding-bottom: .5em;
 }
 
 // forms

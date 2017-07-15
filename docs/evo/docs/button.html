@@ -1,8 +1,8 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -69,29 +69,29 @@
 
 <!-- Button wrapped in anchor tag -->
 
-<a href="#"><button>submit</button></a>
+<a href="#"><button type="button">button text</button></a>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;&lt;button&gt;submit&lt;/button&gt;&lt;a&gt;</code>
+<code class="evo-measure">&lt;a href="#"&gt;&lt;button type="button"&gt;button text&lt;/button&gt;&lt;a&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag, and wrap it inside <code>&lt;a&gt;</code> tags. Default button styles are set in _global.scss.</p>
+<p class="evo-measure">Create a <code>&lt;button type="button"&gt;</code> tag, and wrap it inside <code>&lt;a&gt;</code> tags. Default button styles are set in _global.scss.</p>
 
 <div class="evo-space"></div>
 
 
 <!-- Input button -->
 
-<input type="button" onclick="alert('Hello World!')" value="submit" />
+<input type="submit" value="submit" onclick="alert('Hello World!')" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="button" value="submit" /&gt;</code>
+<code class="evo-measure">&lt;input type="submit" value="submit" /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
@@ -119,7 +119,7 @@
 <div class="evo-space-15"></div>
 
 <!-- Normal button -->
-<button class="evo-button">submit</button>
+<button type="button" class="evo-button">submit</button>
 
 <div class="evo-space-10"></div>
 
@@ -149,12 +149,12 @@
 
 <!-- Input button -->
 
-<input type="button" onclick="alert('Hello World!')" value="submit" class="evo-button" />
+<input type="submit" value="submit" class="evo-button" onclick="alert('Hello World!')" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="button" value="submit" class="evo-button" /&gt;</code>
+<code class="evo-measure">&lt;input type="submit" value="submit" class="evo-button"  /&gt;</code>
 </pre>
 
 <div class="evo-space-20"></div>
@@ -177,17 +177,17 @@
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure text-inverse">Create a <code class="code-inverse">&lt;button&gt;</code>, <code class="code-inverse">input type="button"&gt;</code>, or <code class="code-inverse">&lt;a&gt;</code> tag and apply the <code class="code-inverse">evo-button</code> class. Default styles are set in _variables.scss.</p>
+<p class="evo-measure text-inverse">Create a <code class="code-inverse">&lt;button&gt;</code>, <code class="code-inverse">input type="input"&gt;</code>, or <code class="code-inverse">&lt;a&gt;</code> tag and apply the <code class="code-inverse">evo-button</code> class. Default styles are set in _variables.scss.</p>
 
 <div class="evo-space-15"></div>
 
 <!-- Normal button -->
-<button class="evo-inverse-button">submit</button>
+<button type="button" class="evo-inverse-button">submit</button>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-inverse-code">
-<code class="evo-measure text-inverse">&lt;button class="evo-inverse-button"&gt;submit&lt;/button&gt;</code>
+<code class="evo-measure text-inverse">&lt;button type="button" class="evo-inverse-button"&gt;submit&lt;/button&gt;</code>
 </pre>
 
 <div class="evo-space-17"></div>
@@ -210,12 +210,12 @@
 
 <!-- Input button -->
 
-<input type="button" onclick="alert('Hello World!')" value="submit" class="evo-inverse-button" />
+<input type="submit" value="submit" class="evo-inverse-button" onclick="alert('Hello World!')"  />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-inverse-code">
-<code class="evo-measure">&lt;input type="button" value="submit" class="evo-inverse-button" /&gt;</code>
+<code class="evo-measure">&lt;input type="submit" value="submit" class="evo-inverse-button" /&gt;</code>
 </pre>
 
 <div class="evo-space-20"></div>
@@ -241,12 +241,12 @@
 <div class="evo-space"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;button class="disabled"&gt;submit&lt;/button&gt;</code>
+<code class="evo-measure">&lt;button type="button" class="disabled"&gt;submit&lt;/button&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag and apply the <code>disabled</code> class. Default button styles are set in _variables.scss.</p>
+<p class="evo-measure">Create a <code>&lt;button type="button"&gt;</code> tag and apply the <code>disabled</code> class. Default button styles are set in _variables.scss.</p>
 
 <div class="evo-space-20"></div>
 
@@ -267,12 +267,12 @@
 
 <!-- Button example -->
 
-<button class="width-full">submit</button>
+<button type="button" class="width-full">submit</button>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;button class="width-full"&gt;submit&lt;/button&gt;</code>
+<code class="evo-measure">&lt;button type="button" class="width-full"&gt;submit&lt;/button&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
@@ -284,12 +284,12 @@
 
 <!-- Input button example -->
 
-<input type="button" onclick="alert('Hello World!')" value="submit" class="width-auto" />
+<input type="submit" value="submit" class="width-auto" onclick="alert('Hello World!')" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="button" value="submit" class="width-auto" /&gt;</code>
+<code class="evo-measure">&lt;input type="submit" value="submit" class="width-auto" /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
@@ -312,27 +312,27 @@
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;button&gt;</code> tag and apply the <code>evo-button</code> class for structure. Add <code>color-9</code> and <code>box-color-9</code> and <code>color-1-bg</code> classes for styling. Default button styles are set in _variables.scss.</p>
+<p class="evo-measure">Create a <code>&lt;button type="button"&gt;</code> tag and apply the <code>evo-button</code> class for structure. Add <code>color-9</code> and <code>box-color-9</code> and <code>color-1-bg</code> classes for styling. Default button styles are set in _variables.scss.</p>
 
 
 <div class="evo-space"></div>
 
-<a href="javascript: void(0);"><button class="color-20 box-color-20 color-1-bg-hover">submit</button></a>
+<a href="javascript: void(0);"><button type="button" class="color-20 box-color-20 color-1-bg-hover">submit</button></a>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="color-20 box-color-20"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
+<code class="evo-measure">&lt;a href="#"&gt;&lt;button type="button" class="color-20 box-color-20"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
 </pre>
 
 <div class="evo-space-17"></div>
 
-<a href="javascript: void(0);"><button class="gray-0 box-color-14 color-17-bg vo-color-1-bg-hover">submit</button></a>
+<a href="javascript: void(0);"><button type="button" class="gray-0 box-color-14 color-17-bg vo-color-1-bg-hover">submit</button></a>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;a href="#"&gt;&lt;button class="gray-0 box-color-14 color-17-bg"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
+<code class="evo-measure">&lt;a href="#"&gt;&lt;button type="button" class="gray-0 box-color-14 color-17-bg"&gt;submit&lt;/button&gt;&lt;/a&gt;</code>
 </pre>
 
 <div class="evo-space-20"></div>
