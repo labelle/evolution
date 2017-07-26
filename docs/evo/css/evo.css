@@ -8371,24 +8371,122 @@ span.borderborder:hover {
   border-bottom-style: dashed;
   border-bottom-color: red; }
 
-.list-padding-thick li {
-  padding-top: 1.25em;
-  padding-bottom: 1.25em; }
-  .list-padding-thick li:before {
+.list-padding li {
+  padding-top: 0.275em;
+  padding-bottom: 0.275em; }
+  .list-padding li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
 
-.list-padding-medium li {
+.list-padding-15 li {
+  padding-top: 1.4375em;
+  padding-bottom: 1.4375em; }
+  .list-padding-15 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-14 li {
+  padding-top: 1.3125em;
+  padding-bottom: 1.3125em; }
+  .list-padding-14 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-13 li {
+  padding-top: 1.125em;
+  padding-bottom: 1.125em; }
+  .list-padding-13 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-12 li {
   padding-top: 1em;
   padding-bottom: 1em; }
-  .list-padding-medium li:before {
+  .list-padding-12 li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
 
-.list-padding-thin li {
-  padding-top: .65em;
-  padding-bottom: .65em; }
-  .list-padding-thin li:before {
+.list-padding-11 li {
+  padding-top: 0.875em;
+  padding-bottom: 0.875em; }
+  .list-padding-11 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-10 li {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em; }
+  .list-padding-10 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-9 li {
+  padding-top: 0.625em;
+  padding-bottom: 0.625em; }
+  .list-padding-9 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-8 li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  .list-padding-8 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-7 li {
+  padding-top: 0.375em;
+  padding-bottom: 0.375em; }
+  .list-padding-7 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-6 li {
+  padding-top: 0.275em;
+  padding-bottom: 0.275em; }
+  .list-padding-6 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-5 li {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; }
+  .list-padding-5 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-4 li {
+  padding-top: 0.15em;
+  padding-bottom: 0.15em; }
+  .list-padding-4 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-3 li {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em; }
+  .list-padding-3 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-2 li {
+  padding-top: 0.05em;
+  padding-bottom: 0.05em; }
+  .list-padding-2 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-1 li {
+  padding-top: 0.025em;
+  padding-bottom: 0.025em; }
+  .list-padding-1 li:before {
+    padding-top: inherit;
+    padding-bottom: inherit; }
+
+.list-padding-0 li {
+  padding-top: 0em;
+  padding-bottom: 0em; }
+  .list-padding-0 li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
 
@@ -8398,9 +8496,6 @@ span.borderborder:hover {
   .list-padding-none li:before {
     padding-top: inherit;
     padding-bottom: inherit; }
-
-.list-margin-none li {
-  margin-bottom: 0; }
 
 ul {
   list-style-position: inside; }
@@ -8448,7 +8543,7 @@ ul.list-bullet {
   list-style-type: none;
   list-style-position: inside; }
   ul.list-bullet ul {
-    margin-bottom: 0.275rem; }
+    margin-bottom: 0.275em; }
   ul.list-bullet li:before {
     content: "•";
     padding-right: 0.5ch;

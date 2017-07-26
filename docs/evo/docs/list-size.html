@@ -35,7 +35,7 @@
 <div class="evo-space"></div>
 <h1 class="text-size-10">List Size</h1>
 
-<p class="evo-measure">Use a list size or utility to adjust list text size, and padding between list items.</p>
+<p class="evo-measure">Use a <code>text-size-[number]</code> class to adjust the size of a list, or use special <code>list-padding-[number]</code> classes to adjust space between list items.</p>
 
 <div class="evo-space-20"></div>
 
@@ -47,13 +47,9 @@
 
 <section id="evoListTextSize">
 
-<h2 class="text-size-6">List Text Size</h2>
+<h2 class="text-size-6">text-size-[number]</h2>
 
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">The easiest way to change the size of a list is to adjust the text size. Simply add a text class such as <code>text-size-6</code> to the <code>&lt;ul&gt;</code> tag. Text sizes 2, 4, and 6 are demonstrated below.</p>
-
-<div class="evo-space-17"></div>
+<div class="evo-space"></div>
 
 
 <!-- text-6 -->
@@ -64,15 +60,9 @@
 <li>list item 3</li>
 </ul>
 
-<div class="evo-space-10"></div>
+<!-- <div class="evo-space-10"></div> -->
 
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="text-size-6 list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
+<p class="evo-measure"><code>text-size-6</code></p>
 
 <div class="evo-space-17"></div>
 
@@ -85,16 +75,7 @@
 <li>list item 3</li>
 </ul>
 
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="text-size-4 list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
-<div class="evo-space-10"></div>
+<!-- <div class="evo-space-10"></div> -->
 
 <p class="evo-measure"><code>text-size-4</code> is equal to the default text size.</p>
 
@@ -109,6 +90,10 @@
 <li>list item 3</li>
 </ul>
 
+<!-- <div class="evo-space-10"></div> -->
+
+<p class="evo-measure"><code>text-size-2</code></p>
+
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
@@ -119,88 +104,9 @@
 &lt;/ul&gt;</code>
 </pre>
 
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<!-- list size utility -->
-
-<section id="EvoListSizeUtility">
-
-<h2 class="text-size-6">List Size Utility</h2>
-
-
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">A list size utility sets a text size percentage relative to the base text size of a standard list, and may also tweak bullet or number placement. Create a <code>&lt;ul&gt;</code> tag and apply the optional <code>evo-list</code> class. Add a list size class such as <code>list-size-small</code>. Default list styles are set in _evo_variables.scss.</p>
-
-
-<div class="evo-space-17"></div>
-
-
-<!-- list size large -->
-
-<ul class="list-size-large list-align">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-size-large list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
-
-<div class="evo-space-17"></div>
-
-
-<!-- list size medium -->
-
-<ul class="list-size-medium list-align">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-size-medium list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
-<div class="evo-space-10"></div>
-
-<p class="evo-measure"><code>list-size-medium</code> is equal to the default text size.</p>
-
-<div class="evo-space-17"></div>
-
-
-<!-- list size small -->
-
-<ul class="list-size-small list-align">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-size-small list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
+<p class="evo-measure">To change the text size in a list, simply add a text class such as <code>text-size-2</code> to the <code>&lt;ul&gt;</code> tag. A list without a <code>text-size-[number]</code> class will default to the website's standard text size. Text sizes 2, 4, and 6 are demonstrated above.</p>
 
 <div class="evo-space-20"></div>
 
@@ -210,22 +116,14 @@
 
 <!-- list padding utility -->
 
-<section id="evoListPaddingUtilities">
+<section id="evoListPadding">
 
-<h2 class="text-size-6">List Padding Utility</h2>
+<h2 class="text-size-6">list-padding</h2>
 
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">A list padding utility adds padding to the top and bottom of the <code>&lt;li&gt;</code> tags. Create a <code>&lt;ul&gt;</code> tag and apply the optional <code>evo-list</code> class. Add a list padding class such as <code>list-padding-thin</code>. Default list styles are set in _evo_variables.scss.</p>
+<div class="evo-space"></div>
 
 
-<div class="evo-space-17"></div>
-
-
-<!-- list padding thick -->
-
-<ul class="list-padding-thick list-align">
+<ul class="list-padding list-align">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
@@ -234,59 +132,188 @@
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-padding-thick list-align"&gt;
+<code class="evo-measure">&lt;ul class="list-padding list-align"&gt;
 &lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
 &lt;/ul&gt;</code>
 </pre>
 
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">A default list padding utility adds padding to the top and bottom of the <code>&lt;li&gt;</code> tags. Create a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag and apply the optional <code>evo-list</code> class. Add a <code>list-padding-[number]</code> class such as <code>list-padding-1</code>. Default list styles are set in _evo_variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+
+
+<!-- list padding number -->
+
+<section id="evoListPaddingNumber">
+
+<h2 class="text-size-6">list-padding-[number]</h2>
+
+<div class="evo-space"></div>
+
+
+<ul class="list-padding-15 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-15</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-14 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-14</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-13 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-13</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-12 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-12</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-11 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-11</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-10 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-10</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-9 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-9</code></p>
 <div class="evo-space-17"></div>
 
 
-<!-- list padding medium -->
+<ul class="list-padding-8 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-8</code></p>
+<div class="evo-space-17"></div>
 
-<ul class="list-padding-medium list-align">
+
+
+<ul class="list-padding-7 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-7</code></p>
+<div class="evo-space-17"></div>
+
+
+<ul class="list-padding-6 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-6</code></p>
+<div class="evo-space-17"></div>
+
+
+<ul class="list-padding-5 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-5</code></p>
+<div class="evo-space-17"></div>
+
+
+<ul class="list-padding-4 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-4</code></p>
+<div class="evo-space-17"></div>
+
+
+<ul class="list-padding-3 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-3</code></p>
+<div class="evo-space-17"></div>
+
+<ul class="list-padding-2 list-align">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>list-padding-2</code></p>
+<div class="evo-space-17"></div>
+
+
+<ul class="list-padding-1 list-align">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
 
+<!-- <div class="evo-space-10"></div> -->
+
+<p class="evo-measure"><code>list-padding-1</code></p>
+
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-padding-medium list-align"&gt;
+<code class="evo-measure">&lt;ul class="list-padding-1 list-align"&gt;
 &lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
 &lt;/ul&gt;</code>
 </pre>
 
-<div class="evo-space-17"></div>
-
-
-<!-- list padding thin -->
-
-<ul class="list-padding-thin list-align">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-
 <div class="evo-space-10"></div>
 
-<pre class="evo-code">
-<code class="evo-measure">&lt;ul class="list-padding-thin list-align"&gt;
-&lt;li&gt;list item 1&lt;/li&gt;
-&lt;li&gt;list item 2&lt;/li&gt;
-&lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ul&gt;</code>
-</pre>
+<p class="evo-measure">A list padding utility adds padding to the top and bottom of the <code>&lt;li&gt;</code> tags. Create a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag and apply the optional <code>evo-list</code> class. Add a <code>list-padding-[number]</code> class such as <code>list-padding-1</code>. Default list styles are set in _evo_variables.scss.</p>
 
-<div class="evo-space-17"></div>
+<div class="evo-space-20"></div>
+
+</section>
+
+
 
 
 <!-- list padding none -->
+
+<section id="evoListPadding">
+
+<h2 class="text-size-6">list-padding-none</h2>
+
+<div class="evo-space"></div>
 
 <ul class="list-padding-none list-align">
 <li>list item 1</li>
@@ -303,6 +330,10 @@
 &lt;li&gt;list item 3&lt;/li&gt;
 &lt;/ul&gt;</code>
 </pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">The <code>list-padding-none</code> or <code>list-padding-0</code> class will eliminate padding space between list items.
 
 <div class="evo-space-20"></div>
 

@@ -204,14 +204,18 @@ $text_shadow:                       .02em .02em .06em rgba(0, 0, 0, .5) !default
 $inverse_text_shadow:               .02em .02em .06em rgba(255, 255, 255, .75) !default;
 
 // List
-// SHOULD SOME OF THESE INHERIT?
-// SHOULD SOME BE PERCENTAGES OR EMS?
+
+// List padding for default list-padding class
+
+$list_padding_top:                 #{$u-17}em; // 1em
+$list_padding_bottom:              #{$u-17}em; // 1em
+
 
 // For default Ul and OL lists
 
 $text_list_margin_top:                       0;
 $text_list_margin_left:                      0;
-$text_list_margin_bottom:                    #{$u-17}rem; // .275em bottom of each list
+$text_list_margin_bottom:                    #{$u-17}em; // .275em bottom of each list
 $text_list_padding_left:                     0;
 $text_list_padding_bottom:                   #{$u-17}em; // .275em space between list items
 
@@ -244,7 +248,7 @@ $bullet_link_transition:				     0.3s ease; // or color 0.3s ease-in-out
 $bullet_list_background_size:                0px;
 $bullet_list_background_position:            0px 0.41667rem;
 
-$bullet_list_margin_bottom:                  #{$u-17}rem;
+$bullet_list_margin_bottom:                  #{$u-17}em;
 $bullet_list_margin_left:                    0;
 $bullet_list_padding_left:                   1.5ch; // or 2em
 
