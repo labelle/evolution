@@ -285,11 +285,11 @@ $number_list_background_color_3:             transparent; // nested further
 $line_list_padding_left:                0; // .5em
 $line_list_bullet_type:                 none; // list-style-type of bullets
 
-$line_list_margin_bottom:               #{$u-17}rem; // .275em bottom of each list
+$line_list_margin_bottom:               0; // #{$u-17}rem or .275em bottom of each list
 $line_list_item_margin_bottom:          0;
 
-$line_list_padding_top:                 1em; // or #{$u-17}em or .275em space between list item and line
-$line_list_padding_bottom:              1em; // or #{$u-17}em or .275em space between list item and line
+$line_list_padding_top:                 0; // 1em or #{$u-17}em or .275em space between list item and line
+$line_list_padding_bottom:              0; // 1em or #{$u-17}em or .275em space between list item and line
 
 
 $line_list_top_line_width:              thin; // thick
@@ -637,6 +637,8 @@ $line_style:                        solid !default;   // border-top-style
 $line_color:                        #{$gray_9} !default; // border-top-color
 $line_margin_top:                   1em !default;
 $line_margin_bottom:                1em !default;
+
+$inverse_line_color:                #{$gray_18} !default; // border-top-color
 
 // Box
 $box_width:      initial; // border-top-width, initial = medium

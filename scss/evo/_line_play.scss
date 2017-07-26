@@ -1,0 +1,22 @@
+///*      L I N E   P L A Y  */
+
+@import "../evo_variables/evo_variables";
+
+
+
+// /* Color Pulse */
+// /* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
+hr.color-pulse {
+    -webkit-animation: mymove 5s infinite;  // Chrome, Safari, Opera 
+    animation: mymove 5s infinite;
+}
+
+// /* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {border-top: solid lightblue;}
+}
+
+// /* Standard syntax */
+@keyframes mymove {
+    50% {border-top: solid lightblue;}
+}

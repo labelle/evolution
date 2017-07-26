@@ -18,47 +18,47 @@ list-style-position: #{$ol_list_style_position}; // inside
 // ol utility classes
 
 // Hang the numbers and left align text to the other text blocks
-  &#{$evo}-list-hang {
+  &.list-hang {
   // @extend #{$evo}-list;
   list-style-position: outside;
   }
-  &#{$evo}-list-align {
+  &.list-align {
   // @extend #{$evo}-list;
   list-style-position: inside;
   }
-  &#{$evo}-list-decimal {
+  &.list-decimal {
   @extend #{$evo}-list;
   list-style-type: decimal;
 }
-  &#{$evo}-list-decimal-zero {
+  &.list-decimal-zero {
   @extend #{$evo}-list;
   list-style-type: decimal-leading-zero;
 }
-  &#{$evo}-list-lower-alpha {
+  &.list-lower-alpha {
   @extend #{$evo}-list;
   list-style-type: lower-alpha;
 }
-  &#{$evo}-list-upper-alpha {
+  &.list-upper-alpha {
   @extend #{$evo}-list;
   list-style-type: upper-alpha;
 }
-  &#{$evo}-list-lower-latin {
+  &.list-lower-latin {
   @extend #{$evo}-list;
   list-style-type: lower-latin;
 }
-  &#{$evo}-list-upper-latin {
+  &.list-upper-latin {
   @extend #{$evo}-list;
   list-style-type: upper-latin;
 }
-  &#{$evo}-list-lower-roman {
+  &.list-lower-roman {
   @extend #{$evo}-list;
   list-style-type: lower-roman;
 }
-  &#{$evo}-list-upper-roman {
+  &.list-upper-roman {
   @extend #{$evo}-list;
   list-style-type: upper-roman;
 }
-  &#{$evo}-list-reset {
+  &.list-reset {
   list-style:      decimal;
   list-style-type: decimal;
   list-style-position: initial;

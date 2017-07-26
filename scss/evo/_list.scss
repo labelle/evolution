@@ -26,11 +26,11 @@
 
 // List
 
-  #{$evo}-list {
-  margin-left:     #{$text_list_margin_left}; // 0
+#{$evo}-list {
+  list-style-type: #{$ul_list_style_type}; // none
+  margin-left:     #{$text_list_margin_left}; // 1em
   padding-left:    #{$text_list_padding_left}; // 0
   padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
-  // list-style-image: none;
 }
 
 // List none
@@ -45,7 +45,7 @@
 ul,
 ol {
   // font-size:       #{$text_size};
-  color:           #{$text_color};
+  // color:           #{$text_color}; // try setting this
   // font-family:     #{$text_font_family};
   // font-weight:     #{$text_font_weight};
   // line-height:     #{$text_line_height};
@@ -55,11 +55,4 @@ ol {
 }
 
 
-// // Hang bullets and numbers to the left
-// .list-hang           {
-//   // list-style: disc outside none;
-//   // list-style-type: disc;
-//   list-style-position: outside;
-//   // list-style-image: none;
-//   // padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
-// }
+// list-hang and list-align both live in the list_undordered.scss and list_ordered.scss files

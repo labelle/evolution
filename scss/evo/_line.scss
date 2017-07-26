@@ -20,11 +20,26 @@ box-sizing: content-box;
 // Settings from _variables.scss
 border-top-width: #{$line_width};
 border-top-style: #{$line_style};
-border-top-color: #{$line_color};
-margin-top: #{$line_margin_top};
-margin-bottom: #{$line_margin_bottom};
+// border-top-color: #{$line_color};
+
 }
 
+.line-space {
+	margin-top: #{$line_margin_top};
+    margin-bottom: #{$line_margin_bottom};
+}
+
+#{$evo}-line {
+	border-top-color: #{$line_color};
+}
+
+#{$evo}-line-inverse {
+	border-top-color: #{$inverse_line_color};
+}
+
+.line-color {
+	border-top-color: #{$evo_color};
+}
 
 // For website demo only
 
@@ -34,20 +49,3 @@ margin-top: .5em;
 /*background-color: #eee;*/
 margin-bottom: 3em;
 }
-
-// // /* Color Pulse */
-// // /* http://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_border-top */
-// hr.color-pulse {
-//     -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
-//     animation: mymove 5s infinite;
-// }
-
-// // /* Chrome, Safari, Opera */
-// @-webkit-keyframes mymove {
-//     50% {border-top: solid lightblue;}
-// }
-
-// // /* Standard syntax */
-// @keyframes mymove {
-//     50% {border-top: solid lightblue;}
-// }
