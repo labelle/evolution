@@ -8805,6 +8805,15 @@ ol.list-lower-greek {
     color: #0073b9;
     text-align: right !important; }
 
+.number-sans-serif li::before {
+  font-family: sans-serif; }
+
+.number-sans-serif ol li::before {
+  font-family: sans-serif; }
+
+.number-sans-serif ol ol li::before {
+  font-family: sans-serif; }
+
 .number-serif li::before {
   font-family: serif; }
 
@@ -8814,14 +8823,32 @@ ol.list-lower-greek {
 .number-serif ol ol li::before {
   font-family: serif; }
 
-.number-sans-serif li::before {
-  font-family: sans-serif; }
+.number-monospace li::before {
+  font-family: monospace; }
 
-.number-sans-serif ol li::before {
-  font-family: sans-serif; }
+.number-monospace ol li::before {
+  font-family: monospace; }
 
-.number-sans-serif ol ol li::before {
-  font-family: sans-serif; }
+.number-monospace ol ol li::before {
+  font-family: monospace; }
+
+.number-cursive li::before {
+  font-family: cursive; }
+
+.number-cursive ol li::before {
+  font-family: cursive; }
+
+.number-cursive ol ol li::before {
+  font-family: cursive; }
+
+.number-fantasy li::before {
+  font-family: fantasy; }
+
+.number-fantasy ol li::before {
+  font-family: fantasy; }
+
+.number-fantasy ol ol li::before {
+  font-family: fantasy; }
 
 .number-nudge-up-more li::before {
   top: .4em; }
@@ -8920,18 +8947,6 @@ ol.list-lower-greek {
 .number-rounded ol ol li::before {
   border-radius: 10%; }
 
-ol.number-decimal li::before {
-  content: counter(awesome-counter, decimal) "."; }
-
-ol.number-decimal-zero li::before {
-  content: counter(awesome-counter, decimal-leading-zero) "."; }
-
-ol.number-transparent li::before {
-  color: transparent !important; }
-
-ol.number-transparent-bg li::before {
-  background: transparent !important; }
-
 ol.number-color li::before {
   color: #0073b9 !important; }
 
@@ -8967,6 +8982,18 @@ ol.number-gray-light li::before {
 
 ol.number-gray-light-bg li::before {
   background: #cccccc !important; }
+
+ol.number-transparent li::before {
+  color: transparent !important; }
+
+ol.number-transparent-bg li::before {
+  background: transparent !important; }
+
+ol.number-decimal li::before {
+  content: counter(awesome-counter, decimal) "."; }
+
+ol.number-decimal-zero li::before {
+  content: counter(awesome-counter, decimal-leading-zero) "."; }
 
 .evo-list-lines {
   list-style-type: none; }

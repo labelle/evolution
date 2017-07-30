@@ -35,7 +35,7 @@
 <div class="evo-space"></div>
 <h1 class="text-size-10">List Number</h1>
 
-<p class="evo-measure">Need number lists, custom number color lists, demonstration of larger size</p>
+<p class="evo-measure">Highly customized ordered lists of numbers. Text Lists are more dependent upon HTML and CSS resets than other elements, particularly to control indents.</p>
 
 <div class="evo-space-20"></div>
 
@@ -98,7 +98,7 @@
 </pre>
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with customized numbers. Number background colors can be customized for up to three levels of nested list. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-number</code> class. Add the <code>list-number-counter-zero</code> class to the <code>&lt;ol&gt;</code> to change the number format. Use the <code>list-number-down</code> class to scootch the numbers down a bit. List variables can be adjusted in _evo_variables.scss</p>
+<p class="evo-measure">These are nested ordered <code>&lt;ol&gt;</code> lists. Create <code>&lt;ul&gt;</code> tags that contain <code>&lt;li&gt;</code> tags. List variables can be adjusted in _global.scss</p>
 
 <div class="evo-space-20"></div>
 
@@ -146,63 +146,409 @@
 </pre>
 <div class="evo-space-10"></div>
 
-This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors can bullet symbol character can be customized. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-bullet</code> class. Add the <code>list-bullet-dash</code> class to the <code>&lt;ul&gt;</code> to change the symbol character. Use the <code>list-bullet-gray</code> class make the bullets look more neutral. List variables can be adjusted in _evo_variables.scss</p>
+<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with a customized number style. It is constructed in a simpler manner than the <code>evo-list-number</code> class above, and therefore may be easier to mix and modify with other classes. Number colors and fonts can be customized. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-number</code> class. Change the number's font-family by mixing a class such as <code>number-serif</code> to the <code>&lt;ul&gt;</code> tag. Use the <code>number-gray</code> class make the numbers look more neutral. The <code>number-circle</code> class will create a circle shape behind the number. List variables can be adjusted in _evo_variables.scss</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
-<ol class="list-number number-gray number-serif number-big list-padding">
-<li>List item 1 aljdsl fljs fdkja sflkjs fkjaslf jlasjf laskjf ljasflj lskjflk jsaklfjlakjsflkjskljflkjaslkfj f</li>
-<li>List item 2</li>
-<li>List item 3</li>
-</ol>
 
-<ol class="evo-list-number number-circle number-gray-light number-serif number-square">
+<!-- number font -->
+
+<section id="evoListNumberFont">
+
+<h2 class="text-size-6">number-[font]</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-sans-serif">
 <li>List item 1</li>
 <li>List item 2</li>
 <li>List item 3</li>
 </ol>
 
-<ol class="evo-list-number number-decimal number-circle number-serif">
+<p class="evo-measure"><code>number-sans-serif</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-serif">
 <li>List item 1</li>
 <li>List item 2</li>
 <li>List item 3</li>
 </ol>
 
-<ol class="list-number list-number-counter-zero number-gray">
+<p class="evo-measure"><code>number-serif</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-monotype">
 <li>List item 1</li>
 <li>List item 2</li>
 <li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-monotype</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-cursive">
+<li>List item 1</li>
+<li>List item 2</li>
 <li>List item 3</li>
-<li>List item 4</li>
-<li>List item 5</li>
-<li>List item 6</li>
-<li>List item 7</li>
-<li>List item 8</li>
-<li>List item 9</li>
-<li>List item 10</li>
-<li>List item 11</li>
+</ol>
+<p class="evo-measure"><code>number-cursive</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-fantasy">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-fantasy</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- number style -->
+
+<section id="evoListNumberStyle">
+
+<h2 class="text-size-6">number-[style]</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-decimal">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
 </ol>
 
+<p class="evo-measure"><code>number-decimal</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-decimal-zero">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+
+<p class="evo-measure"><code>number-decimal-zero</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
-<!-- <section>
-<div class="ui ordered list">
-      <a class="list-item">Getting Started</a>
-      <a class="list-item">Introduction</a>
-      <div class="list-item">
-        <a>Languages</a>
-        <div class="list">
-          <a class="list-item">HTML</a>
-          <a class="list-item">Javascript</a>
-          <a class="list-item">CSS</a>
-        </div>
-      </div>
-      <a class="list-item">Review</a>
-    </div>
+<!-- number color -->
 
-</section> -->
+<section id="evoListNumberColor">
+
+<h2 class="text-size-6">number-[color]</h2>
+
+<div class="evo-space"></div>
+
+<ol class="list-number number-color">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-color</code> which is the default evo-color.</p>
+
+<div class="evo-space"></div>
+
+<ol class="list-number number-black">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-black</code></p>
+
+<div class="evo-space"></div>
+
+<div class="evo-black-bg width-half">
+<ol class="list-number number-white">
+<li class="text-inverse">List item 1</li>
+<li class="text-inverse">List item 2</li>
+<li class="text-inverse">List item 3</li>
+</ol>
+</div>
+<p class="evo-measure"><code>number-white</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="list-number number-gray-dark">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-dark</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="list-number number-gray">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="list-number number-gray-light">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-light</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- shape color -->
+
+<section id="evoListNumberShapeColor">
+
+<h2 class="text-size-6">number-[color]-bg</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-color-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-color-bg</code> which is the default evo-color.</p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-black-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-black-bg</code></p>
+
+<div class="evo-space"></div>
+
+<div class="evo-black-bg width-half">
+<ol class="evo-list-number number-white-bg">
+<li class="text-inverse">List item 1</li>
+<li class="text-inverse">List item 2</li>
+<li class="text-inverse">List item 3</li>
+</ol>
+</div>
+<p class="evo-measure"><code>number-white-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-dark-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-dark-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-light-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-light-bg</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- shape -->
+
+<section id="evoListNumberShape">
+
+<h2 class="text-size-6">number-[shape]</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-square number-color-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-square</code> which is the default shape.</p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-rounded number-color-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-rounded</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-circle number-color-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-circle</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- shape color -->
+
+<section id="evoListNumberShapeColor">
+
+<h2 class="text-size-6">number-[color]-bg</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-color-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-color-bg</code> which is the default evo-color.</p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-black-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-black-bg</code></p>
+
+<div class="evo-space"></div>
+
+<div class="evo-black-bg width-half">
+<ol class="evo-list-number number-white-bg">
+<li class="text-inverse">List item 1</li>
+<li class="text-inverse">List item 2</li>
+<li class="text-inverse">List item 3</li>
+</ol>
+</div>
+<p class="evo-measure"><code>number-white-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-dark-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-dark-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-gray-light-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-gray-light-bg</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-transparent-bg">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>number-transparent-bg</code> will help establish proper spacing.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- number nudge classes -->
+
+<section id="evoListNumberExtended">
+
+<h2 class="text-size-6">number-nudge-[direction]</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-serif text-size-10">
+<li>List item 1 default</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>evo-list-number number-serif text-size-10</code></p>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-serif text-size-10 number-nudge-down-more">
+<li>List item 1 with nudge</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>evo-list-number number-serif text-size-10 number-nudge-down-more</code></p>
+
+<div class="evo-space"></div>
+
+<p class="evo-measure">Apply these directional classes to help calibrate the alignment of your number classes. <code>number-nudge-up-more</code>, 
+<code>number-nudge-up</code>, 
+<code>number-nudge-middle</code>, 
+<code>number-nudge-down</code>, 
+<code>number-nudge-down-more</code>.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- number mix examples -->
+
+<section id="evoListNumberMixExamples">
+
+<h2 class="text-size-6">mix examples</h2>
+
+<div class="evo-space"></div>
+
+<ol class="evo-list-number number-white number-circle number-gray-bg number-serif text-size-6">
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<p class="evo-measure"><code>evo-list-number number-white number-circle number-gray-bg number-serif text-size-6</code></p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
 
 </main>
 

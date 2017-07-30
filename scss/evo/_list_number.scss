@@ -102,33 +102,73 @@
 }
 
 
+// Sans-serif numbers
+.number-sans-serif {
+& li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+& ol li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+& ol ol li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+}
+
 
 // Serif Numbers
 .number-serif {
 & li::before {
-  font-family: serif;
+  font-family: #{$serif}; // serif
 }
 & ol li::before {
-  font-family: serif;
+  font-family: #{$serif}; // serif
 }
 & ol ol li::before {
-  font-family: serif;
+  font-family: #{$serif}; // serif
 }
 }
 
-
-// Sans-serif numbers
-.number-sans-serif {
+// Monospace Numbers
+.number-monospace {
 & li::before {
-  font-family: sans-serif;
+  font-family: #{$monospace}; // monospace
 }
 & ol li::before {
-  font-family: sans-serif;
+  font-family: #{$monospace}; // monospace
 }
 & ol ol li::before {
-  font-family: sans-serif;
+  font-family: #{$monospace}; // monospace
 }
 }
+
+// Cursive Numbers
+.number-cursive {
+& li::before {
+  font-family: #{$cursive}; // cursive
+}
+& ol li::before {
+  font-family: #{$cursive}; // cursive
+}
+& ol ol li::before {
+  font-family: #{$cursive}; // cursive
+}
+}
+
+// Cursive Numbers
+.number-fantasy {
+& li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+& ol li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+& ol ol li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+}
+
+
 
 // Moves number up by .1em in position
 .number-nudge-up-more {
@@ -264,34 +304,8 @@
 
 
 
-// .list-number-up li::before {
-//   transform: translateY(#{$number_list_number_position_up});
-// }
 
-// // Hacky fix to nudge list numbers down in position when using line lists
-// ol.list-number-down li::before {
-//   transform: translateY(#{$number_list_number_position_down});
-// }
-
-// Adds a decimal to numbers
-ol.number-decimal li::before {
-  content: counter(awesome-counter, decimal) "."; 
-}
-
-// Adds a zero and decimal to numbers
-ol.number-decimal-zero li::before {
-  content: counter(awesome-counter, decimal-leading-zero) "."; 
-}
-
-
-// Transparent Color
-ol.number-transparent li::before {
-  color: transparent !important; 
-}
-ol.number-transparent-bg li::before {
-  background: transparent !important; 
-}
-
+// COLORS
 
 // Evo Color
 ol.number-color li::before {
@@ -346,8 +360,34 @@ ol.number-gray-light-bg li::before {
   background: #{$evo_gray_light} !important; 
 }
 
+// Transparent Color
+ol.number-transparent li::before {
+  color: transparent !important; 
+}
+ol.number-transparent-bg li::before {
+  background: transparent !important; 
+}
 
 
 
+
+// .list-number-up li::before {
+//   transform: translateY(#{$number_list_number_position_up});
+// }
+
+// // Hacky fix to nudge list numbers down in position when using line lists
+// ol.list-number-down li::before {
+//   transform: translateY(#{$number_list_number_position_down});
+// }
+
+// Adds a decimal to numbers
+ol.number-decimal li::before {
+  content: counter(awesome-counter, decimal) "."; 
+}
+
+// Adds a zero and decimal to numbers
+ol.number-decimal-zero li::before {
+  content: counter(awesome-counter, decimal-leading-zero) "."; 
+}
 
 
