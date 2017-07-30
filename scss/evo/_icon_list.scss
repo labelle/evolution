@@ -5,7 +5,7 @@
 
 // Evo list style
 #{$evo}-icon-list li,
-.icon-list-inverse li {
+#{$evo}-icon-list-inverse li {
     margin-left: 1.5em;
     position: relative;
     list-style-type: none;
@@ -14,13 +14,14 @@
 }
 
 // Evo list icons
-#{$evo}-icon-list li:before {
+#{$evo}-icon-list li:before,
+#{$evo}-icon-list-inverse li:before {
 content:''; 
 // display:inline-block; 
 position: absolute;
 height: 1em;
 width: 1em;
-background-image: url(#{$icon_list_background}); 
+// background-image: url(#{$icon_list_background}); 
 background-size: contain;
 background-position: center;
 background-repeat:no-repeat; 
@@ -30,7 +31,12 @@ vertical-align: middle;
 }
 
 // Evo list icons
-.icon-list-inverse li:before {
+#{$evo}-icon-list li:before {
+background-image: url(#{$icon_list_background}); 
+}
+
+// Evo list icons
+#{$evo}-icon-list-inverse li:before {
 background-image: url(#{$inverse_icon_list_background}); 
 }
 

@@ -13,6 +13,15 @@
 ol {
 list-style-type: #{$ol_list_style_type}; // decimal-leading
 list-style-position: #{$ol_list_style_position}; // inside
+& ol li {
+      margin-left: 1em;
+}
+& ol ol li {
+      margin-left: 2em;
+}
+& ol ol ol li {
+    margin-left: 3em;
+}
 
 // ol base list class
 
@@ -22,12 +31,12 @@ list-style-position: #{$ol_list_style_position}; // inside
 
 // ol utility classes
 
-  &.list-align,
-  &.list-align ol,
-  &.list-align ol ol {
-  // @extend #{$evo}-list;
-  list-style-position: inside;
-  }
+  // &.list-align,
+  // &.list-align ol,
+  // &.list-align ol ol {
+  // // @extend #{$evo}-list;
+  // list-style-position: inside;
+  // }
   // Hang numbers to the left
   &.list-hang,
   &.list-hang ol,

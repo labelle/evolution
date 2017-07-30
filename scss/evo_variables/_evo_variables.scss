@@ -109,6 +109,7 @@ $body_background_color:             #{$evo_white} !default; // or white or black
 
 $inverse_body_background_color:     #{$evo_black} !default;
 
+$font_display:						block !default; // or auto or fallback
 
 // HTML Headings
 // Base variables
@@ -214,14 +215,14 @@ $list_padding_bottom:              #{$u-17}em; // 1em
 // For default Ul and OL lists
 
 $text_list_margin_top:                       0;
-$text_list_margin_left:                      0;
+// $text_list_margin_left:                      1em; // or 0
 $text_list_margin_bottom:                    #{$u-17}em; // .275em bottom of each list
 $text_list_padding_left:                     0;
 $text_list_padding_bottom:                   #{$u-17}em; // .275em space between list items
 
 
 // For default Ul lists
-$ul_list_style_type:                         none; // 'none' to remove bullets
+$ul_list_style_type:                         none; // 'none' will remove bullets. 'normal' will return bullets.
 $ul_list_style_position:                     inside; // or inside, which indents. default is outside.
 
 
@@ -249,13 +250,18 @@ $bullet_list_background_size:                0px;
 $bullet_list_background_position:            0px 0.41667rem;
 
 $bullet_list_margin_bottom:                  #{$u-17}em;
-$bullet_list_margin_left:                    0;
+$bullet_list_margin_left:                    .5ch;; // or 0
 $bullet_list_padding_left:                   1.5ch; // or 2em
 
 $bullet_list_background_corner:              10%; // 50% would be a circle, 0 is a square
 $bullet_list_background_color_1:             transparent; // or #{$evo_color}
 $bullet_list_background_color_2:             transparent; // nested
 $bullet_list_background_color_3:             transparent; // nested further
+
+// For bullet list images
+// You can swap in an image instead of the bullet content type?
+$bullet_list_background:                     "../image/circle-chevron-book.svg";
+$inverse_bullet_list_background:             "../image/circle-chevron-book-white.svg";
 
 
 // For list icon images
@@ -275,9 +281,13 @@ $number_list_number_color:                   #{$evo_color}; // or #{$evo_white}
 $number_list_number_position:                -40%; // or less than -50% will move numbers down
 // $number_list_number_position_up:          -45%;
 $number_list_number_position_down:           -18%; // hacky, delete later?
-$number_list_padding_left:                   2ch; // or 2em
+$number_list_padding_left:                   3ch; // or 2em
+$number_list_text_align:                     center;  // or right
 
-$number_list_background_corner:              10%; // 50% would be a circle, 0 is a square
+$number_list_margin_left:                    -.5ch;; // or 0
+
+$number_list_background_corner:              10%; // 10%, or 50% would be a circle, 0 is a square
+
 $number_list_background_color_1:             transparent; // or #{$evo_color}
 $number_list_background_color_2:             transparent; // nested
 $number_list_background_color_3:             transparent; // nested further
@@ -724,8 +734,8 @@ $quote_font_after:			        #{$sans-serif} !default;
 
 
 // Code base
-$base_code_font_family:             #{$monospace} !default;
-$base_code_font_size:               1em !default;
+$base_code_font_family:             #{$monospace} !default; // or inherit
+$base_code_font_size:               1em !default; // or inherit or 80%
 $base_code_border_radius:           3px !default; //.25rem
 $base_code_border_width:            1px !default;
 $base_code_border_style:            solid !default;

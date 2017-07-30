@@ -2,6 +2,11 @@
 
 @import "../evo_variables/evo_variables";
 
+// Font-display
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+
+
+
 // @font-face import
 
 // @font-face  {
@@ -72,6 +77,7 @@
 // Didonesque
 @font-face {
     font-family: 'didonesquedisplay';
+
     src: url('../font/didonesque-display-webfont.eot');
     src: local("☺"),
          url('../font/didonesque-display-webfont.eot?#iefix') format('embedded-opentype'),
@@ -81,6 +87,7 @@
          url('../font/didonesque-display-webfont.svg#didonesquedisplay') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: #{$font_display};
 }
 
 @font-face {
@@ -94,6 +101,7 @@
          url('../font/didonesque-displayitalic-webfont.svg#didonesquedisplay_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: #{$font_display};
 }
 
 .font-didonesquedisplay            { font-family: #{$didonesque-display}; }
@@ -113,6 +121,7 @@
          url('../font/diariapro-medium-webfont.svg#diaria_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: #{$font_display};
 
 }
 
@@ -127,6 +136,7 @@
          url('../font/diariapro-mediumitalic-webfont.svg#diaria_promedium_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: #{$font_display};
 
 }
 
@@ -148,7 +158,7 @@
          url('../font/fnord-twenty-three-webfont.svg#fnordtwenty-three') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 @font-face {
@@ -162,7 +172,7 @@
          url('../font/fnord-twenty-threeitalic-webfont.svg#fnordtwenty-three_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 .font-fnordtwenty-three           { font-family: #{$fnordtwenty-three}; }
@@ -182,7 +192,7 @@
          url('../font/Harman-Sans-webfont.svg#harmansans') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 // @font-face {
@@ -216,7 +226,7 @@
          url('../font/HalisR-Regular-webfont.svg#halis_r_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 .font-halis-rounded           { font-family: #{$halis-rounded}; }
@@ -235,7 +245,7 @@
          url('../font/Festivo-LC-Basic-webfont.svg#festivo_lcbasic') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 @font-face {
@@ -249,7 +259,7 @@
          url('../font/Festivo-LC-Outline-webfont.svg#festivo_lcoutline') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 .font-festivo-lowercase        { font-family: #{$festivo-lowercase}; }
@@ -269,7 +279,7 @@
          url('../font/gangrena_regular-webfont.svg#gangrenaregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: #{$font_display};
 }
 
 .font-gangrena            { font-family: #{$gangrena}; }

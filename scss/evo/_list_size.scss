@@ -6,8 +6,8 @@
 // list-padding
 
 .list-padding li{
-    padding-top: #{$list_padding_top}; // .1
-    padding-bottom: #{$list_padding_bottom}; // .1
+    padding-top: #{$list_padding_top}; // 1em
+    padding-bottom: #{$list_padding_bottom}; // 1em
 //    &:first-of-type {
 //     padding-top: 0;
 // }

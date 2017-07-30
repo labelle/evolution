@@ -2,6 +2,43 @@
 
 @import "../evo_variables/evo_variables";
 
+// NUMBER LIST
+
+// Font style for large font size
+.number-big {
+& li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+& ol li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+& ol ol li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+}
+
+// padding for large font size
+.number-big {
+& li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+& ol li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+& ol ol li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+}
+
+
+
+// BULLET LIST
 
 // Unicode symbols
 
@@ -132,6 +169,20 @@ button.bullet-check-heavy:before {
     content: "✔"; // insert content that looks like bullets
 }
 
+
+// // Lock U+1F512
+// ul.bullet-lock li:before,
+// a.bullet-lock:before,
+// button.bullet-lock:before {
+//     content: "🔒"; // insert content that looks like bullets
+// }
+
+// // Lock Open U+1F512
+// ul.bullet-lock-open li:before,
+// a.bullet-lock-open:before,
+// button.bullet-lock-open:before {
+//     content: "🔓"; // insert content that looks like bullets
+// }
 
 // MORE
 // https://unicode-table.com/en/blocks/arrows/

@@ -35,7 +35,7 @@
 <div class="evo-space"></div>
 <h1 class="text-size-10">List Bullet</h1>
 
-<p>Text Lists are more dependentent upon HTML and CSS resets than other elements, particularly to control indents. For additional elements see the <a href="link-bullet.html">link-bullet</a> page.</p>
+<p>Text Lists are more dependentent upon HTML and CSS resets than other elements, particularly to control indents. For additional elements that use a list-bullet, see the <a href="link-bullet.html">link-bullet</a> page.</p>
 
 <div class="evo-space-20"></div>
 
@@ -55,31 +55,35 @@
 <ul class="evo-list-bullet">
   <li>List item level 1</li>
   <li>List item level 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis.</li>
-    <ul>
-      <li>List item level 2</li>
-      <li>List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.</li>
-    </ul>
-    <ul>
-       <li>List item level 2</li>
-       <li>List item level 2</li>
-         <ul>
-          <li>List item level 3</li>
-          <li>List item level 3</li>
-        </ul>
-    </ul>
-  <li>List item level 1</li>
-  <li>List item level 1</li>
+  <ul>
+    <li>List item level 2</li>
+    <li>List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.</li>
   </ul>
+  <ul>
+   <li>List item level 2</li>
+   <li>List item level 2</li>
+   <ul>
+    <li>List item level 3</li>
+    <li>List item level 3</li>
+  </ul>
+</ul>
+<li>List item level 1</li>
+<li>List item level 1</li>
+</ul>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
 <code class="evo-measure"> &lt;ul class="evo-list-bullet"&gt;
   &lt;li&gt;List item level 1&lt;/li&gt;
-  &lt;li&gt;List item level 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, sequi cum aperiam sunt excepturi corporis.&lt;/li&gt;
+  &lt;li&gt;List item level 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Nisi suscipit autem accusantium quibusdam reiciendis incidunt sed, amet perspiciatis, 
+  sequi cum aperiam sunt excepturi corporis.&lt;/li&gt;
     &lt;ul&gt;
       &lt;li&gt;List item level 2&lt;/li&gt;
-      &lt;li&gt;List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.&lt;/li&gt;
+      &lt;li&gt;List item level 2 lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Asperiores consectetur, dolore laboriosam, porro cumque optio? Aliquid aperiam expedita, 
+      magni, cum ex, quaerat veritatis pariatur quibusdam nostrum omnis, suscipit itaque beatae.&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul&gt;
        &lt;li&gt;List item level 2&lt;/li&gt;
@@ -130,7 +134,7 @@
 </pre>
 <div class="evo-space-10"></div>
 
-This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors can bullet symbol character can be customized. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-bullet</code> class. Add the <code>list-bullet-dash</code> class to the <code>&lt;ul&gt;</code> to change the symbol character. Use the <code>list-bullet-gray</code> class make the bullets look more neutral. List variables can be adjusted in _evo_variables.scss</p>
+This is a <code>&lt;ul&gt;</code> list with a customized <code>•</code> bullet. It is constructed in a simpler manner than the <code>evo-list-bullet</code> class above, and therefore may be easier to mix and modify with other classes. Bullet colors and bullet symbol characters can be customized. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-bullet</code> class. Change the symbol character by mixing a class such as <code>bullet-dash</code> to the <code>&lt;ul&gt;</code> tag. Use the <code>bullet-gray</code> class make the bullets look more neutral. Nested lists must also have the <code>list-bullet</code> class. List variables can be adjusted in _evo_variables.scss</p>
 
 <div class="evo-space-20"></div>
 
@@ -138,95 +142,121 @@ This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors ca
 
 
 
-<!-- list bullet -->
+<!-- bullet symbol -->
 
-<section id="evoListBullet">
+<section id="evoBulletSymbol">
 
-<h2 class="text-size-6">list-[bullet]</h2>
+<h2 class="text-size-6">bullet-[symbol]</h2>
 
 <div class="evo-space"></div>
 
-<ul class="evo-list-bullet bullet-dash">
+<ul class="list-bullet bullet-dot">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-slash">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-solidus">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<!-- <ul class="evo-list-bullet bullet-triangle-large">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-triangle-open-large">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul> -->
-<ul class="evo-list-bullet bullet-triangle">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-arrow-double">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-arrow-double-back">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-arrow-single">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-arrow">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-arrow-down">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-</ul>
-<!-- <ul class="evo-list-bullet bullet-lock">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-lock-open">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul> -->
-<ul class="evo-list-bullet bullet-x">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
-<ul class="evo-list-bullet bullet-check">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
+<p class="evo-measure"><code>bullet-dot</code> or copy/paste this <code>•</code> symbol. This is the default bullet symbol.</p>
+<div class="evo-space"></div>
 
-<div class="evo-space-10"></div>
+<ul class="list-bullet bullet-dash">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-dash</code> or copy/paste this <code>–</code> symbol.</p>
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-slash">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-slash</code> or copy/paste this <code>∕</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-solidus">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-solidus</code> or copy/paste this <code>/</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-triangle">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-triangle</code> or copy/paste this <code>‣</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-arrow-double">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-arrow-double</code> or copy/paste this <code>»</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-arrow-double-back">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-arrow-double-back</code> or copy/paste this <code>«</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-arrow-single">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-arrow-single</code> or copy/paste this <code>›</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-arrow">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-arrow</code> or copy/paste this <code>→</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-arrow-down">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-arrow-down</code> or copy/paste this <code>↓</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-x">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-x</code> or copy/paste this <code>✗</code> symbol.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-check">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ul>
+<p class="evo-measure"><code>bullet-check</code> or copy/paste this <code>✓</code> symbol.</p>
+<div class="evo-space"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ul class="evo-list-bullet bullet-dash&gt;
+<code class="evo-measure">&lt;ul class="list-bullet bullet-check&gt;
 &lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
@@ -234,7 +264,7 @@ This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors ca
 </pre>
 <div class="evo-space-10"></div>
 
-This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors can bullet symbol character can be customized. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>evo-list-bullet</code> class. Add the <code>list-dash</code> class to the <code>&lt;ul&gt;</code> to change the symbol character. Use the <code>list-bullet-gray</code> class make the bullets look more neutral. List variables can be adjusted in _evo_variables.scss</p>
+<p class="evo-measure">This is a <code>&lt;ul&gt;</code> list with customized bullets. The look of these bullets may vary across different browsers and devices. Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-bullet</code> class. Add a style such as <code>bullet-check</code> class to the <code>&lt;ul&gt;</code> to change the symbol character.</p>
 
 <div class="evo-space-20"></div>
 
@@ -244,47 +274,70 @@ This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors ca
 
 <!-- list color -->
 
-<section id="evoListColor">
+<section id="evoBulletColor">
 
-<h2 class="text-size-6">list-[color]</h2>
+<h2 class="text-size-6">bullet-[color]</h2>
 
 <div class="evo-space"></div>
 
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-color">
+<ul class="list-bullet bullet-x bullet-color">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-black">
+<p class="evo-measure"><code>bullet-color</code> which is the default evo-color.</p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-x bullet-black">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-white">
+<p class="evo-measure"><code>bullet-black</code></p>
+
+<div class="evo-space"></div>
+
+<div class="evo-black-bg width-quarter">
+<ul class="list-bullet bullet-x bullet-white">
+<li class="text-inverse">list item 1</li>
+<li class="text-inverse">list item 2</li>
+<li class="text-inverse">list item 3</li>
+</ul>
+</div>
+<p class="evo-measure"><code>bullet-white</code></p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-x bullet-gray-dark">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-gray-dark">
+<p class="evo-measure"><code>bullet-gray-dark</code></p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-x bullet-gray">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-gray">
+<p class="evo-measure"><code>bullet-gray</code></p>
+
+<div class="evo-space"></div>
+
+<ul class="list-bullet bullet-x bullet-gray-light">
 <li>list item 1</li>
 <li>list item 2</li>
 <li>list item 3</li>
 </ul>
-<ul class="evo-list-bullet bullet-asterisk-heavy bullet-gray-light">
-<li>list item 1</li>
-<li>list item 2</li>
-<li>list item 3</li>
-</ul>
+<p class="evo-measure"><code>bullet-gray-light</code></p>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ul class="evo-list-bullet bullet-color"&gt;
+<code class="evo-measure">&lt;ul class="list-bullet bullet-x bullet-gray-light"&gt;
 &lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
@@ -292,7 +345,7 @@ This is a <code>&lt;ul&gt;</code> list with customized bullets. Bullet colors ca
 </pre>
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags. Apply the <code>evo-list-bullet</code> class followed by a color class such as <code>list-gray</code>. List variables can be adjusted in _evo_variables.scss</p>
+<p class="evo-measure">To modify the color of a bullet, create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags. Apply the <code>list-bullet</code> class followed by a color class such as <code>bullet-gray-light</code>. List variables can be adjusted in _evo_variables.scss</p>
 
 <div class="evo-space-20"></div>
 

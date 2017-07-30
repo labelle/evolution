@@ -18,18 +18,21 @@
 #{$evo}-list-number {
   counter-reset: awesome-counter;
   list-style-type: none;
-& #{$evo}-list-number,
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
 & ol,
 & ol ol {
-  margin-top: 1.5em;
   list-style-type: none;
-    // margin-bottom: 1.5em;
+  // margin-top: 1.5em;
+  margin-left: 1em;
+  // margin-top: 1.5em;
+  // margin-bottom: 1.5em;
 }
 & li {
   position: relative;
   counter-increment: awesome-counter;
-  // margin-left: -1em;
+  margin-left: #{$number_list_margin_left};
   padding-left: #{$number_list_padding_left};
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
 }
 & li::before {
   content: counter(awesome-counter);
@@ -38,14 +41,15 @@
   top: .5em;
   left: 0;
   transform: translateY(#{$number_list_number_position});
+  // vertical-align: middle;
   background: #{$number_list_background_color_1};
   width: 1.5em;
   height: 1.5em;
-  border-radius: #{$number_list_background_corner};
+  // border-radius: #{$number_list_background_corner};
   display: inline-block;
   line-height: inherit; // or #{$body_line_height}, was 1.5em
   color: #{$number_list_number_color};
-  text-align: center;
+  text-align: #{$number_list_text_align};
   // font-family: #{$number_list_number_font_family}; // DISABLED
   // margin-right: 0.5em;
 }
@@ -57,134 +61,293 @@
 }
 }
 
+
+// A simpler list
+
+.list-number {
+  counter-reset: awesome-counter;
+  list-style-type: none;
+& ol,
+& ol ol {
+  list-style-type: none;
+  // margin-top: 1.5em;
+  margin-left: 2ch;
+  // list-style-type: none;
+    // margin-bottom: 1.5em;
+}
+& li {
+  position: relative;
+  counter-increment: awesome-counter;
+  margin-left: .55ch; // #{$number_list_margin_left};
+  padding-left: 2.25ch; // #{$number_list_padding_left};
+}
+& li::before {
+  content: counter(awesome-counter);
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  // top: .5em;
+  left: 0;
+  // transform: translateY(#{$number_list_number_position});
+  // vertical-align: middle;
+  width: .5ch;
+  // height: .5ch;
+  // border-radius: #{$number_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  color: #{$number_list_number_color};
+  text-align: right !important; // #{$number_list_text_align};
+  // font-family: #{$number_list_number_font_family}; // DISABLED
+  // margin-right: 0.5em;
+}
+}
+
+
+
+// Serif Numbers
+.number-serif {
+& li::before {
+  font-family: serif;
+}
+& ol li::before {
+  font-family: serif;
+}
+& ol ol li::before {
+  font-family: serif;
+}
+}
+
+
+// Sans-serif numbers
+.number-sans-serif {
+& li::before {
+  font-family: sans-serif;
+}
+& ol li::before {
+  font-family: sans-serif;
+}
+& ol ol li::before {
+  font-family: sans-serif;
+}
+}
+
+// Moves number up by .1em in position
+.number-nudge-up-more {
+& li::before {
+  top: .4em;
+}
+& ol li::before {
+  top: .4em;
+}
+& ol ol li::before {
+  top: .4em;
+}
+}
+
+// Moves number up by .1em in position
+.number-nudge-up {
+& li::before {
+  top: .45em;
+}
+& ol li::before {
+  top: .45em;
+}
+& ol ol li::before {
+  top: .45em;
+}
+}
+
+// Moves number to a middle position
+.number-nudge-middle {
+& li::before {
+  top: .5em;
+}
+& ol li::before {
+  top: .5em;
+}
+& ol ol li::before {
+  top: .5em;
+}
+}
+
+// Moves number down by .1em in position
+.number-nudge-down {
+& li::before {
+  top: .55em;
+}
+& ol li::before {
+  top: .55em;
+}
+& ol ol li::before {
+  top: .55em;
+}
+}
+
+// Moves number down by .1em in position
+.number-nudge-down-more {
+& li::before {
+  top: .6em;
+}
+& ol li::before {
+  top: .6em;
+}
+& ol ol li::before {
+  top: .6em;
+}
+}
+
+
+// Demo for background color and styling in numbered list
+// Duplicate and re-name this if you want to create your own style
+.number-square,
+.number-circle,
+.number-rounded {
+& li {
+  margin-left: .5ch; // #{$number_list_margin_left};
+  padding-left: 4ch; // #{$number_list_padding_left};
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+}
+& li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_1};
+  // border-radius: #{$number_list_background_corner};
+  color: #{$evo_white};// #{$number_list_number_color};
+}
+& ol li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_2};
+  color: #{$evo_white};// #{$number_list_number_color};
+}
+& ol ol li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_3};
+  color: #{$evo_white};// #{$number_list_number_color};
+}
+}
+
+
+// Circle background behind number
+.number-square {
+& li::before {
+  border-radius: 0;
+}
+& ol li::before {
+  border-radius: 0;
+}
+& ol ol li::before {
+  border-radius: 0;
+}
+}
+
+// Circle background behind number
+.number-circle {
+& li::before {
+  border-radius: 50%;
+}
+& ol li::before {
+  border-radius: 50%;
+}
+& ol ol li::before {
+  border-radius: 50%;
+}
+}
+
+
+// Rounded background behind number
+.number-rounded {
+& li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+& ol li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+& ol ol li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+}
+
+
+
 // .list-number-up li::before {
 //   transform: translateY(#{$number_list_number_position_up});
 // }
 
-// Hacky fix to nudge list numbers down in position when using line lists
-#{$evo}-list-number.list-number-down li::before {
-  transform: translateY(#{$number_list_number_position_down});
+// // Hacky fix to nudge list numbers down in position when using line lists
+// ol.list-number-down li::before {
+//   transform: translateY(#{$number_list_number_position_down});
+// }
+
+// Adds a decimal to numbers
+ol.number-decimal li::before {
+  content: counter(awesome-counter, decimal) "."; 
 }
 
-// Hacky utility to swap-in decimal-leading-zero...
-#{$evo}-list-number.list-number-counter-zero li::before {
+// Adds a zero and decimal to numbers
+ol.number-decimal-zero li::before {
   content: counter(awesome-counter, decimal-leading-zero) "."; 
 }
 
 
-
-// A simpler list number
-// May not align with paragragh text as well
-// // https://www.w3schools.com/cssref/pr_gen_content.asp
-
-// ol .list-number {
-//     list-style-type: none; // none
-//     counter-reset: item;
-//     & ol {
-//     margin-bottom: #{$bullet_list_margin_bottom};
-// }
-// ol > li {
-//    counter-increment: item;
-// }
-// & li:before {
-//     content: counters(item, decimal-leading-zero);
-//     padding-right: #{$bullet_list_icon_padding};
-//     color: #{$bullet_list_icon_color}; // or a color you prefer
-// }
-// }
+// Transparent Color
+ol.number-transparent li::before {
+  color: transparent !important; 
+}
+ol.number-transparent-bg li::before {
+  background: transparent !important; 
+}
 
 
-
-// Need...
-// Here's another take on a numbered list, with purposeful alignment
-// http://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1?rq=1
-
-
-// ol .list-number-2 {
-// ol {
-//   list-style-type: none;
-//   counter-reset: item;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// & ol > li {
-//   display: table;
-//   counter-increment: item;
-//   margin-bottom: 0.6em;
-// }
-
-// & ol > li:before {
-//   content: counters(item, ".") ". ";
-//   display: table-cell;
-//   padding-right: 0.6em;    
-// }
-
-// & li ol > li {
-//   margin: 0;
-// }
-
-// & li ol > li:before {
-//   content: counters(item, ".") " ";
-// }
-// }
+// Evo Color
+ol.number-color li::before {
+  color: #{$evo_color} !important; 
+}
+ol.number-color-bg li::before {
+  background: #{$evo_color} !important; 
+}
 
 
+// Black
+ol.number-black li::before {
+  color: #{$evo_black} !important; 
+}
+ol.number-black-bg li::before {
+  background: #{$evo_black} !important; 
+}
+
+
+// White
+ol.number-white li::before {
+  color: #{$evo_white} !important; 
+}
+ol.number-white-bg li::before {
+  background: #{$evo_white} !important; 
+}
+
+
+// Gray dark
+ol.number-gray-dark li::before {
+  color: #{$evo_gray_dark} !important; 
+}
+ol.number-gray-dark-bg li::before {
+  background: #{$evo_gray_dark} !important; 
+}
+
+
+// Gray
+ol.number-gray li::before {
+  color: #{$evo_gray} !important; 
+}
+ol.number-gray-bg li::before {
+  background: #{$evo_gray} !important; 
+}
+
+
+// Gray light
+ol.number-gray-light li::before {
+  color: #{$evo_gray_light} !important; 
+}
+ol.number-gray-light-bg li::before {
+  background: #{$evo_gray_light} !important; 
+}
 
 
 
-// // http://semantic-ui.com/elements/list.html
 
-// .ui.ordered.list .list>.list-item, 
-// .ui.ordered.list>.list-item, 
-// ol.ui.list li {
-//   list-style-type: none;
-//   position: relative;
-// }
-
-// .ui.list .list>a.list-item, 
-// .ui.list>a.list-item {
-//   cursor: pointer;
-//   color: #4183c4;
-// }
-
-// .ui.list .list>.list-item, 
-// .ui.list>.list-item, 
-// ol.ui.list li, 
-// ul.ui.list li {
-//   display: list-item;
-//   table-layout: fixed;
-//   list-style-type: none;
-//   list-style-position: outside;
-//   padding: .21428571em 0;
-//   line-height: 1.14285714em;
-// }
-
-// .ui.ordered.list .list>.list-item:before, 
-// .ui.ordered.list>.list-item:before, 
-// ol.ui.list li:before {
-//   position: absolute;
-//   top: auto;
-//   left: auto;
-//   user-select: none;
-//   pointer-events: none;
-//   margin-left: -1.25rem;
-//   content: counters(ordered, ".") " ";
-//   text-align: right;
-//   color: rgba(0,0,0,.87);
-//   vertical-align: middle;
-//   opacity: .8;
-// }
-
-// .ui.list>.list-item:after, 
-// .ui.list>.list>.list-item, 
-// ol.ui.list>li:first-child:after, 
-// ul.ui.list>li:first-child:after {
-//   content: '';
-//   display: block;
-//   height: 0;
-//   clear: both;
-//   visibility: hidden;
-// }
 
 
