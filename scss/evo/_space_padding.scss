@@ -40,32 +40,58 @@
 
 // padding-left
 
-.padding-left-0 { padding-left: 0 }
-.padding-left-1 { padding-left: 1px; }
-.padding-left-2 { padding-left: 2px; }
-.padding-left-3 { padding-left: 3px; }
-.padding-left-4 { padding-left: 4px; }
-.padding-left-5 { padding-left: 5px; }
-.padding-left-6 { padding-left: #{$u-18}rem; } // 6px
-.padding-left-7 { padding-left: #{$u-19}rem; } // 8px
-.padding-left-8 { padding-left: #{$u-20}rem; } // 10px
-.padding-left-9 { padding-left: #{$u-21}rem; } // 12px 
-.padding-left-10 { padding-left: #{$u-22}rem; } // 14px
-.padding-left-11 { padding-left: #{$u-23}rem; } // 16px
-.padding-left-12 { padding-left: #{$u-24}rem; } // 18px
-.padding-left-13 { padding-left: #{$u-25}rem; } // 21px
-.padding-left-14 { padding-left: #{$u-26}rem; } // 23px
-.padding-left-15 { padding-left: #{$u-27}rem; } // 30px
-.padding-left-16 { padding-left: #{$u-28}rem; } // 37px
-.padding-left-17 { padding-left: #{$u-29}rem; } // 43px
-.padding-left-18 { padding-left: #{$u-30}rem; } // 48px
-.padding-left-19 { padding-left: #{$u-31}rem; } // 60px
-.padding-left-20 { padding-left: #{$u-32}rem; } // 80px
-.padding-left-21 { padding-left: #{$u-33}rem; } // 96x
-.padding-left-22 { padding-left: #{$u-34}rem; } // 128px
-.padding-left-23 { padding-left: #{$u-35}rem; } // 160px
-.padding-left-24 { padding-left: #{$u-36}rem; } // 208px
-.padding-left-25 { padding-left: #{$u-37}rem; } // 256px
+.padding-left-0,
+.padding-left-0-before:before { padding-left: 0 }
+.padding-left-1,
+.padding-left-1-before:before { padding-left: 1px; }
+.padding-left-2,
+.padding-left-2-before:before { padding-left: 2px; }
+.padding-left-3,
+.padding-left-3-before:before { padding-left: 3px; }
+.padding-left-4,
+.padding-left-4-before:before { padding-left: 4px; }
+.padding-left-5,
+.padding-left-5-before:before { padding-left: 5px; }
+.padding-left-6,
+.padding-left-6-before:before { padding-left: #{$u-18}rem; } // 6px
+.padding-left-7,
+.padding-left-7-before:before { padding-left: #{$u-19}rem; } // 8px
+.padding-left-8,
+.padding-left-8-before:before { padding-left: #{$u-20}rem; } // 10px
+.padding-left-9,
+.padding-left-9-before:before { padding-left: #{$u-21}rem; } // 12px 
+.padding-left-10,
+.padding-left-10-before:before { padding-left: #{$u-22}rem; } // 14px
+.padding-left-11,
+.padding-left-11-before:before { padding-left: #{$u-23}rem; } // 16px
+.padding-left-12,
+.padding-left-12-before:before { padding-left: #{$u-24}rem; } // 18px
+.padding-left-13,
+.padding-left-13-before:before { padding-left: #{$u-25}rem; } // 21px
+.padding-left-14,
+.padding-left-14-before:before { padding-left: #{$u-26}rem; } // 23px
+.padding-left-15,
+.padding-left-15-before:before { padding-left: #{$u-27}rem; } // 30px
+.padding-left-16,
+.padding-left-16-before:before { padding-left: #{$u-28}rem; } // 37px
+.padding-left-17,
+.padding-left-17-before:before { padding-left: #{$u-29}rem; } // 43px
+.padding-left-18,
+.padding-left-18-before:before { padding-left: #{$u-30}rem; } // 48px
+.padding-left-19,
+.padding-left-19-before:before { padding-left: #{$u-31}rem; } // 60px
+.padding-left-20,
+.padding-left-20-before:before { padding-left: #{$u-32}rem; } // 80px
+.padding-left-21,
+.padding-left-21-before:before { padding-left: #{$u-33}rem; } // 96x
+.padding-left-22,
+.padding-left-22-before:before { padding-left: #{$u-34}rem; } // 128px
+.padding-left-23,
+.padding-left-23-before:before { padding-left: #{$u-35}rem; } // 160px
+.padding-left-24,
+.padding-left-24-before:before { padding-left: #{$u-36}rem; } // 208px
+.padding-left-25,
+.padding-left-25-before:before { padding-left: #{$u-37}rem; } // 256px
 
 
 // padding-right

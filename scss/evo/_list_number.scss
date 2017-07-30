@@ -15,7 +15,8 @@
 
 
 // Make small and large version, each with correct number alignment?
-#{$evo}-list-number {
+#{$evo}-list-number,
+#{$evo}-list-number-inverse {
   counter-reset: awesome-counter;
   list-style-type: none;
   padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
@@ -48,7 +49,7 @@
   // border-radius: #{$number_list_background_corner};
   display: inline-block;
   line-height: inherit; // or #{$body_line_height}, was 1.5em
-  color: #{$number_list_number_color};
+  // color: #{$number_list_number_color};
   text-align: #{$number_list_text_align};
   // font-family: #{$number_list_number_font_family}; // DISABLED
   // margin-right: 0.5em;
@@ -59,6 +60,16 @@
 & ol ol li::before {
   background: #{$number_list_background_color_3};
 }
+}
+
+// Evo list bullet
+#{$evo}-list-number li:before {
+color: #{$number_list_number_color} !important;
+}
+
+// Evo list bullet inverse
+#{$evo}-list-number-inverse li:before {
+color: #{$inverse_number_list_number_color} !important;
 }
 
 
@@ -79,7 +90,7 @@
   position: relative;
   counter-increment: awesome-counter;
   margin-left: .55ch; // #{$number_list_margin_left};
-  padding-left: 2.25ch; // #{$number_list_padding_left};
+  padding-left: 2.5ch; // #{$number_list_padding_left};
 }
 & li::before {
   content: counter(awesome-counter);
@@ -249,15 +260,15 @@
 & li::before {
   background: #{$evo_color}; // #{$number_list_background_color_1};
   // border-radius: #{$number_list_background_corner};
-  color: #{$evo_white};// #{$number_list_number_color};
+  // color: #{$evo_white};// #{$number_list_number_color};
 }
 & ol li::before {
   background: #{$evo_color}; // #{$number_list_background_color_2};
-  color: #{$evo_white};// #{$number_list_number_color};
+  // color: #{$evo_white};// #{$number_list_number_color};
 }
 & ol ol li::before {
   background: #{$evo_color}; // #{$number_list_background_color_3};
-  color: #{$evo_white};// #{$number_list_number_color};
+  // color: #{$evo_white};// #{$number_list_number_color};
 }
 }
 

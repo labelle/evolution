@@ -42,19 +42,6 @@
 
 // Unicode symbols
 
-// Bullet U+2022
-ul.bullet-dot li:before,
-a.bullet-dot:before,
-button.bullet-dot:before {
-    content: "•"; // insert content that looks like bullets
-}
-
-// White Bullet U+25E6
-ul.bullet-dot-open li:before,
-a.bullet-dot-open:before,
-button.bullet-dot-open:before {
-    content: "◦"; // insert content that looks like bullets
-}
 
 // ul.bullet-dot-open-dash li:before,
 // a.bullet-dot-open-dash:before,
@@ -62,12 +49,6 @@ button.bullet-dot-open:before {
 //     content: "◌"; // insert content that looks like bullets
 // }
 
-// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
-ul.bullet-arrow-heavy li:before,
-a.bullet-arrow-heavy:before,
-button.bullet-arrow-heavy:before {
-    content: "➜"; // insert content that looks like bullets
-}
 
 // ul.bullet-triangle-large li:before,
 //a.bullet-triangle-open-large:before,
@@ -95,6 +76,21 @@ button.bullet-triangle-open-large:before {
     content: "▹"; // insert content that looks like bullets
 }
 
+
+// // Bullet U+2022
+// ul.bullet-dot li:before,
+// a.bullet-dot:before,
+// button.bullet-dot:before {
+//     content: "•"; // insert content that looks like bullets
+// }
+
+// White Bullet U+25E6
+ul.bullet-dot-open li:before,
+a.bullet-dot-open:before,
+button.bullet-dot-open:before {
+    content: "◦"; // insert content that looks like bullets
+}
+
 // Black Diamond U+25C6 (only browser)
 ul.bullet-diamond li:before,
 a.bullet-diamond:before,
@@ -109,11 +105,46 @@ button.bullet-diamond-open:before {
     content: "◇"; // insert content that looks like bullets
 }
 
+
+
+
+// Heavy Asterisk U+2731 (only browser)
+ul.bullet-asterisk-heavy li:before,
+a.bullet-asterisk-heavy:before,
+button.bullet-asterisk-heavy:before {
+    content: "✱"; // insert content that looks like bullets
+}
+
+// Asterisk U+002A
+ul.bullet-asterisk li:before,
+a.bullet-asterisk:before,
+button.bullet-asterisk:before {
+    content: "*"; // insert content that looks like bullets
+}
+
 // Circled Asterisk Operator U+229B (only browse)
 ul.bullet-asterisk-circle li:before,
 a.bullet-asterisk-circle:before,
 button.bullet-asterisk-circle:before {
     content: "⊛"; // insert content that looks like bullets
+}
+
+
+// Note there are many more star unicode symbols
+// https://unicode-table.com/en/search/?q=star 
+
+// Black Small Star U+2B51
+ul.bullet-star li:before,
+a.bullet-star:before,
+button.bullet-star:before {
+    content: "⭑"; // insert content that looks like bullets
+}
+
+// White Small Star U+2B52
+ul.bullet-star-open li:before,
+a.bullet-star-open:before,
+button.bullet-star-open:before {
+    content: "⭒"; // insert content that looks like bullets
 }
 
 // Apl Functional Symbol Circle Star U+235F (only browser)
@@ -131,35 +162,11 @@ button.bullet-snowflake:before {
 }
 
 
-// Heavy Asterisk U+2731 (only browser)
-ul.bullet-asterisk-heavy li:before,
-a.bullet-asterisk-heavy:before,
-button.bullet-asterisk-heavy:before {
-    content: "✱"; // insert content that looks like bullets
-}
-
-// Asterisk U+002A
-ul.bullet-asterisk li:before,
-a.bullet-asterisk:before,
-button.bullet-asterisk:before {
-    content: "*"; // insert content that looks like bullets
-}
-
-// Note there are many more star unicode symbols
-// https://unicode-table.com/en/search/?q=star 
-
-// Black Small Star U+2B51
-ul.bullet-star li:before,
-a.bullet-star:before,
-button.bullet-star:before {
-    content: "⭑"; // insert content that looks like bullets
-}
-
-// White Small Star U+2B52
-ul.bullet-star-open li:before,
-a.bullet-star-open:before,
-button.bullet-star-open:before {
-    content: "⭒"; // insert content that looks like bullets
+// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
+ul.bullet-arrow-heavy li:before,
+a.bullet-arrow-heavy:before,
+button.bullet-arrow-heavy:before {
+    content: "➜"; // insert content that looks like bullets
 }
 
 // Heavy Check Mark U+2714 (only browser plus OS)

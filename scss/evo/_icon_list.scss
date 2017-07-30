@@ -40,6 +40,17 @@ background-image: url(#{$icon_list_background});
 background-image: url(#{$inverse_icon_list_background}); 
 }
 
+// // Evo list icons
+// #{$evo}-list-bullet li:before {
+// background-image: url(#{$icon_list_background});
+// left: 2ch; // was left: 0;// was left: -1.5em;
+// }
+
+// // Evo list icons
+// #{$evo}-list-bullet-inverse li:before {
+// background-image: url(#{$inverse_icon_list_background});
+// left: 2ch; // was left: 0;// was left: -1.5em;
+// }
 
 
 // List icon size

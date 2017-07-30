@@ -15,15 +15,18 @@
     // vertical-align: middle;
     // padding-left: -3em;
 }
-& ul li,
-& ul ul li {
+& ul li {
   margin-left: 1em;
+}
+& ul ul li {
+  margin-left: 2em;
 
 }
 }
 
 // Evo list icons
-#{$evo}-list-bullet li:before {
+#{$evo}-list-bullet li:before,
+#{$evo}-list-bullet-inverse li:before  {
 content: '•';
 // display:inline-block;
 position: absolute;
@@ -31,7 +34,7 @@ height: auto;// 1em;
 width: auto; // 1em;
 background: #{$bullet_list_background_color_1};
 border-radius: #{$bullet_list_background_corner};
-color: #{$bullet_list_bullet_color};
+// color: #{$bullet_list_bullet_color};
 // font-family: #{$bullet_list_bullet_font_family};// DISABLED
 text-align: center;
 left: -.2ch; // was left: 0;// was left: -1.5em;
@@ -39,16 +42,14 @@ top: 0;
 vertical-align: middle;
 }
 
-// Evo list icons
-#{$evo}-list-bullet li:before li:before {
-background-image: url(#{$icon_list_background});
-left: 1ch; // was left: 0;// was left: -1.5em;
+// Evo list bullet
+#{$evo}-list-bullet li:before {
+color: #{$bullet_list_bullet_color} !important;
 }
 
-// Evo list icons
-#{$evo}-list-bullet-inverse li:before li:before {
-background-image: url(#{$inverse_icon_list_background});
-left: 2ch; // was left: 0;// was left: -1.5em;
+// Evo list bullet inverse
+#{$evo}-list-bullet-inverse li:before {
+color: #{$inverse_bullet_list_bullet_color} !important;
 }
 
 // Moves number down by .1em in position

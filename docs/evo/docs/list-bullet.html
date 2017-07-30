@@ -101,6 +101,29 @@
 
 <p class="evo-measure">These are nested unordered <code>&lt;ul&gt;</code> lists. Create <code>&lt;ul&gt;</code> tags that contain <code>&lt;li&gt;</code> tags. List variables can be adjusted in _global.scss</p>
 
+<div class="evo-space"></div>
+
+<div class="inverse-bg width-half padding-10">
+<ul class="evo-list-bullet-inverse text-inverse">
+<li>List item level 1</li>
+<li>List item level 2</li>
+<li>List item level 3</li>
+</ul>
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure"> &lt;ul class="evo-list-bullet-inverse text-inverse"&gt;
+  &lt;li&gt;List item level 1&lt;/li&gt;
+  &lt;li&gt;List item level 2&lt;/li&gt;
+  &lt;li&gt;List item level 3&lt;/li&gt;
+  &lt;/ul&gt;</code>
+</pre>
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">For inverse style, apply the <code>evo-list-bullet-inverse</code> class to the <code>&lt;ul&gt;</code> tag. List variables can be adjusted in _evo_variables.scss</p>
+
 <div class="evo-space-20"></div>
 
 </section>
@@ -298,17 +321,6 @@
 
 <div class="evo-space"></div>
 
-<div class="evo-black-bg width-half">
-<ul class="list-bullet bullet-x bullet-white">
-<li class="text-inverse">list item 1</li>
-<li class="text-inverse">list item 2</li>
-<li class="text-inverse">list item 3</li>
-</ul>
-</div>
-<p class="evo-measure"><code>bullet-white</code></p>
-
-<div class="evo-space"></div>
-
 <ul class="list-bullet bullet-x bullet-gray-dark">
 <li>list item 1</li>
 <li>list item 2</li>
@@ -346,6 +358,66 @@
 <div class="evo-space-10"></div>
 
 <p class="evo-measure">To modify the color of a bullet, create a <code>&lt;ul&gt;</code> tag that contains <code>&lt;li&gt;</code> tags. Apply the <code>list-bullet</code> class followed by a color class such as <code>bullet-gray-light</code>. List variables can be adjusted in _evo_variables.scss</p>
+
+<div class="evo-space-18"></div>
+
+<div class="inverse-bg width-half padding-10">
+<ul class="list-bullet bullet-x bullet-white">
+<li class="text-inverse">list item 1</li>
+<li class="text-inverse">list item 2</li>
+<li class="text-inverse">list item 3</li>
+</ul>
+</div>
+<p class="evo-measure"><code>bullet-white</code></p>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-bullet bullet-x bullet-white"&gt;
+&lt;li class="text-inverse"&gt;list item 1&lt;/li&gt;
+&lt;li class="text-inverse"&gt;list item 2&lt;/li&gt;
+&lt;li class="text-inverse"&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Demonstration of white bullets on an inverse background. With this method, we use the <code>list-bullet</code> class to change the bullet color to white. The <code>text-inverse</code> class colorizes individual <code>&lt;li&gt;</code> items, and the <code>bullet-white</code> class colors the bullets.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- bullet mix examples -->
+
+<section id="evoListBulletMixExamples">
+
+<h2 class="text-size-6">mix examples</h2>
+
+<div class="evo-space"></div>
+
+<div class="inverse-bg width-half padding-10">
+<ul class="list-bullet bullet-x bullet-gray text-inverse">
+<li class="padding-left-15-before">list item 1</li>
+<li class="padding-right-15-before">list item 2</li>
+<li class="margin-left-15-before">list item 3</li>
+<li class="margin-right-15-before">list item 4</li>
+</ul>
+</div>
+<p class="evo-measure"><code>bullet-gray</code></p>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;ul class="list-bullet bullet-x bullet-gray text-inverse"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
+&lt;li&gt;list item 2&lt;/li&gt;
+&lt;li&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Gray bullets demonstrated on inverse background. With this approach, apply the <code>text-inverse</code> class directly to the <code>&lt;ul&gt;</code> tag to change all the text, plus add a <code>bullet-gray</code> class to override the inverse color with gray colored bullets.</p>
 
 <div class="evo-space-20"></div>
 

@@ -27,7 +27,7 @@
 // List
 
 #{$evo}-list {
-  list-style-type: none; // none
+  list-style-type: #{$ul_list_style_type}; // none
   margin-left:     0; // 1em
   padding-left:    #{$text_list_padding_left}; // 0
   padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
