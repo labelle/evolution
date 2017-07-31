@@ -9363,7 +9363,7 @@ ol.list-lower-greek {
     position: relative;
     counter-increment: awesome-counter;
     margin-left: -0.5ch;
-    padding-left: 2.55ch;
+    padding-left: 3ch;
     padding-bottom: 0.275em; }
   .evo-list-number li::before,
   .evo-list-number-inverse li::before {
@@ -9373,7 +9373,7 @@ ol.list-lower-greek {
     left: 0;
     transform: translateY(-40%);
     background: transparent;
-    width: 1em;
+    width: 1.5em;
     height: 1.5em;
     display: inline-block;
     line-height: inherit;
