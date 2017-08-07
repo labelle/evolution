@@ -1,0 +1,216 @@
+///*      G L Y P H   P L A Y    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Glyph List
+// Unicode symbols
+// These may not appear uniformly in different devices
+// Many may convert to colorful artwork when viewed on mobile devices and different OSs
+
+
+// ul.bullet-dot-open-dash li:before,
+// a.link-dot-open-dash:before,
+// button.button-dot-open-dash:before {
+//     content: "◌"; // insert content that looks like bullets
+// }
+
+
+// ul.bullet-triangle-large li:before,
+//a.link-triangle-open-large:before,
+//button.button-triangle-open-large:before {
+//     content: "►"; // insert content that looks like bullets
+// }
+
+// ul.bullet-triangle-open-large li:before,
+// a.link-triangle-open-large:before,
+// button.button-triangle-open-large:before {
+//     content: "▷"; // insert content that looks like bullets
+// }
+
+// Black Right-Pointing Small Triangle U+25B8 (only browser)
+ul.bullet-triangle-large li:before,
+ul.bullet-triangle-large-after li:after,
+a.link-triangle-large:before,
+a.link-triangle-large-after:after,
+button.button-triangle-large:before,
+button.button-triangle-large-after:after {
+    content: "▸"; // insert content that looks like bullets
+}
+
+// White Right-Pointing Small Triangle U+25B9 (only brower)
+ul.bullet-triangle-open-large li:before,
+ul.bullet-triangle-open-large-after li:after,
+a.link-triangle-open-large:before,
+a.link-triangle-open-large-after:after,
+button.button-triangle-open-large:before,
+button.button-triangle-open-large-after:after {
+    content: "▹"; // insert content that looks like bullets
+}
+
+
+// // Bullet U+2022
+// ul.bullet-dot li:before,
+// a.link-dot:before,
+// button.button-dot:before {
+//     content: "•"; // insert content that looks like bullets
+// }
+
+// White Bullet U+25E6
+ul.bullet-dot-open li:before,
+ul.bullet-dot-open-after li:after,
+a.link-dot-open:before,
+a.link-dot-open-after:after,
+button.button-dot-open:before,
+button.button-dot-open-after:after {
+    content: "◦"; // insert content that looks like bullets
+}
+
+// Black Diamond U+25C6 (only browser)
+ul.bullet-diamond li:before,
+ul.bullet-diamond-after li:after,
+a.link-diamond:before,
+a.link-diamond-after:after,
+button.button-diamond:before,
+button.button-diamond-after:after {
+    content: "◆"; // insert content that looks like bullets
+}
+
+// White Diamond U+25C7 (only browser)
+ul.bullet-diamond-open li:before,
+ul.bullet-diamond-open-after li:after,
+a.link-diamond-open:before,
+a.link-diamond-open-after:after,
+button.button-diamond-open:before,
+button.button-diamond-open-after:after {
+    content: "◇"; // insert content that looks like bullets
+}
+
+
+
+
+// Heavy Asterisk U+2731 (only browser)
+ul.bullet-asterisk-heavy li:before,
+ul.bullet-asterisk-heavy-after li:after,
+a.link-asterisk-heavy:before,
+a.link-asterisk-heavy-after:after,
+button.button-asterisk-heavy:before,
+button.button-asterisk-heavy-after:after {
+    content: "✱"; // insert content that looks like bullets
+}
+
+// Asterisk U+002A
+ul.bullet-asterisk li:before,
+ul.bullet-asterisk-after li:after,
+a.link-asterisk:before,
+a.link-asterisk-after:after,
+button.button-asterisk:before,
+button.button-asterisk-after:after {
+    content: "*"; // insert content that looks like bullets
+}
+
+// Circled Asterisk Operator U+229B (only browse)
+ul.bullet-asterisk-circle li:before,
+ul.bullet-asterisk-circle-after li:after,
+a.link-asterisk-circle:before,
+a.link-asterisk-circle-after:after,
+button.button-asterisk-circle:before,
+button.button-asterisk-circle-after:after {
+    content: "⊛"; // insert content that looks like bullets
+}
+
+
+// Note there are many more star unicode symbols
+// https://unicode-table.com/en/search/?q=star 
+
+// Black Small Star U+2B51
+ul.bullet-star li:before,
+ul.bullet-star-after li:after,
+a.link-star:before,
+a.link-star-after:after,
+button.button-star:before,
+button.button-star-after:after {
+    content: "⭑"; // insert content that looks like bullets
+}
+
+// White Small Star U+2B52
+ul.bullet-star-open li:before,
+ul.bullet-star-open-after li:after,
+a.link-star-open:before,
+a.link-star-open-after:after,
+button.button-star-open:before,
+button.button-star-open-after:after {
+    content: "⭒"; // insert content that looks like bullets
+}
+
+// Apl Functional Symbol Circle Star U+235F (only browser)
+ul.bullet-star-circle li:before,
+ul.bullet-star-circle-after li:after,
+a.link-star-circle:before,
+a.link-star-circle-after:after,
+button.button-star-circle:before,
+button.button-star-circle-after:after {
+    content: "⍟"; // insert content that looks like bullets
+}
+
+// Snowflake U+2744 (only browser plus OS)
+ul.bullet-snowflake li:before,
+ul.bullet-snowflake-after li:after,
+a.link-snowflake:before,
+a.link-snowflake-after:after,
+button.button-snowflake:before,
+button.button-snowflake-after:after {
+    content: "❄"; // insert content that looks like bullets
+}
+
+
+// Heavy Round-Tipped Rightwards Arrow U+279C (only browser)
+ul.bullet-arrow-heavy li:before,
+ul.bullet-arrow-heavy-after li:after,
+a.link-arrow-heavy:before,
+a.link-arrow-heavy-after:after,
+button.button-arrow-heavy:before,
+button.button-arrow-heavy-after:after {
+    content: "➜"; // insert content that looks like bullets
+}
+
+// Heavy Check Mark U+2714 (only browser plus OS)
+ul.bullet-check-heavy li:before,
+ul.bullet-check-heavy-after li:after,
+a.link-check-heavy:before,
+a.link-check-heavy-after:after,
+button.button-check-heavy:before,
+button.button-check-heavy-after:after {
+    content: "✔"; // insert content that looks like bullets
+}
+
+
+// // Lock U+1F512
+// ul.bullet-lock li:before,
+// a.link-lock:before,
+// button.button-lock:before {
+//     content: "🔒"; // insert content that looks like bullets
+// }
+
+// // Lock Open U+1F512
+// ul.bullet-lock-open li:before,
+// a.link-lock-open:before,
+// button.button-lock-open:before {
+//     content: "🔓"; // insert content that looks like bullets
+// }
+
+// MORE
+// https://unicode-table.com/en/blocks/arrows/
+// https://unicode-table.com/en/blocks/dingbats/
+// https://unicode-table.com/en/blocks/counting-rod-numerals/
+// https://unicode-table.com/en/blocks/miscellaneous-symbols-and-pictographs/
+// https://unicode-table.com/en/blocks/block-elements/
+// https://unicode-table.com/en/blocks/miscellaneous-technical/
+
+
+// https://unicode-table.com/en/blocks/supplemental-arrows-c/
+// https://unicode-table.com/en/blocks/geometric-shapes/
+// https://unicode-table.com/en/blocks/geometric-shapes-extended/
+
+// https://unicode-table.com/en/blocks/mathematical-operators/
+

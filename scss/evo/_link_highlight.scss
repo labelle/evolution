@@ -1,0 +1,46 @@
+///*      L I N K   H I G H L I G H T    */
+
+@import "../evo_variables/evo_variables";
+
+// // links highlight background states
+// // order must be a:link, a:visited, a:hover, a:active
+
+// Link background color
+a.link-highlight-color:hover                       { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.link-highlight-color                             { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+
+a.link-highlight-color-hover:hover                 { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.link-highlight-color-hover                       { color: #{$evo_black} !important; transition: .5s; background-color: none !important; }
+
+// Link background color inverse
+a.inverse-link-highlight-color:hover               { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.inverse-link-highlight-color                     { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+
+a.inverse-link-highlight-color-hover:hover         { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.inverse-link-highlight-color-hover               { color: #{$evo_white} !important; transition: .5s; background-color: none !important; }
+
+// Link background color inverse alt
+a.inverse-link-highlight-color-black:hover         { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.inverse-link-highlight-color-black               { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_color} !important; }
+
+a.inverse-link-highlight-color-black-hover:hover   { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_color} !important; }
+a.inverse-link-highlight-color-black-hover         { background-color: none !important; transition: .5s; }
+
+
+
+// Link background color black
+a.link-highlight-black:hover           { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_black} !important; }
+a.link-highlight-black                 { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_black} !important; }
+
+a.link-highlight-black-hover:hover     { color: #{$evo_white} !important; transition: .5s; background-color: #{$evo_black} !important; }
+a.link-highlight-black-hover           { color: #{$evo_black} !important; transition: .5s; background-color: none !important; }
+
+
+
+// Link background color white          
+a.link-highlight-white:hover           { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_white} !important; }
+a.link-highlight-white                 { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_white} !important; }
+
+a.link-highlight-white-hover:hover      { color: #{$evo_black} !important; transition: .5s; background-color: #{$evo_white} !important; }
+a.link-highlight-white-hover            { color: #{$evo_white} !important; transition: .5s; background-color: none !important; }
+

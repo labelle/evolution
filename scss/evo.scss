@@ -114,15 +114,24 @@
 // Link
 @import "evo/link";
 @import "evo/link_style";
-@import "evo/link_bullet";
-@import "evo/link_icon";
-
+@import "evo/link_line";
+@import "evo/link_highlight";
+@import "evo/link_play";
 
 // Icon
 @import "evo/icon";
-@import "evo/icon_list";
 @import "evo/icon_size";
+@import "evo/icon_link";
+@import "evo/icon_button";
+@import "evo/icon_list";
 @import "evo/icon_scroll";
+
+// Glyph
+@import "evo/glyph";
+// @import "evo/glyph_size";
+@import "evo/glyph_link";
+@import "evo/glyph_button";
+@import "evo/glyph_play";
 
 // Button
 @import "evo/button";
@@ -130,8 +139,6 @@
 @import "evo/button_size";
 @import "evo/button_color";
 @import "evo/button_gray";
-@import "evo/button_bullet";
-@import "evo/button_icon";
 @import "evo/button_effect";
 @import "evo/button_play";
 

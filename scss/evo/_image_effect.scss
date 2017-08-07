@@ -9,7 +9,7 @@
 // Evo transition
 // Need to hook into variables
 .evo-transition           { transition: .5s; }
-.evo-transition-after::after    { transition: .5s; }
+.evo-transition-after:after    { transition: .5s; }
 
 // Transitions
 .transition-1      { transition: .1s; }

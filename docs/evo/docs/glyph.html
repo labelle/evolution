@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Evolution List Play</title>
+        <title>Evolution Glyph</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,7 +15,7 @@
 
         <link rel="stylesheet" href="../css/evo-elements.css"> 
 
-<style:
+<style>
 </style>
 
 </head>
@@ -29,13 +29,13 @@
 </header> -->
 <main>
 
-<section id="evoListBulletIntro">
+<section id="evoGlyphIntro">
 
 <a class="text-size-2 text-uppercase breadcrumb-back-to" href="index.html">Evo</a>
 <div class="evo-space"></div>
-<h1 class="text-size-10">List Play</h1>
+<h1 class="text-size-10">Glyph</h1>
 
-<p class="evo-measure">Playful features and effects for lists for use in experimenting and generating new ideas for your project. Not recommended in production.</p>
+<p class="evo-measure">Highly customized unordered lists of bullets. Text Lists are more dependent upon HTML and CSS resets than other elements, particularly to control indents. For additional elements that use a list-bullet, see the <a href="link-bullet.html">link-bullet</a> page. Pseudo classes for space <code>:before</code> and <code>:after</code> are available in <a href="space-padding.html">space-padding</a> and <a href="space-margin.html">space-margin</a>.</p>
 
 <div class="evo-space-20"></div>
 
@@ -43,37 +43,40 @@
 
 
 
-<!-- list number play -->
+<!-- bullet mix examples -->
 
-<section id="evoListNimberPlay">
+<section id="evoListBulletMixExamples">
 
-<h2 class="text-size-6">ol number-big <span class="evo-box box-0 gray-0 evo-color-bg text-size-1 padding-2 padding-left-3 padding-right-3 vertical-align-middle">experimental</span></h2>
+<h2 class="text-size-6">mix examples</h2>
 
 <div class="evo-space"></div>
 
-<div class="width-quarter">
-<ol class="list-number number-big">
-<li>List item 1 that is longer and wraps to two lines</li>
-<li>List item 2</li>
-<li>List item 3</li>
-</ol>
+<div class="inverse-bg width-half padding-10">
+<ul class="list-bullet bullet-x bullet-gray text-inverse">
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+<li>list item 4</li>
+</ul>
 </div>
-<div class="evo-space"></div>
+<p class="evo-measure"><code>bullet-gray</code></p>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;ol class="list-number number-big&gt;
-&lt;li&gt;List item 1 that is longer and wraps to two lines&lt;/li&gt;
+<code class="evo-measure">&lt;ul class="list-bullet bullet-x bullet-gray text-inverse"&gt;
+&lt;li&gt;list item 1&lt;/li&gt;
 &lt;li&gt;list item 2&lt;/li&gt;
 &lt;li&gt;list item 3&lt;/li&gt;
-&lt;/ol&gt;</code>
+&lt;/ul&gt;</code>
 </pre>
+
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">This is an <code>&lt;ol&gt;</code> list with big numbers. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-number</code> class. Number colors and font styles can be customized by mixing in classes such as <code>number-serif</code> and <code>number-gray</code>. Create an <code>&lt;ol&gt;</code> tag that contains <code>&lt;li&gt;</code> tags, and apply the <code>list-number</code> and <code>number-big</code> classes.</p>
+<p class="evo-measure">Gray bullets demonstrated on inverse background. With this approach, apply the <code>text-inverse</code> class directly to the <code>&lt;ul&gt;</code> tag to change all the text, plus add a <code>bullet-gray</code> class to override the inverse color with gray colored bullets.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
+
 
 </main>
 

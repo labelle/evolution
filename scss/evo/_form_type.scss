@@ -15,13 +15,17 @@
 //   background: #{$form_search_background};
 // }
 
-.form-icon {
-  // background-color:      #{$form_background_color};
-  // background-image:      #{$form_background_search};
-  background-repeat:     #{$form_background_repeat};
-  background-attachment: #{$form_background_attachment};
-  background-size:       #{$form_background_size};
-  background-position:   #{$form_background_position};
+// .form-icon {
+//   // background-color:      #{$form_background_color};
+//   // background-image:      #{$form_background_search};
+//   background-repeat:     #{$form_background_repeat};
+//   background-attachment: #{$form_background_attachment};
+//   background-size:       #{$form_background_size};
+//   background-position:   #{$form_background_position};
+// }
+
+.form-icon-left {
+  background-position:   #{$form_background_position_left} !important;
 }
 
 .form-search {
@@ -70,6 +74,23 @@
 }
 
 
+// BUTTON UPLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+// NEED TO CONNECT TO VARIABLES
+label.button-upload:before,
+a.button-upload:before,
+button.button-upload:before {
+background-image: #{$button_file_upload}; 
+}
+
+// BUTTON DOWNLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+label.button-download:before,
+a.button-download:before,
+button.button-download:before {
+background-image: #{$button_file_upload}; 
+}
+
 
 // /*********************
 //     CUSTOM UPLOAD BUTTON
@@ -88,6 +109,6 @@ label.evo-button :invalid + span {
 }
 
 label.evo-button :valid + span {
-    color: #4A4;
-    border-color: #4A4 !important;
+    color: #{$evo_color} !important;
+    border-color: #{$evo_color} !important;
 }

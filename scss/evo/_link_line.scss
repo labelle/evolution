@@ -1,60 +1,9 @@
-///*      L I N K   S T Y L E    */
+///*      L I N K   L I N E    */
 
 @import "../evo_variables/evo_variables";
 
-
-// // links states
+// // links border states
 // // order must be a:link, a:visited, a:hover, a:active
-
-// Text Decoration
-
-// Link line over
-a.link-line-over:hover              { text-decoration: overline !important; border-bottom-width: none; }
-a.link-line-over                    { text-decoration: overline !important; border-bottom-width: none; }
-
-a.link-line-over-hover:hover        { text-decoration: overline !important; border-bottom-width: none; }
-a.link-line-over-hover              { text-decoration: none !important; border-bottom-width: none; }
-
-// link line middle
-a.link-line-middle:hover            { text-decoration: line-through !important; border-bottom-width: none; }
-a.link-line-middle                  { text-decoration: line-through !important; border-bottom-width: none; }
-
-a.link-line-middle-hover:hover      { text-decoration: line-through !important; border-bottom-width: none; }
-a.link-line-middle-hover            { text-decoration: none !important; border-bottom-width: none; }
- 
- // link line under
-a.link-line-under:hover             { text-decoration: underline !important; border-bottom-width: none; }
-a.link-line-under                   { text-decoration: underline !important; border-bottom-width: none; }
-
-a.link-line-under-hover:hover       { text-decoration: underline !important; border-bottom-width: none; }
-a.link-line-under-hover             { text-decoration: none !important; border-bottom-width: none; }
-// link line none hover will inverse this relationship
-
-// link line over
-a.link-line-over-under:hover        { text-decoration: overline underline !important; border-bottom-width: none; }
-a.link-line-over-under              { text-decoration: overline underline !important; border-bottom-width: none; }
-
-a.link-line-over-under-hover:hover  { text-decoration: overline underline !important; border-bottom-width: none; }
-a.link-line-over-under-hover        { text-decoration: none !important; border-bottom-width: none; }
-
-// Decoration can be combined 
-a.link-line-over-middle-under:hover { text-decoration: overline line-through underline !important; border-bottom-width: none; }
-a.link-line-over-middle-under       { text-decoration: overline line-through underline !important; border-bottom-width: none; }
-
-a.link-line-over-middle-under-hover:hover { text-decoration: overline line-through underline !important; border-bottom-width: none; }
-a.link-line-over-middle-under-hover       { text-decoration: none !important; border-bottom-width: none; }
-
-
-// link line none 
-a.link-none:hover,
-a.link-line-none:hover              { text-decoration: none !important; border-bottom: none; }
-a.link-none,
-a.link-line-none                    { text-decoration: none !important; border-bottom-width: none; }
-
-a.link-none-hover:hover,
-a.link-line-none-hover:hover        { text-decoration: none !important; border-bottom: none; }
-a.link-none-hover,
-a.link-line-none-hover              { text-decoration: underline !important; border-bottom-width: none; }
 
 
 .link-line-border-bottom {
@@ -213,8 +162,6 @@ a.link-white-hover                  { @extend .link-line-border-bottom; }
 
 
 
-
-
 // Link color to white          
 a.link-color-to-white:hover         { color: #{$evo_white} !important; @extend .link-line-border-bottom; border-bottom-color: #{$evo_white} !important; }
 a.link-color-to-white               { color: #{$evo_color} !important; @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
@@ -233,43 +180,3 @@ a.link-color-to-black               { color: #{$evo_color} !important; @extend .
 a.link-black-to-color:hover         { color: #{$evo_color} !important; @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
 a.link-black-to-color               { color: #{$evo_black} !important; @extend .link-line-border-bottom; border-bottom-color: #{$evo_black} !important; }
 
-
-
-// Link background color
-a.link-highlight-color:hover                       { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-a.link-highlight-color                             { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-
-a.link-highlight-color-hover:hover                 { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-a.link-highlight-color-hover                       { color: #{$evo_black} !important; background-color: none !important; }
-
-// Link background color inverse
-a.inverse-link-highlight-color:hover               { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-a.inverse-link-highlight-color                     { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-
-a.inverse-link-highlight-color-hover:hover         { color: #{$evo_white} !important; background-color: #{$evo_color} !important; }
-a.inverse-link-highlight-color-hover               { color: #{$evo_white} !important; background-color: none !important; }
-
-// Link background color inverse alt
-a.inverse-link-highlight-color-black:hover         { color: #{$evo_black} !important; background-color: #{$evo_color} !important; }
-a.inverse-link-highlight-color-black               { color: #{$evo_black} !important; background-color: #{$evo_color} !important; }
-
-a.inverse-link-highlight-color-black-hover:hover   { color: #{$evo_black} !important; background-color: #{$evo_color} !important; }
-a.inverse-link-highlight-color-black-hover         { background-color: none !important; }
-
-
-
-// Link background color black
-a.link-highlight-black:hover           { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
-a.link-highlight-black                 { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
-
-a.link-highlight-black-hover:hover     { color: #{$evo_white} !important; background-color: #{$evo_black} !important; }
-a.link-highlight-black-hover           { color: #{$evo_black} !important; background-color: none !important; }
-
-
-
-// Link background color white          
-a.link-highlight-white:hover           { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
-a.link-highlight-white                 { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
-
-a.link-highlight-white-hover:hover      { color: #{$evo_black} !important; background-color: #{$evo_white} !important; }
-a.link-highlight-white-hover            { color: #{$evo_white} !important; background-color: none !important; }

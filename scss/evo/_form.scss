@@ -147,6 +147,14 @@ select::-ms-expand {
   padding-right: #{$form_padding_right};
 }
 
+.form-padding-left {
+  // padding
+  padding-top: #{$form_padding_top};
+  padding-bottom: #{$form_padding_bottom};
+  padding-left: #{$form_padding_left_icon};
+  padding-right: #{$form_padding_right};
+}
+
 .form-box {
   // border width
   border-top-width: #{$form_border_top_width};
@@ -190,7 +198,6 @@ textarea#{$evo}-form:focus {
       cursor: pointer; // "hand" cursor
     }
 }
-
 
   // select:hover {
   //   background-color: #eee;

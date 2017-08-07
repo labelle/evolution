@@ -236,6 +236,7 @@ $bullet_list_icon:                           "•";
 $bullet_list_bullet_font_family:             inherit; // or #{$sans-serif}
 $bullet_list_bullet_color:                   #{$evo_color};
 $bullet_list_bullet_padding:                 1ch;
+$bullet_list_bullet_padding_hover:           1.5ch;
 
 $inverse_bullet_list_bullet_color:           #{$evo_color}; // or #{$evo_white}
 
@@ -539,7 +540,12 @@ $form_background_eye:                  url(../image/eye-book-gray.svg);
 $form_background_eye_slash:            url(../image/eye-slash-book-gray.svg);
 $form_background_lock:                 url(../image/lock-book-gray.svg);
 
+$button_file_upload:                   url(../image/upload-book.svg);
 
+
+$icon_twitter:                         url(../image/twitter.svg);
+$icon_twitter_white:                   url(../image/twitter-white.svg);
+$icon_twitter_gray :                   url(../image/twitter-gray.svg);
 
 // All Forms
 // $form_background_color:             transparent; // or #{$gray_5}
@@ -551,6 +557,7 @@ $form_background_attachment:        scroll;
 // Background controls
 $form_background_size:              1.25em;
 $form_background_position:          99%; // or 100%
+$form_background_position_left:     1%; // or 0
 // Form Input
 $form_font_size:                    1rem;
 $form_border_radius:                none; // or 5px
@@ -561,6 +568,8 @@ $form_padding_top:                  1em;
 $form_padding_bottom:               1em;
 $form_padding_left:                 1em;
 $form_padding_right:                1em;
+// padding for left icon
+$form_padding_left_icon:            2.25em;
 // border width
 $form_border_top_width:             thin;
 $form_border_bottom_width:          thin;
