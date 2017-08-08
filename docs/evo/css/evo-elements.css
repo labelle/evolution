@@ -9424,9 +9424,7 @@ button:hover,
 [type="submit"]:hover {
   color: white;
   background-color: black;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px; }
+  border-color: black; }
 
 .evo-inverse-button {
   color: white !important;
@@ -9756,10 +9754,10 @@ a.inverse-ghost-color-to-ghost:hover,
   border-width: thin; }
 
 .button-box-none {
-  border-width: 0; }
+  border-width: 0 !important; }
 
 .button-box-none:hover {
-  border-width: 0; }
+  border-width: 0 !important; }
 
 .sub-main {
   width: 30%;
@@ -11373,6 +11371,21 @@ ol.number-decimal-zero li::before {
 .image-blur-25-hover-none:hover {
   filter: blur(0px);
   transition: .3s; }
+
+.bg-stripe-black {
+  background-image: url(../image/stripes-black.png); }
+
+.bg-stripe-black-50 {
+  background-image: url(../image/stripes-black-50.png); }
+
+.bg-stripe-gray {
+  background-image: url(../image/stripes-gray.png); }
+
+.bg-stripe-white {
+  background-image: url(../image/stripes-white.png); }
+
+.bg-stripe-white-50 {
+  background-image: url(../image/stripes-white-50.png); }
 
 .blend-initial-after::after,
 .blend-initial {

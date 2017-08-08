@@ -3,6 +3,32 @@
 
 @import "../evo_variables/evo_variables";
 
+
+// Stripes
+
+.bg-stripe-black {
+    background-image: url(../image/stripes-black.png);
+}
+
+.bg-stripe-black-50 {
+    background-image: url(../image/stripes-black-50.png);
+}
+
+.bg-stripe-gray {
+    background-image: url(../image/stripes-gray.png);
+}
+
+.bg-stripe-white {
+    background-image: url(../image/stripes-white.png);
+}
+
+.bg-stripe-white-50 {
+    background-image: url(../image/stripes-white-50.png);
+}
+
+
+
+
 // mix-blend-mode
 
 .blend-initial-after::after,

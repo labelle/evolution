@@ -104,9 +104,9 @@
 // No border box
 
 .button-box-none {
-     border-width: 0;
+     border-width: 0 !important;
 }
 
 .button-box-none:hover {
-     border-width: 0;
+     border-width: 0 !important;
 }

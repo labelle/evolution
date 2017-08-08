@@ -72,8 +72,8 @@ button:hover,
      background-color: #{$button_hover_background_color};
      border-color: #{$button_hover_border_color};
      // structure
-     border-style: #{$button_hover_border_style};
-     border-width: #{$button_hover_border_width};
+     // border-style: #{$button_hover_border_style}; // disabled so button-box-none class can work
+     // border-width: #{$button_hover_border_width}; // disabled so button-box-none class can work
      // border: #{$button_hover_border};
 }
 
