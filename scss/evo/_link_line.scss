@@ -130,11 +130,19 @@ a.link-thick-hover                  { @extend .link-line-border-bottom; transiti
 
 
 // Link thin to thick         
+a.link-thin-to-medium:hover          { @extend .link-line-border-bottom; border-bottom-width: medium !important; }
+a.link-thin-to-medium                { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: thin !important; }
+
 a.link-thin-to-thick:hover          { @extend .link-line-border-bottom; border-bottom-width: thick !important; }
 a.link-thin-to-thick                { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: thin !important; }
 
-a.link-thin-to-thick-hover:hover    { @extend .link-line-border-bottom; border-bottom-width: thick !important; }
-a.link-thin-to-thick-hover          { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: hidden !important; }
+
+
+a.link-medium-to-thin-hover:hover    { @extend .link-line-border-bottom; border-bottom-width: thin !important; border-bottom-color: inherit; }
+a.link-medium-to-thin-hover          { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: medium !important; border-bottom-color: #{$evo_gray_light}; }
+
+a.link-thick-to-thin-hover:hover    { @extend .link-line-border-bottom; border-bottom-width: thin !important; border-bottom-color: inherit; }
+a.link-thick-to-thin-hover          { @extend .link-line-border-bottom; transition: .1s; border-bottom-width: thick !important; border-bottom-color: #{$evo_gray_light}; }
 
 
 
