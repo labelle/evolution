@@ -7644,11 +7644,11 @@ q.evo-text-quote:after {
 span.text-dropcap {
   font-family: inherit;
   color: #0073b9;
-  font-size: 5ex;
+  font-size: 6ex;
   text-align: text-top;
   float: left;
-  padding-right: .7ch;
-  padding-left: .5ch;
+  padding-right: .3ch;
+  padding-left: .1ch;
   padding-top: 0;
   line-height: 1;
   font-feature-settings: "smcp" on; }
@@ -7663,11 +7663,12 @@ span.text-dropcap-box {
   font-size: 5ex;
   text-align: text-top;
   float: left;
-  padding-right: .5ch;
-  padding-left: .5ch;
+  padding-right: .8ch;
+  padding-left: .8ch;
   padding-top: .2ch;
-  padding-bottom: .1ch;
-  margin-right: .5ch;
+  padding-bottom: .4ch;
+  margin-top: .3ch;
+  margin-right: .6ch;
   line-height: 1;
   font-feature-settings: "smcp" on; }
 
