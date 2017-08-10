@@ -5,4 +5,4 @@ This project appreciates the support extended by [BrowserStack](https://www.brow
 
 
 This project appreciates the support extended by BrowserStack
-![BrowserStack](https://camo.githubusercontent.com/jdickan/evolution2/master/docs/evo/image/Logo-01.svg)(https://www.browserstack.com/)
+![BrowserStack](https://jdickan.github.io/evolution2/evo/image/Logo-01.svg)(https://www.browserstack.com/)
