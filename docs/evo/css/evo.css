@@ -4544,18 +4544,72 @@ body.color-demo h2.margin-bottom-0 {
   font-weight: 700;
   font-style: italic; }
 
-.google-lato-thin {
+.font-google-lato-thin {
   font-family: Lato, sans-serif;
   font-weight: 100; }
 
-.google-garamond-light {
+.font-google-garamond-light {
   font-family: Cormorant Garamond, Goudy Old Style, goudy, serif;
   font-weight: 300; }
 
-.google-garamond-light-italic {
+.font-google-garamond-light-italic {
   font-family: Cormorant Garamond, Goudy Old Style, goudy, serif;
   font-weight: 300;
   font-style: italic; }
+
+.font-google-cardo {
+  font-family: Cardo, goudy, serif;
+  font-weight: 400; }
+
+.font-google-cardo-italic {
+  font-family: Cardo, goudy, serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.font-google-cardo-bold {
+  font-family: Cardo, goudy, serif;
+  font-weight: 700;
+  font-style: bold; }
+
+.font-google-abril {
+  font-family: Abril Fatface, georgia, serif;
+  font-weight: 400; }
+
+.font-google-playfair {
+  font-family: Playfair Display, times, serif;
+  font-weight: 400; }
+
+.font-google-playfair-italic {
+  font-family: Playfair Display, times, serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.font-google-playfair-bold {
+  font-family: Playfair Display, times, serif;
+  font-weight: 700;
+  font-style: bold; }
+
+.font-google-playfair-bold-italic {
+  font-family: Playfair Display, times, serif;
+  font-weight: 700;
+  font-style: italic; }
+
+.font-google-playfair-black {
+  font-family: Playfair Display, times, serif;
+  font-weight: 900;
+  font-style: normal; }
+
+.font-google-playfair-black-italic {
+  font-family: Playfair Display, times, serif;
+  font-weight: 900; }
+
+.font-google-montserrat {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400; }
+
+.font-google-merriweather {
+  font-family: Merriweather, serif;
+  font-weight: 400; }
 
 @font-face {
   font-family: 'didonesquedisplay';
