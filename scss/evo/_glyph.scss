@@ -94,7 +94,7 @@ button.button-arrow-after:after {
     content: "→" !important; // insert content that looks like bullets
 }
 
-// Right-Pointing Double Angle Quotation Mark U+00BB
+// Downwards Arrow U+2193
 ul.bullet-arrow-down li:before,
 ul.bullet-arrow-down-after li:after,
 a.link-arrow-down:before,
@@ -103,6 +103,27 @@ button.button-arrow-down:before,
 button.button-arrow-down-after:after {
     content: "↓" !important; // insert content that looks like bullets
 }
+
+// Leftwards Arrow U+2190
+ul.bullet-arrow-left li:before,
+ul.bullet-arrow-left-after li:after,
+a.link-arrow-left:before,
+a.link-arrow-left-after:after,
+button.button-arrow-left:before,
+button.button-arrow-left-after:after {
+    content: "←" !important; // insert content that looks like bullets
+}
+
+// Upwards Arrow U+2191
+ul.bullet-arrow-up li:before,
+ul.bullet-arrow-up-after li:after,
+a.link-arrow-up:before,
+a.link-arrow-up-after:after,
+button.button-arrow-up:before,
+button.button-arrow-up-after:after {
+    content: "↑" !important; // insert content that looks like bullets
+}
+
 
 // Ballot X U+2717 (only browser)
 ul.bullet-x li:before,

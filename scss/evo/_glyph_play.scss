@@ -184,6 +184,38 @@ button.button-check-heavy-after:after {
     content: "✔"; // insert content that looks like bullets
 }
 
+// https://stackoverflow.com/questions/7493954/what-is-the-unicode-character-for-the-close-symbol-used-by-twitter-bootstrap
+
+// Multiplication X U+2715
+ul.bullet-multiply li:before,
+ul.bullet-multiply-after li:after,
+a.link-multiply:before,
+a.link-multiply-after:after,
+button.button-multiply:before,
+button.button-multiply-after:after {
+    content: "✕"; // insert content that looks like bullets
+}
+
+// Heavy Multiplication X U+2716
+ul.bullet-multiply-heavy li:before,
+ul.bullet-multiply-heavy-after li:after,
+a.link-multiply-heavy:before,
+a.link-multiply-heavy-after:after,
+button.button-multiply-heavy:before,
+button.button-multiply-heavy-after:after {
+    content: "✖"; // insert content that looks like bullets
+}
+
+// Cross Mark U+274C
+ul.bullet-crossmark li:before,
+ul.bullet-crossmark-after li:after,
+a.link-crossmark:before,
+a.link-crossmark-after:after,
+button.button-crossmark:before,
+button.button-crossmark-after:after {
+    content: "❌"; // insert content that looks like bullets
+}
+
 
 // // Lock U+1F512
 // ul.bullet-lock li:before,

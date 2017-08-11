@@ -9113,6 +9113,22 @@ button.button-arrow-down:before,
 button.button-arrow-down-after:after {
   content: "↓" !important; }
 
+ul.bullet-arrow-left li:before,
+ul.bullet-arrow-left-after li:after,
+a.link-arrow-left:before,
+a.link-arrow-left-after:after,
+button.button-arrow-left:before,
+button.button-arrow-left-after:after {
+  content: "←" !important; }
+
+ul.bullet-arrow-up li:before,
+ul.bullet-arrow-up-after li:after,
+a.link-arrow-up:before,
+a.link-arrow-up-after:after,
+button.button-arrow-up:before,
+button.button-arrow-up-after:after {
+  content: "↑" !important; }
+
 ul.bullet-x li:before,
 ul.bullet-x-after li:after,
 a.link-x:before,
@@ -9406,6 +9422,30 @@ a.link-check-heavy-after:after,
 button.button-check-heavy:before,
 button.button-check-heavy-after:after {
   content: "✔"; }
+
+ul.bullet-multiply li:before,
+ul.bullet-multiply-after li:after,
+a.link-multiply:before,
+a.link-multiply-after:after,
+button.button-multiply:before,
+button.button-multiply-after:after {
+  content: "✕"; }
+
+ul.bullet-multiply-heavy li:before,
+ul.bullet-multiply-heavy-after li:after,
+a.link-multiply-heavy:before,
+a.link-multiply-heavy-after:after,
+button.button-multiply-heavy:before,
+button.button-multiply-heavy-after:after {
+  content: "✖"; }
+
+ul.bullet-crossmark li:before,
+ul.bullet-crossmark-after li:after,
+a.link-crossmark:before,
+a.link-crossmark-after:after,
+button.button-crossmark:before,
+button.button-crossmark-after:after {
+  content: "❌"; }
 
 a.evo-inverse-button,
 .evo-inverse-button a,
