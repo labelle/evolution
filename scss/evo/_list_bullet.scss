@@ -1,0 +1,206 @@
+///*      L I S T   B U L L E T    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Evo list style
+#{$evo}-list-bullet,
+#{$evo}-list-bullet-inverse {
+    & li {
+    margin-left: #{$bullet_list_margin-left};
+    position: relative;
+    list-style-type: none;
+    list-style-position: #{$ul_list_style_position}; // outside
+    padding-left: #{$bullet_list_padding_left};
+    // vertical-align: middle;
+    // padding-left: -3em;
+}
+& ul li {
+  margin-left: 1em;
+}
+& ul ul li {
+  margin-left: 2em;
+
+}
+}
+
+// Evo list icons
+#{$evo}-list-bullet li:before,
+#{$evo}-list-bullet-inverse li:before  {
+content: '•';
+// display:inline-block;
+position: absolute;
+height: auto;// 1em;
+width: auto; // 1em;
+background: #{$bullet_list_background_color_1};
+border-radius: #{$bullet_list_background_corner};
+// color: #{$bullet_list_bullet_color};
+// font-family: #{$bullet_list_bullet_font_family};// DISABLED
+text-align: center;
+left: -.2ch; // was left: 0;// was left: -1.5em;
+top: 0;
+vertical-align: middle;
+}
+
+// Evo list bullet
+#{$evo}-list-bullet li:before {
+color: #{$bullet_list_bullet_color} !important;
+}
+
+// Evo list bullet inverse
+#{$evo}-list-bullet-inverse li:before {
+color: #{$inverse_bullet_list_bullet_color} !important;
+}
+
+// Moves number down by .1em in position
+.bullet-nudge-up-more {
+& li::before {
+  top: -.2em;
+}
+& ul li::before {
+  top: -.2em;
+}
+& ul ul li::before {
+  top: -.2em;
+}
+}
+
+// Moves number down by .1em in position
+.bullet-nudge-up {
+& li::before {
+  top: -.1em;
+}
+& ul li::before {
+  top: -.1em;
+}
+& ul ul li::before {
+  top: -.1em;
+}
+}
+
+// Moves number down by .1em in position
+.bullet-nudge-middle {
+& li::before {
+  top: 0;
+}
+& ul li::before {
+  top: 0;
+}
+& ul ul li::before {
+  top: 0;
+}
+}
+
+// Moves number down by .1em in position
+.bullet-nudge-down {
+& li::before {
+  top: .05em;
+}
+& ul li::before {
+  top: .05em;
+}
+& ul ul li::before {
+  top: .05em;
+}
+}
+
+// Moves number down by .1em in position
+.bullet-nudge-down-more {
+& li::before {
+  top: .1em;
+}
+& ul li::before {
+  top: .1em;
+}
+& ul ul li::before {
+  top: .1em;
+}
+}
+
+// // Make small and large version, each with correct number alignment?
+// #{$evo}-list-bullet {
+//   // counter-reset: '•';
+// list-style-type: none;
+// & ul,
+// & ul ul {
+//   margin-top: 1.5em;
+//   list-style-position: #{$ul_list_style_position}; // outside
+//   list-style-type: none;
+//     // margin-bottom: 1.5em;
+// }
+// & li {
+//   position: relative;
+//   // counter-increment: awesome-counter;
+//   // margin-left: -1em;
+//   padding-left: 2ch; // #{$number_list_padding_left};
+//   padding-top: inherit;
+//   padding-bottom: inherit;
+//   // vertical-align: bottom;
+// }
+// & li::before {
+//   content: '•';
+//   // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+//   position: absolute;
+//   // top: .5em; // use with transform: translateY();
+//   left: .2ch; // was left: 0;
+//   // transform: translateY(#{$number_list_number_position}); // use with top: 0;
+//   background: #{$bullet_list_background_color_1};
+//   width: auto;
+//   height: auto;
+//   border-radius: #{$bullet_list_background_corner};
+//   display: inline-block;
+//   line-height: inherit; // or #{$body_line_height}, was 1.5em
+//   color: #{$bullet_list_bullet_color};
+//   text-align: center;
+//   font-family: #{$bullet_list_bullet_font_family};
+//   padding-top: inherit;
+//   padding-bottom: inherit;
+//   // margin-right: 0.5em;
+// }
+// & ul li::before {
+//   background: #{$bullet_list_background_color_2};
+// }
+// & ul ul li::before {
+//   background: #{$bullet_list_background_color_3};
+// }
+// }
+
+
+
+// A simpler list bullet
+// May not align with paragragh text as well
+// // https://www.w3schools.com/cssref/pr_gen_content.asp
+
+ul.list-bullet {
+    list-style-type: none; // none
+    list-style-position: #{$ul_list_style_position}; // outside
+    & ul {
+    margin-bottom: #{$bullet_list_margin_bottom};
+}
+& li:before {
+    content: "#{$bullet_list_icon}"; // insert content that looks like bullets
+    padding-right: #{$bullet_list_bullet_padding};
+    color: #{$bullet_list_bullet_color}; // or a color you prefer
+}
+}
+
+ul.list-bullet-after {
+    list-style-type: none; // none
+    list-style-position: #{$ul_list_style_position}; // outside
+    & ul {
+    margin-bottom: #{$bullet_list_margin_bottom};
+}
+& li:after {
+    content: "#{$bullet_list_icon}"; // insert content that looks like bullets
+    padding-left: #{$bullet_list_bullet_padding} !important;
+    color: #{$bullet_list_bullet_color}; // or a color you prefer
+}
+}
+
+ul.bullet-hover-after {
+& li:hover:after {
+    transition: #{$bullet_link_transition};
+    padding-left: #{$bullet_list_bullet_padding_hover} !important;
+}
+}
+

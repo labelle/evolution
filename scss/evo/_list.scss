@@ -1,0 +1,58 @@
+///*      L I S T    */
+
+@import "../evo_variables/evo_variables";
+
+
+// /* Lists */
+// http://alistapart.com/article/taminglists/
+// How to customize lists
+
+
+// List Resets (two options)
+
+// #{$evo}-list-reset {
+//   // Should this be list reset?
+//   list-style:      initial;
+//   list-style-type: initial;
+//   list-style-position: initial;
+//   list-style-image: initial;
+//   padding:         initial;
+//   padding-top:     initial;
+//   padding-left:    initial;
+//   padding-bottom:  initial;
+//   padding-right:   initial;
+// }
+
+
+// List
+
+#{$evo}-list {
+  list-style-type: #{$ul_list_style_type}; // none
+  margin-left:     0; // 1em
+  padding-left:    #{$text_list_padding_left}; // 0
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+}
+
+// List none
+
+.list-none {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+// List defaults
+
+// ul,
+// ol {
+//   // font-size:       #{$text_size};
+//   // color:           #{$text_color}; // try setting this
+//   // font-family:     #{$text_font_family};
+//   // font-weight:     #{$text_font_weight};
+//   // line-height:     #{$text_line_height};
+//   // letter-spacing:  #{$text_letter_spacing};
+//   margin-top:      #{$text_margin_top};
+//   margin-bottom:   #{$text_margin_bottom};
+// }
+
+
+// list-hang and list-align both live in the list_undordered.scss and list_ordered.scss files

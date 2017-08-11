@@ -1,0 +1,55 @@
+///*      L I N E   G R A Y    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+// Line bw
+hr.line-black          { border-top-color: #{$evo_black}; }
+hr.line-white          { border-top-color: #{$evo_white}; }
+hr.line-gray           { border-top-color: #{$evo_gray_light}; }
+
+// // Line gray relative scale
+// hr#{$evo}-line-gray-darkest   { border-top-color: #{$gray_25}; }
+// hr#{$evo}-line-gray-darker    { border-top-color: #{$gray_21}; }
+// hr#{$evo}-line-gray-dark      { border-top-color: #{$gray_18}; }
+// hr#{$evo}-line-gray           { border-top-color: #{$gray_15}; }
+// hr#{$evo}-line-gray-light     { border-top-color: #{$gray_12}; }
+// hr#{$evo}-line-gray-lighter   { border-top-color: #{$gray_9}; }
+// hr#{$evo}-line-gray-lightest  { border-top-color: #{$gray_5}; }
+
+
+// Gray line gray number scale
+// Sourced from variables/_gray.scss
+hr.line-gray-0     { border-top-color: #{$gray_0}; }
+hr.line-gray-1     { border-top-color: #{$gray_1}; }
+hr.line-gray-2     { border-top-color: #{$gray_2}; }
+hr.line-gray-3     { border-top-color: #{$gray_3}; }
+hr.line-gray-4     { border-top-color: #{$gray_4}; }
+hr.line-gray-5     { border-top-color: #{$gray_5}; }
+hr.line-gray-6     { border-top-color: #{$gray_6}; }
+hr.line-gray-7     { border-top-color: #{$gray_7}; }
+hr.line-gray-8     { border-top-color: #{$gray_8}; }
+hr.line-gray-9     { border-top-color: #{$gray_9}; }
+hr.line-gray-10    { border-top-color: #{$gray_10}; }
+hr.line-gray-11    { border-top-color: #{$gray_11}; }
+hr.line-gray-12    { border-top-color: #{$gray_12}; }
+hr.line-gray-13    { border-top-color: #{$gray_13}; }
+hr.line-gray-14    { border-top-color: #{$gray_14}; }
+hr.line-gray-15    { border-top-color: #{$gray_15}; }
+hr.line-gray-16    { border-top-color: #{$gray_16}; }
+hr.line-gray-17    { border-top-color: #{$gray_17}; }
+hr.line-gray-18    { border-top-color: #{$gray_18}; }
+hr.line-gray-19    { border-top-color: #{$gray_19}; }
+hr.line-gray-20    { border-top-color: #{$gray_20}; }
+hr.line-gray-21    { border-top-color: #{$gray_21}; }
+hr.line-gray-22    { border-top-color: #{$gray_22}; }
+hr.line-gray-23    { border-top-color: #{$gray_23}; }
+hr.line-gray-24    { border-top-color: #{$gray_24}; }
+hr.line-gray-25    { border-top-color: #{$gray_25}; }
+hr.line-gray-26    { border-top-color: #{$gray_26}; }
+hr.line-gray-27    { border-top-color: #{$gray_27}; }
+hr.line-gray-28    { border-top-color: #{$gray_28}; }
+hr.line-gray-29    { border-top-color: #{$gray_29}; }
+hr.line-gray-30    { border-top-color: #{$gray_30}; }
+

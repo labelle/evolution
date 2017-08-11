@@ -1,0 +1,160 @@
+///*      L I N K   P L A Y    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Style 1
+.link-style-1 {
+  transition: .3s; 
+  border-bottom-width: thick;
+  border-bottom-color: #{$evo_color};
+  border-bottom-style: solid;
+}
+
+.link-style-1:hover {
+  color: #{$evo_white} !important;
+  background-color: #{$evo_color} !important;
+  border-bottom-width: hidden;
+  // border-bottom-color: inherit;
+  border-bottom-style: solid;
+}
+
+
+// Style 2
+.link-style-2 {
+  transition: .9s; 
+  border-bottom-width: thick;
+  border-bottom-color: #{$color_0};
+  border-bottom-style: solid;
+}
+
+.link-style-2:hover {
+  color: inherit !important;
+  background-color: #{$color_0} !important;
+  border-bottom-width: hidden;
+  // border-bottom-color: inherit;
+  border-bottom-style: solid;
+}
+
+// Style 3
+.link-style-3 {
+  transition: .9s; 
+  background-color: rgba( 255, 240, 42, .4 ) !important;
+}
+
+.link-style-3:hover {
+  color: inherit !important;
+  background-color: #{$color_0} !important;
+}
+
+// Style 4
+.link-style-4 {
+  transition: .9s; 
+  background-color: rgba( 0, 171, 195, .25 ) !important;
+}
+
+.link-style-4:hover {
+  color: inherit !important;
+  background-color: rgba( 0, 171, 195, 1 ) !important;
+}
+
+
+// Style 5
+.link-style-5 {
+  transition: .9s; 
+  background-color: rgba( 255, 240, 42, .5 ) !important;
+}
+
+.link-style-5:hover {
+  color: inherit !important;
+  background-color: rgba( 0, 168, 156, .5 ) !important;
+}
+
+
+// Style 6
+.link-style-6 {
+  transition: .3s; 
+  border-bottom-width: medium;
+  border-bottom-color: inherit;
+  border-bottom-style: solid;
+}
+
+.link-style-6:hover {
+padding-bottom: .25em;
+}
+
+// Style 6
+.link-style-7 {
+  // transition: .3s; 
+  border-bottom-width: thin;
+  border-bottom-color: #{$color_4};
+  border-bottom-style: solid;
+  // padding-bottom: .25em;
+}
+
+.link-style-7:hover {
+  // transition: .3s; 
+ color: #{$color_4};
+ // padding-bottom: -.25em;
+// border-bottom-width: hidden;
+border-bottom-style: hidden;
+}
+
+// NEED:
+
+// Link opacity 75 to 100
+// Link opacity 50 to 75
+// Link opacity 50 to 100
+// Link opacity 25 to 50
+// Link opacity 25 to 75
+// Link opacity 25 to 100
+// Link opacity 0 to 25
+// LInk opacity 0 to 50
+// Link opacity 0 to 75
+// Link opacity 0 to 100
+
+// Link border-bottom to background solid
+// Link background solid
+
+
+
+// // links states
+// // order must be a:link, a:visited, a:hover, a:active
+
+
+
+// // Link inherit
+// a.link-inherit:hover                { color: inherit !important; @extend .link-line-border-bottom; border-bottom-color: inherit !important; }
+// a.link-inherit                      { color: inherit !important; @extend .link-line-border-bottom; border-bottom-color: inherit !important; }
+
+// a.link-inherit-hover:hover          { color: inherit !important; @extend .link-line-border-bottom; border-bottom-color: inherit !important; }
+// a.link-inherit-hover                { @extend .link-line-border-bottom; }
+
+// a.link-inherit-to-color-hover:hover   { color: #{$evo_color} !important; @extend .link-line-border-bottom; border-bottom-color: #{$evo_color} !important; }
+// a.link-inherit-to-color-hover         { @extend .link-line-border-bottom; }
+
+
+
+
+
+// // Branded Links
+// // http://stackoverflow.com/questions/4531208/different-color-links-on-the-same-html-page
+
+// a.brand-color-1             { color: $link_color; }
+// a.brand-color-1:hover       { color: $brand_color_1; text-decoration: $text_decoration_hover; }
+// a.brand-color-1-disabled    { color: $light_gray_evo; @extend .disabled; }
+
+
+// a.brand-color-2             { color: $link_color; }
+// a.brand-color-2:hover       { color: $brand_color_2; text-decoration: $text_decoration_hover; }
+// a.brand-color-2-disabled    { color: $light_gray_evo; @extend .disabled; }
+
+
+// a.brand-color-3             { color: $link_color; }
+// a.brand-color-3:hover       { color: $brand_color_3; text-decoration: $text_decoration_hover; }
+// a.brand-color-3-disabled    { color: $light_gray_evo; @extend .disabled; }
+
+
+// a.brand-color-4             { color: $link_color; }
+// a.brand-color-4:hover       { color: $brand_color_4; text-decoration: $text_decoration_hover; }
+// a.brand-color-4-disabled    { color: $light_gray_evo; @extend .disabled; }

@@ -1,0 +1,66 @@
+///*      L I S T   U N O R D E R E D    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+// http://alistapart.com/article/taminglists/
+// How to customize lists
+
+// ul lists
+
+ul{
+// list-style-type: #{$ul_list_style_type}; // 'none' will remove bullets
+list-style-position: #{$ul_list_style_position}; // inside
+// margin-left: #{$text_list_margin_left}; // 1em
+& ul li {
+      margin-left: .5em;
+}
+& ul ul li {
+      margin-left: 1em;
+}
+& ul ul ul li {
+    margin-left: 1.5em;
+}
+
+// ul base list class
+
+//   &#{$evo}-list {
+//   // @extend #{$evo}-list; // DISABLED - DELETE?
+//   list-style-type: #{$ul_list_style_type}; // none
+//   // padding-left:    #{$text_list_padding_left}; // 0
+//   // padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+// }
+
+// ul utility classes
+  // &.list-align,
+  // &.list-align ul,
+  // &.list-align ul ul {
+  // list-style-position: outside;
+  // margin-left: #{$text_list_margin_left}; // 1em
+  // // list-style-position: inside; // none
+  // }
+  // Hang bullets to the left
+  &.list-circle {
+  list-style-type: circle;
+}
+  &.list-square {
+  list-style-type: square;
+}
+  &.list-disc {
+  list-style-type: disc;
+}
+}
+
+ul.list-hang {
+      list-style-position: outside !important;
+& ul li {
+      margin-left: -10px;
+}
+& ul ul li {
+      margin-left: -20px;
+}
+& ul ul ul li {
+    margin-left: -30px;
+}
+}

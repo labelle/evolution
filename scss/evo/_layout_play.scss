@@ -1,0 +1,25 @@
+///*      L A Y O U T   V I E W P O R T     */
+
+// Align elements on a grid across a page
+
+@import "../evo_variables/evo_variables";
+
+
+
+// Just for the website
+
+.viewport-example > div {
+  margin-left:-5%;
+  margin-right:-5%;
+}
+
+// MOVE THIS TO TEXT PLAY?
+// For view-row elements
+// Not perfect, needs refactoring
+// Should call it something else besides this general name
+.text-rotate {
+    -webkit-transform:rotate(90deg);
+    -webkit-transform-origin: 15px 25px;
+    display:inline-block;
+    width: 100px;
+}

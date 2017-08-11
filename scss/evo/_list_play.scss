@@ -1,0 +1,37 @@
+///*      L I S T   P L A Y    */
+
+@import "../evo_variables/evo_variables";
+
+// NUMBER LIST
+
+// Font style for large font size
+.number-big {
+& li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+& ol li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+& ol ol li::before {
+  font-size: 200%;
+  top: -.5ex;
+}
+}
+
+// padding for large font size
+.number-big {
+& li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+& ol li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+& ol ol li {
+    padding-left: 30px !important;
+  padding-bottom: 20px !important;
+}
+}

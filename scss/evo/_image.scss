@@ -1,0 +1,173 @@
+///*      I M A G E     */
+
+// Basic images
+
+@import "../evo_variables/evo_variables";
+
+
+// Needs to be paired with a size
+#{$evo}-image {
+     // float: left;
+     width: 100%; 
+     height: 0;
+     // display: block;
+     display: inline-block;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     vertical-align: top;
+     // background-color: gray; // #{$color_fpo};
+    // border-style: none;
+    // border: 0;
+}
+
+// Responsive width image
+.image-fluid {
+     max-width: 100% !important; 
+     height: auto !important;
+}
+
+// Image reset
+
+.image-border-none {
+    border: 0;
+    border-style: none;
+}
+
+// Image Utilities
+// most from tachyons
+
+.cover,
+.bg-cover {
+    background-size: cover !important;
+}
+
+.contain,
+.bg-contain {
+    background-size: contain !important;
+}
+
+// https://www.w3schools.com/CSSref/pr_background-repeat.asp
+
+.no-repeat,
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.repeat,
+.bg-repeat {
+    background-repeat: repeat;
+}
+
+.repeat-y,
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.repeat-x,
+.bg-repeat-x {
+    background-repeat: repeat-x;
+}
+
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.bg-top {
+    background-repeat: no-repeat;
+    background-position: top
+}
+
+.bg-right {
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: 0
+}
+
+
+
+
+// For Demo only
+
+.demo-image img[class*="image-"],
+.demo-image img[class*="evo-image"]  {
+padding-bottom: 5rem;
+/*background-color: #eee;*/
+background-color: #eee;
+margin-top: 3em;
+margin-bottom: .5em;
+/*border-width: 1px;*/
+}
+
+  // .pv5-l {
+  //       padding-top: 4rem;
+  //       padding-bottom: 4rem
+  //   }
+
+// // For use with an img tag with src
+// .image,
+// .image-src,
+// .image-source {
+// 	 // width:100%;
+//      max-width:100%;
+// 	 // height:auto;
+// 	 display:block;
+// }
+
+// http://stackoverflow.com/questions/7519080/image-auto-width-in-css-for-all-browsers#7519456
+// This will allow images to scale up but never bigger than the originals
+// https://www.w3schools.com/css/css3_images.asp
+// .image-responsive {
+// 	 max-width: 100%;
+// 	 height:auto;
+//      display: block;
+// }
+
+
+
+
+// .image-bg-test {
+//      width: 100%; 
+//      background-position: center;
+//      background-size: cover;
+//      background-repeat: no-repeat;
+//      vertical-align: top;
+//      // background-color: gray; // #{$color_fpo};
+//     // border-style: none;
+//     // border: 0;
+// }
+
+
+// evo-image
+
+// // base
+// #{$evo}-image {
+//     display: block;
+//     float: left;
+//     width: 100%;
+//     height: 0;
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     vertical-align: top;
+//     // background-color: gray; // #{$color_fpo};
+//     // border-style: none;
+//     // border: 0;
+// }
+
+
+
+
+
+
+

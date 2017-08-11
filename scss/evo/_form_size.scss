@@ -1,0 +1,171 @@
+///*      F O R M   S I Z E    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Forms do not need a custom size class
+// Just change the text sizes on the buttons
+// But just in case, here are a few sizes
+// Note that these mirror _button_size.scss
+
+
+
+
+// Form size large
+.form-size-large {
+     font-size: 125%;
+}
+
+// Form size normal
+.form-size-medium {
+     font-size: 100%;
+}
+
+// Form size small
+.form-size-small {
+     font-size: 75%;
+}
+
+
+
+
+// Form icon large
+.form-icon-large {
+     background-size: 1.25em;
+}
+
+// Form icon normal
+.form-icon-medium {
+     background-size: 1em;
+}
+
+// Form icon small
+.form-icon-small {
+     background-size: .75em;
+}
+
+
+// Form icon alignment
+
+// Flush right
+.form-icon-right-flush {
+     background-position: 100%;
+}
+
+// Align right
+.form-icon-right {
+     background-position: 96%;
+}
+
+// Align left
+.form-icon-left {
+     background-position: 6%;
+}
+
+// Flush left
+.form-icon-left-flush{
+     background-position: 0%;
+}
+
+
+// Padding
+
+// Form padding thick
+.form-padding-thick {
+     padding-top: 1.25em;
+     padding-bottom: 1.25em;
+     padding-left: 2em;
+     padding-right: 2em;
+}
+
+// Form padding medium
+.form-padding-medium {
+     padding-top: #{$form_padding_top};
+     padding-bottom: #{$form_padding_bottom};
+     padding-left: #{$form_padding_left};
+     padding-right: #{$form_padding_right};
+}
+
+// Form padding thin
+.form-padding-thin {
+     padding-top: .25em;
+     padding-bottom: .25em;
+     padding-left: .5em;
+     padding-right: .5em;
+}
+
+
+// Form padding collapsed
+
+.form-padding-none {
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: .25em;
+     padding-right: .25em;
+}
+
+
+
+// Border box width
+
+
+// Thick box border
+
+.form-box-thick {
+     border-width: thick;
+}
+
+.form-box-thick:hover {
+     border-width: thick;
+}
+
+.form-box-thick:focus {
+     border-width: thick;
+}
+
+
+// Medium border box
+
+.form-box-medium {
+     border-width: medium;
+}
+
+.form-box-medium:hover {
+     border-width: medium;
+}
+
+.form-box-medium:focus {
+     border-width: medium;
+}
+
+
+
+// Thin border box
+
+.form-box-thin {
+     border-width: thin;
+}
+
+.form-box-thin:hover {
+     border-width: thin;
+}
+
+.form-box-thin:focus {
+     border-width: thin;
+}
+
+
+
+// No border box
+
+.form-box-none {
+     border-width: 0;
+}
+
+.form-box-none:hover {
+     border-width: 0;
+}
+
+.form-box-none:focus {
+     border-width: 0;
+}

@@ -1,0 +1,318 @@
+///*      L A Y O U T   P O S I T I O N     */
+
+// Position elements within a container
+
+@import "../evo_variables/evo_variables";
+
+
+// http://www.w3schools.com/w3css/w3css_display.asp
+
+// This must go on the container for the absolute positions below
+#{$evo}-position,
+.position-relative {
+    position: relative;
+}
+
+.position-static {
+    position: static;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.position-top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.position-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.position-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.position-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.position-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.position-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%);
+}
+
+.position-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+.position-top {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.position-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+
+
+
+// top bottom left right
+
+.top-0 {
+    top:0;
+}
+
+.bottom-0 {
+    bottom:0;
+}
+
+.left-0 {
+    left:0;
+}
+
+.right-0 {
+    right:0;
+}
+
+
+// Fill utility
+
+.absolute--fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+
+// Floats
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+
+
+// Clear utilities
+
+
+.clear-left {
+    clear: left
+}
+
+.clear-right {
+    clear: right
+}
+
+.clear-both {
+    clear: both
+}
+
+.clear-none {
+    clear: none
+}
+
+
+
+
+// From HTML5 Boilerplate
+
+// /*
+//  * Clearfix: contain floats
+//  *
+//  * For modern browsers
+//  * 1. The space content is one way to avoid an Opera bug when the
+//  *    `contenteditable` attribute is included anywhere else in the document.
+//  *    Otherwise it causes space to appear at the top and bottom of elements
+//  *    that receive the `clearfix` class.
+//  * 2. The use of `table` rather than `block` is only necessary if using
+//  *    `:before` to contain the top-margins of child elements.
+//  */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+// From https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
+.clearfix {
+  // *zoom: 1; // tachyons
+  zoom: 1; // ie 6/7
+}
+
+
+
+
+
+
+
+// Width utilities
+
+.width-full {
+  width: 100% !important;
+}
+
+.width-half {
+  width: 50% !important;
+}
+
+.width-quarter {
+  width: 25% !important;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+// #{$evo}-position-container:hover #{$evo}-position-hover {
+//     display: block
+// }
+
+// #{$evo}-position-container:hover span.#{$evo}-position-hover {
+//     display: inline-block
+// }
+
+// #{$evo}-position-hover {
+//     display: none
+// }
+
+
+// .position-height-100 {
+//     height:100%;
+// }
+
+
+// Centering
+// http://thenewcode.com/723/Seven-Ways-of-Centering-With-CSS
+
+
+
+// http://www.w3schools.com/howto/howto_css_center_website.asp
+// Horizontal centering
+// Requires object to have a set width
+.center-horizontal {
+    // max-width: 100px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// does not require parent container?
+
+// vertical centering
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+
+
+// Flex
+// http://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically#19027949
+
+.flex-center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.z--1 {
+    z-index: -1
+}
+
+// From tachyons
+
+.z-0 {
+    z-index: 0
+}
+
+.z-1 {
+    z-index: 1
+}
+
+.z-2 {
+    z-index: 2
+}
+
+.z-3 {
+    z-index: 3
+}
+
+.z-4 {
+    z-index: 4
+}
+
+.z-5 {
+    z-index: 5
+}
+
+.z-999 {
+    z-index: 999
+}
+
+.z-9999 {
+    z-index: 9999
+}
+
+// http://stackoverflow.com/questions/8565821/css-max-z-index-value#8565868
+.z-max {
+    z-index: 16777271; // for safari 3
+    z-index: 2147483647
+}
+
+.z-inherit {
+    z-index: inherit
+}
+
+.z-initial {
+    z-index: auto
+}
+
+.z-unset {
+    z-index: unset
+}

@@ -1,0 +1,45 @@
+///*      I M A G E   F I L L     */
+
+
+
+@import "../evo_variables/evo_variables";
+
+
+
+// // what is this for? from tachyons
+// .position-relative {
+//     height: 0;
+//     position: relative;
+// }
+
+// fill container if parent container has position: relative;
+// fill viewport of screen if there is no container
+.image-fill-after::after,
+.image-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1 // was 6
+}
+
+
+// // Experimental image full object-fit cover
+
+//    .flex-image-fill,
+//    .flex-image-fill img {
+//     position: absolute;
+//     z-index: 1;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+
+
+

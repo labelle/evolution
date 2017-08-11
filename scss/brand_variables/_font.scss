@@ -1,0 +1,24 @@
+///*      B R A N D   F O N T S     */
+
+// Halis Rounded
+
+@font-face {
+    font-family: 'halis_r_regularregular';
+    src: url('../brand/evo/font/HalisR-Regular-webfont.eot');
+    src: local("☺"),
+         url('../brand/evo/font/HalisR-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../brand/evo/font/HalisR-Regular-webfont.woff2') format('woff2'),
+         url('../brand/evo/font/HalisR-Regular-webfont.woff') format('woff'),
+         url('../brand/evo/font/HalisR-Regular-webfont.ttf') format('truetype'),
+         url('../brand/evo/font/HalisR-Regular-webfont.svg#halis_r_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Brand Fonts
+// Found in /variables_element/_font.scss
+
+$brand_font_1:  'halis_r_regularregular', sans-serif;
+
+$brand_font_2:  sans-serif;

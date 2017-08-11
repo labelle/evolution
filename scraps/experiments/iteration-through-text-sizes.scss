@@ -1,0 +1,88 @@
+// Trying to iterate through text sizes.
+// Maybe cycle through a list of variables?
+// See bottom of this file
+
+$evo:                               ".evo" !default;
+
+// rem scale
+// floor() rounds down
+// ceil() rounds up
+$rem0: .375rem !default;          // 6px? double check this
+$rem1: 5rem !default;             // 8px
+$rem2: .625rem !default;          // 10px
+$rem3: .75rem !default;           // 12px
+$rem4: .875rem !default;          // 14px
+$rem5: floor(1.02rem) !default;   // 16px 
+$rem6: 1.125rem !default;         // 18px
+$rem7: 1.3125rem !default;        // 21px
+$rem8: 1.4375rem !default;        // 23px
+$rem9: 1.875rem !default;         // 30px
+$rem10: 2.3125rem !default;       // 37px
+$rem11: 2.6875rem !default;       // 43px
+$rem12: floor(3.05rem) !default;  // 48px
+$rem13: 3.75rem !default;         // 60px
+$rem14: ceil(4.935rem) !default;  // 80px 
+$rem15: floor(6.1rem) !default;   // 96px
+$rem16: ceil(7.985rem) !default;  // 128px
+$rem17: ceil(9.87rem) !default;   // 160px
+$rem18: ceil(12.92rem) !default;  // 208px
+$rem19: ceil(15.97rem) !default;  // 256px
+$rem20: ceil(20.905rem) !default; // 336px
+$rem21: ceil(25.84rem) !default;  // 416px
+$rem22: ceil(33.825rem) !default; // 544px
+$rem23: ceil(41.81rem) !default;  // 672px
+$rem24: ceil(54.73rem) !default;  // 880px
+$rem25: ceil(67.65rem) !default;  // 1088px
+
+// Text Sizes
+@mixin size($size) {
+  @if $size == reset  { 
+  font-size: initial;
+  // color: initial;
+  // line-height: initial;
+  // margin-top: 0px;
+  // margin-bottom: 0px;
+  }
+  @else if $size == 0            { font-size: #{$rem0}; }  // 6px ?
+  @else if $size == 1            { font-size: #{$rem1}; }  // 8px
+  @else if $size == 2            { font-size: #{$rem2}; }  // 10px
+  @else if $size == 3            { font-size: #{$rem3}; }  // 12px
+  @else if $size == 4            { font-size: #{$rem4}; }  // 14px
+  @else if $size == 5            { font-size: #{$rem5}; }  // 16px 
+  @else if $size == 6            { font-size: #{$rem6}; }  // 18px
+  @else if $size == 7            { font-size: #{$rem7}; }  // 21px
+  @else if $size == 8            { font-size: #{$rem8}; }  // 23px
+  @else if $size == 9            { font-size: #{$rem9}; }  // 30px
+  @else if $size == 10           { font-size: #{$rem10}; } // 37px
+  @else if $size == 11           { font-size: #{$rem11}; } // 43px
+  @else if $size == 12           { font-size: #{$rem12}; } // 48px
+  @else if $size == 13           { font-size: #{$rem13}; } // 60px
+  @else if $size == 14           { font-size: #{$rem13}; } // 80px 
+  @else if $size == 15           { font-size: #{$rem15}; } // 96px
+  @else if $size == 16           { font-size: #{$rem16}; } // 128px
+  @else if $size == 17           { font-size: #{$rem17}; } // 160px
+  @else if $size == 18           { font-size: #{$rem18}; } // 208px
+  @else if $size == 19           { font-size: #{$rem19}; } // 256px
+  @else if $size == 20           { font-size: #{$rem20}; } // 336px
+  @else if $size == 21           { font-size: #{$rem21}; } // 416px
+  @else if $size == 22           { font-size: #{$rem22}; } // 544px
+  @else if $size == 23           { font-size: #{$rem23}; } // 672px
+  @else if $size == 24           { font-size: #{$rem24}; } // 880px
+  @else if $size == 25           { font-size: #{$rem25}; } // 1088px
+  // Throw Warnings
+  @else { @warn "Text mixin supports: reset, numbers 0-25"; }
+}
+
+
+
+// Trying to iterate through text sizes.
+// Maybe cycle through a list of variables?
+
+
+// Text Sizes
+@for $i from 0 through 24 {
+  #{$evo}-text-size-#{$i} {
+      font-size: #{rem#{$i}}; /* */
+    
+  }
+}

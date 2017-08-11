@@ -1,0 +1,209 @@
+///*      I M A G E   P L A Y     */
+
+
+@import "../evo_variables/evo_variables";
+
+
+// Stripes
+
+.bg-stripe-black {
+    background-image: url(../image/stripes-black.png);
+}
+
+.bg-stripe-black-50 {
+    background-image: url(../image/stripes-black-50.png);
+}
+
+.bg-stripe-gray {
+    background-image: url(../image/stripes-gray.png);
+}
+
+.bg-stripe-white {
+    background-image: url(../image/stripes-white.png);
+}
+
+.bg-stripe-white-50 {
+    background-image: url(../image/stripes-white-50.png);
+}
+
+
+
+
+// mix-blend-mode
+
+.blend-initial-after::after,
+.blend-initial    { mix-blend-mode: initial; }
+
+.blend-inherit-after::after,
+.blend-inherit    { mix-blend-mode: inherit; }
+
+.blend-unset-after::after,
+.blend-unset      { mix-blend-mode: unset; }
+
+.blend-normal-after::after,
+.blend-normal     { mix-blend-mode: normal; }
+
+.blend-multiply-after::after,
+.blend-multiply   { mix-blend-mode: multiply; }
+
+.blend-screen-after::after,
+.blend-screen     { mix-blend-mode: screen; }
+
+.blend-overlay-after::after,
+.blend-overlay    { mix-blend-mode: overlay; }
+
+.blend-darken-after::after,
+.blend-darken     { mix-blend-mode: darken; }
+
+.blend-lighten-after::after,
+.blend-lighten    { mix-blend-mode: lighten; }
+
+.blend-dodge-after::after img,
+.blend-dodge      { mix-blend-mode: color-dodge; }
+
+.blend-color-burn-after::after,
+.blend-color-burn { mix-blend-mode: color-burn; }
+
+.blend-hard-light-after::after,
+.blend-hard-light { mix-blend-mode: hard-light; }
+
+.blend-soft-light-after::after,
+.blend-soft-light { mix-blend-mode: soft-light; }
+
+.blend-difference-after,
+.blend-difference { mix-blend-mode: difference; }
+
+.blend-exclusion-after::after,
+.blend-exclusion  { mix-blend-mode: exclusion; }
+
+.blend-hue-after::after,
+.blend-hue        { mix-blend-mode: hue; }
+
+.blend-saturation-after::after,
+.blend-saturation { mix-blend-mode: saturation; }
+
+.blend-color-after::after,
+.blend-color      { mix-blend-mode: color; }
+
+.blend-luminosity-after::after,
+.blend-luminosity { mix-blend-mode: luminosity; }
+
+
+// Background blend mode
+// https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+.blend-initial-bg-after::after,
+.blend-initial-bg    { background-blend-mode: initial; }
+
+.blend-inherit-bg-after::after,
+.blend-inherit-bg    { background-blend-mode: inherit; }
+
+.blend-unset-bg-after::after,
+.blend-unset-bg      { background-blend-mode: unset; }
+
+.blend-normal-bg-after::after,
+.blend-normal-bg     { background-blend-mode: normal; }
+
+.blend-multiply-bg-after::after,
+.blend-multiply-bg   { background-blend-mode: multiply; }
+
+.blend-screen-bg-after::after,
+.blend-screen-bg     { background-blend-mode: screen; }
+
+.blend-overlay-bg-after::after,
+.blend-overlay-bg    { background-blend-mode: overlay; }
+
+.blend-darken-bg-after::after,
+.blend-darken-bg     { background-blend-mode: darken; }
+
+.blend-lighten-bg-after::after,
+.blend-lighten-bg    { background-blend-mode: lighten; }
+
+.blend-dodge-bg-after::after,
+.blend-dodge-bg      { background-blend-mode: color-dodge; }
+
+.blend-color-burn-bg-after::after,
+.blend-color-burn-bg { background-blend-mode: color-burn; }
+
+.blend-hard-light-bg-after::after,
+.blend-hard-light-bg { background-blend-mode: hard-light; }
+
+.blend-soft-light-bg-after::after,
+.blend-soft-light-bg { background-blend-mode: soft-light; }
+
+.blend-difference-bg-after,
+.blend-difference-bg { background-blend-mode: difference; }
+
+.blend-exclusion-bg-after::after,
+.blend-exclusion-bg  { background-blend-mode: exclusion; }
+
+.blend-hue-bg-after::after,
+.blend-hue-bg        { background-blend-mode: hue; }
+
+.blend-saturation-bg-after::after,
+.blend-saturation-bg { background-blend-mode: saturation; }
+
+.blend-color-bg-after::after,
+.blend-color-bg      { background-blend-mode: color; }
+
+.blend-luminosity-bg-after::after,
+.blend-luminosity-bg { background-blend-mode: luminosity; }
+
+
+// http://webdesignerwall.com/tutorials/create-spotify-colorizer-effects-css-blend-modes
+
+// Green
+
+// .evo-color-blend {
+//    background-color: #{$evo_color};
+// }
+
+
+.color-blend-multiply img {
+   filter: grayscale(100%) contrast(1.2);
+   mix-blend-mode: multiply;
+}
+
+// .evo-color-blend img {
+//    filter: grayscale(100%) contrast(1.2);
+//    mix-blend-mode: multiply;
+// }
+
+// .evo-color-blend::after{
+//   // background-color: #{$color_10};
+//   mix-blend-mode: multiply;
+// }
+
+
+// Purple
+
+// .blend-purple{
+//    background-color: #88169d;
+// }
+.blend-purple img{
+   // -webkit-filter: grayscale(100%) contrast(1.2);
+   filter: grayscale(100%) contrast(.8);
+   mix-blend-mode: lighten;
+}
+.blend-purple::after{
+   mix-blend-mode: hard-light;
+   background: linear-gradient(to top left, #75d775, #321a5b);
+}
+
+.blend-hover-none::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out .5s;
+}
+
+// Removed effects to show original on hover
+.blend-hover-none:hover::after, .blend-hover-none:hover, .blend-hover-none:hover img{
+  filter: none;
+  -webkit-filter: none;
+  mix-blend-mode: unset !important;
+  background: transparent;
+}

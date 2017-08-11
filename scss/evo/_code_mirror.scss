@@ -1,0 +1,69 @@
+///*      C O D E   M I R R O R    */
+
+@import "../evo_variables/evo_variables";
+
+// This unsets the styling for evo HTML code and pre tags
+// Allows for cleaner looking code mirrors and code blocks
+// Primarily for style guide and design pattern pages
+
+.evo-codeblock-target > pre > code {
+  all: unset;
+}
+
+// Evo Code Block
+// https://github.com/labelle/evo-code-block
+
+#{$evo}-codeblock {
+
+  pre {
+    margin: 0 auto;
+    white-space: pre-wrap;
+    display: flex;
+
+    code {
+      width: calc(100% - 22px);
+      padding: 0 10px;
+      margin: 5px 0;
+      display: inline-block;
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 2px;
+      color: #676767;
+      font-family: monospace;
+      line-height: 1.25em;
+    }
+    code.nowrap {
+      white-space: nowrap;
+      overflow: scroll;
+    }
+    code.darktheme {
+      background: #31343F;
+      border: 1px solid #1B1C22;
+      color: #f7f7f7;
+    }
+    code.short {
+      width: auto;
+      max-width: calc(100% - 22px);
+      display: inline-block;
+      white-space: pre-wrap;
+      overflow: scroll;
+    }
+  }
+  code.fixheight {
+    max-height: 465px;
+    overflow: scroll;
+  }
+  code.hidden-block {
+    display:none !important;
+  }
+}
+.example-button {
+  text-transform: uppercase;
+  line-height: 0;
+  display: inline-block;
+  font-size: .84rem;
+  border: 1px solid;
+  padding: 1.065rem .925rem .975rem .9em;
+  background-color:#fff;
+  cursor:pointer;
+}

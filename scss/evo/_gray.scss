@@ -1,0 +1,44 @@
+///*      G R A Y     */
+
+@import "../evo_variables/evo_variables";
+
+
+// For Demo
+
+
+body.color-demo {
+div[class*="evo-box"]  {
+margin-top: .5em;
+margin-bottom: 3em;
+/*border-width: 1px;*/
+}
+
+div.color-swatch {
+    height: 25px;
+}
+
+h2.margin-bottom-0 {
+    margin-bottom: -20px;
+}
+}
+
+// Colors
+// http://www.w3schools.com/colors/colors_shades.asp
+
+#{$evo}-white                  { color: #{$evo_white}; }
+#{$evo}-white-bg               { background-color: #{$evo_white}; }
+
+#{$evo}-black                  { color: #{$evo_black}; }
+#{$evo}-black-bg               { background-color: #{$evo_black}; }
+
+#{$evo}-gray-dark              { color: #{$evo_gray_dark}; }
+#{$evo}-gray-dark-bg           { background-color: #{$evo_gray_dark}; }
+
+#{$evo}-gray                   { color: #{$evo_gray}; }
+#{$evo}-gray-bg                { background-color: #{$evo_gray}; }
+
+#{$evo}-gray-light             { color: #{$evo_gray_light}; }
+#{$evo}-gray-light-bg          { background-color: #{$evo_gray_light}; }
+
+// Need other shades of evo gray
+

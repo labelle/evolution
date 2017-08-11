@@ -1,0 +1,51 @@
+///* =========================== */
+
+///*      A T O M S      */
+
+///* =========================== */
+
+// Particles:
+// subatomic (protons, electrons)
+// Single CSS attributes (utilties, helpers) that do not have the evo prefix 
+// since it does not have a style (strike, bold, etc.) and is binary.
+// includes fonts and generic colors but not tints and opacity.
+
+// Atoms:
+// (hydrogen, oxygen)
+// HTML (Text, spae, image) do not have an evo prefix since they are not styled
+// and not varied in size. They may be reset.
+
+/*******************************************************************************
+*
+* The goal of this CSS file is to capture all Evo-Elements HTML and CSS styles.
+* This CSS resets classes and then offers unstyled structure for you to modify.
+* The order of CSS placement – or links to CSS files – has an impact on styles.
+*
+* Outline: (update as needed)
+*   _GLOBAL - General HTML, BODY, BUTTON, LINK settings (optional)
+*   _FONTS - Several different font families for quick styling
+*   _TYPE - 2 different text styles: regular and caps (size 1 - 24)
+// *         - _TEXT is also used within ordered/unordered list
+// *         - 4 different list styes: regular/no-style, bullets, numbers and lines
+// *         - bullets list are using custom SVGs
+// *   _COLORS - 5 different color palettes are included in this file
+// *   _BUTTONS - 30 different button sizes (sizes are incrementing from min 1 to max 30)
+// *            - http://elements.humanig.com/#/buttons
+// *   _FORMS - selection of input types: date input, file input, time input, radio button, checkbox, 
+// *            dropdown menu, text input, number input
+// *   _LINES - few different options with lines: solid, dots, dash (size 1 - 10)
+// *          - borders: top border (solid, dots, dash), (size 1 - 10)
+// *                     bottom border (solid, dots, dash), (size 1 - 10)
+// *          - boxes: (solid, dots, dash), (size 1 - 10)        
+// *          - double: (solid), (size 1 - 10)
+// *   _IMAGES - 3 different styles: Equal(square, rounded, circle), Wide, Tall
+*   _SPACERS - Create space between elements (size 1 - 24)
+// *   _ERRORS - A selection of aliases that forgive common mistypes
+*
+*******************************************************************************/
+
+// @import "elements/global";
+// @import "elements/fonts";
+// @import "elements/type";
+// @import "elements/spacers";
+

@@ -1,0 +1,34 @@
+///*      B R A N D   I M A G E    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Brand images
+
+#{$brand}-image-1-bg     { background-image: url(#{$brand_image_1}); }
+#{$brand}-image-2-bg     { background-image: url(#{$brand_image_2}); }
+#{$brand}-image-3-bg     { background-image: url(#{$brand_image_3}); }
+#{$brand}-image-4-bg     { background-image: url(#{$brand_image_4}); }
+
+// Person, place, thing, texture
+
+#{$brand}-image-person-bg    { background-image: url(#{$brand_image_person}); }
+#{$brand}-image-place-bg     { background-image: url(#{$brand_image_place}); }
+#{$brand}-image-thing-bg     { background-image: url(#{$brand_image_thing}); }
+#{$brand}-image-texture-bg   { background-image: url(#{$brand_image_texture}); }
+
+
+// Old images for guide
+
+.image-bg-brand-guide {
+background-image: url(./../brand/evo/fpo/guide/brand-guide.jpg);
+}
+.image-bg-icon-library {
+background-image: url(./../brand/evo/fpo/guide/icon-library.jpg);
+}
+.image-bg-image-library {
+background-image: url(./../brand/evo/fpo/guide/brand-images.jpg);
+}
+.image-bg-code-playground {
+background-image: url(./../brand/evo/fpo/guide/code-playground.jpg);
+}

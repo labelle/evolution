@@ -1,0 +1,51 @@
+///*      L I N E    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+hr,
+#{$evo}-line {
+// Resets
+display:block;
+height:0;
+border:0;
+border-top:0;
+margin:0;
+padding:0;
+overflow: visible;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+// Settings from _variables.scss
+border-top-width: #{$line_width};
+border-top-style: #{$line_style};
+// border-top-color: #{$line_color};
+
+}
+
+.line-space {
+	margin-top: #{$line_margin_top};
+    margin-bottom: #{$line_margin_bottom};
+}
+
+#{$evo}-line {
+	border-top-color: #{$line_color};
+}
+
+#{$evo}-line-inverse {
+	border-top-color: #{$inverse_line_color};
+}
+
+.line-color {
+	border-top-color: #{$evo_color};
+}
+
+// For website demo only
+
+.demo-line hr[class*="line-"]  {
+/*padding-bottom: 5rem;*/
+margin-top: .5em;
+/*background-color: #eee;*/
+margin-bottom: 3em;
+}

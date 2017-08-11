@@ -1,0 +1,67 @@
+///*      G L Y P H   L I N K    */
+
+@import "../evo_variables/evo_variables";
+
+// Place this directly on a link class
+// Make small and large version, each with correct number alignment?
+a#{$evo}-link-bullet {
+  // counter-reset: '•';
+  // margin-top: 1.5em;
+  position: relative;
+  padding-left: 2ch; // #{$number_list_padding_left};
+    // margin-bottom: 1.5em;
+  }
+a#{$evo}-link-bullet::before {
+  content: '•';
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  // top: .5em; // use with transform: translateY();
+  left: .2ch; // was left: 0;
+  // transform: translateY(#{$number_list_number_position}); // use with top: 0;
+  background: #{$bullet_list_background_color_1};
+  width: auto;
+  height: auto;
+  border-radius: #{$bullet_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  color: #{$bullet_list_bullet_color};
+  text-align: center;
+  font-family: #{$bullet_list_bullet_font_family};
+  opacity: .5;
+  transition: #{$bullet_link_transition};
+  // margin-right: 0.5em;
+}
+
+a#{$evo}-link-bullet:hover::before {
+  color: #{$bullet_list_bullet_color};
+  opacity: 1;
+}
+
+
+
+// // DOES NOT WORK
+// a.link-bullet {
+//   position: relative;
+//   // padding-right: 3em;
+// }
+// // DOES NOT WORK
+// a.link-bullet::before {
+//     position: absolute;
+//     content: "•"; // insert content that looks like bullets
+//     color: #{$bullet_list_bullet_color}; // or a color you prefer
+// }
+// // DOES NOT WORK
+// a.link-bullet:hover::before {
+//     content: "✓"; // insert content that looks like bullets
+//     color: black; // or a color you prefer
+// }
+
+
+// A simple way to add a bullet
+ul.link-bullet li:before,
+a.link-bullet:before,
+button.link-bullet:before {
+    content: "•"; // insert content that looks like bullets
+    padding-right: 1ch;
+}
+

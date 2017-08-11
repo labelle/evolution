@@ -1,0 +1,37 @@
+///*      B R A N D   G R A P H I C    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+// Infograph
+
+#{$brand}-graphic-1-bg    { background-image: url(#{$brand_graphic_1}); }
+#{$brand}-graphic-2-bg    { background-image: url(#{$brand_graphic_2}); }
+#{$brand}-graphic-3-bg    { background-image: url(#{$brand_graphic_3}); }
+#{$brand}-graphic-4-bg    { background-image: url(#{$brand_graphic_4}); }
+
+
+
+// // Infograph
+
+// #{$brand}-graphic-1-bg    { background-image: url(#{$graphic_1}); }
+
+
+
+// // Chart
+
+// #{$brand}-graphic-2-bg    { background-image: url(#{$graphic_2}); }
+
+
+
+// // Map
+
+// #{$brand}-graphic-3-bg    { background-image: url(#{$graphic_3}); }
+
+
+
+// // Dataviz
+
+// #{$brand}-graphic-4-bg    { background-image: url(#{$graphic_4}); }
+

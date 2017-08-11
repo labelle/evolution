@@ -1,0 +1,84 @@
+///*      B O O T S T R A P 3   R E S E T     */
+
+// Override these using settings.scss
+// Default values live in variables.scss
+
+// /* Reset Bootstrap 3 Opinions */
+
+html,
+body {
+ // font-family: sans-serif; // /* note: safari defaults to a serif */
+ font-weight: initial;
+ color: initial;
+ font-style: initial;
+}
+
+body {
+  line-height: initial;
+  background-color: initial;
+}
+
+// /* Force reset bootstrap 3 default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+  font-family: initial;
+  font-size: initial;
+  font-weight: initial;
+  font-style: initial;
+  line-height: initial;
+  color: initial;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: initial; // color: #428bca;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: initial; // color: #2a6496;
+  text-decoration: initial; // text-decoration: underline;
+}
+// a:focus moved to _base.scss
+// a:focus {
+//   outline: thin dotted #333;
+//   outline: 5px auto -webkit-focus-ring-color;
+//   outline-offset: -2px;
+// }
+
+button,
+input {
+  line-height: normal;
+}
+
+// not needed, as html5doctor uses vertical-align: baseline
+// img {
+//   vertical-align: initial; // vertical-align: middle;
+// }
+
+address {
+  font-style: normal;
+}
+
+abbr[title] {
+  border-bottom:0px; // border-bottom: 1px dotted;
+}
+
+dfn {
+  font-style: normal; // font-style: italic;
+}
+
+hr {
+  margin-top: initial; // margin-top: 20px;
+  margin-bottom: initial; // margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid; // border-top: 1px solid #eeeeee;
+}
+

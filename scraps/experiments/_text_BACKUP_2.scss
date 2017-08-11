@@ -1,0 +1,165 @@
+///*      T E X T    */
+
+@import "../variables";
+// @import "../variables/scale";
+@import "text_mixins";
+
+///* --------------------------- TEXT --------------------------- */
+
+
+
+// Variables for text.scss typography
+
+$text_line_height_increment:        .13;
+$text_line_height:                  .3;
+$text_font_size_increment:          .09;
+$text_font_size:                    .3;
+
+$text_letter_spacing:                .05rem;
+$text_letter_spacing_increment:      .005rem;
+
+
+
+// Variables for text.scss bullets
+
+$text_padding_left_highest:          2.5;
+$text_padding_left_middle:           1;
+$text_padding_left_lowest:           .7;
+
+$text_padding_left_bullets:          1rem; 
+$text_padding_left_middle_to_highest_increment_bullets:  ($text_padding_left_highest - $text_padding_left_middle)/23;
+$text_padding_left_middle_to_lowest_increment_bullets:   $text_padding_left_middle - $text_padding_left_lowest;
+
+$text_padding_left_divide_amount:    8;
+$text_padding_left_add_amount:       .5;
+$text_padding_top_add_amount:        .2;
+$text_padding_bottom_add_amount:     .4;
+$text_line_height_increment_divide_amount: 4;
+
+// Text and utility classes
+
+
+// variables to move to _variables.scss file
+// optimized for older text-10 sizes
+// reference evolution-elements css file
+// SHOULD SOME OF THESE INHERIT?
+// SHOULD SOME BE PERCENTAGES OR EMS?
+$text_list_margin_top:                .75rem;
+$text_list_line_height:               1.5;
+$text_list_icon_background:           url('../../icons/circle-solid.svg') no-repeat left center; // make more specific than "background?" maybe background-image
+$text_list_icon_background_size:      .0.4125rem;
+$text_list_icon_background_position:  0px 0.41667rem;
+$text_list_padding_left:              0;
+$text_list_margin_left:               0;
+$text_list_margin_bottom:             .75rem; // was margin-top
+$text_list_style_type:                none;
+
+
+#{$evo}-top-line-1      { border-top: 1px solid; }
+#{$evo}-bottom-line-1      { border-bottom: 1px solid; }
+
+/* Text */
+
+
+// Text Reset
+#{$evo}-text-reset {
+  font-size:       initial;
+  color:           initial;
+  font-family:     initial;
+  font-weight:     initial;
+  font-weight:     initial;
+  font-style:      initial;
+  line-height:     initial;
+  text-decoration: initial;
+  text-transform:  initial;
+  text-align:      initial;
+  margin-top:      initial;
+  margin-bottom:   initial;
+}
+
+
+// Text
+#{$evo}-text {
+  font-size:       #{$text_size};
+  color:           #{$text_color};
+  font-family:     #{$text_font_family};
+  font-weight:     #{$text_font_weight};
+  line-height:     #{$text_line_height};
+  margin-top:      #{$text_margin_top};
+  margin-bottom:   #{$text_margin_bottom};
+& > li {
+margin-left: #{$text_list_margin_left};
+padding-left: #{$text_list_padding_left};
+margin-bottom: #{$text_list_margin_bottom};
+line-height: #{$text_list_line_height};
+}
+}
+
+#{$evo}-text-bullets {
+@extend #{$evo}-text;
+& > li{
+// list-style-type: #{$text_list_style_type};
+background: #{$text_list_icon_background};
+background-position: #{$text_list_icon_background_position};
+background-size: #{$text_list_icon_background_size};
+}
+}
+
+#{$evo}-text-lines {
+@extend #{$evo}-text;
+& > li{
+// margin-left: #{$text_list_margin_left};
+// padding-left: #{$text_list_padding_left};
+// margin-bottom: #{$text_list_margin_bottom};
+// line-height: #{$text_list_line_height};
+list-style-type: #{$text_list_style_type}; 
+   &:first-child {
+  @extend #{$evo}-top-line-1;
+}
+   &:last-child {
+  @extend #{$evo}-bottom-line-1;
+}
+}
+}
+
+/*
+  margin-left: 0;
+  padding-left: 0;
+  background-position: 0px 0.41667rem;
+  background-size: 0.4125rem;
+  margin-top: 0.75rem;
+  line-height: 1.2rem; }
+*/
+
+
+
+
+
+
+
+// Element Mixins
+@mixin base($base) { 
+    @if $base == text            { @extend #{$evo}-text; }
+    @else if $base == font       { @extend #{$evo}-font; }
+    // Throw Warnings
+  @else { @warn "Base mixin supports: text, font"; }
+}
+
+// Text Style
+#{$evo}-text-bold             { font-weight: bold; }
+#{$evo}-text-italic           { font-style: italic; }
+#{$evo}-text-capitalize       { text-transform: capitalize; }
+#{$evo}-text-uppercase        { text-transform: uppercase; }
+#{$evo}-text-lowercase        { text-transform: lowercase; }
+#{$evo}-text-strike           { text-decoration: line-through; }
+#{$evo}-text-underline        { text-decoration: underline; }
+#{$evo}-text-no-underline a,
+#{$evo}-text-no-underline     { text-decoration: none; }
+#{$evo}-text-no-transform     { text-transform: none; }
+#{$evo}-text-left             { text-align: left; }
+#{$evo}-text-right            { text-align: right; }
+#{$evo}-text-center           { text-align: center; }
+#{$evo}-text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#{$evo}-text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
+

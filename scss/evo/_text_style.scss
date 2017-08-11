@@ -1,0 +1,38 @@
+///*      T E X T   S T Y L E    */
+
+@import "../evo_variables/evo_variables";
+
+// Marked the resets as !important to insure an override
+
+// Text Align
+.text-left             { text-align: left; }
+.text-right            { text-align: right !important; } // important is for table dividers
+.text-center           { text-align: center; }
+
+
+// Text Transform
+.text-capitalize       { text-transform: capitalize; }
+.text-uppercase        { text-transform: uppercase; }
+.text-lowercase        { text-transform: lowercase; }
+
+.text-capcase-none,
+.text-no-capcase       { text-transform: none !important; }
+
+
+// Text Decoration
+.text-line-over        { text-decoration: overline; }
+.text-line-middle      { text-decoration: line-through; }
+.text-line-under       { text-decoration: underline; }
+// Decoration can be combined
+.text-line-over-under  { text-decoration: overline underline; }
+.text-line-all         { text-decoration: overline underline line-through; }
+
+.text-line-none          { text-decoration: none !important; }
+
+
+// Text Overflow
+.text-truncate         { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.text-clip             { white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
+
+

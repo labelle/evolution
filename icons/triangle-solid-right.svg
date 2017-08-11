@@ -1,0 +1,13 @@
+<svg width="58px" height="65px" viewBox="3 -1 58 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle Solid Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="triangle-solid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(32.000000, 32.000000) rotate(-270.000000) translate(-32.000000, -32.000000) translate(0.000000, 4.000000)">
+        <g id="evo-icon" fill="#000000">
+            <g id="triangle-solid">
+                <polygon id="triangle" points="0 56 64 56 32 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

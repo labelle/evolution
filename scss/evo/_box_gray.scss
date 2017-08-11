@@ -1,0 +1,173 @@
+///*      B O X   G R A Y    */
+
+@import "../evo_variables/evo_variables";
+
+// box grays
+
+// Sourced from variables/_color.scss
+.box-gray-0    { border-top-color: #{$gray_0}; border-bottom-color: #{$gray_0}; border-right-color: #{$gray_0}; border-left-color: #{$gray_0}; }.box-gray-0    { border-top-color: #{$gray_0}; border-bottom-color: #{$gray_0}; border-right-color: #{$gray_0}; border-left-color: #{$gray_0}; }
+.box-gray-1    { border-top-color: #{$gray_1}; border-bottom-color: #{$gray_1}; border-right-color: #{$gray_1}; border-left-color: #{$gray_1}; }.box-gray-1    { border-top-color: #{$gray_1}; border-bottom-color: #{$gray_1}; border-right-color: #{$gray_1}; border-left-color: #{$gray_1}; }
+.box-gray-2    { border-top-color: #{$gray_2}; border-bottom-color: #{$gray_2}; border-right-color: #{$gray_2}; border-left-color: #{$gray_2}; }.box-gray-2    { border-top-color: #{$gray_2}; border-bottom-color: #{$gray_2}; border-right-color: #{$gray_2}; border-left-color: #{$gray_2}; }
+.box-gray-3    { border-top-color: #{$gray_3}; border-bottom-color: #{$gray_3}; border-right-color: #{$gray_3}; border-left-color: #{$gray_3}; }.box-gray-3    { border-top-color: #{$gray_3}; border-bottom-color: #{$gray_3}; border-right-color: #{$gray_3}; border-left-color: #{$gray_3}; }
+.box-gray-4    { border-top-color: #{$gray_4}; border-bottom-color: #{$gray_4}; border-right-color: #{$gray_4}; border-left-color: #{$gray_4}; }.box-gray-4    { border-top-color: #{$gray_4}; border-bottom-color: #{$gray_4}; border-right-color: #{$gray_4}; border-left-color: #{$gray_4}; }
+.box-gray-5    { border-top-color: #{$gray_5}; border-bottom-color: #{$gray_5}; border-right-color: #{$gray_5}; border-left-color: #{$gray_5}; }.box-gray-5    { border-top-color: #{$gray_5}; border-bottom-color: #{$gray_5}; border-right-color: #{$gray_5}; border-left-color: #{$gray_5}; }
+.box-gray-6    { border-top-color: #{$gray_6}; border-bottom-color: #{$gray_6}; border-right-color: #{$gray_6}; border-left-color: #{$gray_6}; }.box-gray-6    { border-top-color: #{$gray_6}; border-bottom-color: #{$gray_6}; border-right-color: #{$gray_6}; border-left-color: #{$gray_6}; }
+.box-gray-7    { border-top-color: #{$gray_7}; border-bottom-color: #{$gray_7}; border-right-color: #{$gray_7}; border-left-color: #{$gray_7}; }.box-gray-7    { border-top-color: #{$gray_7}; border-bottom-color: #{$gray_7}; border-right-color: #{$gray_7}; border-left-color: #{$gray_7}; }
+.box-gray-8    { border-top-color: #{$gray_8}; border-bottom-color: #{$gray_8}; border-right-color: #{$gray_8}; border-left-color: #{$gray_8}; }.box-gray-8    { border-top-color: #{$gray_8}; border-bottom-color: #{$gray_8}; border-right-color: #{$gray_8}; border-left-color: #{$gray_8}; }
+.box-gray-9    { border-top-color: #{$gray_9}; border-bottom-color: #{$gray_9}; border-right-color: #{$gray_9}; border-left-color: #{$gray_9}; }.box-gray-9    { border-top-color: #{$gray_9}; border-bottom-color: #{$gray_9}; border-right-color: #{$gray_9}; border-left-color: #{$gray_9}; }
+.box-gray-10    { border-top-color: #{$gray_10}; border-bottom-color: #{$gray_10}; border-right-color: #{$gray_10}; border-left-color: #{$gray_10}; }.box-gray-10    { border-top-color: #{$gray_10}; border-bottom-color: #{$gray_10}; border-right-color: #{$gray_10}; border-left-color: #{$gray_10}; }
+.box-gray-11    { border-top-color: #{$gray_11}; border-bottom-color: #{$gray_11}; border-right-color: #{$gray_11}; border-left-color: #{$gray_11}; }.box-gray-11    { border-top-color: #{$gray_11}; border-bottom-color: #{$gray_11}; border-right-color: #{$gray_11}; border-left-color: #{$gray_11}; }
+.box-gray-12    { border-top-color: #{$gray_12}; border-bottom-color: #{$gray_12}; border-right-color: #{$gray_12}; border-left-color: #{$gray_12}; }.box-gray-12    { border-top-color: #{$gray_12}; border-bottom-color: #{$gray_12}; border-right-color: #{$gray_12}; border-left-color: #{$gray_12}; }
+.box-gray-13    { border-top-color: #{$gray_13}; border-bottom-color: #{$gray_13}; border-right-color: #{$gray_13}; border-left-color: #{$gray_13}; }.box-gray-13    { border-top-color: #{$gray_13}; border-bottom-color: #{$gray_13}; border-right-color: #{$gray_13}; border-left-color: #{$gray_13}; }
+.box-gray-14    { border-top-color: #{$gray_14}; border-bottom-color: #{$gray_14}; border-right-color: #{$gray_14}; border-left-color: #{$gray_14}; }.box-gray-14    { border-top-color: #{$gray_14}; border-bottom-color: #{$gray_14}; border-right-color: #{$gray_14}; border-left-color: #{$gray_14}; }
+.box-gray-15    { border-top-color: #{$gray_15}; border-bottom-color: #{$gray_15}; border-right-color: #{$gray_15}; border-left-color: #{$gray_15}; }.box-gray-15    { border-top-color: #{$gray_15}; border-bottom-color: #{$gray_15}; border-right-color: #{$gray_15}; border-left-color: #{$gray_15}; }
+.box-gray-16    { border-top-color: #{$gray_16}; border-bottom-color: #{$gray_16}; border-right-color: #{$gray_16}; border-left-color: #{$gray_16}; }.box-gray-16    { border-top-color: #{$gray_16}; border-bottom-color: #{$gray_16}; border-right-color: #{$gray_16}; border-left-color: #{$gray_16}; }
+.box-gray-17    { border-top-color: #{$gray_17}; border-bottom-color: #{$gray_17}; border-right-color: #{$gray_17}; border-left-color: #{$gray_17}; }.box-gray-17    { border-top-color: #{$gray_17}; border-bottom-color: #{$gray_17}; border-right-color: #{$gray_17}; border-left-color: #{$gray_17}; }
+.box-gray-18    { border-top-color: #{$gray_18}; border-bottom-color: #{$gray_18}; border-right-color: #{$gray_18}; border-left-color: #{$gray_18}; }.box-gray-18    { border-top-color: #{$gray_18}; border-bottom-color: #{$gray_18}; border-right-color: #{$gray_18}; border-left-color: #{$gray_18}; }
+.box-gray-19    { border-top-color: #{$gray_19}; border-bottom-color: #{$gray_19}; border-right-color: #{$gray_19}; border-left-color: #{$gray_19}; }.box-gray-19    { border-top-color: #{$gray_19}; border-bottom-color: #{$gray_19}; border-right-color: #{$gray_19}; border-left-color: #{$gray_19}; }
+.box-gray-20    { border-top-color: #{$gray_20}; border-bottom-color: #{$gray_20}; border-right-color: #{$gray_20}; border-left-color: #{$gray_20}; }.box-gray-20    { border-top-color: #{$gray_20}; border-bottom-color: #{$gray_20}; border-right-color: #{$gray_20}; border-left-color: #{$gray_20}; }
+.box-gray-21    { border-top-color: #{$gray_21}; border-bottom-color: #{$gray_21}; border-right-color: #{$gray_21}; border-left-color: #{$gray_21}; }.box-gray-21    { border-top-color: #{$gray_21}; border-bottom-color: #{$gray_21}; border-right-color: #{$gray_21}; border-left-color: #{$gray_21}; }
+.box-gray-22    { border-top-color: #{$gray_22}; border-bottom-color: #{$gray_22}; border-right-color: #{$gray_22}; border-left-color: #{$gray_22}; }.box-gray-22    { border-top-color: #{$gray_22}; border-bottom-color: #{$gray_22}; border-right-color: #{$gray_22}; border-left-color: #{$gray_22}; }
+.box-gray-23    { border-top-color: #{$gray_23}; border-bottom-color: #{$gray_23}; border-right-color: #{$gray_23}; border-left-color: #{$gray_23}; }.box-gray-23    { border-top-color: #{$gray_23}; border-bottom-color: #{$gray_23}; border-right-color: #{$gray_23}; border-left-color: #{$gray_23}; }
+.box-gray-24    { border-top-color: #{$gray_24}; border-bottom-color: #{$gray_24}; border-right-color: #{$gray_24}; border-left-color: #{$gray_24}; }.box-gray-24    { border-top-color: #{$gray_24}; border-bottom-color: #{$gray_24}; border-right-color: #{$gray_24}; border-left-color: #{$gray_24}; }
+.box-gray-25    { border-top-color: #{$gray_25}; border-bottom-color: #{$gray_25}; border-right-color: #{$gray_25}; border-left-color: #{$gray_25}; }.box-gray-25    { border-top-color: #{$gray_25}; border-bottom-color: #{$gray_25}; border-right-color: #{$gray_25}; border-left-color: #{$gray_25}; }
+.box-gray-26    { border-top-color: #{$gray_26}; border-bottom-color: #{$gray_26}; border-right-color: #{$gray_26}; border-left-color: #{$gray_26}; }.box-gray-26    { border-top-color: #{$gray_26}; border-bottom-color: #{$gray_26}; border-right-color: #{$gray_26}; border-left-color: #{$gray_26}; }
+.box-gray-27    { border-top-color: #{$gray_27}; border-bottom-color: #{$gray_27}; border-right-color: #{$gray_27}; border-left-color: #{$gray_27}; }.box-gray-27    { border-top-color: #{$gray_27}; border-bottom-color: #{$gray_27}; border-right-color: #{$gray_27}; border-left-color: #{$gray_27}; }
+.box-gray-28    { border-top-color: #{$gray_28}; border-bottom-color: #{$gray_28}; border-right-color: #{$gray_28}; border-left-color: #{$gray_28}; }.box-gray-28    { border-top-color: #{$gray_28}; border-bottom-color: #{$gray_28}; border-right-color: #{$gray_28}; border-left-color: #{$gray_28}; }
+.box-gray-29    { border-top-color: #{$gray_29}; border-bottom-color: #{$gray_29}; border-right-color: #{$gray_29}; border-left-color: #{$gray_29}; }.box-gray-30    { border-top-color: #{$gray_30}; border-bottom-color: #{$gray_30}; border-right-color: #{$gray_30}; border-left-color: #{$gray_30}; }
+.box-gray-30    { border-top-color: #{$gray_30}; border-bottom-color: #{$gray_30}; border-right-color: #{$gray_30}; border-left-color: #{$gray_30}; }.box-gray-30    { border-top-color: #{$gray_30}; border-bottom-color: #{$gray_30}; border-right-color: #{$gray_30}; border-left-color: #{$gray_30}; }
+
+.box-top-gray-0    { border-top-color: #{$gray_0}; }
+.box-top-gray-1    { border-top-color: #{$gray_1}; }
+.box-top-gray-2    { border-top-color: #{$gray_2}; }
+.box-top-gray-3    { border-top-color: #{$gray_3}; }
+.box-top-gray-4    { border-top-color: #{$gray_4}; }
+.box-top-gray-5    { border-top-color: #{$gray_5}; }
+.box-top-gray-6    { border-top-color: #{$gray_6}; }
+.box-top-gray-7    { border-top-color: #{$gray_7}; }
+.box-top-gray-8    { border-top-color: #{$gray_8}; }
+.box-top-gray-9    { border-top-color: #{$gray_9}; }
+.box-top-gray-10    { border-top-color: #{$gray_10}; }
+.box-top-gray-11    { border-top-color: #{$gray_11}; }
+.box-top-gray-12    { border-top-color: #{$gray_12}; }
+.box-top-gray-13    { border-top-color: #{$gray_13}; }
+.box-top-gray-14    { border-top-color: #{$gray_14}; }
+.box-top-gray-15    { border-top-color: #{$gray_15}; }
+.box-top-gray-16    { border-top-color: #{$gray_16}; }
+.box-top-gray-17    { border-top-color: #{$gray_17}; }
+.box-top-gray-18    { border-top-color: #{$gray_18}; }
+.box-top-gray-19    { border-top-color: #{$gray_19}; }
+.box-top-gray-20    { border-top-color: #{$gray_20}; }
+.box-top-gray-21    { border-top-color: #{$gray_21}; }
+.box-top-gray-22    { border-top-color: #{$gray_22}; }
+.box-top-gray-23    { border-top-color: #{$gray_23}; }
+.box-top-gray-24    { border-top-color: #{$gray_24}; }
+.box-top-gray-25    { border-top-color: #{$gray_25}; }
+.box-top-gray-26    { border-top-color: #{$gray_26}; }
+.box-top-gray-27    { border-top-color: #{$gray_27}; }
+.box-top-gray-28    { border-top-color: #{$gray_28}; }
+.box-top-gray-29    { border-top-color: #{$gray_29}; }
+.box-top-gray-30    { border-top-color: #{$gray_30}; }
+
+.box-bottom-gray-0    { border-bottom-color: #{$gray_0}; }
+.box-bottom-gray-1    { border-bottom-color: #{$gray_1}; }
+.box-bottom-gray-2    { border-bottom-color: #{$gray_2}; }
+.box-bottom-gray-3    { border-bottom-color: #{$gray_3}; }
+.box-bottom-gray-4    { border-bottom-color: #{$gray_4}; }
+.box-bottom-gray-5    { border-bottom-color: #{$gray_5}; }
+.box-bottom-gray-6    { border-bottom-color: #{$gray_6}; }
+.box-bottom-gray-7    { border-bottom-color: #{$gray_7}; }
+.box-bottom-gray-8    { border-bottom-color: #{$gray_8}; }
+.box-bottom-gray-9    { border-bottom-color: #{$gray_9}; }
+.box-bottom-gray-10    { border-bottom-color: #{$gray_10}; }
+.box-bottom-gray-11    { border-bottom-color: #{$gray_11}; }
+.box-bottom-gray-12    { border-bottom-color: #{$gray_12}; }
+.box-bottom-gray-13    { border-bottom-color: #{$gray_13}; }
+.box-bottom-gray-14    { border-bottom-color: #{$gray_14}; }
+.box-bottom-gray-15    { border-bottom-color: #{$gray_15}; }
+.box-bottom-gray-16    { border-bottom-color: #{$gray_16}; }
+.box-bottom-gray-17    { border-bottom-color: #{$gray_17}; }
+.box-bottom-gray-18    { border-bottom-color: #{$gray_18}; }
+.box-bottom-gray-19    { border-bottom-color: #{$gray_19}; }
+.box-bottom-gray-20    { border-bottom-color: #{$gray_20}; }
+.box-bottom-gray-21    { border-bottom-color: #{$gray_21}; }
+.box-bottom-gray-22    { border-bottom-color: #{$gray_22}; }
+.box-bottom-gray-23    { border-bottom-color: #{$gray_23}; }
+.box-bottom-gray-24    { border-bottom-color: #{$gray_24}; }
+.box-bottom-gray-25    { border-bottom-color: #{$gray_25}; }
+.box-bottom-gray-26    { border-bottom-color: #{$gray_26}; }
+.box-bottom-gray-27    { border-bottom-color: #{$gray_27}; }
+.box-bottom-gray-28    { border-bottom-color: #{$gray_28}; }
+.box-bottom-gray-29    { border-bottom-color: #{$gray_29}; }
+.box-bottom-gray-30    { border-bottom-color: #{$gray_30}; }
+
+.box-left-gray-0    { border-left-color: #{$gray_0}; }
+.box-left-gray-1    { border-left-color: #{$gray_1}; }
+.box-left-gray-2    { border-left-color: #{$gray_2}; }
+.box-left-gray-3    { border-left-color: #{$gray_3}; }
+.box-left-gray-4    { border-left-color: #{$gray_4}; }
+.box-left-gray-5    { border-left-color: #{$gray_5}; }
+.box-left-gray-6    { border-left-color: #{$gray_6}; }
+.box-left-gray-7    { border-left-color: #{$gray_7}; }
+.box-left-gray-8    { border-left-color: #{$gray_8}; }
+.box-left-gray-9    { border-left-color: #{$gray_9}; }
+.box-left-gray-10    { border-left-color: #{$gray_10}; }
+.box-left-gray-11    { border-left-color: #{$gray_11}; }
+.box-left-gray-12    { border-left-color: #{$gray_12}; }
+.box-left-gray-13    { border-left-color: #{$gray_13}; }
+.box-left-gray-14    { border-left-color: #{$gray_14}; }
+.box-left-gray-15    { border-left-color: #{$gray_15}; }
+.box-left-gray-16    { border-left-color: #{$gray_16}; }
+.box-left-gray-17    { border-left-color: #{$gray_17}; }
+.box-left-gray-18    { border-left-color: #{$gray_18}; }
+.box-left-gray-19    { border-left-color: #{$gray_19}; }
+.box-left-gray-20    { border-left-color: #{$gray_20}; }
+.box-left-gray-21    { border-left-color: #{$gray_21}; }
+.box-left-gray-22    { border-left-color: #{$gray_22}; }
+.box-left-gray-23    { border-left-color: #{$gray_23}; }
+.box-left-gray-24    { border-left-color: #{$gray_24}; }
+.box-left-gray-25    { border-left-color: #{$gray_25}; }
+.box-left-gray-26    { border-left-color: #{$gray_26}; }
+.box-left-gray-27    { border-left-color: #{$gray_27}; }
+.box-left-gray-28    { border-left-color: #{$gray_28}; }
+.box-left-gray-29    { border-left-color: #{$gray_29}; }
+.box-left-gray-30    { border-left-color: #{$gray_30}; }
+
+.box-right-gray-0    { border-right-color: #{$gray_0}; }
+.box-right-gray-1    { border-right-color: #{$gray_1}; }
+.box-right-gray-2    { border-right-color: #{$gray_2}; }
+.box-right-gray-3    { border-right-color: #{$gray_3}; }
+.box-right-gray-4    { border-right-color: #{$gray_4}; }
+.box-right-gray-5    { border-right-color: #{$gray_5}; }
+.box-right-gray-6    { border-right-color: #{$gray_6}; }
+.box-right-gray-7    { border-right-color: #{$gray_7}; }
+.box-right-gray-8    { border-right-color: #{$gray_8}; }
+.box-right-gray-9    { border-right-color: #{$gray_9}; }
+.box-right-gray-10    { border-right-color: #{$gray_10}; }
+.box-right-gray-11    { border-right-color: #{$gray_11}; }
+.box-right-gray-12    { border-right-color: #{$gray_12}; }
+.box-right-gray-13    { border-right-color: #{$gray_13}; }
+.box-right-gray-14    { border-right-color: #{$gray_14}; }
+.box-right-gray-15    { border-right-color: #{$gray_15}; }
+.box-right-gray-16    { border-right-color: #{$gray_16}; }
+.box-right-gray-17    { border-right-color: #{$gray_17}; }
+.box-right-gray-18    { border-right-color: #{$gray_18}; }
+.box-right-gray-19    { border-right-color: #{$gray_19}; }
+.box-right-gray-20    { border-right-color: #{$gray_20}; }
+.box-right-gray-21    { border-right-color: #{$gray_21}; }
+.box-right-gray-22    { border-right-color: #{$gray_22}; }
+.box-right-gray-23    { border-right-color: #{$gray_23}; }
+.box-right-gray-24    { border-right-color: #{$gray_24}; }
+.box-right-gray-25    { border-right-color: #{$gray_25}; }
+.box-right-gray-26    { border-right-color: #{$gray_26}; }
+.box-right-gray-27    { border-right-color: #{$gray_27}; }
+.box-right-gray-28    { border-right-color: #{$gray_28}; }
+.box-right-gray-29    { border-right-color: #{$gray_29}; }
+.box-right-gray-30    { border-right-color: #{$gray_30}; }
+
+
+
+
+
+
+

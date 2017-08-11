@@ -1,0 +1,404 @@
+///*      L I S T   N U M B E R    */
+
+@import "../evo_variables/evo_variables";
+
+
+// http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses#1636635
+// Add list counter utilities?
+
+
+// List Number
+// List 'Counter' approach
+// http://codepen.io/_lukewh/pen/WopzzO
+// https://css-tricks.com/style-list-markers-css/
+// https://www.w3schools.com/cssref/tryit.asp?filename=trycss_gen_counter-reset
+
+
+// Make small and large version, each with correct number alignment?
+#{$evo}-list-number,
+#{$evo}-list-number-inverse {
+  counter-reset: awesome-counter;
+  list-style-type: none;
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+& ol,
+& ol ol {
+  list-style-type: none;
+  // margin-top: 1.5em;
+  margin-left: 1em;
+  // margin-top: 1.5em;
+  // margin-bottom: 1.5em;
+}
+& li {
+  position: relative;
+  counter-increment: awesome-counter;
+  margin-left: #{$number_list_margin_left};
+  padding-left: #{$number_list_padding_left};
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+}
+& li::before {
+  content: counter(awesome-counter);
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  top: .5em;
+  left: 0;
+  transform: translateY(#{$number_list_number_position});
+  // vertical-align: middle;
+  background: #{$number_list_background_color_1};
+  width: 1.5em;
+  height: 1.5em;
+  // border-radius: #{$number_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  // color: #{$number_list_number_color};
+  text-align: #{$number_list_text_align};
+  // font-family: #{$number_list_number_font_family}; // DISABLED
+  // margin-right: 0.5em;
+}
+& ol li::before {
+  background: #{$number_list_background_color_2};
+}
+& ol ol li::before {
+  background: #{$number_list_background_color_3};
+}
+}
+
+// Evo list bullet
+#{$evo}-list-number li:before {
+color: #{$number_list_number_color} !important;
+}
+
+// Evo list bullet inverse
+#{$evo}-list-number-inverse li:before {
+color: #{$inverse_number_list_number_color} !important;
+}
+
+
+// A simpler list
+
+.list-number {
+  counter-reset: awesome-counter;
+  list-style-type: none;
+& ol,
+& ol ol {
+  list-style-type: none;
+  // margin-top: 1.5em;
+  margin-left: 2ch;
+  // list-style-type: none;
+    // margin-bottom: 1.5em;
+}
+& li {
+  position: relative;
+  counter-increment: awesome-counter;
+  margin-left: .55ch; // #{$number_list_margin_left};
+  padding-left: 2.5ch; // #{$number_list_padding_left};
+}
+& li::before {
+  content: counter(awesome-counter);
+  // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
+  position: absolute;
+  // top: .5em;
+  left: 0;
+  // transform: translateY(#{$number_list_number_position});
+  // vertical-align: middle;
+  width: .5ch;
+  // height: .5ch;
+  // border-radius: #{$number_list_background_corner};
+  display: inline-block;
+  line-height: inherit; // or #{$body_line_height}, was 1.5em
+  color: #{$number_list_number_color};
+  text-align: right !important; // #{$number_list_text_align};
+  // font-family: #{$number_list_number_font_family}; // DISABLED
+  // margin-right: 0.5em;
+}
+}
+
+
+// Sans-serif numbers
+.number-sans-serif {
+& li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+& ol li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+& ol ol li::before {
+  font-family: #{$sans-serif}; // sans-serif
+}
+}
+
+
+// Serif Numbers
+.number-serif {
+& li::before {
+  font-family: #{$serif}; // serif
+}
+& ol li::before {
+  font-family: #{$serif}; // serif
+}
+& ol ol li::before {
+  font-family: #{$serif}; // serif
+}
+}
+
+// Monospace Numbers
+.number-monospace {
+& li::before {
+  font-family: #{$monospace}; // monospace
+}
+& ol li::before {
+  font-family: #{$monospace}; // monospace
+}
+& ol ol li::before {
+  font-family: #{$monospace}; // monospace
+}
+}
+
+// Cursive Numbers
+.number-cursive {
+& li::before {
+  font-family: #{$cursive}; // cursive
+}
+& ol li::before {
+  font-family: #{$cursive}; // cursive
+}
+& ol ol li::before {
+  font-family: #{$cursive}; // cursive
+}
+}
+
+// Cursive Numbers
+.number-fantasy {
+& li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+& ol li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+& ol ol li::before {
+  font-family: #{$fantasy}; // fantasy
+}
+}
+
+
+
+// Moves number up by .1em in position
+.number-nudge-up-more {
+& li::before {
+  top: .4em;
+}
+& ol li::before {
+  top: .4em;
+}
+& ol ol li::before {
+  top: .4em;
+}
+}
+
+// Moves number up by .1em in position
+.number-nudge-up {
+& li::before {
+  top: .45em;
+}
+& ol li::before {
+  top: .45em;
+}
+& ol ol li::before {
+  top: .45em;
+}
+}
+
+// Moves number to a middle position
+.number-nudge-middle {
+& li::before {
+  top: .5em;
+}
+& ol li::before {
+  top: .5em;
+}
+& ol ol li::before {
+  top: .5em;
+}
+}
+
+// Moves number down by .1em in position
+.number-nudge-down {
+& li::before {
+  top: .55em;
+}
+& ol li::before {
+  top: .55em;
+}
+& ol ol li::before {
+  top: .55em;
+}
+}
+
+// Moves number down by .1em in position
+.number-nudge-down-more {
+& li::before {
+  top: .6em;
+}
+& ol li::before {
+  top: .6em;
+}
+& ol ol li::before {
+  top: .6em;
+}
+}
+
+
+// Demo for background color and styling in numbered list
+// Duplicate and re-name this if you want to create your own style
+.number-square,
+.number-circle,
+.number-rounded {
+& li {
+  margin-left: .5ch; // #{$number_list_margin_left};
+  padding-left: 4ch; // #{$number_list_padding_left};
+  padding-bottom:  #{$text_list_padding_bottom}; // 1.4375rem
+}
+& li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_1};
+  // border-radius: #{$number_list_background_corner};
+  // color: #{$evo_white};// #{$number_list_number_color};
+}
+& ol li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_2};
+  // color: #{$evo_white};// #{$number_list_number_color};
+}
+& ol ol li::before {
+  background: #{$evo_color}; // #{$number_list_background_color_3};
+  // color: #{$evo_white};// #{$number_list_number_color};
+}
+}
+
+
+// Circle background behind number
+.number-square {
+& li::before {
+  border-radius: 0;
+}
+& ol li::before {
+  border-radius: 0;
+}
+& ol ol li::before {
+  border-radius: 0;
+}
+}
+
+// Circle background behind number
+.number-circle {
+& li::before {
+  border-radius: 50%;
+}
+& ol li::before {
+  border-radius: 50%;
+}
+& ol ol li::before {
+  border-radius: 50%;
+}
+}
+
+
+// Rounded background behind number
+.number-rounded {
+& li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+& ol li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+& ol ol li::before {
+  border-radius: #{$number_list_background_corner}; // 10%
+}
+}
+
+
+
+
+// COLORS
+
+// Evo Color
+ol.number-color li::before {
+  color: #{$evo_color} !important; 
+}
+ol.number-color-bg li::before {
+  background: #{$evo_color} !important; 
+}
+
+
+// Black
+ol.number-black li::before {
+  color: #{$evo_black} !important; 
+}
+ol.number-black-bg li::before {
+  background: #{$evo_black} !important; 
+}
+
+
+// White
+ol.number-white li::before {
+  color: #{$evo_white} !important; 
+}
+ol.number-white-bg li::before {
+  background: #{$evo_white} !important; 
+}
+
+
+// Gray dark
+ol.number-gray-dark li::before {
+  color: #{$evo_gray_dark} !important; 
+}
+ol.number-gray-dark-bg li::before {
+  background: #{$evo_gray_dark} !important; 
+}
+
+
+// Gray
+ol.number-gray li::before {
+  color: #{$evo_gray} !important; 
+}
+ol.number-gray-bg li::before {
+  background: #{$evo_gray} !important; 
+}
+
+
+// Gray light
+ol.number-gray-light li::before {
+  color: #{$evo_gray_light} !important; 
+}
+ol.number-gray-light-bg li::before {
+  background: #{$evo_gray_light} !important; 
+}
+
+// Transparent Color
+ol.number-transparent li::before {
+  color: transparent !important; 
+}
+ol.number-transparent-bg li::before {
+  background: transparent !important; 
+}
+
+
+
+
+// .list-number-up li::before {
+//   transform: translateY(#{$number_list_number_position_up});
+// }
+
+// // Hacky fix to nudge list numbers down in position when using line lists
+// ol.list-number-down li::before {
+//   transform: translateY(#{$number_list_number_position_down});
+// }
+
+// Adds a decimal to numbers
+ol.number-decimal li::before {
+  content: counter(awesome-counter, decimal) "."; 
+}
+
+// Adds a zero and decimal to numbers
+ol.number-decimal-zero li::before {
+  content: counter(awesome-counter, decimal-leading-zero) "."; 
+}
+
+
