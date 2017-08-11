@@ -14997,3 +14997,10 @@ input:not(:focus):valid ~ .label-floating {
   height: 450px;
   top: 450px;
   margin-top: -450px; }
+
+.map-center {
+  background-image: url(../image/map-centered.png);
+  background-size: 100%; }
+
+.map-offset {
+  background-image: url(../image/map-offset.png); }

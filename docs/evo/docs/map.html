@@ -47,17 +47,45 @@
 
 <!-- Map -->
 
-<section id="evoMapGray">
+<section id="evoMap">
 
-<h2 class="text-size-6">map</h2>
+<h2 class="text-size-6">map embed</h2>
 
-<!-- <div class="evo-space-5"></div> -->
+<div class="evo-space"></div>
+
+<div class="evo-codeblock" data-identifier="map-simple">
+<iframe class="view-wide-half" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6371247871507!2d-74.01999478453551!3d40.70398887933266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1213817683%3A0x1c666ddd3fe807c8!2sAmerican+Merchant+Mariners&#39;+Memorial!5e0!3m2!1sen!2sus!4v1502405453307" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="evo-space-10"></div>
+<div class="evo-codeblock evo-codeblock-target" data-target="map-simple">
+<button class="evo-multiline-reveal-button evo-remove-this evo-button button-box-thin text-size-1 text-tracking-8 ghost-color-to-ghost">view code</button>
+<pre class="evo-box-left box-left-thin padding-left-9"><code class="hidden-block">
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+
+<div class="evo-space"></div>
+
+<p class="text-measure">To embed a basic Google Map, create a custom embed on <a href="https://www.google.com/maps" target="_blank">Google Maps</a> by clicking on the 'share' icon, and paste the associated <code>&lt;iframe&gt;</code> tag in your layout. Add a size class such as <code>view-tall-half</code>, making sure to change the <code>&lt;iframe&gt;</code> width and height attributes to 100% so it fills the container.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- Map -->
+
+<section id="evoMapGrayEmbed">
+
+<h2 class="text-size-6">gray map embed</h2>
+
+<div class="evo-space"></div>
 
 <div class="evo-codeblock" data-identifier="map-gray">
 <div class="image-grayscale-100">
 <div class="evo-position">
   <div class="map-no-scroll" onClick="style.pointerEvents='none'"></div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5820171330543!2d-74.01819544914268!3d40.70520234586713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1186270317%3A0xa27eda49614b1d4!2s17+Battery+Pl+%23915%2C+New+York%2C+NY+10004!5e0!3m2!1sen!2sus!4v1489628723969" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6371247871507!2d-74.01999478453551!3d40.70398887933266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1213817683%3A0x1c666ddd3fe807c8!2sAmerican+Merchant+Mariners&#39;+Memorial!5e0!3m2!1sen!2sus!4v1502405453307" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
@@ -73,38 +101,47 @@
 
 <p class="text-measure">This is a desaturated Google Map embed, with scrollwheel disabled. Use the <code>image-grayscale-100</code> and <code>map-no-scroll</code> classes, along with the onClick event. See code example for proper format.</p>
 
-<div class="evo-space-18"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
 
-
 <!-- Map -->
 
-<section id="evoMap">
+<section id="evoMapGrayImage">
 
-<h2 class="text-size-6">simple map</h2>
+<h2 class="text-size-6">gray map image</h2>
 
-<!-- <div class="evo-space-5"></div> -->
+<div class="evo-space"></div>
 
-<div class="evo-codeblock" data-identifier="map-simple">
-<iframe class="view-wide-half" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5820171330543!2d-74.01819544914268!3d40.70520234586713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1186270317%3A0xa27eda49614b1d4!2s17+Battery+Pl+%23915%2C+New+York%2C+NY+10004!5e0!3m2!1sen!2sus!4v1489628723969" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="evo-codeblock" data-identifier="map-image-gray"><img class="evo-image image-size-21 map-center image-grayscale" />
 </div>
+
 <div class="evo-space-10"></div>
-<div class="evo-codeblock evo-codeblock-target" data-target="map-simple">
+<div class="evo-codeblock evo-codeblock-target" data-target="map-image-gray">
 <button class="evo-multiline-reveal-button evo-remove-this evo-button button-box-thin text-size-1 text-tracking-8 ghost-color-to-ghost">view code</button>
 <pre class="evo-box-left box-left-thin padding-left-9"><code class="hidden-block">
 <!-- HTML will show up inside here --></code>
 </pre>
 </div>
 
-<div class="evo-space"></div>
+<div class="evo-space-10"></div>
 
-<p class="text-measure">To embed a basic Google Map, create a custom embed on <a href="https://www.google.com/maps" target="_blank">Google Maps</a> by clicking on the 'share' icon, and paste the associated <code>&lt;iframe&gt;</code> tag in your layout. Add a size class such as <code>view-tall-half</code>, making sure to change the <code>&lt;iframe&gt;</code> width and height attributes to 100% so it fills the container.</p>
+<p class="text-measure">This is a desaturated map image. Remove the <code>image-grayscale</code> class if you do not want the image to be desaturated. See code example for proper format. <code>map-center</code> will place a default map image into the box. The default image can be changed in _evo_variables.scss.</p>
 
-<div class="evo-space-18"></div>
+<div class="evo-space-20"></div>
+
+<img class="evo-image image-size-21 map-offset image-grayscale" />
+
+<div class="evo-space-10"></div>
+
+<code>map-offset</code> will place a default map image into the box, that appears to have the pin dropped on the left half. The default image can be changed in _evo_variables.scss.</p>
+
+<div class="evo-space-20"></div>
 
 </section>
+
 
 </main>
 

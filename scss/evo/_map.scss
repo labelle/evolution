@@ -24,3 +24,13 @@
    top:450px;  // your iframe height
    margin-top:-450px;  // your iframe height
 }
+
+
+.map-center {
+    background-image: url(#{$map_center});
+    background-size: 100%;
+}
+
+.map-offset {
+    background-image: url(#{$map_offset});
+}
