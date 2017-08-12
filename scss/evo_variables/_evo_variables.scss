@@ -654,10 +654,6 @@ $form_border_right_color:           #{$gray_15};
 // $line_form_border_left_color:       transparent;
 // $line_form_border_right_color:      transparent;
 
-
-// Dropcap
-$dropcap_color:						#{$evo_color} !default;
-
 // HR Line
 $line_width:                        initial !default; // border-top-width, initial = medium
 $line_style:                        solid !default;   // border-top-style
@@ -715,6 +711,7 @@ $space_padding_thick:               3.75rem !default;
 $image_random:					    "https://unsplash.it/1024/963?random";
 // $image_fpo:						    "../image/elements/monolake.jpg" !default;
 $image_fpo:						    "../image/fpo.jpg";
+
 $map_center:						"../image/map-centered.png";
 $map_offset:					    "../image/map-offset.png";
 
