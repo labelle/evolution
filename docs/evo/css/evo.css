@@ -127,7 +127,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  line-height: 1.4375;
+  line-height: inherit;
   color: black;
   background-color: white;
   height: 100%;
@@ -1472,7 +1472,7 @@ pre.code-short > code {
   background: black; }
 
 .masonry-item > figcaption {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   column-break-inside: avoid;
   display: inline-block; }
 
@@ -1562,17 +1562,17 @@ div.iframe-container-shadow-3::before {
   width: 100px; }
 
 .evo-space {
-  height: 3rem;
+  height: 3em;
   width: auto;
   background-color: transparent;
   clear: both; }
 
 .evo-margin {
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
   clear: both; }
 
 .evo-padding {
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
   clear: both; }
 
 body.debug-space div[class*="evo-space"],
@@ -1591,7 +1591,7 @@ body.debug-space div[class*="padding-"] {
   border-color: gray; }
 
 body.space-demo div[class*="margin-"] {
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
   background-color: white; }
 
 .space-container {
@@ -1605,7 +1605,7 @@ body.space-demo div[class*="padding-"] {
   color: black;
   background-color: black;
   margin-top: .5em;
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
   border-style: solid;
   border-width: 1px;
   border-color: #ccc; }
@@ -4782,7 +4782,7 @@ body.color-demo h2.margin-bottom-0 {
 
 /* Text */
 .evo-text {
-  font-size: 1rem;
+  font-size: 1em;
   color: inherit;
   font-family: inherit;
   font-weight: normal;
@@ -4834,42 +4834,42 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.3125rem;
+  font-size: 2.3125em;
   line-height: 1;
   letter-spacing: -0.025em;
   margin-bottom: 0.5em; }
 
 h2,
 .h2 {
-  font-size: 1.875rem;
+  font-size: 1.875em;
   line-height: 1.125;
   letter-spacing: normal;
   margin-bottom: 0.5em; }
 
 h3,
 .h3 {
-  font-size: 1.4375rem;
+  font-size: 1.4375em;
   line-height: 1.3125;
   letter-spacing: normal;
   margin-bottom: 0.5em; }
 
 h4,
 .h4 {
-  font-size: 1.3125rem;
+  font-size: 1.3125em;
   line-height: 1.4375;
   letter-spacing: normal;
   margin-bottom: 0.5em; }
 
 h5,
 .h5 {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   line-height: 1.4375;
   letter-spacing: normal;
   margin-bottom: 0.5em; }
 
 h6,
 .h6 {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.4375;
   letter-spacing: normal;
   margin-bottom: 0.5em; }
@@ -12271,38 +12271,38 @@ hr.line-blur-10 {
   border-radius: 3rem; }
 
 .box-round {
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem; }
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em; }
 
 .box-round-top {
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem; }
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em; }
 
 .box-round-bottom {
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem; }
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em; }
 
 .box-round-right {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem; }
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em; }
 
 .box-round-left {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem; }
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em; }
 
 .box-round-top-left {
-  border-top-left-radius: 1rem; }
+  border-top-left-radius: 1em; }
 
 .box-round-top-right {
-  border-top-right-radius: 1rem; }
+  border-top-right-radius: 1em; }
 
 .box-round-bottom-left {
-  border-bottom-left-radius: 1rem; }
+  border-bottom-left-radius: 1em; }
 
 .box-round-bottom-right {
-  border-bottom-right-radius: 1rem; }
+  border-bottom-right-radius: 1em; }
 
 .box-corner-top {
   border-top-right-radius: 0 !important;

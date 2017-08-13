@@ -102,8 +102,8 @@ $html_tap_highlight_color:          rgba(0, 0, 0, 0);
 // $body_tap_highlight_color:          rgba(0, 0, 0, 0);
 
 // Body
-$body_font_size:                    1rem !default; // or 1rem or 16px or 100%
-$body_line_height:                  1.4375 !default; // no em, rem, px, %
+$body_font_size:                    inherit !default; // or 1rem or 16px or 100%
+$body_line_height:                  inherit !default; // or 1.4375 or no em, rem, px, %
 $body_font_color:                   #{$evo_black} !default; // or black
 $body_background_color:             #{$evo_white} !default; // or white or black or #eeeeee #111111
 
@@ -124,12 +124,12 @@ $heading_text_rendering:            optimizeSpeed !default; // or optimizeLegibi
 // $inverse_heading_color:             #{$evo_white} !default; 
 
 // H1-H6 tag sizes
-$heading_size_h1:                   #{$u-28}rem !default; // 37px
-$heading_size_h2:                   #{$u-27}rem !default; // 30px
-$heading_size_h3:                   #{$u-26}rem !default; // 23px
-$heading_size_h4:                   #{$u-25}rem !default; // 21px
-$heading_size_h5:                   #{$u-24}rem !default; // 18px
-$heading_size_h6:                   #{$u-23}rem !default; // 16px
+$heading_size_h1:                   #{$u-28}em !default; // 37px
+$heading_size_h2:                   #{$u-27}em !default; // 30px
+$heading_size_h3:                   #{$u-26}em !default; // 23px
+$heading_size_h4:                   #{$u-25}em !default; // 21px
+$heading_size_h5:                   #{$u-24}em !default; // 18px
+$heading_size_h6:                   #{$u-23}em !default; // 16px
 
 // H1-H6 tag line height
 $heading_leading_h1:                #{$u-23} !default; // inherit, no em, rem, px, %
@@ -160,7 +160,7 @@ $heading_letter_spacing_h6:         normal !default; // 0, or negative or positi
 // MATCH TO SETTINGS
 // MOVE TO TEXT VARIABLE PAGE?
 
-$text_size:                         1rem !default; // e.g. 1rem or 16px or 100%. 1rem directly references the root font size.
+$text_size:                         1em !default; // e.g. 1rem or 16px or 100%. 1rem directly references the root font size.
 $text_color:                        inherit !default; // e.g. Inherit or Initial or Black or #000000
 $text_font_family:                  inherit !default; // e.g. Initial or #{$arial} or #{$sans-serif}
 $text_font_weight:                  normal !default; // or normal
@@ -250,7 +250,7 @@ $bullet_link_transition:				     0.3s ease; // or color 0.3s ease-in-out
 // $bullet_list_padding_left:                   0;
 // $bullet_list_background:                     url('../image/circle-chevron-book.svg');
 $bullet_list_background_size:                0px;
-$bullet_list_background_position:            0px 0.41667rem;
+$bullet_list_background_position:            0px 0.41667em;
 
 $bullet_list_margin_bottom:                  #{$u-17}em;
 $bullet_list_margin_left:                    .5ch;; // or 0
@@ -304,7 +304,7 @@ $number_list_background_color_3:             transparent; // nested further
 $line_list_padding_left:                0; // .5em
 $line_list_bullet_type:                 none; // list-style-type of bullets
 
-$line_list_margin_bottom:               0; // #{$u-17}rem or .275em bottom of each list
+$line_list_margin_bottom:               0; // #{$u-17}em or .275em bottom of each list
 $line_list_item_margin_bottom:          0;
 
 $line_list_padding_top:                 0; // 1em or #{$u-17}em or .275em space between list item and line
@@ -389,7 +389,7 @@ $inverse_link_outline_color_focus:	invert !default;
 
 // Button Text
 $button_font_family:               #{$sans-serif};
-// $button_font_size:                 1rem;
+// $button_font_size:                 1em;
 $button_text_align:                center;
 $button_text_transform:            uppercase;
 $button_font_weight:               700; // or bold
@@ -559,7 +559,7 @@ $form_background_size:              1.25em;
 $form_background_position:          99%; // or 100%
 $form_background_position_left:     1%; // or 0
 // Form Input
-$form_font_size:                    1rem;
+$form_font_size:                    1em;
 $form_border_radius:                none; // or 5px
 $form_width:                        100%;
 $form_background_color:             none; // or #{$gray_5} or transparent
@@ -593,17 +593,17 @@ $form_border_right_color:           #{$gray_15};
 // $box_form_background_size:           1.25em;
 // $box_form_background_position:       96%; // or 100%
 // // Form Input
-// $box_form_font_size:                 1rem;
+// $box_form_font_size:                 1em;
 // $box_form_border_radius:             0;
 // $box_form_width:                     100%;
 // $box_form_background_color:          #{$gray_5};
 // $box_form_background_size:           1em;
 // $box_form_background_position:       96%;
 // // padding
-// $box_form_padding_top:               1rem;
-// $box_form_padding_bottom:            1rem;
-// $box_form_padding_left:              1rem;
-// $box_form_padding_right:             1rem;
+// $box_form_padding_top:               1em;
+// $box_form_padding_bottom:            1em;
+// $box_form_padding_left:              1em;
+// $box_form_padding_right:             1em;
 // // border width
 // $box_form_border_top_width:          2px;
 // $box_form_border_bottom_width:       2px;
@@ -634,10 +634,10 @@ $form_border_right_color:           #{$gray_15};
 // $line_form_background_size:         1em;
 // $line_form_background_position:     100;
 // // padding
-// $line_form_padding_top:             1rem;
-// $line_form_padding_bottom:          1rem;
+// $line_form_padding_top:             1em;
+// $line_form_padding_bottom:          1em;
 // $line_form_padding_left:            0;
-// $line_form_padding_right:           1rem;
+// $line_form_padding_right:           1em;
 // // border width
 // $line_form_border_top_width:        0;
 // $line_form_border_bottom_width:     thin;
@@ -670,41 +670,41 @@ $box_color:      #{$gray_8}; // border-top-color
 
 // Define individual corners of boxes
 // Based on _scale.scss in variables
-$box_corner_top_right:     #{$u-23}rem;
-$box_corner_top_left:      #{$u-23}rem;
-$box_corner_bottom_right:  #{$u-23}rem;
-$box_corner_bottom_left:   #{$u-23}rem;
+$box_corner_top_right:     #{$u-23}em; // or rem
+$box_corner_top_left:      #{$u-23}em; // or rem
+$box_corner_bottom_right:  #{$u-23}em; // or rem
+$box_corner_bottom_left:   #{$u-23}em; // or rem
 
 
 
 // Evo space
 
 // Space blocks
-$space_height:						floor(3.05rem) !default;  // 48px, or make it 1px
+$space_height:						floor(3.05em) !default;  // 48px, or make it 1px
 $space_width:						auto !default; // or make it 100%
 $space_clear_float:					both !default;
 $space_background_color:			transparent !default; // or debug with rgba( 255, 0, 0, .1 )
 
-$margin_size:						floor(3.05rem) !default;  // 48px, or make it 1px
+$margin_size:						floor(3.05em) !default;  // 48px, or make it 1px
 $margin_clear_float:				both !default;
 
-$padding_size:					    floor(3.05rem) !default;  // 48px, or make it 1px
+$padding_size:					    floor(3.05em) !default;  // 48px, or make it 1px
 $padding_clear_float:				both !default;
 
 // Space blocks
-$space_block_thin:                  .625rem !default;
-$space_block_medium:                1.4375rem !default; // equal to line-height settings
-$space_block_thick:                 3.75rem !default;
+$space_block_thin:                  .625em !default;
+$space_block_medium:                1.4375em !default; // equal to line-height settings
+$space_block_thick:                 3.75em !default;
 
 // Margin space at bottom of an element
-$space_margin_thin:                 .625rem !default;
-$space_margin_medium:               1.4375rem !default; // equal to line-height settings
-$space_margin_thick:                3.75rem !default;
+$space_margin_thin:                 .625em !default;
+$space_margin_medium:               1.4375em !default; // equal to line-height settings
+$space_margin_thick:                3.75em !default;
 
 // Padding space at bottom of an element
-$space_padding_thin:                .625rem !default;
-$space_padding_medium:              1.4375rem !default; // equal to line-height settings
-$space_padding_thick:               3.75rem !default;
+$space_padding_thin:                .625em !default;
+$space_padding_medium:              1.4375em !default; // equal to line-height settings
+$space_padding_thick:               3.75em !default;
 
 
 // Image
@@ -764,7 +764,7 @@ $inverse_code_background_color:     #{$evo_black} !default;
 
 // Masonry
 
-$masonry_font_size:                 #{$u-21}rem !default; // 12px
+$masonry_font_size:                 #{$u-21}em !default; // 12px
 
 $masonry_item_color:                inherit !default; // or #{$evo_black}
 $masonry_item_background_color:     #{$evo_white} !default; // or transparent
