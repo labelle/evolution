@@ -1,19 +1,19 @@
 ///*      B R A N D   L O G O S     */
 
-@import "../evo_variables/evo_variables";
+@import "../brand_variables/brand_variables";
 
 
-#{$brand}-logo-1-bg           { background-image: url(#{$brand_logo_1}); }
-// #{$brand}-logo-1-white-bg     { background-image: url(#{$brand_logo_1}); }
+#{$brand}-logo-1-bg           { background-image: url(#{$brand-logo-1}); }
+// #{$brand}-logo-1-white-bg     { background-image: url(#{$brand-logo-1}); }
 
-#{$brand}-logo-2-bg           { background-image: url(#{$brand_logo_2}); }
-// #{$brand}-logo-2-white-bg     { background-image: url(#{$brand_logo_2}); }
+#{$brand}-logo-2-bg           { background-image: url(#{$brand-logo-2}); }
+// #{$brand}-logo-2-white-bg     { background-image: url(#{$brand-logo-2}); }
 
-// #{$brand}-logo-3-bg           { background-image: url(#{$brand_logo_3}); }
-// #{$brand}-logo-3-white-bg     { background-image: url(#{$brand_logo_3}); }
+// #{$brand}-logo-3-bg           { background-image: url(#{$brand-logo-3}); }
+// #{$brand}-logo-3-white-bg     { background-image: url(#{$brand-logo-3}); }
 
-// #{$brand}-logo-4-bg           { background-image: url(#{$brand_logo_4}); }
-// #{$brand}-logo-4-white-bg     { background-image: url(#{$brand_logo_4}); }
+// #{$brand}-logo-4-bg           { background-image: url(#{$brand-logo-4}); }
+// #{$brand}-logo-4-white-bg     { background-image: url(#{$brand-logo-4}); }
 
-// #{$brand}-logo-5-bg           { background-image: url(#{$brand_logo_5}); }
-// #{$brand}-logo-5-white-bg     { background-image: url(#{$brand_logo_5}); }
+// #{$brand}-logo-5-bg           { background-image: url(#{$brand-logo-5}); }
+// #{$brand}-logo-5-white-bg     { background-image: url(#{$brand-logo-5}); }

@@ -1,8 +1,8 @@
 ///*      B R A N D   F O N T S     */
 
-@import "../evo_variables/evo_variables";
+@import "../brand_variables/brand_variables";
 
 
 // Brand Fonts
-#{$brand}-font-1    { font-family: #{$brand_font_1}; }
-#{$brand}-font-2    { font-family: #{$brand_font_2}; }
+#{$brand}-font-1    { font-family: #{$brand-font-1}; }
+#{$brand}-font-2    { font-family: #{$brand-font-2}; }

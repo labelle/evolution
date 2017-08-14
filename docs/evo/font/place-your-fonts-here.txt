@@ -1,0 +1,4 @@
+Place your local fonts in this folder
+Locate the _fonts_local.scss and fonts-local.html and /evo_variables/_fonts.scss files
+and point to your local fonts appropriately
+Be aware of any license limitations

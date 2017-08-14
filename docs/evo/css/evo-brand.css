@@ -1,14 +1,6 @@
-@charset "UTF-8";
 /* =========================== */
 /*      B R A N D      */
 /* =========================== */
-@font-face {
-  font-family: 'halis_r_regularregular';
-  src: url("../brand/evo/font/HalisR-Regular-webfont.eot");
-  src: local("☺"), url("../brand/evo/font/HalisR-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../brand/evo/font/HalisR-Regular-webfont.woff2") format("woff2"), url("../brand/evo/font/HalisR-Regular-webfont.woff") format("woff"), url("../brand/evo/font/HalisR-Regular-webfont.ttf") format("truetype"), url("../brand/evo/font/HalisR-Regular-webfont.svg#halis_r_regularregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 .brand-logo-1-bg {
   background-image: url(../brand/evo/fpo/logo/logo-1.png); }
 
@@ -16,7 +8,7 @@
   background-image: url(../brand/evo/fpo/logo/logo-2.png); }
 
 .brand-font-1 {
-  font-family: halis_r_regularregular, sans-serif; }
+  font-family: fontNameHere, sans-serif; }
 
 .brand-font-2 {
   font-family: sans-serif; }

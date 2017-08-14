@@ -1,21 +1,21 @@
 ///*      B R A N D   I M A G E    */
 
-@import "../evo_variables/evo_variables";
+@import "../brand_variables/brand_variables";
 
 
 // Brand images
 
-#{$brand}-image-1-bg     { background-image: url(#{$brand_image_1}); }
-#{$brand}-image-2-bg     { background-image: url(#{$brand_image_2}); }
-#{$brand}-image-3-bg     { background-image: url(#{$brand_image_3}); }
-#{$brand}-image-4-bg     { background-image: url(#{$brand_image_4}); }
+#{$brand}-image-1-bg     { background-image: url(#{$brand-image-1}); }
+#{$brand}-image-2-bg     { background-image: url(#{$brand-image-2}); }
+#{$brand}-image-3-bg     { background-image: url(#{$brand-image-3}); }
+#{$brand}-image-4-bg     { background-image: url(#{$brand-image-4}); }
 
 // Person, place, thing, texture
 
-#{$brand}-image-person-bg    { background-image: url(#{$brand_image_person}); }
-#{$brand}-image-place-bg     { background-image: url(#{$brand_image_place}); }
-#{$brand}-image-thing-bg     { background-image: url(#{$brand_image_thing}); }
-#{$brand}-image-texture-bg   { background-image: url(#{$brand_image_texture}); }
+#{$brand}-image-person-bg    { background-image: url(#{$brand-image-person}); }
+#{$brand}-image-place-bg     { background-image: url(#{$brand-image-place}); }
+#{$brand}-image-thing-bg     { background-image: url(#{$brand-image-thing}); }
+#{$brand}-image-texture-bg   { background-image: url(#{$brand-image-texture}); }
 
 
 // Old images for guide

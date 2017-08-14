@@ -1,0 +1,4 @@
+Place your local fonts in this folder
+Locate the /brand_variables/_font.scss and /brand/brand_font.scss files
+and point to your local fonts appropriately
+Be aware of any license limitations

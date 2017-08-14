@@ -1,37 +1,37 @@
 ///*      B R A N D   G R A P H I C    */
 
-@import "../evo_variables/evo_variables";
+@import "../brand_variables/brand_variables";
 
 
 
 // Infograph
 
-#{$brand}-graphic-1-bg    { background-image: url(#{$brand_graphic_1}); }
-#{$brand}-graphic-2-bg    { background-image: url(#{$brand_graphic_2}); }
-#{$brand}-graphic-3-bg    { background-image: url(#{$brand_graphic_3}); }
-#{$brand}-graphic-4-bg    { background-image: url(#{$brand_graphic_4}); }
+#{$brand}-graphic-1-bg    { background-image: url(#{$brand-graphic-1}); }
+#{$brand}-graphic-2-bg    { background-image: url(#{$brand-graphic-2}); }
+#{$brand}-graphic-3-bg    { background-image: url(#{$brand-graphic-3}); }
+#{$brand}-graphic-4-bg    { background-image: url(#{$brand-graphic-4}); }
 
 
 
 // // Infograph
 
-// #{$brand}-graphic-1-bg    { background-image: url(#{$graphic_1}); }
+// #{$brand}-graphic-1-bg    { background-image: url(#{$graphic-1}); }
 
 
 
 // // Chart
 
-// #{$brand}-graphic-2-bg    { background-image: url(#{$graphic_2}); }
+// #{$brand}-graphic-2-bg    { background-image: url(#{$graphic-2}); }
 
 
 
 // // Map
 
-// #{$brand}-graphic-3-bg    { background-image: url(#{$graphic_3}); }
+// #{$brand}-graphic-3-bg    { background-image: url(#{$graphic-3}); }
 
 
 
 // // Dataviz
 
-// #{$brand}-graphic-4-bg    { background-image: url(#{$graphic_4}); }
+// #{$brand}-graphic-4-bg    { background-image: url(#{$graphic-4}); }
 
