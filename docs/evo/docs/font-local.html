@@ -35,7 +35,7 @@
 <div class="evo-space"></div>
 <h1 class="text-size-10">Local Font</h1>
 
-<p class="evo-measure">Experiment with different looks using these font-family imports. You will need to license these fonts directly from the foundry, before use.</p>
+<p class="evo-measure">Experiment with different looks using your own font-family imports. You will need to license your fonts directly from the appropriate font foundry before use.</p>
 
 <div class="evo-space-20"></div>
 
@@ -50,74 +50,46 @@
 
 <div class="evo-space"></div>
 
-<h2 class="font-didonesquedisplay text-capitalize">Didonesque Display experience design made simple <br>for living design systems</h2>
-<code>font-didonesquedisplay</code>
+<h2 class="font-didot">Your font demonstrated here experience design made simple <br>for living design systems</h2>
+<code>font-name</code>
 <div class="evo-space"></div>
 
-<h2 class="font-didonesquedisplay-italic text-uppercase">Didonesque Display Italic experience design made simple <br>for living design systems</h2>
-<code>font-didonesquedisplay-italic</code>
-<div class="evo-space"></div>
-
-<h2 class="font-diaria-promedium">Diaria Promedium experience design made simple <br>for living design systems</h2>
-<code>font-diaria-promedium</code>
-<div class="evo-space"></div>
-
-<h2 class="font-diaria-promedium-italic">Diaria Promedium Italic experience design made simple <br>for living design systems</h2>
-<code>font-diaria-promedium-italic</code>
-<div class="evo-space"></div>
-
-<h2 class="font-fnordtwenty-three text-uppercase">Fnord Twenty Three experience design made simple <br>for living design systems</h2>
-<code>font-fnordtwenty-three</code>
-<div class="evo-space"></div>
-
-<h2 class="font-fnordtwenty-three-italic text-uppercase">Fnord Twenty Three Italic experience design made simple <br>for living design systems</h2>
-<code>font-fnordtwenty-three-italic</code>
-<div class="evo-space"></div>
-
-
-<h2 class="font-harmansans text-uppercase">Harmans Sans experience design made simple <br>for living design systems</h2>
-<code>font-harmansans</code>
-<div class="evo-space"></div>
-
-<!--
-<h2 class="text-size-11 font-harmansans-inline text-uppercase">Harmans Sans Inline experience design made simple <br>for living design systems</h2>
-<p class="font-harmansans-inline text-capitalize">Harmans Sans Inline experience design made simple <br>for living design systems</p>
-<code>font-harmansans-inline</code>
-<div class="evo-space"></div> -->
-
-<h2 class="font-halis-rounded">Halis Rounded experience design made simple <br>for living design systems</h2>
-<code>font-halis-rounded</code>
-<div class="evo-space"></div>
-
-<h2 class="font-festivo-lowercase">Festivo Lowercase experience design made simple <br>for living design systems</h2>
-<code>font-festivo-lowercase</code>
-<div class="evo-space"></div>
-
-<h2 class="font-festivo-outline">Festivo Outline experience design made simple <br>for living design systems</h2>
-<code>font-festivo-outline</code>
-<div class="evo-space"></div>
-
-<h2 class="font-gangrena">Gangrena experience design made simple <br>for living design systems</h2>
-<code>font-gangrena</code>
-<div class="evo-space"></div>
-
-<!-- 
-<h2 class="font-ebenezer">Ebenezer experience design made simple <br>for living design systems</h2>
-<code>font-ebenezer</code>
-<div class="evo-space"></div> -->
-
-
-<h2 class="font-neon text-capitalize">Neon experience design made simple <br>for living design systems</h2>
-<code>font-neon</code>
+<h2 class="font-didot font-italic">Didonesque Display Italic experience design made simple <br>for living design systems</h2>
+<code>font-name-italic</code>
 <div class="evo-space"></div>
 
 <pre class="evo-code">
-<code>&lt;h2 class="font-neon"&gt;Neon experience design made simple for living design systems&lt;/h2&gt;</code>
+<code>&lt;h2 class="font-name-italic"&gt;Your font demonstrated here experience design made simple for living design systems&lt;/h2&gt;</code>
 </pre>
 
 <div class="evo-space-8"></div>
 
-<p class="evo-measure">Create an HTML tag suitable for displaying text such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>, and apply a font-[family] class such as <code>font-neon</code>. These fonts are defined in /evo_variables/_font.scss. Source fonts are located in the /font folder and you will need to license them directly from the foundry before use.</p>
+<p class="evo-measure">Create an HTML tag suitable for displaying text such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>, and apply a font-[family] class such as <code>font-name-italic</code>. Your local fonts may be defined in /evo_variables/_font.scss. Source fonts may be placed in the /font folder and you will need to license them directly from the approprirate font foundry before use. Note that the above sample text may not reflect your own imported fonts until you have connected it properly.</p>
+
+<div class="evo-space-18"></div>
+
+<pre class="evo-code">
+<code>@font-face{
+  font-family: 'MyWebFontName';
+  src: url('../font/WebFontName.eot');
+  src: local("☺"),
+       url('../font/WebFontName.eot?#iefix') format('embedded-opentype'),
+       url('../font/WebFontName.woff2') format('woff2'),
+       url('../font/WebFontName.woff') format('woff'),
+       url('../font/WebFontName.ttf') format('truetype'),
+       url('../font/WebFontName.svg#webfont') format('svg');
+       font-weight: normal;
+       font-style: normal;
+       font-display: #{$font_display};
+}
+
+.font-name               { font-family: #{$font-name}; }
+.font-name-italic        { font-family: #{$font-name-italic}; }</code>
+</pre>
+
+<div class="evo-space-8"></div>
+
+<p class="evo-measure">In the _font_local.scss file, use the above code sample as your template for activating and importing fonts into the system.</p>
 
 <div class="evo-space-20"></div>
 
