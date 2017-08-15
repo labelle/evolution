@@ -1,38 +1,68 @@
 <!-- THIS PANEL EXPOSES THE CODE FOR THE PANEL BELOW. 
 TRY EDITING THE CODE TO SEE STYLES CHANGE IN REAL-TIME. -->
 
-<!-- This section tag establishes the background image, and contains the text and button within. Change view-tall-75 to view-tall-50 and image-fpo to image-random. -->
+<!-- This section tag establishes the background image, and contains the text and button within. Change 'view-tall-75' to 'view-tall-50' and 'image-fpo' to 'image-random'. -->
+
   <section class="view-tall-75 image-fpo bg-cover bg-center position-relative flex-center-vertical">
 
-<!-- This centers the text vertically in the screen. -->
+
+
+<!-- This creates a container and centers the text vertically in the screen. You can ingore this tag. -->
+
   <div class="container flex-center-vertical">
 
-<!-- This header tag sets up the experimental fluid-header class. -->
+
+
+<!-- This header tag sets up the experimental 'fluid-header' class. 'Z-2' moves the text to a layer above the image tint layer. Change 'z-2' to 'z-1' to see the text move behind the tint layer.  -->
+
   <header class="fluid-header z-2">
 
-<!-- This p tag is a simple paragraph of text with style classes. Try changing the number to between 1 and 15.  -->
-  <p class="text-size-8 text-center evo-white padding-top-20">You are now inside a simple code 'playground'. Try editing the CSS tags in the panel above.</p>
 
-<!-- This div creates a small amount of empty space between the text and the button. Try changing the number to between 1 and 25. -->
-  <div class="evo-space-10"></div>
 
-<!-- This div horizontally centers both the text and button positioned inside. -->
+<!-- This div horizontally centers both the text and button positioned inside. Delete 'text-center, or change 'text-center' to 'text-right'. -->
+
   <div class="text-center">
 
+
+
+<!-- This p tag is a simple paragraph of text with style classes. Delete the 'fluid-header' class above, and try changing the 'text-size-[number]' to between 1 and 15, such as 'text-size-10'. Change the 'padding-top[number]' to something lower than 20, such as 'padding-top-10'. Change 'evo-white' to 'color-1' or any 'color-[number]' between 0 and 30. -->
+
+  <p class="text-size-8 evo-white padding-top-20">You are now inside a simple code 'playground'. Try editing the CSS tags in the panel above.</p>
+
+
+
+<!-- This div creates a small amount of empty space between the text and the button. Try changing the 'evo-space-[number]' to between 1 and 25 such as 'evo-space-15'. -->
+
+  <div class="evo-space-10"></div>
+
+
+
 <!-- This is a link tag wrapped around a button. The javascript should be replaced by an actual URL. -->
+
   <a href="../../docs/index.html">
 
-<!-- This button has special styles applied to it. Try changing 'small' to 'large', or 'thin' to 'thick'. -->
+
+
+<!-- This button has special styles applied to it. Try changing 'button-size-small' to 'button-size-large', or 'button-box-thin' to 'button-box-thick'. -->
+
   <button class="evo-button inverse-ghost-to-solid button-size-small button-box-thin">Back to Evo</button>
+
+
 
   </a><!-- Close the link tag. -->
   </div><!-- Close the text-center div tag. -->
   </header><!-- Close the fluid-header header tag. -->
   </div><!-- Close the container with flex-center-vertical. -->
 
-<!-- This div creates a tint layer above the image. Try changing the number to between 1 and 25. -->
+
+
+<!-- This div creates a tint layer above the image. Try changing the number in the trans-gray-[number]-bg to between 1 and 25, such as trans-gray-20-bg. -->
+
   <div class="trans-gray-15-bg image-fill"></div>
+
+
 
   </section><!-- Close the overall section tag. -->
 
   <!-- Notice that you can drag this divider line below to resize this panel. -->
+  
