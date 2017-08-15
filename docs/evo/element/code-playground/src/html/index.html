@@ -1,66 +1,103 @@
-<!-- 01. EDIT THE CODE IN THIS TOP PANEL TO CHANGE THE STYLES IN THE PANEL BELOW! -->
+<!-- EDIT THE HTML CODE IN THIS TOP PANEL TO CHANGE THE STYLES IN THE PANEL BELOW! -->
 
-<!-- 02. Try dragging the horizontal divider to resize the panels. -->
-
-
-
-<!-- 03. This section tag establishes the background image, and contains the text and button within. Change 'view-tall-75' to 'view-tall-50' and 'image-fpo' to 'image-random'. -->
-
-    <section class="view-tall-75 image-fpo bg-cover bg-center position-relative flex-center-vertical">
+<!-- 01. 
+- Just below this sentence is a horizontal divider line. See it? 
+- Try dragging the horizontal divider up or down to resize the panels. 
+-->
 
 
 
+<!-- 02. 
+- This section tag establishes the background image, and contains the text and button within. 
+- Change 'view-tall-100' to 'view-tall-75' and 'image-random' to 'image-fpo'. 
+-->
 
-<!-- 04. This creates a container and centers the text vertically in the screen. You can ingore this tag. -->
+    <section class="view-tall-100 image-random bg-cover bg-center position-relative flex-center-vertical">
+
+
+
+
+<!-- 03. 
+- You can ignore this tag. 
+- It creates a container and centers the text vertically in the screen. 
+-->
 
     <div class="container flex-center-vertical">
 
 
 
 
-<!-- 05. This header tag sets up the experimental 'fluid-header' class. 'Z-2' moves the text to a layer above the image tint layer. Change 'z-2' to 'z-1' to see the text move behind the tint layer.  -->
+<!-- 04. 
+- In this header tag, 'Z-1' positions the text to a layer below the image tint layer. 
+- Change 'z-1' to 'z-2' to see the text move above the tint layer. 
+- Delete 'fluid-header' so we can play around with text sizes next.  
+-->
 
-    <header class="fluid-header z-2">
-
-
-
-
-<!-- 06. This div horizontally centers both the text and button positioned inside. Delete 'text-center, or change 'text-center' to 'text-right'. -->
-
-    <div class="text-center">
+    <header class="z-1 fluid-header">
 
 
 
 
-<!-- 07. This p tag is a simple paragraph of text with style classes. Delete the 'fluid-header' class above, and try changing the 'text-size-[number]' to between 1 and 15, such as 'text-size-10'. Change the 'padding-top[number]' to something lower than 20, such as 'padding-top-10'. Change 'evo-white' to 'color-1' or any 'color-[number]' between 0 and 30. -->
+<!-- 05. 
+- This div horizontally centers both the text and button positioned inside. 
+- Delete 'text-right, or change 'text-right' to 'text-center'. 
+-->
 
-    <p class="text-size-8 evo-white padding-top-20">You are now inside a code 'playground'. Experiment with the Evo code in real-time by following the instructions above.</p>
-
-
-
-
-<!-- 08. This div creates a small amount of empty space between the text and the button. Try changing the 'evo-space-[number]' to between 1 and 25 such as 'evo-space-15'. -->
-
-    <div class="evo-space-10"></div>
+    <div class="text-right">
 
 
 
 
-<!-- 09. This is a link tag wrapped around a button. The javascript should be replaced by an actual URL. -->
+<!-- 06. 
+- This p tag is a simple paragraph of text with style classes. 
+- Delete the 'fluid-header' class above if you haven't already.
+- Change the 'text-size-[number]' to between 1 and 15, such as 'text-size-9'. 
+- Change the 'padding-top[number]' to something lower than 20, such as 'padding-top-10'. 
+- Change 'color-1' to any 'color-[number]' between 0 and 30. Now change it to 'evo-white'. 
+- After 'padding-top-[number]' add a space and a 'margin-bottom-[number]' class between 1 and 20, such as ' margin-bottom-10'. 
+-->
+
+    <p class="text-size-8 color-1 padding-top-20">You are now inside a code 'playground'. Experiment with the Evo code in real-time by following the instructions above.</p>
+
+<!-- BONUS 
+- Push the text styling further if you want to how capable Evo is.
+- Add 'font-serif font-italic text-uppercase text-tracking text-leading-5' after the other classes. 
+-->
+
+
+
+<!-- 07. 
+- This div creates a small amount of empty space between the text and the button. 
+- Try changing the 'evo-space-[number]' to between 1 and 25 such as 'evo-space-10'. 
+-->
+
+    <div class="evo-space-15"></div>
+
+
+
+
+<!-- 08. 
+This is a link tag wrapped around a button. 
+- The javascript would be replaced by a custom URL. 
+-->
 
     <a href="../../docs/index.html">
 
 
 
 
-<!-- 10. This button has special styles applied to it. Try changing 'button-size-small' to 'button-size-large', or 'button-box-thin' to 'button-box-thick'. -->
+<!-- 09. 
+- This button has special styles applied to it. 
+- Try changing 'button-size-large' to 'button-size-small'. 
+- Change 'button-box-thick' to 'button-box-thin'. 
+-->
 
-    <button class="evo-button inverse-ghost-to-solid button-size-small button-box-thin">Back to Evo</button>
+    <button class="evo-button inverse-ghost-to-solid button-size-large button-box-thick">Back to Evo</button>
 
 
 
 
-<!-- Ignore thise closing tags -->
+<!-- Ignore these closing tags. -->
 </a><!-- Closes the link tag. -->
 </div><!-- Closes the text-center div tag. -->
 </header><!-- Closes the fluid-header header tag. -->
@@ -69,9 +106,12 @@
 
 
 
-<!-- 11. This div creates a tint layer above the image. Try changing the number in the trans-gray-[number]-bg to between 1 and 25, such as trans-gray-20-bg. -->
+<!-- 10. 
+- This div creates a translucent tint layer above the image. 
+- Try changing the number in the trans-gray-[number]-bg to between 1 and 25, such as trans-gray-15-bg. 
+-->
 
-    <div class="trans-gray-15-bg image-fill"></div>
+    <div class="trans-gray-10-bg image-fill"></div>
 
 
 
@@ -82,6 +122,9 @@
 
 
 
-<!-- 12. Just below this sentence is a horizontal divider line. See it? Try dragging the horizontal divider to resize the panels. -->
+<!-- NOTE
+- In case you missed it... just below this sentence is a horizontal divider line. See it? 
+- Try dragging the horizontal divider up or down to resize the panels. 
+-->
 
 
