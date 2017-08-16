@@ -3,75 +3,30 @@
 @import "../brand_variables/brand_variables";
 
 // FPO Icons
-#{$brand}-icon-fpo-bg          { background-image: url(#{$brand-icon-fpo}); }
-#{$brand}-icon-fpo-inverse-bg  { background-image: url(#{$brand-icon-fpo-inverse}); }
+#{$brand}-icon-fpo          { background-image: url(#{$brand-icon-fpo}); }
+#{$brand}-icon-fpo-inverse  { background-image: url(#{$brand-icon-fpo-inverse}); }
+
+// Generic Icons
+#{$brand}-icon-001          { background-image: url(#{$brand-icon-001}); }
+#{$brand}-icon-002          { background-image: url(#{$brand-icon-002}); }
+#{$brand}-icon-003          { background-image: url(#{$brand-icon-003}); }
+#{$brand}-icon-004          { background-image: url(#{$brand-icon-004}); }
+
+// Inverse Generic Icons
+#{$brand}-icon-001-inverse          { background-image: url(#{$brand-icon-001-inverse}); }
+#{$brand}-icon-002-inverse          { background-image: url(#{$brand-icon-002-inverse}); }
+#{$brand}-icon-003-inverse          { background-image: url(#{$brand-icon-003-inverse}); }
+#{$brand}-icon-004-inverse          { background-image: url(#{$brand-icon-004-inverse}); }
 
 // Brand Icons
-#{$brand}-icon-1-bg          { background-image: url(#{$brand-icon-1}); }
-#{$brand}-icon-2-bg          { background-image: url(#{$brand-icon-2}); }
-#{$brand}-icon-3-bg          { background-image: url(#{$brand-icon-3}); }
-#{$brand}-icon-4-bg          { background-image: url(#{$brand-icon-4}); }
+#{$brand}-icon-arrow          { background-image: url(#{$brand-icon-arrow}); }
+#{$brand}-icon-close          { background-image: url(#{$brand-icon-close}); }
+#{$brand}-icon-menu          { background-image: url(#{$brand-icon-menu}); }
+#{$brand}-icon-search          { background-image: url(#{$brand-icon-search}); }
 
-// // Gray Icons
+// Inverse Brand Icons
+#{$brand}-icon-arrow-inverse          { background-image: url(#{$brand-icon-arrow-inverse}); }
+#{$brand}-icon-close-inverse          { background-image: url(#{$brand-icon-close-inverse}); }
+#{$brand}-icon-menu-inverse          { background-image: url(#{$brand-icon-menu-inverse}); }
+#{$brand}-icon-search-inverse          { background-image: url(#{$brand-icon-search-inverse}); }
 
-// // Search
-// #{$brand}-icon-search-bg-gray          { background-image: url(#{$icon-search-gray}); }
-
-
-
-// // White Icons
-
-// // Search
-// #{$brand}-icon-search-bg-white          { background-image: url(#{$icon-search-white}); }
-
-// // Hamburger Menu
-// #{$brand}-icon-menu-bg-white            { background-image: url(#{$icon-menu-white}); }
-
-// // Close
-// #{$brand}-icon-close-bg-white           { background-image: url(#{$icon-close-white}); }
-
-// // // Circle Chevron Right
-// // #{$brand}-icon-circle-chevron-bg-white  { background-image: url(#{$icon-circle-chevron-white}); }
-
-// // // Circle Play Right
-// // #{$brand}-icon-circle-play-bg-white     { background-image: url(#{$icon-circle-play-white}); }
-
-
-// // // Social Facebook
-// // #{$brand}-icon-social-facebook-bg-white { background-image: url(#{$icon-social-facebook-white}); }
-
-// // // Social Twitter
-// // #{$brand}-icon-social-twitter-bg-white  { background-image: url(#{$icon-social-twitter-white}); }
-
-// // // Social Mail
-// // #{$brand}-icon-social-mail-bg-white     { background-image: url(#{$icon-social-mail-white}); }
-
-
-
-
-// // Black Icons
-
-// // Search
-// #{$brand}-icon-search-bg                { background-image: url(#{$icon-search}); }
-
-// // Hamburger Menu
-// #{$brand}-icon-menu-bg                 { background-image: url(#{$icon-menu}); }
-
-// // Close
-// #{$brand}-icon-close-bg                 { background-image: url(#{$icon-close}); }
-
-// // // Circle Chevron Right
-// // #{$brand}-icon-circle-chevron-bg-white  { background-image: url(#{$icon-circle-chevron-white}); }
-
-// // // Circle Play Right
-// // #{$brand}-icon-circle-play-bg-white     { background-image: url(#{$icon-circle-play-white}); }
-
-
-// // // Social Facebook
-// // #{$brand}-icon-social-facebook-bg-white { background-image: url(#{$icon-social-facebook-white}); }
-
-// // // Social Twitter
-// // #{$brand}-icon-social-twitter-bg-white  { background-image: url(#{$icon-social-twitter-white}); }
-
-// // // Social Mail
-// // #{$brand}-icon-social-mail-bg-white     { background-image: url(#{$icon-social-mail-white}); }

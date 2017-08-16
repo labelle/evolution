@@ -4,34 +4,44 @@
 
 
 
-// Infograph
+// Generic Graphics
 
-#{$brand}-graphic-1-bg    { background-image: url(#{$brand-graphic-1}); }
-#{$brand}-graphic-2-bg    { background-image: url(#{$brand-graphic-2}); }
-#{$brand}-graphic-3-bg    { background-image: url(#{$brand-graphic-3}); }
-#{$brand}-graphic-4-bg    { background-image: url(#{$brand-graphic-4}); }
+#{$brand}-graphic-001    { background-image: url(#{$brand-graphic-001}); }
+#{$brand}-graphic-002    { background-image: url(#{$brand-graphic-002}); }
+#{$brand}-graphic-003    { background-image: url(#{$brand-graphic-003}); }
+#{$brand}-graphic-004    { background-image: url(#{$brand-graphic-004}); }
 
+// Dark Generic Graphics
 
-
-// // Infograph
-
-// #{$brand}-graphic-1-bg    { background-image: url(#{$graphic-1}); }
-
-
-
-// // Chart
-
-// #{$brand}-graphic-2-bg    { background-image: url(#{$graphic-2}); }
+#{$brand}-graphic-001-dark    { background-image: url(#{$brand-graphic-001-dark}); }
+#{$brand}-graphic-002-dark    { background-image: url(#{$brand-graphic-002-dark}); }
+#{$brand}-graphic-003-dark    { background-image: url(#{$brand-graphic-003-dark}); }
+#{$brand}-graphic-004-dark    { background-image: url(#{$brand-graphic-004-dark}); }
 
 
 
-// // Map
+// Brand Graphics
 
-// #{$brand}-graphic-3-bg    { background-image: url(#{$graphic-3}); }
+#{$brand}-graphic-chart      { background-image: url(#{$brand-graphic-chart}); }
+#{$brand}-graphic-bar        { background-image: url(#{$brand-graphic-bar}); }
+#{$brand}-graphic-line       { background-image: url(#{$brand-graphic-line}); }
+#{$brand}-graphic-pie        { background-image: url(#{$brand-graphic-pie}); }
+
+#{$brand}-graphic-map        { background-image: url(#{$brand-graphic-map}); }
+#{$brand}-graphic-map-offset { background-image: url(#{$brand-graphic-map-offset}); }
+
+#{$brand}-graphic-texture    { background-image: url(#{$brand-graphic-texture}); }
 
 
+// Generic Brand Graphics
 
-// // Dataviz
+#{$brand}-graphic-chart-dark      { background-image: url(#{$brand-graphic-chart-dark}); }
+#{$brand}-graphic-bar-dark        { background-image: url(#{$brand-graphic-bar-dark}); }
+#{$brand}-graphic-line-dark       { background-image: url(#{$brand-graphic-line-dark}); }
+#{$brand}-graphic-pie-dark        { background-image: url(#{$brand-graphic-pie-dark}); }
 
-// #{$brand}-graphic-4-bg    { background-image: url(#{$graphic-4}); }
+#{$brand}-graphic-map-dark        { background-image: url(#{$brand-graphic-map-dark}); }
+#{$brand}-graphic-map-offset-dark { background-image: url(#{$brand-graphic-map-offset-dark}); }
+
+#{$brand}-graphic-texture-dark    { background-image: url(#{$brand-graphic-texture-dark}); }
 
