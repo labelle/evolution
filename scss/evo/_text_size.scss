@@ -12,6 +12,7 @@
 // HOOK VARIABLES INTO SETTINGS, USE MORE AGRESSIVE TRACKING AND LEADING AND TEXT STYLE CONTROLS
 // rems
 // Deprecate?
+// Or in future: text-size-10 will be just the size. evo-text-size-10 will be the size and also adjusted leading and letter-spacing
 #{$evo}-text-reset     { line-height: initial; }
 #{$evo}-text-0         { font-size: #{$u-19}rem; } // 8px
 #{$evo}-text-1         { font-size: #{$u-20}rem; } // 10px
