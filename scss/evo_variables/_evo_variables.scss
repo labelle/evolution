@@ -513,6 +513,11 @@ $focus_border_color:                rgba(26, 154, 214, .8);
 $focus_transition:                  0.5s ease all; 
 $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
 
+$placeholder_text_color:            #{$evo_black};
+$inverse_placeholder_text_color:    #{$evo_white};
+
+$placeholder_text_opacity:          .5;
+
 // Form Select Dropdown
 // Replace icon
 // https://www.w3schools.com/css/css_background.asp

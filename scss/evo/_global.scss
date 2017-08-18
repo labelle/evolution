@@ -196,9 +196,174 @@ body {
   -moz-osx-font-smoothing: grayscale
 }
 
+.bg-inverse,
 .inverse-bg {
   background-color: #{$inverse_body_background_color};
   }
+
+
+// Cursor styles
+// https://www.w3schools.com/csSref/pr_class_cursor.asp
+
+
+.cursor-auto {
+  cursor:auto;
+}
+
+
+.cursor-none {
+  cursor:none;
+}
+
+.cursor-initial {
+  cursor:initial;
+}
+
+.cursor-default {
+  cursor:default;
+}
+
+
+
+.cursor-alias {
+  cursor:alias;
+}
+
+.cursor-all-scroll {
+  cursor:all-scroll;
+}
+
+.cursor-cell {
+  cursor:cell;
+}
+
+.cursor-context-menu {
+  cursor:context-menu;
+}
+
+.cursor-col-resize {
+  cursor:col-resize;
+}
+
+.cursor-copy {
+  cursor:copy;
+}
+
+.cursor-crosshair {
+  cursor:crosshair;
+}
+
+.cursor-crosswait {
+  cursor:crosswait;
+}
+
+.cursor-e-resize {
+  cursor:e-resize;
+}
+
+.cursor-ew-resize {
+  cursor:ew-resize;
+}
+
+.cursor-pointer {
+  cursor:pointer;
+}
+
+.cursor-grab {
+  cursor:grab;
+}
+
+.cursor-grabbing {
+  cursor:grabbing;
+}
+
+.cursor-help {
+  cursor:help;
+}
+
+.cursor-move {
+  cursor:move;
+}
+
+.cursor-n-resize {
+  cursor:n-resize;
+}
+
+.cursor-ne-resize {
+  cursor:ne-resize;
+}
+
+.cursor-nesw-resize {
+  cursor:nesw-resize;
+}
+
+.cursor-ns-resize {
+  cursor:ns-resize;
+}
+
+.cursor-nw-resize {
+  cursor:nw-resize;
+}
+
+.cursor-no-drop {
+  cursor:no-drop;
+}
+
+.cursor-not-allowed {
+  cursor:not-allowed;
+}
+
+.cursor-pointer {
+  cursor:pointer;
+}
+
+.cursor-progress {
+  cursor:progress;
+}
+
+.cursor-row-resize {
+  cursor:row-resize;
+}
+
+.cursor-s-resize {
+  cursor:s-resize;
+}
+
+.cursor-se-resize {
+  cursor:se-resize;
+}
+
+.cursor-sw-resize {
+  cursor:sw-resize;
+}
+
+.cursor-text {
+  cursor:text;
+}
+
+.cursor-url {
+  cursor:url(smiley.gif),url(myBall.cur),auto;
+}
+
+.cursor-vertical-text {
+  cursor:vertical-text;
+}
+
+.cursor-w-resize {
+  cursor:w-resize;
+}
+
+.cursor-wait {
+  cursor:wait;
+}
+
+.cursor-zoom-in {
+  cursor:zoom-in;
+}
+
+.cursor-zoom-out {
+  cursor:zoom-out;
+}
 
 
 // List
@@ -379,6 +544,9 @@ input[type="submit"] {
   cursor: pointer;
 } // from bootstrap
 
+input[type="file"] {
+  cursor: pointer;
+}
 
 [type="checkbox"],
 [type="radio"] {
@@ -386,6 +554,7 @@ input[type="submit"] {
   // -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
+  cursor: pointer; // "hand" cursor
 }
 
 [type="number"]::-webkit-inner-spin-button,
