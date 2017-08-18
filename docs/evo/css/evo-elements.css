@@ -124,6 +124,9 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box; }
 
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   line-height: inherit;
   color: black;
@@ -4631,6 +4634,14 @@ body.color-demo h2.margin-bottom-0 {
   font-family: Source Code Pro, monospace;
   font-weight: 900; }
 
+.font-google-inconsolata {
+  font-family: Inconsolata, monospace;
+  font-weight: 400; }
+
+.font-google-inconsolata-bold {
+  font-family: Inconsolata, monospace;
+  font-weight: 700; }
+
 .font-google-noto-sans {
   font-family: Noto Sans, sans-serif;
   font-weight: 400; }
@@ -4679,6 +4690,10 @@ body.color-demo h2.margin-bottom-0 {
   font-family: Cormorant Garamond, Goudy Old Style, goudy, serif;
   font-weight: 300;
   font-style: italic; }
+
+.font-google-didot {
+  font-family: GFS Didot, serif;
+  font-weight: 400; }
 
 .font-google-cardo {
   font-family: Cardo, goudy, serif;

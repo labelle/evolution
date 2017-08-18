@@ -153,6 +153,18 @@ font-weight:900;
 }
 
 
+// Inconsolata
+
+.font-google-inconsolata {
+font-family: #{$google-inconsolata};
+font-weight:400;
+}
+
+.font-google-inconsolata-bold {
+font-family: #{$google-inconsolata};
+font-weight:700;
+}
+
 
 // Noto Sans
 
@@ -226,6 +238,13 @@ font-weight:300;
 font-family: #{$google-garamond};
 font-weight:300;
 font-style:italic;
+}
+
+// GFS Didot
+
+.font-google-didot {
+font-family: #{$google-didot};
+font-weight:400;
 }
 
 

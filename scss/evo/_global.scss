@@ -131,6 +131,7 @@ abbr[title] {
 //   margin: 1em 40px;
 // }
 
+// https://www.w3schools.com/TAGs/tag_ins.asp
 ins {
     background-color:#ff9;
     color:#000;
@@ -172,6 +173,12 @@ html {
   // -webkit-box-sizing: border-box;
   // -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+// If HTML box sizing is giving trouble, try getting rid of this part here
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 // body                       {}
