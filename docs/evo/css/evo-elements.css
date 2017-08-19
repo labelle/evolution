@@ -5836,7 +5836,7 @@ header.fluid-header p {
 
 .text-neon-2 {
   background: #000;
-  background-image: radial-gradient(center, ellipse farthest-corner, transparent, black), url(../image/elements/black-brick-wall-texture.jpg);
+  background-image: url("../image/black-brick-wall-texture.jpg");
   width: 768px;
   text-align: center;
   color: #fee;
