@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+    <title>EVO - Code Playground</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../../css/bootstrap-grid-only.css">
+    <link rel="stylesheet" href="../../css/evo-elements.min.css">
+    <link rel="stylesheet" href="../../css/evo-brand.min.css">
+  </head>
+  <body>
+    <div class="playground">
+      <div class="boxes">
+        <div class="box-edit">
+          <div id="box1" class="box width-full">
+            <div class="bar">HTML</div>
+            <div class="code-block text-size-3">
+              <textarea id="code-block-html"></textarea>
+            </div>
+          </div>
+<!--           <div id="box2" class="box">
+            <div class="bar">CSS</div>
+            <div class="code-block">
+              <textarea id="code-block-css"></textarea>
+            </div>
+          </div>
+          <div id="box3" class="box">
+            <div class="bar">JS</div>
+            <div class="code-block">
+              <textarea id="code-block-js"></textarea>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Shows the preview of the code in boxes 1, 2 and 3. -->
+	<div id="handle"></div>
+        <div class="box-output">
+          <div id="box4" class="results"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <script src="./js/evo-playground.js"></script>
+
+</html>
