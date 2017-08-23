@@ -25,11 +25,21 @@ h2.margin-bottom-0 {
 // Colors
 // http://www.w3schools.com/colors/colors_shades.asp
 
-#{$evo}-white                  { color: #{$evo_white}; }
-#{$evo}-white-bg               { background-color: #{$evo_white}; }
+#{$evo}-white,
+#{$evo}-color-white            { color: #{$evo_white}; }
+#{$evo}-white-bg,
+#{$evo}-color-white-bg         { background-color: #{$evo_white}; }
 
-#{$evo}-black                  { color: #{$evo_black}; }
-#{$evo}-black-bg               { background-color: #{$evo_black}; }
+.color-white                   { color: #ffffff; }
+.color-white-bg                { background-color: #ffffff; }
+
+#{$evo}-black,
+#{$evo}-color-black            { color: #{$evo_black}; }
+#{$evo}-black-bg,
+#{$evo}-color-black-bg         { background-color: #{$evo_black}; }
+
+.color-black                   { color: #000000; }
+.color-black-bg                { background-color: #000000; }
 
 #{$evo}-gray-dark              { color: #{$evo_gray_dark}; }
 #{$evo}-gray-dark-bg           { background-color: #{$evo_gray_dark}; }
