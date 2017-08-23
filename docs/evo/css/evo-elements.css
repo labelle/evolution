@@ -1573,6 +1573,269 @@ pre.code-short > code {
   width: 100vw;
   height: 100vh; }
 
+.size-25 {
+  height: 42rem;
+  width: 42rem; }
+
+.size-24 {
+  height: 34rem;
+  width: 34rem; }
+
+.size-23 {
+  height: 26rem;
+  width: 26rem; }
+
+.size-22 {
+  height: 21rem;
+  width: 21rem; }
+
+.size-21 {
+  height: 16rem;
+  width: 16rem; }
+
+.size-20 {
+  height: 13rem;
+  width: 13rem; }
+
+.size-19 {
+  height: 10rem;
+  width: 10rem; }
+
+.size-18 {
+  height: 8rem;
+  width: 8rem; }
+
+.size-17 {
+  height: 6rem;
+  width: 6rem; }
+
+.size-16 {
+  height: 5rem;
+  width: 5rem; }
+
+.size-15 {
+  height: 3.75rem;
+  width: 3.75rem; }
+
+.size-14 {
+  height: 3rem;
+  width: 3rem; }
+
+.size-13 {
+  height: 2.6875rem;
+  width: 2.6875rem; }
+
+.size-12 {
+  height: 2.3125rem;
+  width: 2.3125rem; }
+
+.size-11 {
+  height: 1.875rem;
+  width: 1.875rem; }
+
+.size-10 {
+  height: 1.4375rem;
+  width: 1.4375rem; }
+
+.size-9 {
+  height: 1.3125rem;
+  width: 1.3125rem; }
+
+.size-8 {
+  height: 1.125rem;
+  width: 1.125rem; }
+
+.size-7 {
+  height: 1rem;
+  width: 1rem; }
+
+.size-6 {
+  height: 0.875rem;
+  width: 0.875rem; }
+
+.size-5 {
+  height: 0.75rem;
+  width: 0.75rem; }
+
+.size-4 {
+  height: 0.625rem;
+  width: 0.625rem; }
+
+.size-3 {
+  height: 0.5rem;
+  width: 0.5rem; }
+
+.size-2 {
+  height: 0.375rem;
+  width: 0.375rem; }
+
+.size-1 {
+  height: .25rem;
+  width: .25rem; }
+
+.size-none,
+.size-0 {
+  height: 0;
+  width: 0; }
+
+.size-wide-25 {
+  width: 42rem; }
+
+.size-wide-24 {
+  width: 34rem; }
+
+.size-wide-23 {
+  width: 26rem; }
+
+.size-wide-22 {
+  width: 21rem; }
+
+.size-wide-21 {
+  width: 16rem; }
+
+.size-wide-20 {
+  width: 13rem; }
+
+.size-wide-19 {
+  width: 10rem; }
+
+.size-wide-18 {
+  width: 8rem; }
+
+.size-wide-17 {
+  width: 6rem; }
+
+.size-wide-16 {
+  width: 5rem; }
+
+.size-wide-15 {
+  width: 3.75rem; }
+
+.size-wide-14 {
+  width: 3rem; }
+
+.size-wide-13 {
+  width: 2.6875rem; }
+
+.size-wide-12 {
+  width: 2.3125rem; }
+
+.size-wide-11 {
+  width: 1.875rem; }
+
+.size-wide-10 {
+  width: 1.4375rem; }
+
+.size-wide-9 {
+  width: 1.3125rem; }
+
+.size-wide-8 {
+  width: 1.125rem; }
+
+.size-wide-7 {
+  width: 1rem; }
+
+.size-wide-6 {
+  width: 0.875rem; }
+
+.size-wide-5 {
+  width: 0.75rem; }
+
+.size-wide-4 {
+  width: 0.625rem; }
+
+.size-wide-3 {
+  width: 0.5rem; }
+
+.size-wide-2 {
+  width: 0.375rem; }
+
+.size-wide-1 {
+  width: .25rem; }
+
+.size-wide-none,
+.size-wide-0 {
+  width: 0; }
+
+.size-tall-25 {
+  height: 42rem; }
+
+.size-tall-24 {
+  height: 34rem; }
+
+.size-tall-23 {
+  height: 26rem; }
+
+.size-tall-22 {
+  height: 21rem; }
+
+.size-tall-21 {
+  height: 16rem; }
+
+.size-tall-20 {
+  height: 13rem; }
+
+.size-tall-19 {
+  height: 10rem; }
+
+.size-tall-18 {
+  height: 8rem; }
+
+.size-tall-17 {
+  height: 6rem; }
+
+.size-tall-16 {
+  height: 5rem; }
+
+.size-tall-15 {
+  height: 3.75rem; }
+
+.size-tall-14 {
+  height: 3rem; }
+
+.size-tall-13 {
+  height: 2.6875rem; }
+
+.size-tall-12 {
+  height: 2.3125rem; }
+
+.size-tall-11 {
+  height: 1.875rem; }
+
+.size-tall-10 {
+  height: 1.4375rem; }
+
+.size-tall-9 {
+  height: 1.3125rem; }
+
+.size-tall-8 {
+  height: 1.125rem; }
+
+.size-tall-7 {
+  height: 1rem; }
+
+.size-tall-6 {
+  height: 0.875rem; }
+
+.size-tall-5 {
+  height: 0.75rem; }
+
+.size-tall-4 {
+  height: 0.625rem; }
+
+.size-tall-3 {
+  height: 0.5rem; }
+
+.size-tall-2 {
+  height: 0.375rem; }
+
+.size-tall-1 {
+  height: .25rem; }
+
+.size-tall-none,
+.size-tall-0 {
+  height: 0; }
+
 .evo-masonry {
   column-count: 4;
   margin: 1.5em 0;

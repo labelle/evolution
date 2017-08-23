@@ -1,0 +1,112 @@
+///*      L A Y O U T   S I Z E     */
+
+// Width and height size units in rems
+
+@import "../evo_variables/evo_variables";
+
+// Just for the website
+
+// .size-example > div {
+//   margin-left:-5%;
+//   margin-right:-5%;
+// }
+
+// Designed for a base of 1rem which is assumed to be 16px
+// Do we need min- and max- versions of these?
+
+// Square rem blocks
+
+.size-25 { height: #{$u-41}rem; width: #{$u-41}rem; } // 672px
+.size-24 { height: #{$u-40}rem; width: #{$u-40}rem; } // 544px
+.size-23 { height: #{$u-39}rem; width: #{$u-39}rem; } // 416px
+.size-22 { height: #{$u-38}rem; width: #{$u-38}rem; } // 336px
+.size-21 { height: #{$u-37}rem; width: #{$u-37}rem; } // 256px
+.size-20 { height: #{$u-36}rem; width: #{$u-36}rem; } // 208px
+.size-19 { height: #{$u-35}rem; width: #{$u-35}rem; } // 160px
+.size-18 { height: #{$u-34}rem; width: #{$u-34}rem; } // 128px
+.size-17 { height: #{$u-33}rem; width: #{$u-33}rem; } // 96px
+.size-16 { height: #{$u-32}rem; width: #{$u-32}rem; } // 80px
+.size-15 { height: #{$u-31}rem; width: #{$u-31}rem; } // 60px
+.size-14 { height: #{$u-30}rem; width: #{$u-30}rem; } // 48px
+.size-13 { height: #{$u-29}rem; width: #{$u-29}rem; } // 43px
+.size-12 { height: #{$u-28}rem; width: #{$u-28}rem; } // 37px
+.size-11 { height: #{$u-27}rem; width: #{$u-27}rem; } // 30px
+.size-10 { height: #{$u-26}rem; width: #{$u-26}rem; } // 23px
+.size-9 { height: #{$u-25}rem; width: #{$u-25}rem; } // 21px
+.size-8 { height: #{$u-24}rem; width: #{$u-24}rem; } // 18px
+.size-7 { height: #{$u-23}rem; width: #{$u-23}rem; } // 16px
+.size-6 { height: #{$u-22}rem; width: #{$u-22}rem; } // 14px
+.size-5 { height: #{$u-21}rem; width: #{$u-21}rem; } // 12px
+.size-4 { height: #{$u-20}rem; width: #{$u-20}rem; } // 10px
+.size-3 { height: #{$u-19}rem; width: #{$u-19}rem; } // 8px
+.size-2 { height: #{$u-18}rem; width: #{$u-18}rem; } // 6px
+.size-1 { height: .25rem; width: .25rem; } // 4px
+
+.size-none,
+.size-0 { height: 0; width: 0; } // #{$u-11}rem or 0rem
+
+
+// Wide rem blocks
+
+.size-wide-25 { width: #{$u-41}rem; } // 672px
+.size-wide-24 { width: #{$u-40}rem; } // 544px
+.size-wide-23 { width: #{$u-39}rem; } // 416px
+.size-wide-22 { width: #{$u-38}rem; } // 336px
+.size-wide-21 { width: #{$u-37}rem; } // 256px
+.size-wide-20 { width: #{$u-36}rem; } // 208px
+.size-wide-19 { width: #{$u-35}rem; } // 160px
+.size-wide-18 { width: #{$u-34}rem; } // 128px
+.size-wide-17 { width: #{$u-33}rem; } // 96px
+.size-wide-16 { width: #{$u-32}rem; } // 80px
+.size-wide-15 { width: #{$u-31}rem; } // 60px
+.size-wide-14 { width: #{$u-30}rem; } // 48px
+.size-wide-13 { width: #{$u-29}rem; } // 43px
+.size-wide-12 { width: #{$u-28}rem; } // 37px
+.size-wide-11 { width: #{$u-27}rem; } // 30px
+.size-wide-10 { width: #{$u-26}rem; } // 23px
+.size-wide-9 { width: #{$u-25}rem; } // 21px
+.size-wide-8 { width: #{$u-24}rem; } // 18px
+.size-wide-7 { width: #{$u-23}rem; } // 16px
+.size-wide-6 { width: #{$u-22}rem; } // 14px
+.size-wide-5 { width: #{$u-21}rem; } // 12px
+.size-wide-4 { width: #{$u-20}rem; } // 10px
+.size-wide-3 { width: #{$u-19}rem; } // 8px
+.size-wide-2 { width: #{$u-18}rem; } // 6px
+.size-wide-1 { width: .25rem; } // 4px
+
+.size-wide-none,
+.size-wide-0 { width: 0; } // #{$u-11}rem or 0rem
+
+
+// Tall rem blocks
+
+.size-tall-25 { height: #{$u-41}rem; } // 672px
+.size-tall-24 { height: #{$u-40}rem; } // 544px
+.size-tall-23 { height: #{$u-39}rem; } // 416px
+.size-tall-22 { height: #{$u-38}rem; } // 336px
+.size-tall-21 { height: #{$u-37}rem; } // 256px
+.size-tall-20 { height: #{$u-36}rem; } // 208px
+.size-tall-19 { height: #{$u-35}rem; } // 160px
+.size-tall-18 { height: #{$u-34}rem; } // 128px
+.size-tall-17 { height: #{$u-33}rem; } // 96px
+.size-tall-16 { height: #{$u-32}rem; } // 80px
+.size-tall-15 { height: #{$u-31}rem; } // 60px
+.size-tall-14 { height: #{$u-30}rem; } // 48px
+.size-tall-13 { height: #{$u-29}rem; } // 43px
+.size-tall-12 { height: #{$u-28}rem; } // 37px
+.size-tall-11 { height: #{$u-27}rem; } // 30px
+.size-tall-10 { height: #{$u-26}rem; } // 23px
+.size-tall-9 { height: #{$u-25}rem; } // 21px
+.size-tall-8 { height: #{$u-24}rem; } // 18px
+.size-tall-7 { height: #{$u-23}rem; } // 16px
+.size-tall-6 { height: #{$u-22}rem; } // 14px
+.size-tall-5 { height: #{$u-21}rem; } // 12px
+.size-tall-4 { height: #{$u-20}rem; } // 10px
+.size-tall-3 { height: #{$u-19}rem; } // 8px
+.size-tall-2 { height: #{$u-18}rem; } // 6px
+.size-tall-1 { height: .25rem; } // 4px
+
+.size-tall-none,
+.size-tall-0 { height: 0; } // #{$u-11}rem or 0rem
+
+
