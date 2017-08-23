@@ -3972,17 +3972,33 @@ body.color-demo div.color-swatch {
 body.color-demo h2.margin-bottom-0 {
   margin-bottom: -20px; }
 
-.evo-white {
+.evo-white,
+.evo-color-white {
   color: white; }
 
-.evo-white-bg {
+.evo-white-bg,
+.evo-color-white-bg {
   background-color: white; }
 
-.evo-black {
+.color-white {
+  color: #ffffff; }
+
+.color-white-bg {
+  background-color: #ffffff; }
+
+.evo-black,
+.evo-color-black {
   color: black; }
 
-.evo-black-bg {
+.evo-black-bg,
+.evo-color-black-bg {
   background-color: black; }
+
+.color-black {
+  color: #000000; }
+
+.color-black-bg {
+  background-color: #000000; }
 
 .evo-gray-dark {
   color: #333333; }
