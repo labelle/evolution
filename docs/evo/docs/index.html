@@ -1794,6 +1794,8 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   <p class="text-measure-6">Additional <a href="button-style.html">button hover styles</a> are available.</p>
 <div class="evo-space"></div>
 <div class="evo-codeblock" data-identifier="button-1-hover">
+<button type="button" class="evo-button solid-to-ghost">solid-to-ghost</button>
+<div class="evo-space-10"></div>
 <button type="button" class="evo-button ghost-color-to-solid-color">ghost-color-to-solid-color</button>
 <div class="evo-space-10"></div>
 <button type="button" class="evo-button solid-color-to-ghost-color">solid-color-to-ghost-color</button>
@@ -1813,6 +1815,8 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   <p class="text-measure-6 text-inverse">Additional inverse <a href="button-style.html">button hover styles</a> are available.</p>
 <div class="evo-space"></div>
 <div class="evo-codeblock" data-identifier="button-1-inverse-hover">
+<button type="button" class="evo-button inverse-solid-to-ghost">inverse-solid-to-ghost</button>
+<div class="evo-space-10"></div>
 <button type="button" class="evo-inverse-button inverse-ghost-color-to-solid-color">inverse-ghost-color-to-solid-color</button>
 <div class="evo-space-10"></div>
 <button type="button" class="evo-inverse-button inverse-solid-color-to-ghost-color">inverse-solid-color-to-ghost-color</button>
@@ -1868,19 +1872,25 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   </div>
 
 <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
-<div class="evo-codeblock" data-identifier="input-sign-in">
-<h3 class="text-measure-6 text-size-6 trans-gray-15 margin-bottom-13">Input</h3>
+<h3 class="text-measure-6 text-size-6 trans-gray-15">Form example.</h3>
     <div class="evo-space"></div>
- <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box margin-bottom-3" />
- <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
-<div class="evo-space-10"></div>
- <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box margin-bottom-3" />
- <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
-<div class="evo-space-10"></div>
- <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
-<div class="evo-space-10"></div>
- <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
-<div class="evo-space-10"></div>
+
+<div class="evo-codeblock" data-identifier="input-sign-in">
+<form>
+  <fieldset class="text-measure-6">
+    <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
+      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
+      <div class="evo-space-10"></div>
+      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
+      <div class="evo-space-10"></div>
+      <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
+      <div class="evo-space-10"></div>
+      <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
+      <div class="evo-space-10"></div>
+  </fieldset>
+</form>
 </div>
 <div class="evo-space"></div>
 <div class="evo-codeblock-target" data-target="input-sign-in">
