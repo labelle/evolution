@@ -12,6 +12,11 @@ npm install gulp gulp-util gulp-sass gulp-uglify gulp-rename gulp-clean-css gulp
 5. Type 'Gulp' and start developing
 */
 
+/* 
+For additional documentation in setting up gulp for this project, please reference the following google doc.
+https://docs.google.com/document/d/1dZfUJjP68vACm-ns598f3gf4xZZUGXXx196itQHlbHM/edit?usp=sharing
+*/
+
 /* Needed gulp config */
 var gulp = require('gulp');  
 var sass = require('gulp-sass');
