@@ -13,6 +13,29 @@
 
 // http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
 
+// Default focus state
+// Default hover state (matches focus state)
+.form-focus-demo,
+.form-focus-demo:focus,
+// .uneditable-input:focus,
+select.form-focus:focus,
+input.form-focus:focus,
+// input[type].form-focus:focus,
+textarea.form-focus:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
 
 // Default focus state
 // Default hover state (matches focus state)
@@ -25,15 +48,15 @@ input.form-focus-color:focus,
 textarea.form-focus-color:focus {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$focus_border_color};
-    border-bottom-color: #{$focus_border_color};
-    border-left-color: #{$focus_border_color};
-    border-right-color: #{$focus_border_color};
+    border-top-color: #{$evo_color};
+    border-bottom-color: #{$evo_color};
+    border-left-color: #{$evo_color};
+    border-right-color: #{$evo_color};
     box-shadow: #{$focus_box_shadow};
     transition: #{$focus_transition};
     outline: 0 none;
         & + label {
-      color: #{$focus_border_color};
+      color: #{$evo_color};
       cursor: pointer; // "hand" cursor
     }
   }
@@ -170,6 +193,30 @@ textarea.form-focus-red:focus {
 // How to get labels to highlight when focused / hovered on the field
 
 // http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+
+// Default hover state (matches focus state)
+.form-hover-demo,
+.form-hover-demo:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+// input[type].form-hover:hover,
+textarea.form-hover:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_color};
+    border-bottom-color: #{$evo_color};
+    border-left-color: #{$evo_color};
+    border-right-color: #{$evo_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$evo_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
 
 
 // Default hover state (matches focus state)

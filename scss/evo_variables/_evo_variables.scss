@@ -509,7 +509,7 @@ $legend_padding_right:              1em;
 $legend_display:                    block;
 
 // Form Focus
-$focus_border_color:                rgba(26, 154, 214, .8);
+$focus_border_color:                #{$evo_black}; // #{$evo_color} or rgba(26, 154, 214, .8)
 $focus_transition:                  0.5s ease all; 
 $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
 

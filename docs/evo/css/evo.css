@@ -14786,10 +14786,10 @@ select:focus,
 input:focus,
 input[type]:focus,
 textarea:focus {
-  border-top-color: rgba(26, 154, 214, 0.8);
-  border-bottom-color: rgba(26, 154, 214, 0.8);
-  border-left-color: rgba(26, 154, 214, 0.8);
-  border-right-color: rgba(26, 154, 214, 0.8);
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
@@ -14800,7 +14800,7 @@ textarea:focus {
   input:focus + label,
   input[type]:focus + label,
   textarea:focus + label {
-    color: rgba(26, 154, 214, 0.8);
+    color: black;
     cursor: pointer; }
 
 .disabled + label,
@@ -14910,17 +14910,17 @@ select::-ms-expand {
   border-right-color: #7f7f7f; }
 
 input.evo-form:focus {
-  border: inherit inherit rgba(26, 154, 214, 0.8) !important;
+  border: inherit inherit black !important;
   transition: 0.5s ease all; }
   input.evo-form:focus + label {
-    color: rgba(26, 154, 214, 0.8);
+    color: black;
     cursor: pointer; }
 
 textarea.evo-form:focus {
-  border: inherit inherit rgba(26, 154, 214, 0.8) !important;
+  border: inherit inherit black !important;
   transition: 0.5s ease all; }
   textarea.evo-form:focus + label {
-    color: rgba(26, 154, 214, 0.8);
+    color: black;
     cursor: pointer; }
 
 label.form-radio,
@@ -15110,15 +15110,35 @@ label.evo-button :valid + span {
 .form-box-none:focus {
   border-width: 0; }
 
+.form-focus-demo,
+.form-focus-demo:focus,
+select.form-focus:focus,
+input.form-focus:focus,
+textarea.form-focus:focus {
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-focus-demo + label,
+  .form-focus-demo:focus + label,
+  select.form-focus:focus + label,
+  input.form-focus:focus + label,
+  textarea.form-focus:focus + label {
+    color: black;
+    cursor: pointer; }
+
 .form-focus-color-demo,
 .form-focus-color-demo:focus,
 select.form-focus-color:focus,
 input.form-focus-color:focus,
 textarea.form-focus-color:focus {
-  border-top-color: rgba(26, 154, 214, 0.8);
-  border-bottom-color: rgba(26, 154, 214, 0.8);
-  border-left-color: rgba(26, 154, 214, 0.8);
-  border-right-color: rgba(26, 154, 214, 0.8);
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
@@ -15127,7 +15147,7 @@ textarea.form-focus-color:focus {
   select.form-focus-color:focus + label,
   input.form-focus-color:focus + label,
   textarea.form-focus-color:focus + label {
-    color: rgba(26, 154, 214, 0.8);
+    color: #0073b9;
     cursor: pointer; }
 
 .form-focus-black-demo,
@@ -15237,15 +15257,36 @@ textarea.form-focus-red:focus {
     color: #eb212e;
     cursor: pointer; }
 
+.form-hover-demo,
+.form-hover-demo:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+textarea.form-hover:hover {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none;
+  cursor: pointer; }
+  .form-hover-demo + label,
+  .form-hover-demo:hover + label,
+  select.form-hover:hover + label,
+  input.form-hover:hover + label,
+  textarea.form-hover:hover + label {
+    color: #0073b9;
+    cursor: pointer; }
+
 .form-hover-color-demo,
 .form-hover-color-demo:hover,
 select.form-hover-color:hover,
 input.form-hover-color:hover,
 textarea.form-hover-color:hover {
-  border-top-color: rgba(26, 154, 214, 0.8);
-  border-bottom-color: rgba(26, 154, 214, 0.8);
-  border-left-color: rgba(26, 154, 214, 0.8);
-  border-right-color: rgba(26, 154, 214, 0.8);
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none;
@@ -15255,7 +15296,7 @@ textarea.form-hover-color:hover {
   select.form-hover-color:hover + label,
   input.form-hover-color:hover + label,
   textarea.form-hover-color:hover + label {
-    color: rgba(26, 154, 214, 0.8);
+    color: black;
     cursor: pointer; }
 
 .form-hover-black-demo,
@@ -15402,7 +15443,7 @@ textarea ~ .label-floating {
 textarea:focus ~ .label-floating,
 textarea:not(:focus):valid ~ .label-floating {
   top: -.5em;
-  color: rgba(26, 154, 214, 0.8);
+  color: black;
   font-family: inherit;
   opacity: 1; }
 
@@ -15417,7 +15458,7 @@ input:focus ~ .label-floating,
 input:not(:focus):valid ~ .label-floating {
   top: -1.5em;
   bottom: 1em;
-  color: rgba(26, 154, 214, 0.8);
+  color: black;
   font-family: inherit;
   left: 1.5em;
   opacity: 1; }

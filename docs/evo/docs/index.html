@@ -474,7 +474,7 @@
           <div class="evo-icon-15 evo-icon-plus-bold"></div>
           <div class="evo-icon-15 evo-icon-close-bold"></div>
           <div class="evo-space-10"></div>
-          <input class="evo-form form-padding form-box" type="search" placeholder="Search">
+          <input class="evo-form form-padding form-box form-hover form-focus" type="search" placeholder="Search">
          <div class="evo-space-10"></div>
         <input type="submit" class="evo-button width-auto" />
           <div class="evo-space-10"></div>
@@ -541,7 +541,7 @@
           <div class="evo-icon-15 evo-icon-plus-bold-inverse"></div>
           <div class="evo-icon-15 evo-icon-close-bold-inverse"></div>
           <div class="evo-space-10"></div>
-          <input class="evo-form form-padding form-box transparent-bg placeholder-text-white placeholder-opacity-5" type="search" placeholder="Search">
+          <input class="evo-form form-padding form-box transparent-bg placeholder-text-white form-hover-white text-inverse placeholder-opacity-5" type="search" placeholder="Search">
          <div class="evo-space-10"></div>
         <input type="submit" class="evo-inverse-button width-auto" />
           <div class="evo-space-10"></div>
@@ -1950,10 +1950,10 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 <form>
   <fieldset class="text-measure-6">
     <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
-      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box margin-bottom-3">
+      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box evo-form-placeholder form-hover margin-bottom-3">
       <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
       <div class="evo-space-10"></div>
-      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box margin-bottom-3">
+      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box evo-form-placeholder form-hover margin-bottom-3">
       <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
       <div class="evo-space-10"></div>
       <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
@@ -1972,6 +1972,38 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 </div>
 
 <div class="evo-space"></div>
+
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
+<h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Inverse form example.</h3>
+    <div class="evo-space"></div>
+
+<div class="evo-codeblock" data-identifier="inverse-input-sign-in">
+<form>
+  <fieldset class="text-measure-6">
+    <legend class="text-size-6 margin-bottom-13 text-inverse">Please sign in.</legend>
+      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box form-hover-white margin-bottom-3 transparent-bg placeholder-text-white text-inverse placeholder-opacity-5">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
+      <div class="evo-space-10"></div>
+      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box form-hover-white margin-bottom-3 transparent-bg placeholder-text-white text-inverse placeholder-opacity-5">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
+      <div class="evo-space-10"></div>
+      <input type="submit" class="evo-inverse-button inverse-solid-to-solid-color width-auto" value="Sign In">
+      <div class="evo-space-10"></div>
+      <a href="javascript:void(0)" class="evo-link-inverse link-line-under-hover">Forgot password?</a>
+      <div class="evo-space-10"></div>
+  </fieldset>
+</form>
+</div>
+<div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="inverse-input-sign-in">
+<pre class="evo-box-left box-left-thin padding-left-9 text-inverse"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
+
+<div class="evo-space"></div>
+
 
 <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15 margin-bottom-13">Input</h3>
