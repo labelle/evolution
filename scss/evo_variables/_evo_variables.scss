@@ -6,28 +6,21 @@
 
 
 // Font stacks
-@import "font";
+@import "evo_variables/evo_font";
 
 // Scale units such as rems, ems, px
-@import "scale";
+@import "evo_variables/evo_scale";
 
 // Colors and color palettes
-@import "color";
+@import "evo_variables/evo_color";
 
 // Gray color palettes
-@import "gray";
-
-// Optional brand variables
-// @import "brand";
+@import "evo_variables/evo_gray";
 
 
-// // Branding
-// @import "brand_variables/color";
-// @import "brand_variables/font";
-// @import "brand_variables/graphic";
-// @import "brand_variables/icon";
-// @import "brand_variables/image";
-// @import "brand_variables/logo";
+// // Optional Branding
+// @import "brand_variables/brand_variables";
+
 
 
 // Version
@@ -575,7 +568,7 @@ $icon_twitter_gray :                   url(../image/twitter-gray.svg);
 // All Forms
 
 // Form background color
-$form_background_color:             none; // none or #{$gray_5} or transparent
+$form_background_color:             transparent; // none or #{$gray_5} or transparent
 
 // Inverse form background color
 $inverse_form_background_color:     transparent; // none or #{$gray_5} or transparent

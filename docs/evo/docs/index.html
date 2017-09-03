@@ -2010,7 +2010,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 
 <div class="evo-space"></div>
 
-
 <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15 margin-bottom-13">Input</h3>
 <div class="evo-space"></div>
@@ -2026,7 +2025,24 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 </div>
 </div>
 
+<!-- <div class="evo-space"></div> -->
+
+<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
+<h3 class="text-measure-6 text-size-6 inverse-trans-gray-15 margin-bottom-13">Inverse Input</h3>
 <div class="evo-space"></div>
+<div class="evo-codeblock" data-identifier="input-text-inverse">
+<input type="text" id="text" placeholder="Placeholder text" class="evo-form-inverse form-padding form-box margin-bottom-3 text-inverse" />
+<label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Label text</label>
+</div>
+<div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="input-text-inverse">
+<pre class="evo-box-left box-left-thin padding-left-9 text-inverse"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+</div>
+
+<!-- <div class="evo-space"></div> -->
 
 <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15 margin-bottom-13">Input Disabled</h3>
@@ -2085,6 +2101,18 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 <div class="evo-codeblock" data-identifier="focus">
 <input type="text" id="text" placeholder="Placeholder text" class="evo-form form-padding form-box evo-form-focus-demo margin-bottom-3" />
 <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Label text</label>
+<div class="evo-space"></div>
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Choose one</label>
+<select id="select" class="evo-form form-padding evo-form-focus-demo form-box form-icon form-icon-size-5 form-triangle">
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
 </div>
 <div class="evo-space"></div>
 <div class="evo-codeblock-target" data-target="focus">

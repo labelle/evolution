@@ -15457,7 +15457,7 @@ select.evo-form,
 input.evo-form {
   border-radius: none;
   width: 100%;
-  background-color: none; }
+  background-color: transparent; }
 
 .evo-form-inverse,
 input[type="text"].evo-form-inverse,
