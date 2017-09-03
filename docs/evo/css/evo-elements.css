@@ -15521,6 +15521,9 @@ textarea:disabled + label,
   opacity: 0.5;
   cursor: not-allowed; }
 
+select:disabled {
+  overflow-y: hidden; }
+
 .evo-fieldset.fieldset {
   display: block;
   margin-left: 0;

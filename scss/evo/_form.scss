@@ -25,6 +25,11 @@ textarea:disabled,,
     }
   }
 
+// Disable vertical scrolling in form for select elements with attribute of multiple
+select:disabled {
+  overflow-y:hidden;
+}
+
 // From older evolution
 
 
