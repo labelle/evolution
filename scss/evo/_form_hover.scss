@@ -6,7 +6,7 @@
 
 
 // /*********************
-//     FORM HOVER
+//     EVO FORM HOVER
 // *********************/
 
 // How to get labels to highlight when focused / hovered on the field
@@ -16,12 +16,12 @@
 
 
 // Default hover state (matches focus state)
-.form-hover-demo,
+#{$evo}-form-hover-demo,
 #{$evo}-form-hover:hover,
-select.form-hover:hover,
-input.form-hover:hover,
-input[type].form-hover:hover,
-textarea.form-hover:hover {
+select#{$evo}-form-hover:hover,
+input#{$evo}-form-hover:hover,
+input[type]#{$evo}-form-hover:hover,
+textarea#{$evo}-form-hover:hover {
     // border-width: 2px;
     // border-style: solid;
     border-top-color: #{$hover_border_color};
@@ -37,9 +37,36 @@ textarea.form-hover:hover {
     }
   }
 
+  // Default hover state (matches focus state)
+#{$evo}-form-hover-inverse-demo,
+#{$evo}-form-hover-inverse:hover,
+select#{$evo}-form-hover-inverse:hover,
+input#{$evo}-form-hover-inverse:hover,
+input[type]#{$evo}-form-hover-inverse:hover,
+textarea#{$evo}-form-hover-inverse:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$inverse_hover_border_color};
+    border-bottom-color: #{$inverse_hover_border_color};
+    border-left-color: #{$inverse_hover_border_color};
+    border-right-color: #{$inverse_hover_border_color};
+    box-shadow: #{$inverse_hover_box_shadow};
+    transition: #{$hover_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$inverse_hover_border_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+// /*********************
+//     FORM HOVER
+// *********************/
+
 
 .form-hover-color-demo,
-#{$evo}-form-hover-color:hover,
+.form-hover-color:hover,
 select.form-hover-color:hover,
 input.form-hover-color:hover,
 input[type].form-hover-color:hover,
@@ -60,7 +87,7 @@ textarea.form-hover-color:hover {
   }
 
 .form-hover-blue-demo,
-#{$evo}-form-hover-blue:hover,
+.form-hover-blue:hover,
 select.form-hover-blue:hover,
 input.form-hover-blue:hover,
 input[type].form-hover-blue:hover,
@@ -81,7 +108,7 @@ textarea.form-hover-blue:hover {
   }
 
 .form-hover-green-demo,
-#{$evo}-form-hover-green:hover,
+.form-hover-green:hover,
 select.form-hover-green:hover,
 input.form-hover-green:hover,
 input[type].form-hover-green:hover,
@@ -103,7 +130,7 @@ textarea.form-hover-green:hover {
 
 
 .form-hover-red-demo,
-#{$evo}-form-hover-red:hover,
+.form-hover-red:hover,
 select.form-hover-red:hover,
 input.form-hover-red:hover,
 input[type].form-hover-red:hover,
@@ -124,7 +151,7 @@ textarea.form-hover-red:hover {
   }
 
 .form-hover-white-demo,
-#{$evo}-form-hover-white:hover,
+.form-hover-white:hover,
 select.form-hover-white:hover,
 input.form-hover-white:hover,
 input[type].form-hover-white:hover,
@@ -145,7 +172,7 @@ textarea.form-hover-white:hover {
   }
 
 .form-hover-black-demo,
-#{$evo}-form-hover-black:hover,
+.form-hover-black:hover,
 select.form-hover-black:hover,
 input.form-hover-black:hover,
 input[type].form-hover-black:hover,
@@ -167,7 +194,7 @@ textarea.form-hover-black:hover {
 
 
 .form-hover-gray-dark-demo,
-#{$evo}-form-hover-gray-dark:hover,
+.form-hover-gray-dark:hover,
 select.form-hover-gray-dark:hover,
 input.form-hover-gray-dark:hover,
 input[type].form-hover-gray-dark:hover,
@@ -188,7 +215,7 @@ textarea.form-hover-gray-dark:hover {
   }
 
 .form-hover-gray-demo,
-#{$evo}-form-hover-gray:hover,
+.form-hover-gray:hover,
 select.form-hover-gray:hover,
 input.form-hover-gray:hover,
 input[type].form-hover-gray:hover,
@@ -209,7 +236,7 @@ textarea.form-hover-gray:hover {
   }
 
 .form-hover-gray-light-demo,
-#{$evo}-form-hover-gray-light:hover,
+.form-hover-gray-light:hover,
 select.form-hover-gray-light:hover,
 input.form-hover-gray-light:hover,
 input[type].form-hover-gray-light:hover,

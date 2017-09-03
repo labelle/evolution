@@ -508,19 +508,34 @@ $legend_padding_left:               none;
 $legend_padding_right:              1em;
 $legend_display:                    block;
 
+
+
+// Form Hover Transition
+$hover_transition:                  0.5s ease all; 
+
 // Form Hover
 $hover_border_color:                #{$evo_black}; // #{$evo_color} or rgba(26, 154, 214, .8)
-$hover_transition:                  0.5s ease all; 
 $hover_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
+
+// Inverse Form Hover
+$inverse_hover_border_color:        #{$evo_white}; // #{$evo_color} or rgba(26, 154, 214, .8)
+$inverse_hover_box_shadow:          none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
+
+
+// Form Focus Transition
+$focus_transition:                  0.5s ease all; 
 
 // Form Focus
 $focus_border_color:                #{$evo_color}; // #{$evo_color} or rgba(26, 154, 214, .8)
-$focus_transition:                  0.5s ease all; 
 $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
 
+// Form Focus Inverse
+$inverse_focus_border_color:        #{$evo_color}; // #{$evo_color} or rgba(26, 154, 214, .8)
+$inverse_focus_box_shadow:          none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
+
+// Form Placeholder Text
 $placeholder_text_color:            #{$evo_black};
 $inverse_placeholder_text_color:    #{$evo_white};
-
 $placeholder_text_opacity:          .5;
 
 // Form Select Dropdown
@@ -558,7 +573,13 @@ $icon_twitter_white:                   url(../image/twitter-white.svg);
 $icon_twitter_gray :                   url(../image/twitter-gray.svg);
 
 // All Forms
-// $form_background_color:             transparent; // or #{$gray_5}
+
+// Form background color
+$form_background_color:             none; // none or #{$gray_5} or transparent
+
+// Inverse form background color
+$inverse_form_background_color:     transparent; // none or #{$gray_5} or transparent
+
 $form_background_repeat:            no-repeat;
 $form_background_attachment:        scroll;
 
@@ -571,7 +592,6 @@ $form_background_position_left:     2%; // or 0
 $form_font_size:                    1em;
 $form_border_radius:                none; // or 5px
 $form_width:                        100%;
-$form_background_color:             none; // or #{$gray_5} or transparent
 // padding
 $form_padding_top:                  1em;
 $form_padding_bottom:               1em;

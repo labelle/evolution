@@ -125,6 +125,7 @@
 
 <div class="evo-space-10"></div>
 
+<p class="evo-measure">This sets the border radius, width, and background color.</p>
 
 <form>
 <fieldset>
@@ -153,6 +154,45 @@
 </section>
 
 
+<!-- inverse evo form input -->
+
+<section id="Input">
+
+<h2 class="text-size-6">evo-form-inverse input</h2>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">This sets the border radius, width, and background color.</p>
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="inverse-bg padding-10">
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Input Label</label>
+<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box" />
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Input Label&lt;/label&gt;
+&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box" /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">For inverse styled inputs, create an <code>&lt;input&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Apply the <code>evo-form-inverse</code>, <code>form-padding</code>, and <code>form-box</code> classes. Default form styles are set in _evo_variables.scss.</p>
+
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
 <!-- basic textarea -->
 
 <section id="textarea">
@@ -169,12 +209,14 @@
 <div class="evo-space"></div>
 
 <label>Textarea Label</label>
+<div class="evo-space-1"></div>
 <textarea name="message" placeholder="Textarea Placeholder"></textarea>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;label&gt;Textarea Label&lt;/label&gt;
+&lt;div&gt; class="evo-space-1"&lt;/div&gt;
 &lt;textarea ame="message" placeholder="Textarea Placeholder"&gt;&lt;/textarea&gt;</code>
 </pre>
 
@@ -601,26 +643,25 @@
 <form>
   <fieldset class="text-measure-6">
     <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
-      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box margin-bottom-3" />
+      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
       <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
       <div class="evo-space-10"></div>
-      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box margin-bottom-3" />
+      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
       <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
       <div class="evo-space-10"></div>
       <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
       <div class="evo-space-10"></div>
       <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
       <div class="evo-space-10"></div>
-  </div>
- </fieldset>
+  </fieldset>
 </form>
+</div>
 
-<div class="evo-codeblock-target" data-target="input-sign-in">
 <div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="input-sign-in">
 <pre class="evo-box-left box-left-thin padding-left-9"><code>
 <!-- HTML will show up inside here --></code>
 </pre>
-</div>
 </div>
 
 <div class="evo-space-20"></div>

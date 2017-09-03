@@ -37,46 +37,78 @@
 </section>
 
 
-
 <form>
 <fieldset>
 <legend class="visually-hidden">Form Focus</legend>
 
-<!-- focus color -->
 
-<section id="InputFocus">
 
-<h2 class="text-size-6">form-focus</h2>
+
+<!-- evo focus color -->
+
+<section id="InputEvofocus">
+
+<h2 class="text-size-6">evo-form-focus</h2>
 
 <div class="evo-space"></div>
 
-<code>form-focus</code>
+<code>evo-form-focus</code>
 <div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus" />
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-form-focus" />
 <label>Label</label>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus" /&gt;
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-form-focus" /&gt;
 &lt;label&gt;Label&lt;/label&gt;</code>
 </pre>
 
 <div class="evo-space-5"></div>
 
-<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-focus</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-focus-demo</code>.Default form styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>evo-form-focus</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>evo-form-focus-demo</code>. Default form styles are set in _evo_variables.scss.</p>
 
-<div class="evo-space"></div>
+<div class="evo-space-20"></div>
 
 </section>
 
 
+<!-- evo focus color inverse -->
 
-<!-- focus color -->
+<section id="InputEvoFocusInverse">
 
-<section id="InputFocusColor">
+<h2 class="text-size-6">evo-form-focus-inverse</h2>
 
-<h2 class="text-size-6">form-focus-[color]</h2>
+<div class="evo-space"></div>
+
+<div class="inverse-bg padding-10">
+<code class="code-inverse">evo-form-focus-inverse</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form-inverse form-padding form-box evo-form-focus-inverse" />
+<label>Label</label>
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form-inverse form-padding form-box evo-form-focus-inverse" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>evo-form-focus-inverse</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>evo-form-focus-inverse-demo</code>. Default form styles are set in _evo_variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- evo focus color -->
+
+<section id="InputEvoFocusColor">
+
+<h2 class="text-size-6">form-focus-color</h2>
 
 <div class="evo-space"></div>
 
@@ -94,28 +126,18 @@
 
 <div class="evo-space-5"></div>
 
-<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-focus-color</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-focus-color-demo</code>.Default form styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-focus-color</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-focus-color-demo</code>. Default form styles are set in _evo_variables.scss.</p>
 
-<div class="evo-space"></div>
+<div class="evo-space-20"></div>
 
-<code>form-focus-black</code>
-<div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-black" />
-<label>Label</label>
+</section>
 
-<div class="evo-space"></div>
 
-<code>form-focus-gray</code>
-<div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-gray" />
-<label>Label</label>
+<!-- focus colors -->
 
-<div class="evo-space"></div>
+<section id="InputFocusColors">
 
-<code>form-focus-white</code>
-<div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-white" />
-<label>Label</label>
+<h2 class="text-size-6">form-focus-[color]</h2>
 
 <div class="evo-space"></div>
 
@@ -138,14 +160,62 @@
 <input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-red" />
 <label>Label</label>
 
+<div class="evo-space"></div>
+
+<code>form-focus-black</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-black" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-focus-gray-dark</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-gray-dark" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-focus-gray</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-gray" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-focus-gray-light</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-focus-gray-light" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<div class="inverse-bg padding-10">
+<code class="code-inverse">form-focus-white</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form-inverse form-padding form-box form-focus-white" />
+<label>Label</label>
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form-inverse form-padding form-box form-focus-white" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply a <code>form-focus-[color]</code> class to it. Place a <code>&lt;label&gt;</code> tag below it (not above). Demo classes end with -demo such as <code>form-focus-[color]-demo</code>. Default form styles are set in _evo_variables.scss.</p>
+
 <div class="evo-space-20"></div>
 
 </section>
 
 
-<!-- hover color -->
+<!-- focus color -->
 
-<section id="InputHover">
+<section id="InputFocus">
 
 <h2 class="text-size-6">Form Mix</h2>
 
@@ -169,7 +239,6 @@
 
 </fieldset>
 </form>
-
 
 </main>
 

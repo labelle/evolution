@@ -33,7 +33,7 @@ select:disabled {
 // From older evolution
 
 
-#{$evo}-fieldset.fieldset { 
+fieldset#{$evo}-fieldset { 
   display: block;
   margin-left: #{$fieldset_margin_left};
   margin-right: #{$fieldset_margin_right};
@@ -44,7 +44,7 @@ select:disabled {
   border: #{$fieldset_border};
 }
 
-#{$evo}-legend.legend {
+legend#{$evo}-legend{
   padding-left:  #{$legend_padding_left};
   padding-right: #{$legend_padding_right};
   border:        none;
@@ -83,24 +83,45 @@ input[type="file"] {
 
 // Can we get rid of the 'input' because it's messing up the checkboxes
 #{$evo}-form,
-input[type="text"], 
-input[type="password"],
-input[type="tel"],
-input[type="email"],
-input[type="date"],
-input[type="number"],
-input[type="time"],
-input[type="file"],
-input[type="search"],
-input[type="url"],
-textarea,
-select,
-input {
+input[type="text"]#{$evo}-form, 
+input[type="password"]#{$evo}-form,
+input[type="tel"]#{$evo}-form,
+input[type="email"]#{$evo}-form,
+input[type="date"]#{$evo}-form,
+input[type="number"]#{$evo}-form,
+input[type="time"]#{$evo}-form,
+input[type="file"]#{$evo}-form,
+input[type="search"]#{$evo}-form,
+input[type="url"]#{$evo}-form,
+textarea#{$evo}-form,
+select#{$evo}-form,
+input#{$evo}-form {
   // Form Input
   // font-size:  #{$form_font_size}; // DISABLED
   border-radius: #{$form_border_radius};
   width: #{$form_width};
-  background-color:      #{$form_background_color};
+  background-color: #{$form_background_color};
+}
+
+#{$evo}-form-inverse,
+input[type="text"]#{$evo}-form-inverse, 
+input[type="password"]#{$evo}-form-inverse,
+input[type="tel"]#{$evo}-form-inverse,
+input[type="email"]#{$evo}-form-inverse,
+input[type="date"]#{$evo}-form-inverse,
+input[type="number"]#{$evo}-form-inverse,
+input[type="time"]#{$evo}-form-inverse,
+input[type="file"]#{$evo}-form-inverse,
+input[type="search"]#{$evo}-form-inverse,
+input[type="url"]#{$evo}-form-inverse,
+textarea#{$evo}-form-inverse,
+select#{$evo}-form-inverse,
+input#{$evo}-form-inverse {
+  // Form Input
+  // font-size:  #{$form_font_size}; // DISABLED
+  border-radius: #{$form_border_radius};
+  width: #{$form_width};
+  background-color: #{$inverse_form_background_color};
 }
 
 // CAUTION: IE hackery ahead 
@@ -197,7 +218,8 @@ label.form-checkbox {
   vertical-align: bottom;
   position: relative;
   top: -.3em;
-  *overflow: hidden;
+  // *overflow: hidden;
+  overflow: hidden;
 }
 
 

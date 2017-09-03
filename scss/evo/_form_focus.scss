@@ -42,7 +42,7 @@
 
 
 // /*********************
-//     FORM FOCUS
+//     EVO FORM FOCUS
 // *********************/
 
 // How to get labels to highlight when focused / hovered on the field
@@ -51,12 +51,12 @@
 
 // Default focus state
 // Default hover state (matches focus state)
-.form-focus-demo,
+#{$evo}-form-focus-demo,
 #{$evo}-form-focus:focus,
-select.form-focus:focus,
-input.form-focus:focus,
-// input[type].form-focus:focus,
-textarea.form-focus:focus {
+select.#{$evo}-form-focus:focus,
+input#{$evo}-form-focus:focus,
+// input[type]#{$evo}-form-focus:focus,
+textarea#{$evo}-form-focus:focus {
     // border-width: 2px;
     // border-style: solid;
     border-top-color: #{$focus_border_color} !important;
@@ -72,10 +72,38 @@ textarea.form-focus:focus {
     }
   }
 
+#{$evo}-form-focus-inverse-demo,
+#{$evo}-form-focus-inverse:focus,
+select.#{$evo}-form-focus-inverse:focus,
+input#{$evo}-form-focus-inverse:focus,
+// input[type]#{$evo}-form-focus-inverse:focus,
+textarea#{$evo}-form-focus-inverse:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$inverse_focus_border_color} !important;
+    border-bottom-color: #{$inverse_focus_border_color} !important;
+    border-left-color: #{$inverse_focus_border_color} !important;
+    border-right-color: #{$inverse_focus_border_color} !important;
+    box-shadow: #{$inverse_focus_box_shadow} !important;
+    transition: #{$focus_transition} !important;
+    outline: 0 none;
+        & + label {
+      color: #{$inverse_focus_border_color} !important;
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+
+// /*********************
+//     FORM FOCUS COLOR
+// *********************/
+
+
 // Default focus state
 // Default hover state (matches focus state)
 .form-focus-color-demo,
-#{$evo}-form-focus-color:focus,
+.form-focus-color:focus,
 select.form-focus-color:focus,
 input.form-focus-color:focus,
 // input[type].form-focus-color:focus,
@@ -98,7 +126,7 @@ textarea.form-focus-color:focus {
 
 // Black color focus
 .form-focus-black-demo,
-#{$evo}-form-focus-black:focus,
+.form-focus-black:focus,
 select.form-focus-black:focus,
 input.form-focus-black:focus,
 textarea.form-focus-black:focus {
@@ -115,9 +143,28 @@ textarea.form-focus-black:focus {
     }
 }
 
+// Dark Gray color focus
+.form-focus-gray-dark-demo,
+.form-focus-gray-dark:focus,
+select.form-focus-gray-dark:focus,
+input.form-focus-gray-dark:focus,
+textarea.form-focus-gray-dark:focus {
+    border-top-color: #{$evo_gray_dark} !important;
+    border-bottom-color: #{$evo_gray_dark} !important;
+    border-left-color: #{$evo_gray_dark} !important;
+    border-right-color: #{$evo_gray_dark} !important;
+    border-color: #{$evo_gray_dark} !important;
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$evo_gray_dark} !important;
+      cursor: pointer; // "hand" cursor
+    }
+}
+
 // Gray color focus
 .form-focus-gray-demo,
-#{$evo}-form-focus-gray:focus,
+.form-focus-gray:focus,
 select.form-focus-gray:focus,
 input.form-focus-gray:focus,
 textarea.form-focus-gray:focus {
@@ -134,10 +181,28 @@ textarea.form-focus-gray:focus {
     }
 }
 
+// Light Gray color focus
+.form-focus-gray-light-demo,
+.form-focus-gray-light:focus,
+select.form-focus-gray-light:focus,
+input.form-focus-gray-light:focus,
+textarea.form-focus-gray-light:focus {
+    border-top-color: #{$evo_gray_light} !important;
+    border-bottom-color: #{$evo_gray_light} !important;
+    border-left-color: #{$evo_gray_light} !important;
+    border-right-color: #{$evo_gray_light} !important;
+    border-color: #{$evo_gray_light} !important;
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$evo_gray_light} !important;
+      cursor: pointer; // "hand" cursor
+    }
+}
 
 // White color focus
 .form-focus-white-demo,
-#{$evo}-form-focus-white:focus,
+.form-focus-white:focus,
 select.form-focus-white:focus,
 input.form-focus-white:focus,
 textarea.form-focus-white:focus {
@@ -157,7 +222,7 @@ textarea.form-focus-white:focus {
 
 // Blue color focus
 .form-focus-blue-demo,
-#{$evo}-form-focus-blue:focus,
+.form-focus-blue:focus,
 select.form-focus-blue:focus,
 input.form-focus-blue:focus,
 textarea.form-focus-blue:focus {
@@ -176,7 +241,7 @@ textarea.form-focus-blue:focus {
 
 // Green color focus
 .form-focus-green-demo,
-#{$evo}-form-focus-green:focus,
+.form-focus-green:focus,
 select.form-focus-green:focus,
 input.form-focus-green:focus,
 textarea.form-focus-green:focus {
@@ -195,7 +260,7 @@ textarea.form-focus-green:focus {
 
 // Red color focus
 .form-focus-red-demo,
-#{$evo}-form-focus-red:focus,
+.form-focus-red:focus,
 select.form-focus-red:focus,
 input.form-focus-red:focus,
 textarea.form-focus-red:focus {
