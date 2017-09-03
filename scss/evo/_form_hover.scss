@@ -1,0 +1,230 @@
+///*      F O R M   H O V E R       */
+
+@import "../evo_variables/evo_variables";
+
+
+
+
+// /*********************
+//     FORM HOVER
+// *********************/
+
+// How to get labels to highlight when focused / hovered on the field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+
+
+// Default hover state (matches focus state)
+.form-hover-demo,
+#{$evo}-form-hover:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+input[type].form-hover:hover,
+textarea.form-hover:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+.form-hover-color-demo,
+#{$evo}-form-hover-color:hover,
+select.form-hover-color:hover,
+input.form-hover-color:hover,
+input[type].form-hover-color:hover,
+textarea.form-hover-color:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_color};
+    border-bottom-color: #{$evo_color};
+    border-left-color: #{$evo_color};
+    border-right-color: #{$evo_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-blue-demo,
+#{$evo}-form-hover-blue:hover,
+select.form-hover-blue:hover,
+input.form-hover-blue:hover,
+input[type].form-hover-blue:hover,
+textarea.form-hover-blue:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$color_15};
+    border-bottom-color: #{$color_15};
+    border-left-color: #{$color_15};
+    border-right-color: #{$color_15};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$color_15};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-green-demo,
+#{$evo}-form-hover-green:hover,
+select.form-hover-green:hover,
+input.form-hover-green:hover,
+input[type].form-hover-green:hover,
+textarea.form-hover-green:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$color_21};
+    border-bottom-color: #{$color_21};
+    border-left-color: #{$color_21};
+    border-right-color: #{$color_21};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$color_21};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+.form-hover-red-demo,
+#{$evo}-form-hover-red:hover,
+select.form-hover-red:hover,
+input.form-hover-red:hover,
+input[type].form-hover-red:hover,
+textarea.form-hover-red:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$color_5};
+    border-bottom-color: #{$color_5};
+    border-left-color: #{$color_5};
+    border-right-color: #{$color_5};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$color_5};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-white-demo,
+#{$evo}-form-hover-white:hover,
+select.form-hover-white:hover,
+input.form-hover-white:hover,
+input[type].form-hover-white:hover,
+textarea.form-hover-white:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_white};
+    border-bottom-color: #{$evo_white};
+    border-left-color: #{$evo_white};
+    border-right-color: #{$evo_white};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_white};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-black-demo,
+#{$evo}-form-hover-black:hover,
+select.form-hover-black:hover,
+input.form-hover-black:hover,
+input[type].form-hover-black:hover,
+textarea.form-hover-black:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_black};
+    border-bottom-color: #{$evo_black};
+    border-left-color: #{$evo_black};
+    border-right-color: #{$evo_black};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_black};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+.form-hover-gray-dark-demo,
+#{$evo}-form-hover-gray-dark:hover,
+select.form-hover-gray-dark:hover,
+input.form-hover-gray-dark:hover,
+input[type].form-hover-gray-dark:hover,
+textarea.form-hover-gray-dark:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_gray_dark};
+    border-bottom-color: #{$evo_gray_dark};
+    border-left-color: #{$evo_gray_dark};
+    border-right-color: #{$evo_gray_dark};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_gray_dark};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-gray-demo,
+#{$evo}-form-hover-gray:hover,
+select.form-hover-gray:hover,
+input.form-hover-gray:hover,
+input[type].form-hover-gray:hover,
+textarea.form-hover-gray:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_gray};
+    border-bottom-color: #{$evo_gray};
+    border-left-color: #{$evo_gray};
+    border-right-color: #{$evo_gray};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_gray};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-gray-light-demo,
+#{$evo}-form-hover-gray-light:hover,
+select.form-hover-gray-light:hover,
+input.form-hover-gray-light:hover,
+input[type].form-hover-gray-light:hover,
+textarea.form-hover-gray-light:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_gray_light};
+    border-bottom-color: #{$evo_gray_light};
+    border-left-color: #{$evo_gray_light};
+    border-right-color: #{$evo_gray_light};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_gray_light};
+      cursor: pointer; // "hand" cursor
+    }
+  }

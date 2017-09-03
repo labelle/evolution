@@ -162,7 +162,7 @@
 @import "evo/image_parallax";
 @import "evo/image_fill";
 @import "evo/image_placeholder";
-// @import "evo/image_effect";
+@import "evo/image_effect"; // QA this
 @import "evo/image_filter";
 @import "evo/image_play";
 
@@ -198,10 +198,13 @@
 @import "evo/form";
 @import "evo/form_type";
 @import "evo/form_size";
-// @import "evo/form_placeholder"; // form placeholder text colors
-// @import "evo/form_extras"; // form validation and password, needs works
-@import "evo/form_effect"; // focus, hover
-@import "evo/form_play"; // floating label
+// @import "evo/form_style";
+@import "evo/form_placeholder";
+@import "evo/form_focus";
+@import "evo/form_hover";
+@import "evo/form_effect";
+// @import "evo/form_validation"; // delete after combining
+// @import "evo/form_password"; // delete after combining
 
 // Video
 @import "evo/video";

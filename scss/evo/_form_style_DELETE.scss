@@ -1,0 +1,166 @@
+///*      F O R M   S T Y L E       */
+
+@import "../evo_variables/evo_variables";
+
+
+// https://www.smashingmagazine.com/2013/02/css-form-elements-problem/
+
+
+// /*********************
+//     FORM LINE STYLE
+// *********************/
+
+
+#{$evo}-form-line,
+input[type="text"]#{$evo}-form-line, 
+input[type="password"]#{$evo}-form-line,
+input[type="tel"]#{$evo}-form-line,
+input[type="tel"]#{$evo}-form-line,
+input[type="email"]#{$evo}-form-line,
+input[type="date"]#{$evo}-form-line,
+input[type="number"]#{$evo}-form-line,
+input[type="time"]#{$evo}-form-line,
+input[type="file"]#{$evo}-form-line,
+input[type="search"]#{$evo}-form-line,
+input[type="url"]#{$evo}-form-line,
+textarea#{$evo}-form-line,
+select#{$evo}-form-line,
+input#{$evo}-form-line {
+  // Form Input
+  // font-size:  #{$line_form_font_size}; // DISABLED
+  border-radius: #{$line_form_border_radius};
+  width: #{$line_form_width};
+  background-color:      #{$form_background_color};
+  // background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$line_form_background_size};
+  background-position:   #{$line_form_background_position};
+}
+
+	// border-bottom: 1px solid gray; 
+.form-line-padding,
+#{$evo}-form-line {
+  // padding
+  padding-top: #{$line_form_padding_top};
+  padding-bottom: #{$line_form_padding_bottom};
+  padding-left: #{$line_form_padding_left};
+  padding-right: #{$line_form_padding_right};
+  // border width
+  border-top-width: #{$line_form_border_top_width};
+  border-bottom-width: #{$line_form_border_bottom_width};
+  border-left-width: #{$line_form_border_left_width};
+  border-right-width: #{$line_form_border_right_width};
+  // border style
+  border-top-style: #{$line_form_border_top_style};
+  border-bottom-style: #{$line_form_border_bottom_style};
+  border-left-style: #{$line_form_border_left_style};
+  border-right-style: #{$line_form_border_right_style};
+  // border color
+  border-top-color: #{$line_form_border_top_color};
+  border-bottom-color: #{$line_form_border_bottom_color};
+  border-left-color: #{$line_form_border_left_color};
+  border-right-color: #{$line_form_border_right_color};
+}
+
+
+// Combine with floating labels
+
+input#{$evo}-form-line:focus { 
+    border-bottom-width: #{$focus_border_color} !important;
+    // border-bottom-style: #{$line_form_border_bottom_style} !important;
+    // border-bottom-size: #{$line_form_border_bottom_width} !important;
+    transition: #{$focus_transition}; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}
+
+
+textarea#{$evo}-form-line:focus { 
+    border-bottom-width: #{$focus_border_color} !important;
+    // border-bottom-style: #{$line_form_border_bottom_style} !important;
+    // border-bottom-size: #{$line_form_border_bottom_width} !important;
+    transition: #{$focus_transition}; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}
+
+
+// /*********************
+//     FORM BOX STYLE
+// *********************/
+
+
+
+#{$evo}-form-box,
+input[type="text"]#{$evo}-form-box, 
+input[type="password"]#{$evo}-form-box, 
+input[type="tel"]#{$evo}-form-box,
+input[type="email"]#{$evo}-form-box,
+input[type="date"]#{$evo}-form-box,
+input[type="number"]#{$evo}-form-box,
+input[type="time"]#{$evo}-form-box,
+input[type="file"]#{$evo}-form-box,
+input[type="search"]#{$evo}-form-box,
+input[type="url"]#{$evo}-form-box,
+textarea#{$evo}-form-box,
+select#{$evo}-form-box,
+input#{$evo}-form-box {
+  // Form Input
+  font-size:  #{$box_form_font_size};
+  border-radius: #{$box_form_border_radius};
+  width: #{$box_form_width};
+  background-color:      #{$box_form_background_color};
+  // background-image:      #{$form_background_triangle};
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$box_form_background_size};
+  background-position:   #{$box_form_background_position};
+}
+
+  // border-bottom: 1px solid gray; 
+.form-box-box,
+#{$evo}-form-box {
+  // // padding
+  // padding-top: #{$box_form_padding_top};
+  // padding-bottom: #{$box_form_padding_bottom};
+  // padding-left: #{$box_form_padding_left};
+  // padding-right: #{$box_form_padding_right};
+  // border width
+  border-top-width: #{$box_form_border_top_width};
+  border-bottom-width: #{$box_form_border_bottom_width};
+  border-left-width: #{$box_form_border_left_width};
+  border-right-width: #{$box_form_border_right_width};
+  // border style
+  border-top-style: #{$box_form_border_top_style};
+  border-bottom-style: #{$box_form_border_bottom_style};
+  border-left-style: #{$box_form_border_left_style};
+  border-right-style: #{$box_form_border_right_style};
+  // border color
+  border-top-color: #{$box_form_border_top_color};
+  border-bottom-color: #{$box_form_border_bottom_color};
+  border-left-color: #{$box_form_border_left_color};
+  border-right-color: #{$box_form_border_right_color};
+}
+
+
+// Combine with floating labels
+
+input#{$evo}-form-box:focus { 
+    border-bottom-width: #{$focus_border_color} !important;
+    // border-bottom-style: #{$box_form_border_bottom_style} !important;
+    // border-bottom-size: #{$box_form_border_bottom_width} !important;
+    // transition: #{$focus_transition}; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}
+
+
+textarea#{$evo}-form-box:focus { 
+    border-bottom-width: #{$focus_border_color} !important;
+    // border-bottom-style: #{$box_form_border_bottom_style} !important;
+    // border-bottom-size: #{$box_form_border_bottom_width} !important;
+    // transition: #{$focus_transition}; 
+    // -moz-transition:0.5s ease all; 
+    // -webkit-transition:0.5s ease all;
+}

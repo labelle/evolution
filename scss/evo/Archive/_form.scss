@@ -48,7 +48,7 @@ textarea:disabled,,
 // From older evolution
 
 
-#{$evo}-fieldset.fieldset { 
+fieldset { 
   display: block;
   margin-left: #{$fieldset_margin_left};
   margin-right: #{$fieldset_margin_right};
@@ -59,7 +59,7 @@ textarea:disabled,,
   border: #{$fieldset_border};
 }
 
-#{$evo}-legend.legend {
+legend {
   padding-left:  #{$legend_padding_left};
   padding-right: #{$legend_padding_right};
   border:        none;
@@ -198,12 +198,6 @@ textarea#{$evo}-form:focus {
       cursor: pointer; // "hand" cursor
     }
 }
-
-  // select:hover {
-  //   background-color: #eee;
-  //   border-color: #666;
-  // }
-
 
   // select:hover {
   //   background-color: #eee;

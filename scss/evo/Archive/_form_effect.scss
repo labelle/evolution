@@ -1,0 +1,417 @@
+///*      F O R M   E F F E C T       */
+
+@import "../evo_variables/evo_variables";
+
+
+
+
+// /*********************
+//     FORM FOCUS
+// *********************/
+
+// How to get labels to highlight when focused / hovered on the field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+// Default focus state
+// Default hover state (matches focus state)
+.form-focus-demo,
+.form-focus-demo:focus,
+// .uneditable-input:focus,
+select.form-focus:focus,
+input.form-focus:focus,
+// input[type].form-focus:focus,
+textarea.form-focus:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+// Default focus state
+// Default hover state (matches focus state)
+.form-focus-color-demo,
+.form-focus-color-demo:focus,
+// .uneditable-input:focus,
+select.form-focus-color:focus,
+input.form-focus-color:focus,
+// input[type].form-focus-color:focus,
+textarea.form-focus-color:focus {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_color};
+    border-bottom-color: #{$evo_color};
+    border-left-color: #{$evo_color};
+    border-right-color: #{$evo_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$evo_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+// Black color focus
+.form-focus-black-demo,
+.form-focus-black-demo:focus,
+select.form-focus-black:focus,
+input.form-focus-black:focus,
+// input[type].form-focus-black:focus,
+textarea.form-focus-black:focus {
+    border-top-color: #{$evo_black};
+    border-bottom-color: #{$evo_black};
+    border-left-color: #{$evo_black};
+    border-right-color: #{$evo_black};
+    // border-color: #{$evo_black};
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$evo_black};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+// Gray color focus
+.form-focus-gray-demo,
+.form-focus-gray-demo:focus,
+select.form-focus-gray:focus,
+input.form-focus-gray:focus,
+// input[type].form-focus-gray:focus,
+textarea.form-focus-gray:focus {
+    border-top-color: #{$evo_gray};
+    border-bottom-color: #{$evo_gray};
+    border-left-color: #{$evo_gray};
+    border-right-color: #{$evo_gray};
+    border-color: #{$evo_gray};
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$evo_gray};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+
+// White color focus
+.form-focus-white-demo,
+.form-focus-white-demo:focus,
+select.form-focus-white:focus,
+input.form-focus-white:focus,
+// input[type].form-focus-white:focus,
+textarea.form-focus-white:focus {
+    border-top-color: #{$evo_white};
+    border-bottom-color: #{$evo_white};
+    border-left-color: #{$evo_white};
+    border-right-color: #{$evo_white};
+    border-color: #{$evo_white};
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$evo_white};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+
+// Blue color focus
+.form-focus-blue-demo,
+.form-focus-blue-demo:focus,
+select.form-focus-blue:focus,
+input.form-focus-blue:focus,
+// input[type].form-focus-blue:focus,
+textarea.form-focus-blue:focus {
+    border-top-color: #{$color_15};
+    border-bottom-color: #{$color_15};
+    border-left-color: #{$color_15};
+    border-right-color: #{$color_15};
+    border-color: #{$color_15};
+    // box-shadow: 0 1px 1px rgba(0, 115, 185, 0.075) inset, 0 0 8px rgba(0, 115, 185, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$color_15};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+// Green color focus
+.form-focus-green-demo,
+.form-focus-green-demo:focus,
+select.form-focus-green:focus,
+input.form-focus-green:focus,
+// input[type].form-focus-green:focus,
+textarea.form-focus-green:focus {
+    border-top-color: #{$color_21};
+    border-bottom-color: #{$color_21};
+    border-left-color: #{$color_21};
+    border-right-color: #{$color_21};
+    border-color: #{$color_21};
+    // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$color_21};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+// Red color focus
+.form-focus-red-demo,
+.form-focus-red-demo:focus,
+select.form-focus-red:focus,
+input.form-focus-red:focus,
+// input[type].form-focus-red:focus,
+textarea.form-focus-red:focus {
+    border-top-color: #{$color_5};
+    border-bottom-color: #{$color_5};
+    border-left-color: #{$color_5};
+    border-right-color: #{$color_5};
+    border-color: #{$color_5};
+    // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
+    // outline: 0 none;
+        & + label {
+      color: #{$color_5};
+      cursor: pointer; // "hand" cursor
+    }
+}
+
+
+
+// /*********************
+//     FORM HOVER
+// *********************/
+
+// How to get labels to highlight when focused / hovered on the field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+
+// Default hover state (matches focus state)
+.form-hover-demo,
+.form-hover-demo:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+// input[type].form-hover:hover,
+textarea.form-hover:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_color};
+    border-bottom-color: #{$evo_color};
+    border-left-color: #{$evo_color};
+    border-right-color: #{$evo_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$evo_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+// Default hover state (matches focus state)
+.form-hover-color-demo,
+.form-hover-color-demo:hover,
+select.form-hover-color:hover,
+input.form-hover-color:hover,
+// input[type].form-hover-color:hover,
+textarea.form-hover-color:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$focus_border_color};
+    border-bottom-color: #{$focus_border_color};
+    border-left-color: #{$focus_border_color};
+    border-right-color: #{$focus_border_color};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$focus_border_color};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-black-demo,
+.form-hover-black-demo:hover,
+select.form-hover-black:hover,
+input.form-hover-black:hover,
+// input[type].form-hover-black:hover,
+textarea.form-hover-black:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_black};
+    border-bottom-color: #{$evo_black};
+    border-left-color: #{$evo_black};
+    border-right-color: #{$evo_black};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$evo_black};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+.form-hover-gray-demo,
+.form-hover-gray-demo:hover,
+select.form-hover-gray:hover,
+input.form-hover-gray:hover,
+// input[type].form-hover-gray:hover,
+textarea.form-hover-gray:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_gray};
+    border-bottom-color: #{$evo_gray};
+    border-left-color: #{$evo_gray};
+    border-right-color: #{$evo_gray};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$evo_gray};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+.form-hover-white-demo,
+.form-hover-white-demo:hover,
+select.form-hover-white:hover,
+input.form-hover-white:hover,
+// input[type].form-hover-white:hover,
+textarea.form-hover-white:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$evo_white};
+    border-bottom-color: #{$evo_white};
+    border-left-color: #{$evo_white};
+    border-right-color: #{$evo_white};
+    box-shadow: #{$focus_box_shadow};
+    transition: #{$focus_transition};
+    outline: 0 none;
+    cursor: pointer; // "hand" cursor
+        & + label {
+      color: #{$evo_white};
+      cursor: pointer; // "hand" cursor
+    }
+  }
+
+
+
+
+// /*********************
+//     FORM PLACEHOLDER TEXT COLOR
+// *********************/
+
+// This talks about placeholder-shown
+// https://css-tricks.com/almanac/selectors/p/placeholder-shown/
+
+
+// Placeholder Text
+textarea#{$evo}-form-placeholder::placeholder,
+input#{$evo}-form-placeholder::placeholder {
+    color: #{$placeholder_text_color};
+    opacity: #{$placeholder_text_opacity};
+}
+
+// Inverse Placeholder Text
+textarea#{$evo}-form-placeholder-inverse::placeholder,
+input#{$evo}-form-placeholder-inverse::placeholder {
+    color: #{$inverse_placeholder_text_color};
+    opacity: #{$placeholder_text_opacity};
+}
+
+
+// Colored placeholder text
+textarea.form-placeholder-color::placeholder,
+input.form-placeholder-color::placeholder {
+     color: #{$evo_color};
+     opacity: .5;
+}
+
+textarea.form-placeholder-white::placeholder,
+input.form-placeholder-white::placeholder {
+    color: #{$evo_white};
+}
+
+textarea.form-placeholder-black::placeholder,
+input.form-placeholder-black::placeholder {
+    color: #{$evo_black};
+}
+
+textarea.form-placeholder-gray-dark::placeholder,
+input.form-placeholder-gray-dark::placeholder {
+    color: #{$evo_gray_dark};
+}
+
+textarea.form-placeholder-gray::placeholder,
+input.form-placeholder-gray::placeholder {
+    color: #{$evo_gray};
+}
+
+textarea.form-placeholder-gray-light::placeholder,
+input.form-placeholder-gray-light::placeholder {
+    color: #{$evo_gray_light};
+}
+
+
+// /*********************
+//     FORM PLACEHOLDER TEXT OPACITY
+// *********************/
+
+textarea.form-placeholder-opacity-9::placeholder,
+input.form-placeholder-opacity-9::placeholder {
+    opacity:.9;
+}
+
+textarea.form-placeholder-opacity-8::placeholder,
+input.form-placeholder-opacity-8::placeholder {
+    opacity:.8;
+}
+
+textarea.form-placeholder-opacity-7::placeholder,
+input.form-placeholder-opacity-7::placeholder {
+    opacity:.7;
+}
+
+textarea.form-placeholder-opacity-6::placeholder,
+input.form-placeholder-opacity-6::placeholder {
+    opacity:.6;
+}
+textarea.form-placeholder-opacity-5::placeholder,
+input.form-placeholder-opacity-5::placeholder {
+    opacity:.5;
+}
+
+textarea.form-placeholder-opacity-4::placeholder,
+input.form-placeholder-opacity-4::placeholder {
+    opacity:.4;
+}
+
+textarea.form-placeholder-opacity-3::placeholder,
+input.form-placeholder-opacity-3::placeholder {
+    opacity:.3;
+}
+
+textarea.form-placeholder-opacity-2::placeholder,
+input.form-placeholder-opacity-2::placeholder {
+    opacity:.2;
+}
+
+textarea.form-placeholder-opacity-1::placeholder,
+input.form-placeholder-opacity-1::placeholder {
+    opacity:.1;
+}

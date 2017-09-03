@@ -1759,6 +1759,164 @@ pre.code-short > code {
 .size-wide-0 {
   width: 0; }
 
+.size-wide-25-min {
+  min-width: 42rem; }
+
+.size-wide-24-min {
+  min-width: 34rem; }
+
+.size-wide-23-min {
+  min-width: 26rem; }
+
+.size-wide-22-min {
+  min-width: 21rem; }
+
+.size-wide-21-min {
+  min-width: 16rem; }
+
+.size-wide-20-min {
+  min-width: 13rem; }
+
+.size-wide-19-min {
+  min-width: 10rem; }
+
+.size-wide-18-min {
+  min-width: 8rem; }
+
+.size-wide-17-min {
+  min-width: 6rem; }
+
+.size-wide-16-min {
+  min-width: 5rem; }
+
+.size-wide-15-min {
+  min-width: 3.75rem; }
+
+.size-wide-14-min {
+  min-width: 3rem; }
+
+.size-wide-13-min {
+  min-width: 2.6875rem; }
+
+.size-wide-12-min {
+  min-width: 2.3125rem; }
+
+.size-wide-11-min {
+  min-width: 1.875rem; }
+
+.size-wide-10-min {
+  min-width: 1.4375rem; }
+
+.size-wide-9-min {
+  min-width: 1.3125rem; }
+
+.size-wide-8-min {
+  min-width: 1.125rem; }
+
+.size-wide-7-min {
+  min-width: 1rem; }
+
+.size-wide-6-min {
+  min-width: 0.875rem; }
+
+.size-wide-5-min {
+  min-width: 0.75rem; }
+
+.size-wide-4-min {
+  min-width: 0.625rem; }
+
+.size-wide-3-min {
+  min-width: 0.5rem; }
+
+.size-wide-2-min {
+  min-width: 0.375rem; }
+
+.size-wide-1-min {
+  min-width: .25rem; }
+
+.size-wide-none-min,
+.size-wide-0-min {
+  min-width: 0; }
+
+.size-wide-25-max {
+  max-width: 42rem; }
+
+.size-wide-24-max {
+  max-width: 34rem; }
+
+.size-wide-23-max {
+  max-width: 26rem; }
+
+.size-wide-22-max {
+  max-width: 21rem; }
+
+.size-wide-21-max {
+  max-width: 16rem; }
+
+.size-wide-20-max {
+  max-width: 13rem; }
+
+.size-wide-19-max {
+  max-width: 10rem; }
+
+.size-wide-18-max {
+  max-width: 8rem; }
+
+.size-wide-17-max {
+  max-width: 6rem; }
+
+.size-wide-16-max {
+  max-width: 5rem; }
+
+.size-wide-15-max {
+  max-width: 3.75rem; }
+
+.size-wide-14-max {
+  max-width: 3rem; }
+
+.size-wide-13-max {
+  max-width: 2.6875rem; }
+
+.size-wide-12-max {
+  max-width: 2.3125rem; }
+
+.size-wide-11-max {
+  max-width: 1.875rem; }
+
+.size-wide-10-max {
+  max-width: 1.4375rem; }
+
+.size-wide-9-max {
+  max-width: 1.3125rem; }
+
+.size-wide-8-max {
+  max-width: 1.125rem; }
+
+.size-wide-7-max {
+  max-width: 1rem; }
+
+.size-wide-6-max {
+  max-width: 0.875rem; }
+
+.size-wide-5-max {
+  max-width: 0.75rem; }
+
+.size-wide-4-max {
+  max-width: 0.625rem; }
+
+.size-wide-3-max {
+  max-width: 0.5rem; }
+
+.size-wide-2-max {
+  max-width: 0.375rem; }
+
+.size-wide-1-max {
+  max-width: .25rem; }
+
+.size-wide-none-max,
+.size-wide-0-max {
+  max-width: 0; }
+
 .size-tall-25 {
   height: 42rem; }
 
@@ -1837,6 +1995,164 @@ pre.code-short > code {
 .size-tall-none,
 .size-tall-0 {
   height: 0; }
+
+.size-tall-25-min {
+  min-height: 42rem; }
+
+.size-tall-24-min {
+  min-height: 34rem; }
+
+.size-tall-23-min {
+  min-height: 26rem; }
+
+.size-tall-22-min {
+  min-height: 21rem; }
+
+.size-tall-21-min {
+  min-height: 16rem; }
+
+.size-tall-20-min {
+  min-height: 13rem; }
+
+.size-tall-19-min {
+  min-height: 10rem; }
+
+.size-tall-18-min {
+  min-height: 8rem; }
+
+.size-tall-17-min {
+  min-height: 6rem; }
+
+.size-tall-16-min {
+  min-height: 5rem; }
+
+.size-tall-15-min {
+  min-height: 3.75rem; }
+
+.size-tall-14-min {
+  min-height: 3rem; }
+
+.size-tall-13-min {
+  min-height: 2.6875rem; }
+
+.size-tall-12-min {
+  min-height: 2.3125rem; }
+
+.size-tall-11-min {
+  min-height: 1.875rem; }
+
+.size-tall-10-min {
+  min-height: 1.4375rem; }
+
+.size-tall-9-min {
+  min-height: 1.3125rem; }
+
+.size-tall-8-min {
+  min-height: 1.125rem; }
+
+.size-tall-7-min {
+  min-height: 1rem; }
+
+.size-tall-6-min {
+  min-height: 0.875rem; }
+
+.size-tall-5-min {
+  min-height: 0.75rem; }
+
+.size-tall-4-min {
+  min-height: 0.625rem; }
+
+.size-tall-3-min {
+  min-height: 0.5rem; }
+
+.size-tall-2-min {
+  min-height: 0.375rem; }
+
+.size-tall-1-min {
+  min-height: .25rem; }
+
+.size-tall-none-min,
+.size-tall-0-min {
+  min-height: 0; }
+
+.size-tall-25-max {
+  max-height: 42rem; }
+
+.size-tall-24-max {
+  max-height: 34rem; }
+
+.size-tall-23-max {
+  max-height: 26rem; }
+
+.size-tall-22-max {
+  max-height: 21rem; }
+
+.size-tall-21-max {
+  max-height: 16rem; }
+
+.size-tall-20-max {
+  max-height: 13rem; }
+
+.size-tall-19-max {
+  max-height: 10rem; }
+
+.size-tall-18-max {
+  max-height: 8rem; }
+
+.size-tall-17-max {
+  max-height: 6rem; }
+
+.size-tall-16-max {
+  max-height: 5rem; }
+
+.size-tall-15-max {
+  max-height: 3.75rem; }
+
+.size-tall-14-max {
+  max-height: 3rem; }
+
+.size-tall-13-max {
+  max-height: 2.6875rem; }
+
+.size-tall-12-max {
+  max-height: 2.3125rem; }
+
+.size-tall-11-max {
+  max-height: 1.875rem; }
+
+.size-tall-10-max {
+  max-height: 1.4375rem; }
+
+.size-tall-9-max {
+  max-height: 1.3125rem; }
+
+.size-tall-8-max {
+  max-height: 1.125rem; }
+
+.size-tall-7-max {
+  max-height: 1rem; }
+
+.size-tall-6-max {
+  max-height: 0.875rem; }
+
+.size-tall-5-max {
+  max-height: 0.75rem; }
+
+.size-tall-4-max {
+  max-height: 0.625rem; }
+
+.size-tall-3-max {
+  max-height: 0.5rem; }
+
+.size-tall-2-max {
+  max-height: 0.375rem; }
+
+.size-tall-1-max {
+  max-height: .25rem; }
+
+.size-tall-none-max,
+.size-tall-0-max {
+  max-height: 0; }
 
 .evo-masonry {
   column-count: 4;
@@ -11451,6 +11767,306 @@ ol.number-decimal-zero li::before {
 .image-fpo {
   background-image: url(../image/fpo.jpg); }
 
+.evo-transition {
+  transition: .5s; }
+
+.evo-transition-after:after {
+  transition: .5s; }
+
+.transition-1 {
+  transition: .1s; }
+
+.transition-2 {
+  transition: .2s; }
+
+.transition-3 {
+  transition: .3s; }
+
+.transition-4 {
+  transition: .4s; }
+
+.transition-5 {
+  transition: .5s; }
+
+.transition-6 {
+  transition: .6s; }
+
+.transition-7 {
+  transition: .7s; }
+
+.transition-8 {
+  transition: .8s; }
+
+.transition-9 {
+  transition: .9s; }
+
+.transition-10 {
+  transition: 1s; }
+
+.transition-1-ease {
+  transition: .1s ease; }
+
+.transition-2-ease {
+  transition: .2s ease; }
+
+.transition-3-ease {
+  transition: .3s ease; }
+
+.transition-4-ease {
+  transition: .4s ease; }
+
+.transition-5-ease {
+  transition: .5s ease; }
+
+.transition-6-ease {
+  transition: .6s ease; }
+
+.transition-7-ease {
+  transition: .7s ease; }
+
+.transition-8-ease {
+  transition: .8s ease; }
+
+.transition-9-ease {
+  transition: .9s ease; }
+
+.transition-10-ease {
+  transition: 1s ease; }
+
+.evo-opacity {
+  opacity: .5; }
+
+.evo-opacity-after::after {
+  opacity: .5; }
+
+.evo-opacity-hover {
+  opacity: 0; }
+
+.evo-opacity-hover:hover {
+  opacity: .5; }
+
+.evo-opacity-hover-none {
+  opacity: .5; }
+
+.evo-opacity-hover-none:hover {
+  opacity: 1; }
+
+.opacity-none,
+.opacity-0,
+.opacity-00 {
+  opacity: 0; }
+
+.opacity-02 {
+  opacity: .02; }
+
+.opacity-05 {
+  opacity: .05; }
+
+.opacity-10 {
+  opacity: .1; }
+
+.opacity-20 {
+  opacity: .2; }
+
+.opacity-30 {
+  opacity: .3; }
+
+.opacity-40 {
+  opacity: .4; }
+
+.opacity-50 {
+  opacity: .5; }
+
+.opacity-60 {
+  opacity: .6; }
+
+.opacity-70 {
+  opacity: .7; }
+
+.opacity-80 {
+  opacity: .8; }
+
+.opacity-90 {
+  opacity: .9; }
+
+.opacity-95 {
+  opacity: .95; }
+
+.opacity-98 {
+  opacity: .98; }
+
+.opacity-100,
+.opacity-full {
+  opacity: 1; }
+
+.opacity-none-hover:hover,
+.opacity-0-hover:hover,
+.opacity-00-hover:hover {
+  opacity: 0; }
+
+.opacity-02-hover:hover {
+  opacity: .02; }
+
+.opacity-05-hover:hover {
+  opacity: .05; }
+
+.opacity-10-hover:hover {
+  opacity: .1; }
+
+.opacity-20-hover:hover {
+  opacity: .2; }
+
+.opacity-30-hover:hover {
+  opacity: .3; }
+
+.opacity-40-hover:hover {
+  opacity: .4; }
+
+.opacity-50-hover:hover {
+  opacity: .5; }
+
+.opacity-60-hover:hover {
+  opacity: .6; }
+
+.opacity-70-hover:hover {
+  opacity: .7; }
+
+.opacity-80-hover:hover {
+  opacity: .8; }
+
+.opacity-90-hover:hover {
+  opacity: .9; }
+
+.opacity-95-hover:hover {
+  opacity: .95; }
+
+.opacity-98-hover:hover {
+  opacity: .98; }
+
+.opacity-100-hover:hover,
+.opacity-full-hover:hover {
+  opacity: 1; }
+
+.opacity-none-hover,
+.opacity-0-hover,
+.opacity-00-hover,
+.opacity-02-hover,
+.opacity-05-hover,
+.opacity-10-hover,
+.opacity-20-hover,
+.opacity-30-hover,
+.opacity-40-hover,
+.opacity-50-hover,
+.opacity-60-hover,
+.opacity-70-hover,
+.opacity-80-hover,
+.opacity-90-hover,
+.opacity-95-hover,
+.opacity-98-hover,
+.opacity-100-hover,
+.opacity-full-hover {
+  opacity: 0; }
+
+.opacity-none-hover-none,
+.opacity-0-hover-none,
+.opacity-00-hover-none {
+  opacity: 0; }
+
+.opacity-02-hover-none {
+  opacity: .02; }
+
+.opacity-05-hover-none {
+  opacity: .05; }
+
+.opacity-10-hover-none {
+  opacity: .1; }
+
+.opacity-20-hover-none {
+  opacity: .2; }
+
+.opacity-30-hover-none {
+  opacity: .3; }
+
+.opacity-40-hover-none {
+  opacity: .4; }
+
+.opacity-50-hover-none {
+  opacity: .5; }
+
+.opacity-60-hover-none {
+  opacity: .6; }
+
+.opacity-70-hover-none {
+  opacity: .7; }
+
+.opacity-80-hover-none {
+  opacity: .8; }
+
+.opacity-90-hover-none {
+  opacity: .9; }
+
+.opacity-95-hover-none {
+  opacity: .95; }
+
+.opacity-98-hover-none {
+  opacity: .98; }
+
+.opacity-100-hover-none,
+.opacity-full-hover-none {
+  opacity: 1; }
+
+.opacity-none-hover-none:hover,
+.opacity-0-hover-none:hover,
+.opacity-00-hover-none:hover,
+.opacity-02-hover-none:hover,
+.opacity-05-hover-none:hover,
+.opacity-10-hover-none:hover,
+.opacity-20-hover-none:hover,
+.opacity-30-hover-none:hover,
+.opacity-40-hover-none:hover,
+.opacity-50-hover-none:hover,
+.opacity-60-hover-none:hover,
+.opacity-70-hover-none:hover,
+.opacity-80-hover-none:hover,
+.opacity-90-hover-none:hover,
+.opacity-95-hover-none:hover,
+.opacity-98-hover-none:hover,
+.opacity-100-hover-none:hover,
+.opacity-full-hover-none:hover {
+  opacity: 1; }
+
+.gradient-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent); }
+
+.gradient-bg-to-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent); }
+
+.gradient-bg-to-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent); }
+
+.gradient-bg-to-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); }
+
+.image-bg-center {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.image-bg-top {
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.image-bg-right {
+  background-repeat: no-repeat;
+  background-position: center right; }
+
+.image-bg-bottom {
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+.image-bg-left {
+  background-repeat: no-repeat;
+  background-position: center left; }
+
 .image-opacity-0-hover:hover,
 .image-opacity-0-hover-none,
 .image-opacity-0,
@@ -14813,7 +15429,7 @@ textarea:disabled + label,
   opacity: 0.5;
   cursor: not-allowed; }
 
-fieldset {
+.evo-fieldset.fieldset {
   display: block;
   margin-left: 0;
   margin-right: 0;
@@ -14823,7 +15439,7 @@ fieldset {
   padding-right: 0;
   border: none; }
 
-legend {
+.evo-legend.legend {
   padding-left: none;
   padding-right: 1em;
   border: none;
@@ -15110,258 +15726,6 @@ label.evo-button :valid + span {
 .form-box-none:focus {
   border-width: 0; }
 
-.form-focus-demo,
-.form-focus-demo:focus,
-select.form-focus:focus,
-input.form-focus:focus,
-textarea.form-focus:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none; }
-  .form-focus-demo + label,
-  .form-focus-demo:focus + label,
-  select.form-focus:focus + label,
-  input.form-focus:focus + label,
-  textarea.form-focus:focus + label {
-    color: black;
-    cursor: pointer; }
-
-.form-focus-color-demo,
-.form-focus-color-demo:focus,
-select.form-focus-color:focus,
-input.form-focus-color:focus,
-textarea.form-focus-color:focus {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none; }
-  .form-focus-color-demo + label,
-  .form-focus-color-demo:focus + label,
-  select.form-focus-color:focus + label,
-  input.form-focus-color:focus + label,
-  textarea.form-focus-color:focus + label {
-    color: #0073b9;
-    cursor: pointer; }
-
-.form-focus-black-demo,
-.form-focus-black-demo:focus,
-select.form-focus-black:focus,
-input.form-focus-black:focus,
-textarea.form-focus-black:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black; }
-  .form-focus-black-demo + label,
-  .form-focus-black-demo:focus + label,
-  select.form-focus-black:focus + label,
-  input.form-focus-black:focus + label,
-  textarea.form-focus-black:focus + label {
-    color: black;
-    cursor: pointer; }
-
-.form-focus-gray-demo,
-.form-focus-gray-demo:focus,
-select.form-focus-gray:focus,
-input.form-focus-gray:focus,
-textarea.form-focus-gray:focus {
-  border-top-color: #7f7f7f;
-  border-bottom-color: #7f7f7f;
-  border-left-color: #7f7f7f;
-  border-right-color: #7f7f7f;
-  border-color: #7f7f7f; }
-  .form-focus-gray-demo + label,
-  .form-focus-gray-demo:focus + label,
-  select.form-focus-gray:focus + label,
-  input.form-focus-gray:focus + label,
-  textarea.form-focus-gray:focus + label {
-    color: #7f7f7f;
-    cursor: pointer; }
-
-.form-focus-white-demo,
-.form-focus-white-demo:focus,
-select.form-focus-white:focus,
-input.form-focus-white:focus,
-textarea.form-focus-white:focus {
-  border-top-color: white;
-  border-bottom-color: white;
-  border-left-color: white;
-  border-right-color: white;
-  border-color: white; }
-  .form-focus-white-demo + label,
-  .form-focus-white-demo:focus + label,
-  select.form-focus-white:focus + label,
-  input.form-focus-white:focus + label,
-  textarea.form-focus-white:focus + label {
-    color: white;
-    cursor: pointer; }
-
-.form-focus-blue-demo,
-.form-focus-blue-demo:focus,
-select.form-focus-blue:focus,
-input.form-focus-blue:focus,
-textarea.form-focus-blue:focus {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
-  border-color: #0073b9; }
-  .form-focus-blue-demo + label,
-  .form-focus-blue-demo:focus + label,
-  select.form-focus-blue:focus + label,
-  input.form-focus-blue:focus + label,
-  textarea.form-focus-blue:focus + label {
-    color: #0073b9;
-    cursor: pointer; }
-
-.form-focus-green-demo,
-.form-focus-green-demo:focus,
-select.form-focus-green:focus,
-input.form-focus-green:focus,
-textarea.form-focus-green:focus {
-  border-top-color: #00a453;
-  border-bottom-color: #00a453;
-  border-left-color: #00a453;
-  border-right-color: #00a453;
-  border-color: #00a453; }
-  .form-focus-green-demo + label,
-  .form-focus-green-demo:focus + label,
-  select.form-focus-green:focus + label,
-  input.form-focus-green:focus + label,
-  textarea.form-focus-green:focus + label {
-    color: #00a453;
-    cursor: pointer; }
-
-.form-focus-red-demo,
-.form-focus-red-demo:focus,
-select.form-focus-red:focus,
-input.form-focus-red:focus,
-textarea.form-focus-red:focus {
-  border-top-color: #eb212e;
-  border-bottom-color: #eb212e;
-  border-left-color: #eb212e;
-  border-right-color: #eb212e;
-  border-color: #eb212e; }
-  .form-focus-red-demo + label,
-  .form-focus-red-demo:focus + label,
-  select.form-focus-red:focus + label,
-  input.form-focus-red:focus + label,
-  textarea.form-focus-red:focus + label {
-    color: #eb212e;
-    cursor: pointer; }
-
-.form-hover-demo,
-.form-hover-demo:hover,
-select.form-hover:hover,
-input.form-hover:hover,
-textarea.form-hover:hover {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none;
-  cursor: pointer; }
-  .form-hover-demo + label,
-  .form-hover-demo:hover + label,
-  select.form-hover:hover + label,
-  input.form-hover:hover + label,
-  textarea.form-hover:hover + label {
-    color: #0073b9;
-    cursor: pointer; }
-
-.form-hover-color-demo,
-.form-hover-color-demo:hover,
-select.form-hover-color:hover,
-input.form-hover-color:hover,
-textarea.form-hover-color:hover {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none;
-  cursor: pointer; }
-  .form-hover-color-demo + label,
-  .form-hover-color-demo:hover + label,
-  select.form-hover-color:hover + label,
-  input.form-hover-color:hover + label,
-  textarea.form-hover-color:hover + label {
-    color: black;
-    cursor: pointer; }
-
-.form-hover-black-demo,
-.form-hover-black-demo:hover,
-select.form-hover-black:hover,
-input.form-hover-black:hover,
-textarea.form-hover-black:hover {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none;
-  cursor: pointer; }
-  .form-hover-black-demo + label,
-  .form-hover-black-demo:hover + label,
-  select.form-hover-black:hover + label,
-  input.form-hover-black:hover + label,
-  textarea.form-hover-black:hover + label {
-    color: black;
-    cursor: pointer; }
-
-.form-hover-gray-demo,
-.form-hover-gray-demo:hover,
-select.form-hover-gray:hover,
-input.form-hover-gray:hover,
-textarea.form-hover-gray:hover {
-  border-top-color: #7f7f7f;
-  border-bottom-color: #7f7f7f;
-  border-left-color: #7f7f7f;
-  border-right-color: #7f7f7f;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none;
-  cursor: pointer; }
-  .form-hover-gray-demo + label,
-  .form-hover-gray-demo:hover + label,
-  select.form-hover-gray:hover + label,
-  input.form-hover-gray:hover + label,
-  textarea.form-hover-gray:hover + label {
-    color: #7f7f7f;
-    cursor: pointer; }
-
-.form-hover-white-demo,
-.form-hover-white-demo:hover,
-select.form-hover-white:hover,
-input.form-hover-white:hover,
-textarea.form-hover-white:hover {
-  border-top-color: white;
-  border-bottom-color: white;
-  border-left-color: white;
-  border-right-color: white;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none;
-  cursor: pointer; }
-  .form-hover-white-demo + label,
-  .form-hover-white-demo:hover + label,
-  select.form-hover-white:hover + label,
-  input.form-hover-white:hover + label,
-  textarea.form-hover-white:hover + label {
-    color: white;
-    cursor: pointer; }
-
 textarea.evo-form-placeholder::placeholder,
 input.evo-form-placeholder::placeholder {
   color: black;
@@ -15433,35 +15797,372 @@ textarea.form-placeholder-opacity-1::placeholder,
 input.form-placeholder-opacity-1::placeholder {
   opacity: .1; }
 
-textarea ~ .label-floating {
-  position: absolute;
-  pointer-events: none;
-  left: 1em;
-  top: 1em;
-  transition: 0.3s ease all; }
+.form-focus-demo,
+.evo-form-focus:focus,
+select.form-focus:focus,
+input.form-focus:focus,
+textarea.form-focus:focus {
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-focus-demo + label,
+  .evo-form-focus:focus + label,
+  select.form-focus:focus + label,
+  input.form-focus:focus + label,
+  textarea.form-focus:focus + label {
+    color: black;
+    cursor: pointer; }
 
-textarea:focus ~ .label-floating,
-textarea:not(:focus):valid ~ .label-floating {
-  top: -.5em;
-  color: black;
-  font-family: inherit;
-  opacity: 1; }
+.form-focus-color-demo,
+.evo-form-focus-color:focus,
+select.form-focus-color:focus,
+input.form-focus-color:focus,
+textarea.form-focus-color:focus {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-focus-color-demo + label,
+  .evo-form-focus-color:focus + label,
+  select.form-focus-color:focus + label,
+  input.form-focus-color:focus + label,
+  textarea.form-focus-color:focus + label {
+    color: #0073b9;
+    cursor: pointer; }
 
-input ~ .label-floating {
-  position: absolute;
-  pointer-events: none;
-  left: 1em;
-  top: 0;
-  transition: 0.3s ease all; }
+.form-focus-black-demo,
+.evo-form-focus-black:focus,
+select.form-focus-black:focus,
+input.form-focus-black:focus,
+textarea.form-focus-black:focus {
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black; }
+  .form-focus-black-demo + label,
+  .evo-form-focus-black:focus + label,
+  select.form-focus-black:focus + label,
+  input.form-focus-black:focus + label,
+  textarea.form-focus-black:focus + label {
+    color: black;
+    cursor: pointer; }
 
-input:focus ~ .label-floating,
-input:not(:focus):valid ~ .label-floating {
-  top: -1.5em;
-  bottom: 1em;
-  color: black;
-  font-family: inherit;
-  left: 1.5em;
-  opacity: 1; }
+.form-focus-gray-demo,
+.evo-form-focus-gray:focus,
+select.form-focus-gray:focus,
+input.form-focus-gray:focus,
+textarea.form-focus-gray:focus {
+  border-top-color: #7f7f7f;
+  border-bottom-color: #7f7f7f;
+  border-left-color: #7f7f7f;
+  border-right-color: #7f7f7f;
+  border-color: #7f7f7f; }
+  .form-focus-gray-demo + label,
+  .evo-form-focus-gray:focus + label,
+  select.form-focus-gray:focus + label,
+  input.form-focus-gray:focus + label,
+  textarea.form-focus-gray:focus + label {
+    color: #7f7f7f;
+    cursor: pointer; }
+
+.form-focus-white-demo,
+.evo-form-focus-white:focus,
+select.form-focus-white:focus,
+input.form-focus-white:focus,
+textarea.form-focus-white:focus {
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  border-color: white; }
+  .form-focus-white-demo + label,
+  .evo-form-focus-white:focus + label,
+  select.form-focus-white:focus + label,
+  input.form-focus-white:focus + label,
+  textarea.form-focus-white:focus + label {
+    color: white;
+    cursor: pointer; }
+
+.form-focus-blue-demo,
+.evo-form-focus-blue:focus,
+select.form-focus-blue:focus,
+input.form-focus-blue:focus,
+textarea.form-focus-blue:focus {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
+  border-color: #0073b9; }
+  .form-focus-blue-demo + label,
+  .evo-form-focus-blue:focus + label,
+  select.form-focus-blue:focus + label,
+  input.form-focus-blue:focus + label,
+  textarea.form-focus-blue:focus + label {
+    color: #0073b9;
+    cursor: pointer; }
+
+.form-focus-green-demo,
+.evo-form-focus-green:focus,
+select.form-focus-green:focus,
+input.form-focus-green:focus,
+textarea.form-focus-green:focus {
+  border-top-color: #00a453;
+  border-bottom-color: #00a453;
+  border-left-color: #00a453;
+  border-right-color: #00a453;
+  border-color: #00a453; }
+  .form-focus-green-demo + label,
+  .evo-form-focus-green:focus + label,
+  select.form-focus-green:focus + label,
+  input.form-focus-green:focus + label,
+  textarea.form-focus-green:focus + label {
+    color: #00a453;
+    cursor: pointer; }
+
+.form-focus-red-demo,
+.evo-form-focus-red:focus,
+select.form-focus-red:focus,
+input.form-focus-red:focus,
+textarea.form-focus-red:focus {
+  border-top-color: #eb212e;
+  border-bottom-color: #eb212e;
+  border-left-color: #eb212e;
+  border-right-color: #eb212e;
+  border-color: #eb212e; }
+  .form-focus-red-demo + label,
+  .evo-form-focus-red:focus + label,
+  select.form-focus-red:focus + label,
+  input.form-focus-red:focus + label,
+  textarea.form-focus-red:focus + label {
+    color: #eb212e;
+    cursor: pointer; }
+
+.form-hover-demo,
+.evo-form-hover:hover,
+select.form-hover:hover,
+input.form-hover:hover,
+input[type].form-hover:hover,
+textarea.form-hover:hover {
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-demo + label,
+  .evo-form-hover:hover + label,
+  select.form-hover:hover + label,
+  input.form-hover:hover + label,
+  input[type].form-hover:hover + label,
+  textarea.form-hover:hover + label {
+    color: black;
+    cursor: pointer; }
+
+.form-hover-color-demo,
+.evo-form-hover-color:hover,
+select.form-hover-color:hover,
+input.form-hover-color:hover,
+input[type].form-hover-color:hover,
+textarea.form-hover-color:hover {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-color-demo + label,
+  .evo-form-hover-color:hover + label,
+  select.form-hover-color:hover + label,
+  input.form-hover-color:hover + label,
+  input[type].form-hover-color:hover + label,
+  textarea.form-hover-color:hover + label {
+    color: #0073b9;
+    cursor: pointer; }
+
+.form-hover-blue-demo,
+.evo-form-hover-blue:hover,
+select.form-hover-blue:hover,
+input.form-hover-blue:hover,
+input[type].form-hover-blue:hover,
+textarea.form-hover-blue:hover {
+  border-top-color: #0073b9;
+  border-bottom-color: #0073b9;
+  border-left-color: #0073b9;
+  border-right-color: #0073b9;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-blue-demo + label,
+  .evo-form-hover-blue:hover + label,
+  select.form-hover-blue:hover + label,
+  input.form-hover-blue:hover + label,
+  input[type].form-hover-blue:hover + label,
+  textarea.form-hover-blue:hover + label {
+    color: #0073b9;
+    cursor: pointer; }
+
+.form-hover-green-demo,
+.evo-form-hover-green:hover,
+select.form-hover-green:hover,
+input.form-hover-green:hover,
+input[type].form-hover-green:hover,
+textarea.form-hover-green:hover {
+  border-top-color: #00a453;
+  border-bottom-color: #00a453;
+  border-left-color: #00a453;
+  border-right-color: #00a453;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-green-demo + label,
+  .evo-form-hover-green:hover + label,
+  select.form-hover-green:hover + label,
+  input.form-hover-green:hover + label,
+  input[type].form-hover-green:hover + label,
+  textarea.form-hover-green:hover + label {
+    color: #00a453;
+    cursor: pointer; }
+
+.form-hover-red-demo,
+.evo-form-hover-red:hover,
+select.form-hover-red:hover,
+input.form-hover-red:hover,
+input[type].form-hover-red:hover,
+textarea.form-hover-red:hover {
+  border-top-color: #eb212e;
+  border-bottom-color: #eb212e;
+  border-left-color: #eb212e;
+  border-right-color: #eb212e;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-red-demo + label,
+  .evo-form-hover-red:hover + label,
+  select.form-hover-red:hover + label,
+  input.form-hover-red:hover + label,
+  input[type].form-hover-red:hover + label,
+  textarea.form-hover-red:hover + label {
+    color: #eb212e;
+    cursor: pointer; }
+
+.form-hover-white-demo,
+.evo-form-hover-white:hover,
+select.form-hover-white:hover,
+input.form-hover-white:hover,
+input[type].form-hover-white:hover,
+textarea.form-hover-white:hover {
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-white-demo + label,
+  .evo-form-hover-white:hover + label,
+  select.form-hover-white:hover + label,
+  input.form-hover-white:hover + label,
+  input[type].form-hover-white:hover + label,
+  textarea.form-hover-white:hover + label {
+    color: white;
+    cursor: pointer; }
+
+.form-hover-black-demo,
+.evo-form-hover-black:hover,
+select.form-hover-black:hover,
+input.form-hover-black:hover,
+input[type].form-hover-black:hover,
+textarea.form-hover-black:hover {
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-black-demo + label,
+  .evo-form-hover-black:hover + label,
+  select.form-hover-black:hover + label,
+  input.form-hover-black:hover + label,
+  input[type].form-hover-black:hover + label,
+  textarea.form-hover-black:hover + label {
+    color: black;
+    cursor: pointer; }
+
+.form-hover-gray-dark-demo,
+.evo-form-hover-gray-dark:hover,
+select.form-hover-gray-dark:hover,
+input.form-hover-gray-dark:hover,
+input[type].form-hover-gray-dark:hover,
+textarea.form-hover-gray-dark:hover {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+  border-left-color: #333333;
+  border-right-color: #333333;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-gray-dark-demo + label,
+  .evo-form-hover-gray-dark:hover + label,
+  select.form-hover-gray-dark:hover + label,
+  input.form-hover-gray-dark:hover + label,
+  input[type].form-hover-gray-dark:hover + label,
+  textarea.form-hover-gray-dark:hover + label {
+    color: #333333;
+    cursor: pointer; }
+
+.form-hover-gray-demo,
+.evo-form-hover-gray:hover,
+select.form-hover-gray:hover,
+input.form-hover-gray:hover,
+input[type].form-hover-gray:hover,
+textarea.form-hover-gray:hover {
+  border-top-color: #7f7f7f;
+  border-bottom-color: #7f7f7f;
+  border-left-color: #7f7f7f;
+  border-right-color: #7f7f7f;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-gray-demo + label,
+  .evo-form-hover-gray:hover + label,
+  select.form-hover-gray:hover + label,
+  input.form-hover-gray:hover + label,
+  input[type].form-hover-gray:hover + label,
+  textarea.form-hover-gray:hover + label {
+    color: #7f7f7f;
+    cursor: pointer; }
+
+.form-hover-gray-light-demo,
+.evo-form-hover-gray-light:hover,
+select.form-hover-gray-light:hover,
+input.form-hover-gray-light:hover,
+input[type].form-hover-gray-light:hover,
+textarea.form-hover-gray-light:hover {
+  border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
+  border-left-color: #cccccc;
+  border-right-color: #cccccc;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-gray-light-demo + label,
+  .evo-form-hover-gray-light:hover + label,
+  select.form-hover-gray-light:hover + label,
+  input.form-hover-gray-light:hover + label,
+  input[type].form-hover-gray-light:hover + label,
+  textarea.form-hover-gray-light:hover + label {
+    color: #cccccc;
+    cursor: pointer; }
 
 .map-no-scroll {
   background: transparent;

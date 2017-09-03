@@ -1,0 +1,114 @@
+///*      F O R M   T Y P E    */
+
+@import "../evo_variables/evo_variables";
+
+
+
+
+/*********************
+    TEXT INPUTS
+*********************/
+
+// Text
+
+// .form-search {
+//   background: #{$form_search_background};
+// }
+
+// .form-icon {
+//   // background-color:      #{$form_background_color};
+//   // background-image:      #{$form_background_search};
+//   background-repeat:     #{$form_background_repeat};
+//   background-attachment: #{$form_background_attachment};
+//   background-size:       #{$form_background_size};
+//   background-position:   #{$form_background_position};
+// }
+
+.form-icon-left {
+  background-position:   #{$form_background_position_left} !important;
+}
+
+.form-search {
+  // background-color:      #{$form_background_color};
+  background-image:      #{$form_background_search};
+  // background-repeat:     #{$form_background_repeat};
+  // background-attachment: #{$form_background_attachment};
+  // background-size:       #{$form_background_size};
+  // background-position:   #{$form_background_position};
+}
+
+.form-email {
+  background-image: #{$form_background_email};
+}
+
+.form-chevron {
+  background-image: #{$form_background_chevron};
+}
+
+
+.form-arrow {
+  background-image: #{$form_background_arrow};
+}
+
+.form-eye {
+  background-image: #{$form_background_eye};
+}
+
+.form-eye-slash {
+  background-image: #{$form_background_eye_slash};
+}
+
+.form-lock {
+  background-image: #{$form_background_lock};
+}
+
+// Select
+
+
+.form-triangle {
+  background-image: #{$form_background_triangle} !important;
+}
+
+.form-chevron-down {
+  background-image: #{$form_background_chevron_down} !important;
+}
+
+
+// BUTTON UPLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+// NEED TO CONNECT TO VARIABLES
+label.button-upload:before,
+a.button-upload:before,
+button.button-upload:before {
+background-image: #{$button_file_upload}; 
+}
+
+// BUTTON DOWNLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+label.button-download:before,
+a.button-download:before,
+button.button-download:before {
+background-image: #{$button_file_upload}; 
+}
+
+
+// /*********************
+//     CUSTOM UPLOAD BUTTON
+// *********************/
+
+// http://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button#21842275
+// Note that the _button_icon.scss file has a condition for the label tag that relates to the custom button available for the custom upload button
+label.evo-button input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+
+label.evo-button :invalid + span {
+    color: inherit;
+    border-color: inherit;
+}
+
+label.evo-button :valid + span {
+    color: #{$evo_color} !important;
+    border-color: #{$evo_color} !important;
+}

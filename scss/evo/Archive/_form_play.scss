@@ -33,9 +33,12 @@ textarea ~ .label-floating  {
 // Ending position
 textarea:focus ~ .label-floating,
 textarea:not(:focus):valid ~ .label-floating {
+  // left: 1.5em;
   top: -.5em;
+  // bottom: 1em;
   color: #{$focus_border_color};
   font-family: inherit;
+  // font-size: .75em; // DISABLED
   opacity: 1;
 }
 
@@ -45,8 +48,6 @@ textarea:not(:focus):valid ~ .label-floating {
 // http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
 
 // Inputs such as text fields
-
-// LABEL FLOATING UP
 
 // Starting position
 input ~ .label-floating  {
@@ -61,30 +62,11 @@ input ~ .label-floating  {
 input:focus ~ .label-floating,
 input:not(:focus):valid ~ .label-floating {
   top: -1.5em;
+  bottom: 1em;
   color: #{$focus_border_color};
   font-family: inherit;
-  opacity: 1;
-}
-
-
-// FLUSH LEFT
-
-// Starting position
-input ~ .label-floating-left  {
-  position: absolute;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  transition: 0.3s ease all;
-}
-
-// Ending position
-input:focus ~ .label-floating-left,
-input:not(:focus):valid ~ .label-floating-left {
-  top: -1.5em;
-  left: 1em;
-  color: #{$focus_border_color};
-  font-family: inherit;
+  left: 1.5em;
+  // font-size: .65em; // DISABLED
   opacity: 1;
   // background-color: #fff;
 }

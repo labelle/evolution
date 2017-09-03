@@ -78,6 +78,69 @@
 .size-wide-0 { width: 0; } // #{$u-11}rem or 0rem
 
 
+// Min wide rem blocks
+
+.size-wide-25-min { min-width: #{$u-41}rem; } // 672px
+.size-wide-24-min { min-width: #{$u-40}rem; } // 544px
+.size-wide-23-min { min-width: #{$u-39}rem; } // 416px
+.size-wide-22-min { min-width: #{$u-38}rem; } // 336px
+.size-wide-21-min { min-width: #{$u-37}rem; } // 256px
+.size-wide-20-min { min-width: #{$u-36}rem; } // 208px
+.size-wide-19-min { min-width: #{$u-35}rem; } // 160px
+.size-wide-18-min { min-width: #{$u-34}rem; } // 128px
+.size-wide-17-min { min-width: #{$u-33}rem; } // 96px
+.size-wide-16-min { min-width: #{$u-32}rem; } // 80px
+.size-wide-15-min { min-width: #{$u-31}rem; } // 60px
+.size-wide-14-min { min-width: #{$u-30}rem; } // 48px
+.size-wide-13-min { min-width: #{$u-29}rem; } // 43px
+.size-wide-12-min { min-width: #{$u-28}rem; } // 37px
+.size-wide-11-min { min-width: #{$u-27}rem; } // 30px
+.size-wide-10-min { min-width: #{$u-26}rem; } // 23px
+.size-wide-9-min { min-width: #{$u-25}rem; } // 21px
+.size-wide-8-min { min-width: #{$u-24}rem; } // 18px
+.size-wide-7-min { min-width: #{$u-23}rem; } // 16px
+.size-wide-6-min { min-width: #{$u-22}rem; } // 14px
+.size-wide-5-min { min-width: #{$u-21}rem; } // 12px
+.size-wide-4-min { min-width: #{$u-20}rem; } // 10px
+.size-wide-3-min { min-width: #{$u-19}rem; } // 8px
+.size-wide-2-min { min-width: #{$u-18}rem; } // 6px
+.size-wide-1-min { min-width: .25rem; } // 4px
+
+.size-wide-none-min,
+.size-wide-0-min { min-width: 0; } // #{$u-11}rem or 0rem
+
+// Max wide rem blocks
+
+.size-wide-25-max { max-width: #{$u-41}rem; } // 672px
+.size-wide-24-max { max-width: #{$u-40}rem; } // 544px
+.size-wide-23-max { max-width: #{$u-39}rem; } // 416px
+.size-wide-22-max { max-width: #{$u-38}rem; } // 336px
+.size-wide-21-max { max-width: #{$u-37}rem; } // 256px
+.size-wide-20-max { max-width: #{$u-36}rem; } // 208px
+.size-wide-19-max { max-width: #{$u-35}rem; } // 160px
+.size-wide-18-max { max-width: #{$u-34}rem; } // 128px
+.size-wide-17-max { max-width: #{$u-33}rem; } // 96px
+.size-wide-16-max { max-width: #{$u-32}rem; } // 80px
+.size-wide-15-max { max-width: #{$u-31}rem; } // 60px
+.size-wide-14-max { max-width: #{$u-30}rem; } // 48px
+.size-wide-13-max { max-width: #{$u-29}rem; } // 43px
+.size-wide-12-max { max-width: #{$u-28}rem; } // 37px
+.size-wide-11-max { max-width: #{$u-27}rem; } // 30px
+.size-wide-10-max { max-width: #{$u-26}rem; } // 23px
+.size-wide-9-max { max-width: #{$u-25}rem; } // 21px
+.size-wide-8-max { max-width: #{$u-24}rem; } // 18px
+.size-wide-7-max { max-width: #{$u-23}rem; } // 16px
+.size-wide-6-max { max-width: #{$u-22}rem; } // 14px
+.size-wide-5-max { max-width: #{$u-21}rem; } // 12px
+.size-wide-4-max { max-width: #{$u-20}rem; } // 10px
+.size-wide-3-max { max-width: #{$u-19}rem; } // 8px
+.size-wide-2-max { max-width: #{$u-18}rem; } // 6px
+.size-wide-1-max { max-width: .25rem; } // 4px
+
+.size-wide-none-max,
+.size-wide-0-max { max-width: 0; } // #{$u-11}rem or 0rem
+
+
 // Tall rem blocks
 
 .size-tall-25 { height: #{$u-41}rem; } // 672px
@@ -108,5 +171,70 @@
 
 .size-tall-none,
 .size-tall-0 { height: 0; } // #{$u-11}rem or 0rem
+
+
+// Min tall rem blocks
+
+.size-tall-25-min { min-height: #{$u-41}rem; } // 672px
+.size-tall-24-min { min-height: #{$u-40}rem; } // 544px
+.size-tall-23-min { min-height: #{$u-39}rem; } // 416px
+.size-tall-22-min { min-height: #{$u-38}rem; } // 336px
+.size-tall-21-min { min-height: #{$u-37}rem; } // 256px
+.size-tall-20-min { min-height: #{$u-36}rem; } // 208px
+.size-tall-19-min { min-height: #{$u-35}rem; } // 160px
+.size-tall-18-min { min-height: #{$u-34}rem; } // 128px
+.size-tall-17-min { min-height: #{$u-33}rem; } // 96px
+.size-tall-16-min { min-height: #{$u-32}rem; } // 80px
+.size-tall-15-min { min-height: #{$u-31}rem; } // 60px
+.size-tall-14-min { min-height: #{$u-30}rem; } // 48px
+.size-tall-13-min { min-height: #{$u-29}rem; } // 43px
+.size-tall-12-min { min-height: #{$u-28}rem; } // 37px
+.size-tall-11-min { min-height: #{$u-27}rem; } // 30px
+.size-tall-10-min { min-height: #{$u-26}rem; } // 23px
+.size-tall-9-min { min-height: #{$u-25}rem; } // 21px
+.size-tall-8-min { min-height: #{$u-24}rem; } // 18px
+.size-tall-7-min { min-height: #{$u-23}rem; } // 16px
+.size-tall-6-min { min-height: #{$u-22}rem; } // 14px
+.size-tall-5-min { min-height: #{$u-21}rem; } // 12px
+.size-tall-4-min { min-height: #{$u-20}rem; } // 10px
+.size-tall-3-min { min-height: #{$u-19}rem; } // 8px
+.size-tall-2-min { min-height: #{$u-18}rem; } // 6px
+.size-tall-1-min { min-height: .25rem; } // 4px
+
+.size-tall-none-min,
+.size-tall-0-min { min-height: 0; } // #{$u-11}rem or 0rem
+
+// Max tall rem blocks
+
+.size-tall-25-max { max-height: #{$u-41}rem; } // 672px
+.size-tall-24-max { max-height: #{$u-40}rem; } // 544px
+.size-tall-23-max { max-height: #{$u-39}rem; } // 416px
+.size-tall-22-max { max-height: #{$u-38}rem; } // 336px
+.size-tall-21-max { max-height: #{$u-37}rem; } // 256px
+.size-tall-20-max { max-height: #{$u-36}rem; } // 208px
+.size-tall-19-max { max-height: #{$u-35}rem; } // 160px
+.size-tall-18-max { max-height: #{$u-34}rem; } // 128px
+.size-tall-17-max { max-height: #{$u-33}rem; } // 96px
+.size-tall-16-max { max-height: #{$u-32}rem; } // 80px
+.size-tall-15-max { max-height: #{$u-31}rem; } // 60px
+.size-tall-14-max { max-height: #{$u-30}rem; } // 48px
+.size-tall-13-max { max-height: #{$u-29}rem; } // 43px
+.size-tall-12-max { max-height: #{$u-28}rem; } // 37px
+.size-tall-11-max { max-height: #{$u-27}rem; } // 30px
+.size-tall-10-max { max-height: #{$u-26}rem; } // 23px
+.size-tall-9-max { max-height: #{$u-25}rem; } // 21px
+.size-tall-8-max { max-height: #{$u-24}rem; } // 18px
+.size-tall-7-max { max-height: #{$u-23}rem; } // 16px
+.size-tall-6-max { max-height: #{$u-22}rem; } // 14px
+.size-tall-5-max { max-height: #{$u-21}rem; } // 12px
+.size-tall-4-max { max-height: #{$u-20}rem; } // 10px
+.size-tall-3-max { max-height: #{$u-19}rem; } // 8px
+.size-tall-2-max { max-height: #{$u-18}rem; } // 6px
+.size-tall-1-max { max-height: .25rem; } // 4px
+
+.size-tall-none-max,
+.size-tall-0-max { max-height: 0; } // #{$u-11}rem or 0rem
+
+
 
 
