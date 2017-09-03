@@ -1,3 +1,46 @@
+///*      F O R M   F O C U S       */
+
+@import "../evo_variables/evo_variables";
+
+// !important is applied to override the hover colors
+
+// Combine with floating labels
+
+// input:focus,
+// input#{$evo}-form:focus { 
+//     // border-width: 2px;
+//     // border-style: solid;
+//     border-top-color: #{$focus_border_color} !important;
+//     border-bottom-color: #{$focus_border_color} !important;
+//     border-left-color: #{$focus_border_color} !important;
+//     border-right-color: #{$focus_border_color} !important;
+//     box-shadow: #{$focus_box_shadow} !important;
+//     transition: #{$focus_transition} !important;
+//     outline: 0 none;
+//         & + label {
+//       color: #{$focus_border_color} !important;
+//       cursor: pointer !important; // "hand" cursor
+//     }
+//   }
+
+// textarea:focus,
+// textarea#{$evo}-form:focus { 
+//     // border-width: 2px;
+//     // border-style: solid;
+//     border-top-color: #{$focus_border_color} !important;
+//     border-bottom-color: #{$focus_border_color} !important;
+//     border-left-color: #{$focus_border_color} !important;
+//     border-right-color: #{$focus_border_color} !important;
+//     box-shadow: #{$focus_box_shadow} !important;
+//     transition: #{$focus_transition} !important;
+//     outline: 0 none;
+//         & + label {
+//       color: #{$focus_border_color} !important;
+//       cursor: pointer !important; // "hand" cursor
+//     }
+//   }
+
+
 // /*********************
 //     FORM FOCUS
 // *********************/
@@ -16,15 +59,15 @@ input.form-focus:focus,
 textarea.form-focus:focus {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$focus_border_color};
-    border-bottom-color: #{$focus_border_color};
-    border-left-color: #{$focus_border_color};
-    border-right-color: #{$focus_border_color};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    border-top-color: #{$focus_border_color} !important;
+    border-bottom-color: #{$focus_border_color} !important;
+    border-left-color: #{$focus_border_color} !important;
+    border-right-color: #{$focus_border_color} !important;
+    box-shadow: #{$focus_box_shadow} !important;
+    transition: #{$focus_transition} !important;
     outline: 0 none;
         & + label {
-      color: #{$focus_border_color};
+      color: #{$focus_border_color} !important;
       cursor: pointer; // "hand" cursor
     }
   }
@@ -39,15 +82,15 @@ input.form-focus-color:focus,
 textarea.form-focus-color:focus {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$evo_color};
-    border-bottom-color: #{$evo_color};
-    border-left-color: #{$evo_color};
-    border-right-color: #{$evo_color};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    border-top-color: #{$evo_color} !important;
+    border-bottom-color: #{$evo_color} !important;
+    border-left-color: #{$evo_color} !important;
+    border-right-color: #{$evo_color} !important;
+    box-shadow: #{$focus_box_shadow} !important;
+    transition: #{$focus_transition} !important;
     outline: 0 none;
         & + label {
-      color: #{$evo_color};
+      color: #{$evo_color} !important;
       cursor: pointer; // "hand" cursor
     }
   }
@@ -59,15 +102,15 @@ textarea.form-focus-color:focus {
 select.form-focus-black:focus,
 input.form-focus-black:focus,
 textarea.form-focus-black:focus {
-    border-top-color: #{$evo_black};
-    border-bottom-color: #{$evo_black};
-    border-left-color: #{$evo_black};
-    border-right-color: #{$evo_black};
+    border-top-color: #{$evo_black} !important;
+    border-bottom-color: #{$evo_black} !important;
+    border-left-color: #{$evo_black} !important;
+    border-right-color: #{$evo_black} !important;
     // border-color: #{$evo_black};
     // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$evo_black};
+      color: #{$evo_black} !important;
       cursor: pointer; // "hand" cursor
     }
 }
@@ -78,15 +121,15 @@ textarea.form-focus-black:focus {
 select.form-focus-gray:focus,
 input.form-focus-gray:focus,
 textarea.form-focus-gray:focus {
-    border-top-color: #{$evo_gray};
-    border-bottom-color: #{$evo_gray};
-    border-left-color: #{$evo_gray};
-    border-right-color: #{$evo_gray};
-    border-color: #{$evo_gray};
+    border-top-color: #{$evo_gray} !important;
+    border-bottom-color: #{$evo_gray} !important;
+    border-left-color: #{$evo_gray} !important;
+    border-right-color: #{$evo_gray} !important;
+    border-color: #{$evo_gray} !important;
     // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$evo_gray};
+      color: #{$evo_gray} !important;
       cursor: pointer; // "hand" cursor
     }
 }
@@ -98,15 +141,15 @@ textarea.form-focus-gray:focus {
 select.form-focus-white:focus,
 input.form-focus-white:focus,
 textarea.form-focus-white:focus {
-    border-top-color: #{$evo_white};
-    border-bottom-color: #{$evo_white};
-    border-left-color: #{$evo_white};
-    border-right-color: #{$evo_white};
-    border-color: #{$evo_white};
+    border-top-color: #{$evo_white} !important;
+    border-bottom-color: #{$evo_white} !important;
+    border-left-color: #{$evo_white} !important;
+    border-right-color: #{$evo_white} !important;
+    border-color: #{$evo_white} !important;
     // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$evo_white};
+      color: #{$evo_white} !important;
       cursor: pointer; // "hand" cursor
     }
 }
@@ -118,15 +161,15 @@ textarea.form-focus-white:focus {
 select.form-focus-blue:focus,
 input.form-focus-blue:focus,
 textarea.form-focus-blue:focus {
-    border-top-color: #{$color_15};
-    border-bottom-color: #{$color_15};
-    border-left-color: #{$color_15};
-    border-right-color: #{$color_15};
-    border-color: #{$color_15};
+    border-top-color: #{$color_15} !important;
+    border-bottom-color: #{$color_15} !important;
+    border-left-color: #{$color_15} !important;
+    border-right-color: #{$color_15} !important;
+    border-color: #{$color_15} !important;
     // box-shadow: 0 1px 1px rgba(0, 115, 185, 0.075) inset, 0 0 8px rgba(0, 115, 185, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$color_15};
+      color: #{$color_15} !important;
       cursor: pointer; // "hand" cursor
     }
 }
@@ -137,15 +180,15 @@ textarea.form-focus-blue:focus {
 select.form-focus-green:focus,
 input.form-focus-green:focus,
 textarea.form-focus-green:focus {
-    border-top-color: #{$color_21};
-    border-bottom-color: #{$color_21};
-    border-left-color: #{$color_21};
-    border-right-color: #{$color_21};
-    border-color: #{$color_21};
+    border-top-color: #{$color_21} !important;
+    border-bottom-color: #{$color_21} !important;
+    border-left-color: #{$color_21} !important;
+    border-right-color: #{$color_21} !important;
+    border-color: #{$color_21} !important;
     // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$color_21};
+      color: #{$color_21} !important;
       cursor: pointer; // "hand" cursor
     }
 }
@@ -156,15 +199,15 @@ textarea.form-focus-green:focus {
 select.form-focus-red:focus,
 input.form-focus-red:focus,
 textarea.form-focus-red:focus {
-    border-top-color: #{$color_5};
-    border-bottom-color: #{$color_5};
-    border-left-color: #{$color_5};
-    border-right-color: #{$color_5};
-    border-color: #{$color_5};
+    border-top-color: #{$color_5} !important;
+    border-bottom-color: #{$color_5} !important;
+    border-left-color: #{$color_5} !important;
+    border-right-color: #{$color_5} !important;
+    border-color: #{$color_5} !important;
     // box-shadow: 0 1px 1px rgba(0, 164, 83, 0.075) inset, 0 0 8px rgba(0, 164, 83, 0.6);
     // outline: 0 none;
         & + label {
-      color: #{$color_5};
+      color: #{$color_5} !important;
       cursor: pointer; // "hand" cursor
     }
 }

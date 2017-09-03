@@ -8,27 +8,7 @@
 // TEXT AREA TRICKS
 // https://css-tricks.com/textarea-tricks/
 
-// Form Focus
-// Change border color on focus
-.form-focus,
-#{$evo}-focus:focus,
-.uneditable-input:focus,
-select:focus,
-input:focus,
-input[type]:focus,
-textarea:focus {
-    border-top-color: #{$focus_border_color};
-    border-bottom-color: #{$focus_border_color};
-    border-left-color: #{$focus_border_color};
-    border-right-color: #{$focus_border_color};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
-    outline: 0 none;
-    & + label {
-      color: #{$focus_border_color};
-      cursor: pointer; // "hand" cursor
-    }
-  }
+
 
 // Makes labels appearance disabled when paired after their form inputs
 // http://stackoverflow.com/questions/19362716/how-to-style-a-html-label-for-disabled-input
@@ -84,19 +64,17 @@ input[type="file"] {
 
 // http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript#13968900
 // Get rid of styling for option, so that custom styling is applied
-select,
-select[disabled],
-select#{$evo}-form,
-#{$evo}-form select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color:      #{$form_background_color};
-  background-image:      #{$form_background_triangle};
-  background-repeat:     #{$form_background_repeat};
-  background-attachment: #{$form_background_attachment};
-  background-size:       #{$form_background_size};
-  background-position:   #{$form_background_position};
-}
+// select#{$evo}-form,
+// #{$evo}-form select {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   background-color:      #{$form_background_color};
+//   background-image:      #{$form_background_triangle};
+//   background-repeat:     #{$form_background_repeat};
+//   background-attachment: #{$form_background_attachment};
+//   background-size:       #{$form_background_size};
+//   background-position:   #{$form_background_position};
+// }
 
 // Can we get rid of the 'input' because it's messing up the checkboxes
 #{$evo}-form,
@@ -118,11 +96,6 @@ input {
   border-radius: #{$form_border_radius};
   width: #{$form_width};
   background-color:      #{$form_background_color};
-  // background-image:      #{$form_background_triangle};
-  background-repeat:     #{$form_background_repeat};
-  background-attachment: #{$form_background_attachment};
-  background-size:       #{$form_background_size};
-  background-position:   #{$form_background_position};
 }
 
 // CAUTION: IE hackery ahead 
@@ -147,14 +120,6 @@ select::-ms-expand {
   padding-right: #{$form_padding_right};
 }
 
-.form-padding-left {
-  // padding
-  padding-top: #{$form_padding_top};
-  padding-bottom: #{$form_padding_bottom};
-  padding-left: #{$form_padding_left_icon};
-  padding-right: #{$form_padding_right};
-}
-
 .form-box {
   // border width
   border-top-width: #{$form_border_top_width};
@@ -171,32 +136,6 @@ select::-ms-expand {
   border-bottom-color: #{$form_border_bottom_color};
   border-left-color: #{$form_border_left_color};
   border-right-color: #{$form_border_right_color};
-}
-
-
-// Combine with floating labels
-
-input#{$evo}-form:focus { 
-    border: inherit inherit #{$focus_border_color} !important;
-    transition:0.5s ease all; 
-    // -moz-transition:0.5s ease all; 
-    // -webkit-transition:0.5s ease all;
-        & + label {
-      color: #{$focus_border_color};
-      cursor: pointer; // "hand" cursor
-    }
-}
-
-
-textarea#{$evo}-form:focus { 
-    border: inherit inherit #{$focus_border_color} !important;
-    transition:0.5s ease all; 
-    // -moz-transition:0.5s ease all; 
-    // -webkit-transition:0.5s ease all;
-        & + label {
-      color: #{$focus_border_color};
-      cursor: pointer; // "hand" cursor
-    }
 }
 
   // select:hover {

@@ -281,6 +281,13 @@ button,
   -webkit-appearance: button;
   cursor: pointer; }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
 button {
   color: inherit;
   background-color: transparent;
@@ -334,7 +341,8 @@ textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: normal;
-  margin: 0; }
+  margin: 0;
+  outline: 0 none; }
 
 optgroup {
   font-weight: bold; }
@@ -15395,30 +15403,6 @@ table.evo-table-inverse {
 .table-lines-thick td {
   border-bottom: thick solid #ccc; }
 
-.form-focus,
-.evo-focus:focus,
-.uneditable-input:focus,
-select:focus,
-input:focus,
-input[type]:focus,
-textarea:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none; }
-  .form-focus + label,
-  .evo-focus:focus + label,
-  .uneditable-input:focus + label,
-  select:focus + label,
-  input:focus + label,
-  input[type]:focus + label,
-  textarea:focus + label {
-    color: black;
-    cursor: pointer; }
-
 .disabled + label,
 .uneditable-input:disabled + label,
 select:disabled + label,
@@ -15456,19 +15440,6 @@ input[type="checkbox"] {
 input[type="file"] {
   line-height: 1em; }
 
-select,
-select[disabled],
-select.evo-form,
-.evo-form select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: none;
-  background-image: url(../image/triangle-down-solid.svg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 1.25em;
-  background-position: 99%; }
-
 .evo-form,
 input[type="text"],
 input[type="password"],
@@ -15485,11 +15456,7 @@ select,
 input {
   border-radius: none;
   width: 100%;
-  background-color: none;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 1.25em;
-  background-position: 99%; }
+  background-color: none; }
 
 select::-ms-expand {
   display: none; }
@@ -15505,12 +15472,6 @@ select::-ms-expand {
   padding-left: 1em;
   padding-right: 1em; }
 
-.form-padding-left {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2.25em;
-  padding-right: 1em; }
-
 .form-box {
   border-top-width: thin;
   border-bottom-width: thin;
@@ -15524,20 +15485,6 @@ select::-ms-expand {
   border-bottom-color: #7f7f7f;
   border-left-color: #7f7f7f;
   border-right-color: #7f7f7f; }
-
-input.evo-form:focus {
-  border: inherit inherit black !important;
-  transition: 0.5s ease all; }
-  input.evo-form:focus + label {
-    color: black;
-    cursor: pointer; }
-
-textarea.evo-form:focus {
-  border: inherit inherit black !important;
-  transition: 0.5s ease all; }
-  textarea.evo-form:focus + label {
-    color: black;
-    cursor: pointer; }
 
 label.form-radio,
 label.form-checkbox {
@@ -15581,11 +15528,36 @@ fieldset.overflow {
   input[type=text] {
     display: block !important; } }
 
+.form-padding-left {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2.25em;
+  padding-right: 1em; }
+
 /*********************
     TEXT INPUTS
 *********************/
+input.form-icon,
+textarea.form-icon,
+select.form-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1.25em;
+  background-position: 98%; }
+
+.form-icon-right-flush {
+  background-position: 100%; }
+
+.form-icon-right {
+  background-position: 98%; }
+
 .form-icon-left {
-  background-position: 1% !important; }
+  background-position: 2%; }
+
+.form-icon-left-flush {
+  background-position: 0%; }
 
 .form-search {
   background-image: url(../image/search-book-gray.svg); }
@@ -15609,10 +15581,10 @@ fieldset.overflow {
   background-image: url(../image/lock-book-gray.svg); }
 
 .form-triangle {
-  background-image: url(../image/triangle-down-solid.svg) !important; }
+  background-image: url(../image/triangle-down-solid.svg); }
 
 .form-chevron-down {
-  background-image: url(../image/chevron-down-book.svg) !important; }
+  background-image: url(../image/chevron-down-book.svg); }
 
 label.button-upload:before,
 a.button-upload:before,
@@ -15622,7 +15594,7 @@ button.button-upload:before {
 label.button-download:before,
 a.button-download:before,
 button.button-download:before {
-  background-image: url(../image/upload-book.svg); }
+  background-image: url(../image/download-book.svg); }
 
 label.evo-button input[type="file"] {
   position: fixed;
@@ -15645,26 +15617,50 @@ label.evo-button :valid + span {
 .form-size-small {
   font-size: 75%; }
 
-.form-icon-large {
-  background-size: 1.25em; }
+.form-icon-size-15 {
+  background-size: 6em !important; }
 
-.form-icon-medium {
-  background-size: 1em; }
+.form-icon-size-14 {
+  background-size: 5em !important; }
 
-.form-icon-small {
-  background-size: .75em; }
+.form-icon-size-13 {
+  background-size: 3.75em !important; }
 
-.form-icon-right-flush {
-  background-position: 100%; }
+.form-icon-size-12 {
+  background-size: 3em !important; }
 
-.form-icon-right {
-  background-position: 96%; }
+.form-icon-size-11 {
+  background-size: 2.6875em !important; }
 
-.form-icon-left {
-  background-position: 6%; }
+.form-icon-size-10 {
+  background-size: 2.3125em !important; }
 
-.form-icon-left-flush {
-  background-position: 0%; }
+.form-icon-size-9 {
+  background-size: 1.875em !important; }
+
+.form-icon-size-8 {
+  background-size: 1.4375em !important; }
+
+.form-icon-size-7 {
+  background-size: 1.3125em !important; }
+
+.form-icon-size-6 {
+  background-size: 1.125em !important; }
+
+.form-icon-size-5 {
+  background-size: 1em !important; }
+
+.form-icon-size-4 {
+  background-size: 0.875em !important; }
+
+.form-icon-size-3 {
+  background-size: 0.75em !important; }
+
+.form-icon-size-2 {
+  background-size: 0.625em !important; }
+
+.form-icon-size-1 {
+  background-size: 0.5em !important; }
 
 .form-padding-thick {
   padding-top: 1.25em;
@@ -15727,222 +15723,208 @@ label.evo-button :valid + span {
   border-width: 0; }
 
 textarea.evo-form-placeholder::placeholder,
-input.evo-form-placeholder::placeholder {
+input.evo-form-placeholder::placeholder,
+textarea.evo-form-placeholder-hover:hover::placeholder,
+input.evo-form-placeholder-hover:hover::placeholder {
   color: black;
   opacity: 0.5; }
 
+textarea.evo-form-placeholder-focus:focus::placeholder,
+input.evo-form-placeholder-focus:focus::placeholder {
+  color: black !important;
+  opacity: 0.5 !important; }
+
 textarea.evo-form-placeholder-inverse::placeholder,
-input.evo-form-placeholder-inverse::placeholder {
+input.evo-form-placeholder-inverse::placeholder,
+textarea.evo-form-placeholder-hover-inverse:hover::placeholder,
+input.evo-form-placeholder-hover-inverse:hover::placeholder {
   color: white;
   opacity: 0.5; }
 
+textarea.evo-form-placeholder-focus-inverse:focus::placeholder,
+input.evo-form-placeholder-focus-inverse:focus::placeholder {
+  color: white !important;
+  opacity: 0.5 !important; }
+
 textarea.form-placeholder-color::placeholder,
-input.form-placeholder-color::placeholder {
-  color: #0073b9;
-  opacity: .5; }
+input.form-placeholder-color::placeholder,
+textarea.form-placeholder-color-hover:hover::placeholder,
+input.form-placeholder-color-hover:hover::placeholder {
+  color: #0073b9; }
+
+textarea.form-placeholder-color-focus:focus::placeholder,
+input.form-placeholder-color-focus:focus::placeholder {
+  color: #0073b9 !important; }
+
+textarea.form-placeholder-blue::placeholder,
+input.form-placeholder-blue::placeholder,
+textarea.form-placeholder-blue-hover:hover::placeholder,
+input.form-placeholder-blue-hover:hover::placeholder {
+  color: #0073b9; }
+
+textarea.form-placeholder-blue-focus:focus::placeholder,
+input.form-placeholder-blue-focus:focus::placeholder {
+  color: #0073b9 !important; }
+
+textarea.form-placeholder-green::placeholder,
+input.form-placeholder-green::placeholder,
+textarea.form-placeholder-green-hover:hover::placeholder,
+input.form-placeholder-green-hover:hover::placeholder {
+  color: #00a453; }
+
+textarea.form-placeholder-green-focus:focus::placeholder,
+input.form-placeholder-green-focus:focus::placeholder {
+  color: #00a453 !important; }
+
+textarea.form-placeholder-red::placeholder,
+input.form-placeholder-red::placeholder,
+textarea.form-placeholder-red-hover:hover::placeholder,
+input.form-placeholder-red-hover:hover::placeholder {
+  color: #eb212e; }
+
+textarea.form-placeholder-red-focus:focus::placeholder,
+input.form-placeholder-red-focus:focus::placeholder {
+  color: #eb212e !important; }
 
 textarea.form-placeholder-white::placeholder,
-input.form-placeholder-white::placeholder {
+input.form-placeholder-white::placeholder,
+textarea.form-placeholder-white-hover:hover::placeholder,
+input.form-placeholder-white-hover:hover::placeholder {
   color: white; }
 
+textarea.form-placeholder-white-focus:focus::placeholder,
+input.form-placeholder-white-focus:focus::placeholder {
+  color: white !important; }
+
 textarea.form-placeholder-black::placeholder,
-input.form-placeholder-black::placeholder {
+input.form-placeholder-black::placeholder,
+textarea.form-placeholder-black-hover:hover::placeholder,
+input.form-placeholder-black-hover:hover::placeholder {
   color: black; }
 
+textarea.form-placeholder-black-focus:focus::placeholder,
+input.form-placeholder-black-focus:focus::placeholder {
+  color: black !important; }
+
 textarea.form-placeholder-gray-dark::placeholder,
-input.form-placeholder-gray-dark::placeholder {
+input.form-placeholder-gray-dark::placeholder,
+textarea.form-placeholder-gray-dark-hover:hover::placeholder,
+input.form-placeholder-gray-dark-hover:hover::placeholder {
   color: #333333; }
 
+textarea.form-placeholder-gray-dark-focus:focus::placeholder,
+input.form-placeholder-gray-dark-focus:focus::placeholder {
+  color: #333333 !important; }
+
 textarea.form-placeholder-gray::placeholder,
-input.form-placeholder-gray::placeholder {
+input.form-placeholder-gray::placeholder,
+textarea.form-placeholder-gray-hover:hover::placeholder,
+input.form-placeholder-gray-hover:hover::placeholder {
   color: #7f7f7f; }
 
+textarea.form-placeholder-gray-focus:focus::placeholder,
+input.form-placeholder-gray-focus:focus::placeholder {
+  color: #7f7f7f !important; }
+
 textarea.form-placeholder-gray-light::placeholder,
-input.form-placeholder-gray-light::placeholder {
+input.form-placeholder-gray-light::placeholder,
+textarea.form-placeholder-gray-light-hover:hover::placeholder,
+input.form-placeholder-gray-light-hover:hover::placeholder {
   color: #cccccc; }
 
+textarea.form-placeholder-gray-light-focus:focus::placeholder,
+input.form-placeholder-gray-light-focus:focus::placeholder {
+  color: #cccccc !important; }
+
 textarea.form-placeholder-opacity-9::placeholder,
-input.form-placeholder-opacity-9::placeholder {
+input.form-placeholder-opacity-9::placeholder,
+textarea.form-placeholder-opacity-9-hover:hover::placeholder,
+input.form-placeholder-opacity-9-hover:hover::placeholder {
   opacity: .9; }
 
+textarea.form-placeholder-opacity-9-focus:focus::placeholder,
+input.form-placeholder-opacity-9-focus:focus::placeholder {
+  opacity: .9 !important; }
+
 textarea.form-placeholder-opacity-8::placeholder,
-input.form-placeholder-opacity-8::placeholder {
+input.form-placeholder-opacity-8::placeholder,
+textarea.form-placeholder-opacity-8-hover:hover::placeholder,
+input.form-placeholder-opacity-8-hover:hover::placeholder {
   opacity: .8; }
 
+textarea.form-placeholder-opacity-8-hover:focus::placeholder,
+input.form-placeholder-opacity-8-hover:focus::placeholder {
+  opacity: .8 !important; }
+
 textarea.form-placeholder-opacity-7::placeholder,
-input.form-placeholder-opacity-7::placeholder {
+input.form-placeholder-opacity-7::placeholder,
+textarea.form-placeholder-opacity-7-hover:hover::placeholder,
+input.form-placeholder-opacity-7-hover:hover::placeholder {
   opacity: .7; }
 
+textarea.form-placeholder-opacity-7-hover:focus::placeholder,
+input.form-placeholder-opacity-7-hover:focus::placeholder {
+  opacity: .7 !important; }
+
 textarea.form-placeholder-opacity-6::placeholder,
-input.form-placeholder-opacity-6::placeholder {
+input.form-placeholder-opacity-6::placeholder,
+textarea.form-placeholder-opacity-6-hover:hover::placeholder,
+input.form-placeholder-opacity-6-hover:hover::placeholder {
   opacity: .6; }
 
+textarea.form-placeholder-opacity-6-hover:focus::placeholder,
+input.form-placeholder-opacity-6-hover:focus::placeholder {
+  opacity: .6 !important; }
+
 textarea.form-placeholder-opacity-5::placeholder,
-input.form-placeholder-opacity-5::placeholder {
+input.form-placeholder-opacity-5::placeholder,
+textarea.form-placeholder-opacity-5-hover:hover::placeholder,
+input.form-placeholder-opacity-5-hover:hover::placeholder {
   opacity: .5; }
 
+textarea.form-placeholder-opacity-5-focus:focus::placeholder,
+input.form-placeholder-opacity-5-focus:focus::placeholder {
+  opacity: .5 !important; }
+
 textarea.form-placeholder-opacity-4::placeholder,
-input.form-placeholder-opacity-4::placeholder {
+input.form-placeholder-opacity-4::placeholder,
+textarea.form-placeholder-opacity-4-hover:hover::placeholder,
+input.form-placeholder-opacity-4-hover:hover::placeholder {
   opacity: .4; }
 
+textarea.form-placeholder-opacity-4-focus:focus::placeholder,
+input.form-placeholder-opacity-4-focus:focus::placeholder {
+  opacity: .4 !important; }
+
 textarea.form-placeholder-opacity-3::placeholder,
-input.form-placeholder-opacity-3::placeholder {
+input.form-placeholder-opacity-3::placeholder,
+textarea.form-placeholder-opacity-3-hover:hover::placeholder,
+input.form-placeholder-opacity-3-hover:hover::placeholder {
   opacity: .3; }
 
+textarea.form-placeholder-opacity-3-focus:focus::placeholder,
+input.form-placeholder-opacity-3-focus:focus::placeholder {
+  opacity: .3 !important; }
+
 textarea.form-placeholder-opacity-2::placeholder,
-input.form-placeholder-opacity-2::placeholder {
+input.form-placeholder-opacity-2::placeholder,
+textarea.form-placeholder-opacity-2-hover:hover::placeholder,
+input.form-placeholder-opacity-2-hover:hover::placeholder {
   opacity: .2; }
 
+textarea.form-placeholder-opacity-2-focus:focus::placeholder,
+input.form-placeholder-opacity-2-focus:focus::placeholder {
+  opacity: .2 !important; }
+
 textarea.form-placeholder-opacity-1::placeholder,
-input.form-placeholder-opacity-1::placeholder {
+input.form-placeholder-opacity-1::placeholder,
+textarea.form-placeholder-opacity-1-hover:hover::placeholder,
+input.form-placeholder-opacity-1-hover:hover::placeholder {
   opacity: .1; }
 
-.form-focus-demo,
-.evo-form-focus:focus,
-select.form-focus:focus,
-input.form-focus:focus,
-textarea.form-focus:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none; }
-  .form-focus-demo + label,
-  .evo-form-focus:focus + label,
-  select.form-focus:focus + label,
-  input.form-focus:focus + label,
-  textarea.form-focus:focus + label {
-    color: black;
-    cursor: pointer; }
-
-.form-focus-color-demo,
-.evo-form-focus-color:focus,
-select.form-focus-color:focus,
-input.form-focus-color:focus,
-textarea.form-focus-color:focus {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
-  box-shadow: none;
-  transition: 0.5s ease all;
-  outline: 0 none; }
-  .form-focus-color-demo + label,
-  .evo-form-focus-color:focus + label,
-  select.form-focus-color:focus + label,
-  input.form-focus-color:focus + label,
-  textarea.form-focus-color:focus + label {
-    color: #0073b9;
-    cursor: pointer; }
-
-.form-focus-black-demo,
-.evo-form-focus-black:focus,
-select.form-focus-black:focus,
-input.form-focus-black:focus,
-textarea.form-focus-black:focus {
-  border-top-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-right-color: black; }
-  .form-focus-black-demo + label,
-  .evo-form-focus-black:focus + label,
-  select.form-focus-black:focus + label,
-  input.form-focus-black:focus + label,
-  textarea.form-focus-black:focus + label {
-    color: black;
-    cursor: pointer; }
-
-.form-focus-gray-demo,
-.evo-form-focus-gray:focus,
-select.form-focus-gray:focus,
-input.form-focus-gray:focus,
-textarea.form-focus-gray:focus {
-  border-top-color: #7f7f7f;
-  border-bottom-color: #7f7f7f;
-  border-left-color: #7f7f7f;
-  border-right-color: #7f7f7f;
-  border-color: #7f7f7f; }
-  .form-focus-gray-demo + label,
-  .evo-form-focus-gray:focus + label,
-  select.form-focus-gray:focus + label,
-  input.form-focus-gray:focus + label,
-  textarea.form-focus-gray:focus + label {
-    color: #7f7f7f;
-    cursor: pointer; }
-
-.form-focus-white-demo,
-.evo-form-focus-white:focus,
-select.form-focus-white:focus,
-input.form-focus-white:focus,
-textarea.form-focus-white:focus {
-  border-top-color: white;
-  border-bottom-color: white;
-  border-left-color: white;
-  border-right-color: white;
-  border-color: white; }
-  .form-focus-white-demo + label,
-  .evo-form-focus-white:focus + label,
-  select.form-focus-white:focus + label,
-  input.form-focus-white:focus + label,
-  textarea.form-focus-white:focus + label {
-    color: white;
-    cursor: pointer; }
-
-.form-focus-blue-demo,
-.evo-form-focus-blue:focus,
-select.form-focus-blue:focus,
-input.form-focus-blue:focus,
-textarea.form-focus-blue:focus {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
-  border-color: #0073b9; }
-  .form-focus-blue-demo + label,
-  .evo-form-focus-blue:focus + label,
-  select.form-focus-blue:focus + label,
-  input.form-focus-blue:focus + label,
-  textarea.form-focus-blue:focus + label {
-    color: #0073b9;
-    cursor: pointer; }
-
-.form-focus-green-demo,
-.evo-form-focus-green:focus,
-select.form-focus-green:focus,
-input.form-focus-green:focus,
-textarea.form-focus-green:focus {
-  border-top-color: #00a453;
-  border-bottom-color: #00a453;
-  border-left-color: #00a453;
-  border-right-color: #00a453;
-  border-color: #00a453; }
-  .form-focus-green-demo + label,
-  .evo-form-focus-green:focus + label,
-  select.form-focus-green:focus + label,
-  input.form-focus-green:focus + label,
-  textarea.form-focus-green:focus + label {
-    color: #00a453;
-    cursor: pointer; }
-
-.form-focus-red-demo,
-.evo-form-focus-red:focus,
-select.form-focus-red:focus,
-input.form-focus-red:focus,
-textarea.form-focus-red:focus {
-  border-top-color: #eb212e;
-  border-bottom-color: #eb212e;
-  border-left-color: #eb212e;
-  border-right-color: #eb212e;
-  border-color: #eb212e; }
-  .form-focus-red-demo + label,
-  .evo-form-focus-red:focus + label,
-  select.form-focus-red:focus + label,
-  input.form-focus-red:focus + label,
-  textarea.form-focus-red:focus + label {
-    color: #eb212e;
-    cursor: pointer; }
+textarea.form-placeholder-opacity-1-focus:focus::placeholder,
+input.form-placeholder-opacity-1-focus:focus::placeholder {
+  opacity: .1 !important; }
 
 .form-hover-demo,
 .evo-form-hover:hover,
@@ -16163,6 +16145,196 @@ textarea.form-hover-gray-light:hover {
   textarea.form-hover-gray-light:hover + label {
     color: #cccccc;
     cursor: pointer; }
+
+.form-focus-demo,
+.evo-form-focus:focus,
+select.form-focus:focus,
+input.form-focus:focus,
+textarea.form-focus:focus {
+  border-top-color: #0073b9 !important;
+  border-bottom-color: #0073b9 !important;
+  border-left-color: #0073b9 !important;
+  border-right-color: #0073b9 !important;
+  box-shadow: none !important;
+  transition: 0.5s ease all !important;
+  outline: 0 none; }
+  .form-focus-demo + label,
+  .evo-form-focus:focus + label,
+  select.form-focus:focus + label,
+  input.form-focus:focus + label,
+  textarea.form-focus:focus + label {
+    color: #0073b9 !important;
+    cursor: pointer; }
+
+.form-focus-color-demo,
+.evo-form-focus-color:focus,
+select.form-focus-color:focus,
+input.form-focus-color:focus,
+textarea.form-focus-color:focus {
+  border-top-color: #0073b9 !important;
+  border-bottom-color: #0073b9 !important;
+  border-left-color: #0073b9 !important;
+  border-right-color: #0073b9 !important;
+  box-shadow: none !important;
+  transition: 0.5s ease all !important;
+  outline: 0 none; }
+  .form-focus-color-demo + label,
+  .evo-form-focus-color:focus + label,
+  select.form-focus-color:focus + label,
+  input.form-focus-color:focus + label,
+  textarea.form-focus-color:focus + label {
+    color: #0073b9 !important;
+    cursor: pointer; }
+
+.form-focus-black-demo,
+.evo-form-focus-black:focus,
+select.form-focus-black:focus,
+input.form-focus-black:focus,
+textarea.form-focus-black:focus {
+  border-top-color: black !important;
+  border-bottom-color: black !important;
+  border-left-color: black !important;
+  border-right-color: black !important; }
+  .form-focus-black-demo + label,
+  .evo-form-focus-black:focus + label,
+  select.form-focus-black:focus + label,
+  input.form-focus-black:focus + label,
+  textarea.form-focus-black:focus + label {
+    color: black !important;
+    cursor: pointer; }
+
+.form-focus-gray-demo,
+.evo-form-focus-gray:focus,
+select.form-focus-gray:focus,
+input.form-focus-gray:focus,
+textarea.form-focus-gray:focus {
+  border-top-color: #7f7f7f !important;
+  border-bottom-color: #7f7f7f !important;
+  border-left-color: #7f7f7f !important;
+  border-right-color: #7f7f7f !important;
+  border-color: #7f7f7f !important; }
+  .form-focus-gray-demo + label,
+  .evo-form-focus-gray:focus + label,
+  select.form-focus-gray:focus + label,
+  input.form-focus-gray:focus + label,
+  textarea.form-focus-gray:focus + label {
+    color: #7f7f7f !important;
+    cursor: pointer; }
+
+.form-focus-white-demo,
+.evo-form-focus-white:focus,
+select.form-focus-white:focus,
+input.form-focus-white:focus,
+textarea.form-focus-white:focus {
+  border-top-color: white !important;
+  border-bottom-color: white !important;
+  border-left-color: white !important;
+  border-right-color: white !important;
+  border-color: white !important; }
+  .form-focus-white-demo + label,
+  .evo-form-focus-white:focus + label,
+  select.form-focus-white:focus + label,
+  input.form-focus-white:focus + label,
+  textarea.form-focus-white:focus + label {
+    color: white !important;
+    cursor: pointer; }
+
+.form-focus-blue-demo,
+.evo-form-focus-blue:focus,
+select.form-focus-blue:focus,
+input.form-focus-blue:focus,
+textarea.form-focus-blue:focus {
+  border-top-color: #0073b9 !important;
+  border-bottom-color: #0073b9 !important;
+  border-left-color: #0073b9 !important;
+  border-right-color: #0073b9 !important;
+  border-color: #0073b9 !important; }
+  .form-focus-blue-demo + label,
+  .evo-form-focus-blue:focus + label,
+  select.form-focus-blue:focus + label,
+  input.form-focus-blue:focus + label,
+  textarea.form-focus-blue:focus + label {
+    color: #0073b9 !important;
+    cursor: pointer; }
+
+.form-focus-green-demo,
+.evo-form-focus-green:focus,
+select.form-focus-green:focus,
+input.form-focus-green:focus,
+textarea.form-focus-green:focus {
+  border-top-color: #00a453 !important;
+  border-bottom-color: #00a453 !important;
+  border-left-color: #00a453 !important;
+  border-right-color: #00a453 !important;
+  border-color: #00a453 !important; }
+  .form-focus-green-demo + label,
+  .evo-form-focus-green:focus + label,
+  select.form-focus-green:focus + label,
+  input.form-focus-green:focus + label,
+  textarea.form-focus-green:focus + label {
+    color: #00a453 !important;
+    cursor: pointer; }
+
+.form-focus-red-demo,
+.evo-form-focus-red:focus,
+select.form-focus-red:focus,
+input.form-focus-red:focus,
+textarea.form-focus-red:focus {
+  border-top-color: #eb212e !important;
+  border-bottom-color: #eb212e !important;
+  border-left-color: #eb212e !important;
+  border-right-color: #eb212e !important;
+  border-color: #eb212e !important; }
+  .form-focus-red-demo + label,
+  .evo-form-focus-red:focus + label,
+  select.form-focus-red:focus + label,
+  input.form-focus-red:focus + label,
+  textarea.form-focus-red:focus + label {
+    color: #eb212e !important;
+    cursor: pointer; }
+
+textarea ~ .label-floating {
+  position: absolute;
+  pointer-events: none;
+  left: 1em;
+  top: 1em;
+  transition: 0.3s ease all; }
+
+textarea:focus ~ .label-floating,
+textarea:not(:focus):valid ~ .label-floating {
+  top: -.5em;
+  color: #0073b9;
+  font-family: inherit;
+  opacity: 1; }
+
+input ~ .label-floating {
+  position: absolute;
+  pointer-events: none;
+  left: 1em;
+  top: 0;
+  transition: 0.3s ease all; }
+
+input:focus ~ .label-floating,
+input:not(:focus):valid ~ .label-floating {
+  top: -1.5em;
+  color: #0073b9;
+  font-family: inherit;
+  opacity: 1; }
+
+input ~ .label-floating-left {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease all; }
+
+input:focus ~ .label-floating-left,
+input:not(:focus):valid ~ .label-floating-left {
+  top: -1.5em;
+  left: 1em;
+  color: #0073b9;
+  font-family: inherit;
+  opacity: 1; }
 
 .map-no-scroll {
   background: transparent;

@@ -508,8 +508,13 @@ $legend_padding_left:               none;
 $legend_padding_right:              1em;
 $legend_display:                    block;
 
+// Form Hover
+$hover_border_color:                #{$evo_black}; // #{$evo_color} or rgba(26, 154, 214, .8)
+$hover_transition:                  0.5s ease all; 
+$hover_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
+
 // Form Focus
-$focus_border_color:                #{$evo_black}; // #{$evo_color} or rgba(26, 154, 214, .8)
+$focus_border_color:                #{$evo_color}; // #{$evo_color} or rgba(26, 154, 214, .8)
 $focus_transition:                  0.5s ease all; 
 $focus_box_shadow:                  none; // 0 1px 1px rgba(26, 154, 214, 0.075) inset, 0 0 8px rgba(26, 154, 214, 0.6);
 
@@ -546,7 +551,7 @@ $form_background_eye_slash:            url(../image/eye-slash-book-gray.svg);
 $form_background_lock:                 url(../image/lock-book-gray.svg);
 
 $button_file_upload:                   url(../image/upload-book.svg);
-
+$button_file_download:                 url(../image/download-book.svg);
 
 $icon_twitter:                         url(../image/twitter.svg);
 $icon_twitter_white:                   url(../image/twitter-white.svg);
@@ -557,12 +562,11 @@ $icon_twitter_gray :                   url(../image/twitter-gray.svg);
 $form_background_repeat:            no-repeat;
 $form_background_attachment:        scroll;
 
-
 // FORM
 // Background controls
 $form_background_size:              1.25em;
-$form_background_position:          99%; // or 100%
-$form_background_position_left:     1%; // or 0
+$form_background_position:          98%; // or 100%
+$form_background_position_left:     2%; // or 0
 // Form Input
 $form_font_size:                    1em;
 $form_border_radius:                none; // or 5px

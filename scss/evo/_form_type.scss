@@ -3,6 +3,14 @@
 @import "../evo_variables/evo_variables";
 
 
+.form-padding-left {
+  // padding
+  padding-top: #{$form_padding_top};
+  padding-bottom: #{$form_padding_bottom};
+  padding-left: #{$form_padding_left_icon};
+  padding-right: #{$form_padding_right};
+}
+
 
 
 /*********************
@@ -15,6 +23,20 @@
 //   background: #{$form_search_background};
 // }
 
+// TODO Can we get rid of the 'input' because it's messing up the checkboxes
+// http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript#13968900
+// Get rid of styling for option, so that custom styling is applied
+input.form-icon,
+textarea.form-icon,
+select.form-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
+}
+
 // .form-icon {
 //   // background-color:      #{$form_background_color};
 //   // background-image:      #{$form_background_search};
@@ -24,9 +46,29 @@
 //   background-position:   #{$form_background_position};
 // }
 
-.form-icon-left {
-  background-position:   #{$form_background_position_left} !important;
+
+// Form icon alignment
+
+// Flush right
+.form-icon-right-flush {
+     background-position: 100%;
 }
+
+// Align right
+.form-icon-right {
+     background-position: 98%;
+}
+
+// Align left
+.form-icon-left {
+     background-position: 2%;
+}
+
+// Flush left
+.form-icon-left-flush{
+     background-position: 0%;
+}
+
 
 .form-search {
   // background-color:      #{$form_background_color};
@@ -66,11 +108,11 @@
 
 
 .form-triangle {
-  background-image: #{$form_background_triangle} !important;
+  background-image: #{$form_background_triangle};
 }
 
 .form-chevron-down {
-  background-image: #{$form_background_chevron_down} !important;
+  background-image: #{$form_background_chevron_down};
 }
 
 
@@ -88,7 +130,7 @@ background-image: #{$button_file_upload};
 label.button-download:before,
 a.button-download:before,
 button.button-download:before {
-background-image: #{$button_file_upload}; 
+background-image: #{$button_file_download}; 
 }
 
 

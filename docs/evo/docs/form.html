@@ -271,7 +271,7 @@
 <div class="evo-space"></div>
 
 <label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Choose one</label>
-<select id="select" class="evo-form form-padding form-box">
+<select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle">
   <option value="option1">option 1</option>
   <option value="option2" selected>option 2</option>
   <option value="option3">option 3</option>
@@ -286,7 +286,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form form-padding form-box" /&gt;
+&lt;select id="select" class="evo-form form-padding form-box form-icon form-icon-size-3 form-triangle" /&gt;
 &lt;option value="option1"&gt;option 1&lt;/option&gt;
 &lt;option value="option2" selected&gt;option 2&lt;/option&gt;
 &lt;option value="option3"&gt;option 3&lt;/option&gt;
@@ -299,25 +299,25 @@
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">For a styled select, create an <code>&lt;select&gt;</code> tag with nested <code>&lt;option&gt;</code> and/or <code>&lt;optgroup&gt;</code> tags. Default select styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">For a styled select, create an <code>&lt;select&gt;</code> tag with nested <code>&lt;option&gt;</code> and/or <code>&lt;optgroup&gt;</code> tags. Apply a desired icon by combining <code>form-icon</code>, <code>form-icon-small</code>, and <code>form-triangle</code> classes. Default select styles are set in _evo_variables.scss.</p>
 
 <div class="evo-space"></div>
 
-<select id="select" class="evo-form form-padding form-box form-chevron-down">
+<select id="select" class="evo-form form-padding form-box form-icon form-chevron-down">
 <option value="option1">option 1</option>
 </select>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;select id="select" class="evo-form form-padding form-box form-chevron-down" /&gt;
+<code class="evo-measure">&lt;select id="select" class="evo-form form-padding form-box form-icon form-chevron-down" /&gt;
 &lt;option value="option1"&gt;option 1&lt;/option&gt;
 &lt;/select&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Add the <code>form-chevron-down</code> tag to change the default icon. Default styles are set in _evo_variables.scss. </p>
+<p class="evo-measure">Add the <code>form-chevron-down</code> tag for an alternative icon. Default styles are set in _evo_variables.scss. </p>
 
 <div class="evo-space-20"></div>
 
@@ -387,23 +387,23 @@
 
 <div class="evo-space-17"></div>
 
-<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-chevron" />
+<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-chevron" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-chevron" /&gt;
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-chevron" /&gt;
 </code>
 </pre>
 
 <div class="evo-space-17"></div>
 
-<input type="url" name="url" placeholder="URL Input" class="evo-form form-padding evo-box box-0 gray-5-bg form-arrow" />
+<input type="url" name="url" placeholder="URL Input" class="evo-form form-padding evo-box box-0 gray-5-bg form-icon form-arrow" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="url" name="url" placeholder="URL Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-arrow" /&gt;
+<code class="evo-measure">&lt;input type="url" name="url" placeholder="URL Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-arrow" /&gt;
 </code>
 </pre>
 
@@ -463,7 +463,7 @@
 
 <div class="evo-position">
  <input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-box-thick margin-bottom-3 form-none" />
- <input type="submit" class="position-right z-2  ghost-to-ghost-color button-box-none box-0 box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" />
+ <input type="submit" class="position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" />
  </div>
 
 <div class="evo-space-10"></div>
@@ -483,7 +483,7 @@
 <div class="evo-space-17"></div>
 
 <div class="evo-position">
-<input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-chevron" />
+<input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-chevron" />
  <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
  </div>
 
@@ -491,7 +491,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-chevron" /&gt;
+&lt;input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-chevron" /&gt;
 &lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
 &lt;/div&gt;</code>
 </pre>
@@ -506,7 +506,7 @@
 
 
 <div class="evo-position">
-  <input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-search" />
+  <input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-search" />
 </div>
  <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search">Enter your search term.</label>
 
@@ -514,7 +514,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-search" /&gt;
+&lt;input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-search" /&gt;
 &lt;/div&gt;
 &lt;label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search"&gt;Enter your search term.&lt;/label&gt;</code>
 </pre>
@@ -529,7 +529,7 @@
 
 
 <div class="evo-position">
-<input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-arrow" />
+<input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-arrow" />
  <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
  </div>
 
@@ -537,7 +537,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-arrow" /&gt;
+&lt;input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-arrow" /&gt;
 &lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
 &lt;/div&gt;</code>
 </pre>

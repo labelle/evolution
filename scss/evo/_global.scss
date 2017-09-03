@@ -432,6 +432,16 @@ button,
   cursor: pointer
 }
 
+// https://stackoverflow.com/questions/3975769/disable-webkits-spin-buttons-on-input-type-number
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+// margin: 0;
+}
+input[type=number] {
+-moz-appearance:textfield;
+}
+
 button {
   color: inherit;
   background-color: transparent;
@@ -512,6 +522,7 @@ textarea {
   font-size: 100%;
   line-height: normal; // line-height: 1.15;
   margin: 0;
+  outline: 0 none;
 }
 
 optgroup {

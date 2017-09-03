@@ -27,45 +27,52 @@
 }
 
 
+// Form icon size
+.form-icon-size-15 { background-size: #{$u-33}em !important; } // floor(6.1)
+.form-icon-size-14 { background-size: #{$u-32}em !important; } // ceil(4.935)
+.form-icon-size-13 { background-size: #{$u-31}em !important; } // 3.75
+.form-icon-size-12 { background-size: #{$u-30}em !important; } // floor(3.05)
+.form-icon-size-11 { background-size: #{$u-29}em !important; } // 2.6875
+.form-icon-size-10 { background-size: #{$u-28}em !important; } // 2.3125
+.form-icon-size-9 { background-size: #{$u-27}em !important; } // 1.875
+.form-icon-size-8 { background-size: #{$u-26}em !important; } // 1.4375
+.form-icon-size-7 { background-size: #{$u-25}em !important; } // 1.3125
+.form-icon-size-6 { background-size: #{$u-24}em !important; } // 1.125
+.form-icon-size-5 { background-size: #{$u-23}em !important; } // floor(1.02)
+.form-icon-size-4 { background-size: #{$u-22}em !important; } // .875
+.form-icon-size-3 { background-size: #{$u-21}em !important; } // .75
+.form-icon-size-2 { background-size: #{$u-20}em !important; } // .625
+.form-icon-size-1 { background-size: #{$u-19}em !important; } // .5
 
+// // Form icon large
+// .form-icon-size-6 {
+//      background-size: 2em !important;
+// }
 
-// Form icon large
-.form-icon-large {
-     background-size: 1.25em;
-}
+// // Form icon large
+// .form-icon-size-5 {
+//      background-size: 1.75em !important;
+// }
 
-// Form icon normal
-.form-icon-medium {
-     background-size: 1em;
-}
+// // Form icon normal
+// .form-icon-size-4 {
+//      background-size: 1.25em !important;
+// }
 
-// Form icon small
-.form-icon-small {
-     background-size: .75em;
-}
+// // Form icon small
+// .form-icon-size-3 {
+//      background-size: 1em !important;
+// }
 
+// // Form icon small
+// .form-icon--size-2 {
+//      background-size: .75em !important;
+// }
 
-// Form icon alignment
-
-// Flush right
-.form-icon-right-flush {
-     background-position: 100%;
-}
-
-// Align right
-.form-icon-right {
-     background-position: 96%;
-}
-
-// Align left
-.form-icon-left {
-     background-position: 6%;
-}
-
-// Flush left
-.form-icon-left-flush{
-     background-position: 0%;
-}
+// // Form icon small
+// .form-icon-size-1 {
+//      background-size: .5em !important;
+// }
 
 
 // Padding

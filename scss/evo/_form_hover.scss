@@ -24,15 +24,15 @@ input[type].form-hover:hover,
 textarea.form-hover:hover {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$focus_border_color};
-    border-bottom-color: #{$focus_border_color};
-    border-left-color: #{$focus_border_color};
-    border-right-color: #{$focus_border_color};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    border-top-color: #{$hover_border_color};
+    border-bottom-color: #{$hover_border_color};
+    border-left-color: #{$hover_border_color};
+    border-right-color: #{$hover_border_color};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
-      color: #{$focus_border_color};
+      color: #{$hover_border_color};
       cursor: pointer; // "hand" cursor
     }
   }
@@ -50,8 +50,8 @@ textarea.form-hover-color:hover {
     border-bottom-color: #{$evo_color};
     border-left-color: #{$evo_color};
     border-right-color: #{$evo_color};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_color};
@@ -71,8 +71,8 @@ textarea.form-hover-blue:hover {
     border-bottom-color: #{$color_15};
     border-left-color: #{$color_15};
     border-right-color: #{$color_15};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$color_15};
@@ -92,8 +92,8 @@ textarea.form-hover-green:hover {
     border-bottom-color: #{$color_21};
     border-left-color: #{$color_21};
     border-right-color: #{$color_21};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$color_21};
@@ -114,8 +114,8 @@ textarea.form-hover-red:hover {
     border-bottom-color: #{$color_5};
     border-left-color: #{$color_5};
     border-right-color: #{$color_5};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$color_5};
@@ -135,8 +135,8 @@ textarea.form-hover-white:hover {
     border-bottom-color: #{$evo_white};
     border-left-color: #{$evo_white};
     border-right-color: #{$evo_white};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_white};
@@ -156,8 +156,8 @@ textarea.form-hover-black:hover {
     border-bottom-color: #{$evo_black};
     border-left-color: #{$evo_black};
     border-right-color: #{$evo_black};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_black};
@@ -178,8 +178,8 @@ textarea.form-hover-gray-dark:hover {
     border-bottom-color: #{$evo_gray_dark};
     border-left-color: #{$evo_gray_dark};
     border-right-color: #{$evo_gray_dark};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_gray_dark};
@@ -199,8 +199,8 @@ textarea.form-hover-gray:hover {
     border-bottom-color: #{$evo_gray};
     border-left-color: #{$evo_gray};
     border-right-color: #{$evo_gray};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_gray};
@@ -220,8 +220,8 @@ textarea.form-hover-gray-light:hover {
     border-bottom-color: #{$evo_gray_light};
     border-left-color: #{$evo_gray_light};
     border-right-color: #{$evo_gray_light};
-    box-shadow: #{$focus_box_shadow};
-    transition: #{$focus_transition};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
     outline: 0 none;
         & + label {
       color: #{$evo_gray_light};

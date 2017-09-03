@@ -1,0 +1,90 @@
+///*      F O R M   L A B E L       */
+
+@import "../evo_variables/evo_variables";
+
+
+
+
+
+// /*********************
+//     FLOATING LABELS
+// *********************/
+
+
+
+// Floating Labels
+// https://css-tricks.com/float-labels-css/
+// http://codepen.io/collection/IjFib/
+// Label must be placed underneath the input
+
+
+
+// Text Area
+
+// Starting postion
+textarea ~ .label-floating  {
+  position: absolute;
+  pointer-events: none;
+  left: 1em;
+  top: 1em;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+textarea:focus ~ .label-floating,
+textarea:not(:focus):valid ~ .label-floating {
+  top: -.5em;
+  color: #{$focus_border_color};
+  font-family: inherit;
+  opacity: 1;
+}
+
+
+// How to get labels to appear as if they are before the form field
+
+// http://stackoverflow.com/questions/36647427/selecting-a-label-placed-before-an-input-in-various-states
+
+// Inputs such as text fields
+
+// LABEL FLOATING UP
+
+// Starting position
+input ~ .label-floating  {
+  position: absolute;
+  pointer-events: none;
+  left: 1em;
+  top: 0;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+input:focus ~ .label-floating,
+input:not(:focus):valid ~ .label-floating {
+  top: -1.5em;
+  color: #{$focus_border_color};
+  font-family: inherit;
+  opacity: 1;
+}
+
+
+// FLUSH LEFT
+
+// Starting position
+input ~ .label-floating-left  {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease all;
+}
+
+// Ending position
+input:focus ~ .label-floating-left,
+input:not(:focus):valid ~ .label-floating-left {
+  top: -1.5em;
+  left: 1em;
+  color: #{$focus_border_color};
+  font-family: inherit;
+  opacity: 1;
+  // background-color: #fff;
+}

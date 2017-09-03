@@ -40,14 +40,16 @@
 
 <form>
 <fieldset>
-<legend class="visually-hidden">Form Placeholder</legend>
+<legend class="visually-hidden">Evo Form Placeholder</legend>
+
+
 
 
 <!-- placeholder text color -->
 
-<section id="InputPlaceholder">
+<section id="InputEvoPlaceholder">
 
-<h2 class="text-size-6">form-placeholder-[color]</h2>
+<h2 class="text-size-6">evo-form-placeholder</h2>
 
 <div class="evo-space"></div>
 
@@ -56,14 +58,57 @@
 <input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-form-placeholder" />
 <label>Label</label>
 
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-form-placeholder" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>evo-form-placeholder</code> class to it. This covers the color and opacity of the placeholder text. Use <code>evo-form-placeholder-hover</code> to set the effect only on hover, and <code>evo-form-placeholder-focus</code> to set the effect only on focus. Default form styles are set in _evo_variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+<!-- placeholder text color -->
+
+<section id="InputEvoPlaceholderInverse">
+
+<h2 class="text-size-6">evo-form-placeholder-inverse</h2>
+
 <div class="evo-space"></div>
 
 <div class="inverse-bg padding-10">
 <code class="code-inverse">evo-form-placeholder-inverse</code>
 <div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white evo-form-placeholder-inverse transparent-bg" />
+  <input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white evo-form-placeholder-inverse transparent-bg" />
 <label class="text-inverse">Label</label>
 </div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-form-placeholder-inverse" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>evo-form-placeholder-inverse</code> class to it. This covers the color and opacity of the placeholder text. Use <code>evo-form-placeholder-hover-inverse</code> to set the effect only on hover, and <code>evo-form-placeholder-focus-inverse</code> to set the effect only on focus. Default form styles are set in _evo_variables.scss.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- placeholder text color -->
+
+<section id="InputPlaceholder">
+
+<h2 class="text-size-6">form-placeholder-color</h2>
 
 <div class="evo-space"></div>
 
@@ -81,7 +126,41 @@
 
 <div class="evo-space-5"></div>
 
-<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-placeholder-color</code> class to it. Demo classes end with -demo such as <code>form-placeholder-color-demo</code>. Default form styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply the <code>form-placeholder-color</code> class to it. This applies the global evo-color to the placeholder text. Use <code>form-placeholder-color-hover</code> to set the effect only on hover, and <code>form-placeholder-color-focus</code> to set the effect only on focus. Default form styles are set in _evo_variables.scss.</p>
+
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- placeholder text colors -->
+
+<section id="InputPlaceholder">
+
+<h2 class="text-size-6">form-placeholder-[color]</h2>
+
+<div class="evo-space"></div>
+
+<code>form-placeholder-blue</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-blue" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-placeholder-green</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-green" />
+<label>Label</label>
+
+<div class="evo-space"></div>
+
+<code>form-placeholder-red</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-red" />
+<label>Label</label>
 
 <div class="evo-space"></div>
 
@@ -113,10 +192,24 @@
 
 <div class="evo-space"></div>
 
-<code>form-placeholder-white</code>
+<div class="inverse-bg padding-10">
+<code class="code-inverse">form-placeholder-white</code>
 <div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-white" />
-<label>Label</label>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-white transparent-bg" />
+<label class="text-inverse">Label</label>
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box form-placeholder-color" /&gt;
+&lt;label&gt;Label&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-5"></div>
+
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply a <code>form-placeholder-[color]</code> class such as <code>form-placeholder-blue</code>. This covers the color of the placeholder text. Use <code>form-placeholder-[color]-hover</code> to set the effect only on hover, and <code>form-placeholder-[color]-focus</code> to set the effect only on focus.</p>
+
 
 <div class="evo-space-20"></div>
 
@@ -134,15 +227,75 @@
 <div class="evo-space"></div>
 
 <div class="inverse-bg padding-10">
-<code class="code-inverse">form-placeholder-white</code>
+
+<code class="code-inverse">form-placeholder-opacity-9</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-9 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-8</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-8 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-7</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-7 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-6</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-6 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-5</code>
 <div class="evo-space-10"></div>
 <input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-5 transparent-bg" />
 <label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-4</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-4 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-3</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-3 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-2</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-2 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+<div class="evo-space"></div>
+
+<code class="code-inverse">form-placeholder-opacity-1</code>
+<div class="evo-space-10"></div>
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding form-box evo-white form-placeholder-white form-placeholder-opacity-1 transparent-bg" />
+<label class="text-inverse">Label</label>
+
+
 </div>
+
 
 <div class="evo-space-5"></div>
 
-<p class="evo-measure">Form placeholder text opacity can be change with <code>form-placeholder-opacity-[number]</code> classes from 1 to 9, such as <code>form-placeholder-opacity-5</code>.</p>
+<p class="evo-measure">Create an <code>&lt;input&gt;</code> tag and apply a form-placeholder-[color] class such as <code>form-placeholder-white</code>. Form placeholder text opacity can be changed with <code>form-placeholder-opacity-[number]</code> classes from 1 to 9, such as <code>form-placeholder-opacity-5</code>. Use <code>form-placeholder-opacity-[number]-hover</code> to set the effect only on hover, and <code>form-placeholder-opacity-[number]-focus</code> to set the effect only on focus.</p>
 
 <div class="evo-space-20"></div>
 
@@ -159,13 +312,13 @@
 <div class="evo-space"></div>
 
 <div class="evo-space-10"></div>
-<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding evo-box form-placeholder-black" />
+<input type="text" name="text" placeholder="Placeholder Text" class="evo-form form-padding evo-box form-placeholder-black form-placeholder-red-hover form-placeholder-blue-focus form-placeholder-opacity-3-focus" />
 <label>Label</label>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class=" evo-box form-placeholder-black" /&gt;
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Placeholder Text" class=" evo-box form-placeholder-black form-placeholder-red-hover form-placeholder-blue-focus form-placeholder-opacity-3-focus" /&gt;
 &lt;label&gt;Label&lt;/label&gt;</code>
 </pre>
 
