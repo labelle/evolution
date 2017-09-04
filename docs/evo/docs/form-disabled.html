@@ -65,9 +65,24 @@
 
 <p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
 
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- disabled inverse input -->
+
+<section id="InputInverseDisabled">
+
+<h2 class="text-size-6">input inverse disabled</h2>
+
 <div class="evo-space-10"></div>
 
-<div class="padding-10 inverse-bg">
+<div class="inverse-bg padding-15">
 <label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Input Label</label>
 <input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled />
 
@@ -141,9 +156,25 @@
 
 <p class="evo-measure">Demonstration of disabled select with attribute of multiple.</p>
 
-<div class="evo-space"></div>
+</fieldset>
+</form>
 
-<div class="padding-10 inverse-bg">
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- disabled inverse select -->
+
+<section id="SelectInverseDisabled">
+
+<h2 class="text-size-6">select inverse disabled</h2>
+
+<div class="evo-space-10"></div>
+
+
+<div class="inverse-bg padding-15">
 <label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Choose one</label>
 <select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-icon-triangle text-inverse evo-form-placeholder-inverse" disabled>
   <option value="option1">option 1</option>
@@ -212,17 +243,6 @@
 
 <p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
 
-<div class="evo-space-10"></div>
-
-<div class="padding-10 inverse-bg">
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Text Area Inverse</label>
-<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled></textarea>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
-</div>
-
 </fieldset>
 </form>
 
@@ -230,6 +250,31 @@
 
 </section>
 
+
+<!-- disabled inverse textarea -->
+
+<section id="TextareaInverseDisabled">
+
+<h2 class="text-size-6">textarea inverse disabled</h2>
+
+<div class="evo-space-10"></div>
+
+
+<div class="inverse-bg padding-15">
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Text Area Inverse</label>
+<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled></textarea>
+</div>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Demonstration of inverse disabled style.</p>
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
 <!-- File input type -->
@@ -247,57 +292,56 @@
 
 <div class="evo-space"></div>
 
-<label>File Label</label>
+<label class="disabled">File Label</label>
 <div class="evo-space-1"></div>
-<input type="file" name="file" placeholder="File Placeholder" />
+<input type="file" name="file" placeholder="File Placeholder" disabled />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;label&gt;File Label&lt;/label&gt;
+<code class="evo-measure">&lt;label class="disabled"&gt;File Label&lt;/label&gt;
 &lt;div class="evo-space-1"&gt;&lt;/div&gt;
-&lt;input type="file" name="file" placeholder="File Placeholder" /&gt;</code>
+&lt;input type="file" name="file" placeholder="File Placeholder" disbled /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create an <code>&lt;input type="file"&gt;</code> tag.</p>
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
 
 
 <div class="evo-space"></div>
 
-<input type="file" name="file" placeholder="Evo File Input" class="evo-form form-padding form-box" />
+<input type="file" name="file" class="evo-form form-padding form-box" disabled />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="file" name="file" placeholder="Evo File Placeholder" class="evo-form form-padding form-box" /&gt;</code>
+<code class="evo-measure">&lt;input type="file" name="file" class="evo-form form-padding form-box" disabled /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create an <code>&lt;input type="file"&gt;</code> tag, then apply the <code>evo-form</code>, <code>form-padding</code>, and <code>form-box</code> classes.</p>
+<p class="evo-measure">Apply the disabled attribute.</p>
 
 <div class="evo-space"></div>
 
-<label class="evo-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer">
-    <input type="file" multiple/>
+<label class="evo-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer disabled">
+    <input type="file" disabled multiple/>
     <span>Upload File</span>
 </label>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;label class="evo-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer"&gt;
-&lt;input type="file" multiple /&gt;
+<code class="evo-measure">&lt;label class="evo-button ghost-color-to-ghost width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer disabled"&gt;
+&lt;input type="file" disabled multiple /&gt;
 &lt;span&gt;Upload File&lt;/span&gt;
-&lt;/label&gt;
-</code>
+&lt;/label&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">An alternate upload file button. Create a <code>&lt;input type="file"&gt;</code> tag. To remove the icon, delete the <code>evo-icon-button</code> and <code>button-upload</code> classes. Default input button styles are set in _evo_variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
 
 <div class="evo-space"></div>
 
@@ -311,31 +355,80 @@
 
 
 
-<!-- checkbox -->
 
-<section id="InputCheckbox">
+<!-- File inverse input type -->
 
-<h2 class="text-size-6">form-checkbox</h2>
+<section id="InputFileInverse">
 
-<div class="evo-space"></div>
-
-<label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
-<label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
-<label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
-
+<h2 class="text-size-6">File inverse</h2>
 
 <div class="evo-space-10"></div>
 
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
-&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2" /&gt;&nbsp;checkbox 2&lt;/label&gt;
-&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3" /&gt;&nbsp;checkbox 3&lt;/label&gt;
-</code>
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<div class="evo-space"></div>
+
+<div class="inverse-bg padding-15">
+<label class="text-inverse" disabled>File Label</label>
+<div class="evo-space-1"></div>
+<input type="file" name="file" placeholder="File Placeholder" class="text-inverse" disabled />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;label class="text-inverse disabled"&gt;File Label&lt;/label&gt;
+&lt;div class="evo-space-1"&gt;&lt;/div&gt;
+&lt;input type="file" name="file" placeholder="File Placeholder" class="text-inverse" disabled /&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-checkbox</code> class, and place an <code>&lt;input type="checkbox"&gt;</code> element inside. Default input button styles are set in _evo_variables.scss.</p>
+<p class="evo-measure text-inverse">Apply the disabled class and the disabled attribute.</p>
+
+
+<div class="evo-space"></div>
+
+<input type="file" name="file" class="evo-form form-padding form-box text-inverse" disabled />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;input type="file" name="file" class="evo-form form-padding form-box" disabled /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Apply the disabled attribute.</p>
+
+<div class="evo-space"></div>
+
+<label class="evo-button ghost-color-to-ghost-inverse width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer disabled">
+    <input type="file" disabled multiple/>
+    <span>Upload File</span>
+</label>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;label class="evo-button ghost-color-to-ghost-inverse width-auto button-box-thin button-padding-medium box-dashed evo-icon-button button-upload cursor-pointer disabled"&gt;
+&lt;input type="file" disabled multiple /&gt;
+&lt;span&gt;Upload File&lt;/span&gt;
+&lt;/label&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Apply the disabled class and the disabled attribute.</p>
+
+</div>
+
+<div class="evo-space"></div>
+
+</fieldset>
+</form>
 
 <div class="evo-space-20"></div>
 
@@ -344,71 +437,69 @@
 
 
 
-<!-- checkbox inline -->
 
-<section id="InputCheckboxInline">
+<!-- checkbox disabled -->
 
-<h2 class="text-size-6">form-checkbox-inline</h2>
+<section id="InputCheckboxDisabled">
+
+<h2 class="text-size-6">form-checkbox disabled</h2>
 
 <div class="evo-space"></div>
 
-<fieldset class="overflow">
-  <div class="form-checkbox-inline">
-    <label class="form-checkbox"><input type="checkbox" id="checkbox1inline" checked />&nbsp;checkbox 1</label>
-    <label class="form-checkbox"><input type="checkbox" id="checkbox2inline" />&nbsp;checkbox 2</label>
-    <label class="form-checkbox"><input type="checkbox" id="checkbox3inline" />&nbsp;checkbox 3</label>
-  </div>
+<fieldset>
+<label class="form-checkbox disabled"><input type="checkbox" id="checkbox1" disabled checked />&nbsp;checkbox 1</label>
+<label class="form-checkbox disabled"><input type="checkbox" id="checkbox2" disabled />&nbsp;checkbox 2</label>
+<label class="form-checkbox disabled"><input type="checkbox" id="checkbox3" disabled />&nbsp;checkbox 3</label>
 </fieldset>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;fieldset class="overflow"&gt;
-  &lt;div class="form-checkbox-inline"&gt;
-&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox1inline" checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
-&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox2inline" /&gt;&nbsp;checkbox 2&lt;/label&gt;
-&lt;label class="form-checkbox"&gt;&lt;input type="checkbox" id="checkbox3inline" /&gt;&nbsp;checkbox 3&lt;/label&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;
-</code>
+<code class="evo-measure">&lt;fieldset&gt;
+&lt;label class="form-checkbox disabled"&gt;&lt;input type="checkbox" id="checkbox1" disabled checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox disabled"&gt;&lt;input type="checkbox" id="checkbox2" disabled /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox disabled"&gt;&lt;input type="checkbox" id="checkbox3" disabled /&gt;&nbsp;checkbox 3&lt;/label&gt;
+&lt;/div&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-checkbox-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then an <code>&lt;input type="checkbox"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
 
+<!-- checkbox inverse disabled -->
 
+<section id="InputCheckboxInverseDisabled">
 
-
-<!-- radio -->
-
-<section id="InputRadio">
-
-<h2 class="text-size-6">form-radio</h2>
+<h2 class="text-size-6">form-checkbox inverse disabled</h2>
 
 <div class="evo-space"></div>
 
-<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value" checked />&nbsp;radio 1</label>
-<label class="form-radio"><input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2</label>
-<label class="form-radio"><input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3</label>
+<div class="inverse-bg padding-15">
+<fieldset class="overflow-hidden">
+<label class="form-checkbox text-inverse disabled"><input type="checkbox" id="checkbox1" disabled checked />&nbsp;checkbox 1</label>
+<label class="form-checkbox text-inverse disabled"><input type="checkbox" id="checkbox2" disabled />&nbsp;checkbox 2</label>
+<label class="form-checkbox text-inverse disabled"><input type="checkbox" id="checkbox3" disabled />&nbsp;checkbox 3</label>
+</fieldset>
+</div>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" checked /&gt;&nbsp;radio 1&lt;/label&gt;
-&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1" name="radio" value="value"  />&nbsp;radio 2&lt;/label&gt;
-&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" />&nbsp;radio 3&lt;/label&gt;
-</code>
+<code class="evo-measure">&lt;fieldset class="overflow-hidden"&gt;
+&lt;label class="form-checkbox text-inverse disabled"&gt;&lt;input type="checkbox" id="checkbox1" disabled checked /&gt;&nbsp;checkbox 1&lt;/label&gt;
+&lt;label class="form-checkbox text-inverse disabled"&gt;&lt;input type="checkbox" id="checkbox2" disabled /&gt;&nbsp;checkbox 2&lt;/label&gt;
+&lt;label class="form-checkbox text-inverse disabled"&gt;&lt;input type="checkbox" id="checkbox3" disabled /&gt;&nbsp;checkbox 3&lt;/label&gt;
+&lt;/div&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;label&gt;</code> tag with an <code>form-radio</code> class,and place an <code>&lt;input type="radio"&gt;</code> element inside. Default input button styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
 
 <div class="evo-space-20"></div>
 
@@ -416,38 +507,71 @@
 
 
 
-<!-- radio inline -->
 
-<section id="InputRadioInline">
+<!-- radio disabled -->
 
-<h2 class="text-size-6">form-radio-inline</h2>
+<section id="InputRadioDisabled">
+
+<h2 class="text-size-6">form-radio disabled</h2>
 
 <div class="evo-space"></div>
 
-<fieldset class="overflow">
-  <div class="form-radio-inline">
-    <label class="form-radio"><input type="radio" id="radio1inline" name="radioInline" value="value" checked />&nbsp;radio 1</label>
-    <label class="form-radio"><input type="radio" id="radio2inline" name="radioInline" value="value"  />&nbsp;radio 2</label>
-    <label class="form-radio"><input type="radio" id="radio3inline" name="radioInline" value="value" />&nbsp;radio 3</label>
-  </div>
+<fieldset>
+<label class="form-radio disabled"><input type="radio" id="radio1" name="radio" value="value" disabled checked />&nbsp;radio 1</label>
+<label class="form-radio disabled"><input type="radio" id="radio1" name="radio" value="value" disabled />&nbsp;radio 2</label>
+<label class="form-radio disabled"><input type="radio" id="radio3" name="radio" value="value" disabled />&nbsp;radio 3</label>
 </fieldset>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;fieldset class="overflow"&gt;
-  &lt;div class="form-radio-inline"&gt;
-  &lt;label class="form-radio"&gt;&lt;input type="radio" id="radio1inline" name="radio1inline" value="value" checked /&gt;&nbsp;radio 1&lt;/label&gt;
-&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio2inline" name="radio2inline" value="value"  />&nbsp;radio 2&lt;/label&gt;
-&lt;label class="form-radio"&gt;&lt;input type="radio" id="radio3inline" name="radio3inline" value="value" />&nbsp;radio 3&lt;/label&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;
-</code>
+<code class="evo-measure">&lt;fieldset&gt;
+&lt;label class="form-radio disabled"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" disabled checked /&gt;&nbsp;radio 1&lt;/label&gt;
+&lt;label class="form-radio disabled"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" disabled />&nbsp;radio 2&lt;/label&gt;
+&lt;label class="form-radio disabled"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" disabled />&nbsp;radio 3&lt;/label&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;</code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;div&gt;</code> tag with a class of <code>form-radio-inline</code>, then place a <code>&lt;label&gt;</code> tag inside, and then a <code>&lt;input type="radio"&gt;</code> element inside of the label. The fieldset class of <code>overflow</code> may be optional. Default input button styles are set in _evo_variables.scss.</p>
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- radio inverse disabled -->
+
+<section id="InputRadioInverseDisabled">
+
+<h2 class="text-size-6">form-radio inverse disabled</h2>
+
+<div class="evo-space"></div>
+
+<div class="inverse-bg padding-15">
+<fieldset class="overflow-hidden">
+<label class="form-radio text-inverse disabled"><input type="radio" id="radio1" name="radio" value="value" disabled checked />&nbsp;radio 1</label>
+<label class="form-radio text-inverse disabled"><input type="radio" id="radio1" name="radio" value="value" disabled />&nbsp;radio 2</label>
+<label class="form-radio text-inverse disabled"><input type="radio" id="radio3" name="radio" value="value" disabled />&nbsp;radio 3</label>
+</fieldset>
+</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;fieldset class="overflow-hidden"&gt;
+&lt;label class="form-radio text-inverse disabled"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" disabled checked /&gt;&nbsp;radio 1&lt;/label&gt;
+&lt;label class="form-radio text-inverse disabled"&gt;&lt;input type="radio" id="radio1" name="radio" value="value" disabled />&nbsp;radio 2&lt;/label&gt;
+&lt;label class="form-radio text-inverse disabled"&gt;&lt;input type="radio" id="radio3" name="radio" value="value" disabled />&nbsp;radio 3&lt;/label&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Apply the disabled class and the disabled attribute.</p>
 
 <div class="evo-space-20"></div>
 
@@ -455,63 +579,121 @@
 
 
 
-<!-- submit -->
+<!-- submit disabled -->
 
-<section id="InputSubmit">
+<section id="InputSubmitDisabled">
 
-<h2 class="text-size-6">submit</h2>
+<h2 class="text-size-6">submit disabled</h2>
 
 <div class="evo-space"></div>
 
 
-<input type="submit" />
+<input type="submit" disabled />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="submit" /&gt;
+<code class="evo-measure">&lt;input type="submit" disabled /&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag. By default, this button spans the width of the container. Default input button styles are set in _evo_variables.scss. See the "buttons" section for more styles.</p>
+<p class="evo-measure">Apply the disabled attribute.</p>
 
 <div class="evo-space-17"></div>
 
-<input type="submit" class="evo-button width-auto" />
+<input type="submit" class="evo-button width-auto" disabled />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="submit" class="evo-button width-auto" /&gt;
+<code class="evo-measure">&lt;input type="submit" class="evo-button width-auto" disabled /&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="submit"&gt;</code> tag and apply the <code>evo-button</code> class. The <code>width-auto</code> class will callapse the button around the text. Default input button styles are set in _evo_variables.scss. Default input button styles are set in _evo_variables.scss. See the <a href="button.html">button</a> section for more styles.</p>
+<p class="evo-measure">Apply the disabled attribute.</p>
 
 <div class="evo-space-17"></div>
 
-<input type="reset" class="evo-button button-box-none ghost-to-ghost-color transparent-bg width-auto" />
+<input type="reset" class="evo-button button-box-none ghost-to-ghost-color transparent-bg width-auto" disabled />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="submit" class="evo-button button-box-none ghost-to-ghost-color transparent-bg width-auto" /&gt;
+<code class="evo-measure">&lt;input type="submit" class="evo-button button-box-none ghost-to-ghost-color transparent-bg width-auto" disabled /&gt;
 </code>
 </pre>
 
 <div class="evo-space-10"></div>
 
-<p class="evo-measure">Create a <code>&lt;input type="reset"&gt;</code> tag to offer a way to clear form data.</p>
-
+<p class="evo-measure">Apply the disabled attribute.</p>
 
 <div class="evo-space-20"></div>
 
 </section>
 
+
+
+<!-- submit disabled inverse -->
+
+<section id="InputSubmitDisabledInverse">
+
+<h2 class="text-size-6">submit inverse disabled</h2>
+
+<div class="evo-space"></div>
+
+<div class="inverse-bg padding-15">
+<input type="submit" disabled />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;input type="submit" disabled /&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Apply the disabled attribute.</p>
+
+<div class="evo-space-17"></div>
+
+<input type="submit" class="evo-button-inverse width-auto" disabled />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure text-inverse">&lt;input type="submit" class="evo-button-inverse width-auto" disabled /&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Apply the disabled attribute.</p>
+
+<div class="evo-space-17"></div>
+
+<input type="reset" class="evo-button-inverse button-box-none ghost-to-ghost-color-inverse transparent-bg width-auto" disabled />
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;input type="submit" class="evo-button-inverse button-box-none ghost-to-ghost-color-inverse transparent-bg width-auto" disabled /&gt;
+</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Apply the disabled attribute.</p>
+
+</div>
+
+<div class="evo-space-20"></div>
+
+</section>
 
 
 </fieldset>
