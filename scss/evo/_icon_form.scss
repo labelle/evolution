@@ -88,9 +88,18 @@ select.form-icon {
   -moz-appearance: none;
   background-repeat:     #{$form_background_repeat};
   background-attachment: #{$form_background_attachment};
-  background-size:       #{$form_background_size};
   background-position:   #{$form_background_position};
 }
+
+input.form-icon,
+textarea.form-icon {
+  background-size:       #{$form_background_size};
+}
+
+select.form-icon {
+  background-size:       #{$form_select_background_size};
+}
+
 
 // .form-icon {
 //   // background-color:      #{$form_background_color};

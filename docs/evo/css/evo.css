@@ -9662,8 +9662,14 @@ select.form-icon {
   -moz-appearance: none;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 0.75em;
   background-position: 97%; }
+
+input.form-icon,
+textarea.form-icon {
+  background-size: 1.25em; }
+
+select.form-icon {
+  background-size: 0.75em; }
 
 .form-icon-search {
   background-image: url(../image/search-book-gray.svg); }
