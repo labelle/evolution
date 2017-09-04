@@ -61,7 +61,7 @@ textarea#{$evo}-form-hover-inverse:hover {
 
 
 // /*********************
-//     FORM HOVER
+//     FORM HOVER COLOR
 // *********************/
 
 
@@ -86,12 +86,18 @@ textarea.form-hover-color:hover {
     }
   }
 
-.form-hover-blue-demo,
-.form-hover-blue:hover,
-select.form-hover-blue:hover,
-input.form-hover-blue:hover,
-input[type].form-hover-blue:hover,
-textarea.form-hover-blue:hover {
+
+// /*********************
+//     FORM STATUS
+// *********************/
+
+
+.form-hover-info-demo,
+.form-hover-info:hover,
+select.form-hover-info:hover,
+input.form-hover-info:hover,
+input[type].form-hover-info:hover,
+textarea.form-hover-info:hover {
     // border-width: 2px;
     // border-style: solid;
     border-top-color: #{$color_15};
@@ -107,12 +113,12 @@ textarea.form-hover-blue:hover {
     }
   }
 
-.form-hover-green-demo,
-.form-hover-green:hover,
-select.form-hover-green:hover,
-input.form-hover-green:hover,
-input[type].form-hover-green:hover,
-textarea.form-hover-green:hover {
+.form-hover-success-demo,
+.form-hover-success:hover,
+select.form-hover-success:hover,
+input.form-hover-success:hover,
+input[type].form-hover-success:hover,
+textarea.form-hover-success:hover {
     // border-width: 2px;
     // border-style: solid;
     border-top-color: #{$color_21};
@@ -128,13 +134,34 @@ textarea.form-hover-green:hover {
     }
   }
 
+.form-hover-warning-demo,
+.form-hover-warning:hover,
+select.form-hover-warning:hover,
+input.form-hover-warning:hover,
+input[type].form-hover-warning:hover,
+textarea.form-hover-warning:hover {
+    // border-width: 2px;
+    // border-style: solid;
+    border-top-color: #{$color_2};
+    border-bottom-color: #{$color_2};
+    border-left-color: #{$color_2};
+    border-right-color: #{$color_2};
+    box-shadow: #{$hover_box_shadow};
+    transition: #{$hover_transition};
+    outline: 0 none;
+        & + label {
+      color: #{$color_2};
+      cursor: pointer; // "hand" cursor
+    }
+  }
 
-.form-hover-red-demo,
-.form-hover-red:hover,
-select.form-hover-red:hover,
-input.form-hover-red:hover,
-input[type].form-hover-red:hover,
-textarea.form-hover-red:hover {
+
+.form-hover-danger-demo,
+.form-hover-danger:hover,
+select.form-hover-danger:hover,
+input.form-hover-danger:hover,
+input[type].form-hover-danger:hover,
+textarea.form-hover-danger:hover {
     // border-width: 2px;
     // border-style: solid;
     border-top-color: #{$color_5};
@@ -149,6 +176,12 @@ textarea.form-hover-red:hover {
       cursor: pointer; // "hand" cursor
     }
   }
+
+
+// /*********************
+//     FORM NEUTRAL
+// *********************/
+
 
 .form-hover-white-demo,
 .form-hover-white:hover,

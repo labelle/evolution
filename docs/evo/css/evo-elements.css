@@ -15883,34 +15883,44 @@ textarea.form-placeholder-color-focus:focus::placeholder,
 input.form-placeholder-color-focus:focus::placeholder {
   color: #0073b9 !important; }
 
-textarea.form-placeholder-blue::placeholder,
-input.form-placeholder-blue::placeholder,
-textarea.form-placeholder-blue-hover:hover::placeholder,
-input.form-placeholder-blue-hover:hover::placeholder {
+textarea.form-placeholder-info::placeholder,
+input.form-placeholder-info::placeholder,
+textarea.form-placeholder-info-hover:hover::placeholder,
+input.form-placeholder-info-hover:hover::placeholder {
   color: #0073b9; }
 
-textarea.form-placeholder-blue-focus:focus::placeholder,
-input.form-placeholder-blue-focus:focus::placeholder {
+textarea.form-placeholder-info-focus:focus::placeholder,
+input.form-placeholder-info-focus:focus::placeholder {
   color: #0073b9 !important; }
 
-textarea.form-placeholder-green::placeholder,
-input.form-placeholder-green::placeholder,
-textarea.form-placeholder-green-hover:hover::placeholder,
-input.form-placeholder-green-hover:hover::placeholder {
+textarea.form-placeholder-success::placeholder,
+input.form-placeholder-success::placeholder,
+textarea.form-placeholder-success-hover:hover::placeholder,
+input.form-placeholder-success-hover:hover::placeholder {
   color: #00a453; }
 
-textarea.form-placeholder-green-focus:focus::placeholder,
-input.form-placeholder-green-focus:focus::placeholder {
+textarea.form-placeholder-success-focus:focus::placeholder,
+input.form-placeholder-success-focus:focus::placeholder {
   color: #00a453 !important; }
 
-textarea.form-placeholder-red::placeholder,
-input.form-placeholder-red::placeholder,
-textarea.form-placeholder-red-hover:hover::placeholder,
-input.form-placeholder-red-hover:hover::placeholder {
+textarea.form-placeholder-warning::placeholder,
+input.form-placeholder-warning::placeholder,
+textarea.form-placeholder-warning-hover:hover::placeholder,
+input.form-placeholder-warning-hover:hover::placeholder {
+  color: #fdc131; }
+
+textarea.form-placeholder-warning-focus:focus::placeholder,
+input.form-placeholder-warning-focus:focus::placeholder {
+  color: #fdc131 !important; }
+
+textarea.form-placeholder-danger::placeholder,
+input.form-placeholder-danger::placeholder,
+textarea.form-placeholder-danger-hover:hover::placeholder,
+input.form-placeholder-danger-hover:hover::placeholder {
   color: #eb212e; }
 
-textarea.form-placeholder-red-focus:focus::placeholder,
-input.form-placeholder-red-focus:focus::placeholder {
+textarea.form-placeholder-danger-focus:focus::placeholder,
+input.form-placeholder-danger-focus:focus::placeholder {
   color: #eb212e !important; }
 
 textarea.form-placeholder-white::placeholder,
@@ -16119,12 +16129,12 @@ textarea.form-hover-color:hover {
     color: #0073b9;
     cursor: pointer; }
 
-.form-hover-blue-demo,
-.form-hover-blue:hover,
-select.form-hover-blue:hover,
-input.form-hover-blue:hover,
-input[type].form-hover-blue:hover,
-textarea.form-hover-blue:hover {
+.form-hover-info-demo,
+.form-hover-info:hover,
+select.form-hover-info:hover,
+input.form-hover-info:hover,
+input[type].form-hover-info:hover,
+textarea.form-hover-info:hover {
   border-top-color: #0073b9;
   border-bottom-color: #0073b9;
   border-left-color: #0073b9;
@@ -16132,21 +16142,21 @@ textarea.form-hover-blue:hover {
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
-  .form-hover-blue-demo + label,
-  .form-hover-blue:hover + label,
-  select.form-hover-blue:hover + label,
-  input.form-hover-blue:hover + label,
-  input[type].form-hover-blue:hover + label,
-  textarea.form-hover-blue:hover + label {
+  .form-hover-info-demo + label,
+  .form-hover-info:hover + label,
+  select.form-hover-info:hover + label,
+  input.form-hover-info:hover + label,
+  input[type].form-hover-info:hover + label,
+  textarea.form-hover-info:hover + label {
     color: #0073b9;
     cursor: pointer; }
 
-.form-hover-green-demo,
-.form-hover-green:hover,
-select.form-hover-green:hover,
-input.form-hover-green:hover,
-input[type].form-hover-green:hover,
-textarea.form-hover-green:hover {
+.form-hover-success-demo,
+.form-hover-success:hover,
+select.form-hover-success:hover,
+input.form-hover-success:hover,
+input[type].form-hover-success:hover,
+textarea.form-hover-success:hover {
   border-top-color: #00a453;
   border-bottom-color: #00a453;
   border-left-color: #00a453;
@@ -16154,21 +16164,43 @@ textarea.form-hover-green:hover {
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
-  .form-hover-green-demo + label,
-  .form-hover-green:hover + label,
-  select.form-hover-green:hover + label,
-  input.form-hover-green:hover + label,
-  input[type].form-hover-green:hover + label,
-  textarea.form-hover-green:hover + label {
+  .form-hover-success-demo + label,
+  .form-hover-success:hover + label,
+  select.form-hover-success:hover + label,
+  input.form-hover-success:hover + label,
+  input[type].form-hover-success:hover + label,
+  textarea.form-hover-success:hover + label {
     color: #00a453;
     cursor: pointer; }
 
-.form-hover-red-demo,
-.form-hover-red:hover,
-select.form-hover-red:hover,
-input.form-hover-red:hover,
-input[type].form-hover-red:hover,
-textarea.form-hover-red:hover {
+.form-hover-warning-demo,
+.form-hover-warning:hover,
+select.form-hover-warning:hover,
+input.form-hover-warning:hover,
+input[type].form-hover-warning:hover,
+textarea.form-hover-warning:hover {
+  border-top-color: #fdc131;
+  border-bottom-color: #fdc131;
+  border-left-color: #fdc131;
+  border-right-color: #fdc131;
+  box-shadow: none;
+  transition: 0.5s ease all;
+  outline: 0 none; }
+  .form-hover-warning-demo + label,
+  .form-hover-warning:hover + label,
+  select.form-hover-warning:hover + label,
+  input.form-hover-warning:hover + label,
+  input[type].form-hover-warning:hover + label,
+  textarea.form-hover-warning:hover + label {
+    color: #fdc131;
+    cursor: pointer; }
+
+.form-hover-danger-demo,
+.form-hover-danger:hover,
+select.form-hover-danger:hover,
+input.form-hover-danger:hover,
+input[type].form-hover-danger:hover,
+textarea.form-hover-danger:hover {
   border-top-color: #eb212e;
   border-bottom-color: #eb212e;
   border-left-color: #eb212e;
@@ -16176,12 +16208,12 @@ textarea.form-hover-red:hover {
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
-  .form-hover-red-demo + label,
-  .form-hover-red:hover + label,
-  select.form-hover-red:hover + label,
-  input.form-hover-red:hover + label,
-  input[type].form-hover-red:hover + label,
-  textarea.form-hover-red:hover + label {
+  .form-hover-danger-demo + label,
+  .form-hover-danger:hover + label,
+  select.form-hover-danger:hover + label,
+  input.form-hover-danger:hover + label,
+  input[type].form-hover-danger:hover + label,
+  textarea.form-hover-danger:hover + label {
     color: #eb212e;
     cursor: pointer; }
 
@@ -16343,6 +16375,78 @@ textarea.form-focus-color:focus {
     color: #0073b9 !important;
     cursor: pointer; }
 
+.form-focus-info-demo,
+.form-focus-info:focus,
+select.form-focus-info:focus,
+input.form-focus-info:focus,
+textarea.form-focus-info:focus {
+  border-top-color: #0073b9 !important;
+  border-bottom-color: #0073b9 !important;
+  border-left-color: #0073b9 !important;
+  border-right-color: #0073b9 !important;
+  border-color: #0073b9 !important; }
+  .form-focus-info-demo + label,
+  .form-focus-info:focus + label,
+  select.form-focus-info:focus + label,
+  input.form-focus-info:focus + label,
+  textarea.form-focus-info:focus + label {
+    color: #0073b9 !important;
+    cursor: pointer; }
+
+.form-focus-success-demo,
+.form-focus-success:focus,
+select.form-focus-success:focus,
+input.form-focus-success:focus,
+textarea.form-focus-success:focus {
+  border-top-color: #00a453 !important;
+  border-bottom-color: #00a453 !important;
+  border-left-color: #00a453 !important;
+  border-right-color: #00a453 !important;
+  border-color: #00a453 !important; }
+  .form-focus-success-demo + label,
+  .form-focus-success:focus + label,
+  select.form-focus-success:focus + label,
+  input.form-focus-success:focus + label,
+  textarea.form-focus-success:focus + label {
+    color: #00a453 !important;
+    cursor: pointer; }
+
+.form-focus-warning-demo,
+.form-focus-warning:focus,
+select.form-focus-warning:focus,
+input.form-focus-warning:focus,
+textarea.form-focus-warning:focus {
+  border-top-color: #fdc131 !important;
+  border-bottom-color: #fdc131 !important;
+  border-left-color: #fdc131 !important;
+  border-right-color: #fdc131 !important;
+  border-color: #fdc131 !important; }
+  .form-focus-warning-demo + label,
+  .form-focus-warning:focus + label,
+  select.form-focus-warning:focus + label,
+  input.form-focus-warning:focus + label,
+  textarea.form-focus-warning:focus + label {
+    color: #fdc131 !important;
+    cursor: pointer; }
+
+.form-focus-danger-demo,
+.form-focus-danger:focus,
+select.form-focus-danger:focus,
+input.form-focus-danger:focus,
+textarea.form-focus-danger:focus {
+  border-top-color: #eb212e !important;
+  border-bottom-color: #eb212e !important;
+  border-left-color: #eb212e !important;
+  border-right-color: #eb212e !important;
+  border-color: #eb212e !important; }
+  .form-focus-danger-demo + label,
+  .form-focus-danger:focus + label,
+  select.form-focus-danger:focus + label,
+  input.form-focus-danger:focus + label,
+  textarea.form-focus-danger:focus + label {
+    color: #eb212e !important;
+    cursor: pointer; }
+
 .form-focus-black-demo,
 .form-focus-black:focus,
 select.form-focus-black:focus,
@@ -16430,60 +16534,6 @@ textarea.form-focus-white:focus {
   input.form-focus-white:focus + label,
   textarea.form-focus-white:focus + label {
     color: white !important;
-    cursor: pointer; }
-
-.form-focus-blue-demo,
-.form-focus-blue:focus,
-select.form-focus-blue:focus,
-input.form-focus-blue:focus,
-textarea.form-focus-blue:focus {
-  border-top-color: #0073b9 !important;
-  border-bottom-color: #0073b9 !important;
-  border-left-color: #0073b9 !important;
-  border-right-color: #0073b9 !important;
-  border-color: #0073b9 !important; }
-  .form-focus-blue-demo + label,
-  .form-focus-blue:focus + label,
-  select.form-focus-blue:focus + label,
-  input.form-focus-blue:focus + label,
-  textarea.form-focus-blue:focus + label {
-    color: #0073b9 !important;
-    cursor: pointer; }
-
-.form-focus-green-demo,
-.form-focus-green:focus,
-select.form-focus-green:focus,
-input.form-focus-green:focus,
-textarea.form-focus-green:focus {
-  border-top-color: #00a453 !important;
-  border-bottom-color: #00a453 !important;
-  border-left-color: #00a453 !important;
-  border-right-color: #00a453 !important;
-  border-color: #00a453 !important; }
-  .form-focus-green-demo + label,
-  .form-focus-green:focus + label,
-  select.form-focus-green:focus + label,
-  input.form-focus-green:focus + label,
-  textarea.form-focus-green:focus + label {
-    color: #00a453 !important;
-    cursor: pointer; }
-
-.form-focus-red-demo,
-.form-focus-red:focus,
-select.form-focus-red:focus,
-input.form-focus-red:focus,
-textarea.form-focus-red:focus {
-  border-top-color: #eb212e !important;
-  border-bottom-color: #eb212e !important;
-  border-left-color: #eb212e !important;
-  border-right-color: #eb212e !important;
-  border-color: #eb212e !important; }
-  .form-focus-red-demo + label,
-  .form-focus-red:focus + label,
-  select.form-focus-red:focus + label,
-  input.form-focus-red:focus + label,
-  textarea.form-focus-red:focus + label {
-    color: #eb212e !important;
     cursor: pointer; }
 
 textarea ~ .label-floating {

@@ -74,46 +74,73 @@ input.form-placeholder-color-focus:focus::placeholder {
 
 
 
-// Blue
-textarea.form-placeholder-blue::placeholder,
-input.form-placeholder-blue::placeholder,
-textarea.form-placeholder-blue-hover:hover::placeholder,
-input.form-placeholder-blue-hover:hover::placeholder {
+// /*********************
+//     FORM PLACEHOLDER TEXT STATUS
+// *********************/
+
+// Colored placeholder text
+// Includes hover classes
+// Includes focus classes
+
+
+// Info
+textarea.form-placeholder-info::placeholder,
+input.form-placeholder-info::placeholder,
+textarea.form-placeholder-info-hover:hover::placeholder,
+input.form-placeholder-info-hover:hover::placeholder {
      color: #{$color_15};
 }
-textarea.form-placeholder-blue-focus:focus::placeholder,
-input.form-placeholder-blue-focus:focus::placeholder {
+textarea.form-placeholder-info-focus:focus::placeholder,
+input.form-placeholder-info-focus:focus::placeholder {
      color: #{$color_15} !important;
 }
 
 
-
-// Green
-textarea.form-placeholder-green::placeholder,
-input.form-placeholder-green::placeholder,
-textarea.form-placeholder-green-hover:hover::placeholder,
-input.form-placeholder-green-hover:hover::placeholder {
+// Success
+textarea.form-placeholder-success::placeholder,
+input.form-placeholder-success::placeholder,
+textarea.form-placeholder-success-hover:hover::placeholder,
+input.form-placeholder-success-hover:hover::placeholder {
      color: #{$color_21};
 }
-textarea.form-placeholder-green-focus:focus::placeholder,
-input.form-placeholder-green-focus:focus::placeholder {
+textarea.form-placeholder-success-focus:focus::placeholder,
+input.form-placeholder-success-focus:focus::placeholder {
      color: #{$color_21} !important;
 }
 
 
+// Warning
+textarea.form-placeholder-warning::placeholder,
+input.form-placeholder-warning::placeholder,
+textarea.form-placeholder-warning-hover:hover::placeholder,
+input.form-placeholder-warning-hover:hover::placeholder {
+     color: #{$color_2};
+}
+textarea.form-placeholder-warning-focus:focus::placeholder,
+input.form-placeholder-warning-focus:focus::placeholder {
+     color: #{$color_2} !important;
+}
 
-// Red
-textarea.form-placeholder-red::placeholder,
-input.form-placeholder-red::placeholder,
-textarea.form-placeholder-red-hover:hover::placeholder,
-input.form-placeholder-red-hover:hover::placeholder {
+
+// Danger
+textarea.form-placeholder-danger::placeholder,
+input.form-placeholder-danger::placeholder,
+textarea.form-placeholder-danger-hover:hover::placeholder,
+input.form-placeholder-danger-hover:hover::placeholder {
      color: #{$color_5};
 }
-textarea.form-placeholder-red-focus:focus::placeholder,
-input.form-placeholder-red-focus:focus::placeholder {
+textarea.form-placeholder-danger-focus:focus::placeholder,
+input.form-placeholder-danger-focus:focus::placeholder {
      color: #{$color_5} !important;
 }
 
+// /*********************
+//     FORM PLACEHOLDER TEXT NEUTRAL
+// *********************/
+
+// Neutral placeholder text
+// Includes hover classes
+// Includes focus classes
 
 
 // White
