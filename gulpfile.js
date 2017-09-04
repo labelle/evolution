@@ -48,25 +48,7 @@ gulp.task('scripts', function() {
 });
 
 /* Sass task */
-gulp.task('brand', function () {  
-    return gulp.src('scss/evo-brand.scss')
-    .pipe(plumber())
-    .pipe(sass({
-        includePaths: ['scss'].concat(neat)
-    }))
-    .pipe(gulp.dest('docs/evo/css'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.init())
-    .pipe(postcss([ autoprefixer() ]))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('docs/evo/css'))
-    /* Reload the browser CSS after every change */
-    .pipe(reload({stream:true}));
-});
-
-/* Sass task */
-gulp.task('evolution', function () {  
+gulp.task('evo', function () {  
     return gulp.src('scss/evo.scss')
     .pipe(plumber())
     .pipe(sass({
@@ -102,16 +84,37 @@ gulp.task('elements', function () {
 });
 
 /* Sass task */
+gulp.task('brand', function () {  
+    return gulp.src('scss/evo-brand.scss')
+    .pipe(plumber())
+    .pipe(sass({
+        includePaths: ['scss'].concat(neat)
+    }))
+    .pipe(gulp.dest('docs/brand/evo/css'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('docs/brand/evo/css'))
+    /* Reload the browser CSS after every change */
+    .pipe(reload({stream:true}));
+});
+
+/* Sass task */
 gulp.task('design', function () {  
     return gulp.src('scss/evo-design.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('docs/evo/css'))
+    .pipe(gulp.dest('docs/design/evo/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('docs/evo/css'))
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('docs/design/evo/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -139,7 +142,7 @@ gulp.task('browser-sync', function() {
 });
 
 /* Watch scss, js and html files, doing different things with each. */
-gulp.task('default', ['brand', 'evolution', 'elements', 'design', 'scripts', 'browser-sync'], function () {
+gulp.task('default', ['evo', 'elements', 'brand', 'design', 'scripts', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['default'])
     /* Watch .html files, run the bs-reload task on change. */
