@@ -450,7 +450,11 @@ $inverse_button_hover_border_style:  solid;
 $selection_color:                   #{$evo_white} !default;
 $selection_color_background:        #{$evo_color} !default;
 $selection_text_shadow:             none !default;
-$selection_color_background_demo:   #{$evo_color} !default;  // slightly translucent for demonstration
+
+// Selection inverse
+$inverse_selection_color:            #{$evo_black} !default;
+$inverse_selection_color_background: #{$evo_color} !default;
+$inverse_selection_text_shadow:      none !default;
 
 // // Selection Black
 // $selection_black:                   #{$evo_white} !default;

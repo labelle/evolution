@@ -50,23 +50,23 @@
 // }
 
 // Selection
-::selection   {
+::selection,
+body#{$evo}-selection ::selection,
+span#{$evo}-selection-demo   {
     background: #{$selection_color_background};
     color: #{$selection_color};
     text-shadow: #{$selection_text_shadow};
     cursor: text;
 }
 
-// For demonstration
-span#{$evo}-selection {
+body#{$evo}-selection-inverse ::selection,
+span#{$evo}-selection-inverse-demo {
     // background-color: #{$selection_color_background};
-    background: #{$selection_color_background_demo}; // demo color
-    color: #{$selection_color};
-    text-shadow: #{$selection_text_shadow};
+    background: #{$inverse_selection_color_background} !important; // demo color that's slightly translucent
+    color: #{$inverse_selection_color} !important;
+    text-shadow: #{$inverse_selection_text_shadow} !important;
     cursor: text;
 }
-
-
 
 
 // // Selection Color

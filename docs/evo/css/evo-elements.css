@@ -6448,16 +6448,19 @@ header.fluid-header p {
   letter-spacing: 2rem;
   text-shadow: 0 0 30px rgba(255, 0, 84, 0.6), 0 0 60px rgba(255, 0, 84, 0.4), 0 0 100px rgba(255, 0, 84, 0.2), 0 0 90px rgba(255, 0, 84, 0.1); }
 
-::selection {
+::selection,
+body.evo-selection ::selection,
+span.evo-selection-demo {
   background: #0073b9;
   color: white;
   text-shadow: none;
   cursor: text; }
 
-span.evo-selection {
-  background: #0073b9;
-  color: white;
-  text-shadow: none;
+body.evo-selection-inverse ::selection,
+span.evo-selection-inverse-demo {
+  background: #0073b9 !important;
+  color: black !important;
+  text-shadow: none !important;
   cursor: text; }
 
 body.selection-gray-0 ::selection {
