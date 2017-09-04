@@ -15666,31 +15666,31 @@ select.form-icon {
 .form-icon-left-flush {
   background-position: 0%; }
 
-.form-search {
+.form-icon-search {
   background-image: url(../image/search-book-gray.svg); }
 
-.form-email {
+.form-icon-email {
   background-image: url(../image/mail-book-gray.svg); }
 
-.form-chevron {
+.form-icon-chevron {
   background-image: url(../image/chevron-book.svg); }
 
-.form-arrow {
+.form-icon-arrow {
   background-image: url(../image/arrow-book-gray.svg); }
 
-.form-eye {
+.form-icon-eye {
   background-image: url(../image/eye-book-gray.svg); }
 
-.form-eye-slash {
+.form-icon-eye-slash {
   background-image: url(../image/eye-slash-book-gray.svg); }
 
-.form-lock {
+.form-icon-lock {
   background-image: url(../image/lock-book-gray.svg); }
 
-.form-triangle {
+.form-icon-triangle {
   background-image: url(../image/triangle-down-solid.svg); }
 
-.form-chevron-down {
+.form-icon-chevron-down {
   background-image: url(../image/chevron-down-book.svg); }
 
 label.button-upload:before,

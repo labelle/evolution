@@ -24,6 +24,7 @@
 // }
 
 // TODO Can we get rid of the 'input' because it's messing up the checkboxes
+// TODO Specify input of bg images to certain =types
 // http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript#13968900
 // Get rid of styling for option, so that custom styling is applied
 input.form-icon,
@@ -70,7 +71,7 @@ select.form-icon {
 }
 
 
-.form-search {
+.form-icon-search {
   // background-color:      #{$form_background_color};
   background-image:      #{$form_background_search};
   // background-repeat:     #{$form_background_repeat};
@@ -79,39 +80,39 @@ select.form-icon {
   // background-position:   #{$form_background_position};
 }
 
-.form-email {
+.form-icon-email {
   background-image: #{$form_background_email};
 }
 
-.form-chevron {
+.form-icon-chevron {
   background-image: #{$form_background_chevron};
 }
 
 
-.form-arrow {
+.form-icon-arrow {
   background-image: #{$form_background_arrow};
 }
 
-.form-eye {
+.form-icon-eye {
   background-image: #{$form_background_eye};
 }
 
-.form-eye-slash {
+.form-icon-eye-slash {
   background-image: #{$form_background_eye_slash};
 }
 
-.form-lock {
+.form-icon-lock {
   background-image: #{$form_background_lock};
 }
 
 // Select
 
 
-.form-triangle {
+.form-icon-triangle {
   background-image: #{$form_background_triangle};
 }
 
-.form-chevron-down {
+.form-icon-chevron-down {
   background-image: #{$form_background_chevron_down};
 }
 

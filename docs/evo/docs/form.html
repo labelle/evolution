@@ -79,648 +79,38 @@
 
 
 
-<!-- basic input -->
+<!-- Form Pattern -->
 
-<section id="Input">
+<section id="InputFormPattern">
 
-<h2 class="text-size-6">input</h2>
+<h2 class="text-size-6">Example Form Pattern</h2>
 
-<div class="evo-space-10"></div>
+<div class="evo-space-18"></div>
 
-
+<div class="evo-codeblock" data-identifier="input-sign-in">
 <form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<div class="evo-space"></div>
-
-<label>Input Label</label>
-<div class="evo-space-1"></div>
-<input name="input" placeholder="Input Placeholder" />
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label&gt;Input Label&lt;/label&gt;
-&lt;div&gt; class="evo-space-1"&lt;/div&gt;
-&lt;input name="input" placeholder="Input Placeholder" /&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">These are unstyled inputs, intended as a foundation for your own custom styling. Create an <code>&lt;input type="text"&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. If a browser does not support a particular input type, it will default to basic text input. The basic <code>&lt;input&gt;</code> tag is generally unstyled, so that you might style it using classes. Typically, using an input type will trigger a related keyboard behavior on iOS devices. Form elements will stretch across their continer unless the width is constrained. Default form styles are set in _global.scss or _form.scss.</p>
-
-</fieldset>
+  <fieldset class="text-measure-6">
+    <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
+      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
+      <div class="evo-space-10"></div>
+      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
+      <div class="evo-space-10"></div>
+      <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
+      <div class="evo-space-10"></div>
+      <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
+      <div class="evo-space-10"></div>
+  </fieldset>
 </form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- evo form input -->
-
-<section id="Input">
-
-<h2 class="text-size-6">evo-form input</h2>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">This sets the border radius, width, and background color.</p>
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Input Label</label>
-<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" />
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Input Label&lt;/label&gt;
-&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" /&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For styled inputs, create an <code>&lt;input&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Apply the <code>evo-form</code>, <code>form-padding</code>, and <code>form-box</code> classes. Default form styles are set in _evo_variables.scss.</p>
-
-
-</fieldset>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<!-- inverse evo form input -->
-
-<section id="Input">
-
-<h2 class="text-size-6">evo-form-inverse input</h2>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">This sets the border radius, width, and background color.</p>
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<div class="inverse-bg padding-10">
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Input Label</label>
-<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box" />
 </div>
 
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Input Label&lt;/label&gt;
-&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box" /&gt;</code>
+<div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="input-sign-in">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
 </pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For inverse styled inputs, create an <code>&lt;input&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Apply the <code>evo-form-inverse</code>, <code>form-padding</code>, and <code>form-box</code> classes. Default form styles are set in _evo_variables.scss.</p>
-
-
-</fieldset>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-<!-- disabled input -->
-
-<section id="InputDisabled">
-
-<h2 class="text-size-6">input disabled</h2>
-
-<div class="evo-space-10"></div>
-
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Input Label</label>
-<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled/>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Input Label&lt;/label&gt;
-&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled /&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
-
-<div class="evo-space-10"></div>
-
-<div class="padding-10 inverse-bg">
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Input Label</label>
-<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled />
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
 </div>
-
-</fieldset>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-
-<!-- Select dropdown -->
-
-<section id="formSelect">
-
-<h2 class="text-size-6">select</h2>
-
-<div class="evo-space"></div>
-
-<label for="select">Choose one</label>
-<select name="select" placeholder="choose one">
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label for="select"&gt;Choose one&lt;/label&gt;
-&lt;select name="select" /&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2"&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create an <code>&lt;select&gt;</code> tag with nested <code>&lt;option&gt;</code> and/or <code>&lt;optgroup&gt;</code> tags. Default select styles are set in _evo_variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- Evo Select dropdown -->
-
-<section id="InputSelect">
-
-<h2 class="text-size-6">evo-form select</h2>
-
-<div class="evo-space"></div>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Choose one</label>
-<select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle">
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle"&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;optgroup label="more options"&gt;
-&lt;option value="option4"&gt;option 4&lt;/option&gt;
-&lt;option value="option5"&gt;option 5&lt;/option&gt;
-&lt;/optgroup&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For a styled select, create an <code>&lt;select&gt;</code> tag with nested <code>&lt;option&gt;</code> and/or <code>&lt;optgroup&gt;</code> tags. Apply a desired icon by combining <code>form-icon</code>, <code>form-icon-size-5</code>, and <code>form-triangle</code> classes. Default select styles are set in _evo_variables.scss.</p>
-
-<div class="evo-space"></div>
-
-<select id="select" class="evo-form form-padding form-box form-icon form-chevron-down">
-<option value="option1">option 1</option>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;select id="select" class="evo-form form-padding form-box form-icon form-chevron-down" /&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Add the <code>form-chevron-down</code> tag for an alternative icon. Default styles are set in _evo_variables.scss. </p>
-
-<div class="evo-space"></div>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Choose one</label>
-<select id="select" class="evo-form form-padding form-box" multiple>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form form-padding form-box" multiple&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;optgroup label="more options"&gt;
-&lt;option value="option4"&gt;option 4&lt;/option&gt;
-&lt;option value="option5"&gt;option 5&lt;/option&gt;
-&lt;/optgroup&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Example of select element with the 'multiple' attribute, and one of the options with a 'selected' attribute.</p>
-
-<div class="evo-space-20"></div>
-
-
-</section>
-
-
-<!-- Evo Select inverse dropdown -->
-
-<section id="InputSelectInverse">
-
-<h2 class="text-size-6">evo-form-inverse select</h2>
-
-<div class="evo-space"></div>
-
-<div class="padding-10 inverse-bg">
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Choose one</label>
-<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse">
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code-inverse">
-<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" /&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;optgroup label="more options"&gt;
-&lt;option value="option4"&gt;option 4&lt;/option&gt;
-&lt;option value="option5"&gt;option 5&lt;/option&gt;
-&lt;/optgroup&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">For a styled select, create an <code class="evo-code-inverse">&lt;select&gt;</code> tag with nested <code class="evo-code-inverse">&lt;option&gt;</code> and/or <code class="evo-code-inverse">&lt;optgroup&gt;</code> tags. Apply a desired icon by combining <code class="evo-code-inverse">form-icon</code>, <code class="evo-code-inverse">form-icon-size-5</code>, and <code class="evo-code-inverse">form-triangle</code class="evo-code-inverse"> classes. Default select styles are set in _evo_variables.scss.</p>
-
-<div class="evo-space"></div>
-
-<select id="select" class="evo-form-inverse form-padding form-box form-icon form-chevron-down text-inverse">
-<option value="option1">option 1</option>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code-inverse">
-<code class="evo-measure">&lt;select id="select" class="evo-form-inverse form-padding form-box form-icon form-chevron-down text-inverse" /&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Add the <code class="evo-code-inverse">form-chevron-down</code> tag for an alternative icon. Default styles are set in _evo_variables.scss. </p>
-
-<div class="evo-space"></div>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Choose one</label>
-<select id="select" class="evo-form-inverse form-padding form-box text-inverse" multiple>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code-inverse">
-<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form-inverse form-padding form-box text-inverse" multiple&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;optgroup label="more options"&gt;
-&lt;option value="option4"&gt;option 4&lt;/option&gt;
-&lt;option value="option5"&gt;option 5&lt;/option&gt;
-&lt;/optgroup&gt;
-&lt;/select&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Example of select element with the 'multiple' attribute, and one of the options with a 'selected' attribute.</p>
-</div>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- disabled select -->
-
-<section id="SelectDisabled">
-
-<h2 class="text-size-6">select disabled</h2>
-
-<div class="evo-space-10"></div>
-
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Choose one</label>
-<select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle" disabled>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Choose one&lt;/label&gt;
-&lt;select name="select" disabled&gt;
-&lt;option value="option1"&gt;option 1&lt;/option&gt;
-&lt;option value="option2"&gt;option 2&lt;/option&gt;
-&lt;option value="option3"&gt;option 3&lt;/option&gt;
-&lt;/select&gt;</code></code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
-
-<div class="evo-space"></div>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Choose one</label>
-<select id="select" class="evo-form form-padding form-box" multiple disabled>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Demonstration of disabled select with attribute of multiple.</p>
-
-<div class="evo-space"></div>
-
-<div class="padding-10 inverse-bg">
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Choose one</label>
-<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" disabled>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">For disabled styles, apply the <code class="evo-code-inverse">disabled</code> attribute to a form element, and a <code class="evo-code-inverse">disabled</code> class to any form label.</p>
-
-<div class="evo-space"></div>
-
-<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Choose one</label>
-<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" multiple disabled>
-  <option value="option1">option 1</option>
-  <option value="option2" selected>option 2</option>
-  <option value="option3">option 3</option>
-      <optgroup label="more options">
-        <option value="option4">option 4</option>
-        <option value="option5">option 5</option>
-  </optgroup>
-</select>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
-</div>
-
-</fieldset>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-
-
-<!-- basic textarea -->
-
-<section id="textarea">
-
-<h2 class="text-size-6">textarea</h2>
-
-<div class="evo-space-10"></div>
-
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<div class="evo-space"></div>
-
-<label>Textarea Label</label>
-<div class="evo-space-1"></div>
-<textarea name="message" placeholder="Textarea Placeholder"></textarea>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label&gt;Textarea Label&lt;/label&gt;
-&lt;div&gt; class="evo-space-1"&lt;/div&gt;
-&lt;textarea ame="message" placeholder="Textarea Placeholder"&gt;&lt;/textarea&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create a <code>&lt;textarea&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Default form styles are set in _evo_variables.scss.. Default form styles are set in _evo_variables.scss.</p>
-
-</fieldset>
-</form>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- Evo Text Area -->
-
-<section id="textareaEvo">
-
-<h2 class="text-size-6">evo-form textarea</h2>
-
-<div class="evo-space"></div>
-
-
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10">Text Area</label>
-<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box"></textarea>
-
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Textarea Label&lt;/label&gt;
-&lt;textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box"&gt;&lt;/textarea&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Create a <code>&lt;textarea&gt;</code> tag, and place a <code>&lt;label&gt;</code> tag above or below it. Apply the <code>evo-form</code> class along with <code>form-padding</code> and <code>form box</code>, as in the above example. Default form styles are set in _evo_variables.scss.</p>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-
-<!-- Evo Text Area Inverse -->
-
-<section id="textareaEvoInverse">
-
-<h2 class="text-size-6">evo-form-inverse textarea</h2>
-
-<div class="evo-space"></div>
-
-
-<div class="padding-10 inverse-bg">
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Text Area Inverse</label>
-<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse"></textarea>
-
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code-inverse">
-<code class="evo-measure text-inverse">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Textarea Label&lt;/label&gt;
-&lt;textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box"&gt;&lt;/textarea&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Create a <code class="evo-code-inverse">&lt;textarea&gt;</code> tag, and place a <code class="evo-code-inverse">&lt;label&gt;</code> tag above or below it. Apply the <code class="evo-code-inverse">evo-form</code> class along with <code class="evo-code-inverse">form-padding</code> and <code class="evo-code-inverse">form box</code>, as in the above example. Default form styles are set in _evo_variables.scss.</p>
-</div>
-
-<div class="evo-space-20"></div>
-
-</section>
-
-
-<!-- disabled textarea -->
-
-<section id="TextareaDisabled">
-
-<h2 class="text-size-6">textarea disabled</h2>
-
-<div class="evo-space-10"></div>
-
-
-<form>
-<fieldset>
-<legend class="visually-hidden">Legend</legend>
-
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Text Area</label>
-<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box" disabled></textarea>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Input Label&lt;/label&gt;
-&lt;textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box" disabled&gt;&lt;/textarea&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
-
-<div class="evo-space-10"></div>
-
-<div class="padding-10 inverse-bg">
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Text Area Inverse</label>
-<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled></textarea>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
-</div>
-
-</fieldset>
-</form>
 
 <div class="evo-space-20"></div>
 
@@ -753,23 +143,23 @@
 
 <div class="evo-space-17"></div>
 
-<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-chevron" />
+<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-chevron" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-chevron" /&gt;
+<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-chevron" /&gt;
 </code>
 </pre>
 
 <div class="evo-space-17"></div>
 
-<input type="url" name="url" placeholder="URL Input" class="evo-form form-padding evo-box box-0 gray-5-bg form-icon form-arrow" />
+<input type="url" name="url" placeholder="URL Input" class="evo-form form-padding evo-box box-0 gray-5-bg form-icon form-icon-arrow" />
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;input type="url" name="url" placeholder="URL Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-arrow" /&gt;
+<code class="evo-measure">&lt;input type="url" name="url" placeholder="URL Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-arrow" /&gt;
 </code>
 </pre>
 
@@ -849,7 +239,7 @@
 <div class="evo-space-17"></div>
 
 <div class="evo-position">
-<input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-chevron" />
+<input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-icon-chevron" />
  <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
  </div>
 
@@ -857,7 +247,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-chevron" /&gt;
+&lt;input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-icon-chevron" /&gt;
 &lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
 &lt;/div&gt;</code>
 </pre>
@@ -872,7 +262,7 @@
 
 
 <div class="evo-position">
-  <input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-search" />
+  <input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-icon-search" />
 </div>
  <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search">Enter your search term.</label>
 
@@ -880,7 +270,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-search" /&gt;
+&lt;input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-icon-search" /&gt;
 &lt;/div&gt;
 &lt;label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search"&gt;Enter your search term.&lt;/label&gt;</code>
 </pre>
@@ -895,7 +285,7 @@
 
 
 <div class="evo-position">
-<input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-arrow" />
+<input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-icon-arrow" />
  <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
  </div>
 
@@ -903,7 +293,7 @@
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-arrow" /&gt;
+&lt;input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-icon-arrow" /&gt;
 &lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
 &lt;/div&gt;</code>
 </pre>
@@ -919,45 +309,6 @@
 
 </fieldset>
 </form>
-
-
-
-<!-- Form Pattern -->
-
-<section id="InputFormPattern">
-
-<h2 class="text-size-6">Example Form Pattern</h2>
-
-<div class="evo-space-18"></div>
-
-<div class="evo-codeblock" data-identifier="input-sign-in">
-<form>
-  <fieldset class="text-measure-6">
-    <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
-      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
-      <div class="evo-space-10"></div>
-      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
-      <div class="evo-space-10"></div>
-      <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
-      <div class="evo-space-10"></div>
-      <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
-      <div class="evo-space-10"></div>
-  </fieldset>
-</form>
-</div>
-
-<div class="evo-space"></div>
-<div class="evo-codeblock-target" data-target="input-sign-in">
-<pre class="evo-box-left box-left-thin padding-left-9"><code>
-<!-- HTML will show up inside here --></code>
-</pre>
-</div>
-
-<div class="evo-space-20"></div>
-
-</section>
 
 
 </main>
