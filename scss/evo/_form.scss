@@ -166,6 +166,7 @@ select::-ms-expand {
 // Note that input is nested in the label, which does not require the label to have a for=""
 // To move text away from input, simply add a space or &nbsp; to the left of the word
 
+// TODO have input type =checkbox, =radio
 label.form-radio,
 label.form-checkbox {
   display: block;
@@ -184,6 +185,20 @@ label.form-checkbox {
   // *overflow: hidden;
   overflow: hidden;
 }
+
+// input.form-radio,
+// input.form-checkbox {
+//   width: 1em;
+//   height: 1em;
+//   padding: 0;
+//   margin:0;
+//   vertical-align: middle;
+//   position: relative;
+//   top: -.3em;
+//   // *overflow: hidden;
+//   overflow: hidden;
+// }
+
 
 
 // http://stackoverflow.com/questions/2306117/radio-buttons-and-label-to-display-in-same-line#2350782

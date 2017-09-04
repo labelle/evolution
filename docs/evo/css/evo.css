@@ -9595,6 +9595,76 @@ button.evo-icon-button-2 {
 .list-icon-xx-small li {
   margin-left: .75em; }
 
+.form-padding-left-flush {
+  padding-left: 0 !important; }
+
+.form-padding-left-more {
+  padding-left: 1.75em !important; }
+
+.form-padding-left {
+  padding-left: 2.5em !important; }
+
+.form-padding-right-flush {
+  padding-right: 0 !important; }
+
+.form-icon-right-flush {
+  background-position: 100%; }
+
+.form-icon-right-more {
+  background-position: 99%; }
+
+.form-icon-right {
+  background-position: 98%; }
+
+.form-icon-left {
+  background-position: .75em !important; }
+
+.form-icon-left-more {
+  background-position: .35em !important; }
+
+.form-icon-left-flush {
+  background-position: 0 !important; }
+
+/*********************
+    TEXT INPUTS
+*********************/
+input.form-icon,
+textarea.form-icon,
+select.form-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1.25em;
+  background-position: 98%; }
+
+.form-icon-search {
+  background-image: url(../image/search-book-gray.svg); }
+
+.form-icon-email {
+  background-image: url(../image/mail-book-gray.svg); }
+
+.form-icon-chevron {
+  background-image: url(../image/chevron-book.svg); }
+
+.form-icon-arrow {
+  background-image: url(../image/arrow-book-gray.svg); }
+
+.form-icon-eye {
+  background-image: url(../image/eye-book-gray.svg); }
+
+.form-icon-eye-slash {
+  background-image: url(../image/eye-slash-book-gray.svg); }
+
+.form-icon-lock {
+  background-image: url(../image/lock-book-gray.svg); }
+
+.form-icon-triangle {
+  background-image: url(../image/triangle-down-solid.svg); }
+
+.form-icon-chevron-down {
+  background-image: url(../image/chevron-down-book.svg); }
+
 .icon-scroll-chevron-container {
   position: relative;
   width: 24px;
@@ -9880,6 +9950,104 @@ input.evo-bullet-button:hover::before {
   color: #0073b9;
   opacity: 1; }
 
+ul.bullet-color li:before,
+ul.bullet-color-hover li:hover:before,
+ul.bullet-color-after li:after,
+ul.bullet-color-hover-after li:hover:after,
+a.link-color:before,
+a.link-color-hover:hover:before,
+a.link-color-after:after,
+a.link-color-hover-after:hover:after,
+button.button-color:before,
+button.button-color-hover:hover:before,
+button.button-color-after:after,
+button.button-color-hover-after:hover:after {
+  color: #0073b9 !important; }
+
+ul.bullet-black li:before,
+ul.bullet-black-hover li:hover:before,
+ul.bullet-black-after li:after,
+ul.bullet-black-hover-after li:hover:after,
+a.link-black:before,
+a.link-black-hover:hover:before,
+a.link-black-after:after,
+a.link-black-hover-after:hover:after,
+button.button-black:before,
+button.button-black-hover:hover:before,
+button.button-black-after:after,
+button.button-black-hover-after:hover:after {
+  color: black !important; }
+
+ul.bullet-white li:before,
+ul.bullet-white-hover li:hover:before,
+ul.bullet-white-after li:after,
+ul.bullet-white-hover-after li:hover:after,
+a.link-white:before,
+a.link-white-hover:hover:before,
+a.link-white-after:after,
+a.link-white-hover-after:hover:after,
+button.button-white:before,
+button.button-white-hover:hover:before,
+button.button-white-after:after,
+button.button-white-hover-after:hover:after {
+  color: white !important; }
+
+ul.bullet-gray-dark li:before,
+ul.bullet-gray-dark-hover li:hover:before,
+ul.bullet-gray-dark-after li:after,
+ul.bullet-gray-dark-hover-after li:hover:after,
+a.link-gray-dark:before,
+a.link-gray-dark-hover:hover:before,
+a.link-gray-dark-after:after,
+a.link-gray-dark-hover-after:hover:after,
+button.button-gray-dark:before,
+button.button-gray-dark-hover:hover:before,
+button.button-gray-dark-after:after,
+button.button-gray-dark-hover-after:hover:after {
+  color: #333333 !important; }
+
+ul.bullet-gray li:before,
+ul.bullet-gray-hover li:hover:before,
+ul.bullet-gray-after li:after,
+ul.bullet-gray-hover-after li:hover:after,
+a.link-gray:before,
+a.link-gray-hover:hover:before,
+a.link-gray-after:after,
+a.link-gray-hover-after:hover:after,
+button.button-gray:before,
+button.button-gray-hover:hover:before,
+button.button-gray-after:after,
+button.button-gray-hover-after:hover:after {
+  color: #7f7f7f !important; }
+
+ul.bullet-gray-light li:before,
+ul.bullet-gray-light-hover li:hover:before,
+ul.bullet-gray-light-after li:after,
+ul.bullet-gray-light-hover-after li:hover:after,
+a.link-gray-light:before,
+a.link-gray-light-hover:hover:before,
+a.link-gray-light-after:after,
+a.link-gray-light-hover-after:hover:after,
+button.button-gray-light:before,
+button.button-gray-light-hover:hover:before,
+button.button-gray-light-after:after,
+button.button-gray-light-hover-after:hover:after {
+  color: #cccccc !important; }
+
+ul.bullet-inherit li:before,
+ul.bullet-inherit-hover li:hover:before,
+ul.bullet-inherit-after li:after,
+ul.bullet-inherit-hover-after li:hover:after,
+a.link-inherit:before,
+a.link-inherit-hover:hover:before,
+a.link-inherit-after:after,
+a.link-inherit-hover-after:hover:after,
+button.button-inherit:before,
+button.button-inherit-hover:hover:before,
+button.button-inherit-after:after,
+button.button-inherit-hover-after:hover:after {
+  color: inherit !important; }
+
 ul.bullet-triangle-large li:before,
 ul.bullet-triangle-large-after li:after,
 a.link-triangle-large:before,
@@ -10016,9 +10184,9 @@ button.button-crossmark:before,
 button.button-crossmark-after:after {
   content: "❌"; }
 
-a.evo-inverse-button,
-.evo-inverse-button a,
-input.evo-inverse-button,
+a.evo-button-inverse,
+.evo-button-inverse a,
+input.evo-button-inverse,
 a.evo-button,
 input.evo-button,
 button,
@@ -10054,12 +10222,12 @@ button:hover,
   background-color: black;
   border-color: black; }
 
-.evo-inverse-button {
+.evo-button-inverse {
   color: white !important;
   background-color: transparent;
   border-color: white; }
 
-.evo-inverse-button:hover {
+.evo-button-inverse:hover {
   color: black !important;
   background-color: white;
   border-color: white;
@@ -10199,133 +10367,133 @@ a.ghost-color-to-ghost:hover,
   background-color: transparent !important;
   border-color: black !important; }
 
-.inverse-ghost-to-solid {
+.ghost-to-solid-inverse {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
 
-.inverse-ghost-to-solid:hover {
+.ghost-to-solid-inverse:hover {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-.inverse-solid-to-ghost {
+.solid-to-ghost-inverse {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-a.inverse-solid-to-ghost:hover,
-.inverse-solid-to-ghost:hover {
+a.solid-to-ghost-inverse:hover,
+.solid-to-ghost-inverse:hover {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
 
-.inverse-solid-to-ghost-color {
+.solid-to-ghost-color-inverse {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-a.inverse-solid-to-ghost-color:hover,
-.inverse-solid-to-ghost-color:hover {
+a.solid-to-ghost-color-inverse:hover,
+.solid-to-ghost-color-inverse:hover {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-.inverse-ghost-color-to-solid {
+.ghost-color-to-solid-inverse {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-a.inverse-ghost-color-to-solid:hover,
-.inverse-ghost-color-to-solid:hover {
+a.ghost-color-to-solid-inverse:hover,
+.ghost-color-to-solid-inverse:hover {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-.inverse-solid-to-solid-color {
+.solid-to-solid-color-inverse {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-a.inverse-solid-to-solid-color:hover,
-.inverse-solid-to-solid-color:hover {
+a.solid-to-solid-color-inverse:hover,
+.solid-to-solid-color-inverse:hover {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-.inverse-solid-color-to-solid {
+.solid-color-to-solid-inverse {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-a.inverse-solid-color-to-solid:hover,
-.inverse-solid-color-to-solid:hover {
+a.solid-color-to-solid-inverse:hover,
+.solid-color-to-solid-inverse:hover {
   color: black !important;
   background-color: white !important;
   border-color: white !important; }
 
-.inverse-ghost-to-solid-color {
+.ghost-to-solid-color-inverse {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
 
-a.inverse-ghost-to-solid-color:hover,
-.inverse-ghost-to-solid-color:hover {
+a.ghost-to-solid-color-inverse:hover,
+.ghost-to-solid-color-inverse:hover {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-.inverse-solid-color-to-ghost {
+.solid-color-to-ghost-inverse {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-a.inverse-solid-color-to-ghost:hover,
-.inverse-solid-color-to-ghost:hover {
+a.solid-color-to-ghost-inverse:hover,
+.solid-color-to-ghost-inverse:hover {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
 
-.inverse-solid-color-to-ghost-color {
+.solid-color-to-ghost-color-inverse {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-a.inverse-solid-color-to-ghost-color:hover,
-.inverse-solid-color-to-ghost-color:hover {
+a.solid-color-to-ghost-color-inverse:hover,
+.solid-color-to-ghost-color-inverse:hover {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-.inverse-ghost-color-to-solid-color {
+.ghost-color-to-solid-color-inverse {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-a.inverse-ghost-color-to-solid-color:hover,
-.inverse-ghost-color-to-solid-color:hover {
+a.ghost-color-to-solid-color-inverse:hover,
+.ghost-color-to-solid-color-inverse:hover {
   color: black !important;
   background-color: #0073b9 !important;
   border-color: #0073b9 !important; }
 
-.inverse-ghost-to-ghost-color {
+.ghost-to-ghost-color-inverse {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
 
-a.inverse-ghost-to-ghost-color:hover,
-.inverse-ghost-to-ghost-color:hover {
+a.ghost-to-ghost-color-inverse:hover,
+.ghost-to-ghost-color-inverse:hover {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-.inverse-ghost-color-to-ghost {
+.ghost-color-to-ghost-inverse {
   color: #0073b9 !important;
   background-color: transparent !important;
   border-color: #0073b9 !important; }
 
-a.inverse-ghost-color-to-ghost:hover,
-.inverse-ghost-color-to-ghost:hover {
+a.ghost-color-to-ghost-inverse:hover,
+.ghost-color-to-ghost-inverse:hover {
   color: white !important;
   background-color: transparent !important;
   border-color: white !important; }
@@ -15526,64 +15694,6 @@ fieldset.overflow {
   input,
   input[type=text] {
     display: block !important; } }
-
-.form-padding-left {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2.25em;
-  padding-right: 1em; }
-
-/*********************
-    TEXT INPUTS
-*********************/
-input.form-icon,
-textarea.form-icon,
-select.form-icon {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 1.25em;
-  background-position: 98%; }
-
-.form-icon-right-flush {
-  background-position: 100%; }
-
-.form-icon-right {
-  background-position: 98%; }
-
-.form-icon-left {
-  background-position: 2%; }
-
-.form-icon-left-flush {
-  background-position: 0%; }
-
-.form-icon-search {
-  background-image: url(../image/search-book-gray.svg); }
-
-.form-icon-email {
-  background-image: url(../image/mail-book-gray.svg); }
-
-.form-icon-chevron {
-  background-image: url(../image/chevron-book.svg); }
-
-.form-icon-arrow {
-  background-image: url(../image/arrow-book-gray.svg); }
-
-.form-icon-eye {
-  background-image: url(../image/eye-book-gray.svg); }
-
-.form-icon-eye-slash {
-  background-image: url(../image/eye-slash-book-gray.svg); }
-
-.form-icon-lock {
-  background-image: url(../image/lock-book-gray.svg); }
-
-.form-icon-triangle {
-  background-image: url(../image/triangle-down-solid.svg); }
-
-.form-icon-chevron-down {
-  background-image: url(../image/chevron-down-book.svg); }
 
 label.button-upload:before,
 a.button-upload:before,

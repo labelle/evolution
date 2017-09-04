@@ -83,9 +83,9 @@
 
 <section id="InputFormPattern">
 
-<h2 class="text-size-6">Example Form Pattern</h2>
+<h2 class="text-size-6">Form Example</h2>
 
-<div class="evo-space-18"></div>
+<div class="evo-space"></div>
 
 <div class="evo-codeblock" data-identifier="input-sign-in">
 <form>
@@ -118,14 +118,60 @@
 
 
 
+<!-- Form Pattern Inverse -->
+
+<section id="InputFormPatternInverse">
+
+<h2 class="text-size-6">Inverse Form Example</h2>
+
+<div class="evo-space"></div>
+
+<div class="padding-15 inverse-bg">
+<div class="evo-codeblock" data-identifier="input-sign-in-inverse">
+<form>
+  <fieldset class="text-measure-6">
+    <legend class="text-size-6 margin-bottom-13 text-inverse">Please sign in.</legend>
+      <input type="text" id="username" placeholder="username" class="evo-form-inverse form-padding form-box text-inverse evo-form-placeholder-inverse evo-form-hover-inverse evo-form-focus-inverse margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
+      <div class="evo-space-10"></div>
+      <input type="password" id="password" placeholder="password" class="evo-form-inverse form-padding form-box text-inverse evo-form-placeholder-inverse evo-form-hover-inverse evo-form-focus-inverse margin-bottom-3">
+      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
+      <div class="evo-space-10"></div>
+      <input type="submit" class="evo-button-inverse solid-to-solid-color-inverse width-auto" value="Sign In">
+      <div class="evo-space-10"></div>
+      <a href="javascript:void(0)" class="evo-link-inverse link-line-under-hover">Forgot password?</a>
+      <div class="evo-space-10"></div>
+  </fieldset>
+</form>
+</div>
+</div>
+
+<div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="input-sign-in-inverse">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
 
 <!-- Form Mix -->
 
-<section id="InputForm">
+<section id="InputFormMix">
 
 <h2 class="text-size-6">Form Mix</h2>
 
 <div class="evo-space-15"></div>
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
 
 <input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 evo-box box-round-8 box-3 text-bold" />
 
@@ -140,29 +186,6 @@
 
 <p class="evo-measure">Create an <code>&lt;input type="text"&gt;</code> tag and apply any <a href="box.html">box classes</a>. Default input button styles are set in _evo_variables.scss. See the "buttons" section for more styles.</p>
 
-
-<div class="evo-space-17"></div>
-
-<input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-chevron" />
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;input type="text" name="text" placeholder="Text Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-chevron" /&gt;
-</code>
-</pre>
-
-<div class="evo-space-17"></div>
-
-<input type="url" name="url" placeholder="URL Input" class="evo-form form-padding evo-box box-0 gray-5-bg form-icon form-icon-arrow" />
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;input type="url" name="url" placeholder="URL Input" class="evo-form padding-10 padding-left-2 evo-box box-0 evo-box-bottom box-bottom-thin box-bottom-gray-14 form-icon form-icon-arrow" /&gt;
-</code>
-</pre>
-
 <div class="evo-space-17"></div>
 
 <input type="submit" class="evo-button solid-to-ghost width-auto" />
@@ -174,133 +197,6 @@
 <code class="evo-measure">&lt;input type="submit" class="evo-button solid-to-ghost width-auto" /&gt;
 </code>
 </pre>
-
-<div class="evo-space-17"></div>
-
-<div class="evo-position">
- <input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-box-thick form-none" />
- <input type="submit" class="position-right z-2 solid-color-to-solid button-box-thin box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" />
- </div>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-box-thick form-none" /&gt;
-&lt;input type="submit" class="position-right z-2 solid-color-to-solid button-box-thin box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" /&gt;
-&lt;/div&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">The glyph arrow is within a button in the layer above the form.</p>
-
-<div class="evo-space-17"></div>
-
-<div class="evo-position text-measure-7 margin-auto">
- <input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-none" />
- <input type="submit" class="position-absolute top-0 right-0 z-2 solid-color-to-solid button-box-medium box-corner width-auto evo-white screen-tall-full" value="→" />
- </div>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position text-measure-7 margin-auto"&gt;
-&lt;input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-none" /&gt;
-&lt;input type="submit" class="position-absolute top-0 right-0 z-2 solid-color-to-solid button-box-medium box-corner width-auto evo-white screen-tall-full" value="→" /&gt;
-&lt;/div&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Alternate approach to glyph arrow in button, in the layer above the form.</p>
-
-<div class="evo-space-17"></div>
-
-<div class="evo-position">
- <input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-box-thick margin-bottom-3 form-none" />
- <input type="submit" class="position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" />
- </div>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="email" id="email" placeholder="email" class="evo-form form-padding form-box form-box-thick margin-bottom-3 form-none" /&gt;
-&lt;input type="submit" class="position-right z-2  ghost-to-ghost-color button-box-none box-0 box-corner width-auto evo-white text-size-7 margin-right-7 text-leading-0" value="→" /&gt;
-&lt;/div&gt;</code>
-</pre>
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">The glyph arrow is within a transparent button in the layer above the form.</p>
-
-
-
-<div class="evo-space-17"></div>
-
-<div class="evo-position">
-<input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-icon-chevron" />
- <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
- </div>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="email" name="email" placeholder="Enter email address" class="evo-form form-padding evo-box-top evo-box-left evo-box-right box-top-0 box-left-0 box-right-0 form-icon form-icon-chevron" /&gt;
-&lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
-&lt;/div&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">A transparent button is in the layer above the form. The chevron is an icon within the form background. The box edges have been removed except for the bottom line.</p>
-
-
-
-<div class="evo-space-17"></div>
-
-
-<div class="evo-position">
-  <input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-icon-search" />
-</div>
- <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search">Enter your search term.</label>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" id="search" placeholder="Search" class="evo-form form-padding evo-box-bottom box-bottom-thin box-top-0 box-right-0 box-left-0 box-square margin-bottom-3 form-icon form-icon-search" /&gt;
-&lt;/div&gt;
-&lt;label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="search"&gt;Enter your search term.&lt;/label&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">Minimalist search input form with label below acting as instruction.</p>
-<!-- https://stackoverflow.com/questions/6542413/bind-enter-key-to-specific-button-on-page -->
-
-
-<div class="evo-space-17"></div>
-
-
-<div class="evo-position">
-<input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-icon-arrow" />
- <input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" />
- </div>
-
-<div class="evo-space-10"></div>
-
-<pre class="evo-code">
-<code class="evo-measure">&lt;div class="evo-position"&gt;
-&lt;input type="search" name="search" placeholder="Evo Search Input" class="evo-form form-padding form-box form-icon form-icon-arrow" /&gt;
-&lt;input type="submit" class="margin-right-5 position-right z-2 ghost-to-ghost-color button-box-none box-0 box-corner width-auto button-padding-thin text-size-8" value="&nbsp;" /&gt;
-&lt;/div&gt;</code>
-</pre>
-
-<div class="evo-space-10"></div>
-
-<p class="evo-measure">A transparent button is in the layer above the form. The arrow is an icon within the form background.</p>
 
 <div class="evo-space-20"></div>
 

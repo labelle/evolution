@@ -1,0 +1,148 @@
+///*      I C O N   F O R M    */
+
+@import "../evo_variables/evo_variables";
+
+
+// Form padding utilities
+
+
+.form-padding-left-flush {
+  // padding
+  padding-left: 0 !important;
+}
+
+.form-padding-left-more {
+  // padding
+  padding-left: 1.75em !important;
+}
+
+.form-padding-left {
+  // padding
+  padding-left: 2.5em !important;
+}
+
+
+.form-padding-right-flush {
+  // padding
+  padding-right: 0 !important;
+}
+
+
+
+
+// Form icon alignment
+
+// Flush right
+.form-icon-right-flush {
+     background-position: 100%;
+}
+
+// Align right
+.form-icon-right-more {
+     background-position: 99%;
+}
+
+// Align right
+.form-icon-right {
+     background-position: 98%;
+}
+
+// Align left
+.form-icon-left {
+     background-position: .75em !important;
+}
+
+// Align left
+.form-icon-left-more {
+     background-position: .35em !important;
+}
+
+// Flush left
+.form-icon-left-flush {
+     background-position: 0 !important;
+}
+
+
+
+
+
+
+/*********************
+    TEXT INPUTS
+*********************/
+
+// Text
+
+// .form-search {
+//   background: #{$form_search_background};
+// }
+
+// TODO Can we get rid of the 'input' because it's messing up the checkboxes
+// TODO Specify input of bg images to certain =types
+// http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript#13968900
+// Get rid of styling for option, so that custom styling is applied
+input.form-icon,
+textarea.form-icon,
+select.form-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat:     #{$form_background_repeat};
+  background-attachment: #{$form_background_attachment};
+  background-size:       #{$form_background_size};
+  background-position:   #{$form_background_position};
+}
+
+// .form-icon {
+//   // background-color:      #{$form_background_color};
+//   // background-image:      #{$form_background_search};
+//   background-repeat:     #{$form_background_repeat};
+//   background-attachment: #{$form_background_attachment};
+//   background-size:       #{$form_background_size};
+//   background-position:   #{$form_background_position};
+// }
+
+
+.form-icon-search {
+  // background-color:      #{$form_background_color};
+  background-image:      #{$form_background_search};
+  // background-repeat:     #{$form_background_repeat};
+  // background-attachment: #{$form_background_attachment};
+  // background-size:       #{$form_background_size};
+  // background-position:   #{$form_background_position};
+}
+
+.form-icon-email {
+  background-image: #{$form_background_email};
+}
+
+.form-icon-chevron {
+  background-image: #{$form_background_chevron};
+}
+
+
+.form-icon-arrow {
+  background-image: #{$form_background_arrow};
+}
+
+.form-icon-eye {
+  background-image: #{$form_background_eye};
+}
+
+.form-icon-eye-slash {
+  background-image: #{$form_background_eye_slash};
+}
+
+.form-icon-lock {
+  background-image: #{$form_background_lock};
+}
+
+// Select
+
+
+.form-icon-triangle {
+  background-image: #{$form_background_triangle};
+}
+
+.form-icon-chevron-down {
+  background-image: #{$form_background_chevron_down};
+}

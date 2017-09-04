@@ -2,9 +2,9 @@
 
 @import "../evo_variables/evo_variables";
 
-a#{$evo}-inverse-button,
-#{$evo}-inverse-button a,
-input#{$evo}-inverse-button,
+a#{$evo}-button-inverse,
+#{$evo}-button-inverse a,
+input#{$evo}-button-inverse,
 a#{$evo}-button,
 input#{$evo}-button,
 button,
@@ -112,7 +112,7 @@ button:hover,
 //      // transition: #{$button_hover_transition}; // this is not needed
 // }
 
-#{$evo}-inverse-button {
+#{$evo}-button-inverse {
      // Type
      // font-family: #{$button_font_family};
      // font-size: #{$button_font_size};
@@ -135,7 +135,7 @@ button:hover,
 
 
 
-#{$evo}-inverse-button:hover {
+#{$evo}-button-inverse:hover {
      // type
      // text-decoration: #{$button_hover_text_decoration}; // Doesn't work
      // color

@@ -545,7 +545,7 @@
           <div class="evo-space-10"></div>
           <input class="evo-form form-padding form-box transparent-bg placeholder-text-white form-hover-white text-inverse placeholder-opacity-5" type="search" placeholder="Search">
          <div class="evo-space-10"></div>
-        <input type="submit" class="evo-inverse-button width-auto" />
+        <input type="submit" class="evo-button-inverse width-auto" />
           <div class="evo-space-10"></div>
           <a href="#" class="evo-link-inverse">Our Work →</a>
           <div class="evo-space"></div>
@@ -1164,8 +1164,9 @@ Sample output from HTML&lt;/span&gt;</pre>
       <li><a href="icon-size.html">Icon Size</a></li>
       <li><a href="icon-link.html">Icon Link&nbsp;✗</a></li>
       <li><a href="icon-button.html">Icon Button&nbsp;✗</a></li>
-      <li><a href="icon-scroll.html">Icon Scroll&nbsp;✗</a></li>
       <li><a href="icon-list.html">Icon List</a></li>
+      <li><a href="icon-form.html">Icon Form</a></li>
+      <li><a href="icon-scroll.html">Icon Scroll&nbsp;✗</a></li>
       <li><a href="icon-effect.html">Icon Effect&nbsp;✗</a></li>
       <!-- <div class="evo-space"></div> -->
     </ul>
@@ -1244,6 +1245,7 @@ Sample output from HTML&lt;/span&gt;</pre>
       <li><a href="glyph-link.html">Glyph Link&nbsp;✗</a></li>
       <li><a href="glyph-button.html">Glyph Button&nbsp;✗</a></li>
       <li><a href="glyph-list.html">Glyph List</a></li>
+      <li><a href="glyph-form.html">Glyph Form</a></li>
       <li><a href="glyph-play.html">Glyph Play</a></li>
       <!-- <div class="evo-space"></div> -->
     </ul>
@@ -1851,7 +1853,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 <h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Use the inverse style on a dark background.</h3>
 <div class="evo-space"></div>
 <div class="evo-codeblock" data-identifier="button-1-inverse">
-<button type="button" class="evo-inverse-button">Button</button>
+<button type="button" class="evo-button-inverse">Button</button>
 </div>
 <div class="evo-space"></div>
 <div class="evo-codeblock-target" data-target="button-1-inverse">
@@ -1889,11 +1891,11 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   <p class="text-measure-6 text-inverse">Additional inverse <a href="button-style.html">button hover styles</a> are available.</p>
 <div class="evo-space"></div>
 <div class="evo-codeblock" data-identifier="button-1-inverse-hover">
-<button type="button" class="evo-button inverse-solid-to-ghost">inverse-solid-to-ghost</button>
+<button type="button" class="evo-button solid-to-ghost-inverse">solid-to-ghost-inverse</button>
 <div class="evo-space-10"></div>
-<button type="button" class="evo-inverse-button inverse-ghost-color-to-solid-color">inverse-ghost-color-to-solid-color</button>
+<button type="button" class="evo-button-inverse ghost-color-to-solid-color-inverse">ghost-color-to-solid-color-inverse</button>
 <div class="evo-space-10"></div>
-<button type="button" class="evo-inverse-button inverse-solid-color-to-ghost-color">inverse-solid-color-to-ghost-color</button>
+<button type="button" class="evo-button-inverse solid-color-to-ghost-color-inverse">solid-color-to-ghost-color-inverse</button>
 </div>
 <div class="evo-space"></div>
 <div class="evo-codeblock-target" data-target="button-1-inverse-hover">
@@ -1950,68 +1952,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   </div>
 
 <div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
-<h3 class="text-measure-6 text-size-6 trans-gray-15">Form example.</h3>
-    <div class="evo-space"></div>
-
-<div class="evo-codeblock" data-identifier="input-sign-in">
-<form>
-  <fieldset class="text-measure-6">
-    <legend class="text-size-6 margin-bottom-13">Please sign in.</legend>
-      <input type="text" id="username" placeholder="username" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
-      <div class="evo-space-10"></div>
-      <input type="password" id="password" placeholder="password" class="evo-form form-padding form-box evo-form-placeholder evo-form-hover evo-form-focus margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
-      <div class="evo-space-10"></div>
-      <input type="submit" class="evo-button solid-to-solid-color width-auto" value="Sign In">
-      <div class="evo-space-10"></div>
-      <a href="javascript:void(0)" class="evo-link link-line-under-hover">Forgot password?</a>
-      <div class="evo-space-10"></div>
-  </fieldset>
-</form>
-</div>
-<div class="evo-space"></div>
-<div class="evo-codeblock-target" data-target="input-sign-in">
-<pre class="evo-box-left box-left-thin padding-left-9"><code>
-<!-- HTML will show up inside here --></code>
-</pre>
-</div>
-</div>
-
-<div class="evo-space"></div>
-
-<div class="float-left min-width margin-right-10 inverse-bg padding-15 box-shadow screen-wide-70">
-<h3 class="text-measure-6 text-size-6 inverse-trans-gray-15">Inverse form example.</h3>
-    <div class="evo-space"></div>
-
-<div class="evo-codeblock" data-identifier="inverse-input-sign-in">
-<form>
-  <fieldset class="text-measure-6">
-    <legend class="text-size-6 margin-bottom-13 text-inverse">Please sign in.</legend>
-      <input type="text" id="username" placeholder="username" class="evo-form-inverse form-padding form-box text-inverse evo-form-placeholder-inverse evo-form-hover-inverse evo-form-focus-inverse margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="text">Username</label>
-      <div class="evo-space-10"></div>
-      <input type="password" id="password" placeholder="password" class="evo-form-inverse form-padding form-box text-inverse evo-form-placeholder-inverse evo-form-hover-inverse evo-form-focus-inverse margin-bottom-3">
-      <label class="text-size-3 gray-15 text-tracking-8 text-uppercase" for="password">Password</label>
-      <div class="evo-space-10"></div>
-      <input type="submit" class="evo-inverse-button inverse-solid-to-solid-color width-auto" value="Sign In">
-      <div class="evo-space-10"></div>
-      <a href="javascript:void(0)" class="evo-link-inverse link-line-under-hover">Forgot password?</a>
-      <div class="evo-space-10"></div>
-  </fieldset>
-</form>
-</div>
-<div class="evo-space"></div>
-<div class="evo-codeblock-target" data-target="inverse-input-sign-in">
-<pre class="evo-box-left box-left-thin padding-left-9 text-inverse"><code>
-<!-- HTML will show up inside here --></code>
-</pre>
-</div>
-</div>
-
-<div class="evo-space"></div>
-
-<div class="float-left min-width margin-right-10 evo-white-bg padding-15 box-shadow screen-wide-70">
 <h3 class="text-measure-6 text-size-6 trans-gray-15 margin-bottom-13">Form Element</h3>
 <div class="evo-space"></div>
 <div class="evo-codeblock" data-identifier="input-text">
@@ -2060,6 +2000,25 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
 <!-- HTML will show up inside here --></code>
 </pre>
 </div>
+
+
+<div class="evo-space"></div>
+
+<div class="evo-codeblock" data-identifier="checkbox">
+<fieldset class="overflow-hidden">
+<label class="form-checkbox"><input type="checkbox" id="checkbox1" checked />&nbsp;checkbox 1</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox2" />&nbsp;checkbox 2</label>
+<label class="form-checkbox"><input type="checkbox" id="checkbox3" />&nbsp;checkbox 3</label>
+</fieldset>
+</div>
+
+<div class="evo-space"></div>
+<div class="evo-codeblock-target" data-target="checkbox">
+<pre class="evo-box-left box-left-thin padding-left-9"><code>
+<!-- HTML will show up inside here --></code>
+</pre>
+</div>
+
 
 </div>
 
