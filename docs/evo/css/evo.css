@@ -15485,26 +15485,6 @@ select::-ms-expand {
     background: none\9;
     padding: 5px\9; } }
 
-.form-padding {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em; }
-
-.form-box {
-  border-top-width: thin;
-  border-bottom-width: thin;
-  border-left-width: thin;
-  border-right-width: thin;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-color: #7f7f7f;
-  border-bottom-color: #7f7f7f;
-  border-left-color: #7f7f7f;
-  border-right-color: #7f7f7f; }
-
 label.form-radio,
 label.form-checkbox {
   display: block;
@@ -15681,6 +15661,12 @@ label.evo-button :valid + span {
 .form-icon-size-1 {
   background-size: 0.5em !important; }
 
+.form-padding {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
 .form-padding-thick {
   padding-top: 1.25em;
   padding-bottom: 1.25em;
@@ -15704,6 +15690,20 @@ label.evo-button :valid + span {
   padding-bottom: 0;
   padding-left: .25em;
   padding-right: .25em; }
+
+.form-box {
+  border-top-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thin;
+  border-right-width: thin;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-color: #7f7f7f;
+  border-bottom-color: #7f7f7f;
+  border-left-color: #7f7f7f;
+  border-right-color: #7f7f7f; }
 
 .form-box-thick {
   border-width: thick; }

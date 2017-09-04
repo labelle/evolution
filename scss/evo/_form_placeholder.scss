@@ -88,11 +88,11 @@ textarea.form-placeholder-info::placeholder,
 input.form-placeholder-info::placeholder,
 textarea.form-placeholder-info-hover:hover::placeholder,
 input.form-placeholder-info-hover:hover::placeholder {
-     color: #{$color_15};
+     color: #{$evo_info};
 }
 textarea.form-placeholder-info-focus:focus::placeholder,
 input.form-placeholder-info-focus:focus::placeholder {
-     color: #{$color_15} !important;
+     color: #{$evo_info} !important;
 }
 
 
@@ -101,11 +101,11 @@ textarea.form-placeholder-success::placeholder,
 input.form-placeholder-success::placeholder,
 textarea.form-placeholder-success-hover:hover::placeholder,
 input.form-placeholder-success-hover:hover::placeholder {
-     color: #{$color_21};
+     color: #{$evo_success};
 }
 textarea.form-placeholder-success-focus:focus::placeholder,
 input.form-placeholder-success-focus:focus::placeholder {
-     color: #{$color_21} !important;
+     color: #{$evo_success} !important;
 }
 
 
@@ -114,11 +114,11 @@ textarea.form-placeholder-warning::placeholder,
 input.form-placeholder-warning::placeholder,
 textarea.form-placeholder-warning-hover:hover::placeholder,
 input.form-placeholder-warning-hover:hover::placeholder {
-     color: #{$color_2};
+     color: #{$evo_warning};
 }
 textarea.form-placeholder-warning-focus:focus::placeholder,
 input.form-placeholder-warning-focus:focus::placeholder {
-     color: #{$color_2} !important;
+     color: #{$evo_warning} !important;
 }
 
 
@@ -127,11 +127,11 @@ textarea.form-placeholder-danger::placeholder,
 input.form-placeholder-danger::placeholder,
 textarea.form-placeholder-danger-hover:hover::placeholder,
 input.form-placeholder-danger-hover:hover::placeholder {
-     color: #{$color_5};
+     color: #{$evo_danger};
 }
 textarea.form-placeholder-danger-focus:focus::placeholder,
 input.form-placeholder-danger-focus:focus::placeholder {
-     color: #{$color_5} !important;
+     color: #{$evo_danger} !important;
 }
 
 // /*********************

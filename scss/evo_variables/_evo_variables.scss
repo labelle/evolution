@@ -39,17 +39,24 @@ $evo:                               ".evo" !default;
 
 // DO I NEED THESE INVERSE COLORS?
 
-// Primary accent color
+// Accent color
 $evo_color:							#{$color_15} !default;
 // $inverse_evo_color:					#{$color_15} !default;
 
 
-// Primary neutral colors
-$evo_black:							#{$black} !default;
+// Neutral colors
 $evo_white:							#{$white} !default;
-$evo_gray_light:					#{$gray_9} !default;
-$evo_gray:					        #{$gray_15} !default;
 $evo_gray_dark:						#{$gray_21} !default;
+$evo_gray:					        #{$gray_15} !default;
+$evo_gray_light:					#{$gray_9} !default;
+$evo_black:							#{$black} !default;
+
+
+// Status colors
+$evo_info:                          #{$color_15} !default;
+$evo_success:                       #{$color_21} !default;
+$evo_warning:                       #{$color_2} !default;
+$evo_danger:                        #{$color_5} !default;
 
 
 // TO-DO need to create these gray color classes and variables

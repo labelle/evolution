@@ -100,15 +100,15 @@ input[type].form-hover-info:hover,
 textarea.form-hover-info:hover {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$color_15};
-    border-bottom-color: #{$color_15};
-    border-left-color: #{$color_15};
-    border-right-color: #{$color_15};
+    border-top-color: #{$evo_info};
+    border-bottom-color: #{$evo_info};
+    border-left-color: #{$evo_info};
+    border-right-color: #{$evo_info};
     box-shadow: #{$hover_box_shadow};
     transition: #{$hover_transition};
     outline: 0 none;
         & + label {
-      color: #{$color_15};
+      color: #{$evo_info};
       cursor: pointer; // "hand" cursor
     }
   }
@@ -121,15 +121,15 @@ input[type].form-hover-success:hover,
 textarea.form-hover-success:hover {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$color_21};
-    border-bottom-color: #{$color_21};
-    border-left-color: #{$color_21};
-    border-right-color: #{$color_21};
+    border-top-color: #{$evo_success};
+    border-bottom-color: #{$evo_success};
+    border-left-color: #{$evo_success};
+    border-right-color: #{$evo_success};
     box-shadow: #{$hover_box_shadow};
     transition: #{$hover_transition};
     outline: 0 none;
         & + label {
-      color: #{$color_21};
+      color: #{$evo_success};
       cursor: pointer; // "hand" cursor
     }
   }
@@ -142,15 +142,15 @@ input[type].form-hover-warning:hover,
 textarea.form-hover-warning:hover {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$color_2};
-    border-bottom-color: #{$color_2};
-    border-left-color: #{$color_2};
-    border-right-color: #{$color_2};
+    border-top-color: #{$evo_warning};
+    border-bottom-color: #{$evo_warning};
+    border-left-color: #{$evo_warning};
+    border-right-color: #{$evo_warning};
     box-shadow: #{$hover_box_shadow};
     transition: #{$hover_transition};
     outline: 0 none;
         & + label {
-      color: #{$color_2};
+      color: #{$evo_warning};
       cursor: pointer; // "hand" cursor
     }
   }
@@ -164,15 +164,15 @@ input[type].form-hover-danger:hover,
 textarea.form-hover-danger:hover {
     // border-width: 2px;
     // border-style: solid;
-    border-top-color: #{$color_5};
-    border-bottom-color: #{$color_5};
-    border-left-color: #{$color_5};
-    border-right-color: #{$color_5};
+    border-top-color: #{$evo_danger};
+    border-bottom-color: #{$evo_danger};
+    border-left-color: #{$evo_danger};
+    border-right-color: #{$evo_danger};
     box-shadow: #{$hover_box_shadow};
     transition: #{$hover_transition};
     outline: 0 none;
         & + label {
-      color: #{$color_5};
+      color: #{$evo_danger};
       cursor: pointer; // "hand" cursor
     }
   }

@@ -138,43 +138,6 @@ select::-ms-expand {
     }
 }
 
-.form-padding {
-  // padding
-  padding-top: #{$form_padding_top};
-  padding-bottom: #{$form_padding_bottom};
-  padding-left: #{$form_padding_left};
-  padding-right: #{$form_padding_right};
-}
-
-.form-box {
-  // border width
-  border-top-width: #{$form_border_top_width};
-  border-bottom-width: #{$form_border_bottom_width};
-  border-left-width: #{$form_border_left_width};
-  border-right-width: #{$form_border_right_width};
-  // border style
-  border-top-style: #{$form_border_top_style};
-  border-bottom-style: #{$form_border_bottom_style};
-  border-left-style: #{$form_border_left_style};
-  border-right-style: #{$form_border_right_style};
-  // border color
-  border-top-color: #{$form_border_top_color};
-  border-bottom-color: #{$form_border_bottom_color};
-  border-left-color: #{$form_border_left_color};
-  border-right-color: #{$form_border_right_color};
-}
-
-  // select:hover {
-  //   background-color: #eee;
-  //   border-color: #666;
-  // }
-
-
-  // select:hover {
-  //   background-color: #eee;
-  //   border-color: #666;
-  // }
-
 
 // DISABLED LABELS
 // KEEP THIS

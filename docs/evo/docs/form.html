@@ -195,6 +195,57 @@
 </section>
 
 
+
+
+<!-- disabled input -->
+
+<section id="InputDisabled">
+
+<h2 class="text-size-6">input disabled</h2>
+
+<div class="evo-space-10"></div>
+
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Input Label</label>
+<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled/>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Input Label&lt;/label&gt;
+&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled /&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
+
+<div class="evo-space-10"></div>
+
+<div class="padding-10 inverse-bg">
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Input Label</label>
+<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled />
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
+</div>
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+
+
 <!-- basic textarea -->
 
 <section id="textarea">
@@ -265,6 +316,82 @@
 
 
 
+<!-- Evo Text Area Inverse -->
+
+<section id="textareaEvoInverse">
+
+<h2 class="text-size-6">evo-form-inverse textarea</h2>
+
+<div class="evo-space"></div>
+
+
+<div class="padding-10 inverse-bg">
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Text Area Inverse</label>
+<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse"></textarea>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure text-inverse">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Textarea Label&lt;/label&gt;
+&lt;textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box"&gt;&lt;/textarea&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Create a <code class="evo-code-inverse">&lt;textarea&gt;</code> tag, and place a <code class="evo-code-inverse">&lt;label&gt;</code> tag above or below it. Apply the <code class="evo-code-inverse">evo-form</code> class along with <code class="evo-code-inverse">form-padding</code> and <code class="evo-code-inverse">form box</code>, as in the above example. Default form styles are set in _evo_variables.scss.</p>
+</div>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- disabled textarea -->
+
+<section id="TextareaDisabled">
+
+<h2 class="text-size-6">textarea disabled</h2>
+
+<div class="evo-space-10"></div>
+
+
+<form>
+<fieldset>
+<legend class="visually-hidden">Legend</legend>
+
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Text Area</label>
+<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box" disabled></textarea>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Input Label&lt;/label&gt;
+&lt;textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form form-padding form-box" disabled&gt;&lt;/textarea&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
+
+<div class="evo-space-10"></div>
+
+<div class="padding-10 inverse-bg">
+<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Text Area Inverse</label>
+<textarea type="text" name="message" required rows="8" spellcheck="true" placeholder="Textarea Placeholder" class="evo-form-inverse form-padding form-box text-inverse" disabled></textarea>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
+</div>
+
+</fieldset>
+</form>
+
+<div class="evo-space-20"></div>
+
+</section>
+
 
 <!-- Select dropdown -->
 
@@ -325,12 +452,11 @@
   </optgroup>
 </select>
 
-
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
 <code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
-&lt;select id="select" class="evo-form form-padding form-box form-icon form-icon-size-3 form-triangle" /&gt;
+&lt;select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle"&gt;
 &lt;option value="option1"&gt;option 1&lt;/option&gt;
 &lt;option value="option2" selected&gt;option 2&lt;/option&gt;
 &lt;option value="option3"&gt;option 3&lt;/option&gt;
@@ -401,12 +527,108 @@
 </section>
 
 
+<!-- Evo Select inverse dropdown -->
 
-<!-- disabled -->
+<section id="InputSelectInverse">
 
-<section id="Input">
+<h2 class="text-size-6">evo-form-inverse select</h2>
 
-<h2 class="text-size-6">disabled</h2>
+<div class="evo-space"></div>
+
+<div class="padding-10 inverse-bg">
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Choose one</label>
+<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse">
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse"&gt;Choose one&lt;/label&gt;
+&lt;select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" /&gt;
+&lt;option value="option1"&gt;option 1&lt;/option&gt;
+&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
+&lt;option value="option3"&gt;option 3&lt;/option&gt;
+&lt;optgroup label="more options"&gt;
+&lt;option value="option4"&gt;option 4&lt;/option&gt;
+&lt;option value="option5"&gt;option 5&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">For a styled select, create an <code class="evo-code-inverse">&lt;select&gt;</code> tag with nested <code class="evo-code-inverse">&lt;option&gt;</code> and/or <code class="evo-code-inverse">&lt;optgroup&gt;</code> tags. Apply a desired icon by combining <code class="evo-code-inverse">form-icon</code>, <code class="evo-code-inverse">form-icon-small</code>, and <code class="evo-code-inverse">form-triangle</code class="evo-code-inverse"> classes. Default select styles are set in _evo_variables.scss.</p>
+
+<div class="evo-space"></div>
+
+<select id="select" class="evo-form-inverse form-padding form-box form-icon form-chevron-down text-inverse">
+<option value="option1">option 1</option>
+</select>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;select id="select" class="evo-form-inverse form-padding form-box form-icon form-chevron-down text-inverse" /&gt;
+&lt;option value="option1"&gt;option 1&lt;/option&gt;
+&lt;/select&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Add the <code class="evo-code-inverse">form-chevron-down</code> tag for an alternative icon. Default styles are set in _evo_variables.scss. </p>
+
+<div class="evo-space"></div>
+
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse">Choose one</label>
+<select id="select" class="evo-form-inverse form-padding form-box text-inverse" multiple>
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code-inverse">
+<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10"&gt;Choose one&lt;/label&gt;
+&lt;select id="select" class="evo-form-inverse form-padding form-box text-inverse" multiple&gt;
+&lt;option value="option1"&gt;option 1&lt;/option&gt;
+&lt;option value="option2" selected&gt;option 2&lt;/option&gt;
+&lt;option value="option3"&gt;option 3&lt;/option&gt;
+&lt;optgroup label="more options"&gt;
+&lt;option value="option4"&gt;option 4&lt;/option&gt;
+&lt;option value="option5"&gt;option 5&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Example of select element with the 'multiple' attribute, and one of the options with a 'selected' attribute.</p>
+</div>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+
+<!-- disabled select -->
+
+<section id="SelectDisabled">
+
+<h2 class="text-size-6">select disabled</h2>
 
 <div class="evo-space-10"></div>
 
@@ -415,20 +637,84 @@
 <fieldset>
 <legend class="visually-hidden">Legend</legend>
 
-<label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Input Label</label>
-<input name="evo-input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled/>
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Choose one</label>
+<select id="select" class="evo-form form-padding form-box form-icon form-icon-size-5 form-triangle" disabled>
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
 
 <div class="evo-space-10"></div>
 
 <pre class="evo-code">
-<code class="evo-measure">&lt;label class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Input Label&lt;/label&gt;
-&lt;input name="input" placeholder="Evo Input Placeholder" class="evo-form form-padding form-box" disabled /&gt;</code>
+<code class="evo-measure">&lt;label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled"&gt;Choose one&lt;/label&gt;
+&lt;select name="select" disabled&gt;
+&lt;option value="option1"&gt;option 1&lt;/option&gt;
+&lt;option value="option2"&gt;option 2&lt;/option&gt;
+&lt;option value="option3"&gt;option 3&lt;/option&gt;
+&lt;/select&gt;</code></code>
 </pre>
 
 <div class="evo-space-10"></div>
 
 <p class="evo-measure">For disabled styles, apply the <code>disabled</code> attribute to a form element, and a <code>disabled</code> class to any form label.</p>
 
+<div class="evo-space"></div>
+
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 disabled">Choose one</label>
+<select id="select" class="evo-form form-padding form-box" multiple disabled>
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Demonstration of disabled select with attribute of multiple.</p>
+
+<div class="evo-space"></div>
+
+<div class="padding-10 inverse-bg">
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Choose one</label>
+<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" disabled>
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">For disabled styles, apply the <code class="evo-code-inverse">disabled</code> attribute to a form element, and a <code class="evo-code-inverse">disabled</code> class to any form label.</p>
+
+<div class="evo-space"></div>
+
+<label for="select" class="display-block margin-bottom-8 text-uppercase text-size-3 text-tracking-10 text-inverse disabled">Choose one</label>
+<select id="select" class="evo-form-inverse form-padding form-box form-icon form-icon-size-5 form-triangle text-inverse evo-form-placeholder-inverse" multiple disabled>
+  <option value="option1">option 1</option>
+  <option value="option2" selected>option 2</option>
+  <option value="option3">option 3</option>
+      <optgroup label="more options">
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+  </optgroup>
+</select>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure text-inverse">Demonstration of inverse disabled style.</p>
+</div>
 
 </fieldset>
 </form>
@@ -436,9 +722,6 @@
 <div class="evo-space-20"></div>
 
 </section>
-
-
-
 
 <!-- Form Mix -->
 
