@@ -4097,6 +4097,30 @@ body.color-demo h2.margin-bottom-0 {
   border-left-color: #0073b9; }
 
 /* COLORS */
+.evo-color-info {
+  color: #0073b9; }
+
+.evo-color-info-bg {
+  background-color: #0073b9; }
+
+.evo-color-success {
+  color: #00a453; }
+
+.evo-color-success-bg {
+  background-color: #00a453; }
+
+.evo-color-warning {
+  color: #fdc131; }
+
+.evo-color-warning-bg {
+  background-color: #fdc131; }
+
+.evo-color-danger {
+  color: #eb212e; }
+
+.evo-color-danger-bg {
+  background-color: #eb212e; }
+
 .color-0 {
   color: #fff02a; }
 
