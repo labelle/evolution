@@ -4100,10 +4100,10 @@ body.color-demo h2.margin-bottom-0 {
 
 /* COLORS */
 .evo-color-info {
-  color: #0073b9; }
+  color: #00afec; }
 
 .evo-color-info-bg {
-  background-color: #0073b9; }
+  background-color: #00afec; }
 
 .evo-color-success {
   color: #00a453; }
@@ -15916,11 +15916,11 @@ textarea.form-placeholder-info::placeholder,
 input.form-placeholder-info::placeholder,
 textarea.form-placeholder-info-hover:hover::placeholder,
 input.form-placeholder-info-hover:hover::placeholder {
-  color: #0073b9; }
+  color: #00afec; }
 
 textarea.form-placeholder-info-focus:focus::placeholder,
 input.form-placeholder-info-focus:focus::placeholder {
-  color: #0073b9 !important; }
+  color: #00afec !important; }
 
 textarea.form-placeholder-success::placeholder,
 input.form-placeholder-success::placeholder,
@@ -16164,10 +16164,10 @@ select.form-hover-info:hover,
 input.form-hover-info:hover,
 input[type].form-hover-info:hover,
 textarea.form-hover-info:hover {
-  border-top-color: #0073b9;
-  border-bottom-color: #0073b9;
-  border-left-color: #0073b9;
-  border-right-color: #0073b9;
+  border-top-color: #00afec;
+  border-bottom-color: #00afec;
+  border-left-color: #00afec;
+  border-right-color: #00afec;
   box-shadow: none;
   transition: 0.5s ease all;
   outline: 0 none; }
@@ -16177,7 +16177,7 @@ textarea.form-hover-info:hover {
   input.form-hover-info:hover + label,
   input[type].form-hover-info:hover + label,
   textarea.form-hover-info:hover + label {
-    color: #0073b9;
+    color: #00afec;
     cursor: pointer; }
 
 .form-hover-success-demo,
@@ -16409,17 +16409,17 @@ textarea.form-focus-color:focus {
 select.form-focus-info:focus,
 input.form-focus-info:focus,
 textarea.form-focus-info:focus {
-  border-top-color: #0073b9 !important;
-  border-bottom-color: #0073b9 !important;
-  border-left-color: #0073b9 !important;
-  border-right-color: #0073b9 !important;
-  border-color: #0073b9 !important; }
+  border-top-color: #00afec !important;
+  border-bottom-color: #00afec !important;
+  border-left-color: #00afec !important;
+  border-right-color: #00afec !important;
+  border-color: #00afec !important; }
   .form-focus-info-demo + label,
   .form-focus-info:focus + label,
   select.form-focus-info:focus + label,
   input.form-focus-info:focus + label,
   textarea.form-focus-info:focus + label {
-    color: #0073b9 !important;
+    color: #00afec !important;
     cursor: pointer; }
 
 .form-focus-success-demo,
