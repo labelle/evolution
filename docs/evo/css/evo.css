@@ -15658,7 +15658,7 @@ select.evo-form,
 input.evo-form {
   border-radius: none;
   width: 100%;
-  background-color: transparent; }
+  background-color: #f2f2f2; }
 
 .evo-form-inverse,
 input[type="text"].evo-form-inverse,
@@ -16162,6 +16162,226 @@ input.form-placeholder-opacity-1-hover:hover::placeholder {
 textarea.form-placeholder-opacity-1-focus:focus::placeholder,
 input.form-placeholder-opacity-1-focus:focus::placeholder {
   opacity: .1 !important; }
+
+textarea.evo-form-bg,
+input.evo-form-bg {
+  background-color: #f2f2f2;
+  opacity: 0.5; }
+
+textarea.evo.form-bg-hover:hover,
+input.evo.form-bg-hover:hover {
+  background-color: #f2f2f2;
+  opacity: 0.7; }
+
+textarea.evo.form-bg-focus:focus,
+input.evo.form-bg-focus:focus {
+  background-color: #f2f2f2 !important;
+  opacity: 1 !important; }
+
+textarea.evo-form-bg-inverse,
+input.evo-form-bg-inverse {
+  background-color: transparent;
+  opacity: 0; }
+
+textarea.evo.form-bg-hover-inverse:hover,
+input.evo.form-bg-hover-inverse:hover {
+  background-color: white;
+  opacity: 0.5; }
+
+textarea.evo.form-bg-focus-inverse:focus,
+input.evo.form-bg-focus-inverse:focus {
+  background-color: white !important;
+  opacity: 1 !important; }
+
+textarea.form-bg-color,
+input.form-bg-color,
+textarea.form-bg-color-hover:hover,
+input.form-bg-color-hover:hover {
+  background-color: #0073b9; }
+
+textarea.form-bg-color-focus:focus,
+input.form-bg-color-focus:focus {
+  background-color: #0073b9 !important; }
+
+textarea.form-bg-info,
+input.form-bg-info,
+textarea.form-bg-info-hover:hover,
+input.form-bg-info-hover:hover {
+  background-color: rgba(0, 255, 255, 0.2); }
+
+textarea.form-bg-info-focus:focus,
+input.form-bg-info-focus:focus {
+  background-color: rgba(0, 255, 255, 0.2) !important; }
+
+textarea.form-bg-success,
+input.form-bg-success,
+textarea.form-bg-success-hover:hover,
+input.form-bg-success-hover:hover {
+  background-color: rgba(0, 128, 0, 0.2); }
+
+textarea.form-bg-success-focus:focus,
+input.form-bg-success-focus:focus {
+  background-color: rgba(0, 128, 0, 0.2) !important; }
+
+textarea.form-bg-warning,
+input.form-bg-warning,
+textarea.form-bg-warning-hover:hover,
+input.form-bg-warning-hover:hover {
+  background-color: rgba(255, 255, 0, 0.2); }
+
+textarea.form-bg-warning-focus:focus,
+input.form-bg-warning-focus:focus {
+  background-color: rgba(255, 255, 0, 0.2) !important; }
+
+textarea.form-bg-danger,
+input.form-bg-danger,
+textarea.form-bg-danger-hover:hover,
+input.form-bg-danger-hover:hover {
+  background-color: rgba(255, 0, 0, 0.2); }
+
+textarea.form-bg-danger-focus:focus,
+input.form-bg-danger-focus:focus {
+  background-color: rgba(255, 0, 0, 0.2) !important; }
+
+textarea.form-bg-white,
+input.form-bg-white,
+textarea.form-bg-white-hover:hover,
+input.form-bg-white-hover:hover {
+  background-color: white; }
+
+textarea.form-bg-white-focus:focus,
+input.form-bg-white-focus:focus {
+  background-color: white !important; }
+
+textarea.form-bg-black,
+input.form-bg-black,
+textarea.form-bg-black-hover:hover,
+input.form-bg-black-hover:hover {
+  background-color: black; }
+
+textarea.form-bg-black-focus:focus,
+input.form-bg-black-focus:focus {
+  background-color: black !important; }
+
+textarea.form-bg-gray-dark,
+input.form-bg-gray-dark,
+textarea.form-bg-gray-dark-hover:hover,
+input.form-bg-gray-dark-hover:hover {
+  background-color: #333333; }
+
+textarea.form-bg-gray-dark-focus:focus,
+input.form-bg-gray-dark-focus:focus {
+  background-color: #333333 !important; }
+
+textarea.form-bg-gray,
+input.form-bg-gray,
+textarea.form-bg-gray-hover:hover,
+input.form-bg-gray-hover:hover {
+  background-color: #7f7f7f; }
+
+textarea.form-bg-gray-focus:focus,
+input.form-bg-gray-focus:focus {
+  background-color: #7f7f7f !important; }
+
+textarea.form-bg-gray-light,
+input.form-bg-gray-light,
+textarea.form-bg-gray-light-hover:hover,
+input.form-bg-gray-light-hover:hover {
+  background-color: #cccccc; }
+
+textarea.form-bg-gray-light-focus:focus,
+input.form-bg-gray-light-focus:focus {
+  background-color: #cccccc !important; }
+
+textarea.form-bg-opacity-9,
+input.form-bg-opacity-9,
+textarea.form-bg-opacity-9-hover:hover,
+input.form-bg-opacity-9-hover:hover {
+  background-color: rgba(173, 216, 230, 0.1); }
+
+textarea.form-bg-opacity-9-focus:focus,
+input.form-bg-opacity-9-focus:focus {
+  background-color: rgba(173, 216, 230, 0.1) !important; }
+
+textarea.form-bg-opacity-8,
+input.form-bg-opacity-8,
+textarea.form-bg-opacity-8-hover:hover,
+input.form-bg-opacity-8-hover:hover {
+  background-color: rgba(173, 216, 230, 0.2); }
+
+textarea.form-bg-opacity-8-hover:focus,
+input.form-bg-opacity-8-hover:focus {
+  background-color: rgba(173, 216, 230, 0.2) !important; }
+
+textarea.form-bg-opacity-7,
+input.form-bg-opacity-7,
+textarea.form-bg-opacity-7-hover:hover,
+input.form-bg-opacity-7-hover:hover {
+  background-color: rgba(173, 216, 230, 0.3); }
+
+textarea.form-bg-opacity-7-hover:focus,
+input.form-bg-opacity-7-hover:focus {
+  background-color: rgba(173, 216, 230, 0.3) !important; }
+
+textarea.form-bg-opacity-6,
+input.form-bg-opacity-6,
+textarea.form-bg-opacity-6-hover:hover,
+input.form-bg-opacity-6-hover:hover {
+  background-color: rgba(173, 216, 230, 0.4); }
+
+textarea.form-bg-opacity-6-hover:focus,
+input.form-bg-opacity-6-hover:focus {
+  background-color: rgba(173, 216, 230, 0.4) !important; }
+
+textarea.form-bg-opacity-5,
+input.form-bg-opacity-5,
+textarea.form-bg-opacity-5-hover:hover,
+input.form-bg-opacity-5-hover:hover {
+  background-color: rgba(173, 216, 230, 0.5); }
+
+textarea.form-bg-opacity-5-focus:focus,
+input.form-bg-opacity-5-focus:focus {
+  background-color: rgba(173, 216, 230, 0.5) !important; }
+
+textarea.form-bg-opacity-4,
+input.form-bg-opacity-4,
+textarea.form-bg-opacity-4-hover:hover,
+input.form-bg-opacity-4-hover:hover {
+  background-color: rgba(173, 216, 230, 0.6); }
+
+textarea.form-bg-opacity-4-focus:focus,
+input.form-bg-opacity-4-focus:focus {
+  background-color: rgba(173, 216, 230, 0.6) !important; }
+
+textarea.form-bg-opacity-3,
+input.form-bg-opacity-3,
+textarea.form-bg-opacity-3-hover:hover,
+input.form-bg-opacity-3-hover:hover {
+  background-color: rgba(173, 216, 230, 0.7); }
+
+textarea.form-bg-opacity-3-focus:focus,
+input.form-bg-opacity-3-focus:focus {
+  background-color: rgba(173, 216, 230, 0.7) !important; }
+
+textarea.form-bg-opacity-2,
+input.form-bg-opacity-2,
+textarea.form-bg-opacity-2-hover:hover,
+input.form-bg-opacity-2-hover:hover {
+  background-color: rgba(173, 216, 230, 0.8); }
+
+textarea.form-bg-opacity-2-focus:focus,
+input.form-bg-opacity-2-focus:focus {
+  background-color: rgba(173, 216, 230, 0.8) !important; }
+
+textarea.form-bg-opacity-1,
+input.form-bg-opacity-1,
+textarea.form-bg-opacity-1-hover:hover,
+input.form-bg-opacity-1-hover:hover {
+  background-color: rgba(173, 216, 230, 0.9); }
+
+textarea.form-bg-opacity-1-focus:focus,
+input.form-bg-opacity-1-focus:focus {
+  background-color: rgba(173, 216, 230, 0.9) !important; }
 
 .evo-form-hover-demo,
 .evo-form-hover:hover,

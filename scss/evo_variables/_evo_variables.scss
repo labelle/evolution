@@ -586,12 +586,27 @@ $icon_twitter_gray :                   url(../image/twitter-gray.svg);
 
 // All Forms
 
-// Form background color
-$form_background_color:             transparent; // none or #{$gray_5} or transparent
+// Form background
+$form_background_color:             #{$gray_5}; // none or #{$gray_5} or transparent
+$form_background_opacity:           .5; // none or #{$gray_5} or transparent
+// Form background hover
+$form_background_color_hover:       #{$gray_5}; // none or #{$gray_5} or transparent
+$form_background_opacity_hover:     .7; // none or #{$gray_5} or transparent
+// Form background focus
+$form_background_color_focus:       #{$gray_5}; // none or #{$gray_5} or transparent
+$form_background_opacity_focus:     1; // none or #{$gray_5} or transparent
 
-// Inverse form background color
-$inverse_form_background_color:     transparent; // none or #{$gray_5} or transparent
+// Inverse form background
+$inverse_form_background_color:     transparent; // none or #{$gray_25} or transparent
+$inverse_form_background_opacity:   0; // none or #{$gray_25} or transparent
+// Inverse form background hover
+$inverse_form_background_color_hover:    #{$evo_white}; // none or #{$gray_25} or transparent
+$inverse_form_background_opacity_hover:  .5; // none or #{$gray_25} or transparent
+// Inverse form background focus
+$inverse_form_background_color_focus:     #{$evo_white}; // none or #{$gray_25} or transparent
+$inverse_form_background_opacity_focus:   1; // none or #{$gray_25} or transparent
 
+// Form backround image
 $form_background_repeat:            no-repeat;
 $form_background_attachment:        scroll;
 

@@ -94,11 +94,11 @@ textarea.form-bg-info,
 input.form-bg-info,
 textarea.form-bg-info-hover:hover,
 input.form-bg-info-hover:hover {
-background-color: transparentize(#{$evo_info}, 0.8); 
+background-color: transparentize(cyan, 0.8); // #{$evo_info}
 }
 textarea.form-bg-info-focus:focus,
 input.form-bg-info-focus:focus {
-background-color: transparentize(#{$evo_info}, 0.8) !important; 
+background-color: transparentize(cyan, 0.8) !important; 
 }
 
 
@@ -107,11 +107,11 @@ textarea.form-bg-success,
 input.form-bg-success,
 textarea.form-bg-success-hover:hover,
 input.form-bg-success-hover:hover {
-background-color: transparentize(#{$evo_success}, 0.8); 
+background-color: transparentize(green, 0.8); // #{$evo_success},
 }
 textarea.form-bg-success-focus:focus,
 input.form-bg-success-focus:focus {
-background-color: transparentize(#{$evo_success}, 0.8) !important; 
+background-color: transparentize(green, 0.8) !important; 
 }
 
 
@@ -120,11 +120,11 @@ textarea.form-bg-warning,
 input.form-bg-warning,
 textarea.form-bg-warning-hover:hover,
 input.form-bg-warning-hover:hover {
-background-color: transparentize(#{$evo_warning}, 0.8); 
+background-color: transparentize(yellow, 0.8); // #{$evo_warning}
 }
 textarea.form-bg-warning-focus:focus,
 input.form-bg-warning-focus:focus {
-background-color: transparentize(#{$evo_warning}, 0.8) !important; 
+background-color: transparentize(yellow, 0.8) !important; 
 }
 
 
@@ -133,11 +133,11 @@ textarea.form-bg-danger,
 input.form-bg-danger,
 textarea.form-bg-danger-hover:hover,
 input.form-bg-danger-hover:hover {
-background-color: transparentize(#{$evo_danger}, 0.8); 
+background-color: transparentize(red, 0.8); // #{$evo_danger}
 }
 textarea.form-bg-danger-focus:focus,
 input.form-bg-danger-focus:focus {
-background-color: transparentize(#{$evo_danger}, 0.8) !important; 
+background-color: transparentize(red, 0.8) !important; 
 }
 
 // /*********************
@@ -228,11 +228,11 @@ textarea.form-bg-opacity-9,
 input.form-bg-opacity-9,
 textarea.form-bg-opacity-9-hover:hover,
 input.form-bg-opacity-9-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.9); 
+background-color: transparentize(lightblue, 0.9);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-9-focus:focus,
 input.form-bg-opacity-9-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.9) !important; 
+background-color: transparentize(lightblue, 0.9) !important; 
 }
 
 
@@ -242,11 +242,11 @@ textarea.form-bg-opacity-8,
 input.form-bg-opacity-8,
 textarea.form-bg-opacity-8-hover:hover,
 input.form-bg-opacity-8-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.8); 
+background-color: transparentize(lightblue, 0.8);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-8-hover:focus,
 input.form-bg-opacity-8-hover:focus {
-background-color: transparentize(#{$evo_color}, 0.8) !important; 
+background-color: transparentize(lightblue, 0.8) !important; 
 }
 
 
@@ -257,11 +257,11 @@ textarea.form-bg-opacity-7,
 input.form-bg-opacity-7,
 textarea.form-bg-opacity-7-hover:hover,
 input.form-bg-opacity-7-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.7); 
+background-color: transparentize(lightblue, 0.7);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-7-hover:focus,
 input.form-bg-opacity-7-hover:focus {
-background-color: transparentize(#{$evo_color}, 0.7) !important; 
+background-color: transparentize(lightblue, 0.7) !important; 
 }
 
 
@@ -272,11 +272,11 @@ textarea.form-bg-opacity-6,
 input.form-bg-opacity-6,
 textarea.form-bg-opacity-6-hover:hover,
 input.form-bg-opacity-6-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.6); 
+background-color: transparentize(lightblue, 0.6);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-6-hover:focus,
 input.form-bg-opacity-6-hover:focus {
-background-color: transparentize(#{$evo_color}, 0.6) !important; 
+background-color: transparentize(lightblue, 0.6) !important; 
 }
 
 
@@ -286,11 +286,11 @@ textarea.form-bg-opacity-5,
 input.form-bg-opacity-5,
 textarea.form-bg-opacity-5-hover:hover,
 input.form-bg-opacity-5-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.5); 
+background-color: transparentize(lightblue, 0.5);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-5-focus:focus,
 input.form-bg-opacity-5-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.5) !important; 
+background-color: transparentize(lightblue, 0.5) !important; 
 }
 
 
@@ -300,11 +300,11 @@ textarea.form-bg-opacity-4,
 input.form-bg-opacity-4,
 textarea.form-bg-opacity-4-hover:hover,
 input.form-bg-opacity-4-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.4); 
+background-color: transparentize(lightblue, 0.4);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-4-focus:focus,
 input.form-bg-opacity-4-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.4) !important; 
+background-color: transparentize(lightblue, 0.4) !important; 
 }
 
 
@@ -314,11 +314,11 @@ textarea.form-bg-opacity-3,
 input.form-bg-opacity-3,
 textarea.form-bg-opacity-3-hover:hover,
 input.form-bg-opacity-3-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.3); 
+background-color: transparentize(lightblue, 0.3);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-3-focus:focus,
 input.form-bg-opacity-3-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.3) !important; 
+background-color: transparentize(lightblue, 0.3) !important; 
 }
 
 
@@ -328,11 +328,11 @@ textarea.form-bg-opacity-2,
 input.form-bg-opacity-2,
 textarea.form-bg-opacity-2-hover:hover,
 input.form-bg-opacity-2-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.2); 
+background-color: transparentize(lightblue, 0.2);  // #{$evo_color} 
 }
 textarea.form-bg-opacity-2-focus:focus,
 input.form-bg-opacity-2-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.2) !important; 
+background-color: transparentize(lightblue, 0.2) !important; 
 }
 
 
@@ -342,11 +342,11 @@ textarea.form-bg-opacity-1,
 input.form-bg-opacity-1,
 textarea.form-bg-opacity-1-hover:hover,
 input.form-bg-opacity-1-hover:hover {
-background-color: transparentize(#{$evo_color}, 0.1); 
+background-color: transparentize(lightblue, 0.1); // #{$evo_color} 
 }
 textarea.form-bg-opacity-1-focus:focus,
 input.form-bg-opacity-1-focus:focus {
-background-color: transparentize(#{$evo_color}, 0.1) !important; 
+background-color: transparentize(lightblue, 0.1) !important; 
 }
 
 
