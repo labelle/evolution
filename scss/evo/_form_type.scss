@@ -13,12 +13,26 @@ button.button-upload:before {
 background-image: #{$button_file_upload}; 
 }
 
+label.button-upload-white:before,
+a.button-upload-white:before,
+button.button-upload-white:before {
+background-image: #{$button_file_upload_white}; 
+}
+
 // BUTTON DOWNLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
 label.button-download:before,
 a.button-download:before,
 button.button-download:before {
 background-image: #{$button_file_download}; 
+}
+
+// BUTTON DOWNLOAD ICON
+// EXTEND BUTTON ICON HELPERS?
+label.button-download-white:before,
+a.button-download-white:before,
+button.button-download-white:before {
+background-image: #{$button_file_download_white}; 
 }
 
 

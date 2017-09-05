@@ -112,25 +112,33 @@ select.form-icon {
 
 
 .form-icon-search {
-  // background-color:      #{$form_background_color};
   background-image:      #{$form_background_search};
-  // background-repeat:     #{$form_background_repeat};
-  // background-attachment: #{$form_background_attachment};
-  // background-size:       #{$form_background_size};
-  // background-position:   #{$form_background_position};
 }
+.form-icon-search-white {
+  background-image:      #{$form_background_search_white};
+}
+
 
 .form-icon-email {
   background-image: #{$form_background_email};
+}
+.form-icon-email-white {
+  background-image: #{$form_background_email_white};
 }
 
 .form-icon-chevron {
   background-image: #{$form_background_chevron};
 }
+.form-icon-chevron-white {
+  background-image: #{$form_background_chevron_white};
+}
 
 
 .form-icon-arrow {
   background-image: #{$form_background_arrow};
+}
+.form-icon-arrow-white {
+  background-image: #{$form_background_arrow_white};
 }
 
 .form-icon-eye {
@@ -144,6 +152,10 @@ select.form-icon {
 .form-icon-lock {
   background-image: #{$form_background_lock};
 }
+.form-icon-lock-white {
+  background-image: #{$form_background_lock_white};
+}
+
 
 // Select
 
@@ -151,7 +163,14 @@ select.form-icon {
 .form-icon-triangle {
   background-image: #{$form_background_triangle};
 }
+.form-icon-triangle-white {
+  background-image: #{$form_background_triangle_white};
+}
 
 .form-icon-chevron-down {
   background-image: #{$form_background_chevron_down};
 }
+.form-icon-chevron-down-white {
+  background-image: #{$form_background_chevron_down_white};
+}
+

@@ -9674,14 +9674,26 @@ select.form-icon {
 .form-icon-search {
   background-image: url(../image/search-book-gray.svg); }
 
+.form-icon-search-white {
+  background-image: url(../image/search-book-white.svg); }
+
 .form-icon-email {
   background-image: url(../image/mail-book-gray.svg); }
+
+.form-icon-email-white {
+  background-image: url(../image/mail-book-white.svg); }
 
 .form-icon-chevron {
   background-image: url(../image/chevron-book.svg); }
 
+.form-icon-chevron-white {
+  background-image: url(../image/chevron-book-white.svg); }
+
 .form-icon-arrow {
   background-image: url(../image/arrow-book-gray.svg); }
+
+.form-icon-arrow-white {
+  background-image: url(../image/arrow-book-white.svg); }
 
 .form-icon-eye {
   background-image: url(../image/eye-book-gray.svg); }
@@ -9692,11 +9704,20 @@ select.form-icon {
 .form-icon-lock {
   background-image: url(../image/lock-book-gray.svg); }
 
+.form-icon-lock-white {
+  background-image: url(../image/lock-book-white.svg); }
+
 .form-icon-triangle {
   background-image: url(../image/triangle-down-solid.svg); }
 
+.form-icon-triangle-white {
+  background-image: url(../image/triangle-down-solid-white.svg); }
+
 .form-icon-chevron-down {
   background-image: url(../image/chevron-down-book.svg); }
+
+.form-icon-chevron-down-white {
+  background-image: url(../image/chevron-down-book-white.svg); }
 
 .icon-scroll-chevron-container {
   position: relative;
@@ -15734,10 +15755,20 @@ a.button-upload:before,
 button.button-upload:before {
   background-image: url(../image/upload-book.svg); }
 
+label.button-upload-white:before,
+a.button-upload-white:before,
+button.button-upload-white:before {
+  background-image: url(../image/upload-book-white.svg); }
+
 label.button-download:before,
 a.button-download:before,
 button.button-download:before {
   background-image: url(../image/download-book.svg); }
+
+label.button-download-white:before,
+a.button-download-white:before,
+button.button-download-white:before {
+  background-image: url(../image/download-book-white.svg); }
 
 label.evo-button input[type="file"] {
   position: fixed;
