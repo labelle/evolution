@@ -15753,12 +15753,14 @@ fieldset.overflow {
 label.button-upload:before,
 a.button-upload:before,
 button.button-upload:before {
-  background-image: url(../image/upload-book.svg); }
+  background-image: url(../image/upload-book.svg);
+  cursor: pointer; }
 
 label.button-upload-white:before,
 a.button-upload-white:before,
 button.button-upload-white:before {
-  background-image: url(../image/upload-book-white.svg); }
+  background-image: url(../image/upload-book-white.svg);
+  cursor: pointer; }
 
 label.button-download:before,
 a.button-download:before,
