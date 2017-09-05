@@ -17,13 +17,27 @@
 select:disabled,
 input:disabled,
 input[type]:disabled,
-textarea:disabled,,
+textarea:disabled,
 [disabled] {
     & + label {
       opacity: 0.5;
       cursor: not-allowed;
     }
   }
+
+// THIS SOLUTION CREATES A FLASH OF COLOR
+// .disabled:hover,
+// .uneditable-input:disabled:hover,
+// select:disabled:hover,
+// input:disabled:hover,
+// input[type]:disabled:hover,
+// textarea:disabled:hover,
+// [disabled]:hover {
+//       opacity: inherit;
+//       background-color: gray !important;
+//       border-color: gray !important;
+//       cursor: not-allowed;
+//   }
 
 // Disable vertical scrolling in form for select elements with attribute of multiple
 select:disabled {
