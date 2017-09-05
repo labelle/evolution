@@ -77,12 +77,20 @@
 
 // Padding
 
-.form-padding {
+#{$evo}-form-padding {
   // padding
   padding-top: #{$form_padding_top};
   padding-bottom: #{$form_padding_bottom};
   padding-left: #{$form_padding_left};
   padding-right: #{$form_padding_right};
+}
+
+#{$evo}-form-padding-line {
+  // padding
+  padding-top: #{$form_padding_top};
+  padding-bottom: #{$form_padding_bottom};
+  padding-left: 0;
+  padding-right: 0;
 }
   // select:hover {
   //   background-color: #eee;
@@ -105,10 +113,10 @@
 
 // Form padding medium
 .form-padding-medium {
-     padding-top: #{$form_padding_top};
-     padding-bottom: #{$form_padding_bottom};
-     padding-left: #{$form_padding_left};
-     padding-right: #{$form_padding_right};
+     padding-top: .75em;
+     padding-bottom: .75em;
+     padding-left: .75em;
+     padding-right: .75em;
 }
 
 // Form padding thin
@@ -133,7 +141,7 @@
 
 // Border box width
 
-.form-box {
+#{$evo}-form-box {
   // border width
   border-top-width: #{$form_border_top_width};
   border-bottom-width: #{$form_border_bottom_width};
@@ -149,7 +157,82 @@
   border-bottom-color: #{$form_border_bottom_color};
   border-left-color: #{$form_border_left_color};
   border-right-color: #{$form_border_right_color};
+  // Rounded corner
+  border-radius: #{$form_border_radius};
 }
+
+
+#{$evo}-form-line {
+  // border width
+  border-top-width: 0;
+  border-bottom-width: #{$form_border_bottom_width};
+  border-left-width: 0;
+  border-right-width: 0;
+  // border style
+  border-top-style: 0;
+  border-bottom-style: #{$form_border_bottom_style};
+  border-left-style: 0;
+  border-right-style: 0;
+  // border color
+  border-top-color: 0;
+  border-bottom-color: #{$form_border_bottom_color};
+  border-left-color: 0;
+  border-right-color: 0;
+  // Rounded corner
+  border-radius: 0;
+}
+
+
+// Thick line border
+
+.form-line-thick {
+     border-bottom-width: thick;
+}
+.form-line-thick:hover {
+     border-bottom-width: thick;
+}
+.form-line-thick:focus {
+     border-bottom-width: thick;
+}
+
+
+// Medium line border
+
+.form-line-medium {
+     border-bottom-width: medium;
+}
+.form-line-medium:hover {
+     border-bottom-width: medium;
+}
+.form-line-medium:focus {
+     border-bottom-width: medium;
+}
+
+
+// Thin line border
+
+.form-line-thin {
+     border-bottom-width: thin;
+}
+.form-line-thin:hover {
+     border-bottom-width: thin;
+}
+.form-line-thin:focus {
+     border-bottom-width: thin;
+}
+
+// No line border
+
+.form-line-none {
+     border-bottom-width: 0;
+}
+.form-line-none:hover {
+     border-bottom-width: 0;
+}
+.form-line-none:focus {
+     border-bottom-width: 0;
+}
+
 
 
 // Thick box border

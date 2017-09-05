@@ -15698,10 +15698,11 @@ label.form-checkbox {
   height: 1em;
   padding: 0;
   margin: 0;
-  vertical-align: bottom;
   position: relative;
-  top: -.3em;
-  overflow: hidden; }
+  *overflow: hidden; }
+
+.form-radio input {
+  vertical-align: baseline; }
 
 fieldset.overflow {
   overflow: hidden; }
@@ -15804,11 +15805,17 @@ label.evo-button :valid + span {
 .form-icon-size-1 {
   background-size: 0.5em !important; }
 
-.form-padding {
+.evo-form-padding {
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em; }
+
+.evo-form-padding-line {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 0; }
 
 .form-padding-thick {
   padding-top: 1.25em;
@@ -15817,10 +15824,10 @@ label.evo-button :valid + span {
   padding-right: 2em; }
 
 .form-padding-medium {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em; }
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: .75em;
+  padding-right: .75em; }
 
 .form-padding-thin {
   padding-top: .25em;
@@ -15834,7 +15841,7 @@ label.evo-button :valid + span {
   padding-left: .25em;
   padding-right: .25em; }
 
-.form-box {
+.evo-form-box {
   border-top-width: thin;
   border-bottom-width: thin;
   border-left-width: thin;
@@ -15846,7 +15853,59 @@ label.evo-button :valid + span {
   border-top-color: #7f7f7f;
   border-bottom-color: #7f7f7f;
   border-left-color: #7f7f7f;
-  border-right-color: #7f7f7f; }
+  border-right-color: #7f7f7f;
+  border-radius: none; }
+
+.evo-form-line {
+  border-top-width: 0;
+  border-bottom-width: thin;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-style: 0;
+  border-bottom-style: solid;
+  border-left-style: 0;
+  border-right-style: 0;
+  border-top-color: 0;
+  border-bottom-color: #7f7f7f;
+  border-left-color: 0;
+  border-right-color: 0;
+  border-radius: 0; }
+
+.form-line-thick {
+  border-bottom-width: thick; }
+
+.form-line-thick:hover {
+  border-bottom-width: thick; }
+
+.form-line-thick:focus {
+  border-bottom-width: thick; }
+
+.form-line-medium {
+  border-bottom-width: medium; }
+
+.form-line-medium:hover {
+  border-bottom-width: medium; }
+
+.form-line-medium:focus {
+  border-bottom-width: medium; }
+
+.form-line-thin {
+  border-bottom-width: thin; }
+
+.form-line-thin:hover {
+  border-bottom-width: thin; }
+
+.form-line-thin:focus {
+  border-bottom-width: thin; }
+
+.form-line-none {
+  border-bottom-width: 0; }
+
+.form-line-none:hover {
+  border-bottom-width: 0; }
+
+.form-line-none:focus {
+  border-bottom-width: 0; }
 
 .form-box-thick {
   border-width: thick; }
