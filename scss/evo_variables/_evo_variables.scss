@@ -542,6 +542,14 @@ $placeholder_text_color:            #{$evo_black};
 $inverse_placeholder_text_color:    #{$evo_white};
 $placeholder_text_opacity:          .5;
 
+$placeholder_text_color_hover:            #{$evo_black};
+$inverse_placeholder_text_color_hover:    #{$evo_white};
+$placeholder_text_opacity_hover:          1;
+
+$placeholder_text_color_focus:            #{$evo_gray_light};
+$inverse_placeholder_text_color_focus:    #{$evo_gray_dark};
+$placeholder_text_opacity_focus:          .5;
+
 // Form Select Dropdown
 // Replace icon
 // https://www.w3schools.com/css/css_background.asp

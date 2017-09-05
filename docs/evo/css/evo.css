@@ -15944,27 +15944,33 @@ label.evo-button :valid + span {
   border-width: 0; }
 
 textarea.evo-form-placeholder::placeholder,
-input.evo-form-placeholder::placeholder,
-textarea.evo-form-placeholder-hover:hover::placeholder,
-input.evo-form-placeholder-hover:hover::placeholder {
+input.evo-form-placeholder::placeholder {
   color: black;
   opacity: 0.5; }
 
+textarea.evo-form-placeholder-hover:hover::placeholder,
+input.evo-form-placeholder-hover:hover::placeholder {
+  color: black;
+  opacity: 1; }
+
 textarea.evo-form-placeholder-focus:focus::placeholder,
 input.evo-form-placeholder-focus:focus::placeholder {
-  color: black !important;
+  color: #cccccc !important;
   opacity: 0.5 !important; }
 
 textarea.evo-form-placeholder-inverse::placeholder,
-input.evo-form-placeholder-inverse::placeholder,
-textarea.evo-form-placeholder-hover-inverse:hover::placeholder,
-input.evo-form-placeholder-hover-inverse:hover::placeholder {
+input.evo-form-placeholder-inverse::placeholder {
   color: white;
   opacity: 0.5; }
 
+textarea.evo-form-placeholder-hover-inverse:hover::placeholder,
+input.evo-form-placeholder-hover-inverse:hover::placeholder {
+  color: white;
+  opacity: 1; }
+
 textarea.evo-form-placeholder-focus-inverse:focus::placeholder,
 input.evo-form-placeholder-focus-inverse:focus::placeholder {
-  color: white !important;
+  color: #333333 !important;
   opacity: 0.5 !important; }
 
 textarea.form-placeholder-color::placeholder,

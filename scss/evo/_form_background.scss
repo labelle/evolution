@@ -1,0 +1,353 @@
+///*      F O R M   B A C K G R O U N D       */
+
+@import "../evo_variables/evo_variables";
+
+
+// !important is used so the focus classes can override the hover classes
+// http://stackoverflow.com/questions/2610497/change-an-html5-inputs-bg-color-with-css#2610741
+
+
+
+// /*********************
+//     EVO FORM BACKGROUND COLOR
+// *********************/
+
+// This talks about placeholder-shown
+// https://css-tricks.com/almanac/selectors/p/placeholder-shown/
+
+
+// Background
+// Includes hover classes
+// Includes focus classes
+
+textarea#{$evo}-form-bg,
+input#{$evo}-form-bg {
+    background-color: #{$form_background_color};
+    opacity: #{$form_background_opacity};
+}
+textarea#{$evo}.form-bg-hover:hover,
+input#{$evo}.form-bg-hover:hover {
+    background-color: #{$form_background_color_hover};
+    opacity: #{$form_background_opacity_hover};
+}
+textarea#{$evo}.form-bg-focus:focus,
+input#{$evo}.form-bg-focus:focus {
+    background-color: #{$form_background_color_focus} !important;
+    opacity: #{$form_background_opacity_focus} !important;
+}
+
+// Inverse Background
+// Includes hover classes
+// Includes focus classes
+
+textarea#{$evo}-form-bg-inverse,
+input#{$evo}-form-bg-inverse {
+    background-color: #{$inverse_form_background_color};
+    opacity: #{$inverse_form_background_opacity};
+}
+textarea#{$evo}.form-bg-hover-inverse:hover,
+input#{$evo}.form-bg-hover-inverse:hover {
+    background-color: #{$inverse_form_background_color_hover};
+    opacity: #{$inverse_form_background_opacity_hover};
+}
+textarea#{$evo}.form-bg-focus-inverse:focus,
+input#{$evo}.form-bg-focus-inverse:focus {
+    background-color: #{$inverse_form_background_color_focus} !important;
+    opacity: #{$inverse_form_background_opacity_focus} !important;
+}
+
+
+// /*********************
+//     FORM BACKGROUND COLOR
+// *********************/
+
+// Colored Background
+// Includes hover classes
+// Includes focus classes
+
+
+// Color
+textarea.form-bg-color,
+input.form-bg-color,
+textarea.form-bg-color-hover:hover,
+input.form-bg-color-hover:hover {
+     background-color: #{$evo_color};
+}
+textarea.form-bg-color-focus:focus,
+input.form-bg-color-focus:focus {
+     background-color: #{$evo_color} !important;
+}
+
+
+
+// /*********************
+//     FORM Background STATUS
+// *********************/
+
+// Colored Background
+// Includes hover classes
+// Includes focus classes
+
+
+// Info
+textarea.form-bg-info,
+input.form-bg-info,
+textarea.form-bg-info-hover:hover,
+input.form-bg-info-hover:hover {
+background-color: transparentize(#{$evo_info}, 0.8); 
+}
+textarea.form-bg-info-focus:focus,
+input.form-bg-info-focus:focus {
+background-color: transparentize(#{$evo_info}, 0.8) !important; 
+}
+
+
+// Success
+textarea.form-bg-success,
+input.form-bg-success,
+textarea.form-bg-success-hover:hover,
+input.form-bg-success-hover:hover {
+background-color: transparentize(#{$evo_success}, 0.8); 
+}
+textarea.form-bg-success-focus:focus,
+input.form-bg-success-focus:focus {
+background-color: transparentize(#{$evo_success}, 0.8) !important; 
+}
+
+
+// Warning
+textarea.form-bg-warning,
+input.form-bg-warning,
+textarea.form-bg-warning-hover:hover,
+input.form-bg-warning-hover:hover {
+background-color: transparentize(#{$evo_warning}, 0.8); 
+}
+textarea.form-bg-warning-focus:focus,
+input.form-bg-warning-focus:focus {
+background-color: transparentize(#{$evo_warning}, 0.8) !important; 
+}
+
+
+// Danger
+textarea.form-bg-danger,
+input.form-bg-danger,
+textarea.form-bg-danger-hover:hover,
+input.form-bg-danger-hover:hover {
+background-color: transparentize(#{$evo_danger}, 0.8); 
+}
+textarea.form-bg-danger-focus:focus,
+input.form-bg-danger-focus:focus {
+background-color: transparentize(#{$evo_danger}, 0.8) !important; 
+}
+
+// /*********************
+//     FORM Background NEUTRAL
+// *********************/
+
+// Neutral Background
+// Includes hover classes
+// Includes focus classes
+
+
+// White
+textarea.form-bg-white,
+input.form-bg-white,
+textarea.form-bg-white-hover:hover,
+input.form-bg-white-hover:hover {
+    background-color: #{$evo_white};
+}
+textarea.form-bg-white-focus:focus,
+input.form-bg-white-focus:focus {
+    background-color: #{$evo_white} !important;
+}
+
+
+
+// Black
+textarea.form-bg-black,
+input.form-bg-black,
+textarea.form-bg-black-hover:hover,
+input.form-bg-black-hover:hover {
+    background-color: #{$evo_black};
+}
+textarea.form-bg-black-focus:focus,
+input.form-bg-black-focus:focus {
+    background-color: #{$evo_black} !important;
+}
+
+
+
+// Dark Gray
+textarea.form-bg-gray-dark,
+input.form-bg-gray-dark,
+textarea.form-bg-gray-dark-hover:hover,
+input.form-bg-gray-dark-hover:hover {
+    background-color: #{$evo_gray_dark};
+}
+textarea.form-bg-gray-dark-focus:focus,
+input.form-bg-gray-dark-focus:focus {
+    background-color: #{$evo_gray_dark} !important;
+}
+
+
+
+// Gray
+textarea.form-bg-gray,
+input.form-bg-gray,
+textarea.form-bg-gray-hover:hover,
+input.form-bg-gray-hover:hover {
+    background-color: #{$evo_gray};
+}
+textarea.form-bg-gray-focus:focus,
+input.form-bg-gray-focus:focus {
+    background-color: #{$evo_gray} !important;
+}
+
+
+
+// Light Gray
+textarea.form-bg-gray-light,
+input.form-bg-gray-light,
+textarea.form-bg-gray-light-hover:hover,
+input.form-bg-gray-light-hover:hover {
+    background-color: #{$evo_gray_light};
+}
+textarea.form-bg-gray-light-focus:focus,
+input.form-bg-gray-light-focus:focus {
+    background-color: #{$evo_gray_light} !important;
+}
+
+
+// /*********************
+//     FORM BACKGROUND COLOR OPACITY
+// *********************/
+
+
+// Opacity 9
+textarea.form-bg-opacity-9,
+input.form-bg-opacity-9,
+textarea.form-bg-opacity-9-hover:hover,
+input.form-bg-opacity-9-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.9); 
+}
+textarea.form-bg-opacity-9-focus:focus,
+input.form-bg-opacity-9-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.9) !important; 
+}
+
+
+
+// Opacity 8
+textarea.form-bg-opacity-8,
+input.form-bg-opacity-8,
+textarea.form-bg-opacity-8-hover:hover,
+input.form-bg-opacity-8-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.8); 
+}
+textarea.form-bg-opacity-8-hover:focus,
+input.form-bg-opacity-8-hover:focus {
+background-color: transparentize(#{$evo_color}, 0.8) !important; 
+}
+
+
+
+
+// Opacity 7
+textarea.form-bg-opacity-7,
+input.form-bg-opacity-7,
+textarea.form-bg-opacity-7-hover:hover,
+input.form-bg-opacity-7-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.7); 
+}
+textarea.form-bg-opacity-7-hover:focus,
+input.form-bg-opacity-7-hover:focus {
+background-color: transparentize(#{$evo_color}, 0.7) !important; 
+}
+
+
+
+
+// Opacity 6
+textarea.form-bg-opacity-6,
+input.form-bg-opacity-6,
+textarea.form-bg-opacity-6-hover:hover,
+input.form-bg-opacity-6-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.6); 
+}
+textarea.form-bg-opacity-6-hover:focus,
+input.form-bg-opacity-6-hover:focus {
+background-color: transparentize(#{$evo_color}, 0.6) !important; 
+}
+
+
+
+// Opacity 5
+textarea.form-bg-opacity-5,
+input.form-bg-opacity-5,
+textarea.form-bg-opacity-5-hover:hover,
+input.form-bg-opacity-5-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.5); 
+}
+textarea.form-bg-opacity-5-focus:focus,
+input.form-bg-opacity-5-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.5) !important; 
+}
+
+
+
+// Opacity 4
+textarea.form-bg-opacity-4,
+input.form-bg-opacity-4,
+textarea.form-bg-opacity-4-hover:hover,
+input.form-bg-opacity-4-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.4); 
+}
+textarea.form-bg-opacity-4-focus:focus,
+input.form-bg-opacity-4-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.4) !important; 
+}
+
+
+
+// Opacity 3
+textarea.form-bg-opacity-3,
+input.form-bg-opacity-3,
+textarea.form-bg-opacity-3-hover:hover,
+input.form-bg-opacity-3-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.3); 
+}
+textarea.form-bg-opacity-3-focus:focus,
+input.form-bg-opacity-3-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.3) !important; 
+}
+
+
+
+// Opacity 2
+textarea.form-bg-opacity-2,
+input.form-bg-opacity-2,
+textarea.form-bg-opacity-2-hover:hover,
+input.form-bg-opacity-2-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.2); 
+}
+textarea.form-bg-opacity-2-focus:focus,
+input.form-bg-opacity-2-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.2) !important; 
+}
+
+
+
+// Opacity 1
+textarea.form-bg-opacity-1,
+input.form-bg-opacity-1,
+textarea.form-bg-opacity-1-hover:hover,
+input.form-bg-opacity-1-hover:hover {
+background-color: transparentize(#{$evo_color}, 0.1); 
+}
+textarea.form-bg-opacity-1-focus:focus,
+input.form-bg-opacity-1-focus:focus {
+background-color: transparentize(#{$evo_color}, 0.1) !important; 
+}
+
+
+
