@@ -1581,6 +1581,11 @@ pre.code-short > code {
   width: 100vw;
   height: 100vh; }
 
+.view-100 .image-fill,
+.view-full .image-fill {
+  width: 100vw !important;
+  height: 100vh !important; }
+
 .size-25 {
   height: 42rem;
   width: 42rem; }
@@ -2265,8 +2270,63 @@ div.iframe-container-shadow-3::before {
   margin-left: -5%;
   margin-right: -5%; }
 
+.text-rotate-90,
 .text-rotate {
   -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-15 {
+  -webkit-transform: rotate(15deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-5 {
+  -webkit-transform: rotate(5deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-5-neg {
+  -webkit-transform: rotate(-5deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-15-neg {
+  -webkit-transform: rotate(-15deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-45-neg {
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-90-neg {
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-180-neg {
+  -webkit-transform: rotate(-180deg);
+  -webkit-transform-origin: 15px 25px;
+  display: inline-block;
+  width: 100px; }
+
+.text-rotate-180 {
+  -webkit-transform: rotate(180deg);
   -webkit-transform-origin: 15px 25px;
   display: inline-block;
   width: 100px; }
@@ -5366,7 +5426,8 @@ body.color-demo h2.margin-bottom-0 {
 
 .font-google-playfair-black-italic {
   font-family: Playfair Display, times, serif;
-  font-weight: 900; }
+  font-weight: 900;
+  font-style: italic; }
 
 .font-google-montserrat {
   font-family: Montserrat, sans-serif;
@@ -5375,6 +5436,46 @@ body.color-demo h2.margin-bottom-0 {
 .font-google-merriweather {
   font-family: Merriweather, serif;
   font-weight: 400; }
+
+.font-google-rubik {
+  font-family: Rubik, sans-serif;
+  font-weight: 400; }
+
+.font-google-rubik-mono-one {
+  font-family: Rubik Mono One, monospace;
+  font-weight: 400; }
+
+.font-google-passion-one-black {
+  font-family: Passion One, sans-serif;
+  font-weight: 900; }
+
+.font-google-alpha-one {
+  font-family: Alfa Slab One, sans-serif;
+  font-weight: 400; }
+
+.font-google-pompiere {
+  font-family: Pompiere, sans-serif;
+  font-weight: 400; }
+
+.font-google-amatic {
+  font-family: Amatic SC, sans-serif;
+  font-weight: 400; }
+
+.font-google-amatic-bold {
+  font-family: Amatic SC, sans-serif;
+  font-weight: 700; }
+
+.font-google-special-elite {
+  font-family: Special Elite, monospace;
+  font-weight: 400; }
+
+.font-google-cabin-sketch {
+  font-family: Cabin Sketch, sans-serif;
+  font-weight: 400; }
+
+.font-google-cabin-sketch-bold {
+  font-family: Cabin Sketch, sans-serif;
+  font-weight: 700; }
 
 .font-athelas {
   font-family: athelas, georgia, serif; }

@@ -311,7 +311,7 @@ font-style: normal; // bold;
 .font-google-playfair-black-italic {
 font-family: #{$google-playfair-display};
 font-weight:900;
-// font-style:italic;
+font-style:italic;
 }
 
 // Montserrat
@@ -328,3 +328,74 @@ font-weight:400;
 font-family: #{$google-merriweather};
 font-weight:400;
 }
+
+
+// Rubik
+// Additional weights are available
+
+.font-google-rubik {
+font-family: #{$google-rubik};
+font-weight:400;
+}
+
+// Rubik Mono One
+
+.font-google-rubik-mono-one {
+font-family: #{$google-rubik-mono-one};
+font-weight:400;
+}
+
+// Passion one black
+// Additional weights are available
+
+.font-google-passion-one-black {
+font-family: #{$google-passion-one};
+font-weight:900;
+}
+
+// Alpha One
+
+.font-google-alpha-one {
+font-family: #{$google-alpha-one};
+font-weight:400;
+}
+
+// Pompiere
+
+.font-google-pompiere {
+font-family: #{$google-pompiere};
+font-weight:400;
+}
+
+// Amatic SC
+
+.font-google-amatic {
+font-family: #{$google-amatic};
+font-weight:400;
+}
+
+.font-google-amatic-bold {
+font-family: #{$google-amatic};
+font-weight:700;
+}
+
+// Special Elite
+
+.font-google-special-elite {
+font-family: #{$google-special-elite};
+font-weight:400;
+}
+
+// Cabin Sketch
+
+.font-google-cabin-sketch {
+font-family: #{$google-cabin-sketch};
+font-weight:400;
+}
+
+.font-google-cabin-sketch-bold {
+font-family: #{$google-cabin-sketch};
+font-weight:700;
+}
+
+

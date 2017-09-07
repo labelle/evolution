@@ -55,12 +55,11 @@
 .view-wide-full,
 .view-wide-100 { width: 100vw; }
 
-
-
 .view-wide-66 { width: 66vw; }
 
 .view-wide-third,
 .view-wide-33 { width: 33vw; }
+
 
 
 
@@ -124,6 +123,14 @@
 // Full screen viewport blocks
 
 .view-full { width: 100vw; height: 100vh; }
+
+// From Rob G
+// Fix for gap displayed at bottom of image-fill overlay layers
+.view-100 .image-fill,
+.view-full .image-fill {
+width: 100vw !important;
+height: 100vh !important;
+}
 
 // .view-75 { width: 75vw; height: 75vh; }
 
