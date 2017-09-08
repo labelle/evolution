@@ -314,6 +314,15 @@ font-weight:900;
 font-style:italic;
 }
 
+// Alegreya
+// Additional fonts are available
+
+.font-google-alegreya {
+font-family: #{$google-alegreya};
+font-weight:400;
+}
+
+
 // Montserrat
 
 .font-google-montserrat {
