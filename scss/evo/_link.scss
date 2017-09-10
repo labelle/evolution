@@ -70,7 +70,7 @@ a:link    {
 }
 
 // link inverse
-#{$evo}-link-inverse:link a,
+#{$evo}-link-inverse a:link,
 a#{$evo}-link-inverse:link,
 .a-link-inverse,
 .a-link-inverse a {
@@ -148,8 +148,8 @@ color: #{$inverse_link_color_active} !important;
 
 
 // focus
-a#{$evo}-link:focus,
 #{$evo}-link a:focus,
+a#{$evo}-link:focus,
 .a-focus,
 a:focus,
 button:focus {
