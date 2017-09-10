@@ -5947,7 +5947,7 @@ p {
 
 .evo-measure,
 .text-measure {
-  max-width: 55rem; }
+  max-width: 34rem; }
 
 .text-measure-1 {
   max-width: 10rem; }
@@ -8539,7 +8539,7 @@ a.evo-link-inverse:link,
 a.evo-link:visited,
 .a-visited,
 a:visited {
-  color: #00afec;
+  color: inherit;
   opacity: 1; }
 
 .evo-link-inverse a:visited,
@@ -8552,7 +8552,7 @@ a.evo-link-inverse:visited,
 a.evo-link:hover,
 .a-hover,
 a:hover {
-  color: #00afec;
+  color: #0090d2;
   background: transparent;
   text-decoration: none;
   outline-width: 0;
@@ -8562,7 +8562,7 @@ a:hover {
 a.evo-link-inverse:hover,
 .a-hover-inverse,
 .a-hover-inverse a {
-  color: #00afec !important;
+  color: #0090d2 !important;
   background: transparent !important; }
 
 .evo-link a:active,
@@ -8589,7 +8589,7 @@ button:focus {
   text-decoration: none;
   outline: unset;
   opacity: 1;
-  outline-color: #00afec;
+  outline-color: #0090d2;
   outline-width: thin;
   outline-style: dotted;
   outline-offset: 0; }
@@ -15647,7 +15647,7 @@ table.evo-table {
     background-color: #fcfcfc; }
   .evo-table tr:hover a,
   table.evo-table tr:hover a {
-    color: #00afec; }
+    color: #0090d2; }
   .evo-table caption,
   table.evo-table caption {
     color: #555;
@@ -15680,7 +15680,7 @@ table.evo-table-inverse {
     background-color: #0c0c0c; }
   .evo-table-inverse tr:hover a,
   table.evo-table-inverse tr:hover a {
-    color: #00afec; }
+    color: #0090d2; }
   .evo-table-inverse caption,
   table.evo-table-inverse caption {
     color: #fff;

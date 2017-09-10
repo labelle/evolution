@@ -21,12 +21,18 @@
 // Brand Icons
 #{$brand}-icon-arrow          { background-image: url(#{$brand-icon-arrow}); }
 #{$brand}-icon-close          { background-image: url(#{$brand-icon-close}); }
-#{$brand}-icon-menu          { background-image: url(#{$brand-icon-menu}); }
-#{$brand}-icon-search          { background-image: url(#{$brand-icon-search}); }
+#{$brand}-icon-menu           { background-image: url(#{$brand-icon-menu}); }
+#{$brand}-icon-search         { background-image: url(#{$brand-icon-search}); }
 
 // Inverse Brand Icons
 #{$brand}-icon-arrow-inverse          { background-image: url(#{$brand-icon-arrow-inverse}); }
 #{$brand}-icon-close-inverse          { background-image: url(#{$brand-icon-close-inverse}); }
-#{$brand}-icon-menu-inverse          { background-image: url(#{$brand-icon-menu-inverse}); }
-#{$brand}-icon-search-inverse          { background-image: url(#{$brand-icon-search-inverse}); }
+#{$brand}-icon-menu-inverse           { background-image: url(#{$brand-icon-menu-inverse}); }
+#{$brand}-icon-search-inverse         { background-image: url(#{$brand-icon-search-inverse}); }
 
+
+// OTHER
+
+#{$brand}-icon-facebook-inverse       { background-image: url(#{$brand-icon-facebook-inverse}); }
+#{$brand}-icon-twitter-inverse        { background-image: url(#{$brand-icon-twitter-inverse}); }
+#{$brand}-icon-email-inverse          { background-image: url(#{$brand-icon-email-inverse}); }

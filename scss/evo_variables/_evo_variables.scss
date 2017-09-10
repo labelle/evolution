@@ -170,8 +170,7 @@ $text_margin_bottom:                1.4375em !default; // 1.4375em, or rem?
 $text_letter_spacing:               normal !default; // normal or 0, or negative or positive (e.g. -.025em or .025em)
 $text_rendering:                    optimizeLegibility !default; // optimizeLegibility or optimizeSpeed or auto or unset;
 
-
-$text_measure:                      ceil(54.73) !default; // ceil(54.73) or #{$u-42}rem;
+$text_measure:                      ceil(33.825) !default; // ceil(54.73) or #{$u-42}rem;
 $text_leading:                      1.9 !default; // 1.9 or 1.4375 or 1.5 multiple, no em, rem, px, %
 $text_tracking:                     .025 !default; // .025
 
@@ -351,18 +350,18 @@ $link_opacity:                      1; // or .5
 $inverse_link_color:                #{$evo_white} !default;
 
 // a:visited
-$link_color_visited:                #{$evo_color} !default; // or inherit
+$link_color_visited:                inherit !default; // or inherit or #{$evo_gray}
 $link_opacity_visited:				1;
 
 $inverse_link_color_visited:        #{$evo_white} !default;
 
 // a:hover
-$link_color_hover:                  #{$color_17} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$link_color_hover:                  #{$color_16} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $link_background_color_hover:       transparent;
 $link_underline_hover:				none !default; // or none or underline or line-through
 $link_opacity_hover:                1;
 
-$inverse_link_color_hover:          #{$color_17} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
+$inverse_link_color_hover:          #{$color_16} !default; // darker(rgb( 0, 174, 239 ), 75%) !default; // cyan
 $inverse_link_background_color_hover: transparent;
 
 // a:active
@@ -377,7 +376,7 @@ $inverse_link_color_active:         #{$evo_white} !default; // cyan
 // https://davidwalsh.name/invert-colors-css
 $link_color_focus:                  invert !default; // cyan
 $link_underline_focus:				none !default;// text-decoration
-$link_outline_color_focus:			#{$color_17} !default;
+$link_outline_color_focus:			#{$color_16} !default;
 $link_outline_width_focus:			thin !default;
 $link_outline_style_focus:			dotted !default;
 $link_opacity_focus:                1;
@@ -393,7 +392,7 @@ $button_font_family:               #{$sans-serif};
 $button_text_align:                center;
 $button_text_transform:            uppercase;
 $button_font_weight:               700; // or bold
-// $button_text_decoration:           none;  // Doesn't work
+// $button_text_decoration:        none;  // Doesn't work
 
 // Button Structure
 $button_padding_top:               .75em;

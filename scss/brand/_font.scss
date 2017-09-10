@@ -4,5 +4,11 @@
 
 
 // Brand Fonts
-#{$brand}-font-1    { font-family: #{$brand-font-1}; }
-#{$brand}-font-2    { font-family: #{$brand-font-2}; }
+#{$brand}-font-1    { 
+font-family: #{$brand-font-1};
+font-weight:900; 
+}
+#{$brand}-font-2    { 
+font-family: #{$brand-font-2};
+font-weight:300; 
+}

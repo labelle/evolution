@@ -26,10 +26,12 @@
   background-image: url(../fpo/logo/logo-004-inverse.png); }
 
 .brand-font-1 {
-  font-family: fontNameHere, sans-serif; }
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 900; }
 
 .brand-font-2 {
-  font-family: fontNameHere, sans-serif; }
+  font-family: Source Serif Pro, serif;
+  font-weight: 300; }
 
 .brand-color-1 {
   color: #eb212e; }
@@ -120,6 +122,15 @@
 
 .brand-icon-search-inverse {
   background-image: url(../fpo/icon/icon-search-inverse.png); }
+
+.brand-icon-facebook-inverse {
+  background-image: url(../fpo/icon/icon-facebook-inverse.png); }
+
+.brand-icon-twitter-inverse {
+  background-image: url(../fpo/icon/icon-twitter-inverse.png); }
+
+.brand-icon-email-inverse {
+  background-image: url(../fpo/icon/icon-email-inverse.png); }
 
 .image-bg-brand-guide {
   background-image: url(../fpo/guide/brand-guide.jpg); }
