@@ -918,7 +918,7 @@ pre.code-short > code {
 
 @media screen and (min-width: 1101px) {
   .two-up-vertical {
-    width: 48.75%;
+    width: 49.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
@@ -942,7 +942,7 @@ pre.code-short > code {
 
 @media screen and (max-width: 1100px) {
   .two-up {
-    max-width: 50%;
+    width: 50%;
     float: left; } }
 
 @media screen and (max-width: 480px) {

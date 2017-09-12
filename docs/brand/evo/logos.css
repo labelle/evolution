@@ -1,0 +1,35 @@
+/* IMAGES */
+
+.logo-structure {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15rem;
+  height: 5rem;
+}
+
+.logo-structure-small {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12rem;
+  height: 4rem;
+}
+
+.logo-elements    { background-image: url(../img/logos/evo-color/evo-elements.svg); }
+.logo-icons       { background-image: url(../img/logos/evo-color/evo-icons.svg); }
+.logo-logo        { background-image: url(../img/logos/evo-color/evo-logo.svg); }
+.logo-patterns    { background-image: url(../img/logos/evo-color/evo-patterns.svg); }
+.logo-pure        { background-image: url(../img/logos/evo-color/evo-pure.svg); }
+.logo-styleguide  { background-image: url(../img/logos/evo-color/evo-styleguide.svg); }
+.logo-system      { background-image: url(../img/logos/evo-color/evo-system.svg); }
+.logo-toolkits    { background-image: url(../img/logos/evo-color/evo-toolkits.svg); }
+
+.logo-inverse-elements    { background-image: url(../img/logos/evo-inverse/evo-inverse-elements.svg); }
+.logo-inverse-icons       { background-image: url(../img/logos/evo-inverse/evo-inverse-icons.svg); }
+.logo-inverse-logo        { background-image: url(../img/logos/evo-inverse/evo-inverse-logo.svg); }
+.logo-inverse-patterns    { background-image: url(../img/logos/evo-inverse/evo-inverse-patterns.svg); }
+.logo-inverse-pure        { background-image: url(../img/logos/evo-inverse/evo-inverse-pure.svg); }
+.logo-inverse-styleguide  { background-image: url(../img/logos/evo-inverse/evo-inverse-styleguide.svg); }
+.logo-inverse-system      { background-image: url(../img/logos/evo-inverse/evo-inverse-system.svg); }
+.logo-inverse-toolkits    { background-image: url(../img/logos/evo-inverse/evo-inverse-toolkits.svg); }
