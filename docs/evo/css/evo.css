@@ -5550,6 +5550,14 @@ body.color-demo h2.margin-bottom-0 {
   font-family: Cabin Sketch, sans-serif;
   font-weight: 700; }
 
+.font-google-homemade-apple {
+  font-family: Homemade Apple, cursive;
+  font-weight: 400; }
+
+.font-google-libre-barcode {
+  font-family: "Libre Barcode 39 Text", monospace;
+  font-weight: 400; }
+
 .font-athelas {
   font-family: athelas, georgia, serif; }
 

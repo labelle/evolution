@@ -93,6 +93,11 @@ $google-rubik: 'Rubik', sans-serif !default;
 
 $google-rubik-mono-one: 'Rubik Mono One', monospace !default;
 
+$google-homemade-apple: 'Homemade Apple', cursive !default;
+
+// $google-libre-barcode: "Libre Barcode 39 Text", monospace !default;
+// There is a bug preventing this from displaying, so it's entered directly in the _font_google.scss file
+
 // Adobe Edge Fonts
 $adobe-source-sans:  source-sans-pro, sans-serif !default;
 $adobe-source-serif: source-serif-pro, serif !default;

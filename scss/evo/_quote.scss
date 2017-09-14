@@ -2,6 +2,7 @@
 
 @import "../evo_variables/evo_variables";
 
+// http://practicaltypography.com/straight-and-curly-quotes.html
 
 // Q tag
 // https://www.w3schools.com/Tags/tag_q.asp
@@ -19,6 +20,18 @@
 
 // Q tag quote
 // https://www.dwheeler.com/essays/quotes-in-html.html
+
+
+
+
+// https://www.sitepoint.com/typography-of-quotations-citations/
+
+// blockquote { text-indent: -0.4em; }
+
+// <blockquote cite="de Sade, M. 2009, Justine, Modern Forbidden Classics, Harper Perennial, London. p. 1.">
+//     <p>The triumph of philosophy would be to reveal, amply and lucidly, the means by which providence attains her ends over man; and, accordingly, it would trace those lines of conduct which might enable this unforunate biped individual to avoid, while treading the thorny path of life, those bizarre caprices of a fate which has twenty different names, but which, as yet, has never clearly been defined.</p>
+// </blockquote>
+
 
 // Double quote
 .text-quote,

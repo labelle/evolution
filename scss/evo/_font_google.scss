@@ -408,3 +408,21 @@ font-weight:700;
 }
 
 
+// Homemade Apple
+
+.font-google-homemade-apple {
+font-family: #{$google-homemade-apple};
+font-weight:400;
+}
+
+// Libre Barcode 39 Text
+// Additional styles are available
+
+.font-google-libre-barcode {
+// font-family: #{$google-libre-barcode};
+font-family: "Libre Barcode 39 Text", monospace;
+font-weight:400;
+}
+
+
+
