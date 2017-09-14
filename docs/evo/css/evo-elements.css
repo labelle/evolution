@@ -182,9 +182,6 @@ body {
 .cursor-ew-resize {
   cursor: ew-resize; }
 
-.cursor-pointer {
-  cursor: pointer; }
-
 .cursor-grab {
   cursor: grab; }
 
@@ -822,7 +819,7 @@ pre.code-short > code {
   width: 100%;
   float: left; }
 
-@media screen and (max-width: 480px) {
+@media screen and (1100px) {
   .grid-1,
   .grid-2,
   .grid-3,
@@ -846,104 +843,104 @@ pre.code-short > code {
 .two-up-vertical {
   transition: .5s ease; }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .six-up-vertical {
     width: 16.416666%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .six-up-vertical {
     width: 24.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .six-up-vertical {
     width: 50%;
     float: left; } }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .six-up {
     width: 16.666666%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .six-up {
     width: 25%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .six-up {
     width: 50%;
     float: left; } }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .four-up-vertical {
     width: 24.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .four-up-vertical {
     width: 49.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .four-up-vertical {
     width: 100%;
     float: left; } }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .four-up {
     width: 25%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .four-up {
     width: 50%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .four-up {
     width: 100%;
     float: left; } }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .two-up-vertical {
     width: 49.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .two-up-vertical {
     width: 49.75%;
     margin-right: .25%;
     margin-bottom: .25%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .two-up-vertical {
     width: 100%;
     float: left; } }
 
-@media screen and (min-width: 1101px) {
+@media screen and (1101px) {
   .two-up {
     width: 50%;
     float: left; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (1100px) {
   .two-up {
     width: 50%;
     float: left; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (480px) {
   .two-up {
     width: 100%;
     float: left; } }
@@ -5776,7 +5773,7 @@ p {
   text-overflow: clip; }
 
 .evo-text-reset {
-  line-height: initial; }
+  font-size: initial; }
 
 .evo-text-0 {
   font-size: 0.5rem; }
@@ -5842,7 +5839,7 @@ p {
   font-size: 26rem; }
 
 .text-size-reset {
-  line-height: initial; }
+  font-size: initial; }
 
 .text-size-0 {
   font-size: 0.5rem; }
@@ -5906,6 +5903,270 @@ p {
 
 .text-size-20 {
   font-size: 26rem; }
+
+@media screen and (min-width: 1101px) {
+  .text-size-reset-screen-large {
+    line-height: initial; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-reset-screen-medium {
+    line-height: initial; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-reset-screen-small {
+    line-height: initial; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-0-screen-large {
+    font-size: 0.5rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-0-screen-medium {
+    font-size: 0.5rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-0-screen-small {
+    font-size: 0.5rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-1-screen-large {
+    font-size: 0.625rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-1-screen-medium {
+    font-size: 0.625rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-1-screen-small {
+    font-size: 0.625rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-2-screen-large {
+    font-size: 0.75rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-2-screen-medium {
+    font-size: 0.75rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-2-screen-small {
+    font-size: 0.75rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-3-screen-large {
+    font-size: 0.875rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-3-screen-medium {
+    font-size: 0.875rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-3-screen-small {
+    font-size: 0.875rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-4-screen-large {
+    font-size: 1rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-4-screen-medium {
+    font-size: 1rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-4-screen-small {
+    font-size: 1rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-5-screen-large {
+    font-size: 1.125rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-5-screen-medium {
+    font-size: 1.125rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-5-screen-small {
+    font-size: 1.125rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-6-screen-large {
+    font-size: 1.3125rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-6-screen-medium {
+    font-size: 1.3125rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-6-screen-small {
+    font-size: 1.3125rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-7-screen-large {
+    font-size: 1.4375rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-7-screen-medium {
+    font-size: 1.4375rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-7-screen-small {
+    font-size: 1.4375rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-8-screen-large {
+    font-size: 1.875rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-8-screen-medium {
+    font-size: 1.875rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-8-screen-small {
+    font-size: 1.875rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-9-screen-large {
+    font-size: 2.3125rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-9-screen-medium {
+    font-size: 2.3125rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-9-screen-small {
+    font-size: 2.3125rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-10-screen-large {
+    font-size: 2.6875rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-10-screen-medium {
+    font-size: 2.6875rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-10-screen-small {
+    font-size: 2.6875rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-11-screen-large {
+    font-size: 3rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-11-screen-medium {
+    font-size: 3rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-11-screen-small {
+    font-size: 3rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-12-screen-large {
+    font-size: 3.75rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-12-screen-medium {
+    font-size: 3.75rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-12-screen-small {
+    font-size: 3.75rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-13-screen-large {
+    font-size: 5rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-13-screen-medium {
+    font-size: 5rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-13-screen-small {
+    font-size: 5rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-14-screen-large {
+    font-size: 6rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-14-screen-medium {
+    font-size: 6rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-14-screen-small {
+    font-size: 6rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-15-screen-large {
+    font-size: 8rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-15-screen-medium {
+    font-size: 8rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-15-screen-small {
+    font-size: 8rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-16-screen-large {
+    font-size: 10rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-16-screen-medium {
+    font-size: 10rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-16-screen-small {
+    font-size: 10rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-17-screen-large {
+    font-size: 13rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-17-screen-medium {
+    font-size: 13rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-17-screen-small {
+    font-size: 13rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-18-screen-large {
+    font-size: 16rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-18-screen-medium {
+    font-size: 16rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-18-screen-small {
+    font-size: 16rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-19-screen-large {
+    font-size: 21rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-19-screen-medium {
+    font-size: 21rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-19-screen-small {
+    font-size: 21rem !important; } }
+
+@media screen and (min-width: 1101px) {
+  .text-size-20-screen-large {
+    font-size: 26rem !important; } }
+
+@media screen and (max-width: 1100px) {
+  .text-size-20-screen-medium {
+    font-size: 26rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .text-size-20-screen-small {
+    font-size: 26rem !important; } }
 
 .evo-leading,
 .text-leading {

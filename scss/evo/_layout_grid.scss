@@ -96,7 +96,7 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (#{$media_query_medium}px) {
 .grid-1,
 .grid-2,
 .grid-3,
@@ -132,7 +132,7 @@
   transition: .5s ease;
 }
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .six-up-vertical  {
         width: 16.416666%;
         margin-right: .25%;
@@ -143,7 +143,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .six-up-vertical  {
         width: 24.75%;
         margin-right: .25%;
@@ -154,7 +154,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (#{$media_query_small}px) {
     .six-up-vertical  {
         width: 50%;
         // margin-right: 2.5%;
@@ -166,7 +166,7 @@
 
 // six-up
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .six-up  {
         width: 16.666666%;
         // margin-right: 1.5%;
@@ -176,7 +176,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .six-up  {
         width: 25%;
         // margin-right: 2.5%;
@@ -186,7 +186,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (#{$media_query_small}px) {
     .six-up  {
         width: 50%;
         // margin-right: 2.5%;
@@ -208,7 +208,7 @@
 // } 
 
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .four-up-vertical  {
         width: 24.75%;
         margin-right: .25%;
@@ -219,7 +219,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .four-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
@@ -230,7 +230,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (#{$media_query_small}px) {
     .four-up-vertical  {
         width: 100%;
         // display: inline-block;
@@ -242,7 +242,7 @@
 // four-up
 
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .four-up  {
         width: 25%;
         // margin-right: 2.5%;
@@ -252,7 +252,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .four-up  {
         width: 50%;
         // margin-right: 2.5%;
@@ -262,7 +262,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (#{$media_query_small}px) {
     .four-up  {
         width: 100%;
         // display: inline-block;
@@ -275,7 +275,7 @@
 // two-up
  
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .two-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
@@ -285,7 +285,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .two-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
@@ -294,7 +294,7 @@
         float: left;
     }
 }
-    @media screen and (max-width: 480px) {
+    @media screen and (#{$media_query_small}px) {
     .two-up-vertical  {
         width: 100%;
          // display: inline-block;
@@ -312,7 +312,7 @@
 //   margin-left: 1px;
 // }  
 
-@media screen and (min-width: 1101px) {
+@media screen and (#{$media_query_large}px) {
     .two-up  {
         width: 50%;
         // display: inline-block;
@@ -320,14 +320,14 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (#{$media_query_medium}px) {
     .two-up  {
         width: 50%;
         // display: inline-block;
         float: left;
     }
 }
-    @media screen and (max-width: 480px) {
+    @media screen and (#{$media_query_small}px) {
     .two-up  {
         width: 100%;
          // display: inline-block;

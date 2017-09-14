@@ -846,5 +846,11 @@ $inverse_masonry_item_color:            #{$evo_white} !default;
 $inverse_masonry_item_background_color: #{$evo_black} !default; // or transparent
 
 
+// Media Queries
+
+$media_query_large:                  1101 !default; // min-width px
+$media_query_medium:                 1100 !default; // min-width px
+$media_query_small:                  480 !default; // max-width px
+
 // This will import a mirror set of variables with each variable set to null
 // @import "../settings";

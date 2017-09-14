@@ -27,11 +27,11 @@
 
 .brand-font-1 {
   font-family: Source Sans Pro, sans-serif;
-  font-weight: 900; }
+  font-weight: 700; }
 
 .brand-font-2 {
   font-family: Source Serif Pro, serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .brand-color-1 {
   color: #eb212e; }
@@ -122,6 +122,9 @@
 
 .brand-icon-search-inverse {
   background-image: url(../fpo/icon/icon-search-inverse.png); }
+
+.brand-icon-linkedin-inverse {
+  background-image: url(../fpo/icon/icon-linkedin-inverse.png); }
 
 .brand-icon-facebook-inverse {
   background-image: url(../fpo/icon/icon-facebook-inverse.png); }
