@@ -35,6 +35,18 @@
 .transition-9-ease { transition: .9s ease; }
 .transition-10-ease { transition: 1s ease; }
 
+// Transitions with ease
+.transition-1-delay { transition-delay: .1s; }
+.transition-2-delay { transition-delay: .2s; }
+.transition-3-delay { transition-delay: .3s; }
+.transition-4-delay { transition-delay: .4s; }
+.transition-5-delay { transition-delay: .5s; }
+.transition-6-delay { transition-delay: .6s; }
+.transition-7-delay { transition-delay: .7s; }
+.transition-8-delay { transition-delay: .8s; }
+.transition-9-delay { transition-delay: .9s; }
+.transition-10-delay { transition-delay: 1s; }
+
 
 
 // Evo opacity
@@ -51,101 +63,106 @@
 
 // Opacity
 .opacity-none,
-.opacity-0,
-.opacity-00    { opacity: 0; }
-.opacity-02    { opacity: .02; }
-.opacity-05    { opacity: .05; }
-.opacity-10    { opacity: .1; }
-.opacity-20    { opacity: .2; }
-.opacity-30    { opacity: .3; }
-.opacity-40    { opacity: .4; }
-.opacity-50    { opacity: .5; }
-.opacity-60    { opacity: .6; }
-.opacity-70    { opacity: .7; }
-.opacity-80    { opacity: .8; }
-.opacity-90    { opacity: .9; }
-.opacity-95    { opacity: .95; }
-.opacity-98    { opacity: .98; }
-.opacity-100,
+.opacity-0    { opacity: 0; }
+.opacity-1    { opacity: .02; }
+.opacity-2    { opacity: .05; }
+.opacity-3    { opacity: .1; }
+.opacity-4    { opacity: .2; }
+.opacity-5    { opacity: .3; }
+.opacity-6    { opacity: .4; }
+.opacity-half,
+.opacity-7    { opacity: .5; }
+.opacity-8    { opacity: .6; }
+.opacity-9    { opacity: .7; }
+.opacity-10    { opacity: .8; }
+.opacity-11    { opacity: .9; }
+.opacity-12    { opacity: .95; }
+.opacity-13    { opacity: .98; }
+.opacity-14    { opacity: .99; }
+.opacity-15,
 .opacity-full  { opacity: 1; }
 
 // No opacity, to a percent opacity on-hover
 .opacity-none-hover:hover,
-.opacity-0-hover:hover,
-.opacity-00-hover:hover { opacity: 0; }
-.opacity-02-hover:hover { opacity: .02; }
-.opacity-05-hover:hover { opacity: .05; }
-.opacity-10-hover:hover { opacity: .1; }
-.opacity-20-hover:hover { opacity: .2; }
-.opacity-30-hover:hover { opacity: .3; }
-.opacity-40-hover:hover { opacity: .4; }
-.opacity-50-hover:hover { opacity: .5; }
-.opacity-60-hover:hover { opacity: .6; }
-.opacity-70-hover:hover { opacity: .7; }
-.opacity-80-hover:hover { opacity: .8; }
-.opacity-90-hover:hover { opacity: .9; }
-.opacity-95-hover:hover { opacity: .95; }
-.opacity-98-hover:hover { opacity: .98; }
-.opacity-100-hover:hover,
+.opacity-0-hover:hover { opacity: 0; }
+.opacity-1-hover:hover { opacity: .02; }
+.opacity-2-hover:hover { opacity: .05; }
+.opacity-3-hover:hover { opacity: .1; }
+.opacity-4-hover:hover { opacity: .2; }
+.opacity-5-hover:hover { opacity: .3; }
+.opacity-6-hover:hover { opacity: .4; }
+.opacity-half-hover:hover,
+.opacity-7-hover:hover { opacity: .5; }
+.opacity-8-hover:hover { opacity: .6; }
+.opacity-9-hover:hover { opacity: .7; }
+.opacity-10-hover:hover { opacity: .8; }
+.opacity-11-hover:hover { opacity: .9; }
+.opacity-12-hover:hover { opacity: .95; }
+.opacity-13-hover:hover { opacity: .98; }
+.opacity-14-hover:hover { opacity: .99; }
+.opacity-15-hover:hover,
 .opacity-full-hover:hover { opacity: 1; }
 
 .opacity-none-hover,
 .opacity-0-hover,
-.opacity-00-hover,
-.opacity-02-hover,
-.opacity-05-hover,
+.opacity-1-hover,
+.opacity-2-hover,
+.opacity-3-hover,
+.opacity-4-hover,
+.opacity-half-hover,
+.opacity-5-hover,
+.opacity-6-hover,
+.opacity-7-hover,
+.opacity-8-hover,
+.opacity-9-hover,
 .opacity-10-hover,
-.opacity-20-hover,
-.opacity-30-hover,
-.opacity-40-hover,
-.opacity-50-hover,
-.opacity-60-hover,
-.opacity-70-hover,
-.opacity-80-hover,
-.opacity-90-hover,
-.opacity-95-hover,
-.opacity-98-hover,
-.opacity-100-hover,
+.opacity-11-hover,
+.opacity-12-hover,
+.opacity-13-hover,
+.opacity-14-hover,
+.opacity-15-hover,
 .opacity-full-hover  { opacity: 0; }
 
 
 // Percent opacity, to none on-hover
 .opacity-none-hover-none,
-.opacity-0-hover-none,
-.opacity-00-hover-none { opacity: 0; }
-.opacity-02-hover-none { opacity: .02; }
-.opacity-05-hover-none { opacity: .05; }
-.opacity-10-hover-none { opacity: .1; }
-.opacity-20-hover-none { opacity: .2; }
-.opacity-30-hover-none { opacity: .3; }
-.opacity-40-hover-none { opacity: .4; }
-.opacity-50-hover-none { opacity: .5; }
-.opacity-60-hover-none { opacity: .6; }
-.opacity-70-hover-none { opacity: .7; }
-.opacity-80-hover-none { opacity: .8; }
-.opacity-90-hover-none { opacity: .9; }
-.opacity-95-hover-none { opacity: .95; }
-.opacity-98-hover-none { opacity: .98; }
-.opacity-100-hover-none,
+.opacity-0-hover-none { opacity: 0; }
+.opacity-1-hover-none { opacity: .02; }
+.opacity-2-hover-none { opacity: .05; }
+.opacity-3-hover-none { opacity: .1; }
+.opacity-4-hover-none { opacity: .2; }
+.opacity-5-hover-none { opacity: .3; }
+.opacity-6-hover-none { opacity: .4; }
+.opacity-half-hover-none,
+.opacity-7-hover-none { opacity: .5; }
+.opacity-8-hover-none { opacity: .6; }
+.opacity-9-hover-none { opacity: .7; }
+.opacity-10-hover-none { opacity: .8; }
+.opacity-11-hover-none { opacity: .9; }
+.opacity-12-hover-none { opacity: .95; }
+.opacity-13-hover-none { opacity: .98; }
+.opacity-14-hover-none { opacity: .99; }
+.opacity-15-hover-none,
 .opacity-full-hover-none { opacity: 1; }
 
 .opacity-none-hover-none:hover,
 .opacity-0-hover-none:hover,
-.opacity-00-hover-none:hover,
-.opacity-02-hover-none:hover,
-.opacity-05-hover-none:hover,
+.opacity-1-hover-none:hover,
+.opacity-2-hover-none:hover,
+.opacity-3-hover-none:hover,
+.opacity-4-hover-none:hover,
+.opacity-half-hover-none:hover,
+.opacity-5-hover-none:hover,
+.opacity-6-hover-none:hover,
+.opacity-7-hover-none:hover,
+.opacity-8-hover-none:hover,
+.opacity-9-hover-none:hover,
 .opacity-10-hover-none:hover,
-.opacity-20-hover-none:hover,
-.opacity-30-hover-none:hover,
-.opacity-40-hover-none:hover,
-.opacity-50-hover-none:hover,
-.opacity-60-hover-none:hover,
-.opacity-70-hover-none:hover,
-.opacity-80-hover-none:hover,
-.opacity-90-hover-none:hover,
-.opacity-95-hover-none:hover,
-.opacity-98-hover-none:hover,
-.opacity-100-hover-none:hover,
+.opacity-11-hover-none:hover,
+.opacity-12-hover-none:hover,
+.opacity-13-hover-none:hover,
+.opacity-14-hover-none:hover,
+.opacity-15-hover-none:hover,
 .opacity-full-hover-none:hover { opacity: 1; }
 
 
