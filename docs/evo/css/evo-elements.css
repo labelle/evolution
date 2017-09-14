@@ -12432,10 +12432,13 @@ ol.number-decimal-zero li::before {
   background-image: url(../image/fpo.jpg); }
 
 .evo-transition {
-  transition: .5s; }
+  transition: .5s ease; }
 
-.evo-transition-after:after {
-  transition: .5s; }
+.evo-transition-before::before {
+  transition: .5s ease; }
+
+.evo-transition-after::after {
+  transition: .5s ease; }
 
 .transition-1 {
   transition: .1s; }
@@ -12528,6 +12531,9 @@ ol.number-decimal-zero li::before {
   transition-delay: 1s; }
 
 .evo-opacity {
+  opacity: .5; }
+
+.evo-opacity-before::before {
   opacity: .5; }
 
 .evo-opacity-after::after {
