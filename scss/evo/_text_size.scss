@@ -100,13 +100,13 @@
 
 // text-size-reset
 @media screen and (min-width: #{$media_query_large}px) {
-.text-size-reset-screen-large  { line-height: initial; }
+.text-size-reset-screen-large  { font-size: initial; }
 }
 @media screen and (max-width: #{$media_query_medium}px) {
-.text-size-reset-screen-medium  { line-height: initial; }
+.text-size-reset-screen-medium  { font-size: initial; }
 }
 @media screen and (max-width: #{$media_query_small}px)  {
-.text-size-reset-screen-small  { line-height: initial; }
+.text-size-reset-screen-small  { font-size: initial; }
 }
 
 

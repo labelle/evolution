@@ -236,5 +236,344 @@
 .size-tall-0-max { max-height: 0; } // #{$u-11}rem or 0rem
 
 
+// Text Size Per Media Queries
+// Just the size
+// rems
+
+// // size-reset
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-larger-screen-large  { height: 150%; width: 150%; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-larger-screen-medium  { height: 150%; width: 150%; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-larger-screen-small  { height: 150%; width: 150%; }
+// }
+
+
+
+// Text Size Per Media Queries
+// Just the size
+// rems
+
+// size-reset
+@media screen and (min-width: #{$media_query_large}px) {
+.size-reset-screen-large  { height: initial; width: initial; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-reset-screen-medium  { height: initial; width: initial; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-reset-screen-small  { height: initial; width: initial; }
+}
+
+
+// size-0
+@media screen and (min-width: #{$media_query_large}px) {
+.size-0-screen-large     { height: #{$u-16}rem; width: #{$u-16}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-0-screen-medium    { height: #{$u-16}rem; width: #{$u-16}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-0-screen-small     { height: #{$u-16}rem; width: #{$u-16}rem; }
+}
+
+
+
+// size-1
+@media screen and (min-width: #{$media_query_large}px) {
+.size-1-screen-large     { height: #{$u-17}rem; width: #{$u-17}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-1-screen-medium    { height: #{$u-17}rem; width: #{$u-17}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-1-screen-small     { height: #{$u-17}rem; width: #{$u-17}rem; }
+}
+
+
+
+// size-2
+@media screen and (min-width: #{$media_query_large}px) {
+.size-2-screen-large     { height: #{$u-18}rem; width: #{$u-18}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-2-screen-medium    { height: #{$u-18}rem; width: #{$u-18}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-2-screen-small     { height: #{$u-18}rem; width: #{$u-18}rem; }
+}
+
+
+// size-3
+@media screen and (min-width: #{$media_query_large}px) {
+.size-3-screen-large     { height: #{$u-19}rem; width: #{$u-19}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-3-screen-medium    { height: #{$u-19}rem; width: #{$u-19}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-3-screen-small     { height: #{$u-19}rem; width: #{$u-19}rem; }
+}
+
+
+// size-4
+@media screen and (min-width: #{$media_query_large}px) {
+.size-4-screen-large     { height: #{$u-20}rem; width: #{$u-20}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-4-screen-medium    { height: #{$u-20}rem; width: #{$u-20}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-4-screen-small     { height: #{$u-20}rem; width: #{$u-20}rem; }
+}
+
+
+// size-5
+@media screen and (min-width: #{$media_query_large}px) {
+.size-5-screen-large     { height: #{$u-21}rem; width: #{$u-21}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-5-screen-medium    { height: #{$u-21}rem; width: #{$u-21}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-5-screen-small     { height: #{$u-21}rem; width: #{$u-21}rem; }
+}
+
+
+// size-6
+@media screen and (min-width: #{$media_query_large}px) {
+.size-6-screen-large     { height: #{$u-22}rem; width: #{$u-22}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-6-screen-medium    { height: #{$u-22}rem; width: #{$u-22}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-6-screen-small     { height: #{$u-22}rem; width: #{$u-22}rem; }
+}
+
+
+
+// size-7
+@media screen and (min-width: #{$media_query_large}px) {
+.size-7-screen-large     { height: #{$u-23}rem; width: #{$u-23}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-7-screen-medium    { height: #{$u-23}rem; width: #{$u-23}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-7-screen-small     { height: #{$u-23}rem; width: #{$u-23}rem; }
+}
+
+
+// size-8
+@media screen and (min-width: #{$media_query_large}px) {
+.size-8-screen-large     { height: #{$u-24}rem; width: #{$u-24}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-8-screen-medium    { height: #{$u-24}rem; width: #{$u-24}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-8-screen-small     { height: #{$u-24}rem; width: #{$u-24}rem; }
+}
+
+
+// size-9
+@media screen and (min-width: #{$media_query_large}px) {
+.size-9-screen-large     { height: #{$u-25}rem; width: #{$u-25}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-9-screen-medium    { height: #{$u-25}rem; width: #{$u-25}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-9-screen-small     { height: #{$u-25}rem; width: #{$u-25}rem; }
+}
+
+
+// size-10
+@media screen and (min-width: #{$media_query_large}px) {
+.size-10-screen-large     { height: #{$u-26}rem; width: #{$u-26}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-10-screen-medium    { height: #{$u-26}rem; width: #{$u-26}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-10-screen-small     { height: #{$u-26}rem; width: #{$u-26}rem; }
+}
+
+
+// size-11
+@media screen and (min-width: #{$media_query_large}px) {
+.size-11-screen-large     { height: #{$u-27}rem; width: #{$u-27}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-11-screen-medium    { height: #{$u-27}rem; width: #{$u-27}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-11-screen-small     { height: #{$u-27}rem; width: #{$u-27}rem; }
+}
+
+// size-12
+@media screen and (min-width: #{$media_query_large}px) {
+.size-12-screen-large     { height: #{$u-28}rem; width: #{$u-28}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-12-screen-medium    { height: #{$u-28}rem; width: #{$u-28}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-12-screen-small     { height: #{$u-28}rem; width: #{$u-28}rem; }
+}
+
+
+// size-13
+@media screen and (min-width: #{$media_query_large}px) {
+.size-13-screen-large     { height: #{$u-29}rem; width: #{$u-29}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-13-screen-medium    { height: #{$u-29}rem; width: #{$u-29}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-13-screen-small     { height: #{$u-29}rem; width: #{$u-29}rem; }
+}
+
+
+// size-14
+@media screen and (min-width: #{$media_query_large}px) {
+.size-14-screen-large     { height: #{$u-30}rem; width: #{$u-30}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-14-screen-medium    { height: #{$u-30}rem; width: #{$u-30}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-14-screen-small     { height: #{$u-30}rem; width: #{$u-30}rem; }
+}
+
+// size-15
+@media screen and (min-width: #{$media_query_large}px) {
+.size-15-screen-large     { height: #{$u-31}rem; width: #{$u-31}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-15-screen-medium    { height: #{$u-31}rem; width: #{$u-31}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-15-screen-small     { height: #{$u-31}rem; width: #{$u-31}rem; }
+}
+
+// size-16
+@media screen and (min-width: #{$media_query_large}px) {
+.size-16-screen-large     { height: #{$u-32}rem; width: #{$u-32}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-16-screen-medium    { height: #{$u-32}rem; width: #{$u-32}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-16-screen-small     { height: #{$u-32}rem; width: #{$u-32}rem; }
+}
+
+// size-17
+@media screen and (min-width: #{$media_query_large}px) {
+.size-17-screen-large     { height: #{$u-33}rem; width: #{$u-33}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-17-screen-medium    { height: #{$u-33}rem; width: #{$u-33}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-17-screen-small     { height: #{$u-33}rem; width: #{$u-33}rem; }
+}
+
+// size-18
+@media screen and (min-width: #{$media_query_large}px) {
+.size-18-screen-large     { height: #{$u-34}rem; width: #{$u-34}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-18-screen-medium    { height: #{$u-34}rem; width: #{$u-34}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-18-screen-small    { height: #{$u-34}rem; width: #{$u-34}rem; }
+}
+
+// size-19
+@media screen and (min-width: #{$media_query_large}px) {
+.size-19-screen-large     { height: #{$u-35}rem; width: #{$u-35}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-19-screen-medium    { height: #{$u-35}rem; width: #{$u-35}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-19-screen-small    { height: #{$u-35}rem; width: #{$u-35}rem; }
+}
+
+// size-20
+@media screen and (min-width: #{$media_query_large}px) {
+.size-20-screen-large     { height: #{$u-36}rem; width: #{$u-36}rem; }
+}
+@media screen and (max-width: #{$media_query_medium}px) {
+.size-20-screen-medium    { height: #{$u-36}rem; width: #{$u-36}rem; }
+}
+@media screen and (max-width: #{$media_query_small}px)  {
+.size-20-screen-small     { height: #{$u-36}rem; width: #{$u-36}rem; }
+}
+
+// // size-21
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-21-screen-large     { height: #{$u-37}rem; width: #{$u-37}rem; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-21-screen-medium    { height: #{$u-37}rem; width: #{$u-37}rem; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-21-screen-small     { height: #{$u-37}rem; width: #{$u-37}rem; }
+// }
+
+// // size-22
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-22-screen-large     { height: #{$u-38}rem; width: #{$u-38}rem; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-22-screen-medium    { height: #{$u-38}rem; width: #{$u-38}rem; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-22-screen-small     { height: #{$u-38}rem; width: #{$u-38}rem; }
+// }
+
+// // size-23
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-23-screen-large     { height: #{$u-39}rem; width: #{$u-39}rem; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-23-screen-medium    { height: #{$u-39}rem; width: #{$u-39}rem; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-23-screen-small     { height: #{$u-39}rem; width: #{$u-39}rem; }
+// }
+
+// // size-24
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-24-screen-large     { height: #{$u-40}rem; width: #{$u-40}rem; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-24-screen-medium    { height: #{$u-40}rem; width: #{$u-40}rem; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-24-screen-small     { height: #{$u-40}rem; width: #{$u-40}rem; }
+// }
+
+// // size-25
+// @media screen and (min-width: #{$media_query_large}px) {
+// .size-25-screen-large     { height: #{$u-41}rem; width: #{$u-41}rem; }
+// }
+// @media screen and (max-width: #{$media_query_medium}px) {
+// .size-25-screen-medium    { height: #{$u-41}rem; width: #{$u-41}rem; }
+// }
+// @media screen and (max-width: #{$media_query_small}px)  {
+// .size-25-screen-small     { height: #{$u-41}rem; width: #{$u-41}rem; }
+// }
+
+
+
+
+
 
 
