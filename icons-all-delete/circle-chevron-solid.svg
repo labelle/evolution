@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>circle-chevron-solid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="evo-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="circle-chevron-solid" fill="#000000">
+            <path d="M32,62 C48.5685425,62 62,48.5685425 62,32 C62,15.4314575 48.5685425,2 32,2 C15.4314575,2 2,15.4314575 2,32 C2,48.5685425 15.4314575,62 32,62 Z M35.7571892,32.0001701 L23.8786797,43.8786797 L28.1213203,48.1213203 L44.2426407,32 L28.1213203,15.8786797 L23.8786797,20.1213203 L35.7571892,32.0001701 Z" id="circle-chevron"></path>
+        </g>
+    </g>
+</svg>
