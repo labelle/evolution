@@ -13,7 +13,7 @@
 // Text Transform
 .text-capitalize       { text-transform: capitalize; }
 .text-uppercase        { text-transform: uppercase; }
-.text-lowercase        { text-transform: lowercase; }
+.text-lowercase        { text-transform: lowercase !important; } // important to override uppercase
 
 .text-capcase-none,
 .text-no-capcase       { text-transform: none !important; }

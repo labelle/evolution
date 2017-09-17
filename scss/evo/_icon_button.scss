@@ -4,66 +4,105 @@
 
 // Evo icon button
 // The label version is for the custom file-upload button
-label#{$evo}-icon-button:before,
+// ch is character width
+// ems adjust character height
+// ex is relative to the x height
+
+// input#{$evo}-icon-button:before,
+// a#{$evo}-icon-button:before,
+// button#{$evo}-icon-button:before {
+// background-image: url(#{$icon_list_background}); 
+// }
+
+input#{$evo}-icon-button-inverse:before,
+a#{$evo}-icon-button-inverse:before,
+button#{$evo}-icon-button-inverse:before {
+background-image: url(#{$inverse_icon_button_background}) !important; 
+}
+
+
+input#{$evo}-icon-button:before,
+input#{$evo}-icon-button-inverse:before,
 a#{$evo}-icon-button:before,
-button#{$evo}-icon-button:before {
+a#{$evo}-icon-button-inverse:before,
+button#{$evo}-icon-button:before,
+button#{$evo}-icon-button-inverse:before {
 content:''; 
-display:inline-block; 
+display:inline-block;
+background-image: url(#{$icon_button_background}); 
+background-size: contain;
+background-position: center;
+background-repeat:no-repeat;
 padding-left: 1.25ch;
-margin-left: 2.5em;
+margin-left: 4.5ch;
 position: absolute;
-height: 1em;
-width: 1em;
-background-image: url(#{$icon_list_background}); 
-background-size: contain;
-background-position: center;
-background-repeat:no-repeat; 
-left: -1.5em;
-top: auto; // or 0
+height: 1em; // or 2ex
+width: 1em; // or 2ex
+left: -3ch;
+// top: auto; // or 0
 vertical-align: middle;
 }
 
-
-label#{$evo}-icon-button,
+input#{$evo}-icon-button,
+input#{$evo}-icon-button-inverse,
 a#{$evo}-icon-button,
-button#{$evo}-icon-button {
-    padding-left: 2.5em;
-    // margin-left: 1.5em;
+a#{$evo}-icon-button-inverse,
+button#{$evo}-icon-button,
+button#{$evo}-icon-button-inverse {
+    padding-left: 4.5ch !important;
     position: relative;
-    // list-style-type: none;
-    // padding-left: -3em;
 }
 
 
+// a#{$evo}-icon-button {
+//     padding-left: 2.5ch !important;
+//     position: relative;
+// }
 
-// Evo List button
-a#{$evo}-icon-button-2:before,
-button#{$evo}-icon-button-2:before {
-content:''; 
-display:inline-block; 
-padding-left: 1.5em;
-margin-left: 1.5em;
-position: absolute;
-height: 1em;
-width: 1em;
-background-image: url(#{$icon_list_background}); 
-background-size: contain;
-background-position: center;
-background-repeat:no-repeat; 
-left: -1.5em;
-top: auto;
-vertical-align: middle;
-}
+// a#{$evo}-icon-link:before {
+// height: 2ch !important;
+// width: 2ch !important;
+// vertical-align: middle !important;
+// margin-top: 1em;
+// margin-bottom: -1em;
+// top: .6em !important;
+// position:absolute !important;
+// }
 
-a#{$evo}-icon-button-2,
-button#{$evo}-icon-button-2 {
-    padding-left: 1.5em;
-    // margin-left: 1.5em;
-    position: relative;
-    border: 0;
-    // list-style-type: none;
-    // padding-left: -3em;
-}
+// a#{$evo}-icon-button:before {
+//     // top: .25ch;
+//     position: relative;
+// }
+
+
+// // Evo List button
+// a#{$evo}-icon-button-2:before,
+// button#{$evo}-icon-button-2:before {
+// content:''; 
+// display:inline-block; 
+// padding-left: 1.5em;
+// margin-left: 1.5em;
+// position: absolute;
+// height: 1em;
+// width: 1em;
+// background-image: url(#{$icon_list_background}); 
+// background-size: contain;
+// background-position: center;
+// background-repeat:no-repeat; 
+// left: -1.5em;
+// // top: auto;
+// vertical-align: middle;
+// }
+
+// a#{$evo}-icon-button-2,
+// button#{$evo}-icon-button-2 {
+//     padding-left: 1.5em;
+//     // margin-left: 1.5em;
+//     position: relative;
+//     border: 0;
+//     // list-style-type: none;
+//     // padding-left: -3em;
+// }
 
 
 
