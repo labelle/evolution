@@ -9123,11 +9123,11 @@ span.text-dropcap {
 
 span.text-dropcap-box {
   font-family: inherit;
-  color: #00afec;
-  background-color: #ede634;
+  color: white;
+  background-color: #00afec;
   border-width: thick;
-  border-style: double;
-  border-color: #00a676;
+  border-style: none;
+  border-color: none;
   font-size: 5ex;
   text-align: text-top;
   float: left;
