@@ -5,7 +5,7 @@
 
 
 // Evo List Icons
-#{$evo}-list-icon li:before {
+#{$evo}-list-icon li::before {
 content:''; 
 // display:inline-block; 
 position: absolute;

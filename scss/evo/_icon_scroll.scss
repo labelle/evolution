@@ -34,8 +34,8 @@
   animation: icon-scroll-chevron-move 10s ease-out 2s infinite;
 }
 
-.icon-scroll-chevron:before,
-.icon-scroll-chevron:after {
+.icon-scroll-chevron::before,
+.icon-scroll-chevron::after {
   content: ' ';
   position: absolute;
   top: 0;
@@ -44,12 +44,12 @@
   background: #fff;
 }
 
-.icon-scroll-chevron:before {
+.icon-scroll-chevron::before {
   left: 0;
   transform: skew(0deg, 30deg);
 }
 
-.icon-scroll-chevron:after {
+.icon-scroll-chevron::after {
   right: 0;
   width: 50%;
   transform: skew(0deg, -30deg);

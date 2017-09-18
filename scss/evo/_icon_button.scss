@@ -8,25 +8,30 @@
 // ems adjust character height
 // ex is relative to the x height
 
-// input#{$evo}-icon-button:before,
-// a#{$evo}-icon-button:before,
-// button#{$evo}-icon-button:before {
+// input#{$evo}-icon-button::before,
+// a#{$evo}-icon-button::before,
+// button#{$evo}-icon-button::before {
 // background-image: url(#{$icon_list_background}); 
 // }
 
-input#{$evo}-icon-button-inverse:before,
-a#{$evo}-icon-button-inverse:before,
-button#{$evo}-icon-button-inverse:before {
+button#{$evo}-icon-button-inverse::before,
+a#{$evo}-icon-button-inverse::before,
+input#{$evo}-icon-button-inverse::before {
 background-image: url(#{$inverse_icon_button_background}) !important; 
 }
 
+button#{$evo}-icon-button-inverse:hover::before,
+a#{$evo}-icon-button-inverse:hover::before,
+input#{$evo}-icon-button-inverse:hover::before {
+  opacity: 1;
+}
 
-input#{$evo}-icon-button:before,
-input#{$evo}-icon-button-inverse:before,
-a#{$evo}-icon-button:before,
-a#{$evo}-icon-button-inverse:before,
-button#{$evo}-icon-button:before,
-button#{$evo}-icon-button-inverse:before {
+button#{$evo}-icon-button::before,
+button#{$evo}-icon-button-inverse::before,
+a#{$evo}-icon-button::before,
+a#{$evo}-icon-button-inverse::before,
+input#{$evo}-icon-button::before,
+input#{$evo}-icon-button-inverse::before {
 content:''; 
 display:inline-block;
 background-image: url(#{$icon_button_background}); 
@@ -41,14 +46,15 @@ width: 1em; // or 2ex
 left: -3ch;
 // top: auto; // or 0
 vertical-align: middle;
+opacity: .5;
 }
 
-input#{$evo}-icon-button,
-input#{$evo}-icon-button-inverse,
+button#{$evo}-icon-button,
+button#{$evo}-icon-button-inverse,
 a#{$evo}-icon-button,
 a#{$evo}-icon-button-inverse,
-button#{$evo}-icon-button,
-button#{$evo}-icon-button-inverse {
+input#{$evo}-icon-button,
+input#{$evo}-icon-button-inverse {
     padding-left: 4.5ch !important;
     position: relative;
 }
@@ -59,7 +65,7 @@ button#{$evo}-icon-button-inverse {
 //     position: relative;
 // }
 
-// a#{$evo}-icon-link:before {
+// a#{$evo}-icon-link::before {
 // height: 2ch !important;
 // width: 2ch !important;
 // vertical-align: middle !important;
@@ -69,15 +75,15 @@ button#{$evo}-icon-button-inverse {
 // position:absolute !important;
 // }
 
-// a#{$evo}-icon-button:before {
+// a#{$evo}-icon-button::before {
 //     // top: .25ch;
 //     position: relative;
 // }
 
 
 // // Evo List button
-// a#{$evo}-icon-button-2:before,
-// button#{$evo}-icon-button-2:before {
+// a#{$evo}-icon-button-2::before,
+// button#{$evo}-icon-button-2::before {
 // content:''; 
 // display:inline-block; 
 // padding-left: 1.5em;
@@ -118,10 +124,10 @@ button#{$evo}-icon-button-inverse {
 //   padding-left: 3ch; // #{$number_list_padding_left};
 //     // margin-bottom: 1.5em;
 //   }
-// #{$evo}-bullet-button::before,
-// button#{$evo}-bullet-button::before,
-// a#{$evo}-bullet-button::before,
-// input#{$evo}-bullet-button::before {
+// #{$evo}-bullet-button:::before,
+// button#{$evo}-bullet-button:::before,
+// a#{$evo}-bullet-button:::before,
+// input#{$evo}-bullet-button:::before {
 //   content: '•';
 //   // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
 //   position: absolute;
@@ -140,17 +146,17 @@ button#{$evo}-icon-button-inverse {
 //   opacity: .5;
 //   // margin-right: 0.5em;
 // }
-// #{$evo}-bullet-button::before,
-// button#{$evo}-bullet-button::before,
-// a#{$evo}-bullet-button::before,
-// input#{$evo}-bullet-button::before {
+// #{$evo}-bullet-button:::before,
+// button#{$evo}-bullet-button:::before,
+// a#{$evo}-bullet-button:::before,
+// input#{$evo}-bullet-button:::before {
 //     padding-left: 1.25ch; // #{$number_list_padding_left};
 // }
 
-// #{$evo}-bullet-button:hover::before,
-// button#{$evo}-bullet-button:hover::before,
-// a#{$evo}-bullet-button:hover::before,
-// input#{$evo}-bullet-button:hover::before {
+// #{$evo}-bullet-button:hover:::before,
+// button#{$evo}-bullet-button:hover:::before,
+// a#{$evo}-bullet-button:hover:::before,
+// input#{$evo}-bullet-button:hover:::before {
 //   color: #{$bullet_list_bullet_color};
 //   opacity: 1;
 // }
@@ -363,7 +369,7 @@ button#{$evo}-icon-button-inverse {
 
 // // 2. Loop over the Icon-Object™ until the name matches the passed $icon parameter and then
 
-// //   2.1 If $iconPosition == right select the :after element and set the corresponding unicode entity as the 'content' value. 
+// //   2.1 If $iconPosition == right select the ::after element and set the corresponding unicode entity as the 'content' value. 
 // // */
 
 // // @mixin button($bg, $rounded: false, $icon:none, $iconPosition: right){
@@ -394,7 +400,7 @@ button#{$evo}-icon-button-inverse {
 // //     @if nth($thing, 1) == $icon {
 // //       @if $iconPosition == right {  
 // //         padding-right: 3.5em;   
-// //         &:after {
+// //         &::after {
 // //            content: nth($thing, 2);
 // //            right: 1.5em;
 // //         }
@@ -402,7 +408,7 @@ button#{$evo}-icon-button-inverse {
        
 // //       @if $iconPosition == left {  
 // //         padding-left: 3.5em;     
-// //         &:before {
+// //         &::before {
 // //            content: nth($thing, 2);
 // //            left: 1.5em;
 // //         }
@@ -427,7 +433,7 @@ button#{$evo}-icon-button-inverse {
 // //   border-bottom: .2em solid darken($bg, 7);
 // //   position: relative;
       
-// //   &:before, &:after{
+// //   &::before, &::after{
 // //     display: inline-block;
 // //     font-family: entypo;
 // //     position: absolute;    

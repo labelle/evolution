@@ -25,8 +25,8 @@
 }
 
 // Evo list icons
-#{$evo}-list-bullet li:before,
-#{$evo}-list-bullet-inverse li:before  {
+#{$evo}-list-bullet li::before,
+#{$evo}-list-bullet-inverse li::before  {
 content: '•';
 // display:inline-block;
 position: absolute;
@@ -43,12 +43,12 @@ vertical-align: middle;
 }
 
 // Evo list bullet
-#{$evo}-list-bullet li:before {
+#{$evo}-list-bullet li::before {
 color: #{$bullet_list_bullet_color} !important;
 }
 
 // Evo list bullet inverse
-#{$evo}-list-bullet-inverse li:before {
+#{$evo}-list-bullet-inverse li::before {
 color: #{$inverse_bullet_list_bullet_color} !important;
 }
 
@@ -177,7 +177,7 @@ ul.list-bullet {
     & ul {
     margin-bottom: #{$bullet_list_margin_bottom};
 }
-& li:before {
+& li::before {
     content: "#{$bullet_list_icon}"; // insert content that looks like bullets
     padding-right: #{$bullet_list_bullet_padding};
     color: #{$bullet_list_bullet_color}; // or a color you prefer
@@ -190,7 +190,7 @@ ul.list-bullet-after {
     & ul {
     margin-bottom: #{$bullet_list_margin_bottom};
 }
-& li:after {
+& li::after {
     content: "#{$bullet_list_icon}"; // insert content that looks like bullets
     padding-left: #{$bullet_list_bullet_padding} !important;
     color: #{$bullet_list_bullet_color}; // or a color you prefer
@@ -198,7 +198,7 @@ ul.list-bullet-after {
 }
 
 ul.bullet-hover-after {
-& li:hover:after {
+& li:hover::after {
     transition: #{$bullet_link_transition};
     padding-left: #{$bullet_list_bullet_padding_hover} !important;
 }

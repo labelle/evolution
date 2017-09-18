@@ -8,33 +8,33 @@
 // BUTTON UPLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
 // NEED TO CONNECT TO VARIABLES
-label.button-upload:before,
-a.button-upload:before,
-button.button-upload:before {
+label.button-upload::before,
+a.button-upload::before,
+button.button-upload::before {
 background-image: #{$button_file_upload};
 cursor: pointer;
 }
 
-label.button-upload-white:before,
-a.button-upload-white:before,
-button.button-upload-white:before {
+label.button-upload-white::before,
+a.button-upload-white::before,
+button.button-upload-white::before {
 background-image: #{$button_file_upload_white};
 cursor: pointer;
 }
 
 // BUTTON DOWNLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
-label.button-download:before,
-a.button-download:before,
-button.button-download:before {
+label.button-download::before,
+a.button-download::before,
+button.button-download::before {
 background-image: #{$button_file_download};
 }
 
 // BUTTON DOWNLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
-label.button-download-white:before,
-a.button-download-white:before,
-button.button-download-white:before {
+label.button-download-white::before,
+a.button-download-white::before,
+button.button-download-white::before {
 background-image: #{$button_file_download_white};
 }
 

@@ -5,108 +5,108 @@
 
 // List color
 
-ul.bullet-color li:before,
-ul.bullet-color-hover li:hover:before,
-ul.bullet-color-after li:after,
-ul.bullet-color-hover-after li:hover:after,
-a.link-color:before,
-a.link-color-hover:hover:before,
-a.link-color-after:after,
-a.link-color-hover-after:hover:after,
-button.button-color:before,
-button.button-color-hover:hover:before,
-button.button-color-after:after,
-button.button-color-hover-after:hover:after {
+ul.bullet-color li::before,
+ul.bullet-color-hover li:hover::before,
+ul.bullet-color-after li::after,
+ul.bullet-color-hover-after li:hover::after,
+a.link-color::before,
+a.link-color-hover:hover::before,
+a.link-color-after::after,
+a.link-color-hover-after:hover::after,
+button.button-color::before,
+button.button-color-hover:hover::before,
+button.button-color-after::after,
+button.button-color-hover-after:hover::after {
     color: #{$evo_color} !important; // or a color you prefer
 }
 
-ul.bullet-black li:before,
-ul.bullet-black-hover li:hover:before,
-ul.bullet-black-after li:after,
-ul.bullet-black-hover-after li:hover:after,
-a.link-black:before,
-a.link-black-hover:hover:before,
-a.link-black-after:after,
-a.link-black-hover-after:hover:after,
-button.button-black:before,
-button.button-black-hover:hover:before,
-button.button-black-after:after,
-button.button-black-hover-after:hover:after {
+ul.bullet-black li::before,
+ul.bullet-black-hover li:hover::before,
+ul.bullet-black-after li::after,
+ul.bullet-black-hover-after li:hover::after,
+a.link-black::before,
+a.link-black-hover:hover::before,
+a.link-black-after::after,
+a.link-black-hover-after:hover::after,
+button.button-black::before,
+button.button-black-hover:hover::before,
+button.button-black-after::after,
+button.button-black-hover-after:hover::after {
     color: #{$evo_black} !important; // or a color you prefer
 }
 
-ul.bullet-white li:before,
-ul.bullet-white-hover li:hover:before,
-ul.bullet-white-after li:after,
-ul.bullet-white-hover-after li:hover:after,
-a.link-white:before,
-a.link-white-hover:hover:before,
-a.link-white-after:after,
-a.link-white-hover-after:hover:after,
-button.button-white:before,
-button.button-white-hover:hover:before,
-button.button-white-after:after,
-button.button-white-hover-after:hover:after {
+ul.bullet-white li::before,
+ul.bullet-white-hover li:hover::before,
+ul.bullet-white-after li::after,
+ul.bullet-white-hover-after li:hover::after,
+a.link-white::before,
+a.link-white-hover:hover::before,
+a.link-white-after::after,
+a.link-white-hover-after:hover::after,
+button.button-white::before,
+button.button-white-hover:hover::before,
+button.button-white-after::after,
+button.button-white-hover-after:hover::after {
     color: #{$evo_white} !important; // or a color you prefer
 }
 
-ul.bullet-gray-dark li:before,
-ul.bullet-gray-dark-hover li:hover:before,
-ul.bullet-gray-dark-after li:after,
-ul.bullet-gray-dark-hover-after li:hover:after,
-a.link-gray-dark:before,
-a.link-gray-dark-hover:hover:before,
-a.link-gray-dark-after:after,
-a.link-gray-dark-hover-after:hover:after,
-button.button-gray-dark:before,
-button.button-gray-dark-hover:hover:before,
-button.button-gray-dark-after:after,
-button.button-gray-dark-hover-after:hover:after {
+ul.bullet-gray-dark li::before,
+ul.bullet-gray-dark-hover li:hover::before,
+ul.bullet-gray-dark-after li::after,
+ul.bullet-gray-dark-hover-after li:hover::after,
+a.link-gray-dark::before,
+a.link-gray-dark-hover:hover::before,
+a.link-gray-dark-after::after,
+a.link-gray-dark-hover-after:hover::after,
+button.button-gray-dark::before,
+button.button-gray-dark-hover:hover::before,
+button.button-gray-dark-after::after,
+button.button-gray-dark-hover-after:hover::after {
     color: #{$evo_gray_dark} !important; // or a color you prefer
 }
 
-ul.bullet-gray li:before,
-ul.bullet-gray-hover li:hover:before,
-ul.bullet-gray-after li:after,
-ul.bullet-gray-hover-after li:hover:after,
-a.link-gray:before,
-a.link-gray-hover:hover:before,
-a.link-gray-after:after,
-a.link-gray-hover-after:hover:after,
-button.button-gray:before,
-button.button-gray-hover:hover:before,
-button.button-gray-after:after,
-button.button-gray-hover-after:hover:after {
+ul.bullet-gray li::before,
+ul.bullet-gray-hover li:hover::before,
+ul.bullet-gray-after li::after,
+ul.bullet-gray-hover-after li:hover::after,
+a.link-gray::before,
+a.link-gray-hover:hover::before,
+a.link-gray-after::after,
+a.link-gray-hover-after:hover::after,
+button.button-gray::before,
+button.button-gray-hover:hover::before,
+button.button-gray-after::after,
+button.button-gray-hover-after:hover::after {
     color: #{$evo_gray} !important; // or a color you prefer
 }
 
-ul.bullet-gray-light li:before,
-ul.bullet-gray-light-hover li:hover:before,
-ul.bullet-gray-light-after li:after,
-ul.bullet-gray-light-hover-after li:hover:after,
-a.link-gray-light:before,
-a.link-gray-light-hover:hover:before,
-a.link-gray-light-after:after,
-a.link-gray-light-hover-after:hover:after,
-button.button-gray-light:before,
-button.button-gray-light-hover:hover:before,
-button.button-gray-light-after:after,
-button.button-gray-light-hover-after:hover:after {
+ul.bullet-gray-light li::before,
+ul.bullet-gray-light-hover li:hover::before,
+ul.bullet-gray-light-after li::after,
+ul.bullet-gray-light-hover-after li:hover::after,
+a.link-gray-light::before,
+a.link-gray-light-hover:hover::before,
+a.link-gray-light-after::after,
+a.link-gray-light-hover-after:hover::after,
+button.button-gray-light::before,
+button.button-gray-light-hover:hover::before,
+button.button-gray-light-after::after,
+button.button-gray-light-hover-after:hover::after {
     color: #{$evo_gray_light} !important; // or a color you prefer
 }
 
-ul.bullet-inherit li:before,
-ul.bullet-inherit-hover li:hover:before,
-ul.bullet-inherit-after li:after,
-ul.bullet-inherit-hover-after li:hover:after,
-a.link-inherit:before,
-a.link-inherit-hover:hover:before,
-a.link-inherit-after:after,
-a.link-inherit-hover-after:hover:after,
-button.button-inherit:before,
-button.button-inherit-hover:hover:before,
-button.button-inherit-after:after,
-button.button-inherit-hover-after:hover:after {
+ul.bullet-inherit li::before,
+ul.bullet-inherit-hover li:hover::before,
+ul.bullet-inherit-after li::after,
+ul.bullet-inherit-hover-after li:hover::after,
+a.link-inherit::before,
+a.link-inherit-hover:hover::before,
+a.link-inherit-after::after,
+a.link-inherit-hover-after:hover::after,
+button.button-inherit::before,
+button.button-inherit-hover:hover::before,
+button.button-inherit-after::after,
+button.button-inherit-hover-after:hover::after {
     color: inherit !important; // or a color you prefer
 }
 

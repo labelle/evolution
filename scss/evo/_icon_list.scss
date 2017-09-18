@@ -14,8 +14,8 @@
 }
 
 // Evo list icons
-#{$evo}-icon-list li:before,
-#{$evo}-icon-list-inverse li:before {
+#{$evo}-icon-list li::before,
+#{$evo}-icon-list-inverse li::before {
 content:''; 
 // display:inline-block; 
 position: absolute;
@@ -31,23 +31,23 @@ vertical-align: middle;
 }
 
 // Evo list icons
-#{$evo}-icon-list li:before {
+#{$evo}-icon-list li::before {
 background-image: url(#{$icon_list_background}); 
 }
 
 // Evo list icons
-#{$evo}-icon-list-inverse li:before {
+#{$evo}-icon-list-inverse li::before {
 background-image: url(#{$inverse_icon_list_background}); 
 }
 
 // // Evo list icons
-// #{$evo}-list-bullet li:before {
+// #{$evo}-list-bullet li::before {
 // background-image: url(#{$icon_list_background});
 // left: 2ch; // was left: 0;// was left: -1.5em;
 // }
 
 // // Evo list icons
-// #{$evo}-list-bullet-inverse li:before {
+// #{$evo}-list-bullet-inverse li::before {
 // background-image: url(#{$inverse_icon_list_background});
 // left: 2ch; // was left: 0;// was left: -1.5em;
 // }
@@ -57,7 +57,7 @@ background-image: url(#{$inverse_icon_list_background});
 
 
 // XXX Large Icon
-.list-icon-xxx-large li:before {
+.list-icon-xxx-large li::before {
 height: 2em;
 width: 2em;
 left: -2.5em;
@@ -68,7 +68,7 @@ top: .65em; // -.45em;
 }
 
 // XX Large Icon
-.list-icon-xx-large li:before {
+.list-icon-xx-large li::before {
 height: 1.75em;
 width: 1.75em;
 left: -2.25em;
@@ -79,7 +79,7 @@ top: .65em; // -.3em;
 }
 
 // X large Icon
-.list-icon-x-large li:before {
+.list-icon-x-large li::before {
 height: 1.5em;
 width: 1.5em;
 left: -2em;
@@ -90,7 +90,7 @@ top: .65em; // .5em or -.15em;
 }
 
 // Large Icon
-.list-icon-large li:before {
+.list-icon-large li::before {
 height: 1.25em;
 width: 1.25em;
 left: -1.75em;
@@ -101,7 +101,7 @@ top: .65em; // or -.05em
 }
 
 // Medium Icon
-.list-icon-medium li:before {
+.list-icon-medium li::before {
 height: 1em;
 width: 1em;
 left: -1.5em;
@@ -113,7 +113,7 @@ top: .65em; //. 15em;
 
 
 // Small Icon
-.list-icon-small li:before {
+.list-icon-small li::before {
 height:.75em; 
 width:.75em; 
 left: -1.25em;
@@ -124,7 +124,7 @@ top: .65em; // .3em
 }
 
 // X Small Icon
-.list-icon-x-small li:before {
+.list-icon-x-small li::before {
 height:.5em; 
 width:.5em; 
 left: -1em;
@@ -135,7 +135,7 @@ top: .7em; // .425em;
 }
 
 // XX Small Icon
-.list-icon-xx-small li:before {
+.list-icon-xx-small li::before {
 height: .35em; 
 width: .35em; 
 left: -.75em;
@@ -147,7 +147,7 @@ top: .65em; // .45em;
 
 
 // // XXX Large Icon
-// .list-icon-xxx-large li:before {
+// .list-icon-xxx-large li::before {
 // height: 2em;
 // width: 2em;
 // left: -2.5em;
@@ -158,7 +158,7 @@ top: .65em; // .45em;
 // }
 
 // // XX Large Icon
-// .list-icon-xx-large li:before {
+// .list-icon-xx-large li::before {
 // height: 1.75em;
 // width: 1.75em;
 // left: -2.25em;
@@ -169,7 +169,7 @@ top: .65em; // .45em;
 // }
 
 // // X large Icon
-// .list-icon-x-large li:before {
+// .list-icon-x-large li::before {
 // height: 1.5em;
 // width: 1.5em;
 // left: -2em;
@@ -180,7 +180,7 @@ top: .65em; // .45em;
 // }
 
 // // Large Icon
-// .list-icon-large li:before {
+// .list-icon-large li::before {
 // height: 1.25em;
 // width: 1.25em;
 // left: -1.75em;
@@ -191,7 +191,7 @@ top: .65em; // .45em;
 // }
 
 // // Medium Icon
-// .list-icon-medium li:before {
+// .list-icon-medium li::before {
 // height: 1em;
 // width: 1em;
 // left: -1.5em;
@@ -203,7 +203,7 @@ top: .65em; // .45em;
 
 
 // // Small Icon
-// .list-icon-small li:before {
+// .list-icon-small li::before {
 // height:.75em; 
 // width:.75em; 
 // left: -1.25em;
@@ -214,7 +214,7 @@ top: .65em; // .45em;
 // }
 
 // // X Small Icon
-// .list-icon-x-small li:before {
+// .list-icon-x-small li::before {
 // height:.5em; 
 // width:.5em; 
 // left: -1em;
@@ -225,7 +225,7 @@ top: .65em; // .45em;
 // }
 
 // // XX Small Icon
-// .list-icon-xx-small li:before {
+// .list-icon-xx-small li::before {
 // height: .35em; 
 // width: .35em; 
 // left: -.75em;

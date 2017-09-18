@@ -20,7 +20,7 @@
   padding-left: #{$line_list_padding_left}; // 0
   padding-bottom: #{$line_list_padding_bottom}; // .25em
   margin-bottom: #{$line_list_item_margin_bottom}; //0
-  &:before {
+  &::before {
   // This is to accomodate special numbered lists
   // transform: translateY(-17%); // delete
   // transform: translateY(50%); // list-padding-thick
@@ -63,7 +63,7 @@
   padding-left: #{$line_list_padding_left}; // 0
   padding-bottom: #{$line_list_padding_bottom}; // .25em
   margin-bottom: #{$line_list_item_margin_bottom}; //0
-  &:before {
+  &::before {
   // This is to accomodate special numbered lists
   // transform: translateY(-17%); // delete
   // transform: translateY(50%); // list-padding-thick
@@ -92,19 +92,19 @@
 
 
 // Hacky utility helpers to align number lists vertically
-.align-number-thick li:before {
+.align-number-thick li::before {
   transform: translateY(50%); // list-padding-thick
 }
 
-.align-number-medium li:before {
+.align-number-medium li::before {
   transform: translateY(30%); // list-padding-medium
 }
 
-.align-number-thin li:before {
+.align-number-thin li::before {
   transform: translateY(-5%); // list-padding-thin
 }
 
-.align-number-none li:before {
+.align-number-none li::before {
   transform: translateY(-34%); // list-padding-none
 }
 

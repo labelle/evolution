@@ -77,17 +77,17 @@
 // BUTTON UPLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
 // NEED TO CONNECT TO VARIABLES
-label.button-upload:before,
-a.button-upload:before,
-button.button-upload:before {
+label.button-upload::before,
+a.button-upload::before,
+button.button-upload::before {
 background-image: #{$button_file_upload}; 
 }
 
 // BUTTON DOWNLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
-label.button-download:before,
-a.button-download:before,
-button.button-download:before {
+label.button-download::before,
+a.button-download::before,
+button.button-download::before {
 background-image: #{$button_file_upload}; 
 }
 

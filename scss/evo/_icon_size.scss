@@ -5,8 +5,8 @@
 // commented values to the right of top: will nudge icons down
 
 // XXX Large Icon
-.icon-size-xxx-large li:before,
-a.icon-size-xxx-large:before {
+.icon-size-xxx-large li::before,
+a.icon-size-xxx-large::before {
 height: 2em;
 width: 2em;
 left: -2.5em;
@@ -20,8 +20,8 @@ a.icon-size-xxx-large {
 }
 
 // XX Large Icon
-.icon-size-xx-large li:before,
-a.icon-size-xx-large:before {
+.icon-size-xx-large li::before,
+a.icon-size-xx-large::before {
 height: 1.75em;
 width: 1.75em;
 left: -2.25em;
@@ -35,8 +35,8 @@ a.icon-size-xx-large {
 }
 
 // X large Icon
-.icon-size-x-large li:before,
-a.icon-size-x-large:before {
+.icon-size-x-large li::before,
+a.icon-size-x-large::before {
 height: 1.5em;
 width: 1.5em;
 left: -2em;
@@ -51,8 +51,8 @@ a.icon-size-x-large {
 
 
 // Large Icon
-.icon-size-large li:before,
-a.icon-size-large:before {
+.icon-size-large li::before,
+a.icon-size-large::before {
 height: 1.25em;
 width: 1.25em;
 left: -1.75em;
@@ -67,8 +67,8 @@ a.icon-size-large {
 
 
 // Medium Icon
-.icon-size-medium li:before,
-a.icon-size-medium:before {
+.icon-size-medium li::before,
+a.icon-size-medium::before {
 height: 1em;
 width: 1em;
 left: -1.5em;
@@ -83,8 +83,8 @@ a.icon-size-medium {
 
 
 // Small Icon
-.icon-size-small li:before,
-a.icon-size-small:before {
+.icon-size-small li::before,
+a.icon-size-small::before {
 height:.75em; 
 width:.75em; 
 left: -1.25em;
@@ -98,8 +98,8 @@ a.icon-size-small {
 }
 
 // X Small Icon
-.icon-size-x-small li:before,
-a.icon-size-x-small:before {
+.icon-size-x-small li::before,
+a.icon-size-x-small::before {
 height:.5em; 
 width:.5em; 
 left: -1em;
@@ -113,8 +113,8 @@ a.icon-size-x-small {
 }
 
 // XX Small Icon
-.icon-size-xx-small li:before,
-a.icon-size-xx-small:before {
+.icon-size-xx-small li::before,
+a.icon-size-xx-small::before {
 height: .35em; 
 width: .35em; 
 left: -.75em;

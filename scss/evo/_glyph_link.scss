@@ -58,9 +58,9 @@ a#{$evo}-link-bullet:hover::before {
 
 
 // A simple way to add a bullet
-ul.link-bullet li:before,
-a.link-bullet:before,
-button.link-bullet:before {
+ul.link-bullet li::before,
+a.link-bullet::before,
+button.link-bullet::before {
     content: "•"; // insert content that looks like bullets
     padding-right: 1ch;
 }

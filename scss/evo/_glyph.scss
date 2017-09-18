@@ -5,143 +5,143 @@
 
 // Other unicode symbols
 
-ul.bullet-dot li:before,
-ul.bullet-dot-after li:after,
-a.link-dot:before,
-a.link-dot-after:after,
-button.button-dot:before,
-button.button-dot-after:after {
+ul.bullet-dot li::before,
+ul.bullet-dot-after li::after,
+a.link-dot::before,
+a.link-dot-after::after,
+button.button-dot::before,
+button.button-dot-after::after {
     content: '•' !important; // insert content that looks like bullets
 }
 
 // En Dash U+2013
-ul.bullet-dash li:before,
-ul.bullet-dash-after li:after,
-a.link-dash:before,
-a.link-dash-after:after,
-button.button-dash:before,
-button.button-dash-after:after {
+ul.bullet-dash li::before,
+ul.bullet-dash-after li::after,
+a.link-dash::before,
+a.link-dash-after::after,
+button.button-dash::before,
+button.button-dash-after::after {
     content: "–" !important; // insert content that looks like bullets
 }
 
 // Division Slash U+2215
-ul.bullet-slash li:before,
-ul.bullet-slash-after li:after,
-a.link-slash:before,
-a.link-slash-after:after,
-button.button-slash:before,
-button.button-slash-after:after {
+ul.bullet-slash li::before,
+ul.bullet-slash-after li::after,
+a.link-slash::before,
+a.link-slash-after::after,
+button.button-slash::before,
+button.button-slash-after::after {
     content: "∕" !important; // insert content that looks like bullets
 }
 
 // Solidus U+002F
-ul.bullet-solidus li:before,
-ul.bullet-solidus-after li:after,
-a.link-solidus:before,
-a.link-solidus-after:after,
-button.button-solidus:before,
-button.button-solidus-after:after {
+ul.bullet-solidus li::before,
+ul.bullet-solidus-after li::after,
+a.link-solidus::before,
+a.link-solidus-after::after,
+button.button-solidus::before,
+button.button-solidus-after::after {
     content: "/" !important; // insert content that looks like bullets
 }
 
 
 // Triangular Bullet U+2023 (only browser)
-ul.bullet-triangle li:before,
-ul.bullet-triangle-after li:after,
-a.link-triangle:before,
-a.link-triangle-after:after,
-button.button-triangle:before,
-button.button-triangle-after:after  {
+ul.bullet-triangle li::before,
+ul.bullet-triangle-after li::after,
+a.link-triangle::before,
+a.link-triangle-after::after,
+button.button-triangle::before,
+button.button-triangle-after::after  {
     content: "‣" !important; // insert content that looks like bullets
 }
 
-ul.bullet-arrow-double li:before,
-ul.bullet-arrow-double-after li:after,
-a.link-arrow-double:before,
-a.link-arrow-double-after:after,
-button.button-arrow-double:before,
-button.button-arrow-double-after:after {
+ul.bullet-arrow-double li::before,
+ul.bullet-arrow-double-after li::after,
+a.link-arrow-double::before,
+a.link-arrow-double-after::after,
+button.button-arrow-double::before,
+button.button-arrow-double-after::after {
     content: "»" !important; // insert content that looks like bullets
 }
 
-ul.bullet-arrow-double-back li:before,
-ul.bullet-arrow-double-back-after li:after,
-a.link-arrow-double-back:before,
-a.link-arrow-double-back-after:after,
-button.button-arrow-double-back:before,
-button.button-arrow-double-back-after:after {
+ul.bullet-arrow-double-back li::before,
+ul.bullet-arrow-double-back-after li::after,
+a.link-arrow-double-back::before,
+a.link-arrow-double-back-after::after,
+button.button-arrow-double-back::before,
+button.button-arrow-double-back-after::after {
     content: "«" !important; // insert content that looks like bullets
 }
 
 // Single Right-Pointing Angle Quotation Mark U+203A
-ul.bullet-arrow-single li:before,
-ul.bullet-arrow-single-after li:after,
-a.link-arrow-single:before,
-a.link-arrow-single-after:after,
-button.button-arrow-single:before,
-button.button-arrow-single-after:after {
+ul.bullet-arrow-single li::before,
+ul.bullet-arrow-single-after li::after,
+a.link-arrow-single::before,
+a.link-arrow-single-after::after,
+button.button-arrow-single::before,
+button.button-arrow-single-after::after {
     content: "›" !important; // insert content that looks like bullets
 }
 
 
 // Rightwards Arrow U+2192
-ul.bullet-arrow li:before,
-ul.bullet-arrow-after li:after,
-a.link-arrow:before,
-a.link-arrow-after:after,
-button.button-arrow:before,
-button.button-arrow-after:after {
+ul.bullet-arrow li::before,
+ul.bullet-arrow-after li::after,
+a.link-arrow::before,
+a.link-arrow-after::after,
+button.button-arrow::before,
+button.button-arrow-after::after {
     content: "→" !important; // insert content that looks like bullets
 }
 
 // Downwards Arrow U+2193
-ul.bullet-arrow-down li:before,
-ul.bullet-arrow-down-after li:after,
-a.link-arrow-down:before,
-a.link-arrow-down-after:after,
-button.button-arrow-down:before,
-button.button-arrow-down-after:after {
+ul.bullet-arrow-down li::before,
+ul.bullet-arrow-down-after li::after,
+a.link-arrow-down::before,
+a.link-arrow-down-after::after,
+button.button-arrow-down::before,
+button.button-arrow-down-after::after {
     content: "↓" !important; // insert content that looks like bullets
 }
 
 // Leftwards Arrow U+2190
-ul.bullet-arrow-left li:before,
-ul.bullet-arrow-left-after li:after,
-a.link-arrow-left:before,
-a.link-arrow-left-after:after,
-button.button-arrow-left:before,
-button.button-arrow-left-after:after {
+ul.bullet-arrow-left li::before,
+ul.bullet-arrow-left-after li::after,
+a.link-arrow-left::before,
+a.link-arrow-left-after::after,
+button.button-arrow-left::before,
+button.button-arrow-left-after::after {
     content: "←" !important; // insert content that looks like bullets
 }
 
 // Upwards Arrow U+2191
-ul.bullet-arrow-up li:before,
-ul.bullet-arrow-up-after li:after,
-a.link-arrow-up:before,
-a.link-arrow-up-after:after,
-button.button-arrow-up:before,
-button.button-arrow-up-after:after {
+ul.bullet-arrow-up li::before,
+ul.bullet-arrow-up-after li::after,
+a.link-arrow-up::before,
+a.link-arrow-up-after::after,
+button.button-arrow-up::before,
+button.button-arrow-up-after::after {
     content: "↑" !important; // insert content that looks like bullets
 }
 
 
 // Ballot X U+2717 (only browser)
-ul.bullet-x li:before,
-ul.bullet-x-after li:after,
-a.link-x:before,
-a.link-x-after:after,
-button.button-x:before,
-button.button-x-after:after {
+ul.bullet-x li::before,
+ul.bullet-x-after li::after,
+a.link-x::before,
+a.link-x-after::after,
+button.button-x::before,
+button.button-x-after::after {
     content: "✗" !important; // insert content that looks like bullets
 }
 
 // Check Mark U+2713 (only browser)
-ul.bullet-check li:before,
-ul.bullet-check-after li:after,
-a.link-check:before,
-a.link-check-after:after,
-button.button-check:before,
-button.button-check-after:after {
+ul.bullet-check li::before,
+ul.bullet-check-after li::after,
+a.link-check::before,
+a.link-check-after::after,
+button.button-check::before,
+button.button-check-after::after {
     content: "✓" !important; // insert content that looks like bullets
 }
 

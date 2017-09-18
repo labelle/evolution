@@ -4,25 +4,17 @@
 
 // Place this directly on a link class
 // Make small and large version, each with correct number alignment?
-#{$evo}-bullet-button,
-button#{$evo}-bullet-button,
-a#{$evo}-bullet-button,
-input#{$evo}-bullet-button {
-  // counter-reset: '•';
-  // margin-top: 1.5em;
-  position: relative;
-  padding-left: 3ch; // #{$number_list_padding_left};
-    // margin-bottom: 1.5em;
-  }
-#{$evo}-bullet-button::before,
-button#{$evo}-bullet-button::before,
-a#{$evo}-bullet-button::before,
-input#{$evo}-bullet-button::before {
+button#{$evo}-glyph-button::before,
+button#{$evo}-glyph-button-inverse::before,
+a#{$evo}-glyph-button::before,
+a#{$evo}-glyph-button-inverse::before,
+input#{$evo}-glyph-button::before,
+input#{$evo}-glyph-button-inverse::before {
   content: '•';
   // content: counter(awesome-counter, decimal-leading-zero) "."; // Adds a zero and a dot
   position: absolute;
   // top: .5em; // use with transform: translateY();
-  left: .2ch; // was left: 0;
+  left: 1ch; // was left: 0;
   // transform: translateY(#{$number_list_number_position}); // use with top: 0;
   background: #{$bullet_list_background_color_1};
   width: auto;
@@ -36,21 +28,37 @@ input#{$evo}-bullet-button::before {
   opacity: .5;
   // margin-right: 0.5em;
 }
-#{$evo}-bullet-button::before,
-button#{$evo}-bullet-button::before,
-a#{$evo}-bullet-button::before,
-input#{$evo}-bullet-button::before {
+
+button#{$evo}-glyph-button::before,
+button#{$evo}-glyph-button-inverse::before,
+a#{$evo}-glyph-button::before,
+a#{$evo}-glyph-button-inverse::before,
+input#{$evo}-glyph-button::before,
+input#{$evo}-glyph-button-inverse::before {
     padding-left: 1.25ch; // #{$number_list_padding_left};
 }
 
-#{$evo}-bullet-button:hover::before,
-button#{$evo}-bullet-button:hover::before,
-a#{$evo}-bullet-button:hover::before,
-input#{$evo}-bullet-button:hover::before {
+button#{$evo}-glyph-button:hover::before,
+button#{$evo}-glyph-button-inverse:hover::before,
+a#{$evo}-glyph-button:hover::before,
+a#{$evo}-glyph-button-inverse:hover::before,
+input#{$evo}-glyph-button:hover::before,
+input#{$evo}-glyph-button-inverse:hover::before {
   color: #{$bullet_list_bullet_color};
   opacity: 1;
 }
 
+
+button#{$evo}-glyph-button,
+button#{$evo}-glyph-button-inverse,
+a#{$evo}-glyph-button,
+a#{$evo}-glyph-button-inverse,
+input#{$evo}-glyph-button,
+input#{$evo}-glyph-button-inverse {
+  position: relative;
+  padding-left: 4.5ch !important;
+  }
+  
 
 // #{$evo}-inverse-button,
 // #{$evo}-button,
@@ -259,7 +267,7 @@ input#{$evo}-bullet-button:hover::before {
 
 // 2. Loop over the Icon-Object™ until the name matches the passed $icon parameter and then
 
-//   2.1 If $iconPosition == right select the :after element and set the corresponding unicode entity as the 'content' value. 
+//   2.1 If $iconPosition == right select the ::after element and set the corresponding unicode entity as the 'content' value. 
 // */
 
 // @mixin button($bg, $rounded: false, $icon:none, $iconPosition: right){
@@ -290,7 +298,7 @@ input#{$evo}-bullet-button:hover::before {
 //     @if nth($thing, 1) == $icon {
 //       @if $iconPosition == right {  
 //         padding-right: 3.5em;   
-//         &:after {
+//         &::after {
 //            content: nth($thing, 2);
 //            right: 1.5em;
 //         }
@@ -298,7 +306,7 @@ input#{$evo}-bullet-button:hover::before {
        
 //       @if $iconPosition == left {  
 //         padding-left: 3.5em;     
-//         &:before {
+//         &::before {
 //            content: nth($thing, 2);
 //            left: 1.5em;
 //         }
@@ -323,7 +331,7 @@ input#{$evo}-bullet-button:hover::before {
 //   border-bottom: .2em solid darken($bg, 7);
 //   position: relative;
       
-//   &:before, &:after{
+//   &::before, &::after{
 //     display: inline-block;
 //     font-family: entypo;
 //     position: absolute;    

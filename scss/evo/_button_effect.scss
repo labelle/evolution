@@ -102,7 +102,7 @@ button.button-two span {
   transition: 0.2s;
 }
 
-button.button-two span:after {
+button.button-two span::after {
   content: '»';
   position: absolute;
   opacity: 0;
@@ -115,7 +115,7 @@ button.button-two span:after {
   padding-right: 1em;
 }
 
-button.button-two:hover span:after {
+button.button-two:hover span::after {
   opacity: 1;
   right: 0;
 }
@@ -140,7 +140,7 @@ button.button-three:hover{
    // color:#000;
 }
 
-button.button-three:after {
+button.button-three::after {
     content: "";
     background: #{$evo_color};
     display: block;
@@ -153,7 +153,7 @@ button.button-three:after {
     transition: all 0.8s
 }
 
-button.button-three:active:after {
+button.button-three:active::after {
     padding: 0;
     margin: 0;
     opacity: 1;

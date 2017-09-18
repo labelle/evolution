@@ -5,7 +5,7 @@
 
 
 // List Background Image Approach
-#{$evo}-list-icon li:before {
+#{$evo}-list-icon li::before {
 content:''; 
 // display:inline-block; 
 position: absolute;
@@ -60,7 +60,7 @@ top: .275em;
 
 
 // // List Background Image Approach
-// #{$evo}-list-bullets li:before {
+// #{$evo}-list-bullets li::before {
 // content:''; 
 // display:inline-block; 
 // height:.5em; 

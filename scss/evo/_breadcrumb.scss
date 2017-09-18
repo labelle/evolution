@@ -3,7 +3,7 @@
 @import "../evo_variables/evo_variables";
 
 
-.breadcrumb-back-to:before {
+.breadcrumb-back-to::before {
 content:'\00AB';
 padding-right:.5em;
 display:inline;

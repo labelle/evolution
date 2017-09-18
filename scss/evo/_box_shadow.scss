@@ -4,15 +4,15 @@
 
 // Simple shadows from tachyons
 
-// .shadow-hover:after {
+// .shadow-hover::after {
 //     box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
 //     opacity: 0;
 //     -webkit-transition: opacity .25s ease-in-out;
 //     transition: opacity .25s ease-in-out
 // }
 
-// .shadow-hover:focus:after,
-// .shadow-hover:hover:after {
+// .shadow-hover:focus::after,
+// .shadow-hover:hover::after {
 //     opacity: 1
 // }
 
@@ -613,7 +613,7 @@
 /*==================================================
  * Drop shadow effect with box-shadow
  * ===============================================*/
-.curved-shadow:after
+.curved-shadow::after
 {
     content:"";
     position:absolute;

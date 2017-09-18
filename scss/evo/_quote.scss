@@ -10,11 +10,11 @@
 //     display: inline;
 // }
  
-// q:before {
+// q::before {
 //     content: open-quote;
 // }
  
-// q:after {
+// q::after {
 //     content: close-quote;
 // }
 
@@ -39,12 +39,12 @@ q.text-quote {
     display: inline;
 }
  
-q.text-quote:before {
+q.text-quote::before {
     content: "“";
     color: black;
 }
  
-q.text-quote:after {
+q.text-quote::after {
     content: "”";
     color: black;
 }
@@ -55,12 +55,12 @@ q.text-quote-single.text-quote {
     display: inline;
 }
  
-q.text-quote-single:before {
+q.text-quote-single::before {
     content: "‘";
     color: black;
 }
  
-q.text-quote-single:after {
+q.text-quote-single::after {
     content: "’";
     color: black;
 }
@@ -85,7 +85,7 @@ q.text-quote-single:after {
     quotes: none;
     display: block;
 }
-    & > q:before{
+    & > q::before{
     // vertical-align: baseline;
     line-height: 1;
     position: absolute;
@@ -107,14 +107,14 @@ q.text-quote-single:after {
 
 // Left Double Quotation Mark U+201C
 .test-blockquote-double {
-   & > q:before{
+   & > q::before{
     content: "“";
 }
 }
 
 // Heavy Double Turned Comma Quotation Mark Ornament U+275D
 .test-blockquote-double-round {
-   & > q:before{
+   & > q::before{
     content: "❝";
     font-size: 5em;
     top: .3em;
@@ -131,13 +131,13 @@ q#{evo}-text-quote {
     font-family: #{$quote_font_family};
 }
  
-q#{$evo}-text-quote:before {
+q#{$evo}-text-quote::before {
     content: "#{$quote_character_before}";
     color: #{$quote_color_before};
     font-family: #{$quote_font_before};
 }
  
-q#{$evo}-text-quote:after {
+q#{$evo}-text-quote::after {
     content: "#{$quote_character_after}";
     color: #{$quote_font_after};
     font-family: #{$quote_font_after};

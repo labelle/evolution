@@ -7,7 +7,7 @@
 background-image: #{$icon_twitter}; 
 }
 
-.icon-twitter-after:after {
+.icon-twitter-after::after {
 background-image: #{$icon_twitter}; 
 }
 
@@ -16,7 +16,7 @@ background-image: #{$icon_twitter};
 background-image: #{$icon_twitter_white}; 
 }
 
-.icon-twitter-white-after:after {
+.icon-twitter-white-after::after {
 background-image: #{$icon_twitter_white}; 
 }
 
@@ -26,6 +26,6 @@ background-image: #{$icon_twitter_white};
 background-image: #{$icon_twitter_white}; 
 }
 
-.icon-twitter-gray-after:after {
+.icon-twitter-gray-after::after {
 background-image: #{$icon_twitter_gray}; 
 }

@@ -63,12 +63,12 @@
 }
 
 // Evo list bullet
-#{$evo}-list-number li:before {
+#{$evo}-list-number li::before {
 color: #{$number_list_number_color} !important;
 }
 
 // Evo list bullet inverse
-#{$evo}-list-number-inverse li:before {
+#{$evo}-list-number-inverse li::before {
 color: #{$inverse_number_list_number_color} !important;
 }
 
