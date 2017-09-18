@@ -47,24 +47,24 @@ select:disabled {
 // From older evolution
 
 
-fieldset#{$evo}-fieldset { 
-  display: block;
-  margin-left: #{$fieldset_margin_left};
-  margin-right: #{$fieldset_margin_right};
-  padding-top: #{$fieldset_padding_top};
-  padding-bottom: #{$fieldset_padding_bottom};
-  padding-left: #{$fieldset_padding_left};
-  padding-right: #{$fieldset_padding_right};
-  border: #{$fieldset_border};
-}
+// fieldset#{$evo}-fieldset { 
+//   display: block;
+//   margin-left: #{$fieldset_margin_left};
+//   margin-right: #{$fieldset_margin_right};
+//   padding-top: #{$fieldset_padding_top};
+//   padding-bottom: #{$fieldset_padding_bottom};
+//   padding-left: #{$fieldset_padding_left};
+//   padding-right: #{$fieldset_padding_right};
+//   border: #{$fieldset_border};
+// }
 
-legend#{$evo}-legend{
-  padding-left:  #{$legend_padding_left};
-  padding-right: #{$legend_padding_right};
-  border:        none;
-  float:         left; // float turns this into a block element
-  // display:       block;
-}
+// legend#{$evo}-legend{
+//   padding-left:  #{$legend_padding_left};
+//   padding-right: #{$legend_padding_right};
+//   border:        none;
+//   float:         left; // float turns this into a block element
+//   // display:       block;
+// }
 
 
 input[type="date"],

@@ -16470,22 +16470,6 @@ textarea:disabled + label,
 select:disabled {
   overflow-y: hidden; }
 
-fieldset.evo-fieldset {
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 0;
-  padding-bottom: 1em;
-  padding-left: 0;
-  padding-right: 0;
-  border: none; }
-
-legend.evo-legend {
-  padding-left: none;
-  padding-right: 1em;
-  border: none;
-  float: left; }
-
 input[type="date"],
 input[type="time"] {
   line-height: 100%; }

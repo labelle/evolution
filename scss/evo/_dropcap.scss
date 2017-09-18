@@ -3,7 +3,7 @@
 @import "../evo_variables/evo_variables";
 
 
-// TODO Make a generica text-dropcap that simply resizes a text proportionate to the paragraph, plus an integrated text-size-dropcap that does the same but with many other special powers
+// TODO Make a generic text-dropcap that simply resizes a text proportionate to the paragraph, plus an integrated text-size-dropcap that does the same but with many other special powers
 
 
 // Dropcaps in span
@@ -22,6 +22,9 @@ padding-top:0;
 line-height:1;
 font-feature-settings: "smcp" on;
 }
+
+// This codepen allows for playing around with the core settings of the text-dropcap
+// https://codepen.io/jasen1/pen/ZXbqdK
 
 
 // Colored letter in colored box
