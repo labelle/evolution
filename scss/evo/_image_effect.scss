@@ -8,9 +8,9 @@
 
 // Evo transition
 // Need to hook into variables
-.evo-transition                 { transition: .5s ease; }
-.evo-transition-before::before  { transition: .5s ease; }
-.evo-transition-after::after    { transition: .5s ease; }
+#{$evo}-transition                 { transition: .5s ease; }
+#{$evo}-transition-before::before  { transition: .5s ease; }
+#{$evo}-transition-after::after    { transition: .5s ease; }
 
 // Transitions
 .transition-1      { transition: .1s; }
@@ -54,15 +54,15 @@
 // Need to hook into variables
 // Need before hover and after hovers
 
-.evo-opacity                 { opacity: .5; }
-.evo-opacity-before::before  { opacity: .5; }
-.evo-opacity-after::after    { opacity: .5; }
+#{$evo}-opacity                 { opacity: .5; }
+#{$evo}-opacity-before::before  { opacity: .5; }
+#{$evo}-opacity-after::after    { opacity: .5; }
 
-.evo-opacity-hover            { opacity: 0; }
-.evo-opacity-hover:hover      { opacity: .5; }
+#{$evo}-opacity-hover            { opacity: 0; }
+#{$evo}-opacity-hover:hover      { opacity: .5; }
 
-.evo-opacity-hover-none       { opacity: .5; }
-.evo-opacity-hover-none:hover { opacity: 1; }
+#{$evo}-opacity-hover-none       { opacity: .5; }
+#{$evo}-opacity-hover-none:hover { opacity: 1; }
 
 
 
@@ -192,6 +192,24 @@
 
 // https://codepen.io/anon/pen/NgKaVJ?editors=0100
 
+
+// Evo gradient Color
+
+#{$evo}-gradient-bg {
+  background-image: linear-gradient(#{$evo_color},transparent);
+}
+
+#{$evo}-gradient-bg-to-right {
+  background-image: linear-gradient(to right,#{$evo_color},transparent);
+}
+
+#{$evo}-gradient-bg-to-left {
+  background-image: linear-gradient(to left,#{$evo_color},transparent);
+}
+
+#{$evo}-gradient-bg-to-top {
+  background-image: linear-gradient(to top,#{$evo_color},transparent);
+}
 
 
 

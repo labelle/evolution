@@ -45,17 +45,17 @@ background-image: #{$button_file_download_white};
 
 // http://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button#21842275
 // Note that the _button_icon.scss file has a condition for the label tag that relates to the custom button available for the custom upload button
-label.evo-button input[type="file"] {
+label#{$evo}-button input[type="file"] {
     position: fixed;
     top: -1000px;
 }
 
-label.evo-button :invalid + span {
+label#{$evo}-button :invalid + span {
     color: inherit;
     border-color: inherit;
 }
 
-label.evo-button :valid + span {
+label#{$evo}-button :valid + span {
     color: #{$evo_color} !important;
     border-color: #{$evo_color} !important;
 }

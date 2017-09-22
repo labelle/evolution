@@ -5,8 +5,8 @@
 
 // Status colors for interactive states
 
-.evo-color-info                { color: #{$evo_info}; }
-.evo-color-info-bg             { background-color: #{$evo_info}; }
+#{$evo}-color-info                { color: #{$evo_info}; }
+#{$evo}-color-info-bg             { background-color: #{$evo_info}; }
 
 // .color-info-link
 // .color-info-link-underline
@@ -15,12 +15,12 @@
 // .color-info-button-solid
 // .color-info-button-ghost
 
-.evo-color-success                { color: #{$evo_success}; }
-.evo-color-success-bg             { background-color: #{$evo_success}; }
+#{$evo}-color-success                { color: #{$evo_success}; }
+#{$evo}-color-success-bg             { background-color: #{$evo_success}; }
 
-.evo-color-warning                { color: #{$evo_warning}; }
-.evo-color-warning-bg             { background-color: #{$evo_warning}; }
+#{$evo}-color-warning                { color: #{$evo_warning}; }
+#{$evo}-color-warning-bg             { background-color: #{$evo_warning}; }
 
-.evo-color-danger                { color: #{$evo_danger}; }
-.evo-color-danger-bg             { background-color: #{$evo_danger}; }
+#{$evo}-color-danger                { color: #{$evo_danger}; }
+#{$evo}-color-danger-bg             { background-color: #{$evo_danger}; }
 

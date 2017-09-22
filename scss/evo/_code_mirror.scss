@@ -6,7 +6,7 @@
 // Allows for cleaner looking code mirrors and code blocks
 // Primarily for style guide and design pattern pages
 
-.evo-codeblock-target > pre > code {
+#{$evo}-codeblock-target > pre > code {
   all: unset;
 }
 

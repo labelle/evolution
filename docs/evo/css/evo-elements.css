@@ -2671,62 +2671,52 @@ div.iframe-container-shadow-3::before {
 .text-rotate {
   -webkit-transform: rotate(90deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-45 {
   -webkit-transform: rotate(45deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-15 {
   -webkit-transform: rotate(15deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-5 {
   -webkit-transform: rotate(5deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-5-neg {
   -webkit-transform: rotate(-5deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-15-neg {
   -webkit-transform: rotate(-15deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-45-neg {
   -webkit-transform: rotate(-45deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-90-neg {
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-180-neg {
   -webkit-transform: rotate(-180deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .text-rotate-180 {
   -webkit-transform: rotate(180deg);
   -webkit-transform-origin: 15px 25px;
-  display: inline-block;
-  width: 100px; }
+  display: inline-block; }
 
 .evo-space {
   height: 3em;
@@ -10538,11 +10528,8 @@ select.form-icon {
 
 .icon-scroll-chevron-text {
   display: block;
-  margin-top: 75px;
   margin-left: -30px;
-  font-size: 12px;
   color: #fff;
-  text-transform: uppercase;
   white-space: nowrap;
   opacity: .25;
   animation: icon-scroll-chevron-pulse 2s linear alternate infinite; }
@@ -13095,6 +13082,18 @@ ol.number-decimal-zero li::before {
 
 .gradient-bg-to-top {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); }
+
+.evo-gradient-bg {
+  background-image: linear-gradient(#00afec, transparent); }
+
+.evo-gradient-bg-to-right {
+  background-image: linear-gradient(to right, #00afec, transparent); }
+
+.evo-gradient-bg-to-left {
+  background-image: linear-gradient(to left, #00afec, transparent); }
+
+.evo-gradient-bg-to-top {
+  background-image: linear-gradient(to top, #00afec, transparent); }
 
 .image-bg-center {
   background-repeat: no-repeat;

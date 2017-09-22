@@ -650,15 +650,15 @@ progress, meter {
 // https://github.com/jareware/css-architecture/blob/master/README.md
 // http://cssreset.com/what-is-a-css-reset/
 
-.evo-all-unset {
+#{$evo}-all-unset {
 all: unset;
 }
 
-.evo-all-initial {
+#{$evo}-all-initial {
 all: initial;
 }
 
-.evo-all-inherit {
+#{$evo}-all-inherit {
 all: inherit;
 }
 
@@ -671,7 +671,7 @@ all: inherit;
 
 // If it's a class, but isn't a class containing the string evo-, put a red border around it.
 
-.evo-debug [class]:not([class*="evo-"]) {
+#{$evo}-debug [class]:not([class*="evo-"]) {
 outline: 5px solid red;
 }
 

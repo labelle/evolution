@@ -154,7 +154,7 @@
 
 // Green
 
-// .evo-color-blend {
+// #{$evo}-color-blend {
 //    background-color: #{$evo_color};
 // }
 
@@ -164,12 +164,12 @@
    mix-blend-mode: multiply;
 }
 
-// .evo-color-blend img {
+// #{$evo}-color-blend img {
 //    filter: grayscale(100%) contrast(1.2);
 //    mix-blend-mode: multiply;
 // }
 
-// .evo-color-blend::after{
+// #{$evo}-color-blend::after{
 //   // background-color: #{$color_10};
 //   mix-blend-mode: multiply;
 // }
