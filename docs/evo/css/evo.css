@@ -6642,6 +6642,21 @@ p {
 .text-measure-10 {
   max-width: 80rem; }
 
+.text-measure-11 {
+  max-width: 100rem; }
+
+.text-measure-12 {
+  max-width: 120rem; }
+
+.text-measure-13 {
+  max-width: 140rem; }
+
+.text-measure-14 {
+  max-width: 160rem; }
+
+.text-measure-15 {
+  max-width: 180rem; }
+
 .evo-text-shadow,
 .text-shadow {
   text-shadow: 0.02em 0.02em 0.06em rgba(0, 0, 0, 0.5); }
