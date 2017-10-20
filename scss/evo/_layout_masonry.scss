@@ -57,9 +57,9 @@
 
 @media only screen and (min-width:900px) {
     #{$evo}-masonry-inverse, #{$evo}-masonry {
-        // -moz-column-count: #{$masonry_column_count};
-        // -webkit-column-count: #{$masonry_column_count};
-        column-count: #{$masonry_column_count};
+        // -moz-column-count: 4;
+        // -webkit-column-count: 4;
+        column-count: 4;
     }
 }
 
