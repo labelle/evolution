@@ -841,6 +841,8 @@ $inverse_code_background_color:     #{$evo_black} !default;
 
 // Masonry
 
+$masonry_column_count:              4 !default; // or 6
+
 $masonry_font_size:                 #{$u-21}em !default; // 12px
 
 $masonry_item_color:                inherit !default; // or #{$evo_black}

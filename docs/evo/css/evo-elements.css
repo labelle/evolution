@@ -2566,8 +2566,6 @@ pre.code-short > code {
   column-count: 4;
   margin: 1.5em 0;
   padding: 0;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
   column-gap: 1.5em; }
 
 .masonry-item {
@@ -2590,32 +2588,22 @@ pre.code-short > code {
 
 @media only screen and (min-width: 300px) {
   .evo-masonry-inverse, .evo-masonry {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
     column-count: 2; } }
 
 @media only screen and (min-width: 700px) {
   .evo-masonry-inverse, .evo-masonry {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
     column-count: 3; } }
 
 @media only screen and (min-width: 900px) {
   .evo-masonry-inverse, .evo-masonry {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1100px) {
   .evo-masonry-inverse, .evo-masonry {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
     column-count: 4; } }
 
 @media only screen and (min-width: 1300px) {
   .evo-masonry-inverse, .evo-masonry {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
     column-count: 4; } }
 
 iframe.iframe-box-bevel {
