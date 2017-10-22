@@ -17,11 +17,11 @@ a {
   background-color: transparent; // reset
   text-decoration: none; // reset
   -webkit-text-decoration-skip: objects; // reset
-  -moz-transition: #{$link_transition};
-  -webkit-transition: #{$link_transition};
-  -o-transition: #{$link_transition};
+  // -moz-transition: #{$link_transition};
+  // -webkit-transition: #{$link_transition};
+  // -o-transition: #{$link_transition};
   transition: #{$link_transition};
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 // Links in paragraphs
