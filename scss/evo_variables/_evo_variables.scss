@@ -841,7 +841,11 @@ $inverse_code_background_color:     #{$evo_black} !default;
 
 // Masonry
 
-$masonry_column_count:              4 !default; // or 6
+$masonry_column_count_extra_small:  2 !default; // or 1
+$masonry_column_count_small:        2 !default;
+$masonry_column_count_medium:       3 !default;
+$masonry_column_count_large:        4 !default; // or 6
+$masonry_column_count_extra_large:  6 !default;
 
 $masonry_font_size:                 #{$u-21}em !default; // 12px
 
@@ -853,10 +857,16 @@ $inverse_masonry_item_background_color: #{$evo_black} !default; // or transparen
 
 
 // Media Queries
+// Minimum point at which your layout will change per different screeen sizes
+$media_query_extra_small:           0 !default; // min-width px // bootstrap is 0
+$media_query_small:                 576 !default; // min-width px // bootstrap is 576
+$media_query_medium:                768 !default; // min-width px // bootstrap is 768
+$media_query_large:                 1200 !default; // min-width px // bootstrap is 992
+$media_query_extra_large:           1600 !default; // min-width px // bootstrap is 1200
 
-$media_query_large:                  1101 !default; // min-width px
-$media_query_medium:                 1100 !default; // max-width px
-$media_query_small:                  480 !default; // max-width px
+
+// This is for the _image_parallax.scss page
+$media_query_max_device_width:      1024 !default; // max-width px // was 480
 
 // This will import a mirror set of variables with each variable set to null
 // @import "../settings";

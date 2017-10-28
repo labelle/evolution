@@ -81,16 +81,18 @@
 // Just the size
 // rems
 
-// // text-size-reset
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-larger-screen-large  { font-size: 150%; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-larger-screen-medium  { font-size: 150%; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-larger-screen-small  { font-size: 150%; }
-// }
+// // // text-size-reset
+// // // @media only screen and (min-width: #{$media_query_extra_large}px),
+// @media only screen and (min-width: #{$media_query_large}px) {
+// // .text-size-larger-screen-large  { font-size: 150%; }
+// // }
+// // @media only screen and (min-width: #{$media_query_medium}px) {
+// // .text-size-larger-screen-medium  { font-size: 150%; }
+// // }
+// // // @media only screen and (min-width: #{$media_query_extra_small}px),
+// @media only screen and (min-width: #{$media_query_small}px)  {
+// // .text-size-larger-screen-small  { font-size: 150%; }
+// // }
 
 
 
@@ -99,319 +101,394 @@
 // rems
 
 // text-size-reset
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-reset-screen-large  { font-size: initial; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-reset-screen-extra-small     { font-size: initial; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-reset-screen-medium  { font-size: initial; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-reset-screen-small           { font-size: initial; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-reset-screen-small  { font-size: initial; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-reset-screen-medium          { font-size: initial; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-reset-screen-large           { font-size: initial; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-reset-screen-extra-large     { font-size: initial; }
 }
 
 
 // text-size-0
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-0-screen-large     { font-size: #{$u-19}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-0-screen-extra-small    { font-size: #{$u-19}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-0-screen-medium    { font-size: #{$u-19}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-0-screen-small          { font-size: #{$u-19}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-0-screen-small     { font-size: #{$u-19}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-0-screen-medium         { font-size: #{$u-19}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-0-screen-large          { font-size: #{$u-19}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-0-screen-extra-large    { font-size: #{$u-19}rem; }
 }
 
 
 
 // text-size-1
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-1-screen-large     { font-size: #{$u-20}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-1-screen-extra-small    { font-size: #{$u-20}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-1-screen-medium    { font-size: #{$u-20}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-1-screen-small          { font-size: #{$u-20}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-1-screen-small     { font-size: #{$u-20}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-1-screen-medium         { font-size: #{$u-20}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-1-screen-large          { font-size: #{$u-20}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-1-screen-extra-large    { font-size: #{$u-20}rem; }
 }
 
 
 
 // text-size-2
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-2-screen-large     { font-size: #{$u-21}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-2-screen-extra-small    { font-size: #{$u-21}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-2-screen-medium    { font-size: #{$u-21}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-2-screen-small          { font-size: #{$u-21}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-2-screen-small     { font-size: #{$u-21}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-2-screen-medium         { font-size: #{$u-21}rem; }
 }
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-2-screen-large          { font-size: #{$u-21}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-2-screen-extra-large    { font-size: #{$u-21}rem; }
+}
+
 
 
 // text-size-3
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-3-screen-large     { font-size: #{$u-22}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-3-screen-extra-small    { font-size: #{$u-22}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-3-screen-medium    { font-size: #{$u-22}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-3-screen-small          { font-size: #{$u-22}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-3-screen-small     { font-size: #{$u-22}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-3-screen-medium         { font-size: #{$u-22}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-3-screen-large          { font-size: #{$u-22}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-3-screen-extra-large    { font-size: #{$u-22}rem; }
 }
 
 
 // text-size-4
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-4-screen-large     { font-size: #{$u-23}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-4-screen-extra-small    { font-size: #{$u-23}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-4-screen-medium    { font-size: #{$u-23}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-4-screen-small          { font-size: #{$u-23}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-4-screen-small     { font-size: #{$u-23}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-4-screen-medium         { font-size: #{$u-23}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-4-screen-large          { font-size: #{$u-23}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-4-screen-extra-large    { font-size: #{$u-23}rem; }
 }
 
 
 // text-size-5
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-5-screen-large     { font-size: #{$u-24}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-5-screen-extra-small    { font-size: #{$u-24}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-5-screen-medium    { font-size: #{$u-24}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-5-screen-small          { font-size: #{$u-24}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-5-screen-small     { font-size: #{$u-24}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-5-screen-medium         { font-size: #{$u-24}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-5-screen-large          { font-size: #{$u-24}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-5-screen-extra-large    { font-size: #{$u-24}rem; }
 }
 
 
 // text-size-6
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-6-screen-large     { font-size: #{$u-25}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-6-screen-extra-small    { font-size: #{$u-25}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-6-screen-medium    { font-size: #{$u-25}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-6-screen-small          { font-size: #{$u-25}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-6-screen-small     { font-size: #{$u-25}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-6-screen-medium         { font-size: #{$u-25}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-6-screen-large          { font-size: #{$u-25}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-6-screen-extra-large    { font-size: #{$u-25}rem; }
 }
 
 
 
 // text-size-7
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-7-screen-large     { font-size: #{$u-26}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-7-screen-extra-small    { font-size: #{$u-26}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-7-screen-medium    { font-size: #{$u-26}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-7-screen-small          { font-size: #{$u-26}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-7-screen-small     { font-size: #{$u-26}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-7-screen-medium         { font-size: #{$u-26}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-7-screen-large          { font-size: #{$u-26}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-7-screen-extra-large    { font-size: #{$u-26}rem; }
 }
 
 
 // text-size-8
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-8-screen-large     { font-size: #{$u-27}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-8-screen-extra-small    { font-size: #{$u-27}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-8-screen-medium    { font-size: #{$u-27}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-8-screen-small          { font-size: #{$u-27}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-8-screen-small     { font-size: #{$u-27}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-8-screen-medium         { font-size: #{$u-27}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-8-screen-large          { font-size: #{$u-27}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-8-screen-extra-large    { font-size: #{$u-27}rem; }
 }
 
 
 // text-size-9
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-9-screen-large     { font-size: #{$u-28}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-9-screen-extra-small    { font-size: #{$u-28}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-9-screen-medium    { font-size: #{$u-28}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-9-screen-small          { font-size: #{$u-28}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-9-screen-small     { font-size: #{$u-28}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-9-screen-medium         { font-size: #{$u-28}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-9-screen-large          { font-size: #{$u-28}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-9-screen-extra-large    { font-size: #{$u-28}rem; }
 }
 
 
 // text-size-10
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-10-screen-large     { font-size: #{$u-29}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-10-screen-extra-small    { font-size: #{$u-29}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-10-screen-medium    { font-size: #{$u-29}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-10-screen-small          { font-size: #{$u-29}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-10-screen-small     { font-size: #{$u-29}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-10-screen-medium         { font-size: #{$u-29}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-10-screen-large          { font-size: #{$u-29}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-10-screen-extra-large    { font-size: #{$u-29}rem; }
 }
 
 
 // text-size-11
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-11-screen-large     { font-size: #{$u-30}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-11-screen-extra-small    { font-size: #{$u-30}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-11-screen-medium    { font-size: #{$u-30}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-11-screen-small          { font-size: #{$u-30}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-11-screen-small     { font-size: #{$u-30}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-11-screen-medium         { font-size: #{$u-30}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-11-screen-large          { font-size: #{$u-30}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-11-screen-extra-large    { font-size: #{$u-30}rem; }
 }
 
 // text-size-12
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-12-screen-large     { font-size: #{$u-31}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-12-screen-extra-small    { font-size: #{$u-31}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-12-screen-medium    { font-size: #{$u-31}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-12-screen-small          { font-size: #{$u-31}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-12-screen-small     { font-size: #{$u-31}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-12-screen-medium         { font-size: #{$u-31}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-12-screen-large          { font-size: #{$u-31}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-12-screen-extra-large    { font-size: #{$u-31}rem; }
 }
 
 
 // text-size-13
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-13-screen-large     { font-size: #{$u-32}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-13-screen-extra-small    { font-size: #{$u-32}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-13-screen-medium    { font-size: #{$u-32}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-13-screen-small          { font-size: #{$u-32}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-13-screen-small     { font-size: #{$u-32}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-13-screen-medium         { font-size: #{$u-32}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-13-screen-large          { font-size: #{$u-32}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-13-screen-extra-large    { font-size: #{$u-32}rem; }
 }
 
 
 // text-size-14
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-14-screen-large     { font-size: #{$u-33}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-14-screen-extra-small    { font-size: #{$u-33}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-14-screen-medium    { font-size: #{$u-33}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-14-screen-small          { font-size: #{$u-33}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-14-screen-small     { font-size: #{$u-33}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-14-screen-medium         { font-size: #{$u-33}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-14-screen-large          { font-size: #{$u-33}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-14-screen-extra-large    { font-size: #{$u-33}rem; }
 }
 
 // text-size-15
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-15-screen-large     { font-size: #{$u-34}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-15-screen-extra-small    { font-size: #{$u-34}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-15-screen-medium    { font-size: #{$u-34}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-15-screen-small          { font-size: #{$u-34}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-15-screen-small     { font-size: #{$u-34}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-15-screen-medium         { font-size: #{$u-34}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-15-screen-large          { font-size: #{$u-34}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-15-screen-extra-large    { font-size: #{$u-34}rem; }
 }
 
 // text-size-16
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-16-screen-large     { font-size: #{$u-35}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-16-screen-extra-small    { font-size: #{$u-35}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-16-screen-medium    { font-size: #{$u-35}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-16-screen-small          { font-size: #{$u-35}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-16-screen-small     { font-size: #{$u-35}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-16-screen-medium         { font-size: #{$u-35}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-16-screen-large          { font-size: #{$u-35}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-16-screen-extra-large    { font-size: #{$u-35}rem; }
 }
 
+
 // text-size-17
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-17-screen-large     { font-size: #{$u-36}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-17-screen-extra-small    { font-size: #{$u-36}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-17-screen-medium    { font-size: #{$u-36}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-17-screen-small          { font-size: #{$u-36}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-17-screen-small     { font-size: #{$u-36}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-17-screen-medium         { font-size: #{$u-36}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-17-screen-large          { font-size: #{$u-36}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-17-screen-extra-large    { font-size: #{$u-36}rem; }
 }
 
 // text-size-18
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-18-screen-large     { font-size: #{$u-37}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-18-screen-extra-small    { font-size: #{$u-37}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-18-screen-medium    { font-size: #{$u-37}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-18-screen-small          { font-size: #{$u-37}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-18-screen-small    { font-size: #{$u-37}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-18-screen-medium         { font-size: #{$u-37}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-18-screen-large          { font-size: #{$u-37}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-18-screen-extra-large    { font-size: #{$u-37}rem; }
 }
 
 // text-size-19
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-19-screen-large     { font-size: #{$u-38}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-19-screen-extra-small    { font-size: #{$u-38}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-19-screen-medium    { font-size: #{$u-38}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-19-screen-small          { font-size: #{$u-38}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-19-screen-small    { font-size: #{$u-38}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-19-screen-medium         { font-size: #{$u-38}rem; }
+}
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-19-screen-large          { font-size: #{$u-38}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-19-screen-extra-large    { font-size: #{$u-38}rem; }
 }
 
 // text-size-20
-@media screen and (min-width: #{$media_query_large}px) {
-.text-size-20-screen-large     { font-size: #{$u-39}rem; }
+@media only screen and (min-width: #{$media_query_extra_small}px)   {
+.text-size-20-screen-extra-small    { font-size: #{$u-39}rem; }
 }
-@media screen and (max-width: #{$media_query_medium}px) {
-.text-size-20-screen-medium    { font-size: #{$u-39}rem; }
+@media only screen and (min-width: #{$media_query_small}px)   {
+.text-size-20-screen-small          { font-size: #{$u-39}rem; }
 }
-@media screen and (max-width: #{$media_query_small}px)  {
-.text-size-20-screen-small     { font-size: #{$u-39}rem; }
+@media only screen and (min-width: #{$media_query_medium}px) {
+.text-size-20-screen-medium         { font-size: #{$u-39}rem; }
 }
-
-// // text-size-21
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-21-screen-large     { font-size: #{$u-40}rem; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-21-screen-medium    { font-size: #{$u-40}rem; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-21-screen-small     { font-size: #{$u-40}rem; }
-// }
-
-// // text-size-22
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-22-screen-large     { font-size: #{$u-41}rem; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-22-screen-medium    { font-size: #{$u-41}rem; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-22-screen-small     { font-size: #{$u-41}rem; }
-// }
-
-// // text-size-23
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-23-screen-large     { font-size: #{$u-42}rem; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-23-screen-medium    { font-size: #{$u-42}rem; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-23-screen-small     { font-size: #{$u-42}rem; }
-// }
-
-// // text-size-24
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-24-screen-large     { font-size: #{$u-43}rem; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-24-screen-medium    { font-size: #{$u-43}rem; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-24-screen-small     { font-size: #{$u-43}rem; }
-// }
-
-// // text-size-25
-// @media screen and (min-width: #{$media_query_large}px) {
-// .text-size-25-screen-large     { font-size: #{$u-44}rem; }
-// }
-// @media screen and (max-width: #{$media_query_medium}px) {
-// .text-size-25-screen-medium    { font-size: #{$u-44}rem; }
-// }
-// @media screen and (max-width: #{$media_query_small}px)  {
-// .text-size-25-screen-small     { font-size: #{$u-44}rem; }
-// }
-
-
-
-
+@media only screen and (min-width: #{$media_query_large}px) {
+.text-size-20-screen-large          { font-size: #{$u-39}rem; }
+}
+@media only screen and (min-width: #{$media_query_extra_large}px)   {
+.text-size-20-screen-extra-large    { font-size: #{$u-39}rem; }
+}

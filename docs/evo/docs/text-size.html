@@ -137,11 +137,56 @@ text-size-jumbo
 
 <div class="divider-small"></div>
 
-<p class="evo-measure">Create a container for your text such as a <code>&lt;p&gt;</code> tag or <code>&lt;h1&gt;</code> tag, and apply a <code>text-size-[number]</code> class such as <code>text-size-1</code> (smallest size) or <code>text-size-15</code> (largest size).</p>
+<p class="evo-measure">Create a container for your text such as a <code>&lt;p&gt;</code> tag or <code>&lt;h1&gt;</code> tag, and apply a <code>text-size-[number]</code> class such as <code>text-size-1</code> (smallest size) or <code>text-size-15</code> (largest size). <code>text-size-reset</code> will set the font-size to 'initial'.</p>
 
 <div class="divider-small"></div>
 
 <p class="evo-measure">You may see legacy classes that begin with text-size-[number] such as <code>text-size-15</code>. These have been temporarily deprecated, but in the future may be used by mixins or feature opinionated styles for tracking, leading, etc.</p>
+
+<div class="evo-space-20"></div>
+
+</section>
+
+
+<!-- Text Size Utility -->
+
+
+<section id="evoTextSizeUtility">
+
+<h2 class="text-size-6">text-size-[number]-screen-[size]</h2>
+
+<div class="evo-space-10"></div>
+
+<div class="text-size-14-screen-extra-large text-size-13-screen-large text-size-12-screen-medium text-size-10-screen-small text-size-8-screen-extra-small evo-color text-truncate">Example Responsive Text</div>
+
+<div class="evo-space-10"></div>
+
+<ul class="evo-list list-inline">
+<li><code>text-size-[number]-screen-extra-small</code></li>
+<li><code>text-size-[number]-screen-extra-small</code></li>
+<li><code>text-size-[number]-screen-small</code></li>
+<li><code>text-size-[number]-screen-medium</code></li>
+<li><code>text-size-[number]-screen-large</code></li>
+<li><code>text-size-[number]-screen-extra-large</code></li>
+</ul>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Text size utilities adapt the size of your text to specific media query states. These range from extra-small to extra-large such as the <code>text-size-[number]-screen-extra-small</code> class (smallest screen size) to <code>text-size-[number]-screen-extra-large</code> (largest screen size). Use <code>text-size-reset-screen-[size]</code> to set the font-size to 'initial' such as <code>text-size-reset-screen-medium</code>. Default media query states can be adjusted in _evo_variables.scss</p>
+
+<div class="evo-space"></div>
+
+<div class="text-size-14-screen-extra-large text-size-13-screen-large text-size-12-screen-medium text-size-10-screen-small text-size-8-screen-extra-small evo-color evo-transition text-truncate">Example Responsive Text</div>
+
+<div class="evo-space-10"></div>
+
+<pre class="evo-code">
+<code>&lt;div class="text-size-14-screen-extra-large text-size-13-screen-large text-size-12-screen-medium text-size-10-screen-small text-size-8-screen-extra-small evo-color evo-transition text-truncate"&gt;Example Responsive Text&lt;/div&gt;</code>
+</pre>
+
+<div class="evo-space-10"></div>
+
+<p class="evo-measure">Add a transition class such as <code>evo-transition</code> to smooth out the transition from one size to another. Resize your browser window to see this in action.</p>
 
 <div class="evo-space-20"></div>
 
