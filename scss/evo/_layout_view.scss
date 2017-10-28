@@ -124,8 +124,11 @@
 
 .view-full { width: 100vw; height: 100vh; }
 
-// From Rob G
-// Fix for gap displayed at bottom of image-fill overlay layers
+
+// Fix From Rob G
+// Fixes an issue with edge-to-edge full-screen colored overlay on top of a full-screen background image
+// On a PC, there would be a gap at the bottom of the colored overaly, so it wouldn't completey cover the background image
+
 .view-100 .image-fill,
 .view-full .image-fill {
 width: 100vw !important;

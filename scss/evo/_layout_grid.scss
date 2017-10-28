@@ -96,7 +96,7 @@
 }
 
 
-@media only screen and (max-width: #{$media_query_small}px) {
+@media only screen and (max-width: #{$media_query_medium}px) {
 .grid-1,
 .grid-2,
 .grid-3,
@@ -121,7 +121,7 @@
 // Grid media queries
 
 
-// six-up
+
 
 .six-up,
 .six-up-vertical,
@@ -130,6 +130,31 @@
 .two-up,
 .two-up-vertical {
   transition: .5s ease;
+}
+
+// six-up-vertical
+// Contains a slight vertical gap on left and right side
+
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
+    .six-up-vertical  {
+        width: 50%;
+        // margin-right: 2.5%;
+        // display: inline-block;
+        float: left;
+
+    }
+}
+
+@media only screen and (min-width: #{$media_query_medium}px) {
+    .six-up-vertical  {
+        width: 24.75%;
+        margin-right: .25%;
+        margin-bottom: .25%;
+        // display: inline-block;
+        float: left;
+
+    }
 }
 
 // @media only screen and (min-width: #{$media_query_extra_large}px),
@@ -144,20 +169,15 @@
     }
 }
 
-@media only screen and (min-width: #{$media_query_medium}px) {
-    .six-up-vertical  {
-        width: 24.75%;
-        margin-right: .25%;
-        margin-bottom: .25%;
-        // display: inline-block;
-        float: left;
 
-    }
-}
+
+
+
+// six-up
 
 // @media only screen and (min-width: #{$media_query_small}px),
 @media only screen and (min-width: #{$media_query_extra_small}px)  {
-    .six-up-vertical  {
+    .six-up  {
         width: 50%;
         // margin-right: 2.5%;
         // display: inline-block;
@@ -166,7 +186,17 @@
     }
 }
 
-// six-up
+
+@media only screen and (min-width: #{$media_query_medium}px) {
+    .six-up  {
+        width: 25%;
+        // margin-right: 2.5%;
+        // display: inline-block;
+        float: left;
+
+    }
+}
+
 
 // @media only screen and (min-width: #{$media_query_extra_large}px),
 @media only screen and (min-width: #{$media_query_large}px) {
@@ -179,38 +209,31 @@
     }
 }
 
-@media only screen and (min-width: #{$media_query_medium}px) {
-    .six-up  {
-        width: 25%;
-        // margin-right: 2.5%;
-        // display: inline-block;
-        float: left;
 
-    }
-}
+
+// four-up-vertical
+// Contains a slight vertical gap on left and right side
 
 // @media only screen and (min-width: #{$media_query_small}px),
 @media only screen and (min-width: #{$media_query_extra_small}px)  {
-    .six-up  {
-        width: 50%;
-        // margin-right: 2.5%;
+    .four-up-vertical  {
+        width: 100%;
+        // display: inline-block;
+    float: left;
+
+    }
+}
+
+@media only screen and (min-width: #{$media_query_medium}px) {
+    .four-up-vertical  {
+        width: 49.75%;
+        margin-right: .25%;
+        margin-bottom: .25%;
         // display: inline-block;
         float: left;
 
     }
 }
-
-
-// four-up
-
-
-// .four-up:first-of-type {
-//   margin-right: 2%;
-// }
-// .four-up:last-of-type {
-//   margin-left: 2%;
-// } 
-
 
 // @media only screen and (min-width: #{$media_query_extra_large}px),
 @media only screen and (min-width: #{$media_query_large}px) {
@@ -224,37 +247,17 @@
     }
 }
 
-@media only screen and (min-width: #{$media_query_medium}px) {
-    .four-up-vertical  {
-        width: 49.75%;
-        margin-right: .25%;
-        margin-bottom: .25%;
-        // display: inline-block;
-        float: left;
 
-    }
-}
 
-// @media only screen and (min-width: #{$media_query_small}px),
-@media only screen and (min-width: #{$media_query_extra_small}px)  {
-    .four-up-vertical  {
-        width: 100%;
-        // display: inline-block;
-    float: left;
-
-    }
-}
 
 // four-up
 
-
-// @media only screen and (min-width: #{$media_query_extra_large}px),
-@media only screen and (min-width: #{$media_query_large}px) {
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
     .four-up  {
-        width: 25%;
-        // margin-right: 2.5%;
+        width: 100%;
         // display: inline-block;
-        float: left;
+    float: left;
 
     }
 }
@@ -269,26 +272,88 @@
     }
 }
 
-// @media only screen and (min-width: #{$media_query_small}px),
-@media only screen and (min-width: #{$media_query_extra_small}px)  {
+// @media only screen and (min-width: #{$media_query_extra_large}px),
+@media only screen and (min-width: #{$media_query_large}px) {
     .four-up  {
-        width: 100%;
+        width: 25%;
+        // margin-right: 2.5%;
         // display: inline-block;
-    float: left;
+        float: left;
 
     }
 }
 
 
-// two-up
- 
 
-@media only screen and (min-width: #{$media_query_large}px) {
-    .two-up-vertical  {
+// three-up-vertical
+// Contains a slight vertical gap on left and right side
+
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
+    .three-up-vertical  {
+        width: 100%;
+         // display: inline-block;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: #{$media_query_medium}px) {
+    .three-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
         margin-bottom: .25%;
         // display: inline-block;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: #{$media_query_large}px) {
+    .three-up-vertical  {
+        width: 33.083333%;
+        margin-right: .25%;
+        margin-bottom: .25%;
+        // display: inline-block;
+        float: left;
+    }
+}
+
+// three-up
+
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
+    .three-up  {
+        width: 100%;
+         // display: inline-block;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: #{$media_query_medium}px) {
+    .three-up  {
+        width: 50%;
+        // display: inline-block;
+        float: left;
+    }
+}
+
+// @media only screen and (min-width: #{$media_query_extra_large}px),
+@media only screen and (min-width: #{$media_query_large}px) {
+    .three-up  {
+        width: 33.333333%;
+        // display: inline-block;
+        float: left;
+    }
+}
+
+
+// two-up-vertical
+// Contains a slight vertical gap on left and right side
+
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
+    .two-up-vertical  {
+        width: 100%;
+         // display: inline-block;
         float: left;
     }
 }
@@ -302,30 +367,24 @@
         float: left;
     }
 }
-// @media only screen and (min-width: #{$media_query_small}px),
-@media only screen and (min-width: #{$media_query_extra_small}px)  {
+
+@media only screen and (min-width: #{$media_query_large}px) {
     .two-up-vertical  {
-        width: 100%;
-         // display: inline-block;
+        width: 49.75%;
+        margin-right: .25%;
+        margin-bottom: .25%;
+        // display: inline-block;
         float: left;
     }
 }
 
-
 // two-up
 
-// .vertical-line .two-up:first-of-type {
-//   margin-right: 1px;
-// }
-// .vertical-line .two-up:last-of-type {
-//   margin-left: 1px;
-// }  
-
-// @media only screen and (min-width: #{$media_query_extra_large}px),
-@media only screen and (min-width: #{$media_query_large}px) {
+// @media only screen and (min-width: #{$media_query_small}px),
+@media only screen and (min-width: #{$media_query_extra_small}px)  {
     .two-up  {
-        width: 50%;
-        // display: inline-block;
+        width: 100%;
+         // display: inline-block;
         float: left;
     }
 }
@@ -337,13 +396,13 @@
         float: left;
     }
 }
-// @media only screen and (min-width: #{$media_query_small}px),
-@media only screen and (min-width: #{$media_query_extra_small}px)  {
+
+// @media only screen and (min-width: #{$media_query_extra_large}px),
+@media only screen and (min-width: #{$media_query_large}px) {
     .two-up  {
-        width: 100%;
-         // display: inline-block;
+        width: 50%;
+        // display: inline-block;
         float: left;
     }
 }
-
 

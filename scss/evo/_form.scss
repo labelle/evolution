@@ -246,11 +246,9 @@ fieldset.overflow {
   margin-left: 1em;
 }
 
-// Fix From Rob G
-// Fixes an issue with edge-to-edge full-screen colored overlay on top of a full-screen background image
-// On a PC, there would be a gap at the bottom of the colored overaly, so it wouldn't completey cover the background image
+// Fox from Rob G
 
-@media only screen and (min-width: #{$media_query_medium}px) {
+@media only screen and (max-width: #{$media_query_medium}px) {
 #{$evo}-form,
 input,
 input[type=text] {

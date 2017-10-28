@@ -609,6 +609,98 @@ pre.code-short > code {
   background-color: #fff;
   cursor: pointer; }
 
+.animate-spin {
+  animation: animate-spin 2s infinite linear; }
+
+@keyframes animate-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+
+.animate-fading {
+  animation: fading 10s infinite; }
+
+@keyframes fading {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.animate-opacity {
+  animation: opac 0.8s; }
+
+@keyframes opac {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate-top {
+  position: relative;
+  animation: animatetop 0.4s; }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+.animate-left {
+  position: relative;
+  animation: animateleft 0.4s; }
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s; }
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s; }
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+.animate-zoom {
+  animation: animatezoom 0.6s; }
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.animate-input {
+  transition: width 0.4s ease-in-out; }
+
+.animate-input:focus {
+  width: 100% !important; }
+
 .layout-example-grid > div {
   border-left: solid 1px #ccc;
   /*  background-color: rgba(235,235,235, 0.5);*/
@@ -821,7 +913,7 @@ pre.code-short > code {
   width: 100%;
   float: left; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .grid-1,
   .grid-2,
   .grid-3,
@@ -845,6 +937,18 @@ pre.code-short > code {
 .two-up-vertical {
   transition: .5s ease; }
 
+@media only screen and (min-width: 0px) {
+  .six-up-vertical {
+    width: 50%;
+    float: left; } }
+
+@media only screen and (min-width: 768px) {
+  .six-up-vertical {
+    width: 24.75%;
+    margin-right: .25%;
+    margin-bottom: .25%;
+    float: left; } }
+
 @media only screen and (min-width: 1200px) {
   .six-up-vertical {
     width: 16.416666%;
@@ -852,16 +956,14 @@ pre.code-short > code {
     margin-bottom: .25%;
     float: left; } }
 
-@media only screen and (min-width: 768px) {
-  .six-up-vertical {
-    width: 24.75%;
-    margin-right: .25%;
-    margin-bottom: .25%;
+@media only screen and (min-width: 0px) {
+  .six-up {
+    width: 50%;
     float: left; } }
 
-@media only screen and (min-width: 0px) {
-  .six-up-vertical {
-    width: 50%;
+@media only screen and (min-width: 768px) {
+  .six-up {
+    width: 25%;
     float: left; } }
 
 @media only screen and (min-width: 1200px) {
@@ -869,14 +971,16 @@ pre.code-short > code {
     width: 16.666666%;
     float: left; } }
 
-@media only screen and (min-width: 768px) {
-  .six-up {
-    width: 25%;
+@media only screen and (min-width: 0px) {
+  .four-up-vertical {
+    width: 100%;
     float: left; } }
 
-@media only screen and (min-width: 0px) {
-  .six-up {
-    width: 50%;
+@media only screen and (min-width: 768px) {
+  .four-up-vertical {
+    width: 49.75%;
+    margin-right: .25%;
+    margin-bottom: .25%;
     float: left; } }
 
 @media only screen and (min-width: 1200px) {
@@ -886,21 +990,9 @@ pre.code-short > code {
     margin-bottom: .25%;
     float: left; } }
 
-@media only screen and (min-width: 768px) {
-  .four-up-vertical {
-    width: 49.75%;
-    margin-right: .25%;
-    margin-bottom: .25%;
-    float: left; } }
-
 @media only screen and (min-width: 0px) {
-  .four-up-vertical {
-    width: 100%;
-    float: left; } }
-
-@media only screen and (min-width: 1200px) {
   .four-up {
-    width: 25%;
+    width: 100%;
     float: left; } }
 
 @media only screen and (min-width: 768px) {
@@ -908,16 +1000,48 @@ pre.code-short > code {
     width: 50%;
     float: left; } }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 1200px) {
   .four-up {
+    width: 25%;
+    float: left; } }
+
+@media only screen and (min-width: 0px) {
+  .three-up-vertical {
     width: 100%;
     float: left; } }
 
-@media only screen and (min-width: 1200px) {
-  .two-up-vertical {
+@media only screen and (max-width: 768px) {
+  .three-up-vertical {
     width: 49.75%;
     margin-right: .25%;
     margin-bottom: .25%;
+    float: left; } }
+
+@media only screen and (min-width: 1200px) {
+  .three-up-vertical {
+    width: 33.083333%;
+    margin-right: .25%;
+    margin-bottom: .25%;
+    float: left; } }
+
+@media only screen and (min-width: 0px) {
+  .three-up {
+    width: 100%;
+    float: left; } }
+
+@media only screen and (min-width: 768px) {
+  .three-up {
+    width: 50%;
+    float: left; } }
+
+@media only screen and (min-width: 1200px) {
+  .three-up {
+    width: 33.333333%;
+    float: left; } }
+
+@media only screen and (min-width: 0px) {
+  .two-up-vertical {
+    width: 100%;
     float: left; } }
 
 @media only screen and (max-width: 768px) {
@@ -927,14 +1051,16 @@ pre.code-short > code {
     margin-bottom: .25%;
     float: left; } }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 1200px) {
   .two-up-vertical {
-    width: 100%;
+    width: 49.75%;
+    margin-right: .25%;
+    margin-bottom: .25%;
     float: left; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 0px) {
   .two-up {
-    width: 50%;
+    width: 100%;
     float: left; } }
 
 @media only screen and (min-width: 768px) {
@@ -942,9 +1068,9 @@ pre.code-short > code {
     width: 50%;
     float: left; } }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 1200px) {
   .two-up {
-    width: 100%;
+    width: 50%;
     float: left; } }
 
 .evo-position,
@@ -2234,8 +2360,13 @@ pre.code-short > code {
 .size-tall-0-max {
   max-height: 0; }
 
-@media only screen and (min-width: 1200px) {
-  .size-reset-screen-large {
+@media only screen and (min-width: 0px) {
+  .size-reset-screen-extra-small {
+    height: initial;
+    width: initial; } }
+
+@media only screen and (min-width: 576px) {
+  .size-reset-screen-small {
     height: initial;
     width: initial; } }
 
@@ -2244,313 +2375,523 @@ pre.code-short > code {
     height: initial;
     width: initial; } }
 
-@media only screen and (min-width: 0px) {
-  .size-reset-screen-small {
+@media only screen and (min-width: 1200px) {
+  .size-reset-screen-large {
     height: initial;
     width: initial; } }
 
-@media only screen and (min-width: 1200px) {
-  .size-0-screen-large {
+@media only screen and (min-width: 1600px) {
+  .size-reset-screen-extra-large {
+    height: initial;
+    width: initial; } }
+
+@media only screen and (min-width: 0px) {
+  .size-0-screen-extra-small {
     height: 0.2rem;
-    width: 0.2rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-0-screen-small {
+    height: 0.2rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-0-screen-medium {
     height: 0.2rem;
-    width: 0.2rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-0-screen-small {
-    height: 0.2rem;
-    width: 0.2rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-1-screen-large {
+  .size-0-screen-large {
+    height: 0.2rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-0-screen-extra-large {
+    height: 0.2rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-1-screen-extra-small {
     height: 0.275rem;
-    width: 0.275rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-1-screen-small {
+    height: 0.275rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-1-screen-medium {
     height: 0.275rem;
-    width: 0.275rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-1-screen-small {
-    height: 0.275rem;
-    width: 0.275rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-2-screen-large {
+  .size-1-screen-large {
+    height: 0.275rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-1-screen-extra-large {
+    height: 0.275rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-2-screen-extra-small {
     height: 0.375rem;
-    width: 0.375rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-2-screen-small {
+    height: 0.375rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-2-screen-medium {
     height: 0.375rem;
-    width: 0.375rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-2-screen-small {
-    height: 0.375rem;
-    width: 0.375rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-3-screen-large {
+  .size-2-screen-large {
+    height: 0.375rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-2-screen-extra-large {
+    height: 0.375rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-3-screen-extra-small {
     height: 0.5rem;
-    width: 0.5rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-3-screen-small {
+    height: 0.5rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-3-screen-medium {
     height: 0.5rem;
-    width: 0.5rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-3-screen-small {
-    height: 0.5rem;
-    width: 0.5rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-4-screen-large {
+  .size-3-screen-large {
+    height: 0.5rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-3-screen-extra-large {
+    height: 0.5rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-4-screen-extra-small {
     height: 0.625rem;
-    width: 0.625rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-4-screen-small {
+    height: 0.625rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-4-screen-medium {
     height: 0.625rem;
-    width: 0.625rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-4-screen-small {
-    height: 0.625rem;
-    width: 0.625rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-5-screen-large {
+  .size-4-screen-large {
+    height: 0.625rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-4-screen-extra-large {
+    height: 0.625rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-5-screen-extra-small {
     height: 0.75rem;
-    width: 0.75rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-5-screen-small {
+    height: 0.75rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-5-screen-medium {
     height: 0.75rem;
-    width: 0.75rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-5-screen-small {
-    height: 0.75rem;
-    width: 0.75rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-6-screen-large {
+  .size-5-screen-large {
+    height: 0.75rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-5-screen-extra-large {
+    height: 0.75rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-6-screen-extra-small {
     height: 0.875rem;
-    width: 0.875rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-6-screen-small {
+    height: 0.875rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-6-screen-medium {
     height: 0.875rem;
-    width: 0.875rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-6-screen-small {
-    height: 0.875rem;
-    width: 0.875rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-7-screen-large {
+  .size-6-screen-large {
+    height: 0.875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-6-screen-extra-large {
+    height: 0.875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-7-screen-extra-small {
     height: 1rem;
-    width: 1rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-7-screen-small {
+    height: 1rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-7-screen-medium {
     height: 1rem;
-    width: 1rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-7-screen-small {
-    height: 1rem;
-    width: 1rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-8-screen-large {
+  .size-7-screen-large {
+    height: 1rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-7-screen-extra-large {
+    height: 1rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-8-screen-extra-small {
     height: 1.125rem;
-    width: 1.125rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-8-screen-small {
+    height: 1.125rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-8-screen-medium {
     height: 1.125rem;
-    width: 1.125rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-8-screen-small {
-    height: 1.125rem;
-    width: 1.125rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-9-screen-large {
+  .size-8-screen-large {
+    height: 1.125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-8-screen-extra-large {
+    height: 1.125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-9-screen-extra-small {
     height: 1.3125rem;
-    width: 1.3125rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-9-screen-small {
+    height: 1.3125rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-9-screen-medium {
     height: 1.3125rem;
-    width: 1.3125rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-9-screen-small {
-    height: 1.3125rem;
-    width: 1.3125rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-10-screen-large {
+  .size-9-screen-large {
+    height: 1.3125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-9-screen-extra-large {
+    height: 1.3125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-10-screen-extra-small {
     height: 1.4375rem;
-    width: 1.4375rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-10-screen-small {
+    height: 1.4375rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-10-screen-medium {
     height: 1.4375rem;
-    width: 1.4375rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-10-screen-small {
-    height: 1.4375rem;
-    width: 1.4375rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-11-screen-large {
+  .size-10-screen-large {
+    height: 1.4375rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-10-screen-extra-large {
+    height: 1.4375rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-11-screen-extra-small {
     height: 1.875rem;
-    width: 1.875rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-11-screen-small {
+    height: 1.875rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-11-screen-medium {
     height: 1.875rem;
-    width: 1.875rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-11-screen-small {
-    height: 1.875rem;
-    width: 1.875rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-12-screen-large {
+  .size-11-screen-large {
+    height: 1.875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-11-screen-extra-large {
+    height: 1.875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-12-screen-extra-small {
     height: 2.3125rem;
-    width: 2.3125rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-12-screen-small {
+    height: 2.3125rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-12-screen-medium {
     height: 2.3125rem;
-    width: 2.3125rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-12-screen-small {
-    height: 2.3125rem;
-    width: 2.3125rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-13-screen-large {
+  .size-12-screen-large {
+    height: 2.3125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-12-screen-extra-large {
+    height: 2.3125rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-13-screen-extra-small {
     height: 2.6875rem;
-    width: 2.6875rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-13-screen-small {
+    height: 2.6875rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-13-screen-medium {
     height: 2.6875rem;
-    width: 2.6875rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-13-screen-small {
-    height: 2.6875rem;
-    width: 2.6875rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-14-screen-large {
+  .size-13-screen-large {
+    height: 2.6875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-13-screen-extra-large {
+    height: 2.6875rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-14-screen-extra-small {
     height: 3rem;
-    width: 3rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-14-screen-small {
+    height: 3rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-14-screen-medium {
     height: 3rem;
-    width: 3rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-14-screen-small {
-    height: 3rem;
-    width: 3rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-15-screen-large {
+  .size-14-screen-large {
+    height: 3rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-14-screen-extra-large {
+    height: 3rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-15-screen-extra-small {
     height: 3.75rem;
-    width: 3.75rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-15-screen-small {
+    height: 3.75rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-15-screen-medium {
     height: 3.75rem;
-    width: 3.75rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-15-screen-small {
-    height: 3.75rem;
-    width: 3.75rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-16-screen-large {
+  .size-15-screen-large {
+    height: 3.75rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-15-screen-extra-large {
+    height: 3.75rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-16-screen-extra-small {
     height: 5rem;
-    width: 5rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-16-screen-small {
+    height: 5rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-16-screen-medium {
     height: 5rem;
-    width: 5rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-16-screen-small {
-    height: 5rem;
-    width: 5rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-17-screen-large {
+  .size-16-screen-large {
+    height: 5rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-16-screen-extra-large {
+    height: 5rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-17-screen-extra-small {
     height: 6rem;
-    width: 6rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-17-screen-small {
+    height: 6rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-17-screen-medium {
     height: 6rem;
-    width: 6rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-17-screen-small {
-    height: 6rem;
-    width: 6rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-18-screen-large {
+  .size-17-screen-large {
+    height: 6rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-17-screen-extra-large {
+    height: 6rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-18-screen-extra-small {
     height: 8rem;
-    width: 8rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-18-screen-small {
+    height: 8rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-18-screen-medium {
     height: 8rem;
-    width: 8rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-18-screen-small {
-    height: 8rem;
-    width: 8rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-19-screen-large {
+  .size-18-screen-large {
+    height: 8rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-18-screen-extra-large {
+    height: 8rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-19-screen-extra-small {
     height: 10rem;
-    width: 10rem; } }
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-19-screen-small {
+    height: 10rem;
+    width: 13rem; } }
 
 @media only screen and (min-width: 768px) {
   .size-19-screen-medium {
     height: 10rem;
-    width: 10rem; } }
-
-@media only screen and (min-width: 0px) {
-  .size-19-screen-small {
-    height: 10rem;
-    width: 10rem; } }
+    width: 13rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .size-20-screen-large {
+  .size-19-screen-large {
+    height: 10rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-19-screen-extra-large {
+    height: 10rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 0px) {
+  .size-20-screen-extra-small {
+    height: 13rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 576px) {
+  .size-20-screen-small {
     height: 13rem;
     width: 13rem; } }
 
@@ -2559,8 +2900,13 @@ pre.code-short > code {
     height: 13rem;
     width: 13rem; } }
 
-@media only screen and (min-width: 0px) {
-  .size-20-screen-small {
+@media only screen and (min-width: 1200px) {
+  .size-20-screen-large {
+    height: 13rem;
+    width: 13rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .size-20-screen-extra-large {
     height: 13rem;
     width: 13rem; } }
 
@@ -2590,7 +2936,7 @@ pre.code-short > code {
 
 @media only screen and (min-width: 0px) {
   .evo-masonry-inverse, .evo-masonry {
-    column-count: 2; } }
+    column-count: 1; } }
 
 @media only screen and (min-width: 576px) {
   .evo-masonry-inverse, .evo-masonry {
@@ -16725,7 +17071,7 @@ fieldset.overflow {
 .form-radio-inline .form-radio:not(:first-of-type) input {
   margin-left: 1em; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .evo-form,
   input,
   input[type=text] {
