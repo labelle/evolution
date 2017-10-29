@@ -297,7 +297,7 @@
     }
 }
 
-@media only screen and (max-width: #{$media_query_medium}px) {
+@media only screen and (min-width: #{$media_query_medium}px) {
     .three-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
@@ -358,7 +358,7 @@
     }
 }
 
-@media only screen and (max-width: #{$media_query_medium}px) {
+@media only screen and (min-width: #{$media_query_medium}px) {
     .two-up-vertical  {
         width: 49.75%;
         margin-right: .25%;
