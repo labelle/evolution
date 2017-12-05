@@ -571,34 +571,37 @@ $placeholder_text_opacity_focus:          .5;
 // Replace icon
 // https://www.w3schools.com/css/css_background.asp
 $form_background_chevron_down:         url(../image/chevron-down-book.svg);
-$form_background_chevron_down_white:   url(../image/chevron-down-book-white.svg);
+$form_background_chevron_down_inverse: url(../image/chevron-down-book-white.svg);
 
 $form_background_triangle:             url(../image/triangle-down-solid.svg);
-$form_background_triangle_white:       url(../image/triangle-down-solid-white.svg);
+$form_background_triangle_inverse:     url(../image/triangle-down-solid-white.svg);
 
 $form_background_search:               url(../image/search-book-gray.svg);
-$form_background_search_white:         url(../image/search-book-white.svg);
+$form_background_search_inverse:       url(../image/search-book-white.svg);
 
 $form_background_email:                url(../image/mail-book-gray.svg);
-$form_background_email_white:          url(../image/mail-book-white.svg);
+$form_background_email_inverse:        url(../image/mail-book-white.svg);
 
 $form_background_chevron:              url(../image/chevron-book.svg);
-$form_background_chevron_white:        url(../image/chevron-book-white.svg);
+$form_background_chevron_inverse:      url(../image/chevron-book-white.svg);
 
 $form_background_arrow:                url(../image/arrow-book-gray.svg);
-$form_background_arrow_white:          url(../image/arrow-book-white.svg);
+$form_background_arrow_inverse:        url(../image/arrow-book-white.svg);
 
 $form_background_eye:                  url(../image/eye-book-gray.svg);
+$form_background_eye_inverse:          url(../image/eye-book-white.svg);
+
 $form_background_eye_slash:            url(../image/eye-slash-book-gray.svg);
+$form_background_eye_slash_inverse:    url(../image/eye-slash-book-white.svg);
 
 $form_background_lock:                 url(../image/lock-book-gray.svg);
-$form_background_lock_white:           url(../image/lock-book-white.svg);
+$form_background_lock_inverse:         url(../image/lock-book-white.svg);
 
 $button_file_upload:                   url(../image/upload-book.svg);
-$button_file_upload_white:             url(../image/upload-book-white.svg);
+$button_file_upload_inverse:           url(../image/upload-book-white.svg);
 
 $button_file_download:                 url(../image/download-book.svg);
-$button_file_download_white:           url(../image/download-book-white.svg);
+$button_file_download_inverse:         url(../image/download-book-white.svg);
 
 
 $icon_twitter:                         url(../image/twitter.svg);
@@ -787,7 +790,7 @@ $space_padding_thick:               3.75em !default;
 $image_random:					    "https://unsplash.it/1024/963?random";
 // $image_fpo:						    "../image/elements/monolake.jpg" !default;
 $image_fpo:						    "../image/fpo.jpg";
-// Photo by Dino Reichmuth on Unsplash
+// Photo may be from Unsplash
 
 $map_center:						"../image/map-centered.png";
 $map_offset:					    "../image/map-offset.png";
@@ -858,6 +861,7 @@ $inverse_masonry_item_background_color: #{$evo_black} !default; // or transparen
 
 // Media Queries
 // Minimum point at which your layout will change per different screeen sizes
+// https://www.w3counter.com/globalstats.php
 $media_query_extra_small:           0 !default; // min-width px // bootstrap is 0
 $media_query_small:                 576 !default; // min-width px // bootstrap is 576
 $media_query_medium:                768 !default; // min-width px // bootstrap is 768

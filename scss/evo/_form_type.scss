@@ -15,10 +15,10 @@ background-image: #{$button_file_upload};
 cursor: pointer;
 }
 
-label.button-upload-white::before,
-a.button-upload-white::before,
-button.button-upload-white::before {
-background-image: #{$button_file_upload_white};
+label.button-upload-inverse::before,
+a.button-upload-inverse::before,
+button.button-upload-inverse::before {
+background-image: #{$button_file_upload_inverse};
 cursor: pointer;
 }
 
@@ -32,10 +32,10 @@ background-image: #{$button_file_download};
 
 // BUTTON DOWNLOAD ICON
 // EXTEND BUTTON ICON HELPERS?
-label.button-download-white::before,
-a.button-download-white::before,
-button.button-download-white::before {
-background-image: #{$button_file_download_white};
+label.button-download-inverse::before,
+a.button-download-inverse::before,
+button.button-download-inverse::before {
+background-image: #{$button_file_download_inverse};
 }
 
 

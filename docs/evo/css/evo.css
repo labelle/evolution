@@ -10954,49 +10954,55 @@ select.form-icon {
 .form-icon-search {
   background-image: url(../image/search-book-gray.svg); }
 
-.form-icon-search-white {
+.form-icon-search-inverse {
   background-image: url(../image/search-book-white.svg); }
 
 .form-icon-email {
   background-image: url(../image/mail-book-gray.svg); }
 
-.form-icon-email-white {
+.form-icon-email-inverse {
   background-image: url(../image/mail-book-white.svg); }
 
 .form-icon-chevron {
   background-image: url(../image/chevron-book.svg); }
 
-.form-icon-chevron-white {
+.form-icon-chevron-inverse {
   background-image: url(../image/chevron-book-white.svg); }
 
 .form-icon-arrow {
   background-image: url(../image/arrow-book-gray.svg); }
 
-.form-icon-arrow-white {
+.form-icon-arrow-inverse {
   background-image: url(../image/arrow-book-white.svg); }
 
 .form-icon-eye {
   background-image: url(../image/eye-book-gray.svg); }
 
+.form-icon-eye-inverse {
+  background-image: url(../image/eye-book-white.svg); }
+
 .form-icon-eye-slash {
   background-image: url(../image/eye-slash-book-gray.svg); }
+
+.form-icon-eye-slash-inverse {
+  background-image: url(../image/eye-slash-book-white.svg); }
 
 .form-icon-lock {
   background-image: url(../image/lock-book-gray.svg); }
 
-.form-icon-lock-white {
+.form-icon-lock-inverse {
   background-image: url(../image/lock-book-white.svg); }
 
 .form-icon-triangle {
   background-image: url(../image/triangle-down-solid.svg); }
 
-.form-icon-triangle-white {
+.form-icon-triangle-inverse {
   background-image: url(../image/triangle-down-solid-white.svg); }
 
 .form-icon-chevron-down {
   background-image: url(../image/chevron-down-book.svg); }
 
-.form-icon-chevron-down-white {
+.form-icon-chevron-down-inverse {
   background-image: url(../image/chevron-down-book-white.svg); }
 
 .icon-scroll-chevron-container {
@@ -17083,9 +17089,9 @@ button.button-upload::before {
   background-image: url(../image/upload-book.svg);
   cursor: pointer; }
 
-label.button-upload-white::before,
-a.button-upload-white::before,
-button.button-upload-white::before {
+label.button-upload-inverse::before,
+a.button-upload-inverse::before,
+button.button-upload-inverse::before {
   background-image: url(../image/upload-book-white.svg);
   cursor: pointer; }
 
@@ -17094,9 +17100,9 @@ a.button-download::before,
 button.button-download::before {
   background-image: url(../image/download-book.svg); }
 
-label.button-download-white::before,
-a.button-download-white::before,
-button.button-download-white::before {
+label.button-download-inverse::before,
+a.button-download-inverse::before,
+button.button-download-inverse::before {
   background-image: url(../image/download-book-white.svg); }
 
 label.evo-button input[type="file"] {
