@@ -5,273 +5,319 @@
 
 // list-padding
 
-.list-padding li{
-    padding-top: #{$list_padding_top}; // 1em
-    padding-bottom: #{$list_padding_bottom}; // 1em
+.list-padding li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$list_padding_top} !important; // 1em
+    padding-bottom: #{$list_padding_bottom} !important; // 1em
 }
 
 // list-padding-number
 
-.list-padding-15 li{
-    padding-top: #{$u-26}em; // 1.4375
-    padding-bottom: #{$u-26}em; // 1.4375
+.list-padding-15 li::before {
+    // height: inherit;
+    // width: inherit;
+    // width: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-26}em !important; // 1.4375
+    padding-bottom: #{$u-26}em !important; // 1.4375
 }
 
-.list-padding-14 li{
-    padding-top: #{$u-25}em; // 1.3125
-    padding-bottom: #{$u-25}em; // 1.3125
+
+.list-padding-14 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    // border-top-width: thin;
+    // border-top-color: black;
+    // border-top-style: solid;
+    // margin-top: #{$u-25}em; // 1.3125
+    // margin-bottom: #{$u-25}em; // 1.3125
+    // display: list-item block;
+    padding-top: #{$u-25}em !important; // 1.3125
+    padding-bottom: #{$u-25}em !important; // 1.3125
 }
 
-.list-padding-13 li{
-    padding-top: #{$u-24}em; // 1.125
-    padding-bottom: #{$u-24}em; // 1.125
+.list-padding-13 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-24}em !important; // 1.125
+    padding-bottom: #{$u-24}em !important; // 1.125
 }
 
-.list-padding-12 li{
-    padding-top: #{$u-23}em; // 1
-    padding-bottom: #{$u-23}em; // 1
+
+.list-padding-12 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-23}em !important; // 1
+    padding-bottom: #{$u-23}em !important; // 1
 }
 
-.list-padding-11 li{
-    padding-top: #{$u-22}em; // .875
-    padding-bottom: #{$u-22}em; // .875
+
+.list-padding-11 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-22}em !important; // .875
+    padding-bottom: #{$u-22}em !important; // .875
 }
 
-.list-padding-10 li{
-    padding-top: #{$u-21}em; // .75
-    padding-bottom: #{$u-21}em; // .75
+
+.list-padding-10 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-21}em !important; // .75
+    padding-bottom: #{$u-21}em !important; // .75
 }
 
-.list-padding-9 li{
-    padding-top: #{$u-20}em; // .625
-    padding-bottom: #{$u-20}em; // .625
+.list-padding-9 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-20}em !important; // .625
+    padding-bottom: #{$u-20}em !important; // .625
 }
 
-.list-padding-8 li{
-    padding-top: #{$u-19}em; // .5
-    padding-bottom: #{$u-19}em; // .5
+.list-padding-8 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-19}em !important; // .5
+    padding-bottom: #{$u-19}em !important; // .5
 }
 
-.list-padding-7 li{
-    padding-top: #{$u-18}em; // .375
-    padding-bottom: #{$u-18}em; // .375
+.list-padding-7 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-18}em !important; // .375
+    padding-bottom: #{$u-18}em !important; // .375
 }
 
-.list-padding-6 li{
-    padding-top: #{$u-17}em; // .275
-    padding-bottom: #{$u-17}em; // .275
+.list-padding-6 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+   & li {
+    padding-top: #{$u-17}em !important; // .275
+    padding-bottom: #{$u-17}em !important; // .275
 }
 
-.list-padding-5 li{
-    padding-top: #{$u-16}em; // .2
-    padding-bottom: #{$u-16}em; // .2
+.list-padding-5 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-16}em !important; // .2
+    padding-bottom: #{$u-16}em !important; // .2
 }
 
-.list-padding-4 li{
-    padding-top: #{$u-15}em; // .15
-    padding-bottom: #{$u-15}em; // .15
+.list-padding-4 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-15}em !important; // .15
+    padding-bottom: #{$u-15}em !important; // .15
 }
 
-.list-padding-3 li{
-    padding-top: #{$u-14}em; // .1
-    padding-bottom: #{$u-14}em; // .1
+.list-padding-3 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-14}em !important; // .1
+    padding-bottom: #{$u-14}em !important; // .1
 }
 
-.list-padding-2 li {
-    padding-top: #{$u-13}em; // .05
-    padding-bottom: #{$u-13}em; // .05
+.list-padding-2 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-13}em !important; // .05
+    padding-bottom: #{$u-13}em !important; // .05
 }
 
-.list-padding-1 li {
-    padding-top: #{$u-12}em; // .025
-    padding-bottom: #{$u-12}em; // .025
+.list-padding-1 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-12}em !important; // .025
+    padding-bottom: #{$u-12}em !important; // .025
 }
 
 
 // No padding
 
-.list-padding-0 li {
-    padding-top: #{$u-11}em; // 0
-    padding-bottom: #{$u-11}em; // 0
+.list-padding-0 li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
 //    &:first-of-type {
 //     padding-top: 0;
 // }
 //    &:last-of-type {
 //     padding-bottom: 0;
 // }
-   &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
 }
+& li {
+    padding-top: #{$u-11}em !important; // 0
+    padding-bottom: #{$u-11}em !important; // 0
 }
 
-.list-padding-none li {
+.list-padding-none li::before {
+    // height: inherit;
+    // width: inherit;
+    // left: inherit;
+    // top: inherit;
+}
+& li {
     padding-top: 0;
     padding-bottom: 0;
-    &::before {
-    padding-top: inherit;
-    padding-bottom: inherit;
-}
 }
 
 

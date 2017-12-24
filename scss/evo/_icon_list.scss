@@ -6,7 +6,7 @@
 // Evo list style
 #{$evo}-icon-list li,
 #{$evo}-icon-list-inverse li {
-    margin-left: 1.5em;
+    margin-left: 1.5em; // 4ch;
     position: relative;
     list-style-type: none;
     // vertical-align: middle;
@@ -26,7 +26,7 @@ background-size: contain;
 background-position: center;
 background-repeat:no-repeat; 
 left: -1.5em;
-top: 0;
+top: .2em;
 vertical-align: middle;
 }
 
@@ -61,9 +61,9 @@ background-image: url(#{$inverse_icon_list_background});
 height: 2em;
 width: 2em;
 left: -2.5em;
-top: .65em; // -.45em;
+top: -.25em; // .65em; // -.45em;
 }
-.list-icon-xxx-large li {
+& li {
     margin-left: 2.5em;
 }
 
@@ -72,9 +72,9 @@ top: .65em; // -.45em;
 height: 1.75em;
 width: 1.75em;
 left: -2.25em;
-top: .65em; // -.3em;
+top: -.1em; // .65em; // -.3em;
 }
-.list-icon-xx-large li {
+& li {
     margin-left: 2.25em;
 }
 
@@ -83,9 +83,9 @@ top: .65em; // -.3em;
 height: 1.5em;
 width: 1.5em;
 left: -2em;
-top: .65em; // .5em or -.15em;
+top: 0em; // .65em; // .5em or -.15em;
 }
-.list-icon-x-large li {
+& li {
     margin-left: 2em;
 }
 
@@ -94,9 +94,9 @@ top: .65em; // .5em or -.15em;
 height: 1.25em;
 width: 1.25em;
 left: -1.75em;
-top: .65em; // or -.05em
+top: .1em; //.65em; // or -.05em
 }
-.list-icon-large li {
+& li {
     margin-left: 1.75em;
 }
 
@@ -105,9 +105,9 @@ top: .65em; // or -.05em
 height: 1em;
 width: 1em;
 left: -1.5em;
-top: .65em; //. 15em;
+top: .2em; //.5em; // .65em; //. 15em;
 }
-.list-icon-medium li {
+& li {
     margin-left: 1.5em;
 }
 
@@ -117,9 +117,9 @@ top: .65em; //. 15em;
 height:.75em; 
 width:.75em; 
 left: -1.25em;
-top: .65em; // .3em
+top: .325em; // .65em; // .3em
 }
-.list-icon-small li {
+& li {
     margin-left: 1.25em;
 }
 
@@ -128,9 +128,9 @@ top: .65em; // .3em
 height:.5em; 
 width:.5em; 
 left: -1em;
-top: .7em; // .425em;
+top: .5em; // .7em; // .425em;
 }
-.list-icon-x-small li {
+& li {
     margin-left: 1em;
 }
 
@@ -139,9 +139,9 @@ top: .7em; // .425em;
 height: .35em; 
 width: .35em; 
 left: -.75em;
-top: .65em; // .45em;
+top: .55em; // .65em;
 }
-.list-icon-xx-small li {
+& li {
     margin-left: .75em;
 }
 
