@@ -11985,7 +11985,7 @@ button.button-three:active::after {
 
 .evo-list {
   list-style-type: none;
-  margin-left: 0;
+  margin-left: -.75em;
   padding-left: 0;
   padding-bottom: 0.275em; }
 

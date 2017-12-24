@@ -8,7 +8,7 @@
 
 #{$evo}-list-lines {
 // @extend #{$evo}-text;
-  // margin-left: #{$text_line_list_margin_left};
+  // margin-left: #{$line_list_margin_left};
   list-style-type: #{$line_list_bullet_type};
   & ul,
   & ol {
@@ -51,7 +51,7 @@
 
 #{$evo}-list-lines-inverse {
 // @extend #{$evo}-text;
-  // margin-left: #{$text_line_list_margin_left};
+  // margin-left: #{$line_list_margin_left};
   list-style-type: #{$line_list_bullet_type};
   & ul,
   & ol {

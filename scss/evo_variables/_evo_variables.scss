@@ -303,7 +303,7 @@ $number_list_background_color_3:             transparent; // nested further
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
 // https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
-// $text_line_list_margin_left:                 1.5em; // or -2.5
+$line_list_margin_left:                  -.5ch; // or -2.5
 $line_list_padding_left:                0; // .5em
 $line_list_bullet_type:                 none; // list-style-type of bullets
 
