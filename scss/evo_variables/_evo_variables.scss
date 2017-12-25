@@ -252,8 +252,8 @@ $bullet_list_background_size:                0px;
 $bullet_list_background_position:            0px 0.41667em;
 
 $bullet_list_margin_bottom:                  #{$u-17}em;
-$bullet_list_margin_left:                    .5ch;; // or 0
-$bullet_list_padding_left:                   1.5ch; // or 2em
+$bullet_list_margin_left:                    .5ch; // 1ch or 0
+$bullet_list_padding_left:                   1.5ch; // or 1ch or 2em
 
 $bullet_list_background_corner:              10%; // 50% would be a circle, 0 is a square
 $bullet_list_background_color_1:             transparent; // or #{$evo_color}
@@ -303,7 +303,7 @@ $number_list_background_color_3:             transparent; // nested further
 // For lines Lists
 // SHOULD THIS STYLE TYPE GO UNDER ALL LISTS INSTEAD
 // https://developer.mozilla.org/en-US/docs/Web/CSS/border-top
-$line_list_margin_left:                  -.5ch; // or -2.5
+$line_list_margin_left:                  -1ch; // or -2.5
 $line_list_padding_left:                0; // .5em
 $line_list_bullet_type:                 none; // list-style-type of bullets
 

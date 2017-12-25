@@ -4,8 +4,10 @@
 
 
 // Evo list style
-#{$evo}-list-bullet,
-#{$evo}-list-bullet-inverse {
+ul#{$evo}-list-bullet,
+ul#{$evo}-list-bullet-inverse {
+    margin-left: #{$bullet_list_margin_left};
+    margin-bottom: #{$bullet_list_margin_bottom};
     & li {
     margin-left: #{$bullet_list_margin-left};
     position: relative;
@@ -16,13 +18,32 @@
     // padding-left: -3em;
 }
 & ul li {
-  margin-left: 1em;
+  margin-left: 3ch;
 }
 & ul ul li {
-  margin-left: 2em;
+  margin-left: 5ch;
 
 }
 }
+
+// // Evo list style
+// #{$evo}-list-bullet,
+// #{$evo}-list-bullet-inverse {
+//     margin-left: #{$bullet_list_margin-left};
+//     margin-bottom: #{$bullet_list_margin_bottom};
+//     position: relative;
+//     list-style-type: none;
+//     list-style-position: #{$ul_list_style_position}; // outside
+//     padding-left: #{$bullet_list_padding_left};
+//     // vertical-align: middle;
+//     // padding-left: -3em;
+// & li {
+//   margin-left: 1em;
+// }
+// & ul li {
+//   margin-left: 2em;
+//   }
+// }
 
 // Evo list icons
 #{$evo}-list-bullet li::before,
@@ -174,9 +195,7 @@ color: #{$inverse_bullet_list_bullet_color} !important;
 ul.list-bullet {
     list-style-type: none; // none
     list-style-position: #{$ul_list_style_position}; // outside
-    & ul {
     margin-bottom: #{$bullet_list_margin_bottom};
-}
 & li::before {
     content: "#{$bullet_list_icon}"; // insert content that looks like bullets
     padding-right: #{$bullet_list_bullet_padding};
@@ -187,9 +206,7 @@ ul.list-bullet {
 ul.list-bullet-after {
     list-style-type: none; // none
     list-style-position: #{$ul_list_style_position}; // outside
-    & ul {
     margin-bottom: #{$bullet_list_margin_bottom};
-}
 & li::after {
     content: "#{$bullet_list_icon}"; // insert content that looks like bullets
     padding-left: #{$bullet_list_bullet_padding} !important;

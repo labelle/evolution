@@ -12117,21 +12117,23 @@ ul.list-hang {
   ul.list-hang ul ul ul li {
     margin-left: -30px; }
 
-.evo-list-bullet li,
-.evo-list-bullet-inverse li {
+ul.evo-list-bullet,
+ul.evo-list-bullet-inverse {
   margin-left: 0.5ch;
-  position: relative;
-  list-style-type: none;
-  list-style-position: inside;
-  padding-left: 1.5ch; }
-
-.evo-list-bullet ul li,
-.evo-list-bullet-inverse ul li {
-  margin-left: 1em; }
-
-.evo-list-bullet ul ul li,
-.evo-list-bullet-inverse ul ul li {
-  margin-left: 2em; }
+  margin-bottom: 0.275em; }
+  ul.evo-list-bullet li,
+  ul.evo-list-bullet-inverse li {
+    margin-left: 0.5ch;
+    position: relative;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 1.5ch; }
+  ul.evo-list-bullet ul li,
+  ul.evo-list-bullet-inverse ul li {
+    margin-left: 3ch; }
+  ul.evo-list-bullet ul ul li,
+  ul.evo-list-bullet-inverse ul ul li {
+    margin-left: 5ch; }
 
 .evo-list-bullet li::before,
 .evo-list-bullet-inverse li::before {
@@ -12199,9 +12201,8 @@ ul.list-hang {
 
 ul.list-bullet {
   list-style-type: none;
-  list-style-position: inside; }
-  ul.list-bullet ul {
-    margin-bottom: 0.275em; }
+  list-style-position: inside;
+  margin-bottom: 0.275em; }
   ul.list-bullet li::before {
     content: "•";
     padding-right: 1ch;
@@ -12209,9 +12210,8 @@ ul.list-bullet {
 
 ul.list-bullet-after {
   list-style-type: none;
-  list-style-position: inside; }
-  ul.list-bullet-after ul {
-    margin-bottom: 0.275em; }
+  list-style-position: inside;
+  margin-bottom: 0.275em; }
   ul.list-bullet-after li::after {
     content: "•";
     padding-left: 1ch !important;
@@ -12532,6 +12532,7 @@ ol.number-decimal-zero li::before {
   content: counter(awesome-counter, decimal-leading-zero) "."; }
 
 .evo-list-lines {
+  margin-left: -1ch;
   list-style-type: none; }
   .evo-list-lines ul,
   .evo-list-lines ol {
@@ -12557,6 +12558,7 @@ ol.number-decimal-zero li::before {
       border-bottom-color: #ccc; }
 
 .evo-list-lines-inverse {
+  margin-left: -1ch;
   list-style-type: none; }
   .evo-list-lines-inverse ul,
   .evo-list-lines-inverse ol {
