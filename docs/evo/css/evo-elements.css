@@ -11993,8 +11993,7 @@ button.button-three:active::after {
 
 .list-inline {
   list-style: none;
-  padding-left: 0;
-  display: inline; }
+  padding-left: 0; }
   .list-inline li {
     display: inline;
     padding-right: 1ch; }
