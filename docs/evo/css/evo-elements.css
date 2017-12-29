@@ -12021,75 +12021,133 @@ span.borderborder:hover {
   border-bottom-style: dashed;
   border-bottom-color: red; }
 
-li {
+.list-padding li::before {
+  transform: translateY(50%); }
+
+.list-padding li {
   padding-top: 0.275em !important;
   padding-bottom: 0.275em !important; }
 
-li {
+.list-padding-15 li::before {
+  transform: translateY(50%); }
+
+.list-padding-15 li {
   padding-top: 1.4375em !important;
   padding-bottom: 1.4375em !important; }
 
-li {
+.list-padding-14 li::before {
+  transform: translateY(50%); }
+
+.list-padding-14 li {
   padding-top: 1.3125em !important;
   padding-bottom: 1.3125em !important; }
 
-li {
+.list-padding-13 li::before {
+  transform: translateY(50%); }
+
+.list-padding-13 li {
   padding-top: 1.125em !important;
   padding-bottom: 1.125em !important; }
 
-li {
+.list-padding-12 li::before {
+  transform: translateY(50%); }
+
+.list-padding-12 li {
   padding-top: 1em !important;
   padding-bottom: 1em !important; }
 
-li {
+.list-padding-11 li::before {
+  padding-top: 0.875em !important;
+  padding-bottom: 0.875em !important;
+  transform: translateY(50%); }
+
+.list-padding-11 li {
   padding-top: 0.875em !important;
   padding-bottom: 0.875em !important; }
 
-li {
+.list-padding-10 li::before {
+  transform: translateY(50%); }
+
+.list-padding-10 li {
   padding-top: 0.75em !important;
   padding-bottom: 0.75em !important; }
 
-li {
+.list-padding-9 li::before {
+  transform: translateY(50%); }
+
+.list-padding-9 li {
   padding-top: 0.625em !important;
   padding-bottom: 0.625em !important; }
 
-li {
+.list-padding-8 li::before {
+  transform: translateY(50%); }
+
+.list-padding-8 li {
   padding-top: 0.5em !important;
   padding-bottom: 0.5em !important; }
 
-li {
+.list-padding-7 li::before {
+  transform: translateY(50%); }
+
+.list-padding-7 li {
   padding-top: 0.375em !important;
   padding-bottom: 0.375em !important; }
 
-li {
+.list-padding-6 li::before {
+  padding-top: 0.275em !important;
+  padding-bottom: 0.275em !important;
+  transform: translateY(50%); }
+
+.list-padding-6 li {
   padding-top: 0.275em !important;
   padding-bottom: 0.275em !important; }
 
-li {
+.list-padding-5 li::before {
+  transform: translateY(50%); }
+
+.list-padding-5 li {
   padding-top: 0.2em !important;
   padding-bottom: 0.2em !important; }
 
-li {
+.list-padding-4 li::before {
+  transform: translateY(50%); }
+
+.list-padding-4 li {
   padding-top: 0.15em !important;
   padding-bottom: 0.15em !important; }
 
-li {
+.list-padding-3 li::before {
+  transform: translateY(50%); }
+
+.list-padding-3 li {
   padding-top: 0.1em !important;
   padding-bottom: 0.1em !important; }
 
-li {
+.list-padding-2 li::before {
+  transform: translateY(50%); }
+
+.list-padding-2 li {
   padding-top: 0.05em !important;
   padding-bottom: 0.05em !important; }
 
-li {
+.list-padding-1 li::before {
+  transform: translateY(50%); }
+
+.list-padding-1 li {
   padding-top: 0.025em !important;
   padding-bottom: 0.025em !important; }
 
-li {
+.list-padding-0 li::before {
+  transform: translateY(50%); }
+
+.list-padding-0 li {
   padding-top: 0em !important;
   padding-bottom: 0em !important; }
 
-li {
+.list-padding-none li::before {
+  transform: translateY(50%); }
+
+.list-padding-none li {
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -12543,7 +12601,7 @@ ol.number-decimal-zero li::before {
     padding-bottom: 0;
     margin-bottom: 0; }
     .evo-list-lines li::before {
-      transform: translateY(30%); }
+      transform: translateY(50%); }
     .evo-list-lines li:first-child {
       border-top-style: solid;
       border-top-width: thin;
@@ -12569,7 +12627,7 @@ ol.number-decimal-zero li::before {
     padding-bottom: 0;
     margin-bottom: 0; }
     .evo-list-lines-inverse li::before {
-      transform: translateY(30%); }
+      transform: translateY(50%); }
     .evo-list-lines-inverse li:first-child {
       border-top-style: solid;
       border-top-width: thin;
@@ -12584,16 +12642,16 @@ ol.number-decimal-zero li::before {
       border-bottom-color: #333; }
 
 .align-number-thick li::before {
-  transform: translateY(50%); }
+  transform: translateY(70%); }
 
 .align-number-medium li::before {
-  transform: translateY(30%); }
+  transform: translateY(50%); }
 
 .align-number-thin li::before {
-  transform: translateY(-5%); }
+  transform: translateY(30%); }
 
 .align-number-none li::before {
-  transform: translateY(-34%); }
+  transform: translateY(0%); }
 
 .evo-list-stripe li:nth-child(even),
 .evo-list-stripe-even li:nth-child(even) {
